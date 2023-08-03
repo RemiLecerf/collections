@@ -1,0 +1,88 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:dct="http://purl.org/dc/terms/" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/37f3a702-5a75-4431-9753-213aeb346817">
+        <foaf:primaryTopic rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/resource/ef932fc0-04e7-4a25-b7b2-08a2d85d4039"/>
+        <dct:issued>2023-03-28</dct:issued>
+        <dct:modified>2023-03-28</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/srv/eng/xml.metadata.get?uuid=37f3a702-5a75-4431-9753-213aeb346817">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork?uuid=37f3a702-5a75-4431-9753-213aeb346817">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/resource/ef932fc0-04e7-4a25-b7b2-08a2d85d4039">
+        <dct:identifier>ef932fc0-04e7-4a25-b7b2-08a2d85d4039</dct:identifier>
+        <dct:title>Iberia Biscay Ireland Coastal Upwelling Index from Reanalysis</dct:title>
+        <dct:abstract>'''DEFINITION'''
+
+The Coastal Upwelling Index (CUI) is computed along the African and the Iberian Peninsula coasts. For each latitudinal point from 27°N to 42°N the Coastal Upwelling Index is defined as the temperature difference between the maximum and minimum temperature in a range of distance from the coast up to 3.5º westwards.
+〖CUI〗_lat=max⁡(T_lat )-min⁡(T_lat)
+A high Coastal Upwelling Index indicates intense upwelling conditions.
+The index is computed from the following Copernicus Marine products:
+	IBI-MYP: IBI_MULTIYEAR_PHY_005_002 (1993-2019)
+	IBI-NRT: IBI_ANALYSISFORECAST_PHYS_005_001 (2020 onwards)
+
+'''CONTEXT'''
+
+Coastal upwelling process occurs along coastlines as the result of deflection of the oceanic water away from the shore. Such deflection is produced by Ekman transport induced by persistent winds parallel to the coastline (Sverdrup, 1938). When this transported water is forced, the mass balance is maintained by pumping of ascending intermediate water. This water is typically denser, cooler and richer in nutrients. The Iberia-Biscay-Ireland domain contains two well-documented Eastern Boundary Upwelling Ecosystems, they are hosted under the same system known as Canary Current Upwelling System (Fraga, 1981; Hempel, 1982). This system is one of the major coastal upwelling regions of the world and it is produced by the eastern closure of the Subtropical Gyre. The North West African (NWA) coast presents an intense upwelling region that extends from Morocco to south of Senegal, likewise the western coast of the Iberian Peninsula (IP) shows a seasonal upwelling behavior. These two upwelling domains are separated by the presence of the Gulf of Cadiz, where the coastline does not allow the formation of upwelling conditions from 34ºN up to 37ºN.
+The Copernicus Marine Service Coastal Upwelling Index is defined following the steps of several previous upwelling indices described in literature. More details and full scientific evaluation can be found in the dedicated section in the first issue of the Copernicus Marine Service Ocean State report (Sotillo et al., 2016).
+
+'''CMEMS KEY FINDINGS'''
+
+The NWA coast (latitudes below 34ºN) shows  a quite constantlow variability of the periodicity and the intensity of the upwelling, few periods of upwelling intensifications are found in years 1993-1995, and 2003-2004.
+In the IP coast (latitudes higher than 37ºN) the interannual variability is more remarkable showing years with high upwelling activity (1994, 2004, and 2015-2017) followed by periods of lower activity (1996-1998, 2003, 2011, and 2013).
+According to the results of the IBI-NRT system, 2020 was a year with weak upwelling in the IP latitudes. 
+While in the NWA coast the upwelling activity was more intense than the average.
+The analysis of trends in the period 1993-2019 shows significant positive trend of the upwelling index in the IP latitudes. This trend implies an increase of temperature differences between the coastal and offshore waters of approximately 0.02 °C/Year.
+
+Note: The key findings will be updated annually in November, in line with OMI evolutions.
+
+'''DOI (product):''' 
+https://doi.org/10.48670/moi-00248</dct:abstract>
+        <dcat:theme rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/thesaurus/iso/topicCategory/oceans"/>
+        <foaf:thumbnail rdf:resource="https://catalogue.marine.copernicus.eu/documents/IMG/IBI_OMI_CURRENTS_cui.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon(( ,  ,  ,  ,  ))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:issued>2018-02-12</dct:issued>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/IBI-PUERTOS-MADRID-ES"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/IBI-PUERTOS-MADRID-ES"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/IBI-PUERTOS-MADRID-ES"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/IBI-PUERTOS-MADRID-ES"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/MOI-OMI-SERVICE"/>
+        <dct:accrualPeriodicity>annually</dct:accrualPeriodicity>
+        <dct:license>otherRestrictions</dct:license>
+        <dct:license>license</dct:license>
+        <dct:license>No limitations on public access</dct:license>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/IBI_OMI_CURRENTS_cui/ibi_omi_currents_cui_index"/>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/IBI_OMI_CURRENTS_cui/ibi_omi_currents_cui_trend"/>
+        <dcat:distribution rdf:resource="https://mdl1.marine.copernicus.eu/derived/IBI_OMI_CURRENTS_cui/ibi_omi_currents_cui_index_202112/ibi_omi_currents_cui_index.nc"/>
+        <dcat:distribution rdf:resource="https://mdl1.marine.copernicus.eu/derived/IBI_OMI_CURRENTS_cui/ibi_omi_currents_cui_trend_202112/ibi_omi_currents_cui_trend.nc"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/5780cc11-cba1-474b-a07d-78e187809e24"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/91fab309-2de3-4cb5-a356-97f7fcfef9a2"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/49287a92-7bb3-41ba-91fb-e86dee73dccc"/>
+        <dcat:dataQuality>The myOcean products depends on other products for production or validation. The detailed list of dependencies is given in ISO19115's aggregationInfo (ISO19139 Xpath = "gmd:MD_Metadata/gmd:identificationInfo/gmd:aggregationInfo[./gmd:MD_AggregateInformation/gmd:initiativeType/gmd:DS_InitiativeTypeCode/@codeListValue='upstream-validation' or 'upstream-production']")</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+  

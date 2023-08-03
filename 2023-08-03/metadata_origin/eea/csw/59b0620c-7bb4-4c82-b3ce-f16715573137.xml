@@ -1,0 +1,52 @@
+<csw:Record xmlns:dct="http://purl.org/dc/terms/" xmlns:geonet="http://www.fao.org/geonetwork" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ows="http://www.opengis.net/ows" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dc:identifier>59b0620c-7bb4-4c82-b3ce-f16715573137</dc:identifier>
+      <dc:date>2020-10-29T11:54:29Z</dc:date>
+      <dc:title>High Resolution Layer: Forest Type 2018 (raster 10m), Oct. 2020</dc:title>
+      <dc:type>dataset</dc:type>
+      <dc:subject>Land cover</dc:subject>
+      <dc:subject>EEA38 (from 2020)</dc:subject>
+      <dc:subject>United Kingdom</dc:subject>
+      <dc:subject>forest management</dc:subject>
+      <dc:subject>landscape alteration</dc:subject>
+      <dc:subject>land use</dc:subject>
+      <dc:subject>land cover</dc:subject>
+      <dc:subject>European</dc:subject>
+      <dc:subject>Land use</dc:subject>
+      <dc:subject>Forests and forestry</dc:subject>
+      <dc:subject>Biodiversity</dc:subject>
+      <dc:subject>environment</dc:subject>
+      <dc:subject>imageryBaseMapsEarthCover</dc:subject>
+      <dc:format>GeoTIFF</dc:format>
+      <dct:abstract>The High Resolution Layer (HRL) Forest 2018 status layer Forest Type (FTY) provides a forest classification with 3 thematic classes (all non-forest areas / broadleaved forest / coniferous forest) at 10m spatial resolution and with a Minimum Mapping Unit (MMU) of 0.5 ha. This raster layer is largely following the FAO (Food and Agriculture Organisation of the United Nations) forest definition with tree covered areas in agricultural and urban context excluded and covers the full of EEA38 area and the United Kingdom. 
+The dataset is provided as 10 meter rasters in 100 x 100 km tiles grouped according to the EEA38 countries and the United Kingdom (fully confirmat with the EEA reference grid).
+The production of the High Resolution forest layers was coordinated by the European Environment Agency (EEA) in the frame of the EU Copernicus programme.
+
+The High Resolution forest product consists of three types of (status) products and additional change products. The status products are available for the 2012, 2015 and 2018 reference years: 1. Tree cover density providing level of tree cover density in a range from 0-100%; 2. Dominant leaf type providing information on the dominant leaf type: broadleaved or coniferous; 3. A Forest type product. The forest type product allows to get as close as possible to the FAO forest definition. In its original (20m) resolution it consists of two products: 1) a dominant leaf type product that has a MMU of 0.5 ha, as well as a 10% tree cover density threshold applied, and 2) a support layer that maps, based on the dominant leaf type product, trees under agricultural use and in urban context (derived from CLC and high resolution imperviousness 2009 data). For the final 100m product trees under agricultural use and urban context from the support layer are removed. The high resolution forest change products comprise a simple tree cover density change product for 2012-2015 (% increase or decrease of real tree cover density changes).</dct:abstract>
+      <dc:description>The High Resolution Layer (HRL) Forest 2018 status layer Forest Type (FTY) provides a forest classification with 3 thematic classes (all non-forest areas / broadleaved forest / coniferous forest) at 10m spatial resolution and with a Minimum Mapping Unit (MMU) of 0.5 ha. This raster layer is largely following the FAO (Food and Agriculture Organisation of the United Nations) forest definition with tree covered areas in agricultural and urban context excluded and covers the full of EEA38 area and the United Kingdom. 
+The dataset is provided as 10 meter rasters in 100 x 100 km tiles grouped according to the EEA38 countries and the United Kingdom (fully confirmat with the EEA reference grid).
+The production of the High Resolution forest layers was coordinated by the European Environment Agency (EEA) in the frame of the EU Copernicus programme.
+
+The High Resolution forest product consists of three types of (status) products and additional change products. The status products are available for the 2012, 2015 and 2018 reference years: 1. Tree cover density providing level of tree cover density in a range from 0-100%; 2. Dominant leaf type providing information on the dominant leaf type: broadleaved or coniferous; 3. A Forest type product. The forest type product allows to get as close as possible to the FAO forest definition. In its original (20m) resolution it consists of two products: 1) a dominant leaf type product that has a MMU of 0.5 ha, as well as a 10% tree cover density threshold applied, and 2) a support layer that maps, based on the dominant leaf type product, trees under agricultural use and in urban context (derived from CLC and high resolution imperviousness 2009 data). For the final 100m product trees under agricultural use and urban context from the support layer are removed. The high resolution forest change products comprise a simple tree cover density change product for 2012-2015 (% increase or decrease of real tree cover density changes).</dc:description>
+      <dc:rights>otherRestrictions</dc:rights>
+      <dc:rights>otherRestrictions</dc:rights>
+      <dc:language>eng</dc:language>
+      <dc:source>The Forest Type 2018 status layer at 10m spatial resolution is mainly based on the primary status layer Dominant Leaf Type 2018, which was produced by a hierarchical spatio-temporal classification of time features derived from Sentinel-2A+B time series (Level-2A data) using a Random Forest (RF) classifier with 500 trees. The default time window ranges from 01-03-2018 to 31-10-2018 and was adapted to regional conditions where needed. In total, 147 statistical time features have been calculated using more than 500,000 samples, automatically collected from the LUCAS 2018 database and various CLMS products plus additional manual sampling. First, a binary Tree Cover Mask (TCM) with 2 classes (all non-tree covered areas / tree cover) has been generated. Various post-processing steps have been applied in order to improve the quality of the mask (e.g. correction of omission errors caused by the topographic overcorrection within the native Sentinel-2 Level-2A input data). Subsequently, the dominant leaf type has been separately classified within the confines of the Tree Cover Mask. In order to generate a forest type product following the FAO forest definition, a minimum mapping unit of 0.5 ha has been applied to the initial Tree Cover Mask considering a 10% tree cover density threshold and with all pixels in agricultural and urban context (as provided by the FADSL) removed. Subsequently, filtered non-forest patches smaller the MMU have been filled with the neighbouring leaf type information using a 9x9 circle filter. In case of tree covered pixels smaller 10% TCD being present in those non-forest patches, the original Dominant Leaf Type information is kept. National FTY products are derived through reprojection and might show a broken MMU.
+
+Quality assurance follows the ISO 9001:2015 standards for Quality Management and comprises of dedicated procedures of quality checks (QA breakpoints) during implementation of the production chain, in order to keep persistent control over the various stages of production, assure fitness-for-purpose of the end-products and that all quality requirements are fulfilled. Priority has been given to the target thematic accuracy to be achieved by each product, as well as to the issues of product consistency (spatial, thematic, temporal) and homogeneity. Quality Assessment: The quality assessment has been performed according to INSPIRE Data Specifications. The data quality elements considered are: (i) Completeness, (ii) Logical Consistency, (iii) positional accuracy, (iv) Thematic Accuracy, (v) Temporal quality and (vi) Usability.
+
+Geometric accuracy (positioning scale): Less than one pixel (10m) according to ortho-rectified satellite image base (Sentinel-2 Level-2A) delivered by ESA.
+
+Thematic accuracy at pan-European level: determined by the accuracies of the input source layers Dominant Leaf Type, Tree Cover Density and Forest Additional Support Layer (including CLC 2018 and HRL Imperviousness 2018 data). The thematic accuracy of the FTY product has not been assessed.
+
+The production process is described and explained in detail in the User Manual Tree-cover/forest and change 2015-2018 here: https://land.copernicus.eu/user-corner/technical-library/forest-2018-user-manual-v1-0.pdf.</dc:source>
+      <dc:format>GeoTIFF</dc:format>
+      <ows:BoundingBox crs="urn:ogc:def:crs:EPSG:6.6:4326">
+        <ows:LowerCorner>24.284 -56.506</ows:LowerCorner>
+        <ows:UpperCorner>72.665 72.907</ows:UpperCorner>
+      </ows:BoundingBox>
+      <dc:URI protocol="WWW:LINK-1.0-http--link" name="Download (requires authentication)">https://land.copernicus.eu/pan-european/high-resolution-layers/forests/forest-type-1/status-maps/forest-type-2018?tab=download</dc:URI>
+      <dc:URI protocol="ESRI:REST">https://image.discomap.eea.europa.eu/arcgis/rest/services/GioLandPublic/HRL_ForestType_2018/ImageServer</dc:URI>
+      <dc:URI protocol="OGC:WMS" name="" description="">https://image.discomap.eea.europa.eu/arcgis/services/GioLandPublic/HRL_ForestType_2018/ImageServer/WMSServer?request=GetCapabilities&amp;service=WMS</dc:URI>
+      <dc:URI protocol="image/png">https://sdi.eea.europa.eu/public/catalogue-graphic-overview/59b0620c-7bb4-4c82-b3ce-f16715573137.png</dc:URI>
+    </csw:Record>
+    

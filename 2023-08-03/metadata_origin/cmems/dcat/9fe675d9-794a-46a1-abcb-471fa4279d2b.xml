@@ -1,0 +1,78 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:dct="http://purl.org/dc/terms/" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/9fe675d9-794a-46a1-abcb-471fa4279d2b">
+        <foaf:primaryTopic rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/resource/b09312b0-1b4d-4cac-b585-eeb4089ba8a1"/>
+        <dct:issued>2022-07-04</dct:issued>
+        <dct:modified>2022-07-04</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/srv/eng/xml.metadata.get?uuid=9fe675d9-794a-46a1-abcb-471fa4279d2b">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork?uuid=9fe675d9-794a-46a1-abcb-471fa4279d2b">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/resource/b09312b0-1b4d-4cac-b585-eeb4089ba8a1">
+        <dct:identifier>b09312b0-1b4d-4cac-b585-eeb4089ba8a1</dct:identifier>
+        <dct:title>Global Ocean Biogeochemistry Analysis and Forecast</dct:title>
+        <dct:abstract>'''Short description:'''
+
+The Operational Mercator Ocean biogeochemical global ocean analysis and forecast system  at 1/4 degree is providing 10 days of 3D global ocean forecasts updated weekly. The time series is aggregated in time, in order to reach a two full year’s time series sliding window. This product includes daily and monthly mean files of biogeochemical parameters (chlorophyll, nitrate, phosphate, silicate, dissolved oxygen, dissolved iron, primary production, phytoplankton, PH, and surface partial pressure of carbon dioxyde) over the global ocean. The global ocean output files are displayed with a 1/4 degree horizontal resolution with regular longitude/latitude equirectangular projection. 50 vertical levels are ranging from 0 to 5700 meters.
+
+* NEMO version (v3.6_STABLE)
+* Forcings: GLOBAL_ANALYSIS_FORECAST_PHYS_001_024 at daily frequency.                                                                           
+* Outputs mean fields are interpolated on a standard regular grid in NetCDF format.
+* Initial conditions: World Ocean Atlas 2013 for nitrate, phosphate, silicate and dissolved oxygen, GLODAPv2 for DIC and Alkalinity, and climatological model outputs for Iron and DOC 
+* Quality/Accuracy/Calibration information: See the related QuID[http://marine.copernicus.eu/documents/QUID/CMEMS-GLO-QUID-001-028.pdf]
+
+'''DOI (product) :'''   
+https://doi.org/10.48670/moi-00015</dct:abstract>
+        <dcat:theme rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/thesaurus/Ocean%20Hackathon%20-%20Ville/Brest"/>
+        <dcat:theme rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/thesaurus/iso/topicCategory/oceans"/>
+        <foaf:thumbnail rdf:resource="https://catalogue.marine.copernicus.eu/documents/IMG/GLOBAL_ANALYSIS_FORECAST_BIO_001_028.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((-180.00 -80.00, -180.00 90.00, 180.00 90.00, 180.00 -80.00, -180.00 -80.00))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:issued>2016-10-13</dct:issued>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/GLO-MERCATOR-TOULOUSE-FR"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/GLO-MERCATOR-TOULOUSE-FR"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/GLO-MERCATOR-TOULOUSE-FR"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/GLO-NRT-MERCATOR-TOULOUSE-FR"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/GLO-MERCATOR-TOULOUSE-FR"/>
+        <dct:accrualPeriodicity>weekly</dct:accrualPeriodicity>
+        <dct:accrualPeriodicity>monthly</dct:accrualPeriodicity>
+        <dct:license>otherRestrictions</dct:license>
+        <dct:license>license</dct:license>
+        <dct:license>No limitations on public access</dct:license>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=GLOBAL_ANALYSIS_FORECAST_BIO_001_028-TDS&amp;product=global-analysis-forecast-bio-001-028-daily"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/thredds/dodsC/global-analysis-forecast-bio-001-028-daily"/>
+        <dcat:distribution rdf:resource="ftp://nrt.cmems-du.eu/Core/GLOBAL_ANALYSIS_FORECAST_BIO_001_028/global-analysis-forecast-bio-001-028-daily"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/thredds/wms/global-analysis-forecast-bio-001-028-daily"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=GLOBAL_ANALYSIS_FORECAST_BIO_001_028-TDS&amp;product=global-analysis-forecast-bio-001-028-monthly"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/thredds/dodsC/global-analysis-forecast-bio-001-028-monthly"/>
+        <dcat:distribution rdf:resource="ftp://nrt.cmems-du.eu/Core/GLOBAL_ANALYSIS_FORECAST_BIO_001_028/global-analysis-forecast-bio-001-028-monthly"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/thredds/wms/global-analysis-forecast-bio-001-028-monthly"/>
+        <dcat:distribution rdf:resource="ftp://nrt.cmems-du.eu/Core/GLOBAL_ANALYSIS_FORECAST_BIO_001_028/global-analysis-forecast-bio-001-028-statics"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/54db6da7-2d90-4198-9733-b24bd93bcf84"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/6f01aaa8-278f-4258-84ad-cc550b759045"/>
+        <dcat:dataQuality>The myOcean products depends on other products for production or validation. The detailed list of dependencies is given in ISO19115's aggregationInfo (ISO19139 Xpath = "gmd:MD_Metadata/gmd:identificationInfo/gmd:aggregationInfo[./gmd:MD_AggregateInformation/gmd:initiativeType/gmd:DS_InitiativeTypeCode/@codeListValue='upstream-validation' or 'upstream-production']")</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+    

@@ -1,0 +1,60 @@
+{
+  "type": "Collection",
+  "id": "861a9cf0-cd92-485b-bf35-453da6fdbc37",
+  "stac_version": "1.0.0",
+  "description": "'''DEFINITION'''\n\nThe time series are derived from the regional chlorophyll reprocessed (REP) products as distributed by CMEMS which, in turn, result from the application of the regional chlorophyll algorithms over remote sensing reflectances (Rrs) provided by the ESA Ocean Colour Climate Change Initiative (ESA OC-CCI, Sathyendranath et al. 2019; Jackson 2020). Daily regional mean values are calculated by performing the average (weighted by pixel area) over the region of interest. A fixed annual cycle is extracted from the original signal, using the Census-I method as described in Vantrepotte et al. (2009). The deseasonalised time series is derived by subtracting the mean seasonal cycle from the original time series, and then fitted to a linear regression to, finally, obtain the linear trend. \n\n'''CONTEXT'''\n\nPhytoplankton – and chlorophyll concentration as a proxy for phytoplankton – respond rapidly to changes in environmental conditions, such as temperature, light and nutrients availability, and mixing. The response in the North Atlantic ranges from cyclical to decadal oscillations (Henson et al., 2009); it is therefore of critical importance to monitor chlorophyll concentration at multiple temporal and spatial scales, in order to be able to separate potential long-term climate signals from natural variability in the short term. In particular, phytoplankton in the North Atlantic are known to respond to climate variability associated with the North Atlantic Oscillation (NAO), with the initiation of the spring bloom showing a nominal correlation with sea surface temperature and the NAO index (Zhai et al., 2013).\n\n'''CMEMS KEY FINDINGS'''\n\nWhile the overall trend average for the 1997-2021 period in the North Atlantic Ocean is slightly positive (0.16 ± 0.12 % per year), an underlying low frequency harmonic signal can be seen in the deseasonalised data. The annual average for the region in 2021 is 0.25 mg m-3. Though no appreciable changes in the timing of the spring and autumn blooms have been observed during 2021, a lower peak chlorophyll concentration is observed in the timeseries extension. This decrease in peak concentration with respect to the previous year is contributing to the reduction trend.\n\n'''DOI (product):'''\nhttps://doi.org/10.48670/moi-00194",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "ftp://my.cmems-du.eu/Core/OMI_HEALTH_CHL_ATLANTIC_OCEANCOLOUR_area_averaged_mean/omi_health_chl_atlantic_oceancolour_area_averaged_mean",
+      "type": "WWW:FTP",
+      "title": "omi_health_chl_atlantic_oceancolour_area_averaged_mean"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://mdl1.marine.copernicus.eu/derived/OMI_HEALTH_CHL_ATLANTIC_OCEANCOLOUR_area_averaged_mean/omi_health_chl_atlantic_oceancolour_area_averaged_mea_202211/OMI_HEALTH_CHL_ATLANTIC_OCEANCOLOUR_area_averaged_mean_19970901_20211231_20220831.nc",
+      "type": "MYO:MOTU-DGF",
+      "title": "omi_health_chl_atlantic_oceancolour_area_averaged_mean"
+    }
+  ],
+  "title": "North Atlantic Ocean Chlorophyll-a time series and trend from Observations Reprocessing",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -46.0,
+          20.0,
+          13.0,
+          66.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1997-09-04T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "/Cross-discipline/Rate measurements",
+    "Data",
+    "Modelling data"
+  ],
+  "providers": [
+    {
+      "name": "Copernicus Marine Service",
+      "description": "Copernicus Marine Service - Mercator Ocean Internations",
+      "roles": [
+        "licensor",
+        "producer",
+        "processor",
+        "host"
+      ],
+      "url": "https://marine.copernicus.eu/"
+    }
+  ]
+}

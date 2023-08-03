@@ -1,0 +1,65 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dct="http://purl.org/dc/terms/" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/metadata/eu.copernicus.climate.sis-water-level-change-indicators-cmip6">
+        <foaf:primaryTopic rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/resource/10.24381/cds.6edf04e0"/>
+        <dct:issued>2018-03-28</dct:issued>
+        <dct:modified>2018-03-28</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/srv/eng/xml.metadata.get?uuid=eu.copernicus.climate.sis-water-level-change-indicators-cmip6">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://cds.climate.copernicus.eu:443//geonetwork?uuid=eu.copernicus.climate.sis-water-level-change-indicators-cmip6">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/resource/10.24381/cds.6edf04e0">
+        <dct:identifier>10.24381/cds.6edf04e0</dct:identifier>
+        <dct:title>Global sea level change indicators from 1950 to 2050 derived from reanalysis and high resolution CMIP6 climate projections</dct:title>
+        <dct:abstract>This dataset provides statistical indicators of tides, storm surges and sea level that can be used to characterize global sea level in present-day conditions and also to assess changes under climate change. The indicators calculated include extreme-value indicators (e.g. return periods including confidence bounds for total water levels and surge levels), probability indicators (e.g. percentile for total water levels and surge levels). They provide a basis for studies aiming to evaluate sea level variability, coastal flooding, coastal erosion, and accessibility of ports at a global scale. The extreme value statistics for different return periods can be used to assess the frequency of an event and form the basis of risk assessments. The global coverage allows for world-wide assessments that are particularly useful for the data scarce regions where detailed modelling studies are currently lacking.
+The indicators are computed from time series data available in a related dataset in the Climate Data Store named Global sea level change time series from 1950 to 2050 derived from reanalysis and high resolution CMIP6 climate projections (see Related data), where further details of the modelling are provided. The indicators are produced for three different 30-year periods corresponding to historical, present, and future climate conditions (1951-1980, 1985-2014, and 2021-2050). The future period is based on global climate projections using the high-emission scenario SSP5-8.5. The dataset is based on climate forcing from ERA5 global reanalysis and 4 Global Climate Models (GCMs) of the high resolution Coupled Model Intercomparison Project Phase 6 (CMIP6) global climate projection dataset from the High Resolution Model Intercomparison Project (HighResMIP) multi-model ensemble. An estimate of the uncertainties associated with the climate forcing has been obtained through the use of a multi-model ensemble. Each of the indicators provides ensemble statistics computed across the 4 members of the HighResMIP ensemble (e.g. median, mean, standard deviation, range). Absolute and relative changes for the future period (2015-2050) relative to the present-day (1985-2014) are provided to assess climate change impacts on water levels.
+This dataset was produced on behalf of the Copernicus Climate Change Service.
+
+Variables in the dataset/application are:
+Annual mean of highest high water, Annual mean of lowest low water, Highest astronomical tide, Lowest astronomical tide, Mean sea level, Surge level, Tidal range, Total water level</dct:abstract>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/GEMET%20-%20INSPIRE%20themes%2C%20version%201.0/Sea regions"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Spatial coverage: Global"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Variable domain: Ocean (physics)"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Temporal coverage: Past"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Temporal coverage: Future"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Product type: Reanalysis"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Product type: Climate projections"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Provider: Copernicus C3S"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/iso/topicCategory/climatologyMeteorologyAtmosphere"/>
+        <foaf:thumbnail rdf:resource="https://datastore.copernicus-climate.eu/c3s/published-forms-v2/c3sprod/sis-water-level-change-indicators-cmip6/overview.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((-180 -90, -180 90, 180 90, 180 -90, -180 -90))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:temporal>1951-01-01
+          /
+          2050-12-31</dct:temporal>
+        <dct:publisher rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/organization/ECMWF"/>
+        <dct:accrualPeriodicity>asNeeded</dct:accrualPeriodicity>
+        <dct:language>eng</dct:language>
+        <dct:license>licence</dct:license>
+        <dct:license>https://cds.climate.copernicus.eu/api/v2/terms/static/licence-to-use-copernicus-products.pdf</dct:license>
+        <dcat:distribution rdf:resource="https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.6edf04e0"/>
+        <dcat:distribution rdf:resource="https://confluence.ecmwf.int/x/RiI7E"/>
+        <dcat:dataQuality>Copernicus Climate Change Service - Sectoral services for coasts</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+    

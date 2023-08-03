@@ -1,0 +1,67 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:dct="http://purl.org/dc/terms/" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/fe8fe1b7-5686-42d4-95c9-692fce70a1e3">
+        <foaf:primaryTopic rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/resource/fe8fe1b7-5686-42d4-95c9-692fce70a1e3"/>
+        <dct:issued>2023-01-16</dct:issued>
+        <dct:modified>2023-01-16</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/srv/eng/xml.metadata.get?uuid=fe8fe1b7-5686-42d4-95c9-692fce70a1e3">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork?uuid=fe8fe1b7-5686-42d4-95c9-692fce70a1e3">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/resource/fe8fe1b7-5686-42d4-95c9-692fce70a1e3">
+        <dct:identifier>fe8fe1b7-5686-42d4-95c9-692fce70a1e3</dct:identifier>
+        <dct:title>Black Sea Waves Analysis and Forecast</dct:title>
+        <dct:abstract>'''Short description''': 
+The wave analysis and forecasts for the Black Sea are produced with the third generation spectral wave model WAM Cycle 6. The hindcast and ten days forecast are produced every day on the HPC at Helmholtz-Zentrum Hereon. The shallow water Black Sea version is implemented on a spherical grid with a spatial resolution of about 2.5 km (1/40° x 1/40°) with 24 directional and 30 frequency bins. The number of active wave model grid points is 74518. The model takes into account depth refraction, wave breaking, and assimilation of satellite wave and wind data. The system provides a hindcast and ten days forecast with one-hourly output once a day. The atmospheric forcing is taken from ECMWF analyses and forecast data. Additionally, WAM is forced by surface currents and sea surface height from BLKSEA_ANALYSISFORECAST_PHY_007_001. Monthly statistics are provided operationally following the CMEMS metrics definitions.
+
+'''Product Citation''': 
+Please refer to our Technical FAQ for citing products. http://marine.copernicus.eu/faq/cite-cmems-products-cmems-credit/?idpage=169
+
+'''DOI (Product)''': 
+https://doi.org/10.25423/cmcc/blksea_analysisforecast_wav_007_003_eas5</dct:abstract>
+        <dcat:theme rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/thesaurus/iso/topicCategory/oceans"/>
+        <foaf:thumbnail rdf:resource="https://catalogue.marine.copernicus.eu/documents/IMG/BLKSEA_ANALYSISFORECAST_WAV_007_003.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((27.25 40.50, 27.25 47.00, 42.00 47.00, 42.00 40.50, 27.25 40.50))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:issued>2012-08-26</dct:issued>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/BS-IOBAS-VARNA-BG"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/BS-ULG-LIEGE-BE"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/BS-IOBAS-VARNA-BG"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/BS-HEREON-HAMBURG-DE"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/BS-HEREON-HAMBURG-DE"/>
+        <dct:accrualPeriodicity>daily</dct:accrualPeriodicity>
+        <dct:license>otherRestrictions</dct:license>
+        <dct:license>license</dct:license>
+        <dct:license>No limitations on public access</dct:license>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=BLKSEA_ANALYSISFORECAST_WAV_007_003-TDS&amp;product=cmems_mod_blk_wav_anfc_2.5km_PT1H-i"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/thredds/dodsC/cmems_mod_blk_wav_anfc_2.5km_PT1H-i"/>
+        <dcat:distribution rdf:resource="ftp://nrt.cmems-du.eu/Core/BLKSEA_ANALYSISFORECAST_WAV_007_003/cmems_mod_blk_wav_anfc_2.5km_PT1H-i"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/thredds/wms/cmems_mod_blk_wav_anfc_2.5km_PT1H-i"/>
+        <dcat:distribution rdf:resource="ftp://nrt.cmems-du.eu/Core/BLKSEA_ANALYSISFORECAST_WAV_007_003/cmems_mod_blk_wav_anfc_2.5km_static"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/751a08c7-9496-4eaf-90da-37525f6de524"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/5a5867ca-4537-4b7d-83a3-2f8cd7c2cfbf"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dcat:dataQuality>The myOcean products depends on other products for production or validation. The detailed list of dependencies is given in ISO19115's aggregationInfo (ISO19139 Xpath = "gmd:MD_Metadata/gmd:identificationInfo/gmd:aggregationInfo[./gmd:MD_AggregateInformation/gmd:initiativeType/gmd:DS_InitiativeTypeCode/@codeListValue='upstream-validation' or 'upstream-production']")</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+    

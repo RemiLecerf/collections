@@ -1,0 +1,144 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:dct="http://purl.org/dc/terms/" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/dc3dab06-f06f-4e45-8b47-bde29fb294ce">
+        <foaf:primaryTopic rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/resource/dc3dab06-f06f-4e45-8b47-bde29fb294ce"/>
+        <dct:issued>2022-07-04</dct:issued>
+        <dct:modified>2022-07-04</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/srv/eng/xml.metadata.get?uuid=dc3dab06-f06f-4e45-8b47-bde29fb294ce">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork?uuid=dc3dab06-f06f-4e45-8b47-bde29fb294ce">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/resource/dc3dab06-f06f-4e45-8b47-bde29fb294ce">
+        <dct:identifier>dc3dab06-f06f-4e45-8b47-bde29fb294ce</dct:identifier>
+        <dct:title>Global Ocean Daily Gridded Reprocessed L3 Sea Surface Winds from Scatterometer</dct:title>
+        <dct:abstract>'''Short description:''' 
+
+For the Global Ocean - The product contains daily L3 gridded sea surface wind observations from available scatterometers with resolutions corresponding  to the L2 swath products:
+*0.5 degrees grid for the 50 km scatterometer L2 inputs,
+*0.25 degrees grid based on 25 km scatterometer swath observations,
+*and 0.125 degrees based on 12.5 km scatterometer swath observations, i.e., from the coastal products. Data from ascending and descending passes are gridded separately. 
+
+The reported wind is stress-equivalent wind with wind stress, wind stress curl and divergence. The REP L3 products follow the REP availability of the EUMETSAT OSI SAF L2 products and are available for: The ASCAT scatterometer on MetOp-A and Metop-B at 0.125 and 0.25 degrees; The Seawinds scatterometer on QuikSCAT at 0.25 and 0.5 degrees; The AMI scatterometer on ERS-1 and ERS-2 at 0.25 degrees; The OSCAT scatterometer on Oceansat-2 at 0.25 and 0.5 degrees;
+
+'''DOI (product) :'''   
+https://doi.org/10.48670/moi-00183</dct:abstract>
+        <dcat:theme rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/thesaurus/iso/topicCategory/oceans"/>
+        <foaf:thumbnail rdf:resource="https://catalogue.marine.copernicus.eu/documents/IMG/SIW-KNMI-GLO-WIND_L3-OBS.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((-180.00 -90.00, -180.00 90.00, 180.00 90.00, 180.00 -90.00, -180.00 -90.00))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:issued>2012-08-26</dct:issued>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/SIW-KNMI-DEBILT-NL"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/SIW-KNMI-DEBILT-NL"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/SIW-KNMI-DEBILT-NL"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/SIW-KNMI-DEBILT-NL"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/SIW-KNMI-DEBILT-NL"/>
+        <dct:accrualPeriodicity>monthly</dct:accrualPeriodicity>
+        <dct:license>otherRestrictions</dct:license>
+        <dct:license>license</dct:license>
+        <dct:license>No limitations on public access</dct:license>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=WIND_GLO_WIND_L3_REP_OBSERVATIONS_012_005-TDS&amp;product=KNMI-GLO-WIND_L3-REP-OBS_ERS-1_SCAT_25_ASC"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/dodsC/KNMI-GLO-WIND_L3-REP-OBS_ERS-1_SCAT_25_ASC"/>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/WIND_GLO_WIND_L3_REP_OBSERVATIONS_012_005/KNMI-GLO-WIND_L3-REP-OBS_ERS-1_SCAT_25_ASC"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/wms/KNMI-GLO-WIND_L3-REP-OBS_ERS-1_SCAT_25_ASC"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=WIND_GLO_WIND_L3_REP_OBSERVATIONS_012_005-TDS&amp;product=KNMI-GLO-WIND_L3-REP-OBS_ERS-1_SCAT_25_DES"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/dodsC/KNMI-GLO-WIND_L3-REP-OBS_ERS-1_SCAT_25_DES"/>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/WIND_GLO_WIND_L3_REP_OBSERVATIONS_012_005/KNMI-GLO-WIND_L3-REP-OBS_ERS-1_SCAT_25_DES"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/wms/KNMI-GLO-WIND_L3-REP-OBS_ERS-1_SCAT_25_DES"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=WIND_GLO_WIND_L3_REP_OBSERVATIONS_012_005-TDS&amp;product=KNMI-GLO-WIND_L3-REP-OBS_ERS-2_SCAT_25_ASC"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/dodsC/KNMI-GLO-WIND_L3-REP-OBS_ERS-2_SCAT_25_ASC"/>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/WIND_GLO_WIND_L3_REP_OBSERVATIONS_012_005/KNMI-GLO-WIND_L3-REP-OBS_ERS-2_SCAT_25_ASC"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/wms/KNMI-GLO-WIND_L3-REP-OBS_ERS-2_SCAT_25_ASC"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=WIND_GLO_WIND_L3_REP_OBSERVATIONS_012_005-TDS&amp;product=KNMI-GLO-WIND_L3-REP-OBS_ERS-2_SCAT_25_DES"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/dodsC/KNMI-GLO-WIND_L3-REP-OBS_ERS-2_SCAT_25_DES"/>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/WIND_GLO_WIND_L3_REP_OBSERVATIONS_012_005/KNMI-GLO-WIND_L3-REP-OBS_ERS-2_SCAT_25_DES"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/wms/KNMI-GLO-WIND_L3-REP-OBS_ERS-2_SCAT_25_DES"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=WIND_GLO_WIND_L3_REP_OBSERVATIONS_012_005-TDS&amp;product=KNMI-GLO-WIND_L3-REP-OBS_METOP-A_ASCAT_12_ASC"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/dodsC/KNMI-GLO-WIND_L3-REP-OBS_METOP-A_ASCAT_12_ASC"/>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/WIND_GLO_WIND_L3_REP_OBSERVATIONS_012_005/KNMI-GLO-WIND_L3-REP-OBS_METOP-A_ASCAT_12_ASC"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/wms/KNMI-GLO-WIND_L3-REP-OBS_METOP-A_ASCAT_12_ASC"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=WIND_GLO_WIND_L3_REP_OBSERVATIONS_012_005-TDS&amp;product=KNMI-GLO-WIND_L3-REP-OBS_METOP-A_ASCAT_12_DES"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/dodsC/KNMI-GLO-WIND_L3-REP-OBS_METOP-A_ASCAT_12_DES"/>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/WIND_GLO_WIND_L3_REP_OBSERVATIONS_012_005/KNMI-GLO-WIND_L3-REP-OBS_METOP-A_ASCAT_12_DES"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/wms/KNMI-GLO-WIND_L3-REP-OBS_METOP-A_ASCAT_12_DES"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=WIND_GLO_WIND_L3_REP_OBSERVATIONS_012_005-TDS&amp;product=KNMI-GLO-WIND_L3-REP-OBS_METOP-A_ASCAT_25_ASC"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/dodsC/KNMI-GLO-WIND_L3-REP-OBS_METOP-A_ASCAT_25_ASC"/>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/WIND_GLO_WIND_L3_REP_OBSERVATIONS_012_005/KNMI-GLO-WIND_L3-REP-OBS_METOP-A_ASCAT_25_ASC"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/wms/KNMI-GLO-WIND_L3-REP-OBS_METOP-A_ASCAT_25_ASC"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=WIND_GLO_WIND_L3_REP_OBSERVATIONS_012_005-TDS&amp;product=KNMI-GLO-WIND_L3-REP-OBS_METOP-A_ASCAT_25_DES"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/dodsC/KNMI-GLO-WIND_L3-REP-OBS_METOP-A_ASCAT_25_DES"/>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/WIND_GLO_WIND_L3_REP_OBSERVATIONS_012_005/KNMI-GLO-WIND_L3-REP-OBS_METOP-A_ASCAT_25_DES"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/wms/KNMI-GLO-WIND_L3-REP-OBS_METOP-A_ASCAT_25_DES"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=WIND_GLO_WIND_L3_REP_OBSERVATIONS_012_005-TDS&amp;product=KNMI-GLO-WIND_L3-REP-OBS_METOP-B_ASCAT_12_ASC"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/dodsC/KNMI-GLO-WIND_L3-REP-OBS_METOP-B_ASCAT_12_ASC"/>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/WIND_GLO_WIND_L3_REP_OBSERVATIONS_012_005/KNMI-GLO-WIND_L3-REP-OBS_METOP-B_ASCAT_12_ASC"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/wms/KNMI-GLO-WIND_L3-REP-OBS_METOP-B_ASCAT_12_ASC"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=WIND_GLO_WIND_L3_REP_OBSERVATIONS_012_005-TDS&amp;product=KNMI-GLO-WIND_L3-REP-OBS_METOP-B_ASCAT_12_DES"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/dodsC/KNMI-GLO-WIND_L3-REP-OBS_METOP-B_ASCAT_12_DES"/>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/WIND_GLO_WIND_L3_REP_OBSERVATIONS_012_005/KNMI-GLO-WIND_L3-REP-OBS_METOP-B_ASCAT_12_DES"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/wms/KNMI-GLO-WIND_L3-REP-OBS_METOP-B_ASCAT_12_DES"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=WIND_GLO_WIND_L3_REP_OBSERVATIONS_012_005-TDS&amp;product=KNMI-GLO-WIND_L3-REP-OBS_METOP-B_ASCAT_25_ASC"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/dodsC/KNMI-GLO-WIND_L3-REP-OBS_METOP-B_ASCAT_25_ASC"/>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/WIND_GLO_WIND_L3_REP_OBSERVATIONS_012_005/KNMI-GLO-WIND_L3-REP-OBS_METOP-B_ASCAT_25_ASC"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/wms/KNMI-GLO-WIND_L3-REP-OBS_METOP-B_ASCAT_25_ASC"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=WIND_GLO_WIND_L3_REP_OBSERVATIONS_012_005-TDS&amp;product=KNMI-GLO-WIND_L3-REP-OBS_METOP-B_ASCAT_25_DES"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/dodsC/KNMI-GLO-WIND_L3-REP-OBS_METOP-B_ASCAT_25_DES"/>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/WIND_GLO_WIND_L3_REP_OBSERVATIONS_012_005/KNMI-GLO-WIND_L3-REP-OBS_METOP-B_ASCAT_25_DES"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/wms/KNMI-GLO-WIND_L3-REP-OBS_METOP-B_ASCAT_25_DES"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=WIND_GLO_WIND_L3_REP_OBSERVATIONS_012_005-TDS&amp;product=KNMI-GLO-WIND_L3-REP-OBS_OCEANSAT2_OSCAT_25_ASC"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/dodsC/KNMI-GLO-WIND_L3-REP-OBS_OCEANSAT2_OSCAT_25_ASC"/>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/WIND_GLO_WIND_L3_REP_OBSERVATIONS_012_005/KNMI-GLO-WIND_L3-REP-OBS_OCEANSAT2_OSCAT_25_ASC"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/wms/KNMI-GLO-WIND_L3-REP-OBS_OCEANSAT2_OSCAT_25_ASC"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=WIND_GLO_WIND_L3_REP_OBSERVATIONS_012_005-TDS&amp;product=KNMI-GLO-WIND_L3-REP-OBS_OCEANSAT2_OSCAT_25_DES"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/dodsC/KNMI-GLO-WIND_L3-REP-OBS_OCEANSAT2_OSCAT_25_DES"/>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/WIND_GLO_WIND_L3_REP_OBSERVATIONS_012_005/KNMI-GLO-WIND_L3-REP-OBS_OCEANSAT2_OSCAT_25_DES"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/wms/KNMI-GLO-WIND_L3-REP-OBS_OCEANSAT2_OSCAT_25_DES"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=WIND_GLO_WIND_L3_REP_OBSERVATIONS_012_005-TDS&amp;product=KNMI-GLO-WIND_L3-REP-OBS_OCEANSAT2_OSCAT_50_ASC"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/dodsC/KNMI-GLO-WIND_L3-REP-OBS_OCEANSAT2_OSCAT_50_ASC"/>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/WIND_GLO_WIND_L3_REP_OBSERVATIONS_012_005/KNMI-GLO-WIND_L3-REP-OBS_OCEANSAT2_OSCAT_50_ASC"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/wms/KNMI-GLO-WIND_L3-REP-OBS_OCEANSAT2_OSCAT_50_ASC"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=WIND_GLO_WIND_L3_REP_OBSERVATIONS_012_005-TDS&amp;product=KNMI-GLO-WIND_L3-REP-OBS_OCEANSAT2_OSCAT_50_DES"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/dodsC/KNMI-GLO-WIND_L3-REP-OBS_OCEANSAT2_OSCAT_50_DES"/>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/WIND_GLO_WIND_L3_REP_OBSERVATIONS_012_005/KNMI-GLO-WIND_L3-REP-OBS_OCEANSAT2_OSCAT_50_DES"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/wms/KNMI-GLO-WIND_L3-REP-OBS_OCEANSAT2_OSCAT_50_DES"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=WIND_GLO_WIND_L3_REP_OBSERVATIONS_012_005-TDS&amp;product=KNMI-GLO-WIND_L3-REP-OBS_QUIKSCAT_SEAWINDS_25_ASC"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/dodsC/KNMI-GLO-WIND_L3-REP-OBS_QUIKSCAT_SEAWINDS_25_ASC"/>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/WIND_GLO_WIND_L3_REP_OBSERVATIONS_012_005/KNMI-GLO-WIND_L3-REP-OBS_QUIKSCAT_SEAWINDS_25_ASC"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/wms/KNMI-GLO-WIND_L3-REP-OBS_QUIKSCAT_SEAWINDS_25_ASC"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=WIND_GLO_WIND_L3_REP_OBSERVATIONS_012_005-TDS&amp;product=KNMI-GLO-WIND_L3-REP-OBS_QUIKSCAT_SEAWINDS_25_DES"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/dodsC/KNMI-GLO-WIND_L3-REP-OBS_QUIKSCAT_SEAWINDS_25_DES"/>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/WIND_GLO_WIND_L3_REP_OBSERVATIONS_012_005/KNMI-GLO-WIND_L3-REP-OBS_QUIKSCAT_SEAWINDS_25_DES"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/wms/KNMI-GLO-WIND_L3-REP-OBS_QUIKSCAT_SEAWINDS_25_DES"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=WIND_GLO_WIND_L3_REP_OBSERVATIONS_012_005-TDS&amp;product=KNMI-GLO-WIND_L3-REP-OBS_QUIKSCAT_SEAWINDS_50_ASC"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/dodsC/KNMI-GLO-WIND_L3-REP-OBS_QUIKSCAT_SEAWINDS_50_ASC"/>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/WIND_GLO_WIND_L3_REP_OBSERVATIONS_012_005/KNMI-GLO-WIND_L3-REP-OBS_QUIKSCAT_SEAWINDS_50_ASC"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/wms/KNMI-GLO-WIND_L3-REP-OBS_QUIKSCAT_SEAWINDS_50_ASC"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=WIND_GLO_WIND_L3_REP_OBSERVATIONS_012_005-TDS&amp;product=KNMI-GLO-WIND_L3-REP-OBS_QUIKSCAT_SEAWINDS_50_DES"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/dodsC/KNMI-GLO-WIND_L3-REP-OBS_QUIKSCAT_SEAWINDS_50_DES"/>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/WIND_GLO_WIND_L3_REP_OBSERVATIONS_012_005/KNMI-GLO-WIND_L3-REP-OBS_QUIKSCAT_SEAWINDS_50_DES"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/wms/KNMI-GLO-WIND_L3-REP-OBS_QUIKSCAT_SEAWINDS_50_DES"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/38d533cf-9afe-4111-99a5-e6689254c2a1"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/3ac4235a-6df3-4746-b5d9-da31e4514898"/>
+        <dcat:dataQuality>The myOcean products depends on other products for production or validation. The detailed list of dependencies is given in ISO19115's aggregationInfo (ISO19139 Xpath = "gmd:MD_Metadata/gmd:identificationInfo/gmd:aggregationInfo[./gmd:MD_AggregateInformation/gmd:initiativeType/gmd:DS_InitiativeTypeCode/@codeListValue='upstream-validation' or 'upstream-production']")</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+    

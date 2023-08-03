@@ -1,0 +1,154 @@
+{
+    "description": "Topographic diversity (D) is a surrogate variable that represents the\nvariety of temperature and moisture conditions available to species as local\nhabitats. It expresses the logic that a higher variety of topo-climate\nniches should support higher diversity (especially plant) and support\nspecies persistence given climatic change.\n\nTo calculate D, the multi-scale Topographic Position Index (mTPI), being a\ndominant control of soil moisture (T), was used for measuring hillslope\nposition. The mTPI was combined with the square-root transform for\nmTPI>0 (T') and with the standard deviation of the Continuous\nHeat-Insolation Load Index (CHILI), calculated at multiple scales (C') as:\nD = 1 - ((1-T') * (1-C'). It is based on the 30m \\\"AVE\\\" band of JAXA's ALOS\nDEM (available in EE as JAXA/ALOS/AW3D30_V1_1).\n\nThe Conservation Science Partners (CSP) Ecologically Relevant Geomorphology\n(ERGo) Datasets, Landforms and Physiography contain detailed, multi-scale\ndata on landforms and physiographic (aka land facet) patterns. Although\nthere are many potential uses of these data, the original purpose for these\ndata was to develop an ecologically relevant classification and map of\nlandforms and physiographic classes that are suitable for climate adaptation\nplanning. Because there is large uncertainty associated with future climate\nconditions and even more uncertainty around ecological responses, providing\ninformation about what is unlikely to change offers a strong foundation for\nmanagers to build robust climate adaptation plans. The quantification of\nthese features of the landscape is sensitive to the resolution, so we\nprovide the highest resolution possible given the extent and characteristics\nof a given index.\n",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2006-01-24T00:00:00Z",
+                    "2011-05-13T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "gee:terms_of_use": "[CC-BY-NC-SA-4.0](https://spdx.org/licenses/CC-BY-NC-SA-4.0.html)",
+    "gee:type": "image",
+    "gee:unusual_terms_of_use": true,
+    "gee:user_uploaded": true,
+    "id": "CSP/ERGo/1_0/Global/ALOS_topoDiversity",
+    "keywords": [
+        "aspect",
+        "csp",
+        "elevation",
+        "ergo",
+        "geophysical",
+        "global",
+        "landforms",
+        "slope",
+        "topography"
+    ],
+    "license": "CC-BY-NC-SA-4.0",
+    "links": [
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections/CSP/ERGo/1_0/Global/ALOS_topoDiversity",
+            "rel": "self",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections",
+            "rel": "parent",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/",
+            "rel": "root",
+            "type": "application/json"
+        },
+        {
+            "code": "JavaScript",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/CSP/CSP_ERGo_1_0_Global_ALOS_topoDiversity",
+            "rel": "related",
+            "title": "Run the example for CSP/ERGo/1_0/Global/ALOS_topoDiversity in the Earth Engine Code Editor",
+            "type": "text/html"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/images/CSP/CSP_ERGo_1_0_Global_ALOS_topoDiversity_sample.png",
+            "rel": "preview",
+            "type": "image/png"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/CSP_ERGo_1_0_Global_ALOS_topoDiversity#terms-of-use",
+            "rel": "license",
+            "type": "text/html"
+        }
+    ],
+    "providers": [
+        {
+            "name": "Conservation Science Partners",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.csp-inc.org/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/CSP_ERGo_1_0_Global_ALOS_topoDiversity"
+        }
+    ],
+    "sci:citation": "Theobald, D. M., Harrison-Atlas, D., Monahan, W. B., & Albano, C. M.\n(2015). Ecologically-relevant maps of landforms and physiographic diversity\nfor climate adaptation planning. PloS one, 10(12),\n[e0143619](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0143619)\n",
+    "stac_extensions": [
+        "collection-assets"
+    ],
+    "stac_version": "1.0.0",
+    "summaries": {
+        "constant": {
+            "gee:estimated_range": true,
+            "maximum": 1
+        },
+        "eo:bands": [
+            {
+                "description": "ALOS-derived topographic diversity",
+                "name": "constant"
+            }
+        ],
+        "gsd": [
+            270
+        ]
+    },
+    "title": "Global ALOS Topographic Diversity",
+    "type": "Collection",
+    "version": "1.0",
+    "cube:dimensions": {
+        "x": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                -180,
+                180
+            ]
+        },
+        "y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                -90,
+                90
+            ]
+        },
+        "t": {
+            "type": "temporal",
+            "extent": [
+                "2006-01-24T00:00:00Z",
+                "2011-05-13T00:00:00Z"
+            ]
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "constant"
+            ]
+        }
+    },
+    "assets": {
+        "preview_4": {
+            "href": "https://developers.google.com/earth-engine/datasets/images/CSP/CSP_ERGo_1_0_Global_ALOS_topoDiversity_sample.png",
+            "type": "image/png",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    }
+}

@@ -1,0 +1,64 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dct="http://purl.org/dc/terms/" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/metadata/eu.copernicus.climate.sis-tourism-climate-suitability-indicators">
+        <foaf:primaryTopic rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/resource/10.24381/cds.126d9ce7"/>
+        <dct:issued>2018-03-28</dct:issued>
+        <dct:modified>2018-03-28</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/srv/eng/xml.metadata.get?uuid=eu.copernicus.climate.sis-tourism-climate-suitability-indicators">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://cds.climate.copernicus.eu:443//geonetwork?uuid=eu.copernicus.climate.sis-tourism-climate-suitability-indicators">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/resource/10.24381/cds.126d9ce7">
+        <dct:identifier>10.24381/cds.126d9ce7</dct:identifier>
+        <dct:title>Climate suitability indicators for tourism from 1970 to 2100 over Europe derived from climate projections</dct:title>
+        <dct:abstract>This dataset provides a set of climate suitability indicators for tourism in Europe under future climate scenarios. These indicators have been tailored for two different kinds of tourism activities; urban and beach tourism. The climatic suitability indicators consist of two indices; the Holiday Climate Index (HCI) rates the climate resources based on activities associated with urban tourism, while the Climate Index for Tourism (CIT) rates the climate resources based on activities associated with beach tourism. Tailored indicators, such as these, allow a range of climatic variables to be quantified and ranked for particular tourist destinations and activities, serving as an important decision-making tool for both tourists and the tourism industry. The use of indicators is particularly valuable given the multifaceted nature of meteorological conditions and the complex manner in which they determine tourism activities. By integrating these indicators with climate projections, this dataset aims to provide an understanding of how the influence of a changing climate will impact on tourism activities in Europe under a range of future scenarios of greenhouse gas concentrations, referred to as Representative Concentration Pathway (RCP) climate scenarios. This dataset was produced using four different climate scenarios: the present climate (labelled 'historical'), and three Representative Concentration Pathway (RCP) scenarios consistent with an optimistic emission scenario where emissions start declining beyond 2020 (RCP2.6), a scenario where emissions start declining beyond 2040 (RCP4.5) and a pessimistic scenario where emissions continue to rise throughout the century (RCP8.5).
+The climate projections are derived from EURO-CORDEX ensemble model output. Also included in this dataset are historical simulations for the period 1970-2005 in order to provide a reference period for the future projections. Both these indices take into account different climate variables (daily precipitation, wind speed, total cloud cover, and effective temperature) to evaluate the climate in relation to tourism. To each of these climate variables, a score is assigned according to their weighting criteria. The scores are then aggregated, resulting in a total rating scale ranging from 0 to 100 for HCI, and from 0 to 7 for CIT (please refer to the documentation for further details). In general, the higher the value of the indicators, the more suitable for tourism activities the seasonal conditions are.
+This dataset was produced on behalf of the Copernicus Climate Change Service.
+
+Variables in the dataset/application are:
+Daily index, Number of fair days, Number of good days, Number of unfavourable days</dct:abstract>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/GEMET%20-%20INSPIRE%20themes%2C%20version%201.0/Atmospheric conditions"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Sector: Tourism"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Spatial coverage: Europe"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Variable domain: Land (biosphere)"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Temporal coverage: Past"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Temporal coverage: Present"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Product type: Climate projections"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/iso/topicCategory/climatologyMeteorologyAtmosphere"/>
+        <foaf:thumbnail rdf:resource="https://datastore.copernicus-climate.eu/c3s/published-forms-v2/c3sprod/sis-tourism-climate-suitability-indicators/overview.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((-44.6 22.0, -44.6 72.6, 65.0 72.6, 65.0 22.0, -44.6 22.0))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:temporal>1970-01-01
+          /
+          2100-01-01</dct:temporal>
+        <dct:publisher rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/organization/ECMWF"/>
+        <dct:accrualPeriodicity>asNeeded</dct:accrualPeriodicity>
+        <dct:language>eng</dct:language>
+        <dct:license>licence</dct:license>
+        <dct:license>https://cds.climate.copernicus.eu/api/v2/terms/static/licence-to-use-copernicus-products.pdf</dct:license>
+        <dcat:distribution rdf:resource="https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.126d9ce7"/>
+        <dcat:distribution rdf:resource="https://confluence.ecmwf.int/x/SO7mE"/>
+        <dcat:dataQuality>C3S - Sectoral services for tourism</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+  

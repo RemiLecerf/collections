@@ -1,0 +1,149 @@
+{
+    "description": "The Shuttle Radar Topography Mission (SRTM) digital\nelevation dataset was originally produced to provide consistent,\nhigh-quality elevation data at near global scope. This version\nof the SRTM digital elevation data has been processed to fill data\nvoids, and to facilitate its ease of use.\n",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -56,
+                    180,
+                    60
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-02-11T00:00:00Z",
+                    "2000-02-22T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "gee:terms_of_use": "DISTRIBUTION. Users are prohibited from any commercial, non-free resale, or\nredistribution without explicit written permission from CIAT. Users should\nacknowledge CIAT as the source used in the creation of any reports,\npublications, new datasets, derived products, or services resulting from the\nuse of this dataset. CIAT also request reprints of any publications and\nnotification of any redistributing efforts. For commercial access to\nthe data, send requests to [Andy Jarvis](mailto:a.jarvis@cgiar.org).\n\nNO WARRANTY OR LIABILITY. CIAT provides these data without any warranty of\nany kind whatsoever, either express or implied, including warranties of\nmerchantability and fitness for a particular purpose. CIAT shall not be\nliable for incidental, consequential, or special damages arising out of\nthe use of any data.\n\nACKNOWLEDGMENT AND CITATION. Any users are kindly asked to cite this data\nin any published material produced using this data, and if possible link\nweb pages to the [CIAT-CSI SRTM website](https://srtm.csi.cgiar.org).\n",
+    "gee:type": "image",
+    "id": "CGIAR/SRTM90_V4",
+    "keywords": [
+        "cgiar",
+        "dem",
+        "elevation",
+        "geophysical",
+        "srtm",
+        "topography"
+    ],
+    "license": "proprietary",
+    "links": [
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections/CGIAR/SRTM90_V4",
+            "rel": "self",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections",
+            "rel": "parent",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/",
+            "rel": "root",
+            "type": "application/json"
+        },
+        {
+            "code": "JavaScript",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/CGIAR/CGIAR_SRTM90_V4",
+            "rel": "related",
+            "title": "Run the example for CGIAR/SRTM90_V4 in the Earth Engine Code Editor",
+            "type": "text/html"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/images/CGIAR/CGIAR_SRTM90_V4_sample.png",
+            "rel": "preview",
+            "type": "image/png"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/CGIAR_SRTM90_V4#terms-of-use",
+            "rel": "license",
+            "type": "text/html"
+        }
+    ],
+    "providers": [
+        {
+            "name": "NASA/CGIAR",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://srtm.csi.cgiar.org/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/CGIAR_SRTM90_V4"
+        }
+    ],
+    "sci:citation": "Jarvis, A., H.I. Reuter, A. Nelson, E. Guevara. 2008. Hole-filled\nSRTM for the globe Version 4, available from the CGIAR-CSI SRTM\n90m Database: [https://srtm.csi.cgiar.org](https://srtm.csi.cgiar.org).\n",
+    "stac_extensions": [
+        "collection-assets"
+    ],
+    "stac_version": "1.0.0",
+    "summaries": {
+        "elevation": {
+            "gee:estimated_range": true,
+            "maximum": 8806,
+            "minimum": -444
+        },
+        "eo:bands": [
+            {
+                "description": "Elevation",
+                "gee:units": "m",
+                "gsd": 90,
+                "name": "elevation"
+            }
+        ]
+    },
+    "title": "SRTM Digital Elevation Data Version 4",
+    "type": "Collection",
+    "version": "v4",
+    "cube:dimensions": {
+        "x": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                -180,
+                180
+            ]
+        },
+        "y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                -56,
+                60
+            ]
+        },
+        "t": {
+            "type": "temporal",
+            "extent": [
+                "2000-02-11T00:00:00Z",
+                "2000-02-22T00:00:00Z"
+            ]
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "elevation"
+            ]
+        }
+    },
+    "assets": {
+        "preview_4": {
+            "href": "https://developers.google.com/earth-engine/datasets/images/CGIAR/CGIAR_SRTM90_V4_sample.png",
+            "type": "image/png",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    }
+}

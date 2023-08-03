@@ -1,0 +1,62 @@
+{
+  "type": "Collection",
+  "id": "EO:ECMWF:DAT:SATELLITE_UPPER_TROPOSPHERE_HUMIDITY",
+  "stac_version": "1.0.0",
+  "description": "Upper Tropospheric Humidity (UTH) is of key importance to the Earth’s greenhouse effect and understanding of climate change. It is considered an essential climate variable because it controls key atmospheric processes, including water vapour and cloud feedbacks that can amplify the climate system’s response to increases in other greenhouse gases.\nThe UTH Thematic Climate Data Record (TCDR) and Interim Climate Data Record (ICDR) are derived from observations from the AMSU-B and MHS microwave humidity sounder instruments on board the NOAA- and MetOp- satellite series. Instantaneous satellite observations are used to derive a spatio-temporal averaged data record. The data are available as twice daily (one for the ascending and the other for the descending passes) averages on a regular latitude/longitude grid. Additionally, the daily mean UTH is provided as a weighted average of ascending and descending orbits for all the grid points with valid ascending and descending observations.\nUTH is the Jacobian weighted relative humidity in the upper troposphere. Its natural logarithm can be expressed as a linear function of the radiance emanated from water vapour emissions in the upper troposphere, expressed as brightness temperature. Various threshold masks are applied in order to identify and remove measurements contaminated by clouds, for example due to scattering by large ice particles in the presence of deep convection, and measurements contaminated by the surface. A viewing angle dependent analytical equation is used to convert off-nadir brightness temperatures into nadir equivalents, thereby providing a correction for limb darkening effects.\nUTH is part of the Water Vapour ECV inventory in the CDS together with Total Column Water Vapour and Tropospheric Humidity Profiles.\nThe TCDR component of this dataset is brokered to the CDS and was originally produced on behalf of EUMETSAT Satellite Application Facility on Climate Monitoring (CMSAF) by the Met Office. The ICDR component has been delivered directly to the CDS and was originally produced on behalf of the C3S by the Met Office.\n\nVariables in the dataset/application are:\nUpper tropospheric humidty",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.42b801d3",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Climate Data Store catalogue"
+    },
+    {
+      "rel": "describedby",
+      "href": "#",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "#"
+    }
+  ],
+  "title": "Upper tropospheric humidity gridded data from 1999 to present derived from satellite observations",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1999-01-01T00:00:00Z",
+          "2021-02-28T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Meteorological geographical features",
+    "Product type: Satellite observations",
+    "Provider: Copernicus C3S",
+    "Provider: EUMETSAT SAF",
+    "Spatial coverage: Global",
+    "Temporal coverage: Past",
+    "Temporal coverage: Present",
+    "Variable domain: Atmosphere (upper air)"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

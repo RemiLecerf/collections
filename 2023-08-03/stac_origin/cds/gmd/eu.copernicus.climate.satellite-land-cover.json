@@ -1,0 +1,74 @@
+{
+  "type": "Collection",
+  "id": "eu.copernicus.climate.satellite-land-cover",
+  "stac_version": "1.0.0",
+  "description": "This dataset provides global maps describing the land surface into 22 classes, which have been defined using the United Nations Food and Agriculture Organization’s (UN FAO) Land Cover Classification System (LCCS). In addition to the land cover  (LC) maps, four quality flags are produced to document the reliability of the classification and change detection. \nIn order to ensure continuity, these land cover maps are consistent with the series of global annual LC maps from the 1990s to 2015 produced by the European Space Agency (ESA) Climate Change Initiative (CCI), which are also available on the ESA CCI LC viewer.\nTo produce this dataset, the entire  Medium Resolution Imaging Spectrometer (MERIS) Full and Reduced Resolution  archive from 2003 to 2012 was first classified into a unique 10-year baseline LC map. This is then back- and up-dated using change detected from (i) Advanced Very-High-Resolution Radiometer (AVHRR) time series from 1992 to 1999, (ii) SPOT-Vegetation (SPOT-VGT) time series from 1998 to 2012 and (iii) PROBA-Vegetation (PROBA-V) and Sentinel-3 OLCI (S3 OLCI) time series from 2013.\nBeyond the climate-modelling communities, this dataset’s long-term consistency, yearly updates, and high thematic detail on a global scale have made it attractive for a multitude of applications such as land accounting, forest monitoring and desertification, in addition to scientific research.\n\nVariables in the dataset/application are:\nChange count, Current pixel state, Land cover class, Observation count, Processed flag",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.006f2c9a",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Climate Data Store catalogue"
+    },
+    {
+      "rel": "describedby",
+      "href": "#",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "#"
+    },
+    {
+      "rel": "describedby",
+      "href": "#",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "#"
+    },
+    {
+      "rel": "describedby",
+      "href": "#",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "#"
+    }
+  ],
+  "title": "Land cover classification gridded maps from 1992 to present derived from satellite observations",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          0.0,
+          -90.0,
+          360.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1992-01-01T00:00:00Z",
+          "2020-07-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Land cover",
+    "Product type: Satellite observations",
+    "Spatial coverage: Global",
+    "Temporal coverage: Past",
+    "Variable domain: Land (biosphere)"
+  ],
+  "providers": [
+    {
+      "name": "Climate Data Store - European Centre for Medium-Range Weather Forecasts (ECMWF)",
+      "description": "Climate Data Store - ECMWF",
+      "roles": [
+        "licensor",
+        "producer",
+        "processor",
+        "host"
+      ],
+      "url": "https://cds.climate.copernicus.eu/"
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+<csw:Record xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/" xmlns:ows="http://www.opengis.net/ows" xmlns:geonet="http://www.fao.org/geonetwork" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dc:identifier>3ff905f0-3f2f-400c-ab18-a768c88fd7a6</dc:identifier>
+      <dc:date>2022-11-22T15:47:28.08Z</dc:date>
+      <dc:title>Arctic Ocean Physics Analysis and Forecast</dc:title>
+      <dc:type>series</dc:type>
+      <dc:subject>target-application#seaiceforecastingapplication</dc:subject>
+      <dc:subject>Oceanographic geographical features</dc:subject>
+      <dc:subject>numerical-model</dc:subject>
+      <dc:subject>sea_ice_x_velocity</dc:subject>
+      <dc:subject>ocean_barotropic_streamfunction</dc:subject>
+      <dc:subject>age_of_sea_ice</dc:subject>
+      <dc:subject>sea_water_x_velocity</dc:subject>
+      <dc:subject>ocean_mixed_layer_thickness</dc:subject>
+      <dc:subject>sea_water_y_velocity</dc:subject>
+      <dc:subject>sea_ice_albedo</dc:subject>
+      <dc:subject>sea_ice_area_fraction</dc:subject>
+      <dc:subject>sea_water_potential_temperature_at_sea_floor</dc:subject>
+      <dc:subject>sea_floor_depth_below_sea_level</dc:subject>
+      <dc:subject>surface_snow_thickness</dc:subject>
+      <dc:subject>sea_ice_thickness</dc:subject>
+      <dc:subject>sea_water_salinity</dc:subject>
+      <dc:subject>sea_water_potential_temperature</dc:subject>
+      <dc:subject>sea_ice_y_velocity</dc:subject>
+      <dc:subject>sea_surface_elevation</dc:subject>
+      <dc:subject>forecast</dc:subject>
+      <dc:subject>near-real-time</dc:subject>
+      <dc:subject>coastal-marine-environment</dc:subject>
+      <dc:subject>marine-safety</dc:subject>
+      <dc:subject>marine-resources</dc:subject>
+      <dc:subject>weather-climate-and-seasonal-forecasting</dc:subject>
+      <dc:subject>arctic-ocean</dc:subject>
+      <dc:subject>Level 4</dc:subject>
+      <dc:subject>In-Situ TS Profiles</dc:subject>
+      <dc:subject>SST</dc:subject>
+      <dc:subject>Sea Ice Concentration and/or Thickness</dc:subject>
+      <dc:subject>Sea Level</dc:subject>
+      <dc:subject>oceans</dc:subject>
+      <dc:format>NetCDF-3</dc:format>
+      <dct:abstract>'''Short description:'''
+
+The operational TOPAZ4 Arctic Ocean system uses the HYCOM model and a 100-member EnKF assimilation scheme. It is run daily to provide 10 days of forecast (average of 10 members) of the 3D physical ocean, including sea ice; data assimilation is performed weekly to provide 7 days of analysis (ensemble average).
+
+Output products are interpolated on a grid of 12.5 km resolution at the North Pole (equivalent to 1/8 deg in mid-latitudes) on a polar stereographic projection. The geographical projection follows these proj4 library parameters: 
+
+proj4 = "+units=m +proj=stere +a=6378273.0 +b=6378273.0 +lon_0=-45.0 +lat_0=90.0 +lat_ts=90.0 "
+
+'''DOI (product) :'''
+https://doi.org/10.48670/moi-00001</dct:abstract>
+      <dc:description>'''Short description:'''
+
+The operational TOPAZ4 Arctic Ocean system uses the HYCOM model and a 100-member EnKF assimilation scheme. It is run daily to provide 10 days of forecast (average of 10 members) of the 3D physical ocean, including sea ice; data assimilation is performed weekly to provide 7 days of analysis (ensemble average).
+
+Output products are interpolated on a grid of 12.5 km resolution at the North Pole (equivalent to 1/8 deg in mid-latitudes) on a polar stereographic projection. The geographical projection follows these proj4 library parameters: 
+
+proj4 = "+units=m +proj=stere +a=6378273.0 +b=6378273.0 +lon_0=-45.0 +lat_0=90.0 +lat_ts=90.0 "
+
+'''DOI (product) :'''
+https://doi.org/10.48670/moi-00001</dc:description>
+      <dc:rights>otherRestrictions</dc:rights>
+      <dc:rights>license</dc:rights>
+      <dc:language>eng</dc:language>
+      <dc:source>The myOcean products depends on other products for production or validation. The detailed list of dependencies is given in ISO19115's aggregationInfo (ISO19139 Xpath = "gmd:MD_Metadata/gmd:identificationInfo/gmd:aggregationInfo[./gmd:MD_AggregateInformation/gmd:initiativeType/gmd:DS_InitiativeTypeCode/@codeListValue='upstream-validation' or 'upstream-production']")</dc:source>
+      <dc:format>NetCDF-3</dc:format>
+      <ows:BoundingBox crs="urn:ogc:def:crs:EPSG:6.6:4326">
+        <ows:LowerCorner>62.00 -180.00</ows:LowerCorner>
+        <ows:UpperCorner>90.00 180.00</ows:UpperCorner>
+      </ows:BoundingBox>
+      <dc:URI protocol="MYO:MOTU-SUB" name="cmems_mod_arc_phy_anfc_topaz4_P1M-m">https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=ARCTIC_ANALYSIS_FORECAST_PHYS_002_001_a-TDS&amp;product=cmems_mod_arc_phy_anfc_topaz4_P1M-m</dc:URI>
+      <dc:URI protocol="WWW:OPENDAP" name="cmems_mod_arc_phy_anfc_topaz4_P1M-m">https://nrt.cmems-du.eu/thredds/dodsC/cmems_mod_arc_phy_anfc_topaz4_P1M-m</dc:URI>
+      <dc:URI protocol="WWW:FTP" name="cmems_mod_arc_phy_anfc_topaz4_P1M-m">ftp://nrt.cmems-du.eu/Core/ARCTIC_ANALYSIS_FORECAST_PHYS_002_001_a/cmems_mod_arc_phy_anfc_topaz4_P1M-m</dc:URI>
+      <dc:URI protocol="OGC:WMS:getCapabilities" name="cmems_mod_arc_phy_anfc_topaz4_P1M-m">https://nrt.cmems-du.eu/thredds/wms/cmems_mod_arc_phy_anfc_topaz4_P1M-m</dc:URI>
+      <dc:URI protocol="MYO:MOTU-SUB" name="dataset-topaz4-arc-1hr-myoceanv2-be">https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=ARCTIC_ANALYSIS_FORECAST_PHYS_002_001_a-TDS&amp;product=dataset-topaz4-arc-1hr-myoceanv2-be</dc:URI>
+      <dc:URI protocol="WWW:OPENDAP" name="dataset-topaz4-arc-1hr-myoceanv2-be">https://nrt.cmems-du.eu/thredds/dodsC/dataset-topaz4-arc-1hr-myoceanv2-be</dc:URI>
+      <dc:URI protocol="WWW:FTP" name="dataset-topaz4-arc-1hr-myoceanv2-be">ftp://nrt.cmems-du.eu/Core/ARCTIC_ANALYSIS_FORECAST_PHYS_002_001_a/dataset-topaz4-arc-1hr-myoceanv2-be</dc:URI>
+      <dc:URI protocol="OGC:WMS:getCapabilities" name="dataset-topaz4-arc-1hr-myoceanv2-be">https://nrt.cmems-du.eu/thredds/wms/dataset-topaz4-arc-1hr-myoceanv2-be</dc:URI>
+      <dc:URI protocol="MYO:MOTU-SUB" name="dataset-topaz4-arc-myoceanv2-be">https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=ARCTIC_ANALYSIS_FORECAST_PHYS_002_001_a-TDS&amp;product=dataset-topaz4-arc-myoceanv2-be</dc:URI>
+      <dc:URI protocol="WWW:OPENDAP" name="dataset-topaz4-arc-myoceanv2-be">https://nrt.cmems-du.eu/thredds/dodsC/dataset-topaz4-arc-myoceanv2-be</dc:URI>
+      <dc:URI protocol="WWW:FTP" name="dataset-topaz4-arc-myoceanv2-be">ftp://nrt.cmems-du.eu/Core/ARCTIC_ANALYSIS_FORECAST_PHYS_002_001_a/dataset-topaz4-arc-myoceanv2-be</dc:URI>
+      <dc:URI protocol="OGC:WMS:getCapabilities" name="dataset-topaz4-arc-myoceanv2-be">https://nrt.cmems-du.eu/thredds/wms/dataset-topaz4-arc-myoceanv2-be</dc:URI>
+      <dc:URI protocol="image/png" name="ARCTIC_ANALYSIS_FORECAST_PHYS_002_001_a">https://catalogue.marine.copernicus.eu/documents/IMG/ARCTIC_ANALYSIS_FORECAST_PHYS_002_001_a.png</dc:URI>
+    </csw:Record>
+    

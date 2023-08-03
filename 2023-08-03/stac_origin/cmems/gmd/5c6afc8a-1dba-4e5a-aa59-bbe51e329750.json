@@ -1,0 +1,72 @@
+{
+  "type": "Collection",
+  "id": "5c6afc8a-1dba-4e5a-aa59-bbe51e329750",
+  "stac_version": "1.0.0",
+  "description": "'''Short description'''\nThis product is entirely dedicated to ocean current data observed in near-real time. Current data from 3 different types of instruments are distributed:\n* The near-surface zonal and meridional velocities calculated along the trajectories of the drifting buoys which are part of the DBCP’s Global Drifter Program. These data are delivered together with wind stress components and surface temperature. \n* The near-surface zonal and meridional total velocities, and near-surface radial velocities, measured by High Frequency radars that are part of the European High Frequency radar Network. These data are delivered together with standard deviation of near-surface zonal and meridional raw velocities, Geometrical Dilution of Precision (GDOP), quality flags and metadata.\n* The zonal and meridional velocities, at parking depth and in surface, calculated along the trajectories of the floats which are part of the Argo Program.\n\n'''DOI (product) :'''\nhttps://doi.org/10.48670/moi-00041",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/INSITU_GLO_PHY_UV_DISCRETE_NRT_013_048/cmems_obs-ins_glo_phy-cur_nrt_argo_irr",
+      "type": "WWW:FTP",
+      "title": "cmems_obs-ins_glo_phy-cur_nrt_argo_irr"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/INSITU_GLO_PHY_UV_DISCRETE_NRT_013_048/cmems_obs-ins_glo_phy-cur_nrt_drifter_irr",
+      "type": "WWW:FTP",
+      "title": "cmems_obs-ins_glo_phy-cur_nrt_drifter_irr"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/INSITU_GLO_PHY_UV_DISCRETE_NRT_013_048/cmems_obs-ins_glo_phy-cur_nrt_radar-radial_irr",
+      "type": "WWW:FTP",
+      "title": "cmems_obs-ins_glo_phy-cur_nrt_radar-radial_irr"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/INSITU_GLO_PHY_UV_DISCRETE_NRT_013_048/cmems_obs-ins_glo_phy-cur_nrt_radar-total_irr",
+      "type": "WWW:FTP",
+      "title": "cmems_obs-ins_glo_phy-cur_nrt_radar-total_irr"
+    },
+    {
+      "rel": "describedby",
+      "href": "/home/ref-copernicus-insitu/INSITU_GLO_PHY_UV_DISCRETE_NRT_013_048",
+      "type": "NETWORK:LINK"
+    }
+  ],
+  "title": "Global Ocean- in-situ Near real time observations of ocean currents",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1997-01-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "providers": [
+    {
+      "name": "Copernicus Marine Service",
+      "description": "Copernicus Marine Service - Mercator Ocean Internations",
+      "roles": [
+        "licensor",
+        "producer",
+        "processor",
+        "host"
+      ],
+      "url": "https://marine.copernicus.eu/"
+    }
+  ]
+}

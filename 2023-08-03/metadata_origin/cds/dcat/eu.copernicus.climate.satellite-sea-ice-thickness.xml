@@ -1,0 +1,70 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dct="http://purl.org/dc/terms/" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/metadata/eu.copernicus.climate.satellite-sea-ice-thickness">
+        <foaf:primaryTopic rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/resource/10.24381/cds.6679a99a"/>
+        <dct:issued>2018-03-28</dct:issued>
+        <dct:modified>2018-03-28</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/srv/eng/xml.metadata.get?uuid=eu.copernicus.climate.satellite-sea-ice-thickness">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://cds.climate.copernicus.eu:443//geonetwork?uuid=eu.copernicus.climate.satellite-sea-ice-thickness">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/resource/10.24381/cds.6679a99a">
+        <dct:identifier>10.24381/cds.6679a99a</dct:identifier>
+        <dct:title>Sea ice thickness monthly gridded data for the Arctic from 2002 to present derived from satellite observations</dct:title>
+        <dct:abstract>This dataset provides monthly gridded data of sea ice thickness for the Arctic region based on satellite radar altimetry observations. Sea ice is an important component of our climate system and a sensitive indicator of climate change. Its presence or its retreat has a strong impact on air-sea interactions, the Earth’s energy budget as well as marine ecosystems. It is recognized by the Global Climate Observing System as an Essential Climate Variable. Sea ice thickness is one of the parameters commonly used to characterise sea ice, alongside sea ice concentration, sea ice edge, and sea ice type, also available in the Climate Data Store.
+Satellite radar altimeters provide measurements of the sea ice freeboard, which is the difference between the height of the surface of sea ice and the surface of water in open leads (areas of open water within the sea ice). Because of the buoyancy of ice in water, typically about 90% of the ice thickness remains under water and thus the total ice thickness is about 10 times the freeboard. However, snow on top of sea ice changes this ratio and complicates the estimation of the ice thickness, requiring the use of auxiliary information about snow depth and density. The retrieval of ice thickness uses the narrow radar swath at the nadir of the satellite at full resolution of approximately 1-10 km and a point spacing of 300 meters. This Level-2 sea-ice thickness products (not provided here) is then gridded for a period of a month to obtain full coverage of a north polar grid at a resolution of 25 km. The algorithm used was developed as part of the European Space Agency Climate Change Initiative (ESA CCI) on Sea Ice.
+The data provided here are Level-3 Collated (L3C) products: they contain monthly gridded values from orbit data from a single platform (Envisat or CryoSat-2) without interpolation or any other form of gap filling. The files also contain estimates of the algorithm uncertainty as well as a quality status flag indicating potential issues with the retrieval not captured in the algorithm uncertainty. Sources of uncertainty in the algorithm are related to the auxiliary data and to the use of different radar altimeter concepts in Envisat (pulse-limited) and CryoSat-2 (synthetic aperture radar).
+This dataset combines a Climate Data Record (CDR), which has sufficient length, consistency, and continuity to be used to assess climate variability and change, and an Interim Climate Data Record (ICDR), which provides regular temporal extensions to the CDR and where consistency with the CDR is expected but not extensively checked. Here, the CDR is based on measurements from the RA-2 altimeter on Envisat (October 2002  to October 2010) and the SIRAL altimeter on CryoSat-2 (November 2010 to April 2020). The ICDR is based on observations from CryoSat-2 only (from April 2015 onward) and is updated monthly with a one-month delay behind real time. Users should note that the quality and accuracy of the data record are higher during the CryoSat-2 period than during the Envisat period. As a result, care should be taken when combining the two missions to assess long-term changes and trends. More information can be found in the Product User Guide and Product Quality Assessment Report.
+This dataset is currently limited spatially to the Arctic region and temporally to the winter months of October through April due to unresolved bias originating from melting snow or open melt ponds in the remaining five months. For a similar reason, no sea-ice thickness data with sufficient quality exist for the Southern Hemisphere. The extension of the CDR/ICDR to other periods, regions, and radar altimeter missions is under development in the extension of the ESA CCI Sea Ice project (ESA CCI+).
+This dataset is produced on behalf of the Copernicus Climate Change Service (C3S).
+
+Variables in the dataset/application are:
+Sea ice thickness
+
+Variables in the dataset/application are:
+Quality flag, Status flag, Uncertainty</dct:abstract>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/GEMET%20-%20INSPIRE%20themes%2C%20version%201.0/Oceanographic geographical features"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Product type: Satellite observations"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Variable domain: Ocean (physics)"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Temporal coverage: Past"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Spatial coverage: Global"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/iso/topicCategory/oceans"/>
+        <foaf:thumbnail rdf:resource="https://datastore.copernicus-climate.eu/c3s/published-forms-v2/c3sprod/satellite-sea-ice-thickness/overview.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((0 -89, 0 89, 360 89, 360 -89, 0 -89))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:temporal>1979-01-01
+          /
+          2022-04-01</dct:temporal>
+        <dct:publisher rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/organization/ECMWF"/>
+        <dct:accrualPeriodicity>asNeeded</dct:accrualPeriodicity>
+        <dct:language>eng</dct:language>
+        <dct:license>licence</dct:license>
+        <dct:license>https://cds.climate.copernicus.eu/api/v2/terms/static/licence-to-use-copernicus-products.pdf</dct:license>
+        <dcat:distribution rdf:resource="https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.6679a99a"/>
+        <dcat:distribution rdf:resource="#"/>
+        <dcat:distribution rdf:resource="#"/>
+        <dcat:distribution rdf:resource="#"/>
+        <dcat:dataQuality>EC Copernicus program</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+    

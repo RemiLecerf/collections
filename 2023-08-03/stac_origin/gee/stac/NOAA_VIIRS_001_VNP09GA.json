@@ -1,0 +1,1175 @@
+{
+    "description": "The Visible Infrared Imaging Radiometer Suite (VIIRS) daily surface\nreflectance (VNP09GA) product provides an estimate of land\nsurface reflectance from the Suomi National Polar-Orbiting Partnership\n(S-NPP) VIIRS sensor. Data are provided for three imagery bands\n(I1, I2, I3) at nominal 500 meter resolution (~463 meter) and nine\nmoderate-resolution bands (M1, M2, M3, M4, M5, M7, M8, M10, M11) at nominal\n1 kilometer (~926 meter) resolution. The 500 meter and 1 kilometer datasets\nare derived through resampling the native 375 meter and 750 meter VIIRS\nresolutions, respectively, in the L2 input product. These bands are\ncorrected for atmospheric conditions to provide an estimate\nof the surface spectral reflectance as it would be measured at ground level.\n\nThe data is temporally aggregated over each of the 16 possible passes per\nday. When multiple observations are present for each day, only the first\nof the highest-quality observations is included.\n\nFor additional information, visit the VIIRS [Land Product Quality\nAssessment website](https://landweb.modaps.eosdis.nasa.gov/NPP_QA/) and see\nthe [User Guide](https://lpdaac.usgs.gov/documents/124/VNP09_User_Guide_V1.6.pdf).\n\nDocumentation:\n\n* [User's Guide] (https://lpdaac.usgs.gov/documents/124/VNP09_User_Guide_V1.6.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)] (https://lpdaac.usgs.gov/documents/122/VNP09_ATBD.pdf)\n",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2012-01-19T00:00:00Z",
+                    "2023-03-12T00:00:00"
+                ]
+            ]
+        }
+    },
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "day"
+    },
+    "gee:provider_ids": [
+        "C1373412034-LPDAAC_ECS"
+    ],
+    "gee:terms_of_use": "LP DAAC NASA data are freely accessible; however, when an author\npublishes these data or works based on the data, it is requested that the\nauthor cite the datasets within the text of the publication and include a\nreference to them in the reference list.\n",
+    "gee:type": "image_collection",
+    "id": "NOAA/VIIRS/001/VNP09GA",
+    "keywords": [
+        "daily",
+        "nasa",
+        "noaa",
+        "npp",
+        "reflectance",
+        "sr",
+        "viirs",
+        "vnp09ga"
+    ],
+    "license": "proprietary",
+    "links": [
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections/NOAA/VIIRS/001/VNP09GA",
+            "rel": "self",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections",
+            "rel": "parent",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/",
+            "rel": "root",
+            "type": "application/json"
+        },
+        {
+            "code": "JavaScript",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NOAA_VIIRS_001_VNP09GA",
+            "rel": "related",
+            "title": "Run the example for NOAA/VIIRS/001/VNP09GA in the Earth Engine Code Editor",
+            "type": "text/html"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/images/NOAA/VIIRS/NOAA_VIIRS_001_VNP09GA_sample.png",
+            "rel": "preview",
+            "type": "image/png"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_VIIRS_001_VNP09GA#terms-of-use",
+            "rel": "license",
+            "type": "text/html"
+        },
+        {
+            "href": "https://doi.org/10.5067/VIIRS/VNP09GA.001",
+            "rel": "cite-as"
+        }
+    ],
+    "providers": [
+        {
+            "name": "NASA LP DAAC at the USGS EROS Center",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://doi.org/10.5067/VIIRS/VNP09GA.001"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_VIIRS_001_VNP09GA"
+        }
+    ],
+    "sci:citation": "Please visit [LP DAAC 'Citing Our Data' page](https://lpdaac.usgs.gov/citing_our_data)",
+    "sci:doi": "10.5067/VIIRS/VNP09GA.001",
+    "stac_extensions": [
+        "collection-assets"
+    ],
+    "stac_version": "1.0.0",
+    "summaries": {
+        "I1": {
+            "maximum": 16000,
+            "minimum": -100
+        },
+        "I2": {
+            "maximum": 16000,
+            "minimum": -100
+        },
+        "I3": {
+            "maximum": 16000,
+            "minimum": -100
+        },
+        "M1": {
+            "maximum": 16000,
+            "minimum": -100
+        },
+        "M10": {
+            "maximum": 16000,
+            "minimum": -100
+        },
+        "M11": {
+            "maximum": 16000,
+            "minimum": -100
+        },
+        "M2": {
+            "maximum": 16000,
+            "minimum": -100
+        },
+        "M3": {
+            "maximum": 16000,
+            "minimum": -100
+        },
+        "M4": {
+            "maximum": 16000,
+            "minimum": -100
+        },
+        "M5": {
+            "maximum": 16000,
+            "minimum": -100
+        },
+        "M7": {
+            "maximum": 16000,
+            "minimum": -100
+        },
+        "M8": {
+            "maximum": 16000,
+            "minimum": -100
+        },
+        "SensorAzimuth": {
+            "maximum": 18000,
+            "minimum": -18000
+        },
+        "SensorZenith": {
+            "maximum": 18000
+        },
+        "SolarAzimuth": {
+            "maximum": 18000,
+            "minimum": -18000
+        },
+        "SolarZenith": {
+            "maximum": 18000
+        },
+        "eo:bands": [
+            {
+                "center_wavelength": 0.412,
+                "description": "1km surface reflectance band M1",
+                "gee:scale": 0.0001,
+                "gee:wavelength": "0.402 - 0.422\u03bcm",
+                "gsd": 1000,
+                "name": "M1",
+                "common_name": "coastal"
+            },
+            {
+                "center_wavelength": 0.445,
+                "description": "1km surface reflectance Band M2",
+                "gee:scale": 0.0001,
+                "gee:wavelength": "0.436 - 0.454\u03bcm",
+                "gsd": 1000,
+                "name": "M2",
+                "common_name": "coastal"
+            },
+            {
+                "center_wavelength": 0.483,
+                "description": "1km surface reflectance band M3",
+                "gee:scale": 0.0001,
+                "gee:wavelength": "0.478 - 0.488\u03bcm",
+                "gsd": 1000,
+                "name": "M3",
+                "common_name": "blue"
+            },
+            {
+                "center_wavelength": 0.555,
+                "description": "1km surface reflectance band M4",
+                "gee:scale": 0.0001,
+                "gee:wavelength": "0.545 - 0.565\u03bcm",
+                "gsd": 1000,
+                "name": "M4",
+                "common_name": "green"
+            },
+            {
+                "center_wavelength": 0.672,
+                "description": "1km surface reflectance band M5",
+                "gee:scale": 0.0001,
+                "gee:wavelength": "0.662 - 0.682\u03bcm",
+                "gsd": 1000,
+                "name": "M5",
+                "common_name": "red"
+            },
+            {
+                "center_wavelength": 0.866,
+                "description": "1km surface reflectance band M7",
+                "gee:scale": 0.0001,
+                "gee:wavelength": "0.846 - 0.885\u03bcm",
+                "gsd": 1000,
+                "name": "M7",
+                "common_name": "nir08"
+            },
+            {
+                "center_wavelength": 1.24,
+                "description": "1km surface reflectance band M8",
+                "gee:scale": 0.0001,
+                "gee:wavelength": "1.230 - 1.250\u03bcm",
+                "gsd": 1000,
+                "name": "M8"
+            },
+            {
+                "center_wavelength": 1.61,
+                "description": "1km surface reflectance band M10",
+                "gee:scale": 0.0001,
+                "gee:wavelength": "1.580 - 1.640\u03bcm",
+                "gsd": 1000,
+                "name": "M10",
+                "common_name": "swir16"
+            },
+            {
+                "center_wavelength": 2.25,
+                "description": "1km surface reflectance band M11",
+                "gee:scale": 0.0001,
+                "gee:wavelength": "2.230 - 2.280\u03bcm",
+                "gsd": 1000,
+                "name": "M11",
+                "common_name": "swir22"
+            },
+            {
+                "center_wavelength": 0.64,
+                "description": "500m surface reflectance band I1",
+                "gee:scale": 0.0001,
+                "gee:wavelength": "0.600 - 0.680\u03bcm",
+                "gsd": 500,
+                "name": "I1",
+                "common_name": "red"
+            },
+            {
+                "center_wavelength": 0.865,
+                "description": "500m surface reflectance band I2",
+                "gee:scale": 0.0001,
+                "gee:wavelength": "0.850 - 0.880\u03bcm",
+                "gsd": 500,
+                "name": "I2",
+                "common_name": "nir08"
+            },
+            {
+                "center_wavelength": 1.61,
+                "description": "500m surface reflectance band I3",
+                "gee:scale": 0.0001,
+                "gee:wavelength": "1.580 - 1.640\u03bcm",
+                "gsd": 500,
+                "name": "I3",
+                "common_name": "swir16"
+            },
+            {
+                "description": "Sensor azimuth angle",
+                "gee:scale": 0.01,
+                "gee:units": "Degrees",
+                "gsd": 1000,
+                "name": "SensorAzimuth"
+            },
+            {
+                "description": "Sensor zenith angle",
+                "gee:scale": 0.01,
+                "gee:units": "Degrees",
+                "gsd": 1000,
+                "name": "SensorZenith"
+            },
+            {
+                "description": "Solar azimuth angle",
+                "gee:scale": 0.01,
+                "gee:units": "Degrees",
+                "gsd": 1000,
+                "name": "SolarAzimuth"
+            },
+            {
+                "description": "Solar zenith angle",
+                "gee:scale": 0.01,
+                "gee:units": "Degrees",
+                "gsd": 1000,
+                "name": "SolarZenith"
+            },
+            {
+                "description": "Observation number",
+                "gsd": 500,
+                "name": "iobs_res"
+            },
+            {
+                "description": "Number of observations 1km",
+                "gsd": 1000,
+                "name": "num_observations_1km"
+            },
+            {
+                "description": "Number of observations 500m",
+                "gsd": 500,
+                "name": "num_observations_500m"
+            },
+            {
+                "description": "Observations coverage 1km",
+                "gee:units": "%",
+                "gsd": 1000,
+                "name": "obscov_1km"
+            },
+            {
+                "description": "Observations coverage 500km",
+                "gee:units": "%",
+                "gsd": 500,
+                "name": "obscov_500m"
+            },
+            {
+                "description": "Orbit pointer",
+                "gsd": 1000,
+                "name": "orbit_pnt"
+            },
+            {
+                "description": "Quality flags 1",
+                "gee:bitmask": {
+                    "bitmask_parts": [
+                        {
+                            "bit_count": 2,
+                            "description": "Cloud mask quality",
+                            "values": [
+                                {
+                                    "description": "Poor"
+                                },
+                                {
+                                    "description": "Low",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "Medium",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "High",
+                                    "value": 3
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 2,
+                            "description": "Cloud detection & confidence",
+                            "first_bit": 2,
+                            "values": [
+                                {
+                                    "description": "Confident clear"
+                                },
+                                {
+                                    "description": "Probably clear",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "Probably cloudy",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "Confident cloudy",
+                                    "value": 3
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Day/night",
+                            "first_bit": 4,
+                            "values": [
+                                {
+                                    "description": "Day"
+                                },
+                                {
+                                    "description": "Night",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Low sun mask",
+                            "first_bit": 5,
+                            "values": [
+                                {
+                                    "description": "High"
+                                },
+                                {
+                                    "description": "Low",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 2,
+                            "description": "Sun glint",
+                            "first_bit": 6,
+                            "values": [
+                                {
+                                    "description": "None"
+                                },
+                                {
+                                    "description": "Geometry based",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "Wind speed based",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "Geometry and wind speed based",
+                                    "value": 3
+                                }
+                            ]
+                        }
+                    ],
+                    "total_bit_count": 8
+                },
+                "gsd": 1000,
+                "name": "QF1"
+            },
+            {
+                "description": "Quality flags 2",
+                "gee:bitmask": {
+                    "bitmask_parts": [
+                        {
+                            "bit_count": 3,
+                            "description": "Land/water background",
+                            "values": [
+                                {
+                                    "description": "Land & desert"
+                                },
+                                {
+                                    "description": "Land no desert",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "Inland water",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "Sea water",
+                                    "value": 3
+                                },
+                                {
+                                    "description": "---",
+                                    "value": 4
+                                },
+                                {
+                                    "description": "Coastal",
+                                    "value": 5
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Shadow mask",
+                            "first_bit": 3,
+                            "values": [
+                                {
+                                    "description": "No cloud shadow"
+                                },
+                                {
+                                    "description": "Shadow",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Heavy aerosol mask",
+                            "first_bit": 4,
+                            "values": [
+                                {
+                                    "description": "No heavy aerosol"
+                                },
+                                {
+                                    "description": "Heavy aerosol",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Snow/ice",
+                            "first_bit": 5,
+                            "values": [
+                                {
+                                    "description": "No snow/ice"
+                                },
+                                {
+                                    "description": "Snow or ice",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Thin cirrus reflective",
+                            "first_bit": 6,
+                            "values": [
+                                {
+                                    "description": "No cloud"
+                                },
+                                {
+                                    "description": "Cloud",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "This cirrus emissive",
+                            "first_bit": 7,
+                            "values": [
+                                {
+                                    "description": "No cloud"
+                                },
+                                {
+                                    "description": "Cloud",
+                                    "value": 1
+                                }
+                            ]
+                        }
+                    ],
+                    "total_bit_count": 8
+                },
+                "gsd": 1000,
+                "name": "QF2"
+            },
+            {
+                "description": "Quality flags 3",
+                "gee:bitmask": {
+                    "bitmask_parts": [
+                        {
+                            "bit_count": 1,
+                            "description": "Bad M1 SDR data",
+                            "values": [
+                                {
+                                    "description": "No"
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Bad M2 SDR data",
+                            "first_bit": 1,
+                            "values": [
+                                {
+                                    "description": "No"
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Bad M3 SDR data",
+                            "first_bit": 2,
+                            "values": [
+                                {
+                                    "description": "No"
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Bad M4 SDR data",
+                            "first_bit": 3,
+                            "values": [
+                                {
+                                    "description": "No"
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Bad M5 SDR data",
+                            "first_bit": 4,
+                            "values": [
+                                {
+                                    "description": "No"
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Bad M7 SDR data",
+                            "first_bit": 5,
+                            "values": [
+                                {
+                                    "description": "No"
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Bad M8 SDR data",
+                            "first_bit": 6,
+                            "values": [
+                                {
+                                    "description": "No"
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Bad M10 SDR data",
+                            "first_bit": 7,
+                            "values": [
+                                {
+                                    "description": "No"
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        }
+                    ],
+                    "total_bit_count": 8
+                },
+                "gsd": 1000,
+                "name": "QF3"
+            },
+            {
+                "description": "Quality flags 4",
+                "gee:bitmask": {
+                    "bitmask_parts": [
+                        {
+                            "bit_count": 1,
+                            "description": "Bad M11 SDR data",
+                            "values": [
+                                {
+                                    "description": "No"
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Bad I1 SDR data",
+                            "first_bit": 1,
+                            "values": [
+                                {
+                                    "description": "No"
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Bad I2 SDR data",
+                            "first_bit": 2,
+                            "values": [
+                                {
+                                    "description": "No"
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Bad I3 SDR data",
+                            "first_bit": 3,
+                            "values": [
+                                {
+                                    "description": "No"
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Overall quality of AOT",
+                            "first_bit": 4,
+                            "values": [
+                                {
+                                    "description": "Good"
+                                },
+                                {
+                                    "description": "Bad",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Missing AOT input data",
+                            "first_bit": 5,
+                            "values": [
+                                {
+                                    "description": "No"
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Invalid land AM input data",
+                            "first_bit": 6,
+                            "values": [
+                                {
+                                    "description": "Valid"
+                                },
+                                {
+                                    "description": "Invalid AM input over land or over ocean",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Missing PW input data",
+                            "first_bit": 7,
+                            "values": [
+                                {
+                                    "description": "No"
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        }
+                    ],
+                    "total_bit_count": 8
+                },
+                "gsd": 1000,
+                "name": "QF4"
+            },
+            {
+                "description": "Quality flags 5",
+                "gee:bitmask": {
+                    "bitmask_parts": [
+                        {
+                            "bit_count": 1,
+                            "description": "Missing ozone input data",
+                            "values": [
+                                {
+                                    "description": "No"
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Missing surface pressure input data",
+                            "first_bit": 1,
+                            "values": [
+                                {
+                                    "description": "No"
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Overall quality M1 surface reflection data",
+                            "first_bit": 2,
+                            "values": [
+                                {
+                                    "description": "Good"
+                                },
+                                {
+                                    "description": "Bad",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Overall quality M2 surface reflection data",
+                            "first_bit": 3,
+                            "values": [
+                                {
+                                    "description": "Good"
+                                },
+                                {
+                                    "description": "Bad",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Overall quality M3 surface reflection data",
+                            "first_bit": 4,
+                            "values": [
+                                {
+                                    "description": "Good"
+                                },
+                                {
+                                    "description": "Bad",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Overall quality M4 surface reflection data",
+                            "first_bit": 5,
+                            "values": [
+                                {
+                                    "description": "Good"
+                                },
+                                {
+                                    "description": "Bad",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Overall quality M5 surface reflection data",
+                            "first_bit": 6,
+                            "values": [
+                                {
+                                    "description": "Good"
+                                },
+                                {
+                                    "description": "Bad",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Overall quality M7 surface reflection data",
+                            "first_bit": 7,
+                            "values": [
+                                {
+                                    "description": "Good"
+                                },
+                                {
+                                    "description": "Bad",
+                                    "value": 1
+                                }
+                            ]
+                        }
+                    ],
+                    "total_bit_count": 8
+                },
+                "gsd": 1000,
+                "name": "QF5"
+            },
+            {
+                "description": "Quality flags 6",
+                "gee:bitmask": {
+                    "bitmask_parts": [
+                        {
+                            "bit_count": 1,
+                            "description": "Overall quality M8 surface reflection data",
+                            "values": [
+                                {
+                                    "description": "Good"
+                                },
+                                {
+                                    "description": "Bad",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Overall quality M10 surface reflection data",
+                            "first_bit": 1,
+                            "values": [
+                                {
+                                    "description": "Good"
+                                },
+                                {
+                                    "description": "Bad",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Overall quality M11 surface reflection data",
+                            "first_bit": 2,
+                            "values": [
+                                {
+                                    "description": "Good"
+                                },
+                                {
+                                    "description": "Bad",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Overall quality I1 surface reflection data",
+                            "first_bit": 3,
+                            "values": [
+                                {
+                                    "description": "Good"
+                                },
+                                {
+                                    "description": "Bad",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Overall quality I2 surface reflection data",
+                            "first_bit": 4,
+                            "values": [
+                                {
+                                    "description": "Good"
+                                },
+                                {
+                                    "description": "Bad",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Overall quality I3 surface reflection data",
+                            "first_bit": 5,
+                            "values": [
+                                {
+                                    "description": "Good"
+                                },
+                                {
+                                    "description": "Bad",
+                                    "value": 1
+                                }
+                            ]
+                        }
+                    ],
+                    "total_bit_count": 6
+                },
+                "gsd": 1000,
+                "name": "QF6"
+            },
+            {
+                "description": "Quality flags 7",
+                "gee:bitmask": {
+                    "bitmask_parts": [
+                        {
+                            "bit_count": 1,
+                            "description": "Snow present",
+                            "values": [
+                                {
+                                    "description": "No"
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Adjacent to cloud",
+                            "first_bit": 1,
+                            "values": [
+                                {
+                                    "description": "No"
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 2,
+                            "description": "Aerosol quantity",
+                            "first_bit": 2,
+                            "values": [
+                                {
+                                    "description": "Climatology"
+                                },
+                                {
+                                    "description": "Low",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "Average",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "High",
+                                    "value": 3
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Thin cirrus flag",
+                            "first_bit": 4,
+                            "values": [
+                                {
+                                    "description": "No"
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        }
+                    ],
+                    "total_bit_count": 5
+                },
+                "gsd": 1000,
+                "name": "QF7"
+            }
+        ],
+        "instruments": [
+            "VIIRS"
+        ],
+        "iobs_res": {
+            "maximum": 254
+        },
+        "num_observations_1km": {
+            "maximum": 127
+        },
+        "num_observations_500m": {
+            "maximum": 127
+        },
+        "obscov_1km": {
+            "maximum": 100
+        },
+        "obscov_500m": {
+            "maximum": 100
+        },
+        "orbit_pnt": {
+            "maximum": 15
+        },
+        "platform": [
+            "Suomi NPP"
+        ]
+    },
+    "title": "VNP09GA: VIIRS Surface Reflectance Daily 500m and 1km",
+    "type": "Collection",
+    "version": "V001",
+    "cube:dimensions": {
+        "x": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                -180,
+                180
+            ]
+        },
+        "y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                -90,
+                90
+            ]
+        },
+        "t": {
+            "type": "temporal",
+            "extent": [
+                "2012-01-19T00:00:00Z",
+                "2023-03-12T00:00:00"
+            ]
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "M1",
+                "M2",
+                "M3",
+                "M4",
+                "M5",
+                "M7",
+                "M8",
+                "M10",
+                "M11",
+                "I1",
+                "I2",
+                "I3",
+                "SensorAzimuth",
+                "SensorZenith",
+                "SolarAzimuth",
+                "SolarZenith",
+                "iobs_res",
+                "num_observations_1km",
+                "num_observations_500m",
+                "obscov_1km",
+                "obscov_500m",
+                "orbit_pnt",
+                "QF1",
+                "QF2",
+                "QF3",
+                "QF4",
+                "QF5",
+                "QF6",
+                "QF7"
+            ]
+        }
+    },
+    "assets": {
+        "preview_4": {
+            "href": "https://developers.google.com/earth-engine/datasets/images/NOAA/VIIRS/NOAA_VIIRS_001_VNP09GA_sample.png",
+            "type": "image/png",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    }
+}

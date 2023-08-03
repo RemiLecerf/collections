@@ -1,0 +1,71 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dct="http://purl.org/dc/terms/" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/metadata/eu.copernicus.climate.reanalysis-carra-height-levels">
+        <foaf:primaryTopic rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/resource/10.24381/cds.8679900d"/>
+        <dct:issued>2018-03-28</dct:issued>
+        <dct:modified>2018-03-28</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/srv/eng/xml.metadata.get?uuid=eu.copernicus.climate.reanalysis-carra-height-levels">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://cds.climate.copernicus.eu:443//geonetwork?uuid=eu.copernicus.climate.reanalysis-carra-height-levels">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/resource/10.24381/cds.8679900d">
+        <dct:identifier>10.24381/cds.8679900d</dct:identifier>
+        <dct:title>Arctic regional reanalysis on height levels from 1991 to present</dct:title>
+        <dct:abstract>The C3S Arctic Regional Reanalysis (CARRA) dataset contains 3-hourly analyses and hourly short term forecasts of atmospheric and surface meteorological variables (temperature, humidity, wind, cloud and pressure)  at 2.5 km resolution. Additionally, forecasts up to 30 hours initialised from the analyses at 00 and 12 UTC are available. 
+The dataset includes two domains. The West domain covers Greenland, the Labrador Sea, Davis Strait, Baffin Bay, Denmark Strait, Iceland, Jan Mayen, the Greenland Sea, and parts of Svalbard. The East domain covers Svalbard, Franz Josef Land, Novaya Zemlya, Barents Sea, and the Northern parts of the Norwegian Sea and Scandinavia.
+The dataset has been produced with the use of the HARMONIE-AROME state-of-the-art non-hydrostatic regional numerical weather prediction model. High resolution reanalysis for the Arctic region is particularly important because the climate change is more pronounced in the Arctic region than elsewhere in the Earth. This fact calls for a better description of this region providing additional details with respect to the global reanalyses (ERA5 for instance). The additional information is provided by the higher horizontal resolution, more local observations (from the Nordic countries and Greenland), better description of surface characteristics (high resolution satellite and physiographic data), high resolution non-hydrostatic dynamics and improved physical parameterisation of clouds and precipitation in particular.
+The inputs to CARRA reanalysis are the observations, the ERA5 global reanalysis as lateral boundary conditions and the physiographic datasets describing the surface characteristics of the model. The observation values and information about their quality are used together to constrain the reanalysis where observations are available and provide information for the data assimilation system in areas in where less observations are available.
+More details about the reanalysis dataset and the extensive input data are given in the Documentation section.
+
+Variables in the dataset/application are:
+Pressure, Relative humidity, Specific cloud ice water content, Specific cloud liquid water content, Temperature, Wind direction, Wind speed</dct:abstract>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/GEMET%20-%20INSPIRE%20themes%2C%20version%201.0/Atmospheric conditions"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Product type: Reanalysis"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Spatial coverage: Arctic"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Variable domain: Atmosphere (upper air)"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Temporal coverage: Past"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/iso/topicCategory/climatologyMeteorologyAtmosphere"/>
+        <foaf:thumbnail rdf:resource="https://datastore.copernicus-climate.eu/c3s/published-forms-v2/c3sprod/reanalysis-carra-height-levels/overview.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((360 65, 360 90, 0 90, 0 65, 360 65))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:temporal>1990-09-01
+          /
+          2023-05-31</dct:temporal>
+        <dct:publisher rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/organization/ECMWF"/>
+        <dct:accrualPeriodicity>asNeeded</dct:accrualPeriodicity>
+        <dct:language>eng</dct:language>
+        <dct:license>licence</dct:license>
+        <dct:license>https://cds.climate.copernicus.eu/api/v2/terms/static/licence-to-use-copernicus-products.pdf</dct:license>
+        <dcat:distribution rdf:resource="https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.8679900d"/>
+        <dcat:distribution rdf:resource="https://confluence.ecmwf.int/x/K0s7E"/>
+        <dcat:distribution rdf:resource="https://datastore.copernicus-climate.eu/documents/reanalysis-carra/CARRAFullSystemDocumentationFinal.pdf"/>
+        <dcat:distribution rdf:resource="https://datastore.copernicus-climate.eu/documents/reanalysis-carra/CARRATestVerificationFinal.pdf"/>
+        <dcat:distribution rdf:resource="https://confluence.ecmwf.int/x/0NSBEQ"/>
+        <dcat:distribution rdf:resource="https://confluence.ecmwf.int/x/w9SBEQ"/>
+        <dcat:distribution rdf:resource="https://datastore.copernicus-climate.eu/documents/reanalysis-carra/CARRAUncertainty estimationFinal.pdf"/>
+        <dcat:distribution rdf:resource="https://confluence.ecmwf.int/x/p3ltD#CopernicusArcticRegionalReanalysis(CARRA):knownissuesanduncertaintyinformation-Uncertaintyinformation"/>
+        <dcat:distribution rdf:resource="https://confluence.ecmwf.int/x/p3ltD#CopernicusArcticRegionalReanalysis(CARRA):knownissuesanduncertaintyinformation-Knownissues"/>
+        <dcat:dataQuality>EC Copernicus program</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+    

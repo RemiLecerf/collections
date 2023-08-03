@@ -1,0 +1,82 @@
+{
+  "type": "Collection",
+  "id": "eu.copernicus.climate.sis-shipping-consumption-on-routes",
+  "stac_version": "1.0.0",
+  "description": "The dataset presents ship performance indicators for 80 popular global commercial shipping routes computed using a bespoke Fuel Consumption Model (FCM) developed for the Copernicus Climate Change Service. The purpose of the dataset is to provide information on the weather dependence and seasonality of ship performances with the aim of reducing fuel consumption by optimizing the route selection and ship's sailing speed. A trader or a fleet manager can use this information to estimate the average time and fuel consumption of a journey for a given month together with the uncertainty on meeting the target time of arrival. The seasonal forecast data quantifies the impact of the monthly wind anomalies on the fuel consumption and trip duration. \nThe fuel consumption model comprises two major modules: resistance due to calm water, and resistance due to met-ocean parameters of wind, waves, and currents. For wind (eastward wind speed component, northward wind speed component), and waves (significant wave height, mean wave direction, peak wave period), the fifth generation ECMWF reanalysis for the global climate (ERA5) is used. For ocean currents (eastward current speed component, northward current speed component), monthly mean reanalysis from the ECMWF's ocean reanalysis system 4 (ORAS4) is used. For seasonal forecast products, monthly anomalies from the ECMWF's seasonal prediction system 5 (SEAS5) are used for wind, whilst the monthly mean climatology from ERA5 and ORAS4 is used for waves and currents, respectively.\nThe dataset was produced on behalf of the Copernicus Climate Change Sector using reanalysis data available on the Climate Data Store.\n\nVariables in the dataset/application are:\nFuel consumption at fixed power, Fuel consumption at fixed speed, Shaft power at fixed speed, Ship speed at fixed shaft power, Trip duration at fixed power",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.3c5cc681",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Climate Data Store catalogue"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://confluence.ecmwf.int/x/u4ByEw",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Technical note - Part 1"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://confluence.ecmwf.int/x/yoByEw",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Technical note - Part 2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://confluence.ecmwf.int/x/94ByEw",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Technical note - Part 3"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://confluence.ecmwf.int/x/GIFyEw",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Technical note - Part 4"
+    }
+  ],
+  "title": "Ship performance along standard shipping routes derived from reanalysis and seasonal forecasts",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          0.0,
+          -89.0,
+          360.0,
+          89.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1993-01-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Provider: Copernicus C3S",
+    "Sector: Transport",
+    "Spatial coverage: Global",
+    "Temporal coverage: Future",
+    "Temporal coverage: Past",
+    "Transport networks",
+    "Variable domain: Atmosphere (surface)"
+  ],
+  "providers": [
+    {
+      "name": "Climate Data Store - European Centre for Medium-Range Weather Forecasts (ECMWF)",
+      "description": "Climate Data Store - ECMWF",
+      "roles": [
+        "licensor",
+        "producer",
+        "processor",
+        "host"
+      ],
+      "url": "https://cds.climate.copernicus.eu/"
+    }
+  ]
+}

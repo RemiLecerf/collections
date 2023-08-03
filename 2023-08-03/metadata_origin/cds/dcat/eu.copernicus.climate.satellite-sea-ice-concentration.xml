@@ -1,0 +1,68 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dct="http://purl.org/dc/terms/" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/metadata/eu.copernicus.climate.satellite-sea-ice-concentration">
+        <foaf:primaryTopic rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/resource/10.24381/cds.3cd8b812"/>
+        <dct:issued>2018-03-28</dct:issued>
+        <dct:modified>2018-03-28</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/srv/eng/xml.metadata.get?uuid=eu.copernicus.climate.satellite-sea-ice-concentration">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://cds.climate.copernicus.eu:443//geonetwork?uuid=eu.copernicus.climate.satellite-sea-ice-concentration">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/resource/10.24381/cds.3cd8b812">
+        <dct:identifier>10.24381/cds.3cd8b812</dct:identifier>
+        <dct:title>Sea ice concentration daily gridded data from 1979 to present derived from satellite observations</dct:title>
+        <dct:abstract>This dataset provides daily gridded data of sea ice concentration for both hemispheres derived from satellite passive microwave brightness temperatures. Sea ice is an important component of our climate system and a sensitive indicator of climate change. Its presence or its retreat has a strong impact on air-sea interactions, the Earth’s energy budget as well as marine ecosystems. It is recognised by the Global Climate Observing System as an Essential Climate Variable. Sea ice concentration is defined as the fraction of a pixel or grid cell in a satellite image or other gridded product that is covered with sea ice. It is one of the parameters commonly used to characterise sea ice. Other sea ice parameters include sea ice thickness, sea ice edge, and sea ice type, also available in the Climate Data Store.
+The dataset consists of two products:
+
+The Global Sea Ice Concentration Climate Data Record produced by the European Organisation for the Exploitation of Meteorological Satellites (EUMETSAT) Ocean and Sea Ice Satellite Application Facility (OSI SAF). This is a coarse-resolution product based on measurements from the following sensors: Scanning Multichannel Microwave Radiometer (SMMR; 1979–1987), Special Sensor Microwave/Imager (SSM/I; 1987–2006), and Special Sensor Microwave Imager/Sounder (SSMIS; 2005 onward). This product spans the period from 1979 to present and is updated daily. In the following, it is referred to as the SSMIS product.
+The Global Sea Ice Concentration Climate Data Record produced by the European Space Agency Climate Change Initiative Phase 2 project (ESA CCI). This is a medium-resolution product based on measurements from the Advanced Microwave Scanning Radiometer - Earth Observing System (AMSR-E) sensor (2002–2011) and its successor, AMSR2 (2012–2017). This product spans the 2002–2017 period and is not updated. In the following, it is referred to as the AMSR product.
+
+Both products are provided on the same polar projection with a grid resolution of 25 km. However, the AMSR product has a true spatial resolution (as resolved by the sensor) of about 15–25 km versus 30–60 km for the SSMIS product. Therefore, the AMSR product provides a much more detailed view of the sea ice cover than the SSMIS product, especially along the marginal ice zone, the transitional zone between open water and the dense sea ice pack. On the other hand, the clear strength of the SSMIS product is its more than 40-year long and consistent record with daily updates.
+Although originating from different projects, the two products share the same algorithm baseline, which is both a continuation of the EUMETSAT OSI SAF approach and a series of innovations contributed mostly by ESA CCI activities. For both products, the underlying algorithm makes use of a combination of the same three temperature channels near 19 GHz and 37 GHz. The data also share a common data format so that interested users can revert some of the filtering steps and access the raw output of the SIC algorithms. Both are level-4 products in the sense that gaps are filled by temporal and spatial interpolation. However, gap filling is not applied to fill in days when no input satellite data are available.
+Further details about each product can be found below as well as in the Documentation section.</dct:abstract>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/GEMET%20-%20INSPIRE%20themes%2C%20version%201.0/Oceanographic geographical features"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Product type: Satellite observations"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Variable domain: Ocean (physics)"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Temporal coverage: Past"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Spatial coverage: Global"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/iso/topicCategory/oceans"/>
+        <foaf:thumbnail rdf:resource="https://datastore.copernicus-climate.eu/c3s/published-forms-v2/c3sprod/satellite-sea-ice-concentration/overview.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((0 -89, 0 89, 360 89, 360 -89, 0 -89))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:temporal>1979-01-01
+          /
+          2023-04-30</dct:temporal>
+        <dct:publisher rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/organization/ECMWF"/>
+        <dct:accrualPeriodicity>asNeeded</dct:accrualPeriodicity>
+        <dct:language>eng</dct:language>
+        <dct:license>licence</dct:license>
+        <dct:license>https://cds.climate.copernicus.eu/api/v2/terms/static/licence-to-use-copernicus-products.pdf</dct:license>
+        <dct:license>https://cds.climate.copernicus.eu/api/v2/terms/static/eumetsat-osi-saf-sic.pdf</dct:license>
+        <dct:license>https://cds.climate.copernicus.eu/api/v2/terms/static/ESA-CCI-sea-ice-concentration.pdf</dct:license>
+        <dcat:distribution rdf:resource="https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.3cd8b812"/>
+        <dcat:distribution rdf:resource="#"/>
+        <dcat:distribution rdf:resource="#"/>
+        <dcat:dataQuality>EC Copernicus program</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+    

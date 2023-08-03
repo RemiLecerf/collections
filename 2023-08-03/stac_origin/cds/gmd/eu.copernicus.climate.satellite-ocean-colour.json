@@ -1,0 +1,80 @@
+{
+  "type": "Collection",
+  "id": "eu.copernicus.climate.satellite-ocean-colour",
+  "stac_version": "1.0.0",
+  "description": "This dataset provides global daily estimates of ocean surface chlorophyll-a concentration and remote sensing reflectance derived from multiple satellite sensors. These two products are part of the broader discipline of ocean colour remote sensing, which analyses ocean surface radiances measured from space to derive information about the optical properties and constituents of the upper ocean. This information plays an essential role in our ability to monitor the health and productivity of marine ecosystems, assess the role of the oceans in the global carbon cycle, and quantify the impacts of climate change. Satellite remote sensing is the only method for regular monitoring of ocean biology on a global scale.\nRemote-sensing reflectance (or Rrs) is defined as the ratio of water-leaving radiance to downwelling irradiance and serves as the main input to algorithms used to derive other ocean colour products. Chlorophyll-a (Chl-a) is the main photosynthetic pigment found in phytoplankton, which form the base of the marine food-web and are responsible for approximately half of global photosynthesis. Chl-a can be estimated from Rrs data using different algorithms (see details in the Documentation). Here, we provide a blended Chl-a estimate from multiple algorithms, where blending is based on the suitability of each candidate algorithm to the optical typology of a given pixel. This approach provides the best estimates of global Chl-a across a range of water types.\nThe files from this dataset contain global daily composites of merged sensor products: SeaWiFS, MERIS, MODIS Aqua, VIIRS, and (from version 5.0 onward) OLCI. Note that Rrs and Chl-a data are only available over cloud- and ice-free areas. As a result, more complete spatial coverage (as shown in the map in the upper-right corner) can be achieved by aggregating data over longer time periods.\nThis dataset is produced using the processing chain software developed by the Ocean Colour component of the European Space Agency Climate Change Initiative project (ESA OC-CCI). Version 5.0 of the dataset is produced by the C3S service whereas previous versions are brokered from ESA OC-CCI.\n\nVariables in the dataset/application are:\nMass concentration of chlorophyll-a, Remote sensing reflectance",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.f85b319d",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Climate Data Store catalogue"
+    },
+    {
+      "rel": "describedby",
+      "href": "#",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "#"
+    },
+    {
+      "rel": "describedby",
+      "href": "#",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "#"
+    },
+    {
+      "rel": "describedby",
+      "href": "#",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "#"
+    },
+    {
+      "rel": "describedby",
+      "href": "#",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "#"
+    }
+  ],
+  "title": "Ocean colour daily data from 1997 to present derived from satellite observations",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          0.0,
+          -90.0,
+          360.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1997-01-01T00:00:00Z",
+          "2021-07-31T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Ocean biochemistry",
+    "Product type: Satellite observations",
+    "Spatial coverage: Global",
+    "Temporal coverage: Past",
+    "Variable domain: Ocean (biochemistry)"
+  ],
+  "providers": [
+    {
+      "name": "Climate Data Store - European Centre for Medium-Range Weather Forecasts (ECMWF)",
+      "description": "Climate Data Store - ECMWF",
+      "roles": [
+        "licensor",
+        "producer",
+        "processor",
+        "host"
+      ],
+      "url": "https://cds.climate.copernicus.eu/"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dct="http://purl.org/dc/terms/" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://land.copernicus.vgt.vito.be:8443//geonetwork/metadata/urn:cgls:global:wl_v2_lakes">
+        <foaf:primaryTopic rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/resource/urn:cgls:global:wl_v2_lakes"/>
+        <dct:issued>2022-03-09</dct:issued>
+        <dct:modified>2022-03-09</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://land.copernicus.vgt.vito.be:8443//geonetwork/srv/eng/xml.metadata.get?uuid=urn:cgls:global:wl_v2_lakes">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://land.copernicus.vgt.vito.be:8443//geonetwork?uuid=urn:cgls:global:wl_v2_lakes">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://land.copernicus.vgt.vito.be:8443//geonetwork/resource/urn:cgls:global:wl_v2_lakes">
+        <dct:identifier>urn:cgls:global:wl_v2_lakes</dct:identifier>
+        <dct:title>Water Level: Lakes (vector) - version 2, Feb 2018</dct:title>
+        <dct:abstract>The Water Level is defined as the height, in meters above the geoid, of the reflecting surface of continental water bodies. It is observed by space radar altimeters that measure the time it takes for radar pulses to reach the ground targets, directly below the spacecraft (nadir position), and return.  Hence, only water bodies located along the satellite's ground tracks can be monitored, with a quality of measurement that not only depends of the size of the water body, but also on the reflecting targets in its surroundings such as topography or vegetation. Water Level is computed as time series over lakes and at the intersections of rivers and the satellite ground tracks.</dct:abstract>
+        <dcat:keyword>biogeophysical</dcat:keyword>
+        <dcat:keyword>Lakes</dcat:keyword>
+        <dcat:keyword>Time series</dcat:keyword>
+        <dcat:theme rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/thesaurus/GEMET%20-%20INSPIRE%20themes%2C%20version%201.0/Hydrography"/>
+        <dcat:theme rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/thesaurus/GEMET%20-%20Concepts%2C%20version%202.1/water level"/>
+        <dcat:theme rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/thesaurus/Copernicus%20Themes/Water"/>
+        <dcat:theme rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/thesaurus/Copernicus%20Variables/Water Level"/>
+        <dcat:theme rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/thesaurus/iso/topicCategory/environment"/>
+        <dcat:theme rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/thesaurus/iso/topicCategory/elevation"/>
+        <dcat:theme rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/thesaurus/iso/topicCategory/inlandWaters"/>
+        <foaf:thumbnail rdf:resource="https://globalland.cls.fr/webResources/quicklook/QuickLook_WaterLevel.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((-180 -90, -180 90, 180 90, 180 -90, -180 -90))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:temporal>1992-09-01
+          /
+          2019-12-31</dct:temporal>
+        <dct:issued>2018-02-12</dct:issued>
+        <dct:publisher rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/organization/CLS"/>
+        <dct:publisher rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/organization/CLS"/>
+        <dct:publisher rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/organization/European%20Commission%20Directorate-General%20for%20Internal%20Market%2C%20Industry%2C%20Entrepreneurship%20and%20SMEs"/>
+        <dct:publisher rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/organization/European%20Commission%20Directorate-General%20Joint%20Research%20Centre"/>
+        <dct:accrualPeriodicity>asNeeded</dct:accrualPeriodicity>
+        <dct:license>copyright</dct:license>
+        <dct:license>otherRestrictions</dct:license>
+        <dct:license>(d) the confidentiality of commercial or industrial information, where such confidentiality is provided for by national or Community law to protect a legitimate economic interest, including the public interest in maintaining statistical confidentiality and tax secrecy.</dct:license>
+        <dcat:distribution rdf:resource="https://land.copernicus.eu/global/products/wl"/>
+        <dcat:distribution rdf:resource="http://land.copernicus.eu/global/access"/>
+        <dcat:distribution rdf:resource="http://eoportal.eumetsat.int"/>
+        <dct:relation rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/metadata/"/>
+        <dcat:dataQuality>Altimeter measurements are extracted over each satellite ground track with both a land/water mask and predefined editing criteria on the values of the altimeter range and associated propagation corrections. From these computed along-track water levels, outliers are rejected by Standard Deviation test and an average water level is computed. A final selection step ensures consistency of the most recently computed water level value with the existing water level time series. The input data are the 25 years Top measured by the POSEIDON sensor.</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+    

@@ -1,0 +1,55 @@
+{
+  "type": "Collection",
+  "id": "485df951-873f-411d-9f5d-37845766b520",
+  "stac_version": "1.0.0",
+  "description": "'''DEFINITION'''\n\nThe indicator of the Kuroshio extension phase variations is based on the standardized high frequency altimeter Eddy Kinetic Energy (EKE) averaged in the area 142-149°E and 32-37°N and computed from the DUACS (https://duacs.cls.fr) delayed-time (reprocessed version DT-2021, CMEMS SEALEVEL_GLO_PHY_L4_MY_008_047) and near real-time (CMEMS SEALEVEL_GLO_PHY_L4_NRT_OBSERVATIONS_008_046) altimeter sea level gridded products. The change in the reprocessed version (previously DT-2018) and the extension of the mean value of the EKE (now 27 years, previously 20 years) induce some slight changes not impacting the general variability of the Kuroshio extension (correlation coefficient of 0.988 for the total period, 0.994 for the delayed time period only).  \n\n'''CONTEXT'''\n\nThe long-term mean and trends alone do not give a complete view of the likely changes in position of unstable western boundary current extensions (Kelly et al., 2010). The Kuroshio Extension is an eastward-flowing current in the subtropical western North Pacific after the Kuroshio separates from the coast of Japan at 35°N, 140°E. Being the extension of a wind-driven western boundary current, the Kuroshio Extension is characterized by a strong variability and is rich in large-amplitude meanders and energetic eddies (Niiler et al., 2003; Qiu, 2003, 2002). The Kuroshio Extension region has the largest sea surface height variability on sub-annual and decadal time scales in the extratropical North Pacific Ocean (Jayne et al., 2009; Qiu and Chen, 2010, 2005). Prediction and monitoring of the path of the Kuroshio are of huge importance for local economies as the position of the Kuroshio extension strongly determines the regions where phytoplankton and hence fish are located.\n\n'''CMEMS KEY FINDINGS'''\n\nThe different states of the Kuroshio extension phase have been presented and validated by Bessières et al. (2013) and further reported by Drévillon et al. (2018) in the Copernicus Ocean State Report #2. Two rather different states of the Kuroshio extension are observed: an ‘elongated state’ (also called ‘strong state’) corresponding to a narrow strong steady jet, and a ‘contracted state’ (also called ‘weak state’) in which the jet is weaker and more unsteady, spreading on a wider latitudinal band. When the Kuroshio Extension jet is in a contracted (elongated) state, the upstream Kuroshio Extension path tends to become more (less) variable and regional eddy kinetic energy level tends to be higher (lower). In between these two opposite phases, the Kuroshio extension jet has many intermediate states of transition and presents either progressively weakening or strengthening trends. In 2018, the indicator reveals an elongated state followed by a weakening neutral phase since then.\n\n'''DOI (product):''' \nhttps://doi.org/10.48670/moi-00222",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "ftp://my.cmems-du.eu/Core/GLOBAL_OMI_CURRENTS_kuroshio_phase_area_averaged/global_omi_currents_kuroshio_phase_area_averaged",
+      "type": "WWW:FTP",
+      "title": "global_omi_currents_kuroshio_phase_area_averaged"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://mdl1.marine.copernicus.eu/derived/GLOBAL_OMI_CURRENTS_kuroshio_phase_area_averaged/global_omi_currents_kuroshio_phase_area_averaged_202003/global_omi_currents_kuroshio_phase_area_averaged_19930115_P20190927.nc",
+      "type": "MYO:MOTU-DGF",
+      "title": "global_omi_currents_kuroshio_phase_area_averaged"
+    }
+  ],
+  "title": "Kuroshio Phase from Observations Reprocessing",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1993-01-15T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "providers": [
+    {
+      "name": "Copernicus Marine Service",
+      "description": "Copernicus Marine Service - Mercator Ocean Internations",
+      "roles": [
+        "licensor",
+        "producer",
+        "processor",
+        "host"
+      ],
+      "url": "https://marine.copernicus.eu/"
+    }
+  ]
+}

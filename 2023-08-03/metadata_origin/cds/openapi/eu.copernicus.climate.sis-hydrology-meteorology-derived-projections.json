@@ -1,0 +1,4889 @@
+{
+    "slug": "temperature-and-precipitation-climate-impact-indicators-from-1970-to-2100-derived-from-european-climate-projections",
+    "name": "sis-hydrology-meteorology-derived-projections",
+    "id": "eu.copernicus.climate.sis-hydrology-meteorology-derived-projections",
+    "type": "dataset",
+    "rich_abstract": "<div class='abstract-text'>\n         <p>This dataset provides precipitation and near surface air temperature for Europe as Essential Climate Variables (ECVs) and as a set of Climate Impact Indicators (CIIs) based on the ECVs. \nECV datasets provide the empirical evidence needed to understand the current climate and predict future changes. \nCIIs contain condensed climate information which facilitate relatively quick and efficient subsequent analysis. Therefore, CIIs make climate information accessible to application focussed users within a sector.\nThe ECVs and CIIs provided here were derived within the water management sectoral information service to address questions specific to the water sector. However, the products are provided in a generic form and are relevant for a range of sectors, for example agriculture and energy.</p>\n<p>The data represent the current state-of-the-art in Europe for regional climate modelling and indicator production. Data from eight model simulations included in the Coordinated Regional Climate Downscaling Experiment (CORDEX) were used to calculate a total of two ECVs and five CIIs at a spatial resolution of 0.11\u00b0 x 0.11\u00b0 and 5km x 5km.</p>\n<p>The ECV data meet the technical specification set by the Global Climate Observing System (GCOS), as such they are provided on a daily time step. They are bias adjusted using the EFAS gridded observations as a reference dataset. Note these are model output data, not observation data as is the general case for ECVs.</p>\n<p>The CIIs are provided as mean values over a 30-year time period. For the reference period (1971-2000) data is provided as absolute values, for the future periods the data is provided as absolute values and as the relative or absolute change from the reference period. The future periods cover 3 fixed time periods (2011-2040, 2041-2070 and 2071-2100) and 3 \"degree scenario\" periods defined by when global warming exceeds a given threshold (1.5 \u00b0C, 2.0 \u00b0C or 3.0 \u00b0C). The global warming is calculated from the global climate model (GCM) used, therefore the actual time period of the degree scenarios will be different for each GCM.</p>\n<p>This dataset is produced and quality assured by the Swedish Meteorological and Hydrological Institute on behalf of the Copernicus Climate Change Service. </p>\n         \n         \n            <p></p>\n            <table class=\"abstract-description abstract-table\">\n            <tr><th colspan=\"2\">DATA DESCRIPTION</th>\n            \n<tr><th>Data type</th><td>Gridded</td></tr>\n<tr><th>Projection</th><td>Lambert azimuthal equal area and rotated grid</td></tr>\n<tr><th>Horizontal coverage</th><td>Europe</td></tr>\n<tr><th>Horizontal resolution</th><td>5km x 5km and 0.11\u00b0 x 0.11\u00b0</td></tr>\n<tr><th>Vertical coverage</th><td>Single level</td></tr>\n<tr><th>Vertical resolution</th><td>Surface</td></tr>\n<tr><th>Temporal coverage</th><td>from 1971 to 2100</td></tr>\n<tr><th>Temporal resolution</th><td>Annual, monthly and daily</td></tr>\n<tr><th>File format</th><td>NetCDF-4</td></tr>\n<tr><th>Conventions</th><td>Climate and Forecast (CF) Metadata Convention v.1.6, Attribute Convention for Dataset Discovery (ACDD) v1.3</td></tr>\n<tr><th>Versions</th><td>1.0</td></tr>\n<tr><th>Update frequency</th><td>No updates expected</td></tr>\n</table>\n\n    <p></p>\n    <table class=\"abstract-variables abstract-table\">\n    <tr><th colspan=\"3\">MAIN VARIABLES</th>\n    \n\n    <tr><th class='variables-name'>Name</th><th class='variables-units'>Units</th><th class='variables-description'>Description</th></tr>\n    \n<tr><td class='variables-name'>2m air temperature</td><td class='variables-units'><p>K (ECV)</p>\n<p><sup>o</sup>C (CII)</p></td><td class='variables-description'><p>The ambient air temperature close to the surface.</p>\n<p>The essential climate variable (ECV) data originate from EURO-CORDEX RCM simulations and are bias adjusted using the EFAS-Meteo reference dataset</p>\n<p>The climate impact indicator (CII) of 2m air temperature is defined as the monthly/annual mean of the daily mean 2m air temperature, averaged over a 30 year period. For future periods the indicator is given as an absolute change against the reference period (1971-2000).</p></td></tr>\n<tr><td class='variables-name'>Highest 5-day precipitation amount</td><td class='variables-units'>mm 5day<sup>-1</sup></td><td class='variables-description'>Highest five-day precipitation amount is defined as the maximum of 5-day precipitation totals. The value is given as a maximum over a 30 year period. For future periods the indicator is given as a relative change against the reference period (1971-2000).</td></tr>\n<tr><td class='variables-name'>Longest dry spells</td><td class='variables-units'>days</td><td class='variables-description'>Longest dry spells is defined as the maximum number of consecutive dry days (dry day: daily precipitation &lt; 1mm) over a 30 year period.  For future periods the indicator is given as a relative change against the reference period (1971-2000).</td></tr>\n<tr><td class='variables-name'>Number of dry spells</td><td class='variables-units'>Number of spells</td><td class='variables-description'>Number of dry spells is defined as the number of dry periods (dry day: daily precipitation &lt; 1mm) of more than 5 days for a 30 year period.  For future periods the indicator is given as a relative change against the reference period (1971-2000).</td></tr>\n<tr><td class='variables-name'>Precipitation</td><td class='variables-units'><p>kg m<sup>-2</sup> s<sup>-1</sup> (ECV)</p>\n<p>mm day<sup>-1</sup> (CII)</p></td><td class='variables-description'><p>Precipitation is defined as the deposition of water to the Earth\"s surface in the form of rain, snow, ice or hail.</p>\n<p>The essential climate variable (ECV) data is given as the mass of water per unit area and time. The data originate from EURO-CORDEX RCM simulations and are bias adjusted using the EFAS-Meteo reference dataset</p>\n<p>The climate impact indicator (CII) of precipitation is defined as the monthly/annual mean of the liquid water equivalent daily precipitation, averaged over a 30 year period. For future periods the indicator is given as a relative change against the reference period (1971-2000).</p></td></tr>\n</table>\n    </div>",
+    "terms": [
+        "licence-to-use-copernicus-products"
+    ],
+    "constraints": [
+        {
+            "ensemble_member": [
+                "r12i1p1"
+            ],
+            "experiment": [
+                "degree_scenario"
+            ],
+            "gcm": [
+                "ec_earth"
+            ],
+            "horizontal_resolution": [
+                "0_11_degrees"
+            ],
+            "period": [
+                "1_5_c",
+                "2_0_c",
+                "3_0_c"
+            ],
+            "processing_type": [
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "cclm4_8_17",
+                "racmo22e",
+                "rca4"
+            ],
+            "time_aggregation": [
+                "annual_mean"
+            ],
+            "variable": [
+                "longest_dry_spells",
+                "number_of_dry_spells",
+                "precipitation",
+                "highest_5_day_precipitation_amount"
+            ],
+            "variable_type": [
+                "relative_change_from_reference_period"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r12i1p1"
+            ],
+            "experiment": [
+                "degree_scenario"
+            ],
+            "gcm": [
+                "ec_earth"
+            ],
+            "horizontal_resolution": [
+                "0_11_degrees"
+            ],
+            "period": [
+                "1_5_c",
+                "2_0_c",
+                "3_0_c"
+            ],
+            "processing_type": [
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "cclm4_8_17",
+                "racmo22e",
+                "rca4"
+            ],
+            "time_aggregation": [
+                "annual_mean"
+            ],
+            "variable": [
+                "longest_dry_spells",
+                "number_of_dry_spells",
+                "precipitation",
+                "highest_5_day_precipitation_amount",
+                "2m_air_temperature"
+            ],
+            "variable_type": [
+                "absolute_values"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r12i1p1"
+            ],
+            "experiment": [
+                "degree_scenario"
+            ],
+            "gcm": [
+                "ec_earth"
+            ],
+            "horizontal_resolution": [
+                "0_11_degrees"
+            ],
+            "period": [
+                "1_5_c",
+                "2_0_c",
+                "3_0_c"
+            ],
+            "processing_type": [
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "cclm4_8_17",
+                "racmo22e",
+                "rca4"
+            ],
+            "time_aggregation": [
+                "annual_mean",
+                "monthly_mean"
+            ],
+            "variable": [
+                "2m_air_temperature"
+            ],
+            "variable_type": [
+                "absolute_change_from_reference_period"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r12i1p1"
+            ],
+            "experiment": [
+                "degree_scenario"
+            ],
+            "gcm": [
+                "ec_earth"
+            ],
+            "horizontal_resolution": [
+                "0_11_degrees"
+            ],
+            "period": [
+                "1_5_c",
+                "2_0_c",
+                "3_0_c"
+            ],
+            "processing_type": [
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "cclm4_8_17",
+                "racmo22e",
+                "rca4"
+            ],
+            "time_aggregation": [
+                "monthly_mean"
+            ],
+            "variable": [
+                "precipitation"
+            ],
+            "variable_type": [
+                "relative_change_from_reference_period"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r12i1p1"
+            ],
+            "experiment": [
+                "degree_scenario"
+            ],
+            "gcm": [
+                "ec_earth"
+            ],
+            "horizontal_resolution": [
+                "0_11_degrees"
+            ],
+            "period": [
+                "1_5_c",
+                "2_0_c",
+                "3_0_c"
+            ],
+            "processing_type": [
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "cclm4_8_17",
+                "racmo22e",
+                "rca4"
+            ],
+            "time_aggregation": [
+                "monthly_mean"
+            ],
+            "variable": [
+                "precipitation",
+                "2m_air_temperature"
+            ],
+            "variable_type": [
+                "absolute_values"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r12i1p1"
+            ],
+            "experiment": [
+                "degree_scenario"
+            ],
+            "gcm": [
+                "ec_earth"
+            ],
+            "horizontal_resolution": [
+                "5_km"
+            ],
+            "period": [
+                "1_5_c",
+                "2_0_c",
+                "3_0_c"
+            ],
+            "processing_type": [
+                "bias_corrected",
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "cclm4_8_17",
+                "racmo22e",
+                "rca4"
+            ],
+            "time_aggregation": [
+                "annual_mean"
+            ],
+            "variable": [
+                "longest_dry_spells",
+                "number_of_dry_spells",
+                "precipitation",
+                "highest_5_day_precipitation_amount"
+            ],
+            "variable_type": [
+                "relative_change_from_reference_period"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r12i1p1"
+            ],
+            "experiment": [
+                "degree_scenario"
+            ],
+            "gcm": [
+                "ec_earth"
+            ],
+            "horizontal_resolution": [
+                "5_km"
+            ],
+            "period": [
+                "1_5_c",
+                "2_0_c",
+                "3_0_c"
+            ],
+            "processing_type": [
+                "bias_corrected",
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "cclm4_8_17",
+                "racmo22e",
+                "rca4"
+            ],
+            "time_aggregation": [
+                "annual_mean"
+            ],
+            "variable": [
+                "longest_dry_spells",
+                "number_of_dry_spells",
+                "precipitation",
+                "highest_5_day_precipitation_amount",
+                "2m_air_temperature"
+            ],
+            "variable_type": [
+                "absolute_values"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r12i1p1"
+            ],
+            "experiment": [
+                "degree_scenario"
+            ],
+            "gcm": [
+                "ec_earth"
+            ],
+            "horizontal_resolution": [
+                "5_km"
+            ],
+            "period": [
+                "1_5_c",
+                "2_0_c",
+                "3_0_c"
+            ],
+            "processing_type": [
+                "bias_corrected",
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "cclm4_8_17",
+                "racmo22e",
+                "rca4"
+            ],
+            "time_aggregation": [
+                "annual_mean",
+                "monthly_mean"
+            ],
+            "variable": [
+                "2m_air_temperature"
+            ],
+            "variable_type": [
+                "absolute_change_from_reference_period"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r12i1p1"
+            ],
+            "experiment": [
+                "degree_scenario"
+            ],
+            "gcm": [
+                "ec_earth"
+            ],
+            "horizontal_resolution": [
+                "5_km"
+            ],
+            "period": [
+                "1_5_c",
+                "2_0_c",
+                "3_0_c"
+            ],
+            "processing_type": [
+                "bias_corrected",
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "cclm4_8_17",
+                "racmo22e",
+                "rca4"
+            ],
+            "time_aggregation": [
+                "monthly_mean"
+            ],
+            "variable": [
+                "precipitation"
+            ],
+            "variable_type": [
+                "relative_change_from_reference_period"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r12i1p1"
+            ],
+            "experiment": [
+                "degree_scenario"
+            ],
+            "gcm": [
+                "ec_earth"
+            ],
+            "horizontal_resolution": [
+                "5_km"
+            ],
+            "period": [
+                "1_5_c",
+                "2_0_c",
+                "3_0_c"
+            ],
+            "processing_type": [
+                "bias_corrected",
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "cclm4_8_17",
+                "racmo22e",
+                "rca4"
+            ],
+            "time_aggregation": [
+                "monthly_mean"
+            ],
+            "variable": [
+                "precipitation",
+                "2m_air_temperature"
+            ],
+            "variable_type": [
+                "absolute_values"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r12i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "gcm": [
+                "ec_earth"
+            ],
+            "horizontal_resolution": [
+                "0_11_degrees"
+            ],
+            "period": [
+                "1971_2000"
+            ],
+            "processing_type": [
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "cclm4_8_17",
+                "racmo22e",
+                "rca4"
+            ],
+            "time_aggregation": [
+                "annual_mean"
+            ],
+            "variable": [
+                "longest_dry_spells",
+                "number_of_dry_spells",
+                "precipitation",
+                "highest_5_day_precipitation_amount",
+                "2m_air_temperature"
+            ],
+            "variable_type": [
+                "absolute_values"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r12i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "gcm": [
+                "ec_earth"
+            ],
+            "horizontal_resolution": [
+                "0_11_degrees"
+            ],
+            "period": [
+                "1971_2000"
+            ],
+            "processing_type": [
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "cclm4_8_17",
+                "racmo22e",
+                "rca4"
+            ],
+            "time_aggregation": [
+                "monthly_mean"
+            ],
+            "variable": [
+                "precipitation",
+                "2m_air_temperature"
+            ],
+            "variable_type": [
+                "absolute_values"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r12i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "gcm": [
+                "ec_earth"
+            ],
+            "horizontal_resolution": [
+                "5_km"
+            ],
+            "period": [
+                "1971",
+                "1972",
+                "1973",
+                "1974",
+                "1975",
+                "1976",
+                "1977",
+                "1978",
+                "1979",
+                "1980",
+                "1981",
+                "1982",
+                "1983",
+                "1984",
+                "1985",
+                "1986",
+                "1987",
+                "1988",
+                "1989",
+                "1990",
+                "1991",
+                "1992",
+                "1993",
+                "1994",
+                "1995",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2000",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005"
+            ],
+            "processing_type": [
+                "bias_corrected"
+            ],
+            "product_type": [
+                "essential_climate_variables"
+            ],
+            "rcm": [
+                "cclm4_8_17",
+                "racmo22e",
+                "rca4"
+            ],
+            "time_aggregation": [
+                "daily"
+            ],
+            "variable": [
+                "precipitation",
+                "2m_air_temperature"
+            ],
+            "variable_type": [
+                "absolute_values"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r12i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "gcm": [
+                "ec_earth"
+            ],
+            "horizontal_resolution": [
+                "5_km"
+            ],
+            "period": [
+                "1971_2000"
+            ],
+            "processing_type": [
+                "bias_corrected",
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "cclm4_8_17",
+                "racmo22e",
+                "rca4"
+            ],
+            "time_aggregation": [
+                "annual_mean"
+            ],
+            "variable": [
+                "longest_dry_spells",
+                "number_of_dry_spells",
+                "precipitation",
+                "highest_5_day_precipitation_amount",
+                "2m_air_temperature"
+            ],
+            "variable_type": [
+                "absolute_values"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r12i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "gcm": [
+                "ec_earth"
+            ],
+            "horizontal_resolution": [
+                "5_km"
+            ],
+            "period": [
+                "1971_2000"
+            ],
+            "processing_type": [
+                "bias_corrected",
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "cclm4_8_17",
+                "racmo22e",
+                "rca4"
+            ],
+            "time_aggregation": [
+                "monthly_mean"
+            ],
+            "variable": [
+                "precipitation",
+                "2m_air_temperature"
+            ],
+            "variable_type": [
+                "absolute_values"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r12i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6",
+                "rcp_4_5",
+                "rcp_8_5"
+            ],
+            "gcm": [
+                "ec_earth"
+            ],
+            "horizontal_resolution": [
+                "0_11_degrees"
+            ],
+            "period": [
+                "2011_2040",
+                "2041_2070",
+                "2071_2100"
+            ],
+            "processing_type": [
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "cclm4_8_17",
+                "racmo22e",
+                "rca4"
+            ],
+            "time_aggregation": [
+                "annual_mean"
+            ],
+            "variable": [
+                "longest_dry_spells",
+                "number_of_dry_spells",
+                "precipitation",
+                "highest_5_day_precipitation_amount"
+            ],
+            "variable_type": [
+                "relative_change_from_reference_period"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r12i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6",
+                "rcp_4_5",
+                "rcp_8_5"
+            ],
+            "gcm": [
+                "ec_earth"
+            ],
+            "horizontal_resolution": [
+                "0_11_degrees"
+            ],
+            "period": [
+                "2011_2040",
+                "2041_2070",
+                "2071_2100"
+            ],
+            "processing_type": [
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "cclm4_8_17",
+                "racmo22e",
+                "rca4"
+            ],
+            "time_aggregation": [
+                "annual_mean"
+            ],
+            "variable": [
+                "longest_dry_spells",
+                "number_of_dry_spells",
+                "precipitation",
+                "highest_5_day_precipitation_amount",
+                "2m_air_temperature"
+            ],
+            "variable_type": [
+                "absolute_values"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r12i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6",
+                "rcp_4_5",
+                "rcp_8_5"
+            ],
+            "gcm": [
+                "ec_earth"
+            ],
+            "horizontal_resolution": [
+                "0_11_degrees"
+            ],
+            "period": [
+                "2011_2040",
+                "2041_2070",
+                "2071_2100"
+            ],
+            "processing_type": [
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "cclm4_8_17",
+                "racmo22e",
+                "rca4"
+            ],
+            "time_aggregation": [
+                "annual_mean",
+                "monthly_mean"
+            ],
+            "variable": [
+                "2m_air_temperature"
+            ],
+            "variable_type": [
+                "absolute_change_from_reference_period"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r12i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6",
+                "rcp_4_5",
+                "rcp_8_5"
+            ],
+            "gcm": [
+                "ec_earth"
+            ],
+            "horizontal_resolution": [
+                "0_11_degrees"
+            ],
+            "period": [
+                "2011_2040",
+                "2041_2070",
+                "2071_2100"
+            ],
+            "processing_type": [
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "cclm4_8_17",
+                "racmo22e",
+                "rca4"
+            ],
+            "time_aggregation": [
+                "monthly_mean"
+            ],
+            "variable": [
+                "precipitation"
+            ],
+            "variable_type": [
+                "relative_change_from_reference_period"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r12i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6",
+                "rcp_4_5",
+                "rcp_8_5"
+            ],
+            "gcm": [
+                "ec_earth"
+            ],
+            "horizontal_resolution": [
+                "0_11_degrees"
+            ],
+            "period": [
+                "2011_2040",
+                "2041_2070",
+                "2071_2100"
+            ],
+            "processing_type": [
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "cclm4_8_17",
+                "racmo22e",
+                "rca4"
+            ],
+            "time_aggregation": [
+                "monthly_mean"
+            ],
+            "variable": [
+                "precipitation",
+                "2m_air_temperature"
+            ],
+            "variable_type": [
+                "absolute_values"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r12i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6",
+                "rcp_4_5",
+                "rcp_8_5"
+            ],
+            "gcm": [
+                "ec_earth"
+            ],
+            "horizontal_resolution": [
+                "5_km"
+            ],
+            "period": [
+                "1970",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018",
+                "2019",
+                "2020",
+                "2021",
+                "2022",
+                "2023",
+                "2024",
+                "2025",
+                "2026",
+                "2027",
+                "2028",
+                "2029",
+                "2030",
+                "2031",
+                "2032",
+                "2033",
+                "2034",
+                "2035",
+                "2036",
+                "2037",
+                "2038",
+                "2039",
+                "2040",
+                "2041",
+                "2042",
+                "2043",
+                "2044",
+                "2045",
+                "2046",
+                "2047",
+                "2048",
+                "2049",
+                "2050",
+                "2051",
+                "2052",
+                "2053",
+                "2054",
+                "2055",
+                "2056",
+                "2057",
+                "2058",
+                "2059",
+                "2060",
+                "2061",
+                "2062",
+                "2063",
+                "2064",
+                "2065",
+                "2066",
+                "2067",
+                "2068",
+                "2069",
+                "2070",
+                "2071",
+                "2072",
+                "2073",
+                "2074",
+                "2075",
+                "2076",
+                "2077",
+                "2078",
+                "2079",
+                "2080",
+                "2081",
+                "2082",
+                "2083",
+                "2084",
+                "2085",
+                "2086",
+                "2087",
+                "2088",
+                "2089",
+                "2090",
+                "2091",
+                "2092",
+                "2093",
+                "2094",
+                "2095",
+                "2096",
+                "2097",
+                "2098",
+                "2099",
+                "2100"
+            ],
+            "processing_type": [
+                "bias_corrected"
+            ],
+            "product_type": [
+                "essential_climate_variables"
+            ],
+            "rcm": [
+                "rca4"
+            ],
+            "time_aggregation": [
+                "daily"
+            ],
+            "variable": [
+                "precipitation",
+                "2m_air_temperature"
+            ],
+            "variable_type": [
+                "absolute_values"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r12i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6",
+                "rcp_4_5",
+                "rcp_8_5"
+            ],
+            "gcm": [
+                "ec_earth"
+            ],
+            "horizontal_resolution": [
+                "5_km"
+            ],
+            "period": [
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018",
+                "2019",
+                "2020",
+                "2021",
+                "2022",
+                "2023",
+                "2024",
+                "2025",
+                "2026",
+                "2027",
+                "2028",
+                "2029",
+                "2030",
+                "2031",
+                "2032",
+                "2033",
+                "2034",
+                "2035",
+                "2036",
+                "2037",
+                "2038",
+                "2039",
+                "2040",
+                "2041",
+                "2042",
+                "2043",
+                "2044",
+                "2045",
+                "2046",
+                "2047",
+                "2048",
+                "2049",
+                "2050",
+                "2051",
+                "2052",
+                "2053",
+                "2054",
+                "2055",
+                "2056",
+                "2057",
+                "2058",
+                "2059",
+                "2060",
+                "2061",
+                "2062",
+                "2063",
+                "2064",
+                "2065",
+                "2066",
+                "2067",
+                "2068",
+                "2069",
+                "2070",
+                "2071",
+                "2072",
+                "2073",
+                "2074",
+                "2075",
+                "2076",
+                "2077",
+                "2078",
+                "2079",
+                "2080",
+                "2081",
+                "2082",
+                "2083",
+                "2084",
+                "2085",
+                "2086",
+                "2087",
+                "2088",
+                "2089",
+                "2090",
+                "2091",
+                "2092",
+                "2093",
+                "2094",
+                "2095",
+                "2096",
+                "2097",
+                "2098",
+                "2099",
+                "2100"
+            ],
+            "processing_type": [
+                "bias_corrected"
+            ],
+            "product_type": [
+                "essential_climate_variables"
+            ],
+            "rcm": [
+                "cclm4_8_17",
+                "racmo22e"
+            ],
+            "time_aggregation": [
+                "daily"
+            ],
+            "variable": [
+                "precipitation",
+                "2m_air_temperature"
+            ],
+            "variable_type": [
+                "absolute_values"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r12i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6",
+                "rcp_4_5",
+                "rcp_8_5"
+            ],
+            "gcm": [
+                "ec_earth"
+            ],
+            "horizontal_resolution": [
+                "5_km"
+            ],
+            "period": [
+                "2011_2040",
+                "2041_2070",
+                "2071_2100"
+            ],
+            "processing_type": [
+                "bias_corrected",
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "cclm4_8_17",
+                "racmo22e",
+                "rca4"
+            ],
+            "time_aggregation": [
+                "annual_mean"
+            ],
+            "variable": [
+                "longest_dry_spells",
+                "number_of_dry_spells",
+                "precipitation",
+                "highest_5_day_precipitation_amount"
+            ],
+            "variable_type": [
+                "relative_change_from_reference_period"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r12i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6",
+                "rcp_4_5",
+                "rcp_8_5"
+            ],
+            "gcm": [
+                "ec_earth"
+            ],
+            "horizontal_resolution": [
+                "5_km"
+            ],
+            "period": [
+                "2011_2040",
+                "2041_2070",
+                "2071_2100"
+            ],
+            "processing_type": [
+                "bias_corrected",
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "cclm4_8_17",
+                "racmo22e",
+                "rca4"
+            ],
+            "time_aggregation": [
+                "annual_mean"
+            ],
+            "variable": [
+                "longest_dry_spells",
+                "number_of_dry_spells",
+                "precipitation",
+                "highest_5_day_precipitation_amount",
+                "2m_air_temperature"
+            ],
+            "variable_type": [
+                "absolute_values"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r12i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6",
+                "rcp_4_5",
+                "rcp_8_5"
+            ],
+            "gcm": [
+                "ec_earth"
+            ],
+            "horizontal_resolution": [
+                "5_km"
+            ],
+            "period": [
+                "2011_2040",
+                "2041_2070",
+                "2071_2100"
+            ],
+            "processing_type": [
+                "bias_corrected",
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "cclm4_8_17",
+                "racmo22e",
+                "rca4"
+            ],
+            "time_aggregation": [
+                "annual_mean",
+                "monthly_mean"
+            ],
+            "variable": [
+                "2m_air_temperature"
+            ],
+            "variable_type": [
+                "absolute_change_from_reference_period"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r12i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6",
+                "rcp_4_5",
+                "rcp_8_5"
+            ],
+            "gcm": [
+                "ec_earth"
+            ],
+            "horizontal_resolution": [
+                "5_km"
+            ],
+            "period": [
+                "2011_2040",
+                "2041_2070",
+                "2071_2100"
+            ],
+            "processing_type": [
+                "bias_corrected",
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "cclm4_8_17",
+                "racmo22e",
+                "rca4"
+            ],
+            "time_aggregation": [
+                "monthly_mean"
+            ],
+            "variable": [
+                "precipitation"
+            ],
+            "variable_type": [
+                "relative_change_from_reference_period"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r12i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6",
+                "rcp_4_5",
+                "rcp_8_5"
+            ],
+            "gcm": [
+                "ec_earth"
+            ],
+            "horizontal_resolution": [
+                "5_km"
+            ],
+            "period": [
+                "2011_2040",
+                "2041_2070",
+                "2071_2100"
+            ],
+            "processing_type": [
+                "bias_corrected",
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "cclm4_8_17",
+                "racmo22e",
+                "rca4"
+            ],
+            "time_aggregation": [
+                "monthly_mean"
+            ],
+            "variable": [
+                "precipitation",
+                "2m_air_temperature"
+            ],
+            "variable_type": [
+                "absolute_values"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "degree_scenario"
+            ],
+            "gcm": [
+                "hadgem2_es"
+            ],
+            "horizontal_resolution": [
+                "0_11_degrees"
+            ],
+            "period": [
+                "1_5_c",
+                "2_0_c",
+                "3_0_c"
+            ],
+            "processing_type": [
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "racmo22e",
+                "rca4"
+            ],
+            "time_aggregation": [
+                "annual_mean"
+            ],
+            "variable": [
+                "longest_dry_spells",
+                "number_of_dry_spells",
+                "precipitation",
+                "highest_5_day_precipitation_amount"
+            ],
+            "variable_type": [
+                "relative_change_from_reference_period"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "degree_scenario"
+            ],
+            "gcm": [
+                "hadgem2_es"
+            ],
+            "horizontal_resolution": [
+                "0_11_degrees"
+            ],
+            "period": [
+                "1_5_c",
+                "2_0_c",
+                "3_0_c"
+            ],
+            "processing_type": [
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "racmo22e",
+                "rca4"
+            ],
+            "time_aggregation": [
+                "annual_mean"
+            ],
+            "variable": [
+                "longest_dry_spells",
+                "number_of_dry_spells",
+                "precipitation",
+                "highest_5_day_precipitation_amount",
+                "2m_air_temperature"
+            ],
+            "variable_type": [
+                "absolute_values"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "degree_scenario"
+            ],
+            "gcm": [
+                "hadgem2_es"
+            ],
+            "horizontal_resolution": [
+                "0_11_degrees"
+            ],
+            "period": [
+                "1_5_c",
+                "2_0_c",
+                "3_0_c"
+            ],
+            "processing_type": [
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "racmo22e",
+                "rca4"
+            ],
+            "time_aggregation": [
+                "annual_mean",
+                "monthly_mean"
+            ],
+            "variable": [
+                "2m_air_temperature"
+            ],
+            "variable_type": [
+                "absolute_change_from_reference_period"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "degree_scenario"
+            ],
+            "gcm": [
+                "hadgem2_es"
+            ],
+            "horizontal_resolution": [
+                "0_11_degrees"
+            ],
+            "period": [
+                "1_5_c",
+                "2_0_c",
+                "3_0_c"
+            ],
+            "processing_type": [
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "racmo22e",
+                "rca4"
+            ],
+            "time_aggregation": [
+                "monthly_mean"
+            ],
+            "variable": [
+                "precipitation"
+            ],
+            "variable_type": [
+                "relative_change_from_reference_period"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "degree_scenario"
+            ],
+            "gcm": [
+                "hadgem2_es"
+            ],
+            "horizontal_resolution": [
+                "0_11_degrees"
+            ],
+            "period": [
+                "1_5_c",
+                "2_0_c",
+                "3_0_c"
+            ],
+            "processing_type": [
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "racmo22e",
+                "rca4"
+            ],
+            "time_aggregation": [
+                "monthly_mean"
+            ],
+            "variable": [
+                "precipitation",
+                "2m_air_temperature"
+            ],
+            "variable_type": [
+                "absolute_values"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "degree_scenario"
+            ],
+            "gcm": [
+                "hadgem2_es"
+            ],
+            "horizontal_resolution": [
+                "5_km"
+            ],
+            "period": [
+                "1_5_c",
+                "2_0_c",
+                "3_0_c"
+            ],
+            "processing_type": [
+                "bias_corrected",
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "racmo22e",
+                "rca4"
+            ],
+            "time_aggregation": [
+                "annual_mean"
+            ],
+            "variable": [
+                "longest_dry_spells",
+                "number_of_dry_spells",
+                "precipitation",
+                "highest_5_day_precipitation_amount"
+            ],
+            "variable_type": [
+                "relative_change_from_reference_period"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "degree_scenario"
+            ],
+            "gcm": [
+                "hadgem2_es"
+            ],
+            "horizontal_resolution": [
+                "5_km"
+            ],
+            "period": [
+                "1_5_c",
+                "2_0_c",
+                "3_0_c"
+            ],
+            "processing_type": [
+                "bias_corrected",
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "racmo22e",
+                "rca4"
+            ],
+            "time_aggregation": [
+                "annual_mean"
+            ],
+            "variable": [
+                "longest_dry_spells",
+                "number_of_dry_spells",
+                "precipitation",
+                "highest_5_day_precipitation_amount",
+                "2m_air_temperature"
+            ],
+            "variable_type": [
+                "absolute_values"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "degree_scenario"
+            ],
+            "gcm": [
+                "hadgem2_es"
+            ],
+            "horizontal_resolution": [
+                "5_km"
+            ],
+            "period": [
+                "1_5_c",
+                "2_0_c",
+                "3_0_c"
+            ],
+            "processing_type": [
+                "bias_corrected",
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "racmo22e",
+                "rca4"
+            ],
+            "time_aggregation": [
+                "annual_mean",
+                "monthly_mean"
+            ],
+            "variable": [
+                "2m_air_temperature"
+            ],
+            "variable_type": [
+                "absolute_change_from_reference_period"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "degree_scenario"
+            ],
+            "gcm": [
+                "hadgem2_es"
+            ],
+            "horizontal_resolution": [
+                "5_km"
+            ],
+            "period": [
+                "1_5_c",
+                "2_0_c",
+                "3_0_c"
+            ],
+            "processing_type": [
+                "bias_corrected",
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "racmo22e",
+                "rca4"
+            ],
+            "time_aggregation": [
+                "monthly_mean"
+            ],
+            "variable": [
+                "precipitation"
+            ],
+            "variable_type": [
+                "relative_change_from_reference_period"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "degree_scenario"
+            ],
+            "gcm": [
+                "hadgem2_es"
+            ],
+            "horizontal_resolution": [
+                "5_km"
+            ],
+            "period": [
+                "1_5_c",
+                "2_0_c",
+                "3_0_c"
+            ],
+            "processing_type": [
+                "bias_corrected",
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "racmo22e",
+                "rca4"
+            ],
+            "time_aggregation": [
+                "monthly_mean"
+            ],
+            "variable": [
+                "precipitation",
+                "2m_air_temperature"
+            ],
+            "variable_type": [
+                "absolute_values"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "degree_scenario"
+            ],
+            "gcm": [
+                "mpi_esm_lr"
+            ],
+            "horizontal_resolution": [
+                "0_11_degrees"
+            ],
+            "period": [
+                "1_5_c",
+                "2_0_c",
+                "3_0_c"
+            ],
+            "processing_type": [
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "csc_remo2009",
+                "rca4"
+            ],
+            "time_aggregation": [
+                "annual_mean"
+            ],
+            "variable": [
+                "longest_dry_spells",
+                "number_of_dry_spells",
+                "precipitation",
+                "highest_5_day_precipitation_amount"
+            ],
+            "variable_type": [
+                "relative_change_from_reference_period"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "degree_scenario"
+            ],
+            "gcm": [
+                "mpi_esm_lr"
+            ],
+            "horizontal_resolution": [
+                "0_11_degrees"
+            ],
+            "period": [
+                "1_5_c",
+                "2_0_c",
+                "3_0_c"
+            ],
+            "processing_type": [
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "csc_remo2009",
+                "rca4"
+            ],
+            "time_aggregation": [
+                "annual_mean"
+            ],
+            "variable": [
+                "longest_dry_spells",
+                "number_of_dry_spells",
+                "precipitation",
+                "highest_5_day_precipitation_amount",
+                "2m_air_temperature"
+            ],
+            "variable_type": [
+                "absolute_values"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "degree_scenario"
+            ],
+            "gcm": [
+                "mpi_esm_lr"
+            ],
+            "horizontal_resolution": [
+                "0_11_degrees"
+            ],
+            "period": [
+                "1_5_c",
+                "2_0_c",
+                "3_0_c"
+            ],
+            "processing_type": [
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "csc_remo2009",
+                "rca4"
+            ],
+            "time_aggregation": [
+                "annual_mean",
+                "monthly_mean"
+            ],
+            "variable": [
+                "2m_air_temperature"
+            ],
+            "variable_type": [
+                "absolute_change_from_reference_period"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "degree_scenario"
+            ],
+            "gcm": [
+                "mpi_esm_lr"
+            ],
+            "horizontal_resolution": [
+                "0_11_degrees"
+            ],
+            "period": [
+                "1_5_c",
+                "2_0_c",
+                "3_0_c"
+            ],
+            "processing_type": [
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "csc_remo2009",
+                "rca4"
+            ],
+            "time_aggregation": [
+                "monthly_mean"
+            ],
+            "variable": [
+                "precipitation"
+            ],
+            "variable_type": [
+                "relative_change_from_reference_period"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "degree_scenario"
+            ],
+            "gcm": [
+                "mpi_esm_lr"
+            ],
+            "horizontal_resolution": [
+                "0_11_degrees"
+            ],
+            "period": [
+                "1_5_c",
+                "2_0_c",
+                "3_0_c"
+            ],
+            "processing_type": [
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "csc_remo2009",
+                "rca4"
+            ],
+            "time_aggregation": [
+                "monthly_mean"
+            ],
+            "variable": [
+                "precipitation",
+                "2m_air_temperature"
+            ],
+            "variable_type": [
+                "absolute_values"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "degree_scenario"
+            ],
+            "gcm": [
+                "mpi_esm_lr"
+            ],
+            "horizontal_resolution": [
+                "5_km"
+            ],
+            "period": [
+                "1_5_c",
+                "2_0_c",
+                "3_0_c"
+            ],
+            "processing_type": [
+                "bias_corrected",
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "csc_remo2009",
+                "rca4"
+            ],
+            "time_aggregation": [
+                "annual_mean"
+            ],
+            "variable": [
+                "longest_dry_spells",
+                "number_of_dry_spells",
+                "precipitation",
+                "highest_5_day_precipitation_amount"
+            ],
+            "variable_type": [
+                "relative_change_from_reference_period"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "degree_scenario"
+            ],
+            "gcm": [
+                "mpi_esm_lr"
+            ],
+            "horizontal_resolution": [
+                "5_km"
+            ],
+            "period": [
+                "1_5_c",
+                "2_0_c",
+                "3_0_c"
+            ],
+            "processing_type": [
+                "bias_corrected",
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "csc_remo2009",
+                "rca4"
+            ],
+            "time_aggregation": [
+                "annual_mean"
+            ],
+            "variable": [
+                "longest_dry_spells",
+                "number_of_dry_spells",
+                "precipitation",
+                "highest_5_day_precipitation_amount",
+                "2m_air_temperature"
+            ],
+            "variable_type": [
+                "absolute_values"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "degree_scenario"
+            ],
+            "gcm": [
+                "mpi_esm_lr"
+            ],
+            "horizontal_resolution": [
+                "5_km"
+            ],
+            "period": [
+                "1_5_c",
+                "2_0_c",
+                "3_0_c"
+            ],
+            "processing_type": [
+                "bias_corrected",
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "csc_remo2009",
+                "rca4"
+            ],
+            "time_aggregation": [
+                "annual_mean",
+                "monthly_mean"
+            ],
+            "variable": [
+                "2m_air_temperature"
+            ],
+            "variable_type": [
+                "absolute_change_from_reference_period"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "degree_scenario"
+            ],
+            "gcm": [
+                "mpi_esm_lr"
+            ],
+            "horizontal_resolution": [
+                "5_km"
+            ],
+            "period": [
+                "1_5_c",
+                "2_0_c",
+                "3_0_c"
+            ],
+            "processing_type": [
+                "bias_corrected",
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "csc_remo2009",
+                "rca4"
+            ],
+            "time_aggregation": [
+                "monthly_mean"
+            ],
+            "variable": [
+                "precipitation"
+            ],
+            "variable_type": [
+                "relative_change_from_reference_period"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "degree_scenario"
+            ],
+            "gcm": [
+                "mpi_esm_lr"
+            ],
+            "horizontal_resolution": [
+                "5_km"
+            ],
+            "period": [
+                "1_5_c",
+                "2_0_c",
+                "3_0_c"
+            ],
+            "processing_type": [
+                "bias_corrected",
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "csc_remo2009",
+                "rca4"
+            ],
+            "time_aggregation": [
+                "monthly_mean"
+            ],
+            "variable": [
+                "precipitation",
+                "2m_air_temperature"
+            ],
+            "variable_type": [
+                "absolute_values"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "gcm": [
+                "hadgem2_es"
+            ],
+            "horizontal_resolution": [
+                "0_11_degrees"
+            ],
+            "period": [
+                "1971_2000"
+            ],
+            "processing_type": [
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "racmo22e",
+                "rca4"
+            ],
+            "time_aggregation": [
+                "annual_mean"
+            ],
+            "variable": [
+                "longest_dry_spells",
+                "number_of_dry_spells",
+                "precipitation",
+                "highest_5_day_precipitation_amount",
+                "2m_air_temperature"
+            ],
+            "variable_type": [
+                "absolute_values"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "gcm": [
+                "hadgem2_es"
+            ],
+            "horizontal_resolution": [
+                "0_11_degrees"
+            ],
+            "period": [
+                "1971_2000"
+            ],
+            "processing_type": [
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "racmo22e",
+                "rca4"
+            ],
+            "time_aggregation": [
+                "monthly_mean"
+            ],
+            "variable": [
+                "precipitation",
+                "2m_air_temperature"
+            ],
+            "variable_type": [
+                "absolute_values"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "gcm": [
+                "hadgem2_es"
+            ],
+            "horizontal_resolution": [
+                "5_km"
+            ],
+            "period": [
+                "1971",
+                "1972",
+                "1973",
+                "1974",
+                "1975",
+                "1976",
+                "1977",
+                "1978",
+                "1979",
+                "1980",
+                "1981",
+                "1982",
+                "1983",
+                "1984",
+                "1985",
+                "1986",
+                "1987",
+                "1988",
+                "1989",
+                "1990",
+                "1991",
+                "1992",
+                "1993",
+                "1994",
+                "1995",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2000",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005"
+            ],
+            "processing_type": [
+                "bias_corrected"
+            ],
+            "product_type": [
+                "essential_climate_variables"
+            ],
+            "rcm": [
+                "racmo22e",
+                "rca4"
+            ],
+            "time_aggregation": [
+                "daily"
+            ],
+            "variable": [
+                "precipitation",
+                "2m_air_temperature"
+            ],
+            "variable_type": [
+                "absolute_values"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "gcm": [
+                "hadgem2_es"
+            ],
+            "horizontal_resolution": [
+                "5_km"
+            ],
+            "period": [
+                "1971_2000"
+            ],
+            "processing_type": [
+                "bias_corrected",
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "racmo22e",
+                "rca4"
+            ],
+            "time_aggregation": [
+                "annual_mean"
+            ],
+            "variable": [
+                "longest_dry_spells",
+                "number_of_dry_spells",
+                "precipitation",
+                "highest_5_day_precipitation_amount",
+                "2m_air_temperature"
+            ],
+            "variable_type": [
+                "absolute_values"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "gcm": [
+                "hadgem2_es"
+            ],
+            "horizontal_resolution": [
+                "5_km"
+            ],
+            "period": [
+                "1971_2000"
+            ],
+            "processing_type": [
+                "bias_corrected",
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "racmo22e",
+                "rca4"
+            ],
+            "time_aggregation": [
+                "monthly_mean"
+            ],
+            "variable": [
+                "precipitation",
+                "2m_air_temperature"
+            ],
+            "variable_type": [
+                "absolute_values"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "gcm": [
+                "mpi_esm_lr"
+            ],
+            "horizontal_resolution": [
+                "0_11_degrees"
+            ],
+            "period": [
+                "1971_2000"
+            ],
+            "processing_type": [
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "csc_remo2009",
+                "rca4"
+            ],
+            "time_aggregation": [
+                "annual_mean"
+            ],
+            "variable": [
+                "longest_dry_spells",
+                "number_of_dry_spells",
+                "precipitation",
+                "highest_5_day_precipitation_amount",
+                "2m_air_temperature"
+            ],
+            "variable_type": [
+                "absolute_values"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "gcm": [
+                "mpi_esm_lr"
+            ],
+            "horizontal_resolution": [
+                "0_11_degrees"
+            ],
+            "period": [
+                "1971_2000"
+            ],
+            "processing_type": [
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "csc_remo2009",
+                "rca4"
+            ],
+            "time_aggregation": [
+                "monthly_mean"
+            ],
+            "variable": [
+                "precipitation",
+                "2m_air_temperature"
+            ],
+            "variable_type": [
+                "absolute_values"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "gcm": [
+                "mpi_esm_lr"
+            ],
+            "horizontal_resolution": [
+                "5_km"
+            ],
+            "period": [
+                "1971",
+                "1972",
+                "1973",
+                "1974",
+                "1975",
+                "1976",
+                "1977",
+                "1978",
+                "1979",
+                "1980",
+                "1981",
+                "1982",
+                "1983",
+                "1984",
+                "1985",
+                "1986",
+                "1987",
+                "1988",
+                "1989",
+                "1990",
+                "1991",
+                "1992",
+                "1993",
+                "1994",
+                "1995",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2000",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005"
+            ],
+            "processing_type": [
+                "bias_corrected"
+            ],
+            "product_type": [
+                "essential_climate_variables"
+            ],
+            "rcm": [
+                "csc_remo2009",
+                "rca4"
+            ],
+            "time_aggregation": [
+                "daily"
+            ],
+            "variable": [
+                "precipitation",
+                "2m_air_temperature"
+            ],
+            "variable_type": [
+                "absolute_values"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "gcm": [
+                "mpi_esm_lr"
+            ],
+            "horizontal_resolution": [
+                "5_km"
+            ],
+            "period": [
+                "1971_2000"
+            ],
+            "processing_type": [
+                "bias_corrected",
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "csc_remo2009",
+                "rca4"
+            ],
+            "time_aggregation": [
+                "annual_mean"
+            ],
+            "variable": [
+                "longest_dry_spells",
+                "number_of_dry_spells",
+                "precipitation",
+                "highest_5_day_precipitation_amount",
+                "2m_air_temperature"
+            ],
+            "variable_type": [
+                "absolute_values"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "gcm": [
+                "mpi_esm_lr"
+            ],
+            "horizontal_resolution": [
+                "5_km"
+            ],
+            "period": [
+                "1971_2000"
+            ],
+            "processing_type": [
+                "bias_corrected",
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "csc_remo2009",
+                "rca4"
+            ],
+            "time_aggregation": [
+                "monthly_mean"
+            ],
+            "variable": [
+                "precipitation",
+                "2m_air_temperature"
+            ],
+            "variable_type": [
+                "absolute_values"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6",
+                "rcp_4_5",
+                "rcp_8_5"
+            ],
+            "gcm": [
+                "hadgem2_es"
+            ],
+            "horizontal_resolution": [
+                "0_11_degrees"
+            ],
+            "period": [
+                "2011_2040",
+                "2041_2070",
+                "2071_2100"
+            ],
+            "processing_type": [
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "racmo22e",
+                "rca4"
+            ],
+            "time_aggregation": [
+                "annual_mean"
+            ],
+            "variable": [
+                "longest_dry_spells",
+                "number_of_dry_spells",
+                "precipitation",
+                "highest_5_day_precipitation_amount"
+            ],
+            "variable_type": [
+                "relative_change_from_reference_period"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6",
+                "rcp_4_5",
+                "rcp_8_5"
+            ],
+            "gcm": [
+                "hadgem2_es"
+            ],
+            "horizontal_resolution": [
+                "0_11_degrees"
+            ],
+            "period": [
+                "2011_2040",
+                "2041_2070",
+                "2071_2100"
+            ],
+            "processing_type": [
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "racmo22e",
+                "rca4"
+            ],
+            "time_aggregation": [
+                "annual_mean"
+            ],
+            "variable": [
+                "longest_dry_spells",
+                "number_of_dry_spells",
+                "precipitation",
+                "highest_5_day_precipitation_amount",
+                "2m_air_temperature"
+            ],
+            "variable_type": [
+                "absolute_values"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6",
+                "rcp_4_5",
+                "rcp_8_5"
+            ],
+            "gcm": [
+                "hadgem2_es"
+            ],
+            "horizontal_resolution": [
+                "0_11_degrees"
+            ],
+            "period": [
+                "2011_2040",
+                "2041_2070",
+                "2071_2100"
+            ],
+            "processing_type": [
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "racmo22e",
+                "rca4"
+            ],
+            "time_aggregation": [
+                "annual_mean",
+                "monthly_mean"
+            ],
+            "variable": [
+                "2m_air_temperature"
+            ],
+            "variable_type": [
+                "absolute_change_from_reference_period"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6",
+                "rcp_4_5",
+                "rcp_8_5"
+            ],
+            "gcm": [
+                "hadgem2_es"
+            ],
+            "horizontal_resolution": [
+                "0_11_degrees"
+            ],
+            "period": [
+                "2011_2040",
+                "2041_2070",
+                "2071_2100"
+            ],
+            "processing_type": [
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "racmo22e",
+                "rca4"
+            ],
+            "time_aggregation": [
+                "monthly_mean"
+            ],
+            "variable": [
+                "precipitation"
+            ],
+            "variable_type": [
+                "relative_change_from_reference_period"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6",
+                "rcp_4_5",
+                "rcp_8_5"
+            ],
+            "gcm": [
+                "hadgem2_es"
+            ],
+            "horizontal_resolution": [
+                "0_11_degrees"
+            ],
+            "period": [
+                "2011_2040",
+                "2041_2070",
+                "2071_2100"
+            ],
+            "processing_type": [
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "racmo22e",
+                "rca4"
+            ],
+            "time_aggregation": [
+                "monthly_mean"
+            ],
+            "variable": [
+                "precipitation",
+                "2m_air_temperature"
+            ],
+            "variable_type": [
+                "absolute_values"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6",
+                "rcp_4_5",
+                "rcp_8_5"
+            ],
+            "gcm": [
+                "hadgem2_es"
+            ],
+            "horizontal_resolution": [
+                "5_km"
+            ],
+            "period": [
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018",
+                "2019",
+                "2020",
+                "2021",
+                "2022",
+                "2023",
+                "2024",
+                "2025",
+                "2026",
+                "2027",
+                "2028",
+                "2029",
+                "2030",
+                "2031",
+                "2032",
+                "2033",
+                "2034",
+                "2035",
+                "2036",
+                "2037",
+                "2038",
+                "2039",
+                "2040",
+                "2041",
+                "2042",
+                "2043",
+                "2044",
+                "2045",
+                "2046",
+                "2047",
+                "2048",
+                "2049",
+                "2050",
+                "2051",
+                "2052",
+                "2053",
+                "2054",
+                "2055",
+                "2056",
+                "2057",
+                "2058",
+                "2059",
+                "2060",
+                "2061",
+                "2062",
+                "2063",
+                "2064",
+                "2065",
+                "2066",
+                "2067",
+                "2068",
+                "2069",
+                "2070",
+                "2071",
+                "2072",
+                "2073",
+                "2074",
+                "2075",
+                "2076",
+                "2077",
+                "2078",
+                "2079",
+                "2080",
+                "2081",
+                "2082",
+                "2083",
+                "2084",
+                "2085",
+                "2086",
+                "2087",
+                "2088",
+                "2089",
+                "2090",
+                "2091",
+                "2092",
+                "2093",
+                "2094",
+                "2095",
+                "2096",
+                "2097",
+                "2098",
+                "2099",
+                "2100"
+            ],
+            "processing_type": [
+                "bias_corrected"
+            ],
+            "product_type": [
+                "essential_climate_variables"
+            ],
+            "rcm": [
+                "racmo22e"
+            ],
+            "time_aggregation": [
+                "daily"
+            ],
+            "variable": [
+                "precipitation",
+                "2m_air_temperature"
+            ],
+            "variable_type": [
+                "absolute_values"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6",
+                "rcp_4_5",
+                "rcp_8_5"
+            ],
+            "gcm": [
+                "hadgem2_es"
+            ],
+            "horizontal_resolution": [
+                "5_km"
+            ],
+            "period": [
+                "2011_2040",
+                "2041_2070",
+                "2071_2100"
+            ],
+            "processing_type": [
+                "bias_corrected",
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "racmo22e",
+                "rca4"
+            ],
+            "time_aggregation": [
+                "annual_mean"
+            ],
+            "variable": [
+                "longest_dry_spells",
+                "number_of_dry_spells",
+                "precipitation",
+                "highest_5_day_precipitation_amount"
+            ],
+            "variable_type": [
+                "relative_change_from_reference_period"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6",
+                "rcp_4_5",
+                "rcp_8_5"
+            ],
+            "gcm": [
+                "hadgem2_es"
+            ],
+            "horizontal_resolution": [
+                "5_km"
+            ],
+            "period": [
+                "2011_2040",
+                "2041_2070",
+                "2071_2100"
+            ],
+            "processing_type": [
+                "bias_corrected",
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "racmo22e",
+                "rca4"
+            ],
+            "time_aggregation": [
+                "annual_mean"
+            ],
+            "variable": [
+                "longest_dry_spells",
+                "number_of_dry_spells",
+                "precipitation",
+                "highest_5_day_precipitation_amount",
+                "2m_air_temperature"
+            ],
+            "variable_type": [
+                "absolute_values"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6",
+                "rcp_4_5",
+                "rcp_8_5"
+            ],
+            "gcm": [
+                "hadgem2_es"
+            ],
+            "horizontal_resolution": [
+                "5_km"
+            ],
+            "period": [
+                "2011_2040",
+                "2041_2070",
+                "2071_2100"
+            ],
+            "processing_type": [
+                "bias_corrected",
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "racmo22e",
+                "rca4"
+            ],
+            "time_aggregation": [
+                "annual_mean",
+                "monthly_mean"
+            ],
+            "variable": [
+                "2m_air_temperature"
+            ],
+            "variable_type": [
+                "absolute_change_from_reference_period"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6",
+                "rcp_4_5",
+                "rcp_8_5"
+            ],
+            "gcm": [
+                "hadgem2_es"
+            ],
+            "horizontal_resolution": [
+                "5_km"
+            ],
+            "period": [
+                "2011_2040",
+                "2041_2070",
+                "2071_2100"
+            ],
+            "processing_type": [
+                "bias_corrected",
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "racmo22e",
+                "rca4"
+            ],
+            "time_aggregation": [
+                "monthly_mean"
+            ],
+            "variable": [
+                "precipitation"
+            ],
+            "variable_type": [
+                "relative_change_from_reference_period"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6",
+                "rcp_4_5",
+                "rcp_8_5"
+            ],
+            "gcm": [
+                "hadgem2_es"
+            ],
+            "horizontal_resolution": [
+                "5_km"
+            ],
+            "period": [
+                "2011_2040",
+                "2041_2070",
+                "2071_2100"
+            ],
+            "processing_type": [
+                "bias_corrected",
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "racmo22e",
+                "rca4"
+            ],
+            "time_aggregation": [
+                "monthly_mean"
+            ],
+            "variable": [
+                "precipitation",
+                "2m_air_temperature"
+            ],
+            "variable_type": [
+                "absolute_values"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6",
+                "rcp_4_5",
+                "rcp_8_5"
+            ],
+            "gcm": [
+                "hadgem2_es",
+                "mpi_esm_lr"
+            ],
+            "horizontal_resolution": [
+                "5_km"
+            ],
+            "period": [
+                "1970",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018",
+                "2019",
+                "2020",
+                "2021",
+                "2022",
+                "2023",
+                "2024",
+                "2025",
+                "2026",
+                "2027",
+                "2028",
+                "2029",
+                "2030",
+                "2031",
+                "2032",
+                "2033",
+                "2034",
+                "2035",
+                "2036",
+                "2037",
+                "2038",
+                "2039",
+                "2040",
+                "2041",
+                "2042",
+                "2043",
+                "2044",
+                "2045",
+                "2046",
+                "2047",
+                "2048",
+                "2049",
+                "2050",
+                "2051",
+                "2052",
+                "2053",
+                "2054",
+                "2055",
+                "2056",
+                "2057",
+                "2058",
+                "2059",
+                "2060",
+                "2061",
+                "2062",
+                "2063",
+                "2064",
+                "2065",
+                "2066",
+                "2067",
+                "2068",
+                "2069",
+                "2070",
+                "2071",
+                "2072",
+                "2073",
+                "2074",
+                "2075",
+                "2076",
+                "2077",
+                "2078",
+                "2079",
+                "2080",
+                "2081",
+                "2082",
+                "2083",
+                "2084",
+                "2085",
+                "2086",
+                "2087",
+                "2088",
+                "2089",
+                "2090",
+                "2091",
+                "2092",
+                "2093",
+                "2094",
+                "2095",
+                "2096",
+                "2097",
+                "2098",
+                "2099",
+                "2100"
+            ],
+            "processing_type": [
+                "bias_corrected"
+            ],
+            "product_type": [
+                "essential_climate_variables"
+            ],
+            "rcm": [
+                "rca4"
+            ],
+            "time_aggregation": [
+                "daily"
+            ],
+            "variable": [
+                "precipitation",
+                "2m_air_temperature"
+            ],
+            "variable_type": [
+                "absolute_values"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6",
+                "rcp_4_5",
+                "rcp_8_5"
+            ],
+            "gcm": [
+                "mpi_esm_lr"
+            ],
+            "horizontal_resolution": [
+                "0_11_degrees"
+            ],
+            "period": [
+                "2011_2040",
+                "2041_2070",
+                "2071_2100"
+            ],
+            "processing_type": [
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "csc_remo2009",
+                "rca4"
+            ],
+            "time_aggregation": [
+                "annual_mean"
+            ],
+            "variable": [
+                "longest_dry_spells",
+                "number_of_dry_spells",
+                "precipitation",
+                "highest_5_day_precipitation_amount"
+            ],
+            "variable_type": [
+                "relative_change_from_reference_period"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6",
+                "rcp_4_5",
+                "rcp_8_5"
+            ],
+            "gcm": [
+                "mpi_esm_lr"
+            ],
+            "horizontal_resolution": [
+                "0_11_degrees"
+            ],
+            "period": [
+                "2011_2040",
+                "2041_2070",
+                "2071_2100"
+            ],
+            "processing_type": [
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "csc_remo2009",
+                "rca4"
+            ],
+            "time_aggregation": [
+                "annual_mean"
+            ],
+            "variable": [
+                "longest_dry_spells",
+                "number_of_dry_spells",
+                "precipitation",
+                "highest_5_day_precipitation_amount",
+                "2m_air_temperature"
+            ],
+            "variable_type": [
+                "absolute_values"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6",
+                "rcp_4_5",
+                "rcp_8_5"
+            ],
+            "gcm": [
+                "mpi_esm_lr"
+            ],
+            "horizontal_resolution": [
+                "0_11_degrees"
+            ],
+            "period": [
+                "2011_2040",
+                "2041_2070",
+                "2071_2100"
+            ],
+            "processing_type": [
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "csc_remo2009",
+                "rca4"
+            ],
+            "time_aggregation": [
+                "annual_mean",
+                "monthly_mean"
+            ],
+            "variable": [
+                "2m_air_temperature"
+            ],
+            "variable_type": [
+                "absolute_change_from_reference_period"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6",
+                "rcp_4_5",
+                "rcp_8_5"
+            ],
+            "gcm": [
+                "mpi_esm_lr"
+            ],
+            "horizontal_resolution": [
+                "0_11_degrees"
+            ],
+            "period": [
+                "2011_2040",
+                "2041_2070",
+                "2071_2100"
+            ],
+            "processing_type": [
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "csc_remo2009",
+                "rca4"
+            ],
+            "time_aggregation": [
+                "monthly_mean"
+            ],
+            "variable": [
+                "precipitation"
+            ],
+            "variable_type": [
+                "relative_change_from_reference_period"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6",
+                "rcp_4_5",
+                "rcp_8_5"
+            ],
+            "gcm": [
+                "mpi_esm_lr"
+            ],
+            "horizontal_resolution": [
+                "0_11_degrees"
+            ],
+            "period": [
+                "2011_2040",
+                "2041_2070",
+                "2071_2100"
+            ],
+            "processing_type": [
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "csc_remo2009",
+                "rca4"
+            ],
+            "time_aggregation": [
+                "monthly_mean"
+            ],
+            "variable": [
+                "precipitation",
+                "2m_air_temperature"
+            ],
+            "variable_type": [
+                "absolute_values"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6",
+                "rcp_4_5",
+                "rcp_8_5"
+            ],
+            "gcm": [
+                "mpi_esm_lr"
+            ],
+            "horizontal_resolution": [
+                "5_km"
+            ],
+            "period": [
+                "2011_2040",
+                "2041_2070",
+                "2071_2100"
+            ],
+            "processing_type": [
+                "bias_corrected",
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "csc_remo2009",
+                "rca4"
+            ],
+            "time_aggregation": [
+                "annual_mean"
+            ],
+            "variable": [
+                "longest_dry_spells",
+                "number_of_dry_spells",
+                "precipitation",
+                "highest_5_day_precipitation_amount"
+            ],
+            "variable_type": [
+                "relative_change_from_reference_period"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6",
+                "rcp_4_5",
+                "rcp_8_5"
+            ],
+            "gcm": [
+                "mpi_esm_lr"
+            ],
+            "horizontal_resolution": [
+                "5_km"
+            ],
+            "period": [
+                "2011_2040",
+                "2041_2070",
+                "2071_2100"
+            ],
+            "processing_type": [
+                "bias_corrected",
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "csc_remo2009",
+                "rca4"
+            ],
+            "time_aggregation": [
+                "annual_mean"
+            ],
+            "variable": [
+                "longest_dry_spells",
+                "number_of_dry_spells",
+                "precipitation",
+                "highest_5_day_precipitation_amount",
+                "2m_air_temperature"
+            ],
+            "variable_type": [
+                "absolute_values"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6",
+                "rcp_4_5",
+                "rcp_8_5"
+            ],
+            "gcm": [
+                "mpi_esm_lr"
+            ],
+            "horizontal_resolution": [
+                "5_km"
+            ],
+            "period": [
+                "2011_2040",
+                "2041_2070",
+                "2071_2100"
+            ],
+            "processing_type": [
+                "bias_corrected",
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "csc_remo2009",
+                "rca4"
+            ],
+            "time_aggregation": [
+                "annual_mean",
+                "monthly_mean"
+            ],
+            "variable": [
+                "2m_air_temperature"
+            ],
+            "variable_type": [
+                "absolute_change_from_reference_period"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6",
+                "rcp_4_5",
+                "rcp_8_5"
+            ],
+            "gcm": [
+                "mpi_esm_lr"
+            ],
+            "horizontal_resolution": [
+                "5_km"
+            ],
+            "period": [
+                "2011_2040",
+                "2041_2070",
+                "2071_2100"
+            ],
+            "processing_type": [
+                "bias_corrected",
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "csc_remo2009",
+                "rca4"
+            ],
+            "time_aggregation": [
+                "monthly_mean"
+            ],
+            "variable": [
+                "precipitation"
+            ],
+            "variable_type": [
+                "relative_change_from_reference_period"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6",
+                "rcp_4_5",
+                "rcp_8_5"
+            ],
+            "gcm": [
+                "mpi_esm_lr"
+            ],
+            "horizontal_resolution": [
+                "5_km"
+            ],
+            "period": [
+                "2011_2040",
+                "2041_2070",
+                "2071_2100"
+            ],
+            "processing_type": [
+                "bias_corrected",
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "csc_remo2009",
+                "rca4"
+            ],
+            "time_aggregation": [
+                "monthly_mean"
+            ],
+            "variable": [
+                "precipitation",
+                "2m_air_temperature"
+            ],
+            "variable_type": [
+                "absolute_values"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1",
+                "r2i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6",
+                "rcp_4_5",
+                "rcp_8_5"
+            ],
+            "gcm": [
+                "mpi_esm_lr"
+            ],
+            "horizontal_resolution": [
+                "5_km"
+            ],
+            "period": [
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018",
+                "2019",
+                "2020",
+                "2021",
+                "2022",
+                "2023",
+                "2024",
+                "2025",
+                "2026",
+                "2027",
+                "2028",
+                "2029",
+                "2030",
+                "2031",
+                "2032",
+                "2033",
+                "2034",
+                "2035",
+                "2036",
+                "2037",
+                "2038",
+                "2039",
+                "2040",
+                "2041",
+                "2042",
+                "2043",
+                "2044",
+                "2045",
+                "2046",
+                "2047",
+                "2048",
+                "2049",
+                "2050",
+                "2051",
+                "2052",
+                "2053",
+                "2054",
+                "2055",
+                "2056",
+                "2057",
+                "2058",
+                "2059",
+                "2060",
+                "2061",
+                "2062",
+                "2063",
+                "2064",
+                "2065",
+                "2066",
+                "2067",
+                "2068",
+                "2069",
+                "2070",
+                "2071",
+                "2072",
+                "2073",
+                "2074",
+                "2075",
+                "2076",
+                "2077",
+                "2078",
+                "2079",
+                "2080",
+                "2081",
+                "2082",
+                "2083",
+                "2084",
+                "2085",
+                "2086",
+                "2087",
+                "2088",
+                "2089",
+                "2090",
+                "2091",
+                "2092",
+                "2093",
+                "2094",
+                "2095",
+                "2096",
+                "2097",
+                "2098",
+                "2099",
+                "2100"
+            ],
+            "processing_type": [
+                "bias_corrected"
+            ],
+            "product_type": [
+                "essential_climate_variables"
+            ],
+            "rcm": [
+                "csc_remo2009"
+            ],
+            "time_aggregation": [
+                "daily"
+            ],
+            "variable": [
+                "precipitation",
+                "2m_air_temperature"
+            ],
+            "variable_type": [
+                "absolute_values"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r2i1p1"
+            ],
+            "experiment": [
+                "degree_scenario"
+            ],
+            "gcm": [
+                "mpi_esm_lr"
+            ],
+            "horizontal_resolution": [
+                "0_11_degrees"
+            ],
+            "period": [
+                "1_5_c",
+                "2_0_c",
+                "3_0_c"
+            ],
+            "processing_type": [
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "csc_remo2009"
+            ],
+            "time_aggregation": [
+                "annual_mean"
+            ],
+            "variable": [
+                "longest_dry_spells",
+                "number_of_dry_spells",
+                "precipitation",
+                "highest_5_day_precipitation_amount"
+            ],
+            "variable_type": [
+                "relative_change_from_reference_period"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r2i1p1"
+            ],
+            "experiment": [
+                "degree_scenario"
+            ],
+            "gcm": [
+                "mpi_esm_lr"
+            ],
+            "horizontal_resolution": [
+                "0_11_degrees"
+            ],
+            "period": [
+                "1_5_c",
+                "2_0_c",
+                "3_0_c"
+            ],
+            "processing_type": [
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "csc_remo2009"
+            ],
+            "time_aggregation": [
+                "annual_mean"
+            ],
+            "variable": [
+                "longest_dry_spells",
+                "number_of_dry_spells",
+                "precipitation",
+                "highest_5_day_precipitation_amount",
+                "2m_air_temperature"
+            ],
+            "variable_type": [
+                "absolute_values"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r2i1p1"
+            ],
+            "experiment": [
+                "degree_scenario"
+            ],
+            "gcm": [
+                "mpi_esm_lr"
+            ],
+            "horizontal_resolution": [
+                "0_11_degrees"
+            ],
+            "period": [
+                "1_5_c",
+                "2_0_c",
+                "3_0_c"
+            ],
+            "processing_type": [
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "csc_remo2009"
+            ],
+            "time_aggregation": [
+                "annual_mean",
+                "monthly_mean"
+            ],
+            "variable": [
+                "2m_air_temperature"
+            ],
+            "variable_type": [
+                "absolute_change_from_reference_period"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r2i1p1"
+            ],
+            "experiment": [
+                "degree_scenario"
+            ],
+            "gcm": [
+                "mpi_esm_lr"
+            ],
+            "horizontal_resolution": [
+                "0_11_degrees"
+            ],
+            "period": [
+                "1_5_c",
+                "2_0_c",
+                "3_0_c"
+            ],
+            "processing_type": [
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "csc_remo2009"
+            ],
+            "time_aggregation": [
+                "monthly_mean"
+            ],
+            "variable": [
+                "precipitation"
+            ],
+            "variable_type": [
+                "relative_change_from_reference_period"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r2i1p1"
+            ],
+            "experiment": [
+                "degree_scenario"
+            ],
+            "gcm": [
+                "mpi_esm_lr"
+            ],
+            "horizontal_resolution": [
+                "0_11_degrees"
+            ],
+            "period": [
+                "1_5_c",
+                "2_0_c",
+                "3_0_c"
+            ],
+            "processing_type": [
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "csc_remo2009"
+            ],
+            "time_aggregation": [
+                "monthly_mean"
+            ],
+            "variable": [
+                "precipitation",
+                "2m_air_temperature"
+            ],
+            "variable_type": [
+                "absolute_values"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r2i1p1"
+            ],
+            "experiment": [
+                "degree_scenario"
+            ],
+            "gcm": [
+                "mpi_esm_lr"
+            ],
+            "horizontal_resolution": [
+                "5_km"
+            ],
+            "period": [
+                "1_5_c",
+                "2_0_c",
+                "3_0_c"
+            ],
+            "processing_type": [
+                "bias_corrected",
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "csc_remo2009"
+            ],
+            "time_aggregation": [
+                "annual_mean"
+            ],
+            "variable": [
+                "longest_dry_spells",
+                "number_of_dry_spells",
+                "precipitation",
+                "highest_5_day_precipitation_amount"
+            ],
+            "variable_type": [
+                "relative_change_from_reference_period"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r2i1p1"
+            ],
+            "experiment": [
+                "degree_scenario"
+            ],
+            "gcm": [
+                "mpi_esm_lr"
+            ],
+            "horizontal_resolution": [
+                "5_km"
+            ],
+            "period": [
+                "1_5_c",
+                "2_0_c",
+                "3_0_c"
+            ],
+            "processing_type": [
+                "bias_corrected",
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "csc_remo2009"
+            ],
+            "time_aggregation": [
+                "annual_mean"
+            ],
+            "variable": [
+                "longest_dry_spells",
+                "number_of_dry_spells",
+                "precipitation",
+                "highest_5_day_precipitation_amount",
+                "2m_air_temperature"
+            ],
+            "variable_type": [
+                "absolute_values"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r2i1p1"
+            ],
+            "experiment": [
+                "degree_scenario"
+            ],
+            "gcm": [
+                "mpi_esm_lr"
+            ],
+            "horizontal_resolution": [
+                "5_km"
+            ],
+            "period": [
+                "1_5_c",
+                "2_0_c",
+                "3_0_c"
+            ],
+            "processing_type": [
+                "bias_corrected",
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "csc_remo2009"
+            ],
+            "time_aggregation": [
+                "annual_mean",
+                "monthly_mean"
+            ],
+            "variable": [
+                "2m_air_temperature"
+            ],
+            "variable_type": [
+                "absolute_change_from_reference_period"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r2i1p1"
+            ],
+            "experiment": [
+                "degree_scenario"
+            ],
+            "gcm": [
+                "mpi_esm_lr"
+            ],
+            "horizontal_resolution": [
+                "5_km"
+            ],
+            "period": [
+                "1_5_c",
+                "2_0_c",
+                "3_0_c"
+            ],
+            "processing_type": [
+                "bias_corrected",
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "csc_remo2009"
+            ],
+            "time_aggregation": [
+                "monthly_mean"
+            ],
+            "variable": [
+                "precipitation"
+            ],
+            "variable_type": [
+                "relative_change_from_reference_period"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r2i1p1"
+            ],
+            "experiment": [
+                "degree_scenario"
+            ],
+            "gcm": [
+                "mpi_esm_lr"
+            ],
+            "horizontal_resolution": [
+                "5_km"
+            ],
+            "period": [
+                "1_5_c",
+                "2_0_c",
+                "3_0_c"
+            ],
+            "processing_type": [
+                "bias_corrected",
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "csc_remo2009"
+            ],
+            "time_aggregation": [
+                "monthly_mean"
+            ],
+            "variable": [
+                "precipitation",
+                "2m_air_temperature"
+            ],
+            "variable_type": [
+                "absolute_values"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r2i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "gcm": [
+                "mpi_esm_lr"
+            ],
+            "horizontal_resolution": [
+                "0_11_degrees"
+            ],
+            "period": [
+                "1971_2000"
+            ],
+            "processing_type": [
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "csc_remo2009"
+            ],
+            "time_aggregation": [
+                "annual_mean"
+            ],
+            "variable": [
+                "longest_dry_spells",
+                "number_of_dry_spells",
+                "precipitation",
+                "highest_5_day_precipitation_amount",
+                "2m_air_temperature"
+            ],
+            "variable_type": [
+                "absolute_values"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r2i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "gcm": [
+                "mpi_esm_lr"
+            ],
+            "horizontal_resolution": [
+                "0_11_degrees"
+            ],
+            "period": [
+                "1971_2000"
+            ],
+            "processing_type": [
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "csc_remo2009"
+            ],
+            "time_aggregation": [
+                "monthly_mean"
+            ],
+            "variable": [
+                "precipitation",
+                "2m_air_temperature"
+            ],
+            "variable_type": [
+                "absolute_values"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r2i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "gcm": [
+                "mpi_esm_lr"
+            ],
+            "horizontal_resolution": [
+                "5_km"
+            ],
+            "period": [
+                "1971",
+                "1972",
+                "1973",
+                "1974",
+                "1975",
+                "1976",
+                "1977",
+                "1978",
+                "1979",
+                "1980",
+                "1981",
+                "1982",
+                "1983",
+                "1984",
+                "1985",
+                "1986",
+                "1987",
+                "1988",
+                "1989",
+                "1990",
+                "1991",
+                "1992",
+                "1993",
+                "1994",
+                "1995",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2000",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005"
+            ],
+            "processing_type": [
+                "bias_corrected"
+            ],
+            "product_type": [
+                "essential_climate_variables"
+            ],
+            "rcm": [
+                "csc_remo2009"
+            ],
+            "time_aggregation": [
+                "daily"
+            ],
+            "variable": [
+                "precipitation",
+                "2m_air_temperature"
+            ],
+            "variable_type": [
+                "absolute_values"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r2i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "gcm": [
+                "mpi_esm_lr"
+            ],
+            "horizontal_resolution": [
+                "5_km"
+            ],
+            "period": [
+                "1971_2000"
+            ],
+            "processing_type": [
+                "bias_corrected",
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "csc_remo2009"
+            ],
+            "time_aggregation": [
+                "annual_mean"
+            ],
+            "variable": [
+                "longest_dry_spells",
+                "number_of_dry_spells",
+                "precipitation",
+                "highest_5_day_precipitation_amount",
+                "2m_air_temperature"
+            ],
+            "variable_type": [
+                "absolute_values"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r2i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "gcm": [
+                "mpi_esm_lr"
+            ],
+            "horizontal_resolution": [
+                "5_km"
+            ],
+            "period": [
+                "1971_2000"
+            ],
+            "processing_type": [
+                "bias_corrected",
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "csc_remo2009"
+            ],
+            "time_aggregation": [
+                "monthly_mean"
+            ],
+            "variable": [
+                "precipitation",
+                "2m_air_temperature"
+            ],
+            "variable_type": [
+                "absolute_values"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r2i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6",
+                "rcp_4_5",
+                "rcp_8_5"
+            ],
+            "gcm": [
+                "mpi_esm_lr"
+            ],
+            "horizontal_resolution": [
+                "0_11_degrees"
+            ],
+            "period": [
+                "2011_2040",
+                "2041_2070",
+                "2071_2100"
+            ],
+            "processing_type": [
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "csc_remo2009"
+            ],
+            "time_aggregation": [
+                "annual_mean"
+            ],
+            "variable": [
+                "longest_dry_spells",
+                "number_of_dry_spells",
+                "precipitation",
+                "highest_5_day_precipitation_amount"
+            ],
+            "variable_type": [
+                "relative_change_from_reference_period"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r2i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6",
+                "rcp_4_5",
+                "rcp_8_5"
+            ],
+            "gcm": [
+                "mpi_esm_lr"
+            ],
+            "horizontal_resolution": [
+                "0_11_degrees"
+            ],
+            "period": [
+                "2011_2040",
+                "2041_2070",
+                "2071_2100"
+            ],
+            "processing_type": [
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "csc_remo2009"
+            ],
+            "time_aggregation": [
+                "annual_mean"
+            ],
+            "variable": [
+                "longest_dry_spells",
+                "number_of_dry_spells",
+                "precipitation",
+                "highest_5_day_precipitation_amount",
+                "2m_air_temperature"
+            ],
+            "variable_type": [
+                "absolute_values"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r2i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6",
+                "rcp_4_5",
+                "rcp_8_5"
+            ],
+            "gcm": [
+                "mpi_esm_lr"
+            ],
+            "horizontal_resolution": [
+                "0_11_degrees"
+            ],
+            "period": [
+                "2011_2040",
+                "2041_2070",
+                "2071_2100"
+            ],
+            "processing_type": [
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "csc_remo2009"
+            ],
+            "time_aggregation": [
+                "annual_mean",
+                "monthly_mean"
+            ],
+            "variable": [
+                "2m_air_temperature"
+            ],
+            "variable_type": [
+                "absolute_change_from_reference_period"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r2i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6",
+                "rcp_4_5",
+                "rcp_8_5"
+            ],
+            "gcm": [
+                "mpi_esm_lr"
+            ],
+            "horizontal_resolution": [
+                "0_11_degrees"
+            ],
+            "period": [
+                "2011_2040",
+                "2041_2070",
+                "2071_2100"
+            ],
+            "processing_type": [
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "csc_remo2009"
+            ],
+            "time_aggregation": [
+                "monthly_mean"
+            ],
+            "variable": [
+                "precipitation"
+            ],
+            "variable_type": [
+                "relative_change_from_reference_period"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r2i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6",
+                "rcp_4_5",
+                "rcp_8_5"
+            ],
+            "gcm": [
+                "mpi_esm_lr"
+            ],
+            "horizontal_resolution": [
+                "0_11_degrees"
+            ],
+            "period": [
+                "2011_2040",
+                "2041_2070",
+                "2071_2100"
+            ],
+            "processing_type": [
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "csc_remo2009"
+            ],
+            "time_aggregation": [
+                "monthly_mean"
+            ],
+            "variable": [
+                "precipitation",
+                "2m_air_temperature"
+            ],
+            "variable_type": [
+                "absolute_values"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r2i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6",
+                "rcp_4_5",
+                "rcp_8_5"
+            ],
+            "gcm": [
+                "mpi_esm_lr"
+            ],
+            "horizontal_resolution": [
+                "5_km"
+            ],
+            "period": [
+                "2011_2040",
+                "2041_2070",
+                "2071_2100"
+            ],
+            "processing_type": [
+                "bias_corrected",
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "csc_remo2009"
+            ],
+            "time_aggregation": [
+                "annual_mean"
+            ],
+            "variable": [
+                "longest_dry_spells",
+                "number_of_dry_spells",
+                "precipitation",
+                "highest_5_day_precipitation_amount"
+            ],
+            "variable_type": [
+                "relative_change_from_reference_period"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r2i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6",
+                "rcp_4_5",
+                "rcp_8_5"
+            ],
+            "gcm": [
+                "mpi_esm_lr"
+            ],
+            "horizontal_resolution": [
+                "5_km"
+            ],
+            "period": [
+                "2011_2040",
+                "2041_2070",
+                "2071_2100"
+            ],
+            "processing_type": [
+                "bias_corrected",
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "csc_remo2009"
+            ],
+            "time_aggregation": [
+                "annual_mean"
+            ],
+            "variable": [
+                "longest_dry_spells",
+                "number_of_dry_spells",
+                "precipitation",
+                "highest_5_day_precipitation_amount",
+                "2m_air_temperature"
+            ],
+            "variable_type": [
+                "absolute_values"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r2i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6",
+                "rcp_4_5",
+                "rcp_8_5"
+            ],
+            "gcm": [
+                "mpi_esm_lr"
+            ],
+            "horizontal_resolution": [
+                "5_km"
+            ],
+            "period": [
+                "2011_2040",
+                "2041_2070",
+                "2071_2100"
+            ],
+            "processing_type": [
+                "bias_corrected",
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "csc_remo2009"
+            ],
+            "time_aggregation": [
+                "annual_mean",
+                "monthly_mean"
+            ],
+            "variable": [
+                "2m_air_temperature"
+            ],
+            "variable_type": [
+                "absolute_change_from_reference_period"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r2i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6",
+                "rcp_4_5",
+                "rcp_8_5"
+            ],
+            "gcm": [
+                "mpi_esm_lr"
+            ],
+            "horizontal_resolution": [
+                "5_km"
+            ],
+            "period": [
+                "2011_2040",
+                "2041_2070",
+                "2071_2100"
+            ],
+            "processing_type": [
+                "bias_corrected",
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "csc_remo2009"
+            ],
+            "time_aggregation": [
+                "monthly_mean"
+            ],
+            "variable": [
+                "precipitation"
+            ],
+            "variable_type": [
+                "relative_change_from_reference_period"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r2i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6",
+                "rcp_4_5",
+                "rcp_8_5"
+            ],
+            "gcm": [
+                "mpi_esm_lr"
+            ],
+            "horizontal_resolution": [
+                "5_km"
+            ],
+            "period": [
+                "2011_2040",
+                "2041_2070",
+                "2071_2100"
+            ],
+            "processing_type": [
+                "bias_corrected",
+                "original"
+            ],
+            "product_type": [
+                "climate_impact_indicators"
+            ],
+            "rcm": [
+                "csc_remo2009"
+            ],
+            "time_aggregation": [
+                "monthly_mean"
+            ],
+            "variable": [
+                "precipitation",
+                "2m_air_temperature"
+            ],
+            "variable_type": [
+                "absolute_values"
+            ]
+        }
+    ]
+}

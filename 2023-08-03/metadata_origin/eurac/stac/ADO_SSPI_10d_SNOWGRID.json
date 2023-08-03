@@ -1,0 +1,123 @@
+{
+    "engine": "WCPS",
+    "stac_version": "0.9.0",
+    "stac_extensions": [
+        "datacube"
+    ],
+    "type": "Collection",
+    "id": "ADO_SSPI_10d_SNOWGRID",
+    "title": "Standardised Snow Pack Index - ERA5_QM SSPI-10",
+    "description": "The Standardized Snow Pack Index (SSPI) represents a standardized measure of what a certain value of snow water equivalent (SWE) averaged over the selected time period means in relation to the expected value for this period. SSPI is computed the same way as the SPI (using gamma distribution), except for being based on daily SWE timeseries instead of daily precipitation. It is calculated using the average SWE over a period of 10 and 30 days. The value of the SSPI index around 0 represents the normal expected conditions for the average SWE in the selected period based on the long-term average (1981-2020). The value of 1 represents approximately one standard deviation of the surplus, while the value of -1 is about one standard deviation of the deficit. SWE data used as input for the calculation of SSPI are derived using a modified version of the deterministic snow model SNOWGRID-CL, with downscaled ERA5 data used as model input data. Contains modified Copernicus Climate Change Service information [1978-current year]; Contains modified Copernicus Atmosphere Monitoring Service information [1978-current year].",
+    "keywords": [
+        "SSPI",
+        "standardised snow pack index",
+        "ERA5",
+        "SNOWGRID"
+    ],
+    "version": "v1",
+    "license": "CC BY 4.0",
+    "sci:citation": "Olefs, Marc, Roland Koch, Wolfgang Sch\u00f6ner, and Thomas Marke. (2020): Changes in Snow Depth, Snow Cover Duration, and Potential Snowmaking Conditions in Austria, 1961\u20132020\u2014A Model Based Approach Atmosphere 11, no. 12: 1330. https://doi.org/10.3390/atmos11121330. EDO Indicator Fact Sheet: Standardised Snow Pack Index: https://edo.jrc.ec.europa.eu/documents/factsheets/factsheet_sspi.pdf",
+    "providers": [
+        {
+            "name": "Eurac EO WCS",
+            "url": "http://www.eurac.edu",
+            "roles": [
+                "Host"
+            ]
+        },
+        {
+            "name": "Slovenian Environment Agency - ARSO",
+            "url": "https://www.arso.gov.si/",
+            "roles": [
+                "Producer"
+            ]
+        },
+        {
+            "name": "Zentralanstalt f\u00fcr Meteorologie und Geodynamik - ZAMG",
+            "url": "https://www.zamg.ac.at/cms/de/aktuell",
+            "roles": [
+                "Producer"
+            ]
+        }
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    4.0563685981112565,
+                    42.85381219788743,
+                    17.360182784195487,
+                    50.310634900383555
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1978-12-31T12:00:00Z",
+                    "2022-11-12T12:00:00Z"
+                ]
+            ]
+        }
+    },
+    "links": [
+        {
+            "rel": "licence",
+            "href": "https://creativecommons.org/licenses/by/4.0/",
+            "type": "text/html",
+            "title": "License Link"
+        }
+    ],
+    "cube:dimensions": {
+        "DATE": {
+            "type": "temporal",
+            "extent": [
+                "1978-12-31T12:00:00.000Z",
+                "2022-11-12T12:00:00.000Z"
+            ],
+            "step": "P1D"
+        },
+        "X": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                4.0563685981112565,
+                17.360182784195487
+            ],
+            "reference_system": 3035
+        },
+        "Y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                42.85381219788743,
+                50.310634900383555
+            ],
+            "reference_system": 3035
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "SSPI10"
+            ]
+        }
+    },
+    "summaries": {
+        "constellation": [
+            "N/A"
+        ],
+        "platform": [
+            "N/A"
+        ],
+        "rows": 167,
+        "columns": 202,
+        "instruments": [
+            "N/A"
+        ],
+        "eo:bands": [
+            {
+                "name": "SSPI10"
+            }
+        ]
+    }
+}

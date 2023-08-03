@@ -1,0 +1,63 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:dct="http://purl.org/dc/terms/" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/1c6d09ba-c95f-4763-bd20-96dd01ae777f">
+        <foaf:primaryTopic rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/resource/0deca223-e226-4929-9bf4-30876148e47e"/>
+        <dct:issued>2022-08-24</dct:issued>
+        <dct:modified>2022-08-24</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/srv/eng/xml.metadata.get?uuid=1c6d09ba-c95f-4763-bd20-96dd01ae777f">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork?uuid=1c6d09ba-c95f-4763-bd20-96dd01ae777f">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/resource/0deca223-e226-4929-9bf4-30876148e47e">
+        <dct:identifier>0deca223-e226-4929-9bf4-30876148e47e</dct:identifier>
+        <dct:title>Arctic Ocean - Sea Ice Thickness REPROCESSED</dct:title>
+        <dct:abstract>'''Short description:'''
+
+Arctic sea ice L3 data in separate monthly files. The time series is based on reprocessed radar altimeter satellite data from Envisat and CryoSat and is available in the freezing season between October and April. The product is brokered from the Copernicus Climate Change Service (C3S).
+
+'''DOI (product) :'''   
+https://doi.org/10.48670/moi-00127</dct:abstract>
+        <dcat:theme rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/thesaurus/iso/topicCategory/oceans"/>
+        <foaf:thumbnail rdf:resource="https://catalogue.marine.copernicus.eu/documents/IMG/SEAICE_ARC_SEAICE_L3_REP_OBSERVATIONS_011_013.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((-180.00 60.00, -180.00 89.50, 180.00 89.50, 180.00 60.00, -180.00 60.00))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:issued>2012-08-26</dct:issued>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/OSI-METNO-OSLO-NO"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/OSI-METNO-OSLO-NO"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/OSI-METNO-OSLO-NO"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/SIW-METNO-OSLO-NO"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/SIW-METNO-OSLO-NO"/>
+        <dct:accrualPeriodicity>annually</dct:accrualPeriodicity>
+        <dct:license>otherRestrictions</dct:license>
+        <dct:license>license</dct:license>
+        <dct:license>No limitations on public access</dct:license>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=SEAICE_ARC_SEAICE_L3_REP_OBSERVATIONS_011_013-TDS&amp;product=cdr_ice_thick_nh"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/dodsC/cdr_ice_thick_nh"/>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/SEAICE_ARC_SEAICE_L3_REP_OBSERVATIONS_011_013/cdr_ice_thick_nh"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/wms/cdr_ice_thick_nh"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/ea07a3f5-f7fe-4902-8b26-9fc771eaaebe"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/54077ea3-887b-4975-bdb7-029858b5ea3f"/>
+        <dcat:dataQuality>The myOcean products depends on other products for production or validation. The detailed list of dependencies is given in ISO19115's aggregationInfo (ISO19139 Xpath = "gmd:MD_Metadata/gmd:identificationInfo/gmd:aggregationInfo[./gmd:MD_AggregateInformation/gmd:initiativeType/gmd:DS_InitiativeTypeCode/@codeListValue='upstream-validation' or 'upstream-production']")</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+    

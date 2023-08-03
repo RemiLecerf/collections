@@ -1,0 +1,71 @@
+{
+  "type": "Collection",
+  "id": "eu.copernicus.climate.sis-shipping-arctic",
+  "stac_version": "1.0.0",
+  "description": "As part of the C3S Global Shipping service,  sea ice condition climate projections were used to derive indicators which are useful to the global shipping industry. The derived indicators are gathered in the present catalogue and distributed as monthly decadal projections. \nThe skill of 25 Coupled Model Intercomparison Project Phase 5 (CMIP5) climate projection models was assessed against the historical sea ice concentration from ERA-Interim. The 5 most skillful CMIP5 models were used (relative root mean square error < 10%) to derive the present indicators. Both RCP4.5 and RCP8.5 CMIP5 experiments were considered.\nTwo different types of indicators were produced. The first type provides information about the ice and accessibility conditions over the whole arctic ocean and includes: Sea ice extent maps, accessibility maps for different ice classes and average sea ice concentration and thickness conditions maps.\nThe second type of indicators (e.g. trip duration,  fuel consumption) provides information about the navigation conditions along a specific arctic route going through the so-called North-East Passage  for an ARC4 bulk carrier. \nDue to the global warming and the continuous decline of Arctic sea ice, maritime transport in the Arctic region has been increased dramatically. While operating in the Arctic area, ships face regular environment loads and ice loads synchronously, the consideration of ice resistance is essential for the\nfuel consumption estimation in the ice-covered water voyage. For this specific bulk carrier, the Arctic\nsailing cost is composed of the following operational costs: the insurance cost is assumed to be 500usd/day, the ship renting cost is assumed to be 40kusd/day and the crew cost (including wages, social benefits, entertainments, etc.) is assumed to be 6kusd/day.\nThe other big category of the cost is associated with the fuel cost. The fuel cost is computed by first\nestimating the ship’s resistance in the still water and in various ice conditions along the arctic ship route. It should be noted that since in the climate projection data does not contain the wave and wind\ninformation, the resistance caused by wind and wave will be neglected in the calculation. The calm/still water resistance is estimated by the well-known formula proposed by Holtrop and Mennen (1982). The ice resistance is estimated by the method proposed by Lindqvist (1989), which divides resistance components into ice crushing, bending-induced breaking and submergence, based on the physical phenomena. This method gives ice resistance as functions of ship main dimensions, hull form, ice thickness, ice friction and ice strength.\nAfter getting the ship resistance for various ice conditions and operational conditions (ship speed), it will be divided by the propulsion efficiency of the ship to get the require marine engine power, that can push the ship forward to overtake the still water and ice resistance. The fuel consumption rate for the calculated engine power will be easily analysed by given the engine oil properties. For the given arctic ship route and sailing time (speeds), the total fuel cost can be estimated. The ship’s (maximum) sailing speed at various ice conditions is determined according to the Russian Polar Class rules.\nFinally, another cost is related to if the ship needs support from Ice breaker for resorted ice navigation. Whether or not the ice breaker is needed is determined according to the ship’s ice class and the most severe ice conditions along the ship’s arctic route during that voyage based on Russian Polar Class rules. If the ice breaker is needed, then a big fixed ice breaker renting cost of 1200kusd will be added to the total cost.\n\nVariables in the dataset/application are:\nArctic accessibility index ARC4, Arctic accessibility index ARC5, Arctic accessibility index ARC6, Arctic accessibility index ARC7, Arctic accessibility index ARC8, Arctic accessibility index ARC9, Arctic route cost, Fuel consumption, Ice resistance, Icebreaker need, Maximum sea ice extent mask, Mean sea ice extent mask, Minimum sea ice extent mask, Sea ice concentration, Sea ice thickness, Shaft power, Ship speed, Trip duration",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/eu.copernicus.climate.sis-shipping-arctic",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Climate Data Store catalogue"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://confluence.ecmwf.int/x/7RRDEw",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Arctic route availability and accessibility background information"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://confluence.ecmwf.int/x/lYByEw",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Arctic route cost algorithm details"
+    }
+  ],
+  "title": "Arctic route availability and cost projection derived from climate projections of ice concentration and thickness",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          0.0,
+          -90.0,
+          360.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1993-01-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "None",
+    "Product type: Climate projections",
+    "Provider: Copernicus C3S",
+    "Sector: Shipping",
+    "Spatial coverage: Global",
+    "Temporal coverage: Future",
+    "Temporal coverage: Past",
+    "Variable domain: Atmosphere (surface)"
+  ],
+  "providers": [
+    {
+      "name": "Climate Data Store - European Centre for Medium-Range Weather Forecasts (ECMWF)",
+      "description": "Climate Data Store - ECMWF",
+      "roles": [
+        "licensor",
+        "producer",
+        "processor",
+        "host"
+      ],
+      "url": "https://cds.climate.copernicus.eu/"
+    }
+  ]
+}

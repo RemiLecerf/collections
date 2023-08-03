@@ -1,0 +1,224 @@
+{
+    "description": "The MYD15A2H V6.1 MODIS combined Leaf Area Index (LAI) and\nFraction of Photosynthetically Active Radiation (FPAR) product is an 8-day\ncomposite dataset at 500m resolution. The algorithm chooses the \\\"best\\\" pixel\navailable from all the acquisitions of the Aqua sensor from within the 8-day period.\n\nDocumentation:\n\n* [User's Guide](https://lpdaac.usgs.gov/documents/624/MOD15_User_Guide_V6.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://lpdaac.usgs.gov/documents/90/MOD15_ATBD.pdf)\n\n* [General Documentation](https://ladsweb.modaps.eosdis.nasa.gov/filespec/MODIS/61/MYD15A2H)\n",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2002-07-04T00:00:00Z",
+                    "2023-05-17T00:00:00"
+                ]
+            ]
+        }
+    },
+    "gee:interval": {
+        "interval": 8,
+        "type": "cadence",
+        "unit": "day"
+    },
+    "gee:provider_ids": [
+        "C203669704-LPDAAC_ECS"
+    ],
+    "gee:terms_of_use": "MODIS data and products acquired through the LP DAAC\nhave no restrictions on subsequent use, sale, or redistribution.\n",
+    "gee:type": "image_collection",
+    "id": "MODIS/061/MYD15A2H",
+    "keywords": [
+        "8_day",
+        "aqua",
+        "fpar",
+        "global",
+        "lai",
+        "modis",
+        "myd15a2h",
+        "nasa",
+        "usgs"
+    ],
+    "license": "proprietary",
+    "links": [
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections/MODIS/061/MYD15A2H",
+            "rel": "self",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections",
+            "rel": "parent",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/",
+            "rel": "root",
+            "type": "application/json"
+        },
+        {
+            "code": "JavaScript",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/MODIS/MODIS_061_MYD15A2H",
+            "rel": "related",
+            "title": "Run the example for MODIS/061/MYD15A2H in the Earth Engine Code Editor",
+            "type": "text/html"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/images/MODIS/MODIS_061_MYD15A2H_sample.png",
+            "rel": "preview",
+            "type": "image/png"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MYD15A2H#terms-of-use",
+            "rel": "license",
+            "type": "text/html"
+        },
+        {
+            "href": "https://doi.org/10.5067/MODIS/MYD15A2H.061",
+            "rel": "cite-as"
+        },
+        {
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_006_MYD15A2H.json",
+            "rel": "predecessor-version",
+            "title": "MODIS/006/MYD15A2H",
+            "type": "application/json"
+        }
+    ],
+    "providers": [
+        {
+            "name": "NASA LP DAAC at the USGS EROS Center",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://doi.org/10.5067/MODIS/MYD15A2H.061"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MYD15A2H"
+        }
+    ],
+    "sci:citation": "Please visit [LP DAAC 'Citing Our Data' page](https://lpdaac.usgs.gov/citing_our_data)\nfor information on citing LP DAAC datasets.\n",
+    "sci:doi": "10.5067/MODIS/MYD15A2H.061",
+    "stac_extensions": [
+        "collection-assets"
+    ],
+    "stac_version": "1.0.0",
+    "summaries": {
+        "FparExtra_QC": {
+            "maximum": 254
+        },
+        "FparLai_QC": {
+            "maximum": 254
+        },
+        "FparStdDev_500m": {
+            "maximum": 100
+        },
+        "Fpar_500m": {
+            "maximum": 100
+        },
+        "LaiStdDev_500m": {
+            "maximum": 100
+        },
+        "Lai_500m": {
+            "maximum": 100
+        },
+        "eo:bands": [
+            {
+                "description": "Fraction of Photosynthetically Active Radiation",
+                "gee:scale": 0.01,
+                "gee:units": "%",
+                "name": "Fpar_500m"
+            },
+            {
+                "description": "Leaf Area Index",
+                "gee:scale": 0.1,
+                "gee:units": "1 (area fraction)",
+                "name": "Lai_500m"
+            },
+            {
+                "description": "Quality for LAI and FPAR",
+                "name": "FparLai_QC"
+            },
+            {
+                "description": "Extra detail Quality for LAI and FPAR",
+                "name": "FparExtra_QC"
+            },
+            {
+                "description": "Standard deviation of FPAR",
+                "gee:scale": 0.01,
+                "gee:units": "%",
+                "name": "FparStdDev_500m"
+            },
+            {
+                "description": "Standard deviation of LAI",
+                "gee:scale": 0.1,
+                "gee:units": "1 (area fraction)",
+                "name": "LaiStdDev_500m"
+            }
+        ],
+        "gsd": [
+            500
+        ],
+        "instruments": [
+            "MODIS"
+        ],
+        "platform": [
+            "Aqua"
+        ]
+    },
+    "title": "MYD15A2H.061: Aqua Leaf Area Index/FPAR 8-Day Global 500m",
+    "type": "Collection",
+    "version": "V061",
+    "cube:dimensions": {
+        "x": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                -180,
+                180
+            ]
+        },
+        "y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                -90,
+                90
+            ]
+        },
+        "t": {
+            "type": "temporal",
+            "extent": [
+                "2002-07-04T00:00:00Z",
+                "2023-05-17T00:00:00"
+            ]
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "Fpar_500m",
+                "Lai_500m",
+                "FparLai_QC",
+                "FparExtra_QC",
+                "FparStdDev_500m",
+                "LaiStdDev_500m"
+            ]
+        }
+    },
+    "assets": {
+        "preview_4": {
+            "href": "https://developers.google.com/earth-engine/datasets/images/MODIS/MODIS_061_MYD15A2H_sample.png",
+            "type": "image/png",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    }
+}

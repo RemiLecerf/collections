@@ -1,0 +1,73 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dct="http://purl.org/dc/terms/" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/metadata/eu.copernicus.climate.insitu-observations-surface-land">
+        <foaf:primaryTopic rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/resource/10.24381/cds.cf5f3bac"/>
+        <dct:issued>2018-03-28</dct:issued>
+        <dct:modified>2018-03-28</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/srv/eng/xml.metadata.get?uuid=eu.copernicus.climate.insitu-observations-surface-land">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://cds.climate.copernicus.eu:443//geonetwork?uuid=eu.copernicus.climate.insitu-observations-surface-land">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/resource/10.24381/cds.cf5f3bac">
+        <dct:identifier>10.24381/cds.cf5f3bac</dct:identifier>
+        <dct:title>Global land surface atmospheric variables from 1755 to 2020 from comprehensive in-situ observations</dct:title>
+        <dct:abstract>This set of data holdings provides access to data collected from land surface meteorological observations across the globe. Data are available at the observational level and also at daily and monthly aggregations. Data have been collated and harmonised and quality control checks have been performed, but no attempt has been made to assess for potential biases. Data are provided for a range of commonly observed variables.
+Surface meteorological observations taken by a broad variety of organisations, including but not limited to National Meteorological Services, are being collated, reconciled, and harmonised. This work provides data that can underpin the development of reanalyses products as well as the production of gridded products and data services. 
+Work is ongoing to prepare and analyse several hundred sources secured to date and new sources continue to accrue. Documentation on sources secured to date can be found in the inventory information provided in the documentation tab. Users with new sources are invited to upload these via the data deposition service for ingestion and consideration. Sources are available in a broad range of formats and frequently individual series have been shared multiple times. Steps have been undertaken to harmonise data formats and reconcile data sources to yield the longest possible individiual station records. 
+Station period-of-record varies on a station-by-station basis with most stations starting after 1950, but many stations extending much further back in time. Daily and monthly aggregations extend further back in time than sub-daily records in general. Periodic updates and reissues shall refresh historical holdings availability and will also build on aspects such as quality checking and flagging of data. Each such release will be accompanied by a version number increment and a reissue of the product user guide. Updates for recent observations are in process of being provided at a latency of 1-2 days for those stations that are operational and sharing data across the WMO Information System, starting with updates to the daily holdings.
+Data are available for several commonly observed variables as described in the main variables table. Note that which variables are available varies by the chosen timescale of data aggregation and by station. To aid users an inventory of stations by name, location, start and end date, and variables available is provided in the documentation page differentiated by timescale. Attributes are described in the related-variables tables and users can choose whether to receive all attributes or solely essential attributes. Data are downloaded as comma-seperated values (CSV) files organised as one observations of one variable per row.
+Users should ensure an appropriate assessment of long-term data quality prior to use in those applications which require consideration of such aspects.   
+More details about the land meteorological station holdings are available in the product user guide, and details around data formatting can be found in the common data model documentation, both of which can be found in the documentation section. 
+This work is being completed on behalf of C3S in sustained collaboration with colleagues at NOAA's National Centres for Environmental Information who are the WMO designated World Data Centre for meteorology.
+
+Variables in the dataset/application are:
+Accumulated precipitation, Air pressure, Air pressure at sea level, Air temperature, Dew point temperature, Fresh snow, Snow depth, Snow water equivalent, Wind from direction, Wind speed
+
+Variables in the dataset/application are:
+Data policy licence, Date time, Date time meaning, Height above surface, Latitude, Longitude, Observation duration, Observation id, Observation value, Observed variable, Platform type, Primary station id, Quality flag, Report type, Source id, Station name, Station type, Units, Value significance</dct:abstract>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/GEMET%20-%20INSPIRE%20themes%2C%20version%201.0/Atmospheric conditions"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Product type: In-situ observations"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Spatial coverage: Global"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Variable domain: Atmosphere (surface)"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Temporal coverage: Past"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/iso/topicCategory/climatologyMeteorologyAtmosphere"/>
+        <foaf:thumbnail rdf:resource="https://datastore.copernicus-climate.eu/c3s/published-forms-v2/c3sprod/insitu-observations-surface-land/overview.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((0 -89, 0 89, 360 89, 360 -89, 0 -89))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:temporal>1978-01-01
+          /
+          2018-10-17</dct:temporal>
+        <dct:publisher rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/organization/ECMWF"/>
+        <dct:accrualPeriodicity>asNeeded</dct:accrualPeriodicity>
+        <dct:language>eng</dct:language>
+        <dct:license>licence</dct:license>
+        <dct:license>https://cds.climate.copernicus.eu/api/v2/terms/static/20180314_Copernicus_License_V1.1.pdf</dct:license>
+        <dcat:distribution rdf:resource="https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.cf5f3bac"/>
+        <dcat:distribution rdf:resource="#"/>
+        <dcat:distribution rdf:resource="#"/>
+        <dcat:distribution rdf:resource="#"/>
+        <dcat:distribution rdf:resource="#"/>
+        <dcat:dataQuality>EC Copernicus program</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+    

@@ -1,0 +1,364 @@
+{
+  "type": "Collection",
+  "id": "EO:MO:DAT:SEAICE_GLO_SEAICE_L4_NRT_OBSERVATIONS_011_001",
+  "stac_version": "1.0.0",
+  "description": "'''Short description:''' \n\nFor the Global - Arctic and Antarctic - Ocean. The OSI SAF delivers three global sea ice products in operational mode: sea ice concentration, sea ice edge, sea ice type (OSI-401 OSI-402 and OSI-403). These products are delivered daily at 10km resolution in a polar stereographic projection covering the Northern Hemisphere and the Southern Hemisphere. It is the Sea Ice operational nominal product for the Global Ocean. In addition, a sea ice drift product is delivered at 60km resolution in a polar stereographic projection covering the Northern and Southern Hemispheres. The sea ice motion vectors have a time-span of 2 days.\n\n'''DOI (product) :'''   \nhttps://doi.org/10.48670/moi-00134",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=SEAICE_GLO_SEAICE_L4_NRT_OBSERVATIONS_011_001-TDS&product=osisaf_obs-si_glo_phy-sitype_nrt_nh-P1D",
+      "type": "MYO:MOTU-SUB",
+      "title": "osisaf_obs-si_glo_phy-sitype_nrt_nh-P1D"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=SEAICE_BAL_SEAICE_L4_NRT_OBSERVATIONS_011_011-TDS&product=FMI-BAL-SEAICE_THICK-MOSAIC-SAR-NRT-OBS",
+      "type": "MYO:MOTU-SUB",
+      "title": "FMI-BAL-SEAICE_THICK-MOSAIC-SAR-NRT-OBS"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=SEAICE_GLO_SEAICE_L4_NRT_OBSERVATIONS_011_001-TDS&product=METNO-GLO-SEAICE_DRIFT-SOUTH-L4-NRT-OBS",
+      "type": "MYO:MOTU-SUB",
+      "title": "METNO-GLO-SEAICE_DRIFT-SOUTH-L4-NRT-OBS"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=SEAICE_GLO_SEAICE_L4_NRT_OBSERVATIONS_011_001-TDS&product=METNO-GLO-SEAICE_DRIFT-NORTH-L4-NRT-OBS",
+      "type": "MYO:MOTU-SUB",
+      "title": "METNO-GLO-SEAICE_DRIFT-NORTH-L4-NRT-OBS"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/SEAICE_GLO_SEAICE_L4_NRT_OBSERVATIONS_011_001/METNO-GLO-SEAICE_DRIFT-SOUTH-L4-NRT-OBS",
+      "type": "WWW:FTP",
+      "title": "METNO-GLO-SEAICE_DRIFT-SOUTH-L4-NRT-OBS"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/SEAICE_BAL_SEAICE_L4_NRT_OBSERVATIONS_011_011/cmems_sat-si_bal_thick_nrt_500m_hi",
+      "type": "WWW:FTP",
+      "title": "cmems_sat-si_bal_thick_nrt_500m_hi"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/SEAICE_BAL_SEAICE_L4_NRT_OBSERVATIONS_011_011/FMI-BAL-SEAICE_THICK-MOSAIC-SAR-NRT-OBS",
+      "type": "WWW:FTP",
+      "title": "FMI-BAL-SEAICE_THICK-MOSAIC-SAR-NRT-OBS"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/SEAICE_GLO_SEAICE_L4_NRT_OBSERVATIONS_011_001/METNO-GLO-SEAICE_CONC-NORTH-L4-NRT-OBS",
+      "type": "WWW:FTP",
+      "title": "METNO-GLO-SEAICE_CONC-NORTH-L4-NRT-OBS"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/cmems_sat-si_bal_conc_nrt_500m_d",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_sat-si_bal_conc_nrt_500m_d"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/osisaf_obs-si_glo_phy-siedge_nrt_nh-P1D",
+      "type": "WWW:OPENDAP",
+      "title": "osisaf_obs-si_glo_phy-siedge_nrt_nh-P1D"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/cmems_sat-si_bal_thick_nrt_500m_hi",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_sat-si_bal_thick_nrt_500m_hi"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=SEAICE_BAL_SEAICE_L4_NRT_OBSERVATIONS_011_011-TDS&product=cmems_sat-si_bal_conc_nrt_500m_d",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_sat-si_bal_conc_nrt_500m_d"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/METNO-GLO-SEAICE_DRIFT-SOUTH-L4-NRT-OBS",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "METNO-GLO-SEAICE_DRIFT-SOUTH-L4-NRT-OBS"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/FMI-BAL-SEAICE_THICK-MOSAIC-SAR-NRT-OBS",
+      "type": "WWW:OPENDAP",
+      "title": "FMI-BAL-SEAICE_THICK-MOSAIC-SAR-NRT-OBS"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/cmems_sat-si_bal_conc_nrt_500m_d",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_sat-si_bal_conc_nrt_500m_d"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/SEAICE_GLO_SEAICE_L4_NRT_OBSERVATIONS_011_001/osisaf_obs-si_glo_phy-sic-north_nrt_amsr2_l4_P1D-m",
+      "type": "WWW:FTP",
+      "title": "osisaf_obs-si_glo_phy-sic-north_nrt_amsr2_l4_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=SEAICE_GLO_SEAICE_L4_NRT_OBSERVATIONS_011_001-TDS&product=osisaf_obs-si_glo_phy-sitype_nrt_sh-P1D",
+      "type": "MYO:MOTU-SUB",
+      "title": "osisaf_obs-si_glo_phy-sitype_nrt_sh-P1D"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/osisaf_obs-si_glo_phy-sic-north_nrt_amsr2_l4_P1D-m",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "osisaf_obs-si_glo_phy-sic-north_nrt_amsr2_l4_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/METNO-GLO-SEAICE_DRIFT-SOUTH-L4-NRT-OBS",
+      "type": "WWW:OPENDAP",
+      "title": "METNO-GLO-SEAICE_DRIFT-SOUTH-L4-NRT-OBS"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=SEAICE_GLO_SEAICE_L4_NRT_OBSERVATIONS_011_001-TDS&product=osisaf_obs-si_glo_phy-sic-south_nrt_amsr2_l4_P1D-m",
+      "type": "MYO:MOTU-SUB",
+      "title": "osisaf_obs-si_glo_phy-sic-south_nrt_amsr2_l4_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/osisaf_obs-si_glo_phy-sic-north_nrt_amsr2_l4_P1D-m",
+      "type": "WWW:OPENDAP",
+      "title": "osisaf_obs-si_glo_phy-sic-north_nrt_amsr2_l4_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/osisaf_obs-si_glo_phy-sic-south_nrt_amsr2_l4_P1D-m",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "osisaf_obs-si_glo_phy-sic-south_nrt_amsr2_l4_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=SEAICE_GLO_SEAICE_L4_NRT_OBSERVATIONS_011_001-TDS&product=osisaf_obs-si_glo_phy-siedge_nrt_nh-P1D",
+      "type": "MYO:MOTU-SUB",
+      "title": "osisaf_obs-si_glo_phy-siedge_nrt_nh-P1D"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=SEAICE_GLO_SEAICE_L4_NRT_OBSERVATIONS_011_001-TDS&product=METNO-GLO-SEAICE_CONC-NORTH-L4-NRT-OBS",
+      "type": "MYO:MOTU-SUB",
+      "title": "METNO-GLO-SEAICE_CONC-NORTH-L4-NRT-OBS"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/SEAICE_BAL_SEAICE_L4_NRT_OBSERVATIONS_011_011/FMI-BAL-SEAICE_THICK-SAR-NRT-OBS",
+      "type": "WWW:FTP",
+      "title": "FMI-BAL-SEAICE_THICK-SAR-NRT-OBS"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=SEAICE_GLO_SEAICE_L4_NRT_OBSERVATIONS_011_001-TDS&product=osisaf_obs-si_glo_phy-siedge_nrt_sh-P1D",
+      "type": "MYO:MOTU-SUB",
+      "title": "osisaf_obs-si_glo_phy-siedge_nrt_sh-P1D"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/METNO-GLO-SEAICE_CONC-SOUTH-L4-NRT-OBS",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "METNO-GLO-SEAICE_CONC-SOUTH-L4-NRT-OBS"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/SEAICE_GLO_SEAICE_L4_NRT_OBSERVATIONS_011_001/METNO-GLO-SEAICE_DRIFT-NORTH-L4-NRT-OBS",
+      "type": "WWW:FTP",
+      "title": "METNO-GLO-SEAICE_DRIFT-NORTH-L4-NRT-OBS"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/METNO-GLO-SEAICE_CONC-SOUTH-L4-NRT-OBS",
+      "type": "WWW:OPENDAP",
+      "title": "METNO-GLO-SEAICE_CONC-SOUTH-L4-NRT-OBS"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/SEAICE_GLO_SEAICE_L4_NRT_OBSERVATIONS_011_001/osisaf_obs-si_glo_phy-sitype_nrt_sh-P1D",
+      "type": "WWW:FTP",
+      "title": "osisaf_obs-si_glo_phy-sitype_nrt_sh-P1D"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/METNO-GLO-SEAICE_CONC-NORTH-L4-NRT-OBS",
+      "type": "WWW:OPENDAP",
+      "title": "METNO-GLO-SEAICE_CONC-NORTH-L4-NRT-OBS"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/METNO-GLO-SEAICE_DRIFT-NORTH-L4-NRT-OBS",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "METNO-GLO-SEAICE_DRIFT-NORTH-L4-NRT-OBS"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/osisaf_obs-si_glo_phy-sitype_nrt_nh-P1D",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "osisaf_obs-si_glo_phy-sitype_nrt_nh-P1D"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/METNO-GLO-SEAICE_CONC-NORTH-L4-NRT-OBS",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "METNO-GLO-SEAICE_CONC-NORTH-L4-NRT-OBS"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/osisaf_obs-si_glo_phy-siedge_nrt_sh-P1D",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "osisaf_obs-si_glo_phy-siedge_nrt_sh-P1D"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/SEAICE_GLO_SEAICE_L4_NRT_OBSERVATIONS_011_001/osisaf_obs-si_glo_phy-siedge_nrt_sh-P1D",
+      "type": "WWW:FTP",
+      "title": "osisaf_obs-si_glo_phy-siedge_nrt_sh-P1D"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/SEAICE_GLO_SEAICE_L4_NRT_OBSERVATIONS_011_001/METNO-GLO-SEAICE_CONC-SOUTH-L4-NRT-OBS",
+      "type": "WWW:FTP",
+      "title": "METNO-GLO-SEAICE_CONC-SOUTH-L4-NRT-OBS"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/osisaf_obs-si_glo_phy-siedge_nrt_nh-P1D",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "osisaf_obs-si_glo_phy-siedge_nrt_nh-P1D"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=SEAICE_GLO_SEAICE_L4_NRT_OBSERVATIONS_011_001-TDS&product=METNO-GLO-SEAICE_CONC-SOUTH-L4-NRT-OBS",
+      "type": "MYO:MOTU-SUB",
+      "title": "METNO-GLO-SEAICE_CONC-SOUTH-L4-NRT-OBS"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/osisaf_obs-si_glo_phy-sitype_nrt_sh-P1D",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "osisaf_obs-si_glo_phy-sitype_nrt_sh-P1D"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=SEAICE_GLO_SEAICE_L4_NRT_OBSERVATIONS_011_001-TDS&product=osisaf_obs-si_glo_phy-sic-north_nrt_amsr2_l4_P1D-m",
+      "type": "MYO:MOTU-SUB",
+      "title": "osisaf_obs-si_glo_phy-sic-north_nrt_amsr2_l4_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/SEAICE_BAL_SEAICE_L4_NRT_OBSERVATIONS_011_011/cmems_sat-si_bal_conc_nrt_500m_d",
+      "type": "WWW:FTP",
+      "title": "cmems_sat-si_bal_conc_nrt_500m_d"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/METNO-GLO-SEAICE_DRIFT-NORTH-L4-NRT-OBS",
+      "type": "WWW:OPENDAP",
+      "title": "METNO-GLO-SEAICE_DRIFT-NORTH-L4-NRT-OBS"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/SEAICE_GLO_SEAICE_L4_NRT_OBSERVATIONS_011_001/osisaf_obs-si_glo_phy-siedge_nrt_nh-P1D",
+      "type": "WWW:FTP",
+      "title": "osisaf_obs-si_glo_phy-siedge_nrt_nh-P1D"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/osisaf_obs-si_glo_phy-sitype_nrt_sh-P1D",
+      "type": "WWW:OPENDAP",
+      "title": "osisaf_obs-si_glo_phy-sitype_nrt_sh-P1D"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/SEAICE_GLO_SEAICE_L4_NRT_OBSERVATIONS_011_001/osisaf_obs-si_glo_phy-sic-south_nrt_amsr2_l4_P1D-m",
+      "type": "WWW:FTP",
+      "title": "osisaf_obs-si_glo_phy-sic-south_nrt_amsr2_l4_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/osisaf_obs-si_glo_phy-siedge_nrt_sh-P1D",
+      "type": "WWW:OPENDAP",
+      "title": "osisaf_obs-si_glo_phy-siedge_nrt_sh-P1D"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=SEAICE_BAL_SEAICE_L4_NRT_OBSERVATIONS_011_011-TDS&product=cmems_sat-si_bal_thick_nrt_500m_hi",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_sat-si_bal_thick_nrt_500m_hi"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/FMI-BAL-SEAICE_THICK-MOSAIC-SAR-NRT-OBS",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "FMI-BAL-SEAICE_THICK-MOSAIC-SAR-NRT-OBS"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/osisaf_obs-si_glo_phy-sic-south_nrt_amsr2_l4_P1D-m",
+      "type": "WWW:OPENDAP",
+      "title": "osisaf_obs-si_glo_phy-sic-south_nrt_amsr2_l4_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/osisaf_obs-si_glo_phy-sitype_nrt_nh-P1D",
+      "type": "WWW:OPENDAP",
+      "title": "osisaf_obs-si_glo_phy-sitype_nrt_nh-P1D"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/cmems_sat-si_bal_thick_nrt_500m_hi",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_sat-si_bal_thick_nrt_500m_hi"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/SEAICE_GLO_SEAICE_L4_NRT_OBSERVATIONS_011_001/osisaf_obs-si_glo_phy-sitype_nrt_nh-P1D",
+      "type": "WWW:FTP",
+      "title": "osisaf_obs-si_glo_phy-sitype_nrt_nh-P1D"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/SEAICE_BAL_SEAICE_L4_NRT_OBSERVATIONS_011_011/FMI-BAL-SEAICE_DRIFT-SAR-NRT-OBS",
+      "type": "WWW:FTP",
+      "title": "FMI-BAL-SEAICE_DRIFT-SAR-NRT-OBS"
+    }
+  ],
+  "title": "Global Ocean - Arctic and Antarctic - Sea Ice Concentration, Edge, Type and Drift (OSI-SAF)",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2019-05-04T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

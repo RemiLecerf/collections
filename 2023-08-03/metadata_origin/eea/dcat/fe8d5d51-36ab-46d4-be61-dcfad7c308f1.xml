@@ -1,0 +1,156 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:dct="http://purl.org/dc/terms/" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://sdi.eea.europa.eu/catalogue/records/fe8d5d51-36ab-46d4-be61-dcfad7c308f1">
+        <foaf:primaryTopic rdf:resource="http://localhost:8080/geonetwork//copernicus_v_3035_10_m_cz-2012_p_2010-2014_v01_r00"/>
+        <dct:conformsTo rdf:resource="https://www.iso.org/standard/32557.html"/>
+        <dct:issued>2023-06-27</dct:issued>
+        <dct:modified>2023-06-27</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://sdi.eea.europa.eu/catalogue/srv/api/records/fe8d5d51-36ab-46d4-be61-dcfad7c308f1/formatters/xml">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://sdi.eea.europa.eu/catalogue/srv/api/records/fe8d5d51-36ab-46d4-be61-dcfad7c308f1">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="http://localhost:8080/geonetwork//datasets/copernicus_v_3035_10_m_cz-2012_p_2010-2014_v01_r00">
+        <dct:identifier>copernicus_v_3035_10_m_cz-2012_p_2010-2014_v01_r00</dct:identifier>
+        <dct:title>Coastal Zones Land Cover/Land Use 2012 (vector), Europe, 6-yearly, Feb. 2021</dct:title>
+        <dct:abstract>The Coastal Zones (CZ) LC/LU product for 2012 is providing a detailed Land Cover / Land Use (LC/ LU) dataset for areas along the coastline of the EEA38 countries and the United Kingdom, with reference year 2012 for the classification. This product monitors landscape dynamics in European coastal territory to an inland depth of 10 km with a total area of approximately 730,000 km², with all the relevant areas (estuaries, coastal lowlands, nature reserves). The production of the coastal zone layers was coordinated by the European Environment Agency (EEA) in the frame of the EU Copernicus programme, as part of the Copernicus Land Monitoring Service (CLMS) Local Component.
+
+The Coastal Zones product covers a buffer zone of coastline derived from EU-Hydro v1.1. Land Cover/Land Use (LC/LU) layer is extracted from Very High Resolution (VHR) satellite data and other available data. The class definitions follow the pre-defined nomenclature on the basis of Mapping and Assessment of Ecosystems and their Services (MAES) typology of ecosystems (Level 1 to Level 4) and CORINE Land Cover adapted to the specific characteristics of coastal zones. The classification provides 71 distinct thematic classes with a Minimum Mapping Unit (MMU) of 0.5 ha and a Minimum Mapping Width (MMW) of 10 m. The product is available for the 2012 and 2018 reference year including change mapping. 
+
+This CZ dataset is distributed in vector format, in a single OGC GeoPackage SQLite file covering the area of interest.</dct:abstract>
+        <dcat:theme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET%20-%20INSPIRE%20themes%2C%20version%201.0/concepts/Land%20use"/>
+        <dcat:theme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET%20-%20INSPIRE%20themes%2C%20version%201.0/concepts/Hydrography"/>
+        <dcat:theme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET%20-%20INSPIRE%20themes%2C%20version%201.0/concepts/Land%20cover"/>
+        <dcat:theme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/Continents%2C%20countries%2C%20sea%20regions%20of%20the%20world./concepts/EEA38%20%28from%202020%29"/>
+        <dcat:theme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/Continents%2C%20countries%2C%20sea%20regions%20of%20the%20world./concepts/United%20Kingdom"/>
+        <dcat:theme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET/concepts/hydrography"/>
+        <dcat:theme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET/concepts/coastal%20area"/>
+        <dcat:theme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET/concepts/landscape%20alteration"/>
+        <dcat:theme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET/concepts/land%20cover"/>
+        <dcat:theme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET/concepts/land%20use"/>
+        <dcat:theme rdf:resource="http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/european"/>
+        <dcat:theme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/EEA%20topics/concepts/Land%20use"/>
+        <dcat:theme rdf:resource="https://inspire.ec.europa.eu/metadata-codelist/TopicCategory/environment"/>
+        <dcat:theme rdf:resource="https://inspire.ec.europa.eu/metadata-codelist/TopicCategory/imageryBaseMapsEarthCover"/>
+        <foaf:thumbnail rdf:resource="https://sdi.eea.europa.eu/public/catalogue-graphic-overview/fe8d5d51-36ab-46d4-be61-dcfad7c308f1.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <geo:asWKT xmlns:geo="http://www.opengis.net/ont/geosparql#" rdf:datatype="http://www.opengis.net/rdf#wktLiteral">Polygon((-52.00 27.00, -52.00 71.00, 42.00 71.00, 42.00 27.00, -52.00 27.00))</geo:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:temporal>2010-01-01
+          /
+          2014-12-31</dct:temporal>
+        <dct:issued>2020-11-12</dct:issued>
+        <dct:updated>2021-02-24</dct:updated>
+        <dct:accrualPeriodicity>continual</dct:accrualPeriodicity>
+        <dcat:granularity>10000</dcat:granularity>
+        <dct:language>eng</dct:language>
+        <dct:license>Access to data is based on a principle of full, open and free access as established by the Copernicus data and information policy Regulation (EU) No 1159/2013 of 12 July 2013. This regulation establishes registration and licensing conditions for GMES/Copernicus users.
+
+Free, full and open access to this data set is made on the conditions that:
+
+1. When distributing or communicating Copernicus dedicated data and Copernicus service information to the public, users shall inform the public of the source of that data and information.
+
+2. Users shall make sure not to convey the impression to the public that the user's activities are officially endorsed by the Union.
+
+3. Where that data or information has been adapted or modified, the user shall clearly state this.
+
+4. The data remain the sole property of the European Union. Any information and data produced in the framework of the action shall be the sole property of the European Union. Any communication and publication by the beneficiary shall acknowledge that the data were produced “with funding by the European Union”.</dct:license>
+        <dct:license rdf:resource="http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/noLimitations">no limitations to public access</dct:license>
+        <dcat:distribution rdf:resource="https://sdi.eea.europa.eu/catalogue/records/fe8d5d51-36ab-46d4-be61-dcfad7c308f1#WWW%3ALINK-1.0-http--link-Download%20%28requires%20authentication%29"/>
+        <dcat:distribution rdf:resource="https://sdi.eea.europa.eu/catalogue/records/fe8d5d51-36ab-46d4-be61-dcfad7c308f1#ESRI%3AREST-"/>
+        <dcat:distribution rdf:resource="https://sdi.eea.europa.eu/catalogue/records/fe8d5d51-36ab-46d4-be61-dcfad7c308f1#OGC%3AWMS-Coastal_Zones_2012_vector53031"/>
+        <dcat:distribution rdf:resource="https://sdi.eea.europa.eu/catalogue/records/fe8d5d51-36ab-46d4-be61-dcfad7c308f1#DOI-"/>
+        <dcat:dataQuality>Computer assisted visual mapping of LC/LU for reference year 2012. The main dataset for visual image interpretation of reference year 2012 was the DWH_MG2b_CORE_03 dataset (Optical VHR2 coverage over EU 2011-2013), mainly consisting of 1.5m VHR2 SPOT-6 and 2.5m VHR2 SPOT-5 HRG and 2m Pléiades satellite data. The nomenclature is the basis of the MAES typology of ecosystems adapted to the specific needs of coastal zones monitoring and it is composed by 71 classes.
+Positional Accuracy: less than 5 m (according to geo-location accuracy of satellite imagery delivered by ESA: less than 5m RMSE). Thematic accuracy (area-corrected Overall Accuracy): 97.9%. Accuracy Assessment approach: Stratified Random Point Sampling with 60001 sampling points. Interpretation of sampling points has been performed on the best available reference data.
+The Minimum Mapping Unit is 0.5 ha.
+The Minimum Mapping Width is 10 m.
+More information about this product can be found here: https://land.copernicus.eu/user-corner/technical-library/coastal-zones-nomenclature-and-mapping-guideline.pdf.</dcat:dataQuality>
+      </dcat:Dataset>
+      <skos:Concept rdf:about="http://localhost:8080/geonetwork//registries/vocabularies/GEMET%20-%20INSPIRE%20themes%2C%20version%201.0/concepts/Land%20use">
+        <skos:inScheme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET%20-%20INSPIRE%20themes%2C%20version%201.0"/>
+        <skos:prefLabel>Land use</skos:prefLabel>
+      </skos:Concept>
+      <skos:Concept rdf:about="http://localhost:8080/geonetwork//registries/vocabularies/GEMET%20-%20INSPIRE%20themes%2C%20version%201.0/concepts/Hydrography">
+        <skos:inScheme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET%20-%20INSPIRE%20themes%2C%20version%201.0"/>
+        <skos:prefLabel>Hydrography</skos:prefLabel>
+      </skos:Concept>
+      <skos:Concept rdf:about="http://localhost:8080/geonetwork//registries/vocabularies/GEMET%20-%20INSPIRE%20themes%2C%20version%201.0/concepts/Land%20cover">
+        <skos:inScheme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET%20-%20INSPIRE%20themes%2C%20version%201.0"/>
+        <skos:prefLabel>Land cover</skos:prefLabel>
+      </skos:Concept>
+      <skos:Concept rdf:about="http://localhost:8080/geonetwork//registries/vocabularies/Continents%2C%20countries%2C%20sea%20regions%20of%20the%20world./concepts/EEA38%20%28from%202020%29">
+        <skos:inScheme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/Continents%2C%20countries%2C%20sea%20regions%20of%20the%20world."/>
+        <skos:prefLabel>EEA38 (from 2020)</skos:prefLabel>
+      </skos:Concept>
+      <skos:Concept rdf:about="http://localhost:8080/geonetwork//registries/vocabularies/Continents%2C%20countries%2C%20sea%20regions%20of%20the%20world./concepts/United%20Kingdom">
+        <skos:inScheme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/Continents%2C%20countries%2C%20sea%20regions%20of%20the%20world."/>
+        <skos:prefLabel>United Kingdom</skos:prefLabel>
+      </skos:Concept>
+      <skos:Concept rdf:about="http://localhost:8080/geonetwork//registries/vocabularies/GEMET/concepts/hydrography">
+        <skos:inScheme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET"/>
+        <skos:prefLabel>hydrography</skos:prefLabel>
+      </skos:Concept>
+      <skos:Concept rdf:about="http://localhost:8080/geonetwork//registries/vocabularies/GEMET/concepts/coastal%20area">
+        <skos:inScheme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET"/>
+        <skos:prefLabel>coastal area</skos:prefLabel>
+      </skos:Concept>
+      <skos:Concept rdf:about="http://localhost:8080/geonetwork//registries/vocabularies/GEMET/concepts/landscape%20alteration">
+        <skos:inScheme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET"/>
+        <skos:prefLabel>landscape alteration</skos:prefLabel>
+      </skos:Concept>
+      <skos:Concept rdf:about="http://localhost:8080/geonetwork//registries/vocabularies/GEMET/concepts/land%20cover">
+        <skos:inScheme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET"/>
+        <skos:prefLabel>land cover</skos:prefLabel>
+      </skos:Concept>
+      <skos:Concept rdf:about="http://localhost:8080/geonetwork//registries/vocabularies/GEMET/concepts/land%20use">
+        <skos:inScheme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET"/>
+        <skos:prefLabel>land use</skos:prefLabel>
+      </skos:Concept>
+      <skos:Concept rdf:about="http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/european">
+        <skos:inScheme rdf:resource="http://inspire.ec.europa.eu/metadata-codelist/SpatialScope"/>
+        <skos:prefLabel>European</skos:prefLabel>
+      </skos:Concept>
+      <dcat:Distribution rdf:about="https://sdi.eea.europa.eu/catalogue/records/fe8d5d51-36ab-46d4-be61-dcfad7c308f1#WWW%3ALINK-1.0-http--link-Download%20%28requires%20authentication%29">
+        <dcat:accessURL>https://land.copernicus.eu/local/coastal-zones/coastal-zones-2012?tab=download</dcat:accessURL>
+        <dct:title>Download (requires authentication)</dct:title>
+        <dct:format>WWW:LINK-1.0-http--link</dct:format>
+      </dcat:Distribution>
+      <dcat:Distribution rdf:about="https://sdi.eea.europa.eu/catalogue/records/fe8d5d51-36ab-46d4-be61-dcfad7c308f1#ESRI%3AREST-">
+        <dcat:accessURL>https://image.discomap.eea.europa.eu/arcgis/rest/services/CoastalZones/CZ_CoastalZones_2012/MapServer</dcat:accessURL>
+        <dct:format>ESRI:REST</dct:format>
+      </dcat:Distribution>
+      <dcat:Distribution rdf:about="https://sdi.eea.europa.eu/catalogue/records/fe8d5d51-36ab-46d4-be61-dcfad7c308f1#OGC%3AWMS-Coastal_Zones_2012_vector53031">
+        <dcat:accessURL>https://image.discomap.eea.europa.eu/arcgis/services/CoastalZones/CZ_CoastalZones_2012/MapServer/WMSServer?service=WMS&amp;request=GetCapabilities&amp;version=1.3.0</dcat:accessURL>
+        <dct:title>Coastal_Zones_2012_vector53031</dct:title>
+        <dct:format>OGC:WMS</dct:format>
+      </dcat:Distribution>
+      <dcat:Distribution rdf:about="https://sdi.eea.europa.eu/catalogue/records/fe8d5d51-36ab-46d4-be61-dcfad7c308f1#DOI-">
+        <dcat:accessURL>https://doi.org/10.2909/fe8d5d51-36ab-46d4-be61-dcfad7c308f1</dcat:accessURL>
+        <dct:format>DOI</dct:format>
+      </dcat:Distribution>
+      <foaf:Organization rdf:about="http://localhost:8080/geonetwork//organizations/European%20Environment%20Agency">
+        <foaf:name>European Environment Agency</foaf:name>
+        <foaf:member rdf:resource="http://localhost:8080/geonetwork//persons/sdi%40eea.europa.eu"/>
+      </foaf:Organization>
+      <foaf:Agent rdf:about="http://localhost:8080/geonetwork//persons/sdi%40eea.europa.eu">
+        <foaf:mbox rdf:resource="mailto:sdi@eea.europa.eu"/>
+      </foaf:Agent>
+    </rdf:RDF>
+    

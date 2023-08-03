@@ -1,0 +1,135 @@
+{
+    "engine": "WCPS",
+    "stac_version": "0.9.0",
+    "stac_extensions": [
+        "datacube"
+    ],
+    "type": "Collection",
+    "id": "Backscatter_Sentinel1_Track088_Regular_Timeseries_Indexed",
+    "title": "Backscatter Sentinel-1 Track088",
+    "description": "Sentinel-1A backscatter timeseries. Sigma0 for VH and VV polarization calculated using SNAP.",
+    "keywords": [
+        "S-1",
+        "WLF",
+        "sigma",
+        "backscatter",
+        "intensity"
+    ],
+    "version": "v1",
+    "license": "CC-BY-4.0",
+    "sci:citation": "Eurac Research 2020, contains modified Copernicus Sentinel data 2018, processed by ESA.",
+    "providers": [
+        {
+            "name": "Eurac EO WCS",
+            "url": "http://www.eurac.edu",
+            "roles": [
+                "Host"
+            ]
+        },
+        {
+            "name": "European Space Agency (ESA)",
+            "url": "https://www.esa.int/",
+            "roles": [
+                "Producer"
+            ]
+        },
+        {
+            "name": "Carlo Marin",
+            "url": "http://www.eurac.edu/en/research/mountains/remsen/staff/Pages/staffdetails.aspx?persId=36763",
+            "roles": [
+                "Processor"
+            ]
+        }
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    4.7666347013681944,
+                    42.96505621824449,
+                    9.696403479162564,
+                    47.61227503372849
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2014-10-05T00:00:00Z",
+                    "2016-10-06T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "links": [
+        {
+            "rel": "licence",
+            "href": "https://creativecommons.org/licenses/by/4.0/",
+            "type": "text/html",
+            "title": "License Link"
+        }
+    ],
+    "cube:dimensions": {
+        "DATE": {
+            "type": "temporal",
+            "extent": [
+                "2014-10-05T00:00:00.000Z",
+                "2016-10-06T00:00:00.000Z"
+            ],
+            "step": "P12D"
+        },
+        "X": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                4.7666347013681944,
+                9.696403479162564
+            ],
+            "reference_system": 3035
+        },
+        "Y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                42.96505621824449,
+                47.61227503372849
+            ],
+            "reference_system": 3035
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "VH",
+                "VV"
+            ]
+        }
+    },
+    "summaries": {
+        "constellation": [
+            "Sentinel-1"
+        ],
+        "platform": [
+            "Sentinel-1A"
+        ],
+        "rows": 25039,
+        "columns": 20250,
+        "instruments": [
+            "SAR"
+        ],
+        "gsd": [
+            20.0
+        ],
+        "eo:bands": [
+            {
+                "name": "VH",
+                "common_name": "VH",
+                "gsd": 20.0
+            },
+            {
+                "name": "VV",
+                "common_name": "VV",
+                "gsd": 20.0
+            }
+        ]
+    }
+}

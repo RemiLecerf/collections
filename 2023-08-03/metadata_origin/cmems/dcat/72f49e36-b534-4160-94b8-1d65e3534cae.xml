@@ -1,0 +1,66 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:dct="http://purl.org/dc/terms/" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/72f49e36-b534-4160-94b8-1d65e3534cae">
+        <foaf:primaryTopic rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/resource/72f49e36-b534-4160-94b8-1d65e3534cae"/>
+        <dct:issued>2022-12-15</dct:issued>
+        <dct:modified>2022-12-15</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/srv/eng/xml.metadata.get?uuid=72f49e36-b534-4160-94b8-1d65e3534cae">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork?uuid=72f49e36-b534-4160-94b8-1d65e3534cae">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/resource/72f49e36-b534-4160-94b8-1d65e3534cae">
+        <dct:identifier>72f49e36-b534-4160-94b8-1d65e3534cae</dct:identifier>
+        <dct:title>Mediterranean Sea Waves Analysis and Forecast</dct:title>
+        <dct:abstract>'''Short description:'''
+                                                             
+MEDSEA_ANALYSISFORECAST_WAV_006_017 is the nominal wave product of the Mediterranean Sea Forecasting system, composed by hourly wave parameters at 1/24º horizontal resolution covering the Mediterranean Sea and extending up to 18.125W into the Atlantic Ocean. The waves forecast component (Med-WAV system) is a wave model based on the WAM Cycle 6. The Med-WAV modelling system resolves the prognostic part of the wave spectrum with 24 directional and 32 logarithmically distributed frequency bins and the model solutions are corrected by an optimal interpolation data assimilation scheme of all available along track satellite significant wave height observations. The atmospheric forcing is provided by the operational ECMWF Numerical Weather Prediction model and the wave model is forced with hourly averaged surface currents and sea level obtained from MEDSEA_ANALYSISFORECAST_PHY_006_013 at 1/24° resolution. The model uses wave spectra for Open Boundary Conditions from GLOBAL_ANALYSIS_FORECAST_WAV_001_027 product. The wave system includes 2 forecast cycles providing twice per day a Mediterranean wave analysis and 10 days of wave forecasts. 
+
+''Product Citation'': Please refer to our Technical FAQ for citing products.http://marine.copernicus.eu/faq/cite-cmems-products-cmems-credit/?idpage=169
+
+'''DOI (Product)''': https://doi.org/10.25423/cmcc/medsea_analysisforecast_wav_006_017_medwam4</dct:abstract>
+        <dcat:theme rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/thesaurus/iso/topicCategory/oceans"/>
+        <foaf:thumbnail rdf:resource="https://catalogue.marine.copernicus.eu/documents/IMG/MEDSEA_ANALYSISFORECAST_WAV_006_017.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((-18.12 30.18, -18.12 45.98, 36.30 45.98, 36.30 30.18, -18.12 30.18))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:issued>2012-08-26</dct:issued>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/MED-CMCC-LECCE-IT"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/MED-HCMR-ATHENS-GR"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/MED-HCMR-ATHENS-GR"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/MED-CMCC-LECCE-IT"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/MED-CMCC-LECCE-IT"/>
+        <dct:accrualPeriodicity>2timesDaily</dct:accrualPeriodicity>
+        <dct:license>otherRestrictions</dct:license>
+        <dct:license>license</dct:license>
+        <dct:license>No limitations on public access</dct:license>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=MEDSEA_ANALYSISFORECAST_WAV_006_017-TDS&amp;product=med-hcmr-wav-an-fc-h"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/thredds/dodsC/med-hcmr-wav-an-fc-h"/>
+        <dcat:distribution rdf:resource="ftp://nrt.cmems-du.eu/Core/MEDSEA_ANALYSISFORECAST_WAV_006_017/med-hcmr-wav-an-fc-h"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/thredds/wms/med-hcmr-wav-an-fc-h"/>
+        <dcat:distribution rdf:resource="ftp://nrt.cmems-du.eu/Core/MEDSEA_ANALYSISFORECAST_WAV_006_017/MEDSEA_ANALYSISFORECAST_WAV_006_017-statics"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/9e5cbdf9-dc5d-446f-9f04-3bd92bcbdf60"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/6f613f95-0524-48e6-804e-492f529584da"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dcat:dataQuality>The myOcean products depends on other products for production or validation. The detailed list of dependencies is given in ISO19115's aggregationInfo (ISO19139 Xpath = "gmd:MD_Metadata/gmd:identificationInfo/gmd:aggregationInfo[./gmd:MD_AggregateInformation/gmd:initiativeType/gmd:DS_InitiativeTypeCode/@codeListValue='upstream-validation' or 'upstream-production']")</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+    

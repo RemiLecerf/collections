@@ -1,0 +1,77 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dct="http://purl.org/dc/terms/" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://land.copernicus.vgt.vito.be:8443//geonetwork/metadata/urn:cgls:continents:sce500_v1_0.005degree">
+        <foaf:primaryTopic rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/resource/urn:cgls:continents:sce500_v1_0.005degree"/>
+        <dct:issued>2022-03-16</dct:issued>
+        <dct:modified>2022-03-16</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://land.copernicus.vgt.vito.be:8443//geonetwork/srv/eng/xml.metadata.get?uuid=urn:cgls:continents:sce500_v1_0.005degree">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://land.copernicus.vgt.vito.be:8443//geonetwork?uuid=urn:cgls:continents:sce500_v1_0.005degree">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://land.copernicus.vgt.vito.be:8443//geonetwork/resource/urn:cgls:continents:sce500_v1_0.005degree">
+        <dct:identifier>urn:cgls:continents:sce500_v1_0.005degree</dct:identifier>
+        <dct:title>Snow Cover Extent: continental Europe daily (raster 500m) - version 1, May 2018</dct:title>
+        <dct:abstract>Snow cover is highly sensitive to changes in temperature (freezing/thaw) and precipitation (snowfall, rain, hail) and affects directly the albedo and thus the energy balance of the Earth’s surface. It is a relevant input parameter for weather forecasts and climate change observations. Snow stores a significant mass of water and, with its high dynamic, has a strong effect on regional and global energy and water cycles. Together with the Snow Water Equivalent (SWE) product from passive microwave sensors, that provides information on the water content in the snow on plain areas, up-to-date knowledge about the snow cover extent is an important information for hydrological runoff modelling and for assessing natural hazards such as flood events.
+
+Snow cover is specified as Essential Climate Variable (ECV) by the Global Climate Observing System (GCOS).</dct:abstract>
+        <dcat:keyword>SNOW COVER</dcat:keyword>
+        <dcat:keyword>CEURO</dcat:keyword>
+        <dcat:keyword>Dekad</dcat:keyword>
+        <dcat:keyword>1 day composite</dcat:keyword>
+        <dcat:theme rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/thesaurus/GEMET%20-%20INSPIRE%20themes%2C%20version%201.0/Orthoimagery"/>
+        <dcat:theme rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/thesaurus/GEMET%20-%20Concepts%2C%20version%202.1/snow"/>
+        <dcat:theme rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/thesaurus/GEMET%20-%20Concepts%2C%20version%202.1/climate"/>
+        <dcat:theme rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/thesaurus/GEMET%20-%20Concepts%2C%20version%202.1/seasonal variation"/>
+        <dcat:theme rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/thesaurus/GEMET%20-%20Concepts%2C%20version%202.1/hydrology"/>
+        <dcat:theme rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/thesaurus/GEMET%20-%20Concepts%2C%20version%202.1/environmental data"/>
+        <dcat:theme rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/thesaurus/GEMET%20-%20Concepts%2C%20version%202.1/environmental monitoring"/>
+        <dcat:theme rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/thesaurus/GEMET%20-%20Concepts%2C%20version%202.1/monitoring"/>
+        <dcat:theme rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/thesaurus/GEMET%20-%20Concepts%2C%20version%202.1/remote sensing"/>
+        <dcat:theme rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/thesaurus/Copernicus%20Themes/Cryosphere"/>
+        <dcat:theme rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/thesaurus/Copernicus%20Variables/Snow Cover Extent"/>
+        <dcat:theme rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/thesaurus/iso/topicCategory/climatologyMeteorologyAtmosphere"/>
+        <dcat:theme rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/thesaurus/iso/topicCategory/environment"/>
+        <foaf:thumbnail rdf:resource="https://land.copernicus.vgt.vito.be/geonetwork/srv/api/records/urn:cgls:continents:sce500_v1_0.005degree/attachments/sce500_20170329_v1_0.005degree_with-legend.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((-10.9975 35.0025, -10.9975 71.9975, 49.9975 71.9975, 49.9975 35.0025, -10.9975 35.0025))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:temporal>2017-03-01
+          /
+          2020-09-30</dct:temporal>
+        <dct:issued>2018-01-01</dct:issued>
+        <dct:publisher rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/organization/Thomas%20Nagler"/>
+        <dct:publisher rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/organization/ENVEO%20IT%20GmbH"/>
+        <dct:publisher rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/organization/ENVEO%20IT%20GmbH"/>
+        <dct:publisher rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/organization/ENVEO%20IT%20GmbH"/>
+        <dct:accrualPeriodicity>asNeeded</dct:accrualPeriodicity>
+        <dct:license>copyright</dct:license>
+        <dct:license>otherRestrictions</dct:license>
+        <dct:license>(d) the confidentiality of commercial or industrial information, where such confidentiality is provided for by national or Community law to protect a legitimate economic interest, including the public interest in maintaining statistical confidentiality and tax secrecy.</dct:license>
+        <dcat:distribution rdf:resource="https://land.copernicus.eu/global/access"/>
+        <dcat:distribution rdf:resource="https://land.copernicus.eu/global/access"/>
+        <dcat:distribution rdf:resource="http://eoportal.eumetsat.int"/>
+        <dct:relation rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/metadata/"/>
+        <dcat:dataQuality>The input data are the 1 day Top measured by the MODIS sensor.</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+  

@@ -1,0 +1,637 @@
+{
+    "slug": "extreme-precipitation-risk-indicators-for-europe-and-european-cities-from-1950-to-2019",
+    "name": "sis-european-risk-extreme-precipitation-indicators",
+    "id": "eu.copernicus.climate.sis-european-risk-extreme-precipitation-indicators",
+    "type": "dataset",
+    "rich_abstract": "<div class='abstract-text'>\n         <hr />\n<p>The dataset presents climate impact indicators related to extreme precipitation in Europe under current climate conditions. The suite of indicators include recent historic records, recurrence intervals, and other relevant statistical measures to evaluate the magnitude and frequency of extreme precipitation events. These are provided as gridded products, with one product covering the whole of Europe, and the other higher resolution product focused on 20 European cities that were identified as vulnerable to urban pluvial flooding based on stakeholder surveys.</p>\n<p>This dataset makes use of precipitation data available in the Climate Data Store (i.e. E-OBS gridded land-only observational dataset and ERA5 reanalysis) combined with additional datasets capable of improving the spatial and temporal resolution of the precipitation data, making it suitable for pluvial flood analysis at city scales. These are derived from i) the network of meteorological stations included in the European Climate Assessment &amp; Dataset (ECA&amp;D) programme and ii) dynamically downscaled ERA5 reanalysis at 2 km x 2 km (ERA5-2km) using the regional climate model COSMO-CLM and accounting for urban parameterization, specifically performed for the 20 European cities identified as vulnerable to urban pluvial flooding.</p>\n<p>At the European scale, E-OBS and ERA5 precipitation data are used to compute indicators at different temporal resolutions (i.e. daily, monthly, yearly, and 30-year) according to the type of indicator. The precipitation amounts at fixed return periods are also computed for point observations from meteorological stations using the ECA&amp;D network and are then interpolated onto the E-OBS grid. At the city scale, a dynamically downscaled ERA5-2km precipitation data are instead used to derive daily indicators, allowing city stakeholders to detect and rank local extreme precipitation events and evaluate their magnitude.</p>\n<p>This dataset was produced on behalf of the Copernicus Climate Change Service.</p>\n         \n         \n            <p></p>\n            <table class=\"abstract-description abstract-table\">\n            <tr><th colspan=\"2\">DATA DESCRIPTION</th>\n            \n<tr><th>Data type</th><td>Gridded</td></tr>\n<tr><th>Horizontal coverage</th><td>Europe</td></tr>\n<tr><th>Horizontal resolution</th><td><p>ERA5: 0.25\u00b0 x 0.25\u00b0</p>\n<p>E-OBS: 0.1\u00b0 x 0.1\u00b0</p>\n<p>ERA5-2km: 0.02\u00b0 x 0.02\u00b0</p>\n<p>ECA&amp;D: 0.1\u00b0 x 0.1\u00b0</p></td></tr>\n<tr><th>Vertical coverage</th><td>Surface</td></tr>\n<tr><th>Vertical resolution</th><td>Single level</td></tr>\n<tr><th>Temporal coverage</th><td><p>ERA5: 1979-2020</p>\n<p>E-OBS: 1950-2019</p>\n<p>ERA5-2km: 1989-2018</p>\n<p>ECA&amp;D: 1989-2018</p></td></tr>\n<tr><th>Temporal resolution</th><td>Daily, monthly, yearly, and 30-year statistics</td></tr>\n<tr><th>File format</th><td>NetCDF-4</td></tr>\n<tr><th>Conventions</th><td>Climate and Forecast (CF) Metadata Convention v1.6</td></tr>\n<tr><th>Versions</th><td>1.0</td></tr>\n<tr><th>Update frequency</th><td>No updates expected</td></tr>\n</table>\n\n    <p></p>\n    <table class=\"abstract-variables abstract-table\">\n    <tr><th colspan=\"3\">MAIN VARIABLES</th>\n    \n\n    <tr><th class='variables-name'>Name</th><th class='variables-units'>Units</th><th class='variables-description'>Description</th></tr>\n    \n<tr><td class='variables-name'>Maximum 1-day precipitation</td><td class='variables-units'>kg m<sup>-2</sup></td><td class='variables-description'>The maximum amount of precipitation in one day for the user-selected month or year period.</td></tr>\n<tr><td class='variables-name'>Maximum 5-day precipitation</td><td class='variables-units'>kg m<sup>-2</sup></td><td class='variables-description'>The maximum amount of precipitation in 5 consecutive days for the user-selected month or year period.</td></tr>\n<tr><td class='variables-name'>Number of consecutive wet days</td><td class='variables-units'>Count</td><td class='variables-description'>The maximum number of consecutive days with the daily precipitation amount greater than 1 mm for the user-selected month or year period.</td></tr>\n<tr><td class='variables-name'>Number of precipitation days exceeding 20mm</td><td class='variables-units'>Count</td><td class='variables-description'>The number of days with at least 20 mm of daily precipitation for the user-selected month or year period.</td></tr>\n<tr><td class='variables-name'>Number of precipitation days exceeding fixed percentiles</td><td class='variables-units'>Count</td><td class='variables-description'>The number of days with daily precipitation exceeding the 90th, 95th, or 99th percentile of wet days (daily precipitation \u2265 1 mm) for the user-selected month or year.</td></tr>\n<tr><td class='variables-name'>Number of wet days</td><td class='variables-units'>Count</td><td class='variables-description'>The number of days with the daily precipitation amount greater than 1 mm for the user-selected month or year period.</td></tr>\n<tr><td class='variables-name'>Precipitation at fixed percentiles</td><td class='variables-units'>kg m<sup>-2</sup></td><td class='variables-description'>Total precipitation when daily precipitation amounts exceed the 90th, 95th, or 99th percentiles in wet days (daily precipitation \u2265 1 mm) computed over the 30-year period (1989-2018).</td></tr>\n<tr><td class='variables-name'>Precipitation at fixed return periods</td><td class='variables-units'>kg m<sup>-2</sup></td><td class='variables-description'>Daily precipitation amount characterised by the 5, 10, 25, 50, or 100 year return period computed over the 30-year period (1989-2018).</td></tr>\n<tr><td class='variables-name'>Standardised precipitation exceeding fixed percentiles</td><td class='variables-units'>Dimensionless</td><td class='variables-description'>Standardised daily precipitation amount over the grid point's 95th or 99th percentile of wet days (daily precipitation \u2265 1 mm). Values are decimal, ranging between 0-17 (95th percentile) or 0-10 (99th percentile). These values may be used to detect and rank extreme precipitation events.</td></tr>\n<tr><td class='variables-name'>Total precipitation</td><td class='variables-units'>mm</td><td class='variables-description'>Total precipitation amount in one month or one year.</td></tr>\n</table>\n    </div>",
+    "terms": [
+        "licence-to-use-copernicus-products"
+    ],
+    "constraints": [
+        {
+            "period": [
+                "1950",
+                "1951",
+                "1952",
+                "1953",
+                "1954",
+                "1955",
+                "1956",
+                "1957",
+                "1958",
+                "1959",
+                "1960",
+                "1961",
+                "1962",
+                "1963",
+                "1964",
+                "1965",
+                "1966",
+                "1967",
+                "1968",
+                "1969",
+                "1970",
+                "1971",
+                "1972",
+                "1973",
+                "1974",
+                "1975",
+                "1976",
+                "1977",
+                "1978",
+                "1979",
+                "1980",
+                "1981",
+                "1982",
+                "1983",
+                "1984",
+                "1985",
+                "1986",
+                "1987",
+                "1988",
+                "1989",
+                "1990",
+                "1991",
+                "1992",
+                "1993",
+                "1994",
+                "1995",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2000",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018",
+                "2019"
+            ],
+            "product_type": [
+                "e_obs"
+            ],
+            "spatial_coverage": [
+                "europe"
+            ],
+            "temporal_aggregation": [
+                "monthly",
+                "yearly"
+            ],
+            "variable": [
+                "maximum_1_day_precipitation",
+                "maximum_5_day_precipitation",
+                "number_of_consecutive_wet_days",
+                "number_of_precipitation_days_exceeding_20mm",
+                "number_of_wet_days",
+                "total_precipitation"
+            ]
+        },
+        {
+            "period": [
+                "1979",
+                "1980",
+                "1981",
+                "1982",
+                "1983",
+                "1984",
+                "1985",
+                "1986",
+                "1987",
+                "1988",
+                "1989",
+                "1990",
+                "1991",
+                "1992",
+                "1993",
+                "1994",
+                "1995",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2000",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018",
+                "2019"
+            ],
+            "product_type": [
+                "era5"
+            ],
+            "spatial_coverage": [
+                "europe"
+            ],
+            "temporal_aggregation": [
+                "monthly",
+                "yearly"
+            ],
+            "variable": [
+                "maximum_1_day_precipitation",
+                "maximum_5_day_precipitation",
+                "number_of_consecutive_wet_days",
+                "number_of_precipitation_days_exceeding_20mm",
+                "number_of_wet_days",
+                "total_precipitation"
+            ]
+        },
+        {
+            "period": [
+                "1989-2018"
+            ],
+            "product_type": [
+                "e_obs",
+                "eca_d",
+                "era5"
+            ],
+            "return_period": [
+                "10-yrs",
+                "100-yrs",
+                "25-yrs",
+                "5-yrs",
+                "50-yrs"
+            ],
+            "spatial_coverage": [
+                "europe"
+            ],
+            "temporal_aggregation": [
+                "30_year"
+            ],
+            "variable": [
+                "precipitation_at_fixed_return_periods"
+            ]
+        },
+        {
+            "percentile": [
+                "90th",
+                "95th",
+                "99th"
+            ],
+            "period": [
+                "1950",
+                "1951",
+                "1952",
+                "1953",
+                "1954",
+                "1955",
+                "1956",
+                "1957",
+                "1958",
+                "1959",
+                "1960",
+                "1961",
+                "1962",
+                "1963",
+                "1964",
+                "1965",
+                "1966",
+                "1967",
+                "1968",
+                "1969",
+                "1970",
+                "1971",
+                "1972",
+                "1973",
+                "1974",
+                "1975",
+                "1976",
+                "1977",
+                "1978",
+                "1979",
+                "1980",
+                "1981",
+                "1982",
+                "1983",
+                "1984",
+                "1985",
+                "1986",
+                "1987",
+                "1988",
+                "1989",
+                "1990",
+                "1991",
+                "1992",
+                "1993",
+                "1994",
+                "1995",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2000",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018",
+                "2019"
+            ],
+            "product_type": [
+                "e_obs"
+            ],
+            "spatial_coverage": [
+                "europe"
+            ],
+            "temporal_aggregation": [
+                "monthly",
+                "yearly"
+            ],
+            "variable": [
+                "number_of_precipitation_days_exceeding_fixed_percentiles"
+            ]
+        },
+        {
+            "percentile": [
+                "90th",
+                "95th",
+                "99th"
+            ],
+            "period": [
+                "1979",
+                "1980",
+                "1981",
+                "1982",
+                "1983",
+                "1984",
+                "1985",
+                "1986",
+                "1987",
+                "1988",
+                "1989",
+                "1990",
+                "1991",
+                "1992",
+                "1993",
+                "1994",
+                "1995",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2000",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018",
+                "2019"
+            ],
+            "product_type": [
+                "era5"
+            ],
+            "spatial_coverage": [
+                "europe"
+            ],
+            "temporal_aggregation": [
+                "monthly",
+                "yearly"
+            ],
+            "variable": [
+                "number_of_precipitation_days_exceeding_fixed_percentiles"
+            ]
+        },
+        {
+            "percentile": [
+                "90th",
+                "95th",
+                "99th"
+            ],
+            "period": [
+                "1989-2018"
+            ],
+            "product_type": [
+                "e_obs",
+                "era5"
+            ],
+            "spatial_coverage": [
+                "europe"
+            ],
+            "temporal_aggregation": [
+                "30_year"
+            ],
+            "variable": [
+                "precipitation_at_fixed_percentiles"
+            ]
+        },
+        {
+            "percentile": [
+                "95th",
+                "99th"
+            ],
+            "period": [
+                "1950",
+                "1951",
+                "1952",
+                "1953",
+                "1954",
+                "1955",
+                "1956",
+                "1957",
+                "1958",
+                "1959",
+                "1960",
+                "1961",
+                "1962",
+                "1963",
+                "1964",
+                "1965",
+                "1966",
+                "1967",
+                "1968",
+                "1969",
+                "1970",
+                "1971",
+                "1972",
+                "1973",
+                "1974",
+                "1975",
+                "1976",
+                "1977",
+                "1978",
+                "1979",
+                "1980",
+                "1981",
+                "1982",
+                "1983",
+                "1984",
+                "1985",
+                "1986",
+                "1987",
+                "1988",
+                "1989",
+                "1990",
+                "1991",
+                "1992",
+                "1993",
+                "1994",
+                "1995",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2000",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018",
+                "2019"
+            ],
+            "product_type": [
+                "e_obs"
+            ],
+            "spatial_coverage": [
+                "europe"
+            ],
+            "temporal_aggregation": [
+                "daily"
+            ],
+            "variable": [
+                "standardised_precipitation_exceeding_fixed_percentiles"
+            ]
+        },
+        {
+            "percentile": [
+                "95th",
+                "99th"
+            ],
+            "period": [
+                "1979",
+                "1980",
+                "1981",
+                "1982",
+                "1983",
+                "1984",
+                "1985",
+                "1986",
+                "1987",
+                "1988",
+                "1989",
+                "1990",
+                "1991",
+                "1992",
+                "1993",
+                "1994",
+                "1995",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2000",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018",
+                "2019"
+            ],
+            "product_type": [
+                "era5"
+            ],
+            "spatial_coverage": [
+                "europe"
+            ],
+            "temporal_aggregation": [
+                "daily"
+            ],
+            "variable": [
+                "standardised_precipitation_exceeding_fixed_percentiles"
+            ]
+        },
+        {
+            "city": [
+                "amadora",
+                "amersfoort",
+                "antwerp",
+                "athens",
+                "bilbao",
+                "birmingham",
+                "brussels",
+                "bucharest",
+                "budapest",
+                "frankfurt_am_main",
+                "koln",
+                "london",
+                "milan",
+                "pamplona",
+                "paris",
+                "prague",
+                "riga",
+                "rimini",
+                "stockholm",
+                "vienna"
+            ],
+            "percentile": [
+                "95th",
+                "99th"
+            ],
+            "period": [
+                "1989",
+                "1990",
+                "1991",
+                "1992",
+                "1993",
+                "1994",
+                "1995",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2000",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ],
+            "product_type": [
+                "era5_2km"
+            ],
+            "spatial_coverage": [
+                "city"
+            ],
+            "temporal_aggregation": [
+                "daily"
+            ],
+            "variable": [
+                "standardised_precipitation_exceeding_fixed_percentiles"
+            ]
+        },
+        {
+            "city": [
+                "amadora",
+                "amersfoort",
+                "antwerp",
+                "athens",
+                "bilbao",
+                "birmingham",
+                "brussels",
+                "bucharest",
+                "budapest",
+                "frankfurt_am_main",
+                "koln",
+                "london",
+                "milan",
+                "pamplona",
+                "paris",
+                "prague",
+                "riga",
+                "rimini",
+                "stockholm",
+                "vienna"
+            ],
+            "percentile": [
+                "95th",
+                "99th"
+            ],
+            "period": [
+                "1989-2018"
+            ],
+            "product_type": [
+                "era5_2km"
+            ],
+            "spatial_coverage": [
+                "city"
+            ],
+            "temporal_aggregation": [
+                "30_year"
+            ],
+            "variable": [
+                "precipitation_at_fixed_percentiles"
+            ]
+        }
+    ]
+}

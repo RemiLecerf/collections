@@ -1,0 +1,69 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dct="http://purl.org/dc/terms/" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/metadata/eu.copernicus.climate.satellite-ice-sheet-mass-balance">
+        <foaf:primaryTopic rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/resource/10.24381/cds.38b9366c"/>
+        <dct:issued>2018-03-28</dct:issued>
+        <dct:modified>2018-03-28</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/srv/eng/xml.metadata.get?uuid=eu.copernicus.climate.satellite-ice-sheet-mass-balance">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://cds.climate.copernicus.eu:443//geonetwork?uuid=eu.copernicus.climate.satellite-ice-sheet-mass-balance">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/resource/10.24381/cds.38b9366c">
+        <dct:identifier>10.24381/cds.38b9366c</dct:identifier>
+        <dct:title>Gravimetric mass balance data for the Antarctic and Greenland ice sheets from 2003 to 2020 derived from satellite observations</dct:title>
+        <dct:abstract>This dataset provides a complete archive of monthly mass change timeseries for the drainage basins of the Antarctic and Greenland Ice Sheets from NASA's Gravity Recovery and Climate Experiment (GRACE) and GRACE Follow On (GRACE-FO) mission, which have operated from 2002 to current data.
+It is guided by the Global Climate Observing System targets for the Ice Sheets Mass Change Essential Climate Variable. The GRACE twin satellites measured changes in the Earth’s gravitational field over time and inferred from them mass changes over the ice sheets, using the regional integration approach. A timeseries of mass change is provided for each ice sheet, and also for each drainage basin separately.
+The dataset complements ice change measurements made by other methods, such as the surface elevation change rate detailed in the Climate Data Store (CDS) dataset: 'Ice sheet surface elevation change rate for Greenland and Antarctica from 1992 to present from derived satellite observations', which covers the same areas and includes the GRACE mission timespan.
+The data was brokered from ESA’s Greenland and ESA's Antarctic Ice Sheet Climate Change Initiative projects.
+
+Variables in the dataset/application are:
+Antarctic basin X ice mass balance, Antarctic basin definition, Antarctic ice mass balance, Antarctic peninsula ice mass balance, East Antactic ice mass balance, Greenland basin X ice mass balance, Greenland basin definition, Greenland ice mass balance, West Antactic ice mass balance</dct:abstract>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/GEMET%20-%20INSPIRE%20themes%2C%20version%201.0/Elevation"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Spatial coverage: Antarctic and Greenland"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Variable domain: Land (cryosphere)"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Product type: Satellite observations"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Temporal coverage: Past"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Temporal coverage: Present"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/iso/topicCategory/Elevation"/>
+        <foaf:thumbnail rdf:resource="https://datastore.copernicus-climate.eu/c3s/published-forms-v2/c3sprod/satellite-ice-sheet-mass-balance/overview.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((-35 55, -35 85, -55 85, -55 55, -35 55))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:temporal>2003-01-01
+          /
+          2017-12-31</dct:temporal>
+        <dct:publisher rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/organization/ECMWF"/>
+        <dct:accrualPeriodicity>asNeeded</dct:accrualPeriodicity>
+        <dct:language>eng</dct:language>
+        <dct:license>licence</dct:license>
+        <dct:license>https://cds.climate.copernicus.eu/api/v2/terms/static/20180314_Copernicus_License_V1.1.pdf</dct:license>
+        <dcat:distribution rdf:resource="https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.38b9366c"/>
+        <dcat:distribution rdf:resource="https://datastore.copernicus-climate.eu/documents/satellite-GRACE/C3S_312b_Lot4.D3.IS.8-v3.0_GMB_Product_User_Guide_Specification_i1.1.pdf"/>
+        <dcat:distribution rdf:resource="https://datastore.copernicus-climate.eu/documents/satellite-GRACE/C3S_312b_Lot4.D1.IS.4_v3.0_GMB_Algorithm_Theoretical_Basis_Document_i1.0.pdf"/>
+        <dcat:distribution rdf:resource="https://datastore.copernicus-climate.eu/documents/satellite-GRACE/C3S_312b_Lot4_D2.IS.4-v3.0_Product_Quality_Assessment_Report_GMB_i1.0.pdf"/>
+        <dcat:distribution rdf:resource="https://datastore.copernicus-climate.eu/documents/satellite-GRACE/C3S_312b_Lot4.D1.IS.3-v3.0_GMB_System_Quality_Assurance_Document_i1.0.pdf"/>
+        <dcat:distribution rdf:resource="https://datastore.copernicus-climate.eu/documents/satellite-GRACE/C3S_312b_Lot4.D2.IS.3_v3.0_GMB_Product_Quality_Assurance_Document_i1.0.pdf"/>
+        <dcat:distribution rdf:resource="https://datastore.copernicus-climate.eu/documents/satellite-GRACE/C3S_312b_Lot4_D1.S.1-2020_TRGAD_IS_i1.0.pdf"/>
+        <dcat:dataQuality>EC Copernicus program</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+    

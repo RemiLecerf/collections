@@ -1,0 +1,97 @@
+{
+  "type": "Collection",
+  "id": "cbe65f19-c0f8-432f-8fd3-f8e13cb2ba74",
+  "stac_version": "1.0.0",
+  "description": "'''Short description:'''\n\nNear-Real-Time mono-mission satellite-based along-track significant wave height. Only valid data are included, based on a rigorous editing combining various criteria such as quality flags (surface flag, presence of ice) and thresholds on parameter values. Such thresholds are applied on parameters linked to significant wave height determination from retracking (e.g. SWH, sigma0, range, off nadir angle…). All the missions are homogenized with respect to a reference mission (Jason-3 until April 2022, Sentinel-6A afterwards) and calibrated on in-situ buoy measurements. Finally, an along-track filter is applied to reduce the measurement noise.\n\nAs a support of information to the significant wave height, wind speed measured by the altimeters is also processed and included in the files. Wind speed values are provided by upstream products (L2) for each mission and are based on different algorithms. Only valid data are included and all the missions are homogenized with respect to the reference mission.\n\nThis product is processed by the WAVE-TAC multi-mission altimeter data processing system. It serves in near-real time the main operational oceanography and climate forecasting centers in Europe and worldwide. It processes operational data (OGDR and NRT, produced in near-real-time) from the following altimeter missions: Sentinel-6A, Jason-3, Sentinel-3A, Sentinel-3B, Cryosat-2, SARAL/AltiKa, CFOSAT ; and interim data (IGDR, 1 to 2 days delay) from Hai Yang-2B mission.\n\nOne file containing valid SWH is produced for each mission and for a 3-hour time window. It contains the filtered SWH (VAVH), the unfiltered SWH (VAVH_UNFILTERED) and the wind speed (wind_speed).\n\n'''DOI (product) :'''   \nhttps://doi.org/10.48670/moi-00179",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/WAVE_GLO_PHY_SWH_L3_NRT_014_001/cmems_obs-wave_glo_phy-swh_nrt_al-l3_PT1S",
+      "type": "WWW:FTP",
+      "title": "cmems_obs-wave_glo_phy-swh_nrt_al-l3_PT1S"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/WAVE_GLO_PHY_SWH_L3_NRT_014_001/cmems_obs-wave_glo_phy-swh_nrt_c2-l3_PT1S",
+      "type": "WWW:FTP",
+      "title": "cmems_obs-wave_glo_phy-swh_nrt_c2-l3_PT1S"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/WAVE_GLO_PHY_SWH_L3_NRT_014_001/cmems_obs-wave_glo_phy-swh_nrt_cfo-l3_PT1S",
+      "type": "WWW:FTP",
+      "title": "cmems_obs-wave_glo_phy-swh_nrt_cfo-l3_PT1S"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/WAVE_GLO_PHY_SWH_L3_NRT_014_001/cmems_obs-wave_glo_phy-swh_nrt_h2b-l3_PT1S",
+      "type": "WWW:FTP",
+      "title": "cmems_obs-wave_glo_phy-swh_nrt_h2b-l3_PT1S"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/WAVE_GLO_PHY_SWH_L3_NRT_014_001/cmems_obs-wave_glo_phy-swh_nrt_h2c-l3_PT1S",
+      "type": "WWW:FTP",
+      "title": "cmems_obs-wave_glo_phy-swh_nrt_h2c-l3_PT1S"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/WAVE_GLO_PHY_SWH_L3_NRT_014_001/cmems_obs-wave_glo_phy-swh_nrt_j3-l3_PT1S",
+      "type": "WWW:FTP",
+      "title": "cmems_obs-wave_glo_phy-swh_nrt_j3-l3_PT1S"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/WAVE_GLO_PHY_SWH_L3_NRT_014_001/cmems_obs-wave_glo_phy-swh_nrt_s3a-l3_PT1S",
+      "type": "WWW:FTP",
+      "title": "cmems_obs-wave_glo_phy-swh_nrt_s3a-l3_PT1S"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/WAVE_GLO_PHY_SWH_L3_NRT_014_001/cmems_obs-wave_glo_phy-swh_nrt_s3b-l3_PT1S",
+      "type": "WWW:FTP",
+      "title": "cmems_obs-wave_glo_phy-swh_nrt_s3b-l3_PT1S"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/WAVE_GLO_PHY_SWH_L3_NRT_014_001/cmems_obs-wave_glo_phy-swh_nrt_s6a-l3_PT1S",
+      "type": "WWW:FTP",
+      "title": "cmems_obs-wave_glo_phy-swh_nrt_s6a-l3_PT1S"
+    }
+  ],
+  "title": "GLOBAL OCEAN L3 SIGNIFICANT WAVE HEIGHT FROM NRT SATELLITE MEASUREMENTS",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2020-01-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "providers": [
+    {
+      "name": "Copernicus Marine Service",
+      "description": "Copernicus Marine Service - Mercator Ocean Internations",
+      "roles": [
+        "licensor",
+        "producer",
+        "processor",
+        "host"
+      ],
+      "url": "https://marine.copernicus.eu/"
+    }
+  ]
+}

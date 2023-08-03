@@ -1,0 +1,78 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:dct="http://purl.org/dc/terms/" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/3d9a35df-7c82-498f-8cda-71aa8b8d0ca4">
+        <foaf:primaryTopic rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/resource/1c5fe986-1cd7-4c56-aeff-7bba0b4ff554"/>
+        <dct:issued>2023-03-29</dct:issued>
+        <dct:modified>2023-03-29</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/srv/eng/xml.metadata.get?uuid=3d9a35df-7c82-498f-8cda-71aa8b8d0ca4">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork?uuid=3d9a35df-7c82-498f-8cda-71aa8b8d0ca4">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/resource/1c5fe986-1cd7-4c56-aeff-7bba0b4ff554">
+        <dct:identifier>1c5fe986-1cd7-4c56-aeff-7bba0b4ff554</dct:identifier>
+        <dct:title>Global Ocean Yearly CO2 Sink from Multi-Observations Reprocessing</dct:title>
+        <dct:abstract>'''DEFINITION'''
+
+The global yearly ocean CO2 sink represents the ocean uptake of CO2 from the atmosphere computed over the whole ocean. It is expressed in PgC per year. The ocean monitoring index is presented for the period 1985 to 2021. The yearly estimate of the ocean CO2 sink corresponds to the mean of a 100-member ensemble of CO2 flux estimates (Chau et al. 2022). The range of an estimate with the associated uncertainty is then defined by the empirical 68% interval computed from the ensemble.
+
+'''CONTEXT'''
+
+Since the onset of the industrial era in 1750, the atmospheric CO2 concentration has increased from about 277±3 ppm (Joos and Spahni, 2008) to 412.44±0.1 ppm in 2020 (Dlugokencky and Tans, 2020). By 2011, the ocean had absorbed approximately 28 ± 5% of all anthropogenic CO2 emissions, thus providing negative feedback to global warming and climate change (Ciais et al., 2013). The ocean CO2 sink is evaluated every year as part of the Global Carbon Budget (Friedlingstein et al. 2022). The uptake of CO2 occurs primarily in response to increasing atmospheric levels. The global flux is characterized by a significant variability on interannual to decadal time scales largely in response to natural climate variability (e.g., ENSO) (Friedlingstein et al. 2022, Chau et al. 2022). 
+
+'''CMEMS KEY FINDINGS'''
+
+The rate of change of the integrated yearly surface downward flux has increased by 0.04±0.03e-1 PgC/yr2 over the period 1985-2021. The yearly flux time series shows a plateau in the 90s followed by an increase since 2000 with a growth rate of 0.06±0.04e-1 PgC/yr2. In  2021 (resp. 2020), the global ocean CO2 sink was    2.41±0.13 (resp.  2.50±0.12) PgC/yr. The average over the full period is 1.61±0.10 PgC/yr with an interannual variability (temporal standard deviation) of 0.46 PgC/yr.  In order to compare these fluxes to Friedlingstein et al. (2022), the estimate of preindustrial outgassing of riverine carbon of  0.61 PgC/yr, which is in between the estimate by Jacobson et al. (2007) (0.45±0.18 PgC/yr) and the one by Resplandy et al. (2018) (0.78±0.41 PgC/yr) needs to be added. A full discussion regarding this OMI can be found in section 2.10 of the Ocean State Report 4 (Gehlen et al., 2020) and in Chau et al. (2022).
+
+'''DOI (product):''' 
+https://doi.org/10.48670/moi-00223</dct:abstract>
+        <dcat:theme rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/thesaurus/iso/topicCategory/oceans"/>
+        <foaf:thumbnail rdf:resource="https://catalogue.marine.copernicus.eu/documents/IMG/GLOBAL_OMI_HEALTH_carbon_co2_flux_integrated.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((-180.00 -90.00, -180.00 90.00, 180.00 90.00, 180.00 -90.00, -180.00 -90.00))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:issued>2020-03-10</dct:issued>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/MULTIOBS-CLS-TOULOUSE-FR"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/MULTIOBS-CLS-TOULOUSE-FR"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/MULTIOBS-CLS-TOULOUSE-FR"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/MULTIOBS-LSCE-GIF-FR"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/MOI-OMI-SERVICE"/>
+        <dct:accrualPeriodicity>annually</dct:accrualPeriodicity>
+        <dct:license>otherRestrictions</dct:license>
+        <dct:license>license</dct:license>
+        <dct:license>No limitations on public access</dct:license>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/GLOBAL_OMI_HEALTH_carbon_co2_flux_integrated/global_omi_health_carbon_co2_flux_integrated"/>
+        <dcat:distribution rdf:resource="https://mdl1.marine.copernicus.eu/derived/GLOBAL_OMI_HEALTH_carbon_co2_flux_integrated/global_omi_health_carbon_co2_flux_integrated_202303/global_omi_health_carbon_co2_flux_integrated_1985_P20220930.nc"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/810388db-580e-4e78-a6c1-648cf88b02ad"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/43cb0624-6090-42b1-9a2d-6ca5ecc6b153"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/4f7f57a8-c071-47c5-b44a-39ce45134446"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dcat:dataQuality>The myOcean products depends on other products for production or validation. The detailed list of dependencies is given in ISO19115's aggregationInfo (ISO19139 Xpath = "gmd:MD_Metadata/gmd:identificationInfo/gmd:aggregationInfo[./gmd:MD_AggregateInformation/gmd:initiativeType/gmd:DS_InitiativeTypeCode/@codeListValue='upstream-validation' or 'upstream-production']")</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+    

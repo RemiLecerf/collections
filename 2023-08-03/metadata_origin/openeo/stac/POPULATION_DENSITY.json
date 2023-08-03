@@ -1,0 +1,150 @@
+{
+    "assets": {
+        "thumbnail": {
+            "href": "https://collections.eurodatacube.com/population_density/population_density.png",
+            "roles": [
+                "thumbnail"
+            ],
+            "title": "Thumbnail",
+            "type": "image/png"
+        }
+    },
+    "cube:dimensions": {
+        "bands": {
+            "type": "bands",
+            "values": [
+                "populationDensity"
+            ]
+        },
+        "t": {
+            "extent": [
+                "2020-05-01T00:00:00Z",
+                "2020-05-01T00:00:01Z"
+            ],
+            "type": "temporal"
+        },
+        "x": {
+            "axis": "x",
+            "extent": [
+                -180,
+                179.99999999999983
+            ],
+            "step": 0.00833333333,
+            "type": "spatial"
+        },
+        "y": {
+            "axis": "y",
+            "extent": [
+                -90,
+                89.99999999999991
+            ],
+            "step": 0.00833333333,
+            "type": "spatial"
+        }
+    },
+    "description": "POPULATION_DENSITY",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    179.99999999999983,
+                    89.99999999999991
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2020-05-01T00:00:00Z",
+                    "2020-05-01T00:00:01Z"
+                ]
+            ]
+        }
+    },
+    "id": "POPULATION_DENSITY",
+    "keywords": [
+        "open data",
+        "sentinel hub",
+        "raster",
+        "race challenges"
+    ],
+    "license": "various",
+    "links": [
+        {
+            "href": "https://collections.eurodatacube.com/population_density",
+            "rel": "about",
+            "title": "Website describing the collection",
+            "type": "text/html"
+        },
+        {
+            "href": "https://services.sentinel-hub.com/ogc/wmts/9b12a1a1-d4ca-45ae-a345-311accb663a5",
+            "rel": "wmts",
+            "wmts:dimensions": {
+                "warnings": true
+            },
+            "wmts:layer": "POPULATION-DENSITY"
+        },
+        {
+            "href": "https://docs.sentinel-hub.com/api/latest/api/process/",
+            "rel": "about",
+            "title": "Details about running Evalscripts",
+            "type": "text/html"
+        },
+        {
+            "href": "https://raw.githubusercontent.com/eurodatacube/public-collections/main/collections/population_density/script.js",
+            "rel": "processing-expression",
+            "sentinelhub:layer_name": "Population Density",
+            "sentinelhub:mosaicking_order": "mostRecent",
+            "sentinelhub:upsampling": "BICUBIC",
+            "title": "Evalscript to generate Population Density imagery",
+            "type": "application/javascript"
+        },
+        {
+            "rel": "license",
+            "title": "License",
+            "type": "text/html"
+        },
+        {
+            "href": "https://openeocloud.vito.be/openeo/1.0.0/collections",
+            "rel": "root"
+        },
+        {
+            "href": "https://openeocloud.vito.be/openeo/1.0.0/collections",
+            "rel": "parent"
+        },
+        {
+            "href": "https://openeocloud.vito.be/openeo/1.0.0/collections/POPULATION_DENSITY",
+            "rel": "self"
+        }
+    ],
+    "providers": [
+        {
+            "name": "Sentinel Hub",
+            "roles": [
+                "processor"
+            ],
+            "url": "https://services.sentinel-hub.com"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/datacube/v2.2.0/schema.json",
+        "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/datacube/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.0.0/schema.json"
+    ],
+    "stac_version": "1.0.0",
+    "summaries": {
+        "federation:backends": [
+            "vito",
+            "sentinelhub"
+        ],
+        "provider:backend": [
+            "vito",
+            "sentinelhub"
+        ]
+    },
+    "title": "Population_density",
+    "type": "Collection"
+}

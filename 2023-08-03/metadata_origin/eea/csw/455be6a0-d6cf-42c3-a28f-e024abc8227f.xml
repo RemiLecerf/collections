@@ -1,0 +1,56 @@
+<csw:Record xmlns:dct="http://purl.org/dc/terms/" xmlns:geonet="http://www.fao.org/geonetwork" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ows="http://www.opengis.net/ows" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dc:identifier>455be6a0-d6cf-42c3-a28f-e024abc8227f</dc:identifier>
+      <dc:date>2021-11-25T10:32:42.378Z</dc:date>
+      <dc:title>Pan-European Very High Resolution Image Mosaic 2018 - True Colour (2 m), Oct. 2021</dc:title>
+      <dc:type>dataset</dc:type>
+      <dc:subject>Orthoimagery</dc:subject>
+      <dc:subject>general</dc:subject>
+      <dc:subject>environmental policy</dc:subject>
+      <dc:subject>mosaic</dc:subject>
+      <dc:subject>raster</dc:subject>
+      <dc:subject>satellite image</dc:subject>
+      <dc:subject>EEA38 (from 2020)</dc:subject>
+      <dc:subject>United Kingdom</dc:subject>
+      <dc:subject>European</dc:subject>
+      <dc:subject>As needed</dc:subject>
+      <dc:subject>Land use</dc:subject>
+      <dc:subject>environment</dc:subject>
+      <dc:subject>imageryBaseMapsEarthCover</dc:subject>
+      <dc:format>GeoTIFF</dc:format>
+      <dct:abstract>The pan-European Very High Resolution (VHR) Image Mosaic 2018 is a seamless mosaic of the VHR 2018 dataset, based on watershed segmentation of image overlaps.
+
+The input data consists of a mix of Pleiades, SPOT, DOVE, Kompsat-4, Deimos-2, SuperView, and TripleSat images. The input imagery has been colour balanced against the Sentinel-2 based HR mosaic from 2018. Colour balancing is done through iterative histogram matching, where the first iteration is used to identify clouds and snow, and the second iteration re-balances, with the bright objects masked out. Cloud cover has been minimized through an innovative approach to cloud masking, which relies on automatically identifying and de-prioritizing overly bright areas in the resulting mosaic. Some clouds and snow remain, as all pixels have to have a value, meaning that if no cloud or snow free images were available for a given area, the bright pixels will remain.
+
+The mosaic primarily is used as input data in the production of various Copernicus Land Monitoring Service (CLMS) datasets and services, such as land cover maps and high resolution layers on land cover characteristic and can be also useful for CLMS users for visualizations and classifications on land.
+
+The input imagery for the creation of the mosaic is provided by ESA. Due to license restrictions, VHR Image Mosaic 2018 is only available as a web service (WMS), and not for data download.</dct:abstract>
+      <dc:description>The pan-European Very High Resolution (VHR) Image Mosaic 2018 is a seamless mosaic of the VHR 2018 dataset, based on watershed segmentation of image overlaps.
+
+The input data consists of a mix of Pleiades, SPOT, DOVE, Kompsat-4, Deimos-2, SuperView, and TripleSat images. The input imagery has been colour balanced against the Sentinel-2 based HR mosaic from 2018. Colour balancing is done through iterative histogram matching, where the first iteration is used to identify clouds and snow, and the second iteration re-balances, with the bright objects masked out. Cloud cover has been minimized through an innovative approach to cloud masking, which relies on automatically identifying and de-prioritizing overly bright areas in the resulting mosaic. Some clouds and snow remain, as all pixels have to have a value, meaning that if no cloud or snow free images were available for a given area, the bright pixels will remain.
+
+The mosaic primarily is used as input data in the production of various Copernicus Land Monitoring Service (CLMS) datasets and services, such as land cover maps and high resolution layers on land cover characteristic and can be also useful for CLMS users for visualizations and classifications on land.
+
+The input imagery for the creation of the mosaic is provided by ESA. Due to license restrictions, VHR Image Mosaic 2018 is only available as a web service (WMS), and not for data download.</dc:description>
+      <dc:rights>otherRestrictions</dc:rights>
+      <dc:rights>otherRestrictions</dc:rights>
+      <dc:language>eng</dc:language>
+      <dc:source>The input data consists of a mix of Pleiades, SPOT, DOVE, Kompsat-4, Deimos-2, SuperView, and TripleSat images.
+The processing steps were as follows:
+1. Resampling of all data to common resolution (2m)
+2. Pre-normalization of DOVE frames
+3. Merging of tiled datasets, such as DOVE frames and large SPOT images.
+4. Iterative colour balancing against the Sentinel-2 HR ARD mosaic, supported by water, snow, and cloud masking.
+5. Watershed segmentation on the morphological gradient to create seamlines.
+6. Cropping against seamlines and cloud-optimization for easy presentation.
+The list of steps outline above was implemented in custom Python code.</dc:source>
+      <dc:format>GeoTIFF</dc:format>
+      <ows:BoundingBox crs="urn:ogc:def:crs:EPSG:6.6:4326">
+        <ows:LowerCorner>35.30 -11.50</ows:LowerCorner>
+        <ows:UpperCorner>81.40 43.20</ows:UpperCorner>
+      </ows:BoundingBox>
+      <dc:URI protocol="WWW:LINK-1.0-http--link">https://land.copernicus.eu/imagery-in-situ/european-image-mosaics/very-high-resolution/very-high-resolution-image-mosaic-2018-true-colour-2m</dc:URI>
+      <dc:URI protocol="OGC:WMS">https://image.discomap.eea.europa.eu/arcgis/services/GioLand/VHR_2018/ImageServer/WMSServer?request=GetCapabilities&amp;service=WMS</dc:URI>
+      <dc:URI protocol="ESRI:REST">https://image.discomap.eea.europa.eu/arcgis/rest/services/GioLand/VHR_2018/ImageServer</dc:URI>
+      <dc:URI protocol="image/png">https://sdi.eea.europa.eu/public/catalogue-graphic-overview/455be6a0-d6cf-42c3-a28f-e024abc8227f.png</dc:URI>
+    </csw:Record>
+    

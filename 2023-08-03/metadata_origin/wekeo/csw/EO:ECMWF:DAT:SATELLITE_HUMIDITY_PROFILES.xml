@@ -1,0 +1,29 @@
+<csw:Record xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">EO:ECMWF:DAT:SATELLITE_HUMIDITY_PROFILES</dc:identifier>
+      <dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">Tropospheric humidity profiles averaged monthly and zonally from 2006 to present derived from satellite observations</dc:title>
+      <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/">dataset</dc:type>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Meteorological geographical features</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Spatial coverage: Global</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Variable domain: Atmosphere (upper air)</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Temporal coverage: Past</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Temporal coverage: Present</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Product type: Satellite observations</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Provider: EUMETSAT SAF</dc:subject>
+      <dc:format xmlns:dc="http://purl.org/dc/elements/1.1/">netcdf</dc:format>
+      <dct:abstract xmlns:dct="http://purl.org/dc/terms/">This dataset provides monthly and zonally averaged tropospheric humidity profiles derived from globally distributed GPS radio occultation (RO) measurements from EUMETSAT's Metop polar-orbiting satellites. Humidity plays an important role in the Earth's climate system, due to the strong greenhouse effect of water vapour but also for its role in the global energy transport, vertically in the atmosphere and horizontally between different geographical regions. It is central to the formation of clouds and precipitation, and determines the fundamental conditions for the biosphere, including distribution of rainfall and droughts. 
+The dataset is produced by the EUMETSAT Radio Occultation Meteorology Satellite Application Facility (ROM SAF) and comprises the Climate Data Record (CDR, December 2006 to December 2016, ROM SAF product ID GRM-29-R1) and the Interim Climate Data Record (ICDR, January 2017 to present, ROM SAF product ID GRM-29-I1). Tropospheric humidity profiles are retrieved using 1D variational assimilation of observed atmospheric refractivity profiles and background model information from the ECMWF reanalysis. Compared to other satellite observation techniques, RO observations have high vertical resolution and are not affected by clouds or the type of underlying surface (such as land and sea).
+The RO retrievals are averaged in monthly and 5-degree latitude bands for altitudes below 12km which roughly covers the troposphere. The variability (standard deviation) within such monthly bins are also provided, as well as associated quantities such as observation counts, sampling errors and an estimate of the fraction of model information in the humidity retrievals. In addition, mean and variability are provided for humidity for the a priori ECMWF reanalysis data, sampled (i.e. collocated) similarly at the satellite observation locations. 
+Please note that the terms humidity and water vapour are used interchangeably on this page and in the documentation.
+
+Variables in the dataset/application are:
+Specific humidity</dct:abstract>
+      <dct:spatial xmlns:dct="http://purl.org/dc/terms/">::EPSG:4326</dct:spatial>
+      <dc:rights xmlns:dc="http://purl.org/dc/elements/1.1/">https://cds.climate.copernicus.eu/api/v2/terms/static/eumetsat-rom-saf.pdf</dc:rights>
+      <dc:rights xmlns:dc="http://purl.org/dc/elements/1.1/">Content accessible through the CDS may only be used under the terms of the licenses attributed to each particular resource.</dc:rights>
+      <dct:accessRights xmlns:dct="http://purl.org/dc/terms/">licence</dct:accessRights>
+      <ows:BoundingBox xmlns:ows="http://www.opengis.net/ows">
+        <ows:LowerCorner>-180 -90</ows:LowerCorner>
+        <ows:UpperCorner>180 90</ows:UpperCorner>
+      </ows:BoundingBox>
+    </csw:Record>
+    

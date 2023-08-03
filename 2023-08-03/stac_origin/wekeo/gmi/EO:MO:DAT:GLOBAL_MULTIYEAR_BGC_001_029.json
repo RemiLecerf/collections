@@ -1,0 +1,109 @@
+{
+  "type": "Collection",
+  "id": "EO:MO:DAT:GLOBAL_MULTIYEAR_BGC_001_029",
+  "stac_version": "1.0.0",
+  "description": "'''Short description'''\n\nThe biogeochemical hindcast for global ocean is produced at Mercator-Ocean (Toulouse. France). It provides 3D biogeochemical fields for the time period 1993-2019 at 1/4 degree and on 75 vertical levels. It uses PISCES biogeochemical model (available on the NEMO[https://www.nemo-ocean.eu/] modelling platform). No data assimilation in this product.\n\n* Latest NEMO version (v3.6_STABLE)\n* Forcings: GLORYS2V4-FREE [https://www.mercator-ocean.eu/solutions-expertises/acceder-aux-donnees-numeriques/produits-de-loffre/?offer=4217979b-2662-329a-907c-602fdc69c3a3] ocean physics produced at Mercator-Ocean and ERA-Interim[https://www.ecmwf.int/en/forecasts/datasets/archive-datasets/reanalysis-datasets/era-interim] atmosphere produced at ECMWF at a daily frequency\n* Outputs: Daily (chlorophyll. nitrate. phosphate. silicate. dissolved oxygen. primary production) and monthly (chlorophyll. nitrate. phosphate. silicate. dissolved oxygen. primary production. iron. phytoplankton in carbon) 3D mean fields interpolated on a standard regular grid in NetCDF format. The simulation is performed once and for all.\n* Initial conditions: World Ocean Atlas 2013 for nitrate. phosphate. silicate and dissolved oxygen. GLODAPv2 for DIC and Alkalinity. and climatological model outputs for Iron and DOC\n* Quality/Accuracy/Calibration information: See the related Quality Information Document\n\n'''DOI (product):'''\nhttps://doi.org/10.48670/moi-00019",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/wms/cmems_mod_glo_bgc_my_0.25_P1M-m",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_mod_glo_bgc_my_0.25_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/dodsC/cmems_mod_glo_bgc_my_0.25_P1D-m",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_mod_glo_bgc_my_0.25_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://my.cmems-du.eu/Core/GLOBAL_MULTIYEAR_BGC_001_029/cmems_mod_glo_bgc_my_0.25_P1M-m",
+      "type": "WWW:FTP",
+      "title": "cmems_mod_glo_bgc_my_0.25_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://my.cmems-du.eu/Core/GLOBAL_MULTIYEAR_BGC_001_029/cmems_mod_glo_bgc_my_0.25_P1M-m",
+      "type": "WWW:FTP",
+      "title": "cmems_mod_glo_bgc_my_0.25_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://my.cmems-du.eu/Core/GLOBAL_MULTIYEAR_BGC_001_029/cmems_mod_glo_bgc_my_0.25_P1D-m",
+      "type": "WWW:FTP",
+      "title": "cmems_mod_glo_bgc_my_0.25_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/wms/cmems_mod_glo_bgc_my_0.25_P1D-m",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_mod_glo_bgc_my_0.25_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&service=GLOBAL_MULTIYEAR_BGC_001_029-TDS&product=cmems_mod_glo_bgc_my_0.25_P1D-m",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_mod_glo_bgc_my_0.25_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/dodsC/cmems_mod_glo_bgc_my_0.25_P1M-m",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_mod_glo_bgc_my_0.25_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://my.cmems-du.eu/Core/GLOBAL_MULTIYEAR_BGC_001_029/cmems_mod_glo_bgc_my_0.25_static",
+      "type": "WWW:FTP",
+      "title": "cmems_mod_glo_bgc_my_0.25_static"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&service=GLOBAL_MULTIYEAR_BGC_001_029-TDS&product=cmems_mod_glo_bgc_my_0.25_P1M-m",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_mod_glo_bgc_my_0.25_P1M-m"
+    }
+  ],
+  "title": "Global Ocean Biogeochemistry Hindcast",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1993-01-01T00:00:00Z",
+          "2020-12-31T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "/Cross-discipline/Rate measurements",
+    "Atlantic Ocean",
+    "Brest",
+    "Data",
+    "Modelling data",
+    "North Mid-Atlantic Ridge",
+    "WP5 Assessing state, drivers and tipping points"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

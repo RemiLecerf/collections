@@ -1,0 +1,68 @@
+{
+  "type": "Collection",
+  "id": "EO:ECMWF:DAT:SIS_BIODIVERSITY_CMIP5_GLOBAL",
+  "stac_version": "1.0.0",
+  "description": "This dataset provides global bioclimatic indicators derived from CMIP5 climate projections. These bioclimatic indicators describe how the climate affects ecosystems, the services ecosystems deliver and nature’s biodiversity. They are specifically relevant for applications within the biodiversity and ecosystem community. \nThe 78 indicators cover bioclimatic variables for both land and marine environments characterising surface energy, drought, soil moisture and the (near-)surface climate including wind as well as Essential Climate Variables (ECV). The selection of indicators is based on user requirements and consultation with stakeholders, in order to facilitate the direct use of climate information in screening analyses or in diverse downstream applications.\nThe indicators calculated based on daily CMIP5 climate projections from 10 Global Circulation Models for two future climate scenarios, Representative Concentration Pathway (RCP) 4.5 & RCP 8.5. The data have been additionally bias-adjusted against ERA5 reanalysis data. The temporal resolution differs depending on the indicator, varying between monthly, annual and multi-annual averages.\nThis dataset was produced on behalf of the Copernicus Climate Change Service.\n\nVariables in the dataset/application are:\nAnnual mean temperature (BIO01), Annual precipitation (BIO12), Aridity annual mean, Aridity coldest quarter, Aridity driest quarter, Aridity warmest quarter, Aridity wettest quarter, Cloud cover, Dry days, Evaporative fraction annual mean, Evaporative fraction coldest quarter, Evaporative fraction driest quarter, Evaporative fraction warmest quarter, Evaporative fraction wettest quarter, Frost days, Growing degree days, Growing degree days during growing season length, Growing season end of season, Growing season length, Growing season start of season, Isothermality (BIO03), Koeppen-Geiger class, Maximum 2m temperature, Maximum length of dry spells, Maximum precipitation, Maximum temperature of the warmest month (BIO05), Mean diurnal range (BIO02), Mean intensity of dry spells, Mean length of dry spells, Mean precipitation, Mean temperature of coldest quarter (BIO11), Mean temperature of driest quarter (BIO09), Mean temperature of warmest quarter (BIO10), Mean temperature of wettest quarter (BIO08), Meridional wind speed, Minimum temperature, Minimum temperature of the coldest month (BIO06), Number of dry spells, Potential evaporation annual mean, Potential evaporation coldest quarter, Potential evaporation driest quarter, Potential evaporation warmest quarter, Potential evaporation wettest quarter, Precipitation in coldest quarter (BIO19), Precipitation in driest quarter (BIO17), Precipitation in warmest quarter (BIO18), Precipitation in wettest quarter (BIO16), Precipitation of driest month (BIO14), Precipitation of wettest month (BIO13), Precipitation seasonality (BIO15), Sea ice concentration, Sea surface temperature, Summer days, Surface latent heat flux annual mean, Surface latent heat flux coldest quarter, Surface latent heat flux driest quarter, Surface latent heat flux warmest quarter, Surface latent heat flux wettest quarter, Surface sensible heat flux annual mean, Surface sensible heat flux coldest quarter, Surface sensible heat flux driest quarter, Surface sensible heat flux warmest quarter, Surface sensible heat flux wettest quarter, Temperature annual range (BIO07), Temperature seasonality (BIO04), Volumetric soil water layer 1 annual mean, Volumetric soil water layer 1 coldest quarter, Volumetric soil water layer 1 driest quarter, Volumetric soil water layer 1 warmest quarter, Volumetric soil water layer 1 wettest quarter, Water vapor pressure, Wind speed, Zonal wind speed",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://datastore.copernicus-climate.eu/documents/sis-biodiversity/C3S_D427.3.1.1_Product_user_guide-Bioclimatic_indicators_CMIP5_v2.3.pdf",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Product user guide (PDF)"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.a37fecb7",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Climate Data Store catalogue"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://datastore.copernicus-climate.eu/documents/sis-biodiversity/C3S_D427.3.1.1_Product_user_guide-Bioclimatic_indicators_CMIP5_v2.3.pdf",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Product user guide (PDF)"
+    }
+  ],
+  "title": "Global bioclimatic indicators from 1950 to 2100 derived from climate projections",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1950-01-01T00:00:00Z",
+          "2099-12-31T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Habitats and biotopes",
+    "Product type: Climate indicies",
+    "Product type: Climate projections",
+    "Provider: Copernicus C3S",
+    "Sector: Biodiversity",
+    "Spatial coverage: Global",
+    "Temporal coverage: Future",
+    "Variable domain: Land (biosphere)"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

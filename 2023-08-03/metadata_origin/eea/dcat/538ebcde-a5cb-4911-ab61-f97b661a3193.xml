@@ -1,0 +1,146 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:dct="http://purl.org/dc/terms/" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://sdi.eea.europa.eu/catalogue/records/538ebcde-a5cb-4911-ab61-f97b661a3193">
+        <foaf:primaryTopic rdf:resource="http://localhost:8080/geonetwork//copernicus_v_3035_50_km_egms-gnss-model_p_2015-2020_v01_r00"/>
+        <dct:conformsTo rdf:resource="https://www.iso.org/standard/32557.html"/>
+        <dct:issued>2023-01-31</dct:issued>
+        <dct:modified>2023-01-31</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://sdi.eea.europa.eu/catalogue/srv/api/records/538ebcde-a5cb-4911-ab61-f97b661a3193/formatters/xml">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://sdi.eea.europa.eu/catalogue/srv/api/records/538ebcde-a5cb-4911-ab61-f97b661a3193">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="http://localhost:8080/geonetwork//datasets/copernicus_v_3035_50_km_egms-gnss-model_p_2015-2020_v01_r00">
+        <dct:identifier>copernicus_v_3035_50_km_egms-gnss-model_p_2015-2020_v01_r00</dct:identifier>
+        <dct:title>European Ground Motion Service: GNSS model between 2015 and 2020, Jul. 2022</dct:title>
+        <dct:abstract>The European Ground Motion Service (EGMS) is a component of the Copernicus Land Monitoring Service. EGMS provides consistent, regular, standardised, harmonised and reliable information regarding natural and anthropogenic ground motion phenomena over the Copernicus Participating States and across national borders, with millimetre accuracy. 
+
+This set of metadata describes the global navigation satellite system (GNSS) model used to calibrate the EGMS Calibrated product (https://sdi.eea.europa.eu/catalogue/srv/eng/catalog.search#/metadata/dbc229ee-b94e-44e1-b0db-9bc57076bef1). This layer is produced based on GNSS data from various sources, with the EUREF Densification network as the main entry point. After filtering and quality control, a total of 3770 stations are used to generate the GNSS model which contains average velocities in east, north and up directions displayed on a 50-km grid. The grid dimension is determined by the average distance between well-maintained GNSS stations over continental Europe.
+The GNSS model is distributed to users in a single comma-separated values file. Each cell of the model is associated to a value of vertical and horizontal velocity. The product covers the Copernicus Participating States (except for DROMs) and United Kingdom.</dct:abstract>
+        <dcat:theme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET%20-%20INSPIRE%20themes%2C%20version%201.0/concepts/Natural%20risk%20zones"/>
+        <dcat:theme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/Continents%2C%20countries%2C%20sea%20regions%20of%20the%20world./concepts/EEA38%20%28from%202020%29"/>
+        <dcat:theme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/Continents%2C%20countries%2C%20sea%20regions%20of%20the%20world./concepts/United%20Kingdom"/>
+        <dcat:theme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET/concepts/calibration"/>
+        <dcat:theme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET/concepts/geodesy"/>
+        <dcat:theme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET/concepts/earth%20observation"/>
+        <dcat:theme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET/concepts/model"/>
+        <dcat:theme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET/concepts/geo-referenced%20information"/>
+        <dcat:theme rdf:resource="http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/european"/>
+        <dcat:theme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/Temporal%20resolution/concepts/Not%20planned"/>
+        <dcat:theme rdf:resource="https://inspire.ec.europa.eu/metadata-codelist/TopicCategory/geoscientificInformation"/>
+        <foaf:thumbnail rdf:resource="https://sdi.eea.europa.eu/public/catalogue-graphic-overview/538ebcde-a5cb-4911-ab61-f97b661a3193.PNG"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <geo:asWKT xmlns:geo="http://www.opengis.net/ont/geosparql#" rdf:datatype="http://www.opengis.net/rdf#wktLiteral">Polygon((-31.30 27.60, -31.30 71.21, 44.86 71.21, 44.86 27.60, -31.30 27.60))</geo:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:temporal>2015-02-01
+          /
+          2020-12-31</dct:temporal>
+        <dct:issued>2021-10-05</dct:issued>
+        <dct:accrualPeriodicity>annually</dct:accrualPeriodicity>
+        <dct:language>eng</dct:language>
+        <dct:license>The Copernicus programme is governed by Regulation (EU) No 2021/696 of the European Parliament and of the Council of 28 April 2021 establishing the Union Space Programme and the European Union Agency for the Space Programme and repealing Regulations (EU) No 912/2010, (EU) No 1285/2013 and (EU) No 377/2014 and Decision No 541/2014/EU. Within the Copernicus programme, a portfolio of land monitoring activities has been delegated by the European Union to the EEA. The land monitoring products and services are made available through the Copernicus land portal on a principle of full, open and free access, as established by the Copernicus data and information policy Regulation (EU) No 1159/2013 of 12 July 2013. The Copernicus data and information policy is in line with the EEA policy of open and easy access to the data, information and applications derived from the activities described in its management plan. 
+
+Free, full and open access to this data set is made on the conditions that:
+1. When distributing or communicating Copernicus dedicated data and Copernicus service information to the public, users shall inform the public of the source of that data and information.
+2. Users shall make sure not to convey the impression to the public that the user's activities are officially endorsed by the Union.
+3. Where that data or information has been adapted or modified, the user shall clearly state this.
+4. The data remain the sole property of the European Union. Any information and data produced in the framework of the action shall be the sole property of the European Union. Any communication and publication by the beneficiary shall acknowledge that the data were produced “with funding by the European Union”.</dct:license>
+        <dct:license rdf:resource="http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/noLimitations">no limitations to public access</dct:license>
+        <dcat:distribution rdf:resource="https://sdi.eea.europa.eu/catalogue/records/538ebcde-a5cb-4911-ab61-f97b661a3193#-"/>
+        <dcat:distribution rdf:resource="https://sdi.eea.europa.eu/catalogue/records/538ebcde-a5cb-4911-ab61-f97b661a3193#WWW%3ALINK-1.0-http--link-Information%20on%20the%20usage%20of%20the%20GNSS%20model%20for%20calibration%20purposes"/>
+        <dcat:distribution rdf:resource="https://sdi.eea.europa.eu/catalogue/records/538ebcde-a5cb-4911-ab61-f97b661a3193#WWW%3ALINK-1.0-http--link-Information%20on%20the%20production%2C%20quality%20control%20and%20validation%20of%20the%20GNSS%20model"/>
+        <dcat:distribution rdf:resource="https://sdi.eea.europa.eu/catalogue/records/538ebcde-a5cb-4911-ab61-f97b661a3193#WWW%3ALINK-1.0-http--link-More%20information%20on%20the%20EUREF%20Densification%20working%20group"/>
+        <dcat:distribution rdf:resource="https://sdi.eea.europa.eu/catalogue/records/538ebcde-a5cb-4911-ab61-f97b661a3193#WWW%3AURL-GNSS%20model%20direct%20download"/>
+        <dct:relation rdf:resource="https://sdi.eea.europa.eu/catalogue/records/dbc229ee-b94e-44e1-b0db-9bc57076bef1"/>
+        <dcat:dataQuality>The GNSS model is obtained from the analysis of 3770 GNSS stations mainly part of the EUREF Densification network. The stations were selected based on the following criteria: 
+i) minimum length of time series &gt;3 years, 
+ii) stations should not record time series with artificial artifacts  and 
+iii) stations should not record strong non-linear motion except for seasonality. 
+The GNSS model is then derived following the least-squares collocation concept. The principle behind this approach is to use the correlations of GNSS station velocities to predict new values at any new point within the covered area, together with associated uncertainties.</dcat:dataQuality>
+      </dcat:Dataset>
+      <skos:Concept rdf:about="http://localhost:8080/geonetwork//registries/vocabularies/GEMET%20-%20INSPIRE%20themes%2C%20version%201.0/concepts/Natural%20risk%20zones">
+        <skos:inScheme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET%20-%20INSPIRE%20themes%2C%20version%201.0"/>
+        <skos:prefLabel>Natural risk zones</skos:prefLabel>
+      </skos:Concept>
+      <skos:Concept rdf:about="http://localhost:8080/geonetwork//registries/vocabularies/Continents%2C%20countries%2C%20sea%20regions%20of%20the%20world./concepts/EEA38%20%28from%202020%29">
+        <skos:inScheme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/Continents%2C%20countries%2C%20sea%20regions%20of%20the%20world."/>
+        <skos:prefLabel>EEA38 (from 2020)</skos:prefLabel>
+      </skos:Concept>
+      <skos:Concept rdf:about="http://localhost:8080/geonetwork//registries/vocabularies/Continents%2C%20countries%2C%20sea%20regions%20of%20the%20world./concepts/United%20Kingdom">
+        <skos:inScheme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/Continents%2C%20countries%2C%20sea%20regions%20of%20the%20world."/>
+        <skos:prefLabel>United Kingdom</skos:prefLabel>
+      </skos:Concept>
+      <skos:Concept rdf:about="http://localhost:8080/geonetwork//registries/vocabularies/GEMET/concepts/calibration">
+        <skos:inScheme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET"/>
+        <skos:prefLabel>calibration</skos:prefLabel>
+      </skos:Concept>
+      <skos:Concept rdf:about="http://localhost:8080/geonetwork//registries/vocabularies/GEMET/concepts/geodesy">
+        <skos:inScheme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET"/>
+        <skos:prefLabel>geodesy</skos:prefLabel>
+      </skos:Concept>
+      <skos:Concept rdf:about="http://localhost:8080/geonetwork//registries/vocabularies/GEMET/concepts/earth%20observation">
+        <skos:inScheme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET"/>
+        <skos:prefLabel>earth observation</skos:prefLabel>
+      </skos:Concept>
+      <skos:Concept rdf:about="http://localhost:8080/geonetwork//registries/vocabularies/GEMET/concepts/model">
+        <skos:inScheme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET"/>
+        <skos:prefLabel>model</skos:prefLabel>
+      </skos:Concept>
+      <skos:Concept rdf:about="http://localhost:8080/geonetwork//registries/vocabularies/GEMET/concepts/geo-referenced%20information">
+        <skos:inScheme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET"/>
+        <skos:prefLabel>geo-referenced information</skos:prefLabel>
+      </skos:Concept>
+      <skos:Concept rdf:about="http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/european">
+        <skos:inScheme rdf:resource="http://inspire.ec.europa.eu/metadata-codelist/SpatialScope"/>
+        <skos:prefLabel>European</skos:prefLabel>
+      </skos:Concept>
+      <skos:Concept rdf:about="http://localhost:8080/geonetwork//registries/vocabularies/Temporal%20resolution/concepts/Not%20planned">
+        <skos:inScheme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/Temporal%20resolution"/>
+        <skos:prefLabel>Not planned</skos:prefLabel>
+      </skos:Concept>
+      <dcat:Distribution rdf:about="https://sdi.eea.europa.eu/catalogue/records/538ebcde-a5cb-4911-ab61-f97b661a3193#WWW%3ALINK-1.0-http--link-Information%20on%20the%20usage%20of%20the%20GNSS%20model%20for%20calibration%20purposes">
+        <dcat:accessURL>https://land.copernicus.eu/user-corner/technical-library/egms-algorithm-theoretical-basis-document</dcat:accessURL>
+        <dct:title>Information on the usage of the GNSS model for calibration purposes</dct:title>
+        <dct:format>WWW:LINK-1.0-http--link</dct:format>
+      </dcat:Distribution>
+      <dcat:Distribution rdf:about="https://sdi.eea.europa.eu/catalogue/records/538ebcde-a5cb-4911-ab61-f97b661a3193#WWW%3ALINK-1.0-http--link-Information%20on%20the%20production%2C%20quality%20control%20and%20validation%20of%20the%20GNSS%20model">
+        <dcat:accessURL>https://land.copernicus.eu/user-corner/technical-library/egms-gnss-calibration-report</dcat:accessURL>
+        <dct:title>Information on the production, quality control and validation of the GNSS model</dct:title>
+        <dct:format>WWW:LINK-1.0-http--link</dct:format>
+      </dcat:Distribution>
+      <dcat:Distribution rdf:about="https://sdi.eea.europa.eu/catalogue/records/538ebcde-a5cb-4911-ab61-f97b661a3193#WWW%3ALINK-1.0-http--link-More%20information%20on%20the%20EUREF%20Densification%20working%20group">
+        <dcat:accessURL>https://epnd.sgo-penc.hu/</dcat:accessURL>
+        <dct:title>More information on the EUREF Densification working group</dct:title>
+        <dct:format>WWW:LINK-1.0-http--link</dct:format>
+      </dcat:Distribution>
+      <dcat:Distribution rdf:about="https://sdi.eea.europa.eu/catalogue/records/538ebcde-a5cb-4911-ab61-f97b661a3193#WWW%3AURL-GNSS%20model%20direct%20download">
+        <dcat:accessURL>https://sdi.eea.europa.eu/data/538ebcde-a5cb-4911-ab61-f97b661a3193</dcat:accessURL>
+        <dct:title>GNSS model direct download</dct:title>
+        <dct:format>WWW:URL</dct:format>
+      </dcat:Distribution>
+      <foaf:Organization rdf:about="http://localhost:8080/geonetwork//organizations/European%20Environment%20Agency">
+        <foaf:name>European Environment Agency</foaf:name>
+        <foaf:member rdf:resource="http://localhost:8080/geonetwork//persons/sdi%40eea.europa.eu"/>
+      </foaf:Organization>
+      <foaf:Agent rdf:about="http://localhost:8080/geonetwork//persons/sdi%40eea.europa.eu">
+        <foaf:mbox rdf:resource="mailto:sdi@eea.europa.eu"/>
+      </foaf:Agent>
+    </rdf:RDF>
+    

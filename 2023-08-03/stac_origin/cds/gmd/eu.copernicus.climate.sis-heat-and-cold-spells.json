@@ -1,0 +1,66 @@
+{
+  "type": "Collection",
+  "id": "eu.copernicus.climate.sis-heat-and-cold-spells",
+  "stac_version": "1.0.0",
+  "description": "The dataset contains the number of hot and cold spell days using different European-wide and national/regional definitions developed within the C3S European Health service.\n These heat wave and cold spell days are available for different future time periods and use different climate change scenarios.\nA heat wave or cold spell is a prolonged period of extremely high or extremely low temperature for a particular region. However, there is a lack of rigorous definitions for heat waves and cold spells. This dataset combines multiple definitions and allows the user to compare European-wide definitions with national/regional definitions.\nFirst, the temperature statistics are calculated, either for the season winter and summer or for the whole year, based on a bias-adjusted EURO-CORDEX dataset. Then, the statistics are averaged for 30 years as a smoothed average from 1971 to 2100. This results in a timeseries covering the period from 1986 to 2085. Finally, the timeseries are averaged for the model ensemble and the standard deviation to this ensemble mean is provided. \n\nVariables in the dataset/application are:\nCold spell days, Heat wave days",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.9e7ca677",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Climate Data Store catalogue"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://confluence.ecmwf.int/x/GJcvEQ",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Heat waves and cold spells documentation"
+    }
+  ],
+  "title": "Heat waves and cold spells in  Europe derived from climate projections",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          35.0,
+          30.0,
+          25.0,
+          73.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1986-01-01T00:00:00Z",
+          "2085-12-31T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Atmospheric conditions",
+    "Product type: Climate projections",
+    "Provider: Copernicus C3S",
+    "Sector: Health",
+    "Spatial coverage: Europe",
+    "Temporal coverage: Future",
+    "Temporal coverage: Past",
+    "Temporal coverage: Present",
+    "Variable domain: Atmosphere (surface)"
+  ],
+  "providers": [
+    {
+      "name": "Climate Data Store - European Centre for Medium-Range Weather Forecasts (ECMWF)",
+      "description": "Climate Data Store - ECMWF",
+      "roles": [
+        "licensor",
+        "producer",
+        "processor",
+        "host"
+      ],
+      "url": "https://cds.climate.copernicus.eu/"
+    }
+  ]
+}

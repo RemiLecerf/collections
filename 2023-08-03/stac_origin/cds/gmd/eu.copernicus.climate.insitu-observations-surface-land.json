@@ -1,0 +1,80 @@
+{
+  "type": "Collection",
+  "id": "eu.copernicus.climate.insitu-observations-surface-land",
+  "stac_version": "1.0.0",
+  "description": "This set of data holdings provides access to data collected from land surface meteorological observations across the globe. Data are available at the observational level and also at daily and monthly aggregations. Data have been collated and harmonised and quality control checks have been performed, but no attempt has been made to assess for potential biases. Data are provided for a range of commonly observed variables.\nSurface meteorological observations taken by a broad variety of organisations, including but not limited to National Meteorological Services, are being collated, reconciled, and harmonised. This work provides data that can underpin the development of reanalyses products as well as the production of gridded products and data services. \nWork is ongoing to prepare and analyse several hundred sources secured to date and new sources continue to accrue. Documentation on sources secured to date can be found in the inventory information provided in the documentation tab. Users with new sources are invited to upload these via the data deposition service for ingestion and consideration. Sources are available in a broad range of formats and frequently individual series have been shared multiple times. Steps have been undertaken to harmonise data formats and reconcile data sources to yield the longest possible individiual station records. \nStation period-of-record varies on a station-by-station basis with most stations starting after 1950, but many stations extending much further back in time. Daily and monthly aggregations extend further back in time than sub-daily records in general. Periodic updates and reissues shall refresh historical holdings availability and will also build on aspects such as quality checking and flagging of data. Each such release will be accompanied by a version number increment and a reissue of the product user guide. Updates for recent observations are in process of being provided at a latency of 1-2 days for those stations that are operational and sharing data across the WMO Information System, starting with updates to the daily holdings.\nData are available for several commonly observed variables as described in the main variables table. Note that which variables are available varies by the chosen timescale of data aggregation and by station. To aid users an inventory of stations by name, location, start and end date, and variables available is provided in the documentation page differentiated by timescale. Attributes are described in the related-variables tables and users can choose whether to receive all attributes or solely essential attributes. Data are downloaded as comma-seperated values (CSV) files organised as one observations of one variable per row.\nUsers should ensure an appropriate assessment of long-term data quality prior to use in those applications which require consideration of such aspects.   \nMore details about the land meteorological station holdings are available in the product user guide, and details around data formatting can be found in the common data model documentation, both of which can be found in the documentation section. \nThis work is being completed on behalf of C3S in sustained collaboration with colleagues at NOAA's National Centres for Environmental Information who are the WMO designated World Data Centre for meteorology.\n\nVariables in the dataset/application are:\nAccumulated precipitation, Air pressure, Air pressure at sea level, Air temperature, Dew point temperature, Fresh snow, Snow depth, Snow water equivalent, Wind from direction, Wind speed\n\nVariables in the dataset/application are:\nData policy licence, Date time, Date time meaning, Height above surface, Latitude, Longitude, Observation duration, Observation id, Observation value, Observed variable, Platform type, Primary station id, Quality flag, Report type, Source id, Station name, Station type, Units, Value significance",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.cf5f3bac",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Climate Data Store catalogue"
+    },
+    {
+      "rel": "describedby",
+      "href": "#",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "#"
+    },
+    {
+      "rel": "describedby",
+      "href": "#",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "#"
+    },
+    {
+      "rel": "describedby",
+      "href": "#",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "#"
+    },
+    {
+      "rel": "describedby",
+      "href": "#",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "#"
+    }
+  ],
+  "title": "Global land surface atmospheric variables from 1755 to 2020 from comprehensive in-situ observations",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          0.0,
+          -89.0,
+          360.0,
+          89.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1978-01-01T00:00:00Z",
+          "2018-10-17T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Atmospheric conditions",
+    "Product type: In-situ observations",
+    "Spatial coverage: Global",
+    "Temporal coverage: Past",
+    "Variable domain: Atmosphere (surface)"
+  ],
+  "providers": [
+    {
+      "name": "Climate Data Store - European Centre for Medium-Range Weather Forecasts (ECMWF)",
+      "description": "Climate Data Store - ECMWF",
+      "roles": [
+        "licensor",
+        "producer",
+        "processor",
+        "host"
+      ],
+      "url": "https://cds.climate.copernicus.eu/"
+    }
+  ]
+}

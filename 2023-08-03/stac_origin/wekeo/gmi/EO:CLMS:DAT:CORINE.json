@@ -1,0 +1,70 @@
+{
+  "type": "Collection",
+  "id": "EO:CLMS:DAT:CORINE",
+  "stac_version": "1.0.0",
+  "description": "The CORINE Land Cover (CLC) inventory was initiated in 1985 (reference year 1990). Updates have been produced in 2000, 2006, 2012, and 2018. It consists of an inventory of land cover in 44 classes. CLC uses a Minimum Mapping Unit (MMU) of 25 hectares (ha) for areal phenomena and a minimum width of 100 m for linear phenomena. The time series are complemented by change layers, which highlight changes in land cover with an MMU of 5 ha. Different MMUs mean that the change layer has higher resolution than the status layer. Due to differences in MMUs the difference between two status layers will not equal to the corresponding CLC-Changes layer. If you are interested in CLC-Changes between two neighbour surveys always use the CLC-Change layer.",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://land.copernicus.eu/pan-european/corine-land-cover/",
+      "type": "WWW:LINK-1.0-http--link"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://image.discomap.eea.europa.eu/arcgis/rest/services/Corine/CHA2012_2018_WM/MapServer",
+      "type": "ESRI:REST"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://image.discomap.eea.europa.eu/arcgis/services/Corine/CHA2012_2018_WM/MapServer/WMSServer?service=WMS&request=GetCapabilities&version=1.3.0",
+      "type": "OGC:WMS"
+    }
+  ],
+  "title": "CORINE Land Cover",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -31.561261,
+          27.405827,
+          44.820775,
+          71.409109
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1986-01-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "CHA20012-2018",
+    "CLC",
+    "Copernicus",
+    "Corine",
+    "EEA39",
+    "Land Cover Change",
+    "Land cover",
+    "Satellite Image Interpretation",
+    "geospatial data",
+    "land cover",
+    "land use",
+    "landscape",
+    "landscape alteration"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

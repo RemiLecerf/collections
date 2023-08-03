@@ -1,0 +1,67 @@
+{
+  "type": "Collection",
+  "id": "721ef667-a54f-44de-a548-da59cc07eac2",
+  "stac_version": "1.0.0",
+  "description": "'''Short description:'''\nThe Arctic Ocean Wave Hindcast system uses the WAM model at 3 km resolution forced with surface winds and boundary wave spectra from the ECMWF (European Centre for Medium-Range Weather Forecasts) ERA5 reanalysis together with ice from the ARC MFC reanalysis (Sea Ice concentration and thickness). Additionally, in the North Atlantic area, surface winds are used from a 2.5km atmospheric hindcast system. From the output variables the most commonly used are significant wave height, peak period and mean direction.\n\n'''DOI (product) :'''   \nhttps://doi.org/10.48670/moi-00008",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&service=ARCTIC_MULTIYEAR_WAV_002_013-TDS&product=cmems_mod_arc_wav_my_3km_PT1H-i",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_mod_arc_wav_my_3km_PT1H-i"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/dodsC/cmems_mod_arc_wav_my_3km_PT1H-i",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_mod_arc_wav_my_3km_PT1H-i"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://my.cmems-du.eu/Core/ARCTIC_MULTIYEAR_WAV_002_013/cmems_mod_arc_wav_my_3km_PT1H-i",
+      "type": "WWW:FTP",
+      "title": "cmems_mod_arc_wav_my_3km_PT1H-i"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/wms/cmems_mod_arc_wav_my_3km_PT1H-i",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_mod_arc_wav_my_3km_PT1H-i"
+    }
+  ],
+  "title": "Arctic Ocean Wave Hindcast",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          53.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1985-01-01T00:00:00Z",
+          "2021-12-31T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "providers": [
+    {
+      "name": "Copernicus Marine Service",
+      "description": "Copernicus Marine Service - Mercator Ocean Internations",
+      "roles": [
+        "licensor",
+        "producer",
+        "processor",
+        "host"
+      ],
+      "url": "https://marine.copernicus.eu/"
+    }
+  ]
+}

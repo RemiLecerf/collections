@@ -1,0 +1,115 @@
+{
+  "type": "Collection",
+  "id": "2b6bf019-29d2-4b2b-b337-fbe8303196d6",
+  "stac_version": "1.0.0",
+  "description": "'''Short description:'''\n\nThe current version of the TOPAZ system - TOPAZ4b -  is nearly identical to the real-time forecast system run at MET Norway. It uses a recent version of the Hybrid Coordinate Ocean Model (HYCOM) developed at University of Miami (Bleck 2002). HYCOM is coupled to a sea ice model; ice thermodynamics are described in Drange and Simonsen (1996) and the elastic-viscous-plastic rheology in Hunke and Dukowicz (1997). The model's native grid covers the Arctic and North Atlantic Oceans,  has fairly homogeneous horizontal spacing (between 11 and 16 km). 50 hybrid layers are used in the vertical (z-isopycnal), more than the TOPAZ4 system (28 layers). TOPAZ4b uses the Deterministic version of the Ensemble Kalman filter (DEnKF; Sakov and Oke 2008) to assimilate remotely sensed as well as temperature and salinity profiles. The output is interpolated onto standard grids and depths. Daily values are provided at all depths. Data assimilation, including the 100-member ensemble production, is performed weekly.\n\n'''DOI (product) :'''   \nhttps://doi.org/10.48670/moi-00007",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&service=ARCTIC_MULTIYEAR_PHY_002_003-TDS&product=cmems_mod_arc_phy_my_topaz4_P1D-m",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_mod_arc_phy_my_topaz4_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/dodsC/cmems_mod_arc_phy_my_topaz4_P1D-m",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_mod_arc_phy_my_topaz4_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://my.cmems-du.eu/Core/ARCTIC_MULTIYEAR_PHY_002_003/cmems_mod_arc_phy_my_topaz4_P1D-m",
+      "type": "WWW:FTP",
+      "title": "cmems_mod_arc_phy_my_topaz4_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/wms/cmems_mod_arc_phy_my_topaz4_P1D-m",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_mod_arc_phy_my_topaz4_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&service=ARCTIC_MULTIYEAR_PHY_002_003-TDS&product=cmems_mod_arc_phy_my_topaz4_P1M",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_mod_arc_phy_my_topaz4_P1M"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/dodsC/cmems_mod_arc_phy_my_topaz4_P1M",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_mod_arc_phy_my_topaz4_P1M"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://my.cmems-du.eu/Core/ARCTIC_MULTIYEAR_PHY_002_003/cmems_mod_arc_phy_my_topaz4_P1M",
+      "type": "WWW:FTP",
+      "title": "cmems_mod_arc_phy_my_topaz4_P1M"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/wms/cmems_mod_arc_phy_my_topaz4_P1M",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_mod_arc_phy_my_topaz4_P1M"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&service=ARCTIC_MULTIYEAR_PHY_002_003-TDS&product=cmems_mod_arc_phy_my_topaz4_P1Y",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_mod_arc_phy_my_topaz4_P1Y"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/dodsC/cmems_mod_arc_phy_my_topaz4_P1Y",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_mod_arc_phy_my_topaz4_P1Y"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://my.cmems-du.eu/Core/ARCTIC_MULTIYEAR_PHY_002_003/cmems_mod_arc_phy_my_topaz4_P1Y",
+      "type": "WWW:FTP",
+      "title": "cmems_mod_arc_phy_my_topaz4_P1Y"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/wms/cmems_mod_arc_phy_my_topaz4_P1Y",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_mod_arc_phy_my_topaz4_P1Y"
+    }
+  ],
+  "title": "Arctic Ocean Physics Reanalysis",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          53.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1991-01-01T00:00:00Z",
+          "2021-12-31T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "providers": [
+    {
+      "name": "Copernicus Marine Service",
+      "description": "Copernicus Marine Service - Mercator Ocean Internations",
+      "roles": [
+        "licensor",
+        "producer",
+        "processor",
+        "host"
+      ],
+      "url": "https://marine.copernicus.eu/"
+    }
+  ]
+}

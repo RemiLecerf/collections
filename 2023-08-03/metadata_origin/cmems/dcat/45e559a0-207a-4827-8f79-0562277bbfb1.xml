@@ -1,0 +1,82 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:dct="http://purl.org/dc/terms/" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/45e559a0-207a-4827-8f79-0562277bbfb1">
+        <foaf:primaryTopic rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/resource/a78600a4-a280-47b5-8ddd-0dc8b5e9c9d9"/>
+        <dct:issued>2023-03-29</dct:issued>
+        <dct:modified>2023-03-29</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/srv/eng/xml.metadata.get?uuid=45e559a0-207a-4827-8f79-0562277bbfb1">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork?uuid=45e559a0-207a-4827-8f79-0562277bbfb1">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/resource/a78600a4-a280-47b5-8ddd-0dc8b5e9c9d9">
+        <dct:identifier>a78600a4-a280-47b5-8ddd-0dc8b5e9c9d9</dct:identifier>
+        <dct:title>Baltic Sea Chlorophyll-a time series and trend from Observations Reprocessing</dct:title>
+        <dct:abstract>'''DEFINITION'''
+
+The time series are derived from the regional chlorophyll reprocessed (MY) product as distributed by CMEMS which, in turn, result from the application of the regional chlorophyll algorithm over remote sensing reflectances (Rrs) provided by the Plymouth Marine Laboratory using an ad-hoc configuration for CMEMS of the ESA OC-CCI processor version 6 (OC-CCIv6) to merge at 1km resolution (rather than at 4km as for OC-CCI) MERIS, MODIS-AQUA, SeaWiFS, NPP-VIIRS and OLCI-A data. The chlorophyll product is derived from a Multi-Layer Perceptron neural-net (MLP) developed on field measurements collected within the BiOMaP program of JRC/EC (Zibordi et al., 2011). The algorithm is an ensemble of different MLPs that use Rrs at different wavelengths as input. The processing chain and the techniques used to develop the algorithm are detailed in Brando et al. (2021a; 2021b). 
+Monthly regional mean values are calculated by performing the average of 2D monthly mean (weighted by pixel area) over the region of interest. The deseasonalized time series is obtained by applying the X-11 seasonal adjustment methodology on the original time series as described in Colella et al. (2016), and then the Mann-Kendall test (Mann, 1945; Kendall, 1975) and Sens’s method (Sen, 1968) are subsequently applied to obtain the magnitude of trend. 
+
+'''CONTEXT'''
+
+Phytoplankton   and chlorophyll concentration as a proxy for phytoplankton   respond rapidly to changes in environmental conditions, such as light, temperature, nutrients and mixing (Gregg and Rousseaux, 2014). The character of the response in the Baltic Sea depends on the nature of the change drivers, and ranges from seasonal cycles to decadal oscillations (Kahru and Elmgren 2014). Therefore, it is of critical importance to monitor chlorophyll concentration at multiple temporal and spatial scales, in order to be able to separate potential long-term climate signals from natural variability in the short term. In particular, in the Baltic Sea phytoplankton is known to respond to the variations of SST in the basin associated with climate variability (Kabel et al. 2012).
+
+'''CMEMS KEY FINDINGS'''
+
+Baltic Sea shows a positive trend in the time interval 1997-2021 with a slope of 0.67±0.46% per year. Due to the change in chlorophyll algorithm, this trend estimate cannot be compared directly to those previously reported. Maxima and minima values are quite similar year-by-year. Absolute maximum is clear in 2008 while absolute minimum is achieved during 2004. Since 2019 chlorophyll seems to increase weakly.
+
+'''DOI (product):'''
+https://doi.org/10.48670/moi-00197</dct:abstract>
+        <dcat:theme rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/thesaurus/iso/topicCategory/oceans"/>
+        <foaf:thumbnail rdf:resource="https://catalogue.marine.copernicus.eu/documents/IMG/OMI_HEALTH_CHL_BALTIC_OCEANCOLOUR_area_averaged_mean.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((9.25 53.25, 9.25 65.85, 30.25 65.85, 30.25 53.25, 9.25 53.25))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:issued>2018-02-12</dct:issued>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/OC-CNR-ROMA-IT"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/OC-CNR-ROMA-IT"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/OC-CNR-ROMA-IT"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/OC-CNR-ROMA-IT"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/MOI-OMI-SERVICE"/>
+        <dct:accrualPeriodicity>annually</dct:accrualPeriodicity>
+        <dct:license>otherRestrictions</dct:license>
+        <dct:license>license</dct:license>
+        <dct:license>No limitations on public access</dct:license>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/OMI_HEALTH_CHL_BALTIC_OCEANCOLOUR_area_averaged_mean/omi_health_chl_baltic_oceancolour_area_averaged_mean"/>
+        <dcat:distribution rdf:resource="https://mdl1.marine.copernicus.eu/derived/OMI_HEALTH_CHL_BALTIC_OCEANCOLOUR_area_averaged_mean/omi_health_chl_baltic_oceancolour_area_averaged_mean_202211/omi_health_chl_baltic_oceancolour_area_averaged_mean_19970901_P20220623.nc"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/6b60268e-16e3-4010-ab06-2242412bd0b4"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/e550d7a3-bf3b-4939-8931-96cdacf0bd2e"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/75c2f83c-7159-492a-b383-a1cc3f5f2ede"/>
+        <dcat:dataQuality>The myOcean products depends on other products for production or validation. The detailed list of dependencies is given in ISO19115's aggregationInfo (ISO19139 Xpath = "gmd:MD_Metadata/gmd:identificationInfo/gmd:aggregationInfo[./gmd:MD_AggregateInformation/gmd:initiativeType/gmd:DS_InitiativeTypeCode/@codeListValue='upstream-validation' or 'upstream-production']")</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+    

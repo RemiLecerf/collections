@@ -1,0 +1,69 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dct="http://purl.org/dc/terms/" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/metadata/eu.copernicus.climate.satellite-ice-sheet-elevation-change">
+        <foaf:primaryTopic rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/resource/10.24381/cds.056d0df7"/>
+        <dct:issued>2018-03-28</dct:issued>
+        <dct:modified>2018-03-28</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/srv/eng/xml.metadata.get?uuid=eu.copernicus.climate.satellite-ice-sheet-elevation-change">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://cds.climate.copernicus.eu:443//geonetwork?uuid=eu.copernicus.climate.satellite-ice-sheet-elevation-change">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/resource/10.24381/cds.056d0df7">
+        <dct:identifier>10.24381/cds.056d0df7</dct:identifier>
+        <dct:title>Ice sheet surface elevation change rate for Greenland and Antarctica from 1992 to present derived from satellite observations</dct:title>
+        <dct:abstract>This dataset provides estimates of surface elevation change over the Greenland and Antarctic ice sheets since 1992, utilizing satellite radar altimetry from five missions: ERS-1, ERS-2, ENVISAT, CryoSat-2, and Sentinel-3A. The surface elevation change is modelled over successive, overlapping periods and reported monthly. The dataset production method is an evolution of those employed by the European Space Agency (ESA)'s Greenland and Antarctic Ice Sheet Climate Change Initiatives and is guided by the Global Climate Observing System targets for the Ice Sheets Essential Climate Variable.
+An annual Climate Data Record (CDR), and monthly intermediate CDRs (ICDRs) are issued. Each monthly record includes all previous data, from 1992 onwards, as well as that month's update.
+This product is designed to provide data stability, so changes in the historic data, eg. if a satellite's elevation data is reprocessed or if inter-satellite cross-calibration is revised, are only introduced in the annual CDR. Each annual CDR is given a version number.
+The differences in the geographical location of the two sheets result in site-specific processing:
+Greenland: Data consists of surface elevation change rate and its uncertainty in a five-year (for the early satellites: ERS-1, ERS-2, and ENVISat) or three-year (for CryoSat-2 and Sentinel-3A) moving window. The moving window is advanced at one-month steps. Elevation measurements from satellite radar altimetry are used to build time-series of elevation change by the most optimal combination of the crossover-, repeat-track- and plane-fitting methods. The timeseries is derived for each cell on a 25km by 25km polar stereographic grid, covering the main Greenland ice sheet, and not including peripheral glaciers and ice caps. Data gaps have been filled using an ordinary Kriging interpolation method, and the distance to the nearest observational point is provided as utility information. The distance can be used to flag filled data.
+Antarctica: Data consists of surface elevation change rate over a five-year moving window that advances in one-month steps. It covers the Antarctic ice sheet, ice shelves and associated ice rises and islands on a 25km by 25km polar stereographic grid. Elevation measurements from five satellite radar altimetry missions, ERS1, ERS2, EnviSat, CryoSat-2 and Sentinel-3A, are used to produce timeseries of surface elevation change by the crossover method for each grid cell. The mission timeseries are cross-calibrated into a consistent record, which is used to derive surface elevation change rates and their uncertainty estimates in each cell and time-window. Data gaps are flagged but not filled.
+
+Variables in the dataset/application are:
+Rate of elevation change, Rate of elevation change uncertainty, Time
+
+Variables in the dataset/application are:
+Land mask, Slope mask, Valid flag</dct:abstract>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/GEMET%20-%20INSPIRE%20themes%2C%20version%201.0/Elevation"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Spatial coverage: Antarctic and Greenland"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Variable domain: Land (cryosphere)"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Product type: Satellite observations"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Temporal coverage: Past"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Temporal coverage: Present"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/iso/topicCategory/Elevation"/>
+        <foaf:thumbnail rdf:resource="https://datastore.copernicus-climate.eu/c3s/published-forms-v2/c3sprod/satellite-ice-sheet-elevation-change/overview.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((0 -90, 0 90, 360 90, 360 -90, 0 -90))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:temporal>1992-01-01
+          /</dct:temporal>
+        <dct:publisher rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/organization/ECMWF"/>
+        <dct:accrualPeriodicity>asNeeded</dct:accrualPeriodicity>
+        <dct:language>eng</dct:language>
+        <dct:license>licence</dct:license>
+        <dct:license>https://cds.climate.copernicus.eu/api/v2/terms/static/20180314_Copernicus_License_V1.1.pdf</dct:license>
+        <dcat:distribution rdf:resource="https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.056d0df7"/>
+        <dcat:distribution rdf:resource="#"/>
+        <dcat:distribution rdf:resource="#"/>
+        <dcat:dataQuality>EC Copernicus program</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+    

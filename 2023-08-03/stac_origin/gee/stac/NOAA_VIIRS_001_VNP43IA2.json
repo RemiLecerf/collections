@@ -1,0 +1,310 @@
+{
+    "description": "The Suomi National Polar-Orbiting Partnership (Suomi NPP) NASA Visible\nInfrared Imaging Radiometer Suite (VIIRS) Bidirectional Reflectance\nDistribution Function (BRDF) and Albedo Quality (VNP43IA2) Version 1 product\nprovides BRDF and Albedo quality at 500m resolution. The VNP43IA2\nproduct is produced daily using 16 days of VIIRS data and is weighted\ntemporally to the ninth day, which is reflected in the file name.\nThe VNP43IA2 product provides information regarding band quality and days\nof valid observation within a 16-day period for the VIIRS imagery bands.\nThe VNP43 data products are designed to promote the continuity of\nNASA&apos;s Moderate Resolution Imaging Spectroradiometer (MODIS)\nBRDF/Albedo data product suite.\n\nDocumentation:\n\n* [User's Guide](https://www.umb.edu/spectralmass/viirs_user_guide/vnp43ia2_and_vnp43ma2_brdf_albedo_quality_product)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://lpdaac.usgs.gov/documents/194/VNP43_ATBD_V1.pdf)\n\n* [General Documentation](https://lpdaac.usgs.gov/products/vnp43ia2v001/)\n\n* [Land Product Quality Assessment website](https://landweb.modaps.eosdis.nasa.gov/NPP_QA/)\n",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2012-01-17T00:00:00Z",
+                    "2023-05-22T00:00:00"
+                ]
+            ]
+        }
+    },
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "day"
+    },
+    "gee:provider_ids": [
+        "C1412449611-LPDAAC_ECS"
+    ],
+    "gee:terms_of_use": "LP DAAC NASA data are freely accessible; however, when an author\npublishes these data or works based on the data, it is requested that the\nauthor cite the datasets within the text of the publication and include a\nreference to them in the reference list.\n",
+    "gee:type": "image_collection",
+    "id": "NOAA/VIIRS/001/VNP43IA2",
+    "keywords": [
+        "land",
+        "nasa",
+        "noaa",
+        "surface",
+        "viirs"
+    ],
+    "license": "proprietary",
+    "links": [
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections/NOAA/VIIRS/001/VNP43IA2",
+            "rel": "self",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections",
+            "rel": "parent",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/",
+            "rel": "root",
+            "type": "application/json"
+        },
+        {
+            "code": "JavaScript",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NOAA/NOAA_VIIRS_001_VNP43IA2",
+            "rel": "related",
+            "title": "Run the example for NOAA/VIIRS/001/VNP43IA2 in the Earth Engine Code Editor",
+            "type": "text/html"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/images/NOAA/NOAA_VIIRS_001_VNP43IA2_sample.png",
+            "rel": "preview",
+            "type": "image/png"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_VIIRS_001_VNP43IA2#terms-of-use",
+            "rel": "license",
+            "type": "text/html"
+        },
+        {
+            "href": "https://doi.org/10.5067/VIIRS/VNP43IA2.001",
+            "rel": "cite-as"
+        }
+    ],
+    "providers": [
+        {
+            "name": "NASA LP DAAC at the USGS EROS Center",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://doi.org/10.5067/VIIRS/VNP43IA2.001"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_VIIRS_001_VNP43IA2"
+        }
+    ],
+    "sci:citation": "Please visit [LP DAAC 'Citing Our Data' page](https://lpdaac.usgs.gov/citing_our_data)\nfor information on citing LP DAAC datasets.\n",
+    "sci:doi": "10.5067/VIIRS/VNP43IA2.001",
+    "stac_extensions": [
+        "collection-assets"
+    ],
+    "stac_version": "1.0.0",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "BRDF inversion information I1",
+                "gee:classes": [
+                    {
+                        "description": "best quality, full inversion (WoDs, RMSE majority good)\n"
+                    },
+                    {
+                        "description": "good quality, full inversion",
+                        "value": 1
+                    },
+                    {
+                        "description": "Magnitude inversion (numobs &ge; 7)",
+                        "value": 2
+                    },
+                    {
+                        "description": "Magnitude inversion (numobs &ge; 2 &amp; 7)",
+                        "value": 3
+                    }
+                ],
+                "name": "BRDF_Albedo_Band_Quality_I1"
+            },
+            {
+                "description": "BRDF inversion information I2",
+                "gee:classes": [
+                    {
+                        "description": "best quality, full inversion (WoDs, RMSE majority good)\n"
+                    },
+                    {
+                        "description": "good quality, full inversion",
+                        "value": 1
+                    },
+                    {
+                        "description": "Magnitude inversion (numobs &ge; 7)",
+                        "value": 2
+                    },
+                    {
+                        "description": "Magnitude inversion (numobs &ge; 2 &amp; 7)",
+                        "value": 3
+                    }
+                ],
+                "name": "BRDF_Albedo_Band_Quality_I2"
+            },
+            {
+                "description": "BRDF inversion information I3",
+                "gee:classes": [
+                    {
+                        "description": "best quality, full inversion (WoDs, RMSE majority good)\n"
+                    },
+                    {
+                        "description": "good quality, full inversion",
+                        "value": 1
+                    },
+                    {
+                        "description": "Magnitude inversion (numobs &ge; 7)",
+                        "value": 2
+                    },
+                    {
+                        "description": "Magnitude inversion (numobs &ge; 2 &amp; 7)",
+                        "value": 3
+                    }
+                ],
+                "name": "BRDF_Albedo_Band_Quality_I3"
+            },
+            {
+                "description": "Land/Water type",
+                "gee:classes": [
+                    {
+                        "description": "Shallow ocean"
+                    },
+                    {
+                        "description": "Land (Nothing else but land)",
+                        "value": 1
+                    },
+                    {
+                        "description": "Ocean and lake shorelines",
+                        "value": 2
+                    },
+                    {
+                        "description": "Shallow inland water",
+                        "value": 3
+                    },
+                    {
+                        "description": "Ephemeral water",
+                        "value": 4
+                    },
+                    {
+                        "description": "Deep inland water",
+                        "value": 5
+                    },
+                    {
+                        "description": "Moderate or continental ocean",
+                        "value": 6
+                    },
+                    {
+                        "description": "Deep ocean",
+                        "value": 7
+                    }
+                ],
+                "name": "BRDF_Albedo_LandWaterType"
+            },
+            {
+                "description": "Solar zenith angle at local solar noon",
+                "gee:units": "deg",
+                "name": "BRDF_Albedo_LocalSolarNoon"
+            },
+            {
+                "description": "Platform name",
+                "name": "BRDF_Albedo_Platform"
+            },
+            {
+                "description": "Weight of Determination (WoD) of WSA",
+                "name": "BRDF_Albedo_Uncertainty"
+            },
+            {
+                "description": "Days of valid observation within 16-day period for band \nI1",
+                "gee:units": "d",
+                "name": "BRDF_Albedo_ValidObs_I1"
+            },
+            {
+                "description": "Days of valid observation within 16-day period for band \nI2",
+                "gee:units": "d",
+                "name": "BRDF_Albedo_ValidObs_I2"
+            },
+            {
+                "description": "Days of valid observation within 16-day period for band \nI3",
+                "gee:units": "d",
+                "name": "BRDF_Albedo_ValidObs_I3"
+            },
+            {
+                "description": "Snow flag",
+                "gee:classes": [
+                    {
+                        "description": "snow-free albedo retrieved"
+                    },
+                    {
+                        "description": "snow albedo retrieved",
+                        "value": 1
+                    }
+                ],
+                "name": "Snow_BRDF_Albedo"
+            }
+        ],
+        "gsd": [
+            500
+        ],
+        "instruments": [
+            "VIIRS"
+        ],
+        "platform": [
+            "Suomi NPP"
+        ]
+    },
+    "title": "VNP43IA2: BRDF/Albedo Quality Daily L3 Global 500m SIN Grid",
+    "type": "Collection",
+    "version": "1",
+    "cube:dimensions": {
+        "x": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                -180,
+                180
+            ]
+        },
+        "y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                -90,
+                90
+            ]
+        },
+        "t": {
+            "type": "temporal",
+            "extent": [
+                "2012-01-17T00:00:00Z",
+                "2023-05-22T00:00:00"
+            ]
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "BRDF_Albedo_Band_Quality_I1",
+                "BRDF_Albedo_Band_Quality_I2",
+                "BRDF_Albedo_Band_Quality_I3",
+                "BRDF_Albedo_LandWaterType",
+                "BRDF_Albedo_LocalSolarNoon",
+                "BRDF_Albedo_Platform",
+                "BRDF_Albedo_Uncertainty",
+                "BRDF_Albedo_ValidObs_I1",
+                "BRDF_Albedo_ValidObs_I2",
+                "BRDF_Albedo_ValidObs_I3",
+                "Snow_BRDF_Albedo"
+            ]
+        }
+    },
+    "assets": {
+        "preview_4": {
+            "href": "https://developers.google.com/earth-engine/datasets/images/NOAA/NOAA_VIIRS_001_VNP43IA2_sample.png",
+            "type": "image/png",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    }
+}

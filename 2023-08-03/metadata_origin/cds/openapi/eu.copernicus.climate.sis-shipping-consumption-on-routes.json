@@ -1,0 +1,1488 @@
+{
+    "slug": "ship-performance-along-standard-shipping-routes-derived-from-reanalysis-and-seasonal-forecasts",
+    "name": "sis-shipping-consumption-on-routes",
+    "id": "eu.copernicus.climate.sis-shipping-consumption-on-routes",
+    "type": "dataset",
+    "rich_abstract": "<div class='abstract-text'>\n         <p>The dataset presents ship performance indicators for 80 popular global commercial shipping routes computed using a bespoke Fuel Consumption Model (FCM) developed for the Copernicus Climate Change Service. The purpose of the dataset is to provide information on the weather dependence and seasonality of ship performances with the aim of reducing fuel consumption by optimizing the route selection and ship's sailing speed. A trader or a fleet manager can use this information to estimate the average time and fuel consumption of a journey for a given month together with the uncertainty on meeting the target time of arrival. The seasonal forecast data quantifies the impact of the monthly wind anomalies on the fuel consumption and trip duration. </p>\n<p>The fuel consumption model comprises two major modules: resistance due to calm water, and resistance due to met-ocean parameters of wind, waves, and currents. For wind (eastward wind speed component, northward wind speed component), and waves (significant wave height, mean wave direction, peak wave period), the fifth generation ECMWF reanalysis for the global climate (ERA5) is used. For ocean currents (eastward current speed component, northward current speed component), monthly mean reanalysis from the ECMWF's ocean reanalysis system 4 (ORAS4) is used. For seasonal forecast products, monthly anomalies from the ECMWF's seasonal prediction system 5 (SEAS5) are used for wind, whilst the monthly mean climatology from ERA5 and ORAS4 is used for waves and currents, respectively.</p>\n<p>The dataset was produced on behalf of the Copernicus Climate Change Sector using reanalysis data available on the Climate Data Store.</p>\n         \n         \n            <p></p>\n            <table class=\"abstract-description abstract-table\">\n            <tr><th colspan=\"2\">DATA DESCRIPTION</th>\n            \n<tr><th>Data type</th><td>Point data</td></tr>\n<tr><th>Projection</th><td>Latitude-longitude grid</td></tr>\n<tr><th>Horizontal coverage</th><td>Global along specified trajectories</td></tr>\n<tr><th>Horizontal resolution</th><td>1.0\u00b0 x 1.0\u00b0  (for the underpinning wind, wave and current data)</td></tr>\n<tr><th>Temporal coverage</th><td>1993 to 2019</td></tr>\n<tr><th>Temporal resolution</th><td>Monthly or daily depending of the product type</td></tr>\n<tr><th>File format</th><td>NetCDF-4</td></tr>\n<tr><th>Conventions</th><td>Climate and Forecast (CF) Metadata Convention v1.6, Attribute Convention for Dataset Discovery (ACDD) v1.3</td></tr>\n<tr><th>Update frequency</th><td>Monthly</td></tr>\n</table>\n\n    <p></p>\n    <table class=\"abstract-variables abstract-table\">\n    <tr><th colspan=\"3\">MAIN VARIABLES</th>\n    \n\n    <tr><th class='variables-name'>Name</th><th class='variables-units'>Units</th><th class='variables-description'>Description</th></tr>\n    \n<tr><td class='variables-name'>Fuel consumption at fixed power</td><td class='variables-units'>kg for fuel oil or m<sup>3</sup> for gas.</td><td class='variables-description'>Total fuel consumption of a ship operating at fixed shaft power along a specific route taking into consideration the resistance due to wind, current and waves and engine efficiency. The cumulative fuel consumption at each way point of the route is provided.</td></tr>\n<tr><td class='variables-name'>Fuel consumption at fixed speed</td><td class='variables-units'>kg for fuel oil or m<sup>3</sup> for gas.</td><td class='variables-description'>Total fuel consumption of a ship operating at fixed speed over ground along a specific route taking into consideration the resistance due to wind, current and waves and engine efficiency. The cumulative fuel consumption at each way point of the route is provided.</td></tr>\n<tr><td class='variables-name'>Shaft power at fixed speed</td><td class='variables-units'>W</td><td class='variables-description'>Mechanical propulsion power required by the ship to maintain a fixed speed over ground along a specific route taking into consideration the resistance due to calm water, wind, current and waves and engine efficiency. The instantaneous shaft power at each way point of the route is provided.</td></tr>\n<tr><td class='variables-name'>Ship speed at fixed shaft power</td><td class='variables-units'>m s<sup>-1</sup></td><td class='variables-description'>Speed over ground of a ship operating at fixed shaft power along a specific route taking into consideration the resistance due to calm water, wind, current and waves and engine efficiency. The instantaneous speed at each way point of the route is provided.</td></tr>\n<tr><td class='variables-name'>Trip duration at fixed power</td><td class='variables-units'>s</td><td class='variables-description'>Voyage duration of a ship operating at fixed shaft power along a specific route taking into consideration the resistance due to calm water, wind, current and waves and engine efficiency. The cumulative voyage duration at each way point of the route is provided.</td></tr>\n</table>\n    </div>",
+    "terms": [
+        "licence-to-use-copernicus-products"
+    ],
+    "constraints": [
+        {
+            "arrival_port": [
+                "bimini_island"
+            ],
+            "departure_port": [
+                "bishop_rock"
+            ],
+            "product_type": [
+                "climatology"
+            ],
+            "statistic": [
+                "monthly_average",
+                "monthly_10th_percentile",
+                "monthly_25th_percentile",
+                "monthly_5th_percentile",
+                "monthly_75th_percentile",
+                "monthly_90th_percentile",
+                "monthly_95th_percentile"
+            ],
+            "variable": [
+                "trip_duration_at_fixed_shaft_power",
+                "fuel_consumption_at_fixed_shaft_power",
+                "shaft_power_at_fixed_speed",
+                "ship_speed_at_fixed_shaft_power"
+            ]
+        },
+        {
+            "arrival_port": [
+                "bimini_island"
+            ],
+            "departure_port": [
+                "bishop_rock"
+            ],
+            "product_type": [
+                "historical"
+            ],
+            "statistic": [
+                "daily",
+                "monthly_average",
+                "monthly_10th_percentile",
+                "monthly_25th_percentile",
+                "monthly_5th_percentile",
+                "monthly_75th_percentile",
+                "monthly_90th_percentile",
+                "monthly_95th_percentile"
+            ],
+            "variable": [
+                "trip_duration_at_fixed_shaft_power",
+                "fuel_consumption_at_fixed_shaft_power",
+                "fuel_consumption_at_fixed_speed",
+                "shaft_power_at_fixed_speed",
+                "ship_speed_at_fixed_shaft_power"
+            ],
+            "year": [
+                "1993",
+                "1994",
+                "1995",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2000",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017"
+            ]
+        },
+        {
+            "arrival_port": [
+                "bimini_island"
+            ],
+            "departure_port": [
+                "bishop_rock"
+            ],
+            "forecast_start_month": [
+                "january",
+                "february",
+                "march"
+            ],
+            "product_type": [
+                "seasonal_forecast"
+            ],
+            "statistic": [
+                "seasonal_forecast_monthly_average",
+                "seasonal_forecast_ensemble_average"
+            ],
+            "variable": [
+                "trip_duration_at_fixed_shaft_power",
+                "fuel_consumption_at_fixed_shaft_power",
+                "fuel_consumption_at_fixed_speed",
+                "shaft_power_at_fixed_speed",
+                "ship_speed_at_fixed_shaft_power"
+            ],
+            "year": [
+                "2019"
+            ]
+        },
+        {
+            "arrival_port": [
+                "bishop_rock"
+            ],
+            "departure_port": [
+                "bimini_island"
+            ],
+            "product_type": [
+                "climatology"
+            ],
+            "statistic": [
+                "monthly_average",
+                "monthly_10th_percentile",
+                "monthly_25th_percentile",
+                "monthly_5th_percentile",
+                "monthly_75th_percentile",
+                "monthly_90th_percentile",
+                "monthly_95th_percentile"
+            ],
+            "variable": [
+                "trip_duration_at_fixed_shaft_power",
+                "fuel_consumption_at_fixed_shaft_power",
+                "shaft_power_at_fixed_speed",
+                "ship_speed_at_fixed_shaft_power"
+            ]
+        },
+        {
+            "arrival_port": [
+                "bishop_rock"
+            ],
+            "departure_port": [
+                "bimini_island"
+            ],
+            "product_type": [
+                "historical"
+            ],
+            "statistic": [
+                "daily",
+                "monthly_average",
+                "monthly_10th_percentile",
+                "monthly_25th_percentile",
+                "monthly_5th_percentile",
+                "monthly_75th_percentile",
+                "monthly_90th_percentile",
+                "monthly_95th_percentile"
+            ],
+            "variable": [
+                "trip_duration_at_fixed_shaft_power",
+                "fuel_consumption_at_fixed_shaft_power",
+                "fuel_consumption_at_fixed_speed",
+                "shaft_power_at_fixed_speed",
+                "ship_speed_at_fixed_shaft_power"
+            ],
+            "year": [
+                "1993",
+                "1994",
+                "1995",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2000",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017"
+            ]
+        },
+        {
+            "arrival_port": [
+                "bishop_rock"
+            ],
+            "departure_port": [
+                "bimini_island"
+            ],
+            "forecast_start_month": [
+                "january",
+                "february",
+                "march"
+            ],
+            "product_type": [
+                "seasonal_forecast"
+            ],
+            "statistic": [
+                "seasonal_forecast_monthly_average",
+                "seasonal_forecast_ensemble_average"
+            ],
+            "variable": [
+                "trip_duration_at_fixed_shaft_power",
+                "fuel_consumption_at_fixed_shaft_power",
+                "fuel_consumption_at_fixed_speed",
+                "shaft_power_at_fixed_speed",
+                "ship_speed_at_fixed_shaft_power"
+            ],
+            "year": [
+                "2019"
+            ]
+        },
+        {
+            "arrival_port": [
+                "bombay",
+                "gibraltar",
+                "new_york",
+                "panama"
+            ],
+            "departure_port": [
+                "cape_of_good_hope"
+            ],
+            "product_type": [
+                "climatology"
+            ],
+            "statistic": [
+                "monthly_average",
+                "monthly_10th_percentile",
+                "monthly_25th_percentile",
+                "monthly_5th_percentile",
+                "monthly_75th_percentile",
+                "monthly_90th_percentile",
+                "monthly_95th_percentile"
+            ],
+            "variable": [
+                "trip_duration_at_fixed_shaft_power",
+                "fuel_consumption_at_fixed_shaft_power",
+                "shaft_power_at_fixed_speed",
+                "ship_speed_at_fixed_shaft_power"
+            ]
+        },
+        {
+            "arrival_port": [
+                "bombay",
+                "gibraltar",
+                "new_york",
+                "panama"
+            ],
+            "departure_port": [
+                "cape_of_good_hope"
+            ],
+            "product_type": [
+                "historical"
+            ],
+            "statistic": [
+                "daily",
+                "monthly_average",
+                "monthly_10th_percentile",
+                "monthly_25th_percentile",
+                "monthly_5th_percentile",
+                "monthly_75th_percentile",
+                "monthly_90th_percentile",
+                "monthly_95th_percentile"
+            ],
+            "variable": [
+                "trip_duration_at_fixed_shaft_power",
+                "fuel_consumption_at_fixed_shaft_power",
+                "fuel_consumption_at_fixed_speed",
+                "shaft_power_at_fixed_speed",
+                "ship_speed_at_fixed_shaft_power"
+            ],
+            "year": [
+                "1993",
+                "1994",
+                "1995",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2000",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017"
+            ]
+        },
+        {
+            "arrival_port": [
+                "bombay",
+                "gibraltar",
+                "new_york",
+                "panama"
+            ],
+            "departure_port": [
+                "cape_of_good_hope"
+            ],
+            "forecast_start_month": [
+                "january",
+                "february",
+                "march"
+            ],
+            "product_type": [
+                "seasonal_forecast"
+            ],
+            "statistic": [
+                "seasonal_forecast_monthly_average",
+                "seasonal_forecast_ensemble_average"
+            ],
+            "variable": [
+                "trip_duration_at_fixed_shaft_power",
+                "fuel_consumption_at_fixed_shaft_power",
+                "fuel_consumption_at_fixed_speed",
+                "shaft_power_at_fixed_speed",
+                "ship_speed_at_fixed_shaft_power"
+            ],
+            "year": [
+                "2019"
+            ]
+        },
+        {
+            "arrival_port": [
+                "cape_of_good_hope"
+            ],
+            "departure_port": [
+                "bombay"
+            ],
+            "product_type": [
+                "climatology"
+            ],
+            "statistic": [
+                "monthly_average",
+                "monthly_10th_percentile",
+                "monthly_25th_percentile",
+                "monthly_5th_percentile",
+                "monthly_75th_percentile",
+                "monthly_90th_percentile",
+                "monthly_95th_percentile"
+            ],
+            "variable": [
+                "shaft_power_at_fixed_speed"
+            ]
+        },
+        {
+            "arrival_port": [
+                "cape_of_good_hope"
+            ],
+            "departure_port": [
+                "bombay"
+            ],
+            "product_type": [
+                "historical"
+            ],
+            "statistic": [
+                "daily",
+                "monthly_average",
+                "monthly_10th_percentile",
+                "monthly_25th_percentile",
+                "monthly_5th_percentile",
+                "monthly_75th_percentile",
+                "monthly_90th_percentile",
+                "monthly_95th_percentile"
+            ],
+            "variable": [
+                "fuel_consumption_at_fixed_speed",
+                "shaft_power_at_fixed_speed"
+            ],
+            "year": [
+                "1993",
+                "1994",
+                "1995",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2000",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017"
+            ]
+        },
+        {
+            "arrival_port": [
+                "cape_of_good_hope"
+            ],
+            "departure_port": [
+                "bombay"
+            ],
+            "forecast_start_month": [
+                "january",
+                "february",
+                "march"
+            ],
+            "product_type": [
+                "seasonal_forecast"
+            ],
+            "statistic": [
+                "seasonal_forecast_monthly_average",
+                "seasonal_forecast_ensemble_average"
+            ],
+            "variable": [
+                "trip_duration_at_fixed_shaft_power",
+                "fuel_consumption_at_fixed_shaft_power",
+                "fuel_consumption_at_fixed_speed",
+                "shaft_power_at_fixed_speed",
+                "ship_speed_at_fixed_shaft_power"
+            ],
+            "year": [
+                "2019"
+            ]
+        },
+        {
+            "arrival_port": [
+                "cape_of_good_hope"
+            ],
+            "departure_port": [
+                "bombay",
+                "panama"
+            ],
+            "product_type": [
+                "climatology"
+            ],
+            "statistic": [
+                "monthly_average",
+                "monthly_10th_percentile",
+                "monthly_25th_percentile",
+                "monthly_5th_percentile",
+                "monthly_75th_percentile",
+                "monthly_90th_percentile",
+                "monthly_95th_percentile"
+            ],
+            "variable": [
+                "trip_duration_at_fixed_shaft_power",
+                "fuel_consumption_at_fixed_shaft_power",
+                "ship_speed_at_fixed_shaft_power"
+            ]
+        },
+        {
+            "arrival_port": [
+                "cape_of_good_hope"
+            ],
+            "departure_port": [
+                "bombay",
+                "panama"
+            ],
+            "product_type": [
+                "historical"
+            ],
+            "statistic": [
+                "daily",
+                "monthly_average",
+                "monthly_10th_percentile",
+                "monthly_25th_percentile",
+                "monthly_5th_percentile",
+                "monthly_75th_percentile",
+                "monthly_90th_percentile",
+                "monthly_95th_percentile"
+            ],
+            "variable": [
+                "trip_duration_at_fixed_shaft_power",
+                "fuel_consumption_at_fixed_shaft_power",
+                "ship_speed_at_fixed_shaft_power"
+            ],
+            "year": [
+                "1993",
+                "1994",
+                "1995",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2000",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017"
+            ]
+        },
+        {
+            "arrival_port": [
+                "cape_of_good_hope",
+                "gibraltar"
+            ],
+            "departure_port": [
+                "new_york"
+            ],
+            "product_type": [
+                "climatology"
+            ],
+            "statistic": [
+                "monthly_average",
+                "monthly_10th_percentile",
+                "monthly_25th_percentile",
+                "monthly_5th_percentile",
+                "monthly_75th_percentile",
+                "monthly_90th_percentile",
+                "monthly_95th_percentile"
+            ],
+            "variable": [
+                "trip_duration_at_fixed_shaft_power",
+                "fuel_consumption_at_fixed_shaft_power",
+                "shaft_power_at_fixed_speed",
+                "ship_speed_at_fixed_shaft_power"
+            ]
+        },
+        {
+            "arrival_port": [
+                "cape_of_good_hope",
+                "gibraltar"
+            ],
+            "departure_port": [
+                "new_york"
+            ],
+            "product_type": [
+                "historical"
+            ],
+            "statistic": [
+                "daily",
+                "monthly_average",
+                "monthly_10th_percentile",
+                "monthly_25th_percentile",
+                "monthly_5th_percentile",
+                "monthly_75th_percentile",
+                "monthly_90th_percentile",
+                "monthly_95th_percentile"
+            ],
+            "variable": [
+                "trip_duration_at_fixed_shaft_power",
+                "fuel_consumption_at_fixed_shaft_power",
+                "fuel_consumption_at_fixed_speed",
+                "shaft_power_at_fixed_speed",
+                "ship_speed_at_fixed_shaft_power"
+            ],
+            "year": [
+                "1993",
+                "1994",
+                "1995",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2000",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017"
+            ]
+        },
+        {
+            "arrival_port": [
+                "cape_of_good_hope",
+                "gibraltar"
+            ],
+            "departure_port": [
+                "new_york"
+            ],
+            "forecast_start_month": [
+                "january",
+                "february",
+                "march"
+            ],
+            "product_type": [
+                "seasonal_forecast"
+            ],
+            "statistic": [
+                "seasonal_forecast_monthly_average",
+                "seasonal_forecast_ensemble_average"
+            ],
+            "variable": [
+                "trip_duration_at_fixed_shaft_power",
+                "fuel_consumption_at_fixed_shaft_power",
+                "fuel_consumption_at_fixed_speed",
+                "shaft_power_at_fixed_speed",
+                "ship_speed_at_fixed_shaft_power"
+            ],
+            "year": [
+                "2019"
+            ]
+        },
+        {
+            "arrival_port": [
+                "cape_of_good_hope",
+                "new_york"
+            ],
+            "departure_port": [
+                "gibraltar"
+            ],
+            "product_type": [
+                "climatology"
+            ],
+            "statistic": [
+                "monthly_average",
+                "monthly_10th_percentile",
+                "monthly_25th_percentile",
+                "monthly_5th_percentile",
+                "monthly_75th_percentile",
+                "monthly_90th_percentile",
+                "monthly_95th_percentile"
+            ],
+            "variable": [
+                "trip_duration_at_fixed_shaft_power",
+                "fuel_consumption_at_fixed_shaft_power",
+                "shaft_power_at_fixed_speed",
+                "ship_speed_at_fixed_shaft_power"
+            ]
+        },
+        {
+            "arrival_port": [
+                "cape_of_good_hope",
+                "new_york"
+            ],
+            "departure_port": [
+                "gibraltar"
+            ],
+            "product_type": [
+                "historical"
+            ],
+            "statistic": [
+                "daily",
+                "monthly_average",
+                "monthly_10th_percentile",
+                "monthly_25th_percentile",
+                "monthly_5th_percentile",
+                "monthly_75th_percentile",
+                "monthly_90th_percentile",
+                "monthly_95th_percentile"
+            ],
+            "variable": [
+                "trip_duration_at_fixed_shaft_power",
+                "fuel_consumption_at_fixed_shaft_power",
+                "fuel_consumption_at_fixed_speed",
+                "shaft_power_at_fixed_speed",
+                "ship_speed_at_fixed_shaft_power"
+            ],
+            "year": [
+                "1993",
+                "1994",
+                "1995",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2000",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017"
+            ]
+        },
+        {
+            "arrival_port": [
+                "cape_of_good_hope",
+                "new_york"
+            ],
+            "departure_port": [
+                "gibraltar"
+            ],
+            "forecast_start_month": [
+                "january",
+                "february",
+                "march"
+            ],
+            "product_type": [
+                "seasonal_forecast"
+            ],
+            "statistic": [
+                "seasonal_forecast_monthly_average",
+                "seasonal_forecast_ensemble_average"
+            ],
+            "variable": [
+                "trip_duration_at_fixed_shaft_power",
+                "fuel_consumption_at_fixed_shaft_power",
+                "fuel_consumption_at_fixed_speed",
+                "shaft_power_at_fixed_speed",
+                "ship_speed_at_fixed_shaft_power"
+            ],
+            "year": [
+                "2019"
+            ]
+        },
+        {
+            "arrival_port": [
+                "cape_of_good_hope",
+                "sydney"
+            ],
+            "departure_port": [
+                "panama"
+            ],
+            "product_type": [
+                "climatology"
+            ],
+            "statistic": [
+                "monthly_average",
+                "monthly_10th_percentile",
+                "monthly_25th_percentile",
+                "monthly_5th_percentile",
+                "monthly_75th_percentile",
+                "monthly_90th_percentile",
+                "monthly_95th_percentile"
+            ],
+            "variable": [
+                "shaft_power_at_fixed_speed"
+            ]
+        },
+        {
+            "arrival_port": [
+                "cape_of_good_hope",
+                "sydney"
+            ],
+            "departure_port": [
+                "panama"
+            ],
+            "product_type": [
+                "historical"
+            ],
+            "statistic": [
+                "daily",
+                "monthly_average",
+                "monthly_10th_percentile",
+                "monthly_25th_percentile",
+                "monthly_5th_percentile",
+                "monthly_75th_percentile",
+                "monthly_90th_percentile",
+                "monthly_95th_percentile"
+            ],
+            "variable": [
+                "fuel_consumption_at_fixed_speed",
+                "shaft_power_at_fixed_speed"
+            ],
+            "year": [
+                "1993",
+                "1994",
+                "1995",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2000",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017"
+            ]
+        },
+        {
+            "arrival_port": [
+                "cape_of_good_hope",
+                "sydney"
+            ],
+            "departure_port": [
+                "panama"
+            ],
+            "forecast_start_month": [
+                "january",
+                "february",
+                "march"
+            ],
+            "product_type": [
+                "seasonal_forecast"
+            ],
+            "statistic": [
+                "seasonal_forecast_monthly_average",
+                "seasonal_forecast_ensemble_average"
+            ],
+            "variable": [
+                "trip_duration_at_fixed_shaft_power",
+                "fuel_consumption_at_fixed_shaft_power",
+                "fuel_consumption_at_fixed_speed",
+                "shaft_power_at_fixed_speed",
+                "ship_speed_at_fixed_shaft_power"
+            ],
+            "year": [
+                "2019"
+            ]
+        },
+        {
+            "arrival_port": [
+                "cook_strait"
+            ],
+            "departure_port": [
+                "valparaiso"
+            ],
+            "product_type": [
+                "climatology"
+            ],
+            "statistic": [
+                "monthly_average",
+                "monthly_10th_percentile",
+                "monthly_25th_percentile",
+                "monthly_5th_percentile",
+                "monthly_75th_percentile",
+                "monthly_90th_percentile",
+                "monthly_95th_percentile"
+            ],
+            "variable": [
+                "trip_duration_at_fixed_shaft_power",
+                "fuel_consumption_at_fixed_shaft_power",
+                "shaft_power_at_fixed_speed",
+                "ship_speed_at_fixed_shaft_power"
+            ]
+        },
+        {
+            "arrival_port": [
+                "cook_strait"
+            ],
+            "departure_port": [
+                "valparaiso"
+            ],
+            "product_type": [
+                "historical"
+            ],
+            "statistic": [
+                "daily",
+                "monthly_average",
+                "monthly_10th_percentile",
+                "monthly_25th_percentile",
+                "monthly_5th_percentile",
+                "monthly_75th_percentile",
+                "monthly_90th_percentile",
+                "monthly_95th_percentile"
+            ],
+            "variable": [
+                "trip_duration_at_fixed_shaft_power",
+                "fuel_consumption_at_fixed_shaft_power",
+                "fuel_consumption_at_fixed_speed",
+                "shaft_power_at_fixed_speed",
+                "ship_speed_at_fixed_shaft_power"
+            ],
+            "year": [
+                "1993",
+                "1994",
+                "1995",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2000",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017"
+            ]
+        },
+        {
+            "arrival_port": [
+                "cook_strait"
+            ],
+            "departure_port": [
+                "valparaiso"
+            ],
+            "forecast_start_month": [
+                "january",
+                "february",
+                "march"
+            ],
+            "product_type": [
+                "seasonal_forecast"
+            ],
+            "statistic": [
+                "seasonal_forecast_monthly_average",
+                "seasonal_forecast_ensemble_average"
+            ],
+            "variable": [
+                "trip_duration_at_fixed_shaft_power",
+                "fuel_consumption_at_fixed_shaft_power",
+                "fuel_consumption_at_fixed_speed",
+                "shaft_power_at_fixed_speed",
+                "ship_speed_at_fixed_shaft_power"
+            ],
+            "year": [
+                "2019"
+            ]
+        },
+        {
+            "arrival_port": [
+                "luzon",
+                "yokohama"
+            ],
+            "departure_port": [
+                "san_francisco"
+            ],
+            "product_type": [
+                "climatology"
+            ],
+            "statistic": [
+                "monthly_average",
+                "monthly_10th_percentile",
+                "monthly_25th_percentile",
+                "monthly_5th_percentile",
+                "monthly_75th_percentile",
+                "monthly_90th_percentile",
+                "monthly_95th_percentile"
+            ],
+            "variable": [
+                "trip_duration_at_fixed_shaft_power",
+                "fuel_consumption_at_fixed_shaft_power",
+                "shaft_power_at_fixed_speed",
+                "ship_speed_at_fixed_shaft_power"
+            ]
+        },
+        {
+            "arrival_port": [
+                "luzon",
+                "yokohama"
+            ],
+            "departure_port": [
+                "san_francisco"
+            ],
+            "product_type": [
+                "historical"
+            ],
+            "statistic": [
+                "daily",
+                "monthly_average",
+                "monthly_10th_percentile",
+                "monthly_25th_percentile",
+                "monthly_5th_percentile",
+                "monthly_75th_percentile",
+                "monthly_90th_percentile",
+                "monthly_95th_percentile"
+            ],
+            "variable": [
+                "trip_duration_at_fixed_shaft_power",
+                "fuel_consumption_at_fixed_shaft_power",
+                "fuel_consumption_at_fixed_speed",
+                "shaft_power_at_fixed_speed",
+                "ship_speed_at_fixed_shaft_power"
+            ],
+            "year": [
+                "1993",
+                "1994",
+                "1995",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2000",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017"
+            ]
+        },
+        {
+            "arrival_port": [
+                "luzon",
+                "yokohama"
+            ],
+            "departure_port": [
+                "san_francisco"
+            ],
+            "forecast_start_month": [
+                "january",
+                "february",
+                "march"
+            ],
+            "product_type": [
+                "seasonal_forecast"
+            ],
+            "statistic": [
+                "seasonal_forecast_monthly_average",
+                "seasonal_forecast_ensemble_average"
+            ],
+            "variable": [
+                "trip_duration_at_fixed_shaft_power",
+                "fuel_consumption_at_fixed_shaft_power",
+                "fuel_consumption_at_fixed_speed",
+                "shaft_power_at_fixed_speed",
+                "ship_speed_at_fixed_shaft_power"
+            ],
+            "year": [
+                "2019"
+            ]
+        },
+        {
+            "arrival_port": [
+                "panama"
+            ],
+            "departure_port": [
+                "sydney"
+            ],
+            "product_type": [
+                "climatology"
+            ],
+            "statistic": [
+                "monthly_average",
+                "monthly_10th_percentile",
+                "monthly_25th_percentile",
+                "monthly_5th_percentile",
+                "monthly_75th_percentile",
+                "monthly_90th_percentile",
+                "monthly_95th_percentile"
+            ],
+            "variable": [
+                "trip_duration_at_fixed_shaft_power",
+                "fuel_consumption_at_fixed_shaft_power",
+                "shaft_power_at_fixed_speed",
+                "ship_speed_at_fixed_shaft_power"
+            ]
+        },
+        {
+            "arrival_port": [
+                "panama"
+            ],
+            "departure_port": [
+                "sydney"
+            ],
+            "product_type": [
+                "historical"
+            ],
+            "statistic": [
+                "daily",
+                "monthly_average",
+                "monthly_10th_percentile",
+                "monthly_25th_percentile",
+                "monthly_5th_percentile",
+                "monthly_75th_percentile",
+                "monthly_90th_percentile",
+                "monthly_95th_percentile"
+            ],
+            "variable": [
+                "trip_duration_at_fixed_shaft_power",
+                "fuel_consumption_at_fixed_shaft_power",
+                "fuel_consumption_at_fixed_speed",
+                "shaft_power_at_fixed_speed",
+                "ship_speed_at_fixed_shaft_power"
+            ],
+            "year": [
+                "1993",
+                "1994",
+                "1995",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2000",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017"
+            ]
+        },
+        {
+            "arrival_port": [
+                "panama"
+            ],
+            "departure_port": [
+                "sydney"
+            ],
+            "forecast_start_month": [
+                "january",
+                "february",
+                "march"
+            ],
+            "product_type": [
+                "seasonal_forecast"
+            ],
+            "statistic": [
+                "seasonal_forecast_monthly_average",
+                "seasonal_forecast_ensemble_average"
+            ],
+            "variable": [
+                "trip_duration_at_fixed_shaft_power",
+                "fuel_consumption_at_fixed_shaft_power",
+                "fuel_consumption_at_fixed_speed",
+                "shaft_power_at_fixed_speed",
+                "ship_speed_at_fixed_shaft_power"
+            ],
+            "year": [
+                "2019"
+            ]
+        },
+        {
+            "arrival_port": [
+                "san_francisco"
+            ],
+            "departure_port": [
+                "luzon",
+                "yokohama"
+            ],
+            "product_type": [
+                "climatology"
+            ],
+            "statistic": [
+                "monthly_average",
+                "monthly_10th_percentile",
+                "monthly_25th_percentile",
+                "monthly_5th_percentile",
+                "monthly_75th_percentile",
+                "monthly_90th_percentile",
+                "monthly_95th_percentile"
+            ],
+            "variable": [
+                "trip_duration_at_fixed_shaft_power",
+                "fuel_consumption_at_fixed_shaft_power",
+                "shaft_power_at_fixed_speed",
+                "ship_speed_at_fixed_shaft_power"
+            ]
+        },
+        {
+            "arrival_port": [
+                "san_francisco"
+            ],
+            "departure_port": [
+                "luzon",
+                "yokohama"
+            ],
+            "product_type": [
+                "historical"
+            ],
+            "statistic": [
+                "daily",
+                "monthly_average",
+                "monthly_10th_percentile",
+                "monthly_25th_percentile",
+                "monthly_5th_percentile",
+                "monthly_75th_percentile",
+                "monthly_90th_percentile",
+                "monthly_95th_percentile"
+            ],
+            "variable": [
+                "trip_duration_at_fixed_shaft_power",
+                "fuel_consumption_at_fixed_shaft_power",
+                "fuel_consumption_at_fixed_speed",
+                "shaft_power_at_fixed_speed",
+                "ship_speed_at_fixed_shaft_power"
+            ],
+            "year": [
+                "1993",
+                "1994",
+                "1995",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2000",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017"
+            ]
+        },
+        {
+            "arrival_port": [
+                "san_francisco"
+            ],
+            "departure_port": [
+                "luzon",
+                "yokohama"
+            ],
+            "forecast_start_month": [
+                "january",
+                "february",
+                "march"
+            ],
+            "product_type": [
+                "seasonal_forecast"
+            ],
+            "statistic": [
+                "seasonal_forecast_monthly_average",
+                "seasonal_forecast_ensemble_average"
+            ],
+            "variable": [
+                "trip_duration_at_fixed_shaft_power",
+                "fuel_consumption_at_fixed_shaft_power",
+                "fuel_consumption_at_fixed_speed",
+                "shaft_power_at_fixed_speed",
+                "ship_speed_at_fixed_shaft_power"
+            ],
+            "year": [
+                "2019"
+            ]
+        },
+        {
+            "arrival_port": [
+                "sydney"
+            ],
+            "departure_port": [
+                "panama"
+            ],
+            "product_type": [
+                "historical"
+            ],
+            "statistic": [
+                "daily",
+                "monthly_average",
+                "monthly_10th_percentile",
+                "monthly_25th_percentile",
+                "monthly_5th_percentile",
+                "monthly_75th_percentile",
+                "monthly_90th_percentile",
+                "monthly_95th_percentile"
+            ],
+            "variable": [
+                "trip_duration_at_fixed_shaft_power",
+                "fuel_consumption_at_fixed_shaft_power",
+                "ship_speed_at_fixed_shaft_power"
+            ],
+            "year": [
+                "1993",
+                "1994",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2000",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017"
+            ]
+        },
+        {
+            "arrival_port": [
+                "valparaiso"
+            ],
+            "departure_port": [
+                "cook_strait"
+            ],
+            "product_type": [
+                "climatology"
+            ],
+            "statistic": [
+                "monthly_average",
+                "monthly_10th_percentile",
+                "monthly_25th_percentile",
+                "monthly_5th_percentile",
+                "monthly_75th_percentile",
+                "monthly_90th_percentile",
+                "monthly_95th_percentile"
+            ],
+            "variable": [
+                "trip_duration_at_fixed_shaft_power",
+                "fuel_consumption_at_fixed_shaft_power",
+                "shaft_power_at_fixed_speed",
+                "ship_speed_at_fixed_shaft_power"
+            ]
+        },
+        {
+            "arrival_port": [
+                "valparaiso"
+            ],
+            "departure_port": [
+                "cook_strait"
+            ],
+            "product_type": [
+                "historical"
+            ],
+            "statistic": [
+                "daily",
+                "monthly_average",
+                "monthly_10th_percentile",
+                "monthly_25th_percentile",
+                "monthly_5th_percentile",
+                "monthly_75th_percentile",
+                "monthly_90th_percentile",
+                "monthly_95th_percentile"
+            ],
+            "variable": [
+                "trip_duration_at_fixed_shaft_power",
+                "fuel_consumption_at_fixed_shaft_power",
+                "fuel_consumption_at_fixed_speed",
+                "shaft_power_at_fixed_speed",
+                "ship_speed_at_fixed_shaft_power"
+            ],
+            "year": [
+                "1993",
+                "1994",
+                "1995",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2000",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017"
+            ]
+        },
+        {
+            "arrival_port": [
+                "valparaiso"
+            ],
+            "departure_port": [
+                "cook_strait"
+            ],
+            "forecast_start_month": [
+                "january",
+                "february",
+                "march"
+            ],
+            "product_type": [
+                "seasonal_forecast"
+            ],
+            "statistic": [
+                "seasonal_forecast_monthly_average",
+                "seasonal_forecast_ensemble_average"
+            ],
+            "variable": [
+                "trip_duration_at_fixed_shaft_power",
+                "fuel_consumption_at_fixed_shaft_power",
+                "fuel_consumption_at_fixed_speed",
+                "shaft_power_at_fixed_speed",
+                "ship_speed_at_fixed_shaft_power"
+            ],
+            "year": [
+                "2019"
+            ]
+        }
+    ]
+}

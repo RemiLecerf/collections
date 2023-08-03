@@ -1,0 +1,63 @@
+{
+  "type": "Collection",
+  "id": "eu.copernicus.climate.sis-european-wind-storm-synthetic-events",
+  "stac_version": "1.0.0",
+  "description": "This dataset contains a set of synthetic windstorm events consisting of 22,980 individual storm footprints over Europe. These are a physically realistic set of plausible windstorm events based on the modelled climatic conditions. It is not designed to reproduce actual historical observations but as a comparator for the stochastic event sets generally used for windstorm risk analysis in the insurance industry. This is because there is no data assimilation process used to align the model output to historical observations. The dataset aims to capture the windstorms' risk profile over the winter months and consider the characteristics of windstorms in a warming climate. The dataset may be downloaded by selecting the required years and months from which daily files are produced. These are there as mere reference; the associated storms bare no resembelence to what was actually observed and recorded at the time.\nThe windstorms are identified from the maximum 3 second wind gusts derived from the 10m wind speed from the Met Office HadGEM3 model using the Global Atmosphere 3 and Global Land 3 configurations. The dataset covers the northern hemisphere winter months between September and May only. It includes three individual iterations of the event sets, whose methodology and inputs are slightly different:\n\n\nSynthetic set 1.2: recalibrated using four historical windstorm events; Xynthia, Kyrill, Daria and 87J.\n\n\nSynthetic set 2: A storm severity index combining maximum wind gust speed above a threshold of 25 m s-1 and land area was used to select the strongest six events from the Met Office historical events database.\n\n\nSynthetic set 3: downscaling was based on station observations from the four named storms used in Synthetic event set v1.2; Xynthia, Kyrill, Daria and 87J.\n\n\nFive simulation ensembles initialized from one of five consecutive days and allowed to evolve independently were used to increase the number of events compared to the input data and to account for the uncertainty in forecasted climatic conditions. The three sets and all simulation ensembles may be combined and used together in further analysis. This synthetic event set is complementary to the catalogue of actual windstorms in Europe from 1979 to 2021 also available in the Climate Data Store.\nThis dataset was produced on behalf of the Copernicus Climate Change Service.\n\nVariables in the dataset/application are:\nWind speed of gusts",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.ce973f02",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Climate Data Store catalogue"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://confluence.ecmwf.int/x/unA0Dw",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Product user guide"
+    }
+  ],
+  "title": "Synthetic windstorm events for Europe from 1986 to 2011",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -20.0,
+          35.0,
+          35.0,
+          70.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1986-01-01T00:00:00Z",
+          "2011-11-30T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Meteorological geographical features",
+    "Product type: Projections",
+    "Provider: Copernicus C3S",
+    "Spatial coverage: Europe",
+    "Temporal coverage: Past",
+    "Variable domain: Atmosphere (surface)"
+  ],
+  "providers": [
+    {
+      "name": "Climate Data Store - European Centre for Medium-Range Weather Forecasts (ECMWF)",
+      "description": "Climate Data Store - ECMWF",
+      "roles": [
+        "licensor",
+        "producer",
+        "processor",
+        "host"
+      ],
+      "url": "https://cds.climate.copernicus.eu/"
+    }
+  ]
+}

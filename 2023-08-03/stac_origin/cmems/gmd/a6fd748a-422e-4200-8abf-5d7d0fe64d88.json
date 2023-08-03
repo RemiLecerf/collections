@@ -1,0 +1,67 @@
+{
+  "type": "Collection",
+  "id": "a6fd748a-422e-4200-8abf-5d7d0fe64d88",
+  "stac_version": "1.0.0",
+  "description": "'''Short description:'''\n\nFor the NWS/IBI Ocean- Sea Surface Temperature L3 Observations . This product provides daily foundation sea surface temperature from multiple satellite sources. The data are intercalibrated. This product consists in a fusion of sea surface temperature observations from multiple satellite sensors, daily, over a 0.05° resolution grid. It includes observations by polar orbiting from the ESA CCI / C3S archive .  The L3S SST data are produced selecting only the highest quality input data from input L2P/L3P images within a strict temporal window (local nightime), to avoid diurnal cycle and cloud contamination. The observations of each sensor are intercalibrated prior to merging using a bias correction based on a multi-sensor median reference correcting the large-scale cross-sensor biases.\n\n'''DOI (product) :'''   \nhttps://doi.org/10.48670/moi-00311",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&service=SST_ATL_PHY_L3S_MY_010_038-TDS&product=cmems_obs-sst_atl_phy_my_l3s_P1D-m",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_obs-sst_atl_phy_my_l3s_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/dodsC/cmems_obs-sst_atl_phy_my_l3s_P1D-m",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_obs-sst_atl_phy_my_l3s_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://my.cmems-du.eu/Core/SST_ATL_PHY_L3S_MY_010_038/cmems_obs-sst_atl_phy_my_l3s_P1D-m",
+      "type": "WWW:FTP",
+      "title": "cmems_obs-sst_atl_phy_my_l3s_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/wms/cmems_obs-sst_atl_phy_my_l3s_P1D-m",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_obs-sst_atl_phy_my_l3s_P1D-m"
+    }
+  ],
+  "title": "European North West Shelf/Iberia Biscay Irish Seas – High Resolution ODYSSEA Sea Surface Temperature Multi-sensor L3 Observations",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -21.0,
+          9.0,
+          13.0,
+          62.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1982-01-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "providers": [
+    {
+      "name": "Copernicus Marine Service",
+      "description": "Copernicus Marine Service - Mercator Ocean Internations",
+      "roles": [
+        "licensor",
+        "producer",
+        "processor",
+        "host"
+      ],
+      "url": "https://marine.copernicus.eu/"
+    }
+  ]
+}

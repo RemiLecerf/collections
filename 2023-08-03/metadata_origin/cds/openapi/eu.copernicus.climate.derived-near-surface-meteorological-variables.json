@@ -1,0 +1,314 @@
+{
+    "slug": "near-surface-meteorological-variables-from-1979-to-2019-derived-from-bias-corrected-reanalysis",
+    "name": "derived-near-surface-meteorological-variables",
+    "id": "eu.copernicus.climate.derived-near-surface-meteorological-variables",
+    "type": "dataset",
+    "rich_abstract": "<div class='abstract-text'>\n         <p>This dataset provides bias-corrected reconstruction of near-surface meteorological variables derived from the fifth generation of the European Centre for Medium-Range Weather Forecasts  (ECMWF) atmospheric reanalyses (ERA5). It is intended to be used as a meteorological forcing dataset for land surface and hydrological models. </p>\n<p>The dataset has been obtained using the same methodology used to derive the widely used water, energy and climate change (WATCH) forcing data, and is thus also referred to as WATCH Forcing Data methodology applied to ERA5 (WFDE5). The data are derived from the ERA5 reanalysis product that have been re-gridded to a half-degree resolution. Data have been adjusted using an elevation correction and monthly-scale bias corrections based on Climatic Research Unit (CRU) data (for temperature, diurnal temperature range, cloud-cover, wet days number and precipitation fields) and Global Precipitation Climatology Centre (GPCC) data (for precipitation fields only). Additional corrections are included for varying atmospheric aerosol-loading and separate precipitation gauge observations. For full details please refer to the product user-guide.</p>\n<p>This dataset was produced on behalf of Copernicus Climate Change Service (C3S) and was generated entirely within the Climate Data Store (CDS) Toolbox. The toolbox source code is provided in the documentation tab.</p>\n         \n         \n            <p></p>\n            <table class=\"abstract-description abstract-table\">\n            <tr><th colspan=\"2\">DATA DESCRIPTION</th>\n            \n<tr><th>Data type</th><td>Gridded</td></tr>\n<tr><th>Projection</th><td>Regular latitude-longitude grid</td></tr>\n<tr><th>Horizontal coverage</th><td>Global land</td></tr>\n<tr><th>Horizontal resolution</th><td>0.5\u00b0 x 0.5\u00b0</td></tr>\n<tr><th>Vertical coverage</th><td>Surface</td></tr>\n<tr><th>Vertical resolution</th><td>Single level</td></tr>\n<tr><th>Temporal coverage</th><td>From 1979  to  2019</td></tr>\n<tr><th>Temporal resolution</th><td>Hourly</td></tr>\n<tr><th>File format</th><td>NetCDF 4</td></tr>\n<tr><th>Conventions</th><td>Climate and Forecast (CF) Metadata Convention v1.7</td></tr>\n<tr><th>Versions</th><td>1.0 (deprecated), 1.1, 2.0 and 2.1</td></tr>\n<tr><th>Update frequency</th><td>No updates expected</td></tr>\n</table>\n\n    <p></p>\n    <table class=\"abstract-variables abstract-table\">\n    <tr><th colspan=\"3\">MAIN VARIABLES</th>\n    \n\n    <tr><th class='variables-name'>Name</th><th class='variables-units'>Units</th><th class='variables-description'>Description</th></tr>\n    \n<tr><td class='variables-name'>Grid-point altitude</td><td class='variables-units'>m</td><td class='variables-description'>The altitude of each grid-point. Values correspond to altitudes of CRU grid-points.</td></tr>\n<tr><td class='variables-name'>Near-surface air temperature</td><td class='variables-units'>K</td><td class='variables-description'>The temperature of air at 2 metres above the surface of land, sea or inland waters. Values are derived from ERA5 2m air temperature with an elevation correction and bias correction using CRU mean monthly temperature and mean diurnal temperature range.</td></tr>\n<tr><td class='variables-name'>Near-surface specific humidity</td><td class='variables-units'>kg kg<sup>-1</sup></td><td class='variables-description'>The amount of moisture in the air divided by amount of air plus moisture at that location. Values are derived from ERA5 vapor pressure and saturation vapor pressure with an elevation correction.</td></tr>\n<tr><td class='variables-name'>Near-surface wind speed</td><td class='variables-units'>m s<sup>-1</sup></td><td class='variables-description'>The horizontal speed of the wind, or movement of air, at a height of 10 metres above the surface of the Earth. Values are derived from ERA5 near-surface wind speed.</td></tr>\n<tr><td class='variables-name'>Rainfall flux</td><td class='variables-units'>kg m<sup>-2</sup> s<sup>-1</sup></td><td class='variables-description'>The rate of rain that falls to the Earth's surface. Values are derived from ERA5 total precipitation and snowfall and are bias corrected primarily using precipitation data from CRU and GPCC.</td></tr>\n<tr><td class='variables-name'>Snowfall flux</td><td class='variables-units'>kg m<sup>-2</sup> s<sup>-1</sup></td><td class='variables-description'>The rate of snow that falls to the Earth's surface. Values are derived from ERA5 total precipitation and snowfall and are bias corrected primarily using precipitation data from CRU and GPCC.</td></tr>\n<tr><td class='variables-name'>Surface air pressure</td><td class='variables-units'>Pa</td><td class='variables-description'>The pressure (force per unit area) of the atmosphere at the surface of land, sea and inland water. Values are derived from ERA5 surface air pressure with an elevation correction.</td></tr>\n<tr><td class='variables-name'>Surface downwelling longwave radiation</td><td class='variables-units'>W m<sup>-2</sup></td><td class='variables-description'>The amount of thermal (also known as longwave or terrestrial) radiation emitted by the atmosphere and clouds that reaches a horizontal plane at the surface of the Earth. Values are derived from ERA5 surface downwelling longwave radiation with an elevation correction.</td></tr>\n<tr><td class='variables-name'>Surface downwelling shortwave radiation</td><td class='variables-units'>W m<sup>-2</sup></td><td class='variables-description'>The amount of solar radiation (also known as shortwave radiation) that reaches a horizontal plane at the surface of the Earth. This parameter comprises both direct and diffuse solar radiation. Values are derived from ERA5 surface downwelling shortwave radiation and bias corrected using CRU cloud cover and effects of inter-annual changes in atmospheric aerosol loading.</td></tr>\n</table>\n    </div>",
+    "terms": [
+        "licence-to-use-copernicus-products"
+    ],
+    "constraints": [
+        {
+            "reference_dataset": [
+                "cru"
+            ],
+            "variable": [
+                "grid_point_altitude"
+            ],
+            "version": [
+                "deprecated (1.0)",
+                "1.1",
+                "2.0",
+                "2.1"
+            ]
+        },
+        {
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06",
+                "07",
+                "08",
+                "09",
+                "10",
+                "11",
+                "12"
+            ],
+            "reference_dataset": [
+                "cru"
+            ],
+            "variable": [
+                "surface_downwelling_longwave_radiation",
+                "surface_air_pressure",
+                "near_surface_specific_humidity",
+                "rainfall_flux",
+                "surface_downwelling_shortwave_radiation",
+                "snowfall_flux",
+                "near_surface_air_temperature",
+                "near_surface_wind_speed"
+            ],
+            "version": [
+                "deprecated (1.0)",
+                "1.1"
+            ],
+            "year": [
+                "1979",
+                "1980",
+                "1981",
+                "1982",
+                "1983",
+                "1984",
+                "1985",
+                "1986",
+                "1987",
+                "1988",
+                "1989",
+                "1990",
+                "1991",
+                "1992",
+                "1993",
+                "1994",
+                "1995",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2000",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ]
+        },
+        {
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06",
+                "07",
+                "08",
+                "09",
+                "10",
+                "11",
+                "12"
+            ],
+            "reference_dataset": [
+                "cru"
+            ],
+            "variable": [
+                "surface_downwelling_longwave_radiation",
+                "surface_air_pressure",
+                "near_surface_specific_humidity",
+                "rainfall_flux",
+                "surface_downwelling_shortwave_radiation",
+                "snowfall_flux",
+                "near_surface_air_temperature",
+                "near_surface_wind_speed"
+            ],
+            "version": [
+                "2.0",
+                "2.1"
+            ],
+            "year": [
+                "1979",
+                "1980",
+                "1981",
+                "1982",
+                "1983",
+                "1984",
+                "1985",
+                "1986",
+                "1987",
+                "1988",
+                "1989",
+                "1990",
+                "1991",
+                "1992",
+                "1993",
+                "1994",
+                "1995",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2000",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018",
+                "2019"
+            ]
+        },
+        {
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06",
+                "07",
+                "08",
+                "09",
+                "10",
+                "11",
+                "12"
+            ],
+            "reference_dataset": [
+                "cru_and_gpcc"
+            ],
+            "variable": [
+                "rainfall_flux",
+                "snowfall_flux"
+            ],
+            "version": [
+                "deprecated (1.0)",
+                "1.1"
+            ],
+            "year": [
+                "1979",
+                "1980",
+                "1981",
+                "1982",
+                "1983",
+                "1984",
+                "1985",
+                "1986",
+                "1987",
+                "1988",
+                "1989",
+                "1990",
+                "1991",
+                "1992",
+                "1993",
+                "1994",
+                "1995",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2000",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016"
+            ]
+        },
+        {
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06",
+                "07",
+                "08",
+                "09",
+                "10",
+                "11",
+                "12"
+            ],
+            "reference_dataset": [
+                "cru_and_gpcc"
+            ],
+            "variable": [
+                "rainfall_flux",
+                "snowfall_flux"
+            ],
+            "version": [
+                "2.0",
+                "2.1"
+            ],
+            "year": [
+                "1979",
+                "1980",
+                "1981",
+                "1982",
+                "1983",
+                "1984",
+                "1985",
+                "1986",
+                "1987",
+                "1988",
+                "1989",
+                "1990",
+                "1991",
+                "1992",
+                "1993",
+                "1994",
+                "1995",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2000",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018",
+                "2019"
+            ]
+        }
+    ]
+}

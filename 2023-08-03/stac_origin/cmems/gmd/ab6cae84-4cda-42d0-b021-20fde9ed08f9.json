@@ -1,0 +1,67 @@
+{
+  "type": "Collection",
+  "id": "ab6cae84-4cda-42d0-b021-20fde9ed08f9",
+  "stac_version": "1.0.0",
+  "description": "This dataset provide a times series of gap free map of Sea Surface Temperature (SST) foundation at high resolution on a 0.10 x 0.10 degree grid (approximately 10 x 10 km) for the Global Ocean, every 24 hours.\n\nWhereas along swath observation data essentially represent the skin or sub-skin SST, the Level 4 SST product is defined to represent the SST foundation (SSTfnd). SSTfnd is defined within GHRSST as the temperature at the base of the diurnal thermocline. It is so named because it represents the foundation temperature on which the diurnal thermocline develops during the day. SSTfnd changes only gradually along with the upper layer of the ocean, and by definition it is independent of skin SST fluctuations due to wind- and radiation-dependent diurnal stratification or skin layer response. It is therefore updated at intervals of 24 hrs. SSTfnd corresponds to the temperature of the upper mixed layer which is the part of the ocean represented by the top-most layer of grid cells in most numerical ocean models. It is never observed directly by satellites, but it comes closest to being detected by infrared and microwave radiometers during the night, when the previous day's diurnal stratification can be assumed to have decayed.\n\nThe processing combines the observations of multiple polar orbiting and geostationary satellites, embedding infrared of microwave radiometers. All these sources are intercalibrated with each other before merging. A ranking procedure is used to select the best sensor observation for each grid point. An optimal interpolation is used to fill in where observations are missing.\n\n'''DOI (product) :'''   \nhttps://doi.org/10.48670/mds-00321",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=SST_GLO_PHY_L4_NRT_010_043-TDS&product=cmems_obs-sst_glo_phy_nrt_l4_P1D-m",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_obs-sst_glo_phy_nrt_l4_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/cmems_obs-sst_glo_phy_nrt_l4_P1D-m",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_obs-sst_glo_phy_nrt_l4_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/SST_GLO_PHY_L4_NRT_010_043/cmems_obs-sst_glo_phy_nrt_l4_P1D-m",
+      "type": "WWW:FTP",
+      "title": "cmems_obs-sst_glo_phy_nrt_l4_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/cmems_obs-sst_glo_phy_nrt_l4_P1D-m",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_obs-sst_glo_phy_nrt_l4_P1D-m"
+    }
+  ],
+  "title": "ODYSSEA Global Sea Surface Temperature Gridded Level 4 Daily Multi-Sensor Observations",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -80.0,
+          180.0,
+          80.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2021-01-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "providers": [
+    {
+      "name": "Copernicus Marine Service",
+      "description": "Copernicus Marine Service - Mercator Ocean Internations",
+      "roles": [
+        "licensor",
+        "producer",
+        "processor",
+        "host"
+      ],
+      "url": "https://marine.copernicus.eu/"
+    }
+  ]
+}

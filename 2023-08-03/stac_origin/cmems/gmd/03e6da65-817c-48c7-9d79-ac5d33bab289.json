@@ -1,0 +1,439 @@
+{
+  "type": "Collection",
+  "id": "03e6da65-817c-48c7-9d79-ac5d33bab289",
+  "stac_version": "1.0.0",
+  "description": "'''Short description''':  \n\nThe BLKSEA_MULTIYEAR_PHY_007_004 product provides monthly and daily ocean fields for the Black Sea basin starting from 01/01/1993. The hydrodynamical core is based on NEMO general circulation ocean model, implemented in the BS domain with horizontal resolution of 1/27° x 1/36° and 31 vertical levels. NEMO is forced by atmospheric surface fluxes computed by bulk formulation using ECMWF ERA5 atmospheric fields at the resolution of 0.25° in space and 1-h in time. The current version has closed boundary at the Bosporus Strait. The model is online coupled to OceanVar assimilation scheme to assimilate sea level anomaly along-track observations from CMEMS and available in situ vertical profiles of temperature and salinity from both SeaDataNet and CMEMS datasets. \n\n'''Product Citation''': \nPlease refer to our Technical FAQ for citing products. http://marine.copernicus.eu/faq/cite-cmems-products-cmems-credit/?idpage=169\n\n'''DOI (Product)''': \nhttps://doi.org/10.25423/CMCC/BLKSEA_MULTIYEAR_PHY_007_004",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "ftp://my.cmems-du.eu/Core/BLKSEA_MULTIYEAR_PHY_007_004/cmems_mod_blk_phy_my_2.5km_static",
+      "type": "WWW:FTP",
+      "title": "cmems_mod_blk_phy_my_2.5km_static"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&service=BLKSEA_MULTIYEAR_PHY_007_004-TDS&product=cmems_mod_blk_phy-cur_my_2.5km_P1D-m",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_mod_blk_phy-cur_my_2.5km_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/dodsC/cmems_mod_blk_phy-cur_my_2.5km_P1D-m",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_mod_blk_phy-cur_my_2.5km_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/wms/cmems_mod_blk_phy-cur_my_2.5km_P1D-m",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_mod_blk_phy-cur_my_2.5km_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&service=BLKSEA_MULTIYEAR_PHY_007_004-TDS&product=cmems_mod_blk_phy-cur_my_2.5km_P1M-m",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_mod_blk_phy-cur_my_2.5km_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/dodsC/cmems_mod_blk_phy-cur_my_2.5km_P1M-m",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_mod_blk_phy-cur_my_2.5km_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/wms/cmems_mod_blk_phy-cur_my_2.5km_P1M-m",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_mod_blk_phy-cur_my_2.5km_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&service=BLKSEA_MULTIYEAR_PHY_007_004-TDS&product=cmems_mod_blk_phy-cur_my_2.5km_P1Y-m",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_mod_blk_phy-cur_my_2.5km_P1Y-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/dodsC/cmems_mod_blk_phy-cur_my_2.5km_P1Y-m",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_mod_blk_phy-cur_my_2.5km_P1Y-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/wms/cmems_mod_blk_phy-cur_my_2.5km_P1Y-m",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_mod_blk_phy-cur_my_2.5km_P1Y-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://my.cmems-du.eu/Core/BLKSEA_MULTIYEAR_PHY_007_004/cmems_mod_blk_phy-cur_my_2.5km-climatology_P1M-m",
+      "type": "WWW:FTP",
+      "title": "cmems_mod_blk_phy-cur_my_2.5km-climatology_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&service=BLKSEA_MULTIYEAR_PHY_007_004-TDS&product=cmems_mod_blk_phy-cur_myint_2.5km_P1M-m",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_mod_blk_phy-cur_myint_2.5km_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/dodsC/cmems_mod_blk_phy-cur_myint_2.5km_P1M-m",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_mod_blk_phy-cur_myint_2.5km_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/wms/cmems_mod_blk_phy-cur_myint_2.5km_P1M-m",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_mod_blk_phy-cur_myint_2.5km_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&service=BLKSEA_MULTIYEAR_PHY_007_004-TDS&product=cmems_mod_blk_phy-mld_my_2.5km_P1D-m",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_mod_blk_phy-mld_my_2.5km_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/dodsC/cmems_mod_blk_phy-mld_my_2.5km_P1D-m",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_mod_blk_phy-mld_my_2.5km_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/wms/cmems_mod_blk_phy-mld_my_2.5km_P1D-m",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_mod_blk_phy-mld_my_2.5km_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&service=BLKSEA_MULTIYEAR_PHY_007_004-TDS&product=cmems_mod_blk_phy-mld_my_2.5km_P1M-m",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_mod_blk_phy-mld_my_2.5km_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/dodsC/cmems_mod_blk_phy-mld_my_2.5km_P1M-m",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_mod_blk_phy-mld_my_2.5km_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/wms/cmems_mod_blk_phy-mld_my_2.5km_P1M-m",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_mod_blk_phy-mld_my_2.5km_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&service=BLKSEA_MULTIYEAR_PHY_007_004-TDS&product=cmems_mod_blk_phy-mld_my_2.5km_P1Y-m",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_mod_blk_phy-mld_my_2.5km_P1Y-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/dodsC/cmems_mod_blk_phy-mld_my_2.5km_P1Y-m",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_mod_blk_phy-mld_my_2.5km_P1Y-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/wms/cmems_mod_blk_phy-mld_my_2.5km_P1Y-m",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_mod_blk_phy-mld_my_2.5km_P1Y-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://my.cmems-du.eu/Core/BLKSEA_MULTIYEAR_PHY_007_004/cmems_mod_blk_phy-mld_my_2.5km-climatology_P1M-m",
+      "type": "WWW:FTP",
+      "title": "cmems_mod_blk_phy-mld_my_2.5km-climatology_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&service=BLKSEA_MULTIYEAR_PHY_007_004-TDS&product=cmems_mod_blk_phy-mld_myint_2.5km_P1M-m",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_mod_blk_phy-mld_myint_2.5km_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/dodsC/cmems_mod_blk_phy-mld_myint_2.5km_P1M-m",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_mod_blk_phy-mld_myint_2.5km_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/wms/cmems_mod_blk_phy-mld_myint_2.5km_P1M-m",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_mod_blk_phy-mld_myint_2.5km_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&service=BLKSEA_MULTIYEAR_PHY_007_004-TDS&product=cmems_mod_blk_phy-sal_my_2.5km_P1D-m",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_mod_blk_phy-sal_my_2.5km_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/dodsC/cmems_mod_blk_phy-sal_my_2.5km_P1D-m",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_mod_blk_phy-sal_my_2.5km_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/wms/cmems_mod_blk_phy-sal_my_2.5km_P1D-m",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_mod_blk_phy-sal_my_2.5km_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&service=BLKSEA_MULTIYEAR_PHY_007_004-TDS&product=cmems_mod_blk_phy-sal_my_2.5km_P1M-m",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_mod_blk_phy-sal_my_2.5km_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/dodsC/cmems_mod_blk_phy-sal_my_2.5km_P1M-m",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_mod_blk_phy-sal_my_2.5km_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/wms/cmems_mod_blk_phy-sal_my_2.5km_P1M-m",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_mod_blk_phy-sal_my_2.5km_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&service=BLKSEA_MULTIYEAR_PHY_007_004-TDS&product=cmems_mod_blk_phy-sal_my_2.5km_P1Y-m",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_mod_blk_phy-sal_my_2.5km_P1Y-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/dodsC/cmems_mod_blk_phy-sal_my_2.5km_P1Y-m",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_mod_blk_phy-sal_my_2.5km_P1Y-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/wms/cmems_mod_blk_phy-sal_my_2.5km_P1Y-m",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_mod_blk_phy-sal_my_2.5km_P1Y-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://my.cmems-du.eu/Core/BLKSEA_MULTIYEAR_PHY_007_004/cmems_mod_blk_phy-sal_my_2.5km-climatology_P1M-m",
+      "type": "WWW:FTP",
+      "title": "cmems_mod_blk_phy-sal_my_2.5km-climatology_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&service=BLKSEA_MULTIYEAR_PHY_007_004-TDS&product=cmems_mod_blk_phy-sal_myint_2.5km_P1M-m",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_mod_blk_phy-sal_myint_2.5km_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/dodsC/cmems_mod_blk_phy-sal_myint_2.5km_P1M-m",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_mod_blk_phy-sal_myint_2.5km_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/wms/cmems_mod_blk_phy-sal_myint_2.5km_P1M-m",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_mod_blk_phy-sal_myint_2.5km_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&service=BLKSEA_MULTIYEAR_PHY_007_004-TDS&product=cmems_mod_blk_phy-ssh_my_2.5km_P1D-m",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_mod_blk_phy-ssh_my_2.5km_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/dodsC/cmems_mod_blk_phy-ssh_my_2.5km_P1D-m",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_mod_blk_phy-ssh_my_2.5km_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/wms/cmems_mod_blk_phy-ssh_my_2.5km_P1D-m",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_mod_blk_phy-ssh_my_2.5km_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&service=BLKSEA_MULTIYEAR_PHY_007_004-TDS&product=cmems_mod_blk_phy-ssh_my_2.5km_P1M-m",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_mod_blk_phy-ssh_my_2.5km_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/dodsC/cmems_mod_blk_phy-ssh_my_2.5km_P1M-m",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_mod_blk_phy-ssh_my_2.5km_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/wms/cmems_mod_blk_phy-ssh_my_2.5km_P1M-m",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_mod_blk_phy-ssh_my_2.5km_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&service=BLKSEA_MULTIYEAR_PHY_007_004-TDS&product=cmems_mod_blk_phy-ssh_my_2.5km_P1Y-m",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_mod_blk_phy-ssh_my_2.5km_P1Y-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/dodsC/cmems_mod_blk_phy-ssh_my_2.5km_P1Y-m",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_mod_blk_phy-ssh_my_2.5km_P1Y-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/wms/cmems_mod_blk_phy-ssh_my_2.5km_P1Y-m",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_mod_blk_phy-ssh_my_2.5km_P1Y-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://my.cmems-du.eu/Core/BLKSEA_MULTIYEAR_PHY_007_004/cmems_mod_blk_phy-ssh_my_2.5km-climatology_P1M-m",
+      "type": "WWW:FTP",
+      "title": "cmems_mod_blk_phy-ssh_my_2.5km-climatology_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&service=BLKSEA_MULTIYEAR_PHY_007_004-TDS&product=cmems_mod_blk_phy-ssh_myint_2.5km_P1M-m",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_mod_blk_phy-ssh_myint_2.5km_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/dodsC/cmems_mod_blk_phy-ssh_myint_2.5km_P1M-m",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_mod_blk_phy-ssh_myint_2.5km_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/wms/cmems_mod_blk_phy-ssh_myint_2.5km_P1M-m",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_mod_blk_phy-ssh_myint_2.5km_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&service=BLKSEA_MULTIYEAR_PHY_007_004-TDS&product=cmems_mod_blk_phy-tem_my_2.5km_P1D-m",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_mod_blk_phy-tem_my_2.5km_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/dodsC/cmems_mod_blk_phy-tem_my_2.5km_P1D-m",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_mod_blk_phy-tem_my_2.5km_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/wms/cmems_mod_blk_phy-tem_my_2.5km_P1D-m",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_mod_blk_phy-tem_my_2.5km_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&service=BLKSEA_MULTIYEAR_PHY_007_004-TDS&product=cmems_mod_blk_phy-tem_my_2.5km_P1M-m",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_mod_blk_phy-tem_my_2.5km_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/dodsC/cmems_mod_blk_phy-tem_my_2.5km_P1M-m",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_mod_blk_phy-tem_my_2.5km_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/wms/cmems_mod_blk_phy-tem_my_2.5km_P1M-m",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_mod_blk_phy-tem_my_2.5km_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&service=BLKSEA_MULTIYEAR_PHY_007_004-TDS&product=cmems_mod_blk_phy-tem_my_2.5km_P1Y-m",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_mod_blk_phy-tem_my_2.5km_P1Y-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/dodsC/cmems_mod_blk_phy-tem_my_2.5km_P1Y-m",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_mod_blk_phy-tem_my_2.5km_P1Y-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/wms/cmems_mod_blk_phy-tem_my_2.5km_P1Y-m",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_mod_blk_phy-tem_my_2.5km_P1Y-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://my.cmems-du.eu/Core/BLKSEA_MULTIYEAR_PHY_007_004/cmems_mod_blk_phy-tem_my_2.5km-climatology_P1M-m",
+      "type": "WWW:FTP",
+      "title": "cmems_mod_blk_phy-tem_my_2.5km-climatology_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&service=BLKSEA_MULTIYEAR_PHY_007_004-TDS&product=cmems_mod_blk_phy-tem_myint_2.5km_P1M-m",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_mod_blk_phy-tem_myint_2.5km_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/dodsC/cmems_mod_blk_phy-tem_myint_2.5km_P1M-m",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_mod_blk_phy-tem_myint_2.5km_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/wms/cmems_mod_blk_phy-tem_myint_2.5km_P1M-m",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_mod_blk_phy-tem_myint_2.5km_P1M-m"
+    }
+  ],
+  "title": "Black Sea Physics Reanalysis",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          27.32,
+          40.86,
+          41.96,
+          46.8
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1993-01-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "providers": [
+    {
+      "name": "Copernicus Marine Service",
+      "description": "Copernicus Marine Service - Mercator Ocean Internations",
+      "roles": [
+        "licensor",
+        "producer",
+        "processor",
+        "host"
+      ],
+      "url": "https://marine.copernicus.eu/"
+    }
+  ]
+}

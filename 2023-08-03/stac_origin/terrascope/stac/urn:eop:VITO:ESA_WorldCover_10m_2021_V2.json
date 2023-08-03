@@ -1,0 +1,72 @@
+{
+    "type": "Collection",
+    "stac_version": "1.0.0",
+    "id": "urn:eop:VITO:ESA_WorldCover_10m_2021_V2",
+    "title": "ESA WorldCover 2021 products 10 meter COG format",
+    "description": "The WorldCover product will be released per 3 x 3 degree tile.",
+    "license": "ESA WorldCover 2021 products are available on a free basis for the general public under the terms and conditions of the Licence found at https://creativecommons.org/licenses/by/4.0/. The products contain modified Copernicus Sentinel data 2021 see https://sentinel.esa.int/documents/247904/690755/Sentinel_Data_Legal_Notice",
+    "keywords": [
+        "VITO",
+        "COPERNICUS",
+        "ESA",
+        "Land Cover",
+        "Sentinel-1",
+        "Sentinel-2",
+        "Environment",
+        "WorldCover"
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180.0,
+                    -90.0,
+                    180.0,
+                    90.0
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2022-06-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "summaries": {
+        "datetime": {
+            "min": "2022-06-01T00:00:00Z"
+        },
+        "constellation": [
+            "Sentinel-2",
+            "Sentinel-1"
+        ],
+        "instruments": [
+            "C-SAR",
+            "MSI"
+        ]
+    },
+    "links": [
+        {
+            "rel": "self",
+            "type": "application/json",
+            "href": "https://services.terrascope.be/stac/collections/urn:eop:VITO:ESA_WorldCover_10m_2021_V2"
+        },
+        {
+            "rel": "parent",
+            "type": "application/json",
+            "href": "https://services.terrascope.be/stac/"
+        },
+        {
+            "rel": "items",
+            "type": "application/geo+json",
+            "href": "https://services.terrascope.be/stac/collections/urn:eop:VITO:ESA_WorldCover_10m_2021_V2/items"
+        },
+        {
+            "rel": "root",
+            "type": "application/json",
+            "href": "https://services.terrascope.be/stac/"
+        }
+    ]
+}

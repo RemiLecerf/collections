@@ -1,0 +1,69 @@
+{
+  "type": "Collection",
+  "id": "eu.copernicus.climate.derived-reanalysis-energy-moisture-budget",
+  "stac_version": "1.0.0",
+  "description": "This dataset provides monthly means of mass-consistent, vertically integrated, atmospheric energy and moisture budget quantities derived from 1-hourly ERA5 reanalysis data. \nThe vertically integrated budget diagnostics include the tendencies and lateral fluxes of total energy, water vapour, and latent heat (with the latent heat of vaporization varying with temperature). In addition, the divergences of the lateral fluxes are provided. \nThese divergences and  fluxes are also available in the ERA5 archive, but do not employ mass-consistent horizontal wind fields and are contaminated with numerical noise. In the present dataset, mass consistency is achieved by iteratively adjusting the horizontal wind field at every time step. \nThe divergence and tendency terms from this dataset can be combined to indirectly estimate mass-consistent surface flux terms of the atmospheric energy and moisture budget. In the energy budget, horizontal and vertical enthalpy fluxes associated with water and snow are neglected. This framework allows for unambiguous estimation of net surface heat fluxes (sum of radiative and turbulent heat fluxes) when combined with net radiative fluxes  at the top of the atmosphere (not included in this dataset).  The divergence and tendency term of the atmospheric moisture budget can be combined to indirectly estimate surface freshwater fluxes (P+E) which have an unbiased global mean.\nIn addition,  this dataset allows the computation of the following:\n\n\nThe divergence of total energy flux with temperature-independent latent heat of vaporization is obtained by subtracting the divergence of latent heat flux and add the divergence of water vapour flux multiplied by Lv = 2.5008 J kg-1 instead (this works analogously for tendency and transport terms).\n\n\nDivergence fields with full spectral resolution can be derived from corresponding east- and northward transports (divergence terms in this dataset are truncated at wave number 180 to reduce artificial noise over high topography).  \n\n\nThis dataset is produced on behalf of Copernicus Climate Change Service by the Department of Meteorology and Geophysics, University of Vienna.\n\nVariables in the dataset/application are:\nDivergence of vertical integral of  latent heat flux, Divergence of vertical integral of  total energy flux, Divergence of vertical integral of  water vapour flux, Tendency of vertical integral of  latent heat, Tendency of vertical integral of  total energy, Tendency of vertical integral of water vapour, Vertical integral of eastward  latent heat flux, Vertical integral of eastward total energy flux, Vertical integral of eastward water vapour flux, Vertical integral of northward  latent heat flux, Vertical integral of northward total energy flux, Vertical integral of northward water vapour flux",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.c2451f6b",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Climate Data Store catalogue"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://confluence.ecmwf.int/x/hwCIDw",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Product user guide"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://doi.org/10.1175/JCLI-D-20-0676.1",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Consistency and Homogeneity of Atmospheric Energy, Moisture, and Mass Budgets in ERA5 (.1)"
+    }
+  ],
+  "title": "Mass-consistent atmospheric energy and moisture budget monthly data from 1979 to present derived from ERA5 reanalysis",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1979-01-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Atmospheric conditions",
+    "Product type: Reanalysis",
+    "Provider: Copernicus C3S",
+    "Spatial coverage: Global",
+    "Temporal coverage: Past",
+    "Variable domain: Atmosphere (upper air)"
+  ],
+  "providers": [
+    {
+      "name": "Climate Data Store - European Centre for Medium-Range Weather Forecasts (ECMWF)",
+      "description": "Climate Data Store - ECMWF",
+      "roles": [
+        "licensor",
+        "producer",
+        "processor",
+        "host"
+      ],
+      "url": "https://cds.climate.copernicus.eu/"
+    }
+  ]
+}

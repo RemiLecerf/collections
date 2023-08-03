@@ -1,0 +1,324 @@
+{
+    "slug": "agroclimatic-indicators-from-1951-to-2099-derived-from-climate-projections",
+    "name": "sis-agroclimatic-indicators",
+    "id": "eu.copernicus.climate.sis-agroclimatic-indicators",
+    "type": "dataset",
+    "rich_abstract": "<div class='abstract-text'>\n         <p>This dataset provides agroclimatic indicators used to characterise plant-climate interactions for global agriculture. Agroclimatic indicators are useful in conveying climate variability and change in the terms that are meaningful to the agricultural sector. The objective of this dataset is to provide these indicators at a global scale in an easily accessible and usable format for further downstream analysis and the forcing of agricultural impact models.</p>\n<p>ERA-interim reanalysis and bias-corrected climate datasets have been used to generate the agroclimatic indicators for historical and future time periods. The input data was provided through the Inter-Sectoral Impact Model Intercomparison Project (ISIMIP), of which the ISIMIP Fast Track product was used. This product contains daily, biased-corrected, climate data from 5 CMIP5 General Circulation Models covering the period 1951-2099 (historical run up to 2005). The agroclimatic indicators were also generated using the WFDEI (Watch Forcing Data methodology applied to ERA-Interim) for the 1981-2010 climatological period. A total of 26 indicators are provided in this dataset at a spatial resolution of 0.5\u00b0x0.5\u00b0 on a lat-lon grid. The temporal resolution of the variables differs depending on the indicator - they are available at 10 consecutive days (10-day), seasonal or annual resolution.</p>\n<p>Agroclimatic indicators are often used in species distribution modelling to study phenological developments of plants under varying climate conditions. For many users in the agricultural community, assessments of crop development for the current or future cropping seasons are particularly important. This is especially true for the agro-policy and the agro-business communities, as early indications of production anomalies are of paramount importance for tax/subsidies and price volatility. The provision of pre-computed agroclimatic indicators make them readily available to the user and will facilitate the use of climate data by the agricultural community.</p>\n<p>The data was produced on behalf of the Copernicus Climate Change Service.</p>\n         \n         \n            <p></p>\n            <table class=\"abstract-description abstract-table\">\n            <tr><th colspan=\"2\">DATA DESCRIPTION</th>\n            \n<tr><th>Data type</th><td>Gridded</td></tr>\n<tr><th>Projection</th><td>Regular latitude-longitude grid</td></tr>\n<tr><th>Horizontal coverage</th><td>Global</td></tr>\n<tr><th>Horizontal resolution</th><td>0.5\u00b0 x 0.5\u00b0</td></tr>\n<tr><th>Vertical coverage</th><td>Surface</td></tr>\n<tr><th>Vertical resolution</th><td>Single level</td></tr>\n<tr><th>Temporal coverage</th><td>1951 to 2099</td></tr>\n<tr><th>Temporal resolution</th><td>Variable dependent: 10-day, seasonal or annual</td></tr>\n<tr><th>File format</th><td>NetCDF-4</td></tr>\n<tr><th>Conventions</th><td>Climate and Forecast (CF) Metadata Convention v1.7</td></tr>\n<tr><th>Versions</th><td>Version 1.1 is an extension of 1.0 where the BEDD and SD variables are provided for a range of temperature thresholds</td></tr>\n<tr><th>Update frequency</th><td>No updates expected</td></tr>\n</table>\n\n    <p></p>\n    <table class=\"abstract-variables abstract-table\">\n    <tr><th colspan=\"3\">MAIN VARIABLES</th>\n    \n\n    <tr><th class='variables-name'>Name</th><th class='variables-units'>Units</th><th class='variables-description'>Description</th></tr>\n    \n<tr><td class='variables-name'>Biologically effective degree days</td><td class='variables-units'>\u00b0C</td><td class='variables-description'>Sum of daily mean temperatures (TG) above 10\u00b0C and less than 30\u00b0C, over 10 days.</td></tr>\n<tr><td class='variables-name'>Cold spell duration index</td><td class='variables-units'>day</td><td class='variables-description'>Number of days per season with at least 6 consecutive days when TN &lt; TN<sup>10th,</sup> where TN is the daily minimum temperature and TN<sup>10th</sup> is the calendar day 10th percentile. To calculate TN<sup>10th</sup> for each day, a 5-day window centered on each equivalent day in the 1981-2010 period is used to improve the statistical robustness from which the 10th percentile of the data is selected  (e.g. for all 3rd of July days between 1981-2010, the 1st, 2nd, 3rd, 4th, 5th July are selected in the 5-day window). This indicator provides information on reduced blossom formation or reduced growth.</td></tr>\n<tr><td class='variables-name'>Frost days</td><td class='variables-units'>day</td><td class='variables-description'>Number of days per 10 days when TN &lt; 0\u00b0C, where TN is the daily minimum temperature. This indicator provides information on frost damage.</td></tr>\n<tr><td class='variables-name'>Growing season length</td><td class='variables-units'>day</td><td class='variables-description'>Number of days between the first occurrence after 1st January (1st July in southern hemisphere) of at least 6 consecutive days with TG &gt; 5\u00b0C and the first occurrence after 1st July (1st January in southern hemisphere) of at least 6 consecutive days with TG &lt; 5\u00b0C, where TG is the daily mean temperature. This indicator provides an indication whether or not a crop, or a combination of crops, can be sown and subsequently reach maturity within a certain time frame.</td></tr>\n<tr><td class='variables-name'>Heavy precipitation days</td><td class='variables-units'>day</td><td class='variables-description'>Number of days per 10 days when RR &gt; 10mm, where RR is the daily precipitation sum. This indicator provides information on crop damage and runoff losses.</td></tr>\n<tr><td class='variables-name'>Ice days</td><td class='variables-units'>day</td><td class='variables-description'>Number of days per 10 days when TX &lt; 0\u00b0C, where TX is the daily maximum temperature. This indicator provides information on frost damage.</td></tr>\n<tr><td class='variables-name'>Maximum number of consecutive dry days</td><td class='variables-units'>day</td><td class='variables-description'>Longest period of consecutive days when RR &lt; 1mm, where RR is the daily precipitation sum. This indicator is used for drought monitoring.</td></tr>\n<tr><td class='variables-name'>Maximum number of consecutive frost days</td><td class='variables-units'>day</td><td class='variables-description'>Longest period of consecutive days when TN &lt; 0\u00b0C, where TN is the daily minimum temperature. This indicator is used as a general frost damage indicator.</td></tr>\n<tr><td class='variables-name'>Maximum number of consecutive summer days</td><td class='variables-units'>day</td><td class='variables-description'>Longest period of consecutive days when TX &gt; 25\u00b0C, where TX is the daily maximum temperature. This indicator provides information on drought stress or on optimal growth for C4 crops (crops that use the C4 carbon fixation pathway, e.g. maize).</td></tr>\n<tr><td class='variables-name'>Maximum number of consecutive wet days</td><td class='variables-units'>day</td><td class='variables-description'>Longest period of consecutive days when RR &gt; 1mm, where RR is the daily precipitation sum. This indicator provides information on drought, oxygen stress and crop growth (i.e. less radiation interception during rainy days).</td></tr>\n<tr><td class='variables-name'>Maximum of daily maximum temperature</td><td class='variables-units'>K</td><td class='variables-description'>Maximum value of TX over 10 days, where TX is the daily maximum temperature. This indicator provides information on long-term climate variability and change.</td></tr>\n<tr><td class='variables-name'>Maximum of daily minimum temperature</td><td class='variables-units'>K</td><td class='variables-description'>Maximum value of TN over 10 days, where TN is the daily minimum temperature. This indicator provides information on long-term climate variability and change.</td></tr>\n<tr><td class='variables-name'>Mean of daily maximum temperature</td><td class='variables-units'>K</td><td class='variables-description'>Mean value of TX over 10 days, where TX is the daily maximum temperature. This indicator provides information on long-term climate variability and change.</td></tr>\n<tr><td class='variables-name'>Mean of daily mean temperature</td><td class='variables-units'>K</td><td class='variables-description'>Mean value of TG over 10 days, where TG is the daily mean temperature. This indicator provides information on long-term climate variability and change.</td></tr>\n<tr><td class='variables-name'>Mean of daily minimum temperature</td><td class='variables-units'>K</td><td class='variables-description'>Mean value of TN over 10 days, where TN is the daily minimum temperature. This indicator provides information on long-term climate variability and change.</td></tr>\n<tr><td class='variables-name'>Mean of diurnal temperature range</td><td class='variables-units'>\u00b0C</td><td class='variables-description'>Mean value of the daily difference between TX and TN (TX-TN) over 10 days, where TX and TN are daily maximum and minimum temperature respectively. This indicator provides information on climate variability and change. It also serves as a proxy for information on the clarity (transmittance) of the atmosphere.</td></tr>\n<tr><td class='variables-name'>Minimum of daily maximum temperature</td><td class='variables-units'>K</td><td class='variables-description'>Minimum value of TX over 10 days, where TX is the daily maximum temperature. This indicator provides information on long-term climate variability and change.</td></tr>\n<tr><td class='variables-name'>Minimum of daily minimum temperature</td><td class='variables-units'>K</td><td class='variables-description'>Minimum value of TN over 10 days, where TN is the daily minimum temperature. This indicator provides information on long-term climate variability and change.</td></tr>\n<tr><td class='variables-name'>Precipitation sum</td><td class='variables-units'>mm</td><td class='variables-description'>Sum of RR over 10 days, where RR is the daily precipitation sum. This indicator provides information on possible water shortage or excess.</td></tr>\n<tr><td class='variables-name'>Simple daily intensity index</td><td class='variables-units'>mm</td><td class='variables-description'>Mean of RR over 10 days in which RR &gt; 1mm (wet days), where RR is the daily precipitation sum. This indicator provides information on possible runoff losses.</td></tr>\n<tr><td class='variables-name'>Summer days</td><td class='variables-units'>day</td><td class='variables-description'>Number of days per 10 days when TX &gt; 25\u00b0C, where TX is the daily maximum temperature. This indicator provides an indication of the occurrence of heat stress.</td></tr>\n<tr><td class='variables-name'>Tropical nights</td><td class='variables-units'>day</td><td class='variables-description'>Number of days per 10 days when TN &gt; 20\u00b0C, where TN is the daily minimum temperature. This indicator provides an indication of occurrence of various pests.</td></tr>\n<tr><td class='variables-name'>Very heavy precipitation days</td><td class='variables-units'>day</td><td class='variables-description'>Number of days per 10 days when RR &gt; 20mm, where RR is the daily precipitation sum. This indicator provides information on crop damage and runoff losses.</td></tr>\n<tr><td class='variables-name'>Warm and wet days</td><td class='variables-units'>day</td><td class='variables-description'>Number of days per 10 days when TG &gt; TG<sup>75th</sup> and RR &gt; RR<sup>75th;</sup> where TG is the daily mean temperature, TG<sup>75th</sup> is the calendar day 75th percentile, RR is the daily precipitation sum and RR<sup>75th</sup> is the 75<sup>th</sup> percentile of precipitation on wet days. To calculate TG<sup>75th</sup> and RR<sup>75</sup> for each day, a 5-day window centered on each equivalent day in the 1981-2010 period is used to improve the statistical robustness from which the 75th percentile of the data is selected (e.g. for all the 3rd of July days between 1981-2010, the 1st, 2nd, 3rd, 4th, 5th July are selected in the 5-day window). This indicator provides an indication of occurrence of various pests and the crop development, especially leaf formation.</td></tr>\n<tr><td class='variables-name'>Warm spell duration index</td><td class='variables-units'>day</td><td class='variables-description'>Number of days per season with at least 6 consecutive days when TX &gt; TX<sup>90th,</sup> where TX is the daily maximum temperature and TX<sup>90th</sup> is the calendar day 90th percentile. To calculate TX<sup>90th</sup> for each day, a 5-day window centered on each equivalent day in the 1981-2010 period is used to improve the statistical robustness from which the 90<sup>th</sup> percentile of the data is selected (e.g. for all the 3rd of July days between 1981-2010, the 1st, 2nd, 3rd, 4th, 5th July are selected in the 5-day window). This indicator provides an indication of the occurrence of heat stress.</td></tr>\n<tr><td class='variables-name'>Wet days</td><td class='variables-units'>day</td><td class='variables-description'>Number of days per 10 days when RR &gt; 1mm, where RR is the daily precipitation sum. This indicator provides information on intercepted reduction.</td></tr>\n</table>\n    </div>",
+    "terms": [
+        "licence-to-use-copernicus-products"
+    ],
+    "constraints": [
+        {
+            "experiment": [
+                "historical"
+            ],
+            "origin": [
+                "era_interim_reanalysis",
+                "gfdl_esm2m_model",
+                "hadgem2_es_model",
+                "ipsl_cm5a_lr_model",
+                "miroc_esm_chem_model",
+                "noresm1_m_model"
+            ],
+            "period": [
+                "198101_201012"
+            ],
+            "temporal_aggregation": [
+                "10_day"
+            ],
+            "variable": [
+                "biologically_effective_degree_days",
+                "mean_of_diurnal_temperature_range",
+                "frost_days",
+                "ice_days",
+                "heavy_precipitation_days",
+                "very_heavy_precipitation_days",
+                "precipitation_sum",
+                "wet_days",
+                "simple_daily_intensity_index",
+                "summer_days",
+                "mean_of_daily_mean_temperature",
+                "mean_of_daily_minimum_temperature",
+                "minimum_of_daily_minimum_temperature",
+                "maximum_of_daily_minimum_temperature",
+                "tropical_nights",
+                "mean_of_daily_maximum_temperature",
+                "minimum_of_daily_maximum_temperature",
+                "maximum_of_daily_maximum_temperature"
+            ],
+            "version": [
+                "1.0",
+                "1.1"
+            ]
+        },
+        {
+            "experiment": [
+                "historical"
+            ],
+            "origin": [
+                "era_interim_reanalysis",
+                "gfdl_esm2m_model",
+                "hadgem2_es_model",
+                "ipsl_cm5a_lr_model",
+                "miroc_esm_chem_model",
+                "noresm1_m_model"
+            ],
+            "period": [
+                "198101_201012"
+            ],
+            "temporal_aggregation": [
+                "season"
+            ],
+            "variable": [
+                "maximum_number_of_consecutive_dry_days",
+                "maximum_number_of_consecutive_frost_days",
+                "cold_spell_duration_index",
+                "maximum_number_of_consecutive_summer_days",
+                "maximum_number_of_consecutive_wet_days",
+                "warm_spell_duration_index",
+                "warm_and_wet_days"
+            ],
+            "version": [
+                "1.0",
+                "1.1"
+            ]
+        },
+        {
+            "experiment": [
+                "historical"
+            ],
+            "origin": [
+                "era_interim_reanalysis",
+                "gfdl_esm2m_model",
+                "hadgem2_es_model",
+                "ipsl_cm5a_lr_model",
+                "miroc_esm_chem_model",
+                "noresm1_m_model"
+            ],
+            "period": [
+                "198101_201012"
+            ],
+            "temporal_aggregation": [
+                "annual"
+            ],
+            "variable": [
+                "growing_season_length"
+            ],
+            "version": [
+                "1.0",
+                "1.1"
+            ]
+        },
+        {
+            "experiment": [
+                "historical"
+            ],
+            "origin": [
+                "gfdl_esm2m_model",
+                "hadgem2_es_model",
+                "ipsl_cm5a_lr_model",
+                "miroc_esm_chem_model",
+                "noresm1_m_model"
+            ],
+            "period": [
+                "195101_198012"
+            ],
+            "temporal_aggregation": [
+                "10_day"
+            ],
+            "variable": [
+                "biologically_effective_degree_days",
+                "mean_of_diurnal_temperature_range",
+                "frost_days",
+                "ice_days",
+                "heavy_precipitation_days",
+                "very_heavy_precipitation_days",
+                "precipitation_sum",
+                "wet_days",
+                "simple_daily_intensity_index",
+                "summer_days",
+                "mean_of_daily_mean_temperature",
+                "mean_of_daily_minimum_temperature",
+                "minimum_of_daily_minimum_temperature",
+                "maximum_of_daily_minimum_temperature",
+                "tropical_nights",
+                "mean_of_daily_maximum_temperature",
+                "minimum_of_daily_maximum_temperature",
+                "maximum_of_daily_maximum_temperature"
+            ],
+            "version": [
+                "1.0",
+                "1.1"
+            ]
+        },
+        {
+            "experiment": [
+                "historical"
+            ],
+            "origin": [
+                "gfdl_esm2m_model",
+                "hadgem2_es_model",
+                "ipsl_cm5a_lr_model",
+                "miroc_esm_chem_model",
+                "noresm1_m_model"
+            ],
+            "period": [
+                "195101_198012"
+            ],
+            "temporal_aggregation": [
+                "season"
+            ],
+            "variable": [
+                "maximum_number_of_consecutive_dry_days",
+                "maximum_number_of_consecutive_frost_days",
+                "cold_spell_duration_index",
+                "maximum_number_of_consecutive_summer_days",
+                "maximum_number_of_consecutive_wet_days",
+                "warm_spell_duration_index",
+                "warm_and_wet_days"
+            ],
+            "version": [
+                "1.0",
+                "1.1"
+            ]
+        },
+        {
+            "experiment": [
+                "historical"
+            ],
+            "origin": [
+                "gfdl_esm2m_model",
+                "hadgem2_es_model",
+                "ipsl_cm5a_lr_model",
+                "miroc_esm_chem_model",
+                "noresm1_m_model"
+            ],
+            "period": [
+                "195101_198012"
+            ],
+            "temporal_aggregation": [
+                "annual"
+            ],
+            "variable": [
+                "growing_season_length"
+            ],
+            "version": [
+                "1.0",
+                "1.1"
+            ]
+        },
+        {
+            "experiment": [
+                "rcp2_6",
+                "rcp4_5",
+                "rcp6_0",
+                "rcp8_5"
+            ],
+            "origin": [
+                "gfdl_esm2m_model",
+                "hadgem2_es_model",
+                "ipsl_cm5a_lr_model",
+                "miroc_esm_chem_model",
+                "noresm1_m_model"
+            ],
+            "period": [
+                "201101_204012",
+                "204101_207012",
+                "207101_209912"
+            ],
+            "temporal_aggregation": [
+                "10_day"
+            ],
+            "variable": [
+                "biologically_effective_degree_days",
+                "mean_of_diurnal_temperature_range",
+                "frost_days",
+                "ice_days",
+                "heavy_precipitation_days",
+                "very_heavy_precipitation_days",
+                "precipitation_sum",
+                "wet_days",
+                "simple_daily_intensity_index",
+                "summer_days",
+                "mean_of_daily_mean_temperature",
+                "mean_of_daily_minimum_temperature",
+                "minimum_of_daily_minimum_temperature",
+                "maximum_of_daily_minimum_temperature",
+                "tropical_nights",
+                "mean_of_daily_maximum_temperature",
+                "minimum_of_daily_maximum_temperature",
+                "maximum_of_daily_maximum_temperature"
+            ],
+            "version": [
+                "1.0",
+                "1.1"
+            ]
+        },
+        {
+            "experiment": [
+                "rcp2_6",
+                "rcp4_5",
+                "rcp6_0",
+                "rcp8_5"
+            ],
+            "origin": [
+                "gfdl_esm2m_model",
+                "hadgem2_es_model",
+                "ipsl_cm5a_lr_model",
+                "miroc_esm_chem_model",
+                "noresm1_m_model"
+            ],
+            "period": [
+                "201101_204012",
+                "204101_207012",
+                "207101_209912"
+            ],
+            "temporal_aggregation": [
+                "season"
+            ],
+            "variable": [
+                "maximum_number_of_consecutive_dry_days",
+                "maximum_number_of_consecutive_frost_days",
+                "cold_spell_duration_index",
+                "maximum_number_of_consecutive_summer_days",
+                "maximum_number_of_consecutive_wet_days",
+                "warm_spell_duration_index",
+                "warm_and_wet_days"
+            ],
+            "version": [
+                "1.0",
+                "1.1"
+            ]
+        },
+        {
+            "experiment": [
+                "rcp2_6",
+                "rcp4_5",
+                "rcp6_0",
+                "rcp8_5"
+            ],
+            "origin": [
+                "gfdl_esm2m_model",
+                "hadgem2_es_model",
+                "ipsl_cm5a_lr_model",
+                "miroc_esm_chem_model",
+                "noresm1_m_model"
+            ],
+            "period": [
+                "201101_204012",
+                "204101_207012",
+                "207101_209912"
+            ],
+            "temporal_aggregation": [
+                "annual"
+            ],
+            "variable": [
+                "growing_season_length"
+            ],
+            "version": [
+                "1.0",
+                "1.1"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,88 @@
+{
+  "type": "Collection",
+  "id": "EO:MO:DAT:SST_BS_SST_L3S_NRT_OBSERVATIONS_010_013",
+  "stac_version": "1.0.0",
+  "description": "'''Short description:''' \n\nFor the Black Sea (BS), the CNR BS Sea Surface Temperature (SST) processing chain provides supercollated (merged multisensor, L3S) SST data remapped over the Black Sea at high (1/16°)  and Ultra High (0.01°) spatial resolution, representative of nighttime SST values (00:00 UTC). The L3S SST data are produced selecting only the highest quality input data from input L2P/L3P images within a strict temporal window (local nightime), to avoid diurnal cycle and cloud contamination. Consequently, the L3S processing is run daily, but L3S files are produced only if valid SST measurements are present on the area considered.\n\n'''DOI (product) :'''   \nhttps://doi.org/10.48670/moi-00158",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/SST_BS_SST_L3S_NRT_OBSERVATIONS_010_013_b",
+      "type": "WWW:OPENDAP",
+      "title": "SST_BS_SST_L3S_NRT_OBSERVATIONS_010_013_b"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/SST_BS_SST_L3S_NRT_OBSERVATIONS_010_013_b",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "SST_BS_SST_L3S_NRT_OBSERVATIONS_010_013_b"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/SST_BS_SST_L3S_NRT_OBSERVATIONS_010_013/SST_BS_SST_L3S_NRT_OBSERVATIONS_010_013_a",
+      "type": "WWW:FTP",
+      "title": "SST_BS_SST_L3S_NRT_OBSERVATIONS_010_013_a"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=SST_BS_SST_L3S_NRT_OBSERVATIONS_010_013-TDS&product=SST_BS_SST_L3S_NRT_OBSERVATIONS_010_013_a",
+      "type": "MYO:MOTU-SUB",
+      "title": "SST_BS_SST_L3S_NRT_OBSERVATIONS_010_013_a"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/SST_BS_SST_L3S_NRT_OBSERVATIONS_010_013_a",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "SST_BS_SST_L3S_NRT_OBSERVATIONS_010_013_a"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=SST_BS_SST_L3S_NRT_OBSERVATIONS_010_013-TDS&product=SST_BS_SST_L3S_NRT_OBSERVATIONS_010_013_b",
+      "type": "MYO:MOTU-SUB",
+      "title": "SST_BS_SST_L3S_NRT_OBSERVATIONS_010_013_b"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/SST_BS_SST_L3S_NRT_OBSERVATIONS_010_013_a",
+      "type": "WWW:OPENDAP",
+      "title": "SST_BS_SST_L3S_NRT_OBSERVATIONS_010_013_a"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/SST_BS_SST_L3S_NRT_OBSERVATIONS_010_013/SST_BS_SST_L3S_NRT_OBSERVATIONS_010_013_b",
+      "type": "WWW:FTP",
+      "title": "SST_BS_SST_L3S_NRT_OBSERVATIONS_010_013_b"
+    }
+  ],
+  "title": "Black Sea - High Resolution and Ultra High Resolution L3S Sea Surface Temperature",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2008-01-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

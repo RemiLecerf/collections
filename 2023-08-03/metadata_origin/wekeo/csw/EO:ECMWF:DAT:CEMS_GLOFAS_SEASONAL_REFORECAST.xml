@@ -1,0 +1,30 @@
+<csw:Record xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">EO:ECMWF:DAT:CEMS_GLOFAS_SEASONAL_REFORECAST</dc:identifier>
+      <dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">Seasonal reforecasts of river discharge and related data from the Global Flood Awareness System</dc:title>
+      <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/">dataset</dc:type>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Reforecast</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Product type: Seasonal reforecasts</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Spatial coverage: Global</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Variable domain: Land (hydrology)</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Temporal coverage: Past</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Provider: Copernicus CEMS</dc:subject>
+      <dc:format xmlns:dc="http://purl.org/dc/elements/1.1/">GRIB2</dc:format>
+      <dct:abstract xmlns:dct="http://purl.org/dc/terms/">This dataset provides a gridded modelled time series of river discharge forced with seasonal range meteorological reforecasts. The data is a consistent representation of a key hydrological variable across the global domain, and is a product of the Global Flood Awareness System (GloFAS). It is accompanied by an ancillary file for interpretation that provides the upstream area (see the related variables table and associated link in the documentation).
+This dataset was produced by forcing a hydrological modelling chain with input from the European Centre for Medium-range Weather Forecasts (ECMWF) ensemble seasonal forecasting system, SEAS5. For the period of 1981 to 2016 the number of ensemble members is 25, whilst reforecasts produced for 2017 onwards use a 51-member ensemble. Reforecasts are forecasts run over past dates, with those presented here used for producing the seasonal river discharge thresholds. In addition, they provide a suitably long time period against which the skill of the seasonal forecast can be assessed. The reforecasts are initialised monthly and run for 123 days, with a 24-hourly time step. For more specific information on the how the seasonal reforecast dataset is produced we refer to the documentation.
+Companion datasets, also available through the Climate Data Store (CDS), include the seasonal forecasts, for which the dataset provided here can be useful for local skill assessment and post-processing. For users looking for shorter term forecasts there are also medium-range forecasts and reforecasts available, as well as historical simulations that can be used to derive the hydrological climatology. For users looking specifically for European hydrological data, we refer to the European Flood Awareness System (EFAS) forecasts and historical simulations. All these datasets are part of the operational flood forecasting within the Copernicus Emergency Management Service (CEMS).
+
+Variables in the dataset/application are:
+River discharge in the last 24 hours
+
+Variables in the dataset/application are:
+Upstream area</dct:abstract>
+      <dct:spatial xmlns:dct="http://purl.org/dc/terms/">::EPSG:4326</dct:spatial>
+      <dc:rights xmlns:dc="http://purl.org/dc/elements/1.1/">https://cds.climate.copernicus.eu/api/v2/terms/static/licence-to-use-efas-products.pdf</dc:rights>
+      <dc:rights xmlns:dc="http://purl.org/dc/elements/1.1/">Content accessible through the CDS may only be used under the terms of the licenses attributed to each particular resource.</dc:rights>
+      <dct:accessRights xmlns:dct="http://purl.org/dc/terms/">licence</dct:accessRights>
+      <ows:BoundingBox xmlns:ows="http://www.opengis.net/ows">
+        <ows:LowerCorner>-180 -90</ows:LowerCorner>
+        <ows:UpperCorner>180 90</ows:UpperCorner>
+      </ows:BoundingBox>
+    </csw:Record>
+  

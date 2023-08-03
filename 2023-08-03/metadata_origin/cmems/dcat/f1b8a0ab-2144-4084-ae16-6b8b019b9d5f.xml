@@ -1,0 +1,75 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:dct="http://purl.org/dc/terms/" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/f1b8a0ab-2144-4084-ae16-6b8b019b9d5f">
+        <foaf:primaryTopic rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/resource/f1b8a0ab-2144-4084-ae16-6b8b019b9d5f"/>
+        <dct:issued>2023-03-24</dct:issued>
+        <dct:modified>2023-03-24</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/srv/eng/xml.metadata.get?uuid=f1b8a0ab-2144-4084-ae16-6b8b019b9d5f">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork?uuid=f1b8a0ab-2144-4084-ae16-6b8b019b9d5f">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/resource/f1b8a0ab-2144-4084-ae16-6b8b019b9d5f">
+        <dct:identifier>f1b8a0ab-2144-4084-ae16-6b8b019b9d5f</dct:identifier>
+        <dct:title>Global Ocean Colour Plankton and Reflectances MY L3 daily observations</dct:title>
+        <dct:abstract>'''Short description:'''
+
+For the '''Global''' Ocean '''Satellite Observations''', Brockmann Consult (BC) is providing '''Bio-Geo_Chemical (BGC)''' products based on the ESA-CCI inputs.
+* Upstreams: SeaWiFS, MODIS, MERIS, VIIRS-SNPP, OLCI-S3A &amp; OLCI-S3B for the '''""multi""''' products.
+* Variables: Chlorophyll-a ('''CHL'''), Phytoplankton Functional types and sizes ('''PFT''') and  Reflectance ('''RRS''').
+
+* Temporal resolutions: '''daily''', '''monthly'''.
+* Spatial resolutions: '''4 km''' (multi).
+* Recent products are organized in datasets called Near Real Time ('''NRT''') and long time-series (from 1997) in datasets called Multi-Years ('''MY''').
+
+To find these products in the catalogue, use the search keyword '''""ESA-CCI""'''.
+
+'''DOI (product) :'''   
+https://doi.org/10.48670/moi-00282</dct:abstract>
+        <dcat:theme rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/thesaurus/iso/topicCategory/oceans"/>
+        <foaf:thumbnail rdf:resource="https://catalogue.marine.copernicus.eu/documents/IMG/OCEANCOLOUR_GLO_BGC_L3_MY_009_107.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((-180.00 -90.00, -180.00 90.00, 180.00 90.00, 180.00 -90.00, -180.00 -90.00))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:issued>2013-03-13</dct:issued>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/OC-CNR-ROMA-IT"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/OC-CNR-ROMA-IT"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/OC-BC-HAMBURG-GE"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/OC-BC-HAMBURG-GE"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/OC-BC-HAMBURG-GE"/>
+        <dct:accrualPeriodicity>irregular</dct:accrualPeriodicity>
+        <dct:license>otherRestrictions</dct:license>
+        <dct:license>license</dct:license>
+        <dct:license>No limitations on public access</dct:license>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=OCEANCOLOUR_GLO_BGC_L3_MY_009_107-TDS&amp;product=c3s_obs-oc_glo_bgc-plankton_my_l3-multi-4km_P1D"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/dodsC/c3s_obs-oc_glo_bgc-plankton_my_l3-multi-4km_P1D"/>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/OCEANCOLOUR_GLO_BGC_L3_MY_009_107/c3s_obs-oc_glo_bgc-plankton_my_l3-multi-4km_P1D"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/wms/c3s_obs-oc_glo_bgc-plankton_my_l3-multi-4km_P1D"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=OCEANCOLOUR_GLO_BGC_L3_MY_009_107-TDS&amp;product=c3s_obs-oc_glo_bgc-reflectance_my_l3-multi-4km_P1D"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/dodsC/c3s_obs-oc_glo_bgc-reflectance_my_l3-multi-4km_P1D"/>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/OCEANCOLOUR_GLO_BGC_L3_MY_009_107/c3s_obs-oc_glo_bgc-reflectance_my_l3-multi-4km_P1D"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/wms/c3s_obs-oc_glo_bgc-reflectance_my_l3-multi-4km_P1D"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/50371139-21a6-42e9-b9d2-7d96fab6b923"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/e0df3ad6-c6da-4ee8-9c7a-a21ce6c5505c"/>
+        <dcat:dataQuality>The myOcean products depends on other products for production or validation. The detailed list of dependencies is given in ISO19115's aggregationInfo (ISO19139 Xpath = "gmd:MD_Metadata/gmd:identificationInfo/gmd:aggregationInfo[./gmd:MD_AggregateInformation/gmd:initiativeType/gmd:DS_InitiativeTypeCode/@codeListValue='upstream-validation' or 'upstream-production']")</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+  

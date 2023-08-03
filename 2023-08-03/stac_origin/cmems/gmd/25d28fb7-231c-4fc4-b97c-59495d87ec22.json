@@ -1,0 +1,73 @@
+{
+  "type": "Collection",
+  "id": "25d28fb7-231c-4fc4-b97c-59495d87ec22",
+  "stac_version": "1.0.0",
+  "description": "'''Short description:'''\nThe IBI-MFC provides a high-resolution wave reanalysis product for the Iberia-Biscay-Ireland (IBI) area starting in 01/01/1993 and being regularly extended on a yearly basis. The model system is run by Nologin with the support of CESGA in terms of supercomputing resources. \nThe MY model set-up is as much analogous as possible to the model set-up used in the IBI-MFC Near-Real-Time (NRT) analysis and forecast system. The model application is based on the MFWAM model developed by Meteo-France (MF), with the same grid of 5 km of horizontal resolution. Both, the MY and the NRT products, are fed by ECMWF hourly winds. Specifically, the MY system is forced by the ERA5 reanalysis wind data. As boundary conditions, the NRT system uses the 2D wave spectra from the Copernicus Marine GLOBAL forecast system, whereas the MY system is nested to the GLOBAL reanalysis.\nThe product offers hourly instantaneous fields of different wave parameters, including Wave Height, Period and Direction for total spectrum and fields of Wind Wave (or wind sea), Primary Swell Wave and Secondary Swell for partitioned wave spectra. \n\n'''Product Citation''': \nPlease refer to our Technical FAQ for citing products.[http://marine.copernicus.eu/faq/cite-cmems-products-cmems-credit/?idpage=169]\n\n'''DOI (Product)''': \nhttps://doi.org/10.48670/moi-00030",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&service=IBI_MULTIYEAR_WAV_005_006-TDS&product=cmems_mod_ibi_wav_my_0.05deg-2D_PT1H-i",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_mod_ibi_wav_my_0.05deg-2D_PT1H-i"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/dodsC/cmems_mod_ibi_wav_my_0.05deg-2D_PT1H-i",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_mod_ibi_wav_my_0.05deg-2D_PT1H-i"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://my.cmems-du.eu/Core/IBI_MULTIYEAR_WAV_005_006/cmems_mod_ibi_wav_my_0.05deg-2D_PT1H-i",
+      "type": "WWW:FTP",
+      "title": "cmems_mod_ibi_wav_my_0.05deg-2D_PT1H-i"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/wms/cmems_mod_ibi_wav_my_0.05deg-2D_PT1H-i",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_mod_ibi_wav_my_0.05deg-2D_PT1H-i"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://my.cmems-du.eu/Core/IBI_MULTIYEAR_WAV_005_006/cmems_mod_ibi_wav_my_0.05deg-2D_static",
+      "type": "WWW:FTP",
+      "title": "cmems_mod_ibi_wav_my_0.05deg-2D_static"
+    }
+  ],
+  "title": "Atlantic -Iberian Biscay Irish- Ocean Wave Reanalysis",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -19.0,
+          26.0,
+          5.0,
+          56.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1993-01-01T00:00:00Z",
+          "2021-12-31T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "providers": [
+    {
+      "name": "Copernicus Marine Service",
+      "description": "Copernicus Marine Service - Mercator Ocean Internations",
+      "roles": [
+        "licensor",
+        "producer",
+        "processor",
+        "host"
+      ],
+      "url": "https://marine.copernicus.eu/"
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+    "cube:dimensions": {
+        "bands": {
+            "type": "bands",
+            "values": [
+                "B01"
+            ]
+        },
+        "t": {
+            "extent": [
+                [
+                    "2012-01-01T00:00:00",
+                    "2018-01-01T00:00:00"
+                ]
+            ],
+            "type": "temporal"
+        },
+        "x": {
+            "axis": "x",
+            "extent": [
+                1400000.0,
+                7900000.0
+            ],
+            "reference_system": "PROJCS[\"Azimuthal_Equidistant\",GEOGCS[\"GCS_WGS_1984\",DATUM[\"D_WGS_1984\",SPHEROID[\"WGS_1984\",6378137,298.257223563]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433]],PROJECTION[\"Azimuthal_Equidistant\"],PARAMETER[\"latitude_of_center\",53],PARAMETER[\"longitude_of_center\",24],PARAMETER[\"false_easting\",5837287.81977],PARAMETER[\"false_northing\",2121415.69617],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]]]",
+            "type": "spatial"
+        },
+        "y": {
+            "axis": "y",
+            "extent": [
+                100000.0,
+                4500000.0
+            ],
+            "reference_system": "PROJCS[\"Azimuthal_Equidistant\",GEOGCS[\"GCS_WGS_1984\",DATUM[\"D_WGS_1984\",SPHEROID[\"WGS_1984\",6378137,298.257223563]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433]],PROJECTION[\"Azimuthal_Equidistant\"],PARAMETER[\"latitude_of_center\",53],PARAMETER[\"longitude_of_center\",24],PARAMETER[\"false_easting\",5837287.81977],PARAMETER[\"false_northing\",2121415.69617],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]]]",
+            "type": "spatial"
+        }
+    },
+    "description": "Forest is type consists of both dominant leaf type (MMU 0.5 ha), and a support layer mapping trees under agricultural use, or in an urban context. This collection is resampled and stored at a 10m x 10m resolution. \n For further information on Forest Type see [here](https://land.copernicus.eu/pan-european/high-resolution-layers/forests/forest-type-1)",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -32.091997820189285,
+                    31.6977150076753,
+                    55.116146716432254,
+                    72.11413813793037
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2012-01-01T00:00:00Z",
+                    "2018-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "id": "forest_type",
+    "keywords": [
+        "EODC",
+        "Copernicus",
+        "ARD",
+        "Level-3"
+    ],
+    "license": "proprietary",
+    "links": [
+        {
+            "href": "https://openeocloud.vito.be/openeo/1.0.0/collections",
+            "rel": "root"
+        },
+        {
+            "href": "https://openeocloud.vito.be/openeo/1.0.0/collections",
+            "rel": "parent"
+        },
+        {
+            "href": "https://openeocloud.vito.be/openeo/1.0.0/collections/forest_type",
+            "rel": "self"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
+        "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json",
+        "https://github.com/stac-extensions/eo"
+    ],
+    "stac_version": "1.0.0",
+    "summaries": {
+        "eo:bands": [
+            {
+                "common_name": "band_1",
+                "name": "B01"
+            }
+        ],
+        "federation:backends": [
+            "eodc"
+        ],
+        "odc:file_format": {
+            "0": "GeoTIFF"
+        },
+        "odc:product_family": {
+            "0": "level3"
+        }
+    },
+    "title": "High Resolution Layer: Forest Type",
+    "type": "Collection"
+}

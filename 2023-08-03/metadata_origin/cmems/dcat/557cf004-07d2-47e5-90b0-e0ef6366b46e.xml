@@ -1,0 +1,67 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:dct="http://purl.org/dc/terms/" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/557cf004-07d2-47e5-90b0-e0ef6366b46e">
+        <foaf:primaryTopic rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/resource/557cf004-07d2-47e5-90b0-e0ef6366b46e"/>
+        <dct:issued>2021-12-09</dct:issued>
+        <dct:modified>2021-12-09</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/srv/eng/xml.metadata.get?uuid=557cf004-07d2-47e5-90b0-e0ef6366b46e">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork?uuid=557cf004-07d2-47e5-90b0-e0ef6366b46e">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/resource/557cf004-07d2-47e5-90b0-e0ef6366b46e">
+        <dct:identifier>557cf004-07d2-47e5-90b0-e0ef6366b46e</dct:identifier>
+        <dct:title>Global Ocean - High Resolution SAR Sea Ice Drift</dct:title>
+        <dct:abstract>'''Short description:'''
+
+DTU Space produces polar covering Near Real Time gridded ice displacement fields obtained by MCC processing of Sentinel-1 SAR, Envisat ASAR WSM swath data or RADARSAT ScanSAR Wide mode data . The nominal temporal span between processed swaths is 24hours, the nominal product grid resolution is a 10km.
+
+'''DOI (product) :'''   
+https://doi.org/10.48670/moi-00135</dct:abstract>
+        <dcat:theme rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/thesaurus/iso/topicCategory/oceans"/>
+        <foaf:thumbnail rdf:resource="https://catalogue.marine.copernicus.eu/documents/IMG/SEAICE_GLO_SEAICE_L4_NRT_OBSERVATIONS_011_006.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((-180.00 -90.00, -180.00 90.00, 180.00 90.00, 180.00 -90.00, -180.00 -90.00))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:issued>2010-11-06</dct:issued>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/OSI-METNO-OSLO-NO%20%28SD%29"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/OSI-METNO-OSLO-NO%20%28PM%29"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/OSI-METNO-OSLO-NO%20%28WPL%29"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/SIW-DTUSPACE-COPENHAGEN-DK"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/SIW-METNO-OSLO-NO"/>
+        <dct:accrualPeriodicity>continual</dct:accrualPeriodicity>
+        <dct:license>otherRestrictions</dct:license>
+        <dct:license>license</dct:license>
+        <dct:license>No limitations on public access</dct:license>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/thredds/dodsC/cmems_sat-si_glo_drift_nrt_north_d"/>
+        <dcat:distribution rdf:resource="ftp://nrt.cmems-du.eu/Core/SEAICE_GLO_SEAICE_L4_NRT_OBSERVATIONS_011_006/cmems_sat-si_glo_drift_nrt_north_d"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/thredds/wms/cmems_sat-si_glo_drift_nrt_north_d"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/thredds/dodsC/cmems_sat-si_glo_drift_nrt_south_d"/>
+        <dcat:distribution rdf:resource="ftp://nrt.cmems-du.eu/Core/SEAICE_GLO_SEAICE_L4_NRT_OBSERVATIONS_011_006/cmems_sat-si_glo_drift_nrt_south_d"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/thredds/wms/cmems_sat-si_glo_drift_nrt_south_d"/>
+        <dcat:distribution rdf:resource="ftp://nrt.cmems-du.eu/Core/SEAICE_GLO_SEAICE_L4_NRT_OBSERVATIONS_011_006/DTU-GLO-SEAICE_DRIFT-NORTH-L4-NRT-OBS"/>
+        <dcat:distribution rdf:resource="ftp://nrt.cmems-du.eu/Core/SEAICE_GLO_SEAICE_L4_NRT_OBSERVATIONS_011_006/DTU-GLO-SEAICE_DRIFT-SOUTH-L4-NRT-OBS"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/a67ff9e6-86e6-42e0-bf6a-286ae5ef3157"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/54077ea3-887b-4975-bdb7-029858b5ea3f"/>
+        <dcat:dataQuality>The myOcean products depends on other products for production or validation. The detailed list of dependencies is given in ISO19115's aggregationInfo (ISO19139 Xpath = "gmd:MD_Metadata/gmd:identificationInfo/gmd:aggregationInfo[./gmd:MD_AggregateInformation/gmd:initiativeType/gmd:DS_InitiativeTypeCode/@codeListValue='upstream-validation' or 'upstream-production']")</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+    

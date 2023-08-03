@@ -1,0 +1,66 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dct="http://purl.org/dc/terms/" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/metadata/eu.copernicus.climate.sis-water-level-change-timeseries-cmip6">
+        <foaf:primaryTopic rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/resource/10.24381/cds.a6d42d60"/>
+        <dct:issued>2018-03-28</dct:issued>
+        <dct:modified>2018-03-28</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/srv/eng/xml.metadata.get?uuid=eu.copernicus.climate.sis-water-level-change-timeseries-cmip6">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://cds.climate.copernicus.eu:443//geonetwork?uuid=eu.copernicus.climate.sis-water-level-change-timeseries-cmip6">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/resource/10.24381/cds.a6d42d60">
+        <dct:identifier>10.24381/cds.a6d42d60</dct:identifier>
+        <dct:title>Global sea level change time series from 1950 to 2050 derived from reanalysis and high resolution CMIP6 climate projections</dct:title>
+        <dct:abstract>This dataset provides time series of global sea level related variables including tides, storm surges and sea level rise from 1950 to 2050 based on hydrodynamic modelling. The dataset provides a basis for studies, for instance, aiming to evaluate sea level variability, coastal flooding, coastal erosion, and accessibility of ports.
+The time series are computed using the Deltares Global Tide and Surge Model (GTSM) version 3.0, a hydrodynamic model that dynamically simulates water levels at 10-minute intervals and capable of using input forcing from reanalysis and climate models. The dataset is based on climate forcing from ERA5 global reanalysis and 5 Global Climate Models (GCMs) of the high resolution Coupled Model Intercomparison Project Phase 6 (CMIP6) global climate projection dataset from the High Resolution Model Intercomparison Project (HighResMIP) multi-model ensemble. By making use of the HighResMIP multi-model ensemble, it is possible to quantify the uncertainties associated with the input climate forcing in this dataset.
+The simulations for the historical period may be selected from either ERA5 reanalysis or historical simulations from the GCMs. The future period simulations are from the GCMs and are based on global climate projections using the high-emissions scenario SSP5-8.5 (Shared Socioeconomic Pathways). An exception to this is the tidal elevation variable that is not based on any future climate scenarios, since the tide-generating forces considered in GTSM are not related to any climatological nor meteorological conditions.
+This dataset was produced on behalf of the Copernicus Climate Change Service.
+
+Variables in the dataset/application are:
+Mean sea level, Storm surge residual, Tidal elevation, Total water level</dct:abstract>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/GEMET%20-%20INSPIRE%20themes%2C%20version%201.0/Sea regions"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Spatial coverage: Global"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Variable domain: Ocean (physics)"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Temporal coverage: Past"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Temporal coverage: Future"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Product type: Reanalysis"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Product type: Climate projections"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Provider: Copernicus C3S"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/iso/topicCategory/climatologyMeteorologyAtmosphere"/>
+        <foaf:thumbnail rdf:resource="https://datastore.copernicus-climate.eu/c3s/published-forms-v2/c3sprod/sis-water-level-change-timeseries-cmip6/overview.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((-180 -90, -180 90, 180 90, 180 -90, -180 -90))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:temporal>1950-01-01
+          /
+          2050-12-31</dct:temporal>
+        <dct:publisher rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/organization/ECMWF"/>
+        <dct:accrualPeriodicity>asNeeded</dct:accrualPeriodicity>
+        <dct:language>eng</dct:language>
+        <dct:license>licence</dct:license>
+        <dct:license>https://cds.climate.copernicus.eu/api/v2/terms/static/licence-to-use-copernicus-products.pdf</dct:license>
+        <dcat:distribution rdf:resource="https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.a6d42d60"/>
+        <dcat:distribution rdf:resource="https://confluence.ecmwf.int/x/LiI7E"/>
+        <dcat:dataQuality>Copernicus Climate Change Service - Sectoral services for coasts</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+    

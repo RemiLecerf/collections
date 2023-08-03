@@ -1,0 +1,1457 @@
+{
+    "description": "The Soil and Landscape Grid of Australia (SLGA) is a comprehensive dataset\nof soil attributes across Australia at 3 arc-second resolution (~90m\npixels). The surfaces are the outcomes from modelling that describe the\nspatial distribution of the soil attributes using existing soil data and\nenvironmental covariates. See [Viscarra Rossel et al (2015)](https://www.publish.csiro.au/sr/SR14366)\nfor further details. The SLGA can be used in studies of vadose zone\nprocesses, including solute transport, groundwater and nutrient fluxes\nbeyond the root zone, as well as a wide spectrum of ecological,\nhydrological, and broader environmental applications.\n\nEach product contains six digital soil attribute maps and their upper and\nlower confidence limits, representing the soil attribute at six depths:\n0-5cm, 5-15cm, 15-30cm, 30-60cm, 60-100cm, and 100-200cm. These depths and\nsoil attributes are consistent with the specifications of\n[GlobalSoilMap](https://www.isric.org/projects/globalsoilmapnet).\n\nThis collection has 12 images. Ten of them contain data for GSM primary\nsoil attributes; the other two contain regolith depth and soil depth GSM\nattributes.\n\n| Attribute                              | Description                                                                                                                   | Code | # of Bands |\n|----------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|------|------------|\n| Bulk Density (whole earth)             | Bulk density of the whole soil (including coarse fragments) in mass per unit volume by a method equivalent to the core method | BDW  | 18         |\n| Organic Carbon                         | Mass fraction of carbon by weight in the < 2mm soil material as determined by dry combustion at 900 Celsius                   | SOC  | 18         |\n| Clay                                   | < 2&micro;m mass fraction of the <2mm soil material determined using the pipette method                                       | CLY  | 18         |\n| Silt                                   | 2-20&micro;m mass fraction of the < 2mm soil material determined using the pipette method                                     | SLT  | 18         |\n| Sand                                   | 20&micro;m - 2mm mass fraction of the < 2mm soil material determined using the pipette method                                 | SND  | 18         |\n| pH (CaCl2)                             | pH of 1:5 soil/0.01M calcium chloride extract                                                                                 | pHc  | 18         |\n| Available Water Capacity               | Available water capacity computed for each of the specified depth increments                                                  | AWC  | 18         |\n| Total Nitrogen                         | Mass fraction of total nitrogen in the soil by weight                                                                         | NTO  | 18         |\n| Total Phosphorus                       | Mass fraction of total phosphorus in the soil by weight                                                                       | PTO  | 18         |\n| Effective Cation Exchange Capacity     | Cations extracted using barium chloride (BaCl2) plus exchangeable H + Al                                                      | ECE  | 18         |\n| Depth of Regolith                      | Depth to hard rock. Depth is inclusive of all regolith.                                                                       | DER  | 3          |\n| Depth of Soil                          | Depth of soil profile (A & B horizons)                                                                                        | DES  | 3          |\n",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    113,
+                    -44.15,
+                    154,
+                    -9.97
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1950-01-01T00:00:00Z",
+                    "2013-12-31T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "gee:terms_of_use": "All products developed by the Soil and Landscape Grid of Australia are\navailable at no cost under a\n[Creative Commons Attribution License](https://creativecommons.org/licenses/by/4.0/)\n(CC BY) and users should read the\n[Disclaimer](https://www.clw.csiro.au/aclep/soilandlandscapegrid/About-Disclaimer.html).\n",
+    "gee:type": "image_collection",
+    "id": "CSIRO/SLGA",
+    "keywords": [
+        "australia",
+        "csiro",
+        "digital_soil_mapping",
+        "globalsoilmap",
+        "slga",
+        "soil",
+        "soil_depth",
+        "tern"
+    ],
+    "license": "CC-BY-4.0",
+    "links": [
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections/CSIRO/SLGA",
+            "rel": "self",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections",
+            "rel": "parent",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/",
+            "rel": "root",
+            "type": "application/json"
+        },
+        {
+            "code": "JavaScript",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/CSIRO/CSIRO_SLGA",
+            "rel": "related",
+            "title": "Run the example for CSIRO/SLGA in the Earth Engine Code Editor",
+            "type": "text/html"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/images/CSIRO/CSIRO_SLGA_sample.png",
+            "rel": "preview",
+            "type": "image/png"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/CSIRO_SLGA#terms-of-use",
+            "rel": "license",
+            "type": "text/html"
+        },
+        {
+            "href": "https://www.clw.csiro.au/aclep/soilandlandscapegrid/",
+            "rel": "license",
+            "type": "text/html"
+        },
+        {
+            "href": "https://www.clw.csiro.au/aclep/soilandlandscapegrid/About-Disclaimer.html",
+            "rel": "license",
+            "type": "text/html"
+        },
+        {
+            "href": "https://doi.org/10.4225/08/546ED604ADD8A",
+            "rel": "cite-as"
+        },
+        {
+            "href": "https://doi.org/10.4225/08/546EE212B0048",
+            "rel": "cite-as"
+        },
+        {
+            "href": "https://doi.org/10.4225/08/546EEE35164BF",
+            "rel": "cite-as"
+        },
+        {
+            "href": "https://doi.org/10.4225/08/546F091C11777",
+            "rel": "cite-as"
+        },
+        {
+            "href": "https://doi.org/10.4225/08/546F17EC6AB6E",
+            "rel": "cite-as"
+        },
+        {
+            "href": "https://doi.org/10.4225/08/546F29646877E",
+            "rel": "cite-as"
+        },
+        {
+            "href": "https://doi.org/10.4225/08/546F48D6A6D48",
+            "rel": "cite-as"
+        },
+        {
+            "href": "https://doi.org/10.4225/08/546F540FE10AA",
+            "rel": "cite-as"
+        },
+        {
+            "href": "https://doi.org/10.4225/08/546F564AE11F9",
+            "rel": "cite-as"
+        },
+        {
+            "href": "https://doi.org/10.4225/08/546F617719CAF",
+            "rel": "cite-as"
+        },
+        {
+            "href": "https://doi.org/10.4225/08/547523BB0801A",
+            "rel": "cite-as"
+        },
+        {
+            "href": "https://doi.org/10.4225/08/55C9472F05295",
+            "rel": "cite-as"
+        }
+    ],
+    "providers": [
+        {
+            "name": "CSIRO/SLGA",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.clw.csiro.au/aclep/soilandlandscapegrid/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/CSIRO_SLGA"
+        }
+    ],
+    "sci:citation": "Viscarra Rossel, Raphael; Chen, Charlie; Grundy, Mike; Searle, Ross;\nClifford, David; Odgers, Nathan; Holmes, Karen; Griffin, Ted; Liddicoat,\nCraig; Kidd, Darren (2014): Soil and Landscape Grid National Soil Attribute\nMaps - SOIL ATTRIBUTE Release 1. v2. CSIRO. Data Collection\n[doi:10.1071/SR14366](https://doi.org/10.1071/SR14366).\n",
+    "sci:doi": "10.4225/08/546ED604ADD8A",
+    "sci:publications": [
+        {
+            "citation": "Viscarra Rossel, R., Chen, C., Grundy, M., Searle, R., Clifford, D.,\nOdgers, N., Holmes, K., Griffin, T., Liddicoat, C., &amp; Kidd,\nD. (2014). <i>Soil and Landscape Grid National Soil Attribute Maps -\nBulk Density - Whole Earth (3\" resolution) - Release 1</i> [Data\nset]. CSIRO.\n",
+            "doi": "10.4225/08/546EE212B0048"
+        },
+        {
+            "citation": "Viscarra Rossel, R., Chen, C., Grundy, M., Searle, R., Odgers, N.,\nHolmes, K., Griffin, T., Liddicoat, C., Kidd, D., &amp; Clifford,\nD. (2014). <i>Soil and Landscape Grid National Soil Attribute Maps -\nClay (3\" resolution) - Release 1</i> [Data set]. CSIRO.\n",
+            "doi": "10.4225/08/546EEE35164BF"
+        },
+        {
+            "citation": "Viscarra Rossel, R., Chen, C., Grundy, M., Searle, R., Clifford, D.,\nOdgers, N., Holmes, K., Griffin, T., Liddicoat, C., &amp; Kidd,\nD. (2014). <i>Soil and Landscape Grid National Soil Attribute Maps -\nEffective Cation Exchange Capacity (3\" resolution) - Release 1</i> [Data\nset]. CSIRO.\n",
+            "doi": "10.4225/08/546F091C11777"
+        },
+        {
+            "citation": "Viscarra Rossel, R., Chen, C., Grundy, M., Searle, R., Clifford, D.,\nOdgers, N., Holmes, K., Griffin, T., Liddicoat, C., &amp; Kidd,\nD. (2014). <i>Soil and Landscape Grid National Soil Attribute Maps - pH\n- CaCl2 (3\" resolution) - Release 1</i> [Data set]. CSIRO.\n",
+            "doi": "10.4225/08/546F17EC6AB6E"
+        },
+        {
+            "citation": "Viscarra Rossel, R., Chen, C., Grundy, M., Searle, R., Odgers, N.,\nHolmes, K., Griffin, T., Liddicoat, C., Kidd, D., &amp; Clifford,\nD. (2014). <i>Soil and Landscape Grid National Soil Attribute Maps -\nSand (3\" resolution) - Release 1</i> [Data set]. CSIRO.\n",
+            "doi": "10.4225/08/546F29646877E"
+        },
+        {
+            "citation": "Viscarra Rossel, R., Chen, C., Grundy, M., Searle, R., Odgers, N.,\nHolmes, K., Griffin, T., Liddicoat, C., Kidd, D., &amp; Clifford,\nD. (2014). <i>Soil and Landscape Grid National Soil Attribute Maps -\nSilt (3\" resolution) - Release 1</i> [Data set]. CSIRO.\n",
+            "doi": "10.4225/08/546F48D6A6D48"
+        },
+        {
+            "citation": "Viscarra Rossel, R., Chen, C., Grundy, M., Searle, R., Clifford, D.,\nOdgers, N., Holmes, K., Griffin, T., Liddicoat, C., &amp; Kidd,\nD. (2014). <i>Soil and Landscape Grid National Soil Attribute Maps -\nSoil Depth (3\" resolution) - Release 1</i> [Data set]. CSIRO.\n",
+            "doi": "10.4225/08/546F540FE10AA"
+        },
+        {
+            "citation": "Viscarra Rossel, R., Chen, C., Grundy, M., Searle, R., Clifford, D.,\nOdgers, N., Holmes, K., Griffin, T., Liddicoat, C., &amp; Kidd,\nD. (2014). <i>Soil and Landscape Grid National Soil Attribute Maps -\nTotal Nitrogen (3\" resolution) - Release 1</i> [Data set]. CSIRO.\n",
+            "doi": "10.4225/08/546F564AE11F9"
+        },
+        {
+            "citation": "Viscarra Rossel, R., Chen, C., Grundy, M., Searle, R., Clifford, D.,\nOdgers, N., Holmes, K., Griffin, T., Liddicoat, C., &amp; Kidd,\nD. (2014). <i>Soil and Landscape Grid National Soil Attribute Maps -\nTotal Phosphorus (3\" resolution) - Release 1</i> [Data set]. CSIRO.\n",
+            "doi": "10.4225/08/546F617719CAF"
+        },
+        {
+            "citation": "Viscarra Rossel, R., Chen, C., Grundy, M., Searle, R., Clifford, D.,\nOdgers, N., Holmes, K., Griffin, T., Liddicoat, C., &amp; Kidd,\nD. (2014). <i>Soil and Landscape Grid National Soil Attribute Maps -\nOrganic Carbon (3\" resolution) - Release 1</i> [Data set]. CSIRO.\n",
+            "doi": "10.4225/08/547523BB0801A"
+        },
+        {
+            "citation": "Wilford, J., Searle, R., Thomas, M., &amp; Grundy, M. (2015). <i>Soil\nand Landscape Grid National Soil Attribute Maps - Depth of Regolith (3\"\nresolution) - Release 2</i> [Data set]. CSIRO.\n",
+            "doi": "10.4225/08/55C9472F05295"
+        }
+    ],
+    "stac_extensions": [
+        "collection-assets"
+    ],
+    "stac_version": "1.0.0",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "The soil attribute's estimated value at depth 0-5cm",
+                "gee:units": "%",
+                "name": "AWC_000_005_EV"
+            },
+            {
+                "description": "The soil attribute's 5th percentile confidence limit at depth 0-5cm",
+                "gee:units": "%",
+                "name": "AWC_000_005_05"
+            },
+            {
+                "description": "The soil attribute's 95th percentile confidence limit at depth 0-5cm",
+                "gee:units": "%",
+                "name": "AWC_000_005_95"
+            },
+            {
+                "description": "The soil attribute's estimated value at depth 5-15cm",
+                "gee:units": "%",
+                "name": "AWC_005_015_EV"
+            },
+            {
+                "description": "The soil attribute's 5th percentile confidence limit at depth 5-15cm",
+                "gee:units": "%",
+                "name": "AWC_005_015_05"
+            },
+            {
+                "description": "The soil attribute's 95th percentile confidence limit at depth 5-15cm",
+                "gee:units": "%",
+                "name": "AWC_005_015_95"
+            },
+            {
+                "description": "The soil attribute's estimated value at depth 15-30cm",
+                "gee:units": "%",
+                "name": "AWC_015_030_EV"
+            },
+            {
+                "description": "The soil attribute's 5th percentile confidence limit at depth 15-30cm",
+                "gee:units": "%",
+                "name": "AWC_015_030_05"
+            },
+            {
+                "description": "The soil attribute's 95th percentile confidence limit at depth 15-30cm",
+                "gee:units": "%",
+                "name": "AWC_015_030_95"
+            },
+            {
+                "description": "The soil attribute's estimated value at depth 30-60cm",
+                "gee:units": "%",
+                "name": "AWC_030_060_EV"
+            },
+            {
+                "description": "The soil attribute's 5th percentile confidence limit at depth 30-60cm",
+                "gee:units": "%",
+                "name": "AWC_030_060_05"
+            },
+            {
+                "description": "The soil attribute's 95th percentile confidence limit at depth 30-60cm",
+                "gee:units": "%",
+                "name": "AWC_030_060_95"
+            },
+            {
+                "description": "The soil attribute's estimated value at depth 60-100cm",
+                "gee:units": "%",
+                "name": "AWC_060_100_EV"
+            },
+            {
+                "description": "The soil attribute's 5th percentile confidence limit at depth 60-100cm",
+                "gee:units": "%",
+                "name": "AWC_060_100_05"
+            },
+            {
+                "description": "The soil attribute's 95th percentile confidence limit at depth 60-100cm",
+                "gee:units": "%",
+                "name": "AWC_060_100_95"
+            },
+            {
+                "description": "The soil attribute's estimated value at depth 100-200cm",
+                "gee:units": "%",
+                "name": "AWC_100_200_EV"
+            },
+            {
+                "description": "The soil attribute's 5th percentile confidence limit at depth 100-200cm",
+                "gee:units": "%",
+                "name": "AWC_100_200_05"
+            },
+            {
+                "description": "The soil attribute's 95th percentile confidence limit at depth 100-200cm",
+                "gee:units": "%",
+                "name": "AWC_100_200_95"
+            },
+            {
+                "description": "The soil attribute's estimated value at depth 0-5cm",
+                "gee:units": "g/cm^3",
+                "name": "BDW_000_005_EV"
+            },
+            {
+                "description": "The soil attribute's 5th percentile confidence limit at depth 0-5cm",
+                "gee:units": "g/cm^3",
+                "name": "BDW_000_005_05"
+            },
+            {
+                "description": "The soil attribute's 95th percentile confidence limit at depth 0-5cm",
+                "gee:units": "g/cm^3",
+                "name": "BDW_000_005_95"
+            },
+            {
+                "description": "The soil attribute's estimated value at depth 5-15cm",
+                "gee:units": "g/cm^3",
+                "name": "BDW_005_015_EV"
+            },
+            {
+                "description": "The soil attribute's 5th percentile confidence limit at depth 5-15cm",
+                "gee:units": "g/cm^3",
+                "name": "BDW_005_015_05"
+            },
+            {
+                "description": "The soil attribute's 95th percentile confidence limit at depth 5-15cm",
+                "gee:units": "g/cm^3",
+                "name": "BDW_005_015_95"
+            },
+            {
+                "description": "The soil attribute's estimated value at depth 15-30cm",
+                "gee:units": "g/cm^3",
+                "name": "BDW_015_030_EV"
+            },
+            {
+                "description": "The soil attribute's 5th percentile confidence limit at depth 15-30cm",
+                "gee:units": "g/cm^3",
+                "name": "BDW_015_030_05"
+            },
+            {
+                "description": "The soil attribute's 95th percentile confidence limit at depth 15-30cm",
+                "gee:units": "g/cm^3",
+                "name": "BDW_015_030_95"
+            },
+            {
+                "description": "The soil attribute's estimated value at depth 30-60cm",
+                "gee:units": "g/cm^3",
+                "name": "BDW_030_060_EV"
+            },
+            {
+                "description": "The soil attribute's 5th percentile confidence limit at depth 30-60cm",
+                "gee:units": "g/cm^3",
+                "name": "BDW_030_060_05"
+            },
+            {
+                "description": "The soil attribute's 95th percentile confidence limit at depth 30-60cm",
+                "gee:units": "g/cm^3",
+                "name": "BDW_030_060_95"
+            },
+            {
+                "description": "The soil attribute's estimated value at depth 60-100cm",
+                "gee:units": "g/cm^3",
+                "name": "BDW_060_100_EV"
+            },
+            {
+                "description": "The soil attribute's 5th percentile confidence limit at depth 60-100cm",
+                "gee:units": "g/cm^3",
+                "name": "BDW_060_100_05"
+            },
+            {
+                "description": "The soil attribute's 95th percentile confidence limit at depth 60-100cm",
+                "gee:units": "g/cm^3",
+                "name": "BDW_060_100_95"
+            },
+            {
+                "description": "The soil attribute's estimated value at depth 100-200cm",
+                "gee:units": "g/cm^3",
+                "name": "BDW_100_200_EV"
+            },
+            {
+                "description": "The soil attribute's 5th percentile confidence limit at depth 100-200cm",
+                "gee:units": "g/cm^3",
+                "name": "BDW_100_200_05"
+            },
+            {
+                "description": "The soil attribute's 95th percentile confidence limit at depth 100-200cm",
+                "gee:units": "g/cm^3",
+                "name": "BDW_100_200_95"
+            },
+            {
+                "description": "The soil attribute's estimated value at depth 0-5cm",
+                "gee:units": "%",
+                "name": "CLY_000_005_EV"
+            },
+            {
+                "description": "The soil attribute's 5th percentile confidence limit at depth 0-5cm",
+                "gee:units": "%",
+                "name": "CLY_000_005_05"
+            },
+            {
+                "description": "The soil attribute's 95th percentile confidence limit at depth 0-5cm",
+                "gee:units": "%",
+                "name": "CLY_000_005_95"
+            },
+            {
+                "description": "The soil attribute's estimated value at depth 5-15cm",
+                "gee:units": "%",
+                "name": "CLY_005_015_EV"
+            },
+            {
+                "description": "The soil attribute's 5th percentile confidence limit at depth 5-15cm",
+                "gee:units": "%",
+                "name": "CLY_005_015_05"
+            },
+            {
+                "description": "The soil attribute's 95th percentile confidence limit at depth 5-15cm",
+                "gee:units": "%",
+                "name": "CLY_005_015_95"
+            },
+            {
+                "description": "The soil attribute's estimated value at depth 15-30cm",
+                "gee:units": "%",
+                "name": "CLY_015_030_EV"
+            },
+            {
+                "description": "The soil attribute's 5th percentile confidence limit at depth 15-30cm",
+                "gee:units": "%",
+                "name": "CLY_015_030_05"
+            },
+            {
+                "description": "The soil attribute's 95th percentile confidence limit at depth 15-30cm",
+                "gee:units": "%",
+                "name": "CLY_015_030_95"
+            },
+            {
+                "description": "The soil attribute's estimated value at depth 30-60cm",
+                "gee:units": "%",
+                "name": "CLY_030_060_EV"
+            },
+            {
+                "description": "The soil attribute's 5th percentile confidence limit at depth 30-60cm",
+                "gee:units": "%",
+                "name": "CLY_030_060_05"
+            },
+            {
+                "description": "The soil attribute's 95th percentile confidence limit at depth 30-60cm",
+                "gee:units": "%",
+                "name": "CLY_030_060_95"
+            },
+            {
+                "description": "The soil attribute's estimated value at depth 60-100cm",
+                "gee:units": "%",
+                "name": "CLY_060_100_EV"
+            },
+            {
+                "description": "The soil attribute's 5th percentile confidence limit at depth 60-100cm",
+                "gee:units": "%",
+                "name": "CLY_060_100_05"
+            },
+            {
+                "description": "The soil attribute's 95th percentile confidence limit at depth 60-100cm",
+                "gee:units": "%",
+                "name": "CLY_060_100_95"
+            },
+            {
+                "description": "The soil attribute's estimated value at depth 100-200cm",
+                "gee:units": "%",
+                "name": "CLY_100_200_EV"
+            },
+            {
+                "description": "The soil attribute's 5th percentile confidence limit at depth 100-200cm",
+                "gee:units": "%",
+                "name": "CLY_100_200_05"
+            },
+            {
+                "description": "The soil attribute's 95th percentile confidence limit at depth 100-200cm",
+                "gee:units": "%",
+                "name": "CLY_100_200_95"
+            },
+            {
+                "description": "The estimated value for the regolith depth",
+                "gee:units": "m",
+                "name": "DER_000_200_EV"
+            },
+            {
+                "description": "The 5th percentile confidence limit for the regolith depth",
+                "gee:units": "m",
+                "name": "DER_000_200_05"
+            },
+            {
+                "description": "The 95th percentile confidence limit for the regolith depth",
+                "gee:units": "m",
+                "name": "DER_000_200_95"
+            },
+            {
+                "description": "The estimated value for the soil depth",
+                "gee:units": "m",
+                "name": "DES_000_200_EV"
+            },
+            {
+                "description": "The 5th percentile confidence limit for the soil depth",
+                "gee:units": "m",
+                "name": "DES_000_200_05"
+            },
+            {
+                "description": "The 5th percentile confidence limit for the soil depth",
+                "gee:units": "m",
+                "name": "DES_000_200_95"
+            },
+            {
+                "description": "The soil attribute's estimated value at depth 0-5cm",
+                "gee:units": "meq/100g",
+                "name": "ECE_000_005_EV"
+            },
+            {
+                "description": "The soil attribute's 5th percentile confidence limit at depth 0-5cm",
+                "gee:units": "meq/100g",
+                "name": "ECE_000_005_05"
+            },
+            {
+                "description": "The soil attribute's 95th percentile confidence limit at depth 0-5cm",
+                "gee:units": "meq/100g",
+                "name": "ECE_000_005_95"
+            },
+            {
+                "description": "The soil attribute's estimated value at depth 5-15cm",
+                "gee:units": "meq/100g",
+                "name": "ECE_005_015_EV"
+            },
+            {
+                "description": "The soil attribute's 5th percentile confidence limit at depth 5-15cm",
+                "gee:units": "meq/100g",
+                "name": "ECE_005_015_05"
+            },
+            {
+                "description": "The soil attribute's 95th percentile confidence limit at depth 5-15cm",
+                "gee:units": "meq/100g",
+                "name": "ECE_005_015_95"
+            },
+            {
+                "description": "The soil attribute's estimated value at depth 15-30cm",
+                "gee:units": "meq/100g",
+                "name": "ECE_015_030_EV"
+            },
+            {
+                "description": "The soil attribute's 5th percentile confidence limit at depth 15-30cm",
+                "gee:units": "meq/100g",
+                "name": "ECE_015_030_05"
+            },
+            {
+                "description": "The soil attribute's 95th percentile confidence limit at depth 15-30cm",
+                "gee:units": "meq/100g",
+                "name": "ECE_015_030_95"
+            },
+            {
+                "description": "The soil attribute's estimated value at depth 30-60cm",
+                "gee:units": "meq/100g",
+                "name": "ECE_030_060_EV"
+            },
+            {
+                "description": "The soil attribute's 5th percentile confidence limit at depth 30-60cm",
+                "gee:units": "meq/100g",
+                "name": "ECE_030_060_05"
+            },
+            {
+                "description": "The soil attribute's 95th percentile confidence limit at depth 30-60cm",
+                "gee:units": "meq/100g",
+                "name": "ECE_030_060_95"
+            },
+            {
+                "description": "The soil attribute's estimated value at depth 60-100cm",
+                "gee:units": "meq/100g",
+                "name": "ECE_060_100_EV"
+            },
+            {
+                "description": "The soil attribute's 5th percentile confidence limit at depth 60-100cm",
+                "gee:units": "meq/100g",
+                "name": "ECE_060_100_05"
+            },
+            {
+                "description": "The soil attribute's 95th percentile confidence limit at depth 60-100cm",
+                "gee:units": "meq/100g",
+                "name": "ECE_060_100_95"
+            },
+            {
+                "description": "The soil attribute's estimated value at depth 100-200cm",
+                "gee:units": "meq/100g",
+                "name": "ECE_100_200_EV"
+            },
+            {
+                "description": "The soil attribute's 5th percentile confidence limit at depth 100-200cm",
+                "gee:units": "meq/100g",
+                "name": "ECE_100_200_05"
+            },
+            {
+                "description": "The soil attribute's 95th percentile confidence limit at depth 100-200cm",
+                "gee:units": "meq/100g",
+                "name": "ECE_100_200_95"
+            },
+            {
+                "description": "The soil attribute's estimated value at depth 0-5cm",
+                "gee:units": "%",
+                "name": "NTO_000_005_EV"
+            },
+            {
+                "description": "The soil attribute's 5th percentile confidence limit at depth 0-5cm",
+                "gee:units": "%",
+                "name": "NTO_000_005_05"
+            },
+            {
+                "description": "The soil attribute's 95th percentile confidence limit at depth 0-5cm",
+                "gee:units": "%",
+                "name": "NTO_000_005_95"
+            },
+            {
+                "description": "The soil attribute's estimated value at depth 5-15cm",
+                "gee:units": "%",
+                "name": "NTO_005_015_EV"
+            },
+            {
+                "description": "The soil attribute's 5th percentile confidence limit at depth 5-15cm",
+                "gee:units": "%",
+                "name": "NTO_005_015_05"
+            },
+            {
+                "description": "The soil attribute's 95th percentile confidence limit at depth 5-15cm",
+                "gee:units": "%",
+                "name": "NTO_005_015_95"
+            },
+            {
+                "description": "The soil attribute's estimated value at depth 15-30cm",
+                "gee:units": "%",
+                "name": "NTO_015_030_EV"
+            },
+            {
+                "description": "The soil attribute's 5th percentile confidence limit at depth 15-30cm",
+                "gee:units": "%",
+                "name": "NTO_015_030_05"
+            },
+            {
+                "description": "The soil attribute's 95th percentile confidence limit at depth 15-30cm",
+                "gee:units": "%",
+                "name": "NTO_015_030_95"
+            },
+            {
+                "description": "The soil attribute's estimated value at depth 30-60cm",
+                "gee:units": "%",
+                "name": "NTO_030_060_EV"
+            },
+            {
+                "description": "The soil attribute's 5th percentile confidence limit at depth 30-60cm",
+                "gee:units": "%",
+                "name": "NTO_030_060_05"
+            },
+            {
+                "description": "The soil attribute's 95th percentile confidence limit at depth 30-60cm",
+                "gee:units": "%",
+                "name": "NTO_030_060_95"
+            },
+            {
+                "description": "The soil attribute's estimated value at depth 60-100cm",
+                "gee:units": "%",
+                "name": "NTO_060_100_EV"
+            },
+            {
+                "description": "The soil attribute's 5th percentile confidence limit at depth 60-100cm",
+                "gee:units": "%",
+                "name": "NTO_060_100_05"
+            },
+            {
+                "description": "The soil attribute's 95th percentile confidence limit at depth 60-100cm",
+                "gee:units": "%",
+                "name": "NTO_060_100_95"
+            },
+            {
+                "description": "The soil attribute's estimated value at depth 100-200cm",
+                "gee:units": "%",
+                "name": "NTO_100_200_EV"
+            },
+            {
+                "description": "The soil attribute's 5th percentile confidence limit at depth 100-200cm",
+                "gee:units": "%",
+                "name": "NTO_100_200_05"
+            },
+            {
+                "description": "The soil attribute's 95th percentile confidence limit at depth 100-200cm",
+                "gee:units": "%",
+                "name": "NTO_100_200_95"
+            },
+            {
+                "description": "The soil attribute's estimated value at depth 0-5cm",
+                "name": "pHc_000_005_EV"
+            },
+            {
+                "description": "The soil attribute's 5th percentile confidence limit at depth 0-5cm",
+                "name": "pHc_000_005_05"
+            },
+            {
+                "description": "The soil attribute's 95th percentile confidence limit at depth 0-5cm",
+                "name": "pHc_000_005_95"
+            },
+            {
+                "description": "The soil attribute's estimated value at depth 5-15cm",
+                "name": "pHc_005_015_EV"
+            },
+            {
+                "description": "The soil attribute's 5th percentile confidence limit at depth 5-15cm",
+                "name": "pHc_005_015_05"
+            },
+            {
+                "description": "The soil attribute's 95th percentile confidence limit at depth 5-15cm",
+                "name": "pHc_005_015_95"
+            },
+            {
+                "description": "The soil attribute's estimated value at depth 15-30cm",
+                "name": "pHc_015_030_EV"
+            },
+            {
+                "description": "The soil attribute's 5th percentile confidence limit at depth 15-30cm",
+                "name": "pHc_015_030_05"
+            },
+            {
+                "description": "The soil attribute's 95th percentile confidence limit at depth 15-30cm",
+                "name": "pHc_015_030_95"
+            },
+            {
+                "description": "The soil attribute's estimated value at depth 30-60cm",
+                "name": "pHc_030_060_EV"
+            },
+            {
+                "description": "The soil attribute's 5th percentile confidence limit at depth 30-60cm",
+                "name": "pHc_030_060_05"
+            },
+            {
+                "description": "The soil attribute's 95th percentile confidence limit at depth 30-60cm",
+                "name": "pHc_030_060_95"
+            },
+            {
+                "description": "The soil attribute's estimated value at depth 60-100cm",
+                "name": "pHc_060_100_EV"
+            },
+            {
+                "description": "The soil attribute's 5th percentile confidence limit at depth 60-100cm",
+                "name": "pHc_060_100_05"
+            },
+            {
+                "description": "The soil attribute's 95th percentile confidence limit at depth 60-100cm",
+                "name": "pHc_060_100_95"
+            },
+            {
+                "description": "The soil attribute's estimated value at depth 100-200cm",
+                "name": "pHc_100_200_EV"
+            },
+            {
+                "description": "The soil attribute's 5th percentile confidence limit at depth 100-200cm",
+                "name": "pHc_100_200_05"
+            },
+            {
+                "description": "The soil attribute's 95th percentile confidence limit at depth 100-200cm",
+                "name": "pHc_100_200_95"
+            },
+            {
+                "description": "The soil attribute's estimated value at depth 0-5cm",
+                "gee:units": "%",
+                "name": "PTO_000_005_EV"
+            },
+            {
+                "description": "The soil attribute's 5th percentile confidence limit at depth 0-5cm",
+                "gee:units": "%",
+                "name": "PTO_000_005_05"
+            },
+            {
+                "description": "The soil attribute's 95th percentile confidence limit at depth 0-5cm",
+                "gee:units": "%",
+                "name": "PTO_000_005_95"
+            },
+            {
+                "description": "The soil attribute's estimated value at depth 5-15cm",
+                "gee:units": "%",
+                "name": "PTO_005_015_EV"
+            },
+            {
+                "description": "The soil attribute's 5th percentile confidence limit at depth 5-15cm",
+                "gee:units": "%",
+                "name": "PTO_005_015_05"
+            },
+            {
+                "description": "The soil attribute's 95th percentile confidence limit at depth 5-15cm",
+                "gee:units": "%",
+                "name": "PTO_005_015_95"
+            },
+            {
+                "description": "The soil attribute's estimated value at depth 15-30cm",
+                "gee:units": "%",
+                "name": "PTO_015_030_EV"
+            },
+            {
+                "description": "The soil attribute's 5th percentile confidence limit at depth 15-30cm",
+                "gee:units": "%",
+                "name": "PTO_015_030_05"
+            },
+            {
+                "description": "The soil attribute's 95th percentile confidence limit at depth 15-30cm",
+                "gee:units": "%",
+                "name": "PTO_015_030_95"
+            },
+            {
+                "description": "The soil attribute's estimated value at depth 30-60cm",
+                "gee:units": "%",
+                "name": "PTO_030_060_EV"
+            },
+            {
+                "description": "The soil attribute's 5th percentile confidence limit at depth 30-60cm",
+                "gee:units": "%",
+                "name": "PTO_030_060_05"
+            },
+            {
+                "description": "The soil attribute's 95th percentile confidence limit at depth 30-60cm",
+                "gee:units": "%",
+                "name": "PTO_030_060_95"
+            },
+            {
+                "description": "The soil attribute's estimated value at depth 60-100cm",
+                "gee:units": "%",
+                "name": "PTO_060_100_EV"
+            },
+            {
+                "description": "The soil attribute's 5th percentile confidence limit at depth 60-100cm",
+                "gee:units": "%",
+                "name": "PTO_060_100_05"
+            },
+            {
+                "description": "The soil attribute's 95th percentile confidence limit at depth 60-100cm",
+                "gee:units": "%",
+                "name": "PTO_060_100_95"
+            },
+            {
+                "description": "The soil attribute's estimated value at depth 100-200cm",
+                "gee:units": "%",
+                "name": "PTO_100_200_EV"
+            },
+            {
+                "description": "The soil attribute's 5th percentile confidence limit at depth 100-200cm",
+                "gee:units": "%",
+                "name": "PTO_100_200_05"
+            },
+            {
+                "description": "The soil attribute's 95th percentile confidence limit at depth 100-200cm",
+                "gee:units": "%",
+                "name": "PTO_100_200_95"
+            },
+            {
+                "description": "The soil attribute's estimated value at depth 0-5cm",
+                "gee:units": "%",
+                "name": "SLT_000_005_EV"
+            },
+            {
+                "description": "The soil attribute's 5th percentile confidence limit at depth 0-5cm",
+                "gee:units": "%",
+                "name": "SLT_000_005_05"
+            },
+            {
+                "description": "The soil attribute's 95th percentile confidence limit at depth 0-5cm",
+                "gee:units": "%",
+                "name": "SLT_000_005_95"
+            },
+            {
+                "description": "The soil attribute's estimated value at depth 5-15cm",
+                "gee:units": "%",
+                "name": "SLT_005_015_EV"
+            },
+            {
+                "description": "The soil attribute's 5th percentile confidence limit at depth 5-15cm",
+                "gee:units": "%",
+                "name": "SLT_005_015_05"
+            },
+            {
+                "description": "The soil attribute's 95th percentile confidence limit at depth 5-15cm",
+                "gee:units": "%",
+                "name": "SLT_005_015_95"
+            },
+            {
+                "description": "The soil attribute's estimated value at depth 15-30cm",
+                "gee:units": "%",
+                "name": "SLT_015_030_EV"
+            },
+            {
+                "description": "The soil attribute's 5th percentile confidence limit at depth 15-30cm",
+                "gee:units": "%",
+                "name": "SLT_015_030_05"
+            },
+            {
+                "description": "The soil attribute's 95th percentile confidence limit at depth 15-30cm",
+                "gee:units": "%",
+                "name": "SLT_015_030_95"
+            },
+            {
+                "description": "The soil attribute's estimated value at depth 30-60cm",
+                "gee:units": "%",
+                "name": "SLT_030_060_EV"
+            },
+            {
+                "description": "The soil attribute's 5th percentile confidence limit at depth 30-60cm",
+                "gee:units": "%",
+                "name": "SLT_030_060_05"
+            },
+            {
+                "description": "The soil attribute's 95th percentile confidence limit at depth 30-60cm",
+                "gee:units": "%",
+                "name": "SLT_030_060_95"
+            },
+            {
+                "description": "The soil attribute's estimated value at depth 60-100cm",
+                "gee:units": "%",
+                "name": "SLT_060_100_EV"
+            },
+            {
+                "description": "The soil attribute's 5th percentile confidence limit at depth 60-100cm",
+                "gee:units": "%",
+                "name": "SLT_060_100_05"
+            },
+            {
+                "description": "The soil attribute's 95th percentile confidence limit at depth 60-100cm",
+                "gee:units": "%",
+                "name": "SLT_060_100_95"
+            },
+            {
+                "description": "The soil attribute's estimated value at depth 100-200cm",
+                "gee:units": "%",
+                "name": "SLT_100_200_EV"
+            },
+            {
+                "description": "The soil attribute's 5th percentile confidence limit at depth 100-200cm",
+                "gee:units": "%",
+                "name": "SLT_100_200_05"
+            },
+            {
+                "description": "The soil attribute's 95th percentile confidence limit at depth 100-200cm",
+                "gee:units": "%",
+                "name": "SLT_100_200_95"
+            },
+            {
+                "description": "The soil attribute's estimated value at depth 0-5cm",
+                "gee:units": "%",
+                "name": "SND_000_005_EV"
+            },
+            {
+                "description": "The soil attribute's 5th percentile confidence limit at depth 0-5cm",
+                "gee:units": "%",
+                "name": "SND_000_005_05"
+            },
+            {
+                "description": "The soil attribute's 95th percentile confidence limit at depth 0-5cm",
+                "gee:units": "%",
+                "name": "SND_000_005_95"
+            },
+            {
+                "description": "The soil attribute's estimated value at depth 5-15cm",
+                "gee:units": "%",
+                "name": "SND_005_015_EV"
+            },
+            {
+                "description": "The soil attribute's 5th percentile confidence limit at depth 5-15cm",
+                "gee:units": "%",
+                "name": "SND_005_015_05"
+            },
+            {
+                "description": "The soil attribute's 95th percentile confidence limit at depth 5-15cm",
+                "gee:units": "%",
+                "name": "SND_005_015_95"
+            },
+            {
+                "description": "The soil attribute's estimated value at depth 15-30cm",
+                "gee:units": "%",
+                "name": "SND_015_030_EV"
+            },
+            {
+                "description": "The soil attribute's 5th percentile confidence limit at depth 15-30cm",
+                "gee:units": "%",
+                "name": "SND_015_030_05"
+            },
+            {
+                "description": "The soil attribute's 95th percentile confidence limit at depth 15-30cm",
+                "gee:units": "%",
+                "name": "SND_015_030_95"
+            },
+            {
+                "description": "The soil attribute's estimated value at depth 30-60cm",
+                "gee:units": "%",
+                "name": "SND_030_060_EV"
+            },
+            {
+                "description": "The soil attribute's 5th percentile confidence limit at depth 30-60cm",
+                "gee:units": "%",
+                "name": "SND_030_060_05"
+            },
+            {
+                "description": "The soil attribute's 95th percentile confidence limit at depth 30-60cm",
+                "gee:units": "%",
+                "name": "SND_030_060_95"
+            },
+            {
+                "description": "The soil attribute's estimated value at depth 60-100cm",
+                "gee:units": "%",
+                "name": "SND_060_100_EV"
+            },
+            {
+                "description": "The soil attribute's 5th percentile confidence limit at depth 60-100cm",
+                "gee:units": "%",
+                "name": "SND_060_100_05"
+            },
+            {
+                "description": "The soil attribute's 95th percentile confidence limit at depth 60-100cm",
+                "gee:units": "%",
+                "name": "SND_060_100_95"
+            },
+            {
+                "description": "The soil attribute's estimated value at depth 100-200cm",
+                "gee:units": "%",
+                "name": "SND_100_200_EV"
+            },
+            {
+                "description": "The soil attribute's 5th percentile confidence limit at depth 100-200cm",
+                "gee:units": "%",
+                "name": "SND_100_200_05"
+            },
+            {
+                "description": "The soil attribute's 95th percentile confidence limit at depth 100-200cm",
+                "gee:units": "%",
+                "name": "SND_100_200_95"
+            },
+            {
+                "description": "The soil attribute's estimated value at depth 0-5cm",
+                "gee:units": "%",
+                "name": "SOC_000_005_EV"
+            },
+            {
+                "description": "The soil attribute's 5th percentile confidence limit at depth 0-5cm",
+                "gee:units": "%",
+                "name": "SOC_000_005_05"
+            },
+            {
+                "description": "The soil attribute's 95th percentile confidence limit at depth 0-5cm",
+                "gee:units": "%",
+                "name": "SOC_000_005_95"
+            },
+            {
+                "description": "The soil attribute's estimated value at depth 5-15cm",
+                "gee:units": "%",
+                "name": "SOC_005_015_EV"
+            },
+            {
+                "description": "The soil attribute's 5th percentile confidence limit at depth 5-15cm",
+                "gee:units": "%",
+                "name": "SOC_005_015_05"
+            },
+            {
+                "description": "The soil attribute's 95th percentile confidence limit at depth 5-15cm",
+                "gee:units": "%",
+                "name": "SOC_005_015_95"
+            },
+            {
+                "description": "The soil attribute's estimated value at depth 15-30cm",
+                "gee:units": "%",
+                "name": "SOC_015_030_EV"
+            },
+            {
+                "description": "The soil attribute's 5th percentile confidence limit at depth 15-30cm",
+                "gee:units": "%",
+                "name": "SOC_015_030_05"
+            },
+            {
+                "description": "The soil attribute's 95th percentile confidence limit at depth 15-30cm",
+                "gee:units": "%",
+                "name": "SOC_015_030_95"
+            },
+            {
+                "description": "The soil attribute's estimated value at depth 30-60cm",
+                "gee:units": "%",
+                "name": "SOC_030_060_EV"
+            },
+            {
+                "description": "The soil attribute's 5th percentile confidence limit at depth 30-60cm",
+                "gee:units": "%",
+                "name": "SOC_030_060_05"
+            },
+            {
+                "description": "The soil attribute's 95th percentile confidence limit at depth 30-60cm",
+                "gee:units": "%",
+                "name": "SOC_030_060_95"
+            },
+            {
+                "description": "The soil attribute's estimated value at depth 60-100cm",
+                "gee:units": "%",
+                "name": "SOC_060_100_EV"
+            },
+            {
+                "description": "The soil attribute's 5th percentile confidence limit at depth 60-100cm",
+                "gee:units": "%",
+                "name": "SOC_060_100_05"
+            },
+            {
+                "description": "The soil attribute's 95th percentile confidence limit at depth 60-100cm",
+                "gee:units": "%",
+                "name": "SOC_060_100_95"
+            },
+            {
+                "description": "The soil attribute's estimated value at depth 100-200cm",
+                "gee:units": "%",
+                "name": "SOC_100_200_EV"
+            },
+            {
+                "description": "The soil attribute's 5th percentile confidence limit at depth 100-200cm",
+                "gee:units": "%",
+                "name": "SOC_100_200_05"
+            },
+            {
+                "description": "The soil attribute's 95th percentile confidence limit at depth 100-200cm",
+                "gee:units": "%",
+                "name": "SOC_100_200_95"
+            }
+        ],
+        "gee:schema": [
+            {
+                "description": "Topic category according to Australia's and New Zealand's Spatial\nInformation Council",
+                "name": "anzlic_topic_category",
+                "type": "STRING"
+            },
+            {
+                "description": "General contact",
+                "name": "contact",
+                "type": "STRING"
+            },
+            {
+                "description": "Who to contact for issues related to Earth Engine ingestion",
+                "name": "contact_gee_ingestion",
+                "type": "STRING"
+            },
+            {
+                "description": "Lead Researcher",
+                "name": "contact_lead_researcher",
+                "type": "STRING"
+            },
+            {
+                "description": "Project Director",
+                "name": "contact_project_director",
+                "type": "STRING"
+            },
+            {
+                "description": "Project Leader",
+                "name": "contact_project_leader",
+                "type": "STRING"
+            },
+            {
+                "description": "Country this asset covers",
+                "name": "country",
+                "type": "STRING"
+            },
+            {
+                "description": "ISO country code",
+                "name": "country_code",
+                "type": "STRING"
+            },
+            {
+                "description": "Credit",
+                "name": "credit",
+                "type": "STRING"
+            },
+            {
+                "description": "'Numeric Value' or 'Categorical Value'",
+                "name": "datatype",
+                "type": "STRING"
+            },
+            {
+                "description": "'N' or 'C'",
+                "name": "datatype_code",
+                "type": "STRING"
+            },
+            {
+                "description": "Date of publication",
+                "name": "date_created",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "GSM v2.3 tier 1 or 2, 'P' or 'B'",
+                "name": "estimate_spatial_support",
+                "type": "STRING"
+            },
+            {
+                "description": "'Point estimate' or 'Block estimate'",
+                "name": "estimate_spatial_support_code",
+                "type": "STRING"
+            },
+            {
+                "description": "'Soil sciences not elsewhere classified'",
+                "name": "field_of_research",
+                "type": "STRING"
+            },
+            {
+                "description": "GlobalSoilMap attribute type",
+                "name": "gsm_type",
+                "type": "STRING"
+            },
+            {
+                "description": "'Data mining-kriging methods', 'Composite models. Various modelling\ncombined with variance weighted averaging', or 'Polygon disaggregation\nmethods'\n",
+                "name": "product_type",
+                "type": "STRING"
+            },
+            {
+                "description": "'N', 'C', or 'D'",
+                "name": "product_type_code",
+                "type": "STRING"
+            },
+            {
+                "description": "' National Soil Attribute Maps - Composite product', 'Australia-wide 3D\nSoil Attribute Maps', 'Western Australia Polygon Dissaggregation (DAFW)',\n'South Australia Polygon Dissaggregation (DEWNR)', or 'Tasmania (DPIWE)\nSoil Attribute Mapping'\n",
+                "name": "project",
+                "type": "STRING"
+            },
+            {
+                "description": "'NAT', 'TRN', 'WAT', 'SAT', or 'TAS'",
+                "name": "project_code",
+                "type": "STRING"
+            },
+            {
+                "description": "Provider URL",
+                "name": "provider_url",
+                "type": "STRING"
+            },
+            {
+                "description": "Rights statement",
+                "name": "rights_statement",
+                "type": "STRING"
+            }
+        ],
+        "gsd": [
+            92.77
+        ]
+    },
+    "title": "SLGA: Soil and Landscape Grid of Australia (Soil Attributes)",
+    "type": "Collection",
+    "version": "1",
+    "cube:dimensions": {
+        "x": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                113,
+                154
+            ]
+        },
+        "y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                -44.15,
+                -9.97
+            ]
+        },
+        "t": {
+            "type": "temporal",
+            "extent": [
+                "1950-01-01T00:00:00Z",
+                "2013-12-31T00:00:00Z"
+            ]
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "AWC_000_005_EV",
+                "AWC_000_005_05",
+                "AWC_000_005_95",
+                "AWC_005_015_EV",
+                "AWC_005_015_05",
+                "AWC_005_015_95",
+                "AWC_015_030_EV",
+                "AWC_015_030_05",
+                "AWC_015_030_95",
+                "AWC_030_060_EV",
+                "AWC_030_060_05",
+                "AWC_030_060_95",
+                "AWC_060_100_EV",
+                "AWC_060_100_05",
+                "AWC_060_100_95",
+                "AWC_100_200_EV",
+                "AWC_100_200_05",
+                "AWC_100_200_95",
+                "BDW_000_005_EV",
+                "BDW_000_005_05",
+                "BDW_000_005_95",
+                "BDW_005_015_EV",
+                "BDW_005_015_05",
+                "BDW_005_015_95",
+                "BDW_015_030_EV",
+                "BDW_015_030_05",
+                "BDW_015_030_95",
+                "BDW_030_060_EV",
+                "BDW_030_060_05",
+                "BDW_030_060_95",
+                "BDW_060_100_EV",
+                "BDW_060_100_05",
+                "BDW_060_100_95",
+                "BDW_100_200_EV",
+                "BDW_100_200_05",
+                "BDW_100_200_95",
+                "CLY_000_005_EV",
+                "CLY_000_005_05",
+                "CLY_000_005_95",
+                "CLY_005_015_EV",
+                "CLY_005_015_05",
+                "CLY_005_015_95",
+                "CLY_015_030_EV",
+                "CLY_015_030_05",
+                "CLY_015_030_95",
+                "CLY_030_060_EV",
+                "CLY_030_060_05",
+                "CLY_030_060_95",
+                "CLY_060_100_EV",
+                "CLY_060_100_05",
+                "CLY_060_100_95",
+                "CLY_100_200_EV",
+                "CLY_100_200_05",
+                "CLY_100_200_95",
+                "DER_000_200_EV",
+                "DER_000_200_05",
+                "DER_000_200_95",
+                "DES_000_200_EV",
+                "DES_000_200_05",
+                "DES_000_200_95",
+                "ECE_000_005_EV",
+                "ECE_000_005_05",
+                "ECE_000_005_95",
+                "ECE_005_015_EV",
+                "ECE_005_015_05",
+                "ECE_005_015_95",
+                "ECE_015_030_EV",
+                "ECE_015_030_05",
+                "ECE_015_030_95",
+                "ECE_030_060_EV",
+                "ECE_030_060_05",
+                "ECE_030_060_95",
+                "ECE_060_100_EV",
+                "ECE_060_100_05",
+                "ECE_060_100_95",
+                "ECE_100_200_EV",
+                "ECE_100_200_05",
+                "ECE_100_200_95",
+                "NTO_000_005_EV",
+                "NTO_000_005_05",
+                "NTO_000_005_95",
+                "NTO_005_015_EV",
+                "NTO_005_015_05",
+                "NTO_005_015_95",
+                "NTO_015_030_EV",
+                "NTO_015_030_05",
+                "NTO_015_030_95",
+                "NTO_030_060_EV",
+                "NTO_030_060_05",
+                "NTO_030_060_95",
+                "NTO_060_100_EV",
+                "NTO_060_100_05",
+                "NTO_060_100_95",
+                "NTO_100_200_EV",
+                "NTO_100_200_05",
+                "NTO_100_200_95",
+                "pHc_000_005_EV",
+                "pHc_000_005_05",
+                "pHc_000_005_95",
+                "pHc_005_015_EV",
+                "pHc_005_015_05",
+                "pHc_005_015_95",
+                "pHc_015_030_EV",
+                "pHc_015_030_05",
+                "pHc_015_030_95",
+                "pHc_030_060_EV",
+                "pHc_030_060_05",
+                "pHc_030_060_95",
+                "pHc_060_100_EV",
+                "pHc_060_100_05",
+                "pHc_060_100_95",
+                "pHc_100_200_EV",
+                "pHc_100_200_05",
+                "pHc_100_200_95",
+                "PTO_000_005_EV",
+                "PTO_000_005_05",
+                "PTO_000_005_95",
+                "PTO_005_015_EV",
+                "PTO_005_015_05",
+                "PTO_005_015_95",
+                "PTO_015_030_EV",
+                "PTO_015_030_05",
+                "PTO_015_030_95",
+                "PTO_030_060_EV",
+                "PTO_030_060_05",
+                "PTO_030_060_95",
+                "PTO_060_100_EV",
+                "PTO_060_100_05",
+                "PTO_060_100_95",
+                "PTO_100_200_EV",
+                "PTO_100_200_05",
+                "PTO_100_200_95",
+                "SLT_000_005_EV",
+                "SLT_000_005_05",
+                "SLT_000_005_95",
+                "SLT_005_015_EV",
+                "SLT_005_015_05",
+                "SLT_005_015_95",
+                "SLT_015_030_EV",
+                "SLT_015_030_05",
+                "SLT_015_030_95",
+                "SLT_030_060_EV",
+                "SLT_030_060_05",
+                "SLT_030_060_95",
+                "SLT_060_100_EV",
+                "SLT_060_100_05",
+                "SLT_060_100_95",
+                "SLT_100_200_EV",
+                "SLT_100_200_05",
+                "SLT_100_200_95",
+                "SND_000_005_EV",
+                "SND_000_005_05",
+                "SND_000_005_95",
+                "SND_005_015_EV",
+                "SND_005_015_05",
+                "SND_005_015_95",
+                "SND_015_030_EV",
+                "SND_015_030_05",
+                "SND_015_030_95",
+                "SND_030_060_EV",
+                "SND_030_060_05",
+                "SND_030_060_95",
+                "SND_060_100_EV",
+                "SND_060_100_05",
+                "SND_060_100_95",
+                "SND_100_200_EV",
+                "SND_100_200_05",
+                "SND_100_200_95",
+                "SOC_000_005_EV",
+                "SOC_000_005_05",
+                "SOC_000_005_95",
+                "SOC_005_015_EV",
+                "SOC_005_015_05",
+                "SOC_005_015_95",
+                "SOC_015_030_EV",
+                "SOC_015_030_05",
+                "SOC_015_030_95",
+                "SOC_030_060_EV",
+                "SOC_030_060_05",
+                "SOC_030_060_95",
+                "SOC_060_100_EV",
+                "SOC_060_100_05",
+                "SOC_060_100_95",
+                "SOC_100_200_EV",
+                "SOC_100_200_05",
+                "SOC_100_200_95"
+            ]
+        }
+    },
+    "assets": {
+        "preview_4": {
+            "href": "https://developers.google.com/earth-engine/datasets/images/CSIRO/CSIRO_SLGA_sample.png",
+            "type": "image/png",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    }
+}

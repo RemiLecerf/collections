@@ -1,0 +1,179 @@
+{
+    "description": "The Landsat Net Primary Production (NPP) CONUS dataset estimates NPP using\nLandsat Surface Reflectance for CONUS. NPP is the amount of\ncarbon captured by plants in an ecosystem, after accounting for losses due to\nrespiration. NPP is calculated using the MOD17 algorithm (see [MOD17 User\nGuide](https://www.ntsg.umt.edu/files/modis/MOD17UsersGuide2015_v3.pdf)) with\nLandsat Surface Reflectance, gridMET, and the National Land Cover Database.\n",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -124.84,
+                    24.42,
+                    -64.82,
+                    49.72
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1986-01-01T00:00:00Z",
+                    "2020-01-01T00:00:00"
+                ]
+            ]
+        }
+    },
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "year"
+    },
+    "gee:terms_of_use": "This work is in the public domain and is free of known copyright\nrestrictions. Users should properly cite the source used in the creation of\nany reports and publications resulting from the use of this dataset and note\nthe date when the data was acquired.\n",
+    "gee:type": "image_collection",
+    "gee:user_uploaded": true,
+    "id": "UMT/NTSG/v2/LANDSAT/NPP",
+    "keywords": [
+        "conus",
+        "gridmet_derived",
+        "landsat",
+        "mod17",
+        "nlcd_derived",
+        "npp",
+        "photosynthesis",
+        "production",
+        "productivity",
+        "yearly"
+    ],
+    "license": "proprietary",
+    "links": [
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections/UMT/NTSG/v2/LANDSAT/NPP",
+            "rel": "self",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections",
+            "rel": "parent",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/",
+            "rel": "root",
+            "type": "application/json"
+        },
+        {
+            "code": "JavaScript",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/UMT/UMT_NTSG_v2_LANDSAT_NPP",
+            "rel": "related",
+            "title": "Run the example for UMT/NTSG/v2/LANDSAT/NPP in the Earth Engine Code Editor",
+            "type": "text/html"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/images/UMT/UMT_NTSG_v2_LANDSAT_NPP_sample.png",
+            "rel": "preview",
+            "type": "image/png"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/UMT_NTSG_v2_LANDSAT_NPP#terms-of-use",
+            "rel": "license",
+            "type": "text/html"
+        }
+    ],
+    "providers": [
+        {
+            "name": "University of Montana Numerical Terradynamic Simulation Group (NTSG)",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.ntsg.umt.edu/project/landsat/landsat-productivity.php"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/UMT_NTSG_v2_LANDSAT_NPP"
+        }
+    ],
+    "sci:citation": "Robinson, N.P., B.W. Allred, W.K. Smith, M.O. Jones, A. Moreno, T.A.\nErickson, D.E. Naugle, and S.W. Running. 2018. Terrestrial primary\nproduction for the conterminous United States derived from Landsat 30 m and\nMODIS 250 m. Remote Sensing in Ecology and Conservation.\n[doi:10.1002/rse2.74](https://doi.org/10.1002/rse2.74)\n",
+    "stac_extensions": [
+        "collection-assets"
+    ],
+    "stac_version": "1.0.0",
+    "summaries": {
+        "QC": {
+            "maximum": 255
+        },
+        "annualNPP": {
+            "maximum": 65535
+        },
+        "eo:bands": [
+            {
+                "description": "Annual net primary production",
+                "gee:scale": 0.0001,
+                "gee:units": "kg*C/m^2",
+                "name": "annualNPP"
+            },
+            {
+                "description": "Percentage of gap-filled Landsat 16-day composites. Gaps are\ncaused by missing data, high cloud contamination, and/or erroneous pixels.\nA value of 255 indicates incomplete data due to failure of the gap-filling\nmethod.\n",
+                "gee:units": "%",
+                "name": "QC"
+            }
+        ],
+        "gsd": [
+            30
+        ],
+        "instruments": [
+            "ETM",
+            "ETM+",
+            "OLI"
+        ],
+        "platform": [
+            "Landsat 5",
+            "Landsat 7",
+            "Landsat 8"
+        ]
+    },
+    "title": "Landsat Net Primary Production CONUS",
+    "type": "Collection",
+    "version": "0.2.0",
+    "cube:dimensions": {
+        "x": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                -124.84,
+                -64.82
+            ]
+        },
+        "y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                24.42,
+                49.72
+            ]
+        },
+        "t": {
+            "type": "temporal",
+            "extent": [
+                "1986-01-01T00:00:00Z",
+                "2020-01-01T00:00:00"
+            ]
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "annualNPP",
+                "QC"
+            ]
+        }
+    },
+    "assets": {
+        "preview_4": {
+            "href": "https://developers.google.com/earth-engine/datasets/images/UMT/UMT_NTSG_v2_LANDSAT_NPP_sample.png",
+            "type": "image/png",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    }
+}

@@ -1,0 +1,64 @@
+{
+  "type": "Collection",
+  "id": "EO:MO:DAT:SST_MED_PHY_SUBSKIN_L4_NRT_010_036",
+  "stac_version": "1.0.0",
+  "description": "''' Short description: ''' \n\nFor the Mediterranean Sea - the CNR diurnal sub-skin Sea Surface Temperature (SST) product provides daily gap-free (L4) maps of hourly mean sub-skin SST at 1/16° (0.0625°) horizontal resolution over the CMEMS Mediterranean Sea (MED) domain, by combining infrared satellite and model data (Marullo et al., 2014). The implementation of this product takes advantage of the consolidated operational SST processing chains that provide daily mean SST fields over the same basin (Buongiorno Nardelli et al., 2013). The sub-skin temperature is the temperature at the base of the thermal skin layer and it is equivalent to the foundation SST at night, but during daytime it can be significantly different under favorable (clear sky and low wind) diurnal warming conditions. The sub-skin SST L4 product is created by combining geostationary satellite observations aquired from SEVIRI and model data (used as first-guess) aquired from the CMEMS MED Monitoring Forecasting Center (MFC). This approach takes advantage of geostationary satellite observations as the input signal source to produce hourly gap-free SST fields using model analyses as first-guess. The resulting SST anomaly field (satellite-model) is free, or nearly free, of any diurnal cycle, thus allowing to interpolate SST anomalies using satellite data acquired at different times of the day (Marullo et al., 2014).\n \n[https://help.marine.copernicus.eu/en/articles/4444611-how-to-cite-or-reference-copernicus-marine-products-and-services How to cite]\n\n'''DOI (product) :'''   \nhttps://doi.org/10.48670/moi-00170",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/cmems_obs-sst_med_phy-sst_nrt_diurnal-oi-0.0625deg_PT1H-m",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_obs-sst_med_phy-sst_nrt_diurnal-oi-0.0625deg_PT1H-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/SST_MED_PHY_SUBSKIN_L4_NRT_010_036/cmems_obs-sst_med_phy-sst_nrt_diurnal-oi-0.0625deg_PT1H-m",
+      "type": "WWW:FTP",
+      "title": "cmems_obs-sst_med_phy-sst_nrt_diurnal-oi-0.0625deg_PT1H-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/cmems_obs-sst_med_phy-sst_nrt_diurnal-oi-0.0625deg_PT1H-m",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_obs-sst_med_phy-sst_nrt_diurnal-oi-0.0625deg_PT1H-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=SST_MED_PHY_SUBSKIN_L4_NRT_010_036-TDS&product=cmems_obs-sst_med_phy-sst_nrt_diurnal-oi-0.0625deg_PT1H-m",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_obs-sst_med_phy-sst_nrt_diurnal-oi-0.0625deg_PT1H-m"
+    }
+  ],
+  "title": "Mediterranean Sea - High Resolution Diurnal Subskin Sea Surface Temperature Analysis",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2019-01-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

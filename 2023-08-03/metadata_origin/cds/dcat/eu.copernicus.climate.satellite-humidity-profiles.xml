@@ -1,0 +1,69 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dct="http://purl.org/dc/terms/" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/metadata/eu.copernicus.climate.satellite-humidity-profiles">
+        <foaf:primaryTopic rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/resource/10.24381/cds.e7b3213f"/>
+        <dct:issued>2018-03-28</dct:issued>
+        <dct:modified>2018-03-28</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/srv/eng/xml.metadata.get?uuid=eu.copernicus.climate.satellite-humidity-profiles">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://cds.climate.copernicus.eu:443//geonetwork?uuid=eu.copernicus.climate.satellite-humidity-profiles">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/resource/10.24381/cds.e7b3213f">
+        <dct:identifier>10.24381/cds.e7b3213f</dct:identifier>
+        <dct:title>Tropospheric humidity profiles averaged monthly and zonally from 2006 to present derived from satellite observations</dct:title>
+        <dct:abstract>This dataset provides monthly and zonally averaged tropospheric humidity profiles derived from globally distributed GPS radio occultation (RO) measurements from EUMETSAT's Metop polar-orbiting satellites. Humidity plays an important role in the Earth's climate system, due to the strong greenhouse effect of water vapour but also for its role in the global energy transport, vertically in the atmosphere and horizontally between different geographical regions. It is central to the formation of clouds and precipitation, and determines the fundamental conditions for the biosphere, including distribution of rainfall and droughts. 
+The dataset is produced by the EUMETSAT Radio Occultation Meteorology Satellite Application Facility (ROM SAF) and comprises the Climate Data Record (CDR, December 2006 to December 2016, ROM SAF product ID GRM-29-R1) and the Interim Climate Data Record (ICDR, January 2017 to present, ROM SAF product ID GRM-29-I1). Tropospheric humidity profiles are retrieved using 1D variational assimilation of observed atmospheric refractivity profiles and background model information from the ECMWF reanalysis. Compared to other satellite observation techniques, RO observations have high vertical resolution and are not affected by clouds or the type of underlying surface (such as land and sea).
+The RO retrievals are averaged in monthly and 5-degree latitude bands for altitudes below 12km which roughly covers the troposphere. The variability (standard deviation) within such monthly bins are also provided, as well as associated quantities such as observation counts, sampling errors and an estimate of the fraction of model information in the humidity retrievals. In addition, mean and variability are provided for humidity for the a priori ECMWF reanalysis data, sampled (i.e. collocated) similarly at the satellite observation locations. 
+Please note that the terms humidity and water vapour are used interchangeably on this page and in the documentation.
+
+Variables in the dataset/application are:
+Specific humidity</dct:abstract>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/GEMET%20-%20INSPIRE%20themes%2C%20version%201.0/Meteorological geographical features"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Spatial coverage: Global"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Variable domain: Atmosphere (upper air)"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Temporal coverage: Past"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Temporal coverage: Present"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Product type: Satellite observations"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Provider: EUMETSAT SAF"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/iso/topicCategory/climatologyMeteorologyAtmosphere"/>
+        <foaf:thumbnail rdf:resource="https://datastore.copernicus-climate.eu/c3s/published-forms-v2/c3sprod/satellite-humidity-profiles/overview.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((0 -90, 0 90, 360 90, 360 -90, 0 -90))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:temporal>2006-01-01
+          /
+          2023-02-01</dct:temporal>
+        <dct:publisher rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/organization/ECMWF"/>
+        <dct:accrualPeriodicity>asNeeded</dct:accrualPeriodicity>
+        <dct:language>eng</dct:language>
+        <dct:license>licence</dct:license>
+        <dct:license>https://cds.climate.copernicus.eu/api/v2/terms/static/eumetsat-rom-saf.pdf</dct:license>
+        <dcat:distribution rdf:resource="https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.e7b3213f"/>
+        <dcat:distribution rdf:resource="#"/>
+        <dcat:distribution rdf:resource="#"/>
+        <dcat:distribution rdf:resource="#"/>
+        <dcat:distribution rdf:resource="#"/>
+        <dcat:distribution rdf:resource="#"/>
+        <dcat:dataQuality>ROMSAF</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+    

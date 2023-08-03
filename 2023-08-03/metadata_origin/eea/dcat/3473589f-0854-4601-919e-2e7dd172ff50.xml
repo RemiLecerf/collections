@@ -1,0 +1,163 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:dct="http://purl.org/dc/terms/" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://sdi.eea.europa.eu/catalogue/records/3473589f-0854-4601-919e-2e7dd172ff50">
+        <foaf:primaryTopic rdf:resource="http://localhost:8080/geonetwork//copernicus_r_3035_25_m_eu-dem_p_2011_v01_r01%20DAT-193-en"/>
+        <dct:conformsTo rdf:resource="https://www.iso.org/standard/32557.html"/>
+        <dct:issued>2021-04-28</dct:issued>
+        <dct:modified>2021-04-28</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://sdi.eea.europa.eu/catalogue/srv/api/records/3473589f-0854-4601-919e-2e7dd172ff50/formatters/xml">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://sdi.eea.europa.eu/catalogue/srv/api/records/3473589f-0854-4601-919e-2e7dd172ff50">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="http://localhost:8080/geonetwork//datasets/copernicus_r_3035_25_m_eu-dem_p_2011_v01_r01 DAT-193-en">
+        <dct:identifier>copernicus_r_3035_25_m_eu-dem_p_2011_v01_r01 DAT-193-en</dct:identifier>
+        <dct:title>EU-DEM (raster) - version 1.1, Apr. 2016</dct:title>
+        <dct:abstract>The EU-DEM v1.1 is a resulting dataset of the EU-DEM v1.0 upgrade which enhances the correction of geo-positioning issues, reducing the number of artefacts, improving the vertical accuracy of EU-DEM using ICESat as reference and ensuring consistency with EU-Hydro public beta.
+
+EU-DEM v1.1 is available in GeoTIFF 32 bits format. It is a contiguous dataset divided into 100x100 km tiles, resulting in a total of 1992 tiles of 4000x4000 pixel at 25m resolution with vertical accuracy: +/- 7 meters RMSE. The tiles have been grouped in big regions:
+    - EUDEM2_ASIA (Türkiye)
+    - EUDEM2_ATLAN (Hondo and Fr_Islands)
+    - EUDEM2_BRITAIN (Thames, Shannon and Tweed)
+    - EUDEM2_EUROPE_1 (Duero, Ebro, Tajo, Guadalquivir and Jucar)
+    - EUDEM2_EUROPE_2 (Tirso, Mesima, Tevere and Po)
+    - EUDEM2_EUROPE_3 (Garonne, Rhone, Loire, Seine and western Rhine)
+    - EUDEM2_EUROPE_4 (Danube)
+    - EUDEM2_EUROPE_5 (Skjern, Nemunas, Vistula, Oder, Elbe and Eastern Rhine)
+    - EUDEM2_EUROPE_6 (Bulgaria and Pinios)
+    - EUDEM2_ICELAND (Iceland)
+    - EUDEM2_SCAND (Vorma, Gota, Angerman, Tana, Kemi and Neva)
+    - EUDEM2_SOUTH_AMERICA (Fr_Guiana)
+EU-DEM v1.1 upgrade was coordinated by the European Environment Agency (EEA) in the frame of the EU Copernicus programme.</dct:abstract>
+        <dcat:theme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET%20-%20INSPIRE%20themes%2C%20version%201.0/concepts/Elevation"/>
+        <dcat:theme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/Continents%2C%20countries%2C%20sea%20regions%20of%20the%20world./concepts/EEA39"/>
+        <dcat:theme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET/concepts/land%20use"/>
+        <dcat:theme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET/concepts/landscape%20alteration"/>
+        <dcat:theme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET/concepts/land%20cover"/>
+        <dcat:theme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET/concepts/digital%20land%20model"/>
+        <dcat:theme rdf:resource="http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/european"/>
+        <dcat:theme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/EEA%20Management%20Plan/concepts/2017%203.6.1"/>
+        <dcat:theme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/EEA%20topics/concepts/Land%20use"/>
+        <dcat:theme rdf:resource="https://inspire.ec.europa.eu/metadata-codelist/TopicCategory/environment"/>
+        <dcat:theme rdf:resource="https://inspire.ec.europa.eu/metadata-codelist/TopicCategory/imageryBaseMapsEarthCover"/>
+        <foaf:thumbnail rdf:resource="https://sdi.eea.europa.eu/public/catalogue-graphic-overview/3473589f-0854-4601-919e-2e7dd172ff50.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <geo:asWKT xmlns:geo="http://www.opengis.net/ont/geosparql#" rdf:datatype="http://www.opengis.net/rdf#wktLiteral">Polygon((-31.2684 27.6375, -31.2684 66.5662, -13.4198 66.5662, -13.4198 27.6375, -31.2684 27.6375))</geo:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <geo:asWKT xmlns:geo="http://www.opengis.net/ont/geosparql#" rdf:datatype="http://www.opengis.net/rdf#wktLiteral">Polygon((-10.6198 34.5619, -10.6198 71.1855, 44.8212 71.1855, 44.8212 34.5619, -10.6198 34.5619))</geo:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:temporal>2011-01-01
+          /
+          2011-12-31</dct:temporal>
+        <dct:issued>2016-04-20</dct:issued>
+        <dct:updated>2016-04-20</dct:updated>
+        <dct:accrualPeriodicity>continual</dct:accrualPeriodicity>
+        <dct:language>eng</dct:language>
+        <dct:license>Access to data is based on a principle of full, open and free access as established by the Copernicus data and information policy Regulation (EU) No 1159/2013 of 12 July 2013. This regulation establishes registration and licensing conditions for GMES/Copernicus users.
+
+Free, full and open access to this data set is made on the conditions that:
+
+1. When distributing or communicating Copernicus dedicated data and Copernicus service information to the public, users shall inform the public of the source of that data and information.
+
+2. Users shall make sure not to convey the impression to the public that the user's activities are officially endorsed by the Union.
+
+3. Where that data or information has been adapted or modified, the user shall clearly state this.
+
+4. The data remain the sole property of the European Union. Any information and data produced in the framework of the action shall be the sole property of the European Union. Any communication and publication by the beneficiary shall acknowledge that the data were produced “with funding by the European Union”.</dct:license>
+        <dct:license rdf:resource="http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/noLimitations">no limitations to public access</dct:license>
+        <dcat:distribution rdf:resource="https://sdi.eea.europa.eu/catalogue/records/3473589f-0854-4601-919e-2e7dd172ff50#WWW%3ALINK-1.0-http--link-"/>
+        <dcat:distribution rdf:resource="https://sdi.eea.europa.eu/catalogue/records/3473589f-0854-4601-919e-2e7dd172ff50#OGC%3AWMS-DEM_v11_Masked2"/>
+        <dcat:distribution rdf:resource="https://sdi.eea.europa.eu/catalogue/records/3473589f-0854-4601-919e-2e7dd172ff50#ESRI%3AREST-"/>
+        <dcat:distribution rdf:resource="https://sdi.eea.europa.eu/catalogue/records/3473589f-0854-4601-919e-2e7dd172ff50#OGC%3AWMS-DEM_V11_Download"/>
+        <dct:relation rdf:resource="https://sdi.eea.europa.eu/catalogue/records/19cff95e-61ac-45ed-8ee3-c43220d709cf"/>
+        <dcat:dataQuality>•Correction of geo-positioning issues in EU-DEM v1.0 as reference also using SPOT 2011 imagery
+•Bias adjustment with ICESat points
+•Screening and removal of artefacts in the EU-DEM v1.0, including the presence of blunders (i.e. negative or positive anomalies)
+•Ensuring consistency with EU-Hydro to produce a better river network topology:
+   --Consistency of the coastline with the EU-HYDRO coastline, including the removal of DEM values outside the EU-HYDRO coastline
+   --Use of the EU-HYDRO coastline to smooth the gradient to the coast in flat regions
+   --Burning of EU-HYDRO water bodies to set EU-DEM to the minimum height inside the water body, smoothing the boundaries</dcat:dataQuality>
+      </dcat:Dataset>
+      <skos:Concept rdf:about="http://localhost:8080/geonetwork//registries/vocabularies/GEMET%20-%20INSPIRE%20themes%2C%20version%201.0/concepts/Elevation">
+        <skos:inScheme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET%20-%20INSPIRE%20themes%2C%20version%201.0"/>
+        <skos:prefLabel>Elevation</skos:prefLabel>
+      </skos:Concept>
+      <skos:Concept rdf:about="http://localhost:8080/geonetwork//registries/vocabularies/Continents%2C%20countries%2C%20sea%20regions%20of%20the%20world./concepts/EEA39">
+        <skos:inScheme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/Continents%2C%20countries%2C%20sea%20regions%20of%20the%20world."/>
+        <skos:prefLabel>EEA39</skos:prefLabel>
+      </skos:Concept>
+      <skos:Concept rdf:about="http://localhost:8080/geonetwork//registries/vocabularies/GEMET/concepts/land%20use">
+        <skos:inScheme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET"/>
+        <skos:prefLabel>land use</skos:prefLabel>
+      </skos:Concept>
+      <skos:Concept rdf:about="http://localhost:8080/geonetwork//registries/vocabularies/GEMET/concepts/landscape%20alteration">
+        <skos:inScheme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET"/>
+        <skos:prefLabel>landscape alteration</skos:prefLabel>
+      </skos:Concept>
+      <skos:Concept rdf:about="http://localhost:8080/geonetwork//registries/vocabularies/GEMET/concepts/land%20cover">
+        <skos:inScheme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET"/>
+        <skos:prefLabel>land cover</skos:prefLabel>
+      </skos:Concept>
+      <skos:Concept rdf:about="http://localhost:8080/geonetwork//registries/vocabularies/GEMET/concepts/digital%20land%20model">
+        <skos:inScheme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET"/>
+        <skos:prefLabel>digital land model</skos:prefLabel>
+      </skos:Concept>
+      <skos:Concept rdf:about="http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/european">
+        <skos:inScheme rdf:resource="http://inspire.ec.europa.eu/metadata-codelist/SpatialScope"/>
+        <skos:prefLabel>European</skos:prefLabel>
+      </skos:Concept>
+      <skos:Concept rdf:about="http://localhost:8080/geonetwork//registries/vocabularies/EEA%20Management%20Plan/concepts/2017%203.6.1">
+        <skos:inScheme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/EEA%20Management%20Plan"/>
+        <skos:prefLabel>2017 3.6.1</skos:prefLabel>
+      </skos:Concept>
+      <skos:Concept rdf:about="http://localhost:8080/geonetwork//registries/vocabularies/EEA%20topics/concepts/Land%20use">
+        <skos:inScheme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/EEA%20topics"/>
+        <skos:prefLabel>Land use</skos:prefLabel>
+      </skos:Concept>
+      <dcat:Distribution rdf:about="https://sdi.eea.europa.eu/catalogue/records/3473589f-0854-4601-919e-2e7dd172ff50#WWW%3ALINK-1.0-http--link-">
+        <dcat:accessURL>https://land.copernicus.eu/pan-european/satellite-derived-products/eu-dem/eu-dem-v1.1/view</dcat:accessURL>
+        <dct:format>WWW:LINK-1.0-http--link</dct:format>
+      </dcat:Distribution>
+      <dcat:Distribution rdf:about="https://sdi.eea.europa.eu/catalogue/records/3473589f-0854-4601-919e-2e7dd172ff50#OGC%3AWMS-DEM_v11_Masked2">
+        <dcat:accessURL>https://image.discomap.eea.europa.eu/arcgis/services/Elevation/EUElev_DEM_V11/MapServer/WMSServer?service=WMS&amp;request=GetCapabilities&amp;version=1.3.0</dcat:accessURL>
+        <dct:title>DEM_v11_Masked2</dct:title>
+        <dct:format>OGC:WMS</dct:format>
+      </dcat:Distribution>
+      <dcat:Distribution rdf:about="https://sdi.eea.europa.eu/catalogue/records/3473589f-0854-4601-919e-2e7dd172ff50#ESRI%3AREST-">
+        <dcat:accessURL>https://image.discomap.eea.europa.eu/arcgis/rest/services/Elevation/EUElev_DEM_V11/MapServer</dcat:accessURL>
+        <dct:format>ESRI:REST</dct:format>
+      </dcat:Distribution>
+      <dcat:Distribution rdf:about="https://sdi.eea.europa.eu/catalogue/records/3473589f-0854-4601-919e-2e7dd172ff50#OGC%3AWMS-DEM_V11_Download">
+        <dcat:accessURL>https://image.discomap.eea.europa.eu/arcgis/services/DownloadLayers/EUElev_DEM_V11_DL/MapServer/WMSServer?service=WMS&amp;request=GetCapabilities&amp;version=1.3.0</dcat:accessURL>
+        <dct:title>DEM_V11_Download</dct:title>
+        <dct:format>OGC:WMS</dct:format>
+      </dcat:Distribution>
+      <foaf:Organization rdf:about="http://localhost:8080/geonetwork//organizations/European%20Environment%20Agency">
+        <foaf:name>European Environment Agency</foaf:name>
+        <foaf:member rdf:resource="http://localhost:8080/geonetwork//persons/sdi%40eea.europa.eu"/>
+      </foaf:Organization>
+      <foaf:Agent rdf:about="http://localhost:8080/geonetwork//persons/sdi%40eea.europa.eu">
+        <foaf:mbox rdf:resource="mailto:sdi@eea.europa.eu"/>
+      </foaf:Agent>
+    </rdf:RDF>
+    

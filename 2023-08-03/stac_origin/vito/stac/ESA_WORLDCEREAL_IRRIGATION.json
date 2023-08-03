@@ -1,0 +1,134 @@
+{
+    "cube:dimensions": {
+        "bands": {
+            "type": "bands",
+            "values": [
+                "classification",
+                "confidence"
+            ]
+        },
+        "t": {
+            "extent": [
+                "2020-09-12T00:00:00Z",
+                "2021-12-20T00:00:00Z"
+            ],
+            "type": "temporal"
+        },
+        "x": {
+            "axis": "x",
+            "extent": [
+                -180.00446428571428,
+                179.9955357
+            ],
+            "reference_system": 4326,
+            "step": 8.3333333333e-05,
+            "type": "spatial"
+        },
+        "y": {
+            "axis": "y",
+            "extent": [
+                -59.9955357,
+                80.0044643
+            ],
+            "reference_system": 4326,
+            "step": 8.3333333333e-05,
+            "type": "spatial"
+        }
+    },
+    "description": "WorldCereal irrigation, globally, at 10m resolution in specific seasons throughout the year. \n\n##Seasons\n\n The date of observations in this collection is the end date of the season. This start date varies depending on the agro-ecological zone. WorldCereal defines these seasons:\n * wintercereals\n* maize main \n* maize second\n ",
+    "experimental": true,
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180.00446428571428,
+                    -59.9955357,
+                    179.9955357,
+                    80.0044643
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2020-09-12T00:00:00Z",
+                    "2021-12-20T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "id": "ESA_WORLDCEREAL_IRRIGATION",
+    "item_assets": {
+        "classification": {
+            "eo:bands": [
+                {
+                    "description": "classification band",
+                    "name": "classification"
+                },
+                {
+                    "description": "confidence band",
+                    "name": "confidence"
+                }
+            ],
+            "gsd": 10,
+            "proj:epsg": 4326,
+            "raster:bands": [
+                {
+                    "classification:classes": [
+                        {
+                            "description": "pixel not marked as maize",
+                            "name": "not active"
+                        },
+                        {
+                            "description": "classified as irrigation in the respective season",
+                            "name": "active",
+                            "value": 100
+                        },
+                        {
+                            "description": "not crop",
+                            "name": "not crop",
+                            "value": 254
+                        }
+                    ]
+                }
+            ],
+            "title": "classification tiff",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        }
+    },
+    "license": "CC-BY-4.0",
+    "links": [
+        {
+            "href": "https://esa-worldcereal.org",
+            "rel": "alternate",
+            "title": "Product web page."
+        }
+    ],
+    "providers": [
+        {
+            "name": "ESA",
+            "roles": [
+                "licensor"
+            ],
+            "url": "https://esa-worldcereal.org"
+        },
+        {
+            "description": "VITO remote sensing lead the consortium that produced the WorldCereal product on behalf of ESA. VITO also hosts the resulting archive.",
+            "name": "VITO",
+            "processing:level": "L4",
+            "processing:software": {
+                "WorldCereal": "1.0"
+            },
+            "roles": [
+                "producer",
+                "host"
+            ]
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/datacube/v2.2.0/schema.json",
+        "https://stac-extensions.github.io/eo/v1.1.0/schema.json"
+    ],
+    "stac_version": "0.9.0",
+    "title": "ESA WorldCereal irrigation"
+}

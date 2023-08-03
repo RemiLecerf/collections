@@ -1,0 +1,57 @@
+<csw:Record xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">EO:ECMWF:DAT:INSITU_OBSERVATIONS_GNSS</dc:identifier>
+      <dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">In-situ observations of water vapour and atmospheric delay from the ground-based GNSS network from 1996 to present</dc:title>
+      <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/">dataset</dc:type>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Atmospheric conditions</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Product type: In-situ observations</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Spatial coverage: Global</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Variable domain: Atmosphere</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Variable domain: Atmosphere (upper air)</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Variable domain: Atmosphere (columnar property)</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Variable domain: Water Vapour (upper air)</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Temporal coverage: Past</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Temporal coverage: Present</dc:subject>
+      <dc:format xmlns:dc="http://purl.org/dc/elements/1.1/">CSV</dc:format>
+      <dct:abstract xmlns:dct="http://purl.org/dc/terms/">This dataset provides estimates of water vapour derived from atmospheric delays in Global Navigation Satellite System
+(GNSS) radio signals.
+The initial data is collected from two in situ ground-based network of GNSS receivers &#8211; the International GNSS Service
+(IGS) and EUREF Permanent Network (EPN). The IGS collects, archives, and freely distributes GNSS data from a 
+cooperatively operated global network of more than 500 ground-based GNSS stations since 1994. The EPN is a European 
+network of more than 300 continuously operating GNSS reference stations with precisely known coordinates.
+The fundamental observable of ground-based GNSS is the Zenith Total Delay (ZTD). This observable represents the 
+propagation delay induced by the atmosphere on GNSS signals between the GNSS satellites and a GNSS receiver.
+Using in-situ measurements of ZTD as well as ancillary meteorological data at the site, the vertically-integrated total 
+amount if water vapour in the air column can be retrieved. This integrated quantity is referred to as Total Column 
+Water Vapour (TCWV), or Total Precipitable Water (TPW), or Integrated Precipitable Water (IPW) or also Integrated Water
+Vapour (IWV).
+The TCWV values, with corresponding uncertainties, are based on the daily product of IGS and the 2nd reprocessing campaign
+of the EPN (EPN-repro2). Both networks provide hourly records of ZTD as part of the products derived from GNSS data processing.
+The GNSS TCWV derived from these ZTD data is a new product, made available exclusively for the Climate Data Store (CDS).
+The data user must consider that while the EPN-repro2 consists of tropospheric parameters derived from consistently 
+reprocessed data spanning multiple decades, the IGS daily product is a near real-time product which may contain jumps 
+in the time-series when a new processing model is introduced. Therefore, IGS daily ZTD and TCWV should not be considered
+as reference products. 
+The method for retrieval of GNSS TCWV and details on the algorithms can be found in the documentation. For comparison, 
+TCWV values from the ECMWF ERA5 reanalysis are also made available for the user.
+The datasets can be downloaded as comma-separated values (CSV) files organized in two different ways:
+
+One row per report: for each report all variables are provided as individual columns in one row (referenced as csv-lev in the variable lists below).
+One row per observable: (no aggregation) each row provides information about one variable only (referenced as csv-obs in the variable lists below).
+
+
+Variables in the dataset/application are:
+Total column water vapour, Total column water vapour combined uncertainty, Total column water vapour era5, Zenith total delay, Zenith total delay random uncertainty
+
+Variables in the dataset/application are:
+City, Combined uncertainty, Era5, Height of station above sea level, Latitude, Longitude, Observation value, Observed variable, Organisation name, Random uncertainty, Report id, Report timestamp, Sensor altitude, Start date, Station name</dct:abstract>
+      <dct:spatial xmlns:dct="http://purl.org/dc/terms/">::EPSG:4326</dct:spatial>
+      <dc:rights xmlns:dc="http://purl.org/dc/elements/1.1/">https://cds.climate.copernicus.eu/api/v2/terms/static/20180314_Copernicus_License_V1.1.pdf</dc:rights>
+      <dc:rights xmlns:dc="http://purl.org/dc/elements/1.1/">https://cds.climate.copernicus.eu/api/v2/terms/static/gnss-data-policy.pdf</dc:rights>
+      <dc:rights xmlns:dc="http://purl.org/dc/elements/1.1/">Content accessible through the CDS may only be used under the terms of the licenses attributed to each particular resource.</dc:rights>
+      <dct:accessRights xmlns:dct="http://purl.org/dc/terms/">licence</dct:accessRights>
+      <ows:BoundingBox xmlns:ows="http://www.opengis.net/ows">
+        <ows:LowerCorner>-180 -89</ows:LowerCorner>
+        <ows:UpperCorner>180 89</ows:UpperCorner>
+      </ows:BoundingBox>
+    </csw:Record>
+    

@@ -1,0 +1,97 @@
+{
+    "stac_version": "0.9.0",
+    "stac_extensions": [
+        "datacube"
+    ],
+    "type": "Collection",
+    "id": "SAR2Cube_SInCohMap_S1_L0_154_DSC_DONYANA",
+    "title": "SAR2Cube_SInCohMap_S1_L0_154_DSC_DONYANA",
+    "description": "SAR2Cube SIncohhmap Sentinel-1 Data Level-0",
+    "license": "CC-BY-4.0",
+    "providers": [
+        {
+            "name": "Eurac EO ODC",
+            "url": "http://www.eurac.edu/",
+            "roles": [
+                "producer",
+                "host"
+            ]
+        }
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -7.510046482086182,
+                    36.49370193481445,
+                    -5.41987419128418,
+                    37.82310104370117
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2017-01-03T23:59:59Z",
+                    "2019-12-31T23:59:59Z"
+                ]
+            ]
+        }
+    },
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://creativecommons.org/licenses/by/4.0/",
+            "type": "text/html",
+            "title": "License link"
+        }
+    ],
+    "cube:dimensions": {
+        "DATE": {
+            "type": "temporal",
+            "extent": [
+                "2017-01-03T23:59:59+00:00",
+                "2019-12-31T23:59:59+00:00"
+            ]
+        },
+        "X": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                -7.510046482086182,
+                -5.41987419128418
+            ],
+            "reference_system": 32632
+        },
+        "Y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                36.49370193481445,
+                37.82310104370117
+            ],
+            "reference_system": 32632
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "DEM",
+                "LIA",
+                "i_VH",
+                "i_VV",
+                "q_VH",
+                "q_VV",
+                "grid_lat",
+                "grid_lon",
+                "i_ifg_VH",
+                "i_ifg_VV",
+                "q_ifg_VH",
+                "q_ifg_VV",
+                "i_ifg_VH_nocorrect",
+                "i_ifg_VV_nocorrect",
+                "q_ifg_VH_nocorrect",
+                "q_ifg_VV_nocorrect"
+            ]
+        }
+    }
+}

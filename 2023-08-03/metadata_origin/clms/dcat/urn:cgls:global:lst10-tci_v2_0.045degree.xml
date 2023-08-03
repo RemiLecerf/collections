@@ -1,0 +1,69 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dct="http://purl.org/dc/terms/" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://land.copernicus.vgt.vito.be:8443//geonetwork/metadata/urn:cgls:global:lst10-tci_v2_0.045degree">
+        <foaf:primaryTopic rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/resource/urn:cgls:global:lst10-tci_v2_0.045degree"/>
+        <dct:issued>2023-03-06</dct:issued>
+        <dct:modified>2023-03-06</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://land.copernicus.vgt.vito.be:8443//geonetwork/srv/eng/xml.metadata.get?uuid=urn:cgls:global:lst10-tci_v2_0.045degree">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://land.copernicus.vgt.vito.be:8443//geonetwork?uuid=urn:cgls:global:lst10-tci_v2_0.045degree">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://land.copernicus.vgt.vito.be:8443//geonetwork/resource/urn:cgls:global:lst10-tci_v2_0.045degree">
+        <dct:identifier>urn:cgls:global:lst10-tci_v2_0.045degree</dct:identifier>
+        <dct:title>Land Surface Temperature: global 10-daily Thermal Condition Index (raster 5km) - version 2, Jan 2021</dct:title>
+        <dct:abstract>10-day Synthesis Land Surface Temperature (LST10-TCI) provides a statistical overview of the LST over each 10-day compositing for every image pixel. LST10-TCI is useful for the scientific community, namely for those dealing with meteorological and climate models. Accurate values of LST are also of special interest in a wide range of areas related to land surface processes, including meteorology, hydrology, agrometeorology, climatology and environmental studies.</dct:abstract>
+        <dcat:theme rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/thesaurus/GEMET%20-%20INSPIRE%20themes%20version%201.0/Orthoimagery"/>
+        <dcat:theme rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/thesaurus/GEMET%20-%20Concepts%20version%203.0/solar radiation"/>
+        <dcat:theme rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/thesaurus/Copernicus%20Themes/Energy"/>
+        <dcat:theme rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/thesaurus/Copernicus%20Variables/Land Surface Temperature"/>
+        <dcat:theme rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/thesaurus/iso/topicCategory/climatologyMeteorologyAtmosphere"/>
+        <dcat:theme rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/thesaurus/iso/topicCategory/imageryBaseMapsEarthCover"/>
+        <foaf:thumbnail rdf:resource="http://downloads.cglops.ipma.pt/LST10-TCI/201801010000/quicklook/"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((-180 -80, -180 80, 180 80, 180 -80, -180 -80))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:temporal>2021-01-18T00:00:00Z
+          /
+          2022-12-31T00:00:00Z</dct:temporal>
+        <dct:issued>2021-01-18</dct:issued>
+        <dct:publisher rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/organization/Instituto%20Portugues%20do%20Mar%20e%20da%20Atmosfera"/>
+        <dct:publisher rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/organization/Instituto%20Portugues%20do%20Mar%20e%20da%20Atmosfera"/>
+        <dct:publisher rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/organization/European%20Commission%20Directorate-General%20for%20Internal%20Market%2C%20Industry%2C%20Entrepreneurship%20and%20SMEs"/>
+        <dct:publisher rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/organization/European%20Commission%20Directorate-General%20Joint%20Research%20Centre"/>
+        <dct:accrualPeriodicity>asNeeded</dct:accrualPeriodicity>
+        <dct:license>copyright</dct:license>
+        <dct:license>otherRestrictions</dct:license>
+        <dct:license>(d) the confidentiality of commercial or industrial information, where such confidentiality is provided for by national or Community law to protect a legitimate economic interest, including the public interest in maintaining statistical confidentiality and tax secrecy.</dct:license>
+        <dcat:distribution rdf:resource="https://land.copernicus.eu/global/access"/>
+        <dcat:distribution rdf:resource="https://land.copernicus.eu/global/products/lst"/>
+        <dcat:distribution rdf:resource="http://eoportal.eumetsat.int"/>
+        <dct:relation rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/metadata/"/>
+        <dcat:dataQuality>The objective of the LST product is to increase the area coverage of the LST product currently distributed by the Eumetsat Satellite Application Facility (SAF) on Land Surface Analysis (LSA). The LSA SAF generates, archives and disseminates LST from SEVIRI (onboard MSG) with a 15-minute frequency, at the original satellite spatial resolution. A near global product is obtained by merging SEVIRI- with GOES- and HIMAWARI-based LST produced with an hourly frequency. For more detailed information consult the Product User Manual.</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+    

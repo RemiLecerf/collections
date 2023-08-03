@@ -1,0 +1,466 @@
+{
+    "description": "This dataset contains Global Ecosystem Dynamics Investigation (GEDI)\nLevel 4A (L4A) Version 2 predictions of the aboveground biomass\ndensity (AGBD; in Mg/ha) and estimates of the prediction standard\nerror within each sampled geolocated laser footprint. In this version,\nthe granules are in sub-orbits.\nHeight metrics from simulated waveforms associated with field estimates\nof AGBD from multiple regions and plant functional types (PFTs) were\ncompiled to generate a calibration dataset for models representing\nthe combinations of world regions and PFTs (i.e., deciduous broadleaf\ntrees, evergreen broadleaf trees, evergreen needleleaf trees, deciduous\nneedleleaf trees, and the combination of grasslands, shrubs, and\nwoodlands).The algorithm setting group selection\nused for GEDI02_A Version 2 has been modified for evergreen broadleaf\ntrees in South America to reduce false positive errors resulting from\nthe selection of waveform modes above ground elevation as the lowest mode.\nThe dataset LARSE/GEDI/GEDI04_A_002_MONTHLY is a raster version\nof the original GEDI04_A product. The raster images are organized as monthly\ncomposites of individual orbits in the corresponding month.\n\nSee [User Guide](https://daac.ornl.gov/GEDI/guides/GEDI_L4A_AGB_Density_V2_1.html)\nfor more information.\n\nThe Global Ecosystem Dynamics Investigation [GEDI](https://gedi.umd.edu/)\nmission aims to characterize ecosystem structure and dynamics to enable\nradically improved quantification and understanding of the Earth's carbon cycle\nand biodiversity. The GEDI instrument, attached to the International Space\nStation (ISS), collects data globally between 51.6&deg; N and 51.6&deg; S\nlatitudes at the highest resolution and densest sampling of the\n3-dimensional structure of the Earth. The GEDI instrument consists of three\nlasers producing a total of eight beam ground transects, which instantaneously\nsample eight ~25 m footprints spaced approximately every 60 m along-track.\n\nProduct                 | Description\n:---------------------  | :----------------------------------------------\nL2A Vector         | [LARSE/GEDI/GEDI02_A_002](LARSE_GEDI_GEDI02_A_002)\nL2A Monthly raster | [LARSE/GEDI/GEDI02_A_002_MONTHLY](LARSE_GEDI_GEDI02_A_002_MONTHLY)\nL2A table index    | [LARSE/GEDI/GEDI02_A_002_INDEX](LARSE_GEDI_GEDI02_A_002_INDEX)\nL2B Vector         | [LARSE/GEDI/GEDI02_B_002](LARSE_GEDI_GEDI02_B_002)\nL2B Monthly raster | [LARSE/GEDI/GEDI02_B_002_MONTHLY](LARSE_GEDI_GEDI02_B_002_MONTHLY)\nL2B table index    | [LARSE/GEDI/GEDI02_B_002_INDEX](LARSE_GEDI_GEDI02_B_002_INDEX)\nL4A Biomass Vector | [LARSE/GEDI/GEDI04_A_002](LARSE_GEDI_GEDI04_A_002)\nL4A Monthly raster | [LARSE/GEDI/GEDI04_A_002_MONTHLY](LARSE_GEDI_GEDI04_A_002_MONTHLY)\nL4A table index    | [LARSE/GEDI/GEDI04_A_002_INDEX](LARSE_GEDI_GEDI04_A_002_INDEX)\nL4B Biomass        | [LARSE/GEDI/GEDI04_B_002](LARSE_GEDI_GEDI04_B_002)",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -51.6,
+                    180,
+                    51.6
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2019-03-25T00:00:00Z",
+                    "2022-12-01T08:00:00"
+                ]
+            ]
+        }
+    },
+    "gee:terms_of_use": "This dataset is in the public domain and is available\nwithout restriction on use and distribution. See [NASA's\nEarth Science Data & Information Policy]\n(https://science.nasa.gov/earth-science/earth-science-data/data-information-policy)\nfor additional information.\n",
+    "gee:type": "image_collection",
+    "id": "LARSE/GEDI/GEDI04_A_002_MONTHLY",
+    "keywords": [
+        "elevation",
+        "gedi",
+        "larse",
+        "nasa",
+        "tree_cover",
+        "usgs"
+    ],
+    "license": "proprietary",
+    "links": [
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections/LARSE/GEDI/GEDI04_A_002_MONTHLY",
+            "rel": "self",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections",
+            "rel": "parent",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/",
+            "rel": "root",
+            "type": "application/json"
+        },
+        {
+            "code": "JavaScript",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/LARSE/LARSE_GEDI_GEDI04_A_002_MONTHLY",
+            "rel": "related",
+            "title": "Run the example for LARSE/GEDI/GEDI04_A_002_MONTHLY in the Earth Engine Code Editor",
+            "type": "text/html"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/images/LARSE/LARSE_GEDI_GEDI04_A_002_MONTHLY_sample.png",
+            "rel": "preview",
+            "type": "image/png"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/LARSE_GEDI_GEDI04_A_002_MONTHLY#terms-of-use",
+            "rel": "license",
+            "type": "text/html"
+        }
+    ],
+    "providers": [
+        {
+            "name": "Rasterization: Google and USFS Laboratory for Applications of Remote Sensing in Ecology (LARSE)",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.fs.usda.gov/"
+        },
+        {
+            "name": "NASA GEDI mission, accessed through the USGS LP DAAC",
+            "roles": [
+                "processor"
+            ],
+            "url": "https://daac.ornl.gov/GEDI/guides/GEDI_L4A_AGB_Density_V2_1.html"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/LARSE_GEDI_GEDI04_A_002_MONTHLY"
+        }
+    ],
+    "stac_extensions": [
+        "collection-assets"
+    ],
+    "stac_version": "1.0.0",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Predicted aboveground biomass density",
+                "gee:units": "Mg/ha",
+                "name": "agbd"
+            },
+            {
+                "description": "Lower prediction interval (see \"alpha\" attribute for the level)\n",
+                "gee:units": "Mg/ha",
+                "name": "agbd_pi_lower"
+            },
+            {
+                "description": "Upper prediction interval (see \"alpha\" attribute for the level)\n",
+                "gee:units": "Mg/ha",
+                "name": "agbd_pi_upper"
+            },
+            {
+                "description": "Aboveground biomass density prediction standard error\n",
+                "gee:units": "Mg/ha",
+                "name": "agbd_se"
+            },
+            {
+                "description": "Model prediction in fit units",
+                "name": "agbd_t"
+            },
+            {
+                "description": "The L4A algorithm is run if this flag is set to 1. This flag selects\ndata that have sufficient waveform fidelity for AGBD estimation.\n",
+                "name": "agbd_t_se"
+            },
+            {
+                "description": "Aboveground biomass density prediction standard error\n",
+                "name": "algorithm_run_flag"
+            },
+            {
+                "description": "Beam identifier",
+                "name": "beam"
+            },
+            {
+                "description": "Channel identifier",
+                "name": "channel"
+            },
+            {
+                "description": "Flag indicating degraded state of pointing and/or positioning\ninformation\n",
+                "name": "degrade_flag"
+            },
+            {
+                "description": "Time since Jan 1 00:00 2018",
+                "gee:units": "seconds",
+                "name": "delta_time"
+            },
+            {
+                "description": "Elevation of center of lowest mode relative to reference ellipsoid\n",
+                "gee:units": "m",
+                "name": "elev_lowestmode"
+            },
+            {
+                "description": "Flag identifying the most useful L2 data for biomass predictions\n",
+                "name": "l2_quality_flag"
+            },
+            {
+                "description": "Flag simplifying selection of most useful biomass predictions\n",
+                "name": "l4_quality_flag"
+            },
+            {
+                "description": "Latitude of center of lowest mode",
+                "gee:units": "deg",
+                "name": "lat_lowestmode"
+            },
+            {
+                "description": "Longitude of center of lowest mode",
+                "gee:units": "deg",
+                "name": "lon_lowestmode"
+            },
+            {
+                "description": "Master time, fractional part. master_int+master_frac is equivalent\nto /BEAMXXXX/delta_time\n",
+                "gee:units": "seconds",
+                "name": "master_frac"
+            },
+            {
+                "description": "Master time, integer part. Seconds since master_time_epoch.\nmaster_int+master_frac is equivalent to /BEAMXXXX/delta_time',\n",
+                "gee:units": "seconds",
+                "name": "master_int"
+            },
+            {
+                "description": "Prediction stratum identifier. Character ID of the prediction stratum\nname for the 1 km cell\n",
+                "name": "predict_stratum"
+            },
+            {
+                "description": "Predictor value is outside the bounds of the training data\n(0=in bounds; 1=lower bound; 2=upper bound)\n",
+                "name": "predictor_limit_flag"
+            },
+            {
+                "description": "Prediction value is outside the bounds of the training data\n(0=in bounds; 1=lower bound; 2=upper bound)\n",
+                "name": "response_limit_flag"
+            },
+            {
+                "description": "Selected algorithm setting group",
+                "name": "selected_algorithm"
+            },
+            {
+                "description": "ID of mode selected as lowest non-noise mode",
+                "name": "selected_mode"
+            },
+            {
+                "description": "Flag indicating status of selected_mode",
+                "name": "selected_mode_flag"
+            },
+            {
+                "description": "Beam sensitivity. Maximum canopy cover that can be penetrated\nconsidering the SNR of the waveform\n",
+                "name": "sensitivity"
+            },
+            {
+                "description": "Solar elevation angle",
+                "gee:units": "deg",
+                "name": "solar_elevation"
+            },
+            {
+                "description": "Indicates elev_lowestmode is within 300m of Digital Elevation\nModel (DEM) or Mean Sea Surface (MSS) elevation\n",
+                "name": "surface_flag"
+            },
+            {
+                "description": "Shot number, a unique identifier.\nThis field has the format of OOOOOBBRRGNNNNNNNN, where:\n\n* OOOOO: Orbit number\n* BB: Beam number\n* RR: Reserved for future use\n* G: Sub-orbit granule number\n* NNNNNNNN: Shot index\n",
+                "name": "shot_number"
+            },
+            {
+                "description": "Shot number within beam",
+                "name": "shot_number_within_beam"
+            },
+            {
+                "description": "Above ground biomass density; Geolocation latitude lowestmode\n",
+                "gee:units": "Mg/ha",
+                "name": "agbd_aN"
+            },
+            {
+                "description": "Above ground biomass density lower prediction interval",
+                "gee:units": "Mg/ha",
+                "name": "agbd_pi_lower_aN"
+            },
+            {
+                "description": "Above ground biomass density upper prediction interval",
+                "gee:units": "Mg/ha",
+                "name": "agbd_pi_upper_aN"
+            },
+            {
+                "description": "Aboveground biomass density prediction standard error\n",
+                "gee:units": "Mg/ha",
+                "name": "agbd_se_aN"
+            },
+            {
+                "description": "Aboveground biomass density model prediction in transform space\n",
+                "gee:units": "Mg/ha",
+                "name": "agbd_t_aN"
+            },
+            {
+                "description": "Lower prediction interval in transform space",
+                "gee:units": "Mg/ha",
+                "name": "agbd_t_pi_lower_aN"
+            },
+            {
+                "description": "Upper prediction interval in transform space",
+                "gee:units": "Mg/ha",
+                "name": "agbd_t_pi_upper_aN"
+            },
+            {
+                "description": "Model prediction standard error in fit units",
+                "name": "agbd_t_se_aN"
+            },
+            {
+                "description": "Algorithm run flag-this algorithm is run if this flag is set to 1.\nThis flag selects data that have sufficient waveform fidelity for\nAGBD estimation\n",
+                "name": "algorithm_run_flag_aN"
+            },
+            {
+                "description": "Flag identifying the most useful L2 data for biomass predictions'\n",
+                "name": "l2_quality_flag_aN"
+            },
+            {
+                "description": "Flag simplifying selection of most useful biomass predictions\n",
+                "name": "l4_quality_flag_aN"
+            },
+            {
+                "description": "Predictor value is outside the bounds of the training data",
+                "name": "predictor_limit_flag_aN"
+            },
+            {
+                "description": "Prediction value is outside the bounds of the training data",
+                "name": "response_limit_flag_aN"
+            },
+            {
+                "description": "ID of mode selected as lowest non-noise mode",
+                "name": "selected_mode_aN"
+            },
+            {
+                "description": "Flag indicating status of selected mode",
+                "name": "selected_mode_flag_aN"
+            },
+            {
+                "description": "Elevation of center of lowest mode relative to the reference ellipsoid\n",
+                "gee:units": "m",
+                "name": "elev_lowestmode_aN"
+            },
+            {
+                "description": "Latitude of center of lowest mode",
+                "gee:units": "deg",
+                "name": "lat_lowestmode_aN"
+            },
+            {
+                "description": "Longitude of center of lowest mode",
+                "gee:units": "deg",
+                "name": "lon_lowestmode_aN"
+            },
+            {
+                "description": "Maximum canopy cover that can be penetrated considering the SNR of\nthe waveform\n",
+                "name": "sensitivity_aN"
+            },
+            {
+                "description": "Flag from digitizer indicating the real-time pulse detection algorithm\ndid not detect a return signal above its detection threshold within\nthe entire 10 km search window. The pulse location of the previous\nshot was used to select the telemetered waveform.\n",
+                "name": "stale_return_flag"
+            },
+            {
+                "description": "Tree cover in the year 2010, defined as canopy closure for all\nvegetation taller than 5 m in height (Hansen et al., 2013) and\nencoded as a percentage per output grid cell.\n",
+                "gee:units": "%",
+                "name": "landsat_treecover"
+            },
+            {
+                "description": "The percent UMD GLAD Landsat observations with classified surface water\nbetween 2018 and 2019. Values >80 usually represent permanent water\nwhile values <10 represent permanent land.\n",
+                "gee:units": "%",
+                "name": "landsat_water_persistence"
+            },
+            {
+                "description": "GEDI 1 km EASE 2.0 grid leaf-off start day-of-year derived from the\nNPP VIIRS Global Land Surface Phenology Product.\n",
+                "name": "leaf_off_doy"
+            },
+            {
+                "description": "GEDI 1 km EASE 2.0 grid flag derived from leaf_off_doy, leaf_on_doy,\nand pft_class, indicating if the observation was recorded during\nleaf-off conditions in deciduous needleleaf or broadleaf forests and\nwoodlands. 1=leaf-off, 0=leaf-on.\n",
+                "name": "leaf_off_flag"
+            },
+            {
+                "description": "Flag that indicates the vegetation growing cycle for leaf-on\nobservations. Values are 0=leaf-off conditions, 1=cycle 1, 2=cycle 2.\n",
+                "name": "leaf_on_cycle"
+            },
+            {
+                "description": "GEDI 1 km EASE 2.0 grid leaf-on start day- of-year derived from the\nNPP VIIRS Global Land Surface Phenology product.\n",
+                "name": "leaf_on_doy"
+            },
+            {
+                "description": "GEDI 1 km EASE 2.0 grid Plant Functional Type (PFT) derived from the\nMODIS MCD12Q1v006 product. Values follow the Land Cover Type 5\nClassification scheme.\n",
+                "name": "pft_class"
+            },
+            {
+                "description": "GEDI 1 km EASE 2.0 grid world continental regions (0=Water, 1=Europe,\n2=North Asia, 3=Australasia, 4=Africa, 5=South Asia, 6=South America,\n7=North America).\n",
+                "name": "region_class"
+            },
+            {
+                "description": "The focal window size used to calculate urban_proportion.\nValues are 3 (3x3 pixel window size) or 5 (5x5 pixel window size).\n",
+                "gee:units": "pixel",
+                "name": "urban_focal_window_size"
+            },
+            {
+                "description": "The percentage proportion of land area within a focal area surrounding\neach shot that is urban land cover. Urban land cover was derived from\nthe DLR 12 m resolution TanDEM-X Global Urban Footprint Product.\n",
+                "gee:units": "%",
+                "name": "urban_proportion"
+            }
+        ],
+        "gsd": [
+            25
+        ]
+    },
+    "title": "GEDI L4A Raster Aboveground Biomass Density, Version 2.1",
+    "type": "Collection",
+    "version": "2.1",
+    "cube:dimensions": {
+        "x": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                -180,
+                180
+            ]
+        },
+        "y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                -51.6,
+                51.6
+            ]
+        },
+        "t": {
+            "type": "temporal",
+            "extent": [
+                "2019-03-25T00:00:00Z",
+                "2022-12-01T08:00:00"
+            ]
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "agbd",
+                "agbd_pi_lower",
+                "agbd_pi_upper",
+                "agbd_se",
+                "agbd_t",
+                "agbd_t_se",
+                "algorithm_run_flag",
+                "beam",
+                "channel",
+                "degrade_flag",
+                "delta_time",
+                "elev_lowestmode",
+                "l2_quality_flag",
+                "l4_quality_flag",
+                "lat_lowestmode",
+                "lon_lowestmode",
+                "master_frac",
+                "master_int",
+                "predict_stratum",
+                "predictor_limit_flag",
+                "response_limit_flag",
+                "selected_algorithm",
+                "selected_mode",
+                "selected_mode_flag",
+                "sensitivity",
+                "solar_elevation",
+                "surface_flag",
+                "shot_number",
+                "shot_number_within_beam",
+                "agbd_aN",
+                "agbd_pi_lower_aN",
+                "agbd_pi_upper_aN",
+                "agbd_se_aN",
+                "agbd_t_aN",
+                "agbd_t_pi_lower_aN",
+                "agbd_t_pi_upper_aN",
+                "agbd_t_se_aN",
+                "algorithm_run_flag_aN",
+                "l2_quality_flag_aN",
+                "l4_quality_flag_aN",
+                "predictor_limit_flag_aN",
+                "response_limit_flag_aN",
+                "selected_mode_aN",
+                "selected_mode_flag_aN",
+                "elev_lowestmode_aN",
+                "lat_lowestmode_aN",
+                "lon_lowestmode_aN",
+                "sensitivity_aN",
+                "stale_return_flag",
+                "landsat_treecover",
+                "landsat_water_persistence",
+                "leaf_off_doy",
+                "leaf_off_flag",
+                "leaf_on_cycle",
+                "leaf_on_doy",
+                "pft_class",
+                "region_class",
+                "urban_focal_window_size",
+                "urban_proportion"
+            ]
+        }
+    },
+    "assets": {
+        "preview_4": {
+            "href": "https://developers.google.com/earth-engine/datasets/images/LARSE/LARSE_GEDI_GEDI04_A_002_MONTHLY_sample.png",
+            "type": "image/png",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    }
+}

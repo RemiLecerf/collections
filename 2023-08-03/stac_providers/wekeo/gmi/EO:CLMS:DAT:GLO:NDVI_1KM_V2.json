@@ -1,0 +1,61 @@
+{
+  "type": "Collection",
+  "id": "EO:CLMS:DAT:GLO:NDVI_1KM_V2",
+  "stac_version": "1.0.0",
+  "description": "The Normalized Difference Vegetation Index (NDVI) is a proxy to quantify the vegetation amount. It is defined as NDVI=(NIR-Red)/(NIR+Red) where NIR corresponds to the reflectance in the near infrared band, and Red to the reflectance in the red band. The time series of dekadal (10-daily) NDVI 1km version 2 observations over the period 1999-2017 is used to calculate Long Term Statistics (LTS) for each of the 36 10-daily periods (dekads) of the year. The calculated LTS include the minimum, median, maximum, average, standard deviation and the number of observations in the covered time series period. These LTS can be used as a reference for actual NDVI observations, which allows evaluating whether vegetation conditions deviate from a ‘normal’ situation.",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://land.copernicus.eu/global/access",
+      "type": "HTTP",
+      "title": "Copernicus Global Land Service"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://land.copernicus.eu/global/products/ndvi",
+      "type": "HTTP",
+      "title": "Copernicus Global Land Service"
+    }
+  ],
+  "title": "Normalized Difference Vegetation Index: global Long Term Statistics (raster 1km) - version 2, Apr 2019",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -60.0,
+          180.0,
+          80.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1999-01-01T00:00:00Z",
+          "2017-12-31T23:59:59Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "10-day composite",
+    "Dekad",
+    "GLOBE",
+    "Orthoimagery",
+    "biogeophysical",
+    "ndvi",
+    "plant resource"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

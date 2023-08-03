@@ -1,0 +1,168 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:dct="http://purl.org/dc/terms/" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/15642661-7e7c-49ee-b728-fead50c18bc8">
+        <foaf:primaryTopic rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/resource/15642661-7e7c-49ee-b728-fead50c18bc8"/>
+        <dct:issued>2021-12-09</dct:issued>
+        <dct:modified>2021-12-09</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/srv/eng/xml.metadata.get?uuid=15642661-7e7c-49ee-b728-fead50c18bc8">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork?uuid=15642661-7e7c-49ee-b728-fead50c18bc8">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/resource/15642661-7e7c-49ee-b728-fead50c18bc8">
+        <dct:identifier>15642661-7e7c-49ee-b728-fead50c18bc8</dct:identifier>
+        <dct:title>Atlantic- European North West Shelf- Ocean Physics Reanalysis</dct:title>
+        <dct:abstract>'''Short  Description:'''
+
+The ocean physics reanalysis for the North-West European Shelf is produced using an ocean assimilation model, with tides, at 7 km horizontal resolution.  
+The ocean model is NEMO (Nucleus for European Modelling of the Ocean), using the 3DVar NEMOVAR system to assimilate observations. These are surface temperature and vertical profiles of temperature and salinity. The model is forced by lateral boundary conditions from the GloSea5, one of the multi-models used by [https://resources.marine.copernicus.eu/?option=com_csw&amp;view=details&amp;product_id=GLOBAL_REANALYSIS_PHY_001_026 GLOBAL_REANALYSIS_PHY_001_026] and at the Baltic boundary by the [https://resources.marine.copernicus.eu/?option=com_csw&amp;view=details&amp;product_id=BALTICSEA_REANALYSIS_PHY_003_011 BALTICSEA_REANALYSIS_PHY_003_011]. The atmospheric forcing is given by the ECMWF ERA5 atmospheric reanalysis. The river discharge is from a daily climatology. 
+
+Further details of the model, including the product validation are provided in the [http://catalogue.marine.copernicus.eu/documents/QUID/CMEMS-NWS-QUID-004-009.pdf CMEMS-NWS-QUID-004-009]. 
+
+Products are provided as monthly and daily 25-hour, de-tided, averages. The datasets available are temperature, salinity, horizontal currents, sea level, mixed layer depth, and bottom temperature. Temperature, salinity and currents, as multi-level variables, are interpolated from the model 51 hybrid s-sigma terrain-following system to 24 standard geopotential depths (z-levels). Grid-points near to the model boundaries are masked. The product is updated biannually provinding six-month extension of the time series.
+
+See [http://catalogue.marine.copernicus.eu/documents/PUM/CMEMS-NWS-PUM-004-009_011.pdf CMEMS-NWS-PUM-004-009_011] for further details.
+
+'''Associated products:'''
+
+This model is coupled with a biogeochemistry model (ERSEM) available as CMEMS product [https://resources.marine.copernicus.eu/?option=com_csw&amp;view=details&amp;product_id=NWSHELF_MULTIYEAR_BGC_004_011]. An analysis-forecast product is available from [https://resources.marine.copernicus.eu/?option=com_csw&amp;view=details&amp;product_id=NWSHELF_ANALYSISFORECAST_PHY_LR_004_001 NWSHELF_ANALYSISFORECAST_PHY_LR_004_011].
+The product is updated biannually provinding six-month extension of the time series.
+
+'''DOI (product) :'''   
+https://doi.org/10.48670/moi-00059</dct:abstract>
+        <dcat:theme rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/thesaurus/iso/topicCategory/oceans"/>
+        <foaf:thumbnail rdf:resource="https://catalogue.marine.copernicus.eu/documents/IMG/NWSHELF_MULTIYEAR_PHY_004_009.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((-20.00 40.00, -20.00 65.00, 13.00 65.00, 13.00 40.00, -20.00 40.00))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:issued>2013-03-06</dct:issued>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/NWS-METOFFICE-EXETER-UK"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/NWS-METOFFICE-EXETER-UK"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/NWS-METOFFICE-EXETER-UK"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/NWS-METOFFICE-EXETER-UK"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/NWS-METOFFICE-EXETER-UK"/>
+        <dct:accrualPeriodicity>monthly</dct:accrualPeriodicity>
+        <dct:accrualPeriodicity>biannually</dct:accrualPeriodicity>
+        <dct:license>otherRestrictions</dct:license>
+        <dct:license>license</dct:license>
+        <dct:license>No limitations on public access</dct:license>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=NWSHELF_MULTIYEAR_PHY_004_009-TDS&amp;product=cmems_mod_nws_phy-bottomt_my_7km-2D_PT1H-i"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/dodsC/cmems_mod_nws_phy-bottomt_my_7km-2D_PT1H-i"/>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/NWSHELF_MULTIYEAR_PHY_004_009/cmems_mod_nws_phy-bottomt_my_7km-2D_PT1H-i"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/wms/cmems_mod_nws_phy-bottomt_my_7km-2D_PT1H-i"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=NWSHELF_MULTIYEAR_PHY_004_009-TDS&amp;product=cmems_mod_nws_phy-mld_my_7km-2D_PT1H-i"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/dodsC/cmems_mod_nws_phy-mld_my_7km-2D_PT1H-i"/>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/NWSHELF_MULTIYEAR_PHY_004_009/cmems_mod_nws_phy-mld_my_7km-2D_PT1H-i"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/wms/cmems_mod_nws_phy-mld_my_7km-2D_PT1H-i"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=NWSHELF_MULTIYEAR_PHY_004_009-TDS&amp;product=cmems_mod_nws_phy-sss_my_7km-2D_PT1H-i"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/dodsC/cmems_mod_nws_phy-sss_my_7km-2D_PT1H-i"/>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/NWSHELF_MULTIYEAR_PHY_004_009/cmems_mod_nws_phy-sss_my_7km-2D_PT1H-i"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/wms/cmems_mod_nws_phy-sss_my_7km-2D_PT1H-i"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=NWSHELF_MULTIYEAR_PHY_004_009-TDS&amp;product=cmems_mod_nws_phy-ssh_my_7km-2D_PT1H-i"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/dodsC/cmems_mod_nws_phy-ssh_my_7km-2D_PT1H-i"/>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/NWSHELF_MULTIYEAR_PHY_004_009/cmems_mod_nws_phy-ssh_my_7km-2D_PT1H-i"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/wms/cmems_mod_nws_phy-ssh_my_7km-2D_PT1H-i"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=NWSHELF_MULTIYEAR_PHY_004_009-TDS&amp;product=cmems_mod_nws_phy-sst_my_7km-2D_PT1H-i"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/dodsC/cmems_mod_nws_phy-sst_my_7km-2D_PT1H-i"/>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/NWSHELF_MULTIYEAR_PHY_004_009/cmems_mod_nws_phy-sst_my_7km-2D_PT1H-i"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/wms/cmems_mod_nws_phy-sst_my_7km-2D_PT1H-i"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=NWSHELF_MULTIYEAR_PHY_004_009-TDS&amp;product=cmems_mod_nws_phy-uv_my_7km-2D_PT1H-i"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/dodsC/cmems_mod_nws_phy-uv_my_7km-2D_PT1H-i"/>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/NWSHELF_MULTIYEAR_PHY_004_009/cmems_mod_nws_phy-uv_my_7km-2D_PT1H-i"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/wms/cmems_mod_nws_phy-uv_my_7km-2D_PT1H-i"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=NWSHELF_MULTIYEAR_PHY_004_009-TDS&amp;product=cmems_mod_nws_phy-bottomt_my_7km-2D_P1D-m"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/dodsC/cmems_mod_nws_phy-bottomt_my_7km-2D_P1D-m"/>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/NWSHELF_MULTIYEAR_PHY_004_009/cmems_mod_nws_phy-bottomt_my_7km-2D_P1D-m"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/wms/cmems_mod_nws_phy-bottomt_my_7km-2D_P1D-m"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=NWSHELF_MULTIYEAR_PHY_004_009-TDS&amp;product=cmems_mod_nws_phy-bottomt_my_7km-2D_P1M-m"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/dodsC/cmems_mod_nws_phy-bottomt_my_7km-2D_P1M-m"/>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/NWSHELF_MULTIYEAR_PHY_004_009/cmems_mod_nws_phy-bottomt_my_7km-2D_P1M-m"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/wms/cmems_mod_nws_phy-bottomt_my_7km-2D_P1M-m"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=NWSHELF_MULTIYEAR_PHY_004_009-TDS&amp;product=cmems_mod_nws_phy-bottomt_myint_7km-2D_P1M-m"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/dodsC/cmems_mod_nws_phy-bottomt_myint_7km-2D_P1M-m"/>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/NWSHELF_MULTIYEAR_PHY_004_009/cmems_mod_nws_phy-bottomt_myint_7km-2D_P1M-m"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/wms/cmems_mod_nws_phy-bottomt_myint_7km-2D_P1M-m"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=NWSHELF_MULTIYEAR_PHY_004_009-TDS&amp;product=cmems_mod_nws_phy-mld_my_7km-2D_P1D-m"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/dodsC/cmems_mod_nws_phy-mld_my_7km-2D_P1D-m"/>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/NWSHELF_MULTIYEAR_PHY_004_009/cmems_mod_nws_phy-mld_my_7km-2D_P1D-m"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/wms/cmems_mod_nws_phy-mld_my_7km-2D_P1D-m"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=NWSHELF_MULTIYEAR_PHY_004_009-TDS&amp;product=cmems_mod_nws_phy-mld_my_7km-2D_P1M-m"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/dodsC/cmems_mod_nws_phy-mld_my_7km-2D_P1M-m"/>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/NWSHELF_MULTIYEAR_PHY_004_009/cmems_mod_nws_phy-mld_my_7km-2D_P1M-m"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/wms/cmems_mod_nws_phy-mld_my_7km-2D_P1M-m"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=NWSHELF_MULTIYEAR_PHY_004_009-TDS&amp;product=cmems_mod_nws_phy-mld_myint_7km-2D_P1M-m"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/dodsC/cmems_mod_nws_phy-mld_myint_7km-2D_P1M-m"/>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/NWSHELF_MULTIYEAR_PHY_004_009/cmems_mod_nws_phy-mld_myint_7km-2D_P1M-m"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/wms/cmems_mod_nws_phy-mld_myint_7km-2D_P1M-m"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=NWSHELF_MULTIYEAR_PHY_004_009-TDS&amp;product=cmems_mod_nws_phy-s_my_7km-3D_P1D-m"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/dodsC/cmems_mod_nws_phy-s_my_7km-3D_P1D-m"/>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/NWSHELF_MULTIYEAR_PHY_004_009/cmems_mod_nws_phy-s_my_7km-3D_P1D-m"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/wms/cmems_mod_nws_phy-s_my_7km-3D_P1D-m"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=NWSHELF_MULTIYEAR_PHY_004_009-TDS&amp;product=cmems_mod_nws_phy-s_my_7km-3D_P1M-m"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/dodsC/cmems_mod_nws_phy-s_my_7km-3D_P1M-m"/>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/NWSHELF_MULTIYEAR_PHY_004_009/cmems_mod_nws_phy-s_my_7km-3D_P1M-m"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/wms/cmems_mod_nws_phy-s_my_7km-3D_P1M-m"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=NWSHELF_MULTIYEAR_PHY_004_009-TDS&amp;product=cmems_mod_nws_phy-s_myint_7km-3D_P1M-m"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/dodsC/cmems_mod_nws_phy-s_myint_7km-3D_P1M-m"/>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/NWSHELF_MULTIYEAR_PHY_004_009/cmems_mod_nws_phy-s_myint_7km-3D_P1M-m"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/wms/cmems_mod_nws_phy-s_myint_7km-3D_P1M-m"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=NWSHELF_MULTIYEAR_PHY_004_009-TDS&amp;product=cmems_mod_nws_phy-ssh_my_7km-2D_P1D-m"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/dodsC/cmems_mod_nws_phy-ssh_my_7km-2D_P1D-m"/>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/NWSHELF_MULTIYEAR_PHY_004_009/cmems_mod_nws_phy-ssh_my_7km-2D_P1D-m"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/wms/cmems_mod_nws_phy-ssh_my_7km-2D_P1D-m"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=NWSHELF_MULTIYEAR_PHY_004_009-TDS&amp;product=cmems_mod_nws_phy-ssh_my_7km-2D_P1M-m"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/dodsC/cmems_mod_nws_phy-ssh_my_7km-2D_P1M-m"/>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/NWSHELF_MULTIYEAR_PHY_004_009/cmems_mod_nws_phy-ssh_my_7km-2D_P1M-m"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/wms/cmems_mod_nws_phy-ssh_my_7km-2D_P1M-m"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=NWSHELF_MULTIYEAR_PHY_004_009-TDS&amp;product=cmems_mod_nws_phy-ssh_myint_7km-2D_P1M-m"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/dodsC/cmems_mod_nws_phy-ssh_myint_7km-2D_P1M-m"/>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/NWSHELF_MULTIYEAR_PHY_004_009/cmems_mod_nws_phy-ssh_myint_7km-2D_P1M-m"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/wms/cmems_mod_nws_phy-ssh_myint_7km-2D_P1M-m"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=NWSHELF_MULTIYEAR_PHY_004_009-TDS&amp;product=cmems_mod_nws_phy-t_my_7km-3D_P1D-m"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/dodsC/cmems_mod_nws_phy-t_my_7km-3D_P1D-m"/>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/NWSHELF_MULTIYEAR_PHY_004_009/cmems_mod_nws_phy-t_my_7km-3D_P1D-m"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/wms/cmems_mod_nws_phy-t_my_7km-3D_P1D-m"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=NWSHELF_MULTIYEAR_PHY_004_009-TDS&amp;product=cmems_mod_nws_phy-t_my_7km-3D_P1M-m"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/dodsC/cmems_mod_nws_phy-t_my_7km-3D_P1M-m"/>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/NWSHELF_MULTIYEAR_PHY_004_009/cmems_mod_nws_phy-t_my_7km-3D_P1M-m"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/wms/cmems_mod_nws_phy-t_my_7km-3D_P1M-m"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=NWSHELF_MULTIYEAR_PHY_004_009-TDS&amp;product=cmems_mod_nws_phy-t_myint_7km-3D_P1M-m"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/dodsC/cmems_mod_nws_phy-t_myint_7km-3D_P1M-m"/>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/NWSHELF_MULTIYEAR_PHY_004_009/cmems_mod_nws_phy-t_myint_7km-3D_P1M-m"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/wms/cmems_mod_nws_phy-t_myint_7km-3D_P1M-m"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=NWSHELF_MULTIYEAR_PHY_004_009-TDS&amp;product=cmems_mod_nws_phy-uv_my_7km-3D_P1D-m"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/dodsC/cmems_mod_nws_phy-uv_my_7km-3D_P1D-m"/>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/NWSHELF_MULTIYEAR_PHY_004_009/cmems_mod_nws_phy-uv_my_7km-3D_P1D-m"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/wms/cmems_mod_nws_phy-uv_my_7km-3D_P1D-m"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=NWSHELF_MULTIYEAR_PHY_004_009-TDS&amp;product=cmems_mod_nws_phy-uv_my_7km-3D_P1M-m"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/dodsC/cmems_mod_nws_phy-uv_my_7km-3D_P1M-m"/>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/NWSHELF_MULTIYEAR_PHY_004_009/cmems_mod_nws_phy-uv_my_7km-3D_P1M-m"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/wms/cmems_mod_nws_phy-uv_my_7km-3D_P1M-m"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=NWSHELF_MULTIYEAR_PHY_004_009-TDS&amp;product=cmems_mod_nws_phy-uv_myint_7km-3D_P1M-m"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/dodsC/cmems_mod_nws_phy-uv_myint_7km-3D_P1M-m"/>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/NWSHELF_MULTIYEAR_PHY_004_009/cmems_mod_nws_phy-uv_myint_7km-3D_P1M-m"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/wms/cmems_mod_nws_phy-uv_myint_7km-3D_P1M-m"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/d0042596-154b-450f-a2c4-45f2d2febc03"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/deb6f87c-274e-4051-a127-b3c3d7a2dfb4"/>
+        <dcat:dataQuality>The myOcean products depends on other products for production or validation. The detailed list of dependencies is given in ISO19115's aggregationInfo (ISO19139 Xpath = "gmd:MD_Metadata/gmd:identificationInfo/gmd:aggregationInfo[./gmd:MD_AggregateInformation/gmd:initiativeType/gmd:DS_InitiativeTypeCode/@codeListValue='upstream-validation' or 'upstream-production']")</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+    

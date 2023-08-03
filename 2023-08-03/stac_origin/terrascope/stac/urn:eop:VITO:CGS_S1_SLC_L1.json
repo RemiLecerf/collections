@@ -1,0 +1,72 @@
+{
+    "type": "Collection",
+    "stac_version": "1.0.0",
+    "id": "urn:eop:VITO:CGS_S1_SLC_L1",
+    "title": "Sentinel-1 Level-1 Single Look Complex (SLC) products.",
+    "description": "Level-1 Single Look Complex (SLC) products consist of focused SAR data, geo-referenced using orbit and attitude data from the satellite, and provided in slant-range geometry. Slant range is the natural radar range observation coordinate, defined as the line-of-sight from the radar to each reflecting object. The products are in zero-Doppler orientation where each row of pixels represents points along a line perpendicular to the sub-satellite track. The products include a single look in each dimension using the full available signal bandwidth and complex samples (real and imaginary) preserving the phase information. The Interferometric Wide (IW) swath mode is the main acquisition mode over land and satisfies the majority of service requirements. It acquires data with a 250 km swath at 5 m by 20 m spatial resolution (single look). IW mode captures three sub-swaths using Terrain Observation with Progressive Scans SAR (TOPSAR). IW SLC products contain one image per sub-swath and one per polarisation channel, for a total of three (single polarisation) or six (dual polarisation) images in an IW product. Each sub-swath image consists of a series of bursts, where each burst has been processed as a separate SLC image. The individually focused complex burst images are included, in azimuth-time order, into a single sub-swath image with black-fill demarcation in between. There is sufficient overlap between adjacent bursts and between sub-swaths to ensure continuous coverage of the ground as provided in GRD products. The images for all bursts in all sub-swaths are resampled to a common pixel spacing grid in range and azimuth while preserving the phase information.",
+    "license": "Products can be downloaded after fast registration / Licence: https://terrascope.be/en/terms-use",
+    "keywords": [
+        "VITO",
+        "TERRASCOPE",
+        "COPERNICUS",
+        "ESA",
+        "Orthoimagery",
+        "Sentinel-1",
+        "C-SAR",
+        "Level-3",
+        "Radar",
+        "Radar Backscatter"
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180.0,
+                    -84.0,
+                    180.0,
+                    84.0
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2017-06-15T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "summaries": {
+        "datetime": {
+            "min": "2017-06-15T00:00:00Z"
+        },
+        "constellation": [
+            "Sentinel-1"
+        ],
+        "instruments": [
+            "C-SAR"
+        ]
+    },
+    "links": [
+        {
+            "rel": "self",
+            "type": "application/json",
+            "href": "https://services.terrascope.be/stac/collections/urn:eop:VITO:CGS_S1_SLC_L1"
+        },
+        {
+            "rel": "parent",
+            "type": "application/json",
+            "href": "https://services.terrascope.be/stac/"
+        },
+        {
+            "rel": "items",
+            "type": "application/geo+json",
+            "href": "https://services.terrascope.be/stac/collections/urn:eop:VITO:CGS_S1_SLC_L1/items"
+        },
+        {
+            "rel": "root",
+            "type": "application/json",
+            "href": "https://services.terrascope.be/stac/"
+        }
+    ]
+}

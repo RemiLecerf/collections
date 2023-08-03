@@ -1,0 +1,144 @@
+{
+    "description": "The Normalized Difference Water Index (NDWI) is sensitive\nto changes in liquid water content of vegetation canopies.  It is\nderived from the Near-IR band and a second IR band, &approx;1.24&mu;m when\navailable and the nearest available IR band otherwise.  It ranges in\nvalue from -1.0 to 1.0.  See\n[Gao (1996)](https://www.sciencedirect.com/science/article/pii/S0034425796000673)\nfor details. This product is generated from the MODIS/006/MOD09GA surface reflectance composites.\n",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-02-24T00:00:00Z",
+                    "2023-02-17T00:00:00"
+                ]
+            ]
+        }
+    },
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "day"
+    },
+    "gee:is_derived": true,
+    "gee:terms_of_use": "MODIS data and products acquired through the LP DAAC have no restrictions on subsequent use, sale, or redistribution.\n",
+    "gee:type": "image_collection",
+    "id": "MODIS/MOD09GA_006_NDWI",
+    "keywords": [
+        "modis",
+        "ndwi",
+        "usgs"
+    ],
+    "license": "proprietary",
+    "links": [
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections/MODIS/MOD09GA_006_NDWI",
+            "rel": "self",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections",
+            "rel": "parent",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/",
+            "rel": "root",
+            "type": "application/json"
+        },
+        {
+            "code": "JavaScript",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/MODIS/MODIS_MOD09GA_006_NDWI",
+            "rel": "related",
+            "title": "Run the example for MODIS/MOD09GA_006_NDWI in the Earth Engine Code Editor",
+            "type": "text/html"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/images/MODIS/MODIS_MOD09GA_006_NDWI_sample.png",
+            "rel": "preview",
+            "type": "image/png"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_MOD09GA_006_NDWI#terms-of-use",
+            "rel": "license",
+            "type": "text/html"
+        }
+    ],
+    "providers": [
+        {
+            "name": "Google",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://earthengine.google.com/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_MOD09GA_006_NDWI"
+        }
+    ],
+    "stac_extensions": [
+        "collection-assets"
+    ],
+    "stac_version": "1.0.0",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Normalized Difference Water Index",
+                "gsd": 463.312716528,
+                "name": "NDWI"
+            }
+        ]
+    },
+    "title": "MODIS Terra Daily NDWI",
+    "type": "Collection",
+    "cube:dimensions": {
+        "x": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                -180,
+                180
+            ]
+        },
+        "y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                -90,
+                90
+            ]
+        },
+        "t": {
+            "type": "temporal",
+            "extent": [
+                "2000-02-24T00:00:00Z",
+                "2023-02-17T00:00:00"
+            ]
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "NDWI"
+            ]
+        }
+    },
+    "assets": {
+        "preview_4": {
+            "href": "https://developers.google.com/earth-engine/datasets/images/MODIS/MODIS_MOD09GA_006_NDWI_sample.png",
+            "type": "image/png",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    }
+}

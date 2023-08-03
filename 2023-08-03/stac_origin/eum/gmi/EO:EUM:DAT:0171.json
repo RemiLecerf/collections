@@ -1,0 +1,48 @@
+{
+  "type": "Collection",
+  "id": "EO:EUM:DAT:0171",
+  "stac_version": "1.0.0",
+  "description": "Rectified (level 1.5) Meteosat SEVIRI Rapid Scan image data. The baseline scan region is a reduced area of the top 1/3 of a nominal repeat cycle, covering a latitude range from approximately 15 degrees to 70 degrees. The service generates repeat cycles at 5-minute intervals (the same as currently used for weather radars). The dissemination of RSS data is similar to the normal dissemination, with image segments based on 464 lines and compatible with the full disk level 1.5 data scans. Epilogue and prologue (L1.5 Header and L1.5 Trailer) have the same structure. Calibration is as in Full Earth Scan. Image rectification is to 9.5 degreesE. The scans start at 00:00, 00:05, 00:10, 00:15 ... etc. (5 min scan). The differences from the nominal Full Earth scan are that for channels 1 - 11, only segments 6 - 8 are disseminated and for the High Resolution Visible Channel only segments 16 - 24 are disseminated.",
+  "links": [],
+  "title": "Rapid Scan High Rate SEVIRI IR 3.9 - MSG",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -65.0,
+          16.0,
+          84.0,
+          70.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2008-05-13T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Atmosphere",
+    "Land",
+    "Level 1 Data",
+    "Ocean"
+  ],
+  "providers": [
+    {
+      "name": "European Organisation for the Exploitation of Meteorological Satellites (EUMETSAT)",
+      "description": "EUMETSAT Data store",
+      "roles": [
+        "licensor",
+        "producer",
+        "processor",
+        "host"
+      ],
+      "url": "https://data.eumetsat.int/"
+    }
+  ]
+}

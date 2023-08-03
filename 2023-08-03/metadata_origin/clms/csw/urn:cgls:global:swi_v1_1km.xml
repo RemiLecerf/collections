@@ -1,0 +1,35 @@
+<csw:Record xmlns:ows="http://www.opengis.net/ows" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:geonet="http://www.fao.org/geonetwork" xmlns:dct="http://purl.org/dc/terms/" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dc:identifier>urn:cgls:global:swi_v1_1km</dc:identifier>
+      <dc:date>2022-03-17T13:04:14</dc:date>
+      <dc:title>Soil Water Index: continental Europe daily (raster 1km) - version 1, Apr 2019</dc:title>
+      <dc:type>series</dc:type>
+      <dc:subject>Orthoimagery</dc:subject>
+      <dc:subject>geophysical environment</dc:subject>
+      <dc:subject>biogeophysical</dc:subject>
+      <dc:subject>soil water index</dc:subject>
+      <dc:subject>soil moisture</dc:subject>
+      <dc:subject>Europe</dc:subject>
+      <dc:subject>Daily</dc:subject>
+      <dc:subject>daily composite</dc:subject>
+      <dc:subject>imageryBaseMapsEarthCover</dc:subject>
+      <dc:subject>biota</dc:subject>
+      <dc:subject>farming</dc:subject>
+      <dc:subject>environment</dc:subject>
+      <dc:format>netCDF</dc:format>
+      <dct:abstract>The Soil Water Index (SWI) quantifies the moisture condition at various depths in the soil. It is mainly driven by the precipitation via the process of infiltration. Soil moisture is a very heterogeneous variable and varies on small scales with soil properties and drainage patterns. Satellite measurements integrate over relative large-scale areas, with the presence of vegetation adding complexity to the interpretation. Soil moisture is a key parameter in numerous environmental studies including hydrology, meteorology and agriculture, and is recognized as an Essential Climate Variable (ECV) by the Global Climate Observing System (GCOS). The SWI product provides daily information about moisture conditions in different soil layers. It includes a quality flag (QFLAG) indicating the availability of SSM measurements for SWI calculations, and a Surface State Flag (SSF) indicating frozen or snow covered soils.</dct:abstract>
+      <dc:description>The Soil Water Index (SWI) quantifies the moisture condition at various depths in the soil. It is mainly driven by the precipitation via the process of infiltration. Soil moisture is a very heterogeneous variable and varies on small scales with soil properties and drainage patterns. Satellite measurements integrate over relative large-scale areas, with the presence of vegetation adding complexity to the interpretation. Soil moisture is a key parameter in numerous environmental studies including hydrology, meteorology and agriculture, and is recognized as an Essential Climate Variable (ECV) by the Global Climate Observing System (GCOS). The SWI product provides daily information about moisture conditions in different soil layers. It includes a quality flag (QFLAG) indicating the availability of SSM measurements for SWI calculations, and a Surface State Flag (SSF) indicating frozen or snow covered soils.</dc:description>
+      <dc:rights>copyright</dc:rights>
+      <dc:rights>otherRestrictions</dc:rights>
+      <dc:language>eng</dc:language>
+      <dc:source>Soil moisture in plant root zone can be estimated by an infiltration model using information on surface soil moisture and soil characteristics. The SWI algorithm, originally developed at TU Wien and later improved by other research groups, uses an infiltration model describing the relation between surface soil moisture (SSM) and profile soil moisture as a function of time. The algorithm is based on a two-layer water balance model to estimate profile soil moisture from SSM retrieved from satellite radar data. The remotely sensed topsoil represents the first layer and the second layer extends downwards from the bottom of the surface layer. In this model, the water content of the reservoir layer is described in terms of an Index, which is controlled only by the past soil moisture conditions in the surface layer in a way that the influence of measurements decreases by increasing time. The SWI processing algorithm uses near-real-time SSM products as input to generate daily SWI images. Therefore a computational adaption of SWI algorithm was made based on a recursive formulation. In this method, a gain factor is introduced that relates past SWI measurements to current measurements. SWI images are calculated for eight different T values (2, 5, 10, 15, 20, 40, 60, 100) together with the respective quality flags. The SWI quality flag is a parameter related to the number of available SSM measurements used for calculation of SWI_T at time t. It is also calculated by using a recursive formulation and expressed in percentage after normalization.</dc:source>
+      <dc:format>netCDF</dc:format>
+      <ows:BoundingBox crs="urn:ogc:def:crs:EPSG Geodetic Parameter Dataset::EPSG:4326">
+        <ows:LowerCorner>50 35</ows:LowerCorner>
+        <ows:UpperCorner>-11 72</ows:UpperCorner>
+      </ows:BoundingBox>
+      <dc:URI protocol="HTTP" name="Copernicus Global Land Service" description="1. Search, download and custom order products from Catalogue and Ordering services">https://land.copernicus.eu/global/products/swi</dc:URI>
+      <dc:URI protocol="HTTP" name="Copernicus Global Land Service" description="2. Subscribe to receive future products via e-mail">https://land.copernicus.eu/global/access</dc:URI>
+      <dc:URI name="Copernicus Global Land Service" description="3. Register to receive products via EUMETCast">https://eoportal.eumetsat.int</dc:URI>
+      <dc:URI name="image of SWI 1km">resources.get?id=989&amp;fname=c_gls_SWI1km_QL_202203071200_CEURO_SCATSAR_V1.0.1.tiff&amp;access=public</dc:URI>
+    </csw:Record>
+    

@@ -1,0 +1,134 @@
+{
+    "assets": {
+        "thumbnail": {
+            "href": "https://collections.eurodatacube.com/cams_glc_2017/cams_glc_2017.png",
+            "roles": [
+                "thumbnail"
+            ],
+            "title": "Thumbnail",
+            "type": "image/png"
+        }
+    },
+    "cube:dimensions": {
+        "bands": {
+            "type": "bands",
+            "values": [
+                "RED",
+                "BLUE",
+                "GREEN"
+            ]
+        },
+        "t": {
+            "extent": [
+                "2017-01-01T00:00:00Z",
+                "2017-01-01T00:00:01Z"
+            ],
+            "type": "temporal"
+        },
+        "x": {
+            "axis": "x",
+            "extent": [
+                -33.56847525983416,
+                62.19564440228477
+            ],
+            "type": "spatial"
+        },
+        "y": {
+            "axis": "y",
+            "extent": [
+                31.857766985498905,
+                72.37088743023797
+            ],
+            "type": "spatial"
+        }
+    },
+    "datasource_type": "byoc-b73ffbaf-92ff-4fd9-abf0-960c5fab5eaa",
+    "description": "The S2GLC 2017 product represents land cover classification of a major portion of the European continent. The classification has been performed using multi-temporal Sentinel-2 data collected during the year 2017 with the methodology developed in the frame of the Sentinel-2 Global Land Cover (S2GLC) project. The S2GLC 2017 dataset is delivered with 10 m spatial resolution with thematic legend composed of 13 land cover classes",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -33.56847525983416,
+                    31.857766985498905,
+                    62.19564440228477,
+                    72.37088743023797
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2017-01-01T00:00:00Z",
+                    "2017-01-01T00:00:01Z"
+                ]
+            ]
+        }
+    },
+    "id": "CAMS_GLC",
+    "keywords": [
+        "open data",
+        "sentinel hub",
+        "raster",
+        "race challenges"
+    ],
+    "links": [
+        {
+            "href": "https://collections.eurodatacube.com/cams_glc_2017",
+            "rel": "about",
+            "title": "Website describing the collection",
+            "type": "text/html"
+        },
+        {
+            "href": "https://docs.sentinel-hub.com/api/latest/api/process/",
+            "rel": "about",
+            "title": "Details about running Evalscripts",
+            "type": "text/html"
+        },
+        {
+            "href": "https://raw.githubusercontent.com/eurodatacube/public-collections/main/collections/cams_glc_2017/script.js",
+            "rel": "processing-expression",
+            "sentinelhub:layer_name": "Land Cover Classification",
+            "sentinelhub:mosaicking_order": "mostRecent",
+            "sentinelhub:upsampling": "BICUBIC",
+            "title": "Evalscript to generate Land Cover Classification imagery",
+            "type": "application/javascript"
+        },
+        {
+            "rel": "license",
+            "title": "License",
+            "type": "text/html"
+        },
+        {
+            "href": "https://openeocloud.vito.be/openeo/1.0.0/collections",
+            "rel": "root"
+        },
+        {
+            "href": "https://openeocloud.vito.be/openeo/1.0.0/collections",
+            "rel": "parent"
+        },
+        {
+            "href": "https://openeocloud.vito.be/openeo/1.0.0/collections/CAMS_GLC",
+            "rel": "self"
+        }
+    ],
+    "providers": [
+        {
+            "name": "Sentinel Hub",
+            "roles": [
+                "processor"
+            ],
+            "url": "https://shservices.mundiwebservices.com"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/datacube/v1.0.0/schema.json"
+    ],
+    "stac_version": "1.0.0",
+    "summaries": {
+        "federation:backends": [
+            "sentinelhub"
+        ]
+    },
+    "title": "CAMS_GLC_2017",
+    "type": "Collection"
+}

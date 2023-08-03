@@ -1,0 +1,48 @@
+{
+  "type": "Collection",
+  "id": "EO:EUM:DAT:MSG:NCL-IODC",
+  "stac_version": "1.0.0",
+  "description": "The Natural Colour RGB (Red, Green, Blue) makes use of three solar channels: NIR1.6, VIS0.8 and VIS0.6. In this colour scheme vegetation appears greenish because of its large reflectance in the VIS0.8 channel (the green beam) compared to the NIR1.6 (red beam) and VIS0.6 (blue beam) channels. Water clouds with small droplets have large reflectance at all three channels and hence appear whitish, while snow and ice clouds appears cyan because ice strongly absorbs in NIR1.6 (no red). Bare ground appears brown because of the larger reflectance in the NIR1.6 than at VIS0.6, and the ocean appears black because of the low reflectance in all three channels.\n\nFrom 1 June 2022, Meteosat-9 at 45.5° E is the prime satellite for the IODC service, replacing Meteosat-8 (located at 41.5° E while in operation).",
+  "links": [],
+  "title": "Natural Colour RGB - MSG - Indian Ocean",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -29.5,
+          -75.0,
+          120.5,
+          75.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2020-09-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Atmosphere",
+    "Atmospheric Composition",
+    "Cloud",
+    "Weather"
+  ],
+  "providers": [
+    {
+      "name": "European Organisation for the Exploitation of Meteorological Satellites (EUMETSAT)",
+      "description": "EUMETSAT Data store",
+      "roles": [
+        "licensor",
+        "producer",
+        "processor",
+        "host"
+      ],
+      "url": "https://data.eumetsat.int/"
+    }
+  ]
+}

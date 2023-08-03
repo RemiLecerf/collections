@@ -1,0 +1,173 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:dct="http://purl.org/dc/terms/" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://sdi.eea.europa.eu/catalogue/records/3e2b4b7b-a460-41dd-a373-962d032795f3">
+        <foaf:primaryTopic rdf:resource="http://localhost:8080/geonetwork//copernicus_r_utm-wgs84_20_m_hrsi-fsc_p_2016-now_v01_r00%20DAT-244-en"/>
+        <dct:conformsTo rdf:resource="https://www.iso.org/standard/32557.html"/>
+        <dct:issued>2022-01-10</dct:issued>
+        <dct:modified>2022-01-10</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://sdi.eea.europa.eu/catalogue/srv/api/records/3e2b4b7b-a460-41dd-a373-962d032795f3/formatters/xml">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://sdi.eea.europa.eu/catalogue/srv/api/records/3e2b4b7b-a460-41dd-a373-962d032795f3">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="http://localhost:8080/geonetwork//datasets/copernicus_r_utm-wgs84_20_m_hrsi-fsc_p_2016-now_v01_r00 DAT-244-en">
+        <dct:identifier>copernicus_r_utm-wgs84_20_m_hrsi-fsc_p_2016-now_v01_r00 DAT-244-en</dct:identifier>
+        <dct:title>High Resolution Snow and Ice Monitoring: Fractional Snow Cover (raster 20m), Jul. 2020</dct:title>
+        <dct:abstract>The Copernicus Fractional Snow Cover (FSC) product is generated in near real-time for the entire EEA38 and the United Kingdom, based on optical satellite data from the Sentinel-2 constellation. The product provides the fraction of the surface covered by snow at the top of canopy (FSC-TOC) and on ground (FSC-OG) per pixel as a percentage (0% – 100%) with a spatial resolution of 20 m x 20 m.
+FSC is one of the products of the pan-European High-Resolution Snow &amp; Ice service (HR-S&amp;I), which are provided at high spatial resolution (20 m x 20 m and 60 m x 60 m), from the Sentinel-2 and Sentinel-1 constellations data from September 1, 2016 onwards. Visit https://land.copernicus.eu/pan-european/biophysical-parameters/high-resolution-snow-and-ice-monitoring to get more information on the different HR-S&amp;I products (Snow products : FSC, WDS, SWS, GFSC, and PSA. Ice products : RLIE and ARLIE)
+The FSC product is distributed in raster files covering an area of 110 km by 110 km with a pixel size of 20 m by 20 m in UTM/WGS84 projection, which corresponds to the Sentinel-2 input L1C product tile. Each product is composed of seven separate files corresponding to the different layers of the product, and another metadata file.</dct:abstract>
+        <dcat:theme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET%20-%20INSPIRE%20themes%2C%20version%201.0/concepts/Land%20cover"/>
+        <dcat:theme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/Continents%2C%20countries%2C%20sea%20regions%20of%20the%20world./concepts/EEA38%20%28from%202020%29"/>
+        <dcat:theme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/Continents%2C%20countries%2C%20sea%20regions%20of%20the%20world./concepts/United%20Kingdom"/>
+        <dcat:theme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET/concepts/ice"/>
+        <dcat:theme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET/concepts/monitoring"/>
+        <dcat:theme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET/concepts/climate%20change%20impact"/>
+        <dcat:theme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET/concepts/snow"/>
+        <dcat:theme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET/concepts/land%20cover"/>
+        <dcat:theme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET/concepts/landscape%20alteration"/>
+        <dcat:theme rdf:resource="http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/european"/>
+        <dcat:theme rdf:resource="https://www.eea.europa.eu/themes/concepts/Land%20use"/>
+        <dcat:theme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/Temporal%20resolution/concepts/Five%20days"/>
+        <dcat:theme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/EEA%20Management%20Plan/concepts/2020%203.6.7"/>
+        <dcat:theme rdf:resource="https://inspire.ec.europa.eu/metadata-codelist/TopicCategory/environment"/>
+        <dcat:theme rdf:resource="https://inspire.ec.europa.eu/metadata-codelist/TopicCategory/imageryBaseMapsEarthCover"/>
+        <dcat:theme rdf:resource="https://inspire.ec.europa.eu/metadata-codelist/TopicCategory/climatologyMeteorologyAtmosphere"/>
+        <foaf:thumbnail rdf:resource="https://sdi.eea.europa.eu/public/catalogue-graphic-overview/3e2b4b7b-a460-41dd-a373-962d032795f3.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <geo:asWKT xmlns:geo="http://www.opengis.net/ont/geosparql#" rdf:datatype="http://www.opengis.net/rdf#wktLiteral">Polygon((-26.00 34.00, -26.00 66.00, 44.00 66.00, 44.00 34.00, -26.00 34.00))</geo:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:temporal>2016-09-01
+          /</dct:temporal>
+        <dct:issued>2020-07-07</dct:issued>
+        <dct:accrualPeriodicity>continual</dct:accrualPeriodicity>
+        <dct:language>eng</dct:language>
+        <dct:license>Access to data is based on a principle of full, open and free access as established by the Copernicus data and information policy Regulation (EU) No 1159/2013 of 12 July 2013. This regulation establishes registration and licensing conditions for GMES/Copernicus users.
+
+Free, full and open access to this data set is made on the conditions that:
+
+1. When distributing or communicating Copernicus dedicated data and Copernicus service information to the public, users shall inform the public of the source of that data and information.
+
+2. Users shall make sure not to convey the impression to the public that the user's activities are officially endorsed by the Union.
+
+3. Where that data or information has been adapted or modified, the user shall clearly state this.
+
+4. The data remain the sole property of the European Union. Any information and data produced in the framework of the action shall be the sole property of the European Union. Any communication and publication by the beneficiary shall acknowledge that the data were produced “with funding by the European Union”.</dct:license>
+        <dct:license rdf:resource="http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/noLimitations">no limitations to public access</dct:license>
+        <dcat:distribution rdf:resource="https://sdi.eea.europa.eu/catalogue/records/3e2b4b7b-a460-41dd-a373-962d032795f3#WWW%3ALINK-1.0-http--link-Cryo%20portal"/>
+        <dcat:distribution rdf:resource="https://sdi.eea.europa.eu/catalogue/records/3e2b4b7b-a460-41dd-a373-962d032795f3#OGC%3AWMS-"/>
+        <dcat:distribution rdf:resource="https://sdi.eea.europa.eu/catalogue/records/3e2b4b7b-a460-41dd-a373-962d032795f3#WWW%3ALINK-1.0-http--link-REST%20API"/>
+        <dcat:distribution rdf:resource="https://sdi.eea.europa.eu/catalogue/records/3e2b4b7b-a460-41dd-a373-962d032795f3#WWW%3ALINK-1.0-http--link-WEKEO%20portal"/>
+        <dcat:distribution rdf:resource="https://sdi.eea.europa.eu/catalogue/records/3e2b4b7b-a460-41dd-a373-962d032795f3#WWW%3ALINK-1.0-http--link-Product%20user%20manual"/>
+        <dcat:distribution rdf:resource="https://sdi.eea.europa.eu/catalogue/records/3e2b4b7b-a460-41dd-a373-962d032795f3#WWW%3ALINK-1.0-http--link-Algorithm%20theoretical%20basis%20document"/>
+        <dcat:dataQuality>The validation of algorithm for FSC retrieval is fully described in the Quality Assessment Report:
+https://land.copernicus.eu/user-corner/technical-library/hrsi-snow-qar
+The evaluation is based on various remote-sensing reference datasets and will be completed at the end of 2020.
+More information about this product can be found in the Product User Manual here: https://land.copernicus.eu/user-corner/technical-library/hrsi-snow-pum.</dcat:dataQuality>
+      </dcat:Dataset>
+      <skos:Concept rdf:about="http://localhost:8080/geonetwork//registries/vocabularies/GEMET%20-%20INSPIRE%20themes%2C%20version%201.0/concepts/Land%20cover">
+        <skos:inScheme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET%20-%20INSPIRE%20themes%2C%20version%201.0"/>
+        <skos:prefLabel>Land cover</skos:prefLabel>
+      </skos:Concept>
+      <skos:Concept rdf:about="http://localhost:8080/geonetwork//registries/vocabularies/Continents%2C%20countries%2C%20sea%20regions%20of%20the%20world./concepts/EEA38%20%28from%202020%29">
+        <skos:inScheme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/Continents%2C%20countries%2C%20sea%20regions%20of%20the%20world."/>
+        <skos:prefLabel>EEA38 (from 2020)</skos:prefLabel>
+      </skos:Concept>
+      <skos:Concept rdf:about="http://localhost:8080/geonetwork//registries/vocabularies/Continents%2C%20countries%2C%20sea%20regions%20of%20the%20world./concepts/United%20Kingdom">
+        <skos:inScheme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/Continents%2C%20countries%2C%20sea%20regions%20of%20the%20world."/>
+        <skos:prefLabel>United Kingdom</skos:prefLabel>
+      </skos:Concept>
+      <skos:Concept rdf:about="http://localhost:8080/geonetwork//registries/vocabularies/GEMET/concepts/ice">
+        <skos:inScheme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET"/>
+        <skos:prefLabel>ice</skos:prefLabel>
+      </skos:Concept>
+      <skos:Concept rdf:about="http://localhost:8080/geonetwork//registries/vocabularies/GEMET/concepts/monitoring">
+        <skos:inScheme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET"/>
+        <skos:prefLabel>monitoring</skos:prefLabel>
+      </skos:Concept>
+      <skos:Concept rdf:about="http://localhost:8080/geonetwork//registries/vocabularies/GEMET/concepts/climate%20change%20impact">
+        <skos:inScheme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET"/>
+        <skos:prefLabel>climate change impact</skos:prefLabel>
+      </skos:Concept>
+      <skos:Concept rdf:about="http://localhost:8080/geonetwork//registries/vocabularies/GEMET/concepts/snow">
+        <skos:inScheme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET"/>
+        <skos:prefLabel>snow</skos:prefLabel>
+      </skos:Concept>
+      <skos:Concept rdf:about="http://localhost:8080/geonetwork//registries/vocabularies/GEMET/concepts/land%20cover">
+        <skos:inScheme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET"/>
+        <skos:prefLabel>land cover</skos:prefLabel>
+      </skos:Concept>
+      <skos:Concept rdf:about="http://localhost:8080/geonetwork//registries/vocabularies/GEMET/concepts/landscape%20alteration">
+        <skos:inScheme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET"/>
+        <skos:prefLabel>landscape alteration</skos:prefLabel>
+      </skos:Concept>
+      <skos:Concept rdf:about="http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/european">
+        <skos:inScheme rdf:resource="http://inspire.ec.europa.eu/metadata-codelist/SpatialScope"/>
+        <skos:prefLabel>European</skos:prefLabel>
+      </skos:Concept>
+      <skos:Concept rdf:about="https://www.eea.europa.eu/themes/concepts/Land%20use">
+        <skos:inScheme rdf:resource="https://www.eea.europa.eu/themes"/>
+        <skos:prefLabel>Land use</skos:prefLabel>
+      </skos:Concept>
+      <skos:Concept rdf:about="http://localhost:8080/geonetwork//registries/vocabularies/Temporal%20resolution/concepts/Five%20days">
+        <skos:inScheme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/Temporal%20resolution"/>
+        <skos:prefLabel>Five days</skos:prefLabel>
+      </skos:Concept>
+      <skos:Concept rdf:about="http://localhost:8080/geonetwork//registries/vocabularies/EEA%20Management%20Plan/concepts/2020%203.6.7">
+        <skos:inScheme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/EEA%20Management%20Plan"/>
+        <skos:prefLabel>2020 3.6.7</skos:prefLabel>
+      </skos:Concept>
+      <dcat:Distribution rdf:about="https://sdi.eea.europa.eu/catalogue/records/3e2b4b7b-a460-41dd-a373-962d032795f3#WWW%3ALINK-1.0-http--link-Cryo%20portal">
+        <dcat:accessURL>https://cryo.land.copernicus.eu/finder/</dcat:accessURL>
+        <dct:title>Cryo portal</dct:title>
+        <dct:format>WWW:LINK-1.0-http--link</dct:format>
+      </dcat:Distribution>
+      <dcat:Distribution rdf:about="https://sdi.eea.europa.eu/catalogue/records/3e2b4b7b-a460-41dd-a373-962d032795f3#OGC%3AWMS-">
+        <dcat:accessURL>https://cryo.land.copernicus.eu/wms/FSC?service=WMS&amp;request=GetCapabilities&amp;version=1.3.0</dcat:accessURL>
+        <dct:format>OGC:WMS</dct:format>
+      </dcat:Distribution>
+      <dcat:Distribution rdf:about="https://sdi.eea.europa.eu/catalogue/records/3e2b4b7b-a460-41dd-a373-962d032795f3#WWW%3ALINK-1.0-http--link-REST%20API">
+        <dcat:accessURL>https://cryo.land.copernicus.eu/resto/api/collections/HRSI/search.json</dcat:accessURL>
+        <dct:title>REST API</dct:title>
+        <dct:format>WWW:LINK-1.0-http--link</dct:format>
+      </dcat:Distribution>
+      <dcat:Distribution rdf:about="https://sdi.eea.europa.eu/catalogue/records/3e2b4b7b-a460-41dd-a373-962d032795f3#WWW%3ALINK-1.0-http--link-WEKEO%20portal">
+        <dcat:accessURL>https://www.wekeo.eu</dcat:accessURL>
+        <dct:title>WEKEO portal</dct:title>
+        <dct:format>WWW:LINK-1.0-http--link</dct:format>
+      </dcat:Distribution>
+      <dcat:Distribution rdf:about="https://sdi.eea.europa.eu/catalogue/records/3e2b4b7b-a460-41dd-a373-962d032795f3#WWW%3ALINK-1.0-http--link-Product%20user%20manual">
+        <dcat:accessURL>https://land.copernicus.eu/user-corner/technical-library/hrsi-snow-pum</dcat:accessURL>
+        <dct:title>Product user manual</dct:title>
+        <dct:format>WWW:LINK-1.0-http--link</dct:format>
+      </dcat:Distribution>
+      <dcat:Distribution rdf:about="https://sdi.eea.europa.eu/catalogue/records/3e2b4b7b-a460-41dd-a373-962d032795f3#WWW%3ALINK-1.0-http--link-Algorithm%20theoretical%20basis%20document">
+        <dcat:accessURL>https://land.copernicus.eu/user-corner/technical-library/hrsi-snow-atbd</dcat:accessURL>
+        <dct:title>Algorithm theoretical basis document</dct:title>
+        <dct:format>WWW:LINK-1.0-http--link</dct:format>
+      </dcat:Distribution>
+      <foaf:Organization rdf:about="http://localhost:8080/geonetwork//organizations/European%20Environment%20Agency">
+        <foaf:name>European Environment Agency</foaf:name>
+        <foaf:member rdf:resource="http://localhost:8080/geonetwork//persons/sdi%40eea.europa.eu"/>
+      </foaf:Organization>
+      <foaf:Agent rdf:about="http://localhost:8080/geonetwork//persons/sdi%40eea.europa.eu">
+        <foaf:mbox rdf:resource="mailto:sdi@eea.europa.eu"/>
+      </foaf:Agent>
+    </rdf:RDF>
+    

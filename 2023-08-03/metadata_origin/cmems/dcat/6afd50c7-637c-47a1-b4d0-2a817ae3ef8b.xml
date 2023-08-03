@@ -1,0 +1,75 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:dct="http://purl.org/dc/terms/" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/6afd50c7-637c-47a1-b4d0-2a817ae3ef8b">
+        <foaf:primaryTopic rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/resource/ef932fc0-04e7-4a25-b7b2-08a2d85d4039"/>
+        <dct:issued>2023-03-29</dct:issued>
+        <dct:modified>2023-03-29</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/srv/eng/xml.metadata.get?uuid=6afd50c7-637c-47a1-b4d0-2a817ae3ef8b">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork?uuid=6afd50c7-637c-47a1-b4d0-2a817ae3ef8b">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/resource/ef932fc0-04e7-4a25-b7b2-08a2d85d4039">
+        <dct:identifier>ef932fc0-04e7-4a25-b7b2-08a2d85d4039</dct:identifier>
+        <dct:title>Baltic Sea Significant Wave Height extreme from Observations Reprocessing</dct:title>
+        <dct:abstract>'''DEFINITION'''
+
+The OMI_EXTREME_WAVE_BALTIC_swh_mean_and_anomaly_obs indicator is based on the computation of the 99th and the 1st percentiles from in situ data (observations). It is computed for the variable significant wave height (swh) measured by in situ buoys. The use of percentiles instead of annual maximum and minimum values, makes this extremes study less affected by individual data measurement errors. The percentiles are temporally averaged, and the spatial evolution is displayed, jointly with the anomaly in the target year. This study of extreme variability was first applied to sea level variable (Pérez Gómez et al 2016) and then extended to other essential variables, sea surface temperature and significant wave height (Pérez Gómez et al 2018). 
+
+'''CONTEXT'''
+
+Projections on Climate Change foresee a future with a greater frequency of extreme sea states (Stott, 2016; Mitchell et al., 2006). The damages caused by severe wave storms can be considerable not only in infrastructure and buildings but also in the natural habitat, crops and ecosystems affected by erosion and flooding aggravated by the extreme wave heights. In addition, wave storms strongly hamper the maritime activities, especially in harbours. These extreme phenomena drive complex hydrodynamic processes, whose understanding is paramount for proper infrastructure management, design and maintenance (Goda, 2010).
+
+'''CMEMS KEY FINDINGS'''
+
+The mean 99th percentiles showed in the area are around 3 meters in the two stations included this year (Arkona and FinngrundetWR), and the standard deviation ranges from 0.23 to 0.26 m.
+Results for this year show a slight negative anomaly in both stations, with  -0.315 meters in Arkona, and less than -0.1 meter in FinngrundetWR, both around the standard deviation range  in the area. 
+
+'''DOI (product):''' 
+https://doi.org/10.48670/moi-00199</dct:abstract>
+        <dcat:theme rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/thesaurus/iso/topicCategory/oceans"/>
+        <foaf:thumbnail rdf:resource="https://catalogue.marine.copernicus.eu/documents/IMG/OMI_VAR_EXTREME_WAVE_BALTIC_swh_mean_and_anomaly_obs.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((0.00 50.00, 0.00 67.00, 30.50 67.00, 30.50 50.00, 0.00 50.00))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:issued>2020-06-18</dct:issued>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/INS-IFREMER-BREST-FR"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/INS-PUERTOS-MADRID-ES"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/INS-PUERTOS-MADRID-ES"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/INS-PUERTOS-MADRID-ES"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/MOI-OMI-SERVICE"/>
+        <dct:accrualPeriodicity>annually</dct:accrualPeriodicity>
+        <dct:license>otherRestrictions</dct:license>
+        <dct:license>license</dct:license>
+        <dct:license>No limitations on public access</dct:license>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/OMI_VAR_EXTREME_WAVE_BALTIC_swh_mean_and_anomaly_obs/omi_var_extreme_wave_baltic_swh_mean_and_anomaly_obs"/>
+        <dcat:distribution rdf:resource="https://mdl1.marine.copernicus.eu/derived/OMI_VAR_EXTREME_WAVE_BALTIC_swh_mean_and_anomaly_obs/omi_var_extreme_wave_baltic_swh_mean_and_anomaly_obs_202211/omi_var_extreme_wave_baltic_swh_mean_and_anomaly_obs.nc"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/ce98c53d-42e2-4de8-87fa-9c0a49947838"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/a6160dd4-3477-4b07-aac3-752f3868dd5b"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/2512e19a-6eb8-47c2-ba70-16347258bcae"/>
+        <dcat:dataQuality>The myOcean products depends on other products for production or validation. The detailed list of dependencies is given in ISO19115's aggregationInfo (ISO19139 Xpath = "gmd:MD_Metadata/gmd:identificationInfo/gmd:aggregationInfo[./gmd:MD_AggregateInformation/gmd:initiativeType/gmd:DS_InitiativeTypeCode/@codeListValue='upstream-validation' or 'upstream-production']")</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+    

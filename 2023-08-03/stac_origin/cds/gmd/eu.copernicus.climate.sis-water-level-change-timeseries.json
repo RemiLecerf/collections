@@ -1,0 +1,64 @@
+{
+  "type": "Collection",
+  "id": "eu.copernicus.climate.sis-water-level-change-timeseries",
+  "stac_version": "1.0.0",
+  "description": "The dataset presents water level time series resulting from tides, surges and sea level rise computed for a European-wide domain. The dataset provides an understanding of European coastal hydrodynamics under the impact of climate change (e.g. sea level rise) and can be used to provide added value to various coastal sectors and studies such as coastal flooding, coastal erosion, harbours and ports. \nTo compute these time series, the Deltares Global Tide and Surge Model (GTSM) version 3.0 is used together with regional climate forcing and sea level rise initial conditions. The regional climate forcing employed is the HIRHAM5 model from the Danish Meteorological Institute (DMI), a member of the EURO-CORDEX climate model ensemble, which is downscaled from the global climate model EC-EARTH. By using a regional climate model and a high-resolution forcing field, GTSM is able to produce a more consistent and high quality dataset. In order to assess the impact of climate change, the GTSM model is run for three different climate scenarios: the present climate (labelled 'historical'), and two Representative Concentration Pathway (RCP) scenarios that correspond to an optimistic emission scenario where emissions start declining beyond 2040 (RCP4.5) and a pessimistic scenario where emissions continue to rise throughout the century often called the business-as-usual scenario (RCP8.5). Given that the projections of these climate scenarios are based on a single combination of the regional and global climate models, users of these data should take in consideration that there is an inevitable underestimation of the uncertainty associated with this dataset. In addition to the climate scenarios, a reanalysis dataset is computed by forcing GTSM with ERA5 reanalysis. This provides recent historical water-levels that can be used to look at specific (extreme) events in the past.\nThis dataset was produced on behalf of the Copernicus Climate Change Service.\n\nVariables in the dataset/application are:\nMean sea level, Storm surge residual, Tidal elevation, Total water level",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.8c59054f",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Climate Data Store catalogue"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://confluence.ecmwf.int/x/N5ovEQ",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Product user guide"
+    }
+  ],
+  "title": "Water level change time series for the European coast from 1977 to 2100 derived from climate projections",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -30.0,
+          25.0,
+          45.0,
+          72.5
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1977-01-01T00:00:00Z",
+          "2100-12-31T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Hydrography",
+    "Product type: Climate projections",
+    "Sector: Disaster risk reduction",
+    "Sector: Water management",
+    "Spatial coverage: Europe",
+    "Temporal coverage: Future",
+    "Variable domain: Ocean (physics)"
+  ],
+  "providers": [
+    {
+      "name": "Climate Data Store - European Centre for Medium-Range Weather Forecasts (ECMWF)",
+      "description": "Climate Data Store - ECMWF",
+      "roles": [
+        "licensor",
+        "producer",
+        "processor",
+        "host"
+      ],
+      "url": "https://cds.climate.copernicus.eu/"
+    }
+  ]
+}

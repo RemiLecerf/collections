@@ -1,0 +1,4236 @@
+{
+    "slug": "surface-albedo-10-daily-gridded-data-from-1981-to-present",
+    "name": "satellite-albedo",
+    "id": "eu.copernicus.climate.satellite-albedo",
+    "type": "dataset",
+    "rich_abstract": "<div class='abstract-text'>\n         <p>This dataset provides global Earth surface albedo products. The albedo has an impact on the amount of energy that Earth absorbs from the Sun and, therefore, is an important variable in climate and weather studies.</p>\n<p>The surface albedo quantifies the fraction of irradiance reflected by the surface of the Earth. It provides information on the radiative basis, thus on the temperature and water balance. The directional albedo or directional-hemispherical reflectance (also called black-sky albedo) is defined as the integration of the bi-directional reflectance over the viewing hemisphere. It assumes all energy is coming from a direct radiation from the sun and is computed for the local solar noon.</p>\n<p>The current algorithm is applied at a 10-day frequency on daily surface reflectances acquired during a moving temporal window of 20 days. It first normalizes the reflectances through inversion of a semi-empiric, kernel-driven reflectance model and favouring the most recent observations. Directional albedo is then computed, per spectral band, by integration over the viewing hemisphere and for local solar noon. Broadband albedo is then calculated from the spectral albedo by a linear relationship.</p>\n<p>Multiple platform/sensors were used offering various spatial resolution and temporal coverage (1 km from SPOT-VGT and PROBA-V, 4 km from AVHRR). Products are available from 1981 to present.</p>\n         \n         \n            <p></p>\n            <table class=\"abstract-description abstract-table\">\n            <tr><th colspan=\"2\">DATA DESCRIPTION</th>\n            \n<tr><th>Data type</th><td>Gridded</td></tr>\n<tr><th>Projection</th><td>Plate Carr\u00e9e projection</td></tr>\n<tr><th>Horizontal coverage</th><td>Global land surface</td></tr>\n<tr><th>Horizontal resolution</th><td><p>AVHRR: 1/30\u00b0 (~4 km) </p>\n<p>VGT: 1/112\u00b0 (~1 km)</p>\n<p>Sentinel-3: 1/336\u00b0 (~300 m)</p></td></tr>\n<tr><th>Vertical coverage</th><td>Top of the canopy</td></tr>\n<tr><th>Temporal coverage</th><td><p>AVHRR: September 1981 to December 2005</p>\n<p>SPOT-VGT: April 1998 to May 2014 </p>\n<p>PROBA-VGT: October 2013 to June 2020</p>\n<p>Sentinel-3: July 2018 to April 2019</p></td></tr>\n<tr><th>Temporal resolution</th><td>10 days</td></tr>\n<tr><th>File format</th><td>NetCDF</td></tr>\n<tr><th>Versions</th><td><p>V0 is a brokered dataset from the Copernicus Global Land Service (CGLS).</p>\n<p>V1 is produced by the Copernicus Climate Change Service (C3S). In this version uncertainty propagation was performed and the CDR dataset was extended in the past back to 1982 using the AVHRR2/3 NOAA series.</p>\n<p>V2 is produced by the C3S. This version  builds on version 1 and adds a multi-sensor aspect to the albedo products delivered so far. The inversion of the BRDF coefficients was improved. A climatological BRDF based on SPOT-VGT is introduced as a priori information used for the inversion of the albedos of each sensor. This will increase the quality of the retrieval of the reflectance directional properties from the different sensors and improve the homogeneity among sensors. </p>\n<p>V3 is produced by the C3S. This version is built using the Sentinel3 A/B SLSTR and OLCI dataset and includes more spectral albedo bands compared to v2 and v1. V3 is a pre-operational version that may be replaced by an operational version when available.</p></td></tr>\n<tr><th>Update frequency</th><td>Monthly updates</td></tr>\n</table>\n\n    <p></p>\n    <table class=\"abstract-variables abstract-table\">\n    <tr><th colspan=\"3\">MAIN VARIABLES</th>\n    \n\n    <tr><th class='variables-name'>Name</th><th class='variables-units'>Units</th><th class='variables-description'>Description</th></tr>\n    \n<tr><td class='variables-name'>Broadband directional surface albedo (ALBB-DH)</td><td class='variables-units'>Dimensionless</td><td class='variables-description'>Integration of the Bidirectional Reflectance Distribution Function (BRDF) over the viewing hemisphere. It assumes that all the solar energy is coming in the form of a direct radiation from the sun. Also called black-sky albedo. The integration is computed over visible band [0.4-0.7\u00b5m], near infrared band [0.7-4\u00b5m] and over total spectrum [0.4-4\u00b5m].</td></tr>\n<tr><td class='variables-name'>Broadband hemispherical surface albedo (ALBB-BH)</td><td class='variables-units'>Dimensionless</td><td class='variables-description'>Integration of the directional albedo over the illumination hemisphere. It assumes a complete diffuse illumination.  Also called white-sky albedo. The integration is computed over visible band [0.4-0.7\u00b5m], near infrared band [0.7-4\u00b5m] and over total spectrum [0.4-4\u00b5m].</td></tr>\n<tr><td class='variables-name'>Spectral directional surface albedo (ALSP-DH)</td><td class='variables-units'>Dimensionless</td><td class='variables-description'>Identical to ALBB-DH but values are given in function of the wavelength.</td></tr>\n<tr><td class='variables-name'>Spectral hemispherical surface albedo (ALSP-BH)</td><td class='variables-units'>Dimensionless</td><td class='variables-description'>Identical to ALBB-BH but values are given in function of the wavelength.</td></tr>\n</table>\n<p></p><table class=\"abstract-description abstract-table\"><tr><th>RELATED VARIABLES</th></tr><tr><td>Along with the main variables the following variables are included: error (uncertainty on every band in the variable); QFLAG (the quality flag of the product); NMOD (the number of valid observations during the 20-day synthesis period that are used to calculate the surface albedo); AGE (the age of the observation in days).</td></tr></table></br>\n    </div>",
+    "terms": [
+        "vito-proba-v",
+        "licence-to-use-copernicus-products",
+        "Copernicus-Global-Land-product-licence"
+    ],
+    "constraints": [
+        {
+            "horizontal_resolution": [
+                "1km"
+            ],
+            "month": [
+                "01",
+                "02",
+                "03"
+            ],
+            "nominal_day": [
+                "10",
+                "20"
+            ],
+            "product_version": [
+                "v1",
+                "v2"
+            ],
+            "satellite": [
+                "spot"
+            ],
+            "sensor": [
+                "vgt"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "1999",
+                "2000",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "1km"
+            ],
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04",
+                "05"
+            ],
+            "nominal_day": [
+                "03",
+                "13"
+            ],
+            "product_version": [
+                "v0"
+            ],
+            "satellite": [
+                "spot"
+            ],
+            "sensor": [
+                "vgt"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh"
+            ],
+            "year": [
+                "1999",
+                "2000",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "1km"
+            ],
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04",
+                "05"
+            ],
+            "nominal_day": [
+                "03",
+                "13"
+            ],
+            "product_version": [
+                "v0"
+            ],
+            "satellite": [
+                "proba"
+            ],
+            "sensor": [
+                "vgt"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh"
+            ],
+            "year": [
+                "2015",
+                "2016",
+                "2017",
+                "2018",
+                "2019",
+                "2020"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "1km"
+            ],
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06"
+            ],
+            "nominal_day": [
+                "03",
+                "13"
+            ],
+            "product_version": [
+                "v1"
+            ],
+            "satellite": [
+                "proba"
+            ],
+            "sensor": [
+                "vgt"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018",
+                "2019",
+                "2020"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "1km"
+            ],
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06"
+            ],
+            "nominal_day": [
+                "10",
+                "20"
+            ],
+            "product_version": [
+                "v2"
+            ],
+            "satellite": [
+                "proba"
+            ],
+            "sensor": [
+                "vgt"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018",
+                "2019",
+                "2020"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "1km"
+            ],
+            "month": [
+                "01",
+                "03"
+            ],
+            "nominal_day": [
+                "24"
+            ],
+            "product_version": [
+                "v0"
+            ],
+            "satellite": [
+                "spot"
+            ],
+            "sensor": [
+                "vgt"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh"
+            ],
+            "year": [
+                "1999",
+                "2000",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "1km"
+            ],
+            "month": [
+                "01",
+                "03"
+            ],
+            "nominal_day": [
+                "24"
+            ],
+            "product_version": [
+                "v0"
+            ],
+            "satellite": [
+                "proba"
+            ],
+            "sensor": [
+                "vgt"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh"
+            ],
+            "year": [
+                "2015",
+                "2016",
+                "2017",
+                "2018",
+                "2019",
+                "2020"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "1km"
+            ],
+            "month": [
+                "01",
+                "03"
+            ],
+            "nominal_day": [
+                "31"
+            ],
+            "product_version": [
+                "v1",
+                "v2"
+            ],
+            "satellite": [
+                "spot"
+            ],
+            "sensor": [
+                "vgt"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "1999",
+                "2000",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "1km"
+            ],
+            "month": [
+                "01",
+                "03",
+                "05"
+            ],
+            "nominal_day": [
+                "24"
+            ],
+            "product_version": [
+                "v1"
+            ],
+            "satellite": [
+                "proba"
+            ],
+            "sensor": [
+                "vgt"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018",
+                "2019",
+                "2020"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "1km"
+            ],
+            "month": [
+                "01",
+                "03",
+                "05"
+            ],
+            "nominal_day": [
+                "31"
+            ],
+            "product_version": [
+                "v2"
+            ],
+            "satellite": [
+                "proba"
+            ],
+            "sensor": [
+                "vgt"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018",
+                "2019",
+                "2020"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "1km"
+            ],
+            "month": [
+                "02"
+            ],
+            "nominal_day": [
+                "21"
+            ],
+            "product_version": [
+                "v0"
+            ],
+            "satellite": [
+                "spot"
+            ],
+            "sensor": [
+                "vgt"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh"
+            ],
+            "year": [
+                "1999",
+                "2001",
+                "2002",
+                "2003",
+                "2005",
+                "2006",
+                "2007",
+                "2009",
+                "2010",
+                "2011",
+                "2013",
+                "2014"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "1km"
+            ],
+            "month": [
+                "02"
+            ],
+            "nominal_day": [
+                "21"
+            ],
+            "product_version": [
+                "v0"
+            ],
+            "satellite": [
+                "proba"
+            ],
+            "sensor": [
+                "vgt"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh"
+            ],
+            "year": [
+                "2015",
+                "2017",
+                "2018",
+                "2019"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "1km"
+            ],
+            "month": [
+                "02"
+            ],
+            "nominal_day": [
+                "21"
+            ],
+            "product_version": [
+                "v1"
+            ],
+            "satellite": [
+                "proba"
+            ],
+            "sensor": [
+                "vgt"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "2014",
+                "2015",
+                "2017",
+                "2018",
+                "2019"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "1km"
+            ],
+            "month": [
+                "02"
+            ],
+            "nominal_day": [
+                "22"
+            ],
+            "product_version": [
+                "v0"
+            ],
+            "satellite": [
+                "spot"
+            ],
+            "sensor": [
+                "vgt"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh"
+            ],
+            "year": [
+                "2000",
+                "2004",
+                "2008",
+                "2012"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "1km"
+            ],
+            "month": [
+                "02"
+            ],
+            "nominal_day": [
+                "22"
+            ],
+            "product_version": [
+                "v0"
+            ],
+            "satellite": [
+                "proba"
+            ],
+            "sensor": [
+                "vgt"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh"
+            ],
+            "year": [
+                "2016",
+                "2020"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "1km"
+            ],
+            "month": [
+                "02"
+            ],
+            "nominal_day": [
+                "22"
+            ],
+            "product_version": [
+                "v1"
+            ],
+            "satellite": [
+                "proba"
+            ],
+            "sensor": [
+                "vgt"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "2016",
+                "2020"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "1km"
+            ],
+            "month": [
+                "02"
+            ],
+            "nominal_day": [
+                "28"
+            ],
+            "product_version": [
+                "v1",
+                "v2"
+            ],
+            "satellite": [
+                "spot"
+            ],
+            "sensor": [
+                "vgt"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "1999",
+                "2001",
+                "2002",
+                "2003",
+                "2005",
+                "2006",
+                "2007",
+                "2009",
+                "2010",
+                "2011",
+                "2013",
+                "2014"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "1km"
+            ],
+            "month": [
+                "02"
+            ],
+            "nominal_day": [
+                "28"
+            ],
+            "product_version": [
+                "v2"
+            ],
+            "satellite": [
+                "proba"
+            ],
+            "sensor": [
+                "vgt"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "2014",
+                "2015",
+                "2017",
+                "2018",
+                "2019"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "1km"
+            ],
+            "month": [
+                "02"
+            ],
+            "nominal_day": [
+                "29"
+            ],
+            "product_version": [
+                "v1",
+                "v2"
+            ],
+            "satellite": [
+                "spot"
+            ],
+            "sensor": [
+                "vgt"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "2000",
+                "2004",
+                "2008",
+                "2012"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "1km"
+            ],
+            "month": [
+                "02"
+            ],
+            "nominal_day": [
+                "29"
+            ],
+            "product_version": [
+                "v2"
+            ],
+            "satellite": [
+                "proba"
+            ],
+            "sensor": [
+                "vgt"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "2016",
+                "2020"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "1km"
+            ],
+            "month": [
+                "04"
+            ],
+            "nominal_day": [
+                "23"
+            ],
+            "product_version": [
+                "v0"
+            ],
+            "satellite": [
+                "spot"
+            ],
+            "sensor": [
+                "vgt"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh"
+            ],
+            "year": [
+                "1999",
+                "2000",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "1km"
+            ],
+            "month": [
+                "04"
+            ],
+            "nominal_day": [
+                "23"
+            ],
+            "product_version": [
+                "v0"
+            ],
+            "satellite": [
+                "proba"
+            ],
+            "sensor": [
+                "vgt"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh"
+            ],
+            "year": [
+                "2015",
+                "2016",
+                "2017",
+                "2018",
+                "2019",
+                "2020"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "1km"
+            ],
+            "month": [
+                "04"
+            ],
+            "nominal_day": [
+                "23"
+            ],
+            "product_version": [
+                "v1"
+            ],
+            "satellite": [
+                "proba"
+            ],
+            "sensor": [
+                "vgt"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018",
+                "2019",
+                "2020"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "1km"
+            ],
+            "month": [
+                "04"
+            ],
+            "nominal_day": [
+                "30"
+            ],
+            "product_version": [
+                "v1",
+                "v2"
+            ],
+            "satellite": [
+                "spot"
+            ],
+            "sensor": [
+                "vgt"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "1998",
+                "1999",
+                "2000",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "1km"
+            ],
+            "month": [
+                "04",
+                "05"
+            ],
+            "nominal_day": [
+                "10",
+                "20"
+            ],
+            "product_version": [
+                "v1",
+                "v2"
+            ],
+            "satellite": [
+                "spot"
+            ],
+            "sensor": [
+                "vgt"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "1998",
+                "1999",
+                "2000",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "1km"
+            ],
+            "month": [
+                "04",
+                "06"
+            ],
+            "nominal_day": [
+                "30"
+            ],
+            "product_version": [
+                "v2"
+            ],
+            "satellite": [
+                "proba"
+            ],
+            "sensor": [
+                "vgt"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018",
+                "2019",
+                "2020"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "1km"
+            ],
+            "month": [
+                "05"
+            ],
+            "nominal_day": [
+                "24"
+            ],
+            "product_version": [
+                "v0"
+            ],
+            "satellite": [
+                "proba"
+            ],
+            "sensor": [
+                "vgt"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh"
+            ],
+            "year": [
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018",
+                "2019",
+                "2020"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "1km"
+            ],
+            "month": [
+                "05"
+            ],
+            "nominal_day": [
+                "31"
+            ],
+            "product_version": [
+                "v1",
+                "v2"
+            ],
+            "satellite": [
+                "spot"
+            ],
+            "sensor": [
+                "vgt"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "1998",
+                "1999",
+                "2000",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "1km"
+            ],
+            "month": [
+                "05",
+                "07",
+                "08",
+                "10",
+                "12"
+            ],
+            "nominal_day": [
+                "24"
+            ],
+            "product_version": [
+                "v0"
+            ],
+            "satellite": [
+                "spot"
+            ],
+            "sensor": [
+                "vgt"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh"
+            ],
+            "year": [
+                "1999",
+                "2000",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "1km"
+            ],
+            "month": [
+                "06"
+            ],
+            "nominal_day": [
+                "03",
+                "13"
+            ],
+            "product_version": [
+                "v0"
+            ],
+            "satellite": [
+                "proba"
+            ],
+            "sensor": [
+                "vgt"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh"
+            ],
+            "year": [
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018",
+                "2019",
+                "2020"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "1km"
+            ],
+            "month": [
+                "06",
+                "07",
+                "08",
+                "09",
+                "10",
+                "11",
+                "12"
+            ],
+            "nominal_day": [
+                "03",
+                "13"
+            ],
+            "product_version": [
+                "v0"
+            ],
+            "satellite": [
+                "spot"
+            ],
+            "sensor": [
+                "vgt"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh"
+            ],
+            "year": [
+                "1999",
+                "2000",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "1km"
+            ],
+            "month": [
+                "06",
+                "07",
+                "08",
+                "09",
+                "10",
+                "11",
+                "12"
+            ],
+            "nominal_day": [
+                "10",
+                "20"
+            ],
+            "product_version": [
+                "v1",
+                "v2"
+            ],
+            "satellite": [
+                "spot"
+            ],
+            "sensor": [
+                "vgt"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "1998",
+                "1999",
+                "2000",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "1km"
+            ],
+            "month": [
+                "06",
+                "09",
+                "11"
+            ],
+            "nominal_day": [
+                "23"
+            ],
+            "product_version": [
+                "v0"
+            ],
+            "satellite": [
+                "spot"
+            ],
+            "sensor": [
+                "vgt"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh"
+            ],
+            "year": [
+                "1999",
+                "2000",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "1km"
+            ],
+            "month": [
+                "06",
+                "09",
+                "11"
+            ],
+            "nominal_day": [
+                "23"
+            ],
+            "product_version": [
+                "v0"
+            ],
+            "satellite": [
+                "proba"
+            ],
+            "sensor": [
+                "vgt"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh"
+            ],
+            "year": [
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018",
+                "2019"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "1km"
+            ],
+            "month": [
+                "06",
+                "09",
+                "11"
+            ],
+            "nominal_day": [
+                "23"
+            ],
+            "product_version": [
+                "v1"
+            ],
+            "satellite": [
+                "proba"
+            ],
+            "sensor": [
+                "vgt"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018",
+                "2019"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "1km"
+            ],
+            "month": [
+                "06",
+                "09",
+                "11"
+            ],
+            "nominal_day": [
+                "30"
+            ],
+            "product_version": [
+                "v1",
+                "v2"
+            ],
+            "satellite": [
+                "spot"
+            ],
+            "sensor": [
+                "vgt"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "1998",
+                "1999",
+                "2000",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "1km"
+            ],
+            "month": [
+                "07",
+                "08"
+            ],
+            "nominal_day": [
+                "31"
+            ],
+            "product_version": [
+                "v2"
+            ],
+            "satellite": [
+                "proba"
+            ],
+            "sensor": [
+                "vgt"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018",
+                "2019"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "1km"
+            ],
+            "month": [
+                "07",
+                "08",
+                "09",
+                "10"
+            ],
+            "nominal_day": [
+                "10",
+                "20"
+            ],
+            "product_version": [
+                "v2"
+            ],
+            "satellite": [
+                "proba"
+            ],
+            "sensor": [
+                "vgt"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018",
+                "2019"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "1km"
+            ],
+            "month": [
+                "07",
+                "08",
+                "09",
+                "10",
+                "11",
+                "12"
+            ],
+            "nominal_day": [
+                "03",
+                "13"
+            ],
+            "product_version": [
+                "v0"
+            ],
+            "satellite": [
+                "proba"
+            ],
+            "sensor": [
+                "vgt"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh"
+            ],
+            "year": [
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018",
+                "2019"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "1km"
+            ],
+            "month": [
+                "07",
+                "08",
+                "09",
+                "10",
+                "11",
+                "12"
+            ],
+            "nominal_day": [
+                "03",
+                "13"
+            ],
+            "product_version": [
+                "v1"
+            ],
+            "satellite": [
+                "proba"
+            ],
+            "sensor": [
+                "vgt"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018",
+                "2019"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "1km"
+            ],
+            "month": [
+                "07",
+                "08",
+                "10"
+            ],
+            "nominal_day": [
+                "24"
+            ],
+            "product_version": [
+                "v1"
+            ],
+            "satellite": [
+                "proba"
+            ],
+            "sensor": [
+                "vgt"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018",
+                "2019"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "1km"
+            ],
+            "month": [
+                "07",
+                "08",
+                "10",
+                "12"
+            ],
+            "nominal_day": [
+                "24"
+            ],
+            "product_version": [
+                "v0"
+            ],
+            "satellite": [
+                "proba"
+            ],
+            "sensor": [
+                "vgt"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh"
+            ],
+            "year": [
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018",
+                "2019"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "1km"
+            ],
+            "month": [
+                "07",
+                "08",
+                "10",
+                "12"
+            ],
+            "nominal_day": [
+                "31"
+            ],
+            "product_version": [
+                "v1",
+                "v2"
+            ],
+            "satellite": [
+                "spot"
+            ],
+            "sensor": [
+                "vgt"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "1998",
+                "1999",
+                "2000",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "1km"
+            ],
+            "month": [
+                "09"
+            ],
+            "nominal_day": [
+                "30"
+            ],
+            "product_version": [
+                "v2"
+            ],
+            "satellite": [
+                "proba"
+            ],
+            "sensor": [
+                "vgt"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018",
+                "2019"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "1km"
+            ],
+            "month": [
+                "10",
+                "12"
+            ],
+            "nominal_day": [
+                "31"
+            ],
+            "product_version": [
+                "v2"
+            ],
+            "satellite": [
+                "proba"
+            ],
+            "sensor": [
+                "vgt"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018",
+                "2019"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "1km"
+            ],
+            "month": [
+                "11"
+            ],
+            "nominal_day": [
+                "30"
+            ],
+            "product_version": [
+                "v2"
+            ],
+            "satellite": [
+                "proba"
+            ],
+            "sensor": [
+                "vgt"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018",
+                "2019"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "1km"
+            ],
+            "month": [
+                "11",
+                "12"
+            ],
+            "nominal_day": [
+                "10",
+                "20"
+            ],
+            "product_version": [
+                "v2"
+            ],
+            "satellite": [
+                "proba"
+            ],
+            "sensor": [
+                "vgt"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018",
+                "2019"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "1km"
+            ],
+            "month": [
+                "12"
+            ],
+            "nominal_day": [
+                "24"
+            ],
+            "product_version": [
+                "v1"
+            ],
+            "satellite": [
+                "proba"
+            ],
+            "sensor": [
+                "vgt"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018",
+                "2019"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "300m"
+            ],
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04"
+            ],
+            "nominal_day": [
+                "10",
+                "20"
+            ],
+            "product_version": [
+                "v3"
+            ],
+            "satellite": [
+                "sentinel_3"
+            ],
+            "sensor": [
+                "olci_and_slstr"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "2019"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "300m"
+            ],
+            "month": [
+                "01",
+                "03"
+            ],
+            "nominal_day": [
+                "31"
+            ],
+            "product_version": [
+                "v3"
+            ],
+            "satellite": [
+                "sentinel_3"
+            ],
+            "sensor": [
+                "olci_and_slstr"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "2019"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "300m"
+            ],
+            "month": [
+                "02"
+            ],
+            "nominal_day": [
+                "28"
+            ],
+            "product_version": [
+                "v3"
+            ],
+            "satellite": [
+                "sentinel_3"
+            ],
+            "sensor": [
+                "olci_and_slstr"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "2019"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "300m"
+            ],
+            "month": [
+                "07",
+                "08",
+                "09",
+                "10",
+                "11",
+                "12"
+            ],
+            "nominal_day": [
+                "10",
+                "20"
+            ],
+            "product_version": [
+                "v3"
+            ],
+            "satellite": [
+                "sentinel_3"
+            ],
+            "sensor": [
+                "olci_and_slstr"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "2018"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "300m"
+            ],
+            "month": [
+                "07",
+                "08",
+                "10",
+                "12"
+            ],
+            "nominal_day": [
+                "31"
+            ],
+            "product_version": [
+                "v3"
+            ],
+            "satellite": [
+                "sentinel_3"
+            ],
+            "sensor": [
+                "olci_and_slstr"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "2018"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "300m"
+            ],
+            "month": [
+                "09",
+                "11"
+            ],
+            "nominal_day": [
+                "30"
+            ],
+            "product_version": [
+                "v3"
+            ],
+            "satellite": [
+                "sentinel_3"
+            ],
+            "sensor": [
+                "olci_and_slstr"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "2018"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "4km"
+            ],
+            "month": [
+                "01"
+            ],
+            "nominal_day": [
+                "10",
+                "20",
+                "31"
+            ],
+            "product_version": [
+                "v1",
+                "v2"
+            ],
+            "satellite": [
+                "noaa_14"
+            ],
+            "sensor": [
+                "avhrr"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2000",
+                "2001"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "4km"
+            ],
+            "month": [
+                "01"
+            ],
+            "nominal_day": [
+                "31"
+            ],
+            "product_version": [
+                "v1",
+                "v2"
+            ],
+            "satellite": [
+                "noaa_16"
+            ],
+            "sensor": [
+                "avhrr"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "2002"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "4km"
+            ],
+            "month": [
+                "01"
+            ],
+            "nominal_day": [
+                "31"
+            ],
+            "product_version": [
+                "v1",
+                "v2"
+            ],
+            "satellite": [
+                "noaa_9"
+            ],
+            "sensor": [
+                "avhrr"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "1986",
+                "1987",
+                "1988"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "4km"
+            ],
+            "month": [
+                "01",
+                "02"
+            ],
+            "nominal_day": [
+                "20"
+            ],
+            "product_version": [
+                "v1",
+                "v2"
+            ],
+            "satellite": [
+                "noaa_16"
+            ],
+            "sensor": [
+                "avhrr"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "2002"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "4km"
+            ],
+            "month": [
+                "01",
+                "02"
+            ],
+            "nominal_day": [
+                "20"
+            ],
+            "product_version": [
+                "v1",
+                "v2"
+            ],
+            "satellite": [
+                "noaa_9"
+            ],
+            "sensor": [
+                "avhrr"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "1986",
+                "1987",
+                "1988"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "4km"
+            ],
+            "month": [
+                "01",
+                "02",
+                "03"
+            ],
+            "nominal_day": [
+                "10"
+            ],
+            "product_version": [
+                "v1",
+                "v2"
+            ],
+            "satellite": [
+                "noaa_16"
+            ],
+            "sensor": [
+                "avhrr"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "2002"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "4km"
+            ],
+            "month": [
+                "01",
+                "02",
+                "03"
+            ],
+            "nominal_day": [
+                "10"
+            ],
+            "product_version": [
+                "v1",
+                "v2"
+            ],
+            "satellite": [
+                "noaa_9"
+            ],
+            "sensor": [
+                "avhrr"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "1986",
+                "1987",
+                "1988"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "4km"
+            ],
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06",
+                "07",
+                "08"
+            ],
+            "nominal_day": [
+                "20"
+            ],
+            "product_version": [
+                "v1",
+                "v2"
+            ],
+            "satellite": [
+                "noaa_17"
+            ],
+            "sensor": [
+                "avhrr"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "2003",
+                "2004",
+                "2005"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "4km"
+            ],
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06",
+                "07",
+                "08"
+            ],
+            "nominal_day": [
+                "20"
+            ],
+            "product_version": [
+                "v1",
+                "v2"
+            ],
+            "satellite": [
+                "noaa_7"
+            ],
+            "sensor": [
+                "avhrr"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "1982",
+                "1983",
+                "1984"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "4km"
+            ],
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06",
+                "07",
+                "08",
+                "09"
+            ],
+            "nominal_day": [
+                "10"
+            ],
+            "product_version": [
+                "v1",
+                "v2"
+            ],
+            "satellite": [
+                "noaa_17"
+            ],
+            "sensor": [
+                "avhrr"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "2003",
+                "2004",
+                "2005"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "4km"
+            ],
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06",
+                "07",
+                "08",
+                "09"
+            ],
+            "nominal_day": [
+                "10"
+            ],
+            "product_version": [
+                "v1",
+                "v2"
+            ],
+            "satellite": [
+                "noaa_7"
+            ],
+            "sensor": [
+                "avhrr"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "1982",
+                "1983",
+                "1984"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "4km"
+            ],
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06",
+                "07",
+                "08",
+                "09"
+            ],
+            "nominal_day": [
+                "10",
+                "20"
+            ],
+            "product_version": [
+                "v1",
+                "v2"
+            ],
+            "satellite": [
+                "noaa_11"
+            ],
+            "sensor": [
+                "avhrr"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "1989",
+                "1990",
+                "1991",
+                "1992",
+                "1993",
+                "1994"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "4km"
+            ],
+            "month": [
+                "01",
+                "03",
+                "05",
+                "07",
+                "08"
+            ],
+            "nominal_day": [
+                "31"
+            ],
+            "product_version": [
+                "v1",
+                "v2"
+            ],
+            "satellite": [
+                "noaa_11"
+            ],
+            "sensor": [
+                "avhrr"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "1989",
+                "1990",
+                "1991",
+                "1992",
+                "1993",
+                "1994"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "4km"
+            ],
+            "month": [
+                "01",
+                "03",
+                "05",
+                "07",
+                "08"
+            ],
+            "nominal_day": [
+                "31"
+            ],
+            "product_version": [
+                "v1",
+                "v2"
+            ],
+            "satellite": [
+                "noaa_17"
+            ],
+            "sensor": [
+                "avhrr"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "2003",
+                "2004",
+                "2005"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "4km"
+            ],
+            "month": [
+                "01",
+                "03",
+                "05",
+                "07",
+                "08"
+            ],
+            "nominal_day": [
+                "31"
+            ],
+            "product_version": [
+                "v1",
+                "v2"
+            ],
+            "satellite": [
+                "noaa_7"
+            ],
+            "sensor": [
+                "avhrr"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "1982",
+                "1983",
+                "1984"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "4km"
+            ],
+            "month": [
+                "02"
+            ],
+            "nominal_day": [
+                "20"
+            ],
+            "product_version": [
+                "v1",
+                "v2"
+            ],
+            "satellite": [
+                "noaa_14"
+            ],
+            "sensor": [
+                "avhrr"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "1995",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2000",
+                "2001"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "4km"
+            ],
+            "month": [
+                "02"
+            ],
+            "nominal_day": [
+                "28"
+            ],
+            "product_version": [
+                "v1",
+                "v2"
+            ],
+            "satellite": [
+                "noaa_11"
+            ],
+            "sensor": [
+                "avhrr"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "1989",
+                "1990",
+                "1991",
+                "1993",
+                "1994"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "4km"
+            ],
+            "month": [
+                "02"
+            ],
+            "nominal_day": [
+                "28"
+            ],
+            "product_version": [
+                "v1",
+                "v2"
+            ],
+            "satellite": [
+                "noaa_14"
+            ],
+            "sensor": [
+                "avhrr"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "1995",
+                "1997",
+                "1998",
+                "1999",
+                "2001"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "4km"
+            ],
+            "month": [
+                "02"
+            ],
+            "nominal_day": [
+                "28"
+            ],
+            "product_version": [
+                "v1",
+                "v2"
+            ],
+            "satellite": [
+                "noaa_16"
+            ],
+            "sensor": [
+                "avhrr"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "2002"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "4km"
+            ],
+            "month": [
+                "02"
+            ],
+            "nominal_day": [
+                "28"
+            ],
+            "product_version": [
+                "v1",
+                "v2"
+            ],
+            "satellite": [
+                "noaa_17"
+            ],
+            "sensor": [
+                "avhrr"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "2003",
+                "2005"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "4km"
+            ],
+            "month": [
+                "02"
+            ],
+            "nominal_day": [
+                "28"
+            ],
+            "product_version": [
+                "v1",
+                "v2"
+            ],
+            "satellite": [
+                "noaa_7"
+            ],
+            "sensor": [
+                "avhrr"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "1982",
+                "1983"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "4km"
+            ],
+            "month": [
+                "02"
+            ],
+            "nominal_day": [
+                "28"
+            ],
+            "product_version": [
+                "v1",
+                "v2"
+            ],
+            "satellite": [
+                "noaa_9"
+            ],
+            "sensor": [
+                "avhrr"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "1986",
+                "1987"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "4km"
+            ],
+            "month": [
+                "02"
+            ],
+            "nominal_day": [
+                "29"
+            ],
+            "product_version": [
+                "v1",
+                "v2"
+            ],
+            "satellite": [
+                "noaa_11"
+            ],
+            "sensor": [
+                "avhrr"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "1992"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "4km"
+            ],
+            "month": [
+                "02"
+            ],
+            "nominal_day": [
+                "29"
+            ],
+            "product_version": [
+                "v1",
+                "v2"
+            ],
+            "satellite": [
+                "noaa_14"
+            ],
+            "sensor": [
+                "avhrr"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "1996",
+                "2000"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "4km"
+            ],
+            "month": [
+                "02"
+            ],
+            "nominal_day": [
+                "29"
+            ],
+            "product_version": [
+                "v1",
+                "v2"
+            ],
+            "satellite": [
+                "noaa_17"
+            ],
+            "sensor": [
+                "avhrr"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "2004"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "4km"
+            ],
+            "month": [
+                "02"
+            ],
+            "nominal_day": [
+                "29"
+            ],
+            "product_version": [
+                "v1",
+                "v2"
+            ],
+            "satellite": [
+                "noaa_7"
+            ],
+            "sensor": [
+                "avhrr"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "1984"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "4km"
+            ],
+            "month": [
+                "02"
+            ],
+            "nominal_day": [
+                "29"
+            ],
+            "product_version": [
+                "v1",
+                "v2"
+            ],
+            "satellite": [
+                "noaa_9"
+            ],
+            "sensor": [
+                "avhrr"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "1988"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "4km"
+            ],
+            "month": [
+                "02",
+                "03"
+            ],
+            "nominal_day": [
+                "10"
+            ],
+            "product_version": [
+                "v1",
+                "v2"
+            ],
+            "satellite": [
+                "noaa_14"
+            ],
+            "sensor": [
+                "avhrr"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "1995",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2000",
+                "2001"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "4km"
+            ],
+            "month": [
+                "03",
+                "04",
+                "05",
+                "06",
+                "07",
+                "08"
+            ],
+            "nominal_day": [
+                "20"
+            ],
+            "product_version": [
+                "v1",
+                "v2"
+            ],
+            "satellite": [
+                "noaa_16"
+            ],
+            "sensor": [
+                "avhrr"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "2001",
+                "2002"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "4km"
+            ],
+            "month": [
+                "03",
+                "04",
+                "05",
+                "06",
+                "07",
+                "08",
+                "09",
+                "10"
+            ],
+            "nominal_day": [
+                "20"
+            ],
+            "product_version": [
+                "v1",
+                "v2"
+            ],
+            "satellite": [
+                "noaa_9"
+            ],
+            "sensor": [
+                "avhrr"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "1985",
+                "1986",
+                "1987",
+                "1988"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "4km"
+            ],
+            "month": [
+                "03",
+                "04",
+                "05",
+                "06",
+                "07",
+                "08",
+                "09",
+                "10",
+                "11",
+                "12"
+            ],
+            "nominal_day": [
+                "20"
+            ],
+            "product_version": [
+                "v1",
+                "v2"
+            ],
+            "satellite": [
+                "noaa_14"
+            ],
+            "sensor": [
+                "avhrr"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "1995",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2000"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "4km"
+            ],
+            "month": [
+                "03",
+                "05",
+                "07",
+                "08"
+            ],
+            "nominal_day": [
+                "31"
+            ],
+            "product_version": [
+                "v1",
+                "v2"
+            ],
+            "satellite": [
+                "noaa_16"
+            ],
+            "sensor": [
+                "avhrr"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "2001",
+                "2002"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "4km"
+            ],
+            "month": [
+                "03",
+                "05",
+                "07",
+                "08",
+                "10"
+            ],
+            "nominal_day": [
+                "31"
+            ],
+            "product_version": [
+                "v1",
+                "v2"
+            ],
+            "satellite": [
+                "noaa_9"
+            ],
+            "sensor": [
+                "avhrr"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "1985",
+                "1986",
+                "1987",
+                "1988"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "4km"
+            ],
+            "month": [
+                "03",
+                "05",
+                "07",
+                "08",
+                "10",
+                "12"
+            ],
+            "nominal_day": [
+                "31"
+            ],
+            "product_version": [
+                "v1",
+                "v2"
+            ],
+            "satellite": [
+                "noaa_14"
+            ],
+            "sensor": [
+                "avhrr"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "1995",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2000"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "4km"
+            ],
+            "month": [
+                "04",
+                "05",
+                "06",
+                "07",
+                "08",
+                "09"
+            ],
+            "nominal_day": [
+                "10"
+            ],
+            "product_version": [
+                "v1",
+                "v2"
+            ],
+            "satellite": [
+                "noaa_16"
+            ],
+            "sensor": [
+                "avhrr"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "2001",
+                "2002"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "4km"
+            ],
+            "month": [
+                "04",
+                "05",
+                "06",
+                "07",
+                "08",
+                "09",
+                "10",
+                "11"
+            ],
+            "nominal_day": [
+                "10"
+            ],
+            "product_version": [
+                "v1",
+                "v2"
+            ],
+            "satellite": [
+                "noaa_9"
+            ],
+            "sensor": [
+                "avhrr"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "1985",
+                "1986",
+                "1987",
+                "1988"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "4km"
+            ],
+            "month": [
+                "04",
+                "05",
+                "06",
+                "07",
+                "08",
+                "09",
+                "10",
+                "11",
+                "12"
+            ],
+            "nominal_day": [
+                "10"
+            ],
+            "product_version": [
+                "v1",
+                "v2"
+            ],
+            "satellite": [
+                "noaa_14"
+            ],
+            "sensor": [
+                "avhrr"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "1995",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2000"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "4km"
+            ],
+            "month": [
+                "04",
+                "06"
+            ],
+            "nominal_day": [
+                "30"
+            ],
+            "product_version": [
+                "v1",
+                "v2"
+            ],
+            "satellite": [
+                "noaa_11"
+            ],
+            "sensor": [
+                "avhrr"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "1989",
+                "1990",
+                "1991",
+                "1992",
+                "1993",
+                "1994"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "4km"
+            ],
+            "month": [
+                "04",
+                "06"
+            ],
+            "nominal_day": [
+                "30"
+            ],
+            "product_version": [
+                "v1",
+                "v2"
+            ],
+            "satellite": [
+                "noaa_16"
+            ],
+            "sensor": [
+                "avhrr"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "2001",
+                "2002"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "4km"
+            ],
+            "month": [
+                "04",
+                "06"
+            ],
+            "nominal_day": [
+                "30"
+            ],
+            "product_version": [
+                "v1",
+                "v2"
+            ],
+            "satellite": [
+                "noaa_17"
+            ],
+            "sensor": [
+                "avhrr"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "2003",
+                "2004",
+                "2005"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "4km"
+            ],
+            "month": [
+                "04",
+                "06"
+            ],
+            "nominal_day": [
+                "30"
+            ],
+            "product_version": [
+                "v1",
+                "v2"
+            ],
+            "satellite": [
+                "noaa_7"
+            ],
+            "sensor": [
+                "avhrr"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "1982",
+                "1983",
+                "1984"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "4km"
+            ],
+            "month": [
+                "04",
+                "06",
+                "09"
+            ],
+            "nominal_day": [
+                "30"
+            ],
+            "product_version": [
+                "v1",
+                "v2"
+            ],
+            "satellite": [
+                "noaa_9"
+            ],
+            "sensor": [
+                "avhrr"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "1985",
+                "1986",
+                "1987",
+                "1988"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "4km"
+            ],
+            "month": [
+                "04",
+                "06",
+                "09",
+                "11"
+            ],
+            "nominal_day": [
+                "30"
+            ],
+            "product_version": [
+                "v1",
+                "v2"
+            ],
+            "satellite": [
+                "noaa_14"
+            ],
+            "sensor": [
+                "avhrr"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "1995",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2000"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "4km"
+            ],
+            "month": [
+                "09"
+            ],
+            "nominal_day": [
+                "30"
+            ],
+            "product_version": [
+                "v1",
+                "v2"
+            ],
+            "satellite": [
+                "noaa_11"
+            ],
+            "sensor": [
+                "avhrr"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "1989",
+                "1990",
+                "1991",
+                "1992",
+                "1993"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "4km"
+            ],
+            "month": [
+                "09",
+                "10",
+                "11",
+                "12"
+            ],
+            "nominal_day": [
+                "20"
+            ],
+            "product_version": [
+                "v1",
+                "v2"
+            ],
+            "satellite": [
+                "noaa_16"
+            ],
+            "sensor": [
+                "avhrr"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "2001"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "4km"
+            ],
+            "month": [
+                "09",
+                "10",
+                "11",
+                "12"
+            ],
+            "nominal_day": [
+                "20"
+            ],
+            "product_version": [
+                "v1",
+                "v2"
+            ],
+            "satellite": [
+                "noaa_17"
+            ],
+            "sensor": [
+                "avhrr"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "2002",
+                "2003",
+                "2004",
+                "2005"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "4km"
+            ],
+            "month": [
+                "09",
+                "10",
+                "11",
+                "12"
+            ],
+            "nominal_day": [
+                "20"
+            ],
+            "product_version": [
+                "v1",
+                "v2"
+            ],
+            "satellite": [
+                "noaa_7"
+            ],
+            "sensor": [
+                "avhrr"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "1981",
+                "1982",
+                "1983",
+                "1984"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "4km"
+            ],
+            "month": [
+                "09",
+                "11"
+            ],
+            "nominal_day": [
+                "30"
+            ],
+            "product_version": [
+                "v1",
+                "v2"
+            ],
+            "satellite": [
+                "noaa_16"
+            ],
+            "sensor": [
+                "avhrr"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "2001"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "4km"
+            ],
+            "month": [
+                "09",
+                "11"
+            ],
+            "nominal_day": [
+                "30"
+            ],
+            "product_version": [
+                "v1",
+                "v2"
+            ],
+            "satellite": [
+                "noaa_17"
+            ],
+            "sensor": [
+                "avhrr"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "2002",
+                "2003",
+                "2004",
+                "2005"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "4km"
+            ],
+            "month": [
+                "09",
+                "11"
+            ],
+            "nominal_day": [
+                "30"
+            ],
+            "product_version": [
+                "v1",
+                "v2"
+            ],
+            "satellite": [
+                "noaa_7"
+            ],
+            "sensor": [
+                "avhrr"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "1981",
+                "1982",
+                "1983",
+                "1984"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "4km"
+            ],
+            "month": [
+                "10"
+            ],
+            "nominal_day": [
+                "31"
+            ],
+            "product_version": [
+                "v1",
+                "v2"
+            ],
+            "satellite": [
+                "noaa_11"
+            ],
+            "sensor": [
+                "avhrr"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "1989",
+                "1990",
+                "1991",
+                "1992",
+                "1993"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "4km"
+            ],
+            "month": [
+                "10",
+                "11"
+            ],
+            "nominal_day": [
+                "10",
+                "20"
+            ],
+            "product_version": [
+                "v1",
+                "v2"
+            ],
+            "satellite": [
+                "noaa_11"
+            ],
+            "sensor": [
+                "avhrr"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "1989",
+                "1990",
+                "1991",
+                "1992",
+                "1993"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "4km"
+            ],
+            "month": [
+                "10",
+                "11",
+                "12"
+            ],
+            "nominal_day": [
+                "10"
+            ],
+            "product_version": [
+                "v1",
+                "v2"
+            ],
+            "satellite": [
+                "noaa_16"
+            ],
+            "sensor": [
+                "avhrr"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "2001"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "4km"
+            ],
+            "month": [
+                "10",
+                "11",
+                "12"
+            ],
+            "nominal_day": [
+                "10"
+            ],
+            "product_version": [
+                "v1",
+                "v2"
+            ],
+            "satellite": [
+                "noaa_17"
+            ],
+            "sensor": [
+                "avhrr"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "2002",
+                "2003",
+                "2004",
+                "2005"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "4km"
+            ],
+            "month": [
+                "10",
+                "11",
+                "12"
+            ],
+            "nominal_day": [
+                "10"
+            ],
+            "product_version": [
+                "v1",
+                "v2"
+            ],
+            "satellite": [
+                "noaa_7"
+            ],
+            "sensor": [
+                "avhrr"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "1981",
+                "1982",
+                "1983",
+                "1984"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "4km"
+            ],
+            "month": [
+                "10",
+                "12"
+            ],
+            "nominal_day": [
+                "31"
+            ],
+            "product_version": [
+                "v1",
+                "v2"
+            ],
+            "satellite": [
+                "noaa_16"
+            ],
+            "sensor": [
+                "avhrr"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "2001"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "4km"
+            ],
+            "month": [
+                "10",
+                "12"
+            ],
+            "nominal_day": [
+                "31"
+            ],
+            "product_version": [
+                "v1",
+                "v2"
+            ],
+            "satellite": [
+                "noaa_17"
+            ],
+            "sensor": [
+                "avhrr"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "2002",
+                "2003",
+                "2004",
+                "2005"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "4km"
+            ],
+            "month": [
+                "10",
+                "12"
+            ],
+            "nominal_day": [
+                "31"
+            ],
+            "product_version": [
+                "v1",
+                "v2"
+            ],
+            "satellite": [
+                "noaa_7"
+            ],
+            "sensor": [
+                "avhrr"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "1981",
+                "1982",
+                "1983",
+                "1984"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "4km"
+            ],
+            "month": [
+                "11"
+            ],
+            "nominal_day": [
+                "30"
+            ],
+            "product_version": [
+                "v1",
+                "v2"
+            ],
+            "satellite": [
+                "noaa_11"
+            ],
+            "sensor": [
+                "avhrr"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "1988",
+                "1989",
+                "1990",
+                "1991",
+                "1992",
+                "1993"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "4km"
+            ],
+            "month": [
+                "11"
+            ],
+            "nominal_day": [
+                "30"
+            ],
+            "product_version": [
+                "v1",
+                "v2"
+            ],
+            "satellite": [
+                "noaa_9"
+            ],
+            "sensor": [
+                "avhrr"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "1985",
+                "1986",
+                "1987"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "4km"
+            ],
+            "month": [
+                "11",
+                "12"
+            ],
+            "nominal_day": [
+                "20"
+            ],
+            "product_version": [
+                "v1",
+                "v2"
+            ],
+            "satellite": [
+                "noaa_9"
+            ],
+            "sensor": [
+                "avhrr"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "1985",
+                "1986",
+                "1987"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "4km"
+            ],
+            "month": [
+                "12"
+            ],
+            "nominal_day": [
+                "10",
+                "20",
+                "31"
+            ],
+            "product_version": [
+                "v1",
+                "v2"
+            ],
+            "satellite": [
+                "noaa_11"
+            ],
+            "sensor": [
+                "avhrr"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "1988",
+                "1989",
+                "1990",
+                "1991",
+                "1992",
+                "1993"
+            ]
+        },
+        {
+            "horizontal_resolution": [
+                "4km"
+            ],
+            "month": [
+                "12"
+            ],
+            "nominal_day": [
+                "10",
+                "31"
+            ],
+            "product_version": [
+                "v1",
+                "v2"
+            ],
+            "satellite": [
+                "noaa_9"
+            ],
+            "sensor": [
+                "avhrr"
+            ],
+            "variable": [
+                "albb_bh",
+                "albb_dh",
+                "alsp_bh",
+                "alsp_dh"
+            ],
+            "year": [
+                "1985",
+                "1986",
+                "1987"
+            ]
+        }
+    ]
+}

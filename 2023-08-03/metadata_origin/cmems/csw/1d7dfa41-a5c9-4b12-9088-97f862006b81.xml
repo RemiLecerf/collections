@@ -1,0 +1,79 @@
+<csw:Record xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/" xmlns:ows="http://www.opengis.net/ows" xmlns:geonet="http://www.fao.org/geonetwork" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dc:identifier>1d7dfa41-a5c9-4b12-9088-97f862006b81</dc:identifier>
+      <dc:date>2023-03-29T09:26:56.366Z</dc:date>
+      <dc:title>Iberia Biscay Ireland Strong Wave Incidence index from Reanalysis</dc:title>
+      <dc:type>series</dc:type>
+      <dc:subject>Oceanographic geographical features</dc:subject>
+      <dc:subject>numerical-model</dc:subject>
+      <dc:subject>multi-year</dc:subject>
+      <dc:subject>marine-safety</dc:subject>
+      <dc:subject>marine-resources</dc:subject>
+      <dc:subject>weather-climate-and-seasonal-forecasting</dc:subject>
+      <dc:subject>coastal-marine-environment</dc:subject>
+      <dc:subject>iberian-biscay-irish-seas</dc:subject>
+      <dc:subject>N/A</dc:subject>
+      <dc:subject>Not Applicable</dc:subject>
+      <dc:subject>oceans</dc:subject>
+      <dc:format>NetCDF-4</dc:format>
+      <dct:abstract>'DEFINITION'''
+
+The Strong Wave Incidence index is proposed to quantify the variability of strong wave conditions in the Iberia-Biscay-Ireland regional seas. The anomaly of exceeding a threshold of Significant Wave Height is used to characterize the wave behavior. A sensitivity test of the threshold has been performed evaluating the differences using several ones (percentiles 75, 80, 85, 90, and 95). From this indicator, it has been chosen the 90th percentile as the most representative, coinciding with the state-of-the-art.
+Two CMEMS products are used to compute the Strong Wave Incidence index:
+&#8226;	IBI-WAV-MYP: IBI_REANALYSIS_WAV_005_006
+&#8226;	IBI-WAV-NRT: IBI_ANALYSIS_FORECAST_WAV_005_005
+The Strong Wave Incidence index (SWI) is defined as the difference between the climatic frequency of exceedance (Fclim) and the observational frequency of exceedance (Fobs) of the threshold defined by the 90th percentile (ThP90) of Significant Wave Height (SWH) computed on a monthly basis from hourly data of IBI-WAV-MYP product:
+SWI = Fobs(SWH &gt; ThP90) &#8211; Fclim(SWH &gt; ThP90)
+Since the Strong Wave Incidence index is defined as a difference of a climatic mean and an observed value, it can be considered an anomaly. Such index represents the percentage that the stormy conditions have occurred above/below the climatic average. Thus, positive/negative values indicate the percentage of hourly data that exceed the threshold above/below the climatic average, respectively.
+
+'''CONTEXT'''
+
+Ocean waves have a high relevance over the coastal ecosystems and human activities. Extreme wave events can entail severe impacts over human infrastructures and coastal dynamics. However, the incidence of severe (90th percentile) wave events also have valuable relevance affecting the development of human activities and coastal environments. The Strong Wave Incidence index based on the CMEMS regional analysis and reanalysis product provides information on the frequency of severe wave events.
+The IBI-MFC covers the Europe&#8217;s Atlantic coast in a region bounded by the 26&#186;N and 56&#186;N parallels, and the 19&#186;W and 5&#186;E meridians. The western European coast is located at the end of the long fetch of the subpolar North Atlantic (M&#248;rk et al., 2010), one of the world&#8217;s greatest wave generating regions (Folley, 2017). Several studies have analyzed changes of the ocean wave variability in the North Atlantic Ocean (Bacon and Carter, 1991; Kursnir et al., 1997; WASA Group, 1998; Bauer, 2001; Wang and Swail, 2004; Dupuis et al., 2006; Wolf and Woolf, 2006; Dodet et al., 2010; Young et al., 2011; Young and Ribal, 2019). The observed variability is composed of fluctuations ranging from the weather scale to the seasonal scale, together with long-term fluctuations on interannual to decadal scales associated with large-scale climate oscillations. Since the ocean surface state is mainly driven by wind stresses, part of this variability in Iberia-Biscay-Ireland region is connected to the North Atlantic Oscillation (NAO) index (Bacon and Carter, 1991; Hurrell, 1995;  Bouws et al., 1996, Bauer, 2001; Woolf et al., 2002; Tsimplis et al., 2005; Gleeson et al., 2017). However, later studies have quantified the relationships between the wave climate and other atmospheric climate modes such as the East Atlantic pattern, the Arctic Oscillation pattern, the East Atlantic Western Russian pattern and the Scandinavian pattern (Izaguirre et al., 2011, Mat&#237;nez-Asensio et al., 2016).
+The Strong Wave Incidence index provides information on incidence of stormy events in four monitoring regions in the IBI domain. The selected monitoring regions are aimed to provide a summarized view of the diverse climatic conditions in the IBI regional domain: Wav1 region monitors the influence of stormy conditions in the West coast of Iberian Peninsula, Wav2 region is devoted to monitor the variability of stormy conditions in the Bay of Biscay, Wav3 region is focused in the northern half of IBI domain, this region is strongly affected by the storms transported by the subpolar front, and Wav4 is focused in the influence of marine storms in the North-East African Coast, the Gulf of Cadiz and Canary Islands.
+More details and a full scientific evaluation can be found in the CMEMS Ocean State report (Pascual et al., 2020).
+
+'''CMEMS KEY FINDINGS'''
+
+The analysis of the index in the last decades do not show significant trends of the strong wave conditions over the period 1992-2020 with 99% confidence. The maximum wave event reported in region WAV1 (B) occurred in February 2014, producing an increment of 34% of strong wave conditions in the region. Two maximum wave events are found in WAV2 (C) with an increment of 28% of high wave conditions in November 2009 and February 2014. As in regions WAV1 and WAV2, in the region WAV3 (D), a strong wave event took place in February 2014, this event is the one of the maximum events reported in the region with an increment of strong wave conditions of 20%, two months before (December 2013) there was a storm of similar characteristics affecting this region. The region WAV4 (E) present its maximum wave event in January 1996, such event produced a 33% of increment of strong wave conditions in the region. Despite of each monitoring region is affected by independent wave events; the analysis shows several past higher-than-average wave events that were propagated though several monitoring regions: November-December 2010 (WAV3 and WAV2); February 2014 (WAV1, WAV2, and WAV3); and February-March 2018 (WAV1 and WAV4). The analysis of the NRT period (2021 onwards) depicts a significant stormy event affecting the WAV2 region in April 2020 (increment of 20% of high wave conditions). This event is also noticeable in WAV3 region but with lower intensity (increment of 12% of high wave conditions).
+
+'''DOI (product):''' 
+https://doi.org/10.48670/moi-00251</dct:abstract>
+      <dc:description>'DEFINITION'''
+
+The Strong Wave Incidence index is proposed to quantify the variability of strong wave conditions in the Iberia-Biscay-Ireland regional seas. The anomaly of exceeding a threshold of Significant Wave Height is used to characterize the wave behavior. A sensitivity test of the threshold has been performed evaluating the differences using several ones (percentiles 75, 80, 85, 90, and 95). From this indicator, it has been chosen the 90th percentile as the most representative, coinciding with the state-of-the-art.
+Two CMEMS products are used to compute the Strong Wave Incidence index:
+&#8226;	IBI-WAV-MYP: IBI_REANALYSIS_WAV_005_006
+&#8226;	IBI-WAV-NRT: IBI_ANALYSIS_FORECAST_WAV_005_005
+The Strong Wave Incidence index (SWI) is defined as the difference between the climatic frequency of exceedance (Fclim) and the observational frequency of exceedance (Fobs) of the threshold defined by the 90th percentile (ThP90) of Significant Wave Height (SWH) computed on a monthly basis from hourly data of IBI-WAV-MYP product:
+SWI = Fobs(SWH &gt; ThP90) &#8211; Fclim(SWH &gt; ThP90)
+Since the Strong Wave Incidence index is defined as a difference of a climatic mean and an observed value, it can be considered an anomaly. Such index represents the percentage that the stormy conditions have occurred above/below the climatic average. Thus, positive/negative values indicate the percentage of hourly data that exceed the threshold above/below the climatic average, respectively.
+
+'''CONTEXT'''
+
+Ocean waves have a high relevance over the coastal ecosystems and human activities. Extreme wave events can entail severe impacts over human infrastructures and coastal dynamics. However, the incidence of severe (90th percentile) wave events also have valuable relevance affecting the development of human activities and coastal environments. The Strong Wave Incidence index based on the CMEMS regional analysis and reanalysis product provides information on the frequency of severe wave events.
+The IBI-MFC covers the Europe&#8217;s Atlantic coast in a region bounded by the 26&#186;N and 56&#186;N parallels, and the 19&#186;W and 5&#186;E meridians. The western European coast is located at the end of the long fetch of the subpolar North Atlantic (M&#248;rk et al., 2010), one of the world&#8217;s greatest wave generating regions (Folley, 2017). Several studies have analyzed changes of the ocean wave variability in the North Atlantic Ocean (Bacon and Carter, 1991; Kursnir et al., 1997; WASA Group, 1998; Bauer, 2001; Wang and Swail, 2004; Dupuis et al., 2006; Wolf and Woolf, 2006; Dodet et al., 2010; Young et al., 2011; Young and Ribal, 2019). The observed variability is composed of fluctuations ranging from the weather scale to the seasonal scale, together with long-term fluctuations on interannual to decadal scales associated with large-scale climate oscillations. Since the ocean surface state is mainly driven by wind stresses, part of this variability in Iberia-Biscay-Ireland region is connected to the North Atlantic Oscillation (NAO) index (Bacon and Carter, 1991; Hurrell, 1995;  Bouws et al., 1996, Bauer, 2001; Woolf et al., 2002; Tsimplis et al., 2005; Gleeson et al., 2017). However, later studies have quantified the relationships between the wave climate and other atmospheric climate modes such as the East Atlantic pattern, the Arctic Oscillation pattern, the East Atlantic Western Russian pattern and the Scandinavian pattern (Izaguirre et al., 2011, Mat&#237;nez-Asensio et al., 2016).
+The Strong Wave Incidence index provides information on incidence of stormy events in four monitoring regions in the IBI domain. The selected monitoring regions are aimed to provide a summarized view of the diverse climatic conditions in the IBI regional domain: Wav1 region monitors the influence of stormy conditions in the West coast of Iberian Peninsula, Wav2 region is devoted to monitor the variability of stormy conditions in the Bay of Biscay, Wav3 region is focused in the northern half of IBI domain, this region is strongly affected by the storms transported by the subpolar front, and Wav4 is focused in the influence of marine storms in the North-East African Coast, the Gulf of Cadiz and Canary Islands.
+More details and a full scientific evaluation can be found in the CMEMS Ocean State report (Pascual et al., 2020).
+
+'''CMEMS KEY FINDINGS'''
+
+The analysis of the index in the last decades do not show significant trends of the strong wave conditions over the period 1992-2020 with 99% confidence. The maximum wave event reported in region WAV1 (B) occurred in February 2014, producing an increment of 34% of strong wave conditions in the region. Two maximum wave events are found in WAV2 (C) with an increment of 28% of high wave conditions in November 2009 and February 2014. As in regions WAV1 and WAV2, in the region WAV3 (D), a strong wave event took place in February 2014, this event is the one of the maximum events reported in the region with an increment of strong wave conditions of 20%, two months before (December 2013) there was a storm of similar characteristics affecting this region. The region WAV4 (E) present its maximum wave event in January 1996, such event produced a 33% of increment of strong wave conditions in the region. Despite of each monitoring region is affected by independent wave events; the analysis shows several past higher-than-average wave events that were propagated though several monitoring regions: November-December 2010 (WAV3 and WAV2); February 2014 (WAV1, WAV2, and WAV3); and February-March 2018 (WAV1 and WAV4). The analysis of the NRT period (2021 onwards) depicts a significant stormy event affecting the WAV2 region in April 2020 (increment of 20% of high wave conditions). This event is also noticeable in WAV3 region but with lower intensity (increment of 12% of high wave conditions).
+
+'''DOI (product):''' 
+https://doi.org/10.48670/moi-00251</dc:description>
+      <dc:rights>otherRestrictions</dc:rights>
+      <dc:rights>license</dc:rights>
+      <dc:language>eng</dc:language>
+      <dc:source>The myOcean products depends on other products for production or validation. The detailed list of dependencies is given in ISO19115's aggregationInfo (ISO19139 Xpath = "gmd:MD_Metadata/gmd:identificationInfo/gmd:aggregationInfo[./gmd:MD_AggregateInformation/gmd:initiativeType/gmd:DS_InitiativeTypeCode/@codeListValue='upstream-validation' or 'upstream-production']")</dc:source>
+      <dc:format>NetCDF-4</dc:format>
+      <ows:BoundingBox crs="urn:ogc:def:crs:EPSG:6.6:4326">
+        <ows:LowerCorner>26.00 -19.00</ows:LowerCorner>
+        <ows:UpperCorner>56.00 5.00</ows:UpperCorner>
+      </ows:BoundingBox>
+      <dc:URI protocol="WWW:FTP" name="ibi_omi_seastate_swi_anomaly">ftp://my.cmems-du.eu/Core/IBI_OMI_SEASTATE_swi/ibi_omi_seastate_swi_anomaly</dc:URI>
+      <dc:URI protocol="WWW:FTP" name="ibi_omi_seastate_swi_mean_percentile">ftp://my.cmems-du.eu/Core/IBI_OMI_SEASTATE_swi/ibi_omi_seastate_swi_mean_percentile</dc:URI>
+      <dc:URI protocol="MYO:MOTU-DGF" name="ibi_omi_seastate_swi_anomaly">https://mdl1.marine.copernicus.eu/derived/IBI_OMI_SEASTATE_swi/ibi_omi_seastate_swi_anomaly_202211/IBI_OMI_SEASTATE_swi_anomaly.nc</dc:URI>
+      <dc:URI protocol="MYO:MOTU-DGF" name="ibi_omi_seastate_swi_mean_percentile">https://mdl1.marine.copernicus.eu/derived/IBI_OMI_SEASTATE_swi/ibi_omi_seastate_swi_mean_percentile_202211/IBI_OMI_SEASTATE_swi_mean_percentile.nc</dc:URI>
+      <dc:URI protocol="image/png">https://catalogue.marine.copernicus.eu/documents/IMG/IBI_OMI_SEASTATE_swi.png</dc:URI>
+    </csw:Record>
+    

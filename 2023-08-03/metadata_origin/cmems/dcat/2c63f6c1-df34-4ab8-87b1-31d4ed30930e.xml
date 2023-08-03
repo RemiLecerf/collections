@@ -1,0 +1,77 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:dct="http://purl.org/dc/terms/" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/2c63f6c1-df34-4ab8-87b1-31d4ed30930e">
+        <foaf:primaryTopic rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/resource/0a5db440-d278-47a6-8885-b89aabb3f0b3"/>
+        <dct:issued>2023-03-29</dct:issued>
+        <dct:modified>2023-03-29</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/srv/eng/xml.metadata.get?uuid=2c63f6c1-df34-4ab8-87b1-31d4ed30930e">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork?uuid=2c63f6c1-df34-4ab8-87b1-31d4ed30930e">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/resource/0a5db440-d278-47a6-8885-b89aabb3f0b3">
+        <dct:identifier>0a5db440-d278-47a6-8885-b89aabb3f0b3</dct:identifier>
+        <dct:title>Antarctic Monthly Sea Ice Extent from Observations Reprocessing</dct:title>
+        <dct:abstract>'''DEFINITION'''
+
+Sea Ice Extent (SIE) is defined as the area covered by sufficient sea ice, that is the area of ocean having more than 15% Sea Ice Concentration (SIC). SIC is the fractional area of ocean surface that is covered with sea ice. SIC      is computed from Passive Microwave satellite observations since 1979. 
+SIE is often reported with units of 106 km2 (millions square kilometers). The change in sea ice extent (trend) is expressed in millions of km squared per decade (106 km2/decade). In addition, trends are expressed relative to the 1979-2021      period in % per decade.
+These trends are calculated (i) from the annual mean values; (ii) from the September values (winter ice loss); (iii) from February values (summer ice loss). The annual mean trend is reported on the key figure, the September (maximum extent) and February (minimum extent) values are reported in the text below.
+SIE includes all sea ice, except for lake and river ice.
+See also section 1.7 in Samuelsen et al. (2016) for an introduction to this Ocean Monitoring Indicator (OMI).
+
+'''CONTEXT'''
+
+Sea ice is frozen seawater that floats at the ocean surface. This large blanket of millions of square kilometers insulates the relatively warm ocean waters from the cold polar atmosphere. The seasonal cycle of sea ice, forming and melting with the polar seasons, impacts both human activities and biological habitat. Knowing how and by how much the sea-ice cover is changing is essential for monitoring the health of the Earth (Meredith et al. 2019). 
+
+'''CMEMS KEY FINDINGS'''
+
+Since 1979, there has been a slight increase of sea ice extent in the Southern Hemisphere. While the period 2016-2019 was characterized by much lower values, year 2020 was      mostly back on the long-term trend. Over the period 1979-2021     , the annual rate amounts to +0.07 +/- 0.05      106 km2 per decade (+0.62%      per decade). Winter (September) sea ice extent trend amounts to +0.10 +/- 0.06      106 km2 per decade (+0.55%      per decade). Summer (February) sea ice extent trend amounts to +0.03 +/- 0.05      106 km2 per decade (+0.76%      per decade). These trend estimates are hardly significant, which is in agreement with the IPCC SROCC, which has assessed that ‘Antarctic sea ice extent overall has had no statistically significant trend (1979–2018) due to contrasting regional signals and large interannual variability (high confidence).’ (IPCC, 2019). Sea ice extent in 2021      was slightly above the 1979-2021      average between March and August
+
+'''DOI (product):''' 
+https://doi.org/10.48670/moi-00187</dct:abstract>
+        <dcat:theme rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/thesaurus/iso/topicCategory/oceans"/>
+        <foaf:thumbnail rdf:resource="https://catalogue.marine.copernicus.eu/documents/IMG/ANTARCTIC_OMI_SI_extent_obs.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((-180.00 -90.00, -180.00 0.00, 180.00 0.00, 180.00 -90.00, -180.00 -90.00))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:issued>2018-02-12</dct:issued>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/OSI-METNO-OSLO-NO"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/OSI-METNO-OSLO-NO"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/OSI-METNO-OSLO-NO"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/SIW-METNO-OSLO-NO"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/MOI-OMI-SERVICE"/>
+        <dct:accrualPeriodicity>annually</dct:accrualPeriodicity>
+        <dct:license>otherRestrictions</dct:license>
+        <dct:license>license</dct:license>
+        <dct:license>No limitations on public access</dct:license>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/ANTARCTIC_OMI_SI_extent_obs/antarctic_omi_si_extent_obs"/>
+        <dcat:distribution rdf:resource="https://mdl1.marine.copernicus.eu/derived/ANTARCTIC_OMI_SI_extent_obs/antarctic_omi_si_extent_obs_202211/ANTARCTIC_OMI_SI_extent_obs_19790115_P20220616_R19792021.nc"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/4df0e679-103e-430e-b2cc-e15241395f2b"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/d31429cb-2f04-4e95-8652-55de3c96ae34"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/a277390f-f119-456c-bbe2-c24fbb9a1edd"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dcat:dataQuality>The myOcean products depends on other products for production or validation. The detailed list of dependencies is given in ISO19115's aggregationInfo (ISO19139 Xpath = "gmd:MD_Metadata/gmd:identificationInfo/gmd:aggregationInfo[./gmd:MD_AggregateInformation/gmd:initiativeType/gmd:DS_InitiativeTypeCode/@codeListValue='upstream-validation' or 'upstream-production']")</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+    

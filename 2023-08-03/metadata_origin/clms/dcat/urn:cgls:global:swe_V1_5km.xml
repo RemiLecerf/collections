@@ -1,0 +1,71 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dct="http://purl.org/dc/terms/" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://land.copernicus.vgt.vito.be:8443//geonetwork/metadata/urn:cgls:global:swe_V1_5km">
+        <foaf:primaryTopic rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/resource/urn:cgls:global:swe_V1_5km"/>
+        <dct:issued>2022-03-16</dct:issued>
+        <dct:modified>2022-03-16</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://land.copernicus.vgt.vito.be:8443//geonetwork/srv/eng/xml.metadata.get?uuid=urn:cgls:global:swe_V1_5km">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://land.copernicus.vgt.vito.be:8443//geonetwork?uuid=urn:cgls:global:swe_V1_5km">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://land.copernicus.vgt.vito.be:8443//geonetwork/resource/urn:cgls:global:swe_V1_5km">
+        <dct:identifier>urn:cgls:global:swe_V1_5km</dct:identifier>
+        <dct:title>Snow Water Equivalent: northern hemisphere daily (raster 5km) - version 1, May 2018</dct:title>
+        <dct:abstract>Snow Water Equivalent products describe the equivalent amount of liquid water stored in the snow pack. It indicates the water column that would theoretically result should the whole snow pack melt instantaneously and is defined as product between the snow layer’s depth and density. 
+
+Information about snow water equivalent is needed in applications such as flood forecasting, controlling the water level of power plant reservoirs, planning for forestry and crop irrigation and as input and control variable for many environment research purposes, including climate change research.</dct:abstract>
+        <dcat:keyword>SSMIS</dcat:keyword>
+        <dcat:keyword>VIIRS</dcat:keyword>
+        <dcat:keyword>SNOW WATER EQUIVALENT</dcat:keyword>
+        <dcat:keyword>NHEMI</dcat:keyword>
+        <dcat:keyword>Dekad</dcat:keyword>
+        <dcat:keyword>1 day composite</dcat:keyword>
+        <dcat:theme rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/thesaurus/GEMET%20-%20INSPIRE%20themes%2C%20version%201.0/Orthoimagery"/>
+        <dcat:theme rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/thesaurus/GEMET%20-%20Concepts%2C%20version%202.1/Orthoimagery"/>
+        <dcat:theme rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/thesaurus/Copernicus%20Themes/Cryosphere"/>
+        <dcat:theme rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/thesaurus/Copernicus%20Variables/Snow Water Equivalent"/>
+        <dcat:theme rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/thesaurus/iso/topicCategory/imageryBaseMapsEarthCover"/>
+        <foaf:thumbnail rdf:resource="https://land.copernicus.vgt.vito.be/geonetwork/srv/api/records/urn:cgls:global:swe_V1_5km/attachments/Cryosphere_small.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((-179.975 35.025, -179.975 84.975, 179.975 84.975, 179.975 35.025, -179.975 35.025))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:temporal>2016-10-01
+          /
+          2020-09-30</dct:temporal>
+        <dct:issued>2018-01-01</dct:issued>
+        <dct:publisher rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/organization/Kari%20Luojus%20%28FMI%29"/>
+        <dct:publisher rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/organization/Finnish%20Meteorological%20Institute"/>
+        <dct:publisher rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/organization/Finnish%20Meteorological%20Institute"/>
+        <dct:publisher rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/organization/Finnish%20Meteorological%20Institute"/>
+        <dct:accrualPeriodicity>asNeeded</dct:accrualPeriodicity>
+        <dct:license>copyright</dct:license>
+        <dct:license>otherRestrictions</dct:license>
+        <dct:license>(d) the confidentiality of commercial or industrial information, where such confidentiality is provided for by national or Community law to protect a legitimate economic interest, including the public interest in maintaining statistical confidentiality and tax secrecy.</dct:license>
+        <dcat:distribution rdf:resource="https://land.copernicus.eu/global/access"/>
+        <dcat:distribution rdf:resource="https://land.copernicus.eu/global/access"/>
+        <dcat:distribution rdf:resource="http://eoportal.eumetsat.int"/>
+        <dct:relation rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/metadata/"/>
+        <dcat:dataQuality>The input data are the 1 day Top measured by the SSMIS, VIIRS sensor.</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+    

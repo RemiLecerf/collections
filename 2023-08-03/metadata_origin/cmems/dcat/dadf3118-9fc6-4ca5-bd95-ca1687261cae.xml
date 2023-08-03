@@ -1,0 +1,69 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:dct="http://purl.org/dc/terms/" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/dadf3118-9fc6-4ca5-bd95-ca1687261cae">
+        <foaf:primaryTopic rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/resource/dadf3118-9fc6-4ca5-bd95-ca1687261cae"/>
+        <dct:issued>2022-11-23</dct:issued>
+        <dct:modified>2022-11-23</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/srv/eng/xml.metadata.get?uuid=dadf3118-9fc6-4ca5-bd95-ca1687261cae">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork?uuid=dadf3118-9fc6-4ca5-bd95-ca1687261cae">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/resource/dadf3118-9fc6-4ca5-bd95-ca1687261cae">
+        <dct:identifier>dadf3118-9fc6-4ca5-bd95-ca1687261cae</dct:identifier>
+        <dct:title>Baltic Sea - Sea Ice Concentration and Thickness Charts</dct:title>
+        <dct:abstract>'''Short description:''' 
+
+For the Baltic Sea- The operational sea ice service at FMI provides ice parameters over the Baltic Sea. The parameters are based on ice chart produced on daily basis during the Baltic Sea ice season and show the ice concentration in a 1 km grid. Ice thickness chart (ITC) is a product based on the most recent available ice chart (IC) and a SAR image. The SAR data is used to update the ice information in the IC. The ice regions in the IC are updated according to a SAR segmentation and new ice thickness values are assigned to each SAR segment based on the SAR backscattering and the ice IC thickness range at that location.
+
+'''DOI (product) :'''   
+https://doi.org/10.48670/moi-00132</dct:abstract>
+        <dcat:theme rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/thesaurus/iso/topicCategory/oceans"/>
+        <foaf:thumbnail rdf:resource="https://catalogue.marine.copernicus.eu/documents/IMG/SEAICE_BAL_SEAICE_L4_NRT_OBSERVATIONS_011_004.jpg"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((9.00 53.00, 9.00 66.00, 31.00 66.00, 31.00 53.00, 9.00 53.00))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:issued>2009-09-29</dct:issued>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/OSI-METNO-OSLO-NO%20%28SD%29"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/OSI-METNO-OSLO-NO%20%28PM%29"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/OSI-METNO-OSLO-NO%20%28WPL%29"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/SIW-FMI-HELSINKI-FI"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/SIW-METNO-OSLO-NO"/>
+        <dct:accrualPeriodicity>daily</dct:accrualPeriodicity>
+        <dct:license>otherRestrictions</dct:license>
+        <dct:license>license</dct:license>
+        <dct:license>No limitations on public access</dct:license>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=SEAICE_BAL_SEAICE_L4_NRT_OBSERVATIONS_011_004-TDS&amp;product=FMI-BAL-SEAICE_CONC-L4-NRT-OBS"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/thredds/dodsC/FMI-BAL-SEAICE_CONC-L4-NRT-OBS"/>
+        <dcat:distribution rdf:resource="ftp://nrt.cmems-du.eu/Core/SEAICE_BAL_SEAICE_L4_NRT_OBSERVATIONS_011_004/FMI-BAL-SEAICE_CONC-L4-NRT-OBS"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/thredds/wms/FMI-BAL-SEAICE_CONC-L4-NRT-OBS"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=SEAICE_BAL_SEAICE_L4_NRT_OBSERVATIONS_011_004-TDS&amp;product=FMI-BAL-SEAICE_THICK-L4-NRT-OBS"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/thredds/dodsC/FMI-BAL-SEAICE_THICK-L4-NRT-OBS"/>
+        <dcat:distribution rdf:resource="ftp://nrt.cmems-du.eu/Core/SEAICE_BAL_SEAICE_L4_NRT_OBSERVATIONS_011_004/FMI-BAL-SEAICE_THICK-L4-NRT-OBS"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/thredds/wms/FMI-BAL-SEAICE_THICK-L4-NRT-OBS"/>
+        <dcat:distribution rdf:resource="ftp://nrt.cmems-du.eu/Core/SEAICE_BAL_SEAICE_L4_NRT_OBSERVATIONS_011_004/cmems_obs-si_bal_phy-sie_nrt_l4_P1D-m"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/6f0bfdf0-7934-41dc-bec8-edb8e7232083"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/54077ea3-887b-4975-bdb7-029858b5ea3f"/>
+        <dcat:dataQuality>The myOcean products depends on other products for production or validation. The detailed list of dependencies is given in ISO19115's aggregationInfo (ISO19139 Xpath = "gmd:MD_Metadata/gmd:identificationInfo/gmd:aggregationInfo[./gmd:MD_AggregateInformation/gmd:initiativeType/gmd:DS_InitiativeTypeCode/@codeListValue='upstream-validation' or 'upstream-production']")</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+    

@@ -1,0 +1,85 @@
+{
+  "type": "Collection",
+  "id": "ac3321fa-94c9-41d4-b95e-5df619fcc584",
+  "stac_version": "1.0.0",
+  "description": "'''Short description:'''\n\nThe High-Resolution Ocean Colour (HR-OC) Consortium (Brockmann Consult, Royal Belgian Institute of Natural Sciences, Flemish Institute for Technological Research) distributes Remote Sensing Reflectances (RRS, expressed in sr-1), Turbidity (TUR, expressed in FNU), Solid Particulate Matter Concentration (SPM, expressed in mg/l), spectral particulate backscattering (BBP, expressed in m-1) and chlorophyll-a concentration (CHL, expressed in µg/l) for the Sentinel 2/MSI sensor at 100m resolution for a 20km coastal zone. The products are delivered on a geographic lat-lon grid (EPSG:4326). To limit file size the products are provided in tiles of 600x800 km². RRS and BBP are delivered at nominal central bands of 443, 492, 560, 665, 704, 740, 783, 865 nm. The primary variable from which it is virtually possible to derive all the geophysical and transparency products is the spectral RRS. This, together with the spectral BBP, constitute the category of the 'optics' products. The spectral BBP product is generated from the RRS products using a quasi-analytical algorithm (Lee et al. 2002). The 'transparency' products include TUR and SPM). They are retrieved through the application of automated switching algorithms to the RRS spectra adapted to varying water conditions (Novoa et al. 2017). The GEOPHYSICAL product consists of the Chlorophyll-a concentration (CHL) retrieved via a multi-algorithm approach with optimized quality flagging (O'Reilly et al. 2019, Gons et al. 2005, Lavigne et al. 2021). The NRT products are generally provided withing 24 hours after end of the day.The RRS product is accompanied by a relative uncertainty estimate (unitless) derived by direct comparison of the products to corresponding fiducial reference measurements provided through the AERONET-OC network. The current day data temporal consistency is evaluated as Quality Index (QI) for TUR, SPM and CHL: QI=(CurrentDataPixel-ClimatologyDataPixel)/STDDataPixel where QI is the difference between current data and the relevant climatological field as a signed multiple of climatological standard deviations (STDDataPixel).\n\n\n'''Processing information:'''\n\nThe HR-OC processing system is deployed on Creodias where Sentinel 2/MSI L1C data are available. The production control element is being hosted within the infrastructure of Brockmann Consult. The processing chain consists of:\n* Resampling to 60m and mosaic generation of the set of Sentinel-2 MSI L1C granules of a single overpass that cover a single UTM zone.\n* Application of a coastal mask with 20km water + 20km land. The result is a L1C mosaic tile with data just in the coastal area optimized for compression.\n* Level 2 processing with pixel identification (IdePix), atmospheric correction (C2RCC and ACOLITE or iCOR), in-water processing and merging (HR-OC L2W processor). The result is a 60m product with the same extent as the L1C mosaic, with variables for optics, transparency, and geophysics, and with data filled in the water part of the coastal area.\n* invalid pixel identification takes into account  corrupted (L1) pixels, clouds, cloud shadow, glint, dry-fallen intertidal flats, coastal mixed-pixels, sea ice, melting ice, floating vegetation, non-water objects, and bottom reflection.\n* Daily L3 aggregation merges all Level 2 mosaics of a day intersecting with a target tile. All valid water pixels are included in the 20km coastal stripes; all other values are set to NaN. There may be more than a single overpass a day, in particular in the northern regions. The main contribution usually is the mosaic of the zone, but also adjacent mosaics may overlap. This step comprises resampling to the 100m target grid. \n* Monthly L4 aggregation combines all Level 3 products of a month and a single tile. The output is a set of 3 NetCDF datasets for optics, transparency, and geophysics respectively, for the tile and month.\n* Gap filling combines all daily products of a period and generates (partially) gap-filled daily products again. The output of gap filling are 3 datasets for optics (BBP443 only), transparency, and geophysics per day.\n\n\n'''Description of observation methods/instruments:'''\n\nOcean colour technique exploits the emerging electromagnetic radiation from the sea surface in different wavelengths. The spectral variability of this signal defines the so-called ocean colour which is affected by the presence of phytoplankton.\n\n\n'''Quality / Accuracy / Calibration information:'''\n\nA detailed description of the calibration and validation activities performed over this product can be found on the CMEMS web portal and in CMEMS-BGP_HR-QUID-009-201to212.\n\n\n'''Suitability, Expected type of users / uses:'''\n\nThis product is meant for use for educational purposes and for the managing of the marine safety, marine resources, marine and coastal environment and for climate and seasonal studies.\n\n'''Dataset names: '''\n\n*cmems_obs_oc_ibi_bgc_geophy_nrt_l3-hr_P1D-v01\n*cmems_obs_oc_ibi_bgc_transp_nrt_l3-hr_P1D-v01\n*cmems_obs_oc_ibi_bgc_optics_nrt_l3-hr_P1D-v01\n\n\n'''Files format:'''\n*netCDF-4, CF-1.7\n*INSPIRE compliant.\n\n'''DOI (product) :'''   \nhttps://doi.org/10.48670/moi-00109",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/OCEANCOLOUR_MED_BGC_HR_L3_NRT_009_205/cmems_obs_oc_med_bgc_geophy_nrt_l3-hr_P1D-m",
+      "type": "WWW:FTP",
+      "title": "cmems_obs_oc_med_bgc_geophy_nrt_l3-hr_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/OCEANCOLOUR_MED_BGC_HR_L3_NRT_009_205/cmems_obs_oc_med_bgc_optics_nrt_l3-hr_P1D-m",
+      "type": "WWW:FTP",
+      "title": "cmems_obs_oc_med_bgc_optics_nrt_l3-hr_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/OCEANCOLOUR_MED_BGC_HR_L3_NRT_009_205/cmems_obs_oc_med_bgc_transp_nrt_l3-hr_P1D-m",
+      "type": "WWW:FTP",
+      "title": "cmems_obs_oc_med_bgc_transp_nrt_l3-hr_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=OCEANCOLOUR_MED_BGC_HR_L3_NRT_009_205-TDS&product=cmems_obs_oc_med_bgc_tur-spm-chl_nrt_l3-hr-mosaic_P1D-m",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_obs_oc_med_bgc_tur-spm-chl_nrt_l3-hr-mosaic_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/cmems_obs_oc_med_bgc_tur-spm-chl_nrt_l3-hr-mosaic_P1D-m",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_obs_oc_med_bgc_tur-spm-chl_nrt_l3-hr-mosaic_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/OCEANCOLOUR_MED_BGC_HR_L3_NRT_009_205/cmems_obs_oc_med_bgc_tur-spm-chl_nrt_l3-hr-mosaic_P1D-m",
+      "type": "WWW:FTP",
+      "title": "cmems_obs_oc_med_bgc_tur-spm-chl_nrt_l3-hr-mosaic_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/cmems_obs_oc_med_bgc_tur-spm-chl_nrt_l3-hr-mosaic_P1D-m",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_obs_oc_med_bgc_tur-spm-chl_nrt_l3-hr-mosaic_P1D-m"
+    }
+  ],
+  "title": "Mediterranean Sea, Bio-Geo-Chemical, L3, daily observation",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -5.61,
+          30.0,
+          36.5,
+          46.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2020-01-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "providers": [
+    {
+      "name": "Copernicus Marine Service",
+      "description": "Copernicus Marine Service - Mercator Ocean Internations",
+      "roles": [
+        "licensor",
+        "producer",
+        "processor",
+        "host"
+      ],
+      "url": "https://marine.copernicus.eu/"
+    }
+  ]
+}

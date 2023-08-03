@@ -1,0 +1,67 @@
+{
+  "type": "Collection",
+  "id": "EO:CLMS:DAT:GLO:DMP300_V1",
+  "stac_version": "1.0.0",
+  "description": "Dry matter Productivity (DMP) is an indication of the overall growth rate or dry biomass increase of the vegetation and is directly related to ecosystem Net Primary Productivity (NPP), however its units (kilograms of gross dry matter per hectare per day) are customized for agro-statistical purposes. Compared to the Gross DMP (GDMP), or its equivalent Gross Primary Productivity, the main difference lies in the inclusion of the autotrophic respiration. Like the FAPAR products that are used as input for the GDMP estimation, these GDMP products are provided in Near Real Time, with consolidations in the next periods, or as offline product.",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://land.copernicus.eu/global/products/dmp",
+      "type": "HTTP",
+      "title": "Copernicus Global Land Service"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://land.copernicus.eu/global/access",
+      "type": "HTTP",
+      "title": "Copernicus Global Land Service"
+    },
+    {
+      "rel": "describedby",
+      "href": "http://eoportal.eumetsat.int",
+      "title": "Copernicus Global Land Service"
+    }
+  ],
+  "title": "10-daily Dry Matter Productivity 333M",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -60.0,
+          180.0,
+          80.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1999-01-01T00:00:00Z",
+          "2017-12-31T23:59:59Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "10-daily composite",
+    "Dekad",
+    "GLOBE",
+    "Orthoimagery",
+    "agricultural production",
+    "crops",
+    "dry matter",
+    "primary productivity"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

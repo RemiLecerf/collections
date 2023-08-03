@@ -1,0 +1,64 @@
+{
+  "type": "Collection",
+  "id": "eu.copernicus.climate.sis-tourism-climate-suitability-indicators",
+  "stac_version": "1.0.0",
+  "description": "This dataset provides a set of climate suitability indicators for tourism in Europe under future climate scenarios. These indicators have been tailored for two different kinds of tourism activities; urban and beach tourism. The climatic suitability indicators consist of two indices; the Holiday Climate Index (HCI) rates the climate resources based on activities associated with urban tourism, while the Climate Index for Tourism (CIT) rates the climate resources based on activities associated with beach tourism. Tailored indicators, such as these, allow a range of climatic variables to be quantified and ranked for particular tourist destinations and activities, serving as an important decision-making tool for both tourists and the tourism industry. The use of indicators is particularly valuable given the multifaceted nature of meteorological conditions and the complex manner in which they determine tourism activities. By integrating these indicators with climate projections, this dataset aims to provide an understanding of how the influence of a changing climate will impact on tourism activities in Europe under a range of future scenarios of greenhouse gas concentrations, referred to as Representative Concentration Pathway (RCP) climate scenarios. This dataset was produced using four different climate scenarios: the present climate (labelled 'historical'), and three Representative Concentration Pathway (RCP) scenarios consistent with an optimistic emission scenario where emissions start declining beyond 2020 (RCP2.6), a scenario where emissions start declining beyond 2040 (RCP4.5) and a pessimistic scenario where emissions continue to rise throughout the century (RCP8.5).\nThe climate projections are derived from EURO-CORDEX ensemble model output. Also included in this dataset are historical simulations for the period 1970-2005 in order to provide a reference period for the future projections. Both these indices take into account different climate variables (daily precipitation, wind speed, total cloud cover, and effective temperature) to evaluate the climate in relation to tourism. To each of these climate variables, a score is assigned according to their weighting criteria. The scores are then aggregated, resulting in a total rating scale ranging from 0 to 100 for HCI, and from 0 to 7 for CIT (please refer to the documentation for further details). In general, the higher the value of the indicators, the more suitable for tourism activities the seasonal conditions are.\nThis dataset was produced on behalf of the Copernicus Climate Change Service.\n\nVariables in the dataset/application are:\nDaily index, Number of fair days, Number of good days, Number of unfavourable days",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.126d9ce7",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Climate Data Store catalogue"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://confluence.ecmwf.int/x/SO7mE",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Product user guide"
+    }
+  ],
+  "title": "Climate suitability indicators for tourism from 1970 to 2100 over Europe derived from climate projections",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -44.6,
+          22.0,
+          65.0,
+          72.6
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1970-01-01T00:00:00Z",
+          "2100-01-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Atmospheric conditions",
+    "Product type: Climate projections",
+    "Sector: Tourism",
+    "Spatial coverage: Europe",
+    "Temporal coverage: Past",
+    "Temporal coverage: Present",
+    "Variable domain: Land (biosphere)"
+  ],
+  "providers": [
+    {
+      "name": "Climate Data Store - European Centre for Medium-Range Weather Forecasts (ECMWF)",
+      "description": "Climate Data Store - ECMWF",
+      "roles": [
+        "licensor",
+        "producer",
+        "processor",
+        "host"
+      ],
+      "url": "https://cds.climate.copernicus.eu/"
+    }
+  ]
+}

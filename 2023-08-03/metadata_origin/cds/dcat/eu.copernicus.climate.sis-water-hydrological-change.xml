@@ -1,0 +1,68 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dct="http://purl.org/dc/terms/" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/metadata/eu.copernicus.climate.sis-water-hydrological-change">
+        <foaf:primaryTopic rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/resource/10.24381/cds.ccf781a2"/>
+        <dct:issued>2018-03-28</dct:issued>
+        <dct:modified>2018-03-28</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/srv/eng/xml.metadata.get?uuid=eu.copernicus.climate.sis-water-hydrological-change">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://cds.climate.copernicus.eu:443//geonetwork?uuid=eu.copernicus.climate.sis-water-hydrological-change">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/resource/10.24381/cds.ccf781a2">
+        <dct:identifier>10.24381/cds.ccf781a2</dct:identifier>
+        <dct:title>Water sector indicators of hydrological change across Europe from 2011 to 2095 derived from climate simulations</dct:title>
+        <dct:abstract>The dataset provides a number of indicators of the potential change, relative to a reference period of the recent past, in hydrological conditions over the 21st Century based on an ensemble of climate and hydrological models. The indicators cover hydrological variables of river discharge, soil moisture, snow water equivalent and groundwater recharge. These indicators are produced by various hydrological models using input variables of historical and projected precipitation, temperature and potential evapotranspiration. 
+The indicators transform data from climate projections into usable information for the European water sector. They were defined in discussion with stakeholder groups working in different areas of the water sector (hydropower, irrigation, water supply) to provide clear information on climate projections for water resources as annual, seasonal and monthly change factors for a range of variables. 
+A range of global climate models and standard projection scenarios (based on latest Copernicus Climate Change Service and Coupled Model Inter-comparison Project Phase 5 climate modelling experiments) were used along a multi-hydrological model approach to produce these indicators.
+This ensemble approach to the climate and hydrological modelling captures the uncertainty and variability of the hydrological regime.  Precipitation and temperature data from five global climate models was downscaled to 5km x 5km resolution with the daily values disaggregated to 3-hourly values.  These data were used to force four hydrological models to produce the hydrological variables to derive the indicators. The indicators are given as relative changes for a given 30-year projection window with respect to the reference period estimates of 1971-2010 for Representative Concentration Pathways (RCP) 2.6 and 8.5, for each grid cell.
+This dataset is produced on behalf of Copernicus Climate Change Service, by UK Centre for Ecology &amp; Hydrology (UKCEH), Helmholtz Centre for Environmental Research (UFZ), Leipzig, Centro Tecnológico del Agua (Cetaqua), Climate Partnership LLC (CPL), Environment Agency (EA), Mediterranean Network of Basin Organisations (MENBO), Norwegian Water Resources &amp; Energy Directorate (NVE).
+
+Variables in the dataset/application are:
+Air temperature, Groundwater recharge, Potential evapotranspiration, Precipitation, River discharge, Snow water equivalent, Volumetric soil moisture</dct:abstract>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/GEMET%20-%20INSPIRE%20themes%2C%20version%201.0/Meteorological geographical features"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Temporal coverage: Past"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Temporal coverage: Present"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Temporal coverage: Future"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Spatial coverage: Europe"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Product type: Climate projections"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Variable domain: Land (hydrology)"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Provider: Copernicus C3S"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Sector: Water management"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/iso/topicCategory/climatologyMeteorologyAtmosphere"/>
+        <foaf:thumbnail rdf:resource="https://datastore.copernicus-climate.eu/c3s/published-forms-v2/c3sprod/sis-water-hydrological-change/overview.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((80 20, 80 80, -10 80, -10 20, 80 20))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:temporal>2011-01-01
+          /
+          2095-12-31</dct:temporal>
+        <dct:publisher rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/organization/ECMWF"/>
+        <dct:accrualPeriodicity>asNeeded</dct:accrualPeriodicity>
+        <dct:language>eng</dct:language>
+        <dct:license>licence</dct:license>
+        <dct:license>https://cds.climate.copernicus.eu/api/v2/terms/static/licence-to-use-copernicus-products.pdf</dct:license>
+        <dcat:distribution rdf:resource="https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.ccf781a2"/>
+        <dcat:distribution rdf:resource="https://datastore.copernicus-climate.eu/documents/sis-hydrology-derived/EDgE/C3S_435_Data-PUG-Documentation_v7.1.pdf"/>
+        <dcat:dataQuality>EC Copernicus program</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+    

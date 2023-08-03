@@ -1,0 +1,32 @@
+<csw:Record xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">EO:ECMWF:DAT:SATELLITE_METHANE</dc:identifier>
+      <dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">Methane data from 2002 to present derived from satellite observations</dc:title>
+      <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/">dataset</dc:type>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Atmospheric conditions</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Variable domain: Atmosphere (composition)</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Product type: Satellite observations</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Temporal coverage: Past</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Spatial coverage: Global</dc:subject>
+      <dc:format xmlns:dc="http://purl.org/dc/elements/1.1/">NetCDF</dc:format>
+      <dct:abstract xmlns:dct="http://purl.org/dc/terms/">This dataset provides observations of atmospheric methane (CH4)
+amounts obtained from observations collected by several current and historical 
+satellite instruments.  Methane is a naturally occurring Greenhouse Gas (GHG), but one whose abundance has been increased substantially above its pre-industrial value of some 720 ppb by human activities, primarily because of agricultural emissions (e.g., rice production, ruminants) and fossil fuel production and use. A clear annual cycle is largely due to seasonal wetland emissions.
+Atmospheric methane abundance is indirectly observed by various satellite instruments. These instruments measure spectrally resolved near-infrared and infrared radiation reflected or emitted by the Earth and its atmosphere. In the measured signal, molecular absorption signatures from methane and constituent gasses can be identified. It is through analysis of those absorption lines in these radiance observations that the averaged methane abundance in the sampled atmospheric column can be determined.
+The software used to analyse the absorption lines and determine the methane concentration in the sampled atmospheric column is referred to as the retrieval algorithm. For this dataset, methane abundances have been determined by applying several algorithms to different satellite instruments.
+The data set consists of 2 types of products: (i) column-averaged mixing ratios of CH4, denoted XCH4 and (ii) mid-tropospheric CH4 columns. 
+The XCH4 products have been retrieved from SCIAMACHY/ENVISAT and TANSO-FTS/GOSAT. The mid-tropospheric CH4 product has been retrieved from the IASI instruments onboard the Metop satellite series. The XCH4 products are available as Level 2 (L2) products (satellite orbit tracks) and as Level 3 (L3) product (gridded). The L2 products are available as individual sensor products (SCIAMACHY: WFMD and IMAP algorithms; GOSAT: OCFP, OCPR, SRFP and SRPR algorithms) and as a multi-sensor merged product (EMMA algorithm). The L3 XCH4 product is provided in OBS4MIPS format. The IASI products are available as L2 products generated with the NLIS algorithm.
+This data set is updated on a yearly basis, with each update cycle adding (if required) a new data version for the entire period, up to one year behind real time.
+This dataset is produced on behalf of C3S with the exception of the SCIAMACHY L2 products that were generated in the framework of the GHG-CCI project of the European Space Agency (ESA) Climate Change Initiative (CCI).
+
+Variables in the dataset/application are:
+Column-average dry-air mole fraction of atmospheric methane (XCH4), Mid-tropospheric columns of atmospheric methane (CH4)</dct:abstract>
+      <dct:spatial xmlns:dct="http://purl.org/dc/terms/">::EPSG:4326</dct:spatial>
+      <dc:rights xmlns:dc="http://purl.org/dc/elements/1.1/">https://cds.climate.copernicus.eu/api/v2/terms/static/ghg-cci.pdf</dc:rights>
+      <dc:rights xmlns:dc="http://purl.org/dc/elements/1.1/">Content accessible through the CDS may only be used under the terms of the licenses attributed to each particular resource.</dc:rights>
+      <dct:accessRights xmlns:dct="http://purl.org/dc/terms/">licence</dct:accessRights>
+      <ows:BoundingBox xmlns:ows="http://www.opengis.net/ows">
+        <ows:LowerCorner>-180 -90</ows:LowerCorner>
+        <ows:UpperCorner>180 90</ows:UpperCorner>
+      </ows:BoundingBox>
+    </csw:Record>
+    

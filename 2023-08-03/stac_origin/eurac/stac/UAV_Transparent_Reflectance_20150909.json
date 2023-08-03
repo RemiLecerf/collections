@@ -1,0 +1,104 @@
+{
+    "engine": "WCPS",
+    "stac_version": "0.9.0",
+    "stac_extensions": [
+        "datacube"
+    ],
+    "type": "Collection",
+    "id": "UAV_Transparent_Reflectance_20150909",
+    "title": "UAV DataCubes 20150909",
+    "description": "HR Digital surface models, HR Land monitoring, HR Multi-spectral imaging",
+    "keywords": [
+        "UAV",
+        "Multispectral",
+        "Suface models"
+    ],
+    "version": "v1",
+    "license": "Propreitary",
+    "sci:citation": "UAV Mission [20150909]",
+    "providers": [
+        {
+            "name": "Eurac EO WCS",
+            "url": "http://www.eurac.edu",
+            "roles": [
+                "Producer"
+            ]
+        }
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    10.58419922867874,
+                    46.68364260228993,
+                    10.58615817689745,
+                    46.684984275590196
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2015-09-09T00:00:00Z",
+                    "2015-09-09T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "cube:dimensions": {
+        "DATE": {
+            "type": "temporal",
+            "extent": [
+                "2015-09-09T00:00:00.000Z",
+                "2015-09-09T00:00:00.000Z"
+            ],
+            "step": "null"
+        },
+        "E": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                10.58419922867874,
+                10.58615817689745
+            ],
+            "reference_system": 32632
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "Band1",
+                "Band2"
+            ]
+        },
+        "N": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                46.68364260228993,
+                46.684984275590196
+            ],
+            "reference_system": 32632
+        }
+    },
+    "summaries": {
+        "constellation": [
+            "Soleon"
+        ],
+        "platform": [
+            "Soleon"
+        ],
+        "rows": 1521,
+        "columns": 1458,
+        "instruments": [
+            "RGB, Multispectral, hyperspectral, thermal"
+        ],
+        "eo:bands": [
+            {
+                "name": "Band1"
+            },
+            {
+                "name": "Band2"
+            }
+        ]
+    }
+}

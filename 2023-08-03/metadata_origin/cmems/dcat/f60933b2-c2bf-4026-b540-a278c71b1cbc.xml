@@ -1,0 +1,73 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:dct="http://purl.org/dc/terms/" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/f60933b2-c2bf-4026-b540-a278c71b1cbc">
+        <foaf:primaryTopic rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/resource/f60933b2-c2bf-4026-b540-a278c71b1cbc"/>
+        <dct:issued>2022-11-22</dct:issued>
+        <dct:modified>2022-11-22</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/srv/eng/xml.metadata.get?uuid=f60933b2-c2bf-4026-b540-a278c71b1cbc">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork?uuid=f60933b2-c2bf-4026-b540-a278c71b1cbc">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/resource/f60933b2-c2bf-4026-b540-a278c71b1cbc">
+        <dct:identifier>f60933b2-c2bf-4026-b540-a278c71b1cbc</dct:identifier>
+        <dct:title>Arctic Ocean Biogeochemistry Analysis and Forecast</dct:title>
+        <dct:abstract>'''Short description:'''
+The operational TOPAZ5-ECOSMO Arctic Ocean system uses the ECOSMO biological model coupled online to the TOPAZ5 physical model planned for a future update of the ARCTIC_ANALYSIS_FORECAST_PHYS_002_001_a physical forecast. It is run daily to provide 10 days of forecast of 3D biogeochemical variables ocean. The coupling is done by the FABM framework.
+
+Coupling to a biological ocean model provides a description of the evolution of basic biogeochemical variables. The output consists of daily mean fields interpolated onto a standard grid and 40 fixed levels in NetCDF4 CF format. Variables include 3D fields of nutrients (nitrate, phosphate, silicate), phytoplankton and zooplankton biomass, oxygen, chlorophyll, primary productivity, carbon cycle variables (pH, dissolved inorganic carbon and surface partial CO2 pressure in seawater, carbon export) and light attenuation coefficient. Surface Chlorophyll-a from satellite ocean colour is assimilated every week and projected downwards using the Uitz et al. (2006) method. A new 10-day forecast is produced daily using the previous day's forecast and the most up-to-date prognostic forcing fields.
+Output products have 6.25 km resolution at the North Pole (equivalent to 1/8 deg) on a stereographic projection. See the Product User Manual for the exact projection parameters.
+
+'''DOI (product) :'''   
+https://doi.org/10.48670/moi-00003</dct:abstract>
+        <dcat:theme rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/thesaurus/iso/topicCategory/oceans"/>
+        <foaf:thumbnail rdf:resource="https://catalogue.marine.copernicus.eu/documents/IMG/ARCTIC_ANALYSISFORECAST_BGC_002_004.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((-180.00 53.00, -180.00 90.00, 180.00 90.00, 180.00 53.00, -180.00 53.00))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:issued>2013-03-13</dct:issued>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/ARC-METNO-OSLO-NO"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/ARC-NERSC-BERGEN-NO%20%28WPL%29"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/ARC-NERSC-BERGEN-NO"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/ARC-METNO-OSLO-NO"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/ARC-METNO-OSLO-NO"/>
+        <dct:accrualPeriodicity>daily</dct:accrualPeriodicity>
+        <dct:accrualPeriodicity>monthly</dct:accrualPeriodicity>
+        <dct:license>otherRestrictions</dct:license>
+        <dct:license>license</dct:license>
+        <dct:license>No limitations on public access</dct:license>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=ARCTIC_ANALYSISFORECAST_BGC_002_004-TDS&amp;product=cmems_mod_arc_bgc_anfc_ecosmo_P1D-m"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/thredds/dodsC/cmems_mod_arc_bgc_anfc_ecosmo_P1D-m"/>
+        <dcat:distribution rdf:resource="ftp://nrt.cmems-du.eu/Core/ARCTIC_ANALYSISFORECAST_BGC_002_004/cmems_mod_arc_bgc_anfc_ecosmo_P1D-m"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/thredds/wms/cmems_mod_arc_bgc_anfc_ecosmo_P1D-m"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=ARCTIC_ANALYSISFORECAST_BGC_002_004-TDS&amp;product=cmems_mod_arc_bgc_anfc_ecosmo_P1M-m"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/thredds/dodsC/cmems_mod_arc_bgc_anfc_ecosmo_P1M-m"/>
+        <dcat:distribution rdf:resource="ftp://nrt.cmems-du.eu/Core/ARCTIC_ANALYSISFORECAST_BGC_002_004/cmems_mod_arc_bgc_anfc_ecosmo_P1M-m"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/thredds/wms/cmems_mod_arc_bgc_anfc_ecosmo_P1M-m"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/fa84e2c9-eacc-4041-905d-d3f79f37696e"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/368fe88e-26c9-4b3a-a95d-05ce6317cb1f"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dcat:dataQuality>The myOcean products depends on other products for production or validation. The detailed list of dependencies is given in ISO19115's aggregationInfo (ISO19139 Xpath = "gmd:MD_Metadata/gmd:identificationInfo/gmd:aggregationInfo[./gmd:MD_AggregateInformation/gmd:initiativeType/gmd:DS_InitiativeTypeCode/@codeListValue='upstream-validation' or 'upstream-production']")</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+    

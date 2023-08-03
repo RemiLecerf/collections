@@ -1,0 +1,112 @@
+{
+  "type": "Collection",
+  "id": "EO:MO:DAT:ARCTIC_ANALYSIS_FORECAST_PHYS_002_001_a",
+  "stac_version": "1.0.0",
+  "description": "'''Short description:'''\n\nThe operational TOPAZ4 Arctic Ocean system uses the HYCOM model and a 100-member EnKF assimilation scheme. It is run daily to provide 10 days of forecast (average of 10 members) of the 3D physical ocean, including sea ice; data assimilation is performed weekly to provide 7 days of analysis (ensemble average).\n\nOutput products are interpolated on a grid of 12.5 km resolution at the North Pole (equivalent to 1/8 deg in mid-latitudes) on a polar stereographic projection. The geographical projection follows these proj4 library parameters: \n\nproj4 = \"+units=m +proj=stere +a=6378273.0 +b=6378273.0 +lon_0=-45.0 +lat_0=90.0 +lat_ts=90.0 \"\n\n'''DOI (product) :'''\nhttps://doi.org/10.48670/moi-00001",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/ARCTIC_ANALYSIS_FORECAST_PHYS_002_001_a/cmems_mod_arc_phy_anfc_topaz4_P1M-m",
+      "type": "WWW:FTP",
+      "title": "cmems_mod_arc_phy_anfc_topaz4_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/ARCTIC_ANALYSIS_FORECAST_PHYS_002_001_a/dataset-topaz4-arc-1hr-myoceanv2-be",
+      "type": "WWW:FTP",
+      "title": "dataset-topaz4-arc-1hr-myoceanv2-be"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/dataset-topaz4-arc-1hr-myoceanv2-be",
+      "type": "WWW:OPENDAP",
+      "title": "dataset-topaz4-arc-1hr-myoceanv2-be"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/cmems_mod_arc_phy_anfc_topaz4_P1M-m",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_mod_arc_phy_anfc_topaz4_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=ARCTIC_ANALYSIS_FORECAST_PHYS_002_001_a-TDS&product=cmems_mod_arc_phy_anfc_topaz4_P1M-m",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_mod_arc_phy_anfc_topaz4_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/ARCTIC_ANALYSIS_FORECAST_PHYS_002_001_a/dataset-topaz4-arc-myoceanv2-be",
+      "type": "WWW:FTP",
+      "title": "dataset-topaz4-arc-myoceanv2-be"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=ARCTIC_ANALYSIS_FORECAST_PHYS_002_001_a-TDS&product=dataset-topaz4-arc-1hr-myoceanv2-be",
+      "type": "MYO:MOTU-SUB",
+      "title": "dataset-topaz4-arc-1hr-myoceanv2-be"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=ARCTIC_ANALYSIS_FORECAST_PHYS_002_001_a-TDS&product=dataset-topaz4-arc-myoceanv2-be",
+      "type": "MYO:MOTU-SUB",
+      "title": "dataset-topaz4-arc-myoceanv2-be"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/cmems_mod_arc_phy_anfc_topaz4_P1M-m",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_mod_arc_phy_anfc_topaz4_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/dataset-topaz4-arc-myoceanv2-be",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "dataset-topaz4-arc-myoceanv2-be"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/dataset-topaz4-arc-1hr-myoceanv2-be",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "dataset-topaz4-arc-1hr-myoceanv2-be"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/dataset-topaz4-arc-myoceanv2-be",
+      "type": "WWW:OPENDAP",
+      "title": "dataset-topaz4-arc-myoceanv2-be"
+    }
+  ],
+  "title": "Arctic Ocean Physics Analysis and Forecast",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2019-05-04T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

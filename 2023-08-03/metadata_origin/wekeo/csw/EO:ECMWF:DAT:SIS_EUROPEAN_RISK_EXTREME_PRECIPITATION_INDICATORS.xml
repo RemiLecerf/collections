@@ -1,0 +1,28 @@
+<csw:Record xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">EO:ECMWF:DAT:SIS_EUROPEAN_RISK_EXTREME_PRECIPITATION_INDICATORS</dc:identifier>
+      <dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">Extreme precipitation risk indicators for Europe and European cities from 1950 to 2019</dc:title>
+      <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/">dataset</dc:type>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Meteorological geographical features</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Spatial coverage: Europe</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Variable domain: Land (hydrology)</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Temporal coverage: Past</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Product type: Climate indices</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Provider: Copernicus C3S</dc:subject>
+      <dc:format xmlns:dc="http://purl.org/dc/elements/1.1/">netcdf</dc:format>
+      <dct:abstract xmlns:dct="http://purl.org/dc/terms/">The dataset presents climate impact indicators related to extreme precipitation in Europe under current climate conditions. The suite of indicators include recent historic records, recurrence intervals, and other relevant statistical measures to evaluate the magnitude and frequency of extreme precipitation events. These are provided as gridded products, with one product covering the whole of Europe, and the other higher resolution product focused on 20 European cities that were identified as vulnerable to urban pluvial flooding based on stakeholder surveys.
+This dataset makes use of precipitation data available in the Climate Data Store (i.e. E-OBS gridded land-only observational dataset and ERA5 reanalysis) combined with additional datasets capable of improving the spatial and temporal resolution of the precipitation data, making it suitable for pluvial flood analysis at city scales. These are derived from i) the network of meteorological stations included in the European Climate Assessment &amp; Dataset (ECA&amp;D) programme and ii) dynamically downscaled ERA5 reanalysis at 2 km x 2 km (ERA5-2km) using the regional climate model COSMO-CLM and accounting for urban parameterization, specifically performed for the 20 European cities identified as vulnerable to urban pluvial flooding.
+At the European scale, E-OBS and ERA5 precipitation data are used to compute indicators at different temporal resolutions (i.e. daily, monthly, yearly, and 30-year) according to the type of indicator. The precipitation amounts at fixed return periods are also computed for point observations from meteorological stations using the ECA&amp;D network and are then interpolated onto the E-OBS grid. At the city scale, a dynamically downscaled ERA5-2km precipitation data are instead used to derive daily indicators, allowing city stakeholders to detect and rank local extreme precipitation events and evaluate their magnitude.
+This dataset was produced on behalf of the Copernicus Climate Change Service.
+
+Variables in the dataset/application are:
+Maximum 1-day precipitation, Maximum 5-day precipitation, Number of consecutive wet days, Number of precipitation days exceeding 20mm, Number of precipitation days exceeding fixed percentiles, Number of wet days, Precipitation at fixed percentiles, Precipitation at fixed return periods, Standardised precipitation exceeding fixed percentiles, Total precipitation</dct:abstract>
+      <dct:spatial xmlns:dct="http://purl.org/dc/terms/">::EPSG:4326</dct:spatial>
+      <dc:rights xmlns:dc="http://purl.org/dc/elements/1.1/">https://cds.climate.copernicus.eu/api/v2/terms/static/licence-to-use-copernicus-products.pdf</dc:rights>
+      <dc:rights xmlns:dc="http://purl.org/dc/elements/1.1/">Content accessible through the CDS may only be used under the terms of the licenses attributed to each particular resource.</dc:rights>
+      <dct:accessRights xmlns:dct="http://purl.org/dc/terms/">licence</dct:accessRights>
+      <ows:BoundingBox xmlns:ows="http://www.opengis.net/ows">
+        <ows:LowerCorner>-180 -90</ows:LowerCorner>
+        <ows:UpperCorner>180 90</ows:UpperCorner>
+      </ows:BoundingBox>
+    </csw:Record>
+    

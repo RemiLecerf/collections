@@ -1,0 +1,47 @@
+{
+  "type": "Collection",
+  "id": "EO:EUM:DAT:0577",
+  "stac_version": "1.0.0",
+  "description": "OLCI (Ocean and Land Colour Instrument) Full resolution: 300m at nadir. Level 1 products are calibrated Top Of Atmosphere radiance values at OLCI 21 spectral bands. Radiances are computed from the instrument digital counts by applying geo-referencing, radiometric processing (non-linearity correction, smear correction, dark offset correction, absolute gain calibration adjusted for gain evolution with time), and stray-light correction for straylight effects in OLCI camera's spectrometer and ground imager. Additionally, spatial resampling of OLCI pixels to the 'ideal' cross-track grid, initial pixel classification, and annotation at tie points with auxiliary meteorological data and acquisition geometry are provided. The radiance products are accompanied by error estimate products, however the error values are currently not available. Sentinel-3 is part of a series of Sentinel satellites, under the umbrella of the EU Copernicus programme.\n\nThis collection contains reprocessed data from baseline collection 002. Operational data can be found in the corresponding collection.",
+  "links": [],
+  "title": "OLCI Level 1B Full Resolution (version BC002) - Sentinel-3 - Reprocessed",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2016-04-25T00:00:00Z",
+          "2019-10-29T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Level 1 Data",
+    "Ocean",
+    "Ocean Colour"
+  ],
+  "providers": [
+    {
+      "name": "European Organisation for the Exploitation of Meteorological Satellites (EUMETSAT)",
+      "description": "EUMETSAT Data store",
+      "roles": [
+        "licensor",
+        "producer",
+        "processor",
+        "host"
+      ],
+      "url": "https://data.eumetsat.int/"
+    }
+  ]
+}

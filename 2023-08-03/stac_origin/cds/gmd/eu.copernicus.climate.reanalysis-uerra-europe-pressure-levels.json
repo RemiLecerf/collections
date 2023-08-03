@@ -1,0 +1,75 @@
+{
+  "type": "Collection",
+  "id": "eu.copernicus.climate.reanalysis-uerra-europe-pressure-levels",
+  "stac_version": "1.0.0",
+  "description": "The present UERRA dataset contains analyses of atmospheric variables on pressure levels, from 1961 to present. It has been generated using the UERRA-HARMONIE system by combining model data with observations into a complete and consistent dataset using the laws of physics.\nThis principle is called data assimilation. UERRA-HARMONIE employs a 3-dimensional variational data assimilation method. The assimilation system is able to estimate biases between observations and to sift good-quality data from poor data. The laws of physics allow for estimates at locations where data coverage is low. The provision of estimates at each grid point in Europe for each regular output time, over a long period, always using the same format, makes reanalysis a very convenient and popular dataset to work with.\nThe observing system has evolved drastically over time, and although the assimilation system can resolve data holes, the quality of analyses varies throughout the period, with less accurate estimates in 1960s due to sparse observational networks. In addition to observations in the model domain, a regional reanalysis needs model data which provide a first estimate of the atmospheric state. For the UERRA-HARMONIE system, this information is taken from the global reanalyses ERA40 (until the end of 1978) and\nERA-interim (from 1979 onwards). The improvement of regional reanalyses over global products comes with the higher horizontal resolution that allows incorporating more regional details (e.g. topography). Moreover, it enables the system even to ingest more observations at places with dense observation networks.\n\nVariables in the dataset/application are:\nGeopotential, Geopotential height, Relative humidity, Temperature, U-component of wind, V-component of wind",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.92221551",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Climate Data Store catalogue"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://datastore.copernicus-climate.eu/documents/uerra/D322_Lot1.4.1.2_User_guides_v3.3.pdf",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "UERRA product user guide v3.3 (PDF)"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://confluence.ecmwf.int/display/UER/Issues+with+data",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Known issues in UERRA"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://datastore.copernicus-climate.eu/documents/uerra/D322_Lot1.1.1.2_Documentation_of_the_RRA_system_UERRA_v2.pdf",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Documenting the UERRA system (PDF)"
+    }
+  ],
+  "title": "UERRA regional reanalysis for Europe on pressure levels from 1961 to 2019",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          335.0,
+          34.0,
+          40.0,
+          72.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2018-10-18T00:00:00Z",
+          "2019-07-31T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Atmospheric conditions",
+    "Product type: Reanalysis",
+    "Provider: Copernicus C3S",
+    "Spatial coverage: Europe",
+    "Temporal coverage: Past",
+    "Variable domain: Atmosphere (upper air)"
+  ],
+  "providers": [
+    {
+      "name": "Climate Data Store - European Centre for Medium-Range Weather Forecasts (ECMWF)",
+      "description": "Climate Data Store - ECMWF",
+      "roles": [
+        "licensor",
+        "producer",
+        "processor",
+        "host"
+      ],
+      "url": "https://cds.climate.copernicus.eu/"
+    }
+  ]
+}

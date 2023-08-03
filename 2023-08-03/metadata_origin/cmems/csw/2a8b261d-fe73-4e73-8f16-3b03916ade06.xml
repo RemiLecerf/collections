@@ -1,0 +1,84 @@
+<csw:Record xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/" xmlns:ows="http://www.opengis.net/ows" xmlns:geonet="http://www.fao.org/geonetwork" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dc:identifier>2a8b261d-fe73-4e73-8f16-3b03916ade06</dc:identifier>
+      <dc:date>2022-11-28T13:32:31.981Z</dc:date>
+      <dc:title>EUROPEAN SEAS ALONG-TRACK L3 SEA SURFACE HEIGHTS REPROCESSED (1993-ONGOING) TAILORED FOR DATA ASSIMILATION</dc:title>
+      <dc:type>series</dc:type>
+      <dc:subject>Oceanographic geographical features</dc:subject>
+      <dc:subject>satellite-observation</dc:subject>
+      <dc:subject>sea_surface_height_above_sea_level</dc:subject>
+      <dc:subject>sea_surface_height_above_geoid</dc:subject>
+      <dc:subject>multi-year</dc:subject>
+      <dc:subject>marine-safety</dc:subject>
+      <dc:subject>marine-resources</dc:subject>
+      <dc:subject>coastal-marine-environment</dc:subject>
+      <dc:subject>weather-climate-and-seasonal-forecasting</dc:subject>
+      <dc:subject>black-sea</dc:subject>
+      <dc:subject>baltic-sea</dc:subject>
+      <dc:subject>mediterranean-sea</dc:subject>
+      <dc:subject>iberian-biscay-irish-seas</dc:subject>
+      <dc:subject>north-west-shelf-seas</dc:subject>
+      <dc:subject>Level 3</dc:subject>
+      <dc:subject>Not Applicable</dc:subject>
+      <dc:subject>oceans</dc:subject>
+      <dc:format>NetCDF-4</dc:format>
+      <dct:abstract>'''Short description:'''
+
+Altimeter satellite along-track sea surface heights anomalies (SLA) computed with respect to a twenty-year [1993, 2012] mean with a 1Hz (~7km) sampling. It serves in delayed-time applications.
+This product is processed by the DUACS multimission altimeter data processing system. It processes data from all altimeter missions available (e.g. Sentinel-6A, Jason-3, Sentinel-3A, Sentinel-3B, Saral/AltiKa, Cryosat-2, Jason-1, Jason-2, Topex/Poseidon, ERS-1, ERS-2, Envisat, Geosat Follow-On, HY-2A, HY-2B, etc). The system exploits the most recent datasets available based on the enhanced OGDR/NRT+IGDR/STC production. All the missions are homogenized with respect to a reference mission. Part of the processing is fitted to the European Sea area. (see QUID document or http://duacs.cls.fr [http://duacs.cls.fr] pages for processing details). 
+The product gives additional variables (e.g. Mean Dynamic Topography, Dynamic Atmospheric Correction, Ocean Tides, Long Wavelength Errors) that can be used to change the physical content for specific needs (see PUM document for details)
+
+&#8220;&#8217;Associated products&#8221;&#8217;
+A time invariant product https://resources.marine.copernicus.eu/product-detail/SEALEVEL_GLO_NOISE_L4_NRT_OBSERVATIONS_008_032/INFORMATION describing the noise level of along-track measurements is available. It is associated to the sla_filtered variable. It is a gridded product. One file is provided for the global ocean and those values must be applied for Arctic and Europe products. For Mediterranean and Black seas, one value is given in the QUID document.
+
+'''DOI (product):'''
+https://doi.org/10.48670/moi-00139</dct:abstract>
+      <dc:description>'''Short description:'''
+
+Altimeter satellite along-track sea surface heights anomalies (SLA) computed with respect to a twenty-year [1993, 2012] mean with a 1Hz (~7km) sampling. It serves in delayed-time applications.
+This product is processed by the DUACS multimission altimeter data processing system. It processes data from all altimeter missions available (e.g. Sentinel-6A, Jason-3, Sentinel-3A, Sentinel-3B, Saral/AltiKa, Cryosat-2, Jason-1, Jason-2, Topex/Poseidon, ERS-1, ERS-2, Envisat, Geosat Follow-On, HY-2A, HY-2B, etc). The system exploits the most recent datasets available based on the enhanced OGDR/NRT+IGDR/STC production. All the missions are homogenized with respect to a reference mission. Part of the processing is fitted to the European Sea area. (see QUID document or http://duacs.cls.fr [http://duacs.cls.fr] pages for processing details). 
+The product gives additional variables (e.g. Mean Dynamic Topography, Dynamic Atmospheric Correction, Ocean Tides, Long Wavelength Errors) that can be used to change the physical content for specific needs (see PUM document for details)
+
+&#8220;&#8217;Associated products&#8221;&#8217;
+A time invariant product https://resources.marine.copernicus.eu/product-detail/SEALEVEL_GLO_NOISE_L4_NRT_OBSERVATIONS_008_032/INFORMATION describing the noise level of along-track measurements is available. It is associated to the sla_filtered variable. It is a gridded product. One file is provided for the global ocean and those values must be applied for Arctic and Europe products. For Mediterranean and Black seas, one value is given in the QUID document.
+
+'''DOI (product):'''
+https://doi.org/10.48670/moi-00139</dc:description>
+      <dc:rights>otherRestrictions</dc:rights>
+      <dc:rights>license</dc:rights>
+      <dc:language>eng</dc:language>
+      <dc:source>The myOcean products depends on other products for production or validation. The detailed list of dependencies is given in ISO19115's aggregationInfo (ISO19139 Xpath = "gmd:MD_Metadata/gmd:identificationInfo/gmd:aggregationInfo[./gmd:MD_AggregateInformation/gmd:initiativeType/gmd:DS_InitiativeTypeCode/@codeListValue='upstream-validation' or 'upstream-production']")</dc:source>
+      <dc:format>NetCDF-4</dc:format>
+      <ows:BoundingBox crs="urn:ogc:def:crs:EPSG:6.6:4326">
+        <ows:LowerCorner>19.93 -30.07</ows:LowerCorner>
+        <ows:UpperCorner>66.07 42.07</ows:UpperCorner>
+      </ows:BoundingBox>
+      <dc:URI protocol="WWW:FTP" name="cmems_obs-sl_eur_phy-ssh_my_alg-l3-duacs_PT1S">ftp://my.cmems-du.eu/Core/SEALEVEL_EUR_PHY_L3_MY_008_061/cmems_obs-sl_eur_phy-ssh_my_alg-l3-duacs_PT1S</dc:URI>
+      <dc:URI protocol="WWW:FTP" name="cmems_obs-sl_eur_phy-ssh_my_al-l3-duacs_PT1S">ftp://my.cmems-du.eu/Core/SEALEVEL_EUR_PHY_L3_MY_008_061/cmems_obs-sl_eur_phy-ssh_my_al-l3-duacs_PT1S</dc:URI>
+      <dc:URI protocol="WWW:FTP" name="cmems_obs-sl_eur_phy-ssh_my_c2-l3-duacs_PT1S">ftp://my.cmems-du.eu/Core/SEALEVEL_EUR_PHY_L3_MY_008_061/cmems_obs-sl_eur_phy-ssh_my_c2-l3-duacs_PT1S</dc:URI>
+      <dc:URI protocol="WWW:FTP" name="cmems_obs-sl_eur_phy-ssh_my_c2n-l3-duacs_PT1S">ftp://my.cmems-du.eu/Core/SEALEVEL_EUR_PHY_L3_MY_008_061/cmems_obs-sl_eur_phy-ssh_my_c2n-l3-duacs_PT1S</dc:URI>
+      <dc:URI protocol="WWW:FTP" name="cmems_obs-sl_eur_phy-ssh_my_e1g-l3-duacs_PT1S">ftp://my.cmems-du.eu/Core/SEALEVEL_EUR_PHY_L3_MY_008_061/cmems_obs-sl_eur_phy-ssh_my_e1g-l3-duacs_PT1S</dc:URI>
+      <dc:URI protocol="WWW:FTP" name="cmems_obs-sl_eur_phy-ssh_my_e1-l3-duacs_PT1S">ftp://my.cmems-du.eu/Core/SEALEVEL_EUR_PHY_L3_MY_008_061/cmems_obs-sl_eur_phy-ssh_my_e1-l3-duacs_PT1S</dc:URI>
+      <dc:URI protocol="WWW:FTP" name="cmems_obs-sl_eur_phy-ssh_my_e2-l3-duacs_PT1S">ftp://my.cmems-du.eu/Core/SEALEVEL_EUR_PHY_L3_MY_008_061/cmems_obs-sl_eur_phy-ssh_my_e2-l3-duacs_PT1S</dc:URI>
+      <dc:URI protocol="WWW:FTP" name="cmems_obs-sl_eur_phy-ssh_my_en-l3-duacs_PT1S">ftp://my.cmems-du.eu/Core/SEALEVEL_EUR_PHY_L3_MY_008_061/cmems_obs-sl_eur_phy-ssh_my_en-l3-duacs_PT1S</dc:URI>
+      <dc:URI protocol="WWW:FTP" name="cmems_obs-sl_eur_phy-ssh_my_enn-l3-duacs_PT1S">ftp://my.cmems-du.eu/Core/SEALEVEL_EUR_PHY_L3_MY_008_061/cmems_obs-sl_eur_phy-ssh_my_enn-l3-duacs_PT1S</dc:URI>
+      <dc:URI protocol="WWW:FTP" name="cmems_obs-sl_eur_phy-ssh_my_g2-l3-duacs_PT1S">ftp://my.cmems-du.eu/Core/SEALEVEL_EUR_PHY_L3_MY_008_061/cmems_obs-sl_eur_phy-ssh_my_g2-l3-duacs_PT1S</dc:URI>
+      <dc:URI protocol="WWW:FTP" name="cmems_obs-sl_eur_phy-ssh_my_h2ag-l3-duacs_PT1S">ftp://my.cmems-du.eu/Core/SEALEVEL_EUR_PHY_L3_MY_008_061/cmems_obs-sl_eur_phy-ssh_my_h2ag-l3-duacs_PT1S</dc:URI>
+      <dc:URI protocol="WWW:FTP" name="cmems_obs-sl_eur_phy-ssh_my_h2a-l3-duacs_PT1S">ftp://my.cmems-du.eu/Core/SEALEVEL_EUR_PHY_L3_MY_008_061/cmems_obs-sl_eur_phy-ssh_my_h2a-l3-duacs_PT1S</dc:URI>
+      <dc:URI protocol="WWW:FTP" name="cmems_obs-sl_eur_phy-ssh_my_h2b-l3-duacs_PT1S">ftp://my.cmems-du.eu/Core/SEALEVEL_EUR_PHY_L3_MY_008_061/cmems_obs-sl_eur_phy-ssh_my_h2b-l3-duacs_PT1S</dc:URI>
+      <dc:URI protocol="WWW:FTP" name="cmems_obs-sl_eur_phy-ssh_my_h2c-l3-duacs_PT1S">ftp://my.cmems-du.eu/Core/SEALEVEL_EUR_PHY_L3_MY_008_061/cmems_obs-sl_eur_phy-ssh_my_h2c-l3-duacs_PT1S</dc:URI>
+      <dc:URI protocol="WWW:FTP" name="cmems_obs-sl_eur_phy-ssh_my_j1g-l3-duacs_PT1S">ftp://my.cmems-du.eu/Core/SEALEVEL_EUR_PHY_L3_MY_008_061/cmems_obs-sl_eur_phy-ssh_my_j1g-l3-duacs_PT1S</dc:URI>
+      <dc:URI protocol="WWW:FTP" name="cmems_obs-sl_eur_phy-ssh_my_j1-l3-duacs_PT1S">ftp://my.cmems-du.eu/Core/SEALEVEL_EUR_PHY_L3_MY_008_061/cmems_obs-sl_eur_phy-ssh_my_j1-l3-duacs_PT1S</dc:URI>
+      <dc:URI protocol="WWW:FTP" name="cmems_obs-sl_eur_phy-ssh_my_j1n-l3-duacs_PT1S">ftp://my.cmems-du.eu/Core/SEALEVEL_EUR_PHY_L3_MY_008_061/cmems_obs-sl_eur_phy-ssh_my_j1n-l3-duacs_PT1S</dc:URI>
+      <dc:URI protocol="WWW:FTP" name="cmems_obs-sl_eur_phy-ssh_my_j2g-l3-duacs_PT1S">ftp://my.cmems-du.eu/Core/SEALEVEL_EUR_PHY_L3_MY_008_061/cmems_obs-sl_eur_phy-ssh_my_j2g-l3-duacs_PT1S</dc:URI>
+      <dc:URI protocol="WWW:FTP" name="cmems_obs-sl_eur_phy-ssh_my_j2-l3-duacs_PT1S">ftp://my.cmems-du.eu/Core/SEALEVEL_EUR_PHY_L3_MY_008_061/cmems_obs-sl_eur_phy-ssh_my_j2-l3-duacs_PT1S</dc:URI>
+      <dc:URI protocol="WWW:FTP" name="cmems_obs-sl_eur_phy-ssh_my_j2n-l3-duacs_PT1S">ftp://my.cmems-du.eu/Core/SEALEVEL_EUR_PHY_L3_MY_008_061/cmems_obs-sl_eur_phy-ssh_my_j2n-l3-duacs_PT1S</dc:URI>
+      <dc:URI protocol="WWW:FTP" name="cmems_obs-sl_eur_phy-ssh_my_j3-l3-duacs_PT1S">ftp://my.cmems-du.eu/Core/SEALEVEL_EUR_PHY_L3_MY_008_061/cmems_obs-sl_eur_phy-ssh_my_j3-l3-duacs_PT1S</dc:URI>
+      <dc:URI protocol="WWW:FTP" name="cmems_obs-sl_eur_phy-ssh_my_j3n-l3-duacs_PT1S">ftp://my.cmems-du.eu/Core/SEALEVEL_EUR_PHY_L3_MY_008_061/cmems_obs-sl_eur_phy-ssh_my_j3n-l3-duacs_PT1S</dc:URI>
+      <dc:URI protocol="WWW:FTP" name="cmems_obs-sl_eur_phy-ssh_my_s3a-l3-duacs_PT1S">ftp://my.cmems-du.eu/Core/SEALEVEL_EUR_PHY_L3_MY_008_061/cmems_obs-sl_eur_phy-ssh_my_s3a-l3-duacs_PT1S</dc:URI>
+      <dc:URI protocol="WWW:FTP" name="cmems_obs-sl_eur_phy-ssh_my_s3b-l3-duacs_PT1S">ftp://my.cmems-du.eu/Core/SEALEVEL_EUR_PHY_L3_MY_008_061/cmems_obs-sl_eur_phy-ssh_my_s3b-l3-duacs_PT1S</dc:URI>
+      <dc:URI protocol="WWW:FTP" name="cmems_obs-sl_eur_phy-ssh_my_s6a-lr-l3-duacs_PT1S">ftp://my.cmems-du.eu/Core/SEALEVEL_EUR_PHY_L3_MY_008_061/cmems_obs-sl_eur_phy-ssh_my_s6a-lr-l3-duacs_PT1S</dc:URI>
+      <dc:URI protocol="WWW:FTP" name="cmems_obs-sl_eur_phy-ssh_my_tp-l3-duacs_PT1S">ftp://my.cmems-du.eu/Core/SEALEVEL_EUR_PHY_L3_MY_008_061/cmems_obs-sl_eur_phy-ssh_my_tp-l3-duacs_PT1S</dc:URI>
+      <dc:URI protocol="WWW:FTP" name="cmems_obs-sl_eur_phy-ssh_my_tpn-l3-duacs_PT1S">ftp://my.cmems-du.eu/Core/SEALEVEL_EUR_PHY_L3_MY_008_061/cmems_obs-sl_eur_phy-ssh_my_tpn-l3-duacs_PT1S</dc:URI>
+      <dc:URI protocol="image/png">https://catalogue.marine.copernicus.eu/documents/IMG/SEALEVEL_EUR_PHY_L3_MY_008_061.png</dc:URI>
+    </csw:Record>
+    

@@ -1,0 +1,33 @@
+<csw:Record xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">EO:ECMWF:DAT:SEASONAL_POSTPROCESSED_SINGLE_LEVELS</dc:identifier>
+      <dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">Seasonal forecast anomalies on single levels</dc:title>
+      <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/">dataset</dc:type>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Atmospheric conditions</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Temporal coverage: Present</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Variable domain: Atmosphere (surface)</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Variable domain: Atmosphere (upper air)</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Temporal coverage: Past</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Temporal coverage: Future</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Spatial coverage: Global</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Product type: Seasonal forecasts</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Provider: Copernicus C3S</dc:subject>
+      <dc:format xmlns:dc="http://purl.org/dc/elements/1.1/">grib</dc:format>
+      <dct:abstract xmlns:dct="http://purl.org/dc/terms/">This entry covers single-level data post-processed for bias adjustment on a monthly time resolution. 
+Seasonal forecasts provide a long-range outlook of changes in the Earth system over periods of a few weeks or months, as a result of predictable changes in some of the slow-varying components of the system. For example, ocean temperatures typically vary slowly, on timescales of weeks or months; as the ocean has an impact on the overlaying atmosphere, the variability of its properties (e.g. temperature) can modify both local and remote atmospheric conditions. Such modifications of the 'usual' atmospheric conditions are the essence of all long-range (e.g. seasonal) forecasts. This is different from a weather forecast, which gives a lot more precise detail - both in time and space - of the evolution of the state of the atmosphere over a few days into the future. Beyond a few days, the chaotic nature of the atmosphere limits the possibility to predict precise changes at local scales. This is one of the reasons long-range forecasts of atmospheric conditions have large uncertainties. To quantify such uncertainties, long-range forecasts use ensembles, and meaningful forecast products reflect a distributions of outcomes.
+Given the complex, non-linear interactions between the individual components of the Earth system, the best tools for long-range forecasting are climate models which include as many of the key components of the system and possible; typically, such models include representations of the atmosphere, ocean and land surface. These models are initialised with data describing the state of the system at the starting point of the forecast, and used to predict the evolution of this state in time.
+While uncertainties coming from imperfect knowledge of the initial conditions of the components of the Earth system can be described with the use of ensembles, uncertainty arising from approximations made in the models are very much dependent on the choice of model. A convenient way to quantify the effect of these approximations is to combine outputs from several models, independently developed, initialised and operated.
+To this effect, the C3S provides a multi-system seasonal forecast service, where data produced by state-of-the-art seasonal forecast systems developed, implemented and operated at forecast centres in several European countries is collected, processed and combined to enable user-relevant applications. The composition of the C3S seasonal multi-system and the full content of the database underpinning the service are described in the documentation. The data is grouped in several catalogue entries (CDS datasets), currently defined by the type of variable (single-level or multi-level, on pressure surfaces) and the level of post-processing applied (data at original time resolution, processing on temporal aggregation and post-processing related to bias adjustment).
+The variables available in this data set are listed in the table below. The data includes forecasts created in real-time since 2017.
+
+Variables in the dataset/application are:
+10m u-component of wind anomaly, 10m v-component of wind anomaly, 10m wind gust anomaly, 10m wind speed anomaly, 2m dewpoint temperature anomaly, 2m temperature anomaly, East-west surface stress anomalous rate of accumulation, Evaporation anomalous rate of accumulation, Maximum 2m temperature in the last 24 hours anomaly, Mean sea level pressure anomaly, Mean sub-surface runoff rate anomaly, Mean surface runoff rate anomaly, Minimum 2m temperature in the last 24 hours anomaly, North-south surface stress anomalous rate of accumulation, Runoff anomalous rate of accumulation, Sea surface temperature anomaly, Sea-ice cover anomaly, Snow density anomaly, Snow depth anomaly, Snowfall anomalous rate of accumulation, Soil temperature anomaly level 1, Solar insolation anomalous rate of accumulation, Surface latent heat flux anomalous rate of accumulation, Surface sensible heat flux anomalous rate of accumulation, Surface solar radiation anomalous rate of accumulation, Surface solar radiation downwards anomalous rate of accumulation, Surface thermal radiation anomalous rate of accumulation, Surface thermal radiation downwards anomalous rate of accumulation, Top solar radiation anomalous rate of accumulation, Top thermal radiation anomalous rate of accumulation, Total cloud cover anomaly, Total precipitation anomalous rate of accumulation</dct:abstract>
+      <dct:spatial xmlns:dct="http://purl.org/dc/terms/">::EPSG:4326</dct:spatial>
+      <dc:rights xmlns:dc="http://purl.org/dc/elements/1.1/">https://cds.climate.copernicus.eu/api/v2/terms/static/20180314_Copernicus_License_V1.1.pdf</dc:rights>
+      <dc:rights xmlns:dc="http://purl.org/dc/elements/1.1/">Content accessible through the CDS may only be used under the terms of the licenses attributed to each particular resource.</dc:rights>
+      <dct:accessRights xmlns:dct="http://purl.org/dc/terms/">licence</dct:accessRights>
+      <ows:BoundingBox xmlns:ows="http://www.opengis.net/ows">
+        <ows:LowerCorner>-180 -90</ows:LowerCorner>
+        <ows:UpperCorner>180 90</ows:UpperCorner>
+      </ows:BoundingBox>
+    </csw:Record>
+    

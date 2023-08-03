@@ -1,0 +1,55 @@
+{
+  "type": "Collection",
+  "id": "4817b0ca-8729-410d-8c0c-d4ac080d78dc",
+  "stac_version": "1.0.0",
+  "description": "'''DEFINITION'''\n\nThe OMI_VAR_EXTREME_SL_IBI_slev_mean_and_anomaly_obs indicator is based on the computation of the 99th and the 1st percentiles from in situ data (observations). It is computed for the variable sea level measured by tide gauges along the coast. The use of percentiles instead of annual maximum and minimum values, makes this extremes study less affected by individual data measurement errors. The annual percentiles referred to annual mean sea level are temporally averaged and their spatial evolution is displayed in the dataset omi_var_extreme_sl_ibi_slev_mean_and_anomaly_obs, jointly with the anomaly in the target year. This study of extreme variability was first applied to sea level variable (Pérez Gómez et al 2016) and then extended to other essential variables, sea surface temperature and significant wave height (Pérez Gómez et al 2018).\n\n'''CONTEXT'''\nSea level  is one of the Essential Ocean Variables most affected by climate change. Global mean sea level rise has accelerated since the 1990’s (Abram et al., 2019, Legeais et al., 2020), due to the increase of ocean temperature and mass volume caused by land ice melting (WCRP, 2018). Basin scale oceanographic and meteorological features lead to regional variations of this trend that combined with changes in the frequency and intensity of storms could also rise extreme sea levels up to one metre by the end of the century (Vousdoukas et al., 2020). This will significantly increase coastal vulnerability to storms, with important consequences on the extent of flooding events, coastal erosion and damage to infrastructures caused by waves.\n\n'''CMEMS KEY FINDINGS'''\nThe completeness index criteria is fulfilled by 52 stations, a significant increase with respect to those available in 2019 (17). Most of these new stations belong to UK, Ireland and France, and their reprocessed timeseries are now provided in product  INSITU_GLO_PHY_SSH_DISCRETE_MY_013_053. The mean 99th percentiles reflect the great tide spatial variability around the UK and the north of France. Minimum values are obseved in the Irish coast (e.g.: 0.66 m above mean sea level in Arklow Harbour), South of England (e.g.: 0.70 m above mean sea level in Bournemouth), and the Canary Islands (e.g.: 0.96 m above mean sea level in Hierro). Maximum values are observed in the Bristol and English Channels (e.g.: 6.25 m and 5.16 m above mean sea level in Newport and St. Helier, respectively). The standard deviation reflects the south-north increase of storminess, ranging between 2 cm in the Canary Islands to 12 cm in Newport. Positive anomalies of 2020 99th percentile are observed for most of the stations, increasing northwards from 1-2 cm in the Canary Islands to 16 cm in Workington (Irish Sea). A negative anomaly of -3 cm is observed in Bonanza (Gulf of Cadiz, Guadalquivir river mouth).  \n\n'''DOI (product):''' \nhttps://doi.org/10.48670/moi-00253",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "ftp://my.cmems-du.eu/Core/OMI_VAR_EXTREME_SL_IBI_slev_mean_and_anomaly_obs/omi_var_extreme_sl_ibi_slev_mean_and_anomaly_obs",
+      "type": "WWW:FTP",
+      "title": "omi_var_extreme_sl_ibi_slev_mean_and_anomaly_obs"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://mdl1.marine.copernicus.eu/derived/OMI_VAR_EXTREME_SL_IBI_slev_mean_and_anomaly_obs/omi_var_extreme_sl_ibi_slev_mean_and_anomaly_obs_202211/omi_var_extreme_sl_ibi_slev_mean_and_anomaly_obs.nc",
+      "type": "MYO:MOTU-DGF",
+      "title": "omi_var_extreme_sl_ibi_slev_mean_and_anomaly_obs"
+    }
+  ],
+  "title": "Iberia Biscay Ireland Sea Level extreme from Observations Reprocessing",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -23.0,
+          26.0,
+          14.0,
+          56.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1993-01-01T00:00:00Z",
+          "2020-12-31T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "providers": [
+    {
+      "name": "Copernicus Marine Service",
+      "description": "Copernicus Marine Service - Mercator Ocean Internations",
+      "roles": [
+        "licensor",
+        "producer",
+        "processor",
+        "host"
+      ],
+      "url": "https://marine.copernicus.eu/"
+    }
+  ]
+}

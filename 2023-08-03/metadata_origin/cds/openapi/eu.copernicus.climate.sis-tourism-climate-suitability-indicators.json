@@ -1,0 +1,299 @@
+{
+    "slug": "climate-suitability-indicators-for-tourism-from-1970-to-2100-over-europe-derived-from-climate-projections",
+    "name": "sis-tourism-climate-suitability-indicators",
+    "id": "eu.copernicus.climate.sis-tourism-climate-suitability-indicators",
+    "type": "dataset",
+    "rich_abstract": "<div class='abstract-text'>\n         <hr />\n<p>This dataset provides a set of climate suitability indicators for tourism in Europe under future climate scenarios. These indicators have been tailored for two different kinds of tourism activities; urban and beach tourism. The climatic suitability indicators consist of two indices; the Holiday Climate Index (HCI) rates the climate resources based on activities associated with urban tourism, while the Climate Index for Tourism (CIT) rates the climate resources based on activities associated with beach tourism. Tailored indicators, such as these, allow a range of climatic variables to be quantified and ranked for particular tourist destinations and activities, serving as an important decision-making tool for both tourists and the tourism industry. The use of indicators is particularly valuable given the multifaceted nature of meteorological conditions and the complex manner in which they determine tourism activities. By integrating these indicators with climate projections, this dataset aims to provide an understanding of how the influence of a changing climate will impact on tourism activities in Europe under a range of future scenarios of greenhouse gas concentrations, referred to as Representative Concentration Pathway (RCP) climate scenarios. This dataset was produced using four different climate scenarios: the present climate (labelled 'historical'), and three Representative Concentration Pathway (RCP) scenarios consistent with an optimistic emission scenario where emissions start declining beyond 2020 (RCP2.6), a scenario where emissions start declining beyond 2040 (RCP4.5) and a pessimistic scenario where emissions continue to rise throughout the century (RCP8.5).</p>\n<p>The climate projections are derived from EURO-CORDEX ensemble model output. Also included in this dataset are historical simulations for the period 1970-2005 in order to provide a reference period for the future projections. Both these indices take into account different climate variables (daily precipitation, wind speed, total cloud cover, and effective temperature) to evaluate the climate in relation to tourism. To each of these climate variables, a score is assigned according to their weighting criteria. The scores are then aggregated, resulting in a total rating scale ranging from 0 to 100 for HCI, and from 0 to 7 for CIT (please refer to the documentation for further details). In general, the higher the value of the indicators, the more suitable for tourism activities the seasonal conditions are.</p>\n<p>This dataset was produced on behalf of the Copernicus Climate Change Service.</p>\n         \n         \n            <p></p>\n            <table class=\"abstract-description abstract-table\">\n            <tr><th colspan=\"2\">DATA DESCRIPTION</th>\n            \n<tr><th>Data type</th><td>Gridded</td></tr>\n<tr><th>Projection</th><td>Regular latitude-longitude grid</td></tr>\n<tr><th>Horizontal coverage</th><td>Europe (27\u00b0N to 72\u00b0N and 22\u00b0W to 45\u00b0E)</td></tr>\n<tr><th>Horizontal resolution</th><td>0.11\u00b0 x 0.11\u00b0</td></tr>\n<tr><th>Vertical coverage</th><td>Surface</td></tr>\n<tr><th>Vertical resolution</th><td>Single level</td></tr>\n<tr><th>Temporal coverage</th><td>From 1970 to 2100</td></tr>\n<tr><th>Temporal resolution</th><td>Daily, dekadal, monthly and seasonal</td></tr>\n<tr><th>File format</th><td>NetCDF-4</td></tr>\n<tr><th>Conventions</th><td>Climate and Forecast (CF) Metadata Convention v1.7</td></tr>\n<tr><th>Update frequency</th><td>No updates expected</td></tr>\n</table>\n\n    <p></p>\n    <table class=\"abstract-variables abstract-table\">\n    <tr><th colspan=\"3\">MAIN VARIABLES</th>\n    \n\n    <tr><th class='variables-name'>Name</th><th class='variables-units'>Units</th><th class='variables-description'>Description</th></tr>\n    \n<tr><td class='variables-name'>Daily index</td><td class='variables-units'>Dimensionless</td><td class='variables-description'>A set of bioclimatic indicators designed to assess whether climate conditions are suitable for tourism activities. This dataset contains the Holiday Climate Index, formulated to evaluate conditions for typical urban tourism activities, and the Climate Index for Tourism, used to rate beach tourism activities. The index value is calculated on a daily timestep for the 5-year period selected.</td></tr>\n<tr><td class='variables-name'>Number of fair days</td><td class='variables-units'>Count</td><td class='variables-description'>Number of days per month where the index value falls within the range assigned \"fair\" in the definition of the selected comfort index (Holiday Climate Index [50&lt; HCI &lt;70] or Climate Index for Tourism [CIT=4]).</td></tr>\n<tr><td class='variables-name'>Number of good days</td><td class='variables-units'>Count</td><td class='variables-description'>Number of days per month where the index value falls within the range assigned \"good\" in the definition of the selected comfort index (Holiday Climate Index [HCI&gt;70] or Climate Index for Tourism [CIT&gt;4]).</td></tr>\n<tr><td class='variables-name'>Number of unfavourable days</td><td class='variables-units'>Count</td><td class='variables-description'>Number of days per month where the index value falls within the range assigned \"unfavourable\" in the definition of the selected comfort index (Holiday Climate Index [HCI&lt;50] or Climate Index for Tourism [CIT&lt;4]).</td></tr>\n</table>\n    </div>",
+    "terms": [
+        "licence-to-use-copernicus-products"
+    ],
+    "constraints": [
+        {
+            "climate_index": [
+                "climate_index_for_tourism",
+                "holiday_climate_index"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "period": [
+                "1986_2005"
+            ],
+            "product_type": [
+                "multi_model_10th_percentile",
+                "multi_model_90th_percentile",
+                "multi_model_mean"
+            ],
+            "time_aggregation": [
+                "winter",
+                "summer",
+                "spring",
+                "monthly",
+                "autumn",
+                "10_day"
+            ],
+            "variable": [
+                "daily_index"
+            ]
+        },
+        {
+            "climate_index": [
+                "climate_index_for_tourism",
+                "holiday_climate_index"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "period": [
+                "1986_2005"
+            ],
+            "product_type": [
+                "multi_model_10th_percentile",
+                "multi_model_90th_percentile",
+                "multi_model_mean"
+            ],
+            "time_aggregation": [
+                "monthly"
+            ],
+            "variable": [
+                "number_of_fair_days",
+                "number_of_good_days",
+                "number_of_unfavourable_days"
+            ]
+        },
+        {
+            "climate_index": [
+                "climate_index_for_tourism",
+                "holiday_climate_index"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "gcm": [
+                "cnrm_cm5",
+                "ec_earth",
+                "ipsl_cm5a_mr",
+                "hadgem2_es",
+                "mpi_esm_lr",
+                "noresm1_m"
+            ],
+            "period": [
+                "1970_1970",
+                "1971_1975",
+                "1976_1980",
+                "1981_1985",
+                "1986_1990",
+                "1991_1995",
+                "1996_2000",
+                "2001_2005"
+            ],
+            "product_type": [
+                "single_model"
+            ],
+            "variable": [
+                "number_of_fair_days",
+                "number_of_good_days",
+                "daily_index",
+                "number_of_unfavourable_days"
+            ]
+        },
+        {
+            "climate_index": [
+                "climate_index_for_tourism",
+                "holiday_climate_index"
+            ],
+            "experiment": [
+                "rcp2_6"
+            ],
+            "gcm": [
+                "ec_earth",
+                "hadgem2_es",
+                "mpi_esm_lr"
+            ],
+            "period": [
+                "2006_2010",
+                "2011_2015",
+                "2016_2020",
+                "2021_2025",
+                "2026_2030",
+                "2031_2035",
+                "2036_2040",
+                "2041_2045",
+                "2046_2050",
+                "2051_2055",
+                "2056_2060",
+                "2061_2065",
+                "2066_2070",
+                "2071_2075",
+                "2076_2080",
+                "2081_2085",
+                "2086_2090",
+                "2091_2095",
+                "2096_2100"
+            ],
+            "product_type": [
+                "single_model"
+            ],
+            "variable": [
+                "number_of_fair_days",
+                "number_of_good_days",
+                "daily_index",
+                "number_of_unfavourable_days"
+            ]
+        },
+        {
+            "climate_index": [
+                "climate_index_for_tourism",
+                "holiday_climate_index"
+            ],
+            "experiment": [
+                "rcp2_6",
+                "rcp4_5",
+                "rcp8_5"
+            ],
+            "period": [
+                "2021_2040",
+                "2041_2060",
+                "2081_2100"
+            ],
+            "product_type": [
+                "multi_model_10th_percentile",
+                "multi_model_90th_percentile",
+                "multi_model_mean"
+            ],
+            "time_aggregation": [
+                "winter",
+                "summer",
+                "spring",
+                "monthly",
+                "autumn",
+                "10_day"
+            ],
+            "variable": [
+                "daily_index"
+            ]
+        },
+        {
+            "climate_index": [
+                "climate_index_for_tourism",
+                "holiday_climate_index"
+            ],
+            "experiment": [
+                "rcp2_6",
+                "rcp4_5",
+                "rcp8_5"
+            ],
+            "period": [
+                "2021_2040",
+                "2041_2060",
+                "2081_2100"
+            ],
+            "product_type": [
+                "multi_model_10th_percentile",
+                "multi_model_90th_percentile",
+                "multi_model_mean"
+            ],
+            "time_aggregation": [
+                "monthly"
+            ],
+            "variable": [
+                "number_of_fair_days",
+                "number_of_good_days",
+                "number_of_unfavourable_days"
+            ]
+        },
+        {
+            "climate_index": [
+                "climate_index_for_tourism",
+                "holiday_climate_index"
+            ],
+            "experiment": [
+                "rcp4_5"
+            ],
+            "gcm": [
+                "cnrm_cm5",
+                "ec_earth",
+                "ipsl_cm5a_mr",
+                "hadgem2_es",
+                "mpi_esm_lr"
+            ],
+            "period": [
+                "2006_2010",
+                "2011_2015",
+                "2016_2020",
+                "2021_2025",
+                "2026_2030",
+                "2031_2035",
+                "2036_2040",
+                "2041_2045",
+                "2046_2050",
+                "2051_2055",
+                "2056_2060",
+                "2061_2065",
+                "2066_2070",
+                "2071_2075",
+                "2076_2080",
+                "2081_2085",
+                "2086_2090",
+                "2091_2095",
+                "2096_2100"
+            ],
+            "product_type": [
+                "single_model"
+            ],
+            "variable": [
+                "number_of_fair_days",
+                "number_of_good_days",
+                "daily_index",
+                "number_of_unfavourable_days"
+            ]
+        },
+        {
+            "climate_index": [
+                "climate_index_for_tourism",
+                "holiday_climate_index"
+            ],
+            "experiment": [
+                "rcp8_5"
+            ],
+            "gcm": [
+                "cnrm_cm5",
+                "ec_earth",
+                "ipsl_cm5a_mr",
+                "hadgem2_es",
+                "mpi_esm_lr",
+                "noresm1_m"
+            ],
+            "period": [
+                "2006_2010",
+                "2011_2015",
+                "2016_2020",
+                "2021_2025",
+                "2026_2030",
+                "2031_2035",
+                "2036_2040",
+                "2041_2045",
+                "2046_2050",
+                "2051_2055",
+                "2056_2060",
+                "2061_2065",
+                "2066_2070",
+                "2071_2075",
+                "2076_2080",
+                "2081_2085",
+                "2086_2090",
+                "2091_2095",
+                "2096_2100"
+            ],
+            "product_type": [
+                "single_model"
+            ],
+            "variable": [
+                "number_of_fair_days",
+                "number_of_good_days",
+                "daily_index",
+                "number_of_unfavourable_days"
+            ]
+        }
+    ]
+}

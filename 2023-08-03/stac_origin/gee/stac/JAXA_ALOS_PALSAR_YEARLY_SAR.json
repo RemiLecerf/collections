@@ -1,0 +1,193 @@
+{
+    "description": "A newer version of this dataset with data for 2015-2021 can be found in\n[JAXA/ALOS/PALSAR/YEARLY/SAR](JAXA_ALOS_PALSAR_YEARLY_SAR_EPOCH.html)\n\nThe global 25m PALSAR/PALSAR-2 mosaic is a seamless global\nSAR image created by mosaicking strips of SAR imagery\nfrom PALSAR/PALSAR-2. For each year and location,\nthe strip data were selected through visual inspection of the\nbrowse mosaics available over the period, with those showing minimum\nresponse to surface moisture preferentially used. In cases\nwhere the availability was limited (e.g., because of the requirement\nfor observations during specific emergencies), data were necessarily\nselected from the year before or after, including from 2006.\n[Shimada et al. 2014](https://doi.org/10.1016/j.rse.2014.04.014)\n\nThe SAR imagery was ortho-rectificatied and slope corrected\nusing the 90m SRTM Digital Elevation Model.\nA destriping process (Shimada & Isoguchi, 2002, 2010) was applied\nto equalize the intensity differences between neighboring strips,\noccurring largely due to seasonal and daily differences\nin surface moisture conditions.\n\nPolarization data are stored as 16-bit digital numbers (DN).\nThe DN values can be converted to gamma naught values\nin decibel unit (dB) using the following equation:\n\n  *    &#947;&#8320; = 10log&#8321;&#8320;(DN&#178;) - 83.0 dB\n\nAttention:\n\n*   Backscatter values may vary significantly from path to path\n    over high latitude forest areas. This is due to the change of\n    backscattering intensity caused by freezing trees in winter.\n\nMore information is available in the provider's\n[Dataset Description](https://www.eorc.jaxa.jp/ALOS/en/palsar_fnf/DatasetDescription_PALSAR2_Mosaic_FNF_revH.pdf).\n",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2007-01-01T00:00:00Z",
+                    "2021-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "gee:terms_of_use": "JAXA retains ownership of the dataset and cannot guarantee\nany problem caused by or possibly caused by using the datasets.\nAnyone wishing to publish any results using the datasets should\nclearly acknowledge the ownership of the data in the publication.\n",
+    "gee:type": "image_collection",
+    "id": "JAXA/ALOS/PALSAR/YEARLY/SAR",
+    "keywords": [
+        "alos",
+        "alos2",
+        "eroc",
+        "jaxa",
+        "palsar",
+        "palsar2",
+        "sar"
+    ],
+    "license": "proprietary",
+    "links": [
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections/JAXA/ALOS/PALSAR/YEARLY/SAR",
+            "rel": "self",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections",
+            "rel": "parent",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/",
+            "rel": "root",
+            "type": "application/json"
+        },
+        {
+            "code": "JavaScript",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/JAXA/JAXA_ALOS_PALSAR_YEARLY_SAR",
+            "rel": "related",
+            "title": "Run the example for JAXA/ALOS/PALSAR/YEARLY/SAR in the Earth Engine Code Editor",
+            "type": "text/html"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/images/JAXA/JAXA_ALOS_PALSAR_YEARLY_SAR_sample.png",
+            "rel": "preview",
+            "type": "image/png"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/JAXA_ALOS_PALSAR_YEARLY_SAR#terms-of-use",
+            "rel": "license",
+            "type": "text/html"
+        }
+    ],
+    "providers": [
+        {
+            "name": "JAXA EORC",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.eorc.jaxa.jp/ALOS/en/palsar_fnf/fnf_index.htm"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/JAXA_ALOS_PALSAR_YEARLY_SAR"
+        }
+    ],
+    "sci:citation": "Masanobu Shimada, Takuya Itoh, Takeshi Motooka, Manabu Watanabe,\nShiraishi Tomohiro, Rajesh Thapa, and Richard Lucas, \"New Global\nForest/Non-forest Maps from ALOS PALSAR Data (2007-2010)\", Remote Sensing\nof Environment, 155, pp. 13-31, December 2014.\n[doi:10.1016/j.rse.2014.04.014.](https://doi.org/10.1016/j.rse.2014.04.014)\n",
+    "stac_extensions": [
+        "collection-assets"
+    ],
+    "stac_version": "1.0.0",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "HH polarization backscattering coefficient, 16-bit DN.",
+                "name": "HH"
+            },
+            {
+                "description": "HV polarization backscattering coefficient, 16-bit DN.",
+                "name": "HV"
+            },
+            {
+                "description": "Local incidence angle.",
+                "gee:units": "deg",
+                "name": "angle"
+            },
+            {
+                "description": "Observation date (days since Jan 1, 1970).",
+                "name": "date"
+            },
+            {
+                "description": "Processing information.",
+                "gee:classes": [
+                    {
+                        "color": "000000",
+                        "description": "No data"
+                    },
+                    {
+                        "color": "0000ff",
+                        "description": "Ocean and water",
+                        "value": 50
+                    },
+                    {
+                        "color": "aaaa00",
+                        "description": "Radar layover",
+                        "value": 100
+                    },
+                    {
+                        "color": "005555",
+                        "description": "Radar shadowing",
+                        "value": 150
+                    },
+                    {
+                        "color": "aa9988",
+                        "description": "Land",
+                        "value": 255
+                    }
+                ],
+                "name": "qa"
+            }
+        ],
+        "gsd": [
+            25
+        ]
+    },
+    "title": "Global PALSAR-2/PALSAR Yearly Mosaic, version 1",
+    "type": "Collection",
+    "version": "1",
+    "cube:dimensions": {
+        "x": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                -180,
+                180
+            ]
+        },
+        "y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                -90,
+                90
+            ]
+        },
+        "t": {
+            "type": "temporal",
+            "extent": [
+                "2007-01-01T00:00:00Z",
+                "2021-01-01T00:00:00Z"
+            ]
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "HH",
+                "HV",
+                "angle",
+                "date",
+                "qa"
+            ]
+        }
+    },
+    "assets": {
+        "preview_4": {
+            "href": "https://developers.google.com/earth-engine/datasets/images/JAXA/JAXA_ALOS_PALSAR_YEARLY_SAR_sample.png",
+            "type": "image/png",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    }
+}

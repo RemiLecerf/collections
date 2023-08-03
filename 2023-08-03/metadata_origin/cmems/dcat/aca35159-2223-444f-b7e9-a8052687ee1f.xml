@@ -1,0 +1,78 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:dct="http://purl.org/dc/terms/" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/aca35159-2223-444f-b7e9-a8052687ee1f">
+        <foaf:primaryTopic rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/resource/a78600a4-a280-47b5-8ddd-0dc8b5e9c9d9"/>
+        <dct:issued>2023-03-29</dct:issued>
+        <dct:modified>2023-03-29</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/srv/eng/xml.metadata.get?uuid=aca35159-2223-444f-b7e9-a8052687ee1f">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork?uuid=aca35159-2223-444f-b7e9-a8052687ee1f">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/resource/a78600a4-a280-47b5-8ddd-0dc8b5e9c9d9">
+        <dct:identifier>a78600a4-a280-47b5-8ddd-0dc8b5e9c9d9</dct:identifier>
+        <dct:title>Baltic Sea Subsurface Temperature trend from Reanalysis</dct:title>
+        <dct:abstract>'''DEFINITION'''
+
+The subsurface temperature trends have been derived from regional reanalysis results for the Baltic Sea (product references BALTICSEA_REANALYSIS_PHY_003_011). Horizontal averaging has been conducted over the Baltic Sea domain (13 °E - 31 °E and 53 °N - 66 °N; excluding the Skagerrak strait). The temperature trend has been obtained through a linear fit for each time series of horizontally averaged annual temperature and at each depth level. 
+
+'''CONTEXT'''
+
+The Baltic Sea is a semi-enclosed sea in North-Eastern Europe. The temperature of the upper mixed layer of the Baltic Sea is characterised by a strong seasonal cycle driven by the annual course of solar radiation (Leppäranta and Myrberg, 2008). The maximum water temperatures in the upper layer are reached in July and August and the minimum during February, when the Baltic Sea becomes partially frozen (CMEMS OMI Baltic Sea Sea Ice Extent, CMEMS OMI Baltic Sea Sea Ice Volume). Seasonal thermocline, developing in the depth range of 10-30 m in spring, reaches its maximum strength in summer and is eroded in autumn. During autumn and winter the Baltic Sea is thermally mixed down to the permanent halocline in the depth range of 60-80 metres (Matthäus, 1984). The 20–50 m thick cold intermediate layer forms below the upper mixed layer in March and is observed until October within the 15-65 m depth range (Chubarenko and Stepanova, 2018; Liblik and Lips, 2011). The deep layers of the Baltic Sea are disconnected from the ventilated upper ocean layers, and temperature variations are predominantly driven by mixing processes and horizontal advection. A warming trend of the sea surface waters is positively correlated with the increasing trend of diffuse attenuation of light (Kd490) and satellite-detected chlorophyll concentration (Kahru et al., 2016). Temperature increase in the water column could accelerate oxygen consumption during organic matter oxidation (Savchuk, 2018). 
+
+'''CMEMS KEY FINDINGS'''
+
+The subsurface temperature over the 1993-2021 period shows warming trends of about 0.05 °C/year at all depths. The largest warming trend of 0.06 °C/year is recorded at the 20 m depth, which corresponds to seasonal thermocline. Similar positive trend is at the depth of 60-70 metres, which corresponds to the depth of the upper part of the permanent halocline. A positive trend in the sea surface waters has been detected since the 1990s (BACCII Author Team, 2015) as well as a decreasing trend of the start day of the spring phytoplankton bloom (Raudsepp et al., 2019; Kahru et al., 2016). From the measurements Savchuk (2018) has calculated the temperature trend of 0.04◦oC/year since 1979 on average in the deep layers (&gt;60m) of the Baltic Proper. The temperature trend in the upper layer of 60-m has the widest confidence interval, which indicates the largest interannual variability in that layer.
+
+'''DOI (product):''' 
+https://doi.org/10.48670/moi-00208</dct:abstract>
+        <dcat:theme rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/thesaurus/iso/topicCategory/oceans"/>
+        <foaf:thumbnail rdf:resource="https://catalogue.marine.copernicus.eu/documents/IMG/BALTIC_OMI_TEMPSAL_Ttz_trend.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((9.00 53.00, 9.00 66.00, 30.00 66.00, 30.00 53.00, 9.00 53.00))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:issued>2019-11-28</dct:issued>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/BAL-DMI-COPENHAGEN-DK"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/BAL-TTU-TALLINN-EE"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/BAL-SMHI-NORRKOPING-SE"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/BAL-SMHI-NORRKOPING-SE"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/MOI-OMI-SERVICE"/>
+        <dct:accrualPeriodicity>annually</dct:accrualPeriodicity>
+        <dct:license>otherRestrictions</dct:license>
+        <dct:license>license</dct:license>
+        <dct:license>No limitations on public access</dct:license>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/BALTIC_OMI_TEMPSAL_Ttz_trend/baltic_omi_tempsal_Ttz_area_averaged_trend"/>
+        <dcat:distribution rdf:resource="https://mdl1.marine.copernicus.eu/derived/BALTIC_OMI_TEMPSAL_Ttz_trend/baltic_omi_tempsal_Ttz_area_averaged_trend_202211/baltic_omi_tempsal_ttz_area_averaged_trend_P20220721_R19932021.nc"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/aebb5c37-8308-48ae-a126-2b234015e4c0"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/b5d58b7c-5932-4d11-86d3-89f7c50fcad5"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/441e5871-fcfc-4d40-8aaf-fdfcd58f3634"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dcat:dataQuality>The myOcean products depends on other products for production or validation. The detailed list of dependencies is given in ISO19115's aggregationInfo (ISO19139 Xpath = "gmd:MD_Metadata/gmd:identificationInfo/gmd:aggregationInfo[./gmd:MD_AggregateInformation/gmd:initiativeType/gmd:DS_InitiativeTypeCode/@codeListValue='upstream-validation' or 'upstream-production']")</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+    

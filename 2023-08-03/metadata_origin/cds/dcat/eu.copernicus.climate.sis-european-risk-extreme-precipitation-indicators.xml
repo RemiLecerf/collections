@@ -1,0 +1,64 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dct="http://purl.org/dc/terms/" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/metadata/eu.copernicus.climate.sis-european-risk-extreme-precipitation-indicators">
+        <foaf:primaryTopic rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/resource/10.24381/cds.3a9c4f89"/>
+        <dct:issued>2018-03-28</dct:issued>
+        <dct:modified>2018-03-28</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/srv/eng/xml.metadata.get?uuid=eu.copernicus.climate.sis-european-risk-extreme-precipitation-indicators">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://cds.climate.copernicus.eu:443//geonetwork?uuid=eu.copernicus.climate.sis-european-risk-extreme-precipitation-indicators">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/resource/10.24381/cds.3a9c4f89">
+        <dct:identifier>10.24381/cds.3a9c4f89</dct:identifier>
+        <dct:title>Extreme precipitation risk indicators for Europe and European cities from 1950 to 2019</dct:title>
+        <dct:abstract>The dataset presents climate impact indicators related to extreme precipitation in Europe under current climate conditions. The suite of indicators include recent historic records, recurrence intervals, and other relevant statistical measures to evaluate the magnitude and frequency of extreme precipitation events. These are provided as gridded products, with one product covering the whole of Europe, and the other higher resolution product focused on 20 European cities that were identified as vulnerable to urban pluvial flooding based on stakeholder surveys.
+This dataset makes use of precipitation data available in the Climate Data Store (i.e. E-OBS gridded land-only observational dataset and ERA5 reanalysis) combined with additional datasets capable of improving the spatial and temporal resolution of the precipitation data, making it suitable for pluvial flood analysis at city scales. These are derived from i) the network of meteorological stations included in the European Climate Assessment &amp; Dataset (ECA&amp;D) programme and ii) dynamically downscaled ERA5 reanalysis at 2 km x 2 km (ERA5-2km) using the regional climate model COSMO-CLM and accounting for urban parameterization, specifically performed for the 20 European cities identified as vulnerable to urban pluvial flooding.
+At the European scale, E-OBS and ERA5 precipitation data are used to compute indicators at different temporal resolutions (i.e. daily, monthly, yearly, and 30-year) according to the type of indicator. The precipitation amounts at fixed return periods are also computed for point observations from meteorological stations using the ECA&amp;D network and are then interpolated onto the E-OBS grid. At the city scale, a dynamically downscaled ERA5-2km precipitation data are instead used to derive daily indicators, allowing city stakeholders to detect and rank local extreme precipitation events and evaluate their magnitude.
+This dataset was produced on behalf of the Copernicus Climate Change Service.
+
+Variables in the dataset/application are:
+Maximum 1-day precipitation, Maximum 5-day precipitation, Number of consecutive wet days, Number of precipitation days exceeding 20mm, Number of precipitation days exceeding fixed percentiles, Number of wet days, Precipitation at fixed percentiles, Precipitation at fixed return periods, Standardised precipitation exceeding fixed percentiles, Total precipitation</dct:abstract>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/GEMET%20-%20INSPIRE%20themes%2C%20version%201.0/Meteorological geographical features"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Spatial coverage: Europe"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Variable domain: Land (hydrology)"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Temporal coverage: Past"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Product type: Climate indices"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Provider: Copernicus C3S"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/iso/topicCategory/climatologyMeteorologyAtmosphere"/>
+        <foaf:thumbnail rdf:resource="https://datastore.copernicus-climate.eu/c3s/published-forms-v2/c3sprod/sis-european-risk-extreme-precipitation-indicators/overview.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((-25 35, -25 71, 40 71, 40 35, -25 35))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:temporal>1950-01-01
+          /
+          2019-12-31</dct:temporal>
+        <dct:publisher rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/organization/ECMWF"/>
+        <dct:accrualPeriodicity>asNeeded</dct:accrualPeriodicity>
+        <dct:language>eng</dct:language>
+        <dct:license>licence</dct:license>
+        <dct:license>https://cds.climate.copernicus.eu/api/v2/terms/static/licence-to-use-copernicus-products.pdf</dct:license>
+        <dcat:distribution rdf:resource="https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.3a9c4f89"/>
+        <dcat:distribution rdf:resource="https://confluence.ecmwf.int/x/EsHmE"/>
+        <dcat:dataQuality>C3S - Sectoral Information System</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+    

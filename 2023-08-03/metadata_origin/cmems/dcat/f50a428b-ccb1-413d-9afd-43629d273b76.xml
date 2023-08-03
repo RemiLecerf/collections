@@ -1,0 +1,76 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:dct="http://purl.org/dc/terms/" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/f50a428b-ccb1-413d-9afd-43629d273b76">
+        <foaf:primaryTopic rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/resource/a78600a4-a280-47b5-8ddd-0dc8b5e9c9d9"/>
+        <dct:issued>2023-03-29</dct:issued>
+        <dct:modified>2023-03-29</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/srv/eng/xml.metadata.get?uuid=f50a428b-ccb1-413d-9afd-43629d273b76">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork?uuid=f50a428b-ccb1-413d-9afd-43629d273b76">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/resource/a78600a4-a280-47b5-8ddd-0dc8b5e9c9d9">
+        <dct:identifier>a78600a4-a280-47b5-8ddd-0dc8b5e9c9d9</dct:identifier>
+        <dct:title>North Atlantic Gyre Area Chlorophyll-a time series and trend from Observations Reprocessing</dct:title>
+        <dct:abstract>'''DEFINITION'''
+
+Oligotrophic subtropical gyres are regions of the ocean with low levels of nutrients required for phytoplankton growth and low levels of surface chlorophyll-a whose concentration can be quantified through satellite observations. The gyre boundary has been defined using a threshold value of 0.15 mg m-3 chlorophyll for the Atlantic gyres (Aiken et al. 2016), and 0.07 mg m-3 for the Pacific gyres (Polovina et al. 2008). The area inside the gyres for each month is computed using monthly chlorophyll data from which the monthly climatology is subtracted to compute anomalies.  A gap filling algorithm has been utilized to account for missing data. Trends in the area anomaly are then calculated for the entire study period (September 1997 to December 2021).
+
+'''CONTEXT'''
+
+Oligotrophic gyres of the oceans have been referred to as ocean deserts (Polovina et al. 2008). They are vast, covering approximately 50% of the Earth’s surface (Aiken et al. 2016). Despite low productivity, these regions contribute significantly to global productivity due to their immense size (McClain et al. 2004). Even modest changes in their size can have large impacts on a variety of global biogeochemical cycles and on trends in chlorophyll (Signorini et al. 2015). Based on satellite data, Polovina et al. (2008) showed that the areas of subtropical gyres were expanding. The Ocean State Report (Sathyendranath et al. 2018) showed that the trends had reversed in the Pacific for the time segment from January 2007 to December 2016. 
+
+'''CMEMS KEY FINDINGS'''
+
+The trend in the North Atlantic gyre area for the 1997 Sept – 2021 December period was positive, with a 0.14% year-1 increase in area relative to 2000-01-01 values. This trend has decreased compared with the 1997-2019 trend of 0.39%, and is no longer statistically significant (p&gt;0.05). 
+During the 1997 Sept – 2021 December period, the trend in chlorophyll concentration was negative (-0.21% year-1) inside the North Atlantic gyre relative to 2000-01-01 values. This is a slightly lower rate of change compared with the -0.24%  trend for the 1997-2020 period but is still statistically significant (p&lt;0.05).
+
+'''DOI (product):''' 
+https://doi.org/10.48670/moi-00226</dct:abstract>
+        <dcat:theme rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/thesaurus/iso/topicCategory/oceans"/>
+        <foaf:thumbnail rdf:resource="https://catalogue.marine.copernicus.eu/documents/IMG/OMI_HEALTH_CHL_GLOBAL_OCEANCOLOUR_oligo_nag_area_mean.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((-85.00 5.00, -85.00 45.00, 0.00 45.00, 0.00 5.00, -85.00 5.00))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:issued>2019-11-28</dct:issued>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/OC-CNR-ROMA-IT"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/OC-PML-PLYMOUTH-UK"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/OC-CNR-ROMA-IT"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/OC-PML-PLYMOUTH-UK"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/MOI-OMI-SERVICE"/>
+        <dct:accrualPeriodicity>annually</dct:accrualPeriodicity>
+        <dct:license>otherRestrictions</dct:license>
+        <dct:license>license</dct:license>
+        <dct:license>No limitations on public access</dct:license>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/OMI_HEALTH_CHL_GLOBAL_OCEANCOLOUR_oligo_nag_area_mean/omi_health_chl_global_oceancolour_oligo_nag_area_mean"/>
+        <dcat:distribution rdf:resource="https://mdl1.marine.copernicus.eu/derived/OMI_HEALTH_CHL_GLOBAL_OCEANCOLOUR_oligo_nag_area_mean/omi_health_chl_global_oceancolour_oligo_nag_area_mean_202211/omi_health_chl_global_oceancolour_oligo_nag_area_mean_19970901-20211231_P20220517.nc"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/696d3889-ac46-438f-a397-dd2227c6396b"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/3ef35088-7164-452b-a463-2194a17b68bd"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/06f3ffff-06e0-414b-bbbb-e2d3fbe43508"/>
+        <dcat:dataQuality>The myOcean products depends on other products for production or validation. The detailed list of dependencies is given in ISO19115's aggregationInfo (ISO19139 Xpath = "gmd:MD_Metadata/gmd:identificationInfo/gmd:aggregationInfo[./gmd:MD_AggregateInformation/gmd:initiativeType/gmd:DS_InitiativeTypeCode/@codeListValue='upstream-validation' or 'upstream-production']")</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+    

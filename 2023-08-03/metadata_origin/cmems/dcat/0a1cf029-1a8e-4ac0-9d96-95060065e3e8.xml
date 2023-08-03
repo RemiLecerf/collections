@@ -1,0 +1,64 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:dct="http://purl.org/dc/terms/" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/0a1cf029-1a8e-4ac0-9d96-95060065e3e8">
+        <foaf:primaryTopic rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/resource/0a1cf029-1a8e-4ac0-9d96-95060065e3e8"/>
+        <dct:issued>2022-07-04</dct:issued>
+        <dct:modified>2022-07-04</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/srv/eng/xml.metadata.get?uuid=0a1cf029-1a8e-4ac0-9d96-95060065e3e8">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork?uuid=0a1cf029-1a8e-4ac0-9d96-95060065e3e8">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/resource/0a1cf029-1a8e-4ac0-9d96-95060065e3e8">
+        <dct:identifier>0a1cf029-1a8e-4ac0-9d96-95060065e3e8</dct:identifier>
+        <dct:title>GLOBAL OCEAN GRIDDED L4 SEA SURFACE HEIGHTS AND DERIVED VARIABLES REPROCESSED (COPERNICUS CLIMATE SERVICE)</dct:title>
+        <dct:abstract>'''Short description:''' 
+
+DUACS delayed-time altimeter gridded maps of sea surface heights and derived variables over the global Ocean (https://cds.climate.copernicus.eu/cdsapp#!/dataset/satellite-sea-level-global?tab=overview). The processing focuses on the stability and homogeneity of the sea level record (based on a stable two-satellite constellation) and the product is dedicated to the monitoring of the sea level long-term evolution for climate applications and the analysis of Ocean/Climate indicators. These products are produced and distributed by the Copernicus Climate Change Service (C3S, https://climate.copernicus.eu/).
+
+'''DOI (product):'''
+https://doi.org/10.48670/moi-00145</dct:abstract>
+        <dcat:theme rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/thesaurus/iso/topicCategory/oceans"/>
+        <foaf:thumbnail rdf:resource="https://catalogue.marine.copernicus.eu/documents/IMG/SEALEVEL_GLO_PHY_CLIMATE_L4_MY_008_057.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((-180.00 -90.00, -180.00 90.00, 180.00 90.00, 180.00 -90.00, -180.00 -90.00))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:issued>2012-08-26</dct:issued>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/SL-CLS-TOULOUSE-FR"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/SL-CLS-TOULOUSE-FR"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/SL-CLS-TOULOUSE-FR"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/SL-CLS-TOULOUSE-FR"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/SL-CLS-TOULOUSE-FR"/>
+        <dct:accrualPeriodicity>irregular</dct:accrualPeriodicity>
+        <dct:accrualPeriodicity>annually</dct:accrualPeriodicity>
+        <dct:license>otherRestrictions</dct:license>
+        <dct:license>license</dct:license>
+        <dct:license>No limitations on public access</dct:license>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=SEALEVEL_GLO_PHY_CLIMATE_L4_MY_008_057-TDS&amp;product=c3s_obs-sl_glo_phy-ssh_my_twosat-l4-duacs-0.25deg_P1D"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/dodsC/c3s_obs-sl_glo_phy-ssh_my_twosat-l4-duacs-0.25deg_P1D"/>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/SEALEVEL_GLO_PHY_CLIMATE_L4_MY_008_057/c3s_obs-sl_glo_phy-ssh_my_twosat-l4-duacs-0.25deg_P1D"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/wms/c3s_obs-sl_glo_phy-ssh_my_twosat-l4-duacs-0.25deg_P1D"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/04ff75a4-b0f9-4b51-82d9-8ed5c9f7d809"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/1cfa071a-8562-4d29-95a4-c1fab11d5f3c"/>
+        <dcat:dataQuality>The myOcean products depends on other products for production or validation. The detailed list of dependencies is given in ISO19115's aggregationInfo (ISO19139 Xpath = "gmd:MD_Metadata/gmd:identificationInfo/gmd:aggregationInfo[./gmd:MD_AggregateInformation/gmd:initiativeType/gmd:DS_InitiativeTypeCode/@codeListValue='upstream-validation' or 'upstream-production']")</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+    

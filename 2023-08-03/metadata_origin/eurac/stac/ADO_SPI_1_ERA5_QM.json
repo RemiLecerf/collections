@@ -1,0 +1,124 @@
+{
+    "engine": "WCPS",
+    "stac_version": "0.9.0",
+    "stac_extensions": [
+        "datacube"
+    ],
+    "type": "Collection",
+    "id": "ADO_SPI_1_ERA5_QM",
+    "title": "Standardised Precipitation Index - ERA5_QM SPI-1",
+    "description": "The Standardized Precipitation Index (SPI) represents a standardized measure of what a certain amount of precipitation over the selected time period means in relation to expected amount of precipitation for this period. SPI is used on different time scales (1, 2, 3, 6, 12 months). The value of the SPI index around 0 represents the normal expected conditions regarding the amount of precipitation in the selected time scale compared to the long-term average (1981-2020). Value 1 represents approximately one standard deviation of precipitation amount during wet conditions and -1 denotes about one standard deviation of precipitation amount during dry conditions. Drought is usually defined as period when SPI values fall below -1. Input precipitation data is downscaled from ERA5 reanalysis using quantile mapping. Contains modified Copernicus Climate Change Service information [1978-current year]; Contains modified Copernicus Atmosphere Monitoring Service information [1978-current year].",
+    "keywords": [
+        "SPI",
+        "standardised precipitation index",
+        "precipitation anomalies",
+        "ADO project",
+        "ADO"
+    ],
+    "version": "v1",
+    "license": "CC BY 4.0",
+    "sci:citation": "McKee, T.B., N.J. Doesken and J. Kleist, 1993: The relationship of drought frequency and duration to time scale. In: Proceedings of the Eighth Conference on Applied Climatology, Anaheim, California,17\u201322 January 1993. Boston, American Meteorological Society, 179\u2013184.",
+    "providers": [
+        {
+            "name": "Eurac EO WCS",
+            "url": "http://www.eurac.edu",
+            "roles": [
+                "Host"
+            ]
+        },
+        {
+            "name": "Slovenian Environment Agency - ARSO",
+            "url": "https://www.arso.gov.si/",
+            "roles": [
+                "Processor"
+            ]
+        },
+        {
+            "name": "Zentralanstalt f\u00fcr Meteorologie und Geodynamik - ZAMG",
+            "url": "https://www.zamg.ac.at/cms/de/aktuell",
+            "roles": [
+                "Producer"
+            ]
+        }
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    4.0563685981112565,
+                    42.85381219788743,
+                    17.360182784195487,
+                    50.310634900383555
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1978-12-31T12:00:00Z",
+                    "2022-11-12T12:00:00Z"
+                ]
+            ]
+        }
+    },
+    "links": [
+        {
+            "rel": "licence",
+            "href": "https://creativecommons.org/licenses/by/4.0/",
+            "type": "text/html",
+            "title": "License Link"
+        }
+    ],
+    "cube:dimensions": {
+        "DATE": {
+            "type": "temporal",
+            "extent": [
+                "1978-12-31T12:00:00.000Z",
+                "2022-11-12T12:00:00.000Z"
+            ],
+            "step": "P1D"
+        },
+        "X": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                4.0563685981112565,
+                17.360182784195487
+            ],
+            "reference_system": 3035
+        },
+        "Y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                42.85381219788743,
+                50.310634900383555
+            ],
+            "reference_system": 3035
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "SPI_1"
+            ]
+        }
+    },
+    "summaries": {
+        "constellation": [
+            "N/A"
+        ],
+        "platform": [
+            "N/A"
+        ],
+        "rows": 167,
+        "columns": 202,
+        "instruments": [
+            "N/A"
+        ],
+        "eo:bands": [
+            {
+                "name": "SPI_1"
+            }
+        ]
+    }
+}

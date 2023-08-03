@@ -1,0 +1,57 @@
+{
+    "slug": "water-level-change-indicators-for-the-european-coast-from-1977-to-2100-derived-from-climate-projections",
+    "name": "sis-water-level-change-indicators",
+    "id": "eu.copernicus.climate.sis-water-level-change-indicators",
+    "type": "dataset",
+    "rich_abstract": "<div class='abstract-text'>\n         <hr />\n<p>The dataset presents extreme-value, return period, and percentile indicators for coastal sea levels in a European-wide domain. The indicators are computed from tidal dynamics, storm surge and sea level rise data based upon past observational data and future climate projections. This dataset provides an understanding of the European coastal hydrodynamics under the impact of climate change. It provides added value for various coastal sectors and studies such as port, shipping, and coastal management.</p>\n<p>To compute these indicators, the Deltares Global Tide and Surge Model (GTSM) version 3.0 is used together with regional climate forcing and sea level rise initial conditions. The regional climate forcing employed is the HIRHAM5 model from the Danish Meteorological Institute (DMI), a member of the EURO-CORDEX climate model ensemble, which is downscaled from the global climate model EC-EARTH. By using a regional climate model and a high-resolution forcing field, GTSM is able to produce a more consistent and high quality dataset. In order to assess the impact of climate change, the GTSM model is run for three different climate scenarios: the present climate (labelled 'historical'), and two Representative Concentration Pathway (RCP) scenarios that correspond to an optimistic emission scenario where emissions start declining beyond 2040 (RCP4.5) and a pessimistic scenario where emissions continue to rise throughout the century often called the business-as-usual scenario (RCP8.5). Given that the projections of these climate scenarios are based on a single combination of the regional and global climate models, users of these data should take in consideration that there is an inevitable underestimation of the uncertainty associated with this dataset. In addition to the climate scenarios, a reanalysis dataset is computed by forcing GTSM with ERA5 reanalysis. This provides recent historical water-levels that can be used to look at specific (extreme) events in the past.</p>\n<p>This dataset was produced on behalf of the Copernicus Climate Change Service.</p>\n         \n         \n            <p></p>\n            <table class=\"abstract-description abstract-table\">\n            <tr><th colspan=\"2\">DATA DESCRIPTION</th>\n            \n<tr><th>Data type</th><td>Time-series for a vector of point locations</td></tr>\n<tr><th>Horizontal coverage</th><td>Europe</td></tr>\n<tr><th>Horizontal resolution</th><td><p>Coastal grid points: 0.1\u00b0</p>\n<p>Ocean grid points: 0.25\u00b0, 0.5\u00b0, and 1\u00b0 within 100 km, 500 km, and &gt;500 km of the coastline, respectively</p></td></tr>\n<tr><th>Vertical coverage</th><td>Surface</td></tr>\n<tr><th>Vertical resolution</th><td>Single level</td></tr>\n<tr><th>Temporal coverage</th><td><p>Statistics for ERA5 reanalysis: from 1979 to 2017</p>\n<p>Statistics for historical: from 1977 to 2005</p>\n<p>Statistics for RCP8.5: from 2041 to 2070</p>\n<p>Statistics for RCP4.5: from 2071 to 2100</p></td></tr>\n<tr><th>Temporal resolution</th><td>No temporal resolution as the indicators are derived from the daily series and represents statistics over the temporal coverage</td></tr>\n<tr><th>File format</th><td>NetCDF-4</td></tr>\n<tr><th>Conventions</th><td>Climate and Forecast (CF) Metadata Convention v1.6</td></tr>\n<tr><th>Update frequency</th><td>No updates expected</td></tr>\n</table>\n\n    <p></p>\n    <table class=\"abstract-variables abstract-table\">\n    <tr><th colspan=\"3\">MAIN VARIABLES</th>\n    \n\n    <tr><th class='variables-name'>Name</th><th class='variables-units'>Units</th><th class='variables-description'>Description</th></tr>\n    \n<tr><td class='variables-name'>Annual highest high water</td><td class='variables-units'>m</td><td class='variables-description'>Annual highest high tide including mean sea level and sea level rise. Storm surge caused by atmospheric forcing is not taken into account.</td></tr>\n<tr><td class='variables-name'>Annual lowest low water</td><td class='variables-units'>m</td><td class='variables-description'>Annual lowest low tide including mean sea level and sea level rise. Storm surge caused by atmospheric forcing is not taken into account.</td></tr>\n<tr><td class='variables-name'>Annual mean highest high water</td><td class='variables-units'>m</td><td class='variables-description'>Annual average of the highest high tide of each tidal day (25 hour window) including mean sea level and sea level rise. Storm surge caused by atmospheric forcing is not taken into account.</td></tr>\n<tr><td class='variables-name'>Annual mean lowest low water</td><td class='variables-units'>m</td><td class='variables-description'>Annual average of the lowest low tide of each tidal day (25 hour window) including mean sea level and sea level rise. Storm surge caused by atmospheric forcing is not taken into account.</td></tr>\n<tr><td class='variables-name'>Epoch-mean highest high water</td><td class='variables-units'>m</td><td class='variables-description'>Highest high tide of each tidal day (25 hour window), including mean sea level and sea level rise, averaged over the 30-year period simulated. Storm surge caused by atmospheric forcing is not taken into account.</td></tr>\n<tr><td class='variables-name'>Epoch-mean lowest low water</td><td class='variables-units'>m</td><td class='variables-description'>Lowest low tide of each tidal day (25 hour window), including mean sea level and sea level rise, averaged over the 30-year period simulated. Storm surge caused by atmospheric forcing is not taken into account.</td></tr>\n<tr><td class='variables-name'>Highest astronomical tide</td><td class='variables-units'>m</td><td class='variables-description'>Highest astronomical tide over the 30-year period simulated.</td></tr>\n<tr><td class='variables-name'>Lowest astronomical tide</td><td class='variables-units'>m</td><td class='variables-description'>Lowest astronomical tide over the 30-year period simulated.</td></tr>\n<tr><td class='variables-name'>Mean sea level</td><td class='variables-units'>m</td><td class='variables-description'>Mean sea level including sea level rise observed over the 30-year period simulated. Storm surge caused by atmospheric forcing is not taken into account.</td></tr>\n<tr><td class='variables-name'>Surge level for different percentiles</td><td class='variables-units'>m</td><td class='variables-description'>Storm surge level, defined as the difference between the pure tide and the total water level simulations, for the following percentiles: 10th, 25th, 50th, 75th and 90th.</td></tr>\n<tr><td class='variables-name'>Surge level for different return periods</td><td class='variables-units'>m</td><td class='variables-description'>Storm surge level, defined as the difference between the pure tide and the total water level simulations, for the following return periods: 2, 5, 10, 25, 50 and 100 years. The return period is a standard way of describing the likelihood and severity of an event. It describes the estimated time interval between events of a similar size or intensity.</td></tr>\n<tr><td class='variables-name'>Tidal range</td><td class='variables-units'>m</td><td class='variables-description'>Average tidal range observed over the 30-year period simulated.</td></tr>\n<tr><td class='variables-name'>Total water level for different percentiles</td><td class='variables-units'>m</td><td class='variables-description'>Total water level, including the pure tide and storm surge level, for the following percentiles: 10th, 25th, 50th, 75th and 90th.</td></tr>\n<tr><td class='variables-name'>Total water level for different return periods</td><td class='variables-units'>m</td><td class='variables-description'>Total water level, including tide, surge level and taking future sea level rise into account, for the following return periods: 2, 5, 10, 25, 50 and 100 years. The return period is a standard way of describing the likelihood and severity of an event. It describes the estimated time interval between events of a similar size or intensity.</td></tr>\n</table>\n    </div>",
+    "terms": [
+        "licence-to-use-copernicus-products"
+    ],
+    "constraints": [
+        {
+            "experiment": [
+                "era5_reanalysis",
+                "historical",
+                "rcp4_5",
+                "rcp8_5"
+            ],
+            "variable": [
+                "annual_highest_high_water_level",
+                "annual_lowest_low_water_level",
+                "annual_mean_highest_high_water_level",
+                "annual_mean_lowest_low_water_level",
+                "highest_astronomical_tide",
+                "lowest_astronomical_tide",
+                "epoch_mean_highest_high_water_level",
+                "epoch_mean_lowest_low_water_level",
+                "mean_sea_level",
+                "tidal_range"
+            ]
+        },
+        {
+            "experiment": [
+                "era5_reanalysis",
+                "historical",
+                "rcp4_5",
+                "rcp8_5"
+            ],
+            "statistic": [
+                "10th",
+                "25th",
+                "50th",
+                "75th",
+                "90th",
+                "10_years",
+                "100_years",
+                "2_years",
+                "25_years",
+                "5_years",
+                "50_years"
+            ],
+            "variable": [
+                "surge_level",
+                "total_water_level"
+            ]
+        }
+    ]
+}

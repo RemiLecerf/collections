@@ -1,0 +1,74 @@
+{
+    "type": "Collection",
+    "stac_version": "1.0.0",
+    "id": "urn:eop:VITO:PROBAV_L2A_1KM_HDF_V2",
+    "title": "PROBA-V L2A: 1KM projected segment data, HDF format - Collection 2",
+    "description": "A Level2A product contains the projected Level1C data, i.e. radiometrically and geometrically corrected TOA reflectance values projected on a uniform grid, given per band/camera. The applied coordinate reference system is the \u201cGeographic Lat/Lon\u201d (EPSG:4326)  projection with a spatial resolution of 1 km.",
+    "license": "Products can be freely downloaded after registration / Licence: https://proba-v.vgt.vito.be/en/data-policy",
+    "keywords": [
+        "VITO",
+        "TERRASCOPE",
+        "ESA",
+        "Orthoimagery",
+        "PROBA-V",
+        "VGT",
+        "Level-2",
+        "Radiometry",
+        "Environment",
+        "L2A"
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -179.999,
+                    -56,
+                    179.999,
+                    75
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2013-10-16T00:00:00Z",
+                    "2020-06-30T23:59:59Z"
+                ]
+            ]
+        }
+    },
+    "summaries": {
+        "datetime": {
+            "min": "2013-10-16T00:00:00Z",
+            "max": "2020-06-30T23:59:59Z"
+        },
+        "constellation": [
+            "PROBA-V"
+        ],
+        "instruments": [
+            "VGT"
+        ]
+    },
+    "links": [
+        {
+            "rel": "self",
+            "type": "application/json",
+            "href": "https://services.terrascope.be/stac/collections/urn:eop:VITO:PROBAV_L2A_1KM_HDF_V2"
+        },
+        {
+            "rel": "parent",
+            "type": "application/json",
+            "href": "https://services.terrascope.be/stac/"
+        },
+        {
+            "rel": "items",
+            "type": "application/geo+json",
+            "href": "https://services.terrascope.be/stac/collections/urn:eop:VITO:PROBAV_L2A_1KM_HDF_V2/items"
+        },
+        {
+            "rel": "root",
+            "type": "application/json",
+            "href": "https://services.terrascope.be/stac/"
+        }
+    ]
+}

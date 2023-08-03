@@ -1,0 +1,64 @@
+{
+  "type": "Collection",
+  "id": "eu.copernicus.climate.satellite-fire-radiative-power",
+  "stac_version": "1.0.0",
+  "description": "This dataset provides  active fire (AF) and fire radiative power (FRP) products derived from observations made by the Sea and Land Surface Temperature Radiometer (SLSTR) operating concurrently onboard the European Sentinel-3A and -3B satellites.  These products are generated from  the non-time critical (NTC) Level 2 AF detection and FRP product from European Space Agency (ESA). The AF, FRP and the Burnt Areas are Essential Climate Variables (ECV) from the Global Observing System for Climate (GCOS). Burnt Area is provided through a different catalogue entry.\nThe AF and the FRP products encompass a Level 2 summary product which provides a text-based table summary of the Level 2 AF detection and FRP data collected over the period of one month across the globe. In addition,  three gridded Level 3 ‘synthesis products’ are also provided, each one grids the Level 2 AF and the FRP data at various spatial and temporal resolutions along with some adjustments for cloud cover that blocks the fires from the satellite sensors view. The following gridded products are available:\n\ndaily global Level 3 FRP product generated on a global 0.1 degree resolution grid. AF data coming from observations made by both Sentinel-3A (S3A) and -3B (S3B) have separate layers in this product. Only night-time land observations are included at this moment, the full daytime will be provided in the future once the corresponding NTC Level 2 FRP data are available.\n27 day global Level 3 FRP product also derived at 0.1 degree grid cell resolution but summarising the FRP data from both Sentinel-3A and -3B. This time period matches the Sentinel-3 satellites standard orbital repeat cycle.\nmonthly global Level 3 FRP product which provides global AF detection and FRP data at a grid cell size of 0.25 degrees. This resolution matches the MODIS Climate Modelling Grid (CMG) active fire product.\n\nThe purpose of these AF and FRP products is to provide a summarised and 'easy to use' version of the Level 2 AF and FRP products, as well as providing the AF and FRP information in a consistently gridded format. The latter in particular is designed to be suitable for use in global modelling, trend analysis and model evaluation.\nThe AF and  FRP were produced on behalf of the Copernicus Climate Change Service and have been designed to be broadly comparable with the equivalent Fire Burnt Area product, since they are likely to be used in combination with them to provide a long-term FRP time-series.\n\nVariables in the dataset/application are:\nActive pixels, Fire radiative power, Mean fire radiative power",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.95afd6ae",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Climate Data Store catalogue"
+    },
+    {
+      "rel": "describedby",
+      "href": "#",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "#"
+    }
+  ],
+  "title": "Fire radiative power and active fire pixels from 2020 to present derived from satellite observations",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          0.0,
+          -90.0,
+          360.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2020-01-01T00:00:00Z",
+          "2021-02-28T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Land cover",
+    "Product type: Satellite observations",
+    "Spatial coverage: Global",
+    "Temporal coverage: Past",
+    "Temporal coverage: Present",
+    "Variable domain: Land (biosphere)",
+    "Variable domain: Land (physics)"
+  ],
+  "providers": [
+    {
+      "name": "Climate Data Store - European Centre for Medium-Range Weather Forecasts (ECMWF)",
+      "description": "Climate Data Store - ECMWF",
+      "roles": [
+        "licensor",
+        "producer",
+        "processor",
+        "host"
+      ],
+      "url": "https://cds.climate.copernicus.eu/"
+    }
+  ]
+}

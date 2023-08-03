@@ -1,0 +1,176 @@
+{
+    "description": "The Murray Global Intertidal Change Dataset contains global maps of tidal flat\necosystems produced via a supervised classification of 707,528 Landsat\nArchive images. Each pixel was classified into tidal flat, permanent water\nor other with reference to a globally distributed set of training data.\n\nThe classification was implemented along the entire global coastline\nbetween 60\u00b0 North and 60\u00b0 South from 1 January 1984 to 31 December 2016.\nThe image collection consists consists of a time-series of 11 global maps\nof tidal flats at 30m pixel resolution for set time-periods (1984-1986;\n1987-1989; 1990-1992; 1993-1995; 1996-1998; 1999-2001; 2002-2004;\n2005-2007; 2008-2010; 2011-2013; 2014-2016)\n\nFlag indicating the spatial limits of the implementation of the tidal flat\nclassifier as defined by altitudinal (+100m) and bathymetric (-100m) limits.\n",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -60,
+                    180,
+                    60
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1984-01-01T00:00:00Z",
+                    "2017-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)\n\nThis work is licensed under a Creative Commons Attribution 4.0\nInternational License.\n\nAny use of the intertidal data must include proper acknowledgement,\nincluding citing the associated journal article.\n",
+    "gee:type": "image",
+    "gee:user_uploaded": true,
+    "id": "UQ/murray/Intertidal/v1_1/data_mask",
+    "keywords": [
+        "coastal",
+        "google",
+        "intertidal",
+        "landsat_derived",
+        "murray",
+        "tidal_flats",
+        "uq"
+    ],
+    "license": "CC-BY-4.0",
+    "links": [
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections/UQ/murray/Intertidal/v1_1/data_mask",
+            "rel": "self",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections",
+            "rel": "parent",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/",
+            "rel": "root",
+            "type": "application/json"
+        },
+        {
+            "code": "JavaScript",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/UQ/UQ_murray_Intertidal_v1_1_data_mask",
+            "rel": "related",
+            "title": "Run the example for UQ/murray/Intertidal/v1_1/data_mask in the Earth Engine Code Editor",
+            "type": "text/html"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/images/UQ/UQ_murray_Intertidal_v1_1_data_mask_sample.png",
+            "rel": "preview",
+            "type": "image/png"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/UQ_murray_Intertidal_v1_1_data_mask#terms-of-use",
+            "rel": "license",
+            "type": "text/html"
+        },
+        {
+            "href": "https://doi.org/10.1038/s41586-018-0805-8",
+            "rel": "cite-as"
+        }
+    ],
+    "providers": [
+        {
+            "name": "Murray/UQ/Google/USGS/NASA",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://intertidal.app"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/UQ_murray_Intertidal_v1_1_data_mask"
+        }
+    ],
+    "sci:citation": "Murray, N.J., Phinn, S.R., DeWitt, M., Ferrari, R., Johnston, R., Lyons, M.B.,\nClinton, N., Thau, D. & Fuller, R.A. (2019) The global distribution and\ntrajectory of tidal flats. Nature, 565, 222-225.\n[doi:10.1038/s41586-018-0805-8](https://doi.org/10.1038/s41586-018-0805-8),\n",
+    "sci:doi": "10.1038/s41586-018-0805-8",
+    "sci:publications": [
+        {
+            "citation": "Murray, N. J., Phinn, S. P., Fuller, R. A., DeWitt, M., Ferrari, R.,\nJohnston, R., Clinton, N., & Lyons, M. B. (2022). High-resolution global\nmaps of tidal flat ecosystems from 1984 to 2019. Scientific Data,\n9(1).\n[doi:10.1038/s41597-022-01635-5](https://doi.org/10.1038/s41597-022-01635-5),\n"
+        }
+    ],
+    "stac_extensions": [
+        "collection-assets"
+    ],
+    "stac_version": "1.0.0",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "A flag to indicate data inclusion.",
+                "gee:bitmask": {
+                    "bitmask_parts": [
+                        {
+                            "bit_count": 1,
+                            "description": "Data mask",
+                            "values": [
+                                {
+                                    "description": "No data"
+                                },
+                                {
+                                    "description": "Classified area",
+                                    "value": 1
+                                }
+                            ]
+                        }
+                    ],
+                    "total_bit_count": 1
+                },
+                "gee:units": "occurrence",
+                "name": "datamask"
+            }
+        ],
+        "gsd": [
+            30
+        ]
+    },
+    "title": "Murray Global Intertidal Change Data Mask",
+    "type": "Collection",
+    "version": "v1.1",
+    "cube:dimensions": {
+        "x": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                -180,
+                180
+            ]
+        },
+        "y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                -60,
+                60
+            ]
+        },
+        "t": {
+            "type": "temporal",
+            "extent": [
+                "1984-01-01T00:00:00Z",
+                "2017-01-01T00:00:00Z"
+            ]
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "datamask"
+            ]
+        }
+    },
+    "assets": {
+        "preview_4": {
+            "href": "https://developers.google.com/earth-engine/datasets/images/UQ/UQ_murray_Intertidal_v1_1_data_mask_sample.png",
+            "type": "image/png",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    }
+}

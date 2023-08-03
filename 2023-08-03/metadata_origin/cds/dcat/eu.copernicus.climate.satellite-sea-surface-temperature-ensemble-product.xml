@@ -1,0 +1,74 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dct="http://purl.org/dc/terms/" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/metadata/eu.copernicus.climate.satellite-sea-surface-temperature-ensemble-product">
+        <foaf:primaryTopic rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/resource/10.24381/cds.ab205634"/>
+        <dct:issued>2018-03-28</dct:issued>
+        <dct:modified>2018-03-28</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/srv/eng/xml.metadata.get?uuid=eu.copernicus.climate.satellite-sea-surface-temperature-ensemble-product">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://cds.climate.copernicus.eu:443//geonetwork?uuid=eu.copernicus.climate.satellite-sea-surface-temperature-ensemble-product">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/resource/10.24381/cds.ab205634">
+        <dct:identifier>10.24381/cds.ab205634</dct:identifier>
+        <dct:title>Sea surface temperature daily gridded data from 1981 to 2016 derived from a multi-product satellite-based ensemble</dct:title>
+        <dct:abstract>This dataset provides global daily sea surface temperature (SST) data from the Group for High Resolution Sea Surface Temperature (GHRSST) multi-product ensemble (GMPE) produced by the European Space Agency SST Climate Change Initiative (ESA SST CCI). The GMPE system was designed to allow users to compare the outputs from different SST analysis systems and understand their similarities and differences. Although originally intended for comparison of near real time data, it has also been used to compare long historical datasets. Note that the dataset provided here is the climate version of the GMPE dataset. An operational version, with different input products and time coverage, also exists but is not distributed by the CDS.
+The SST analyses ingested into the GMPE system come from the following seven SST products and providers:
+
+ESA SST CCI Analysis version 2.0
+ESA SST CCI Analysis version 1.1
+Copernicus Marine Environment Monitoring Service (CMEMS) Operational Sea Surface Temperature and Sea Ice Analysis (OSTIA) Reprocessing
+National Centers for Environmental Information (NCEI) Advanced Very High Resolution Radiometer (AVHRR) Optimal Interpolation (OI) Global Blended SST Analysis
+Canada Meteorological Center (CMC) 0.2-degree Global Foundation SST Analysis
+Hadley Centre Sea Ice and Sea Surface Temperature (HadISST) Analysis version 2.2.0.0
+Japan Meteorological Agency (JMA) Merged satellite and in-situ Data Global Daily SST (MGDSST) Analysis
+
+These products are all spatially complete (through use of infilling or reconstruction techniques) but were originally produced for different purposes and with different user requirements in mind. Therefore, each producer has made different choices on aspects of data production such as which input observations to use and what type of SST to represent. For example, the CMEMS OSTIA, CMC, and MGDSST analyses attempt to represent the foundation SST (water temperature free of diurnal temperature variability) while the ESA SST CCI and HadISST analyses estimate the SST at a standard depth of 20 cm. The AVHRR OI product, on the other hand, is bias-corrected to in situ observations and hence will be representative of their depths.
+The GMPE dataset provides the median and standard deviation of the input SST products, the differences between each input product and the median, and the horizontal gradients in each of the input SST products as well as the final ensemble product. The HadISST product consists of 10 different realisations, therefore the median and standard deviation are calculated for an ensemble of 16 input fields. All fields are provided on a common 0.25 degree regular latitude-longitude grid and extend from 1 September 1981 to 31 December 2016, although some of the individual input products cover shorter periods. The dataset will not be extended beyond 2016.
+
+Variables in the dataset/application are:
+Analysed SST, Gradient fields, SST anomaly, SST standard deviation</dct:abstract>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/GEMET%20-%20INSPIRE%20themes%2C%20version%201.0/Atmospheric conditions"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Product type: Satellite observations"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Spatial coverage: Global"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Variable domain: Ocean (physics)"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Temporal coverage: Past"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/iso/topicCategory/climatologyMeteorologyAtmosphere"/>
+        <foaf:thumbnail rdf:resource="https://datastore.copernicus-climate.eu/c3s/published-forms-v2/c3sprod/satellite-sea-surface-temperature-ensemble-product/overview.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((0 -89, 0 89, 360 89, 360 -89, 0 -89))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:temporal>2018-10-18
+          /
+          2000-10-12</dct:temporal>
+        <dct:publisher rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/organization/ECMWF"/>
+        <dct:accrualPeriodicity>asNeeded</dct:accrualPeriodicity>
+        <dct:language>eng</dct:language>
+        <dct:license>licence</dct:license>
+        <dct:license>https://cds.climate.copernicus.eu/api/v2/terms/static/sst-cci-ensemble.pdf</dct:license>
+        <dct:license>https://cds.climate.copernicus.eu/api/v2/terms/static/licence-to-use-copernicus-products.pdf</dct:license>
+        <dcat:distribution rdf:resource="https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.ab205634"/>
+        <dcat:distribution rdf:resource="https://datastore.copernicus-climate.eu/documents/satellite-sea-surface-temperature/C3S_D312a_Lot3.2.2.9_201906_ATBD_SST_GMPE_v1.1.pdf"/>
+        <dcat:distribution rdf:resource="https://datastore.copernicus-climate.eu/documents/satellite-sea-surface-temperature/C3S_D312a_Lot3.3.2.23_201906_PUGS_SST_GMPE_v1.1.pdf"/>
+        <dcat:dataQuality>EC Copernicus program</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+    

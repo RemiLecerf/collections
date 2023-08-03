@@ -1,0 +1,82 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:dct="http://purl.org/dc/terms/" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/1be14a37-3157-4bce-919d-c40796799fd8">
+        <foaf:primaryTopic rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/resource/0a5db440-d278-47a6-8885-b89aabb3f0b3"/>
+        <dct:issued>2023-03-29</dct:issued>
+        <dct:modified>2023-03-29</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/srv/eng/xml.metadata.get?uuid=1be14a37-3157-4bce-919d-c40796799fd8">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork?uuid=1be14a37-3157-4bce-919d-c40796799fd8">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/resource/0a5db440-d278-47a6-8885-b89aabb3f0b3">
+        <dct:identifier>0a5db440-d278-47a6-8885-b89aabb3f0b3</dct:identifier>
+        <dct:title>Global ocean acidification - mean sea water pH trend map from Multi-Observations Reprocessing</dct:title>
+        <dct:abstract>'''DEFINITION'''
+
+This ocean monitoring indicator (OMI) consists of annual mean rates of changes in surface ocean pH (yr-1) computed at 1°×1° resolution from 1985 until the last year. This indicator is derived from monthly pH time series distributed with the Copernicus Marine product MULTIOBS_GLO_BIO_CARBON_SURFACE_REP_015_008 (Chau et al., 2022a). For each grid cell, a linear least-squares regression was used to fit a linear function of pH versus time, where the slope (μ) and residual standard deviation (σ) are defined as estimates of the long-term trend and associated uncertainty. Finally, the estimates of pH associated with the highest uncertainty, i.e.,  σ-to-µ ratio over a threshold of 1  0%, are excluded from the global trend map (see QUID document for detailed description and method illustrations). This threshold is chosen at the 90th confidence level of all ratio values computed across the global ocean.
+
+'''CONTEXT'''
+
+A decrease in surface ocean pH (i.e., ocean acidification) is primarily a consequence of an increase in ocean uptake of atmospheric carbon dioxide (CO2) concentrations that have been augmented by anthropogenic emissions (Bates et al, 2014; Gattuso et al, 2015; Pérez et al, 2021).      As projected in Gattuso et al (2015), “under our current rate of emissions, most marine organisms evaluated will have very high risk of impacts by 2100 and many by 2050”. Ocean acidification is thus an ongoing source of concern due to its strong influence on marine ecosystems (e.g., Doney et al., 2009; Gehlen et al., 2011; Pörtner et al. 2019). Tracking changes in yearly mean values of surface ocean pH at the global scale has become an important indicator of both ocean acidification and global change (Gehlen et al., 2020; Chau et al., 2022b). In line with a sustained establishment of ocean measuring stations and thus a rapid increase in observations of ocean pH and other carbonate variables (e.g. dissolved inorganic carbon, total alkalinity, and CO2 fugacity) since the last decades (Bakker et al., 2016; Lauvset et al., 2021), recent studies including Bates et al (2014), Lauvset et al (2015), and Pérez et al (2021) put attention on analyzing secular trends of pH and their drivers from time-series stations to ocean basins. This OMI consists of the global maps of long-term pH trends and associated 1σ-uncertainty derived from the Copernicus Marine data-based product of monthly surface water pH (Chau et al., 2022a) at 1°×1° grid cells over the global ocean.
+
+'''CMEMS KEY FINDINGS'''
+
+Since 1985, pH has been decreasing at a rate between -0.0008 yr-1 and -0.0022 yr-1 over most of the global ocean basins. Tropical and subtropical regions, the eastern equatorial Pacific excepted, show pH trends falling in the interquartile range of all the trend estimates (between -0.0012 yr-1 and -0.0018 yr-1). pH over the eastern equatorial Pacific decreases much faster, reaching a growth rate larger than -0.0024 yr-1. Such a high rate of change in pH is also observed over a sector south of the Indian Ocean. Part of the polar and subpolar North Atlantic and the Southern Ocean has no significant trend. 
+
+'''DOI (product):''' 
+https://doi.org/10.48670/moi-00277</dct:abstract>
+        <dcat:theme rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/thesaurus/iso/topicCategory/oceans"/>
+        <foaf:thumbnail rdf:resource="https://catalogue.marine.copernicus.eu/documents/IMG/GLOBAL_OMI_HEALTH_carbon_ph_trend.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((-0.50 -82.50, -0.50 89.50, 359.50 89.50, 359.50 -82.50, -0.50 -82.50))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:issued>2018-02-12</dct:issued>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/MULTIOBS-CLS-TOULOUSE-FR"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/MULTIOBS-CLS-TOULOUSE-FR"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/MULTIOBS-CLS-TOULOUSE-FR"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/MULTIOBS-LSCE-GIF-FR"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/MOI-OMI-SERVICE"/>
+        <dct:accrualPeriodicity>annually</dct:accrualPeriodicity>
+        <dct:license>otherRestrictions</dct:license>
+        <dct:license>license</dct:license>
+        <dct:license>No limitations on public access</dct:license>
+        <dcat:distribution rdf:resource="https://mdl1.marine.copernicus.eu/derived/GLOBAL_OMI_HEALTH_carbon_ph_trend/global_omi_health_carbon_ph_trend_202303/global_omi_health_carbon_ph_trend_1985_P20220930.nc"/>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/GLOBAL_OMI_HEALTH_carbon_ph_trend/global_omi_health_carbon_ph_trend"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/aaac4a4d-c782-40b4-b778-f00ab32b65f4"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/78fc6568-0dbf-4d05-a48a-3d93449cfb5b"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/285901b7-7b08-4999-acad-5d5a6a7b054e"/>
+        <dcat:dataQuality>The myOcean products depends on other products for production or validation. The detailed list of dependencies is given in ISO19115's aggregationInfo (ISO19139 Xpath = "gmd:MD_Metadata/gmd:identificationInfo/gmd:aggregationInfo[./gmd:MD_AggregateInformation/gmd:initiativeType/gmd:DS_InitiativeTypeCode/@codeListValue='upstream-validation' or 'upstream-production']")</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+    

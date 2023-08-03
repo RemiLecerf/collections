@@ -1,0 +1,117 @@
+{
+    "engine": "WCPS",
+    "stac_version": "0.9.0",
+    "stac_extensions": [
+        "datacube"
+    ],
+    "type": "Collection",
+    "id": "ADO_EVAP_ET_MOD16_500m_3035",
+    "title": "MOD16 Evapotranspiration - 500 m",
+    "description": "Operational MODIS ET product over the Alps",
+    "keywords": [
+        "evapotranspiration",
+        "energy balance",
+        "MOD16",
+        "ADO project",
+        "ADO"
+    ],
+    "version": "v1",
+    "license": "CC-BY-4.0",
+    "sci:citation": "Running, S., Mu, Q., Zhao, M. (2017). MOD16A2 MODIS/Terra Net Evapotranspiration 8-Day L4 Global 500m SIN Grid V006 [Data set]. NASA EOSDIS Land Processes DAAC. Accessed 2020-11-30 from https://doi.org/10.5067/MODIS/MOD16A2.006",
+    "providers": [
+        {
+            "name": "eurac research",
+            "url": "http://www.eurac.edu",
+            "roles": [
+                "Host"
+            ]
+        },
+        {
+            "name": "United States Geological Survey (USGS)",
+            "url": "https://lpdaac.usgs.gov/data/",
+            "roles": [
+                "Producer"
+            ]
+        }
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    3.524198708888087,
+                    42.78572484225132,
+                    18.107870367304482,
+                    50.565575583899765
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2001-01-01T00:00:00Z",
+                    "2019-12-27T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "links": [
+        {
+            "rel": "licence",
+            "href": "https://creativecommons.org/licenses/by/4.0/",
+            "type": "text/html",
+            "title": "License Link"
+        }
+    ],
+    "cube:dimensions": {
+        "DATE": {
+            "type": "temporal",
+            "extent": [
+                "2001-01-01T00:00:00.000Z",
+                "2019-12-27T00:00:00.000Z"
+            ],
+            "step": "P8D"
+        },
+        "X": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                3.524198708888087,
+                18.107870367304482
+            ],
+            "reference_system": 3035
+        },
+        "Y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                42.78572484225132,
+                50.565575583899765
+            ],
+            "reference_system": 3035
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "Evapotranspiration"
+            ]
+        }
+    },
+    "summaries": {
+        "constellation": [
+            "Aqua, Terra"
+        ],
+        "platform": [
+            "Aqua, Terra"
+        ],
+        "rows": 2005,
+        "columns": 2536,
+        "instruments": [
+            "MODIS"
+        ],
+        "eo:bands": [
+            {
+                "name": "Evapotranspiration"
+            }
+        ]
+    }
+}

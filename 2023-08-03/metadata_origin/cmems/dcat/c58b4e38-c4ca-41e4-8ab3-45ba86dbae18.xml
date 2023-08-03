@@ -1,0 +1,90 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:dct="http://purl.org/dc/terms/" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/c58b4e38-c4ca-41e4-8ab3-45ba86dbae18">
+        <foaf:primaryTopic rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/resource/a78600a4-a280-47b5-8ddd-0dc8b5e9c9d9"/>
+        <dct:issued>2023-03-29</dct:issued>
+        <dct:modified>2023-03-29</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/srv/eng/xml.metadata.get?uuid=c58b4e38-c4ca-41e4-8ab3-45ba86dbae18">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork?uuid=c58b4e38-c4ca-41e4-8ab3-45ba86dbae18">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/resource/a78600a4-a280-47b5-8ddd-0dc8b5e9c9d9">
+        <dct:identifier>a78600a4-a280-47b5-8ddd-0dc8b5e9c9d9</dct:identifier>
+        <dct:title>Iberia Biscay Ireland Sea Surface Temperature extreme from Reanalysis</dct:title>
+        <dct:abstract>'''DEFINITION'''
+
+The CMEMS IBI_OMI_tempsal_extreme_var_temp_mean_and_anomaly OMI indicator is based on the computation of the annual 99th percentile of Sea Surface Temperature (SST) from model data. Two different CMEMS products are used to compute the indicator: The Iberia-Biscay-Ireland Multi Year Product (IBI_MULTIYEAR_PHY_005_002) and the Analysis product (IBI_ANALYSISFORECAST_PHY_005_001).
+Two parameters have been considered for this OMI:
+•	Map of the 99th mean percentile: It is obtained from the Multi Year Product, the annual 99th percentile is computed for each year of the product. The percentiles are temporally averaged over the whole period (1993-2019).
+•	Anomaly of the 99th percentile in 2020: The 99th percentile of the year 2020 is computed from the Analysis product. The anomaly is obtained by subtracting the mean percentile from the 2020 percentile.
+This indicator is aimed at monitoring the extremes of sea surface temperature every year and at checking their variations in space. The use of percentiles instead of annual maxima, makes this extremes study less affected by individual data. This study of extreme variability was first applied to the sea level variable (Pérez Gómez et al 2016) and then extended to other essential variables, such as sea surface temperature and significant wave height (Pérez Gómez et al 2018 and Alvarez Fanjul et al., 2019). More details and a full scientific evaluation can be found in the CMEMS Ocean State report (Alvarez Fanjul et al., 2019).
+
+'''CONTEXT'''
+
+The Sea Surface Temperature is one of the essential ocean variables, hence the monitoring of this variable is of key importance, since its variations can affect the ocean circulation, marine ecosystems, and ocean-atmosphere exchange processes. As the oceans continuously interact with the atmosphere, trends of sea surface temperature can also have an effect on the global climate. While the global-averaged sea surface temperatures have increased since the beginning of the 20th century (Hartmann et al., 2013) in the North Atlantic, anomalous cold conditions have also been reported since 2014 (Mulet et al., 2018; Dubois et al., 2018).
+
+The IBI area is a complex dynamic region with a remarkable variety of ocean physical processes and scales involved. The Sea Surface Temperature field in the region is strongly dependent on latitude, with higher values towards the South (Locarnini et al. 2013). This latitudinal gradient is supported by the presence of the eastern part of the North Atlantic subtropical gyre that transports cool water from the northern latitudes towards the equator. Additionally, the Iberia-Biscay-Ireland region is under the influence of the Sea Level Pressure dipole established between the Icelandic low and the Bermuda high. Therefore, the interannual and interdecadal variability of the surface temperature field may be influenced by the North Atlantic Oscillation pattern (Czaja and Frankignoul, 2002; Flatau et al., 2003).
+Also relevant in the region are the upwelling processes taking place in the coastal margins. The most referenced one is the eastern boundary coastal upwelling system off the African and western Iberian coast (Sotillo et al., 2016), although other smaller upwelling systems have also been described in the northern coast of the Iberian Peninsula (Alvarez et al., 2011), the south-western Irish coast (Edwars et al., 1996) and the European Continental Slope (Dickson, 1980).
+
+'''CMEMS KEY FINDINGS'''
+
+In the IBI region, the 99th mean percentile for 1993-2019 shows a north-south pattern driven by the climatological distribution of temperatures in the North Atlantic. In the coastal regions of Africa and the Iberian Peninsula, the mean values are influenced by the upwelling processes (Sotillo et al., 2016). These results are consistent with the ones presented in Álvarez Fanjul et al;, (2019) for the period 1993-2016.
+The anomaly of the 99th percentile in 2021 is mainly positive with values that surpass the climatic standard deviation. However, the anomaly values range from -3°C to 5°C, consequently, results show localised regions where positive and negative anomalies exceeded twice the climatic standard deviation. The higher positive anomalies are spread on the open ocean mainly affecting latitudes from 30°N up to 45°N and from 50°N up to 56°N. The indicator shows negative anomalies higher than twice the mean variability (up to -3°C) in the upwelling regions near the north-west African coast (from 30°N to 33°N).
+
+'''DOI (product):''' 
+https://doi.org/10.48670/moi-00254</dct:abstract>
+        <dcat:theme rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/thesaurus/iso/topicCategory/oceans"/>
+        <foaf:thumbnail rdf:resource="https://catalogue.marine.copernicus.eu/documents/IMG/IBI_OMI_TEMPSAL_extreme_var_temp_mean_and_anomaly.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((-19.00 26.00, -19.00 56.00, 5.00 56.00, 5.00 26.00, -19.00 26.00))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:issued>2020-06-18</dct:issued>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/IBI-PUERTOS-MADRID-ES"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/IBI-PUERTOS-MADRID-ES"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/IBI-PUERTOS-MADRID-ES"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/IBI-PUERTOS-MADRID-ES"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/MOI-OMI-SERVICE"/>
+        <dct:accrualPeriodicity>annually</dct:accrualPeriodicity>
+        <dct:license>otherRestrictions</dct:license>
+        <dct:license>license</dct:license>
+        <dct:license>No limitations on public access</dct:license>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/IBI_OMI_TEMPSAL_extreme_var_temp_mean_and_anomaly/ibi_omi_tempsal_extreme_var_temp_mean_and_anomaly"/>
+        <dcat:distribution rdf:resource="https://mdl1.marine.copernicus.eu/derived/IBI_OMI_TEMPSAL_extreme_var_temp_mean_and_anomaly/ibi_omi_tempsal_extreme_var_temp_mean_and_anomaly_202211/IBI_OMI_TEMPSAL_extreme_var_temp_mean_and_anomaly.nc"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/ac83ef0b-7e46-444b-a984-0f325e021617"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/42cc80b7-2481-40b9-b713-6a05ba2796e9"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/651af724-890c-48ba-b64c-da925712cb33"/>
+        <dcat:dataQuality>The myOcean products depends on other products for production or validation. The detailed list of dependencies is given in ISO19115's aggregationInfo (ISO19139 Xpath = "gmd:MD_Metadata/gmd:identificationInfo/gmd:aggregationInfo[./gmd:MD_AggregateInformation/gmd:initiativeType/gmd:DS_InitiativeTypeCode/@codeListValue='upstream-validation' or 'upstream-production']")</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+  

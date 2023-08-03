@@ -1,0 +1,47 @@
+{
+  "type": "Collection",
+  "id": "EO:EUM:DAT:0407",
+  "stac_version": "1.0.0",
+  "description": "OLCI (Ocean and Land Colour Instrument) Ocean Colour Geophysical Products. Full Resolution: 300m at nadir. All Sentinel-3 NRT products are available at pick-up point in less than 3h. Level 2 marine products include the following: * water-leaving reflectances in 16 bands, Oa**_reflectance (Baseline Atmospheric Correction (BAC) algorithm, bands: 400, 412, 442, 490, 510, 560, 620, 665, 674, 681, 709, 754, 779, 865, 885, 1024 nanometer (nm)); *algal pigment concentration in clear waters, chl_oc4me (BAC and maximum band ratio algorithm, log10 scaled); *algal pigment concentration in turbid waters, chl_nn (neural net algorithm, log10 scaled); *total suspended matter concentration, tsm_nn (neural net algorithm, log10 scaled); *diffuse attenuation coefficient Kd of downward irradiance at 490 nm, trsp (BAC and M07 algorithm, log10 scaled); *absorption coefficient at 443 nm of coloured detrital and dissolved organic matter, iop_nn (neural net algorithm, log10 scaled); *instantaneous photosynthetically active radiation, PAR (BAC and clear-sky ocean algorithm); *aerosol optical thickness T865 and aerosol Angstrom exponent A865, w_aer (BAC algorithm, A for bands 779 and 865 nm) *integrated water vapour column, iwv (1D-Var algorithm). The geophysical products are accompanied by error estimate products. Pixel classification, quality and science flags, as well as meteorological, geometry and geolocation data at tie points are provided. \n\n- All Sentinel-3 NRT products are available at pick-up point in less than 3h\n- All Sentinel-3 Non Time Critical (NTC) products are available at pick-up point in less than 30 days\nSentinel-3 is part of a series of Sentinel satellites, under the umbrella of the EU Copernicus programme.",
+  "links": [],
+  "title": "OLCI Level 2 Ocean Colour Full Resolution - Sentinel-3",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2017-07-05T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Level 2 Data",
+    "Ocean",
+    "Ocean Colour"
+  ],
+  "providers": [
+    {
+      "name": "European Organisation for the Exploitation of Meteorological Satellites (EUMETSAT)",
+      "description": "EUMETSAT Data store",
+      "roles": [
+        "licensor",
+        "producer",
+        "processor",
+        "host"
+      ],
+      "url": "https://data.eumetsat.int/"
+    }
+  ]
+}

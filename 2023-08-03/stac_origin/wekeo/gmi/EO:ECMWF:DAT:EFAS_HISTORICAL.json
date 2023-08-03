@@ -1,0 +1,90 @@
+{
+  "type": "Collection",
+  "id": "EO:ECMWF:DAT:EFAS_HISTORICAL",
+  "stac_version": "1.0.0",
+  "description": "This dataset provides gridded modelled daily hydrological time series forced with meteorological observations. The data set is a consistent representation of the most important hydrological variables across the European Flood Awareness System (EFAS) domain. The temporal resolution is up to 30 years modelled time series of:\n\nRiver discharge\nSoil moisture for three soil layers\nSnow water equivalent\n\nIt also provides static data on soil depth for the three soil layers. Soil moisture and river discharge data are accompanied by ancillary files for interpretation (see related variables and links in the documentation).\nThis dataset was produced by forcing the LISFLOOD hydrological model with gridded observational data of precipitation and temperature at a 5x5 km resolution across the EFAS domain. The most recent version\nuses a 6-hourly time step, whereas older versions uses a 24-hour time step. It is available from 1991-01-01 up until near-real time, with a delay of 6 days. The real-time data is only available to EFAS partners.\nCompanion datasets, also available through the CDS, are forecasts for users who are looking medium-range forecasts, reforecasts for research, local skill assessment and post-processing, and seasonal forecasts and reforecasts for users looking for long-term forecasts. For users looking for global hydrological data, we refer to the Global Flood Awareness System (GloFAS) forecasts and historical simulations. All these datasets are part of the operational flood forecasting within the Copernicus Emergency Management Service (CEMS).\n\nVariables in the dataset/application are:\nRiver discharge in the last 24 hours, River discharge in the last 6 hours, Snow depth water equivalent, Soil depth, Volumetric soil moisture\n\nVariables in the dataset/application are:\nOrography, Upstream area",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://www.efas.eu",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "EFAS web pages (.eu)"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://confluence.ecmwf.int/display/COPSRV/Static+data+files",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Static file for upstream area and orography"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://confluence.ecmwf.int/display/COPSRV/Soil+wetness+index+calculation",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Static Files for soil wetness"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://confluence.ecmwf.int/display/CEMS/European+Flood+Awareness+System",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "EFAS wiki pages"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.e3458969",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Climate Data Store catalogue"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://confluence.ecmwf.int/display/COPSRV/European+Flood+Awareness+System",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "EFAS wiki pages"
+    },
+    {
+      "rel": "describedby",
+      "href": "#",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "#"
+    }
+  ],
+  "title": "River discharge and related historical data from the European Flood Awareness System",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1991-01-01T00:00:00Z",
+          "2022-12-16T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Climatology",
+    "Product type: Reanalysis",
+    "Provider: Copernicus CEMS",
+    "Spatial coverage: Europe",
+    "Temporal coverage: Past",
+    "Variable domain: Land (hydrology)"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

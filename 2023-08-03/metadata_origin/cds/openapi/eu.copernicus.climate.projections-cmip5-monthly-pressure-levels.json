@@ -1,0 +1,5014 @@
+{
+    "slug": "cmip5-monthly-data-on-pressure-levels",
+    "name": "projections-cmip5-monthly-pressure-levels",
+    "id": "eu.copernicus.climate.projections-cmip5-monthly-pressure-levels",
+    "type": "dataset",
+    "rich_abstract": "<div class='abstract-text'>\n         <p>This catalogue entry provides monthly climate projections on pressure levels from a large number of experiments, models, members and time periods computed in the framework of the fifth phase of the Coupled Model Intercomparison Project (CMIP5). The term \"pressure levels\" is used to express that the variables were computed at multiple vertical levels, which may differ in number and location among the different models.</p>\n<p>CMIP5 data are used extensively in the Intergovernmental Panel on Climate Change Assessment Reports (the latest one is IPCC AR5, which was published in 2014). The use of these data is mostly aimed at:</p>\n<ul>\n<li>addressing outstanding scientific questions that arose as part of the IPCC reporting process;</li>\n<li>improving the understanding of the climate system;</li>\n<li>providing estimates of future climate change and related uncertainties;</li>\n<li>providing input data for the adaptation to the climate change;</li>\n<li>examining climate predictability and exploring the ability of models to predict climate on decadal time scales;</li>\n<li>evaluating how realistic the different models are in simulating the recent past.</li>\n</ul>\n<p>The term \"experiments\" refers to the three main categories of CMIP5 simulations:</p>\n<ul>\n<li>Historical experiments which cover the period where modern climate observations exist. These experiments show how the GCMs performs for the past climate and can be used as a reference period for comparison with scenario runs for the future. The period covered is typically 1850-2005.;</li>\n<li>Ensemble of experiments from the Atmospheric Model Intercomparison Project (AMIP), which prescribes the oceanic variables for all models and during all period of the experiment. This configuration removes the added complexity of ocean-atmosphere feedbacks in the climate system. The period covered is typically 1950-2005.</li>\n<li>Ensemble of climate projection experiments following the Representative Concentration Pathways (RCP) 2.6, 4.5, 6.0 and 8.5. The RCP scenarios provide different pathways of the future climate forcing. The period covered is typically 2006-2100, some extended RCP experimental data is available from 2100-2300.</li>\n</ul>\n<p>In CMIP5, the same experiments were run using different GCMs. In addition, for each model, the same experiment was repeatedly done using slightly different conditions (like initial conditions or different physical parameterisations for instance) producing in that way an ensemble of experiments closely related. Note that CMIP5 GCM data can be also used as lateral boundary conditions for Regional Climate Models (RCMs). RCMs are also available in the CDS (see CORDEX datasets). </p>\n<p>The data are produced by the participating institutes of the CMIP5 project. The latest CMIP GCM experiments will form the CMIP6 dataset, which will be published in the CDS in a later stage. </p>\n         \n         \n            <p></p>\n            <table class=\"abstract-description abstract-table\">\n            <tr><th colspan=\"2\">DATA DESCRIPTION</th>\n            \n<tr><th>Data type</th><td>Gridded</td></tr>\n<tr><th>Horizontal coverage</th><td>Global</td></tr>\n<tr><th>Horizontal resolution</th><td>From 0.125\u00b0x0.125\u00b0 to 5\u00b0x5\u00b0 depending on the model</td></tr>\n<tr><th>Vertical resolution</th><td>Levels are tipically at 10, 20, 30, 50, 70, 100, 150, 200, 250, 300, 400, 500, 600, 700, 850, 925 and 1000 hPa depending on the model</td></tr>\n<tr><th>Temporal coverage</th><td>From 1850 to 2300 (shorter for some experiments)</td></tr>\n<tr><th>Temporal resolution</th><td>Month</td></tr>\n<tr><th>File format</th><td>NetCDF</td></tr>\n</table>\n\n    <p></p>\n    <table class=\"abstract-variables abstract-table\">\n    <tr><th colspan=\"3\">MAIN VARIABLES</th>\n    \n\n    <tr><th class='variables-name'>Name</th><th class='variables-units'>Units</th><th class='variables-description'>Description</th></tr>\n    \n<tr><td class='variables-name'>Geopotential height</td><td class='variables-units'>m</td><td class='variables-description'>Gravitational potential energy per unit mass  normalised by the standard gravity at mean sea level at the same latitude. It is also used as vertical coordinate referenced to Earth's mean sea level since its value is proportional to the elevation above the mean sea level.</td></tr>\n<tr><td class='variables-name'>Relative humidity</td><td class='variables-units'>%</td><td class='variables-description'>Amount of moisture in the air divided by the maximum amount of moisture that could exist in the air at a specific temperature and location.</td></tr>\n<tr><td class='variables-name'>Specific humidity</td><td class='variables-units'>%</td><td class='variables-description'>Amount of moisture in the air divided by amount of air plus moisture at that location.</td></tr>\n<tr><td class='variables-name'>Temperature</td><td class='variables-units'>K</td><td class='variables-description'>Temperature of the air.</td></tr>\n<tr><td class='variables-name'>U-component of wind</td><td class='variables-units'>m s<sup>-1</sup></td><td class='variables-description'>Magnitude of the eastward component of the two-dimensional horizontal air velocity.</td></tr>\n<tr><td class='variables-name'>V-component of wind</td><td class='variables-units'>m s<sup>-1</sup></td><td class='variables-description'>Magnitude of the northward component of the two-dimensional horizontal air velocity.</td></tr>\n</table>\n    </div>",
+    "terms": [
+        "esgf-cmip5"
+    ],
+    "constraints": [
+        {
+            "ensemble_member": [
+                "r10i1p1",
+                "r1i1p1",
+                "r2i1p1",
+                "r3i1p1",
+                "r4i1p1",
+                "r5i1p1",
+                "r6i1p1",
+                "r7i1p1",
+                "r8i1p1",
+                "r9i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "cancm4"
+            ],
+            "period": [
+                "196101-200512"
+            ],
+            "variable": [
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r10i1p1",
+                "r1i1p1",
+                "r2i1p1",
+                "r3i1p1",
+                "r4i1p1",
+                "r5i1p1",
+                "r6i1p1",
+                "r7i1p1",
+                "r8i1p1",
+                "r9i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "gfdl_cm2p1"
+            ],
+            "period": [
+                "186101-186512",
+                "186601-187012",
+                "187101-187512",
+                "187601-188012",
+                "188101-188512",
+                "188601-189012",
+                "189101-189512",
+                "189601-190012",
+                "190101-190512",
+                "190601-191012",
+                "191101-191512",
+                "191601-192012",
+                "192101-192512",
+                "192601-193012",
+                "193101-193512",
+                "193601-194012",
+                "194101-194512",
+                "194601-195012",
+                "195101-195512",
+                "195601-196012",
+                "196101-196512",
+                "196601-197012",
+                "197101-197512",
+                "197601-198012",
+                "198101-198512",
+                "198601-199012",
+                "199101-199512",
+                "199601-200012",
+                "200101-200512",
+                "200601-201012",
+                "201101-201512",
+                "201601-202012",
+                "202101-202512",
+                "202601-203012",
+                "203101-203512",
+                "203601-204012"
+            ],
+            "variable": [
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r10i1p1",
+                "r1i1p1",
+                "r2i1p1",
+                "r3i1p1",
+                "r4i1p1",
+                "r5i1p1",
+                "r6i1p1",
+                "r7i1p1",
+                "r8i1p1",
+                "r9i1p1"
+            ],
+            "experiment": [
+                "rcp_4_5"
+            ],
+            "model": [
+                "cancm4"
+            ],
+            "period": [
+                "200601-203512"
+            ],
+            "variable": [
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r10i1p1",
+                "r1i1p1",
+                "r2i1p1",
+                "r3i1p1",
+                "r4i1p1",
+                "r5i1p1",
+                "r6i1p1",
+                "r7i1p1",
+                "r8i1p1",
+                "r9i1p1"
+            ],
+            "experiment": [
+                "rcp_4_5"
+            ],
+            "model": [
+                "gfdl_cm2p1"
+            ],
+            "period": [
+                "200601-201012",
+                "201101-201512",
+                "201601-202012",
+                "202101-202512",
+                "202601-203012",
+                "203101-203512",
+                "203601-204012"
+            ],
+            "variable": [
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r10i1p1",
+                "r1i1p1",
+                "r2i1p1",
+                "r3i1p1",
+                "r4i1p1",
+                "r5i1p1",
+                "r6i1p1",
+                "r7i1p1",
+                "r8i1p1",
+                "r9i1p1"
+            ],
+            "experiment": [
+                "rcp_4_5"
+            ],
+            "model": [
+                "hadcm3"
+            ],
+            "period": [
+                "200601-203012",
+                "203101-203512"
+            ],
+            "variable": [
+                "relative_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r10i1p1",
+                "r1i1p1",
+                "r4i1p1",
+                "r5i1p1",
+                "r6i1p1",
+                "r7i1p1",
+                "r8i1p1",
+                "r9i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "hadcm3"
+            ],
+            "period": [
+                "185912-188411",
+                "188412-190911",
+                "190912-193411",
+                "193412-195911",
+                "195912-198411",
+                "198412-200512"
+            ],
+            "variable": [
+                "relative_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r10i1p1",
+                "r2i1p1",
+                "r4i1p1",
+                "r6i1p1"
+            ],
+            "experiment": [
+                "rcp_8_5"
+            ],
+            "model": [
+                "cnrm_cm5"
+            ],
+            "period": [
+                "200601-205512",
+                "205601-210012"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r10i1p1",
+                "r4i1p1",
+                "r5i1p1",
+                "r6i1p1",
+                "r7i1p1",
+                "r8i1p1",
+                "r9i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "cnrm_cm5"
+            ],
+            "period": [
+                "185001-189912",
+                "190001-194912",
+                "195001-200512"
+            ],
+            "variable": [
+                "relative_humidity",
+                "temperature"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r10i1p1",
+                "r4i1p1",
+                "r5i1p1",
+                "r7i1p1",
+                "r8i1p1",
+                "r9i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "cnrm_cm5"
+            ],
+            "period": [
+                "185001-189912",
+                "190001-194912",
+                "195001-200512"
+            ],
+            "variable": [
+                "specific_humidity"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r10i1p1",
+                "r7i1p1",
+                "r8i1p1",
+                "r9i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "cnrm_cm5"
+            ],
+            "period": [
+                "185001-189912",
+                "190001-194912",
+                "195001-200512"
+            ],
+            "variable": [
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r12i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6"
+            ],
+            "model": [
+                "ec_earth"
+            ],
+            "period": [
+                "200601-210012"
+            ],
+            "variable": [
+                "specific_humidity",
+                "temperature",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r12i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6",
+                "rcp_8_5"
+            ],
+            "model": [
+                "ec_earth"
+            ],
+            "period": [
+                "200601-210012"
+            ],
+            "variable": [
+                "u_component_of_wind"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r12i1p1",
+                "r2i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "ec_earth"
+            ],
+            "period": [
+                "185001-189912",
+                "190001-199912",
+                "200001-201212"
+            ],
+            "variable": [
+                "v_component_of_wind"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r12i1p1",
+                "r2i1p1",
+                "r9i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "ec_earth"
+            ],
+            "period": [
+                "185001-189912",
+                "190001-199912",
+                "200001-201212"
+            ],
+            "variable": [
+                "temperature",
+                "u_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r12i1p1",
+                "r9i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "ec_earth"
+            ],
+            "period": [
+                "185001-189912",
+                "190001-199912",
+                "200001-201212"
+            ],
+            "variable": [
+                "specific_humidity"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r12i1p1",
+                "r9i1p1"
+            ],
+            "experiment": [
+                "rcp_4_5"
+            ],
+            "model": [
+                "ec_earth"
+            ],
+            "period": [
+                "200601-210012"
+            ],
+            "variable": [
+                "u_component_of_wind"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r12i1p1",
+                "r9i1p1"
+            ],
+            "experiment": [
+                "rcp_4_5",
+                "rcp_8_5"
+            ],
+            "model": [
+                "ec_earth"
+            ],
+            "period": [
+                "200601-210012"
+            ],
+            "variable": [
+                "specific_humidity",
+                "temperature",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "amip"
+            ],
+            "model": [
+                "access1_0",
+                "bnu_esm",
+                "cnrm_cm5",
+                "fgoals_s2",
+                "ipsl_cm5b_lr",
+                "mpi_esm_lr",
+                "mpi_esm_mr",
+                "bcc_csm1_1",
+                "bcc_csm1_1_m"
+            ],
+            "period": [
+                "197901-200812"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "amip"
+            ],
+            "model": [
+                "ec_earth"
+            ],
+            "period": [
+                "197804-197812",
+                "197901-200812"
+            ],
+            "variable": [
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "amip"
+            ],
+            "model": [
+                "fgoals_g2"
+            ],
+            "period": [
+                "197901-198812",
+                "198901-199812",
+                "199901-200812",
+                "200901-200912"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "amip"
+            ],
+            "model": [
+                "hadgem2_a"
+            ],
+            "period": [
+                "197809-200811",
+                "200812-200812"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "amip"
+            ],
+            "model": [
+                "inmcm4"
+            ],
+            "period": [
+                "197901-198812",
+                "198901-199812",
+                "199901-200812"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "access1_0",
+                "access1_3",
+                "cnrm_cm5_2"
+            ],
+            "period": [
+                "185001-189912",
+                "190001-194912",
+                "195001-199912",
+                "200001-200512"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "bnu_esm",
+                "cesm1_waccm",
+                "canesm2",
+                "fio_esm"
+            ],
+            "period": [
+                "185001-200512"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "ccsm4",
+                "cesm1_bgc",
+                "cesm1_cam5",
+                "cesm1_fastchem",
+                "cnrm_cm5"
+            ],
+            "period": [
+                "185001-189912",
+                "190001-194912",
+                "195001-200512"
+            ],
+            "variable": [
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "cesm1_bgc",
+                "cesm1_cam5",
+                "cesm1_fastchem",
+                "cnrm_cm5"
+            ],
+            "period": [
+                "185001-189912",
+                "190001-194912",
+                "195001-200512"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "cmcc_cesm"
+            ],
+            "period": [
+                "185001-185412",
+                "185501-185912",
+                "186001-186412",
+                "186501-186912",
+                "187001-187412",
+                "187501-187912",
+                "188001-188412",
+                "188501-188912",
+                "189001-189412",
+                "189501-189912",
+                "190001-190412",
+                "190501-190912",
+                "191001-191412",
+                "191501-191912",
+                "192001-192412",
+                "192501-192912",
+                "193001-193412",
+                "193501-193912",
+                "194001-194412",
+                "194501-194912",
+                "195001-195412",
+                "195501-195912",
+                "196001-196412",
+                "196501-196912",
+                "197001-197412",
+                "197501-197912",
+                "198001-198412",
+                "198501-198912",
+                "199001-199412",
+                "199501-199912",
+                "200001-200412",
+                "200501-200512"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "cmcc_cms",
+                "mpi_esm_lr",
+                "mpi_esm_mr",
+                "mpi_esm_p",
+                "inmcm4"
+            ],
+            "period": [
+                "185001-185912",
+                "186001-186912",
+                "187001-187912",
+                "188001-188912",
+                "189001-189912",
+                "190001-190912",
+                "191001-191912",
+                "192001-192912",
+                "193001-193912",
+                "194001-194912",
+                "195001-195912",
+                "196001-196912",
+                "197001-197912",
+                "198001-198912",
+                "199001-199912",
+                "200001-200512"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "fgoals_g2"
+            ],
+            "period": [
+                "190001-190912",
+                "191001-191912",
+                "192001-192912",
+                "193001-193912",
+                "194001-194912",
+                "195001-195912",
+                "196001-196912",
+                "197001-197912",
+                "198001-198912",
+                "199001-199912",
+                "200001-200912",
+                "201001-201412"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "gfdl_esm2g",
+                "gfdl_esm2m"
+            ],
+            "period": [
+                "186101-186512",
+                "186601-187012",
+                "187101-187512",
+                "187601-188012",
+                "188101-188512",
+                "188601-189012",
+                "189101-189512",
+                "189601-190012",
+                "190101-190512",
+                "190601-191012",
+                "191101-191512",
+                "191601-192012",
+                "192101-192512",
+                "192601-193012",
+                "193101-193512",
+                "193601-194012",
+                "194101-194512",
+                "194601-195012",
+                "195101-195512",
+                "195601-196012",
+                "196101-196512",
+                "196601-197012",
+                "197101-197512",
+                "197601-198012",
+                "198101-198512",
+                "198601-199012",
+                "199101-199512",
+                "199601-200012",
+                "200101-200512"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "giss_e2_h_cc"
+            ],
+            "period": [
+                "185001-190012",
+                "190101-195012",
+                "195101-201012"
+            ],
+            "variable": [
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "giss_e2_r_cc"
+            ],
+            "period": [
+                "185001-187512",
+                "187601-190012",
+                "190101-192512",
+                "192601-195012",
+                "195101-197512",
+                "197601-200012",
+                "200101-201012"
+            ],
+            "variable": [
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "hadgem2_cc",
+                "hadgem2_es"
+            ],
+            "period": [
+                "185912-188411",
+                "188412-190911",
+                "190912-193411",
+                "193412-195911",
+                "195912-198411",
+                "198412-200511"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "ipsl_cm5a_lr",
+                "ipsl_cm5a_mr",
+                "ipsl_cm5b_lr",
+                "noresm1_m",
+                "noresm1_me"
+            ],
+            "period": [
+                "185001-194912",
+                "195001-200512"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "mpi_esm_lr",
+                "mpi_esm_mr",
+                "mpi_esm_p",
+                "inmcm4"
+            ],
+            "period": [
+                "185001-185912",
+                "186001-186912",
+                "187001-187912",
+                "188001-188912",
+                "189001-189912",
+                "190001-190912",
+                "191001-191912",
+                "192001-192912",
+                "193001-193912",
+                "194001-194912",
+                "195001-195912",
+                "196001-196912",
+                "197001-197912",
+                "198001-198912",
+                "199001-199912",
+                "200001-200512"
+            ],
+            "variable": [
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6"
+            ],
+            "model": [
+                "bnu_esm",
+                "fio_esm",
+                "ipsl_cm5a_mr",
+                "noresm1_m"
+            ],
+            "period": [
+                "200601-210012"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6"
+            ],
+            "model": [
+                "ccsm4"
+            ],
+            "period": [
+                "200601-204512",
+                "204601-208512",
+                "208601-210012",
+                "210101-214912",
+                "215001-219912",
+                "220001-224912",
+                "225001-230012"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6"
+            ],
+            "model": [
+                "cnrm_cm5"
+            ],
+            "period": [
+                "200601-205512",
+                "205601-210012"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6"
+            ],
+            "model": [
+                "canesm2"
+            ],
+            "period": [
+                "200601-210012",
+                "210101-230012"
+            ],
+            "variable": [
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6"
+            ],
+            "model": [
+                "mpi_esm_mr"
+            ],
+            "period": [
+                "200601-200912",
+                "201001-201912",
+                "202001-202912",
+                "203001-203912",
+                "204001-204912",
+                "205001-205912",
+                "206001-206912",
+                "207001-207912",
+                "208001-208912",
+                "209001-210012"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6"
+            ],
+            "model": [
+                "noresm1_me"
+            ],
+            "period": [
+                "200601-206012",
+                "206101-210112"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6",
+                "rcp_4_5"
+            ],
+            "model": [
+                "cesm1_cam5"
+            ],
+            "period": [
+                "200601-204912",
+                "205001-210012",
+                "210101-214912",
+                "215001-219912",
+                "220001-224912",
+                "225001-230012"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6",
+                "rcp_4_5"
+            ],
+            "model": [
+                "hadgem2_es"
+            ],
+            "period": [
+                "200512-203011",
+                "203012-205511",
+                "205512-208011",
+                "208012-209911",
+                "209912-212411",
+                "212412-214911",
+                "214912-217411",
+                "217412-219911",
+                "219912-222411",
+                "222412-224911",
+                "224912-227411",
+                "227412-229911",
+                "229912-229912"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6",
+                "rcp_4_5",
+                "rcp_6_0"
+            ],
+            "model": [
+                "bcc_csm1_1_m"
+            ],
+            "period": [
+                "200601-203512",
+                "203601-206512",
+                "206601-209512",
+                "209601-210012"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6",
+                "rcp_4_5",
+                "rcp_8_5"
+            ],
+            "model": [
+                "gfdl_cm3",
+                "gfdl_esm2g",
+                "gfdl_esm2m"
+            ],
+            "period": [
+                "200601-201012",
+                "201101-201512",
+                "201601-202012",
+                "202101-202512",
+                "202601-203012",
+                "203101-203512",
+                "203601-204012",
+                "204101-204512",
+                "204601-205012",
+                "205101-205512",
+                "205601-206012",
+                "206101-206512",
+                "206601-207012",
+                "207101-207512",
+                "207601-208012",
+                "208101-208512",
+                "208601-209012",
+                "209101-209512",
+                "209601-210012"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6",
+                "rcp_4_5",
+                "rcp_8_5"
+            ],
+            "model": [
+                "ipsl_cm5a_lr"
+            ],
+            "period": [
+                "200601-210512",
+                "210601-220512",
+                "220601-230012"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6",
+                "rcp_4_5",
+                "rcp_8_5"
+            ],
+            "model": [
+                "mpi_esm_lr"
+            ],
+            "period": [
+                "200601-200912",
+                "201001-201912",
+                "202001-202912",
+                "203001-203912",
+                "204001-204912",
+                "205001-205912",
+                "206001-206912",
+                "207001-207912",
+                "208001-208912",
+                "209001-210012",
+                "210101-210912",
+                "211001-211912",
+                "212001-212912",
+                "213001-213912",
+                "214001-214912",
+                "215001-215912",
+                "216001-216912",
+                "217001-217912",
+                "218001-218912",
+                "219001-219912",
+                "220001-220912",
+                "221001-221912",
+                "222001-222912",
+                "223001-223912",
+                "224001-224912",
+                "225001-225912",
+                "226001-226912",
+                "227001-227912",
+                "228001-228912",
+                "229001-230012"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6",
+                "rcp_4_5",
+                "rcp_8_5"
+            ],
+            "model": [
+                "mpi_esm_mr"
+            ],
+            "period": [
+                "200601-200912",
+                "201001-201912",
+                "202001-202912",
+                "203001-203912",
+                "204001-204912",
+                "205001-205912",
+                "206001-206912",
+                "207001-207912",
+                "208001-208912",
+                "209001-210012"
+            ],
+            "variable": [
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6",
+                "rcp_4_5",
+                "rcp_8_5"
+            ],
+            "model": [
+                "bcc_csm1_1"
+            ],
+            "period": [
+                "200601-209912",
+                "210001-219912",
+                "220001-230012"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6",
+                "rcp_6_0",
+                "rcp_8_5"
+            ],
+            "model": [
+                "ccsm4"
+            ],
+            "period": [
+                "200601-204512",
+                "204601-208512",
+                "208601-210012",
+                "210101-214912",
+                "215001-219912",
+                "220001-224912",
+                "225001-230012"
+            ],
+            "variable": [
+                "u_component_of_wind",
+                "v_component_of_wind"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6",
+                "rcp_8_5"
+            ],
+            "model": [
+                "fgoals_g2"
+            ],
+            "period": [
+                "200601-201512",
+                "201601-202512",
+                "202601-203512",
+                "203601-204512",
+                "204601-205512",
+                "205601-206512",
+                "206601-207512",
+                "207601-208512",
+                "208601-209512",
+                "209601-210112"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_4_5"
+            ],
+            "model": [
+                "bnu_esm",
+                "fio_esm",
+                "ipsl_cm5b_lr"
+            ],
+            "period": [
+                "200601-210012"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_4_5"
+            ],
+            "model": [
+                "ccsm4"
+            ],
+            "period": [
+                "200601-204512",
+                "204601-208512",
+                "208601-210012",
+                "210101-214912",
+                "215001-219912",
+                "220001-224912",
+                "225001-229912"
+            ],
+            "variable": [
+                "u_component_of_wind",
+                "v_component_of_wind"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_4_5"
+            ],
+            "model": [
+                "cesm1_bgc"
+            ],
+            "period": [
+                "200601-204912",
+                "205001-210012"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_4_5"
+            ],
+            "model": [
+                "fgoals_g2"
+            ],
+            "period": [
+                "200601-201512",
+                "201601-202512",
+                "202601-203512",
+                "203601-204512",
+                "204601-205512",
+                "205601-206512",
+                "206601-207512",
+                "207601-208512",
+                "208601-209512",
+                "209601-210512",
+                "210601-211512",
+                "211601-212512",
+                "212601-213512",
+                "213601-214512",
+                "214601-215512",
+                "215601-216512",
+                "216601-217512",
+                "217601-218512",
+                "218601-219512",
+                "219601-220512",
+                "220601-221512",
+                "221601-222512",
+                "222601-223512",
+                "223601-224512",
+                "224601-225512",
+                "225601-226512",
+                "226601-227512"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_4_5"
+            ],
+            "model": [
+                "hadgem2_cc"
+            ],
+            "period": [
+                "200512-203011",
+                "203012-205511",
+                "205512-208011",
+                "208012-209912",
+                "210001-210012"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_4_5"
+            ],
+            "model": [
+                "ipsl_cm5a_mr",
+                "noresm1_m"
+            ],
+            "period": [
+                "200601-210012",
+                "210101-220012",
+                "220101-230012"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_4_5"
+            ],
+            "model": [
+                "noresm1_me"
+            ],
+            "period": [
+                "200601-210212"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_4_5"
+            ],
+            "model": [
+                "inmcm4"
+            ],
+            "period": [
+                "200601-201512",
+                "201601-202512",
+                "202601-203512",
+                "203601-204512",
+                "204601-205512",
+                "205601-206512",
+                "206601-207512",
+                "207601-208512",
+                "208601-209512",
+                "209601-210012"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_4_5",
+                "rcp_8_5"
+            ],
+            "model": [
+                "access1_0",
+                "access1_3"
+            ],
+            "period": [
+                "200601-205512",
+                "205601-210012"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_4_5",
+                "rcp_8_5"
+            ],
+            "model": [
+                "cmcc_cms",
+                "mpi_esm_mr"
+            ],
+            "period": [
+                "200601-200912",
+                "201001-201912",
+                "202001-202912",
+                "203001-203912",
+                "204001-204912",
+                "205001-205912",
+                "206001-206912",
+                "207001-207912",
+                "208001-208912",
+                "209001-210012"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_4_5",
+                "rcp_8_5"
+            ],
+            "model": [
+                "cnrm_cm5"
+            ],
+            "period": [
+                "200601-205512",
+                "205601-210012",
+                "210101-215012",
+                "215101-220012",
+                "220101-225012",
+                "225101-230012"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_4_5",
+                "rcp_8_5"
+            ],
+            "model": [
+                "giss_e2_h_cc"
+            ],
+            "period": [
+                "200601-205012",
+                "205101-210012"
+            ],
+            "variable": [
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_4_5",
+                "rcp_8_5"
+            ],
+            "model": [
+                "giss_e2_r_cc"
+            ],
+            "period": [
+                "200601-202512",
+                "202601-205012",
+                "205101-207512",
+                "207601-210012"
+            ],
+            "variable": [
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_6_0"
+            ],
+            "model": [
+                "cesm1_cam5"
+            ],
+            "period": [
+                "200601-204912",
+                "205001-210012",
+                "210101-230012"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_6_0"
+            ],
+            "model": [
+                "fio_esm",
+                "ipsl_cm5a_lr",
+                "ipsl_cm5a_mr",
+                "noresm1_m"
+            ],
+            "period": [
+                "200601-210012"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_6_0"
+            ],
+            "model": [
+                "gfdl_esm2g",
+                "gfdl_esm2m"
+            ],
+            "period": [
+                "200601-201012",
+                "201101-201512",
+                "201601-202012",
+                "202101-202512",
+                "202601-203012",
+                "203101-203512",
+                "203601-204012",
+                "204101-204512",
+                "204601-205012",
+                "205101-205512",
+                "205601-206012",
+                "206101-206512",
+                "206601-207012",
+                "207101-207512",
+                "207601-208012",
+                "208101-208512",
+                "208601-209012",
+                "209101-209512",
+                "209601-210012"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_6_0"
+            ],
+            "model": [
+                "hadgem2_es"
+            ],
+            "period": [
+                "200512-201111",
+                "201112-203611",
+                "203612-206111",
+                "206112-208611",
+                "208612-209911"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_6_0"
+            ],
+            "model": [
+                "noresm1_me"
+            ],
+            "period": [
+                "200601-205012",
+                "205101-210112"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_6_0"
+            ],
+            "model": [
+                "bcc_csm1_1"
+            ],
+            "period": [
+                "200601-209912",
+                "210001-210012"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_8_5"
+            ],
+            "model": [
+                "bnu_esm",
+                "canesm2",
+                "fio_esm",
+                "ipsl_cm5a_mr",
+                "ipsl_cm5b_lr",
+                "noresm1_m"
+            ],
+            "period": [
+                "200601-210012"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_8_5"
+            ],
+            "model": [
+                "cesm1_bgc",
+                "cesm1_cam5"
+            ],
+            "period": [
+                "200601-204912",
+                "205001-210012"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_8_5"
+            ],
+            "model": [
+                "cmcc_cesm",
+                "inmcm4"
+            ],
+            "period": [
+                "200601-201512",
+                "201601-202512",
+                "202601-203512",
+                "203601-204512",
+                "204601-205512",
+                "205601-206512",
+                "206601-207512",
+                "207601-208512",
+                "208601-209512",
+                "209601-210012"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_8_5"
+            ],
+            "model": [
+                "giss_e2_r"
+            ],
+            "period": [
+                "200601-202512",
+                "202601-205012",
+                "205101-207512",
+                "207601-210012",
+                "210101-212512",
+                "212601-215012",
+                "215101-217512",
+                "217601-220012",
+                "220101-222512",
+                "222601-225012",
+                "225101-227512",
+                "227601-230012"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_8_5"
+            ],
+            "model": [
+                "giss_e2_r_cc"
+            ],
+            "period": [
+                "200601-202512",
+                "202601-205012",
+                "205101-207512",
+                "207601-210012"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_8_5"
+            ],
+            "model": [
+                "noresm1_me"
+            ],
+            "period": [
+                "200601-204412",
+                "204501-210012"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_8_5"
+            ],
+            "model": [
+                "bcc_csm1_1_m"
+            ],
+            "period": [
+                "200601-203512",
+                "203601-206512",
+                "206601-209512",
+                "209601-209912",
+                "210001-210012"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1",
+                "r1i1p2",
+                "r1i1p3"
+            ],
+            "experiment": [
+                "rcp_2_6",
+                "rcp_8_5"
+            ],
+            "model": [
+                "giss_e2_h"
+            ],
+            "period": [
+                "200601-205012",
+                "205101-210012",
+                "210101-215012",
+                "215101-220012",
+                "220101-225012",
+                "225101-230012"
+            ],
+            "variable": [
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1",
+                "r1i1p2",
+                "r1i1p3"
+            ],
+            "experiment": [
+                "rcp_2_6",
+                "rcp_8_5"
+            ],
+            "model": [
+                "giss_e2_r"
+            ],
+            "period": [
+                "200601-202512",
+                "202601-205012",
+                "205101-207512",
+                "207601-210012",
+                "210101-212512",
+                "212601-215012",
+                "215101-217512",
+                "217601-220012",
+                "220101-222512",
+                "222601-225012",
+                "225101-227512",
+                "227601-230012"
+            ],
+            "variable": [
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1",
+                "r1i1p2",
+                "r1i1p3"
+            ],
+            "experiment": [
+                "rcp_6_0"
+            ],
+            "model": [
+                "giss_e2_h"
+            ],
+            "period": [
+                "200601-205012",
+                "205101-210012"
+            ],
+            "variable": [
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1",
+                "r1i1p2",
+                "r1i1p3"
+            ],
+            "experiment": [
+                "rcp_6_0"
+            ],
+            "model": [
+                "giss_e2_r"
+            ],
+            "period": [
+                "200601-202512",
+                "202601-205012",
+                "205101-207512",
+                "207601-210012"
+            ],
+            "variable": [
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1",
+                "r1i1p2",
+                "r1i1p3",
+                "r2i1p1",
+                "r2i1p2",
+                "r2i1p3",
+                "r3i1p1",
+                "r3i1p2",
+                "r3i1p3",
+                "r4i1p1",
+                "r4i1p2",
+                "r4i1p3",
+                "r5i1p1",
+                "r5i1p2",
+                "r5i1p3"
+            ],
+            "experiment": [
+                "rcp_4_5"
+            ],
+            "model": [
+                "giss_e2_h"
+            ],
+            "period": [
+                "200601-205012",
+                "205101-210012",
+                "210101-215012",
+                "215101-220012",
+                "220101-225012",
+                "225101-230012"
+            ],
+            "variable": [
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1",
+                "r1i1p2",
+                "r1i1p3",
+                "r2i1p1",
+                "r2i1p2",
+                "r2i1p3",
+                "r3i1p1",
+                "r3i1p2",
+                "r3i1p3",
+                "r4i1p1",
+                "r4i1p2",
+                "r4i1p3",
+                "r5i1p1",
+                "r5i1p2",
+                "r5i1p3"
+            ],
+            "experiment": [
+                "rcp_4_5"
+            ],
+            "model": [
+                "giss_e2_r"
+            ],
+            "period": [
+                "200601-202512",
+                "202601-205012",
+                "205101-207512",
+                "207601-210012",
+                "210101-212512",
+                "212601-215012",
+                "215101-217512",
+                "217601-220012",
+                "220101-222512",
+                "222601-225012",
+                "225101-227512",
+                "227601-230012"
+            ],
+            "variable": [
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1",
+                "r1i1p2",
+                "r1i1p3",
+                "r2i1p1",
+                "r2i1p2",
+                "r2i1p3",
+                "r3i1p1",
+                "r3i1p2",
+                "r3i1p3",
+                "r4i1p1",
+                "r4i1p2",
+                "r4i1p3",
+                "r5i1p1",
+                "r5i1p2",
+                "r5i1p3",
+                "r6i1p1",
+                "r6i1p2",
+                "r6i1p3"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "giss_e2_r"
+            ],
+            "period": [
+                "185001-187512",
+                "187601-190012",
+                "190101-192512",
+                "192601-195012",
+                "195101-197512",
+                "197601-200012",
+                "200101-200512"
+            ],
+            "variable": [
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1",
+                "r1i1p3",
+                "r2i1p1",
+                "r2i1p3",
+                "r3i1p1",
+                "r3i1p3",
+                "r4i1p1",
+                "r4i1p3",
+                "r5i1p1",
+                "r5i1p3",
+                "r6i1p3"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "giss_e2_h"
+            ],
+            "period": [
+                "185001-190012",
+                "190101-195012",
+                "195101-200512"
+            ],
+            "variable": [
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1",
+                "r2i1p1"
+            ],
+            "experiment": [
+                "amip"
+            ],
+            "model": [
+                "cesm1_cam5"
+            ],
+            "period": [
+                "197901-200512"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1",
+                "r2i1p1"
+            ],
+            "experiment": [
+                "amip"
+            ],
+            "model": [
+                "gfdl_cm3",
+                "gfdl_hiram_c180",
+                "gfdl_hiram_c360"
+            ],
+            "period": [
+                "197901-198312",
+                "198401-198812",
+                "198901-199312",
+                "199401-199812",
+                "199901-200312",
+                "200401-200812"
+            ],
+            "variable": [
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1",
+                "r2i1p1"
+            ],
+            "experiment": [
+                "amip"
+            ],
+            "model": [
+                "gfdl_hiram_c180",
+                "gfdl_hiram_c360"
+            ],
+            "period": [
+                "197901-198312",
+                "198401-198812",
+                "198901-199312",
+                "199401-199812",
+                "199901-200312",
+                "200401-200812"
+            ],
+            "variable": [
+                "relative_humidity"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1",
+                "r2i1p1",
+                "r3i1p1"
+            ],
+            "experiment": [
+                "amip"
+            ],
+            "model": [
+                "canam4",
+                "ipsl_cm5a_mr"
+            ],
+            "period": [
+                "195001-200912"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1",
+                "r2i1p1",
+                "r3i1p1"
+            ],
+            "experiment": [
+                "amip"
+            ],
+            "model": [
+                "noresm1_m"
+            ],
+            "period": [
+                "197901-200512",
+                "200601-200812"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1",
+                "r2i1p1",
+                "r3i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "bcc_csm1_1"
+            ],
+            "period": [
+                "185001-201212"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1",
+                "r2i1p1",
+                "r3i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "bcc_csm1_1_m"
+            ],
+            "period": [
+                "185001-187912",
+                "188001-190912",
+                "191001-193912",
+                "194001-196912",
+                "197001-199912",
+                "200001-201212"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1",
+                "r2i1p1",
+                "r3i1p1"
+            ],
+            "experiment": [
+                "rcp_8_5"
+            ],
+            "model": [
+                "hadgem2_cc"
+            ],
+            "period": [
+                "200512-203011",
+                "203012-205511",
+                "205512-208011",
+                "208012-209912"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1",
+                "r2i1p1",
+                "r3i1p1",
+                "r4i1p1",
+                "r5i1p1"
+            ],
+            "experiment": [
+                "amip"
+            ],
+            "model": [
+                "ccsm4"
+            ],
+            "period": [
+                "197901-201012"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1",
+                "r2i1p1",
+                "r3i1p1",
+                "r4i1p1",
+                "r5i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "gfdl_cm3"
+            ],
+            "period": [
+                "186001-186412",
+                "186501-186912",
+                "187001-187412",
+                "187501-187912",
+                "188001-188412",
+                "188501-188912",
+                "189001-189412",
+                "189501-189912",
+                "190001-190412",
+                "190501-190912",
+                "191001-191412",
+                "191501-191912",
+                "192001-192412",
+                "192501-192912",
+                "193001-193412",
+                "193501-193912",
+                "194001-194412",
+                "194501-194912",
+                "195001-195412",
+                "195501-195912",
+                "196001-196412",
+                "196501-196912",
+                "197001-197412",
+                "197501-197912",
+                "198001-198412",
+                "198501-198912",
+                "199001-199412",
+                "199501-199912",
+                "200001-200412",
+                "200501-200512"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1",
+                "r2i1p1",
+                "r3i1p1",
+                "r4i1p1",
+                "r5i1p1",
+                "r6i1p3"
+            ],
+            "experiment": [
+                "amip"
+            ],
+            "model": [
+                "giss_e2_r"
+            ],
+            "period": [
+                "188001-195012",
+                "195101-201012"
+            ],
+            "variable": [
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1",
+                "r2i1p3",
+                "r3i1p2",
+                "r4i1p2",
+                "r5i1p1"
+            ],
+            "experiment": [
+                "rcp_4_5"
+            ],
+            "model": [
+                "giss_e2_r"
+            ],
+            "period": [
+                "200601-202512",
+                "202601-205012",
+                "205101-207512",
+                "207601-210012",
+                "210101-212512",
+                "212601-215012",
+                "215101-217512",
+                "217601-220012",
+                "220101-222512",
+                "222601-225012",
+                "225101-227512",
+                "227601-230012"
+            ],
+            "variable": [
+                "specific_humidity"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1",
+                "r2i1p3",
+                "r4i1p2",
+                "r5i1p1"
+            ],
+            "experiment": [
+                "rcp_4_5"
+            ],
+            "model": [
+                "giss_e2_r"
+            ],
+            "period": [
+                "200601-202512",
+                "202601-205012",
+                "205101-207512",
+                "207601-210012",
+                "210101-212512",
+                "212601-215012",
+                "215101-217512",
+                "217601-220012",
+                "220101-222512",
+                "222601-225012",
+                "225101-227512",
+                "227601-230012"
+            ],
+            "variable": [
+                "relative_humidity",
+                "u_component_of_wind",
+                "v_component_of_wind"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1",
+                "r4i1p1",
+                "r5i1p1"
+            ],
+            "experiment": [
+                "amip"
+            ],
+            "model": [
+                "ipsl_cm5a_lr"
+            ],
+            "period": [
+                "197901-200912"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1",
+                "r5i1p1"
+            ],
+            "experiment": [
+                "rcp_4_5"
+            ],
+            "model": [
+                "giss_e2_r"
+            ],
+            "period": [
+                "200601-202512",
+                "202601-205012",
+                "205101-207512",
+                "207601-210012",
+                "210101-212512",
+                "212601-215012",
+                "215101-217512",
+                "217601-220012",
+                "220101-222512",
+                "222601-225012",
+                "225101-227512",
+                "227601-230012"
+            ],
+            "variable": [
+                "temperature"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p121",
+                "r1i1p124",
+                "r1i1p125",
+                "r1i1p127"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "giss_e2_r"
+            ],
+            "period": [
+                "185101-187512",
+                "187601-190012",
+                "190101-192512",
+                "192601-195012",
+                "195101-197512",
+                "197601-200012",
+                "200101-200512"
+            ],
+            "variable": [
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p124"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "giss_e2_r"
+            ],
+            "period": [
+                "185101-187512",
+                "187601-190012",
+                "190101-192512",
+                "192601-195012",
+                "195101-197512",
+                "197601-200012",
+                "200101-200512"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p126",
+                "r1i1p128"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "giss_e2_r"
+            ],
+            "period": [
+                "185101-190012",
+                "190101-195012",
+                "195101-200012",
+                "200101-200512"
+            ],
+            "variable": [
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p2"
+            ],
+            "experiment": [
+                "rcp_2_6"
+            ],
+            "model": [
+                "giss_e2_h"
+            ],
+            "period": [
+                "200601-205012",
+                "205101-210012",
+                "210101-215012",
+                "215101-220012",
+                "220101-225012",
+                "225101-230012"
+            ],
+            "variable": [
+                "u_component_of_wind"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p2",
+                "r2i1p2",
+                "r3i1p2",
+                "r4i1p2",
+                "r5i1p2"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "giss_e2_h"
+            ],
+            "period": [
+                "185001-195012",
+                "195101-200512"
+            ],
+            "variable": [
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p3"
+            ],
+            "experiment": [
+                "rcp_6_0"
+            ],
+            "model": [
+                "giss_e2_r"
+            ],
+            "period": [
+                "200601-202512",
+                "202601-205012",
+                "205101-207512",
+                "207601-210012"
+            ],
+            "variable": [
+                "relative_humidity",
+                "u_component_of_wind",
+                "v_component_of_wind"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p3",
+                "r2i1p3",
+                "r3i1p3",
+                "r4i1p3",
+                "r5i1p3"
+            ],
+            "experiment": [
+                "amip"
+            ],
+            "model": [
+                "giss_e2_r"
+            ],
+            "period": [
+                "188001-195012",
+                "195101-200512"
+            ],
+            "variable": [
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p3",
+                "r3i1p2"
+            ],
+            "experiment": [
+                "rcp_4_5"
+            ],
+            "model": [
+                "giss_e2_h"
+            ],
+            "period": [
+                "200601-205012",
+                "205101-210012",
+                "210101-215012",
+                "215101-220012",
+                "220101-225012",
+                "225101-230012"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p3",
+                "r3i1p2",
+                "r5i1p1"
+            ],
+            "experiment": [
+                "rcp_4_5"
+            ],
+            "model": [
+                "giss_e2_h"
+            ],
+            "period": [
+                "200601-205012",
+                "205101-210012",
+                "210101-215012",
+                "215101-220012",
+                "220101-225012",
+                "225101-230012"
+            ],
+            "variable": [
+                "u_component_of_wind",
+                "v_component_of_wind"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i2p1",
+                "r1i2p2"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "ccsm4"
+            ],
+            "period": [
+                "185001-189912",
+                "190001-194912",
+                "195001-200512"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i2p1",
+                "r2i3p1",
+                "r3i2p1",
+                "r4i3p1",
+                "r5i3p1"
+            ],
+            "experiment": [
+                "amip"
+            ],
+            "model": [
+                "hadgem2_a"
+            ],
+            "period": [
+                "197809-200811"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r2i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "ipsl_cm5a_lr",
+                "ipsl_cm5a_mr",
+                "noresm1_m"
+            ],
+            "period": [
+                "185001-194912",
+                "195001-200512"
+            ],
+            "variable": [
+                "relative_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r2i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "ipsl_cm5a_mr"
+            ],
+            "period": [
+                "185001-194912"
+            ],
+            "variable": [
+                "specific_humidity"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r2i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "mpi_esm_lr",
+                "mpi_esm_mr",
+                "mpi_esm_p"
+            ],
+            "period": [
+                "185001-185912",
+                "186001-186912",
+                "187001-187912",
+                "188001-188912",
+                "189001-189912",
+                "190001-190912",
+                "191001-191912",
+                "192001-192912",
+                "193001-193912",
+                "194001-194912",
+                "195001-195912",
+                "196001-196912",
+                "197001-197912",
+                "198001-198912",
+                "199001-199912",
+                "200001-200512"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r2i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6",
+                "rcp_4_5",
+                "rcp_8_5"
+            ],
+            "model": [
+                "cesm1_waccm"
+            ],
+            "period": [
+                "200601-209912"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r2i1p1"
+            ],
+            "experiment": [
+                "rcp_4_5"
+            ],
+            "model": [
+                "ec_earth",
+                "fio_esm",
+                "ipsl_cm5a_lr"
+            ],
+            "period": [
+                "200601-210012"
+            ],
+            "variable": [
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r2i1p1"
+            ],
+            "experiment": [
+                "rcp_8_5"
+            ],
+            "model": [
+                "cesm1_cam5"
+            ],
+            "period": [
+                "200601-204912",
+                "205001-210012"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r2i1p1"
+            ],
+            "experiment": [
+                "rcp_8_5"
+            ],
+            "model": [
+                "canesm2",
+                "ec_earth",
+                "fio_esm",
+                "ipsl_cm5a_lr"
+            ],
+            "period": [
+                "200601-210012"
+            ],
+            "variable": [
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r2i1p1",
+                "r2i1p3"
+            ],
+            "experiment": [
+                "rcp_8_5"
+            ],
+            "model": [
+                "giss_e2_h"
+            ],
+            "period": [
+                "200601-205012",
+                "205101-210012"
+            ],
+            "variable": [
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r2i1p1",
+                "r2i1p3"
+            ],
+            "experiment": [
+                "rcp_8_5"
+            ],
+            "model": [
+                "giss_e2_r"
+            ],
+            "period": [
+                "200601-202512",
+                "202601-205012",
+                "205101-207512",
+                "207601-210012"
+            ],
+            "variable": [
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r2i1p1",
+                "r3i1p1"
+            ],
+            "experiment": [
+                "amip"
+            ],
+            "model": [
+                "fgoals_s2",
+                "mpi_esm_lr",
+                "mpi_esm_mr",
+                "bcc_csm1_1",
+                "bcc_csm1_1_m"
+            ],
+            "period": [
+                "197901-200812"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r2i1p1",
+                "r3i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "access1_3"
+            ],
+            "period": [
+                "185001-189912",
+                "190001-194912",
+                "195001-199912",
+                "200001-200512"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r2i1p1",
+                "r3i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "ccsm4",
+                "cesm1_cam5",
+                "cesm1_fastchem",
+                "cnrm_cm5"
+            ],
+            "period": [
+                "185001-189912",
+                "190001-194912",
+                "195001-200512"
+            ],
+            "variable": [
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r2i1p1",
+                "r3i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "cesm1_cam5",
+                "cesm1_fastchem",
+                "cnrm_cm5"
+            ],
+            "period": [
+                "185001-189912",
+                "190001-194912",
+                "195001-200512"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r2i1p1",
+                "r3i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "canesm2",
+                "fio_esm"
+            ],
+            "period": [
+                "185001-200512"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r2i1p1",
+                "r3i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "hadcm3",
+                "hadgem2_es"
+            ],
+            "period": [
+                "185912-188411",
+                "188412-190911",
+                "190912-193411",
+                "193412-195911",
+                "195912-198411",
+                "198412-200512"
+            ],
+            "variable": [
+                "relative_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r2i1p1",
+                "r3i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "hadgem2_cc"
+            ],
+            "period": [
+                "195912-198411",
+                "198412-200512"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r2i1p1",
+                "r3i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "hadgem2_es"
+            ],
+            "period": [
+                "185912-188411",
+                "188412-190911",
+                "190912-193411",
+                "193412-195911",
+                "195912-198411",
+                "198412-200512"
+            ],
+            "variable": [
+                "specific_humidity"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r2i1p1",
+                "r3i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "ipsl_cm5a_lr",
+                "ipsl_cm5a_mr",
+                "noresm1_m"
+            ],
+            "period": [
+                "185001-194912",
+                "195001-200512"
+            ],
+            "variable": [
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r2i1p1",
+                "r3i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "ipsl_cm5a_lr",
+                "noresm1_m"
+            ],
+            "period": [
+                "185001-194912",
+                "195001-200512"
+            ],
+            "variable": [
+                "specific_humidity"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r2i1p1",
+                "r3i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6"
+            ],
+            "model": [
+                "ccsm4",
+                "cesm1_cam5"
+            ],
+            "period": [
+                "200601-204912",
+                "205001-210012"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r2i1p1",
+                "r3i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6"
+            ],
+            "model": [
+                "canesm2",
+                "fio_esm",
+                "ipsl_cm5a_lr"
+            ],
+            "period": [
+                "200601-210012"
+            ],
+            "variable": [
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r2i1p1",
+                "r3i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6",
+                "rcp_6_0",
+                "rcp_8_5"
+            ],
+            "model": [
+                "ccsm4",
+                "cesm1_cam5"
+            ],
+            "period": [
+                "200601-204912",
+                "205001-210012"
+            ],
+            "variable": [
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r2i1p1",
+                "r3i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6",
+                "rcp_8_5"
+            ],
+            "model": [
+                "canesm2",
+                "fio_esm",
+                "ipsl_cm5a_lr"
+            ],
+            "period": [
+                "200601-210012"
+            ],
+            "variable": [
+                "relative_humidity"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r2i1p1",
+                "r3i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6",
+                "rcp_8_5"
+            ],
+            "model": [
+                "mpi_esm_lr"
+            ],
+            "period": [
+                "200601-200912",
+                "201001-201912",
+                "202001-202912",
+                "203001-203912",
+                "204001-204912",
+                "205001-205912",
+                "206001-206912",
+                "207001-207912",
+                "208001-208912",
+                "209001-210012"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r2i1p1",
+                "r3i1p1"
+            ],
+            "experiment": [
+                "rcp_4_5"
+            ],
+            "model": [
+                "fio_esm",
+                "ipsl_cm5a_lr"
+            ],
+            "period": [
+                "200601-210012"
+            ],
+            "variable": [
+                "relative_humidity"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r2i1p1",
+                "r3i1p1"
+            ],
+            "experiment": [
+                "rcp_4_5"
+            ],
+            "model": [
+                "mpi_esm_lr",
+                "mpi_esm_mr"
+            ],
+            "period": [
+                "200601-200912",
+                "201001-201912",
+                "202001-202912",
+                "203001-203912",
+                "204001-204912",
+                "205001-205912",
+                "206001-206912",
+                "207001-207912",
+                "208001-208912",
+                "209001-210012"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r2i1p1",
+                "r3i1p1"
+            ],
+            "experiment": [
+                "rcp_6_0"
+            ],
+            "model": [
+                "cesm1_cam5"
+            ],
+            "period": [
+                "200601-204912",
+                "205001-210012"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r2i1p1",
+                "r3i1p1"
+            ],
+            "experiment": [
+                "rcp_6_0"
+            ],
+            "model": [
+                "fio_esm"
+            ],
+            "period": [
+                "200601-210012"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r2i1p1",
+                "r3i1p1",
+                "r4i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "cesm1_waccm"
+            ],
+            "period": [
+                "195501-200512"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r2i1p1",
+                "r3i1p1",
+                "r4i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6"
+            ],
+            "model": [
+                "hadgem2_es"
+            ],
+            "period": [
+                "200512-203011",
+                "203012-205511",
+                "205512-208011",
+                "208012-210012"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r2i1p1",
+                "r3i1p1",
+                "r4i1p1"
+            ],
+            "experiment": [
+                "rcp_4_5",
+                "rcp_6_0",
+                "rcp_8_5"
+            ],
+            "model": [
+                "hadgem2_es"
+            ],
+            "period": [
+                "200512-203011",
+                "203012-205511",
+                "205512-208011",
+                "208012-210011",
+                "210012-210012"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r2i1p1",
+                "r4i1p1",
+                "r5i1p1",
+                "r6i1p1"
+            ],
+            "experiment": [
+                "rcp_4_5"
+            ],
+            "model": [
+                "ccsm4"
+            ],
+            "period": [
+                "200601-204912",
+                "205001-210012"
+            ],
+            "variable": [
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r2i1p1",
+                "r5i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "fgoals_g2"
+            ],
+            "period": [
+                "185001-185912",
+                "186001-186912",
+                "187001-187912",
+                "188001-188912",
+                "189001-189912",
+                "190001-190912",
+                "191001-191912",
+                "192001-192912",
+                "193001-193912",
+                "194001-194912",
+                "195001-195912",
+                "196001-196912",
+                "197001-197912",
+                "198001-198912",
+                "199001-199912",
+                "200001-200912"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r2i1p1",
+                "r5i1p3",
+                "r6i1p2"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "giss_e2_r"
+            ],
+            "period": [
+                "185001-187512",
+                "187601-190012",
+                "190101-192512",
+                "192601-195012",
+                "195101-197512",
+                "197601-200012",
+                "200101-200512"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "u_component_of_wind",
+                "v_component_of_wind"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r2i1p1",
+                "r6i1p2"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "giss_e2_r"
+            ],
+            "period": [
+                "185001-187512",
+                "187601-190012",
+                "190101-192512",
+                "192601-195012",
+                "195101-197512",
+                "197601-200012",
+                "200101-200512"
+            ],
+            "variable": [
+                "temperature"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r3i1p1"
+            ],
+            "experiment": [
+                "amip"
+            ],
+            "model": [
+                "gfdl_cm3",
+                "gfdl_hiram_c180"
+            ],
+            "period": [
+                "197901-198312",
+                "198401-198812",
+                "198901-199312",
+                "199401-199812",
+                "199901-200312",
+                "200401-200812"
+            ],
+            "variable": [
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r3i1p1"
+            ],
+            "experiment": [
+                "amip"
+            ],
+            "model": [
+                "gfdl_hiram_c180"
+            ],
+            "period": [
+                "197901-198312",
+                "198401-198812",
+                "198901-199312",
+                "199401-199812",
+                "199901-200312",
+                "200401-200812"
+            ],
+            "variable": [
+                "relative_humidity"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r3i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "fgoals_g2"
+            ],
+            "period": [
+                "185001-185912",
+                "186001-186912",
+                "187001-187912",
+                "188001-188912",
+                "189001-189912",
+                "190001-190912",
+                "191001-191912",
+                "192001-192912",
+                "193001-193912",
+                "194001-194912",
+                "195001-195912",
+                "196001-196912",
+                "197001-197912",
+                "198001-198912",
+                "199001-199912",
+                "200001-200612"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r3i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "ipsl_cm5a_lr",
+                "noresm1_m"
+            ],
+            "period": [
+                "185001-194912",
+                "195001-200512"
+            ],
+            "variable": [
+                "relative_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r3i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "mpi_esm_lr",
+                "mpi_esm_mr"
+            ],
+            "period": [
+                "185001-185912",
+                "186001-186912",
+                "187001-187912",
+                "188001-188912",
+                "189001-189912",
+                "190001-190912",
+                "191001-191912",
+                "192001-192912",
+                "193001-193912",
+                "194001-194912",
+                "195001-195912",
+                "196001-196912",
+                "197001-197912",
+                "198001-198912",
+                "199001-199912",
+                "200001-200512"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r3i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6"
+            ],
+            "model": [
+                "cesm1_waccm"
+            ],
+            "period": [
+                "200601-205412"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r3i1p1"
+            ],
+            "experiment": [
+                "rcp_4_5"
+            ],
+            "model": [
+                "ccsm4",
+                "cesm1_cam5"
+            ],
+            "period": [
+                "200601-204912",
+                "205001-210012"
+            ],
+            "variable": [
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r3i1p1"
+            ],
+            "experiment": [
+                "rcp_4_5"
+            ],
+            "model": [
+                "cesm1_cam5"
+            ],
+            "period": [
+                "200601-204912",
+                "205001-210012"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r3i1p1"
+            ],
+            "experiment": [
+                "rcp_4_5"
+            ],
+            "model": [
+                "fio_esm",
+                "ipsl_cm5a_lr"
+            ],
+            "period": [
+                "200601-210012"
+            ],
+            "variable": [
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r3i1p1"
+            ],
+            "experiment": [
+                "rcp_8_5"
+            ],
+            "model": [
+                "cesm1_waccm"
+            ],
+            "period": [
+                "200601-205512",
+                "205601-209912"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r3i1p1"
+            ],
+            "experiment": [
+                "rcp_8_5"
+            ],
+            "model": [
+                "canesm2",
+                "fio_esm",
+                "ipsl_cm5a_lr"
+            ],
+            "period": [
+                "200601-210012"
+            ],
+            "variable": [
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r3i1p1",
+                "r4i1p1"
+            ],
+            "experiment": [
+                "rcp_4_5"
+            ],
+            "model": [
+                "cesm1_waccm"
+            ],
+            "period": [
+                "200601-206512",
+                "206601-209912"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r3i1p3"
+            ],
+            "experiment": [
+                "amip"
+            ],
+            "model": [
+                "giss_e2_r"
+            ],
+            "period": [
+                "188001-195012",
+                "195101-200512"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "u_component_of_wind",
+                "v_component_of_wind"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r4i1p1"
+            ],
+            "experiment": [
+                "amip"
+            ],
+            "model": [
+                "canam4"
+            ],
+            "period": [
+                "195001-200912"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r4i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "hadgem2_es"
+            ],
+            "period": [
+                "185912-188411",
+                "188412-190911",
+                "190912-193411",
+                "193412-195911",
+                "195912-198411",
+                "198412-200511"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r4i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6"
+            ],
+            "model": [
+                "cesm1_waccm"
+            ],
+            "period": [
+                "200601-205012"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r4i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6",
+                "rcp_8_5"
+            ],
+            "model": [
+                "canesm2",
+                "ipsl_cm5a_lr"
+            ],
+            "period": [
+                "200601-210012"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r4i1p1"
+            ],
+            "experiment": [
+                "rcp_4_5"
+            ],
+            "model": [
+                "ipsl_cm5a_lr"
+            ],
+            "period": [
+                "200601-210012"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r4i1p1"
+            ],
+            "experiment": [
+                "rcp_6_0"
+            ],
+            "model": [
+                "ccsm4"
+            ],
+            "period": [
+                "200601-204912",
+                "205001-210012"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r4i1p1"
+            ],
+            "experiment": [
+                "rcp_8_5"
+            ],
+            "model": [
+                "cesm1_waccm"
+            ],
+            "period": [
+                "200601-205012",
+                "205101-209912"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r4i1p1",
+                "r5i1p1"
+            ],
+            "experiment": [
+                "amip"
+            ],
+            "model": [
+                "gfdl_cm3"
+            ],
+            "period": [
+                "197901-198312",
+                "198401-198812",
+                "198901-199312",
+                "199401-199812",
+                "199901-200312",
+                "200401-200812"
+            ],
+            "variable": [
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r4i1p1",
+                "r5i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "ccsm4",
+                "cnrm_cm5"
+            ],
+            "period": [
+                "185001-189912",
+                "190001-194912",
+                "195001-200512"
+            ],
+            "variable": [
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r4i1p1",
+                "r5i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "canesm2"
+            ],
+            "period": [
+                "185001-200512"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r4i1p1",
+                "r5i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6"
+            ],
+            "model": [
+                "ccsm4"
+            ],
+            "period": [
+                "200601-204912",
+                "205001-210012"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r4i1p1",
+                "r5i1p1",
+                "r6i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "ccsm4",
+                "cnrm_cm5"
+            ],
+            "period": [
+                "185001-189912",
+                "190001-194912",
+                "195001-200512"
+            ],
+            "variable": [
+                "u_component_of_wind"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r4i1p1",
+                "r5i1p1",
+                "r6i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "ipsl_cm5a_lr"
+            ],
+            "period": [
+                "185001-194912",
+                "195001-200512"
+            ],
+            "variable": [
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r4i1p1",
+                "r5i1p1",
+                "r6i1p1"
+            ],
+            "experiment": [
+                "rcp_6_0",
+                "rcp_8_5"
+            ],
+            "model": [
+                "ccsm4"
+            ],
+            "period": [
+                "200601-204912",
+                "205001-210012"
+            ],
+            "variable": [
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r5i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6",
+                "rcp_8_5"
+            ],
+            "model": [
+                "canesm2"
+            ],
+            "period": [
+                "200601-210012"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r5i1p1",
+                "r6i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "ipsl_cm5a_lr"
+            ],
+            "period": [
+                "185001-194912",
+                "195001-200512"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r6i1p1"
+            ],
+            "experiment": [
+                "amip"
+            ],
+            "model": [
+                "giss_e2_r"
+            ],
+            "period": [
+                "188001-195012",
+                "195101-200812"
+            ],
+            "variable": [
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r6i1p1"
+            ],
+            "experiment": [
+                "amip"
+            ],
+            "model": [
+                "ipsl_cm5a_lr"
+            ],
+            "period": [
+                "197901-198812",
+                "198901-199812",
+                "199901-200812",
+                "200901-200912"
+            ],
+            "variable": [
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r6i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "ccsm4",
+                "cnrm_cm5",
+                "ec_earth"
+            ],
+            "period": [
+                "185001-189912",
+                "190001-194912",
+                "195001-200512"
+            ],
+            "variable": [
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r6i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "cnrm_cm5",
+                "ec_earth"
+            ],
+            "period": [
+                "185001-189912",
+                "190001-194912",
+                "195001-200512"
+            ],
+            "variable": [
+                "specific_humidity"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r6i1p1"
+            ],
+            "experiment": [
+                "rcp_4_5"
+            ],
+            "model": [
+                "ccsm4"
+            ],
+            "period": [
+                "200601-204912",
+                "205001-210012"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r6i1p1"
+            ],
+            "experiment": [
+                "rcp_4_5"
+            ],
+            "model": [
+                "ec_earth"
+            ],
+            "period": [
+                "200601-205012",
+                "205101-210012"
+            ],
+            "variable": [
+                "v_component_of_wind"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r6i1p1"
+            ],
+            "experiment": [
+                "rcp_4_5"
+            ],
+            "model": [
+                "giss_e2_r"
+            ],
+            "period": [
+                "200601-202512",
+                "202601-205012",
+                "205101-207512",
+                "207601-210012"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r6i1p1"
+            ],
+            "experiment": [
+                "rcp_8_5"
+            ],
+            "model": [
+                "ec_earth"
+            ],
+            "period": [
+                "200601-205012",
+                "205101-210012"
+            ],
+            "variable": [
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r6i1p1",
+                "r6i1p2"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "giss_e2_h"
+            ],
+            "period": [
+                "185001-190012",
+                "190101-195012",
+                "195101-200012",
+                "200101-200512"
+            ],
+            "variable": [
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r6i1p1",
+                "r6i1p3"
+            ],
+            "experiment": [
+                "rcp_4_5"
+            ],
+            "model": [
+                "giss_e2_r"
+            ],
+            "period": [
+                "200601-202512",
+                "202601-205012",
+                "205101-207512",
+                "207601-210012"
+            ],
+            "variable": [
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r6i1p1",
+                "r7i1p1",
+                "r8i1p1"
+            ],
+            "experiment": [
+                "rcp_4_5"
+            ],
+            "model": [
+                "ec_earth"
+            ],
+            "period": [
+                "200601-205012",
+                "205101-210012"
+            ],
+            "variable": [
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r6i1p1",
+                "r8i1p1"
+            ],
+            "experiment": [
+                "rcp_8_5"
+            ],
+            "model": [
+                "ec_earth"
+            ],
+            "period": [
+                "200601-205012",
+                "205101-210012"
+            ],
+            "variable": [
+                "specific_humidity"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r6i1p3"
+            ],
+            "experiment": [
+                "rcp_4_5"
+            ],
+            "model": [
+                "giss_e2_h"
+            ],
+            "period": [
+                "200601-205012",
+                "205101-209912"
+            ],
+            "variable": [
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r7i1p1"
+            ],
+            "experiment": [
+                "amip"
+            ],
+            "model": [
+                "ccsm4"
+            ],
+            "period": [
+                "197901-200512",
+                "200601-200812"
+            ],
+            "variable": [
+                "relative_humidity",
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r7i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "ec_earth"
+            ],
+            "period": [
+                "185001-189912",
+                "190001-194912",
+                "195001-199912",
+                "200001-201212"
+            ],
+            "variable": [
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r8i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "ec_earth"
+            ],
+            "period": [
+                "185001-189912",
+                "190001-194912",
+                "195001-201212"
+            ],
+            "variable": [
+                "specific_humidity",
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r8i1p1"
+            ],
+            "experiment": [
+                "rcp_8_5"
+            ],
+            "model": [
+                "ec_earth"
+            ],
+            "period": [
+                "200601-205012",
+                "205101-210012"
+            ],
+            "variable": [
+                "v_component_of_wind"
+            ]
+        }
+    ]
+}

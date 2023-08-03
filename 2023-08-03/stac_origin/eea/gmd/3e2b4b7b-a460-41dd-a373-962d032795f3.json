@@ -1,0 +1,92 @@
+{
+  "type": "Collection",
+  "id": "3e2b4b7b-a460-41dd-a373-962d032795f3",
+  "stac_version": "1.0.0",
+  "description": "The Copernicus Fractional Snow Cover (FSC) product is generated in near real-time for the entire EEA38 and the United Kingdom, based on optical satellite data from the Sentinel-2 constellation. The product provides the fraction of the surface covered by snow at the top of canopy (FSC-TOC) and on ground (FSC-OG) per pixel as a percentage (0% – 100%) with a spatial resolution of 20 m x 20 m.\nFSC is one of the products of the pan-European High-Resolution Snow & Ice service (HR-S&I), which are provided at high spatial resolution (20 m x 20 m and 60 m x 60 m), from the Sentinel-2 and Sentinel-1 constellations data from September 1, 2016 onwards. Visit https://land.copernicus.eu/pan-european/biophysical-parameters/high-resolution-snow-and-ice-monitoring to get more information on the different HR-S&I products (Snow products : FSC, WDS, SWS, GFSC, and PSA. Ice products : RLIE and ARLIE)\nThe FSC product is distributed in raster files covering an area of 110 km by 110 km with a pixel size of 20 m by 20 m in UTM/WGS84 projection, which corresponds to the Sentinel-2 input L1C product tile. Each product is composed of seven separate files corresponding to the different layers of the product, and another metadata file.",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://cryo.land.copernicus.eu/finder/",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Cryo portal"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://cryo.land.copernicus.eu/wms/FSC?service=WMS&request=GetCapabilities&version=1.3.0",
+      "type": "OGC:WMS"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://cryo.land.copernicus.eu/resto/api/collections/HRSI/search.json",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "REST API"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://www.wekeo.eu",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "WEKEO portal"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://land.copernicus.eu/user-corner/technical-library/hrsi-snow-pum",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Product user manual"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://land.copernicus.eu/user-corner/technical-library/hrsi-snow-atbd",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Algorithm theoretical basis document"
+    }
+  ],
+  "title": "High Resolution Snow and Ice Monitoring: Fractional Snow Cover (raster 20m), Jul. 2020",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -26.0,
+          34.0,
+          44.0,
+          66.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2016-09-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "2020 3.6.7",
+    "EEA38 (from 2020)",
+    "Five days",
+    "Land cover",
+    "Land use",
+    "United Kingdom",
+    "climate change impact",
+    "ice",
+    "land cover",
+    "landscape alteration",
+    "monitoring",
+    "snow"
+  ],
+  "providers": [
+    {
+      "name": "European Environment Agency",
+      "description": "SDI - EEA geospatial data catalogue",
+      "roles": [
+        "licensor",
+        "producer",
+        "processor",
+        "host"
+      ],
+      "url": "https://sdi.eea.europa.eu/"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+<csw:Record xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">EO:ECMWF:DAT:EFAS_REFORECAST</dc:identifier>
+      <dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">Reforecasts of river discharge and related data by the European Flood Awareness System</dc:title>
+      <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/">dataset</dc:type>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Reforecast</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Product type: Reforecasts</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Spatial coverage: Europe</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Variable domain: Land (hydrology)</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Temporal coverage: Present</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Provider: Copernicus CEMS</dc:subject>
+      <dc:format xmlns:dc="http://purl.org/dc/elements/1.1/">GRIB and NetCDF</dc:format>
+      <dct:abstract xmlns:dct="http://purl.org/dc/terms/">This dataset provides gridded modelled hydrological time series forced with medium- to sub-seasonal range meteorological reforecasts. The data is a consistent representation of the most important hydrological variables across the European Flood Awareness System (EFAS) domain. The temporal resolution is 20 years of sub-daily reforecasts initialised twice weekly (Mondays and Thursdays) of:
+
+River discharge
+Soil moisture for three soil layers
+Snow water equivalent
+
+It also provides static data on soil depth for the three soil layers. Soil moisture and river discharge data are accompanied by ancillary files for interpretation (see related variables and links in the documentation).
+This dataset was produced by forcing the LISFLOOD hydrological model at a 5x5km resolution with ensemble meteorological reforecasts from the European Centre of Medium-range Weather Forecasts (ECMWF). Reforecasts are forecasts run over past dates and are typically used to assess the skill of a forecast system or to develop tools for statistical error correction of the forecasts. The reforecasts are initialised twice weekly with lead times up to 46 days, at 6-hourly time steps for 20 years. For more specific information on the how the reforecast dataset is produced we refer to the documentation.
+Companion datasets, also available through the Climate Data Store (CDS), are the operational forecasts, historical simulations which can be used to derive the hydrological climatology, and seasonal forecasts and reforecasts for users looking for long term forecasts. For users looking for global hydrological data, we refer to the Global Flood Awareness System (GloFAS) forecasts and historical simulations. All these datasets are part of the operational flood forecasting within the Copernicus Emergency Management Service (CEMS).
+
+Variables in the dataset/application are:
+River discharge, Snow depth water equivalent, Soil depth, Volumetric soil moisture
+
+Variables in the dataset/application are:
+Orography, Upstream area</dct:abstract>
+      <dct:spatial xmlns:dct="http://purl.org/dc/terms/">::EPSG:4326</dct:spatial>
+      <dc:rights xmlns:dc="http://purl.org/dc/elements/1.1/">https://cds.climate.copernicus.eu/api/v2/terms/static/licence-to-use-efas-products.pdf</dc:rights>
+      <dc:rights xmlns:dc="http://purl.org/dc/elements/1.1/">Content accessible through the CDS may only be used under the terms of the licenses attributed to each particular resource.</dc:rights>
+      <dct:accessRights xmlns:dct="http://purl.org/dc/terms/">licence</dct:accessRights>
+      <ows:BoundingBox xmlns:ows="http://www.opengis.net/ows">
+        <ows:LowerCorner>-180 -90</ows:LowerCorner>
+        <ows:UpperCorner>180 90</ows:UpperCorner>
+      </ows:BoundingBox>
+    </csw:Record>
+  

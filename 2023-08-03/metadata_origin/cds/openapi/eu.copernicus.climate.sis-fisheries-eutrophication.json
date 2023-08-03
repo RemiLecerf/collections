@@ -1,0 +1,281 @@
+{
+    "slug": "eutrophication-indicators-for-the-northwest-european-shelf-and-mediterranean-sea-from-2006-up-to-2100",
+    "name": "sis-fisheries-eutrophication",
+    "id": "eu.copernicus.climate.sis-fisheries-eutrophication",
+    "type": "dataset",
+    "rich_abstract": "<div class='abstract-text'>\n         <hr />\n<p>The dataset includes ocean eutrophication indicators derived from climate projections and ocean colour remote-sensing satellite products. Eutrophication refers to the excessive nutrient input into water bodies that lead to increased primary production, algal blooms, and low-oxygenated waters, consequently causing a reduction to marine life and habitat degradation. These indicators are useful to the long-term planning and monitoring of water quality since coastal areas of Europe are subject to the adverse effects of eutrophication, i.e. the increased occurrence of harmful algal blooms.</p>\n<p>Ocean eutrophication may be determined by measuring the concentration of chlorophyll-a, a measure of the amount of primary production in the water column. This may be modelled using biogeochemical models or observed by its green colour in the ocean using satellite remote sensing. In this dataset, the indicators are derived from the Copernicus Marine Environment Monitoring Service (CMEMS) ocean colour satellite product for 2006-2016 and climate projections. To produce the climate projections, two marine hydrodynamic-biogeochemical models forced with climate simulations were used: the NEMO-ERSEM model run on a domain for the Northwest European Shelf, and the POLCOM-ERSEM model run on a domain covering the Northwest European Shelf and Mediterranean Sea.</p>\n<p>The indicators are based on comparisons between daily chlorophyll-a concentration values and the daily 90th percentile (P90) chlorophyll-a concentration from climatology. The P90 of chlorophyll-a concentration can itself be used to detect abnormal levels of chlorophyll-a concentration in an ecosystem and has been adopted as a measure of eutrophication in coastal waters by the Convention for the Protection of the Marine Environment of the Northeast Atlantic 2008 (OSPAR). It is considered to be a robust ecological indicator of trophic ecological status. This is developed upon in this dataset and the measure of eutrophication used is the proportion of days in each month which have unusually high chlorophyll values (greater than that day\u2019s climatological P90 value). It has dimensionless units and its expected value in the absence of changes in eutrophication state is 0.1. The main eutrophication indicator in this dataset is the difference between this proportion and 0.1 and is referred to as the chlorophyll-a anomaly indicator. Additional derived indicators are also included that further measure changes in eutrophication status over different periods. For instance, we could ask whether a location has become generally more eutrophic up to August 2000, or whether Augusts have become more eutrophic up to 2000. The algorithms and metrics for eutrophication were developed and applied by Plymouth Marine Laboratory (UK).</p>\n<p>In order to assess the impact of climate change, simulations under two future climate scenarios based on different Representative Concentration Pathways (RCP) for future greenhouse gas concentration are conducted: the intermediate scenario, RCP4.5, in which greenhouse gas concentration peak around 2040 before declining mainly due to successful mitigation measures in place; and the more pessimistic scenario, RCP8.5, where greenhouse gas concentration continue to rise throughout the century. The hydrodynamic-biogeochemical models were driven by one Coupled Model Inter-comparison Project Phase 5 (CMIP5) global climate model (GCM) projection downscaled to a regional climate model (RCM). Note that by using only one of the many possible combinations of GCM-RCM pairs leads to an incomplete estimate of the true uncertainty in the outcome in a changing climate by, most likely, indicating a smaller spread of outcomes than if the estimate were based on a larger ensemble of such GCM-RCM combinations. This does not necessarily mean a reduction in the true uncertainty, but simply an incomplete estimate of it.</p>\n<p>This dataset was produced on behalf of the Copernicus Climate Change Service.</p>\n         \n         \n            <p></p>\n            <table class=\"abstract-description abstract-table\">\n            <tr><th colspan=\"2\">DATA DESCRIPTION</th>\n            \n<tr><th>Data type</th><td>Gridded</td></tr>\n<tr><th>Horizontal coverage</th><td><p>POLCOMS-ERSEM: Northwest European Shelf and Mediterranean Sea (20W to 37E, 11N to 65N)</p>\n<p>NEMO-ERSEM: Northwest European Shelf (20W to 13E, 40N to 65N)</p>\n<p>CMEMS satellite product: Northwest European Shelf and Mediterranean Sea (46W to 37E, 11N to 65N)</p></td></tr>\n<tr><th>Horizontal resolution</th><td><p>POLCOMS-ERSEM: 0.1\u00b0 x 0.1\u00b0 (approx. 11km)</p>\n<p>NEMO-ERSEM: 0.06\u00b0 x 0.06\u00b0 (approx. 7km)</p>\n<p>CMEMS satellite product: 1km x 1km</p></td></tr>\n<tr><th>Vertical coverage</th><td>Single level</td></tr>\n<tr><th>Vertical resolution</th><td>Variables are provided on a single level which may differ among variables</td></tr>\n<tr><th>Temporal coverage</th><td><p>POLCOMS-ERSEM: 2006 up to 2100</p>\n<p>NEMO-ERSEM: 2006 to 2049</p>\n<p>CMEMS satellite product: 2006 \u2013 2016</p></td></tr>\n<tr><th>Temporal resolution</th><td>Monthly</td></tr>\n<tr><th>File format</th><td>NetCDF-4</td></tr>\n<tr><th>Conventions</th><td>Climate and Forecast (CF) Metadata Convention v1.4</td></tr>\n<tr><th>Versions</th><td>v1.0</td></tr>\n<tr><th>Update frequency</th><td>No updates expected</td></tr>\n</table>\n\n    <p></p>\n    <table class=\"abstract-variables abstract-table\">\n    <tr><th colspan=\"3\">MAIN VARIABLES</th>\n    \n\n    <tr><th class='variables-name'>Name</th><th class='variables-units'>Units</th><th class='variables-description'>Description</th></tr>\n    \n<tr><td class='variables-name'>Chlorophyll-a anomaly</td><td class='variables-units'>dimensionless</td><td class='variables-description'>The anomaly is a measure of the extent to which the number of unusually high daily chlorophyll-a values is greater or less than expected. Unusually high is defined as exceeding P90 value for that day. At a given position, if the anomaly is zero and equal to the reference period we would expect the number of times the daily chlorophyll-a value exceeds P90 over a month to be 10% (0.1) of the total number of chlorophyll measurements. The monthly anomaly is therefore the difference between the actual proportion and 0.1, hence has a possible range of -0.1 (proportion=0) to 0.9 (proportion=1). Positive anomaly means we encounter more unusually high chlorophyll values than expected, negative anomaly means we encounter less.</td></tr>\n<tr><td class='variables-name'>Chlorophyll-a anomaly P-value</td><td class='variables-units'>dimensionless</td><td class='variables-description'>The two-tailed P-value of the mean annual rate of change in chlorophyll-a anomaly. Low P-values indicate that the results are unlikely to have arisen by chance, and so we can be more confident that the trend is real. Standard practice is to treat P-values less than 0.05 as significant.</td></tr>\n<tr><td class='variables-name'>Chlorophyll-a anomaly gradient</td><td class='variables-units'>year<sup>-1</sup></td><td class='variables-description'>The mean annual rate of change of the chlorophyll-a anomaly from the start of the time series to the given date, determined through simple linear regression. These data are available either as a 'standard' time series where data is presented with a monthly resolution, progressing January, February etc. through the year, or split out on a calendar month basis where only data for a named month is returned. This monthly data is useful for comparing year on year changes for a specific month or season.</td></tr>\n<tr><td class='variables-name'>Cumulative chlorophyll-a anomaly</td><td class='variables-units'>dimensionless</td><td class='variables-description'>The cumulative sum of monthly anomalies from the start of the time series to the given date. This is a measure of consistent behaviour in the anomaly, e.g. if the anomaly is highly variable but slightly greater than zero on average, this might be hard to detect in the anomaly or slope data, but the cumulative anomaly will gradually increase. This can either be calculated using every month in the time series, or using only the calendar month corresponding to the date, e.g. the sum to August 2016 would use only August anomalies. For the data stored by month this is the cumulative difference between the monthly proportion exceeding climatological P90 and 0.1 in the given calendar month.</td></tr>\n<tr><td class='variables-name'>Standard error of the cumulative chlorophyll-a anomaly</td><td class='variables-units'>dimensionless</td><td class='variables-description'>This is a measure of the statistical uncertainty of the cumulative anomaly. For instance, a cumulative anomaly of 1 would suggest a consistent anomaly greater than zero if its standard error were 0.1, but would be attributable to chance if it were 10. For the data stored by month this is the standard error of the cumulative difference in proportion in the given calendar month.</td></tr>\n</table>\n    </div>",
+    "terms": [
+        "licence-to-use-copernicus-products"
+    ],
+    "constraints": [
+        {
+            "origin": [
+                "cmems_satellite_product"
+            ],
+            "time_aggregation": [
+                "all_months_in_selected_years"
+            ],
+            "variable": [
+                "chlorophyll_a_anomaly",
+                "chlorophyll_a_anomaly_p_value",
+                "chlorophyll_a_anomaly_gradient",
+                "cumulative_chlorophyll_a_anomaly",
+                "standard_error_of_the_cumulative_chlorophyll_a_anomaly"
+            ],
+            "year": [
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016"
+            ]
+        },
+        {
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06",
+                "07",
+                "08",
+                "09",
+                "10",
+                "11",
+                "12"
+            ],
+            "origin": [
+                "cmems_satellite_product"
+            ],
+            "time_aggregation": [
+                "selected_months_in_all_available_years"
+            ],
+            "variable": [
+                "chlorophyll_a_anomaly_p_value",
+                "chlorophyll_a_anomaly_gradient",
+                "cumulative_chlorophyll_a_anomaly",
+                "standard_error_of_the_cumulative_chlorophyll_a_anomaly"
+            ]
+        },
+        {
+            "experiment": [
+                "rcp4_5",
+                "rcp8_5"
+            ],
+            "origin": [
+                "nemo_ersem"
+            ],
+            "time_aggregation": [
+                "all_months_in_selected_years"
+            ],
+            "variable": [
+                "chlorophyll_a_anomaly",
+                "chlorophyll_a_anomaly_p_value",
+                "chlorophyll_a_anomaly_gradient",
+                "cumulative_chlorophyll_a_anomaly",
+                "standard_error_of_the_cumulative_chlorophyll_a_anomaly"
+            ],
+            "year": [
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018",
+                "2019",
+                "2020",
+                "2021",
+                "2022",
+                "2023",
+                "2024",
+                "2025",
+                "2026",
+                "2027",
+                "2028",
+                "2029",
+                "2030",
+                "2031",
+                "2032",
+                "2033",
+                "2034",
+                "2035",
+                "2036",
+                "2037",
+                "2038",
+                "2039",
+                "2040",
+                "2041",
+                "2042",
+                "2043",
+                "2044",
+                "2045",
+                "2046",
+                "2047",
+                "2048",
+                "2049"
+            ]
+        },
+        {
+            "experiment": [
+                "rcp4_5",
+                "rcp8_5"
+            ],
+            "origin": [
+                "polcoms_ersem"
+            ],
+            "time_aggregation": [
+                "all_months_in_selected_years"
+            ],
+            "variable": [
+                "chlorophyll_a_anomaly",
+                "chlorophyll_a_anomaly_p_value",
+                "chlorophyll_a_anomaly_gradient",
+                "cumulative_chlorophyll_a_anomaly",
+                "standard_error_of_the_cumulative_chlorophyll_a_anomaly"
+            ],
+            "year": [
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018",
+                "2019",
+                "2020",
+                "2021",
+                "2022",
+                "2023",
+                "2024",
+                "2025",
+                "2026",
+                "2027",
+                "2028",
+                "2029",
+                "2030",
+                "2031",
+                "2032",
+                "2033",
+                "2034",
+                "2035",
+                "2036",
+                "2037",
+                "2038",
+                "2039",
+                "2040",
+                "2041",
+                "2042",
+                "2043",
+                "2044",
+                "2045",
+                "2046",
+                "2047",
+                "2048",
+                "2049",
+                "2050",
+                "2051",
+                "2052",
+                "2053",
+                "2054",
+                "2055",
+                "2056",
+                "2057",
+                "2058",
+                "2059",
+                "2060",
+                "2061",
+                "2062",
+                "2063",
+                "2064",
+                "2065",
+                "2066",
+                "2067",
+                "2068",
+                "2069",
+                "2070",
+                "2071",
+                "2072",
+                "2073",
+                "2074",
+                "2075",
+                "2076",
+                "2077",
+                "2078",
+                "2079",
+                "2080",
+                "2081",
+                "2082",
+                "2083",
+                "2084",
+                "2085",
+                "2086",
+                "2087",
+                "2088",
+                "2089",
+                "2090",
+                "2091",
+                "2092",
+                "2093",
+                "2094",
+                "2095",
+                "2096",
+                "2097",
+                "2098",
+                "2099"
+            ]
+        },
+        {
+            "experiment": [
+                "rcp4_5",
+                "rcp8_5"
+            ],
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06",
+                "07",
+                "08",
+                "09",
+                "10",
+                "11",
+                "12"
+            ],
+            "origin": [
+                "nemo_ersem",
+                "polcoms_ersem"
+            ],
+            "time_aggregation": [
+                "selected_months_in_all_available_years"
+            ],
+            "variable": [
+                "chlorophyll_a_anomaly_p_value",
+                "chlorophyll_a_anomaly_gradient",
+                "cumulative_chlorophyll_a_anomaly",
+                "standard_error_of_the_cumulative_chlorophyll_a_anomaly"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,68 @@
+{
+  "type": "Collection",
+  "id": "9723d33f-ac36-49d0-b2c7-80710d377a7d",
+  "stac_version": "1.0.0",
+  "description": "The Copernicus High Resolution Forest Layer Tree Cover Change Mask (TCCM) 2015-2018 raster product provides information on the change between the reference years 2015 and 2018 and consists of 4 thematic classes (unchanged areas with no tree cover / new tree cover / loss of tree cover / unchanged areas with tree cover) at 20m spatial resolution and covers EEA38 area and the United Kingdom. \nThe production of the High Resolution Forest layers was coordinated by the European Environment Agency (EEA) in the frame of the EU Copernicus programme.\n\nThe High Resolution Forest product consists of three types of (status) products and additional change products. The status products are available for the 2012, 2015 and 2018 reference years: 1. Tree cover density providing level of tree cover density in a range from 0-100%; 2. Dominant leaf type providing information on the dominant leaf type: broadleaved or coniferous; 3. A Forest type product. The forest type product allows to get as close as possible to the FAO forest definition. In its original (20m) resolution it consists of two products: 1) a dominant leaf type product that has a MMU of 0.5 ha, as well as a 10% tree cover density threshold applied, and 2) a support layer that maps, based on the dominant leaf type product, trees under agricultural use and in urban context (derived from CLC and high resolution imperviousness 2009 data). For the final 100m product trees under agricultural use and urban context from the support layer are removed.",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://land.copernicus.eu/pan-european/high-resolution-layers/forests/tree-cover-density/change-maps/tree-cover-change-mask-2015-2018?tab=download",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Download (requires authentication)"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://image.discomap.eea.europa.eu/arcgis/rest/services/GioLandPublic/HRL_TreeCoverChangeMask_15_18/ImageServer",
+      "type": "ESRI:REST"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://image.discomap.eea.europa.eu/arcgis/services/GioLandPublic/HRL_TreeCoverChangeMask_15_18/ImageServer/WMSServer?request=GetCapabilities&service=WMS",
+      "type": "OGC:WMS"
+    }
+  ],
+  "title": "High Resolution Layer: Tree Cover Change Mask 2015-2018 (raster 20m), Dec. 2020",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -56.506,
+          24.284,
+          72.907,
+          72.665
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2014-01-01T00:00:00Z",
+          "2018-10-31T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "EEA38 (from 2020)",
+    "Land cover",
+    "United Kingdom",
+    "forest management",
+    "land cover",
+    "land use",
+    "landscape alteration"
+  ],
+  "providers": [
+    {
+      "name": "European Environment Agency",
+      "description": "SDI - EEA geospatial data catalogue",
+      "roles": [
+        "licensor",
+        "producer",
+        "processor",
+        "host"
+      ],
+      "url": "https://sdi.eea.europa.eu/"
+    }
+  ]
+}

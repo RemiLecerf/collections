@@ -1,0 +1,68 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dct="http://purl.org/dc/terms/" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/metadata/eu.copernicus.climate.cems-glofas-seasonal-reforecast">
+        <foaf:primaryTopic rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/resource/10.24381/cds.0aa9b9dd"/>
+        <dct:issued>2018-03-28</dct:issued>
+        <dct:modified>2018-03-28</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/srv/eng/xml.metadata.get?uuid=eu.copernicus.climate.cems-glofas-seasonal-reforecast">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://cds.climate.copernicus.eu:443//geonetwork?uuid=eu.copernicus.climate.cems-glofas-seasonal-reforecast">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/resource/10.24381/cds.0aa9b9dd">
+        <dct:identifier>10.24381/cds.0aa9b9dd</dct:identifier>
+        <dct:title>Seasonal reforecasts of river discharge and related data from the Global Flood Awareness System</dct:title>
+        <dct:abstract>This dataset provides a gridded modelled time series of river discharge forced with seasonal range meteorological reforecasts. The data is a consistent representation of a key hydrological variable across the global domain, and is a product of the Global Flood Awareness System (GloFAS). It is accompanied by an ancillary file for interpretation that provides the upstream area (see the related variables table and associated link in the documentation).
+This dataset was produced by forcing a hydrological modelling chain with input from the European Centre for Medium-range Weather Forecasts (ECMWF) ensemble seasonal forecasting system, SEAS5. For the period of 1981 to 2016 the number of ensemble members is 25, whilst reforecasts produced for 2017 onwards use a 51-member ensemble. Reforecasts are forecasts run over past dates, with those presented here used for producing the seasonal river discharge thresholds. In addition, they provide a suitably long time period against which the skill of the seasonal forecast can be assessed. The reforecasts are initialised monthly and run for 123 days, with a 24-hourly time step. For more specific information on the how the seasonal reforecast dataset is produced we refer to the documentation.
+Companion datasets, also available through the Climate Data Store (CDS), include the seasonal forecasts, for which the dataset provided here can be useful for local skill assessment and post-processing. For users looking for shorter term forecasts there are also medium-range forecasts and reforecasts available, as well as historical simulations that can be used to derive the hydrological climatology. For users looking specifically for European hydrological data, we refer to the European Flood Awareness System (EFAS) forecasts and historical simulations. All these datasets are part of the operational flood forecasting within the Copernicus Emergency Management Service (CEMS).
+
+Variables in the dataset/application are:
+River discharge in the last 24 hours
+
+Variables in the dataset/application are:
+Elevation, Upstream area</dct:abstract>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/GEMET%20-%20INSPIRE%20themes%2C%20version%201.0/Reforecast"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Product type: Seasonal reforecasts"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Spatial coverage: Global"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Variable domain: Land (hydrology)"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Temporal coverage: Past"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Provider: Copernicus CEMS"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/iso/topicCategory/Reforecast"/>
+        <foaf:thumbnail rdf:resource="https://datastore.copernicus-climate.eu/c3s/published-forms-v2/c3sprod/cems-glofas-seasonal-reforecast/overview.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((0 -60, 0 90, 360 90, 360 -60, 0 -60))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:temporal>1981-01-01
+          /
+          current</dct:temporal>
+        <dct:publisher rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/organization/ECMWF"/>
+        <dct:accrualPeriodicity>asNeeded</dct:accrualPeriodicity>
+        <dct:language>eng</dct:language>
+        <dct:license>licence</dct:license>
+        <dct:license>https://cds.climate.copernicus.eu/api/v2/terms/static/licence-to-use-efas-products.pdf</dct:license>
+        <dcat:distribution rdf:resource="https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.0aa9b9dd"/>
+        <dcat:distribution rdf:resource="https://confluence.ecmwf.int/display/CEMS/Global+Flood+Awareness+System"/>
+        <dcat:distribution rdf:resource="http://www.globalfloods.eu/"/>
+        <dcat:distribution rdf:resource="https://confluence.ecmwf.int/display/CEMS/Auxiliary+Data"/>
+        <dcat:dataQuality>EC Copernicus program</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+    

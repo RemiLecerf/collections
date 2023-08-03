@@ -1,0 +1,71 @@
+{
+  "type": "Collection",
+  "id": "urn:cgls:global:ndvi_v3_1km",
+  "stac_version": "1.0.0",
+  "description": "The Normalized Difference Vegetation Index (NDVI) is a widely used, dimensionless index that is indicative for vegetation density and is defined as NDVI=(NIR-Red)/(NIR+Red) where NIR corresponds to the reflectance in the near infrared bands, and Red to the reflectance in the red bands.",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://land.copernicus.eu/global/access",
+      "type": "HTTP",
+      "title": "Copernicus Global Land Service"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://land.copernicus.eu/global/products/ndvi",
+      "type": "HTTP",
+      "title": "Copernicus Global Land Service"
+    },
+    {
+      "rel": "describedby",
+      "href": "http://eoportal.eumetsat.int",
+      "title": "Copernicus Global Land Service"
+    }
+  ],
+  "title": "Normalized Difference Vegetation Index: global 10-daily (raster 1km) - version 3, Feb 2021",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -60.0,
+          180.0,
+          80.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1999-01-01T00:00:00Z",
+          "2020-06-30T23:59:59Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "10-daily",
+    "Dekad",
+    "GLOBAL",
+    "Orthoimagery",
+    "cover",
+    "density",
+    "growth",
+    "ndvi",
+    "vegetation"
+  ],
+  "providers": [
+    {
+      "name": "Copernicus Land Monitoring Service",
+      "description": "Copernicus Land Monitoring Service - VITO NV",
+      "roles": [
+        "licensor",
+        "producer",
+        "processor",
+        "host"
+      ],
+      "url": "https://land.copernicus.eu/"
+    }
+  ]
+}

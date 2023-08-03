@@ -1,0 +1,315 @@
+{
+    "slug": "soil-erosion-indicators-for-italy-from-1981-to-2080",
+    "name": "sis-soil-erosion",
+    "id": "eu.copernicus.climate.sis-soil-erosion",
+    "type": "dataset",
+    "rich_abstract": "<div class='abstract-text'>\n         <hr />\n<p>This dataset provides rainfall erosivity (R factor), associated indicators, and the potential for soil loss induced by water erosion for Italy. The dataset is derived from integrating rainfall data included in Climate Data Store with non-climate data to assess soil susceptibility to water erosion according to Revised Universal Soil Loss Equation (RUSLE) approach. The gridded dataset can support the decision-making process of many stakeholders for strategical planning purposes across different sectors addressed by the Copernicus Climate Change Service. The dataset provides:</p>\n<ul>\n<li>\n<p>Key information on water erosion dynamics in terms of R factor and potential soil loss for the historical period. The assessment of R factor uses as input gridded observations (E-OBS) and reanalysis data (ERA5, ERA5-Land) for precipitation included in Climate Data Store. The soil loss assessment is obtained by further operating the R factor derived from ERA5-Land with non-climate gridded data representing soil susceptibility to water erosion in accordance to the RUSLE formulation. These are provided at \u2248500m horizontal resolution in this dataset.</p>\n</li>\n<li>\n<p>Key information on water erosion dynamics in terms of R factor and potential soil loss for future periods. The assessment is again based on the RUSLE approach and uses as input precipitation data included in the EURO-CORDEX ensemble climate projections (0.11\u00b0) under several Representative Concentration Pathways (RCPs). In this case, bias-corrected monthly precipitation data are used and the R factor is provided both at native horizontal resolution and regridded to \u2248500m to be operated with other RUSLE factors to derive potential soil loss for the future. Additional R factor proxy variables, based on daily precipitation data, are provided at native horizontal resolution and as anomalies with respect to the historical period, with no bias-correction.</p>\n</li>\n</ul>\n<p>This dataset was produced on behalf of the Copernicus Climate Change Service.</p>\n         \n         \n            <p></p>\n            <table class=\"abstract-description abstract-table\">\n            <tr><th colspan=\"2\">DATA DESCRIPTION</th>\n            \n<tr><th>Data type</th><td>Gridded</td></tr>\n<tr><th>Horizontal coverage</th><td>Italy</td></tr>\n<tr><th>Horizontal resolution</th><td><p>High resolution data: remapped datasets are available for R factor and soil loss at 500 m x 500 m resolution for the ERA5-Land and EURO-CORDEX output.</p>\n<p>Native resolution data: the R factor and precipitation variables are provided at the native-resolution for ERA5, ERA5-Land, E-OBS and EURO-CORDEX output.</p></td></tr>\n<tr><th>Vertical coverage</th><td>Surface</td></tr>\n<tr><th>Vertical resolution</th><td>Single level</td></tr>\n<tr><th>Temporal coverage</th><td>1981-2080 (2011-2020 excluded)</td></tr>\n<tr><th>Temporal resolution</th><td><p>Historical period: single value representing the 30-year period from 1981 to 2010 for R factor and soil loss. This is also the reference period for the future climate projections.</p>\n<p>Future periods: single value representing the 30-year periods 2021-2050 and 2051-2080 for R factor and soil loss as absolute values. Other indicators are presented as anomalies with respect to the reference period 1981-2010.</p></td></tr>\n<tr><th>File format</th><td>NetCDF-4</td></tr>\n<tr><th>Conventions</th><td>Climate and Forecast (CF) Metadata Convention v1.4 and greater (based on input data), Attribute Convention for Dataset Discovery (ACDD) v1.3</td></tr>\n<tr><th>Versions</th><td>1.0</td></tr>\n<tr><th>Update frequency</th><td>No updates expected</td></tr>\n</table>\n\n    <p></p>\n    <table class=\"abstract-variables abstract-table\">\n    <tr><th colspan=\"3\">MAIN VARIABLES</th>\n    \n\n    <tr><th class='variables-name'>Name</th><th class='variables-units'>Units</th><th class='variables-description'>Description</th></tr>\n    \n<tr><td class='variables-name'>Maximum 1-day precipitation</td><td class='variables-units'>kg m<sup>-2</sup></td><td class='variables-description'>The maximum value of daily precipitation amount per annum averaged over the 30-year periods provided in the dataset.</td></tr>\n<tr><td class='variables-name'>Maximum 5-day precipitation</td><td class='variables-units'>kg m<sup>-2</sup></td><td class='variables-description'>The maximum value of five-day cumulative precipitation per annum computed by moving sum average and further averaged over the 30-year periods provided in the dataset. Events between two years are associated to that in which more days occur.</td></tr>\n<tr><td class='variables-name'>Number of days with LWE greater than 1 mm</td><td class='variables-units'>Count</td><td class='variables-description'>Number of days with at least 1 mm of liquid water equivalent (LWE) per annum averaged over the 30-year periods provided in the dataset.</td></tr>\n<tr><td class='variables-name'>Number of days with LWE greater than 20 mm</td><td class='variables-units'>Count</td><td class='variables-description'>Number of days with at least 20 mm of liquid water equivalent (LWE) per annum averaged over the 30-year periods provided in the dataset.</td></tr>\n<tr><td class='variables-name'>R factor</td><td class='variables-units'>MJ mm ha<sup>-1</sup> h<sup>-1</sup> yr<sup>-1</sup></td><td class='variables-description'>This is the rainfall erosivity. It is the kinetic energy associated with rainfall-related mechanisms (raindrop impact or rate of associated runoff) used to quantify the effect of rainfall on sheet and rill erosion. It is computed according to six empirical models consolidated in the literature (cited in the documentation) using input data from time series of cumulated rainfall at monthly and/or annual time steps depending on each specific model. The values from the six models are then averaged to derive a single R factor value. The R factor is used in calculating the Revised Universal Soil Loss Equation (RUSLE).</td></tr>\n<tr><td class='variables-name'>Soil loss</td><td class='variables-units'>t ha<sup>-1</sup> yr<sup>-1</sup></td><td class='variables-description'>Potential soil loss by rainfall-related rill and inter-rill erosion, obtained using the Revised Universal Soil Loss Equation (RUSLE) approach.</td></tr>\n<tr><td class='variables-name'>Spell length of days with LWE greater than 1 mm</td><td class='variables-units'>Count</td><td class='variables-description'>The maximum number of consecutive days with at least 1 mm of liquid water equivalent (LWE) per annum averaged over the 30-year periods provided in the dataset.</td></tr>\n<tr><td class='variables-name'>Total precipitation</td><td class='variables-units'>kg m<sup>-2</sup></td><td class='variables-description'>Total precipitation amount per annum averaged over the 30-year periods provided in the dataset.</td></tr>\n</table>\n    </div>",
+    "terms": [
+        "licence-to-use-copernicus-products"
+    ],
+    "constraints": [
+        {
+            "horizontal_aggregation": [
+                "native_resolution"
+            ],
+            "period": [
+                "1981-2010"
+            ],
+            "product_type": [
+                "e_obs",
+                "era5",
+                "era5_land"
+            ],
+            "variable": [
+                "r_factor"
+            ]
+        },
+        {
+            "horizontal_aggregation": [
+                "regridded"
+            ],
+            "period": [
+                "1981-2010"
+            ],
+            "product_type": [
+                "era5_land"
+            ],
+            "variable": [
+                "r_factor",
+                "soil_loss"
+            ]
+        },
+        {
+            "experiment": [
+                "all_rcps"
+            ],
+            "horizontal_aggregation": [
+                "regridded"
+            ],
+            "multimodel_statistic": [
+                "standard_deviation"
+            ],
+            "period": [
+                "2021-2050",
+                "2051-2080"
+            ],
+            "product_type": [
+                "euro_cordex"
+            ],
+            "variable": [
+                "r_factor",
+                "soil_loss"
+            ]
+        },
+        {
+            "experiment": [
+                "all_rcps",
+                "rcp_2_6",
+                "rcp_4_5",
+                "rcp_8_5"
+            ],
+            "horizontal_aggregation": [
+                "regridded"
+            ],
+            "multimodel_statistic": [
+                "mean"
+            ],
+            "period": [
+                "2021-2050",
+                "2051-2080"
+            ],
+            "product_type": [
+                "euro_cordex"
+            ],
+            "variable": [
+                "r_factor",
+                "soil_loss"
+            ]
+        },
+        {
+            "experiment": [
+                "rcp_2_6"
+            ],
+            "gcm": [
+                "cnrm_cm5",
+                "hadgem2_es"
+            ],
+            "horizontal_aggregation": [
+                "native_resolution"
+            ],
+            "period": [
+                "2021-2050",
+                "2051-2080"
+            ],
+            "product_type": [
+                "euro_cordex"
+            ],
+            "rcm": [
+                "racmo22e"
+            ],
+            "variable": [
+                "maximum_1_day_precipitation",
+                "maximum_5_day_precipitation",
+                "number_of_days_with_lwe_greater_than_1_mm",
+                "number_of_days_with_lwe_greater_than_20_mm",
+                "r_factor",
+                "spell_length_of_days_with_lwe_greater_than_1_mm",
+                "total_precipitation"
+            ]
+        },
+        {
+            "experiment": [
+                "rcp_2_6"
+            ],
+            "gcm": [
+                "hadgem2_es",
+                "mpi_esm_lr"
+            ],
+            "horizontal_aggregation": [
+                "native_resolution"
+            ],
+            "period": [
+                "2021-2050",
+                "2051-2080"
+            ],
+            "product_type": [
+                "euro_cordex"
+            ],
+            "rcm": [
+                "rca4"
+            ],
+            "variable": [
+                "maximum_1_day_precipitation",
+                "maximum_5_day_precipitation",
+                "number_of_days_with_lwe_greater_than_1_mm",
+                "number_of_days_with_lwe_greater_than_20_mm",
+                "r_factor",
+                "spell_length_of_days_with_lwe_greater_than_1_mm",
+                "total_precipitation"
+            ]
+        },
+        {
+            "experiment": [
+                "rcp_2_6",
+                "rcp_4_5",
+                "rcp_8_5"
+            ],
+            "gcm": [
+                "mpi_esm_lr"
+            ],
+            "horizontal_aggregation": [
+                "native_resolution"
+            ],
+            "period": [
+                "2021-2050",
+                "2051-2080"
+            ],
+            "product_type": [
+                "euro_cordex"
+            ],
+            "rcm": [
+                "csc_remo2009"
+            ],
+            "variable": [
+                "maximum_1_day_precipitation",
+                "maximum_5_day_precipitation",
+                "number_of_days_with_lwe_greater_than_1_mm",
+                "number_of_days_with_lwe_greater_than_20_mm",
+                "r_factor",
+                "spell_length_of_days_with_lwe_greater_than_1_mm",
+                "total_precipitation"
+            ]
+        },
+        {
+            "experiment": [
+                "rcp_4_5",
+                "rcp_8_5"
+            ],
+            "gcm": [
+                "cnrm_cm5",
+                "ec_earth",
+                "hadgem2_es"
+            ],
+            "horizontal_aggregation": [
+                "native_resolution"
+            ],
+            "period": [
+                "2021-2050",
+                "2051-2080"
+            ],
+            "product_type": [
+                "euro_cordex"
+            ],
+            "rcm": [
+                "racmo22e"
+            ],
+            "variable": [
+                "maximum_1_day_precipitation",
+                "maximum_5_day_precipitation",
+                "number_of_days_with_lwe_greater_than_1_mm",
+                "number_of_days_with_lwe_greater_than_20_mm",
+                "r_factor",
+                "spell_length_of_days_with_lwe_greater_than_1_mm",
+                "total_precipitation"
+            ]
+        },
+        {
+            "experiment": [
+                "rcp_4_5",
+                "rcp_8_5"
+            ],
+            "gcm": [
+                "cnrm_cm5",
+                "ipsl_cm5a_mr",
+                "hadgem2_es",
+                "mpi_esm_lr"
+            ],
+            "horizontal_aggregation": [
+                "native_resolution"
+            ],
+            "period": [
+                "2021-2050",
+                "2051-2080"
+            ],
+            "product_type": [
+                "euro_cordex"
+            ],
+            "rcm": [
+                "rca4"
+            ],
+            "variable": [
+                "maximum_1_day_precipitation",
+                "maximum_5_day_precipitation",
+                "number_of_days_with_lwe_greater_than_1_mm",
+                "number_of_days_with_lwe_greater_than_20_mm",
+                "r_factor",
+                "spell_length_of_days_with_lwe_greater_than_1_mm",
+                "total_precipitation"
+            ]
+        },
+        {
+            "experiment": [
+                "rcp_4_5",
+                "rcp_8_5"
+            ],
+            "gcm": [
+                "cnrm_cm5",
+                "hadgem2_es",
+                "mpi_esm_lr"
+            ],
+            "horizontal_aggregation": [
+                "native_resolution"
+            ],
+            "period": [
+                "2021-2050",
+                "2051-2080"
+            ],
+            "product_type": [
+                "euro_cordex"
+            ],
+            "rcm": [
+                "cclm4_8_17"
+            ],
+            "variable": [
+                "maximum_1_day_precipitation",
+                "maximum_5_day_precipitation",
+                "number_of_days_with_lwe_greater_than_1_mm",
+                "number_of_days_with_lwe_greater_than_20_mm",
+                "r_factor",
+                "spell_length_of_days_with_lwe_greater_than_1_mm",
+                "total_precipitation"
+            ]
+        },
+        {
+            "experiment": [
+                "rcp_4_5",
+                "rcp_8_5"
+            ],
+            "gcm": [
+                "noresm1_m"
+            ],
+            "horizontal_aggregation": [
+                "native_resolution"
+            ],
+            "period": [
+                "2021-2050",
+                "2051-2080"
+            ],
+            "product_type": [
+                "euro_cordex"
+            ],
+            "rcm": [
+                "hirham5"
+            ],
+            "variable": [
+                "maximum_1_day_precipitation",
+                "maximum_5_day_precipitation",
+                "number_of_days_with_lwe_greater_than_1_mm",
+                "number_of_days_with_lwe_greater_than_20_mm",
+                "r_factor",
+                "spell_length_of_days_with_lwe_greater_than_1_mm",
+                "total_precipitation"
+            ]
+        }
+    ]
+}

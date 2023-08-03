@@ -1,0 +1,181 @@
+{
+    "description": "Extractable potassium at soil depths of 0-20 cm and 20-50 cm,\npredicted mean and standard deviation.\n\nPixel values must be back-transformed with `exp(x/10)-1`.\n\nIn areas of dense jungle (generally over central Africa), model accuracy is\nlow and therefore artifacts such as banding (striping) might be seen.\n\nSoil property predictions were made by\n[Innovative Solutions for Decision Agriculture Ltd. (iSDA)](https://isda-africa.com/)\nat 30 m pixel size using machine learning coupled with remote sensing data\nand a training set of over 100,000 analyzed soil samples.\n\nFurther information can be found in the\n[FAQ](https://www.isda-africa.com/isdasoil/faq/) and\n[technical information documentation](https://www.isda-africa.com/isdasoil/technical-information/). To submit an issue or request support, please visit\n[the iSDAsoil site](https://isda-africa.com/isdasoil).\n",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -31.46,
+                    -35.22,
+                    57.08,
+                    37.98
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2001-01-01T00:00:00Z",
+                    "2017-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
+    "gee:type": "image",
+    "gee:user_uploaded": true,
+    "id": "ISDASOIL/Africa/v1/potassium_extractable",
+    "keywords": [
+        "africa",
+        "isda",
+        "potassium",
+        "soil"
+    ],
+    "license": "CC-BY-4.0",
+    "links": [
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections/ISDASOIL/Africa/v1/potassium_extractable",
+            "rel": "self",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections",
+            "rel": "parent",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/",
+            "rel": "root",
+            "type": "application/json"
+        },
+        {
+            "code": "JavaScript",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/ISDASOIL/ISDASOIL_Africa_v1_potassium_extractable",
+            "rel": "related",
+            "title": "Run the example for ISDASOIL/Africa/v1/potassium_extractable in the Earth Engine Code Editor",
+            "type": "text/html"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/images/ISDASOIL/ISDASOIL_Africa_v1_potassium_extractable_sample.png",
+            "rel": "preview",
+            "type": "image/png"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/ISDASOIL_Africa_v1_potassium_extractable#terms-of-use",
+            "rel": "license",
+            "type": "text/html"
+        },
+        {
+            "href": "https://spdx.org/licenses/CC-BY-4.0.html",
+            "rel": "license",
+            "type": "text/html"
+        }
+    ],
+    "providers": [
+        {
+            "name": "iSDA",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://isda-africa.com/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/ISDASOIL_Africa_v1_potassium_extractable"
+        }
+    ],
+    "sci:citation": "Hengl, T., Miller, M.A.E., Kri&zcaron;an, J., et al. African soil properties and nutrients\nmapped at 30 m spatial resolution using two-scale ensemble machine learning.\nSci Rep 11, 6130 (2021).\n[doi:10.1038/s41598-021-85639-y](https://doi.org/10.1038/s41598-021-85639-y)\n",
+    "stac_extensions": [
+        "collection-assets"
+    ],
+    "stac_version": "1.0.0",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Potassium, extractable, predicted mean at 0-20 cm depth",
+                "gee:units": "ppm",
+                "name": "mean_0_20"
+            },
+            {
+                "description": "Potassium, extractable, predicted mean at 20-50 cm depth",
+                "gee:units": "ppm",
+                "name": "mean_20_50"
+            },
+            {
+                "description": "Potassium, extractable, standard deviation at 0-20 cm depth",
+                "gee:units": "ppm",
+                "name": "stdev_0_20"
+            },
+            {
+                "description": "Potassium, extractable, standard deviation at 20-50 cm depth",
+                "gee:units": "ppm",
+                "name": "stdev_20_50"
+            }
+        ],
+        "gsd": [
+            30
+        ],
+        "mean_0_20": {
+            "maximum": 80,
+            "minimum": 1
+        },
+        "mean_20_50": {
+            "maximum": 79
+        },
+        "stdev_0_20": {
+            "maximum": 92
+        },
+        "stdev_20_50": {
+            "maximum": 92
+        }
+    },
+    "title": "iSDAsoil Extractable Potassium",
+    "type": "Collection",
+    "version": "v1",
+    "cube:dimensions": {
+        "x": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                -31.46,
+                57.08
+            ]
+        },
+        "y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                -35.22,
+                37.98
+            ]
+        },
+        "t": {
+            "type": "temporal",
+            "extent": [
+                "2001-01-01T00:00:00Z",
+                "2017-01-01T00:00:00Z"
+            ]
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "mean_0_20",
+                "mean_20_50",
+                "stdev_0_20",
+                "stdev_20_50"
+            ]
+        }
+    },
+    "assets": {
+        "preview_4": {
+            "href": "https://developers.google.com/earth-engine/datasets/images/ISDASOIL/ISDASOIL_Africa_v1_potassium_extractable_sample.png",
+            "type": "image/png",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    }
+}

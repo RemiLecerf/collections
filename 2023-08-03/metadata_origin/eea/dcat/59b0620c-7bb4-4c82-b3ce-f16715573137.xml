@@ -1,0 +1,153 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:dct="http://purl.org/dc/terms/" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://sdi.eea.europa.eu/catalogue/records/59b0620c-7bb4-4c82-b3ce-f16715573137">
+        <foaf:primaryTopic rdf:resource="http://localhost:8080/geonetwork//copernicus_r_3035_10_m_fty-2018_p_2018_v01_r00"/>
+        <dct:conformsTo rdf:resource="https://www.iso.org/standard/32557.html"/>
+        <dct:issued>2020-10-29</dct:issued>
+        <dct:modified>2020-10-29</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://sdi.eea.europa.eu/catalogue/srv/api/records/59b0620c-7bb4-4c82-b3ce-f16715573137/formatters/xml">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://sdi.eea.europa.eu/catalogue/srv/api/records/59b0620c-7bb4-4c82-b3ce-f16715573137">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="http://localhost:8080/geonetwork//datasets/copernicus_r_3035_10_m_fty-2018_p_2018_v01_r00">
+        <dct:identifier>copernicus_r_3035_10_m_fty-2018_p_2018_v01_r00</dct:identifier>
+        <dct:title>High Resolution Layer: Forest Type 2018 (raster 10m), Oct. 2020</dct:title>
+        <dct:abstract>The High Resolution Layer (HRL) Forest 2018 status layer Forest Type (FTY) provides a forest classification with 3 thematic classes (all non-forest areas / broadleaved forest / coniferous forest) at 10m spatial resolution and with a Minimum Mapping Unit (MMU) of 0.5 ha. This raster layer is largely following the FAO (Food and Agriculture Organisation of the United Nations) forest definition with tree covered areas in agricultural and urban context excluded and covers the full of EEA38 area and the United Kingdom. 
+The dataset is provided as 10 meter rasters in 100 x 100 km tiles grouped according to the EEA38 countries and the United Kingdom (fully confirmat with the EEA reference grid).
+The production of the High Resolution forest layers was coordinated by the European Environment Agency (EEA) in the frame of the EU Copernicus programme.
+
+The High Resolution forest product consists of three types of (status) products and additional change products. The status products are available for the 2012, 2015 and 2018 reference years: 1. Tree cover density providing level of tree cover density in a range from 0-100%; 2. Dominant leaf type providing information on the dominant leaf type: broadleaved or coniferous; 3. A Forest type product. The forest type product allows to get as close as possible to the FAO forest definition. In its original (20m) resolution it consists of two products: 1) a dominant leaf type product that has a MMU of 0.5 ha, as well as a 10% tree cover density threshold applied, and 2) a support layer that maps, based on the dominant leaf type product, trees under agricultural use and in urban context (derived from CLC and high resolution imperviousness 2009 data). For the final 100m product trees under agricultural use and urban context from the support layer are removed. The high resolution forest change products comprise a simple tree cover density change product for 2012-2015 (% increase or decrease of real tree cover density changes).</dct:abstract>
+        <dcat:theme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET%20-%20INSPIRE%20themes%2C%20version%201.0/concepts/Land%20cover"/>
+        <dcat:theme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/Continents%2C%20countries%2C%20sea%20regions%20of%20the%20world./concepts/EEA38%20%28from%202020%29"/>
+        <dcat:theme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/Continents%2C%20countries%2C%20sea%20regions%20of%20the%20world./concepts/United%20Kingdom"/>
+        <dcat:theme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET/concepts/forest%20management"/>
+        <dcat:theme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET/concepts/landscape%20alteration"/>
+        <dcat:theme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET/concepts/land%20use"/>
+        <dcat:theme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET/concepts/land%20cover"/>
+        <dcat:theme rdf:resource="http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/european"/>
+        <dcat:theme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/EEA%20topics/concepts/Land%20use"/>
+        <dcat:theme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/EEA%20topics/concepts/Forests%20and%20forestry"/>
+        <dcat:theme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/EEA%20topics/concepts/Biodiversity"/>
+        <dcat:theme rdf:resource="https://inspire.ec.europa.eu/metadata-codelist/TopicCategory/environment"/>
+        <dcat:theme rdf:resource="https://inspire.ec.europa.eu/metadata-codelist/TopicCategory/imageryBaseMapsEarthCover"/>
+        <foaf:thumbnail rdf:resource="https://sdi.eea.europa.eu/public/catalogue-graphic-overview/59b0620c-7bb4-4c82-b3ce-f16715573137.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <geo:asWKT xmlns:geo="http://www.opengis.net/ont/geosparql#" rdf:datatype="http://www.opengis.net/rdf#wktLiteral">Polygon((-56.506 24.284, -56.506 72.665, 72.907 72.665, 72.907 24.284, -56.506 24.284))</geo:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:temporal>2018-03-01
+          /
+          2018-10-31</dct:temporal>
+        <dct:issued>2020-10-20</dct:issued>
+        <dct:accrualPeriodicity>continual</dct:accrualPeriodicity>
+        <dct:language>eng</dct:language>
+        <dct:license>Access to data is based on a principle of full, open and free access as established by the Copernicus data and information policy Regulation (EU) No 1159/2013 of 12 July 2013. This regulation establishes registration and licensing conditions for GMES/Copernicus users.
+
+Free, full and open access to this data set is made on the conditions that:
+
+1. When distributing or communicating Copernicus dedicated data and Copernicus service information to the public, users shall inform the public of the source of that data and information.
+
+2. Users shall make sure not to convey the impression to the public that the user's activities are officially endorsed by the Union.
+
+3. Where that data or information has been adapted or modified, the user shall clearly state this.
+
+4. The data remain the sole property of the European Union. Any information and data produced in the framework of the action shall be the sole property of the European Union. Any communication and publication by the beneficiary shall acknowledge that the data were produced “with funding by the European Union”.</dct:license>
+        <dct:license rdf:resource="http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/noLimitations">no limitations to public access</dct:license>
+        <dcat:distribution rdf:resource="https://sdi.eea.europa.eu/catalogue/records/59b0620c-7bb4-4c82-b3ce-f16715573137#WWW%3ALINK-1.0-http--link-Download%20%28requires%20authentication%29"/>
+        <dcat:distribution rdf:resource="https://sdi.eea.europa.eu/catalogue/records/59b0620c-7bb4-4c82-b3ce-f16715573137#ESRI%3AREST-"/>
+        <dcat:distribution rdf:resource="https://sdi.eea.europa.eu/catalogue/records/59b0620c-7bb4-4c82-b3ce-f16715573137#OGC%3AWMS-"/>
+        <dct:relation rdf:resource="https://sdi.eea.europa.eu/catalogue/records/ab0e6d0b-699c-473d-bd5e-e5c634c8f99c"/>
+        <dct:relation rdf:resource="https://sdi.eea.europa.eu/catalogue/records/894c9189-b35f-4ced-8bd2-12ed6b72fa4c"/>
+        <dcat:dataQuality>The Forest Type 2018 status layer at 10m spatial resolution is mainly based on the primary status layer Dominant Leaf Type 2018, which was produced by a hierarchical spatio-temporal classification of time features derived from Sentinel-2A+B time series (Level-2A data) using a Random Forest (RF) classifier with 500 trees. The default time window ranges from 01-03-2018 to 31-10-2018 and was adapted to regional conditions where needed. In total, 147 statistical time features have been calculated using more than 500,000 samples, automatically collected from the LUCAS 2018 database and various CLMS products plus additional manual sampling. First, a binary Tree Cover Mask (TCM) with 2 classes (all non-tree covered areas / tree cover) has been generated. Various post-processing steps have been applied in order to improve the quality of the mask (e.g. correction of omission errors caused by the topographic overcorrection within the native Sentinel-2 Level-2A input data). Subsequently, the dominant leaf type has been separately classified within the confines of the Tree Cover Mask. In order to generate a forest type product following the FAO forest definition, a minimum mapping unit of 0.5 ha has been applied to the initial Tree Cover Mask considering a 10% tree cover density threshold and with all pixels in agricultural and urban context (as provided by the FADSL) removed. Subsequently, filtered non-forest patches smaller the MMU have been filled with the neighbouring leaf type information using a 9x9 circle filter. In case of tree covered pixels smaller 10% TCD being present in those non-forest patches, the original Dominant Leaf Type information is kept. National FTY products are derived through reprojection and might show a broken MMU.
+
+Quality assurance follows the ISO 9001:2015 standards for Quality Management and comprises of dedicated procedures of quality checks (QA breakpoints) during implementation of the production chain, in order to keep persistent control over the various stages of production, assure fitness-for-purpose of the end-products and that all quality requirements are fulfilled. Priority has been given to the target thematic accuracy to be achieved by each product, as well as to the issues of product consistency (spatial, thematic, temporal) and homogeneity. Quality Assessment: The quality assessment has been performed according to INSPIRE Data Specifications. The data quality elements considered are: (i) Completeness, (ii) Logical Consistency, (iii) positional accuracy, (iv) Thematic Accuracy, (v) Temporal quality and (vi) Usability.
+
+Geometric accuracy (positioning scale): Less than one pixel (10m) according to ortho-rectified satellite image base (Sentinel-2 Level-2A) delivered by ESA.
+
+Thematic accuracy at pan-European level: determined by the accuracies of the input source layers Dominant Leaf Type, Tree Cover Density and Forest Additional Support Layer (including CLC 2018 and HRL Imperviousness 2018 data). The thematic accuracy of the FTY product has not been assessed.
+
+The production process is described and explained in detail in the User Manual Tree-cover/forest and change 2015-2018 here: https://land.copernicus.eu/user-corner/technical-library/forest-2018-user-manual-v1-0.pdf.</dcat:dataQuality>
+      </dcat:Dataset>
+      <skos:Concept rdf:about="http://localhost:8080/geonetwork//registries/vocabularies/GEMET%20-%20INSPIRE%20themes%2C%20version%201.0/concepts/Land%20cover">
+        <skos:inScheme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET%20-%20INSPIRE%20themes%2C%20version%201.0"/>
+        <skos:prefLabel>Land cover</skos:prefLabel>
+      </skos:Concept>
+      <skos:Concept rdf:about="http://localhost:8080/geonetwork//registries/vocabularies/Continents%2C%20countries%2C%20sea%20regions%20of%20the%20world./concepts/EEA38%20%28from%202020%29">
+        <skos:inScheme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/Continents%2C%20countries%2C%20sea%20regions%20of%20the%20world."/>
+        <skos:prefLabel>EEA38 (from 2020)</skos:prefLabel>
+      </skos:Concept>
+      <skos:Concept rdf:about="http://localhost:8080/geonetwork//registries/vocabularies/Continents%2C%20countries%2C%20sea%20regions%20of%20the%20world./concepts/United%20Kingdom">
+        <skos:inScheme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/Continents%2C%20countries%2C%20sea%20regions%20of%20the%20world."/>
+        <skos:prefLabel>United Kingdom</skos:prefLabel>
+      </skos:Concept>
+      <skos:Concept rdf:about="http://localhost:8080/geonetwork//registries/vocabularies/GEMET/concepts/forest%20management">
+        <skos:inScheme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET"/>
+        <skos:prefLabel>forest management</skos:prefLabel>
+      </skos:Concept>
+      <skos:Concept rdf:about="http://localhost:8080/geonetwork//registries/vocabularies/GEMET/concepts/landscape%20alteration">
+        <skos:inScheme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET"/>
+        <skos:prefLabel>landscape alteration</skos:prefLabel>
+      </skos:Concept>
+      <skos:Concept rdf:about="http://localhost:8080/geonetwork//registries/vocabularies/GEMET/concepts/land%20use">
+        <skos:inScheme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET"/>
+        <skos:prefLabel>land use</skos:prefLabel>
+      </skos:Concept>
+      <skos:Concept rdf:about="http://localhost:8080/geonetwork//registries/vocabularies/GEMET/concepts/land%20cover">
+        <skos:inScheme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET"/>
+        <skos:prefLabel>land cover</skos:prefLabel>
+      </skos:Concept>
+      <skos:Concept rdf:about="http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/european">
+        <skos:inScheme rdf:resource="http://inspire.ec.europa.eu/metadata-codelist/SpatialScope"/>
+        <skos:prefLabel>European</skos:prefLabel>
+      </skos:Concept>
+      <skos:Concept rdf:about="http://localhost:8080/geonetwork//registries/vocabularies/EEA%20topics/concepts/Land%20use">
+        <skos:inScheme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/EEA%20topics"/>
+        <skos:prefLabel>Land use</skos:prefLabel>
+      </skos:Concept>
+      <skos:Concept rdf:about="http://localhost:8080/geonetwork//registries/vocabularies/EEA%20topics/concepts/Forests%20and%20forestry">
+        <skos:inScheme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/EEA%20topics"/>
+        <skos:prefLabel>Forests and forestry</skos:prefLabel>
+      </skos:Concept>
+      <skos:Concept rdf:about="http://localhost:8080/geonetwork//registries/vocabularies/EEA%20topics/concepts/Biodiversity">
+        <skos:inScheme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/EEA%20topics"/>
+        <skos:prefLabel>Biodiversity</skos:prefLabel>
+      </skos:Concept>
+      <dcat:Distribution rdf:about="https://sdi.eea.europa.eu/catalogue/records/59b0620c-7bb4-4c82-b3ce-f16715573137#WWW%3ALINK-1.0-http--link-Download%20%28requires%20authentication%29">
+        <dcat:accessURL>https://land.copernicus.eu/pan-european/high-resolution-layers/forests/forest-type-1/status-maps/forest-type-2018?tab=download</dcat:accessURL>
+        <dct:title>Download (requires authentication)</dct:title>
+        <dct:format>WWW:LINK-1.0-http--link</dct:format>
+      </dcat:Distribution>
+      <dcat:Distribution rdf:about="https://sdi.eea.europa.eu/catalogue/records/59b0620c-7bb4-4c82-b3ce-f16715573137#ESRI%3AREST-">
+        <dcat:accessURL>https://image.discomap.eea.europa.eu/arcgis/rest/services/GioLandPublic/HRL_ForestType_2018/ImageServer</dcat:accessURL>
+        <dct:format>ESRI:REST</dct:format>
+      </dcat:Distribution>
+      <dcat:Distribution rdf:about="https://sdi.eea.europa.eu/catalogue/records/59b0620c-7bb4-4c82-b3ce-f16715573137#OGC%3AWMS-">
+        <dcat:accessURL>https://image.discomap.eea.europa.eu/arcgis/services/GioLandPublic/HRL_ForestType_2018/ImageServer/WMSServer?request=GetCapabilities&amp;service=WMS</dcat:accessURL>
+        <dct:format>OGC:WMS</dct:format>
+      </dcat:Distribution>
+      <foaf:Organization rdf:about="http://localhost:8080/geonetwork//organizations/European%20Environment%20Agency">
+        <foaf:name>European Environment Agency</foaf:name>
+        <foaf:member rdf:resource="http://localhost:8080/geonetwork//persons/sdi%40eea.europa.eu"/>
+      </foaf:Organization>
+      <foaf:Agent rdf:about="http://localhost:8080/geonetwork//persons/sdi%40eea.europa.eu">
+        <foaf:mbox rdf:resource="mailto:sdi@eea.europa.eu"/>
+      </foaf:Agent>
+    </rdf:RDF>
+    

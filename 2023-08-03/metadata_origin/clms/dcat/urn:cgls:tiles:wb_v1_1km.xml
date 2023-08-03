@@ -1,0 +1,68 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dct="http://purl.org/dc/terms/" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://land.copernicus.vgt.vito.be:8443//geonetwork/metadata/urn:cgls:tiles:wb_v1_1km">
+        <foaf:primaryTopic rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/resource/urn:cgls:tiles:wb_v1_1km"/>
+        <dct:issued>2022-03-17</dct:issued>
+        <dct:modified>2022-03-17</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://land.copernicus.vgt.vito.be:8443//geonetwork/srv/eng/xml.metadata.get?uuid=urn:cgls:tiles:wb_v1_1km">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://land.copernicus.vgt.vito.be:8443//geonetwork?uuid=urn:cgls:tiles:wb_v1_1km">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://land.copernicus.vgt.vito.be:8443//geonetwork/resource/urn:cgls:tiles:wb_v1_1km">
+        <dct:identifier>urn:cgls:tiles:wb_v1_1km</dct:identifier>
+        <dct:title>Water Bodies: Africa 10-daily tiles (raster 1km) - version 1, Sept 2014</dct:title>
+        <dct:abstract>WB or Water bodies is a 10-day synthesis product that detects water bodies over Africa. The product is a fusion of the former VGT4Africa Small Water Bodies and seasonality (SWB), the Global Water Watch (GWW) and a Permanent Water mask (PW) derived from Shuttle Radar Topography Mission (SRTM) and Modis water mask (MOD44W). The WB products are produced by the VEGETATION image processing center (CTIV) at VITO.</dct:abstract>
+        <dcat:keyword>water</dcat:keyword>
+        <dcat:keyword>WB</dcat:keyword>
+        <dcat:keyword>Africa 10° tiles</dcat:keyword>
+        <dcat:keyword>Dekad</dcat:keyword>
+        <dcat:keyword>10-day composite</dcat:keyword>
+        <dcat:theme rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/thesaurus/GEMET%20-%20INSPIRE%20themes%2C%20version%201.0/Orthoimagery"/>
+        <dcat:theme rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/thesaurus/GEMET%20-%20Concepts%2C%20version%202.1/water body"/>
+        <dcat:theme rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/thesaurus/iso/topicCategory/imageryBaseMapsEarthCover"/>
+        <dcat:theme rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/thesaurus/iso/topicCategory/inlandWaters"/>
+        <dcat:theme rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/thesaurus/iso/topicCategory/environment"/>
+        <foaf:thumbnail rdf:resource="https://land.copernicus.vgt.vito.be/geonetwork/srv/api/records/urn:cgls:global:wb_v2_1km/attachments/WaterBodies.jpg"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((-20 -40, -20 40, 60 40, 60 -40, -20 -40))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:temporal>1999-01-01T00:00:00
+          /
+          2020-09-30T23:59:00</dct:temporal>
+        <dct:updated>2011-09-01</dct:updated>
+        <dct:publisher rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/organization/Universit%C3%A9%20catholique%20de%20Louvain%20%28UCL%29%20-%20Belgium"/>
+        <dct:publisher rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/organization/Flemish%20Institute%20for%20Technological%20Research%20%28VITO%29"/>
+        <dct:publisher rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/organization/European%20Commission%20Directorate-General%20for%20Enterprise%20and%20Industry"/>
+        <dct:publisher rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/organization/European%20Commission%20Directorate-General%20Joint%20Research%20Center"/>
+        <dct:accrualPeriodicity>asNeeded</dct:accrualPeriodicity>
+        <dct:license>copyright</dct:license>
+        <dct:license>otherRestrictions</dct:license>
+        <dct:license>(d) the confidentiality of commercial or industrial information, where such confidentiality is provided for by national or Community law to protect a legitimate economic interest, including the public interest in maintaining statistical confidentiality and tax secrecy.</dct:license>
+        <dcat:distribution rdf:resource="http://land.copernicus.eu/global/products/wb"/>
+        <dcat:distribution rdf:resource="http://eoportal.eumetsat.int"/>
+        <dct:relation rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/metadata/"/>
+        <dcat:dataQuality>The algorithm is based on a fusion of three existing products as an attempt to get the 'best available products'. The VGT4Africa (SWB) is based on a method using different thresholds for the Normalized Difference Vegetation Index (NDVI) and the Normalized Difference Water Index (NDWI). The Global Watch Water (GWW) is based on a method taking 10-daily Mean Composites, performing a colorametric transformation from RGB to HSV color space and using different thresholds for the Hue component and the reflectance in the middle infra-red (MIR). The Permanent Water (PW) is based on the MODIS Water Mask (MOD44W) and Shuttle Radar Topography Missino (SRTM) to generate a consistent permanent detectin product over the African continent. The input data are the daily reflectance source data (for GWW layer) and 10-daily refelectance sources (for SWB layer) measured by the SPOT-VGT sensor as provided by the SPOT-VEGETATION CTIV.</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+  

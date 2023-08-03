@@ -1,0 +1,70 @@
+{
+  "type": "Collection",
+  "id": "EO:MO:DAT:GLOBAL_MULTIYEAR_WAV_001_032",
+  "stac_version": "1.0.0",
+  "description": "'''Short description:'''\n\nGLOBAL_REANALYSIS_WAV_001_032 for the global wave reanalysis describing past sea states since years 1993. This product also bears the name of WAVERYS within the GLO-HR MFC. for correspondence to other global multi-year products like GLORYS. BIORYS. etc. The core of WAVERYS is based on the MFWAM model. a third generation wave model that calculates the wave spectrum. i.e. the distribution of sea state energy in frequency and direction on a 1/5° irregular grid. Average wave quantities derived from this wave spectrum. such as the SWH (significant wave height) or the average wave period. are delivered on a regular 1/5° grid with a 3h time step. The wave spectrum is discretized into 30 frequencies obtained from a geometric sequence of first member 0.035 Hz and a reason 7.5. WAVERYS takes into account oceanic currents from the GLORYS12 physical ocean reanalysis and assimilates significant wave height observed from historical altimetry missions and directional wave spectra from Sentinel 1 SAR from 2017 onwards.   \n\n'''DOI (product):'''\nhttps://doi.org/10.48670/moi-00022",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/dodsC/cmems_mod_glo_wav_my_0.2_PT3H-i",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_mod_glo_wav_my_0.2_PT3H-i"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&service=GLOBAL_MULTIYEAR_WAV_001_032-TDS&product=cmems_mod_glo_wav_my_0.2_PT3H-i",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_mod_glo_wav_my_0.2_PT3H-i"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/wms/cmems_mod_glo_wav_my_0.2_PT3H-i",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_mod_glo_wav_my_0.2_PT3H-i"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://my.cmems-du.eu/Core/GLOBAL_MULTIYEAR_WAV_001_032/cmems_mod_glo_wav_my_0.2_static",
+      "type": "WWW:FTP",
+      "title": "cmems_mod_glo_wav_my_0.2_static"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://my.cmems-du.eu/Core/GLOBAL_MULTIYEAR_WAV_001_032/cmems_mod_glo_wav_my_0.2_PT3H-i",
+      "type": "WWW:FTP",
+      "title": "cmems_mod_glo_wav_my_0.2_PT3H-i"
+    }
+  ],
+  "title": "Global Ocean Waves Reanalysis WAVERYS",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1993-01-01T00:00:00Z",
+          "2021-12-31T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

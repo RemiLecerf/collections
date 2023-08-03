@@ -1,0 +1,199 @@
+{
+    "deprecated": true,
+    "description": "Version 6 MODIS data products. Users are advised to transition to the\nimproved Version 6.1.\n\nThe MYD17A3HGF V6 product provides information about\nannual Net Primary Productivity (NPP) at 500m pixel resolution.\n Annual NPP is derived from the sum of all 8-day Net Photosynthesis\n(PSN) products (MYD17A2H) from the given year.  The PSN value\nis the difference of the Gross Primary Productivity (GPP) and the\nMaintenance Respiration (MR) (GPP-MR).\n",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2002-07-04T00:00:00Z",
+                    "2021-01-01T00:00:00"
+                ]
+            ]
+        }
+    },
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "year"
+    },
+    "gee:provider_ids": [
+        "C1631984536-LPDAAC_ECS"
+    ],
+    "gee:terms_of_use": "MODIS data and products acquired through the LP DAAC\nhave no restrictions on subsequent use, sale, or redistribution.\n",
+    "gee:type": "image_collection",
+    "id": "MODIS/006/MYD17A3HGF",
+    "keywords": [
+        "aqua",
+        "global",
+        "gpp",
+        "modis",
+        "myd17a3",
+        "myd17a3gf",
+        "nasa",
+        "npp",
+        "photosynthesis",
+        "productivity",
+        "psn",
+        "usgs",
+        "yearly"
+    ],
+    "license": "proprietary",
+    "links": [
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections/MODIS/006/MYD17A3HGF",
+            "rel": "self",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections",
+            "rel": "parent",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/",
+            "rel": "root",
+            "type": "application/json"
+        },
+        {
+            "code": "JavaScript",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/MODIS/MODIS_006_MYD17A3HGF",
+            "rel": "related",
+            "title": "Run the example for MODIS/006/MYD17A3HGF in the Earth Engine Code Editor",
+            "type": "text/html"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/images/MODIS/MODIS_006_MYD17A3HGF_sample.png",
+            "rel": "preview",
+            "type": "image/png"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_006_MYD17A3HGF#terms-of-use",
+            "rel": "license",
+            "type": "text/html"
+        },
+        {
+            "href": "https://doi.org/10.5067/MODIS/MYD17A3HGF.006",
+            "rel": "cite-as"
+        },
+        {
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_061_MYD17A3HGF.json",
+            "rel": "latest-version",
+            "title": "MODIS/061/MYD17A3HGF",
+            "type": "application/json"
+        },
+        {
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_061_MYD17A3HGF.json",
+            "rel": "successor-version",
+            "title": "MODIS/061/MYD17A3HGF",
+            "type": "application/json"
+        }
+    ],
+    "providers": [
+        {
+            "name": "NASA LP DAAC at the USGS EROS Center",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://doi.org/10.5067/MODIS/MYD17A3HGF.006"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_006_MYD17A3HGF"
+        }
+    ],
+    "sci:citation": "Please visit [LP DAAC 'Citing Our Data' page](https://lpdaac.usgs.gov/citing_our_data)\nfor information on citing LP DAAC datasets.\n",
+    "sci:doi": "10.5067/MODIS/MYD17A3HGF.006",
+    "stac_extensions": [
+        "collection-assets"
+    ],
+    "stac_version": "1.0.0",
+    "summaries": {
+        "Npp": {
+            "maximum": 32700,
+            "minimum": -30000
+        },
+        "Npp_QC": {
+            "maximum": 100
+        },
+        "eo:bands": [
+            {
+                "description": "Net primary productivity",
+                "gee:scale": 0.0001,
+                "gee:units": "kg*C/m^2",
+                "name": "Npp"
+            },
+            {
+                "description": "Quality control percentage",
+                "gee:units": "%",
+                "name": "Npp_QC"
+            }
+        ],
+        "gsd": [
+            500
+        ],
+        "instruments": [
+            "MODIS"
+        ],
+        "platform": [
+            "Aqua"
+        ]
+    },
+    "title": "MYD17A3HGF.006: Aqua Net Primary Production  Gap-Filled Yearly Global 500m [deprecated]",
+    "type": "Collection",
+    "version": "V006",
+    "cube:dimensions": {
+        "x": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                -180,
+                180
+            ]
+        },
+        "y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                -90,
+                90
+            ]
+        },
+        "t": {
+            "type": "temporal",
+            "extent": [
+                "2002-07-04T00:00:00Z",
+                "2021-01-01T00:00:00"
+            ]
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "Npp",
+                "Npp_QC"
+            ]
+        }
+    },
+    "assets": {
+        "preview_4": {
+            "href": "https://developers.google.com/earth-engine/datasets/images/MODIS/MODIS_006_MYD17A3HGF_sample.png",
+            "type": "image/png",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    }
+}

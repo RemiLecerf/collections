@@ -1,0 +1,79 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:dct="http://purl.org/dc/terms/" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/a766e7f1-b5ba-47f6-a4eb-e8c9bdb0f248">
+        <foaf:primaryTopic rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/resource/c682a888-4a82-4951-9b97-2f2eb168b37f"/>
+        <dct:issued>2023-03-27</dct:issued>
+        <dct:modified>2023-03-27</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/srv/eng/xml.metadata.get?uuid=a766e7f1-b5ba-47f6-a4eb-e8c9bdb0f248">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork?uuid=a766e7f1-b5ba-47f6-a4eb-e8c9bdb0f248">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/resource/c682a888-4a82-4951-9b97-2f2eb168b37f">
+        <dct:identifier>c682a888-4a82-4951-9b97-2f2eb168b37f</dct:identifier>
+        <dct:title>North Pacific Gyre Oscillation from Observations Reprocessing</dct:title>
+        <dct:abstract>'''DEFINITION'''
+
+The North Pacific Gyre Oscillation (NPGO) is a climate pattern introduced by Di Lorenzo et al. (2008) and further reported by Tranchant et al. (2019) in the CMEMS Ocean State Report #3. The NPGO is defined as the second dominant mode of variability of Sea Surface Height (SSH) anomaly and SST anomaly in the Northeast Pacific (25°– 62°N, 180°– 250°E). The North Pacific Gyre Oscillation index has been defined as the second Principal Component of model SSH anomaly calculated over the period 1950-2004. From the principal component analysis, the EOF’s amplitude pattern has been inferred from the principal component analysis. This regression map of the model North Pacific Gyre Oscillation index is used/projected with satellite altimeter delayed-time sea level anomalies to calculate and update the NPGO index
+The NPGO index disseminated on CMEMS was specifically updated from 2004 onward using up-to-date altimeter products (DT2021 version; SEALEVEL_GLO_PHY_L4_MY _008_047 CMEMS product and the near-real time SEALEVEL_GLO_PHY_L4_NRT_OBSERVATIONS_008_046 CMEMS product). Users that previously used the index disseminated on www.o3d.org/npgo/ web page will find slight differences induced by this update. The change in the reprocessed version (previously DT-2018) and the extension of the mean value of the SSH anomaly (now 27 years, previously 20 years) induce some slight changes not impacting the general variability of the NPGO.  
+
+'''CONTEXT'''
+
+NPGO mode emerges as the leading mode of decadal variability for surface salinity and upper ocean nutrients (Di Lorenzo et al., 2009). The North Pacific Gyre Oscillation (NPGO) term is used because its fluctuations reflect changes in the intensity of the central and eastern branches of the North Pacific gyres circulations (Chhak et al., 2009). This index measures change in the North Pacific gyres circulation and explains key physical-biological ocean variables including temperature, salinity, sea level, nutrients, chlorophyll-a. A positive North Pacific Gyre Oscillation phase is a dipole pattern with negative SSH anomaly north of 40°N and the opposite south of 40°N. Di Lorenzo et al. (2008) suggested that the North Pacific Gyre Oscillation is the oceanic expression of the atmospheric variability of the North Pacific Oscillation (Walker and Bliss, 1932), which has an expression in both the 2nd EOFs of SSH and Sea Surface Temperature (SST) anomalies (Ceballos et al., 2009). This finding is further supported by the recent work of Yi et al. (2018) showing consistent pattern features between the atmospheric North Pacific Oscillation and the oceanic North Pacific Gyre Oscillation in the Coupled Model Intercomparison Project Phase 5 (CMIP5) database.
+
+'''CMEMS KEY FINDINGS'''
+
+The NPGO index is presently in a negative phase, associated with a positive SSH anomaly north of 40°N and negative south of 40°N. This reflects a reduced amplitude of the central and eastern branches of the North Pacific gyre, corresponding to a reduced coastal upwelling and thus a lower sea surface salinity and concentration of nutrients. 
+
+'''DOI (product):''' 
+https://doi.org/10.48670/moi-00221</dct:abstract>
+        <dcat:theme rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/thesaurus/iso/topicCategory/oceans"/>
+        <foaf:thumbnail rdf:resource="https://catalogue.marine.copernicus.eu/documents/IMG/GLOBAL_OMI_CLIMVAR_NPGO_sla_eof_mode_projection.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((0.00 -90.00, 0.00 90.00, 360.00 90.00, 360.00 -90.00, 0.00 -90.00))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:issued>2018-02-12</dct:issued>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/SL-CLS-TOULOUSE-FR"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/SL-CLS-TOULOUSE-FR"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/SL-CLS-TOULOUSE-FR"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/SL-CLS-TOULOUSE-FR"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/MOI-OMI-SERVICE"/>
+        <dct:accrualPeriodicity>quarterly</dct:accrualPeriodicity>
+        <dct:accrualPeriodicity>annually</dct:accrualPeriodicity>
+        <dct:license>otherRestrictions</dct:license>
+        <dct:license>license</dct:license>
+        <dct:license>No limitations on public access</dct:license>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/GLOBAL_OMI_CLIMVAR_NPGO_sla_eof_mode_projection/global_omi_climvar_npgo_sla_eof_mode_projection"/>
+        <dcat:distribution rdf:resource="https://mdl1.marine.copernicus.eu/derived/GLOBAL_OMI_CLIMVAR_NPGO_sla_eof_mode_projection/global_omi_climvar_npgo_sla_eof_mode_projection_202112/global_omi_climvar_npgo_sla_eof_mode_projection_19500115_P20210906.nc"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/0192dfb1-39c8-4516-9ae0-015d55365029"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/e94c276c-2da6-4a2e-baa3-d0faf6d234ed"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/8fe2d493-0fd0-4c3b-9c3e-933a4473bdf9"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dcat:dataQuality>The myOcean products depends on other products for production or validation. The detailed list of dependencies is given in ISO19115's aggregationInfo (ISO19139 Xpath = "gmd:MD_Metadata/gmd:identificationInfo/gmd:aggregationInfo[./gmd:MD_AggregateInformation/gmd:initiativeType/gmd:DS_InitiativeTypeCode/@codeListValue='upstream-validation' or 'upstream-production']")</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+    

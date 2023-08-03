@@ -1,0 +1,63 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:dct="http://purl.org/dc/terms/" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/ab5b366c-f7f5-48cf-b94d-0d3748a2cbc3">
+        <foaf:primaryTopic rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/resource/ab5b366c-f7f5-48cf-b94d-0d3748a2cbc3"/>
+        <dct:issued>2023-03-22</dct:issued>
+        <dct:modified>2023-03-22</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/srv/eng/xml.metadata.get?uuid=ab5b366c-f7f5-48cf-b94d-0d3748a2cbc3">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork?uuid=ab5b366c-f7f5-48cf-b94d-0d3748a2cbc3">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/resource/ab5b366c-f7f5-48cf-b94d-0d3748a2cbc3">
+        <dct:identifier>ab5b366c-f7f5-48cf-b94d-0d3748a2cbc3</dct:identifier>
+        <dct:title>Global Ocean - Sea Surface Temperature Multi-sensor L3 Observations</dct:title>
+        <dct:abstract>'''Short description:'''
+
+For the Global Ocean- Sea Surface Temperature L3 Observations . This product provides daily foundation sea surface temperature from multiple satellite sources. The data are intercalibrated. This product consists in a fusion of sea surface temperature observations from multiple satellite sensors, daily, over a 0.1° resolution global grid. It includes observations by polar orbiting (NOAA-18 &amp; NOAAA-19/AVHRR, METOP-A/AVHRR, ENVISAT/AATSR, AQUA/AMSRE, TRMM/TMI) and geostationary (MSG/SEVIRI, GOES-11) satellites . The observations of each sensor are intercalibrated prior to merging using a bias correction based on a multi-sensor median reference correcting the large-scale cross-sensor biases
+
+'''DOI (product) :'''   
+https://doi.org/10.48670/moi-00164</dct:abstract>
+        <dcat:theme rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/thesaurus/iso/topicCategory/oceans"/>
+        <foaf:thumbnail rdf:resource="https://catalogue.marine.copernicus.eu/documents/IMG/SST_GLO_SST_L3S_NRT_OBSERVATIONS_010_010.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((-180.00 -80.00, -180.00 80.00, 180.00 80.00, 180.00 -80.00, -180.00 -80.00))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:issued>2009-09-30</dct:issued>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/OSI-METNO-OSLO-NO"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/SST-CNR-ROMA-IT"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/SST-CNR-ROMA-IT"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/SST-IFREMER-BREST-FR"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/SST-IFREMER-BREST-FR"/>
+        <dct:accrualPeriodicity>daily</dct:accrualPeriodicity>
+        <dct:license>otherRestrictions</dct:license>
+        <dct:license>license</dct:license>
+        <dct:license>No limitations on public access</dct:license>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=SST_GLO_SST_L3S_NRT_OBSERVATIONS_010_010-TDS&amp;product=IFREMER-GLOB-SST-L3-NRT-OBS_FULL_TIME_SERIE"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/thredds/dodsC/IFREMER-GLOB-SST-L3-NRT-OBS_FULL_TIME_SERIE"/>
+        <dcat:distribution rdf:resource="ftp://nrt.cmems-du.eu/Core/SST_GLO_SST_L3S_NRT_OBSERVATIONS_010_010/IFREMER-GLOB-SST-L3-NRT-OBS_FULL_TIME_SERIE"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/thredds/wms/IFREMER-GLOB-SST-L3-NRT-OBS_FULL_TIME_SERIE"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/863d466a-7ac0-4cc0-8dcd-0a3444833fc9"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/f60ce114-199e-4449-bff7-19e5fd07c423"/>
+        <dcat:dataQuality>The myOcean products depends on other products for production or validation. The detailed list of dependencies is given in ISO19115's aggregationInfo (ISO19139 Xpath = "gmd:MD_Metadata/gmd:identificationInfo/gmd:aggregationInfo[./gmd:MD_AggregateInformation/gmd:initiativeType/gmd:DS_InitiativeTypeCode/@codeListValue='upstream-validation' or 'upstream-production']")</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+    

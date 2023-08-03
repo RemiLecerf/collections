@@ -1,0 +1,82 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dct="http://purl.org/dc/terms/" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/metadata/eu.copernicus.climate.reanalysis-uerra-europe-soil-levels">
+        <foaf:primaryTopic rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/resource/10.24381/cds.33525ca7"/>
+        <dct:issued>2018-03-28</dct:issued>
+        <dct:modified>2018-03-28</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/srv/eng/xml.metadata.get?uuid=eu.copernicus.climate.reanalysis-uerra-europe-soil-levels">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://cds.climate.copernicus.eu:443//geonetwork?uuid=eu.copernicus.climate.reanalysis-uerra-europe-soil-levels">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/resource/10.24381/cds.33525ca7">
+        <dct:identifier>10.24381/cds.33525ca7</dct:identifier>
+        <dct:title>UERRA regional reanalysis for Europe on soil levels from 1961 to 2019</dct:title>
+        <dct:abstract>The UERRA dataset provides estimations of the climate in Europe based on model data
+combined with observations using the UERRA-HARMONIE system and MESCAN-SURFEX system.
+UERRA-HARMONIE is a 3-dimensional data assimilation system, whereas
+MESCAN-SURFEX is a complementary surface analysis system. In general, the
+assimilation systems are able to estimate biases between observations and to
+sift good-quality data from poor data. The laws of physics allow for estimates
+at locations where data coverage is low. The provision of estimates at each
+grid point in Europe for each regular output time, over a long period, always
+using the same format, makes reanalysis a very convenient and popular dataset
+to work with.
+The land surface platform SURFEX is forced with downscaled forecast fields from
+UERRA-HARMONIE as well as MESCAN analyses. It is run offline, i.e. without
+feedback to the atmospheric analysis performed in MESCAN or the UERRA-HARMONIE
+data assimilation cycles.
+The observing system has changed drastically over time, and although the
+assimilation system can resolve data holes, the initially much sparser networks
+will have an impact on the quality of analyses leading to less accurate
+estimates. The improvement over global reanalysis products comes with the
+higher horizontal resolution that allows incorporating more regional details (e.g. topography).
+Moreover, it enables the system even to use more observations at places with dense observation networks.
+
+Variables in the dataset/application are:
+Soil temperature, Volumetric soil moisture, Volumetric transpiration stress-onset, Volumetric wilting point</dct:abstract>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/GEMET%20-%20INSPIRE%20themes%2C%20version%201.0/Atmospheric conditions"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Product type: Reanalysis"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Spatial coverage: Europe"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Variable domain: Land (hydrology)"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Temporal coverage: Past"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Provider: Copernicus C3S"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/iso/topicCategory/climatologyMeteorologyAtmosphere"/>
+        <foaf:thumbnail rdf:resource="https://datastore.copernicus-climate.eu/c3s/published-forms-v2/c3sprod/reanalysis-uerra-europe-soil-levels/overview.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((335 34, 335 72, 40 72, 40 34, 335 34))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:temporal>2018-10-18
+          /
+          2019-07-31</dct:temporal>
+        <dct:publisher rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/organization/ECMWF"/>
+        <dct:accrualPeriodicity>asNeeded</dct:accrualPeriodicity>
+        <dct:language>eng</dct:language>
+        <dct:license>licence</dct:license>
+        <dct:license>https://cds.climate.copernicus.eu/api/v2/terms/static/20180314_Copernicus_License_V1.1.pdf</dct:license>
+        <dcat:distribution rdf:resource="https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.33525ca7"/>
+        <dcat:distribution rdf:resource="https://datastore.copernicus-climate.eu/documents/uerra/D322_Lot1.4.1.2_User_guides_v3.3.pdf"/>
+        <dcat:distribution rdf:resource="https://confluence.ecmwf.int/display/UER/Issues+with+data"/>
+        <dcat:distribution rdf:resource="https://datastore.copernicus-climate.eu/documents/uerra/D322_Lot1.1.1.2_Documentation_of_the_RRA_system_UERRA_v2.pdf"/>
+        <dcat:dataQuality>EC Copernicus program</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+    

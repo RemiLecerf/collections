@@ -1,0 +1,55 @@
+{
+  "type": "Collection",
+  "id": "1cf482b3-39d8-47c1-883a-b1575f0e2533",
+  "stac_version": "1.0.0",
+  "description": "'''DEFINITION'''\n\nThe OMI_VAR_EXTREME_SL_BALTIC_slev_mean_and_anomaly_obs indicator is based on the computation of the 99th and the 1st percentiles from in situ data (observations). It is computed for the variable sea level measured by tide gauges along the coast. The use of percentiles instead of annual maximum and minimum values, makes this extremes study less affected by individual data measurement errors. The annual percentiles referred to annual mean sea level are temporally averaged and their spatial evolution is displayed in the dataset baltic_omi_sl_extreme_var_slev_mean_and_anomaly_obs, jointly with the anomaly in the target year. This study of extreme variability was first applied to sea level variable (Pérez Gómez et al 2016) and then extended to other essential variables, sea surface temperature and significant wave height (Pérez Gómez et al 2018).\n\n'''CONTEXT'''\nSea level (SLEV) is one of the Essential Ocean Variables most affected by climate change. Global mean sea level rise has accelerated since the 1990’s (Abram et al., 2019, Legeais et al., 2020), due to the increase of ocean temperature and mass volume caused by land ice melting (WCRP, 2018). Basin scale oceanographic and meteorological features lead to regional variations of this trend that combined with changes in the frequency and intensity of storms could also rise extreme sea levels up to one meter by the end of the century (Vousdoukas et al., 2020). This will significantly increase coastal vulnerability to storms, with important consequences on the extent of flooding events, coastal erosion and damage to infrastructures caused by waves.   \n\n'''CMEMS KEY FINDINGS'''\n\nUp to 51 stations fulfill the completeness index criteria in this region, a significant improvement with respect to 2019 (only 28 stations), due to new data providers and reprocessed timeseries availability in the new product INSITU_GLO_PHY_SSH_DISCRETE_MY_013_053. The spatial variation of the mean 99th percentiles follow the tidal range pattern, reaching its highest values in the northern end of the Gulf of Bothnia (e.g.: 0.81 m above mean sea level in Kemi) and the inner part of the Gulf of Finland (e.g.: 0.82 m above mean sea level in St. Petersburg). Smaller tides and therefore  99th percentiles are found along the southeastern coast of Sweden, between Stockholm and Gotland Island (e.g.: 0.42 m above mean sea level in Visby). Annual percentiles standard deviation ranges  between 3-5 cm in the South (e.g.: 4 cm in Slipshavn) to 10-13 cm in the Gulf of Finland  (e.g.: 13 cm in St. Petersburg).  Positive anomalies of 2020 99th percentile are observed for most of the basin (up to 11 cm in St. Petersburg),  except at the southern Danish stations, which show negative anomalies reaching -6 cm in Hesnaes and Rodby. This result contrasts with the  remarkably negative anomaly observed in 2019. \n\n'''DOI (product):''' \nhttps://doi.org/10.48670/moi-00203",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "ftp://my.cmems-du.eu/Core/OMI_VAR_EXTREME_SL_BALTIC_slev_mean_and_anomaly_obs/omi_var_extreme_sl_baltic_slev_mean_and_anomaly_obs",
+      "type": "WWW:FTP",
+      "title": "omi_var_extreme_sl_baltic_slev_mean_and_anomaly_obs"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://mdl1.marine.copernicus.eu/derived/OMI_VAR_EXTREME_SL_BALTIC_slev_mean_and_anomaly_obs/omi_var_extreme_sl_baltic_slev_mean_and_anomaly_obs_202211/omi_var_extreme_sl_baltic_slev_mean_and_anomaly_obs.nc",
+      "type": "MYO:MOTU-DGF",
+      "title": "omi_var_extreme_sl_baltic_slev_mean_and_anomaly_obs"
+    }
+  ],
+  "title": "Baltic Sea Level extreme from Observations Reprocessing",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          0.0,
+          50.0,
+          30.5,
+          67.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1993-01-01T00:00:00Z",
+          "2020-12-31T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "providers": [
+    {
+      "name": "Copernicus Marine Service",
+      "description": "Copernicus Marine Service - Mercator Ocean Internations",
+      "roles": [
+        "licensor",
+        "producer",
+        "processor",
+        "host"
+      ],
+      "url": "https://marine.copernicus.eu/"
+    }
+  ]
+}

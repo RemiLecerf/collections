@@ -1,0 +1,125 @@
+{
+    "engine": "WCPS",
+    "stac_version": "0.9.0",
+    "stac_extensions": [
+        "datacube"
+    ],
+    "type": "Collection",
+    "id": "ADO_REL_RR_6_ERA5_QM",
+    "title": "Precipitation Anomalies - ERA5_QM REL_RR-6",
+    "description": "Relative precipitation anomalies are based on downscaled ERA5 reanalysis data (downscaling is performed using quantile mapping method) and calculated for different time scales (1, 2, 3, 6, 12 months). The values represent the % of normal precipitation, where normal is defined as the long-term average (1981-2022).",
+    "keywords": [
+        "RR anomalies",
+        "relative precipitation anomalies",
+        "precipitation anomalies",
+        "ERA5",
+        "ADO project",
+        "ADO"
+    ],
+    "version": "v1",
+    "license": "License to use Copernicus Products",
+    "sci:citation": "N/A",
+    "providers": [
+        {
+            "name": "eurac research",
+            "url": "http://www.eurac.edu",
+            "roles": [
+                "Host"
+            ]
+        },
+        {
+            "name": "Slovenian Environment Agency - ARSO",
+            "url": "https://www.arso.gov.si/",
+            "roles": [
+                "Processor"
+            ]
+        },
+        {
+            "name": "Zentralanstalt f\u00fcr Meteorologie und Geodynamik - ZAMG",
+            "url": "https://www.zamg.ac.at/cms/de/aktuell",
+            "roles": [
+                "Producer"
+            ]
+        }
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    4.0563685981112565,
+                    42.85381219788743,
+                    17.360182784195487,
+                    50.310634900383555
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1978-12-31T12:00:00Z",
+                    "2022-03-24T12:00:00Z"
+                ]
+            ]
+        }
+    },
+    "links": [
+        {
+            "rel": "licence",
+            "href": "https://cds.climate.copernicus.eu/api/v2/terms/static/licence-to-use-copernicus-products.pdf",
+            "type": "text/html",
+            "title": "License Link"
+        }
+    ],
+    "cube:dimensions": {
+        "DATE": {
+            "type": "temporal",
+            "extent": [
+                "1978-12-31T12:00:00.000Z",
+                "2022-03-24T12:00:00.000Z"
+            ],
+            "step": "1-day"
+        },
+        "X": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                4.0563685981112565,
+                17.360182784195487
+            ],
+            "reference_system": 3035
+        },
+        "Y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                42.85381219788743,
+                50.310634900383555
+            ],
+            "reference_system": 3035
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "REL_RR_6"
+            ]
+        }
+    },
+    "summaries": {
+        "constellation": [
+            "N/A"
+        ],
+        "platform": [
+            "N/A"
+        ],
+        "rows": 167,
+        "columns": 202,
+        "instruments": [
+            "N/A"
+        ],
+        "eo:bands": [
+            {
+                "name": "REL_RR_6"
+            }
+        ]
+    }
+}

@@ -1,0 +1,340 @@
+{
+    "slug": "water-sector-indicators-of-hydrological-change-across-europe-from-2011-to-2095-derived-from-climate-simulations",
+    "name": "sis-water-hydrological-change",
+    "id": "eu.copernicus.climate.sis-water-hydrological-change",
+    "type": "dataset",
+    "rich_abstract": "<div class='abstract-text'>\n         <p>The dataset provides a number of indicators of the potential change, relative to a reference period of the recent past, in hydrological conditions over the 21st Century based on an ensemble of climate and hydrological models. The indicators cover hydrological variables of river discharge, soil moisture, snow water equivalent and groundwater recharge. These indicators are produced by various hydrological models using input variables of historical and projected precipitation, temperature and potential evapotranspiration. </p>\n<p>The indicators transform data from climate projections into usable information for the European water sector. They were defined in discussion with stakeholder groups working in different areas of the water sector (hydropower, irrigation, water supply) to provide clear information on climate projections for water resources as annual, seasonal and monthly change factors for a range of variables. </p>\n<p>A range of global climate models and standard projection scenarios (based on latest Copernicus Climate Change Service and Coupled Model Inter-comparison Project Phase 5 climate modelling experiments) were used along a multi-hydrological model approach to produce these indicators.</p>\n<p>This ensemble approach to the climate and hydrological modelling captures the uncertainty and variability of the hydrological regime.  Precipitation and temperature data from five global climate models was downscaled to 5km x 5km resolution with the daily values disaggregated to 3-hourly values.  These data were used to force four hydrological models to produce the hydrological variables to derive the indicators. The indicators are given as relative changes for a given 30-year projection window with respect to the reference period estimates of 1971-2010 for Representative Concentration Pathways (RCP) 2.6 and 8.5, for each grid cell.</p>\n<p>This dataset is produced on behalf of Copernicus Climate Change Service, by UK Centre for Ecology &amp; Hydrology (UKCEH), Helmholtz Centre for Environmental Research (UFZ), Leipzig, Centro Tecnol\u00f3gico del Agua (Cetaqua), Climate Partnership LLC (CPL), Environment Agency (EA), Mediterranean Network of Basin Organisations (MENBO), Norwegian Water Resources &amp; Energy Directorate (NVE).</p>\n         \n         \n            <p></p>\n            <table class=\"abstract-description abstract-table\">\n            <tr><th colspan=\"2\">DATA DESCRIPTION</th>\n            \n<tr><th>Data type</th><td>Gridded</td></tr>\n<tr><th>Projection</th><td>Regular latitude-longitude grid</td></tr>\n<tr><th>Horizontal coverage</th><td>Greater Europe</td></tr>\n<tr><th>Horizontal resolution</th><td>5 km x 5 km</td></tr>\n<tr><th>Temporal coverage</th><td>from 2011 to 2095</td></tr>\n<tr><th>Temporal resolution</th><td>30 year averages calculated with a 5-year time-step</td></tr>\n<tr><th>Temporal gaps</th><td>No gaps</td></tr>\n<tr><th>File format</th><td>NetCDF-4</td></tr>\n<tr><th>Conventions</th><td>Climate and Forecast (CF) Metadata Convention v.1.6, Attribute Convention for Dataset Discovery (ACDD) v1.3</td></tr>\n<tr><th>Versions</th><td>1.0</td></tr>\n<tr><th>Update frequency</th><td>No updates expected</td></tr>\n</table>\n\n    <p></p>\n    <table class=\"abstract-variables abstract-table\">\n    <tr><th colspan=\"3\">MAIN VARIABLES</th>\n    \n\n    <tr><th class='variables-name'>Name</th><th class='variables-units'>Units</th><th class='variables-description'>Description</th></tr>\n    \n<tr><td class='variables-name'>Air temperature</td><td class='variables-units'>\u00b0C</td><td class='variables-description'>The temperature of the air at approximately 2m above the surface. Values are given as the absolute change from the reference period (1971-2010).</td></tr>\n<tr><td class='variables-name'>Groundwater recharge</td><td class='variables-units'>%</td><td class='variables-description'>The volume of percolating water through the unsaturated zone to the aquifer. Values are given as the relative change from the reference period (1971-2010).</td></tr>\n<tr><td class='variables-name'>Potential evapotranspiration</td><td class='variables-units'>%</td><td class='variables-description'>The amount of evaporation that would occur if a sufficient water source were available. Values are given as the relative change from the reference period (1971-2010).</td></tr>\n<tr><td class='variables-name'>Precipitation</td><td class='variables-units'>%</td><td class='variables-description'>The water falling as rain, snow, sleet, or hail per unit area during a given time period. Values are given as the relative change from the reference period (1971-2010).</td></tr>\n<tr><td class='variables-name'>River discharge</td><td class='variables-units'>%</td><td class='variables-description'>River discharge (or streamflow) is the volumetric discharge through stream or river channel. The river routing model mRm has been utilized in these simulations. Values are given as the relative change from the reference period (1971-2010).</td></tr>\n<tr><td class='variables-name'>Snow water equivalent</td><td class='variables-units'>%</td><td class='variables-description'>The equivalent volume of water in the snow pack if the snow were to be melted. Values are given as the relative change from the reference period (1971-2010).</td></tr>\n<tr><td class='variables-name'>Volumetric soil moisture</td><td class='variables-units'>%</td><td class='variables-description'>The volume of water within the unsaturated zone of the soil profile. Values are given as the relative change from the reference period (1971-2010).</td></tr>\n</table>\n    </div>",
+    "terms": [
+        "licence-to-use-copernicus-products"
+    ],
+    "constraints": [
+        {
+            "experiment": [
+                "rcp_2_6",
+                "rcp_8_5"
+            ],
+            "gcm_model": [
+                "gfdl_esm2m",
+                "hadgem2_es",
+                "ipsl_cm5a_lr",
+                "esm_chem",
+                "noresm1_m"
+            ],
+            "statistic": [
+                "change_in_the_annual_mean"
+            ],
+            "variable": [
+                "potential_evapotranspiration",
+                "precipitation",
+                "air_temperature"
+            ]
+        },
+        {
+            "experiment": [
+                "rcp_2_6",
+                "rcp_8_5"
+            ],
+            "gcm_model": [
+                "gfdl_esm2m",
+                "hadgem2_es",
+                "ipsl_cm5a_lr",
+                "esm_chem",
+                "noresm1_m"
+            ],
+            "statistic": [
+                "change_in_the_monthly_mean"
+            ],
+            "time_aggregation": [
+                "april",
+                "august",
+                "december",
+                "february",
+                "january",
+                "july",
+                "june",
+                "march",
+                "may",
+                "november",
+                "october",
+                "september"
+            ],
+            "variable": [
+                "potential_evapotranspiration",
+                "precipitation",
+                "air_temperature"
+            ]
+        },
+        {
+            "experiment": [
+                "rcp_2_6",
+                "rcp_8_5"
+            ],
+            "gcm_model": [
+                "gfdl_esm2m",
+                "hadgem2_es",
+                "ipsl_cm5a_lr",
+                "esm_chem",
+                "noresm1_m"
+            ],
+            "statistic": [
+                "change_in_the_seasonal_mean"
+            ],
+            "time_aggregation": [
+                "winter",
+                "summer",
+                "spring",
+                "autumn"
+            ],
+            "variable": [
+                "potential_evapotranspiration",
+                "precipitation",
+                "air_temperature"
+            ]
+        },
+        {
+            "experiment": [
+                "rcp_2_6",
+                "rcp_8_5"
+            ],
+            "gcm_model": [
+                "gfdl_esm2m",
+                "hadgem2_es",
+                "ipsl_cm5a_lr",
+                "esm_chem",
+                "noresm1_m"
+            ],
+            "hydrological_model": [
+                "pcr_globwb",
+                "variable_infiltration_capacity",
+                "mesoscale_hydrological_model",
+                "noah_mp"
+            ],
+            "statistic": [
+                "area_drought_extent",
+                "drought_duration"
+            ],
+            "variable": [
+                "volumetric_soil_moisture"
+            ]
+        },
+        {
+            "experiment": [
+                "rcp_2_6",
+                "rcp_8_5"
+            ],
+            "gcm_model": [
+                "gfdl_esm2m",
+                "hadgem2_es",
+                "ipsl_cm5a_lr",
+                "esm_chem",
+                "noresm1_m"
+            ],
+            "hydrological_model": [
+                "pcr_globwb",
+                "variable_infiltration_capacity",
+                "mesoscale_hydrological_model",
+                "noah_mp"
+            ],
+            "statistic": [
+                "change_in_the_daily_maximum",
+                "change_in_the_annual_10_exceedance",
+                "change_in_the_annual_95_exceedence",
+                "change_in_the_annual_90_exceedance",
+                "change_in_the_annual_mean"
+            ],
+            "variable": [
+                "river_discharge"
+            ]
+        },
+        {
+            "experiment": [
+                "rcp_2_6",
+                "rcp_8_5"
+            ],
+            "gcm_model": [
+                "gfdl_esm2m",
+                "hadgem2_es",
+                "ipsl_cm5a_lr",
+                "esm_chem",
+                "noresm1_m"
+            ],
+            "hydrological_model": [
+                "pcr_globwb",
+                "variable_infiltration_capacity",
+                "mesoscale_hydrological_model",
+                "noah_mp"
+            ],
+            "statistic": [
+                "change_in_the_annual_mean"
+            ],
+            "variable": [
+                "snow_water_equivalent"
+            ]
+        },
+        {
+            "experiment": [
+                "rcp_2_6",
+                "rcp_8_5"
+            ],
+            "gcm_model": [
+                "gfdl_esm2m",
+                "hadgem2_es",
+                "ipsl_cm5a_lr",
+                "esm_chem",
+                "noresm1_m"
+            ],
+            "hydrological_model": [
+                "pcr_globwb",
+                "mesoscale_hydrological_model",
+                "noah_mp"
+            ],
+            "statistic": [
+                "change_in_the_annual_10_exceedance",
+                "change_in_the_annual_95_exceedence",
+                "change_in_the_annual_90_exceedance",
+                "change_in_the_annual_mean"
+            ],
+            "variable": [
+                "groundwater_recharge"
+            ]
+        },
+        {
+            "experiment": [
+                "rcp_2_6",
+                "rcp_8_5"
+            ],
+            "gcm_model": [
+                "gfdl_esm2m",
+                "hadgem2_es",
+                "ipsl_cm5a_lr",
+                "esm_chem",
+                "noresm1_m"
+            ],
+            "hydrological_model": [
+                "pcr_globwb",
+                "mesoscale_hydrological_model",
+                "noah_mp"
+            ],
+            "statistic": [
+                "change_in_the_monthly_mean"
+            ],
+            "time_aggregation": [
+                "april",
+                "august",
+                "december",
+                "february",
+                "january",
+                "july",
+                "june",
+                "march",
+                "may",
+                "november",
+                "october",
+                "september"
+            ],
+            "variable": [
+                "groundwater_recharge",
+                "snow_water_equivalent",
+                "river_discharge"
+            ]
+        },
+        {
+            "experiment": [
+                "rcp_2_6",
+                "rcp_8_5"
+            ],
+            "gcm_model": [
+                "gfdl_esm2m",
+                "hadgem2_es",
+                "ipsl_cm5a_lr",
+                "esm_chem",
+                "noresm1_m"
+            ],
+            "hydrological_model": [
+                "pcr_globwb",
+                "mesoscale_hydrological_model",
+                "noah_mp"
+            ],
+            "statistic": [
+                "change_in_the_seasonal_mean"
+            ],
+            "time_aggregation": [
+                "winter",
+                "summer",
+                "spring",
+                "autumn"
+            ],
+            "variable": [
+                "groundwater_recharge",
+                "snow_water_equivalent",
+                "river_discharge"
+            ]
+        },
+        {
+            "experiment": [
+                "rcp_2_6",
+                "rcp_8_5"
+            ],
+            "gcm_model": [
+                "gfdl_esm2m",
+                "hadgem2_es",
+                "ipsl_cm5a_lr",
+                "esm_chem",
+                "noresm1_m"
+            ],
+            "hydrological_model": [
+                "variable_infiltration_capacity"
+            ],
+            "statistic": [
+                "change_in_the_monthly_mean"
+            ],
+            "time_aggregation": [
+                "april",
+                "august",
+                "december",
+                "february",
+                "january",
+                "july",
+                "june",
+                "march",
+                "may",
+                "november",
+                "october",
+                "september"
+            ],
+            "variable": [
+                "snow_water_equivalent",
+                "river_discharge"
+            ]
+        },
+        {
+            "experiment": [
+                "rcp_2_6",
+                "rcp_8_5"
+            ],
+            "gcm_model": [
+                "gfdl_esm2m",
+                "hadgem2_es",
+                "ipsl_cm5a_lr",
+                "esm_chem",
+                "noresm1_m"
+            ],
+            "hydrological_model": [
+                "variable_infiltration_capacity"
+            ],
+            "statistic": [
+                "change_in_the_seasonal_mean"
+            ],
+            "time_aggregation": [
+                "winter",
+                "summer",
+                "spring",
+                "autumn"
+            ],
+            "variable": [
+                "snow_water_equivalent",
+                "river_discharge"
+            ]
+        }
+    ]
+}

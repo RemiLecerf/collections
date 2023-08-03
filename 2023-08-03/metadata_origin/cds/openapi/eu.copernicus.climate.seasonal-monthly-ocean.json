@@ -1,0 +1,489 @@
+{
+    "slug": "seasonal-forecast-monthly-averages-of-ocean-variables",
+    "name": "seasonal-monthly-ocean",
+    "id": "eu.copernicus.climate.seasonal-monthly-ocean",
+    "type": "dataset",
+    "rich_abstract": "<div class='abstract-text'>\n         <p>This entry covers global ocean data aggregated to a monthly time resolution. The catalogue entry includes temperature and salinity characteristics of the upper oceans and complements the other seasonal forecast catalogue entries for the land and atmospheric variables. </p>\n<p>Seasonal forecasts provide a long-range outlook of changes in the Earth system over periods of a few weeks or months, as a result of predictable changes in some of the slow-varying components of the system. For example, ocean temperatures typically vary slowly, on timescales of weeks or months; as the ocean has an impact on the overlaying atmosphere, the variability of its properties (e.g. temperature) can modify both local and remote atmospheric conditions. Such modifications of the 'usual' atmospheric conditions are the essence of all long-range (e.g. seasonal) forecasts. This is different from a weather forecast, which gives a lot more precise detail - both in time and space - of the evolution of the state of the atmosphere over a few days into the future. Beyond a few days, the chaotic nature of the atmosphere limits the possibility to predict precise changes at local scales. This is one of the reasons long-range forecasts of atmospheric conditions have large uncertainties. To quantify such uncertainties, long-range forecasts use ensembles, and meaningful forecast products reflect distributions of outcomes.</p>\n<p>Given the complex, non-linear interactions between the individual components of the Earth system, the best tools for long-range forecasting are climate models which include as many of the key components of the system and possible; typically, such models include representations of the atmosphere, ocean and land surface. These models are initialised with data describing the state of the system at the starting point of the forecast and used to predict the evolution of this state in time. While uncertainties coming from imperfect knowledge of the initial conditions of the components of the Earth system can be described with the use of ensembles, uncertainty arising from approximations made in the models are very much dependent on the choice of model. A convenient way to quantify the effect of these approximations is to combine outputs from several models, independently developed, initialised and operated.</p>\n<p>To this effect, the C3S provides a multi-system seasonal forecast service, where data produced by state-of-the-art seasonal forecast systems developed, implemented and operated at forecast centres in several European countries is collected, processed and combined to enable user-relevant applications. The composition of the C3S seasonal multi-system and the full content of the database underpinning the service are described in the documentation. The seasonal forecast data is grouped in several catalogue entries (CDS datasets), currently defined by the model component and type of variable: outputs from the ocean component or the atmospheric one (single-level or multi-level, on pressure surfaces) and the level of post-processing applied (data at original time resolution, processing on temporal aggregation and post-processing related to bias adjustment).</p>\n<p>The data includes forecasts created in real-time each month starting from the publication of this entry and retrospective forecasts (hindcasts) initialised over periods in the past specified in the documentation for each origin and system. </p>\n         \n         \n            <p></p>\n            <table class=\"abstract-description abstract-table\">\n            <tr><th colspan=\"2\">DATA DESCRIPTION</th>\n            \n<tr><th>Data type</th><td>GRIB</td></tr>\n<tr><th>Projection</th><td>Regular latitude-longitude grid</td></tr>\n<tr><th>Horizontal coverage</th><td>Global</td></tr>\n<tr><th>Horizontal resolution</th><td>1\u00b0 x 1\u00b0</td></tr>\n<tr><th>Vertical coverage</th><td>Upper part of the oceans</td></tr>\n<tr><th>Temporal coverage</th><td><p>Hindcasts: at least 1993-2016</p>\n<p>Forecasts: from March 2023</p></td></tr>\n<tr><th>Temporal resolution</th><td>Monthly</td></tr>\n<tr><th>File format</th><td>NetCDF</td></tr>\n<tr><th>Versions</th><td>Latest version is provided. Files provide a version tag.</td></tr>\n<tr><th>Update frequency</th><td>Real time forecasts are released once per month on the 13th at 12UTC</td></tr>\n</table>\n\n    <p></p>\n    <table class=\"abstract-variables abstract-table\">\n    <tr><th colspan=\"3\">MAIN VARIABLES</th>\n    \n\n    <tr><th class='variables-name'>Name</th><th class='variables-units'>Units</th><th class='variables-description'>Description</th></tr>\n    \n<tr><td class='variables-name'>Depth average potential temperature of upper 300m</td><td class='variables-units'>K</td><td class='variables-description'>Mean sea water potential temperature in the upper 300m of the sea. The potential temperature is the temperature of a parcel of sea water would have if moved adiabatically to sea level pressure.</td></tr>\n<tr><td class='variables-name'>Depth average salinity of upper 300m</td><td class='variables-units'>psu</td><td class='variables-description'>Mean sea water salt concentration in the upper 300m of the sea.</td></tr>\n<tr><td class='variables-name'>Depth of 14\u00b0C isotherm</td><td class='variables-units'>m</td><td class='variables-description'>The depth below sea level of those locations in the sea where the temperature values are 14\u00b0C.</td></tr>\n<tr><td class='variables-name'>Depth of 17\u00b0C isotherm</td><td class='variables-units'>m</td><td class='variables-description'>The depth below sea level of those locations in the sea where the temperature values are 17\u00b0C.</td></tr>\n<tr><td class='variables-name'>Depth of 20\u00b0C isotherm</td><td class='variables-units'>m</td><td class='variables-description'>The depth below sea level of those locations in the sea where the temperature values are 20\u00b0C.</td></tr>\n<tr><td class='variables-name'>Depth of 26\u00b0C isotherm</td><td class='variables-units'>m</td><td class='variables-description'>The depth below sea level of those locations in the sea where the temperature values are 26\u00b0C.</td></tr>\n<tr><td class='variables-name'>Depth of 28\u00b0C isotherm</td><td class='variables-units'>m</td><td class='variables-description'>The depth below sea level of those locations in the sea where the temperature values are 28\u00b0C.</td></tr>\n<tr><td class='variables-name'>Mixed layer depth 0.01</td><td class='variables-units'>m</td><td class='variables-description'>The depth of the ocean where the average sea water density exceeds the near surface density (sigma theta) plus 0.01 kg/m3.</td></tr>\n<tr><td class='variables-name'>Mixed layer depth 0.03</td><td class='variables-units'>m</td><td class='variables-description'>The depth of the ocean where the average sea water density exceeds the near surface density (sigma theta) plus 0.03 kg/m3.</td></tr>\n<tr><td class='variables-name'>Sea ice thickness</td><td class='variables-units'>m</td><td class='variables-description'>Mean thickness of the sea ice layer in the area of the grid cell covered by ice.</td></tr>\n<tr><td class='variables-name'>Sea surface height above geoid</td><td class='variables-units'>m</td><td class='variables-description'>Vertical distance between the actual sea surface and a reference surface of constant geopotential with which mean sea level would coincide if the ocean were at rest.</td></tr>\n<tr><td class='variables-name'>Sea surface salinity</td><td class='variables-units'>psu</td><td class='variables-description'>Salt concentration at the sea surface.</td></tr>\n</table>\n    </div>",
+    "terms": [
+        "licence-to-use-copernicus-products",
+        "Additional-licence-to-use-non-European-contributions"
+    ],
+    "constraints": [
+        {
+            "forecast_type": [
+                "forecast"
+            ],
+            "month": [
+                "03",
+                "04",
+                "05",
+                "06",
+                "07"
+            ],
+            "originating_centre": [
+                "cmcc"
+            ],
+            "system": [
+                "35"
+            ],
+            "variable": [
+                "mixed_layer_depth_0_01",
+                "mixed_layer_depth_0_03",
+                "sea_ice_thickness",
+                "sea_surface_salinity",
+                "depth_average_salinity_of_upper_300m",
+                "depth_of_14_c_isotherm",
+                "depth_of_17_c_isotherm",
+                "depth_of_20_c_isotherm",
+                "depth_of_26_c_isotherm",
+                "depth_of_28_c_isotherm",
+                "depth_average_potential_temperature_of_upper_300m",
+                "sea_surface_height_above_geoid"
+            ],
+            "year": [
+                "2023"
+            ]
+        },
+        {
+            "forecast_type": [
+                "forecast"
+            ],
+            "month": [
+                "03",
+                "04",
+                "05",
+                "06",
+                "07"
+            ],
+            "originating_centre": [
+                "ecmwf"
+            ],
+            "system": [
+                "51"
+            ],
+            "variable": [
+                "mixed_layer_depth_0_01",
+                "sea_surface_salinity",
+                "depth_of_20_c_isotherm",
+                "depth_of_26_c_isotherm",
+                "depth_of_28_c_isotherm",
+                "sea_surface_height_above_geoid"
+            ],
+            "year": [
+                "2023"
+            ]
+        },
+        {
+            "forecast_type": [
+                "forecast"
+            ],
+            "month": [
+                "03",
+                "04",
+                "05",
+                "06",
+                "07"
+            ],
+            "originating_centre": [
+                "dwd"
+            ],
+            "system": [
+                "21"
+            ],
+            "variable": [
+                "mixed_layer_depth_0_01",
+                "sea_ice_thickness",
+                "sea_surface_salinity",
+                "depth_average_salinity_of_upper_300m",
+                "depth_of_14_c_isotherm",
+                "depth_of_17_c_isotherm",
+                "depth_of_20_c_isotherm",
+                "depth_of_26_c_isotherm",
+                "depth_of_28_c_isotherm",
+                "depth_average_potential_temperature_of_upper_300m",
+                "sea_surface_height_above_geoid"
+            ],
+            "year": [
+                "2023"
+            ]
+        },
+        {
+            "forecast_type": [
+                "forecast"
+            ],
+            "month": [
+                "03",
+                "04",
+                "05",
+                "06",
+                "07"
+            ],
+            "originating_centre": [
+                "ukmo"
+            ],
+            "system": [
+                "602"
+            ],
+            "variable": [
+                "mixed_layer_depth_0_01",
+                "sea_ice_thickness",
+                "sea_surface_salinity",
+                "depth_average_salinity_of_upper_300m",
+                "depth_of_20_c_isotherm",
+                "depth_of_28_c_isotherm",
+                "depth_average_potential_temperature_of_upper_300m",
+                "sea_surface_height_above_geoid"
+            ],
+            "year": [
+                "2023"
+            ]
+        },
+        {
+            "forecast_type": [
+                "forecast"
+            ],
+            "month": [
+                "03",
+                "04",
+                "05",
+                "06",
+                "07"
+            ],
+            "originating_centre": [
+                "meteo_france"
+            ],
+            "system": [
+                "8"
+            ],
+            "variable": [
+                "mixed_layer_depth_0_01",
+                "mixed_layer_depth_0_03",
+                "sea_ice_thickness",
+                "sea_surface_salinity",
+                "depth_average_salinity_of_upper_300m",
+                "depth_of_14_c_isotherm",
+                "depth_of_17_c_isotherm",
+                "depth_of_20_c_isotherm",
+                "depth_of_26_c_isotherm",
+                "depth_of_28_c_isotherm",
+                "depth_average_potential_temperature_of_upper_300m",
+                "sea_surface_height_above_geoid"
+            ],
+            "year": [
+                "2023"
+            ]
+        },
+        {
+            "forecast_type": [
+                "hindcast"
+            ],
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06",
+                "07",
+                "08",
+                "09",
+                "10",
+                "11",
+                "12"
+            ],
+            "originating_centre": [
+                "cmcc"
+            ],
+            "system": [
+                "35"
+            ],
+            "variable": [
+                "mixed_layer_depth_0_01",
+                "mixed_layer_depth_0_03",
+                "sea_ice_thickness",
+                "sea_surface_salinity",
+                "depth_average_salinity_of_upper_300m",
+                "depth_of_14_c_isotherm",
+                "depth_of_17_c_isotherm",
+                "depth_of_20_c_isotherm",
+                "depth_of_26_c_isotherm",
+                "depth_of_28_c_isotherm",
+                "depth_average_potential_temperature_of_upper_300m",
+                "sea_surface_height_above_geoid"
+            ],
+            "year": [
+                "1993",
+                "1994",
+                "1995",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2000",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016"
+            ]
+        },
+        {
+            "forecast_type": [
+                "hindcast"
+            ],
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06",
+                "07",
+                "08",
+                "09",
+                "10",
+                "11",
+                "12"
+            ],
+            "originating_centre": [
+                "ecmwf"
+            ],
+            "system": [
+                "51"
+            ],
+            "variable": [
+                "mixed_layer_depth_0_01",
+                "sea_surface_salinity",
+                "depth_of_20_c_isotherm",
+                "depth_of_26_c_isotherm",
+                "depth_of_28_c_isotherm",
+                "sea_surface_height_above_geoid"
+            ],
+            "year": [
+                "1993",
+                "1994",
+                "1995",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2000",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016"
+            ]
+        },
+        {
+            "forecast_type": [
+                "hindcast"
+            ],
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06",
+                "07",
+                "08",
+                "09",
+                "10",
+                "11",
+                "12"
+            ],
+            "originating_centre": [
+                "dwd"
+            ],
+            "system": [
+                "21"
+            ],
+            "variable": [
+                "mixed_layer_depth_0_01",
+                "sea_ice_thickness",
+                "sea_surface_salinity",
+                "depth_average_salinity_of_upper_300m",
+                "depth_of_14_c_isotherm",
+                "depth_of_17_c_isotherm",
+                "depth_of_20_c_isotherm",
+                "depth_of_26_c_isotherm",
+                "depth_of_28_c_isotherm",
+                "depth_average_potential_temperature_of_upper_300m",
+                "sea_surface_height_above_geoid"
+            ],
+            "year": [
+                "1993",
+                "1994",
+                "1995",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2000",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018",
+                "2019"
+            ]
+        },
+        {
+            "forecast_type": [
+                "hindcast"
+            ],
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06",
+                "07",
+                "08",
+                "09",
+                "10",
+                "11",
+                "12"
+            ],
+            "originating_centre": [
+                "meteo_france"
+            ],
+            "system": [
+                "8"
+            ],
+            "variable": [
+                "mixed_layer_depth_0_01",
+                "mixed_layer_depth_0_03",
+                "sea_ice_thickness",
+                "sea_surface_salinity",
+                "depth_average_salinity_of_upper_300m",
+                "depth_of_14_c_isotherm",
+                "depth_of_17_c_isotherm",
+                "depth_of_20_c_isotherm",
+                "depth_of_26_c_isotherm",
+                "depth_of_28_c_isotherm",
+                "depth_average_potential_temperature_of_upper_300m",
+                "sea_surface_height_above_geoid"
+            ],
+            "year": [
+                "1993",
+                "1994",
+                "1995",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2000",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ]
+        },
+        {
+            "forecast_type": [
+                "hindcast"
+            ],
+            "month": [
+                "03",
+                "04",
+                "05",
+                "06",
+                "07"
+            ],
+            "originating_centre": [
+                "ukmo"
+            ],
+            "system": [
+                "602"
+            ],
+            "variable": [
+                "mixed_layer_depth_0_01",
+                "sea_ice_thickness",
+                "sea_surface_salinity",
+                "depth_average_salinity_of_upper_300m",
+                "depth_of_20_c_isotherm",
+                "depth_of_28_c_isotherm",
+                "depth_average_potential_temperature_of_upper_300m",
+                "sea_surface_height_above_geoid"
+            ],
+            "year": [
+                "1993",
+                "1994",
+                "1995",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2000",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016"
+            ]
+        }
+    ]
+}

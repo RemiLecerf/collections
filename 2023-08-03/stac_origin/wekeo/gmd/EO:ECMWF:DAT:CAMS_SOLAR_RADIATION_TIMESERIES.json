@@ -1,0 +1,91 @@
+{
+  "type": "Collection",
+  "id": "EO:ECMWF:DAT:CAMS_SOLAR_RADIATION_TIMESERIES",
+  "stac_version": "1.0.0",
+  "description": "The CAMS solar radiation services provide historical values (2004 to present) of Global, Direct and Diffuse Solar Irradiance, as well as of Direct Normal Irradiance. The aim of this is to fulfil the needs of European and national policy developments and the requirements of (partly) commercial downstream services, e.g. for planning, monitoring, efficiency improvements, and the integration of solar energy systems into energy supply grids. The Irradiances defined above depend on various atmospheric quantities, such as aerosol optical properties, water vapour and ozone concentrations, and these are taken into account when providing the solar radiation products. Other properties, such as ground albedo and ground elevation, are also taken into account. For clear-sky conditions, the irradiances are provided for any location in the world using information on aerosol, ozone and water vapour from the CAMS global forecasting system. Because high-resolution cloud information is directly inferred from satellite observations, the Irradiances for cloudy conditions are currently only available for the field-of-view of the Meteosat Second Generation (MSG) satellite, which is roughly Europe, Africa, the Atlantic Ocean and the Middle East (-66° to 66° in both latitude and longitude).",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://confluence.ecmwf.int/x/jOLjDw",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "CAMS Solar Radiation Documentation"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://ads-test.copernicus-atmosphere.eu/cdsapp#!/dataset/eu.copernicus.atmosphere.cams-solar-radiation-timeseries",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Climate Data Store catalogue"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://atmosphere.copernicus.eu/supplementary-services",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "CAMS Solar Radiation Validation Reports"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://atmosphere.copernicus.eu/solar-radiation",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "CAMS Solar Radiation Documentation"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://atmosphere.copernicus.eu/supplementary-services#fa6856b7-a306-4cc4-9137-f3e0cb703093",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Evaluation and quality assurance (EQA) reports"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://www.wekeo.eu/data-access/EO:ECMWF:DAT:CAMS_SOLAR_RADIATION_TIMESERIES",
+      "title": "Harmonized Data Access (WEkEO)"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://ads.atmosphere.copernicus.eu/cdsapp#!/dataset/eu.copernicus.atmosphere.cams-solar-radiation-timeseries",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Climate Data Store catalogue"
+    }
+  ],
+  "title": "CAMS solar radiation time-series",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2004-01-01T00:00:00Z",
+          "2023-05-21T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Atmospheric conditions",
+    "Parameter family: Radiation",
+    "Product type: Analysis",
+    "Spatial coverage: Global",
+    "Spatial coverage: Satellite image area",
+    "Temporal coverage: Past",
+    "Variable domain: Solar radiation",
+    "airPollution"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

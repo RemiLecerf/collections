@@ -1,0 +1,915 @@
+<gmi:MI_Metadata xmlns="http://www.isotc211.org/2005/gmd" xmlns:date="http://exslt.org/dates-and-times" xmlns:eum="http://www.eumetsat.int/2008/gmi" xmlns:fn="http://www.w3.org/TR/xpath-functions" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gmi="http://www.isotc211.org/2005/gmi" xmlns:gml="http://www.opengis.net/gml" xmlns:gmx="http://www.isotc211.org/2005/gmx" xmlns:str="http://exslt.org/strings" xmlns:xdt="http://www.w3.org/2005/02/xpath-datatypes" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xsi:schemaLocation="http://www.eumetsat.int/2008/gmi http://navigator.eumetsat.int/discovery/rest/schemas/eum/eum.xsd">
+      <gmd:fileIdentifier>
+        <gco:CharacterString>EO:EUM:DAT:0080</gco:CharacterString>
+      </gmd:fileIdentifier>
+      <gmd:language>
+        <LanguageCode codeList="http://www.w3.org/WAI/ER/IG/ert/iso639.htm" codeListValue="eng"/>
+      </gmd:language>
+      <gmd:hierarchyLevel>
+        <MD_ScopeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#MD_ScopeCode" codeListValue="series"/>
+      </gmd:hierarchyLevel>
+      <gmd:hierarchyLevelName>
+        <gco:CharacterString>theme.par.Brightness_Temperature</gco:CharacterString>
+      </gmd:hierarchyLevelName>
+      <gmd:hierarchyLevelName>
+        <gco:CharacterString>theme.par.Climate</gco:CharacterString>
+      </gmd:hierarchyLevelName>
+      <gmd:hierarchyLevelName>
+        <gco:CharacterString>theme.par.Fundamental_Climate_Data_Record</gco:CharacterString>
+      </gmd:hierarchyLevelName>
+      <gmd:hierarchyLevelName>
+        <gco:CharacterString>theme.par.Level_1_Data</gco:CharacterString>
+      </gmd:hierarchyLevelName>
+      <gmd:hierarchyLevelName>
+        <gco:CharacterString>dis.Download</gco:CharacterString>
+      </gmd:hierarchyLevelName>
+      <gmd:hierarchyLevelName>
+        <gco:CharacterString>sat.MFG</gco:CharacterString>
+      </gmd:hierarchyLevelName>
+      <gmd:contact>
+        <gmd:CI_ResponsibleParty>
+          <gmd:individualName>
+            <gco:CharacterString>European Organisation for the Exploitation of Meteorological Satellites</gco:CharacterString>
+          </gmd:individualName>
+          <gmd:organisationName>
+            <gco:CharacterString>EUMETSAT</gco:CharacterString>
+          </gmd:organisationName>
+          <gmd:contactInfo>
+            <gmd:CI_Contact>
+              <gmd:phone>
+                <gmd:CI_Telephone>
+                  <gmd:voice>
+                    <gco:CharacterString>+49(0)6151-807 3660/3770</gco:CharacterString>
+                  </gmd:voice>
+                  <gmd:facsimile>
+                    <gco:CharacterString>+49(0)6151-807 3790</gco:CharacterString>
+                  </gmd:facsimile>
+                </gmd:CI_Telephone>
+              </gmd:phone>
+              <gmd:address>
+                <gmd:CI_Address>
+                  <gmd:deliveryPoint>
+                    <gco:CharacterString>EUMETSAT Allee 1</gco:CharacterString>
+                  </gmd:deliveryPoint>
+                  <gmd:city>
+                    <gco:CharacterString>Darmstadt</gco:CharacterString>
+                  </gmd:city>
+                  <gmd:administrativeArea>
+                    <gco:CharacterString>Hessen</gco:CharacterString>
+                  </gmd:administrativeArea>
+                  <gmd:postalCode>
+                    <gco:CharacterString>64295</gco:CharacterString>
+                  </gmd:postalCode>
+                  <gmd:country>
+                    <gco:CharacterString>Germany</gco:CharacterString>
+                  </gmd:country>
+                  <gmd:electronicMailAddress>
+                    <gco:CharacterString>ops@eumetsat.int</gco:CharacterString>
+                  </gmd:electronicMailAddress>
+                </gmd:CI_Address>
+              </gmd:address>
+              <gmd:onlineResource>
+                <gmd:CI_OnlineResource>
+                  <gmd:linkage>
+                    <gmd:URL>http://www.eumetsat.int</gmd:URL>
+                  </gmd:linkage>
+                </gmd:CI_OnlineResource>
+              </gmd:onlineResource>
+            </gmd:CI_Contact>
+          </gmd:contactInfo>
+          <gmd:role>
+            <gmd:CI_RoleCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/ML_gmxCodelists.xml#MD_ScopeCode" codeListValue="pointOfContact">pointOfContact</gmd:CI_RoleCode>
+          </gmd:role>
+        </gmd:CI_ResponsibleParty>
+      </gmd:contact>
+      <gmd:dateStamp>
+        <gco:Date>2022-02-24</gco:Date>
+      </gmd:dateStamp>
+      <gmd:metadataStandardName>
+        <gco:CharacterString>ISO19115</gco:CharacterString>
+      </gmd:metadataStandardName>
+      <gmd:metadataStandardVersion>
+        <gco:CharacterString>2003/Cor.1:2006</gco:CharacterString>
+      </gmd:metadataStandardVersion>
+      <gmd:identificationInfo>
+        <gmd:MD_DataIdentification>
+          <gmd:citation>
+            <gmd:CI_Citation>
+              <gmd:title>
+                <gco:CharacterString>MVIRI Level 1.5 Climate Data Record Release 1 - MFG - 0 degree</gco:CharacterString>
+              </gmd:title>
+              <gmd:alternateTitle>
+                <gco:CharacterString>MTP15FIDE0100</gco:CharacterString>
+              </gmd:alternateTitle>
+              <gmd:date>
+                <gmd:CI_Date>
+                  <gmd:date>
+                    <gco:Date>2020-09-07</gco:Date>
+                  </gmd:date>
+                  <gmd:dateType>
+                    <gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="creation"/>
+                  </gmd:dateType>
+                </gmd:CI_Date>
+              </gmd:date>
+              <edition>
+                <gco:CharacterString>1</gco:CharacterString>
+              </edition>
+              <gmd:identifier>
+                <gmd:MD_Identifier>
+                  <gmd:code>
+                    <gco:CharacterString>EO:EUM:DAT:0080</gco:CharacterString>
+                  </gmd:code>
+                </gmd:MD_Identifier>
+              </gmd:identifier>
+              <gmd:identifier>
+                <gmd:RS_Identifier>
+                  <gmd:code>
+                    <gco:CharacterString>10.15770/EUM_SEC_CLM_0009</gco:CharacterString>
+                  </gmd:code>
+                  <gmd:codeSpace>
+                    <gco:CharacterString>http://datacite.org</gco:CharacterString>
+                  </gmd:codeSpace>
+                </gmd:RS_Identifier>
+              </gmd:identifier>
+              <gmd:citedResponsibleParty>
+                <gmd:CI_ResponsibleParty>
+                  <individualName>
+                    <gco:CharacterString>Rüthrich, Frank; Viju O. John; Rob A. Roebeling; Ralf Quast; Yves Govaerts; Emma R. Woolliams; Jörg Schulz</gco:CharacterString>
+                  </individualName>
+                  <gmd:role>
+                    <gmd:CI_RoleCode codeList="http://navigator.eumetsat.int/metadata_schema/eum/resources/Codelist/eum_gmxCodelists.xml#CI_RoleCode" codeListValue="authorDetails"/>
+                  </gmd:role>
+                </gmd:CI_ResponsibleParty>
+              </gmd:citedResponsibleParty>
+              <gmd:citedResponsibleParty>
+                <gmd:CI_ResponsibleParty>
+                  <gmd:contactInfo>
+                    <gmd:CI_Contact>
+                      <gmd:onlineResource>
+                        <gmd:CI_OnlineResource>
+                          <gmd:linkage>
+                            <gmd:URL>http://doi.org/10.15770/EUM_SEC_CLM_0009</gmd:URL>
+                          </gmd:linkage>
+                          <gmd:name>
+                            <gco:CharacterString>Digital Object Identifier (DOI): 10.15770/EUM_SEC_CLM_0009</gco:CharacterString>
+                          </gmd:name>
+                          <gmd:function>
+                            <gmd:CI_OnLineFunctionCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="information"/>
+                          </gmd:function>
+                        </gmd:CI_OnlineResource>
+                      </gmd:onlineResource>
+                    </gmd:CI_Contact>
+                  </gmd:contactInfo>
+                  <gmd:role>
+                    <gmd:CI_RoleCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="author"/>
+                  </gmd:role>
+                </gmd:CI_ResponsibleParty>
+              </gmd:citedResponsibleParty>
+              <gmd:citedResponsibleParty>
+                <gmd:CI_ResponsibleParty>
+                  <gmd:contactInfo>
+                    <gmd:CI_Contact>
+                      <gmd:onlineResource>
+                        <gmd:CI_OnlineResource>
+                          <gmd:linkage>
+                            <gmd:URL>https://www.eumetsat.int/media/46604</gmd:URL>
+                          </gmd:linkage>
+                          <gmd:name>
+                            <gco:CharacterString>Product User Guide - MVIRI FCDR Release 1</gco:CharacterString>
+                          </gmd:name>
+                          <gmd:function>
+                            <gmd:CI_OnLineFunctionCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="information"/>
+                          </gmd:function>
+                        </gmd:CI_OnlineResource>
+                      </gmd:onlineResource>
+                    </gmd:CI_Contact>
+                  </gmd:contactInfo>
+                  <gmd:role>
+                    <gmd:CI_RoleCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="author"/>
+                  </gmd:role>
+                </gmd:CI_ResponsibleParty>
+              </gmd:citedResponsibleParty>
+              <gmd:citedResponsibleParty>
+                <gmd:CI_ResponsibleParty>
+                  <gmd:contactInfo>
+                    <gmd:CI_Contact>
+                      <gmd:onlineResource>
+                        <gmd:CI_OnlineResource>
+                          <gmd:linkage>
+                            <gmd:URL>https://www.eumetsat.int/media/46605</gmd:URL>
+                          </gmd:linkage>
+                          <gmd:name>
+                            <gco:CharacterString>Validation Report - MVIRI FCDR Release 1</gco:CharacterString>
+                          </gmd:name>
+                          <gmd:function>
+                            <gmd:CI_OnLineFunctionCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="information"/>
+                          </gmd:function>
+                        </gmd:CI_OnlineResource>
+                      </gmd:onlineResource>
+                    </gmd:CI_Contact>
+                  </gmd:contactInfo>
+                  <gmd:role>
+                    <gmd:CI_RoleCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="author"/>
+                  </gmd:role>
+                </gmd:CI_ResponsibleParty>
+              </gmd:citedResponsibleParty>
+              <gmd:citedResponsibleParty>
+                <gmd:CI_ResponsibleParty>
+                  <gmd:contactInfo>
+                    <gmd:CI_Contact>
+                      <gmd:onlineResource>
+                        <gmd:CI_OnlineResource>
+                          <gmd:linkage>
+                            <gmd:URL>https://doi.org/10.3390/rs11101165</gmd:URL>
+                          </gmd:linkage>
+                          <gmd:name>
+                            <gco:CharacterString>Rüthrich, Frank, Viju O. John, Rob A. Roebeling, Ralf Quast, Yves Govaerts, Emma R. Woolliams and Jörg Schulz, 2019: Climate Data Records from Meteosat First Generation Part III: Recalibration and Uncertainty Tracing of the Visible channel on Meteosat-2-7 using Reconstructed, Spectrally Changing Response Functions, Remote Sens. 2019, 11(10), 1165; https://doi.org/10.3390/rs11101165.</gco:CharacterString>
+                          </gmd:name>
+                          <gmd:function>
+                            <gmd:CI_OnLineFunctionCode codeList="http://navigator.eumetsat.int/metadata_schema/eum/resources/Codelist/eum_gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="references"/>
+                          </gmd:function>
+                        </gmd:CI_OnlineResource>
+                      </gmd:onlineResource>
+                    </gmd:CI_Contact>
+                  </gmd:contactInfo>
+                  <gmd:role>
+                    <gmd:CI_RoleCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="author"/>
+                  </gmd:role>
+                </gmd:CI_ResponsibleParty>
+              </gmd:citedResponsibleParty>
+              <gmd:citedResponsibleParty>
+                <gmd:CI_ResponsibleParty>
+                  <gmd:contactInfo>
+                    <gmd:CI_Contact>
+                      <gmd:onlineResource>
+                        <gmd:CI_OnlineResource>
+                          <gmd:linkage>
+                            <gmd:URL>https://www.eumetsat.int/media/46607</gmd:URL>
+                          </gmd:linkage>
+                          <gmd:name>
+                            <gco:CharacterString>Algorithm Theoretical Baseline Document - MVIRI FCDR Release 1</gco:CharacterString>
+                          </gmd:name>
+                          <gmd:function>
+                            <gmd:CI_OnLineFunctionCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="information"/>
+                          </gmd:function>
+                        </gmd:CI_OnlineResource>
+                      </gmd:onlineResource>
+                    </gmd:CI_Contact>
+                  </gmd:contactInfo>
+                  <gmd:role>
+                    <gmd:CI_RoleCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="author"/>
+                  </gmd:role>
+                </gmd:CI_ResponsibleParty>
+              </gmd:citedResponsibleParty>
+              <gmd:citedResponsibleParty>
+                <gmd:CI_ResponsibleParty>
+                  <gmd:contactInfo>
+                    <gmd:CI_Contact>
+                      <gmd:onlineResource>
+                        <gmd:CI_OnlineResource>
+                          <gmd:linkage>
+                            <gmd:URL>https://doi.org/10.3390/rs11101171</gmd:URL>
+                          </gmd:linkage>
+                          <gmd:name>
+                            <gco:CharacterString>John, Viju O., Tasuku Tabata, Frank Rüthrich, Rob Roebeling, Tim Hewison, Reto Stöckli and Jörg Schulz, 2019: On the Methods for Recalibrating Geostationary Longwave Channels Using Polar Orbiting Infrared Sounders , Remote Sens. 2019, 11(10), 1171; https://doi.org/10.3390/rs11101171.</gco:CharacterString>
+                          </gmd:name>
+                          <gmd:function>
+                            <gmd:CI_OnLineFunctionCode codeList="http://navigator.eumetsat.int/metadata_schema/eum/resources/Codelist/eum_gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="references"/>
+                          </gmd:function>
+                        </gmd:CI_OnlineResource>
+                      </gmd:onlineResource>
+                    </gmd:CI_Contact>
+                  </gmd:contactInfo>
+                  <gmd:role>
+                    <gmd:CI_RoleCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="author"/>
+                  </gmd:role>
+                </gmd:CI_ResponsibleParty>
+              </gmd:citedResponsibleParty>
+              <gmd:citedResponsibleParty>
+                <gmd:CI_ResponsibleParty>
+                  <gmd:contactInfo>
+                    <gmd:CI_Contact>
+                      <gmd:onlineResource>
+                        <gmd:CI_OnlineResource>
+                          <gmd:linkage>
+                            <gmd:URL>https://www.atmos-meas-tech-discuss.net/amt-2019-249</gmd:URL>
+                          </gmd:linkage>
+                          <gmd:name>
+                            <gco:CharacterString>Automatic Quality Control of the Meteosat First Generation Measurements</gco:CharacterString>
+                          </gmd:name>
+                          <gmd:function>
+                            <gmd:CI_OnLineFunctionCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="information"/>
+                          </gmd:function>
+                        </gmd:CI_OnlineResource>
+                      </gmd:onlineResource>
+                    </gmd:CI_Contact>
+                  </gmd:contactInfo>
+                  <gmd:role>
+                    <gmd:CI_RoleCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="author"/>
+                  </gmd:role>
+                </gmd:CI_ResponsibleParty>
+              </gmd:citedResponsibleParty>
+              <gmd:citedResponsibleParty>
+                <gmd:CI_ResponsibleParty>
+                  <gmd:contactInfo>
+                    <gmd:CI_Contact>
+                      <gmd:onlineResource>
+                        <gmd:CI_OnlineResource>
+                          <gmd:linkage>
+                            <gmd:URL>https://navigator.eumetsat.int/product/EO:EUM:DAT:0052?query=fiduceo&amp;s=simple</gmd:URL>
+                          </gmd:linkage>
+                          <gmd:name>
+                            <gco:CharacterString>FIDUCEO in-flight MVIRI VIS spectral response functions - Model</gco:CharacterString>
+                          </gmd:name>
+                          <gmd:function>
+                            <gmd:CI_OnLineFunctionCode codeList="http://navigator.eumetsat.int/metadata_schema/eum/resources/Codelist/eum_gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="relatedProduct"/>
+                          </gmd:function>
+                        </gmd:CI_OnlineResource>
+                      </gmd:onlineResource>
+                    </gmd:CI_Contact>
+                  </gmd:contactInfo>
+                  <gmd:role>
+                    <gmd:CI_RoleCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="author"/>
+                  </gmd:role>
+                </gmd:CI_ResponsibleParty>
+              </gmd:citedResponsibleParty>
+              <gmd:citedResponsibleParty>
+                <gmd:CI_ResponsibleParty>
+                  <gmd:contactInfo>
+                    <gmd:CI_Contact>
+                      <gmd:onlineResource>
+                        <gmd:CI_OnlineResource>
+                          <gmd:linkage>
+                            <gmd:URL>https://navigator.eumetsat.int/product/EO:EUM:DAT:0082</gmd:URL>
+                          </gmd:linkage>
+                          <gmd:name>
+                            <gco:CharacterString>MVIRI Level 1.5 Climate Data Record - MFG - 63 degree</gco:CharacterString>
+                          </gmd:name>
+                          <gmd:function>
+                            <gmd:CI_OnLineFunctionCode codeList="http://navigator.eumetsat.int/metadata_schema/eum/resources/Codelist/eum_gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="relatedProduct"/>
+                          </gmd:function>
+                        </gmd:CI_OnlineResource>
+                      </gmd:onlineResource>
+                    </gmd:CI_Contact>
+                  </gmd:contactInfo>
+                  <gmd:role>
+                    <gmd:CI_RoleCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="author"/>
+                  </gmd:role>
+                </gmd:CI_ResponsibleParty>
+              </gmd:citedResponsibleParty>
+              <gmd:citedResponsibleParty>
+                <gmd:CI_ResponsibleParty>
+                  <gmd:contactInfo>
+                    <gmd:CI_Contact>
+                      <gmd:onlineResource>
+                        <gmd:CI_OnlineResource>
+                          <gmd:linkage>
+                            <gmd:URL>https://navigator.eumetsat.int/product/EO:EUM:DAT:0081</gmd:URL>
+                          </gmd:linkage>
+                          <gmd:name>
+                            <gco:CharacterString>MVIRI Level 1.5 Climate Data Record - MFG - 57 degree</gco:CharacterString>
+                          </gmd:name>
+                          <gmd:function>
+                            <gmd:CI_OnLineFunctionCode codeList="http://navigator.eumetsat.int/metadata_schema/eum/resources/Codelist/eum_gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="relatedProduct"/>
+                          </gmd:function>
+                        </gmd:CI_OnlineResource>
+                      </gmd:onlineResource>
+                    </gmd:CI_Contact>
+                  </gmd:contactInfo>
+                  <gmd:role>
+                    <gmd:CI_RoleCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="author"/>
+                  </gmd:role>
+                </gmd:CI_ResponsibleParty>
+              </gmd:citedResponsibleParty>
+              <gmd:citedResponsibleParty>
+                <gmd:CI_ResponsibleParty>
+                  <gmd:contactInfo>
+                    <gmd:CI_Contact>
+                      <gmd:onlineResource>
+                        <gmd:CI_OnlineResource>
+                          <gmd:linkage>
+                            <gmd:URL>https://doi.org/10.3390/rs10121959</gmd:URL>
+                          </gmd:linkage>
+                          <gmd:name>
+                            <gco:CharacterString>Govaerts, Y. M., F. Ruethrich, V. O. John, Ralf Quast (2018) Climate Data Records from Meteosat First Generation: Simulation of Accurate Top-Of-Atmosphere Spectral Radiance over Pseudo-Invariant Calibration Sites for the Retrieval of the In-Flight MVIRI Visible Spectral Response, Remote Sens., 10(12), 1959; doi:10.3390/rs10121959.</gco:CharacterString>
+                          </gmd:name>
+                          <gmd:function>
+                            <gmd:CI_OnLineFunctionCode codeList="http://navigator.eumetsat.int/metadata_schema/eum/resources/Codelist/eum_gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="isCitedBy"/>
+                          </gmd:function>
+                        </gmd:CI_OnlineResource>
+                      </gmd:onlineResource>
+                    </gmd:CI_Contact>
+                  </gmd:contactInfo>
+                  <gmd:role>
+                    <gmd:CI_RoleCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="author"/>
+                  </gmd:role>
+                </gmd:CI_ResponsibleParty>
+              </gmd:citedResponsibleParty>
+              <gmd:citedResponsibleParty>
+                <gmd:CI_ResponsibleParty>
+                  <gmd:contactInfo>
+                    <gmd:CI_Contact>
+                      <gmd:onlineResource>
+                        <gmd:CI_OnlineResource>
+                          <gmd:linkage>
+                            <gmd:URL>https://doi.org/10.3390/rs11050480</gmd:URL>
+                          </gmd:linkage>
+                          <gmd:name>
+                            <gco:CharacterString>Quast, Ralf, Ralf Giering, Yves Govaerts, Frank Rüthrich, and Rob Roebeling, 2019: Climate Data Records from Meteosat First Generation Part II: Retrieval of the In-Flight Visible Spectral Response, Remote Sens. 2019, 11(5), 480; https://doi.org/10.3390/rs11050480</gco:CharacterString>
+                          </gmd:name>
+                          <gmd:function>
+                            <gmd:CI_OnLineFunctionCode codeList="http://navigator.eumetsat.int/metadata_schema/eum/resources/Codelist/eum_gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="isCitedBy"/>
+                          </gmd:function>
+                        </gmd:CI_OnlineResource>
+                      </gmd:onlineResource>
+                    </gmd:CI_Contact>
+                  </gmd:contactInfo>
+                  <gmd:role>
+                    <gmd:CI_RoleCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="author"/>
+                  </gmd:role>
+                </gmd:CI_ResponsibleParty>
+              </gmd:citedResponsibleParty>
+              <gmd:citedResponsibleParty>
+                <gmd:CI_ResponsibleParty>
+                  <gmd:contactInfo>
+                    <gmd:CI_Contact>
+                      <gmd:onlineResource>
+                        <gmd:CI_OnlineResource>
+                          <gmd:linkage>
+                            <gmd:URL>https://www.mdpi.com/2072-4292/11/9/1052</gmd:URL>
+                          </gmd:linkage>
+                          <gmd:name>
+                            <gco:CharacterString>Stöckli, R., J. S. Bojanowski, V. O. John, A. Duguay-Tetzlaff, Q. Bourgeois, J. Schulz, R. Hollmann (2019) Cloud Detection with historical Geostationary Satellite Sensors for Climate Applications, Remote Sens., 11(9), 1052; https://www.mdpi.com/2072-4292/11/9/1052.</gco:CharacterString>
+                          </gmd:name>
+                          <gmd:function>
+                            <gmd:CI_OnLineFunctionCode codeList="http://navigator.eumetsat.int/metadata_schema/eum/resources/Codelist/eum_gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="isCitedBy"/>
+                          </gmd:function>
+                        </gmd:CI_OnlineResource>
+                      </gmd:onlineResource>
+                    </gmd:CI_Contact>
+                  </gmd:contactInfo>
+                  <gmd:role>
+                    <gmd:CI_RoleCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="author"/>
+                  </gmd:role>
+                </gmd:CI_ResponsibleParty>
+              </gmd:citedResponsibleParty>
+              <gmd:citedResponsibleParty>
+                <gmd:CI_ResponsibleParty>
+                  <gmd:contactInfo>
+                    <gmd:CI_Contact>
+                      <gmd:onlineResource>
+                        <gmd:CI_OnlineResource>
+                          <gmd:linkage>
+                            <gmd:URL>https://doi.org/10.3390/rs11101189</gmd:URL>
+                          </gmd:linkage>
+                          <gmd:name>
+                            <gco:CharacterString>Tabata, Tasuku, Viju O. John, Roebeling, Rob, Hewison, Tim, and Schulz, Jörg  2019: Recalibration of over 35 Years of Infrared and Water Vapor Channel Radiances of the JMA Geostationary Satellites, Remote Sens.2019,11, 1189; doi:10.3390/rs11101189</gco:CharacterString>
+                          </gmd:name>
+                          <gmd:function>
+                            <gmd:CI_OnLineFunctionCode codeList="http://navigator.eumetsat.int/metadata_schema/eum/resources/Codelist/eum_gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="isCitedBy"/>
+                          </gmd:function>
+                        </gmd:CI_OnlineResource>
+                      </gmd:onlineResource>
+                    </gmd:CI_Contact>
+                  </gmd:contactInfo>
+                  <gmd:role>
+                    <gmd:CI_RoleCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="author"/>
+                  </gmd:role>
+                </gmd:CI_ResponsibleParty>
+              </gmd:citedResponsibleParty>
+              <gmd:citedResponsibleParty>
+                <gmd:CI_ResponsibleParty>
+                  <gmd:contactInfo>
+                    <gmd:CI_Contact>
+                      <gmd:onlineResource>
+                        <gmd:CI_OnlineResource>
+                          <gmd:linkage>
+                            <gmd:URL>https://doi.org/10.5194/amt-13-1167-2020</gmd:URL>
+                          </gmd:linkage>
+                          <gmd:name>
+                            <gco:CharacterString>Liefhebber, F., Lammens, S., Brussee, P. W. G., Bos, A., John, V. O., Rüthrich, F., Onderwaater, J., Grant, M. G., and Schulz, J. (2020) Automatic quality control of the Meteosat First Generation measurements, Atmos. Meas. Tech., 13, 1167–1179, https://doi.org/10.5194/amt-13-1167-2020.</gco:CharacterString>
+                          </gmd:name>
+                          <gmd:function>
+                            <gmd:CI_OnLineFunctionCode codeList="http://navigator.eumetsat.int/metadata_schema/eum/resources/Codelist/eum_gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="isCitedBy"/>
+                          </gmd:function>
+                        </gmd:CI_OnlineResource>
+                      </gmd:onlineResource>
+                    </gmd:CI_Contact>
+                  </gmd:contactInfo>
+                  <gmd:role>
+                    <gmd:CI_RoleCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="author"/>
+                  </gmd:role>
+                </gmd:CI_ResponsibleParty>
+              </gmd:citedResponsibleParty>
+            </gmd:CI_Citation>
+          </gmd:citation>
+          <gmd:abstract>
+            <gco:CharacterString>Release 1 of the Fundamental Climate Data Record (FCDR) of the Meteosat Visible and Infrared Imager (MVIRI) onboard the Meteosat First Generation (MFG)  provides georectified, recalibrated, and consolidated Level 1.5 data of the visible (VIS), infrared (IR) and water vapor (WV) bands along with all metadata, spectral response functions (reconstructed for the VIS channel), as well as calibration information to compute radiance, brightness temperature and reflectance. The VIS band data are provided along with detailed measurement uncertainties and error correlation information. As further elaborated in the Product User Guide, the files are provided in FIDUCEO EASY and FULL (only available on special request) netCDF4 formats.
+
+Release 1 of the MVIRI FCDR consists of data from Meteosat-2, Meteosat-3, Meteosat-4, Meteosat-5, Meteosat-6, and Meteosat-7 satellites with nominal sub-satellite longitude 0 degree. Release 1 was produced as part of the FP7 ERA-CLIM2 and H2020 FIDUCEO project.</gco:CharacterString>
+          </gmd:abstract>
+          <gmd:status>
+            <gmd:MD_ProgressCode codeList="http://navigator.eumetsat.int/metadata_schema/eum/resources/Codelist/eum_gmxCodelists.xml#MD_ProgressCode" codeListValue="Released"/>
+          </gmd:status>
+          <gmd:pointOfContact>
+            <gmd:CI_ResponsibleParty>
+              <gmd:individualName>
+                <gco:CharacterString>European Organisation for the Exploitation of Meteorological Satellites</gco:CharacterString>
+              </gmd:individualName>
+              <gmd:organisationName>
+                <gco:CharacterString>EUMETSAT</gco:CharacterString>
+              </gmd:organisationName>
+              <gmd:contactInfo>
+                <gmd:CI_Contact>
+                  <gmd:phone>
+                    <gmd:CI_Telephone>
+                      <gmd:voice>
+                        <gco:CharacterString>+49(0)6151-807 3660/3770</gco:CharacterString>
+                      </gmd:voice>
+                      <gmd:facsimile>
+                        <gco:CharacterString>+49(0)6151-807 3790</gco:CharacterString>
+                      </gmd:facsimile>
+                    </gmd:CI_Telephone>
+                  </gmd:phone>
+                  <gmd:address>
+                    <gmd:CI_Address>
+                      <gmd:deliveryPoint>
+                        <gco:CharacterString>EUMETSAT Allee 1</gco:CharacterString>
+                      </gmd:deliveryPoint>
+                      <gmd:city>
+                        <gco:CharacterString>Darmstadt</gco:CharacterString>
+                      </gmd:city>
+                      <gmd:administrativeArea>
+                        <gco:CharacterString>Hessen</gco:CharacterString>
+                      </gmd:administrativeArea>
+                      <gmd:postalCode>
+                        <gco:CharacterString>64295</gco:CharacterString>
+                      </gmd:postalCode>
+                      <gmd:country>
+                        <gco:CharacterString>Germany</gco:CharacterString>
+                      </gmd:country>
+                      <gmd:electronicMailAddress>
+                        <gco:CharacterString>ops@eumetsat.int</gco:CharacterString>
+                      </gmd:electronicMailAddress>
+                    </gmd:CI_Address>
+                  </gmd:address>
+                  <gmd:onlineResource>
+                    <gmd:CI_OnlineResource>
+                      <gmd:linkage>
+                        <gmd:URL>http://www.eumetsat.int</gmd:URL>
+                      </gmd:linkage>
+                    </gmd:CI_OnlineResource>
+                  </gmd:onlineResource>
+                </gmd:CI_Contact>
+              </gmd:contactInfo>
+              <gmd:role>
+                <gmd:CI_RoleCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/ML_gmxCodelists.xml#MD_ScopeCode" codeListValue="originator">originator</gmd:CI_RoleCode>
+              </gmd:role>
+            </gmd:CI_ResponsibleParty>
+          </gmd:pointOfContact>
+          <gmd:graphicOverview>
+            <gmd:MD_BrowseGraphic>
+              <gmd:fileName>
+                <gco:CharacterString>https://navigator.eumetsat.int/preview/MET7FCDR_zerodegree.png</gco:CharacterString>
+              </gmd:fileName>
+            </gmd:MD_BrowseGraphic>
+          </gmd:graphicOverview>
+          <gmd:descriptiveKeywords>
+            <gmd:MD_Keywords>
+              <gmd:keyword>
+                <gco:CharacterString>Brightness Temperature</gco:CharacterString>
+              </gmd:keyword>
+              <gmd:keyword>
+                <gco:CharacterString>Climate</gco:CharacterString>
+              </gmd:keyword>
+              <gmd:keyword>
+                <gco:CharacterString>Fundamental Climate Data Record</gco:CharacterString>
+              </gmd:keyword>
+              <gmd:keyword>
+                <gco:CharacterString>Level 1 Data</gco:CharacterString>
+              </gmd:keyword>
+              <gmd:type>
+                <gmd:MD_KeywordTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="theme"/>
+              </gmd:type>
+            </gmd:MD_Keywords>
+          </gmd:descriptiveKeywords>
+          <gmd:resourceConstraints>
+            <gmd:MD_LegalConstraints>
+              <gmd:useLimitation>
+                <gco:CharacterString>-</gco:CharacterString>
+              </gmd:useLimitation>
+              <gmd:accessConstraints>
+                <gmd:MD_RestrictionCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#MD_RestrictionCode" codeListValue="copyright"/>
+              </gmd:accessConstraints>
+              <gmd:useConstraints>
+                <gmd:MD_RestrictionCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#MD_RestrictionCode" codeListValue="copyright"/>
+              </gmd:useConstraints>
+              <gmd:otherConstraints>
+                <gmx:Anchor xlink:href="https://www.eumetsat.int/eumetsat-data-licensing">GeneralLicense</gmx:Anchor>
+              </gmd:otherConstraints>
+            </gmd:MD_LegalConstraints>
+          </gmd:resourceConstraints>
+          <gmd:language>
+            <gmd:LanguageCode codeList="http://www.w3.org/WAI/ER/IG/ert/iso639.htm" codeListValue="eng"/>
+          </gmd:language>
+          <gmd:characterSet>
+            <gmd:MD_CharacterSetCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#CI_CharacterSetCode" codeListValue="utf8"/>
+          </gmd:characterSet>
+          <gmd:topicCategory>
+            <gmd:MD_TopicCategoryCode>climatologyMeteorologyAtmosphere</gmd:MD_TopicCategoryCode>
+          </gmd:topicCategory>
+          <gmd:extent>
+            <gmd:EX_Extent>
+              <gmd:temporalElement>
+                <gmd:EX_TemporalExtent>
+                  <gmd:extent>
+                    <gml:TimePeriod gml:id="x833aaa">
+                      <gml:beginPosition>1981-07-30</gml:beginPosition>
+                      <gml:endPosition>2006-07-19</gml:endPosition>
+                    </gml:TimePeriod>
+                  </gmd:extent>
+                </gmd:EX_TemporalExtent>
+              </gmd:temporalElement>
+            </gmd:EX_Extent>
+          </gmd:extent>
+          <gmd:extent>
+            <gmd:EX_Extent>
+              <gmd:geographicElement>
+                <gmd:EX_GeographicBoundingBox>
+                  <gmd:extentTypeCode>
+                    <gco:Boolean>true</gco:Boolean>
+                  </gmd:extentTypeCode>
+                  <gmd:westBoundLongitude>
+                    <gco:Decimal>-81.08</gco:Decimal>
+                  </gmd:westBoundLongitude>
+                  <gmd:eastBoundLongitude>
+                    <gco:Decimal>81.08</gco:Decimal>
+                  </gmd:eastBoundLongitude>
+                  <gmd:southBoundLatitude>
+                    <gco:Decimal>-81.08</gco:Decimal>
+                  </gmd:southBoundLatitude>
+                  <gmd:northBoundLatitude>
+                    <gco:Decimal>81.08</gco:Decimal>
+                  </gmd:northBoundLatitude>
+                </gmd:EX_GeographicBoundingBox>
+              </gmd:geographicElement>
+            </gmd:EX_Extent>
+          </gmd:extent>
+          <gmd:extent>
+            <gmd:EX_Extent>
+              <gmd:geographicElement>
+                <gmd:EX_GeographicDescription>
+                  <gmd:geographicIdentifier>
+                    <gmd:MD_Identifier>
+                      <gmd:code>
+                        <gco:CharacterString>Regional</gco:CharacterString>
+                      </gmd:code>
+                    </gmd:MD_Identifier>
+                  </gmd:geographicIdentifier>
+                </gmd:EX_GeographicDescription>
+              </gmd:geographicElement>
+            </gmd:EX_Extent>
+          </gmd:extent>
+        </gmd:MD_DataIdentification>
+      </gmd:identificationInfo>
+      <gmd:contentInfo>
+        <gmi:MI_CoverageDescription>
+          <gmd:attributeDescription>
+            <gco:RecordType>-</gco:RecordType>
+          </gmd:attributeDescription>
+          <gmd:contentType>
+            <gmd:MD_CoverageContentTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#MD_CoverageContentTypeCode" codeListValue="image"/>
+          </gmd:contentType>
+        </gmi:MI_CoverageDescription>
+      </gmd:contentInfo>
+      <gmd:distributionInfo>
+        <gmd:MD_Distribution>
+          <gmd:distributor>
+            <eum:MD_EUMDistributor>
+              <gmd:distributorContact>
+                <gmd:CI_ResponsibleParty>
+                  <gmd:individualName>
+                    <gco:CharacterString>European Organisation for the Exploitation of Meteorological Satellites</gco:CharacterString>
+                  </gmd:individualName>
+                  <gmd:organisationName>
+                    <gco:CharacterString>EUMETSAT</gco:CharacterString>
+                  </gmd:organisationName>
+                  <gmd:contactInfo>
+                    <gmd:CI_Contact>
+                      <gmd:phone>
+                        <gmd:CI_Telephone>
+                          <gmd:voice>
+                            <gco:CharacterString>+49(0)6151-807 3660/3770</gco:CharacterString>
+                          </gmd:voice>
+                          <gmd:facsimile>
+                            <gco:CharacterString>+49(0)6151-807 3790</gco:CharacterString>
+                          </gmd:facsimile>
+                        </gmd:CI_Telephone>
+                      </gmd:phone>
+                      <gmd:address>
+                        <gmd:CI_Address>
+                          <gmd:deliveryPoint>
+                            <gco:CharacterString>EUMETSAT Allee 1</gco:CharacterString>
+                          </gmd:deliveryPoint>
+                          <gmd:city>
+                            <gco:CharacterString>Darmstadt</gco:CharacterString>
+                          </gmd:city>
+                          <gmd:administrativeArea>
+                            <gco:CharacterString>Hessen</gco:CharacterString>
+                          </gmd:administrativeArea>
+                          <gmd:postalCode>
+                            <gco:CharacterString>64295</gco:CharacterString>
+                          </gmd:postalCode>
+                          <gmd:country>
+                            <gco:CharacterString>Germany</gco:CharacterString>
+                          </gmd:country>
+                          <gmd:electronicMailAddress>
+                            <gco:CharacterString>ops@eumetsat.int</gco:CharacterString>
+                          </gmd:electronicMailAddress>
+                        </gmd:CI_Address>
+                      </gmd:address>
+                      <gmd:onlineResource>
+                        <gmd:CI_OnlineResource>
+                          <gmd:linkage>
+                            <gmd:URL>http://www.eumetsat.int</gmd:URL>
+                          </gmd:linkage>
+                        </gmd:CI_OnlineResource>
+                      </gmd:onlineResource>
+                    </gmd:CI_Contact>
+                  </gmd:contactInfo>
+                  <gmd:role>
+                    <gmd:CI_RoleCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/ML_gmxCodelists.xml#MD_ScopeCode" codeListValue="distributor">distributor</gmd:CI_RoleCode>
+                  </gmd:role>
+                </gmd:CI_ResponsibleParty>
+              </gmd:distributorContact>
+              <eum:digitalTransfers>
+                <eum:MD_EUMDigitalTransfer>
+                  <eum:availability>
+                    <eum:MD_EUMDigitalTransferOptions>
+                      <gmd:onLine>
+                        <gmd:CI_OnlineResource>
+                          <gmd:linkage>
+                            <gmd:URL>https://data.eumetsat.int/data/map/EO:EUM:DAT:0080</gmd:URL>
+                          </gmd:linkage>
+                          <gmd:protocol>
+                            <gco:CharacterString>https</gco:CharacterString>
+                          </gmd:protocol>
+                          <gmd:name>
+                            <gco:CharacterString>Download</gco:CharacterString>
+                          </gmd:name>
+                          <gmd:function>
+                            <gmd:CI_OnLineFunctionCode codeList="CI_OnLineFunctionCode" codeListValue="order"/>
+                          </gmd:function>
+                        </gmd:CI_OnlineResource>
+                      </gmd:onLine>
+                      <eum:availability>
+                        <gco:CharacterString>Download</gco:CharacterString>
+                      </eum:availability>
+                    </eum:MD_EUMDigitalTransferOptions>
+                  </eum:availability>
+                  <eum:format>
+                    <eum:MD_EUMFormat>
+                      <gmd:name>
+                        <gco:CharacterString>netCDF4</gco:CharacterString>
+                      </gmd:name>
+                      <gmd:version>
+                        <gco:CharacterString>-</gco:CharacterString>
+                      </gmd:version>
+                      <eum:typicalFilename>
+                        <gco:CharacterString>FIDUCEO_FCDR_L15_MVIRI_MET7-00.0_200004301100_200004301130_EASY_v2.6_fv3.1.zip</gco:CharacterString>
+                      </eum:typicalFilename>
+                      <eum:typicalFilename>
+                        <gco:CharacterString>FIDUCEO_FCDR_L15_MVIRI_MET7-00.0_200004301100_200004301130_FULL_v2.6_fv3.1.zip</gco:CharacterString>
+                      </eum:typicalFilename>
+                      <eum:averageFileSizeUnits>
+                        <gco:CharacterString>MB</gco:CharacterString>
+                      </eum:averageFileSizeUnits>
+                      <eum:averageFileSize>
+                        <gco:Real>40</gco:Real>
+                      </eum:averageFileSize>
+                      <eum:frequency>
+                        <gco:CharacterString>48 (per day)</gco:CharacterString>
+                      </eum:frequency>
+                      <eum:fileFormatDescription>
+                        <gco:CharacterString>This is sent in a compressed Submission Information Package (SIP) by default.</gco:CharacterString>
+                      </eum:fileFormatDescription>
+                      <eum:filenameConvention>
+                        <gco:CharacterString>FIDUCEO_FCDR_L[level]_[sensor]_[sat]-[subsat_long]_[starttime]_[endtime]_[representation]_[processor-version]_[format_version].zip</gco:CharacterString>
+                      </eum:filenameConvention>
+                      <eum:documentation>
+                        <CI_OnlineResource>
+                          <linkage>
+                            <URL>https://www.eumetsat.int/formats#netCDF</URL>
+                          </linkage>
+                          <description>
+                            <gco:CharacterString>netCDF documentation and tools</gco:CharacterString>
+                          </description>
+                        </CI_OnlineResource>
+                      </eum:documentation>
+                      <eum:documentation>
+                        <CI_OnlineResource>
+                          <linkage>
+                            <URL>https://www.eumetsat.int/formats#SIP</URL>
+                          </linkage>
+                          <description>
+                            <gco:CharacterString>SIP documentation and tools</gco:CharacterString>
+                          </description>
+                        </CI_OnlineResource>
+                      </eum:documentation>
+                      <eum:format4DataCite>
+                        <gco:Boolean>false</gco:Boolean>
+                      </eum:format4DataCite>
+                    </eum:MD_EUMFormat>
+                  </eum:format>
+                </eum:MD_EUMDigitalTransfer>
+              </eum:digitalTransfers>
+            </eum:MD_EUMDistributor>
+          </gmd:distributor>
+        </gmd:MD_Distribution>
+      </gmd:distributionInfo>
+      <gmd:dataQualityInfo>
+        <gmd:DQ_DataQuality>
+          <gmd:scope>
+            <gmd:DQ_Scope>
+              <gmd:level>
+                <gmd:MD_ScopeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#MD_ScopeCode" codeListValue="series"/>
+              </gmd:level>
+            </gmd:DQ_Scope>
+          </gmd:scope>
+          <gmd:lineage>
+            <gmd:LI_Lineage>
+              <gmd:statement>
+                <gco:CharacterString>-</gco:CharacterString>
+              </gmd:statement>
+            </gmd:LI_Lineage>
+          </gmd:lineage>
+        </gmd:DQ_DataQuality>
+      </gmd:dataQualityInfo>
+      <gmd:metadataConstraints>
+        <gmd:MD_Constraints>
+          <gmd:useLimitation>
+            <gco:CharacterString>http://navigator.eumetsat.int/metadata_schema#ShownAsEUMETSATData</gco:CharacterString>
+          </gmd:useLimitation>
+        </gmd:MD_Constraints>
+      </gmd:metadataConstraints>
+      <gmi:acquisitionInformation>
+        <gmi:MI_AcquisitionInformation>
+          <gmi:platform>
+            <eum:MI_EUMPlatform>
+              <gmi:identifier>
+                <gmd:MD_Identifier>
+                  <gmd:code>
+                    <gco:CharacterString>MFG</gco:CharacterString>
+                  </gmd:code>
+                </gmd:MD_Identifier>
+              </gmi:identifier>
+              <gmi:description>
+                <gco:CharacterString>Meteosat First Generation (MFG)</gco:CharacterString>
+              </gmi:description>
+              <gmi:instrument>
+                <eum:MI_EUMInstrument>
+                  <gmi:citation>
+                    <gmd:CI_Citation>
+                      <gmd:title>
+                        <gco:CharacterString>MVIRI</gco:CharacterString>
+                      </gmd:title>
+                      <gmd:date>
+                        <gmd:CI_Date>
+                          <gmd:date>
+                            <gco:Date>2008-06-01</gco:Date>
+                          </gmd:date>
+                          <gmd:dateType>
+                            <gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="creation"/>
+                          </gmd:dateType>
+                        </gmd:CI_Date>
+                      </gmd:date>
+                      <gmd:identifier>
+                        <gmd:MD_Identifier>
+                          <gmd:code>
+                            <gco:CharacterString>MVIRI</gco:CharacterString>
+                          </gmd:code>
+                        </gmd:MD_Identifier>
+                      </gmd:identifier>
+                    </gmd:CI_Citation>
+                  </gmi:citation>
+                  <gmi:type>
+                    <gmi:MI_SensorTypeCode id="z234aaa" uuid="z234aaa"/>
+                  </gmi:type>
+                  <eum:type>
+                    <MI_EUMSensorTypeCode xmlns="http://www.eumetsat.int/2008/gmi" codeList="http://navigator.eumetsat.int/metadata_schema/eum/resources/Codelist/eum_gmxCodelists.xml#CI_SensorTypeCode" codeListValue="Optical"/>
+                  </eum:type>
+                  <eum:sensorMode>
+                    <gco:CharacterString>NOMSCN</gco:CharacterString>
+                  </eum:sensorMode>
+                </eum:MI_EUMInstrument>
+              </gmi:instrument>
+              <eum:orbitType>
+                <CI_OrbitTypeCode xmlns="http://www.eumetsat.int/2008/gmi" codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#CI_OrbitTypeCode" codeListValue="GEO"/>
+                <eum:CI_NominalLongitude uom="degree">0</eum:CI_NominalLongitude>
+              </eum:orbitType>
+            </eum:MI_EUMPlatform>
+          </gmi:platform>
+        </gmi:MI_AcquisitionInformation>
+      </gmi:acquisitionInformation>
+    </gmi:MI_Metadata>
+    

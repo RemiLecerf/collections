@@ -1,0 +1,46 @@
+<csw:Record xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">EO:ECMWF:DAT:REANALYSIS_UERRA_EUROPE_SINGLE_LEVELS</dc:identifier>
+      <dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">UERRA regional reanalysis for Europe on single levels from 1961 to 2019</dc:title>
+      <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/">dataset</dc:type>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Atmospheric conditions</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Product type: Reanalysis</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Spatial coverage: Europe</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Variable domain: Atmosphere (upper air)</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Temporal coverage: Past</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Provider: Copernicus C3S</dc:subject>
+      <dc:format xmlns:dc="http://purl.org/dc/elements/1.1/">NetCDF</dc:format>
+      <dct:abstract xmlns:dct="http://purl.org/dc/terms/">This UERRA dataset contains analyses of surface and near-surface essential climate variables from
+UERRA-HARMONIE and MESCAN-SURFEX systems. Forecasts up to 30 hours initialised
+from the analyses at 00 and 12 UTC are available only through the CDS-API (see Documentation).
+UERRA-HARMONIE is a 3-dimensional variational data assimilation system,
+while MESCAN-SURFEX is a complementary surface analysis system.
+Using the Optimal Interpolation method, MESCAN provides the best estimate of daily accumulated precipitation
+and six-hourly air temperature and relative humidity at 2 meters above the model topography.
+The land surface platform SURFEX is forced with downscaled forecast fields from UERRA-HARMONIE as well as MESCAN analyses.
+It is run offline, i.e. without feedback to the atmospheric analysis performed in MESCAN or the UERRA-HARMONIE data
+assimilation cycles. Using SURFEX offline allows to take full benefit of precipitation analysis and to use the more
+advanced physics options to better represent surface variables such as surface temperature and
+surface fluxes, and soil processes related to water and heat transfer in the soil and snow.
+In general, the assimilation systems are able to estimate biases between observations and to sift good-quality
+data from poor data. The laws of physics allow for estimates at locations where data coverage is low. The provision of
+estimates at each grid point in Europe for each regular output time, over a long period, always using the same format,
+makes reanalysis a very convenient and popular dataset to work with.
+The observing system has changed drastically over time, and although the assimilation system
+can resolve data holes, the much sparser observational networks, e.g. in 1960s,
+will have an impact on the quality of analyses leading to less accurate estimates.
+The improvement over global reanalysis products comes with the higher horizontal resolution
+that allows incorporating more regional details (e.g. topography). Moreover, it enables
+the system even to use more observations at places with dense observation networks.
+
+Variables in the dataset/application are:
+10m wind direction, 10m wind speed, 2m relative humidity, 2m temperature, Albedo, High cloud cover, Land sea mask, Low cloud cover, Mean sea level pressure, Medium cloud cover, Orography, Skin temperature, Snow density, Snow depth water equivalent, Surface pressure, Surface roughness, Total cloud cover, Total column integrated water vapour, Total precipitation</dct:abstract>
+      <dct:spatial xmlns:dct="http://purl.org/dc/terms/">::EPSG:4326</dct:spatial>
+      <dc:rights xmlns:dc="http://purl.org/dc/elements/1.1/">https://cds.climate.copernicus.eu/api/v2/terms/static/20180314_Copernicus_License_V1.1.pdf</dc:rights>
+      <dc:rights xmlns:dc="http://purl.org/dc/elements/1.1/">Content accessible through the CDS may only be used under the terms of the licenses attributed to each particular resource.</dc:rights>
+      <dct:accessRights xmlns:dct="http://purl.org/dc/terms/">licence</dct:accessRights>
+      <ows:BoundingBox xmlns:ows="http://www.opengis.net/ows">
+        <ows:LowerCorner>-180 -90</ows:LowerCorner>
+        <ows:UpperCorner>180 90</ows:UpperCorner>
+      </ows:BoundingBox>
+    </csw:Record>
+    

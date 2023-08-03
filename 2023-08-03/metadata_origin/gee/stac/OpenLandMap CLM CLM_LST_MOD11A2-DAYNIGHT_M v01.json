@@ -1,0 +1,298 @@
+{
+    "description": "Long-term MODIS LST day-time and night-time\ndifferences at 1 km based on the 2000-2017 time series\n\nDerived using the [data.table package and quantile function in R](https://gitlab.com/openlandmap/global-layers/tree/master/input_layers/MOD11A2).\nFor more info about the MODIS LST product see [this page](https://lpdaac.usgs.gov/products/mod11a2v006/).\nAntarctica is not included.\n\nTo access and visualize maps outside of Earth Engine, use [this page](https://opengeohub.org/about-openlandmap).\n\nIf you discover a bug, artifact or inconsistency in the LandGIS maps\nor if you have a question please use the following channels:\n\n *  [Technical issues and questions about the code](https://gitlab.com/openlandmap/global-layers/issues)\n *  [General questions and comments](https://disqus.com/home/forums/landgis/)\n",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-01-01T00:00:00Z",
+                    "2018-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "gee:terms_of_use": "[CC-BY-SA-4.0](https://spdx.org/licenses/CC-BY-SA-4.0.html)",
+    "gee:type": "image",
+    "gee:unusual_terms_of_use": true,
+    "gee:user_uploaded": true,
+    "id": "OpenLandMap/CLM/CLM_LST_MOD11A2-DAYNIGHT_M/v01",
+    "keywords": [
+        "day",
+        "envirometrix",
+        "lst",
+        "mod11a2",
+        "modis",
+        "monthly",
+        "night",
+        "opengeohub",
+        "openlandmap"
+    ],
+    "license": "CC-BY-SA-4.0",
+    "links": [
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections/OpenLandMap/CLM/CLM_LST_MOD11A2-DAYNIGHT_M/v01",
+            "rel": "self",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections",
+            "rel": "parent",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/",
+            "rel": "root",
+            "type": "application/json"
+        },
+        {
+            "code": "JavaScript",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/OpenLandMap/OpenLandMap_CLM_CLM_LST_MOD11A2-DAYNIGHT_M_v01",
+            "rel": "related",
+            "title": "Run the example for OpenLandMap/CLM/CLM_LST_MOD11A2-DAYNIGHT_M/v01 in the Earth Engine Code Editor",
+            "type": "text/html"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/images/OpenLandMap/OpenLandMap_CLM_CLM_LST_MOD11A2-DAYNIGHT_M_v01_sample.png",
+            "rel": "preview",
+            "type": "image/png"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/OpenLandMap_CLM_CLM_LST_MOD11A2-DAYNIGHT_M_v01#terms-of-use",
+            "rel": "license",
+            "type": "text/html"
+        },
+        {
+            "href": "https://spdx.org/licenses/CC-BY-SA-4.0.html",
+            "rel": "license",
+            "type": "text/html"
+        },
+        {
+            "href": "https://doi.org/10.5281/zenodo.1420114",
+            "rel": "cite-as"
+        }
+    ],
+    "providers": [
+        {
+            "name": "EnvirometriX Ltd",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://doi.org/10.5281/zenodo.1420114"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/OpenLandMap_CLM_CLM_LST_MOD11A2-DAYNIGHT_M_v01"
+        }
+    ],
+    "sci:citation": "Long-term MODIS LST day-time and night-time temperatures, sd and differences\nat 1 km based on the 2000-2017 time series\n[10.5281/zenodo.1420116](https://doi.org/10.5281/zenodo.1420114)\n",
+    "sci:doi": "10.5281/zenodo.1420114",
+    "stac_extensions": [
+        "collection-assets"
+    ],
+    "stac_version": "1.0.0",
+    "summaries": {
+        "apr": {
+            "gee:estimated_range": true,
+            "maximum": 1336.09,
+            "minimum": -40.5137
+        },
+        "aug": {
+            "gee:estimated_range": true,
+            "maximum": 1336.09,
+            "minimum": -40.5137
+        },
+        "dec": {
+            "gee:estimated_range": true,
+            "maximum": 1336.09,
+            "minimum": -40.5137
+        },
+        "eo:bands": [
+            {
+                "description": "Long-term Land Surface Temperature monthly day-night difference",
+                "gee:scale": 0.02,
+                "gee:units": "K",
+                "name": "jan"
+            },
+            {
+                "description": "Long-term Land Surface Temperature monthly day-night difference",
+                "gee:scale": 0.02,
+                "gee:units": "K",
+                "name": "feb"
+            },
+            {
+                "description": "Long-term Land Surface Temperature monthly day-night difference",
+                "gee:scale": 0.02,
+                "gee:units": "K",
+                "name": "mar"
+            },
+            {
+                "description": "Long-term Land Surface Temperature monthly day-night difference",
+                "gee:scale": 0.02,
+                "gee:units": "K",
+                "name": "apr"
+            },
+            {
+                "description": "Long-term Land Surface Temperature monthly day-night difference",
+                "gee:scale": 0.02,
+                "gee:units": "K",
+                "name": "may"
+            },
+            {
+                "description": "Long-term Land Surface Temperature monthly day-night difference",
+                "gee:scale": 0.02,
+                "gee:units": "K",
+                "name": "jun"
+            },
+            {
+                "description": "Long-term Land Surface Temperature monthly day-night difference",
+                "gee:scale": 0.02,
+                "gee:units": "K",
+                "name": "jul"
+            },
+            {
+                "description": "Long-term Land Surface Temperature monthly day-night difference",
+                "gee:scale": 0.02,
+                "gee:units": "K",
+                "name": "aug"
+            },
+            {
+                "description": "Long-term Land Surface Temperature monthly day-night difference",
+                "gee:scale": 0.02,
+                "gee:units": "K",
+                "name": "sep"
+            },
+            {
+                "description": "Long-term Land Surface Temperature monthly day-night difference",
+                "gee:scale": 0.02,
+                "gee:units": "K",
+                "name": "oct"
+            },
+            {
+                "description": "Long-term Land Surface Temperature monthly day-night difference",
+                "gee:scale": 0.02,
+                "gee:units": "K",
+                "name": "nov"
+            },
+            {
+                "description": "Long-term Land Surface Temperature monthly day-night difference",
+                "gee:scale": 0.02,
+                "gee:units": "K",
+                "name": "dec"
+            }
+        ],
+        "feb": {
+            "gee:estimated_range": true,
+            "maximum": 1336.09,
+            "minimum": -40.5137
+        },
+        "gsd": [
+            1000
+        ],
+        "jan": {
+            "gee:estimated_range": true,
+            "maximum": 1336.09,
+            "minimum": -40.5137
+        },
+        "jul": {
+            "gee:estimated_range": true,
+            "maximum": 1336.09,
+            "minimum": -40.5137
+        },
+        "jun": {
+            "gee:estimated_range": true,
+            "maximum": 1336.09,
+            "minimum": -40.5137
+        },
+        "mar": {
+            "gee:estimated_range": true,
+            "maximum": 1336.09,
+            "minimum": -40.5137
+        },
+        "may": {
+            "gee:estimated_range": true,
+            "maximum": 1336.09,
+            "minimum": -40.5137
+        },
+        "nov": {
+            "gee:estimated_range": true,
+            "maximum": 1336.09,
+            "minimum": -40.5137
+        },
+        "oct": {
+            "gee:estimated_range": true,
+            "maximum": 1336.09,
+            "minimum": -40.5137
+        },
+        "sep": {
+            "gee:estimated_range": true,
+            "maximum": 1336.09,
+            "minimum": -40.5137
+        }
+    },
+    "title": "OpenLandMap Long-term Land Surface Temperature Monthly Day-Night Difference",
+    "type": "Collection",
+    "cube:dimensions": {
+        "x": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                -180,
+                180
+            ]
+        },
+        "y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                -90,
+                90
+            ]
+        },
+        "t": {
+            "type": "temporal",
+            "extent": [
+                "2000-01-01T00:00:00Z",
+                "2018-01-01T00:00:00Z"
+            ]
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "jan",
+                "feb",
+                "mar",
+                "apr",
+                "may",
+                "jun",
+                "jul",
+                "aug",
+                "sep",
+                "oct",
+                "nov",
+                "dec"
+            ]
+        }
+    },
+    "assets": {
+        "preview_4": {
+            "href": "https://developers.google.com/earth-engine/datasets/images/OpenLandMap/OpenLandMap_CLM_CLM_LST_MOD11A2-DAYNIGHT_M_v01_sample.png",
+            "type": "image/png",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    }
+}

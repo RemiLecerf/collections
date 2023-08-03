@@ -1,0 +1,33 @@
+<csw:Record xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">EO:MO:DAT:NWSHELF_ANALYSISFORECAST_PHY_LR_004_001</dc:identifier>
+      <dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">Atlantic - European North West Shelf - Ocean Physics Analysis and Forecast</dc:title>
+      <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/">series</dc:type>
+      <dc:format xmlns:dc="http://purl.org/dc/elements/1.1/">NetCDF-4</dc:format>
+      <dct:abstract xmlns:dct="http://purl.org/dc/terms/">'''Short description:'''
+
+The low resolution ocean physics analysis and forecast for the North-West European Shelf is produced using a forecasting ocean assimilation model, with tides, at 7 km horizontal resolution.  
+The ocean model is NEMO (Nucleus for European Modelling of the Ocean), using the 3DVar NEMOVAR system to assimilate observations. These are surface temperature, vertical profiles of temperature and salinity, and along track satellite sea level anomaly data. The model is forced by lateral boundary conditions from the UK Met Office North Atlantic Ocean forecast model and by the CMEMS Baltic forecast product [https://resources.marine.copernicus.eu/?option=com_csw&amp;view=details&amp;product_id=BALTICSEA_ANALYSISFORECAST_PHY_003_006 BALTICSEA_ANALYSISFORECAST_PHY_003_006]. The atmospheric forcing is given by the operational UK Met Office Global Atmospheric model.  The river discharge is from a daily climatology. Further details of the model, including the product validation are provided in the [http://catalogue.marine.copernicus.eu/documents/QUID/CMEMS-NWS-QUID-004-001.pdf CMEMS-NWS-QUID-004-001].
+Products are provided as hourly instantaneous and daily 25-hour, de-tided, averages. The datasets available are temperature, salinity, horizontal currents, sea level, mixed layer depth, and bottom temperature. Temperature, salinity and currents, as multi-level variables, are interpolated from the model 51 hybrid s-sigma terrain-following system to 24 standard geopotential depths (z-levels). Grid-points near to the model boundaries are masked.
+The product is updated daily, providing a 6-day forecast and the previous 2-day assimilative hindcast. See [http://catalogue.marine.copernicus.eu/documents/PUM/CMEMS-NWS-PUM-004-001_002.pdf CMEMS-NWS-PUM-004-001_002] for further details.
+
+'''Associated products:'''
+ 
+This model is coupled with a biogeochemistry model (ERSEM) available as CMEMS product [https://resources.marine.copernicus.eu/?option=com_csw&amp;view=details&amp;product_id=NWSHELF_ANALYSISFORECAST_BGC_004_002 NWSHELF_ANALYSISFORECAST_BGC_004_002]
+A reanalysis product is available from: [https://resources.marine.copernicus.eu/?option=com_csw&amp;view=details&amp;product_id=NWSHELF_MULTIYEAR_PHY_004_009 NWSHELF_MULTIYEAR_PHY_004_009].
+
+'''DOI (product) :'''   
+https://doi.org/10.48670/moi-00057</dct:abstract>
+      <dct:spatial xmlns:dct="http://purl.org/dc/terms/">EPSG::WGS 84 / Plate Carree (EPSG:32662)</dct:spatial>
+      <dc:language xmlns:dc="http://purl.org/dc/elements/1.1/">eng</dc:language>
+      <dc:rights xmlns:dc="http://purl.org/dc/elements/1.1/">See Copernicus Marine Environment Monitoring Service Data commitments and licence at: http://marine.copernicus.eu/web/27-service-commitments-and-licence.php</dc:rights>
+      <dc:rights xmlns:dc="http://purl.org/dc/elements/1.1/">license</dc:rights>
+      <dc:rights xmlns:dc="http://purl.org/dc/elements/1.1/">No limitations on public access</dc:rights>
+      <dct:accessRights xmlns:dct="http://purl.org/dc/terms/">otherRestrictions</dct:accessRights>
+      <dct:alternative xmlns:dct="http://purl.org/dc/terms/">NWSHELF_ANALYSISFORECAST_PHY_LR_004_001</dct:alternative>
+      <dct:created xmlns:dct="http://purl.org/dc/terms/">2011-04-20</dct:created>
+      <ows:BoundingBox xmlns:ows="http://www.opengis.net/ows">
+        <ows:LowerCorner>-180 -90</ows:LowerCorner>
+        <ows:UpperCorner>180 90</ows:UpperCorner>
+      </ows:BoundingBox>
+    </csw:Record>
+    

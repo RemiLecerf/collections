@@ -1,0 +1,100 @@
+{
+  "type": "Collection",
+  "id": "886b22ee-b16c-4f7e-a82c-5c905a89f896",
+  "stac_version": "1.0.0",
+  "description": "This metadata refers to the Fraction of Absorbed Photosynthetically Active Radiation (FAPAR) dataset, one of the near real-time (NRT) Vegetation Index products of the pan-European High Resolution Vegetation Phenology and Productivity (HR-VPP), component of the Copernicus Land Monitoring Service (CLMS).\n\nThe Fraction of Absorbed Photosynthetically Active Radiation (FAPAR) quantifies the fraction of the solar radiation absorbed by live leaves for the photosynthesis activity. Then, it refers only to the green and alive elements of the canopy. The FAPAR depends on the canopy structure, vegetation element optical properties, and illumination conditions. \n      \nThe FAPAR dataset is made available as raster files with 10 x 10m resolution, in UTM/WGS84 projection corresponding to the Sentinel-2 tiling grid, for those tiles that cover the EEA38 countries and the United Kingdom and for the period from October 2016 until today, with daily updates.\n\nEach file has an associated quality indicator (QFLAG2) to assist users with the screening of clouds, shadows from clouds and topography, snow and water surfaces.",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://www.wekeo.eu/data?view=viewer&t=1566840390697&z=0&center=13.08408%2C48.33915&zoom=12.34&layers=W3siaWQiOiJjMCIsImxheWVySWQiOiJFTzpIUlZQUDpEQVQ6VkVHRVRBVElPTi1JTkRJQ0VTL19fREVGQVVMVF9fL0NMTVNfSFJWUFBfVklfRkFQQVJfMTBNIiwiekluZGV4Ijo2MH0seyJpZCI6ImMxIiwibGF5ZXJJZCI6IkVPOkhSVlBQOkRBVDpWRUdFVEFUSU9OLUlORElDRVMvX19ERUZBVUxUX18vQ0xNU19IUlZQUF9WSV9RRkxBRzJfMTBNIiwiekluZGV4Ijo4MCwiaXNIaWRkZW4iOnRydWV9XQ%3D%3D&initial=1",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "WEkEO portal"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://phenology.vgt.vito.be/wmts?request=GetCapabilities",
+      "type": "OGC:WMTS",
+      "title": "CLMS_HRVPP_VI_FAPAR_10M"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://wekeo-broker.apps.mercator.dpi.wekeo.eu/databroker/ui/",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Harmonized Data Access (WEkEO)"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://phenology.vgt.vito.be/description?collection=copernicus_r_utm-wgs84_10_m_hrvpp-vi_p_2017-now_v01",
+      "type": "OGC:OpenSearch",
+      "title": "OpenSearch API"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://land.copernicus.eu/pan-european/biophysical-parameters/high-resolution-vegetation-phenology-and-productivity/vegetation-indices",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Product information"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://land.copernicus.eu/user-corner/technical-library/product-user-manual-of-vegetation-indices/",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Product user manual"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://phenology.vgt.vito.be/wms?request=GetCapabilities",
+      "type": "OGC:WMS",
+      "title": "CLMS_HRVPP_VI_FAPAR_10M"
+    }
+  ],
+  "title": "High Resolution Vegetation Phenology and Productivity: Fraction of Absorbed Photosynthetically Active Radiation (raster 10m) version 1 revision 1, Sep. 2021",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -25.0,
+          26.0,
+          45.0,
+          72.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2016-10-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Agriculture and food",
+    "Biodiversity",
+    "Daily",
+    "EEA38 (from 2020)",
+    "Land use",
+    "United Kingdom",
+    "land",
+    "photosynthesis",
+    "plant ecology",
+    "plant production",
+    "radiation",
+    "remote sensing",
+    "vegetation"
+  ],
+  "providers": [
+    {
+      "name": "European Environment Agency",
+      "description": "SDI - EEA geospatial data catalogue",
+      "roles": [
+        "licensor",
+        "producer",
+        "processor",
+        "host"
+      ],
+      "url": "https://sdi.eea.europa.eu/"
+    }
+  ]
+}

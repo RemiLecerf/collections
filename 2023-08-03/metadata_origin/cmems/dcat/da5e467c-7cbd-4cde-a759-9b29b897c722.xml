@@ -1,0 +1,81 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:dct="http://purl.org/dc/terms/" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/da5e467c-7cbd-4cde-a759-9b29b897c722">
+        <foaf:primaryTopic rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/resource/da5e467c-7cbd-4cde-a759-9b29b897c722"/>
+        <dct:issued>2023-04-04</dct:issued>
+        <dct:modified>2023-04-04</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/srv/eng/xml.metadata.get?uuid=da5e467c-7cbd-4cde-a759-9b29b897c722">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork?uuid=da5e467c-7cbd-4cde-a759-9b29b897c722">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/resource/da5e467c-7cbd-4cde-a759-9b29b897c722">
+        <dct:identifier>da5e467c-7cbd-4cde-a759-9b29b897c722</dct:identifier>
+        <dct:title>Global Ocean Biogeochemistry Hindcast</dct:title>
+        <dct:abstract>'''Short description'''
+
+The biogeochemical hindcast for global ocean is produced at Mercator-Ocean (Toulouse. France). It provides 3D biogeochemical fields for the time period 1993-2019 at 1/4 degree and on 75 vertical levels. It uses PISCES biogeochemical model (available on the NEMO[https://www.nemo-ocean.eu/] modelling platform). No data assimilation in this product.
+
+* Latest NEMO version (v3.6_STABLE)
+* Forcings: GLORYS2V4-FREE [https://www.mercator-ocean.eu/solutions-expertises/acceder-aux-donnees-numeriques/produits-de-loffre/?offer=4217979b-2662-329a-907c-602fdc69c3a3] ocean physics produced at Mercator-Ocean and ERA-Interim[https://www.ecmwf.int/en/forecasts/datasets/archive-datasets/reanalysis-datasets/era-interim] atmosphere produced at ECMWF at a daily frequency
+* Outputs: Daily (chlorophyll. nitrate. phosphate. silicate. dissolved oxygen. primary production) and monthly (chlorophyll. nitrate. phosphate. silicate. dissolved oxygen. primary production. iron. phytoplankton in carbon) 3D mean fields interpolated on a standard regular grid in NetCDF format. The simulation is performed once and for all.
+* Initial conditions: World Ocean Atlas 2013 for nitrate. phosphate. silicate and dissolved oxygen. GLODAPv2 for DIC and Alkalinity. and climatological model outputs for Iron and DOC
+* Quality/Accuracy/Calibration information: See the related Quality Information Document
+
+'''DOI (product):'''
+https://doi.org/10.48670/moi-00019</dct:abstract>
+        <dcat:theme rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/thesaurus/Mission%20Atlantic%20-%20Resources/Data"/>
+        <dcat:theme rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/thesaurus/Mission%20Atlantic%20-%20Case%20Studies/North Mid-Atlantic Ridge"/>
+        <dcat:theme rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/thesaurus/Mission%20Atlantic%20-%20Case%20Studies/Atlantic Ocean"/>
+        <dcat:theme rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/thesaurus/Mission%20Atlantic%20-%20Work%20Package/WP5 Assessing state, drivers and tipping points"/>
+        <dcat:theme rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/thesaurus/Mission%20Atlantic%20-%20BODC%20Parameters//Cross-discipline/Rate measurements"/>
+        <dcat:theme rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/thesaurus/Mission%20Atlantic%20-%20Data%20type%20%28DMP%29/Modelling data"/>
+        <dcat:theme rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/thesaurus/Ocean%20Hackathon%20-%20Ville/Brest"/>
+        <dcat:theme rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/thesaurus/iso/topicCategory/oceans"/>
+        <foaf:thumbnail rdf:resource="https://catalogue.marine.copernicus.eu/documents/IMG/GLOBAL_REANALYSIS_BIO_001_029.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((-180.00 -90.00, -180.00 90.00, 180.00 90.00, 180.00 -90.00, -180.00 -90.00))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:issued>2012-08-26</dct:issued>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/GLO-MERCATOR-TOULOUSE-FR"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/GLO-MERCATOR-TOULOUSE-FR"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/GLO-MERCATOR-TOULOUSE-FR"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/GLO-RAN-MERCATOR-TOULOUSE-FR"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/GLO-MERCATOR-TOULOUSE-FR"/>
+        <dct:accrualPeriodicity>weekly</dct:accrualPeriodicity>
+        <dct:license>otherRestrictions</dct:license>
+        <dct:license>license</dct:license>
+        <dct:license>No limitations on public access</dct:license>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=GLOBAL_MULTIYEAR_BGC_001_029-TDS&amp;product=cmems_mod_glo_bgc_my_0.25_P1D-m"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/dodsC/cmems_mod_glo_bgc_my_0.25_P1D-m"/>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/GLOBAL_MULTIYEAR_BGC_001_029/cmems_mod_glo_bgc_my_0.25_P1D-m"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/wms/cmems_mod_glo_bgc_my_0.25_P1D-m"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=GLOBAL_MULTIYEAR_BGC_001_029-TDS&amp;product=cmems_mod_glo_bgc_my_0.25_P1M-m"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/dodsC/cmems_mod_glo_bgc_my_0.25_P1M-m"/>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/GLOBAL_MULTIYEAR_BGC_001_029/cmems_mod_glo_bgc_my_0.25_P1M-m"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/wms/cmems_mod_glo_bgc_my_0.25_P1M-m"/>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/GLOBAL_MULTIYEAR_BGC_001_029/cmems_mod_glo_bgc_my_0.25_static"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/861df64b-2402-4a86-8f7c-2531cfe68eb4"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/d845244a-5f79-4180-986c-2321d36f5bd7"/>
+        <dcat:dataQuality>The myOcean products depends on other products for production or validation. The detailed list of dependencies is given in ISO19115's aggregationInfo (ISO19139 Xpath = "gmd:MD_Metadata/gmd:identificationInfo/gmd:aggregationInfo[./gmd:MD_AggregateInformation/gmd:initiativeType/gmd:DS_InitiativeTypeCode/@codeListValue='upstream-validation' or 'upstream-production']")</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+    

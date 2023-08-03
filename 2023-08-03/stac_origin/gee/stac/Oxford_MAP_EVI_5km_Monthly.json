@@ -1,0 +1,162 @@
+{
+    "description": "The underlying dataset for this Enhanced Vegetation Index (EVI)\nproduct is MODIS BRDF-corrected imagery (MCD43B4), which was gap-filled\nusing the approach outlined in Weiss et al. (2014) to eliminate missing\ndata caused by factors such as cloud cover. Gap-free outputs were then\naggregated temporally and spatially to produce the monthly &asymp;5km product.\n\nThis dataset was produced by Harry Gibson and Daniel Weiss of the\nMalaria Atlas Project (Big Data Institute, University of Oxford,\nUnited Kingdom, [https://malariaatlas.org/](https://malariaatlas.org/)).\n",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2001-02-01T00:00:00Z",
+                    "2015-06-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "month"
+    },
+    "gee:terms_of_use": "[CC-BY-NC-SA-4.0](https://spdx.org/licenses/CC-BY-NC-SA-4.0.html)",
+    "gee:type": "image_collection",
+    "gee:unusual_terms_of_use": true,
+    "id": "Oxford/MAP/EVI_5km_Monthly",
+    "keywords": [
+        "evi",
+        "map",
+        "oxford",
+        "vegetation"
+    ],
+    "license": "CC-BY-NC-SA-4.0",
+    "links": [
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections/Oxford/MAP/EVI_5km_Monthly",
+            "rel": "self",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections",
+            "rel": "parent",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/",
+            "rel": "root",
+            "type": "application/json"
+        },
+        {
+            "code": "JavaScript",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/Oxford/Oxford_MAP_EVI_5km_Monthly",
+            "rel": "related",
+            "title": "Run the example for Oxford/MAP/EVI_5km_Monthly in the Earth Engine Code Editor",
+            "type": "text/html"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/images/Oxford/Oxford_MAP_EVI_5km_Monthly_sample.png",
+            "rel": "preview",
+            "type": "image/png"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/Oxford_MAP_EVI_5km_Monthly#terms-of-use",
+            "rel": "license",
+            "type": "text/html"
+        }
+    ],
+    "providers": [
+        {
+            "name": "Oxford Malaria Atlas Project",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.bdi.ox.ac.uk/research/malaria-atlas-project"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/Oxford_MAP_EVI_5km_Monthly"
+        }
+    ],
+    "sci:citation": "Weiss, D.J., P.M. Atkinson, S. Bhatt, B. Mappin, S.I. Hay & P.W. Gething\n(2014) An effective approach for gap-filling continental scale remotely\nsensed time-series. ISPRS Journal of Photogrammetry and Remote Sensing,\n98, 106-118.\n",
+    "stac_extensions": [
+        "collection-assets"
+    ],
+    "stac_version": "1.0.0",
+    "summaries": {
+        "FilledProportion": {
+            "gee:estimated_range": true,
+            "maximum": 100
+        },
+        "Mean": {
+            "gee:estimated_range": true,
+            "maximum": 1
+        },
+        "eo:bands": [
+            {
+                "description": "The mean value of the Enhanced Vegetation Index for each aggregated pixel.",
+                "name": "Mean"
+            },
+            {
+                "description": "A quality control band that indicates the percentage of\neach resulting pixel that was comprised of raw data (as opposed to\ngap-filled estimates).\n",
+                "gee:units": "%",
+                "name": "FilledProportion"
+            }
+        ],
+        "gsd": [
+            5000
+        ]
+    },
+    "title": "Oxford MAP EVI: Malaria Atlas Project Gap-Filled Enhanced Vegetation Index",
+    "type": "Collection",
+    "cube:dimensions": {
+        "x": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                -180,
+                180
+            ]
+        },
+        "y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                -90,
+                90
+            ]
+        },
+        "t": {
+            "type": "temporal",
+            "extent": [
+                "2001-02-01T00:00:00Z",
+                "2015-06-01T00:00:00Z"
+            ]
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "Mean",
+                "FilledProportion"
+            ]
+        }
+    },
+    "assets": {
+        "preview_4": {
+            "href": "https://developers.google.com/earth-engine/datasets/images/Oxford/Oxford_MAP_EVI_5km_Monthly_sample.png",
+            "type": "image/png",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    }
+}

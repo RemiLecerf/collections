@@ -1,0 +1,37 @@
+<csw:Record xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">EO:ECMWF:DAT:SIS_SHIPPING_ARCTIC</dc:identifier>
+      <dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">Arctic route availability and cost projection derived from climate projections of ice concentration and thickness</dc:title>
+      <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/">dataset</dc:type>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">None</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Sector: Shipping</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Product type: Climate projections</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Spatial coverage: Global</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Variable domain: Atmosphere (surface)</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Temporal coverage: Past</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Temporal coverage: Future</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Provider: Copernicus C3S</dc:subject>
+      <dc:format xmlns:dc="http://purl.org/dc/elements/1.1/">None</dc:format>
+      <dct:abstract xmlns:dct="http://purl.org/dc/terms/">As part of the C3S Global Shipping service,  sea ice condition climate projections were used to derive indicators which are useful to the global shipping industry. The derived indicators are gathered in the present catalogue and distributed as monthly decadal projections. 
+The skill of 25 Coupled Model Intercomparison Project Phase 5 (CMIP5) climate projection models was assessed against the historical sea ice concentration from ERA-Interim. The 5 most skillful CMIP5 models were used (relative root mean square error &lt; 10%) to derive the present indicators. Both RCP4.5 and RCP8.5 CMIP5 experiments were considered.
+Two different types of indicators were produced. The first type provides information about the ice and accessibility conditions over the whole arctic ocean and includes: Sea ice extent maps, accessibility maps for different ice classes and average sea ice concentration and thickness conditions maps.
+The second type of indicators (e.g. trip duration,  fuel consumption) provides information about the navigation conditions along a specific arctic route going through the so-called North-East Passage  for an ARC4 bulk carrier. 
+Due to the global warming and the continuous decline of Arctic sea ice, maritime transport in the Arctic region has been increased dramatically. While operating in the Arctic area, ships face regular environment loads and ice loads synchronously, the consideration of ice resistance is essential for the
+fuel consumption estimation in the ice-covered water voyage. For this specific bulk carrier, the Arctic
+sailing cost is composed of the following operational costs: the insurance cost is assumed to be 500usd/day, the ship renting cost is assumed to be 40kusd/day and the crew cost (including wages, social benefits, entertainments, etc.) is assumed to be 6kusd/day.
+The other big category of the cost is associated with the fuel cost. The fuel cost is computed by first
+estimating the ship&#8217;s resistance in the still water and in various ice conditions along the arctic ship route. It should be noted that since in the climate projection data does not contain the wave and wind
+information, the resistance caused by wind and wave will be neglected in the calculation. The calm/still water resistance is estimated by the well-known formula proposed by Holtrop and Mennen (1982). The ice resistance is estimated by the method proposed by Lindqvist (1989), which divides resistance components into ice crushing, bending-induced breaking and submergence, based on the physical phenomena. This method gives ice resistance as functions of ship main dimensions, hull form, ice thickness, ice friction and ice strength.
+After getting the ship resistance for various ice conditions and operational conditions (ship speed), it will be divided by the propulsion efficiency of the ship to get the require marine engine power, that can push the ship forward to overtake the still water and ice resistance. The fuel consumption rate for the calculated engine power will be easily analysed by given the engine oil properties. For the given arctic ship route and sailing time (speeds), the total fuel cost can be estimated. The ship&#8217;s (maximum) sailing speed at various ice conditions is determined according to the Russian Polar Class rules.
+Finally, another cost is related to if the ship needs support from Ice breaker for resorted ice navigation. Whether or not the ice breaker is needed is determined according to the ship&#8217;s ice class and the most severe ice conditions along the ship&#8217;s arctic route during that voyage based on Russian Polar Class rules. If the ice breaker is needed, then a big fixed ice breaker renting cost of 1200kusd will be added to the total cost.
+
+Variables in the dataset/application are:
+Arctic accessibility index ARC4, Arctic accessibility index ARC5, Arctic accessibility index ARC6, Arctic accessibility index ARC7, Arctic accessibility index ARC8, Arctic accessibility index ARC9, Arctic route cost, Fuel consumption, Ice resistance, Icebreaker need, Maximum sea ice extent mask, Mean sea ice extent mask, Minimum sea ice extent mask, Sea ice concentration, Sea ice thickness, Shaft power, Ship speed, Trip duration</dct:abstract>
+      <dct:spatial xmlns:dct="http://purl.org/dc/terms/">::EPSG:4326</dct:spatial>
+      <dc:rights xmlns:dc="http://purl.org/dc/elements/1.1/">Not defined</dc:rights>
+      <dct:accessRights xmlns:dct="http://purl.org/dc/terms/">licence</dct:accessRights>
+      <ows:BoundingBox xmlns:ows="http://www.opengis.net/ows">
+        <ows:LowerCorner>-180 -90</ows:LowerCorner>
+        <ows:UpperCorner>180 90</ows:UpperCorner>
+      </ows:BoundingBox>
+    </csw:Record>
+    

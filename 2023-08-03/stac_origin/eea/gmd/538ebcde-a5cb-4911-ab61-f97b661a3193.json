@@ -1,0 +1,78 @@
+{
+  "type": "Collection",
+  "id": "538ebcde-a5cb-4911-ab61-f97b661a3193",
+  "stac_version": "1.0.0",
+  "description": "The European Ground Motion Service (EGMS) is a component of the Copernicus Land Monitoring Service. EGMS provides consistent, regular, standardised, harmonised and reliable information regarding natural and anthropogenic ground motion phenomena over the Copernicus Participating States and across national borders, with millimetre accuracy. \n\nThis set of metadata describes the global navigation satellite system (GNSS) model used to calibrate the EGMS Calibrated product (https://sdi.eea.europa.eu/catalogue/srv/eng/catalog.search#/metadata/dbc229ee-b94e-44e1-b0db-9bc57076bef1). This layer is produced based on GNSS data from various sources, with the EUREF Densification network as the main entry point. After filtering and quality control, a total of 3770 stations are used to generate the GNSS model which contains average velocities in east, north and up directions displayed on a 50-km grid. The grid dimension is determined by the average distance between well-maintained GNSS stations over continental Europe.\nThe GNSS model is distributed to users in a single comma-separated values file. Each cell of the model is associated to a value of vertical and horizontal velocity. The product covers the Copernicus Participating States (except for DROMs) and United Kingdom.",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://land.copernicus.eu/user-corner/technical-library/egms-algorithm-theoretical-basis-document",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Information on the usage of the GNSS model for calibration purposes"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://land.copernicus.eu/user-corner/technical-library/egms-gnss-calibration-report",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Information on the production, quality control and validation of the GNSS model"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://epnd.sgo-penc.hu/",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "More information on the EUREF Densification working group"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://sdi.eea.europa.eu/data/538ebcde-a5cb-4911-ab61-f97b661a3193",
+      "type": "WWW:URL",
+      "title": "GNSS model direct download"
+    }
+  ],
+  "title": "European Ground Motion Service: GNSS model between 2015 and 2020, Jul. 2022",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -31.3,
+          27.6,
+          44.86,
+          71.21
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2015-02-01T00:00:00Z",
+          "2020-12-31T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "EEA38 (from 2020)",
+    "Natural risk zones",
+    "Not planned",
+    "United Kingdom",
+    "calibration",
+    "earth observation",
+    "geo-referenced information",
+    "geodesy",
+    "model"
+  ],
+  "providers": [
+    {
+      "name": "European Environment Agency",
+      "description": "SDI - EEA geospatial data catalogue",
+      "roles": [
+        "licensor",
+        "producer",
+        "processor",
+        "host"
+      ],
+      "url": "https://sdi.eea.europa.eu/"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:dct="http://purl.org/dc/terms/" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/7910254b-1f71-41bb-a6ee-47a178f4d781">
+        <foaf:primaryTopic rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/resource/a78600a4-a280-47b5-8ddd-0dc8b5e9c9d9"/>
+        <dct:issued>2023-03-29</dct:issued>
+        <dct:modified>2023-03-29</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/srv/eng/xml.metadata.get?uuid=7910254b-1f71-41bb-a6ee-47a178f4d781">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork?uuid=7910254b-1f71-41bb-a6ee-47a178f4d781">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/resource/a78600a4-a280-47b5-8ddd-0dc8b5e9c9d9">
+        <dct:identifier>a78600a4-a280-47b5-8ddd-0dc8b5e9c9d9</dct:identifier>
+        <dct:title>Baltic Sea Cod Reproductive Volume from Reanalysis</dct:title>
+        <dct:abstract>'''DEFINITION'''
+
+The cod reproductive volume has been derived from regional reanalysis modelling results for the Baltic Sea (BALTICSEA_REANALYSIS_PHY_003_011 and BALTICSEA_REANALYSIS_BIO_003_012). The volume has been calculated taking into account the three most important influencing abiotic factors of cod reproductive success: salinity &gt; 11 g/kg, oxygen concentration &gt; 2 ml/l and water temperature over 1.5°C (MacKenzie et al., 1996; Heikinheimo, 2008; Plikshs et al., 2015). The daily volumes are calculated as the volumes of the water with salinity &gt; 11 g/kg, oxygen content &gt; 2 ml/l and water temperature over 1.5°C in the Baltic Sea International Council for the Exploration of the Sea subdivisions of 25-28 (ICES, 2019).
+
+'''CONTEXT'''
+
+Cod (Gadus morhua) is a characteristic fish species in the Baltic Sea with major economic importance. The Baltic cod stocks have gone through a steep decline in the late 1980s (ICES, 2005). Water salinity and oxygen concentration affect cod stock through the survival of eggs (Westin and Nissling, 1991; Wieland et al., 1994). Major Baltic Inflows provide a suitable environment for cod reproduction by bringing saline oxygenated water to the deep basins of the Baltic Sea (BALTIC_OMI_WMHE_mbi_bottom_salinity_arkona_bornholm and BALTIC_OMI_WMHE_mbi_sto2tz_gotland). Increased cod reproductive volume has a positive effect on cod reproduction success, which reflects in an increase of stock size indicator 4–5 years after the Major Baltic Inflow (Raudsepp et al., 2019; BALTIC_OMI_MBI). Eastern Baltic cod reaches maturity around age 2–3, depending on the population density and environmental conditions. Low oxygen and salinity cause stress, which negatively affects cod recruitment, whereas sufficient conditions may bring about male cod maturation even at the age of 1.5 years (Cardinale and Modin, 1999; Karasiova et al., 2008). 
+
+'''CMEMS KEY FINDINGS'''
+
+In general, the cod reproductive volume fluctuates between 200 and 400 km3. There are periods, when cod reproductive volume increases to 700-800 km3, like 2003-2004, 2006 - first half of 2007, 2014 - first half of 2015 and 2016-beginning of 2017. Usually, the increase of cod reproductive volume is the result of Major Baltic Inflows. Suitable conditions for cod reproduction persist for a shorter time period than that of the saline water volume (BALTIC_OMI_WMHE_mbi_bottom_salinity_arkona_bornholm and BALTIC_OMI_WMHE_mbi_sto2tz_gotland), indicating that oxygen content declines faster than salinity in the bottom layers of the Baltic Sea (Raudsepp et al. 2018). There was a relatively high cod reproductive volume of 800 km3 in the Baltic Sea in 2019, which decreased down to 200 km3 by the end of 2021. 
+
+'''DOI (product):''' 
+https://doi.org/10.48670/moi-00196</dct:abstract>
+        <dcat:theme rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/thesaurus/iso/topicCategory/oceans"/>
+        <foaf:thumbnail rdf:resource="https://catalogue.marine.copernicus.eu/documents/IMG/BALTIC_OMI_HEALTH_codt_volume.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((9.00 53.00, 9.00 66.00, 30.00 66.00, 30.00 53.00, 9.00 53.00))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:issued>2020-06-18</dct:issued>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/BAL-DMI-COPENHAGEN-DK"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/BAL-TTU-TALLINN-EE"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/BAL-SMHI-NORRKOPING-SE"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/BAL-SMHI-NORRKOPING-SE"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/MOI-OMI-SERVICE"/>
+        <dct:accrualPeriodicity>annually</dct:accrualPeriodicity>
+        <dct:license>otherRestrictions</dct:license>
+        <dct:license>license</dct:license>
+        <dct:license>No limitations on public access</dct:license>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/BALTIC_OMI_HEALTH_codt_volume/baltic_omi_health_codt_volume"/>
+        <dcat:distribution rdf:resource="https://mdl1.marine.copernicus.eu/derived/BALTIC_OMI_HEALTH_codt_volume/baltic_omi_health_codt_volume_202211/baltic_omi_health_codt_volume_19930101_P20220908.nc"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/15717671-83e5-498a-85e7-9c83db218f68"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/ddaafce0-6a15-41b3-81c4-12e9e966c7d8"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/8ecc5855-1494-4317-9a3f-9a96872bd900"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dcat:dataQuality>The myOcean products depends on other products for production or validation. The detailed list of dependencies is given in ISO19115's aggregationInfo (ISO19139 Xpath = "gmd:MD_Metadata/gmd:identificationInfo/gmd:aggregationInfo[./gmd:MD_AggregateInformation/gmd:initiativeType/gmd:DS_InitiativeTypeCode/@codeListValue='upstream-validation' or 'upstream-production']")</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+    

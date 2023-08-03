@@ -1,0 +1,57 @@
+{
+  "type": "Collection",
+  "id": "EO:ESA:DAT:SENTINEL-2:MSI",
+  "stac_version": "1.0.0",
+  "description": "The Sentinel-2 mission is a land monitoring constellation of two satellites that provide high resolution optical imagery and provide continuity for the current SPOT and Landsat missions. The mission provides a global coverage of the Earth's land surface every 10 days with one satellite and 5 days with 2 satellites, making the data of great use in on-going studies. The satellites are equipped with the state-of-the-art MSI (Multispectral Imager) instrument, that offers high-resolution optical imagery. Products are a compilation of elementary granules of fixed size, within a single orbit. A granule is the minimum indivisible partition of a product (containing all possible spectral bands).\nFor Level-1C and Level-2A, the granules, also called tiles, are 100x100km2 ortho-images in UTM/WGS84 projection. The UTM (Universal Transverse Mercator) system divides the Earth's surface into 60 zones. Each UTM zone has a vertical width of 6° of longitude and horizontal width of 8° of latitude. (see Figure 1). Tiles are approximately 600 MB in size. Tiles can be fully or partially covered by image data. Partially covered tiles correspond to those at the edge of the swath.",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://navigator.eumetsat.int/product/EO:ESA:DAT:SENTINEL-2:MSI",
+      "type": "http",
+      "title": "EUMETSAT Product Navigator (Metadata)"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://navigator.eumetsat.int/product/EO:ESA:DAT:SENTINEL-2:MSI",
+      "type": "http",
+      "title": "EUMETSAT Product Navigator (Metadata)"
+    }
+  ],
+  "title": "SENTINEL-2 Level-1C/Level-2A",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2015-06-23T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "FedEO",
+    "Level 1 Data",
+    "Level 2 Data"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

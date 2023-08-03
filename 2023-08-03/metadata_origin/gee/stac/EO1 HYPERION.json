@@ -1,0 +1,2146 @@
+{
+    "description": "Hyperion is a high resolution hyperspectral imager producing 220 unique\nspectral channels ranging from 0.357 to 2.576 micrometers with a 10-nm\nbandwidth. The instrument operates in a pushbroom fashion, with a spatial\nresolution of 30 meters for all bands and a standard scene width of 7.7\nkilometers.\n\nThis dataset contains level 1A radiance images, radiometrically calibrated\nand orthorectified. The SWIR bands have a scaling factor of 80 and the VNIR\nbands have a scaling factor of 40 applied.\n\n- VNIR bands (B008-B057, 426.82nm - 925.41nm): L = Digital Number / 40\n\n- SWIR bands (B077-B224, 912.45nm - 2395.50nm): L = Digital Number / 80\n\nNote that bands B001-B007, B058-B076, and B225-242 are not calibrated,\nhave no valid values and are not included into EE assets. See the\n[detailed spectral coverage information](https://doi.org/10.5066/P9JXHMO2).\n\nThis is a preview dataset; only a portion of the data from the\noriginal source have been downloaded.\n",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2001-05-01T00:00:00Z",
+                    "2017-03-13T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "gee:interval": {
+        "interval": 200,
+        "type": "revisit_interval",
+        "unit": "day"
+    },
+    "gee:terms_of_use": "Hyperion data are in the public domain. Once a scene has been\ndownloaded from the USGS, it can be redistributed as desired.\n",
+    "gee:type": "image_collection",
+    "id": "EO1/HYPERION",
+    "keywords": [
+        "eo_1",
+        "hyperion",
+        "hyperspectral",
+        "usgs"
+    ],
+    "license": "proprietary",
+    "links": [
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections/EO1/HYPERION",
+            "rel": "self",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections",
+            "rel": "parent",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/",
+            "rel": "root",
+            "type": "application/json"
+        },
+        {
+            "code": "JavaScript",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/EO1/EO1_HYPERION",
+            "rel": "related",
+            "title": "Run the example for EO1/HYPERION in the Earth Engine Code Editor",
+            "type": "text/html"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/images/EO1/EO1_HYPERION_sample.png",
+            "rel": "preview",
+            "type": "image/png"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/EO1_HYPERION#terms-of-use",
+            "rel": "license",
+            "type": "text/html"
+        }
+    ],
+    "providers": [
+        {
+            "name": "USGS",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://eo1.usgs.gov/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/EO1_HYPERION"
+        }
+    ],
+    "sci:citation": "Data available from the U.S. Geological Survey.",
+    "stac_extensions": [
+        "collection-assets"
+    ],
+    "stac_version": "1.0.0",
+    "summaries": {
+        "eo:bands": [
+            {
+                "center_wavelength": 0.42682,
+                "description": "VNIR band B8",
+                "full_width_half_max": 0.0113871,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "426.8200nm, FWHM: 11.3871nm",
+                "name": "B008",
+                "common_name": "coastal"
+            },
+            {
+                "center_wavelength": 0.43699,
+                "description": "VNIR band B9",
+                "full_width_half_max": 0.0113871,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "436.9900nm, FWHM: 11.3871nm",
+                "name": "B009",
+                "common_name": "coastal"
+            },
+            {
+                "center_wavelength": 0.44717,
+                "description": "VNIR band B10",
+                "full_width_half_max": 0.0113871,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "447.1700nm, FWHM: 11.3871nm",
+                "name": "B010",
+                "common_name": "coastal"
+            },
+            {
+                "center_wavelength": 0.45734,
+                "description": "VNIR band B11",
+                "full_width_half_max": 0.0113871,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "457.3400nm, FWHM: 11.3871nm",
+                "name": "B011",
+                "common_name": "blue"
+            },
+            {
+                "center_wavelength": 0.46752,
+                "description": "VNIR band B12",
+                "full_width_half_max": 0.0113871,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "467.5200nm, FWHM: 11.3871nm",
+                "name": "B012",
+                "common_name": "blue"
+            },
+            {
+                "center_wavelength": 0.47769,
+                "description": "VNIR band B13",
+                "full_width_half_max": 0.0113871,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "477.6900nm, FWHM: 11.3871nm",
+                "name": "B013",
+                "common_name": "blue"
+            },
+            {
+                "center_wavelength": 0.48787,
+                "description": "VNIR band B14",
+                "full_width_half_max": 0.0113784,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "487.8700nm, FWHM: 11.3784nm",
+                "name": "B014",
+                "common_name": "blue"
+            },
+            {
+                "center_wavelength": 0.49804,
+                "description": "VNIR band B15",
+                "full_width_half_max": 0.0113538,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "498.0400nm, FWHM: 11.3538nm",
+                "name": "B015",
+                "common_name": "blue"
+            },
+            {
+                "center_wavelength": 0.50822,
+                "description": "VNIR band B16",
+                "full_width_half_max": 0.0113133,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "508.2200nm, FWHM: 11.3133nm",
+                "name": "B016",
+                "common_name": "green"
+            },
+            {
+                "center_wavelength": 0.51839,
+                "description": "VNIR band B17",
+                "full_width_half_max": 0.011258,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "518.3900nm, FWHM: 11.2580nm",
+                "name": "B017",
+                "common_name": "green"
+            },
+            {
+                "center_wavelength": 0.52857,
+                "description": "VNIR band B18",
+                "full_width_half_max": 0.0111907,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "528.5700nm, FWHM: 11.1907nm",
+                "name": "B018",
+                "common_name": "green"
+            },
+            {
+                "center_wavelength": 0.53874,
+                "description": "VNIR band B19",
+                "full_width_half_max": 0.0111119,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "538.7400nm, FWHM: 11.1119nm",
+                "name": "B019",
+                "common_name": "green"
+            },
+            {
+                "center_wavelength": 0.54892,
+                "description": "VNIR band B20",
+                "full_width_half_max": 0.0110245,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "548.9200nm, FWHM: 11.0245nm",
+                "name": "B020",
+                "common_name": "green"
+            },
+            {
+                "center_wavelength": 0.55909,
+                "description": "VNIR band B21",
+                "full_width_half_max": 0.0109321,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "559.0900nm, FWHM: 10.9321nm",
+                "name": "B021",
+                "common_name": "green"
+            },
+            {
+                "center_wavelength": 0.56927,
+                "description": "VNIR band B22",
+                "full_width_half_max": 0.0108368,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "569.2700nm, FWHM: 10.8368nm",
+                "name": "B022",
+                "common_name": "green"
+            },
+            {
+                "center_wavelength": 0.57945,
+                "description": "VNIR band B23",
+                "full_width_half_max": 0.0107407,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "579.4500nm, FWHM: 10.7407nm",
+                "name": "B023",
+                "common_name": "green"
+            },
+            {
+                "center_wavelength": 0.58962,
+                "description": "VNIR band B24",
+                "full_width_half_max": 0.0106482,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "589.6200nm, FWHM: 10.6482nm",
+                "name": "B024",
+                "common_name": "yellow"
+            },
+            {
+                "center_wavelength": 0.5998,
+                "description": "VNIR band B25",
+                "full_width_half_max": 0.0105607,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "599.8000nm, FWHM: 10.5607nm",
+                "name": "B025",
+                "common_name": "yellow"
+            },
+            {
+                "center_wavelength": 0.60997,
+                "description": "VNIR band B26",
+                "full_width_half_max": 0.0104823,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "609.9700nm, FWHM: 10.4823nm",
+                "name": "B026",
+                "common_name": "yellow"
+            },
+            {
+                "center_wavelength": 0.62015,
+                "description": "VNIR band B27",
+                "full_width_half_max": 0.0104147,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "620.1500nm, FWHM: 10.4147nm",
+                "name": "B027",
+                "common_name": "red"
+            },
+            {
+                "center_wavelength": 0.63032,
+                "description": "VNIR band B28",
+                "full_width_half_max": 0.0103595,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "630.3200nm, FWHM: 10.3595nm",
+                "name": "B028",
+                "common_name": "red"
+            },
+            {
+                "center_wavelength": 0.6405,
+                "description": "VNIR band B29",
+                "full_width_half_max": 0.0103188,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "640.5000nm, FWHM: 10.3188nm",
+                "name": "B029",
+                "common_name": "red"
+            },
+            {
+                "center_wavelength": 0.65067,
+                "description": "VNIR band B30",
+                "full_width_half_max": 0.0102942,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "650.6700nm, FWHM: 10.2942nm",
+                "name": "B030",
+                "common_name": "red"
+            },
+            {
+                "center_wavelength": 0.66085,
+                "description": "VNIR band B31",
+                "full_width_half_max": 0.0102856,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "660.8500nm, FWHM: 10.2856nm",
+                "name": "B031",
+                "common_name": "red"
+            },
+            {
+                "center_wavelength": 0.67102,
+                "description": "VNIR band B32",
+                "full_width_half_max": 0.010298,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "671.0200nm, FWHM: 10.2980nm",
+                "name": "B032",
+                "common_name": "red"
+            },
+            {
+                "center_wavelength": 0.6812,
+                "description": "VNIR band B33",
+                "full_width_half_max": 0.0103349,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "681.2000nm, FWHM: 10.3349nm",
+                "name": "B033",
+                "common_name": "red"
+            },
+            {
+                "center_wavelength": 0.69137,
+                "description": "VNIR band B34",
+                "full_width_half_max": 0.0103909,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "691.3700nm, FWHM: 10.3909nm",
+                "name": "B034",
+                "common_name": "red"
+            },
+            {
+                "center_wavelength": 0.70155,
+                "description": "VNIR band B35",
+                "full_width_half_max": 0.0104592,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "701.5500nm, FWHM: 10.4592nm",
+                "name": "B035",
+                "common_name": "rededge"
+            },
+            {
+                "center_wavelength": 0.71172,
+                "description": "VNIR band B36",
+                "full_width_half_max": 0.0105322,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "711.7200nm, FWHM: 10.5322nm",
+                "name": "B036",
+                "common_name": "rededge"
+            },
+            {
+                "center_wavelength": 0.7219,
+                "description": "VNIR band B37",
+                "full_width_half_max": 0.0106004,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "721.9000nm, FWHM: 10.6004nm",
+                "name": "B037",
+                "common_name": "rededge"
+            },
+            {
+                "center_wavelength": 0.73207,
+                "description": "VNIR band B38",
+                "full_width_half_max": 0.0106562,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "732.0700nm, FWHM: 10.6562nm",
+                "name": "B038",
+                "common_name": "rededge"
+            },
+            {
+                "center_wavelength": 0.74225,
+                "description": "VNIR band B39",
+                "full_width_half_max": 0.0106933,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "742.2500nm, FWHM: 10.6933nm",
+                "name": "B039",
+                "common_name": "rededge"
+            },
+            {
+                "center_wavelength": 0.75243,
+                "description": "VNIR band B40",
+                "full_width_half_max": 0.0107058,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "752.4300nm, FWHM: 10.7058nm",
+                "name": "B040",
+                "common_name": "rededge"
+            },
+            {
+                "center_wavelength": 0.7626,
+                "description": "VNIR band B41",
+                "full_width_half_max": 0.0107276,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "762.6000nm, FWHM: 10.7276nm",
+                "name": "B041",
+                "common_name": "rededge"
+            },
+            {
+                "center_wavelength": 0.77278,
+                "description": "VNIR band B42",
+                "full_width_half_max": 0.0107907,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "772.7800nm, FWHM: 10.7907nm",
+                "name": "B042",
+                "common_name": "rededge"
+            },
+            {
+                "center_wavelength": 0.78295,
+                "description": "VNIR band B43",
+                "full_width_half_max": 0.0108833,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "782.9500nm, FWHM: 10.8833nm",
+                "name": "B043",
+                "common_name": "rededge"
+            },
+            {
+                "center_wavelength": 0.79313,
+                "description": "VNIR band B44",
+                "full_width_half_max": 0.0109938,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "793.1300nm, FWHM: 10.9938nm",
+                "name": "B044",
+                "common_name": "rededge"
+            },
+            {
+                "center_wavelength": 0.8033,
+                "description": "VNIR band B45",
+                "full_width_half_max": 0.0111044,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "803.3000nm, FWHM: 11.1044nm",
+                "name": "B045",
+                "common_name": "nir"
+            },
+            {
+                "center_wavelength": 0.81348,
+                "description": "VNIR band B46",
+                "full_width_half_max": 0.011198,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "813.4800nm, FWHM: 11.1980nm",
+                "name": "B046",
+                "common_name": "nir"
+            },
+            {
+                "center_wavelength": 0.82365,
+                "description": "VNIR band B47",
+                "full_width_half_max": 0.01126,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "823.6500nm, FWHM: 11.2600nm",
+                "name": "B047",
+                "common_name": "nir"
+            },
+            {
+                "center_wavelength": 0.83383,
+                "description": "VNIR band B48",
+                "full_width_half_max": 0.0112824,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "833.8300nm, FWHM: 11.2824nm",
+                "name": "B048",
+                "common_name": "nir"
+            },
+            {
+                "center_wavelength": 0.844,
+                "description": "VNIR band B49",
+                "full_width_half_max": 0.0112822,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "844.0000nm, FWHM: 11.2822nm",
+                "name": "B049",
+                "common_name": "nir"
+            },
+            {
+                "center_wavelength": 0.85418,
+                "description": "VNIR band B50",
+                "full_width_half_max": 0.0112816,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "854.1800nm, FWHM: 11.2816nm",
+                "name": "B050",
+                "common_name": "nir08"
+            },
+            {
+                "center_wavelength": 0.86435,
+                "description": "VNIR band B51",
+                "full_width_half_max": 0.0112809,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "864.3500nm, FWHM: 11.2809nm",
+                "name": "B051",
+                "common_name": "nir08"
+            },
+            {
+                "center_wavelength": 0.87453,
+                "description": "VNIR band B52",
+                "full_width_half_max": 0.0112797,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "874.5300nm, FWHM: 11.2797nm",
+                "name": "B052",
+                "common_name": "nir08"
+            },
+            {
+                "center_wavelength": 0.8847,
+                "description": "VNIR band B53",
+                "full_width_half_max": 0.0112782,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "884.7000nm, FWHM: 11.2782nm",
+                "name": "B053",
+                "common_name": "nir08"
+            },
+            {
+                "center_wavelength": 0.89488,
+                "description": "VNIR band B54",
+                "full_width_half_max": 0.0112771,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "894.8800nm, FWHM: 11.2771nm",
+                "name": "B054",
+                "common_name": "nir08"
+            },
+            {
+                "center_wavelength": 0.90505,
+                "description": "VNIR band B55",
+                "full_width_half_max": 0.0112765,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "905.0500nm, FWHM: 11.2765nm",
+                "name": "B055",
+                "common_name": "nir08"
+            },
+            {
+                "center_wavelength": 0.91523,
+                "description": "VNIR band B56",
+                "full_width_half_max": 0.0112756,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "915.2300nm, FWHM: 11.2756nm",
+                "name": "B056",
+                "common_name": "nir08"
+            },
+            {
+                "center_wavelength": 0.92541,
+                "description": "VNIR band B57",
+                "full_width_half_max": 0.0112754,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "925.4100nm, FWHM: 11.2754nm",
+                "name": "B057",
+                "common_name": "nir08"
+            },
+            {
+                "center_wavelength": 0.91245,
+                "description": "SWIR band B77",
+                "full_width_half_max": 0.0110457,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "912.4500nm, FWHM: 11.0457nm",
+                "name": "B077",
+                "common_name": "nir08"
+            },
+            {
+                "center_wavelength": 0.92254,
+                "description": "SWIR band B78",
+                "full_width_half_max": 0.0110457,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "922.5400nm, FWHM: 11.0457nm",
+                "name": "B078",
+                "common_name": "nir08"
+            },
+            {
+                "center_wavelength": 0.93264,
+                "description": "SWIR band B79",
+                "full_width_half_max": 0.0110457,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "932.6400nm, FWHM: 11.0457nm",
+                "name": "B079",
+                "common_name": "nir08"
+            },
+            {
+                "center_wavelength": 0.94273,
+                "description": "SWIR band B80",
+                "full_width_half_max": 0.0110457,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "942.7300nm, FWHM: 11.0457nm",
+                "name": "B080",
+                "common_name": "nir09"
+            },
+            {
+                "center_wavelength": 0.95282,
+                "description": "SWIR band B81",
+                "full_width_half_max": 0.0110457,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "952.8200nm, FWHM: 11.0457nm",
+                "name": "B081",
+                "common_name": "nir09"
+            },
+            {
+                "center_wavelength": 0.96291,
+                "description": "SWIR band B82",
+                "full_width_half_max": 0.0110457,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "962.9100nm, FWHM: 11.0457nm",
+                "name": "B082",
+                "common_name": "nir09"
+            },
+            {
+                "center_wavelength": 0.97299,
+                "description": "SWIR band B83",
+                "full_width_half_max": 0.0110457,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "972.9900nm, FWHM: 11.0457nm",
+                "name": "B083",
+                "common_name": "nir09"
+            },
+            {
+                "center_wavelength": 0.98308,
+                "description": "SWIR band B84",
+                "full_width_half_max": 0.0110457,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "983.0800nm, FWHM: 11.0457nm",
+                "name": "B084",
+                "common_name": "nir09"
+            },
+            {
+                "center_wavelength": 0.99317,
+                "description": "SWIR band B85",
+                "full_width_half_max": 0.0110457,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "993.1700nm, FWHM: 11.0457nm",
+                "name": "B085",
+                "common_name": "nir09"
+            },
+            {
+                "center_wavelength": 1.0033,
+                "description": "SWIR band B86",
+                "full_width_half_max": 0.0110457,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1003.3000nm, FWHM: 11.0457nm",
+                "name": "B086",
+                "common_name": "nir09"
+            },
+            {
+                "center_wavelength": 1.0133,
+                "description": "SWIR band B87",
+                "full_width_half_max": 0.0110457,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1013.3000nm, FWHM: 11.0457nm",
+                "name": "B087",
+                "common_name": "nir09"
+            },
+            {
+                "center_wavelength": 1.0234,
+                "description": "SWIR band B88",
+                "full_width_half_max": 0.0110451,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1023.4000nm, FWHM: 11.0451nm",
+                "name": "B088",
+                "common_name": "nir09"
+            },
+            {
+                "center_wavelength": 1.03349,
+                "description": "SWIR band B89",
+                "full_width_half_max": 0.0110423,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1033.4900nm, FWHM: 11.0423nm",
+                "name": "B089",
+                "common_name": "nir09"
+            },
+            {
+                "center_wavelength": 1.04359,
+                "description": "SWIR band B90",
+                "full_width_half_max": 0.0110372,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1043.5900nm, FWHM: 11.0372nm",
+                "name": "B090",
+                "common_name": "nir09"
+            },
+            {
+                "center_wavelength": 1.05369,
+                "description": "SWIR band B91",
+                "full_width_half_max": 0.0110302,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1053.6900nm, FWHM: 11.0302nm",
+                "name": "B091"
+            },
+            {
+                "center_wavelength": 1.06379,
+                "description": "SWIR band B92",
+                "full_width_half_max": 0.0110218,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1063.7900nm, FWHM: 11.0218nm",
+                "name": "B092"
+            },
+            {
+                "center_wavelength": 1.07389,
+                "description": "SWIR band B93",
+                "full_width_half_max": 0.0110122,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1073.8900nm, FWHM: 11.0122nm",
+                "name": "B093"
+            },
+            {
+                "center_wavelength": 1.08399,
+                "description": "SWIR band B94",
+                "full_width_half_max": 0.0110013,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1083.9900nm, FWHM: 11.0013nm",
+                "name": "B094"
+            },
+            {
+                "center_wavelength": 1.09409,
+                "description": "SWIR band B95",
+                "full_width_half_max": 0.0109871,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1094.0900nm, FWHM: 10.9871nm",
+                "name": "B095"
+            },
+            {
+                "center_wavelength": 1.10419,
+                "description": "SWIR band B96",
+                "full_width_half_max": 0.0109732,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1104.1900nm, FWHM: 10.9732nm",
+                "name": "B096"
+            },
+            {
+                "center_wavelength": 1.11419,
+                "description": "SWIR band B97",
+                "full_width_half_max": 0.0109572,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1114.1900nm, FWHM: 10.9572nm",
+                "name": "B097"
+            },
+            {
+                "center_wavelength": 1.112428,
+                "description": "SWIR band B98",
+                "full_width_half_max": 0.0109418,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1124.2800nm, FWHM: 10.9418nm",
+                "name": "B098"
+            },
+            {
+                "center_wavelength": 1.113438,
+                "description": "SWIR band B99",
+                "full_width_half_max": 0.0109248,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1134.3800nm, FWHM: 10.9248nm",
+                "name": "B099"
+            },
+            {
+                "center_wavelength": 1.11448,
+                "description": "SWIR band B100",
+                "full_width_half_max": 0.0109065,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1144.4800nm, FWHM: 10.9065nm",
+                "name": "B100"
+            },
+            {
+                "center_wavelength": 1.115458,
+                "description": "SWIR band B101",
+                "full_width_half_max": 0.0108884,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1154.5800nm, FWHM: 10.8884nm",
+                "name": "B101"
+            },
+            {
+                "center_wavelength": 1.116468,
+                "description": "SWIR band B102",
+                "full_width_half_max": 0.0108696,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1164.6800nm, FWHM: 10.8696nm",
+                "name": "B102"
+            },
+            {
+                "center_wavelength": 1.117477,
+                "description": "SWIR band B103",
+                "full_width_half_max": 0.0108513,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1174.7700nm, FWHM: 10.8513nm",
+                "name": "B103"
+            },
+            {
+                "center_wavelength": 1.118487,
+                "description": "SWIR band B104",
+                "full_width_half_max": 0.0108335,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1184.8700nm, FWHM: 10.8335nm",
+                "name": "B104"
+            },
+            {
+                "center_wavelength": 1.119497,
+                "description": "SWIR band B105",
+                "full_width_half_max": 0.0108154,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1194.9700nm, FWHM: 10.8154nm",
+                "name": "B105"
+            },
+            {
+                "center_wavelength": 1.20507,
+                "description": "SWIR band B106",
+                "full_width_half_max": 0.0107979,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1205.0700nm, FWHM: 10.7979nm",
+                "name": "B106"
+            },
+            {
+                "center_wavelength": 1.21517,
+                "description": "SWIR band B107",
+                "full_width_half_max": 0.0107822,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1215.1700nm, FWHM: 10.7822nm",
+                "name": "B107"
+            },
+            {
+                "center_wavelength": 1.22517,
+                "description": "SWIR band B108",
+                "full_width_half_max": 0.0107663,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1225.1700nm, FWHM: 10.7663nm",
+                "name": "B108"
+            },
+            {
+                "center_wavelength": 1.23527,
+                "description": "SWIR band B109",
+                "full_width_half_max": 0.010752,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1235.2700nm, FWHM: 10.7520nm",
+                "name": "B109"
+            },
+            {
+                "center_wavelength": 1.24536,
+                "description": "SWIR band B110",
+                "full_width_half_max": 0.0107385,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1245.3600nm, FWHM: 10.7385nm",
+                "name": "B110"
+            },
+            {
+                "center_wavelength": 1.25546,
+                "description": "SWIR band B111",
+                "full_width_half_max": 0.010727,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1255.4600nm, FWHM: 10.7270nm",
+                "name": "B111"
+            },
+            {
+                "center_wavelength": 1.26556,
+                "description": "SWIR band B112",
+                "full_width_half_max": 0.0107174,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1265.5600nm, FWHM: 10.7174nm",
+                "name": "B112"
+            },
+            {
+                "center_wavelength": 1.27566,
+                "description": "SWIR band B113",
+                "full_width_half_max": 0.0107091,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1275.6600nm, FWHM: 10.7091nm",
+                "name": "B113"
+            },
+            {
+                "center_wavelength": 1.28576,
+                "description": "SWIR band B114",
+                "full_width_half_max": 0.0107022,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1285.7600nm, FWHM: 10.7022nm",
+                "name": "B114"
+            },
+            {
+                "center_wavelength": 1.29586,
+                "description": "SWIR band B115",
+                "full_width_half_max": 0.010697,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1295.8600nm, FWHM: 10.6970nm",
+                "name": "B115"
+            },
+            {
+                "center_wavelength": 1.30596,
+                "description": "SWIR band B116",
+                "full_width_half_max": 0.0106946,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1305.9600nm, FWHM: 10.6946nm",
+                "name": "B116"
+            },
+            {
+                "center_wavelength": 1.31605,
+                "description": "SWIR band B117",
+                "full_width_half_max": 0.0106937,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1316.0500nm, FWHM: 10.6937nm",
+                "name": "B117"
+            },
+            {
+                "center_wavelength": 1.32605,
+                "description": "SWIR band B118",
+                "full_width_half_max": 0.0106949,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1326.0500nm, FWHM: 10.6949nm",
+                "name": "B118"
+            },
+            {
+                "center_wavelength": 1.33615,
+                "description": "SWIR band B119",
+                "full_width_half_max": 0.0106996,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1336.1500nm, FWHM: 10.6996nm",
+                "name": "B119"
+            },
+            {
+                "center_wavelength": 1.34625,
+                "description": "SWIR band B120",
+                "full_width_half_max": 0.0107058,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1346.2500nm, FWHM: 10.7058nm",
+                "name": "B120"
+            },
+            {
+                "center_wavelength": 1.35635,
+                "description": "SWIR band B121",
+                "full_width_half_max": 0.0107163,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1356.3500nm, FWHM: 10.7163nm",
+                "name": "B121",
+                "common_name": "cirrus"
+            },
+            {
+                "center_wavelength": 1.36645,
+                "description": "SWIR band B122",
+                "full_width_half_max": 0.0107283,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1366.4500nm, FWHM: 10.7283nm",
+                "name": "B122",
+                "common_name": "cirrus"
+            },
+            {
+                "center_wavelength": 1.37655,
+                "description": "SWIR band B123",
+                "full_width_half_max": 0.0107437,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1376.5500nm, FWHM: 10.7437nm",
+                "name": "B123",
+                "common_name": "cirrus"
+            },
+            {
+                "center_wavelength": 1.38665,
+                "description": "SWIR band B124",
+                "full_width_half_max": 0.0107612,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1386.6500nm, FWHM: 10.7612nm",
+                "name": "B124",
+                "common_name": "cirrus"
+            },
+            {
+                "center_wavelength": 1.39674,
+                "description": "SWIR band B125",
+                "full_width_half_max": 0.0107807,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1396.7400nm, FWHM:10.7807nm",
+                "name": "B125",
+                "common_name": "cirrus"
+            },
+            {
+                "center_wavelength": 1.40684,
+                "description": "SWIR band B126",
+                "full_width_half_max": 0.0108034,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1406.8400nm, FWHM: 10.8034nm",
+                "name": "B126"
+            },
+            {
+                "center_wavelength": 1.41694,
+                "description": "SWIR band B127",
+                "full_width_half_max": 0.0108267,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1416.9400nm, FWHM: 10.8267nm",
+                "name": "B127"
+            },
+            {
+                "center_wavelength": 1.42694,
+                "description": "SWIR band B128",
+                "full_width_half_max": 0.0108534,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1426.9400nm, FWHM: 10.8534nm",
+                "name": "B128"
+            },
+            {
+                "center_wavelength": 1.43704,
+                "description": "SWIR band B129",
+                "full_width_half_max": 0.0108818,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1437.0400nm, FWHM: 10.8818nm",
+                "name": "B129"
+            },
+            {
+                "center_wavelength": 1.44714,
+                "description": "SWIR band B130",
+                "full_width_half_max": 0.010911,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1447.1400nm, FWHM: 10.9110nm",
+                "name": "B130"
+            },
+            {
+                "center_wavelength": 1.45723,
+                "description": "SWIR band B131",
+                "full_width_half_max": 0.0109422,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1457.2300nm, FWHM: 10.9422nm",
+                "name": "B131"
+            },
+            {
+                "center_wavelength": 1.46733,
+                "description": "SWIR band B132",
+                "full_width_half_max": 0.0109743,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1467.3300nm, FWHM: 10.9743nm",
+                "name": "B132"
+            },
+            {
+                "center_wavelength": 1.47743,
+                "description": "SWIR band B133",
+                "full_width_half_max": 0.0110074,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1477.4300nm, FWHM: 11.0074nm",
+                "name": "B133"
+            },
+            {
+                "center_wavelength": 1.48753,
+                "description": "SWIR band B134",
+                "full_width_half_max": 0.0110414,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1487.5300nm, FWHM: 11.0414nm",
+                "name": "B134"
+            },
+            {
+                "center_wavelength": 1.49763,
+                "description": "SWIR band B135",
+                "full_width_half_max": 0.0110759,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1497.6300nm, FWHM: 11.0759nm",
+                "name": "B135"
+            },
+            {
+                "center_wavelength": 1.50773,
+                "description": "SWIR band B136",
+                "full_width_half_max": 0.0111108,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1507.7300nm, FWHM: 11.1108nm",
+                "name": "B136"
+            },
+            {
+                "center_wavelength": 1.51783,
+                "description": "SWIR band B137",
+                "full_width_half_max": 0.0111461,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1517.8300nm, FWHM: 11.1461nm",
+                "name": "B137"
+            },
+            {
+                "center_wavelength": 1.52792,
+                "description": "SWIR band B138",
+                "full_width_half_max": 0.0111811,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1527.9200nm, FWHM: 11.1811nm",
+                "name": "B138"
+            },
+            {
+                "center_wavelength": 1.53792,
+                "description": "SWIR band B139",
+                "full_width_half_max": 0.0112156,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1537.9200nm, FWHM: 11.2156nm",
+                "name": "B139"
+            },
+            {
+                "center_wavelength": 1.54802,
+                "description": "SWIR band B140",
+                "full_width_half_max": 0.0112496,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1548.0200nm, FWHM: 11.2496nm",
+                "name": "B140"
+            },
+            {
+                "center_wavelength": 1.55812,
+                "description": "SWIR band B141",
+                "full_width_half_max": 0.0112826,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1558.1200nm, FWHM: 11.2826nm",
+                "name": "B141",
+                "common_name": "swir16"
+            },
+            {
+                "center_wavelength": 1.56822,
+                "description": "SWIR band B142",
+                "full_width_half_max": 0.0113146,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1568.2200nm, FWHM: 11.3146nm",
+                "name": "B142",
+                "common_name": "swir16"
+            },
+            {
+                "center_wavelength": 1.57832,
+                "description": "SWIR band B143",
+                "full_width_half_max": 0.011346,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1578.3200nm, FWHM: 11.3460nm",
+                "name": "B143",
+                "common_name": "swir16"
+            },
+            {
+                "center_wavelength": 1.58842,
+                "description": "SWIR band B144",
+                "full_width_half_max": 0.0113753,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1588.4200nm, FWHM: 11.3753nm",
+                "name": "B144",
+                "common_name": "swir16"
+            },
+            {
+                "center_wavelength": 1.59851,
+                "description": "SWIR band B145",
+                "full_width_half_max": 0.0114037,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1598.5100nm, FWHM: 11.4037nm",
+                "name": "B145",
+                "common_name": "swir16"
+            },
+            {
+                "center_wavelength": 1.60861,
+                "description": "SWIR band B146",
+                "full_width_half_max": 0.0114302,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1608.6100nm, FWHM: 11.4302nm",
+                "name": "B146",
+                "common_name": "swir16"
+            },
+            {
+                "center_wavelength": 1.61871,
+                "description": "SWIR band B147",
+                "full_width_half_max": 0.0114538,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1618.7100nm, FWHM: 11.4538nm",
+                "name": "B147",
+                "common_name": "swir16"
+            },
+            {
+                "center_wavelength": 1.62881,
+                "description": "SWIR band B148",
+                "full_width_half_max": 0.011476,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1628.8100nm, FWHM: 11.4760nm",
+                "name": "B148",
+                "common_name": "swir16"
+            },
+            {
+                "center_wavelength": 1.63881,
+                "description": "SWIR band B149",
+                "full_width_half_max": 0.0114958,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1638.8100nm, FWHM: 11.4958nm",
+                "name": "B149",
+                "common_name": "swir16"
+            },
+            {
+                "center_wavelength": 1.6489,
+                "description": "SWIR band B150",
+                "full_width_half_max": 0.0115133,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1648.9000nm, FWHM: 11.5133nm",
+                "name": "B150",
+                "common_name": "swir16"
+            },
+            {
+                "center_wavelength": 1.659,
+                "description": "SWIR band B151",
+                "full_width_half_max": 0.0115286,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1659.0000nm, FWHM: 11.5286nm",
+                "name": "B151",
+                "common_name": "swir16"
+            },
+            {
+                "center_wavelength": 1.6691,
+                "description": "SWIR band B152",
+                "full_width_half_max": 0.0115404,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1669.1000nm, FWHM: 11.5404nm",
+                "name": "B152",
+                "common_name": "swir16"
+            },
+            {
+                "center_wavelength": 1.6792,
+                "description": "SWIR band B153",
+                "full_width_half_max": 0.0115505,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1679.2000nm, FWHM: 11.5505nm",
+                "name": "B153",
+                "common_name": "swir16"
+            },
+            {
+                "center_wavelength": 1.6893,
+                "description": "SWIR band B154",
+                "full_width_half_max": 0.011558,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1689.3000nm, FWHM: 11.5580nm",
+                "name": "B154",
+                "common_name": "swir16"
+            },
+            {
+                "center_wavelength": 1.6994,
+                "description": "SWIR band B155",
+                "full_width_half_max": 0.0115621,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1699.4000nm, FWHM: 11.5621nm",
+                "name": "B155",
+                "common_name": "swir16"
+            },
+            {
+                "center_wavelength": 1.7095,
+                "description": "SWIR band B156",
+                "full_width_half_max": 0.0115634,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1709.5000nm, FWHM: 11.5634nm",
+                "name": "B156",
+                "common_name": "swir16"
+            },
+            {
+                "center_wavelength": 1.7196,
+                "description": "SWIR band B157",
+                "full_width_half_max": 0.0115617,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1719.6000nm, FWHM: 11.5617nm",
+                "name": "B157",
+                "common_name": "swir16"
+            },
+            {
+                "center_wavelength": 1.7297,
+                "description": "SWIR band B158",
+                "full_width_half_max": 0.0115563,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1729.7000nm, FWHM: 11.5563nm",
+                "name": "B158",
+                "common_name": "swir16"
+            },
+            {
+                "center_wavelength": 1.7397,
+                "description": "SWIR band B159",
+                "full_width_half_max": 0.0115477,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1739.7000nm, FWHM: 11.5477nm",
+                "name": "B159",
+                "common_name": "swir16"
+            },
+            {
+                "center_wavelength": 1.74979,
+                "description": "SWIR band B160",
+                "full_width_half_max": 0.0115346,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1749.7900nm, FWHM: 11.5346nm",
+                "name": "B160",
+                "common_name": "swir16"
+            },
+            {
+                "center_wavelength": 1.75989,
+                "description": "SWIR band B161",
+                "full_width_half_max": 0.0115193,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1759.8900nm, FWHM: 11.5193nm",
+                "name": "B161"
+            },
+            {
+                "center_wavelength": 1.76999,
+                "description": "SWIR band B162",
+                "full_width_half_max": 0.0115002,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1769.9900nm, FWHM: 11.5002nm",
+                "name": "B162"
+            },
+            {
+                "center_wavelength": 1.78009,
+                "description": "SWIR band B163",
+                "full_width_half_max": 0.0114789,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1780.0900nm, FWHM: 11.4789nm",
+                "name": "B163"
+            },
+            {
+                "center_wavelength": 1.79019,
+                "description": "SWIR band B164",
+                "full_width_half_max": 0.0114548,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1790.1900nm, FWHM: 11.4548nm",
+                "name": "B164"
+            },
+            {
+                "center_wavelength": 1.80029,
+                "description": "SWIR band B165",
+                "full_width_half_max": 0.0114279,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1800.2900nm, FWHM: 11.4279nm",
+                "name": "B165"
+            },
+            {
+                "center_wavelength": 1.81038,
+                "description": "SWIR band B166",
+                "full_width_half_max": 0.0113994,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1810.3800nm, FWHM: 11.3994nm",
+                "name": "B166"
+            },
+            {
+                "center_wavelength": 1.82048,
+                "description": "SWIR band B167",
+                "full_width_half_max": 0.0113688,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1820.4800nm, FWHM: 11.3688nm",
+                "name": "B167"
+            },
+            {
+                "center_wavelength": 1.83058,
+                "description": "SWIR band B168",
+                "full_width_half_max": 0.0113366,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1830.5800nm, FWHM: 11.3366nm",
+                "name": "B168"
+            },
+            {
+                "center_wavelength": 1.84058,
+                "description": "SWIR band B169",
+                "full_width_half_max": 0.0113036,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1840.5800nm, FWHM: 11.3036nm",
+                "name": "B169"
+            },
+            {
+                "center_wavelength": 1.85068,
+                "description": "SWIR band B170",
+                "full_width_half_max": 0.0112696,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1850.6800nm, FWHM: 11.2696nm",
+                "name": "B170"
+            },
+            {
+                "center_wavelength": 1.86078,
+                "description": "SWIR band B171",
+                "full_width_half_max": 0.0112363,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1860.7800nm, FWHM: 11.2363nm",
+                "name": "B171"
+            },
+            {
+                "center_wavelength": 1.87087,
+                "description": "SWIR band B172",
+                "full_width_half_max": 0.0112007,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1870.8700nm, FWHM: 11.2007nm",
+                "name": "B172"
+            },
+            {
+                "center_wavelength": 1.88098,
+                "description": "SWIR band B173",
+                "full_width_half_max": 0.0111666,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1880.9800nm, FWHM: 11.1666nm",
+                "name": "B173"
+            },
+            {
+                "center_wavelength": 1.89107,
+                "description": "SWIR band B174",
+                "full_width_half_max": 0.0111333,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1891.0700nm, FWHM: 11.1333nm",
+                "name": "B174"
+            },
+            {
+                "center_wavelength": 1.900117,
+                "description": "SWIR band B175",
+                "full_width_half_max": 0.0111018,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1901.1700nm, FWHM: 11.1018nm",
+                "name": "B175"
+            },
+            {
+                "center_wavelength": 1.91127,
+                "description": "SWIR band B176",
+                "full_width_half_max": 0.0110714,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1911.2700nm, FWHM: 11.0714nm",
+                "name": "B176"
+            },
+            {
+                "center_wavelength": 1.92137,
+                "description": "SWIR band B177",
+                "full_width_half_max": 0.0110424,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1921.3700nm, FWHM: 11.0424nm",
+                "name": "B177"
+            },
+            {
+                "center_wavelength": 1.93147,
+                "description": "SWIR band B178",
+                "full_width_half_max": 0.0110155,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1931.4700nm, FWHM: 11.0155nm",
+                "name": "B178"
+            },
+            {
+                "center_wavelength": 1.94157,
+                "description": "SWIR band B179",
+                "full_width_half_max": 0.0109912,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1941.5700nm, FWHM: 10.9912nm",
+                "name": "B179"
+            },
+            {
+                "center_wavelength": 1.95157,
+                "description": "SWIR band B180",
+                "full_width_half_max": 0.0109698,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1951.5700nm, FWHM: 10.9698nm",
+                "name": "B180"
+            },
+            {
+                "center_wavelength": 1.96166,
+                "description": "SWIR band B181",
+                "full_width_half_max": 0.0109508,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1961.6600nm, FWHM: 10.9508nm",
+                "name": "B181"
+            },
+            {
+                "center_wavelength": 1.97176,
+                "description": "SWIR band B182",
+                "full_width_half_max": 0.0109355,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1971.7600nm, FWHM: 10.9355nm",
+                "name": "B182"
+            },
+            {
+                "center_wavelength": 1.98186,
+                "description": "SWIR band B183",
+                "full_width_half_max": 0.010923,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1981.8600nm, FWHM: 10.9230nm",
+                "name": "B183"
+            },
+            {
+                "center_wavelength": 1.99196,
+                "description": "SWIR band B184",
+                "full_width_half_max": 0.0109139,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "1991.9600nm, FWHM: 10.9139nm",
+                "name": "B184"
+            },
+            {
+                "center_wavelength": 2.00206,
+                "description": "SWIR band B185",
+                "full_width_half_max": 0.0109083,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "2002.0600nm, FWHM: 10.9083nm",
+                "name": "B185"
+            },
+            {
+                "center_wavelength": 2.01215,
+                "description": "SWIR band B186",
+                "full_width_half_max": 0.0109069,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "2012.1500nm, FWHM: 10.9069nm",
+                "name": "B186"
+            },
+            {
+                "center_wavelength": 2.02225,
+                "description": "SWIR band B187",
+                "full_width_half_max": 0.0109057,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "2022.2500nm, FWHM: 10.9057nm",
+                "name": "B187"
+            },
+            {
+                "center_wavelength": 2.03235,
+                "description": "SWIR band B188",
+                "full_width_half_max": 0.0109013,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "2032.3500nm, FWHM: 10.9013nm",
+                "name": "B188"
+            },
+            {
+                "center_wavelength": 2.04245,
+                "description": "SWIR band B189",
+                "full_width_half_max": 0.0108951,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "2042.4500nm, FWHM: 10.8951nm",
+                "name": "B189"
+            },
+            {
+                "center_wavelength": 2.05245,
+                "description": "SWIR band B190",
+                "full_width_half_max": 0.0108854,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "2052.4500nm, FWHM: 10.8854nm",
+                "name": "B190"
+            },
+            {
+                "center_wavelength": 2.06255,
+                "description": "SWIR band B191",
+                "full_width_half_max": 0.010874,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "2062.5500nm, FWHM: 10.8740nm",
+                "name": "B191"
+            },
+            {
+                "center_wavelength": 2.07265,
+                "description": "SWIR band B192",
+                "full_width_half_max": 0.0108591,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "2072.6500nm, FWHM: 10.8591nm",
+                "name": "B192"
+            },
+            {
+                "center_wavelength": 2.08275,
+                "description": "SWIR band B193",
+                "full_width_half_max": 0.0108429,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "2082.7500nm, FWHM: 10.8429nm",
+                "name": "B193"
+            },
+            {
+                "center_wavelength": 2.09284,
+                "description": "SWIR band B194",
+                "full_width_half_max": 0.0108242,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "2092.8400nm, FWHM: 10.8242nm",
+                "name": "B194"
+            },
+            {
+                "center_wavelength": 2.10294,
+                "description": "SWIR band B195",
+                "full_width_half_max": 0.0108039,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "2102.9400nm, FWHM: 10.8039nm",
+                "name": "B195",
+                "common_name": "swir22"
+            },
+            {
+                "center_wavelength": 2.11304,
+                "description": "SWIR band B196",
+                "full_width_half_max": 0.010782,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "2113.0400nm, FWHM: 10.7820nm",
+                "name": "B196",
+                "common_name": "swir22"
+            },
+            {
+                "center_wavelength": 2.12314,
+                "description": "SWIR band B197",
+                "full_width_half_max": 0.0107592,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "2123.1400nm, FWHM: 10.7592nm",
+                "name": "B197",
+                "common_name": "swir22"
+            },
+            {
+                "center_wavelength": 2.13324,
+                "description": "SWIR band B198",
+                "full_width_half_max": 0.0107342,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "2133.2400nm, FWHM: 10.7342nm",
+                "name": "B198",
+                "common_name": "swir22"
+            },
+            {
+                "center_wavelength": 2.14334,
+                "description": "SWIR band B199",
+                "full_width_half_max": 0.0107092,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "2143.3400nm, FWHM: 10.7092nm",
+                "name": "B199",
+                "common_name": "swir22"
+            },
+            {
+                "center_wavelength": 2.15334,
+                "description": "SWIR band B200",
+                "full_width_half_max": 0.0106834,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "2153.3400nm, FWHM: 10.6834nm",
+                "name": "B200",
+                "common_name": "swir22"
+            },
+            {
+                "center_wavelength": 2.16343,
+                "description": "SWIR band B201",
+                "full_width_half_max": 0.0106572,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "2163.4300nm, FWHM: 10.6572nm",
+                "name": "B201",
+                "common_name": "swir22"
+            },
+            {
+                "center_wavelength": 2.17353,
+                "description": "SWIR band B202",
+                "full_width_half_max": 0.0106312,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "2173.5300nm, FWHM: 10.6312nm",
+                "name": "B202",
+                "common_name": "swir22"
+            },
+            {
+                "center_wavelength": 2.18363,
+                "description": "SWIR band B203",
+                "full_width_half_max": 0.0106052,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "2183.6300nm, FWHM: 10.6052nm",
+                "name": "B203",
+                "common_name": "swir22"
+            },
+            {
+                "center_wavelength": 2.19373,
+                "description": "SWIR band B204",
+                "full_width_half_max": 0.0105803,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "2193.7300nm, FWHM: 10.5803nm",
+                "name": "B204",
+                "common_name": "swir22"
+            },
+            {
+                "center_wavelength": 2.20383,
+                "description": "SWIR band B205",
+                "full_width_half_max": 0.010556,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "2203.8300nm, FWHM: 10.5560nm",
+                "name": "B205",
+                "common_name": "swir22"
+            },
+            {
+                "center_wavelength": 2.21393,
+                "description": "SWIR band B206",
+                "full_width_half_max": 0.0105328,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "2213.9300nm, FWHM: 10.5328nm",
+                "name": "B206",
+                "common_name": "swir22"
+            },
+            {
+                "center_wavelength": 2.22403,
+                "description": "SWIR band B207",
+                "full_width_half_max": 0.0105101,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "2224.0300nm, FWHM: 10.5101nm",
+                "name": "B207",
+                "common_name": "swir22"
+            },
+            {
+                "center_wavelength": 2.23412,
+                "description": "SWIR band B208",
+                "full_width_half_max": 0.0104904,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "2234.1200nm, FWHM: 10.4904nm",
+                "name": "B208",
+                "common_name": "swir22"
+            },
+            {
+                "center_wavelength": 2.24422,
+                "description": "SWIR band B209",
+                "full_width_half_max": 0.0104722,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "2244.2200nm, FWHM: 10.4722nm",
+                "name": "B209",
+                "common_name": "swir22"
+            },
+            {
+                "center_wavelength": 2.25422,
+                "description": "SWIR band B210",
+                "full_width_half_max": 0.0104552,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "2254.2200nm, FWHM: 10.4552nm",
+                "name": "B210",
+                "common_name": "swir22"
+            },
+            {
+                "center_wavelength": 2.26432,
+                "description": "SWIR band B211",
+                "full_width_half_max": 0.0104408,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "2264.3200nm, FWHM: 10.4408nm",
+                "name": "B211",
+                "common_name": "swir22"
+            },
+            {
+                "center_wavelength": 2.27442,
+                "description": "SWIR band B212",
+                "full_width_half_max": 0.0104285,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "2274.4200nm, FWHM: 10.4285nm",
+                "name": "B212",
+                "common_name": "swir22"
+            },
+            {
+                "center_wavelength": 2.28452,
+                "description": "SWIR band B213",
+                "full_width_half_max": 0.0104197,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "2284.5200nm, FWHM: 10.4197nm",
+                "name": "B213",
+                "common_name": "swir22"
+            },
+            {
+                "center_wavelength": 2.29461,
+                "description": "SWIR band B214",
+                "full_width_half_max": 0.0104129,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "2294.6100nm, FWHM: 10.4129nm",
+                "name": "B214",
+                "common_name": "swir22"
+            },
+            {
+                "center_wavelength": 2.30471,
+                "description": "SWIR band B215",
+                "full_width_half_max": 0.0104088,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "2304.7100nm, FWHM: 10.4088nm",
+                "name": "B215"
+            },
+            {
+                "center_wavelength": 2.31481,
+                "description": "SWIR band B216",
+                "full_width_half_max": 0.0104077,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "2314.8100nm, FWHM: 10.4077nm",
+                "name": "B216"
+            },
+            {
+                "center_wavelength": 2.32491,
+                "description": "SWIR band B217",
+                "full_width_half_max": 0.0104077,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "2324.9100nm, FWHM: 10.4077nm",
+                "name": "B217"
+            },
+            {
+                "center_wavelength": 2.33501,
+                "description": "SWIR band B218",
+                "full_width_half_max": 0.0104077,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "2335.0100nm, FWHM: 10.4077nm",
+                "name": "B218"
+            },
+            {
+                "center_wavelength": 2.34511,
+                "description": "SWIR band B219",
+                "full_width_half_max": 0.0104077,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "2345.1100nm, FWHM: 10.4077nm",
+                "name": "B219"
+            },
+            {
+                "center_wavelength": 2.35521,
+                "description": "SWIR band B220",
+                "full_width_half_max": 0.0104077,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "2355.2100nm, FWHM: 10.4077nm",
+                "name": "B220"
+            },
+            {
+                "center_wavelength": 2.3652,
+                "description": "SWIR band B221",
+                "full_width_half_max": 0.0104077,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "2365.2000nm, FWHM: 10.4077nm",
+                "name": "B221"
+            },
+            {
+                "center_wavelength": 2.3753,
+                "description": "SWIR band B222",
+                "full_width_half_max": 0.0104077,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "2375.3000nm, FWHM: 10.4077nm",
+                "name": "B222"
+            },
+            {
+                "center_wavelength": 2.3854,
+                "description": "SWIR band B223",
+                "full_width_half_max": 0.0104077,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "2385.4000nm, FWHM: 10.4077nm",
+                "name": "B223"
+            },
+            {
+                "center_wavelength": 2.3955,
+                "description": "SWIR band B224",
+                "full_width_half_max": 0.0104077,
+                "gee:units": "W/m^2 SR&mu;m",
+                "gee:wavelength": "2395.5000nm, FWHM: 10.4077nm",
+                "name": "B224"
+            }
+        ],
+        "gee:schema": [
+            {
+                "description": "Indicator of whether image was corrected for abnormal pixels: 'Y' or 'N'",
+                "name": "ABNORMAL_PIXELS",
+                "type": "STRING"
+            },
+            {
+                "description": "Correction method used by L1G in creating image: 'CPF' (for CPF bias) or\n'NONE' (for no bias used)",
+                "name": "CORRECTION_METHOD_BIAS",
+                "type": "STRING"
+            },
+            {
+                "description": "Correction method used by L1G in creating the image: 'CPF' (for CPF bias)\nor 'NONE' (for no bias used)",
+                "name": "CORRECTION_METHOD_GAIN",
+                "type": "STRING"
+            },
+            {
+                "description": "Archive-generated external element file name for Calibration Parameter File",
+                "name": "CPF_FILE_NAME",
+                "type": "STRING"
+            },
+            {
+                "description": "Date and hour of contact period start",
+                "name": "DATEHOUR_CONTACT_PERIOD",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "DPS processing version number",
+                "name": "DPS_VERSION_NUMBER",
+                "type": "STRING"
+            },
+            {
+                "description": "Indicates the primary source (if any) of Digital Elevation Model (DEM)\nused in the correction process: 'N' (no correction applied), 'SRTM-2',\n'SRTM-1', 'NED', 'DTED', or 'GTOPO30'\n",
+                "name": "ELEVATION_SOURCE",
+                "type": "STRING"
+            },
+            {
+                "description": "EO-1 X-band used to downlink data to LGS",
+                "name": "EO1_XBAND",
+                "type": "STRING"
+            },
+            {
+                "description": "Identifier to inform user of orbital ephemeris type used: 'ACS',\n'DEFINITIVE', 'GPS', or 'PREDICTIVE'",
+                "name": "EPHEMERIS_TYPE",
+                "type": "STRING"
+            },
+            {
+                "description": "Ground station that received data",
+                "name": "GROUND_STATION",
+                "type": "STRING"
+            },
+            {
+                "description": "Indicator of whether image was corrected for inoperable or out of spec\ndetectors: 'Y' or 'N'",
+                "name": "INOPERABLE_DETECTORS",
+                "type": "STRING"
+            },
+            {
+                "description": "L1G processing system and software version",
+                "name": "PROCESSING_SOFTWARE",
+                "type": "STRING"
+            },
+            {
+                "description": "L1G system date and time when metadata file for L1G product set was created.",
+                "name": "PRODUCT_CREATION_TIME",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Identifier to inform user of product type: 'L1GS' or 'L1GST'",
+                "name": "PRODUCT_TYPE",
+                "type": "STRING"
+            },
+            {
+                "description": "Resampling option used in creating image: 'NN' or 'CC'",
+                "name": "RESAMPLING_OPTION",
+                "type": "STRING"
+            },
+            {
+                "description": "Scaling factor used to convert calibrated DN to radiance units for bands 77-224",
+                "name": "SCALING_FACTOR_SWIR",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Scaling factor used to convert calibrated DN to radiance units for bands 8-57",
+                "name": "SCALING_FACTOR_VNIR",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "The look angle is the angle between nadir and the center of the\ncollected image. It is zero when the collected data are centered at the\nnadir point. The angle when descending is positive when the sensor is\npointing east, negative when the sensor is pointing west of nadir.\n-90 - 90\n",
+                "name": "SENSOR_LOOK_ANGLE",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Indicator of whether image was corrected for striping: 'Y' or 'N'",
+                "name": "STRIPING",
+                "type": "STRING"
+            },
+            {
+                "description": "Sun azimuth angle in degrees for image center location at image\ncenter acquisition time. -180 through 180 where a\npositive value indicates angles to the east or clockwise from north and a\nnegative value indicates angles to the west or counterclockwise from\nnorth.\n",
+                "name": "SUN_AZIMUTH",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Sun elevation angle in degrees for image center location at\nimage center acquisition time. -90 through 90 where a\npositive value indicates a daytime scene and a negative value indicates a\nnighttime scene.\n",
+                "name": "SUN_ELEVATION",
+                "type": "DOUBLE"
+            }
+        ],
+        "gsd": [
+            30
+        ],
+        "instruments": [
+            "Hyperion"
+        ],
+        "platform": [
+            "EO-1"
+        ]
+    },
+    "title": "EO-1 Hyperion Hyperspectral Imager",
+    "type": "Collection",
+    "cube:dimensions": {
+        "x": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                -180,
+                180
+            ]
+        },
+        "y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                -90,
+                90
+            ]
+        },
+        "t": {
+            "type": "temporal",
+            "extent": [
+                "2001-05-01T00:00:00Z",
+                "2017-03-13T00:00:00Z"
+            ]
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "B008",
+                "B009",
+                "B010",
+                "B011",
+                "B012",
+                "B013",
+                "B014",
+                "B015",
+                "B016",
+                "B017",
+                "B018",
+                "B019",
+                "B020",
+                "B021",
+                "B022",
+                "B023",
+                "B024",
+                "B025",
+                "B026",
+                "B027",
+                "B028",
+                "B029",
+                "B030",
+                "B031",
+                "B032",
+                "B033",
+                "B034",
+                "B035",
+                "B036",
+                "B037",
+                "B038",
+                "B039",
+                "B040",
+                "B041",
+                "B042",
+                "B043",
+                "B044",
+                "B045",
+                "B046",
+                "B047",
+                "B048",
+                "B049",
+                "B050",
+                "B051",
+                "B052",
+                "B053",
+                "B054",
+                "B055",
+                "B056",
+                "B057",
+                "B077",
+                "B078",
+                "B079",
+                "B080",
+                "B081",
+                "B082",
+                "B083",
+                "B084",
+                "B085",
+                "B086",
+                "B087",
+                "B088",
+                "B089",
+                "B090",
+                "B091",
+                "B092",
+                "B093",
+                "B094",
+                "B095",
+                "B096",
+                "B097",
+                "B098",
+                "B099",
+                "B100",
+                "B101",
+                "B102",
+                "B103",
+                "B104",
+                "B105",
+                "B106",
+                "B107",
+                "B108",
+                "B109",
+                "B110",
+                "B111",
+                "B112",
+                "B113",
+                "B114",
+                "B115",
+                "B116",
+                "B117",
+                "B118",
+                "B119",
+                "B120",
+                "B121",
+                "B122",
+                "B123",
+                "B124",
+                "B125",
+                "B126",
+                "B127",
+                "B128",
+                "B129",
+                "B130",
+                "B131",
+                "B132",
+                "B133",
+                "B134",
+                "B135",
+                "B136",
+                "B137",
+                "B138",
+                "B139",
+                "B140",
+                "B141",
+                "B142",
+                "B143",
+                "B144",
+                "B145",
+                "B146",
+                "B147",
+                "B148",
+                "B149",
+                "B150",
+                "B151",
+                "B152",
+                "B153",
+                "B154",
+                "B155",
+                "B156",
+                "B157",
+                "B158",
+                "B159",
+                "B160",
+                "B161",
+                "B162",
+                "B163",
+                "B164",
+                "B165",
+                "B166",
+                "B167",
+                "B168",
+                "B169",
+                "B170",
+                "B171",
+                "B172",
+                "B173",
+                "B174",
+                "B175",
+                "B176",
+                "B177",
+                "B178",
+                "B179",
+                "B180",
+                "B181",
+                "B182",
+                "B183",
+                "B184",
+                "B185",
+                "B186",
+                "B187",
+                "B188",
+                "B189",
+                "B190",
+                "B191",
+                "B192",
+                "B193",
+                "B194",
+                "B195",
+                "B196",
+                "B197",
+                "B198",
+                "B199",
+                "B200",
+                "B201",
+                "B202",
+                "B203",
+                "B204",
+                "B205",
+                "B206",
+                "B207",
+                "B208",
+                "B209",
+                "B210",
+                "B211",
+                "B212",
+                "B213",
+                "B214",
+                "B215",
+                "B216",
+                "B217",
+                "B218",
+                "B219",
+                "B220",
+                "B221",
+                "B222",
+                "B223",
+                "B224"
+            ]
+        }
+    },
+    "assets": {
+        "preview_4": {
+            "href": "https://developers.google.com/earth-engine/datasets/images/EO1/EO1_HYPERION_sample.png",
+            "type": "image/png",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    }
+}

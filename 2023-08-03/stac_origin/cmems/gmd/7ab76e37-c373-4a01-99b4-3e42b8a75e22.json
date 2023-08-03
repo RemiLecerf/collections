@@ -1,0 +1,67 @@
+{
+  "type": "Collection",
+  "id": "7ab76e37-c373-4a01-99b4-3e42b8a75e22",
+  "stac_version": "1.0.0",
+  "description": "'''Short description:''' \n \nThe CMEMS Reprocessed (REP) Mediterranean (MED) dataset provides a stable and consistent long-term Sea Surface Temperature (SST) time series over the Mediterranean Sea (and the adjacent North Atlantic box) developed for climate applications. This product consists of daily (nighttime), optimally interpolated (L4), satellite-based estimates of the foundation SST (namely, the temperature free, or nearly-free, of any diurnal cycle) at 0.05° resolution grid covering the period from January 1st 1982 to present (currently, up to six months before real time). The MED-REP-L4 product is built from a consistent reprocessing of the collated level-3 (merged single-sensor, L3C) climate data record provided by the ESA Climate Change Initiative (CCI) and the Copernicus Climate Change Service (C3S) initiatives, but also includes in input an adjusted version of the AVHRR Pathfinder dataset version 5.3 to increase the input observation coverage.\n\n'''DOI (product) :'''   \nhttps://doi.org/10.48670/moi-00173",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&service=SST_MED_SST_L4_REP_OBSERVATIONS_010_021-TDS&product=cmems_SST_MED_SST_L4_REP_OBSERVATIONS_010_021",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_SST_MED_SST_L4_REP_OBSERVATIONS_010_021"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/dodsC/cmems_SST_MED_SST_L4_REP_OBSERVATIONS_010_021",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_SST_MED_SST_L4_REP_OBSERVATIONS_010_021"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://my.cmems-du.eu/Core/SST_MED_SST_L4_REP_OBSERVATIONS_010_021/cmems_SST_MED_SST_L4_REP_OBSERVATIONS_010_021",
+      "type": "WWW:FTP",
+      "title": "cmems_SST_MED_SST_L4_REP_OBSERVATIONS_010_021"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/wms/cmems_SST_MED_SST_L4_REP_OBSERVATIONS_010_021",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_SST_MED_SST_L4_REP_OBSERVATIONS_010_021"
+    }
+  ],
+  "title": "Mediterranean Sea - High Resolution L4 Sea Surface Temperature Reprocessed",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -18.12,
+          30.25,
+          36.25,
+          46.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1982-01-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "providers": [
+    {
+      "name": "Copernicus Marine Service",
+      "description": "Copernicus Marine Service - Mercator Ocean Internations",
+      "roles": [
+        "licensor",
+        "producer",
+        "processor",
+        "host"
+      ],
+      "url": "https://marine.copernicus.eu/"
+    }
+  ]
+}

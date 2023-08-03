@@ -1,0 +1,185 @@
+{
+    "assets": {
+        "metadata_iso_19139": {
+            "href": "https://services.terrascope.be/collectioncatalogue/srv/api/records/urn:eop:VITO:ESA_WORLDCEREAL_ACTIVECROPLAND_V1/formatters/xml?approved=true",
+            "roles": [
+                "metadata",
+                "iso-19139"
+            ],
+            "title": "ISO 19139 metadata",
+            "type": "application/vnd.iso.19139+xml"
+        },
+        "thumbnail": {
+            "href": "https://services.terrascope.be/collectioncatalogue/images/quicklooks/ESA_WORLDCEREAL_ACTIVECROPLAND_QL.png",
+            "roles": [
+                "thumbnail"
+            ],
+            "title": "Thumbnail",
+            "type": "image/jpeg"
+        }
+    },
+    "cube:dimensions": {
+        "bands": {
+            "type": "bands",
+            "values": [
+                "classification"
+            ]
+        },
+        "t": {
+            "extent": [
+                "2020-01-01T00:00:00Z",
+                "2021-12-31T00:00:00Z"
+            ],
+            "type": "temporal"
+        },
+        "x": {
+            "axis": "x",
+            "extent": [
+                -180.00446428571428,
+                179.9955357
+            ],
+            "reference_system": 4326,
+            "step": 8.3333333333e-05,
+            "type": "spatial"
+        },
+        "y": {
+            "axis": "y",
+            "extent": [
+                -59.9955357,
+                80.0044643
+            ],
+            "reference_system": 4326,
+            "step": 8.3333333333e-05,
+            "type": "spatial"
+        }
+    },
+    "description": "The WorldCereal active cropland products provide binary maps for all growing seasons as defined by the WorldCereal global crop calendars, showing where active cropland has been detected. Seasonal active cropland is defined by the WorldCereal system as actively cultivated cropland during a specific growing season. In order for a pixel to be labeled as active during a particular growing season, a full crop growth cycle (sowing, growing, senescence and harvesting) needs to take place within the designated time period. Note that this active marker is not crop-type specific and only consider specific seasonality. This also means in practice that any crop grown (slightly) outside the predefined growing seasons will not be flagged as active cropland in any of the seasons covered by these products. The WorldCereal active cropland products were generated within the respective annual temporary crops mask.",
+    "experimental": true,
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180.0,
+                    -90.0,
+                    180.0,
+                    90.0
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2020-01-01T00:00:00Z",
+                    "2021-12-31T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "id": "ESA_WORLDCEREAL_ACTIVECROPLAND",
+    "item_assets": {
+        "classification": {
+            "eo:bands": [
+                {
+                    "description": "classification band",
+                    "name": "classification"
+                }
+            ],
+            "gsd": 10,
+            "proj:epsg": 4326,
+            "raster:bands": [
+                {
+                    "classification:classes": [
+                        {
+                            "description": "pixel not marked as maize",
+                            "name": "not active"
+                        },
+                        {
+                            "description": "classified as maize in the respective season",
+                            "name": "active",
+                            "value": 100
+                        },
+                        {
+                            "description": "not crop",
+                            "name": "not crop",
+                            "value": 254
+                        }
+                    ]
+                }
+            ],
+            "title": "classification tiff",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        }
+    },
+    "keywords": [
+        "VITO",
+        "COPERNICUS",
+        "ESA",
+        "WorldCereal",
+        "Sentinel-2",
+        "Environment",
+        "Cropland",
+        "Agriculture"
+    ],
+    "license": "CC-BY-4.0",
+    "links": [
+        {
+            "href": "https://services.terrascope.be/collectioncatalogue/srv/eng/catalog.search#/metadata/urn:eop:VITO:ESA_WORLDCEREAL_ACTIVECROPLAND_V1",
+            "rel": "alternate",
+            "title": "Collection Catalogue Entry"
+        },
+        {
+            "href": "https://esa-worldcereal.org/en",
+            "rel": "alternate",
+            "title": "Online Information Website"
+        },
+        {
+            "href": "https://services.terrascope.be/catalogue/description.geojson?collection=urn:eop:VITO:ESA_WORLDCEREAL_ACTIVECROPLAND_V1",
+            "rel": "alternate",
+            "title": "OpenSearch entry point"
+        }
+    ],
+    "providers": [
+        {
+            "name": "ESA",
+            "roles": [
+                "licensor"
+            ],
+            "url": "https://esa-worldcereal.org"
+        },
+        {
+            "description": "VITO remote sensing lead the consortium that produced the WorldCereal product on behalf of ESA. VITO also hosts the resulting archive.",
+            "name": "VITO",
+            "processing:level": "L4",
+            "processing:software": {
+                "WorldCereal": "1.0"
+            },
+            "roles": [
+                "producer",
+                "host"
+            ]
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/datacube/v2.2.0/schema.json",
+        "https://stac-extensions.github.io/eo/v1.1.0/schema.json"
+    ],
+    "stac_version": "0.9.0",
+    "summaries": {
+        "eo:bands": [
+            {
+                "bitPerValue": 8,
+                "name": "CLASSIFICATION",
+                "resolution": 10,
+                "scaleFactor": 1.0,
+                "title": "CLASSIFICATION"
+            }
+        ],
+        "instruments": [
+            "MSI"
+        ],
+        "platform": [
+            "Sentinel-2"
+        ]
+    },
+    "title": "ESA WorldCereal active cropland"
+}

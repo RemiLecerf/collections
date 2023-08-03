@@ -1,0 +1,92 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dct="http://purl.org/dc/terms/" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://land.copernicus.vgt.vito.be:8443//geonetwork/metadata/urn:cgls:global:lwq_v1_1km_offline">
+        <foaf:primaryTopic rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/resource/urn:cgls:global:lwq_v1_1km_offline"/>
+        <dct:issued>2022-03-16</dct:issued>
+        <dct:modified>2022-03-16</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://land.copernicus.vgt.vito.be:8443//geonetwork/srv/eng/xml.metadata.get?uuid=urn:cgls:global:lwq_v1_1km_offline">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://land.copernicus.vgt.vito.be:8443//geonetwork?uuid=urn:cgls:global:lwq_v1_1km_offline">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://land.copernicus.vgt.vito.be:8443//geonetwork/resource/urn:cgls:global:lwq_v1_1km_offline">
+        <dct:identifier>urn:cgls:global:lwq_v1_1km_offline</dct:identifier>
+        <dct:title>Lake Water Quality: global 10-daily Offline (raster 1km) - version 1, May 2018</dct:title>
+        <dct:abstract>Monitoring water quality in lakes and reservoirs is key in maintaining safe water for drinking, bathing, fishing and agriculture and aquaculture activities. Long-term trends and short-term changes are indicators of environmental health and changes in the water catchment area. Directives such as the EU's Water Framework Directive or the US EPA Clean Water Act request information about the ecological status of all lakes larger than 50 ha. Satellite monitoring helps to systematically cover a large number of lakes and reservoirs, reducing needs for monitoring infrastructure (e.g. vessels) and efforts. 
+
+The Lake Water Quality products provide a semi-continuous observation record for a large number of medium and large-sized lakes, according to the Global Lakes and Wetlands Database (GLWD) or otherwise of specific environmental monitoring interest. 
+
+They consist of three water quality parameters: (i) the turbidity of a lake, that describes water clarity or whether sunlight can penetrate deeper parts of the lake. Turbidity often varies seasonally, both with the discharge of rivers and growth of phytoplankton; (ii) the trophic state index that is an indicator of the productivity of a lake in terms of phytoplankton, and indirectly, over longer time scales, reflects the eutrophication status of a water body and (iii)  the lake surface reflectances that describe the apparent colour of the water body and are intended for scientific users interested in further development of algorithms. The visual reflectance bands can also be combined into true-colour images.</dct:abstract>
+        <dcat:keyword>EARTH_SCIENCE-OCEANS-OCEAN_OPTICS-WATER-LEAVING RADIANCE;EARTH_SCIENCE-TERRESTRIAL_HYDROSPHERE-WATER_QUALITY_WATER_CHEMISTRY-CHLOROPHYLL</dcat:keyword>
+        <dcat:keyword>SUSPENDED_SOLIDS</dcat:keyword>
+        <dcat:keyword>TURBIDITY</dcat:keyword>
+        <dcat:keyword>GLOBE</dcat:keyword>
+        <dcat:keyword>Dekad</dcat:keyword>
+        <dcat:keyword>9 days, 0:00:00 composite</dcat:keyword>
+        <dcat:theme rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/thesaurus/GEMET%20-%20INSPIRE%20themes%2C%20version%201.0/Orthoimagery"/>
+        <dcat:theme rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/thesaurus/GEMET%20-%20Concepts%2C%20version%202.1/water"/>
+        <dcat:theme rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/thesaurus/GEMET%20-%20Concepts%2C%20version%202.1/algal bloom"/>
+        <dcat:theme rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/thesaurus/GEMET%20-%20Concepts%2C%20version%202.1/aquatic environment"/>
+        <dcat:theme rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/thesaurus/GEMET%20-%20Concepts%2C%20version%202.1/freshwater"/>
+        <dcat:theme rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/thesaurus/GEMET%20-%20Concepts%2C%20version%202.1/freshwater quality"/>
+        <dcat:theme rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/thesaurus/GEMET%20-%20Concepts%2C%20version%202.1/inland water"/>
+        <dcat:theme rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/thesaurus/GEMET%20-%20Concepts%2C%20version%202.1/lagoon"/>
+        <dcat:theme rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/thesaurus/GEMET%20-%20Concepts%2C%20version%202.1/lake"/>
+        <dcat:theme rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/thesaurus/GEMET%20-%20Concepts%2C%20version%202.1/dam"/>
+        <dcat:theme rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/thesaurus/GEMET%20-%20Concepts%2C%20version%202.1/phytoplankton"/>
+        <dcat:theme rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/thesaurus/GEMET%20-%20Concepts%2C%20version%202.1/turbidity"/>
+        <dcat:theme rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/thesaurus/GEMET%20-%20Concepts%2C%20version%202.1/water monitoring"/>
+        <dcat:theme rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/thesaurus/GEMET%20-%20Concepts%2C%20version%202.1/water quality"/>
+        <dcat:theme rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/thesaurus/GEMET%20-%20Concepts%2C%20version%202.1/water reservoir"/>
+        <dcat:theme rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/thesaurus/GEMET%20-%20Concepts%2C%20version%202.1/climate"/>
+        <dcat:theme rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/thesaurus/GEMET%20-%20Concepts%2C%20version%202.1/seasonal variation"/>
+        <dcat:theme rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/thesaurus/GEMET%20-%20Concepts%2C%20version%202.1/environmental data"/>
+        <dcat:theme rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/thesaurus/GEMET%20-%20Concepts%2C%20version%202.1/environmental monitoring"/>
+        <dcat:theme rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/thesaurus/GEMET%20-%20Concepts%2C%20version%202.1/monitoring"/>
+        <dcat:theme rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/thesaurus/GEMET%20-%20Concepts%2C%20version%202.1/remote sensing"/>
+        <dcat:theme rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/thesaurus/Copernicus%20Themes/Water"/>
+        <dcat:theme rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/thesaurus/Copernicus%20Variables/Lake Water Quality"/>
+        <dcat:theme rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/thesaurus/iso/topicCategory/environment"/>
+        <foaf:thumbnail rdf:resource="https://land.copernicus.vgt.vito.be/geonetwork/srv/api/records/urn:cgls:global:lwq_v1_1km_offline/attachments/LakeWaterQuality.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((-179.995833333 -89.9958333333, -179.995833333 89.9958333333, 179.995833333 89.9958333333, 179.995833333 -89.9958333333, -179.995833333 -89.9958333333))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:temporal>2002-05-01
+          /
+          2012-03-31</dct:temporal>
+        <dct:issued>2012-01-10</dct:issued>
+        <dct:publisher rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/organization/BC"/>
+        <dct:publisher rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/organization/PML"/>
+        <dct:publisher rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/organization/PML"/>
+        <dct:publisher rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/organization/BC"/>
+        <dct:accrualPeriodicity>asNeeded</dct:accrualPeriodicity>
+        <dct:license>copyright</dct:license>
+        <dct:license>otherRestrictions</dct:license>
+        <dct:license>(d) the confidentiality of commercial or industrial information, where such confidentiality is provided for by national or Community law to protect a legitimate economic interest, including the public interest in maintaining statistical confidentiality and tax secrecy.</dct:license>
+        <dcat:distribution rdf:resource="https://land.copernicus.eu/global/access"/>
+        <dcat:distribution rdf:resource="https://land.copernicus.eu/global/products/"/>
+        <dcat:distribution rdf:resource="http://eoportal.eumetsat.int"/>
+        <dct:relation rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/metadata/"/>
+        <dcat:dataQuality>The input data are the 9 days, 0:00:00 Top measured by the MERIS sensor.</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+    

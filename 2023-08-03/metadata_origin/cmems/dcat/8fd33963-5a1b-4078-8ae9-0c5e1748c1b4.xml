@@ -1,0 +1,63 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:dct="http://purl.org/dc/terms/" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/8fd33963-5a1b-4078-8ae9-0c5e1748c1b4">
+        <foaf:primaryTopic rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/resource/8fd33963-5a1b-4078-8ae9-0c5e1748c1b4"/>
+        <dct:issued>2022-07-04</dct:issued>
+        <dct:modified>2022-07-04</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/srv/eng/xml.metadata.get?uuid=8fd33963-5a1b-4078-8ae9-0c5e1748c1b4">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork?uuid=8fd33963-5a1b-4078-8ae9-0c5e1748c1b4">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/resource/8fd33963-5a1b-4078-8ae9-0c5e1748c1b4">
+        <dct:identifier>8fd33963-5a1b-4078-8ae9-0c5e1748c1b4</dct:identifier>
+        <dct:title>Arctic Ocean - Sea and Ice Surface Temperature</dct:title>
+        <dct:abstract>'''Short description:'''
+
+Arctic Sea and Ice surface temperature product based upon observations from the Metop_A AVHRR instrument. The product is a daily interpolated field with a 0.05 degrees resolution, and covers surface temperatures in the ocean, the sea ice and the marginal ice zone.
+
+'''DOI (product) :'''   
+https://doi.org/10.48670/moi-00130</dct:abstract>
+        <dcat:theme rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/thesaurus/iso/topicCategory/oceans"/>
+        <foaf:thumbnail rdf:resource="https://catalogue.marine.copernicus.eu/documents/IMG/SEAICE_ARC_SEAICE_L4_NRT_OBSERVATIONS_011_008.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((-180.00 58.00, -180.00 90.00, 180.00 90.00, 180.00 58.00, -180.00 58.00))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:issued>2014-12-11</dct:issued>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/OSI-METNO-OSLO-NO%20%28SD%29"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/OSI-METNO-OSLO-NO%20%28PM%29"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/OSI-METNO-OSLO-NO%20%28WPL%29"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/SIW-DMI-COPENHAGEN-DK"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/SIW-METNO-OSLO-NO"/>
+        <dct:accrualPeriodicity>daily</dct:accrualPeriodicity>
+        <dct:license>otherRestrictions</dct:license>
+        <dct:license>license</dct:license>
+        <dct:license>No limitations on public access</dct:license>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=SEAICE_ARC_SEAICE_L4_NRT_OBSERVATIONS_011_008-TDS&amp;product=DMI-ARC-SEAICE_TEMP-L4-NRT-OBS"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/thredds/dodsC/DMI-ARC-SEAICE_TEMP-L4-NRT-OBS"/>
+        <dcat:distribution rdf:resource="ftp://nrt.cmems-du.eu/Core/SEAICE_ARC_SEAICE_L4_NRT_OBSERVATIONS_011_008/DMI-ARC-SEAICE_TEMP-L4-NRT-OBS"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/thredds/wms/DMI-ARC-SEAICE_TEMP-L4-NRT-OBS"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/0e19e931-fe4e-484f-a2a0-7fcd869e4df7"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/721a0ad1-823d-40b1-b003-bc2a406f3a61"/>
+        <dcat:dataQuality>The myOcean products depends on other products for production or validation. The detailed list of dependencies is given in ISO19115's aggregationInfo (ISO19139 Xpath = "gmd:MD_Metadata/gmd:identificationInfo/gmd:aggregationInfo[./gmd:MD_AggregateInformation/gmd:initiativeType/gmd:DS_InitiativeTypeCode/@codeListValue='upstream-validation' or 'upstream-production']")</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+    

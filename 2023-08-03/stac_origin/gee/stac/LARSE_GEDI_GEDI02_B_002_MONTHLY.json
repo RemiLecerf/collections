@@ -1,0 +1,939 @@
+{
+    "description": "GEDI Level 2B Canopy Cover and Vertical Profile Metrics product (GEDI02_B)\nextracts biophysical metrics from each GEDI waveform. These metrics\nare based on the directional gap probability profile derived from the L1B\nwaveform.\n\nThe vertical step between foliage profile measurements\n(known as dZ in GEDI documentation) is always 5 meters.\n\nThe dataset LARSE/GEDI/GEDI02_B_002_MONTHLY is a raster version\nof the original GEDI02_B product. The raster images are organized as monthly\ncomposites of individual orbits in the corresponding month. Only root-level\ncover, pai and pavd values and their associated quality flags and metadata\nare preserved as raster bands. Each GEDI02_B_002 raster has 109 bands.\n\nSee [User Guide](https://lpdaac.usgs.gov/documents/986/GEDI02_UserGuide_V2.pdf)\nfor more information.\n\nThe Global Ecosystem Dynamics Investigation [GEDI](https://gedi.umd.edu/)\nmission aims to characterize ecosystem structure and dynamics to enable\nradically improved quantification and understanding of the Earth's carbon cycle\nand biodiversity. The GEDI instrument, attached to the International Space\nStation (ISS), collects data globally between 51.6&deg; N and 51.6&deg; S\nlatitudes at the highest resolution and densest sampling of the\n3-dimensional structure of the Earth. The GEDI instrument consists of three\nlasers producing a total of eight beam ground transects, which instantaneously\nsample eight ~25 m footprints spaced approximately every 60 m along-track.\n\nProduct                 | Description\n:---------------------  | :----------------------------------------------\nL2A Vector         | [LARSE/GEDI/GEDI02_A_002](LARSE_GEDI_GEDI02_A_002)\nL2A Monthly raster | [LARSE/GEDI/GEDI02_A_002_MONTHLY](LARSE_GEDI_GEDI02_A_002_MONTHLY)\nL2A table index    | [LARSE/GEDI/GEDI02_A_002_INDEX](LARSE_GEDI_GEDI02_A_002_INDEX)\nL2B Vector         | [LARSE/GEDI/GEDI02_B_002](LARSE_GEDI_GEDI02_B_002)\nL2B Monthly raster | [LARSE/GEDI/GEDI02_B_002_MONTHLY](LARSE_GEDI_GEDI02_B_002_MONTHLY)\nL2B table index    | [LARSE/GEDI/GEDI02_B_002_INDEX](LARSE_GEDI_GEDI02_B_002_INDEX)\nL4A Biomass Vector | [LARSE/GEDI/GEDI04_A_002](LARSE_GEDI_GEDI04_A_002)\nL4A Monthly raster | [LARSE/GEDI/GEDI04_A_002_MONTHLY](LARSE_GEDI_GEDI04_A_002_MONTHLY)\nL4A table index    | [LARSE/GEDI/GEDI04_A_002_INDEX](LARSE_GEDI_GEDI04_A_002_INDEX)\nL4B Biomass        | [LARSE/GEDI/GEDI04_B_002](LARSE_GEDI_GEDI04_B_002)",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -51.6,
+                    180,
+                    51.6
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2019-03-25T00:00:00Z",
+                    "2022-12-01T08:00:00"
+                ]
+            ]
+        }
+    },
+    "gee:terms_of_use": "This dataset is in the public domain and is available\nwithout restriction on use and distribution. See [NASA's\nEarth Science Data & Information Policy]\n(https://science.nasa.gov/earth-science/earth-science-data/data-information-policy)\nfor additional information.\n",
+    "gee:type": "image_collection",
+    "id": "LARSE/GEDI/GEDI02_B_002_MONTHLY",
+    "keywords": [
+        "elevation",
+        "gedi",
+        "larse",
+        "nasa",
+        "tree_cover",
+        "usgs"
+    ],
+    "license": "proprietary",
+    "links": [
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections/LARSE/GEDI/GEDI02_B_002_MONTHLY",
+            "rel": "self",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections",
+            "rel": "parent",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/",
+            "rel": "root",
+            "type": "application/json"
+        },
+        {
+            "code": "JavaScript",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/LARSE/LARSE_GEDI_GEDI02_B_002_MONTHLY",
+            "rel": "related",
+            "title": "Run the example for LARSE/GEDI/GEDI02_B_002_MONTHLY in the Earth Engine Code Editor",
+            "type": "text/html"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/images/LARSE/LARSE_GEDI_GEDI02_B_002_MONTHLY_sample.png",
+            "rel": "preview",
+            "type": "image/png"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/LARSE_GEDI_GEDI02_B_002_MONTHLY#terms-of-use",
+            "rel": "license",
+            "type": "text/html"
+        }
+    ],
+    "providers": [
+        {
+            "name": "Rasterization: Google and USFS Laboratory for Applications of Remote Sensing in Ecology (LARSE)",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.fs.usda.gov/"
+        },
+        {
+            "name": "NASA GEDI mission, accessed through the USGS LP DAAC",
+            "roles": [
+                "processor"
+            ],
+            "url": "https://lpdaac.usgs.gov/products/gedi02_av002/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/LARSE_GEDI_GEDI02_B_002_MONTHLY"
+        }
+    ],
+    "stac_extensions": [
+        "collection-assets"
+    ],
+    "stac_version": "1.0.0",
+    "summaries": {
+        "algorithmrun_flag": {
+            "maximum": 1
+        },
+        "beam": {
+            "maximum": 11
+        },
+        "cover": {
+            "maximum": 1
+        },
+        "cover_z0": {
+            "maximum": 1
+        },
+        "cover_z1": {
+            "maximum": 1
+        },
+        "cover_z10": {
+            "maximum": 1
+        },
+        "cover_z11": {
+            "maximum": 1
+        },
+        "cover_z12": {
+            "maximum": 1
+        },
+        "cover_z13": {
+            "maximum": 1
+        },
+        "cover_z14": {
+            "maximum": 1
+        },
+        "cover_z15": {
+            "maximum": 1
+        },
+        "cover_z16": {
+            "maximum": 1
+        },
+        "cover_z17": {
+            "maximum": 1
+        },
+        "cover_z18": {
+            "maximum": 1
+        },
+        "cover_z19": {
+            "maximum": 1
+        },
+        "cover_z2": {
+            "maximum": 1
+        },
+        "cover_z20": {
+            "maximum": 1
+        },
+        "cover_z21": {
+            "maximum": 1
+        },
+        "cover_z22": {
+            "maximum": 1
+        },
+        "cover_z23": {
+            "maximum": 1
+        },
+        "cover_z24": {
+            "maximum": 1
+        },
+        "cover_z25": {
+            "maximum": 1
+        },
+        "cover_z26": {
+            "maximum": 1
+        },
+        "cover_z27": {
+            "maximum": 1
+        },
+        "cover_z28": {
+            "maximum": 1
+        },
+        "cover_z29": {
+            "maximum": 1
+        },
+        "cover_z3": {
+            "maximum": 1
+        },
+        "cover_z30": {
+            "maximum": 1
+        },
+        "cover_z4": {
+            "maximum": 1
+        },
+        "cover_z5": {
+            "maximum": 1
+        },
+        "cover_z6": {
+            "maximum": 1
+        },
+        "cover_z7": {
+            "maximum": 1
+        },
+        "cover_z8": {
+            "maximum": 1
+        },
+        "cover_z9": {
+            "maximum": 1
+        },
+        "degrade_flag": {
+            "maximum": 99
+        },
+        "eo:bands": [
+            {
+                "description": "The L2B algorithm is run if this flag is set to 1 indicating data have\nsufficient waveform fidelity for L2B to run.\n",
+                "name": "algorithmrun_flag"
+            },
+            {
+                "description": "Beam number",
+                "name": "beam"
+            },
+            {
+                "description": "Total canopy cover",
+                "gee:units": "%",
+                "name": "cover"
+            },
+            {
+                "description": "Flag indicating degraded state of pointing and/or\npositioning information.\n\n* 3X - ADF CHU solution unavailable (ST-2)\n* 4X - Platform attitude\n* 5X - Poor solution (filter covariance large)\n* 6X - Data outage (platform attitude gap also)\n* 7X - ST 1+2 unavailable (similar boresight FOV)\n* 8X - ST 1+2+3 unavailable\n* 9X - ST 1+2+3 and ISS unavailable\n* X1 - Maneuver\n* X2 - GPS data gap\n* X3 - ST blinding\n* X4 - Other\n* X5 - GPS receiver clock drift\n* X6 - Maneuver & GPS receiver clock drift\n* X7 - GPS data gap & GPS receiver clock drift\n* X8 - ST blinding & GPS receiver clock drift\n* X9 - Other & GPS receiver clock drift\n",
+                "name": "degrade_flag"
+            },
+            {
+                "description": "Transmit time of the shot, measured in seconds from the\nmaster_time_epoch since 2018-01-01\n",
+                "gee:units": "seconds",
+                "name": "delta_time"
+            },
+            {
+                "description": "Foliage Height Diversity",
+                "name": "fhd_normal"
+            },
+            {
+                "description": "L2B quality flag",
+                "gee:units": "Quality Flag",
+                "name": "l2b_quality_flag"
+            },
+            {
+                "description": "Azimuth of the unit pointing vector for the laser in the local ENU\nframe measured from North and positive towards East.\n",
+                "gee:units": "rad",
+                "name": "local_beam_azimuth"
+            },
+            {
+                "description": "Elevation of the unit pointing vector for the laser in the local ENU\nframe measured from East-North plane and positive towards Up.\n",
+                "gee:units": "rad",
+                "name": "local_beam_elevation"
+            },
+            {
+                "description": "Total Plant Area Index",
+                "gee:units": "1 (area fraction)",
+                "name": "pai"
+            },
+            {
+                "description": "Total Gap Probability (theta)",
+                "name": "pgap_theta"
+            },
+            {
+                "description": "Selected L2A algorithm setting",
+                "name": "selected_l2a_algorithm"
+            },
+            {
+                "description": "Selected R (ground) algorithm",
+                "name": "selected_rg_algorithm"
+            },
+            {
+                "description": "Maxmimum canopy cover that can be penetrated",
+                "name": "sensitivity"
+            },
+            {
+                "description": "The azimuth of the sun position vector from the laser bounce point\nposition in the local ENU frame measured from North and is positive\ntowards East.\n",
+                "gee:units": "deg",
+                "name": "solar_azimuth"
+            },
+            {
+                "description": "The elevation of the sun position vector from the laser bounce point\nposition in the local ENU frame measured from the East-North plane and\nis positive Up.\n",
+                "gee:units": "deg",
+                "name": "solar_elevation"
+            },
+            {
+                "description": "Shot number, a unique identifier.\nThis field has the format of OOOOOBBRRGNNNNNNNN, where:\n\n* OOOOO: Orbit number\n* BB: Beam number\n* RR: Reserved for future use\n* G: Sub-orbit granule number\n* NNNNNNNN: Shot index\n",
+                "name": "shot_number"
+            },
+            {
+                "description": "Shot number within beam",
+                "name": "shot_number_within_beam"
+            },
+            {
+                "description": "Cumulative canopy cover vertical profile at 0%",
+                "gee:units": "%",
+                "name": "cover_z0"
+            },
+            {
+                "description": "Cumulative canopy cover vertical profile at 1%",
+                "gee:units": "%",
+                "name": "cover_z1"
+            },
+            {
+                "description": "Cumulative canopy cover vertical profile at 2%",
+                "gee:units": "%",
+                "name": "cover_z2"
+            },
+            {
+                "description": "Cumulative canopy cover vertical profile at 3%",
+                "gee:units": "%",
+                "name": "cover_z3"
+            },
+            {
+                "description": "Cumulative canopy cover vertical profile at 4%",
+                "gee:units": "%",
+                "name": "cover_z4"
+            },
+            {
+                "description": "Cumulative canopy cover vertical profile at 5%",
+                "gee:units": "%",
+                "name": "cover_z5"
+            },
+            {
+                "description": "Cumulative canopy cover vertical profile at 6%",
+                "gee:units": "%",
+                "name": "cover_z6"
+            },
+            {
+                "description": "Cumulative canopy cover vertical profile at 7%",
+                "gee:units": "%",
+                "name": "cover_z7"
+            },
+            {
+                "description": "Cumulative canopy cover vertical profile at 8%",
+                "gee:units": "%",
+                "name": "cover_z8"
+            },
+            {
+                "description": "Cumulative canopy cover vertical profile at 9%",
+                "gee:units": "%",
+                "name": "cover_z9"
+            },
+            {
+                "description": "Cumulative canopy cover vertical profile at 10%",
+                "gee:units": "%",
+                "name": "cover_z10"
+            },
+            {
+                "description": "Cumulative canopy cover vertical profile at 11%",
+                "gee:units": "%",
+                "name": "cover_z11"
+            },
+            {
+                "description": "Cumulative canopy cover vertical profile at 12%",
+                "gee:units": "%",
+                "name": "cover_z12"
+            },
+            {
+                "description": "Cumulative canopy cover vertical profile at 13%",
+                "gee:units": "%",
+                "name": "cover_z13"
+            },
+            {
+                "description": "Cumulative canopy cover vertical profile at 14%",
+                "gee:units": "%",
+                "name": "cover_z14"
+            },
+            {
+                "description": "Cumulative canopy cover vertical profile at 15%",
+                "gee:units": "%",
+                "name": "cover_z15"
+            },
+            {
+                "description": "Cumulative canopy cover vertical profile at 16%",
+                "gee:units": "%",
+                "name": "cover_z16"
+            },
+            {
+                "description": "Cumulative canopy cover vertical profile at 17%",
+                "gee:units": "%",
+                "name": "cover_z17"
+            },
+            {
+                "description": "Cumulative canopy cover vertical profile at 18%",
+                "gee:units": "%",
+                "name": "cover_z18"
+            },
+            {
+                "description": "Cumulative canopy cover vertical profile at 19%",
+                "gee:units": "%",
+                "name": "cover_z19"
+            },
+            {
+                "description": "Cumulative canopy cover vertical profile at 20%",
+                "gee:units": "%",
+                "name": "cover_z20"
+            },
+            {
+                "description": "Cumulative canopy cover vertical profile at 21%",
+                "gee:units": "%",
+                "name": "cover_z21"
+            },
+            {
+                "description": "Cumulative canopy cover vertical profile at 22%",
+                "gee:units": "%",
+                "name": "cover_z22"
+            },
+            {
+                "description": "Cumulative canopy cover vertical profile at 23%",
+                "gee:units": "%",
+                "name": "cover_z23"
+            },
+            {
+                "description": "Cumulative canopy cover vertical profile at 24%",
+                "gee:units": "%",
+                "name": "cover_z24"
+            },
+            {
+                "description": "Cumulative canopy cover vertical profile at 25%",
+                "gee:units": "%",
+                "name": "cover_z25"
+            },
+            {
+                "description": "Cumulative canopy cover vertical profile at 26%",
+                "gee:units": "%",
+                "name": "cover_z26"
+            },
+            {
+                "description": "Cumulative canopy cover vertical profile at 27%",
+                "gee:units": "%",
+                "name": "cover_z27"
+            },
+            {
+                "description": "Cumulative canopy cover vertical profile at 28%",
+                "gee:units": "%",
+                "name": "cover_z28"
+            },
+            {
+                "description": "Cumulative canopy cover vertical profile at 29%",
+                "gee:units": "%",
+                "name": "cover_z29"
+            },
+            {
+                "description": "Cumulative canopy cover vertical profile at 30%",
+                "gee:units": "%",
+                "name": "cover_z30"
+            },
+            {
+                "description": "Plant Area Index profile in 0 m&sup2;/m&sup2;",
+                "gee:units": "1 (area fraction)",
+                "name": "pai_z0"
+            },
+            {
+                "description": "Plant Area Index profile in 1 m&sup2;/m&sup2;",
+                "gee:units": "1 (area fraction)",
+                "name": "pai_z1"
+            },
+            {
+                "description": "Plant Area Index profile in 2 m&sup2;/m&sup2;",
+                "gee:units": "1 (area fraction)",
+                "name": "pai_z2"
+            },
+            {
+                "description": "Plant Area Index profile in 3 m&sup2;/m&sup2;",
+                "gee:units": "1 (area fraction)",
+                "name": "pai_z3"
+            },
+            {
+                "description": "Plant Area Index profile in 4 m&sup2;/m&sup2;",
+                "gee:units": "1 (area fraction)",
+                "name": "pai_z4"
+            },
+            {
+                "description": "Plant Area Index profile in 5 m&sup2;/m&sup2;",
+                "gee:units": "1 (area fraction)",
+                "name": "pai_z5"
+            },
+            {
+                "description": "Plant Area Index profile in 6 m&sup2;/m&sup2;",
+                "gee:units": "1 (area fraction)",
+                "name": "pai_z6"
+            },
+            {
+                "description": "Plant Area Index profile in 7 m&sup2;/m&sup2;",
+                "gee:units": "1 (area fraction)",
+                "name": "pai_z7"
+            },
+            {
+                "description": "Plant Area Index profile in 8 m&sup2;/m&sup2;",
+                "gee:units": "1 (area fraction)",
+                "name": "pai_z8"
+            },
+            {
+                "description": "Plant Area Index profile in 9 m&sup2;/m&sup2;",
+                "gee:units": "1 (area fraction)",
+                "name": "pai_z9"
+            },
+            {
+                "description": "Plant Area Index profile in 10 m&sup2;/m&sup2;",
+                "gee:units": "1 (area fraction)",
+                "name": "pai_z10"
+            },
+            {
+                "description": "Plant Area Index profile in 11 m&sup2;/m&sup2;",
+                "gee:units": "1 (area fraction)",
+                "name": "pai_z11"
+            },
+            {
+                "description": "Plant Area Index profile in 12 m&sup2;/m&sup2;",
+                "gee:units": "1 (area fraction)",
+                "name": "pai_z12"
+            },
+            {
+                "description": "Plant Area Index profile in 13 m&sup2;/m&sup2;",
+                "gee:units": "1 (area fraction)",
+                "name": "pai_z13"
+            },
+            {
+                "description": "Plant Area Index profile in 14 m&sup2;/m&sup2;",
+                "gee:units": "1 (area fraction)",
+                "name": "pai_z14"
+            },
+            {
+                "description": "Plant Area Index profile in 15 m&sup2;/m&sup2;",
+                "gee:units": "1 (area fraction)",
+                "name": "pai_z15"
+            },
+            {
+                "description": "Plant Area Index profile in 16 m&sup2;/m&sup2;",
+                "gee:units": "1 (area fraction)",
+                "name": "pai_z16"
+            },
+            {
+                "description": "Plant Area Index profile in 17 m&sup2;/m&sup2;",
+                "gee:units": "1 (area fraction)",
+                "name": "pai_z17"
+            },
+            {
+                "description": "Plant Area Index profile in 18 m&sup2;/m&sup2;",
+                "gee:units": "1 (area fraction)",
+                "name": "pai_z18"
+            },
+            {
+                "description": "Plant Area Index profile in 19 m&sup2;/m&sup2;",
+                "gee:units": "1 (area fraction)",
+                "name": "pai_z19"
+            },
+            {
+                "description": "Plant Area Index profile in 20 m&sup2;/m&sup2;",
+                "gee:units": "1 (area fraction)",
+                "name": "pai_z20"
+            },
+            {
+                "description": "Plant Area Index profile in 21 m&sup2;/m&sup2;",
+                "gee:units": "1 (area fraction)",
+                "name": "pai_z21"
+            },
+            {
+                "description": "Plant Area Index profile in 22 m&sup2;/m&sup2;",
+                "gee:units": "1 (area fraction)",
+                "name": "pai_z22"
+            },
+            {
+                "description": "Plant Area Index profile in 23 m&sup2;/m&sup2;",
+                "gee:units": "1 (area fraction)",
+                "name": "pai_z23"
+            },
+            {
+                "description": "Plant Area Index profile in 24 m&sup2;/m&sup2;",
+                "gee:units": "1 (area fraction)",
+                "name": "pai_z24"
+            },
+            {
+                "description": "Plant Area Index profile in 25 m&sup2;/m&sup2;",
+                "gee:units": "1 (area fraction)",
+                "name": "pai_z25"
+            },
+            {
+                "description": "Plant Area Index profile in 26 m&sup2;/m&sup2;",
+                "gee:units": "1 (area fraction)",
+                "name": "pai_z26"
+            },
+            {
+                "description": "Plant Area Index profile in 27 m&sup2;/m&sup2;",
+                "gee:units": "1 (area fraction)",
+                "name": "pai_z27"
+            },
+            {
+                "description": "Plant Area Index profile in 28 m&sup2;/m&sup2;",
+                "gee:units": "1 (area fraction)",
+                "name": "pai_z28"
+            },
+            {
+                "description": "Plant Area Index profile in 29 m&sup2;/m&sup2;",
+                "gee:units": "1 (area fraction)",
+                "name": "pai_z29"
+            },
+            {
+                "description": "Plant Area Index profile in 30 m&sup2;/m&sup2;",
+                "gee:units": "1 (area fraction)",
+                "name": "pai_z30"
+            },
+            {
+                "description": "Plant Area Volume Density profile in 0 m&sup2;/m&sup3;",
+                "gee:units": "m^2/m^3",
+                "name": "pavd_z0"
+            },
+            {
+                "description": "Plant Area Volume Density profile in 1 m&sup2;/m&sup3;",
+                "gee:units": "m^2/m^3",
+                "name": "pavd_z1"
+            },
+            {
+                "description": "Plant Area Volume Density profile in 2 m&sup2;/m&sup3;",
+                "gee:units": "m^2/m^3",
+                "name": "pavd_z2"
+            },
+            {
+                "description": "Plant Area Volume Density profile in 3 m&sup2;/m&sup3;",
+                "gee:units": "m^2/m^3",
+                "name": "pavd_z3"
+            },
+            {
+                "description": "Plant Area Volume Density profile in 4 m&sup2;/m&sup3;",
+                "gee:units": "m^2/m^3",
+                "name": "pavd_z4"
+            },
+            {
+                "description": "Plant Area Volume Density profile in 5 m&sup2;/m&sup3;",
+                "gee:units": "m^2/m^3",
+                "name": "pavd_z5"
+            },
+            {
+                "description": "Plant Area Volume Density profile in 6 m&sup2;/m&sup3;",
+                "gee:units": "m^2/m^3",
+                "name": "pavd_z6"
+            },
+            {
+                "description": "Plant Area Volume Density profile in 7 m&sup2;/m&sup3;",
+                "gee:units": "m^2/m^3",
+                "name": "pavd_z7"
+            },
+            {
+                "description": "Plant Area Volume Density profile in 8 m&sup2;/m&sup3;",
+                "gee:units": "m^2/m^3",
+                "name": "pavd_z8"
+            },
+            {
+                "description": "Plant Area Volume Density profile in 9 m&sup2;/m&sup3;",
+                "gee:units": "m^2/m^3",
+                "name": "pavd_z9"
+            },
+            {
+                "description": "Plant Area Volume Density profile in 10 m&sup2;/m&sup3;",
+                "gee:units": "m^2/m^3",
+                "name": "pavd_z10"
+            },
+            {
+                "description": "Plant Area Volume Density profile in 11 m&sup2;/m&sup3;",
+                "gee:units": "m^2/m^3",
+                "name": "pavd_z11"
+            },
+            {
+                "description": "Plant Area Volume Density profile in 12 m&sup2;/m&sup3;",
+                "gee:units": "m^2/m^3",
+                "name": "pavd_z12"
+            },
+            {
+                "description": "Plant Area Volume Density profile in 13 m&sup2;/m&sup3;",
+                "gee:units": "m^2/m^3",
+                "name": "pavd_z13"
+            },
+            {
+                "description": "Plant Area Volume Density profile in 14 m&sup2;/m&sup3;",
+                "gee:units": "m^2/m^3",
+                "name": "pavd_z14"
+            },
+            {
+                "description": "Plant Area Volume Density profile in 15 m&sup2;/m&sup3;",
+                "gee:units": "m^2/m^3",
+                "name": "pavd_z15"
+            },
+            {
+                "description": "Plant Area Volume Density profile in 16 m&sup2;/m&sup3;",
+                "gee:units": "m^2/m^3",
+                "name": "pavd_z16"
+            },
+            {
+                "description": "Plant Area Volume Density profile in 17 m&sup2;/m&sup3;",
+                "gee:units": "m^2/m^3",
+                "name": "pavd_z17"
+            },
+            {
+                "description": "Plant Area Volume Density profile in 18 m&sup2;/m&sup3;",
+                "gee:units": "m^2/m^3",
+                "name": "pavd_z18"
+            },
+            {
+                "description": "Plant Area Volume Density profile in 19 m&sup2;/m&sup3;",
+                "gee:units": "m^2/m^3",
+                "name": "pavd_z19"
+            },
+            {
+                "description": "Plant Area Volume Density profile in 20 m&sup2;/m&sup3;",
+                "gee:units": "m^2/m^3",
+                "name": "pavd_z20"
+            },
+            {
+                "description": "Plant Area Volume Density profile in 21 m&sup2;/m&sup3;",
+                "gee:units": "m^2/m^3",
+                "name": "pavd_z21"
+            },
+            {
+                "description": "Plant Area Volume Density profile in 22 m&sup2;/m&sup3;",
+                "gee:units": "m^2/m^3",
+                "name": "pavd_z22"
+            },
+            {
+                "description": "Plant Area Volume Density profile in 23 m&sup2;/m&sup3;",
+                "gee:units": "m^2/m^3",
+                "name": "pavd_z23"
+            },
+            {
+                "description": "Plant Area Volume Density profile in 24 m&sup2;/m&sup3;",
+                "gee:units": "m^2/m^3",
+                "name": "pavd_z24"
+            },
+            {
+                "description": "Plant Area Volume Density profile in 25 m&sup2;/m&sup3;",
+                "gee:units": "m^2/m^3",
+                "name": "pavd_z25"
+            },
+            {
+                "description": "Plant Area Volume Density profile in 26 m&sup2;/m&sup3;",
+                "gee:units": "m^2/m^3",
+                "name": "pavd_z26"
+            },
+            {
+                "description": "Plant Area Volume Density profile in 27 m&sup2;/m&sup3;",
+                "gee:units": "m^2/m^3",
+                "name": "pavd_z27"
+            },
+            {
+                "description": "Plant Area Volume Density profile in 28 m&sup2;/m&sup3;",
+                "gee:units": "m^2/m^3",
+                "name": "pavd_z28"
+            },
+            {
+                "description": "Plant Area Volume Density profile in 29 m&sup2;/m&sup3;",
+                "gee:units": "m^2/m^3",
+                "name": "pavd_z29"
+            },
+            {
+                "description": "Plant Area Volume Density profile in 30 m&sup2;/m&sup3;",
+                "gee:units": "m^2/m^3",
+                "name": "pavd_z30"
+            }
+        ],
+        "gsd": [
+            25
+        ],
+        "l2b_quality_flag": {
+            "maximum": 1
+        },
+        "local_beam_azimuth": {
+            "maximum": 180,
+            "minimum": -180
+        },
+        "local_beam_elevation": {
+            "maximum": 1.57,
+            "minimum": 1.39
+        },
+        "pgap_theta": {
+            "maximum": 1
+        },
+        "selected_l2a_algorithm": {
+            "maximum": 6,
+            "minimum": 1
+        },
+        "selected_rg_algorithm": {
+            "maximum": 99
+        },
+        "sensitivity": {
+            "maximum": 1
+        },
+        "solar_azimuth": {
+            "maximum": 180,
+            "minimum": -180
+        },
+        "solar_elevation": {
+            "maximum": 90,
+            "minimum": -90
+        }
+    },
+    "title": "GEDI L2B Raster Canopy Cover Vertical Profile Metrics (Version 2)",
+    "type": "Collection",
+    "version": "2",
+    "cube:dimensions": {
+        "x": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                -180,
+                180
+            ]
+        },
+        "y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                -51.6,
+                51.6
+            ]
+        },
+        "t": {
+            "type": "temporal",
+            "extent": [
+                "2019-03-25T00:00:00Z",
+                "2022-12-01T08:00:00"
+            ]
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "algorithmrun_flag",
+                "beam",
+                "cover",
+                "degrade_flag",
+                "delta_time",
+                "fhd_normal",
+                "l2b_quality_flag",
+                "local_beam_azimuth",
+                "local_beam_elevation",
+                "pai",
+                "pgap_theta",
+                "selected_l2a_algorithm",
+                "selected_rg_algorithm",
+                "sensitivity",
+                "solar_azimuth",
+                "solar_elevation",
+                "shot_number",
+                "shot_number_within_beam",
+                "cover_z0",
+                "cover_z1",
+                "cover_z2",
+                "cover_z3",
+                "cover_z4",
+                "cover_z5",
+                "cover_z6",
+                "cover_z7",
+                "cover_z8",
+                "cover_z9",
+                "cover_z10",
+                "cover_z11",
+                "cover_z12",
+                "cover_z13",
+                "cover_z14",
+                "cover_z15",
+                "cover_z16",
+                "cover_z17",
+                "cover_z18",
+                "cover_z19",
+                "cover_z20",
+                "cover_z21",
+                "cover_z22",
+                "cover_z23",
+                "cover_z24",
+                "cover_z25",
+                "cover_z26",
+                "cover_z27",
+                "cover_z28",
+                "cover_z29",
+                "cover_z30",
+                "pai_z0",
+                "pai_z1",
+                "pai_z2",
+                "pai_z3",
+                "pai_z4",
+                "pai_z5",
+                "pai_z6",
+                "pai_z7",
+                "pai_z8",
+                "pai_z9",
+                "pai_z10",
+                "pai_z11",
+                "pai_z12",
+                "pai_z13",
+                "pai_z14",
+                "pai_z15",
+                "pai_z16",
+                "pai_z17",
+                "pai_z18",
+                "pai_z19",
+                "pai_z20",
+                "pai_z21",
+                "pai_z22",
+                "pai_z23",
+                "pai_z24",
+                "pai_z25",
+                "pai_z26",
+                "pai_z27",
+                "pai_z28",
+                "pai_z29",
+                "pai_z30",
+                "pavd_z0",
+                "pavd_z1",
+                "pavd_z2",
+                "pavd_z3",
+                "pavd_z4",
+                "pavd_z5",
+                "pavd_z6",
+                "pavd_z7",
+                "pavd_z8",
+                "pavd_z9",
+                "pavd_z10",
+                "pavd_z11",
+                "pavd_z12",
+                "pavd_z13",
+                "pavd_z14",
+                "pavd_z15",
+                "pavd_z16",
+                "pavd_z17",
+                "pavd_z18",
+                "pavd_z19",
+                "pavd_z20",
+                "pavd_z21",
+                "pavd_z22",
+                "pavd_z23",
+                "pavd_z24",
+                "pavd_z25",
+                "pavd_z26",
+                "pavd_z27",
+                "pavd_z28",
+                "pavd_z29",
+                "pavd_z30"
+            ]
+        }
+    },
+    "assets": {
+        "preview_4": {
+            "href": "https://developers.google.com/earth-engine/datasets/images/LARSE/LARSE_GEDI_GEDI02_B_002_MONTHLY_sample.png",
+            "type": "image/png",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    }
+}

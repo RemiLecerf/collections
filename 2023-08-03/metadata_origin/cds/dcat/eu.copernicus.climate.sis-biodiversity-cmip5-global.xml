@@ -1,0 +1,66 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dct="http://purl.org/dc/terms/" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/metadata/eu.copernicus.climate.sis-biodiversity-cmip5-global">
+        <foaf:primaryTopic rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/resource/10.24381/cds.a37fecb7"/>
+        <dct:issued>2018-03-28</dct:issued>
+        <dct:modified>2018-03-28</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/srv/eng/xml.metadata.get?uuid=eu.copernicus.climate.sis-biodiversity-cmip5-global">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://cds.climate.copernicus.eu:443//geonetwork?uuid=eu.copernicus.climate.sis-biodiversity-cmip5-global">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/resource/10.24381/cds.a37fecb7">
+        <dct:identifier>10.24381/cds.a37fecb7</dct:identifier>
+        <dct:title>Global bioclimatic indicators from 1950 to 2100 derived from climate projections</dct:title>
+        <dct:abstract>This dataset provides global bioclimatic indicators derived from CMIP5 climate projections. These bioclimatic indicators describe how the climate affects ecosystems, the services ecosystems deliver and nature’s biodiversity. They are specifically relevant for applications within the biodiversity and ecosystem community. 
+The 78 indicators cover bioclimatic variables for both land and marine environments characterising surface energy, drought, soil moisture and the (near-)surface climate including wind as well as Essential Climate Variables (ECV). The selection of indicators is based on user requirements and consultation with stakeholders, in order to facilitate the direct use of climate information in screening analyses or in diverse downstream applications.
+The indicators calculated based on daily CMIP5 climate projections from 10 Global Circulation Models for two future climate scenarios, Representative Concentration Pathway (RCP) 4.5 &amp; RCP 8.5. The data have been additionally bias-adjusted against ERA5 reanalysis data. The temporal resolution differs depending on the indicator, varying between monthly, annual and multi-annual averages.
+This dataset was produced on behalf of the Copernicus Climate Change Service.
+
+Variables in the dataset/application are:
+Annual mean temperature (BIO01), Annual precipitation (BIO12), Aridity annual mean, Aridity coldest quarter, Aridity driest quarter, Aridity warmest quarter, Aridity wettest quarter, Cloud cover, Dry days, Evaporative fraction annual mean, Evaporative fraction coldest quarter, Evaporative fraction driest quarter, Evaporative fraction warmest quarter, Evaporative fraction wettest quarter, Frost days, Growing degree days, Growing degree days during growing season length, Growing season end of season, Growing season length, Growing season start of season, Isothermality (BIO03), Koeppen-Geiger class, Maximum 2m temperature, Maximum length of dry spells, Maximum precipitation, Maximum temperature of the warmest month (BIO05), Mean diurnal range (BIO02), Mean intensity of dry spells, Mean length of dry spells, Mean precipitation, Mean temperature of coldest quarter (BIO11), Mean temperature of driest quarter (BIO09), Mean temperature of warmest quarter (BIO10), Mean temperature of wettest quarter (BIO08), Meridional wind speed, Minimum temperature, Minimum temperature of the coldest month (BIO06), Number of dry spells, Potential evaporation annual mean, Potential evaporation coldest quarter, Potential evaporation driest quarter, Potential evaporation warmest quarter, Potential evaporation wettest quarter, Precipitation in coldest quarter (BIO19), Precipitation in driest quarter (BIO17), Precipitation in warmest quarter (BIO18), Precipitation in wettest quarter (BIO16), Precipitation of driest month (BIO14), Precipitation of wettest month (BIO13), Precipitation seasonality (BIO15), Sea ice concentration, Sea surface temperature, Summer days, Surface latent heat flux annual mean, Surface latent heat flux coldest quarter, Surface latent heat flux driest quarter, Surface latent heat flux warmest quarter, Surface latent heat flux wettest quarter, Surface sensible heat flux annual mean, Surface sensible heat flux coldest quarter, Surface sensible heat flux driest quarter, Surface sensible heat flux warmest quarter, Surface sensible heat flux wettest quarter, Temperature annual range (BIO07), Temperature seasonality (BIO04), Volumetric soil water layer 1 annual mean, Volumetric soil water layer 1 coldest quarter, Volumetric soil water layer 1 driest quarter, Volumetric soil water layer 1 warmest quarter, Volumetric soil water layer 1 wettest quarter, Water vapor pressure, Wind speed, Zonal wind speed</dct:abstract>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/GEMET%20-%20INSPIRE%20themes%2C%20version%201.0/Habitats and biotopes"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Sector: Biodiversity"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Product type: Climate projections"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Product type: Climate indicies"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Spatial coverage: Global"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Variable domain: Land (biosphere)"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Temporal coverage: Future"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Provider: Copernicus C3S"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/iso/topicCategory/climatologyMeteorologyAtmosphere"/>
+        <foaf:thumbnail rdf:resource="https://datastore.copernicus-climate.eu/c3s/published-forms-v2/c3sprod/sis-biodiversity-cmip5-global/overview.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((-180 -90, -180 90, 180 90, 180 -90, -180 -90))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:temporal>1950-01-01
+          /
+          2099-12-31</dct:temporal>
+        <dct:publisher rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/organization/ECMWF"/>
+        <dct:accrualPeriodicity>asNeeded</dct:accrualPeriodicity>
+        <dct:language>eng</dct:language>
+        <dct:license>licence</dct:license>
+        <dct:license>https://cds.climate.copernicus.eu/api/v2/terms/static/20191121_Copernicus_License_V1.2.pdf</dct:license>
+        <dcat:distribution rdf:resource="https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.a37fecb7"/>
+        <dcat:distribution rdf:resource="https://datastore.copernicus-climate.eu/documents/sis-biodiversity/C3S_D427.3.1.1_Product_user_guide-Bioclimatic_indicators_CMIP5_v2.3.pdf"/>
+        <dcat:dataQuality>EC Copernicus programme</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+    

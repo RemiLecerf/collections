@@ -1,0 +1,61 @@
+<csw:Record xmlns:dct="http://purl.org/dc/terms/" xmlns:geonet="http://www.fao.org/geonetwork" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ows="http://www.opengis.net/ows" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dc:identifier>486f77da-d605-423e-93a9-680760ab6791</dc:identifier>
+      <dc:date>2021-12-03T09:20:41.376Z</dc:date>
+      <dc:title>High Resolution Layer: Tree Cover Density 2018 (raster 10m), Sep. 2020</dc:title>
+      <dc:type>dataset</dc:type>
+      <dc:subject>Land cover</dc:subject>
+      <dc:subject>EEA38 (from 2020)</dc:subject>
+      <dc:subject>United Kingdom</dc:subject>
+      <dc:subject>land use</dc:subject>
+      <dc:subject>land cover</dc:subject>
+      <dc:subject>landscape alteration</dc:subject>
+      <dc:subject>tree</dc:subject>
+      <dc:subject>forest management</dc:subject>
+      <dc:subject>European</dc:subject>
+      <dc:subject>Land use</dc:subject>
+      <dc:subject>2018 3.6.1</dc:subject>
+      <dc:subject>environment</dc:subject>
+      <dc:subject>imageryBaseMapsEarthCover</dc:subject>
+      <dc:format>GeoTIFF</dc:format>
+      <dct:abstract>This metadata refers to the HRL Forest 2018 primary status layer Tree Cover Density (TCD). The TCD raster product provides information on the proportional crown coverage per pixel at 10m spatial resolution and ranges from 0% (all non-tree covered areas) to 100%, whereby Tree Cover Density is defined as the "vertical projection of tree crowns to a horizontal earth&#8217;s surface&#8220;. The production of the High Resolution Forest layers was coordinated by the European Environment Agency (EEA) in the frame of the EU Copernicus programme.
+
+The HRL Forest product consists of 3 types of (status) products and additional change products. The status products are available for 2012, 2015, and 2018 reference years:
+1. Tree cover density (TCD) (level of tree cover density in a range from 0-100%)
+2. Dominant leaf type (DLT) (broadleaved or coniferous majority)
+3. Forest type product (FTY). The forest type product allows to get as close as possible to the FAO forest definition. In its original (10m (2018) / 20m (2012, 2015)) resolution it consists of two products: a dominant leaf type product that has a MMU of 0.5 ha, as well as a 10% tree cover density threshold applied, and 2) a support layer that maps (now only available on demand), based on the dominant leaf type product, trees under agricultural use and in urban context (derived from CLC and imperviousness 2009 data). For the final 100 m product trees under agricultural use and urban context from the support layer are removed.
+NEW for 2018: the 10m 2018 reference year FTY product now also has the agricultural/urban trees removed. In the past this was done only for the 100m product, now it is consistently applied for both the 10m and the 100m FTY products.
+
+This dataset is provided as 10 meter rasters (fully conformant with the EEA reference grid) in 100 x 100 km tiles grouped according to the EEA38 countries and the United Kingdom.</dct:abstract>
+      <dc:description>This metadata refers to the HRL Forest 2018 primary status layer Tree Cover Density (TCD). The TCD raster product provides information on the proportional crown coverage per pixel at 10m spatial resolution and ranges from 0% (all non-tree covered areas) to 100%, whereby Tree Cover Density is defined as the "vertical projection of tree crowns to a horizontal earth&#8217;s surface&#8220;. The production of the High Resolution Forest layers was coordinated by the European Environment Agency (EEA) in the frame of the EU Copernicus programme.
+
+The HRL Forest product consists of 3 types of (status) products and additional change products. The status products are available for 2012, 2015, and 2018 reference years:
+1. Tree cover density (TCD) (level of tree cover density in a range from 0-100%)
+2. Dominant leaf type (DLT) (broadleaved or coniferous majority)
+3. Forest type product (FTY). The forest type product allows to get as close as possible to the FAO forest definition. In its original (10m (2018) / 20m (2012, 2015)) resolution it consists of two products: a dominant leaf type product that has a MMU of 0.5 ha, as well as a 10% tree cover density threshold applied, and 2) a support layer that maps (now only available on demand), based on the dominant leaf type product, trees under agricultural use and in urban context (derived from CLC and imperviousness 2009 data). For the final 100 m product trees under agricultural use and urban context from the support layer are removed.
+NEW for 2018: the 10m 2018 reference year FTY product now also has the agricultural/urban trees removed. In the past this was done only for the 100m product, now it is consistently applied for both the 10m and the 100m FTY products.
+
+This dataset is provided as 10 meter rasters (fully conformant with the EEA reference grid) in 100 x 100 km tiles grouped according to the EEA38 countries and the United Kingdom.</dc:description>
+      <dc:rights>otherRestrictions</dc:rights>
+      <dc:rights>otherRestrictions</dc:rights>
+      <dc:language>eng</dc:language>
+      <dc:source>Hierarchical spatio-temporal classification of time features derived from Sentinel-2A+B time series (Level-2A data) using a Random Forest (RF) classifier with 200 trees. The selected time window ranges from 01-03-2018 to 31-10-2018 and covers the whole reference year 2018. In total, 59 statistical time features have been calculated using more than 138,000 samples, automatically collected from the LUCAS 2018 database and various CLMS products plus additional manual sampling. First, a binary Tree Cover Mask (TCM) with 2 classes (all non-tree covered areas / tree cover) has been generated. Various post-processing steps have been applied in order to improve the quality of the mask (e.g. correction of omission errors caused by the topographic overcorrection within the native Sentinel-2 Level-2A input data). Subsequently, Tree Cover Density values have been classified within the confines of the Tree Cover Mask by a multiple linear regression algorithm using more than 33,000 samples. The final product will be accompanied by a series of quality layers (Confidence Layer, Data Score, Layer, Parent Scene Identification Layer).
+
+Quality assurance follows the ISO 9001:2015 standards for Quality Management and comprises of dedicated procedures of quality checks (QA breakpoints) during implementation of the production chain, in order to keep persistent control over the various stages of production, assure fitness-for-purpose of the end-products and that all quality requirements are fulfilled. Priority has been given to the target thematic accuracy to be achieved by each product, as well as to the issues of product consistency (spatial, thematic, temporal) and homogeneity. Quality Assessment: The quality assessment has been performed according to INSPIRE Data Specifications. The data quality elements considered are: (i) Completeness, (ii) Logical Consistency, (iii) positional accuracy, (iv) Thematic Accuracy, (v) Temporal quality and (vi) Usability.
+
+Geometric accuracy (positioning scale): Less than one pixel (10m) according to ortho-rectified satellite image base (Sentinel-2 Level-2A) delivered by ESA.
+Thematic target accuracy: 90% producer and user accuracy.
+Preliminary validation results TCD (30% density threshold): 96.43% overall accuracy with a 95% confidence level applied (no tree cover: 98.62% producer accuracy, 95.92% user accuracy; tree cover: 92.52% producer accuracy; 97.40% user accuracy).
+Thematic accuracy has been assessed using a stratified random sampling approach with 9,695 points (area weighted), visually interpreted using VHR_IMAGE_2018 data and Sentinel-2 time series data, complemented by additional data sources like virtual globes (e.g. Google Earth Pro).
+
+More information about this product can be found in the HRL Forest 2018 product specifications here: https://land.copernicus.eu/user-corner/technical-library/forest-2018-user-manual.pdf</dc:source>
+      <dc:format>GeoTIFF</dc:format>
+      <ows:BoundingBox crs="urn:ogc:def:crs:EPSG:6.6:4326">
+        <ows:LowerCorner>24.284 -56.506</ows:LowerCorner>
+        <ows:UpperCorner>72.665 72.907</ows:UpperCorner>
+      </ows:BoundingBox>
+      <dc:URI protocol="WWW:LINK-1.0-http--link">https://land.copernicus.eu/pan-european/high-resolution-layers/forests/tree-cover-density/status-maps/tree-cover-density-2018</dc:URI>
+      <dc:URI protocol="ESRI:REST">https://image.discomap.eea.europa.eu/arcgis/rest/services/GioLandPublic/HRL_TreeCoverDensity_2018/ImageServer</dc:URI>
+      <dc:URI protocol="OGC:WMS" name="" description="">https://image.discomap.eea.europa.eu/arcgis/services/GioLandPublic/HRL_TreeCoverDensity_2018/ImageServer/WMSServer?request=GetCapabilities&amp;service=WMS</dc:URI>
+      <dc:URI protocol="image/png">https://sdi.eea.europa.eu/public/catalogue-graphic-overview/486f77da-d605-423e-93a9-680760ab679.png</dc:URI>
+    </csw:Record>
+    

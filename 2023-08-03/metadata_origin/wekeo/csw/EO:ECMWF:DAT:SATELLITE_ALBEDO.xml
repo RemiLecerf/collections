@@ -1,0 +1,29 @@
+<csw:Record xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">EO:ECMWF:DAT:SATELLITE_ALBEDO</dc:identifier>
+      <dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">Surface albedo 10-daily gridded data from 1981 to present</dc:title>
+      <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/">dataset</dc:type>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Land cover</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Product type: Satellite observations</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Temporal coverage: Past</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Variable domain: Land (biosphere)</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Spatial coverage: Global</dc:subject>
+      <dc:format xmlns:dc="http://purl.org/dc/elements/1.1/">NetCDF</dc:format>
+      <dct:abstract xmlns:dct="http://purl.org/dc/terms/">This dataset provides global Earth surface albedo products. The albedo has an impact on the amount of energy that Earth absorbs from the Sun and, therefore, is an important variable in climate and weather studies.
+The surface albedo quantifies the fraction of irradiance reflected by the surface of the Earth. It provides information on the radiative basis, thus on the temperature and water balance. The directional albedo or directional-hemispherical reflectance (also called black-sky albedo) is defined as the integration of the bi-directional reflectance over the viewing hemisphere. It assumes all energy is coming from a direct radiation from the sun and is computed for the local solar noon.
+The current algorithm is applied at a 10-day frequency on daily surface reflectances acquired during a moving temporal window of 20 days. It first normalizes the reflectances through inversion of a semi-empiric, kernel-driven reflectance model and favouring the most recent observations. Directional albedo is then computed, per spectral band, by integration over the viewing hemisphere and for local solar noon. Broadband albedo is then calculated from the spectral albedo by a linear relationship.
+Multiple platform/sensors were used offering various spatial resolution and temporal coverage (1 km from SPOT-VGT and PROBA-V, 4 km from AVHRR). Products are available from 1981 to present.
+
+Variables in the dataset/application are:
+Broadband directional surface albedo (ALBB-DH), Broadband hemispherical surface albedo (ALBB-BH), Spectral directional surface albedo (ALSP-DH), Spectral hemispherical surface albedo (ALSP-BH)</dct:abstract>
+      <dct:spatial xmlns:dct="http://purl.org/dc/terms/">::EPSG:4326</dct:spatial>
+      <dc:rights xmlns:dc="http://purl.org/dc/elements/1.1/">https://cds.climate.copernicus.eu/api/v2/terms/static/vito-proba-v.pdf</dc:rights>
+      <dc:rights xmlns:dc="http://purl.org/dc/elements/1.1/">https://cds.climate.copernicus.eu/api/v2/terms/static/licence-to-use-copernicus-products.pdf</dc:rights>
+      <dc:rights xmlns:dc="http://purl.org/dc/elements/1.1/">https://cds.climate.copernicus.eu/api/v2/terms/static/Copernicus-Global-Land-product-licence.pdf</dc:rights>
+      <dc:rights xmlns:dc="http://purl.org/dc/elements/1.1/">Content accessible through the CDS may only be used under the terms of the licenses attributed to each particular resource.</dc:rights>
+      <dct:accessRights xmlns:dct="http://purl.org/dc/terms/">licence</dct:accessRights>
+      <ows:BoundingBox xmlns:ows="http://www.opengis.net/ows">
+        <ows:LowerCorner>-180 -89</ows:LowerCorner>
+        <ows:UpperCorner>180 89</ows:UpperCorner>
+      </ows:BoundingBox>
+    </csw:Record>
+    

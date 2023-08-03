@@ -1,0 +1,33 @@
+<csw:Record xmlns:ows="http://www.opengis.net/ows" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:geonet="http://www.fao.org/geonetwork" xmlns:dct="http://purl.org/dc/terms/" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dc:identifier>urn:cgls:global:tocr_v1_1km</dc:identifier>
+      <dc:date>2022-03-17T17:12:42</dc:date>
+      <dc:title>Top Of Canopy Reflectance: global 10-daily (raster 1km) - version 1, Feb 2018</dc:title>
+      <dc:type>series</dc:type>
+      <dc:subject>Orthoimagery</dc:subject>
+      <dc:subject>geophysical environment</dc:subject>
+      <dc:subject>biogeophysical</dc:subject>
+      <dc:subject>surface reflectance</dc:subject>
+      <dc:subject>normalized</dc:subject>
+      <dc:subject>GLOBE</dc:subject>
+      <dc:subject>Dekad</dc:subject>
+      <dc:subject>10-daily</dc:subject>
+      <dc:subject>imageryBaseMapsEarthCover</dc:subject>
+      <dc:subject>biota</dc:subject>
+      <dc:format>netCDF</dc:format>
+      <dct:abstract>The TOC Spectral reflectance refers to the portion of the incident energy reflected by the surface in a given spectral band and without atmospheric interferences. Because of the natural anisotropy of the land surface, reflectance depends on the illumination and viewing angular conditions. Therefore, to compare and use jointly successive observations, it is necessary to normalize the measurements into a same angular configuration. The resulting value is the normalized TOC reflectance.</dct:abstract>
+      <dc:description>The TOC Spectral reflectance refers to the portion of the incident energy reflected by the surface in a given spectral band and without atmospheric interferences. Because of the natural anisotropy of the land surface, reflectance depends on the illumination and viewing angular conditions. Therefore, to compare and use jointly successive observations, it is necessary to normalize the measurements into a same angular configuration. The resulting value is the normalized TOC reflectance.</dc:description>
+      <dc:rights>copyright</dc:rights>
+      <dc:rights>otherRestrictions</dc:rights>
+      <dc:language>eng</dc:language>
+      <dc:source>The input data are the daily Top of the Atmosphere reflectances measured at 1km resolution. They are calibrated, the clouds and their shadows are removed, and they are atmospherically-corrected to get the Top Of the Canopy reflectances. Then, a kernel-driven model is inverted over the TOC reflectances acquired during 30 days and weighted with a Gaussian function with a maximum at the end of the period, in order to remove directional effects. The results of the inversion are used as normalized Top Of Canopy spectral reflectance values for the TOC-r product.</dc:source>
+      <dc:format>netCDF</dc:format>
+      <ows:BoundingBox crs="urn:ogc:def:crs:EPSG Geodetic Parameter Dataset::EPSG:4326">
+        <ows:LowerCorner>180 -60</ows:LowerCorner>
+        <ows:UpperCorner>-180 80</ows:UpperCorner>
+      </ows:BoundingBox>
+      <dc:URI protocol="HTTP" name="Copernicus Global Land Service" description="1. Search, download and custom order products from Catalogue and Ordering services">https://land.copernicus.eu/global/products/toc-r</dc:URI>
+      <dc:URI protocol="HTTP" name="Copernicus Global Land Service" description="2. Subscribe to receive future products via e-mail">https://land.copernicus.eu/global/access</dc:URI>
+      <dc:URI name="Copernicus Global Land Service" description="3. Register to receive products via EUMETCast">http://eoportal.eumetsat.int</dc:URI>
+      <dc:URI protocol="image/jpeg" name="Top of Canopy Reflectance">https://land.copernicus.vgt.vito.be/geonetwork/srv/api/records/urn:cgls:global:tocr_v1_1km/attachments/TOC-r.jpg</dc:URI>
+    </csw:Record>
+    

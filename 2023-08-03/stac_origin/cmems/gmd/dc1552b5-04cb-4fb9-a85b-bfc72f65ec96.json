@@ -1,0 +1,55 @@
+{
+  "type": "Collection",
+  "id": "dc1552b5-04cb-4fb9-a85b-bfc72f65ec96",
+  "stac_version": "1.0.0",
+  "description": "'''DEFINITION'''\n\nThe CMEMS MEDSEA_OMI_tempsal_extreme_var_temp_mean_and_anomaly OMI indicator is based on the computation of the annual 99th percentile of Sea Surface Temperature (SST) from model data. Two different CMEMS products are used to compute the indicator: The Iberia-Biscay-Ireland Multi Year Product (MEDSEA_MULTIYEAR_PHY_006_004) and the Analysis product (MEDSEA_ANALYSISFORECAST_PHY_006_013).\nTwo parameters have been considered for this OMI:\n* Map of the 99th mean percentile: It is obtained from the Multi Year Product, the annual 99th percentile is computed for each year of the product. The percentiles are temporally averaged over the whole period (1987-2019).\n* Anomaly of the 99th percentile in 2020: The 99th percentile of the year 2020 is computed from the Near Real Time product. The anomaly is obtained by subtracting the mean percentile from the 2020 percentile.\nThis indicator is aimed at monitoring the extremes of sea surface temperature every year and at checking their variations in space. The use of percentiles instead of annual maxima, makes this extremes study less affected by individual data. This study of extreme variability was first applied to the sea level variable (Pérez Gómez et al 2016) and then extended to other essential variables, such as sea surface temperature and significant wave height (Pérez Gómez et al 2018 and Alvarez Fanjul et al., 2019). More details and a full scientific evaluation can be found in the CMEMS Ocean State report (Alvarez Fanjul et al., 2019).\n\n'''CONTEXT'''\n\nThe Sea Surface Temperature is one of the Essential Ocean Variables, hence the monitoring of this variable is of key importance, since its variations can affect the ocean circulation, marine ecosystems, and ocean-atmosphere exchange processes. As the oceans continuously interact with the atmosphere, trends of sea surface temperature can also have an effect on the global climate. In recent decades (from mid ‘80s) the Mediterranean Sea showed a trend of increasing temperatures (Ducrocq et al., 2016), which has been observed also by means of the CMEMS SST_MED_SST_L4_REP_OBSERVATIONS_010_021 satellite product and reported in the following CMEMS OMI: MEDSEA_OMI_TEMPSAL_sst_area_averaged_anomalies and MEDSEA_OMI_TEMPSAL_sst_trend.\nThe Mediterranean Sea is a semi-enclosed sea characterized by an annual average surface temperature which varies horizontally from ~14°C in the Northwestern part of the basin to ~23°C in the Southeastern areas. Large-scale temperature variations in the upper layers are mainly related to the heat exchange with the atmosphere and surrounding oceanic regions. The Mediterranean Sea annual 99th percentile presents a significant interannual and multidecadal variability with a significant increase starting from the 80’s as shown in Marbà et al. (2015) which is also in good agreement with the multidecadal change of the mean SST reported in Mariotti et al. (2012). Moreover the spatial variability of the SST 99th percentile shows large differences at regional scale (Darmariaki et al., 2019; Pastor et al. 2018).\n\n'''CMEMS KEY FINDINGS'''\n\nThe Mediterranean mean Sea Surface Temperature 99th percentile evaluated in the period 1987-2019 (upper panel) presents highest values (~ 28-30 °C) in the eastern Mediterranean-Levantine basin and along the Tunisian coasts especially in the area of the Gulf of Gabes, while the lowest (~ 23–25 °C) are found in the Gulf of Lyon (a deep water formation area), in the Alboran Sea (affected by incoming Atlantic waters) and the eastern part of the Aegean Sea (an upwelling region). These results are in agreement with previous findings in Darmariaki et al. (2019) and Pastor et al. (2018) and are consistent with the ones presented in CMEMS OSR3 (Alvarez Fanjul et al., 2019) for the period 1993-2016.\nThe 2020      Sea Surface Temperature 99th percentile anomaly map (bottom panel) shows a general positive pattern up to +3°C in the North-West Mediterranean area while colder anomalies are visible in the Gulf of Lion      and North Aegean Sea     . This Ocean Monitoring Indicator confirms the continuous warming of the SST and in particular it shows that the year 2020      is characterized by an overall increase of the extreme Sea Surface Temperature values in almost the whole domain with respect to the reference period. This finding can be probably affected      by the different dataset used to evaluate this anomaly map: the 2020      Sea Surface Temperature 99th percentile derived from the Near Real Time Analysis product compared to the mean (1987-2019) Sea Surface Temperature 99th percentile evaluated from the      Reanalysis product which, among the others, is characterized by different atmospheric forcing).\n\nNote: The key findings will be updated annually in November, in line with OMI evolutions.\n\n'''DOI (product):''' \nhttps://doi.org/10.48670/moi-00266",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "ftp://my.cmems-du.eu/Core/MEDSEA_OMI_TEMPSAL_extreme_var_temp_mean_and_anomaly/medsea_omi_tempsal_extreme_var_temp_mean_and_anomaly",
+      "type": "WWW:FTP",
+      "title": "medsea_omi_tempsal_extreme_var_temp_mean_and_anomaly"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://mdl1.marine.copernicus.eu/derived/MEDSEA_OMI_TEMPSAL_extreme_var_temp_mean_and_anomaly/medsea_omi_tempsal_extreme_var_temp_mean_and_anomaly_202112/medsea_omi_tempsal_extreme_var_temp_mean_and_anomaly.nc",
+      "type": "MYO:MOTU-DGF",
+      "title": "medsea_omi_tempsal_extreme_var_temp_mean_and_anomaly"
+    }
+  ],
+  "title": "Mediterranean Sea Surface Temperature extreme from Reanalysis",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -18.12,
+          30.19,
+          36.29,
+          45.98
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1993-01-01T00:00:00Z",
+          "2020-12-31T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "providers": [
+    {
+      "name": "Copernicus Marine Service",
+      "description": "Copernicus Marine Service - Mercator Ocean Internations",
+      "roles": [
+        "licensor",
+        "producer",
+        "processor",
+        "host"
+      ],
+      "url": "https://marine.copernicus.eu/"
+    }
+  ]
+}

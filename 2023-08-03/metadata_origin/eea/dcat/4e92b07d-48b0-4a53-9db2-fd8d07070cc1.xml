@@ -1,0 +1,159 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:dct="http://purl.org/dc/terms/" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://sdi.eea.europa.eu/catalogue/records/4e92b07d-48b0-4a53-9db2-fd8d07070cc1">
+        <foaf:primaryTopic rdf:resource="http://localhost:8080/geonetwork//copernicus_r_3035_5_m_swf-2015_p_2014-2016_v01_r00%20DAT-237-en"/>
+        <dct:conformsTo rdf:resource="https://www.iso.org/standard/32557.html"/>
+        <dct:issued>2021-06-29</dct:issued>
+        <dct:modified>2021-06-29</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://sdi.eea.europa.eu/catalogue/srv/api/records/4e92b07d-48b0-4a53-9db2-fd8d07070cc1/formatters/xml">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://sdi.eea.europa.eu/catalogue/srv/api/records/4e92b07d-48b0-4a53-9db2-fd8d07070cc1">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="http://localhost:8080/geonetwork//datasets/copernicus_r_3035_5_m_swf-2015_p_2014-2016_v01_r00 DAT-237-en">
+        <dct:identifier>copernicus_r_3035_5_m_swf-2015_p_2014-2016_v01_r00 DAT-237-en</dct:identifier>
+        <dct:title>High Resolution Layer: Small Woody Features 2015 (raster 5m), Nov. 2019</dct:title>
+        <dct:abstract>The HRL Small Woody Features (SWF) is a new Copernicus Land Monitoring Service (CMLS) product, which provides harmonized information on linear structures such as hedgerows, as well as patches (200 m² ≤ area ≤ 5000 m²) of woody features across the EEA39 countries. 
+Small woody landscape features are important vectors of biodiversity and provide information on fragmentation of habitats with a direct potential for restoration while also providing a link to hazard protection and green infrastructure, amongst others. The SWF layer contains woody linear, and small patchy elements, but is not differentiated into trees, hedges, bushes and scrub. The spatial pattern are limited to linear structures and isolated patches (patchy structures) on the basis of geometric characteristics. Additional Woody Features (AWF) are also included in this product. They consist of woody structures that do not fulfil the SWF geometric specifications but which are connected to valid SWFs structures. VHR imagery (DEIMOS-2, Pleiades 1A, Pleiades 1B, GeoEye-1, SPOT 6, SPOT 7, WorldView-2, WorldView-3 images from 2015) made available in the ESA Copernicus DWH are the main data source for the detection of small woody features identifiable within the given image resolution.
+The dataset is available for the 2015 reference year and is produced in three different formats. This metadata corresponds to the SWF 5m spatial resolution raster layer, which distinguishes between SWF (code =1) and AWF (code =3)  ). This layer is derived from the SWF vector product in order to be more in line with other HR layers, and for allowing raster processing of the results. It describes the SWF landscape according to the high resolution of the input data, but without taking into account the possible small geometric inaccuracy of the vector product (due to VHR geometric imprecision, automatic processing such as smoothing, etc.). The geometric resolution is consistent with the EEA reference grid.</dct:abstract>
+        <dcat:theme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET%20-%20INSPIRE%20themes%2C%20version%201.0/concepts/Land%20cover"/>
+        <dcat:theme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/Continents%2C%20countries%2C%20sea%20regions%20of%20the%20world./concepts/EEA39"/>
+        <dcat:theme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET/concepts/land%20cover"/>
+        <dcat:theme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET/concepts/urban%20area"/>
+        <dcat:theme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET/concepts/sealing"/>
+        <dcat:theme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET/concepts/built%20environment"/>
+        <dcat:theme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET/concepts/land%20use"/>
+        <dcat:theme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET/concepts/landscape%20alteration"/>
+        <dcat:theme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET/concepts/soil%20surface%20sealing"/>
+        <dcat:theme rdf:resource="http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/european"/>
+        <dcat:theme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/EEA%20Management%20Plan/concepts/2020%203.6.7"/>
+        <dcat:theme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/EEA%20topics/concepts/Biodiversity"/>
+        <dcat:theme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/EEA%20topics/concepts/Agriculture%20and%20food"/>
+        <dcat:theme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/EEA%20topics/concepts/Land%20use"/>
+        <dcat:theme rdf:resource="https://inspire.ec.europa.eu/metadata-codelist/TopicCategory/environment"/>
+        <dcat:theme rdf:resource="https://inspire.ec.europa.eu/metadata-codelist/TopicCategory/imageryBaseMapsEarthCover"/>
+        <foaf:thumbnail rdf:resource="https://sdi.eea.europa.eu/public/catalogue-graphic-overview/4e92b07d-48b0-4a53-9db2-fd8d07070cc1.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <geo:asWKT xmlns:geo="http://www.opengis.net/ont/geosparql#" rdf:datatype="http://www.opengis.net/rdf#wktLiteral">Polygon((-31.268814 27.638029, -31.268814 71.185417, 44.820546 71.185417, 44.820546 27.638029, -31.268814 27.638029))</geo:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:temporal>2014-01-01
+          /
+          2016-12-31</dct:temporal>
+        <dct:issued>2019-11-06</dct:issued>
+        <dct:updated>2020-03-04</dct:updated>
+        <dct:accrualPeriodicity>continual</dct:accrualPeriodicity>
+        <dct:language>eng</dct:language>
+        <dct:license>Access to data is based on a principle of full, open and free access as established by the Copernicus data and information policy Regulation (EU) No 1159/2013 of 12 July 2013. This regulation establishes registration and licensing conditions for GMES/Copernicus users.
+
+Free, full and open access to this data set is made on the conditions that:
+
+1. When distributing or communicating Copernicus dedicated data and Copernicus service information to the public, users shall inform the public of the source of that data and information.
+
+2. Users shall make sure not to convey the impression to the public that the user's activities are officially endorsed by the Union.
+
+3. Where that data or information has been adapted or modified, the user shall clearly state this.
+
+4. The data remain the sole property of the European Union. Any information and data produced in the framework of the action shall be the sole property of the European Union. Any communication and publication by the beneficiary shall acknowledge that the data were produced “with funding by the European Union”.</dct:license>
+        <dct:license rdf:resource="http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/noLimitations">no limitations to public access</dct:license>
+        <dcat:distribution rdf:resource="https://sdi.eea.europa.eu/catalogue/records/4e92b07d-48b0-4a53-9db2-fd8d07070cc1#WWW%3ALINK-1.0-http--link-"/>
+        <dcat:distribution rdf:resource="https://sdi.eea.europa.eu/catalogue/records/4e92b07d-48b0-4a53-9db2-fd8d07070cc1#OGC%3AWMS-0"/>
+        <dcat:distribution rdf:resource="https://sdi.eea.europa.eu/catalogue/records/4e92b07d-48b0-4a53-9db2-fd8d07070cc1#ESRI%3AREST-"/>
+        <dcat:dataQuality>Supervised classification and visual interpretation of linear and patchy features on pan-sharpened VHR_IMAGE_2015. Small woody landscape features are important vectors of biodiversity and provide information on fragmentation of habitats with a direct potential for restoration while also providing a link to hazard protection and green infrastructure, amongst others (code = 1). Besides, the Minimum Mapping Unit (MMU) for small patches of trees is 200 m² while the Maximum Mapping Unit (MaxMU) is defined by 5000 m². The Minimum Mapping Length (MML) of linear elements is 50 m. There is also an other distinction between this two structures: width (30 m maximum for linear instead of 30 m minimum for patchy). Additional Woody Features (code = 3) consist of woody structures that do not fulfil the SWF geometric specifications but which are connected to valid SWFs structures, as well as patchy structures too large to be considered as valid SWF. No data (code = 254). Out of Large Region limits (code = 255). Tiles NO116 (Southeast Norway) and NO119 (Northeast Norway) have been discontinued and will not be published due to lack of availability of suitable satellite data.
+Some tiles in the dataset are marked as v. 020. These tiles did first show unsatisfactory results and had to be reprocessed.
+More information on the product can be found in the technical specifications available on: https://land.copernicus.eu/user-corner/technical-library/hrl_lot5_d5-1_product-specification-document_i3-4_public-1.pdf.</dcat:dataQuality>
+      </dcat:Dataset>
+      <skos:Concept rdf:about="http://localhost:8080/geonetwork//registries/vocabularies/GEMET%20-%20INSPIRE%20themes%2C%20version%201.0/concepts/Land%20cover">
+        <skos:inScheme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET%20-%20INSPIRE%20themes%2C%20version%201.0"/>
+        <skos:prefLabel>Land cover</skos:prefLabel>
+      </skos:Concept>
+      <skos:Concept rdf:about="http://localhost:8080/geonetwork//registries/vocabularies/Continents%2C%20countries%2C%20sea%20regions%20of%20the%20world./concepts/EEA39">
+        <skos:inScheme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/Continents%2C%20countries%2C%20sea%20regions%20of%20the%20world."/>
+        <skos:prefLabel>EEA39</skos:prefLabel>
+      </skos:Concept>
+      <skos:Concept rdf:about="http://localhost:8080/geonetwork//registries/vocabularies/GEMET/concepts/land%20cover">
+        <skos:inScheme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET"/>
+        <skos:prefLabel>land cover</skos:prefLabel>
+      </skos:Concept>
+      <skos:Concept rdf:about="http://localhost:8080/geonetwork//registries/vocabularies/GEMET/concepts/urban%20area">
+        <skos:inScheme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET"/>
+        <skos:prefLabel>urban area</skos:prefLabel>
+      </skos:Concept>
+      <skos:Concept rdf:about="http://localhost:8080/geonetwork//registries/vocabularies/GEMET/concepts/sealing">
+        <skos:inScheme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET"/>
+        <skos:prefLabel>sealing</skos:prefLabel>
+      </skos:Concept>
+      <skos:Concept rdf:about="http://localhost:8080/geonetwork//registries/vocabularies/GEMET/concepts/built%20environment">
+        <skos:inScheme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET"/>
+        <skos:prefLabel>built environment</skos:prefLabel>
+      </skos:Concept>
+      <skos:Concept rdf:about="http://localhost:8080/geonetwork//registries/vocabularies/GEMET/concepts/land%20use">
+        <skos:inScheme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET"/>
+        <skos:prefLabel>land use</skos:prefLabel>
+      </skos:Concept>
+      <skos:Concept rdf:about="http://localhost:8080/geonetwork//registries/vocabularies/GEMET/concepts/landscape%20alteration">
+        <skos:inScheme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET"/>
+        <skos:prefLabel>landscape alteration</skos:prefLabel>
+      </skos:Concept>
+      <skos:Concept rdf:about="http://localhost:8080/geonetwork//registries/vocabularies/GEMET/concepts/soil%20surface%20sealing">
+        <skos:inScheme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET"/>
+        <skos:prefLabel>soil surface sealing</skos:prefLabel>
+      </skos:Concept>
+      <skos:Concept rdf:about="http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/european">
+        <skos:inScheme rdf:resource="http://inspire.ec.europa.eu/metadata-codelist/SpatialScope"/>
+        <skos:prefLabel>European</skos:prefLabel>
+      </skos:Concept>
+      <skos:Concept rdf:about="http://localhost:8080/geonetwork//registries/vocabularies/EEA%20Management%20Plan/concepts/2020%203.6.7">
+        <skos:inScheme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/EEA%20Management%20Plan"/>
+        <skos:prefLabel>2020 3.6.7</skos:prefLabel>
+      </skos:Concept>
+      <skos:Concept rdf:about="http://localhost:8080/geonetwork//registries/vocabularies/EEA%20topics/concepts/Biodiversity">
+        <skos:inScheme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/EEA%20topics"/>
+        <skos:prefLabel>Biodiversity</skos:prefLabel>
+      </skos:Concept>
+      <skos:Concept rdf:about="http://localhost:8080/geonetwork//registries/vocabularies/EEA%20topics/concepts/Agriculture%20and%20food">
+        <skos:inScheme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/EEA%20topics"/>
+        <skos:prefLabel>Agriculture and food</skos:prefLabel>
+      </skos:Concept>
+      <skos:Concept rdf:about="http://localhost:8080/geonetwork//registries/vocabularies/EEA%20topics/concepts/Land%20use">
+        <skos:inScheme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/EEA%20topics"/>
+        <skos:prefLabel>Land use</skos:prefLabel>
+      </skos:Concept>
+      <dcat:Distribution rdf:about="https://sdi.eea.europa.eu/catalogue/records/4e92b07d-48b0-4a53-9db2-fd8d07070cc1#WWW%3ALINK-1.0-http--link-">
+        <dcat:accessURL>https://land.copernicus.eu/pan-european/high-resolution-layers/small-woody-features/small-woody-features-2015</dcat:accessURL>
+        <dct:format>WWW:LINK-1.0-http--link</dct:format>
+      </dcat:Distribution>
+      <dcat:Distribution rdf:about="https://sdi.eea.europa.eu/catalogue/records/4e92b07d-48b0-4a53-9db2-fd8d07070cc1#OGC%3AWMS-0">
+        <dcat:accessURL>https://image.discomap.eea.europa.eu/arcgis/services/GioLandPublic/HRL_SmallWoodyFeatures_2015_005m/ImageServer/WMSServer?request=GetCapabilities&amp;service=WMS</dcat:accessURL>
+        <dct:title>0</dct:title>
+        <dct:format>OGC:WMS</dct:format>
+      </dcat:Distribution>
+      <dcat:Distribution rdf:about="https://sdi.eea.europa.eu/catalogue/records/4e92b07d-48b0-4a53-9db2-fd8d07070cc1#ESRI%3AREST-">
+        <dcat:accessURL>https://image.discomap.eea.europa.eu/arcgis/rest/services/GioLandPublic/HRL_SmallWoodyFeatures_2015_005m/ImageServer</dcat:accessURL>
+        <dct:format>ESRI:REST</dct:format>
+      </dcat:Distribution>
+      <foaf:Organization rdf:about="http://localhost:8080/geonetwork//organizations/European%20Environment%20Agency">
+        <foaf:name>European Environment Agency</foaf:name>
+        <foaf:member rdf:resource="http://localhost:8080/geonetwork//persons/sdi%40eea.europa.eu"/>
+      </foaf:Organization>
+      <foaf:Agent rdf:about="http://localhost:8080/geonetwork//persons/sdi%40eea.europa.eu">
+        <foaf:mbox rdf:resource="mailto:sdi@eea.europa.eu"/>
+      </foaf:Agent>
+    </rdf:RDF>
+    

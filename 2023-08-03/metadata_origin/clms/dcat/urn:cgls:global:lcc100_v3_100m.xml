@@ -1,0 +1,78 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dct="http://purl.org/dc/terms/" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://land.copernicus.vgt.vito.be:8443//geonetwork/metadata/urn:cgls:global:lcc100_v3_100m">
+        <foaf:primaryTopic rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/resource/urn:cgls:global:lcc100_v3_100m"/>
+        <dct:issued>2022-03-15</dct:issued>
+        <dct:modified>2022-03-15</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://land.copernicus.vgt.vito.be:8443//geonetwork/srv/eng/xml.metadata.get?uuid=urn:cgls:global:lcc100_v3_100m">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://land.copernicus.vgt.vito.be:8443//geonetwork?uuid=urn:cgls:global:lcc100_v3_100m">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://land.copernicus.vgt.vito.be:8443//geonetwork/resource/urn:cgls:global:lcc100_v3_100m">
+        <dct:identifier>urn:cgls:global:lcc100_v3_100m</dct:identifier>
+        <dct:title>Land Cover: global annual 2015-2019 (raster 100m) - collection 3, Sept. 2020</dct:title>
+        <dct:abstract>Land cover maps represent spatial information on different types (classes) of physical coverage of the Earth's surface, e.g. forests, grasslands, croplands, lakes, wetlands. 
+
+Dynamic land cover maps include transitions of land cover classes over time and hence captures land cover changes. 
+
+This Collection 3 includes the global land cover maps, at 100m resolution, for base year 2015 and subsequent years. These consist of different layers: the base classification with 23 classes, versatile fractional cover (0-100% per pixel) for the main classes, forest type and related quality information (e.g. classification probability, input data density and confidence level for the change detection).</dct:abstract>
+        <dcat:keyword>land cover</dcat:keyword>
+        <dcat:keyword>LC</dcat:keyword>
+        <dcat:keyword>Globe</dcat:keyword>
+        <dcat:keyword>Year</dcat:keyword>
+        <dcat:theme rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/thesaurus/GEMET%20-%20INSPIRE%20themes%2C%20version%201.0/Orthoimagery"/>
+        <dcat:theme rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/thesaurus/GEMET%20-%20Concepts%2C%20version%202.1/geophysical environment"/>
+        <dcat:theme rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/thesaurus/Copernicus%20Themes/Vegetation"/>
+        <dcat:theme rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/thesaurus/Copernicus%20Variables/Dynamic Land Cover"/>
+        <dcat:theme rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/thesaurus/iso/topicCategory/imageryBaseMapsEarthCover"/>
+        <dcat:theme rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/thesaurus/iso/topicCategory/biota"/>
+        <dcat:theme rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/thesaurus/iso/topicCategory/environment"/>
+        <dcat:theme rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/thesaurus/iso/topicCategory/farming"/>
+        <foaf:thumbnail rdf:resource="http://land.copernicus.vgt.vito.be/geonetwork/srv/api/records/urn:cgls:global:lcc100_v3_100m/attachments/CGLOPS_LC100_2015.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((-180 -60, -180 78.25, 180 78.25, 180 -60, -180 -60))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:temporal>2014-01-01T00:00:00Z
+          /
+          2020-03-31T23:59:59Z</dct:temporal>
+        <dct:issued>2015-01-01</dct:issued>
+        <dct:publisher rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/organization/VITO%20NV"/>
+        <dct:publisher rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/organization/IIASA"/>
+        <dct:publisher rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/organization/WUR"/>
+        <dct:publisher rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/organization/VITO%20NV"/>
+        <dct:publisher rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/organization/European%20Commission%20Directorate-General%20for%20Defense%2C%20Industry%20and%20Space"/>
+        <dct:publisher rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/organization/European%20Commission%20Directorate-General%20Joint%20Research%20Centre"/>
+        <dct:accrualPeriodicity>asNeeded</dct:accrualPeriodicity>
+        <dct:license>copyright</dct:license>
+        <dct:license>otherRestrictions</dct:license>
+        <dct:license>(d) the confidentiality of commercial or industrial information, where such confidentiality is provided for by national or Community law to protect a legitimate economic interest, including the public interest in maintaining statistical confidentiality and tax secrecy.</dct:license>
+        <dcat:distribution rdf:resource="https://lcviewer.vito.be"/>
+        <dcat:distribution rdf:resource="https://zenodo.org/communities/copernicus-land-cover"/>
+        <dcat:distribution rdf:resource="https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_Landcover_100m_Proba-V-C3_Global"/>
+        <dct:relation rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/metadata/"/>
+        <dcat:dataQuality>The land cover map is classified from daily surface reflectances of PROBA-V sensor and training data gathered through the GEO-WIKI. Several other products are integrated into the discrete map (LCCS layer) such as World Settlement Footprint (DLR), the Global Surface Water (JRC), OpenStreetMap, the Integrated Multi-satellitE Retrievals for GPM (NASA) and Circum-Polar Arctic Vegetation Map (U.S. CPAVM team). 
+The land cover is provided at 100 m resolution, however the training data is gathered at 10m resolution which has enabled to generate the continuous cover fields and provide per pixel a cover percentage (0-100%) for a set of classes.</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+    

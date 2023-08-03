@@ -1,0 +1,67 @@
+{
+  "type": "Collection",
+  "id": "0a1cf029-1a8e-4ac0-9d96-95060065e3e8",
+  "stac_version": "1.0.0",
+  "description": "'''Short description:''' \n\nDUACS delayed-time altimeter gridded maps of sea surface heights and derived variables over the global Ocean (https://cds.climate.copernicus.eu/cdsapp#!/dataset/satellite-sea-level-global?tab=overview). The processing focuses on the stability and homogeneity of the sea level record (based on a stable two-satellite constellation) and the product is dedicated to the monitoring of the sea level long-term evolution for climate applications and the analysis of Ocean/Climate indicators. These products are produced and distributed by the Copernicus Climate Change Service (C3S, https://climate.copernicus.eu/).\n\n'''DOI (product):'''\nhttps://doi.org/10.48670/moi-00145",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&service=SEALEVEL_GLO_PHY_CLIMATE_L4_MY_008_057-TDS&product=c3s_obs-sl_glo_phy-ssh_my_twosat-l4-duacs-0.25deg_P1D",
+      "type": "MYO:MOTU-SUB",
+      "title": "c3s_obs-sl_glo_phy-ssh_my_twosat-l4-duacs-0.25deg_P1D"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/dodsC/c3s_obs-sl_glo_phy-ssh_my_twosat-l4-duacs-0.25deg_P1D",
+      "type": "WWW:OPENDAP",
+      "title": "c3s_obs-sl_glo_phy-ssh_my_twosat-l4-duacs-0.25deg_P1D"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://my.cmems-du.eu/Core/SEALEVEL_GLO_PHY_CLIMATE_L4_MY_008_057/c3s_obs-sl_glo_phy-ssh_my_twosat-l4-duacs-0.25deg_P1D",
+      "type": "WWW:FTP",
+      "title": "c3s_obs-sl_glo_phy-ssh_my_twosat-l4-duacs-0.25deg_P1D"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/wms/c3s_obs-sl_glo_phy-ssh_my_twosat-l4-duacs-0.25deg_P1D",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "c3s_obs-sl_glo_phy-ssh_my_twosat-l4-duacs-0.25deg_P1D"
+    }
+  ],
+  "title": "GLOBAL OCEAN GRIDDED L4 SEA SURFACE HEIGHTS AND DERIVED VARIABLES REPROCESSED (COPERNICUS CLIMATE SERVICE)",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1993-01-01T00:00:00Z",
+          "2020-12-31T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "providers": [
+    {
+      "name": "Copernicus Marine Service",
+      "description": "Copernicus Marine Service - Mercator Ocean Internations",
+      "roles": [
+        "licensor",
+        "producer",
+        "processor",
+        "host"
+      ],
+      "url": "https://marine.copernicus.eu/"
+    }
+  ]
+}

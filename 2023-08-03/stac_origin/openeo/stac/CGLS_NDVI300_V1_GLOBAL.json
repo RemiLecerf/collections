@@ -1,0 +1,102 @@
+{
+    "cube:dimensions": {
+        "bands": {
+            "type": "bands",
+            "values": [
+                "NDVI"
+            ]
+        },
+        "t": {
+            "extent": [
+                "2014-01-01T00:00:00Z",
+                "2021-01-01T00:00:00Z"
+            ],
+            "type": "temporal"
+        },
+        "x": {
+            "axis": "x",
+            "extent": [
+                -180.0014880952381,
+                179.9985119
+            ],
+            "reference_system": 4326,
+            "step": 0.00297619047619,
+            "type": "spatial"
+        },
+        "y": {
+            "axis": "y",
+            "extent": [
+                -59.9985119,
+                80.00148809523809
+            ],
+            "reference_system": 4326,
+            "step": 0.00297619047619,
+            "type": "spatial"
+        }
+    },
+    "description": "Global NDVI at 300m resolution, 10-daily. The Normalized Difference Vegetation Index (NDVI) is an indicator of the greenness of the biomes. As such, it is closely linked to the FAPAR.",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180.0014880952381,
+                    -59.9985119,
+                    179.9985119,
+                    80.00148809523809
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2014-01-01T00:00:00Z",
+                    "2021-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "id": "CGLS_NDVI300_V1_GLOBAL",
+    "license": "free",
+    "links": [
+        {
+            "href": "https://land.copernicus.eu/global/products/ndvi",
+            "rel": "alternate",
+            "title": "Product web page."
+        },
+        {
+            "href": "https://openeocloud.vito.be/openeo/1.0.0/collections",
+            "rel": "root"
+        },
+        {
+            "href": "https://openeocloud.vito.be/openeo/1.0.0/collections",
+            "rel": "parent"
+        },
+        {
+            "href": "https://openeocloud.vito.be/openeo/1.0.0/collections/CGLS_NDVI300_V1_GLOBAL",
+            "rel": "self"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/datacube/v2.2.0/schema.json",
+        "https://stac-extensions.github.io/eo/v1.1.0/schema.json"
+    ],
+    "stac_version": "0.9.0",
+    "summaries": {
+        "federation:backends": [
+            "vito"
+        ],
+        "raster:bands": [
+            {
+                "data_type": "uint8",
+                "name": "NDVI",
+                "nodata": 255,
+                "offset": -0.0799999982118607,
+                "scale": 0.00400000018998981,
+                "statistics": {
+                    "maximum": 250
+                }
+            }
+        ]
+    },
+    "title": "Copernicus Global Land NDVI product V1, 300m resolution, 10-daily"
+}

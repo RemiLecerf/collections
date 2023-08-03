@@ -1,0 +1,64 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dct="http://purl.org/dc/terms/" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/metadata/eu.copernicus.climate.reanalysis-cerra-height-levels">
+        <foaf:primaryTopic rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/resource/10.24381/cds.38b394e6"/>
+        <dct:issued>2018-03-28</dct:issued>
+        <dct:modified>2018-03-28</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/srv/eng/xml.metadata.get?uuid=eu.copernicus.climate.reanalysis-cerra-height-levels">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://cds.climate.copernicus.eu:443//geonetwork?uuid=eu.copernicus.climate.reanalysis-cerra-height-levels">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/resource/10.24381/cds.38b394e6">
+        <dct:identifier>10.24381/cds.38b394e6</dct:identifier>
+        <dct:title>CERRA sub-daily regional reanalysis data for Europe on height levels from 1984 to present</dct:title>
+        <dct:abstract>The Copernicus European Regional ReAnalysis (CERRA) datasets provide spatially and temporally consistent historical reconstructions of meteorological variables in the atmosphere and at the surface. There are four subsets: single levels (atmospheric and surface quantities), height levels (upper-air fields up to 500m), pressure levels (upper-air fields up to 1hPa) and model levels (native levels of the model). This entry provides reanalysis and forecast data on height levels for Europe from 1984 to present. One reason to provide atmospheric variables on height levels is for applications in the wind energy sector. Several atmospheric parameters are common to both reanalysis and forecast (e.g. temperature, wind), whilst others are produced only by the forecast model (e.g. specific rain water content).
+Reanalysis combines model data with observations into a complete and consistent dataset using the laws of physics. This principle, called data assimilation, is based on the method used by numerical weather prediction centres, where a previous forecast is combined with newly available observations in an optimal way to produce a new best estimate of the state of the atmosphere, called analysis, from which an updated, improved forecast is issued. Reanalysis works in the same way, but at reduced resolution to allow for the provision of a dataset spanning back several decades. Reanalysis does not have the constraint of issuing timely forecasts, so there is more time to collect observations, and when going further back in time, to allow for the ingestion of improved, reprocessed versions of the original observations, which all benefit the quality of the reanalysis product. The CERRA dataset was produced using the HARMONIE-ALADIN limited-area numerical weather prediction and data assimilation system, hereafter referred to as the CERRA system. The CERRA system employs a 3-dimensional variational data assimilation scheme of the atmospheric state at every assimilation time. The reanalysis dataset is convenient owing to its provision of atmospheric estimates at each model domain grid point over Europe for each regular output time, over a long period, and always using the same data format.
+The inputs to CERRA reanalysis are the observational data, lateral boundary conditions from ERA5 global reanalysis as prior estimates of the atmospheric state and physiographic datasets describing the surface characteristics of the model. The observing system has evolved over time, and although the data assimilation system can resolve data holes, the much sparser observational networks in the past periods (for example, a reduced amount of satellite data in the 1980s) can impact the quality of analyses leading to less accurate estimates. The uncertainty estimates for reanalysis variables are provided by the CERRA-EDA, a 10-member ensemble of data assimilation system.
+The added value of the CERRA data with respect to the global reanalysis products is expected to come, for example, with the higher horizontal resolution that permits the usage of a better description of the model topography and physiographic data, and the assimilation of more surface observations.
+More information about the CERRA dataset can be found in the Documentation section.
+
+Variables in the dataset/application are:
+Pressure, Relative humidity, Specific cloud ice water content, Specific cloud liquid water content, Specific rain water content, Specific snow water content, Temperature, Turbulent kinetic energy, Wind direction, Wind speed</dct:abstract>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/GEMET%20-%20INSPIRE%20themes%2C%20version%201.0/Atmospheric conditions"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Product type: Reanalysis"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Spatial coverage: Europe"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Variable domain: Land (hydrology)"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Variable domain: Atmosphere (upper level)"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Temporal coverage: Past"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/iso/topicCategory/climatologyMeteorologyAtmosphere"/>
+        <foaf:thumbnail rdf:resource="https://datastore.copernicus-climate.eu/c3s/published-forms-v2/c3sprod/reanalysis-cerra-height-levels/overview.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((17 20, 17 65, 35 65, 35 20, 17 20))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:temporal>1984-08-24
+          /</dct:temporal>
+        <dct:publisher rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/organization/ECMWF"/>
+        <dct:accrualPeriodicity>asNeeded</dct:accrualPeriodicity>
+        <dct:language>eng</dct:language>
+        <dct:license>licence</dct:license>
+        <dct:license>https://cds.climate.copernicus.eu/api/v2/terms/static/licence-to-use-copernicus-products.pdf</dct:license>
+        <dcat:distribution rdf:resource="https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.38b394e6"/>
+        <dcat:distribution rdf:resource="https://confluence.ecmwf.int/x/WFQ7E"/>
+        <dcat:dataQuality>EC Copernicus program</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+    

@@ -1,0 +1,80 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dct="http://purl.org/dc/terms/" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/metadata/eu.copernicus.climate.insitu-glaciers-elevation-mass">
+        <foaf:primaryTopic rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/resource/10.24381/cds.de51058c"/>
+        <dct:issued>2018-03-28</dct:issued>
+        <dct:modified>2018-03-28</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/srv/eng/xml.metadata.get?uuid=eu.copernicus.climate.insitu-glaciers-elevation-mass">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://cds.climate.copernicus.eu:443//geonetwork?uuid=eu.copernicus.climate.insitu-glaciers-elevation-mass">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/resource/10.24381/cds.de51058c">
+        <dct:identifier>10.24381/cds.de51058c</dct:identifier>
+        <dct:title>Glaciers elevation and mass change data from 1850 to present from the Fluctuations of Glaciers Database</dct:title>
+        <dct:abstract>This dataset provides in situ and remote sensing derived glacier changes from individual glaciers globally. The dataset represents the latest homogenized state-of-the-art glacier change data collected by scientists and the national correspondents of each country as provided to the World Glacier Monitoring Service (WGMS). The product is an extract of the WGMS Fluctuations of Glacier (FoG) database and consists of two data sets providing time series of glacier changes:
+
+
+glacier elevation change series from the geodetic method
+
+
+glacier mass-balance series from the glaciological method
+
+
+Both data layers are provided as ESRI shapefiles containing the location of each glacier label point in geographic coordinates (longitude and latitude in degrees) in the World Geodetic System 1984 (WGS84) datum and some general statistical information about each glacier. Both shapefiles come with one ancillary .csv file containing the individual glacier change series linked to the corresponding point shapefile through the WGMS_ID.
+The mass balance series consist of usually continuous annual measurements in mm water equivalents. The elevation change series consist of multi-annual changes (in mm) with sometimes overlapping survey periods. For combining mass balance and elevation change data in one regional plot the elevation changes need to be converted to annual change rates and to mm water equivalents using a density conversion factor of 850 kg m-3.
+This dataset has been brokered from the Fluctuations of Glaciers (FoG) database of the World Glacier Monitoring Service (WGMS).
+
+Variables in the dataset/application are:
+FID, GLAC_REG1, GLAC_REG2, Latitude, Longitude, Name, PU, Photo_Info, Photo_url, Shape, WGMS ID
+
+Variables in the dataset/application are:
+ANN_BAL, ANN_BAL_UNC, AREA, AREA_CHANGE, AREA_SURVEY_YEAR, ELEV_CH, ELEV_CH_UNC, INVESTIGATOR, REFERENCE, REFERENCE_DATE, REMARKS, SPONS_AGENCY, SURVEY_DATE, SURVEY_ID, WGMS_ID</dct:abstract>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/GEMET%20-%20INSPIRE%20themes%2C%20version%201.0/Land cover"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Product type: In-situ observations"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Product type: Satellite observations"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Spatial coverage: Global"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Variable domain: Land (cryosphere)"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Temporal coverage: Past"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/iso/topicCategory/inlandWaters"/>
+        <foaf:thumbnail rdf:resource="https://datastore.copernicus-climate.eu/c3s/published-forms-v2/c3sprod/insitu-glaciers-elevation-mass/overview.jpg"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((0 -89, 0 89, 360 89, 360 -89, 0 -89))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:temporal>1850-01-01
+          /
+          2019-12-31</dct:temporal>
+        <dct:publisher rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/organization/ECMWF"/>
+        <dct:accrualPeriodicity>asNeeded</dct:accrualPeriodicity>
+        <dct:language>eng</dct:language>
+        <dct:license>licence</dct:license>
+        <dct:license>https://cds.climate.copernicus.eu/api/v2/terms/static/uhz-glaciers.pdf</dct:license>
+        <dcat:distribution rdf:resource="https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.de51058c"/>
+        <dcat:distribution rdf:resource="#"/>
+        <dcat:distribution rdf:resource="#"/>
+        <dcat:distribution rdf:resource="#"/>
+        <dcat:distribution rdf:resource="#"/>
+        <dcat:distribution rdf:resource="#"/>
+        <dcat:distribution rdf:resource="#"/>
+        <dcat:dataQuality>EC Copernicus program</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+    

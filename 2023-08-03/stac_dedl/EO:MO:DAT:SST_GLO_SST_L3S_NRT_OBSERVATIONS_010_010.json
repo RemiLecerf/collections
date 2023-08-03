@@ -1,0 +1,64 @@
+{
+  "type": "Collection",
+  "id": "EO:MO:DAT:SST_GLO_SST_L3S_NRT_OBSERVATIONS_010_010",
+  "stac_version": "1.0.0",
+  "description": "'''Short description:'''\n\nFor the Global Ocean- Sea Surface Temperature L3 Observations . This product provides daily foundation sea surface temperature from multiple satellite sources. The data are intercalibrated. This product consists in a fusion of sea surface temperature observations from multiple satellite sensors, daily, over a 0.1° resolution global grid. It includes observations by polar orbiting (NOAA-18 & NOAAA-19/AVHRR, METOP-A/AVHRR, ENVISAT/AATSR, AQUA/AMSRE, TRMM/TMI) and geostationary (MSG/SEVIRI, GOES-11) satellites . The observations of each sensor are intercalibrated prior to merging using a bias correction based on a multi-sensor median reference correcting the large-scale cross-sensor biases\n\n'''DOI (product) :'''   \nhttps://doi.org/10.48670/moi-00164",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/IFREMER-GLOB-SST-L3-NRT-OBS_FULL_TIME_SERIE",
+      "type": "WWW:OPENDAP",
+      "title": "IFREMER-GLOB-SST-L3-NRT-OBS_FULL_TIME_SERIE"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/IFREMER-GLOB-SST-L3-NRT-OBS_FULL_TIME_SERIE",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "IFREMER-GLOB-SST-L3-NRT-OBS_FULL_TIME_SERIE"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=SST_GLO_SST_L3S_NRT_OBSERVATIONS_010_010-TDS&product=IFREMER-GLOB-SST-L3-NRT-OBS_FULL_TIME_SERIE",
+      "type": "MYO:MOTU-SUB",
+      "title": "IFREMER-GLOB-SST-L3-NRT-OBS_FULL_TIME_SERIE"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/SST_GLO_SST_L3S_NRT_OBSERVATIONS_010_010/IFREMER-GLOB-SST-L3-NRT-OBS_FULL_TIME_SERIE",
+      "type": "WWW:FTP",
+      "title": "IFREMER-GLOB-SST-L3-NRT-OBS_FULL_TIME_SERIE"
+    }
+  ],
+  "title": "Global Ocean - Sea Surface Temperature Multi-sensor L3 Observations",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2016-01-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

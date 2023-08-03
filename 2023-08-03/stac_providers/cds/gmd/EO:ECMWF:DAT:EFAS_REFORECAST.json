@@ -1,0 +1,87 @@
+{
+  "type": "Collection",
+  "id": "EO:ECMWF:DAT:EFAS_REFORECAST",
+  "stac_version": "1.0.0",
+  "description": "This dataset provides gridded modelled hydrological time series forced with medium- to sub-seasonal range meteorological reforecasts. The data is a consistent representation of the most important hydrological variables across the European Flood Awareness System (EFAS) domain. The temporal resolution is 20 years of sub-daily reforecasts initialised twice weekly (Mondays and Thursdays) of:\n\nRiver discharge\nSoil moisture for three soil layers\nSnow water equivalent\n\nAlso provided are auxiliary (time invariant) data to aid interpretation of river discharge and soil moisture data. These auxiliary data are the upstream area, elevation, soil depth, wilting capacity and field capacity. The latter three are provided at three soil levels, one for each of the three soil layers represented in LISFLOOD.\nThis dataset was produced by forcing the LISFLOOD hydrological model at a 5x5km resolution with ensemble meteorological reforecasts from the European Centre of Medium-range Weather Forecasts (ECMWF). Reforecasts are forecasts run over past dates and are typically used to assess the skill of a forecast system or to develop tools for statistical error correction of the forecasts. The reforecasts are initialised twice weekly with lead times up to 46 days, at 6-hourly time steps for 20 years. For more specific information on the how the reforecast dataset is produced we refer to the documentation.\nCompanion datasets, also available through the Climate Data Store (CDS), are the operational forecasts, historical simulations which can be used to derive the hydrological climatology, and seasonal forecasts and reforecasts for users looking for long term forecasts. For users looking for global hydrological data, we refer to the Global Flood Awareness System (GloFAS) forecasts and historical simulations. All these datasets are part of the operational flood forecasting within the Copernicus Emergency Management Service (CEMS).\n\nVariables in the dataset/application are:\nRiver discharge in the last 6 hours, Snow depth water equivalent, Volumetric soil moisture\n\nVariables in the dataset/application are:\nElevation, Field capacity, Soil depth, Upstream area, Wilting point",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.c83f560f",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Climate Data Store catalogue"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://confluence.ecmwf.int/display/CEMS/European+Flood+Awareness+System",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "EFAS wiki pages"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://www.efas.eu",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "EFAS web pages (.eu)"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://datastore.copernicus-climate.eu/documents/cems-flood/EFAS_v4_Fixed_Reporting_Points_Metadata.pdf",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "EFAS fixed reporting points metadata (PDF)"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://datastore.copernicus-climate.eu/documents/cems-flood/EFAS_v4_medium-range_forecast_skill_scores.pdf",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "EFAS v4 medium-range forecast skill scores (PDF)"
+    },
+    {
+      "rel": "describedby",
+      "href": "#",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "#"
+    }
+  ],
+  "title": "Reforecasts of river discharge and related data by the European Flood Awareness System",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          0.0,
+          -90.0,
+          360.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1979-01-01T00:00:00Z",
+          "2022-10-29T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Product type: Reforecasts",
+    "Provider: Copernicus CEMS",
+    "Reforecast",
+    "Spatial coverage: Europe",
+    "Temporal coverage: Present",
+    "Variable domain: Land (hydrology)"
+  ],
+  "providers": [
+    {
+      "name": "Climate Data Store - European Centre for Medium-Range Weather Forecasts (ECMWF)",
+      "description": "Climate Data Store - ECMWF",
+      "roles": [
+        "licensor",
+        "producer",
+        "processor",
+        "host"
+      ],
+      "url": "https://cds.climate.copernicus.eu/"
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "type": "Collection",
+  "id": "EO:ECMWF:DAT:CEMS_GLOFAS_HISTORICAL",
+  "stac_version": "1.0.0",
+  "description": "This dataset contains global modelled daily data of river discharge from the Global Flood Awareness System (GloFAS), which is part of the Copernicus Emergency Management Service (CEMS). River discharge, or river flow as it is also known, is defined as the amount of water that flows through a river section at a given time. \nThis dataset is simulated by forcing a hydrological modelling chain with inputs from a global reanalysis. Data availability for the historical simulation is from 1979-01-01 up to near real time.\n\nVariables in the dataset/application are:\nRiver discharge in the last 24 hours\n\nVariables in the dataset/application are:\nUpstream area",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://datastore.copernicus-climate.eu/documents/cems-flood/GLOFAS_CDS_PAPER_2020.pdf",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "GloFAS-ERA5 operational global discharge reanalysis 1979-present (PDF)"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.a4fdd6b9",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Climate Data Store catalogue"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://confluence.ecmwf.int/display/CEMS/Global+Flood+Awareness+System",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Information pages for GloFAS"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://datastore.copernicus-climate.eu/documents/cems-flood/GLOFAS_CDS_PAPER_2020.pdf",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "GloFAS-ERA5 v2.1 global discharge reanalysis 1979-present (PDF)"
+    },
+    {
+      "rel": "describedby",
+      "href": "http://www.globalfloods.eu/",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "GloFAS web site"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://confluence.ecmwf.int/display/COPSRV/GloFAS+available+data",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Static file for upstream area"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://confluence.ecmwf.int/display/COPSRV/CEMS-Floods",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Information pages for GloFAS"
+    },
+    {
+      "rel": "describedby",
+      "href": "#",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "#"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://confluence.ecmwf.int/display/CEMS/Auxiliary+Data",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Auxiliary data"
+    }
+  ],
+  "title": "River discharge and related historical data from the Global Flood Awareness System",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1979-01-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Climatology",
+    "Product type: Reanalysis",
+    "Provider: Copernicus CEMS",
+    "Spatial coverage: Global",
+    "Temporal coverage: Past",
+    "Variable domain: Land (hydrology)"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

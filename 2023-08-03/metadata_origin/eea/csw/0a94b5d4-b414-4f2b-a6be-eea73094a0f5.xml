@@ -1,0 +1,60 @@
+<csw:Record xmlns:dct="http://purl.org/dc/terms/" xmlns:geonet="http://www.fao.org/geonetwork" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ows="http://www.opengis.net/ows" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dc:identifier>0a94b5d4-b414-4f2b-a6be-eea73094a0f5</dc:identifier>
+      <dc:date>2023-02-17T09:33:09.229Z</dc:date>
+      <dc:title>European Ground Motion Service: Ortho product &#8211; Vertical Component between 2015 and 2021, Feb. 2023</dc:title>
+      <dc:type>dataset</dc:type>
+      <dc:subject>Natural risk zones</dc:subject>
+      <dc:subject>Iceland</dc:subject>
+      <dc:subject>Norway</dc:subject>
+      <dc:subject>EU27 (from 2020)</dc:subject>
+      <dc:subject>United Kingdom</dc:subject>
+      <dc:subject>infrastructure</dc:subject>
+      <dc:subject>geological process</dc:subject>
+      <dc:subject>built environment</dc:subject>
+      <dc:subject>urban area</dc:subject>
+      <dc:subject>earth observation</dc:subject>
+      <dc:subject>geo-referenced data</dc:subject>
+      <dc:subject>risk reduction</dc:subject>
+      <dc:subject>subsidence</dc:subject>
+      <dc:subject>landslide</dc:subject>
+      <dc:subject>European</dc:subject>
+      <dc:subject>Weekly</dc:subject>
+      <dc:subject>geoscientificInformation</dc:subject>
+      <dc:format>ascii (.csv, .txt, .sql)</dc:format>
+      <dct:abstract>The European Ground Motion Service (EGMS) is a component of the Copernicus Land Monitoring Service. EGMS provides consistent, regular, standardised, harmonised and reliable information regarding natural and anthropogenic ground motion phenomena over the Copernicus Participating States and across national borders, with millimetre accuracy. This set of metadata describes the third product level of EGMS: Ortho. 
+
+The EGMS Ortho product exploits the information provided by ascending and descending orbits of the Calibrated product (https://sdi.eea.europa.eu/catalogue/srv/eng/catalog.search#/metadata/bef2507a-13cf-44c0-a809-0a1566f27631) to derive two further layers; one of purely vertical displacements (the one described by this metadata), the other of purely east-west displacements. Both layers are resampled to a 100 m grid. The Ortho product eases the interpretation process of non-experts since the viewing geometry has not to be considered anymore.
+EGMS Ortho is visualised as a vector map of measurement points colour-coded by average velocity (vertical or east-west components) and distributed to users in comma-separated values format. Each point is associated with a time series of displacement, i.e. a plot with values of displacement per acquisition of the satellite.</dct:abstract>
+      <dc:description>The European Ground Motion Service (EGMS) is a component of the Copernicus Land Monitoring Service. EGMS provides consistent, regular, standardised, harmonised and reliable information regarding natural and anthropogenic ground motion phenomena over the Copernicus Participating States and across national borders, with millimetre accuracy. This set of metadata describes the third product level of EGMS: Ortho. 
+
+The EGMS Ortho product exploits the information provided by ascending and descending orbits of the Calibrated product (https://sdi.eea.europa.eu/catalogue/srv/eng/catalog.search#/metadata/bef2507a-13cf-44c0-a809-0a1566f27631) to derive two further layers; one of purely vertical displacements (the one described by this metadata), the other of purely east-west displacements. Both layers are resampled to a 100 m grid. The Ortho product eases the interpretation process of non-experts since the viewing geometry has not to be considered anymore.
+EGMS Ortho is visualised as a vector map of measurement points colour-coded by average velocity (vertical or east-west components) and distributed to users in comma-separated values format. Each point is associated with a time series of displacement, i.e. a plot with values of displacement per acquisition of the satellite.</dc:description>
+      <dc:rights>otherRestrictions</dc:rights>
+      <dc:rights>otherRestrictions</dc:rights>
+      <dc:language>eng</dc:language>
+      <dc:source>The Ortho product is based on the decomposition of the Calibrated product to provide two discrete geospatial layers containing purely vertical (the one described in this metadata) and purely east-west displacements resampled to a 100 m grid. In summary, the process involves the following tasks: 
+i) identify all the cells with at least one measurement point per orbit, 
+ii) average the time series per orbit, 
+iii) interpolate ascending and descending time series to a common six-day sampling and 
+iv) estimate the vertical and east-west components following equations weighted on the estimated accuracy of the input measurements.</dc:source>
+      <dc:format>ascii (.csv, .txt, .sql)</dc:format>
+      <ows:BoundingBox crs="urn:ogc:def:crs:EPSG:6.6:4326">
+        <ows:LowerCorner>27.60 -31.30</ows:LowerCorner>
+        <ows:UpperCorner>71.21 34.76</ows:UpperCorner>
+      </ows:BoundingBox>
+      <ows:BoundingBox crs="urn:ogc:def:crs:EPSG:6.6:4326">
+        <ows:LowerCorner>1.08 -62.00</ows:LowerCorner>
+        <ows:UpperCorner>16.90 -51.28</ows:UpperCorner>
+      </ows:BoundingBox>
+      <ows:BoundingBox crs="urn:ogc:def:crs:EPSG:6.6:4326">
+        <ows:LowerCorner>-21.60 44.75</ows:LowerCorner>
+        <ows:UpperCorner>-12.45 56.25</ows:UpperCorner>
+      </ows:BoundingBox>
+      <dc:URI protocol="WWW:LINK-1.0-http--link" name="EGMS Explorer" description="Viewing and download">https://egms.land.copernicus.eu/</dc:URI>
+      <dc:URI protocol="WWW:LINK-1.0-http--link" name="Quality Assurance &amp; EGMS and the Ortho product" description="More information on the interferometric technique and the approach used to produce EGMS and the Ortho product">https://land.copernicus.eu/user-corner/technical-library/egms-algorithm-theoretical-basis-document</dc:URI>
+      <dc:URI protocol="WWW:LINK-1.0-http--link" name="Product User Manual" description="More information on the content and usage of EGMS products">https://land.copernicus.eu/user-corner/technical-library/egms-product-user-manual</dc:URI>
+      <dc:URI protocol="WWW:LINK-1.0-http--link" name="Quality Assurance &amp; Control Report" description="More information on the quality of products">https://land.copernicus.eu/user-corner/technical-library/egms-quality-control-report</dc:URI>
+      <dc:URI protocol="WWW:LINK-1.0-http--link" name="Other useful documents">https://land.copernicus.eu/pan-european/european-ground-motion-service</dc:URI>
+      <dc:URI protocol="image/png">https://sdi.eea.europa.eu/public/catalogue-graphic-overview/0a94b5d4-b414-4f2b-a6be-eea73094a0f5.png</dc:URI>
+    </csw:Record>
+    

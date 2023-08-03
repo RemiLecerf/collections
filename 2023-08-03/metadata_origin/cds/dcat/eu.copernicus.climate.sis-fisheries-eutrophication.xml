@@ -1,0 +1,69 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dct="http://purl.org/dc/terms/" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/metadata/eu.copernicus.climate.sis-fisheries-eutrophication">
+        <foaf:primaryTopic rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/resource/10.24381/cds.dcfb0bf4"/>
+        <dct:issued>2018-03-28</dct:issued>
+        <dct:modified>2018-03-28</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/srv/eng/xml.metadata.get?uuid=eu.copernicus.climate.sis-fisheries-eutrophication">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://cds.climate.copernicus.eu:443//geonetwork?uuid=eu.copernicus.climate.sis-fisheries-eutrophication">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/resource/10.24381/cds.dcfb0bf4">
+        <dct:identifier>10.24381/cds.dcfb0bf4</dct:identifier>
+        <dct:title>Eutrophication indicators for the Northwest European Shelf and Mediterranean Sea from 2006 up to 2100</dct:title>
+        <dct:abstract>The dataset includes ocean eutrophication indicators derived from climate projections and ocean colour remote-sensing satellite products. Eutrophication refers to the excessive nutrient input into water bodies that lead to increased primary production, algal blooms, and low-oxygenated waters, consequently causing a reduction to marine life and habitat degradation. These indicators are useful to the long-term planning and monitoring of water quality since coastal areas of Europe are subject to the adverse effects of eutrophication, i.e. the increased occurrence of harmful algal blooms.
+Ocean eutrophication may be determined by measuring the concentration of chlorophyll-a, a measure of the amount of primary production in the water column. This may be modelled using biogeochemical models or observed by its green colour in the ocean using satellite remote sensing. In this dataset, the indicators are derived from the Copernicus Marine Environment Monitoring Service (CMEMS) ocean colour satellite product for 2006-2016 and climate projections. To produce the climate projections, two marine hydrodynamic-biogeochemical models forced with climate simulations were used: the NEMO-ERSEM model run on a domain for the Northwest European Shelf, and the POLCOM-ERSEM model run on a domain covering the Northwest European Shelf and Mediterranean Sea.
+The indicators are based on comparisons between daily chlorophyll-a concentration values and the daily 90th percentile (P90) chlorophyll-a concentration from climatology. The P90 of chlorophyll-a concentration can itself be used to detect abnormal levels of chlorophyll-a concentration in an ecosystem and has been adopted as a measure of eutrophication in coastal waters by the Convention for the Protection of the Marine Environment of the Northeast Atlantic 2008 (OSPAR). It is considered to be a robust ecological indicator of trophic ecological status. This is developed upon in this dataset and the measure of eutrophication used is the proportion of days in each month which have unusually high chlorophyll values (greater than that day’s climatological P90 value). It has dimensionless units and its expected value in the absence of changes in eutrophication state is 0.1. The main eutrophication indicator in this dataset is the difference between this proportion and 0.1 and is referred to as the chlorophyll-a anomaly indicator. Additional derived indicators are also included that further measure changes in eutrophication status over different periods. For instance, we could ask whether a location has become generally more eutrophic up to August 2000, or whether Augusts have become more eutrophic up to 2000. The algorithms and metrics for eutrophication were developed and applied by Plymouth Marine Laboratory (UK).
+In order to assess the impact of climate change, simulations under two future climate scenarios based on different Representative Concentration Pathways (RCP) for future greenhouse gas concentration are conducted: the intermediate scenario, RCP4.5, in which greenhouse gas concentration peak around 2040 before declining mainly due to successful mitigation measures in place; and the more pessimistic scenario, RCP8.5, where greenhouse gas concentration continue to rise throughout the century. The hydrodynamic-biogeochemical models were driven by one Coupled Model Inter-comparison Project Phase 5 (CMIP5) global climate model (GCM) projection downscaled to a regional climate model (RCM). Note that by using only one of the many possible combinations of GCM-RCM pairs leads to an incomplete estimate of the true uncertainty in the outcome in a changing climate by, most likely, indicating a smaller spread of outcomes than if the estimate were based on a larger ensemble of such GCM-RCM combinations. This does not necessarily mean a reduction in the true uncertainty, but simply an incomplete estimate of it.
+This dataset was produced on behalf of the Copernicus Climate Change Service.
+
+Variables in the dataset/application are:
+Chlorophyll-a anomaly, Chlorophyll-a anomaly P-value, Chlorophyll-a anomaly gradient, Cumulative chlorophyll-a anomaly, Standard error of the cumulative chlorophyll-a anomaly</dct:abstract>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/GEMET%20-%20INSPIRE%20themes%2C%20version%201.0/Oceanographic geographical features"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Sector: Coastal regions"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Product type: Climate projections"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Spatial coverage: Global"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Variable domain: Ocean (biochemestry)"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Temporal coverage: Present"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Temporal coverage: Future"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/iso/topicCategory/biota"/>
+        <foaf:thumbnail rdf:resource="https://datastore.copernicus-climate.eu/c3s/published-forms-v2/c3sprod/sis-fisheries-eutrophication/overview.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((-46 11, -46 66, 36 66, 36 11, -46 11))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:temporal>2006-01-01
+          /
+          2099-12-31</dct:temporal>
+        <dct:publisher rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/organization/ECMWF"/>
+        <dct:accrualPeriodicity>asNeeded</dct:accrualPeriodicity>
+        <dct:language>eng</dct:language>
+        <dct:license>licence</dct:license>
+        <dct:license>https://cds.climate.copernicus.eu/api/v2/terms/static/20191121_Copernicus_License_V1.2.pdf</dct:license>
+        <dcat:distribution rdf:resource="https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.dcfb0bf4"/>
+        <dcat:distribution rdf:resource="https://confluence.ecmwf.int/x/EKLmE"/>
+        <dcat:distribution rdf:resource="https://confluence.ecmwf.int/x/h6-mE"/>
+        <dcat:distribution rdf:resource="https://confluence.ecmwf.int/x/c_-mE"/>
+        <dcat:distribution rdf:resource="https://confluence.ecmwf.int/x/he-mE"/>
+        <dcat:dataQuality>ESA CCI and  EC Copernicus program</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+    

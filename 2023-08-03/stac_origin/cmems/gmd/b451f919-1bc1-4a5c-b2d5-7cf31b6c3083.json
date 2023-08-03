@@ -1,0 +1,67 @@
+{
+  "type": "Collection",
+  "id": "b451f919-1bc1-4a5c-b2d5-7cf31b6c3083",
+  "stac_version": "1.0.0",
+  "description": "'''Short description:'''\n\nThis product corresponds to a REP L4 time series of monthly global reconstructed surface ocean pCO2, air-sea fluxes of CO2, pH, total alkalinity, dissolved inorganic carbon, saturation state with respect to calcite and aragonite, and associated uncertainties on a 1° x 1° regular grid. The product is obtained from an ensemble-based forward feed neural network approach mapping situ data for surface ocean fugacity (SOCAT data base, Bakker et al.  2016, https://www.socat.info/) and sea surface salinity, temperature, sea surface height, chlorophyll a, mixed layer depth and atmospheric CO2 mole fraction. Sea-air flux fields are computed from the air-sea gradient of pCO2 and the dependence on wind speed of Wanninkhof (2014). Surface ocean pH on total scale, dissolved inorganic carbon, and saturation states are then computed from surface ocean pCO2 and reconstructed surface ocean alkalinity using the CO2sys speciation software.\n\n*'''Product Citation''': Please refer to our Technical FAQ for citing products: http://marine.copernicus.eu/faq/cite-cmems-products-cmems-credit/?idpage=169.\n\n'''DOI (product) :'''\nhttps://doi.org/10.48670/moi-00047",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&service=MULTIOBS_GLO_BIO_CARBON_SURFACE_REP_015_008-TDS&product=dataset-carbon-rep-monthly",
+      "type": "MYO:MOTU-SUB",
+      "title": "dataset-carbon-rep-monthly"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/dodsC/dataset-carbon-rep-monthly",
+      "type": "WWW:OPENDAP",
+      "title": "dataset-carbon-rep-monthly"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://my.cmems-du.eu/Core/MULTIOBS_GLO_BIO_CARBON_SURFACE_REP_015_008/dataset-carbon-rep-monthly",
+      "type": "WWW:FTP",
+      "title": "dataset-carbon-rep-monthly"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/wms/dataset-carbon-rep-monthly",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "dataset-carbon-rep-monthly"
+    }
+  ],
+  "title": "Global Ocean Surface Carbon",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          0.5,
+          -90.0,
+          359.5,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1985-01-15T00:00:00Z",
+          "2021-12-15T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "providers": [
+    {
+      "name": "Copernicus Marine Service",
+      "description": "Copernicus Marine Service - Mercator Ocean Internations",
+      "roles": [
+        "licensor",
+        "producer",
+        "processor",
+        "host"
+      ],
+      "url": "https://marine.copernicus.eu/"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dct="http://purl.org/dc/terms/" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://land.copernicus.vgt.vito.be:8443//geonetwork/metadata/49158da1-3c6c-11e2-81c1-0800200c9a66">
+        <foaf:primaryTopic rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/resource/EO:VITO:gl2:bp05:VPI:tiles"/>
+        <dct:issued>2022-03-17</dct:issued>
+        <dct:modified>2022-03-17</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://land.copernicus.vgt.vito.be:8443//geonetwork/srv/eng/xml.metadata.get?uuid=49158da1-3c6c-11e2-81c1-0800200c9a66">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://land.copernicus.vgt.vito.be:8443//geonetwork?uuid=49158da1-3c6c-11e2-81c1-0800200c9a66">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://land.copernicus.vgt.vito.be:8443//geonetwork/resource/EO:VITO:gl2:bp05:VPI:tiles">
+        <dct:identifier>EO:VITO:gl2:bp05:VPI:tiles</dct:identifier>
+        <dct:title>Vegetation Productivity Index: global 10-daily tiles (raster 1km) - version 1, Sept 2014</dct:title>
+        <dct:abstract>The Vegetation Productivity Indicator (VPI) is a categorical type of difference vegetation index, whereby the actual NDVI is referenced against the NDVI percentiles of the historical year. The VPI is typically used to assess overall vegetation condition and to identify areas with below normal vegetation development, possibly linked to low agricultural productivity, as compared to what can be expected based on the historical range. Furthermore, VPI can also be used to identify drought affected areas.</dct:abstract>
+        <dcat:keyword>biogeophysical</dcat:keyword>
+        <dcat:keyword>vegetation</dcat:keyword>
+        <dcat:keyword>historical NDVI</dcat:keyword>
+        <dcat:keyword>global 10° tiles</dcat:keyword>
+        <dcat:keyword>Dekad</dcat:keyword>
+        <dcat:keyword>10-day composite</dcat:keyword>
+        <dcat:theme rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/thesaurus/GEMET%20-%20INSPIRE%20themes%2C%20version%201.0/Orthoimagery"/>
+        <dcat:theme rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/thesaurus/GEMET%20-%20Concepts%2C%20version%202.1/geophysical environment"/>
+        <dcat:theme rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/thesaurus/iso/topicCategory/imageryBaseMapsEarthCover"/>
+        <dcat:theme rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/thesaurus/iso/topicCategory/environment"/>
+        <foaf:thumbnail rdf:resource="http://globallandseries.vgt.vito.be/geonetwork/images/quicklooks/VegetationIndices.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((-180 -70, -180 80, 180 80, 180 -70, -180 -70))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:temporal>2013-01-01T00:00:00
+          /
+          2020-06-30T23:59:00</dct:temporal>
+        <dct:issued>2014-03-01</dct:issued>
+        <dct:publisher rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/organization/Flemish%20Institute%20for%20Technological%20Research%20%28VITO%29%20for%20MARS-FOOD%20project%2C%20Agrifish%20Unit%2C%20DG%20Joint%20Research%20Center%20of%20the%20European%20Commission"/>
+        <dct:publisher rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/organization/Flemish%20Institute%20for%20Technological%20Research%20%28VITO%29"/>
+        <dct:publisher rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/organization/European%20Commission%20Directorate-General%20for%20Enterprise%20and%20Industry"/>
+        <dct:publisher rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/organization/European%20Commission%20Directorate-General%20Joint%20Research%20Center"/>
+        <dct:accrualPeriodicity>asNeeded</dct:accrualPeriodicity>
+        <dct:license>copyright</dct:license>
+        <dct:license>otherRestrictions</dct:license>
+        <dct:license>(d) the confidentiality of commercial or industrial information, where such confidentiality is provided for by national or Community law to protect a legitimate economic interest, including the public interest in maintaining statistical confidentiality and tax secrecy.</dct:license>
+        <dcat:distribution rdf:resource="http://land.copernicus.eu/global/products/vpi"/>
+        <dcat:distribution rdf:resource="http://eoportal.eumetsat.int"/>
+        <dct:relation rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/metadata/"/>
+        <dcat:dataQuality>The input data are the 10-days synthesis of multispectral surface reflectances of  SPOT VEGETATION data and more particular the derived NDVI value together with a historical mean of the NDVI calculated over the period from 1999 till last available full year. The VPI or “Vegetation Production Index”, first suggested by Sannier (1998) tries to account for the real distribution of the past observations. First, a fit is made of the (cumulative) histogram of these values. Then, the actual NDVI-value is compared to it, and the VPI retrieves its probability of occurrence. VPI-values of 0%, 50% and 100% respectively indicate that the actual observation corresponds with the historical minimum (worst vegetation state), median (normal) or maximum (best situation) ever observed. Although VPI certainly outperforms the other difference operators, it is less used in practice, probably because its computation is more cumbersome. For the (exceptional) case where the past observations really follow a Gaussian distribu-tion, SDVI is equal to VPI. But more in general, VPI retrieves the most reliable probabilities. In literature, VPI is often presented as a categorical variable because in his first papers Sannier classified the raw VPI values in five groups (0-20%, 20-40%,…).</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+    

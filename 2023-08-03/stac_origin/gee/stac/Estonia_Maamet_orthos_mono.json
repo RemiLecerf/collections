@@ -1,0 +1,143 @@
+{
+    "description": "Orthophotos are an aerial photo dataset covering Estonia.\n\nAn orthophoto is a processed aerial photo from which distortions caused\nby terrain relief, camera tilt relative to the ground at the moment of\nexposure and camera central projection are removed. A digital orthophoto\nhas a certain pixel size or resolution which shows the smallest\nindivisible exposed area on the ground (Ground Sampling Distance, GSD).\n\nOrthophotos have a nationwide coverage and correspond to the scale of\n1:5000-1:10000 (pixel size 20-40 cm). Orthophotos for densely populated\nareas are produced with the pixel size of 10-16 cm.\n\nThe mono dataset has a single grayscale band.\n\nFor more information, please see the [Estonia orthophotos documentation]\n(https://geoportaal.maaamet.ee/eng/Spatial-Data/Orthophotos-p309.html)\n",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    57.3,
+                    21.5,
+                    59.5,
+                    28.1
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1993-01-01T00:00:00Z",
+                    "2021-06-16T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "gee:terms_of_use": "The data is free to use for commercial and non-commercial purposes for a\nnon-specified term, provided that proper attribution is given to the\nlicensor (e.g. Estonian Land Board) along with the title and age of the\ndata.\n\nFor more details please see the\n[Terms of use](https://geoportaal.maaamet.ee/docs/Avaandmed/Licence-of-open-data-of-Estonian-Land-Board.pdf)\n",
+    "gee:type": "image_collection",
+    "id": "Estonia/Maamet/orthos/mono",
+    "keywords": [
+        "estonia",
+        "orthophoto"
+    ],
+    "license": "proprietary",
+    "links": [
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections/Estonia/Maamet/orthos/mono",
+            "rel": "self",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections",
+            "rel": "parent",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/",
+            "rel": "root",
+            "type": "application/json"
+        },
+        {
+            "code": "JavaScript",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/Estonia/Estonia_Maamet_orthos_mono",
+            "rel": "related",
+            "title": "Run the example for Estonia/Maamet/orthos/mono in the Earth Engine Code Editor",
+            "type": "text/html"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/images/Estonia/Estonia_Maamet_orthos_mono_sample.png",
+            "rel": "preview",
+            "type": "image/png"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/Estonia_Maamet_orthos_mono#terms-of-use",
+            "rel": "license",
+            "type": "text/html"
+        }
+    ],
+    "providers": [
+        {
+            "name": "Estonia orthophotos",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://geoportaal.maaamet.ee/eng/Spatial-Data/Orthophotos-p309.html"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/Estonia_Maamet_orthos_mono"
+        }
+    ],
+    "sci:citation": "Map data: Estonian Land Board",
+    "stac_extensions": [
+        "collection-assets"
+    ],
+    "stac_version": "1.0.0",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Grayscale",
+                "name": "mono"
+            }
+        ],
+        "gsd": [
+            0.4
+        ],
+        "mono": {
+            "maximum": 255
+        }
+    },
+    "title": "Estonia mono orthophotos",
+    "type": "Collection",
+    "cube:dimensions": {
+        "x": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                57.3,
+                59.5
+            ]
+        },
+        "y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                21.5,
+                28.1
+            ]
+        },
+        "t": {
+            "type": "temporal",
+            "extent": [
+                "1993-01-01T00:00:00Z",
+                "2021-06-16T00:00:00Z"
+            ]
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "mono"
+            ]
+        }
+    },
+    "assets": {
+        "preview_4": {
+            "href": "https://developers.google.com/earth-engine/datasets/images/Estonia/Estonia_Maamet_orthos_mono_sample.png",
+            "type": "image/png",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    }
+}

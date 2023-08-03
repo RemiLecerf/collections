@@ -1,0 +1,55 @@
+{
+  "type": "Collection",
+  "id": "9f2b5a7b-7617-4b1f-a654-cb980b643fce",
+  "stac_version": "1.0.0",
+  "description": "'''Short description:'''\n\nFor the '''Arctic''' Ocean '''Satellite Observations''', Italian National Research Council (CNR – Rome, Italy) is providing '''Bio-Geo_Chemical (BGC)''' products.\n* Upstreams: SeaWiFS, MODIS, MERIS, VIIRS-SNPP, OLCI-S3A & OLCI-S3B for the '''\"\"multi\"\"''' products, and S3A & S3B only for the '''\"\"olci\"\"''' products.\n* Variables: Chlorophyll-a ('''CHL''') and Diffuse Attenuation ('''KD490''').\n\n* Temporal resolutions:'''monthly'''.\n* Spatial resolutions: '''1 km''' (multi) or '''300 meters''' (olci).\n* Recent products are organized in datasets called Near Real Time ('''NRT''') and long time-series (from 1997) in datasets called Multi-Years ('''MY''').\n\n'''DOI (product) :'''   \nhttps://doi.org/10.48670/moi-00291",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/OCEANCOLOUR_ARC_BGC_L4_NRT_009_122/cmems_obs-oc_arc_bgc-plankton_nrt_l4-olci-300m_P1M",
+      "type": "WWW:FTP",
+      "title": "cmems_obs-oc_arc_bgc-plankton_nrt_l4-olci-300m_P1M"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/OCEANCOLOUR_ARC_BGC_L4_NRT_009_122/cmems_obs-oc_arc_bgc-transp_nrt_l4-olci-300m_P1M",
+      "type": "WWW:FTP",
+      "title": "cmems_obs-oc_arc_bgc-transp_nrt_l4-olci-300m_P1M"
+    }
+  ],
+  "title": "Arctic Ocean Colour Plankton and Transparency L4 NRT monthly observations",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          65.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2023-04-10T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "providers": [
+    {
+      "name": "Copernicus Marine Service",
+      "description": "Copernicus Marine Service - Mercator Ocean Internations",
+      "roles": [
+        "licensor",
+        "producer",
+        "processor",
+        "host"
+      ],
+      "url": "https://marine.copernicus.eu/"
+    }
+  ]
+}

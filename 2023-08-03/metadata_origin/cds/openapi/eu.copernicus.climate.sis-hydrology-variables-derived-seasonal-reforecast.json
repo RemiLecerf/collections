@@ -1,0 +1,206 @@
+{
+    "slug": "multi-model-seasonal-reforecasts-of-river-discharge-for-europe",
+    "name": "sis-hydrology-variables-derived-seasonal-reforecast",
+    "id": "eu.copernicus.climate.sis-hydrology-variables-derived-seasonal-reforecast",
+    "type": "dataset",
+    "rich_abstract": "<div class='abstract-text'>\n         <p>This dataset provides hydrological seasonal reforecasts of monthly mean river discharge across Europe for the period 1993 to 2016. The first is an E-HYPE multi-model system comprising eight model realisations using a catchment-based resolution. The second comprises the E-HYPEgrid, VIC-WUR and LISFLOOD-EFAS hydrological models at a 5km gridded resolution.</p>\n<p>The initialisation of the hydrological seasonal forecast uses the European Flood Awareness System (EFAS) daily gridded meteorological observations (EFAS-Meteo) up until the start of the reforecast, and the subsequent integration of the meteorological seasonal reforecasts using all 25 members of the ECMWF seasonal forecast system 5 (SEAS5) meteorological reforecasts for the period January 1993 to December 2016. Seasonal reforecasts are produced to past dates but using the same model as the operaional forecast. A bias adjustment step using quantile mapping for temperature and precipitation was used for the E-HYPE and ViC-WUR models to minimize drift in the forecasts caused by biases in SEAS5 compared to EFAS-Meteo.</p>\n<p>The final output is in the form of monthly mean river discharge with a lead time of seven months for each reforcast starting date. The context of the forecasts is provided by upper and lower terciles of the historical EFAS-Meteo driven simulation for each month of the year.</p>\n<p>This dataset is produced by the Swedish Meteorological and Hydrological Institute on behalf of the Copernicus Climate Change Service in collaboration with the Copernicus Emergency Management Service (CEMS).</p>\n         \n         \n            <p></p>\n            <table class=\"abstract-description abstract-table\">\n            <tr><th colspan=\"2\">DATA DESCRIPTION</th>\n            \n<tr><th>Data type</th><td>Gridded and catchments</td></tr>\n<tr><th>Projection</th><td>Lambert azimuthal equal area grid for the 5km grid</td></tr>\n<tr><th>Horizontal coverage</th><td>Europe</td></tr>\n<tr><th>Horizontal resolution</th><td>5km grid and catchments</td></tr>\n<tr><th>Vertical coverage</th><td>Surface</td></tr>\n<tr><th>Vertical resolution</th><td>Single level</td></tr>\n<tr><th>Temporal coverage</th><td>January 1993 to  December 2016</td></tr>\n<tr><th>Temporal resolution</th><td>Monthly</td></tr>\n<tr><th>Temporal gaps</th><td>No gaps</td></tr>\n<tr><th>File format</th><td>NetCDF-4</td></tr>\n<tr><th>Conventions</th><td>Climate and Forecast (CF) Metadata Convention v.1.6</td></tr>\n<tr><th>Versions</th><td>The current version of the multimodel dataset is v1.0. The EFAS forecasts used are v4 released 2020-10-14. For more information on versions we refer to the documentation.</td></tr>\n<tr><th>Update frequency</th><td>Monthly</td></tr>\n</table>\n\n    <p></p>\n    <table class=\"abstract-variables abstract-table\">\n    <tr><th colspan=\"3\">MAIN VARIABLES</th>\n    \n\n    <tr><th class='variables-name'>Name</th><th class='variables-units'>Units</th><th class='variables-description'>Description</th></tr>\n    \n<tr><td class='variables-name'>Brier skill score above normal conditions</td><td class='variables-units'>Dimensionless</td><td class='variables-description'>Monthly skill metrics as fairBSSan (fair Brier skill score above the 66 percentile) against a climate reference over the reference period 1993-2016. The Brier skill score is a strictly proper score function that measures the accuracy of probabilistic forecasts. For more information on how the Brier skill score was calculated we refer to the documentation.</td></tr>\n<tr><td class='variables-name'>Brier skill score below normal conditions</td><td class='variables-units'>Dimensionless</td><td class='variables-description'>Monthly skill metrics as fairBSSbn (fair Brier skill score below the 33 percentile) against a climate reference over the reference period 1993-2016. The Brier skill score is a strictly proper score function that measures the accuracy of probabilistic forecasts. For more information on how the Brier skill score was calculated we refer to the documentation.</td></tr>\n<tr><td class='variables-name'>Continuous ranked probability skill score</td><td class='variables-units'>Dimensionless</td><td class='variables-description'>Monthly skill metrics as fairCRPSS (fair continuous ranked probability skill score) against a climate reference over the reference period 1993-2016. The fairCRPSS skill score is a proper score function that measures the performance of probabilistic forecasts. For more information on how the fairCRPSS was calculated we refer to the documentation.</td></tr>\n<tr><td class='variables-name'>Fair ranked probability skill score</td><td class='variables-units'>Dimensionless</td><td class='variables-description'>Monthly skill metrics as fairRPSS (fair ranked probability skill score) against a climate reference over the reference period 1993-2016. The fairRPSS skill score is a proper score function that measures the performance of probabilistic forecasts. For more information on how the fairRPSS was calculated we refer to the documentation.</td></tr>\n<tr><td class='variables-name'>Reference river discharge lower tercile</td><td class='variables-units'>m<sup>3</sup> s<sup>-1</sup></td><td class='variables-description'>The lower tercile of the river discharge for the reference period.</td></tr>\n<tr><td class='variables-name'>Reference river discharge upper tercile</td><td class='variables-units'>m<sup>3</sup> s<sup>-1</sup></td><td class='variables-description'>The upper tercile of the river discharge for the reference period.</td></tr>\n<tr><td class='variables-name'>River discharge</td><td class='variables-units'>m<sup>3</sup> s<sup>-1</sup></td><td class='variables-description'>Volume rate of water flow, including sediments, chemical and biological material in the river channel averaged over a time step through a cross-section.</td></tr>\n</table>\n    </div>",
+    "terms": [
+        "licence-to-use-copernicus-products"
+    ],
+    "constraints": [
+        {
+            "hydrological_model": [
+                "e_hypecatch_m00",
+                "vic_wur"
+            ],
+            "variable": [
+                "reference_river_discharge_lower_tercile",
+                "reference_river_discharge_upper_tercile"
+            ],
+            "version": [
+                "1"
+            ]
+        },
+        {
+            "hydrological_model": [
+                "e_hypecatch_m00",
+                "vic_wur"
+            ],
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06",
+                "07",
+                "08",
+                "09",
+                "10",
+                "11",
+                "12"
+            ],
+            "variable": [
+                "brier_skill_score_above_normal_conditions",
+                "brier_skill_score_below_normal_conditions",
+                "continuous_ranked_probability_skill_score",
+                "fair_ranked_probability_skill_score"
+            ],
+            "version": [
+                "1"
+            ]
+        },
+        {
+            "hydrological_model": [
+                "e_hypecatch_m00",
+                "vic_wur"
+            ],
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06",
+                "07",
+                "08",
+                "09",
+                "10",
+                "11",
+                "12"
+            ],
+            "variable": [
+                "river_discharge"
+            ],
+            "version": [
+                "1"
+            ],
+            "year": [
+                "1993",
+                "1994",
+                "1995",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2000",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015"
+            ]
+        },
+        {
+            "hydrological_model": [
+                "lisflood_efas"
+            ],
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06",
+                "07",
+                "08",
+                "09",
+                "10"
+            ],
+            "variable": [
+                "river_discharge"
+            ],
+            "version": [
+                "1"
+            ],
+            "year": [
+                "1991",
+                "1992",
+                "1993",
+                "1994",
+                "1995",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2000",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018",
+                "2019",
+                "2020"
+            ]
+        },
+        {
+            "hydrological_model": [
+                "lisflood_efas"
+            ],
+            "month": [
+                "11",
+                "12"
+            ],
+            "variable": [
+                "river_discharge"
+            ],
+            "version": [
+                "1"
+            ],
+            "year": [
+                "1991",
+                "1992",
+                "1993",
+                "1994",
+                "1995",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2000",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018",
+                "2019"
+            ]
+        }
+    ]
+}

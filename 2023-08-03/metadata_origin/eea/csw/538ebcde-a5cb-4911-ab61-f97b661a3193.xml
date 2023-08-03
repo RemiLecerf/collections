@@ -1,0 +1,45 @@
+<csw:Record xmlns:dct="http://purl.org/dc/terms/" xmlns:geonet="http://www.fao.org/geonetwork" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ows="http://www.opengis.net/ows" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dc:identifier>538ebcde-a5cb-4911-ab61-f97b661a3193</dc:identifier>
+      <dc:date>2023-01-31T11:12:36.45Z</dc:date>
+      <dc:title>European Ground Motion Service: GNSS model between 2015 and 2020, Jul. 2022</dc:title>
+      <dc:type>dataset</dc:type>
+      <dc:subject>Natural risk zones</dc:subject>
+      <dc:subject>EEA38 (from 2020)</dc:subject>
+      <dc:subject>United Kingdom</dc:subject>
+      <dc:subject>calibration</dc:subject>
+      <dc:subject>geodesy</dc:subject>
+      <dc:subject>earth observation</dc:subject>
+      <dc:subject>model</dc:subject>
+      <dc:subject>geo-referenced information</dc:subject>
+      <dc:subject>European</dc:subject>
+      <dc:subject>Not planned</dc:subject>
+      <dc:subject>geoscientificInformation</dc:subject>
+      <dc:format>ascii (.csv, .txt, .sql)</dc:format>
+      <dct:abstract>The European Ground Motion Service (EGMS) is a component of the Copernicus Land Monitoring Service. EGMS provides consistent, regular, standardised, harmonised and reliable information regarding natural and anthropogenic ground motion phenomena over the Copernicus Participating States and across national borders, with millimetre accuracy. 
+
+This set of metadata describes the global navigation satellite system (GNSS) model used to calibrate the EGMS Calibrated product (https://sdi.eea.europa.eu/catalogue/srv/eng/catalog.search#/metadata/dbc229ee-b94e-44e1-b0db-9bc57076bef1). This layer is produced based on GNSS data from various sources, with the EUREF Densification network as the main entry point. After filtering and quality control, a total of 3770 stations are used to generate the GNSS model which contains average velocities in east, north and up directions displayed on a 50-km grid. The grid dimension is determined by the average distance between well-maintained GNSS stations over continental Europe.
+The GNSS model is distributed to users in a single comma-separated values file. Each cell of the model is associated to a value of vertical and horizontal velocity. The product covers the Copernicus Participating States (except for DROMs) and United Kingdom.</dct:abstract>
+      <dc:description>The European Ground Motion Service (EGMS) is a component of the Copernicus Land Monitoring Service. EGMS provides consistent, regular, standardised, harmonised and reliable information regarding natural and anthropogenic ground motion phenomena over the Copernicus Participating States and across national borders, with millimetre accuracy. 
+
+This set of metadata describes the global navigation satellite system (GNSS) model used to calibrate the EGMS Calibrated product (https://sdi.eea.europa.eu/catalogue/srv/eng/catalog.search#/metadata/dbc229ee-b94e-44e1-b0db-9bc57076bef1). This layer is produced based on GNSS data from various sources, with the EUREF Densification network as the main entry point. After filtering and quality control, a total of 3770 stations are used to generate the GNSS model which contains average velocities in east, north and up directions displayed on a 50-km grid. The grid dimension is determined by the average distance between well-maintained GNSS stations over continental Europe.
+The GNSS model is distributed to users in a single comma-separated values file. Each cell of the model is associated to a value of vertical and horizontal velocity. The product covers the Copernicus Participating States (except for DROMs) and United Kingdom.</dc:description>
+      <dc:rights>otherRestrictions</dc:rights>
+      <dc:rights>otherRestrictions</dc:rights>
+      <dc:language>eng</dc:language>
+      <dc:source>The GNSS model is obtained from the analysis of 3770 GNSS stations mainly part of the EUREF Densification network. The stations were selected based on the following criteria: 
+i) minimum length of time series &gt;3 years, 
+ii) stations should not record time series with artificial artifacts  and 
+iii) stations should not record strong non-linear motion except for seasonality. 
+The GNSS model is then derived following the least-squares collocation concept. The principle behind this approach is to use the correlations of GNSS station velocities to predict new values at any new point within the covered area, together with associated uncertainties.</dc:source>
+      <dc:format>ascii (.csv, .txt, .sql)</dc:format>
+      <ows:BoundingBox crs="urn:ogc:def:crs:EPSG:6.6:4326">
+        <ows:LowerCorner>27.60 -31.30</ows:LowerCorner>
+        <ows:UpperCorner>71.21 44.86</ows:UpperCorner>
+      </ows:BoundingBox>
+      <dc:URI protocol="WWW:LINK-1.0-http--link" name="Information on the usage of the GNSS model for calibration purposes" description="Information">https://land.copernicus.eu/user-corner/technical-library/egms-algorithm-theoretical-basis-document</dc:URI>
+      <dc:URI protocol="WWW:LINK-1.0-http--link" name="Information on the production, quality control and validation of the GNSS model" description="Information">https://land.copernicus.eu/user-corner/technical-library/egms-gnss-calibration-report</dc:URI>
+      <dc:URI protocol="WWW:LINK-1.0-http--link" name="More information on the EUREF Densification working group" description="Information">https://epnd.sgo-penc.hu/</dc:URI>
+      <dc:URI protocol="WWW:URL" name="GNSS model direct download">https://sdi.eea.europa.eu/data/538ebcde-a5cb-4911-ab61-f97b661a3193</dc:URI>
+      <dc:URI>https://sdi.eea.europa.eu/public/catalogue-graphic-overview/538ebcde-a5cb-4911-ab61-f97b661a3193.PNG</dc:URI>
+    </csw:Record>
+    

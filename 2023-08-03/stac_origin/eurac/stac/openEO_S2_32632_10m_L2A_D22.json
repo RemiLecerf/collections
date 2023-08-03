@@ -1,0 +1,89 @@
+{
+    "stac_version": "0.9.0",
+    "stac_extensions": [
+        "datacube"
+    ],
+    "type": "Collection",
+    "id": "openEO_S2_32632_10m_L2A_D22",
+    "title": "openEO_S2_32632_10m_L2A_D22",
+    "description": "Sentinel-2 Data",
+    "license": "CC-BY-4.0",
+    "providers": [
+        {
+            "name": "Eurac EO ODC",
+            "url": "http://www.eurac.edu/",
+            "roles": [
+                "producer",
+                "host"
+            ]
+        }
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    10.290484068721153,
+                    45.933496504418216,
+                    11.755584916051987,
+                    46.94616825350529
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2018-06-06T10:22:45.858Z",
+                    "2018-06-21T10:21:48.8265Z"
+                ]
+            ]
+        }
+    },
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://creativecommons.org/licenses/by/4.0/",
+            "type": "text/html",
+            "title": "License link"
+        }
+    ],
+    "cube:dimensions": {
+        "DATE": {
+            "type": "temporal",
+            "extent": [
+                "2018-06-06T10:22:45.858000+00:00",
+                "2018-06-21T10:21:48.826500+00:00"
+            ]
+        },
+        "X": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                10.290484068721153,
+                11.755584916051987
+            ],
+            "reference_system": 32632
+        },
+        "Y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                45.933496504418216,
+                46.94616825350529
+            ],
+            "reference_system": 32632
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "AOT",
+                "B02",
+                "B03",
+                "B04",
+                "B08",
+                "PVI",
+                "TCI",
+                "WVP"
+            ]
+        }
+    }
+}

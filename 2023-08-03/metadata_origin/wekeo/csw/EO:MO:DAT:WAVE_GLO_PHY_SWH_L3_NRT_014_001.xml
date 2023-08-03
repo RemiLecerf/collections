@@ -1,0 +1,31 @@
+<csw:Record xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">EO:MO:DAT:WAVE_GLO_PHY_SWH_L3_NRT_014_001</dc:identifier>
+      <dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">GLOBAL OCEAN L3 SIGNIFICANT WAVE HEIGHT FROM NRT SATELLITE MEASUREMENTS</dc:title>
+      <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/">series</dc:type>
+      <dc:format xmlns:dc="http://purl.org/dc/elements/1.1/">NetCDF-4</dc:format>
+      <dct:abstract xmlns:dct="http://purl.org/dc/terms/">'''Short description:'''
+
+Near-Real-Time mono-mission satellite-based along-track significant wave height. Only valid data are included, based on a rigorous editing combining various criteria such as quality flags (surface flag, presence of ice) and thresholds on parameter values. Such thresholds are applied on parameters linked to significant wave height determination from retracking (e.g. SWH, sigma0, range, off nadir angle&#8230;). All the missions are homogenized with respect to a reference mission (Jason-3 until April 2022, Sentinel-6A afterwards) and calibrated on in-situ buoy measurements. Finally, an along-track filter is applied to reduce the measurement noise.
+
+As a support of information to the significant wave height, wind speed measured by the altimeters is also processed and included in the files. Wind speed values are provided by upstream products (L2) for each mission and are based on different algorithms. Only valid data are included and all the missions are homogenized with respect to the reference mission.
+
+This product is processed by the WAVE-TAC multi-mission altimeter data processing system. It serves in near-real time the main operational oceanography and climate forecasting centers in Europe and worldwide. It processes operational data (OGDR and NRT, produced in near-real-time) from the following altimeter missions: Sentinel-6A, Jason-3, Sentinel-3A, Sentinel-3B, Cryosat-2, SARAL/AltiKa, CFOSAT ; and interim data (IGDR, 1 to 2 days delay) from Hai Yang-2B mission.
+
+One file containing valid SWH is produced for each mission and for a 3-hour time window. It contains the filtered SWH (VAVH), the unfiltered SWH (VAVH_UNFILTERED) and the wind speed (wind_speed).
+
+'''DOI (product) :'''   
+https://doi.org/10.48670/moi-00179</dct:abstract>
+      <dct:spatial xmlns:dct="http://purl.org/dc/terms/">EPSG::WGS84 / Simple Mercator (EPSG:41001)</dct:spatial>
+      <dc:language xmlns:dc="http://purl.org/dc/elements/1.1/">eng</dc:language>
+      <dc:rights xmlns:dc="http://purl.org/dc/elements/1.1/">See Copernicus Marine Environment Monitoring Service Data commitments and licence at: http://marine.copernicus.eu/web/27-service-commitments-and-licence.php</dc:rights>
+      <dc:rights xmlns:dc="http://purl.org/dc/elements/1.1/">license</dc:rights>
+      <dc:rights xmlns:dc="http://purl.org/dc/elements/1.1/">No limitations on public access</dc:rights>
+      <dct:accessRights xmlns:dct="http://purl.org/dc/terms/">otherRestrictions</dct:accessRights>
+      <dct:alternative xmlns:dct="http://purl.org/dc/terms/">WAVE_GLO_PHY_SWH_L3_NRT_014_001</dct:alternative>
+      <dct:created xmlns:dct="http://purl.org/dc/terms/">2012-08-26</dct:created>
+      <ows:BoundingBox xmlns:ows="http://www.opengis.net/ows">
+        <ows:LowerCorner>-180 -90</ows:LowerCorner>
+        <ows:UpperCorner>180 90</ows:UpperCorner>
+      </ows:BoundingBox>
+    </csw:Record>
+    

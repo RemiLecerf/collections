@@ -1,0 +1,55 @@
+{
+  "type": "Collection",
+  "id": "f50a428b-ccb1-413d-9afd-43629d273b76",
+  "stac_version": "1.0.0",
+  "description": "'''DEFINITION'''\n\nOligotrophic subtropical gyres are regions of the ocean with low levels of nutrients required for phytoplankton growth and low levels of surface chlorophyll-a whose concentration can be quantified through satellite observations. The gyre boundary has been defined using a threshold value of 0.15 mg m-3 chlorophyll for the Atlantic gyres (Aiken et al. 2016), and 0.07 mg m-3 for the Pacific gyres (Polovina et al. 2008). The area inside the gyres for each month is computed using monthly chlorophyll data from which the monthly climatology is subtracted to compute anomalies.  A gap filling algorithm has been utilized to account for missing data. Trends in the area anomaly are then calculated for the entire study period (September 1997 to December 2021).\n\n'''CONTEXT'''\n\nOligotrophic gyres of the oceans have been referred to as ocean deserts (Polovina et al. 2008). They are vast, covering approximately 50% of the Earth’s surface (Aiken et al. 2016). Despite low productivity, these regions contribute significantly to global productivity due to their immense size (McClain et al. 2004). Even modest changes in their size can have large impacts on a variety of global biogeochemical cycles and on trends in chlorophyll (Signorini et al. 2015). Based on satellite data, Polovina et al. (2008) showed that the areas of subtropical gyres were expanding. The Ocean State Report (Sathyendranath et al. 2018) showed that the trends had reversed in the Pacific for the time segment from January 2007 to December 2016. \n\n'''CMEMS KEY FINDINGS'''\n\nThe trend in the North Atlantic gyre area for the 1997 Sept – 2021 December period was positive, with a 0.14% year-1 increase in area relative to 2000-01-01 values. This trend has decreased compared with the 1997-2019 trend of 0.39%, and is no longer statistically significant (p>0.05). \nDuring the 1997 Sept – 2021 December period, the trend in chlorophyll concentration was negative (-0.21% year-1) inside the North Atlantic gyre relative to 2000-01-01 values. This is a slightly lower rate of change compared with the -0.24%  trend for the 1997-2020 period but is still statistically significant (p<0.05).\n\n'''DOI (product):''' \nhttps://doi.org/10.48670/moi-00226",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "ftp://my.cmems-du.eu/Core/OMI_HEALTH_CHL_GLOBAL_OCEANCOLOUR_oligo_nag_area_mean/omi_health_chl_global_oceancolour_oligo_nag_area_mean",
+      "type": "WWW:FTP",
+      "title": "omi_health_chl_global_oceancolour_oligo_nag_area_mean"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://mdl1.marine.copernicus.eu/derived/OMI_HEALTH_CHL_GLOBAL_OCEANCOLOUR_oligo_nag_area_mean/omi_health_chl_global_oceancolour_oligo_nag_area_mean_202211/omi_health_chl_global_oceancolour_oligo_nag_area_mean_19970901-20211231_P20220517.nc",
+      "type": "MYO:MOTU-DGF",
+      "title": "omi_health_chl_global_oceancolour_oligo_nag_area_mean"
+    }
+  ],
+  "title": "North Atlantic Gyre Area Chlorophyll-a time series and trend from Observations Reprocessing",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -85.0,
+          5.0,
+          0.0,
+          45.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1997-09-04T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "providers": [
+    {
+      "name": "Copernicus Marine Service",
+      "description": "Copernicus Marine Service - Mercator Ocean Internations",
+      "roles": [
+        "licensor",
+        "producer",
+        "processor",
+        "host"
+      ],
+      "url": "https://marine.copernicus.eu/"
+    }
+  ]
+}

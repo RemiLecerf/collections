@@ -1,0 +1,74 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dct="http://purl.org/dc/terms/" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/metadata/eu.copernicus.climate.derived-reanalysis-energy-moisture-budget">
+        <foaf:primaryTopic rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/resource/10.24381/cds.c2451f6b"/>
+        <dct:issued>2018-03-28</dct:issued>
+        <dct:modified>2018-03-28</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/srv/eng/xml.metadata.get?uuid=eu.copernicus.climate.derived-reanalysis-energy-moisture-budget">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://cds.climate.copernicus.eu:443//geonetwork?uuid=eu.copernicus.climate.derived-reanalysis-energy-moisture-budget">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/resource/10.24381/cds.c2451f6b">
+        <dct:identifier>10.24381/cds.c2451f6b</dct:identifier>
+        <dct:title>Mass-consistent atmospheric energy and moisture budget monthly data from 1979 to present derived from ERA5 reanalysis</dct:title>
+        <dct:abstract>This dataset provides monthly means of mass-consistent, vertically integrated, atmospheric energy and moisture budget quantities derived from 1-hourly ERA5 reanalysis data. 
+The vertically integrated budget diagnostics include the tendencies and lateral fluxes of total energy, water vapour, and latent heat (with the latent heat of vaporization varying with temperature). In addition, the divergences of the lateral fluxes are provided. 
+These divergences and  fluxes are also available in the ERA5 archive, but do not employ mass-consistent horizontal wind fields and are contaminated with numerical noise. In the present dataset, mass consistency is achieved by iteratively adjusting the horizontal wind field at every time step. 
+The divergence and tendency terms from this dataset can be combined to indirectly estimate mass-consistent surface flux terms of the atmospheric energy and moisture budget. In the energy budget, horizontal and vertical enthalpy fluxes associated with water and snow are neglected. This framework allows for unambiguous estimation of net surface heat fluxes (sum of radiative and turbulent heat fluxes) when combined with net radiative fluxes  at the top of the atmosphere (not included in this dataset).  The divergence and tendency term of the atmospheric moisture budget can be combined to indirectly estimate surface freshwater fluxes (P+E) which have an unbiased global mean.
+In addition,  this dataset allows the computation of the following:
+
+
+The divergence of total energy flux with temperature-independent latent heat of vaporization is obtained by subtracting the divergence of latent heat flux and add the divergence of water vapour flux multiplied by Lv = 2.5008 J kg-1 instead (this works analogously for tendency and transport terms).
+
+
+Divergence fields with full spectral resolution can be derived from corresponding east- and northward transports (divergence terms in this dataset are truncated at wave number 180 to reduce artificial noise over high topography).  
+
+
+This dataset is produced on behalf of Copernicus Climate Change Service by the Department of Meteorology and Geophysics, University of Vienna.
+
+Variables in the dataset/application are:
+Divergence of vertical integral of  latent heat flux, Divergence of vertical integral of  total energy flux, Divergence of vertical integral of  water vapour flux, Tendency of vertical integral of  latent heat, Tendency of vertical integral of  total energy, Tendency of vertical integral of water vapour, Vertical integral of eastward  latent heat flux, Vertical integral of eastward total energy flux, Vertical integral of eastward water vapour flux, Vertical integral of northward  latent heat flux, Vertical integral of northward total energy flux, Vertical integral of northward water vapour flux</dct:abstract>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/GEMET%20-%20INSPIRE%20themes%2C%20version%201.0/Atmospheric conditions"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Product type: Reanalysis"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Spatial coverage: Global"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Variable domain: Atmosphere (upper air)"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Temporal coverage: Past"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Provider: Copernicus C3S"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/iso/topicCategory/climatologyMeteorologyAtmosphere"/>
+        <foaf:thumbnail rdf:resource="https://datastore.copernicus-climate.eu/c3s/published-forms-v2/c3sprod/derived-reanalysis-energy-moisture-budget/overview.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((-180 -90, -180 90, 180 90, 180 -90, -180 -90))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:temporal>1979-01-01
+          /</dct:temporal>
+        <dct:publisher rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/organization/ECMWF"/>
+        <dct:accrualPeriodicity>asNeeded</dct:accrualPeriodicity>
+        <dct:language>eng</dct:language>
+        <dct:license>licence</dct:license>
+        <dct:license>https://cds.climate.copernicus.eu/api/v2/terms/static/20191121_Copernicus_License_V1.2.pdf</dct:license>
+        <dcat:distribution rdf:resource="https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.c2451f6b"/>
+        <dcat:distribution rdf:resource="https://confluence.ecmwf.int/x/hwCIDw"/>
+        <dcat:distribution rdf:resource="https://doi.org/10.1175/JCLI-D-20-0676.1"/>
+        <dcat:dataQuality>EC Copernicus programme</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+  

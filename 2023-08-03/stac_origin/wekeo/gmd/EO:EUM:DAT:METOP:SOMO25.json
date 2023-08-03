@@ -1,0 +1,50 @@
+{
+  "type": "Collection",
+  "id": "EO:EUM:DAT:METOP:SOMO25",
+  "stac_version": "1.0.0",
+  "description": "The Soil Moisture (SM) product is derived from the Advanced SCATterometer (ASCAT) backscatter observations and given in swath orbit geometry (25 km sampling). This SM product provides an estimate of the water content of the 0-5 cm topsoil layer, expressed in degree of saturation between 0 and 100 [%]. The algorithm used to derive this parameter is based on a linear relationship of SM and scatterometer backscatter and uses change detection techniques to eliminate the contributions of vegetation, land cover and surface topography, considered invariant from year to year. Seasonal vegetation effects are modelled by exploiting the multi-angle viewing capabilities of ASCAT. The SM processor has been developed by Vienna University of Technology (TU Wien). Note that some of the data are reprocessed. Please refer to the associated product validation reports or product release notes for further information.\n\n\nMetop-A data are available in the Data Centre up to 15/11/2021.",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://navigator.eumetsat.int/product/EO:EUM:DAT:METOP:SOMO25",
+      "type": "http",
+      "title": "EUMETSAT Product Navigator (Metadata)"
+    }
+  ],
+  "title": "ASCAT Soil Moisture at 25 km Swath Grid in NRT - Metop",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2007-06-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Land",
+    "Soil Moisture"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

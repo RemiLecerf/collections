@@ -1,0 +1,93 @@
+{
+  "type": "Collection",
+  "id": "eu.copernicus.climate.satellite-ice-sheet-mass-balance",
+  "stac_version": "1.0.0",
+  "description": "This dataset provides a complete archive of monthly mass change timeseries for the drainage basins of the Antarctic and Greenland Ice Sheets from NASA's Gravity Recovery and Climate Experiment (GRACE) and GRACE Follow On (GRACE-FO) mission, which have operated from 2002 to current data.\nIt is guided by the Global Climate Observing System targets for the Ice Sheets Mass Change Essential Climate Variable. The GRACE twin satellites measured changes in the Earth’s gravitational field over time and inferred from them mass changes over the ice sheets, using the regional integration approach. A timeseries of mass change is provided for each ice sheet, and also for each drainage basin separately.\nThe dataset complements ice change measurements made by other methods, such as the surface elevation change rate detailed in the Climate Data Store (CDS) dataset: 'Ice sheet surface elevation change rate for Greenland and Antarctica from 1992 to present from derived satellite observations', which covers the same areas and includes the GRACE mission timespan.\nThe data was brokered from ESA’s Greenland and ESA's Antarctic Ice Sheet Climate Change Initiative projects.\n\nVariables in the dataset/application are:\nAntarctic basin X ice mass balance, Antarctic basin definition, Antarctic ice mass balance, Antarctic peninsula ice mass balance, East Antactic ice mass balance, Greenland basin X ice mass balance, Greenland basin definition, Greenland ice mass balance, West Antactic ice mass balance",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.38b9366c",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Climate Data Store catalogue"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://datastore.copernicus-climate.eu/documents/satellite-GRACE/C3S_312b_Lot4.D3.IS.8-v3.0_GMB_Product_User_Guide_Specification_i1.1.pdf",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Product User Guide and Specification (PDF)"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://datastore.copernicus-climate.eu/documents/satellite-GRACE/C3S_312b_Lot4.D1.IS.4_v3.0_GMB_Algorithm_Theoretical_Basis_Document_i1.0.pdf",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Algorithm Theoretical Basis Document, Ice Sheets and Ice Shelves Service (PDF)"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://datastore.copernicus-climate.eu/documents/satellite-GRACE/C3S_312b_Lot4_D2.IS.4-v3.0_Product_Quality_Assessment_Report_GMB_i1.0.pdf",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Product Quality Assessment Report (PDF)"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://datastore.copernicus-climate.eu/documents/satellite-GRACE/C3S_312b_Lot4.D1.IS.3-v3.0_GMB_System_Quality_Assurance_Document_i1.0.pdf",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "System Quality Assurance Document, Ice Sheets and Ice Shelves Service (PDF)"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://datastore.copernicus-climate.eu/documents/satellite-GRACE/C3S_312b_Lot4.D2.IS.3_v3.0_GMB_Product_Quality_Assurance_Document_i1.0.pdf",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Product Quality Assurance Document (PDF)"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://datastore.copernicus-climate.eu/documents/satellite-GRACE/C3S_312b_Lot4_D1.S.1-2020_TRGAD_IS_i1.0.pdf",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Target requirements document and Gap analysis document (PDF)"
+    }
+  ],
+  "title": "Gravimetric mass balance data for the Antarctic and Greenland ice sheets from 2003 to 2020 derived from satellite observations",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -35.0,
+          55.0,
+          -55.0,
+          85.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2003-01-01T00:00:00Z",
+          "2017-12-31T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Elevation",
+    "Product type: Satellite observations",
+    "Spatial coverage: Antarctic and Greenland",
+    "Temporal coverage: Past",
+    "Temporal coverage: Present",
+    "Variable domain: Land (cryosphere)"
+  ],
+  "providers": [
+    {
+      "name": "Climate Data Store - European Centre for Medium-Range Weather Forecasts (ECMWF)",
+      "description": "Climate Data Store - ECMWF",
+      "roles": [
+        "licensor",
+        "producer",
+        "processor",
+        "host"
+      ],
+      "url": "https://cds.climate.copernicus.eu/"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dct="http://purl.org/dc/terms/" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/metadata/eu.copernicus.climate.satellite-ocean-colour">
+        <foaf:primaryTopic rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/resource/10.24381/cds.f85b319d"/>
+        <dct:issued>2018-03-28</dct:issued>
+        <dct:modified>2018-03-28</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/srv/eng/xml.metadata.get?uuid=eu.copernicus.climate.satellite-ocean-colour">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://cds.climate.copernicus.eu:443//geonetwork?uuid=eu.copernicus.climate.satellite-ocean-colour">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/resource/10.24381/cds.f85b319d">
+        <dct:identifier>10.24381/cds.f85b319d</dct:identifier>
+        <dct:title>Ocean colour daily data from 1997 to present derived from satellite observations</dct:title>
+        <dct:abstract>This dataset provides global daily estimates of ocean surface chlorophyll-a concentration and remote sensing reflectance derived from multiple satellite sensors. These two products are part of the broader discipline of ocean colour remote sensing, which analyses ocean surface radiances measured from space to derive information about the optical properties and constituents of the upper ocean. This information plays an essential role in our ability to monitor the health and productivity of marine ecosystems, assess the role of the oceans in the global carbon cycle, and quantify the impacts of climate change. Satellite remote sensing is the only method for regular monitoring of ocean biology on a global scale.
+Remote-sensing reflectance (or Rrs) is defined as the ratio of water-leaving radiance to downwelling irradiance and serves as the main input to algorithms used to derive other ocean colour products. Chlorophyll-a (Chl-a) is the main photosynthetic pigment found in phytoplankton, which form the base of the marine food-web and are responsible for approximately half of global photosynthesis. Chl-a can be estimated from Rrs data using different algorithms (see details in the Documentation). Here, we provide a blended Chl-a estimate from multiple algorithms, where blending is based on the suitability of each candidate algorithm to the optical typology of a given pixel. This approach provides the best estimates of global Chl-a across a range of water types.
+The files from this dataset contain global daily composites of merged sensor products: SeaWiFS, MERIS, MODIS Aqua, VIIRS, and (from version 5.0 onward) OLCI. Note that Rrs and Chl-a data are only available over cloud- and ice-free areas. As a result, more complete spatial coverage (as shown in the map in the upper-right corner) can be achieved by aggregating data over longer time periods.
+This dataset is produced using the processing chain software developed by the Ocean Colour component of the European Space Agency Climate Change Initiative project (ESA OC-CCI). Version 5.0 of the dataset is produced by the C3S service whereas previous versions are brokered from ESA OC-CCI.
+
+Variables in the dataset/application are:
+Mass concentration of chlorophyll-a, Remote sensing reflectance</dct:abstract>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/GEMET%20-%20INSPIRE%20themes%2C%20version%201.0/Ocean biochemistry"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Variable domain: Ocean (biochemistry)"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Product type: Satellite observations"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Temporal coverage: Past"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Spatial coverage: Global"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/iso/topicCategory/climatologyMeteorologyAtmosphere"/>
+        <foaf:thumbnail rdf:resource="https://datastore.copernicus-climate.eu/c3s/published-forms-v2/c3sprod/satellite-ocean-colour/overview.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((0 -90, 0 90, 360 90, 360 -90, 0 -90))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:temporal>1997-01-01
+          /
+          2021-07-31</dct:temporal>
+        <dct:publisher rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/organization/ECMWF"/>
+        <dct:accrualPeriodicity>asNeeded</dct:accrualPeriodicity>
+        <dct:language>eng</dct:language>
+        <dct:license>licence</dct:license>
+        <dct:license>https://cds.climate.copernicus.eu/api/v2/terms/static/satellite-land-cover.pdf</dct:license>
+        <dcat:distribution rdf:resource="https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.f85b319d"/>
+        <dcat:distribution rdf:resource="#"/>
+        <dcat:distribution rdf:resource="#"/>
+        <dcat:distribution rdf:resource="#"/>
+        <dcat:distribution rdf:resource="#"/>
+        <dcat:dataQuality>ESA CCI and EC Copernicus program</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+  
