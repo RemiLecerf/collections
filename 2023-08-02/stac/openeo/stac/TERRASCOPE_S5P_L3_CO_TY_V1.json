@@ -1,52 +1,143 @@
 {
-  "type": "Collection",
-  "id": "TERRASCOPE_S5P_L3_CO_TY_V1",
-  "stac_version": "1.0.0",
-  "description": "Contains binned Level-2 TROPOMI CO retrievals. The L3 binning algorithm weighs individual pixels with the overlap area of the pixel and the Level-3 grid cell. The weighing and count vectors are used to apply this weighted average consistently, see http://stcorp.github.io/harp/doc/html/libharp_product.html? ",
-  "links": [],
-  "title": "Sentinel-5P Yearly CO",
-  "extent": {
-    "spatial": {
-      "bbox": [
-        [
-          -180.0,
-          -90.0,
-          180.0,
-          90.0
-        ]
-      ]
+    "assets": {
+        "metadata_iso_19139": {
+            "href": "https://services.terrascope.be/collectioncatalogue/srv/api/records/urn:eop:VITO:TERRASCOPE_S5P_L3_CO_TY_V1/formatters/xml?approved=true",
+            "roles": [
+                "metadata",
+                "iso-19139"
+            ],
+            "title": "ISO 19139 metadata",
+            "type": "application/vnd.iso.19139+xml"
+        },
+        "thumbnail": {
+            "href": "https://services.terrascope.be/collectioncatalogue/images/quicklooks/S5P_CO_TY.png",
+            "roles": [
+                "thumbnail"
+            ],
+            "title": "Thumbnail",
+            "type": "image/png"
+        }
     },
-    "temporal": {
-      "interval": [
-        [
-          "1981-01-01T00:00:00Z",
-          null
+    "cube:dimensions": {
+        "bands": {
+            "type": "bands",
+            "values": [
+                "CO"
+            ]
+        },
+        "t": {
+            "extent": [
+                "2018-07-01T00:00:00Z"
+            ],
+            "type": "temporal"
+        },
+        "x": {
+            "axis": "x",
+            "extent": [
+                -180.0,
+                180.0
+            ],
+            "step": 0.05,
+            "type": "spatial"
+        },
+        "y": {
+            "axis": "y",
+            "extent": [
+                -89.0,
+                89.0
+            ],
+            "step": 0.05,
+            "type": "spatial"
+        }
+    },
+    "description": "Contains binned Level-2 TROPOMI CO retrievals. The L3 binning algorithm weighs individual pixels with the overlap area of the pixel and the Level-3 grid cell. The weighing and count vectors are used to apply this weighted average consistently, see http://stcorp.github.io/harp/doc/html/libharp_product.html? ",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180.0,
+                    -89.0,
+                    180.0,
+                    89.0
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2018-07-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "id": "TERRASCOPE_S5P_L3_CO_TY_V1",
+    "keywords": [
+        "VITO",
+        "TERRASCOPE",
+        "COPERNICUS",
+        "ESA",
+        "Orthoimagery",
+        "Sentinel-5P",
+        "TROPOMI",
+        "Level-3",
+        "Atmospheric Components",
+        "CO",
+        "Year"
+    ],
+    "license": "proprietary",
+    "links": [
+        {
+            "href": "https://sentinel.esa.int/documents/247904/690755/Sentinel_Data_Legal_Notice",
+            "rel": "license"
+        },
+        {
+            "href": "https://services.terrascope.be/wmts/v2",
+            "rel": "wmts",
+            "wmts:layer": "TERRASCOPE_S5P_L3_CO_TY_V1"
+        },
+        {
+            "href": "https://openeocloud.vito.be/openeo/1.0.0/collections",
+            "rel": "root"
+        },
+        {
+            "href": "https://openeocloud.vito.be/openeo/1.0.0/collections",
+            "rel": "parent"
+        },
+        {
+            "href": "https://openeocloud.vito.be/openeo/1.0.0/collections/TERRASCOPE_S5P_L3_CO_TY_V1",
+            "rel": "self"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/datacube/v2.2.0/schema.json",
+        "https://stac-extensions.github.io/eo/v1.1.0/schema.json"
+    ],
+    "stac_version": "0.9.0",
+    "summaries": {
+        "constellation": [
+            "Sentinel-5"
+        ],
+        "eo:bands": [
+            {
+                "gsd": 5600,
+                "name": "CO",
+                "scale": 5,
+                "type": "int16",
+                "unit": "\u00b5mol/m\u00b2"
+            }
+        ],
+        "eo:gsd": [
+            5600
+        ],
+        "federation:backends": [
+            "vito"
+        ],
+        "instruments": [
+            "TROPOMI"
+        ],
+        "platform": [
+            "Sentinel-5P"
         ]
-      ]
-    }
-  },
-  "license": "proprietary",
-  "keywords": [
-    "VITO",
-    "TERRASCOPE",
-    "COPERNICUS",
-    "ESA",
-    "Orthoimagery",
-    "Sentinel-5P",
-    "TROPOMI",
-    "Level-3",
-    "Atmospheric Components",
-    "CO",
-    "Year"
-  ],
-  "providers": [
-    {
-      "name": "WEkEO",
-      "description": "WEkEO DIAS",
-      "roles": [
-        "host"
-      ],
-      "url": "https://www.wekeo.eu/"
-    }
-  ]
+    },
+    "title": "Sentinel-5P Yearly CO"
 }

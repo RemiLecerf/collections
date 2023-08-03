@@ -1,49 +1,70 @@
 {
-  "type": "Collection",
-  "id": "urn:eop:VITO:ESA_WorldCover_SWIR_10m_2021_V2",
-  "stac_version": "1.0.0",
-  "description": "The ESA WorldCover Sentinel-2 yearly SWIR median composite is released per 1 x 1 degree tile.",
-  "links": [],
-  "title": "ESA WorldCover Sentinel-2 yearly SWIR median composite, 10 meter COG format",
-  "extent": {
-    "spatial": {
-      "bbox": [
-        [
-          -180.0,
-          -90.0,
-          180.0,
-          90.0
-        ]
-      ]
+    "type": "Collection",
+    "stac_version": "1.0.0",
+    "id": "urn:eop:VITO:ESA_WorldCover_SWIR_10m_2021_V2",
+    "title": "ESA WorldCover Sentinel-2 yearly SWIR median composite, 10 meter COG format",
+    "description": "The ESA WorldCover Sentinel-2 yearly SWIR median composite is released per 1 x 1 degree tile.",
+    "license": "Restricted Access",
+    "keywords": [
+        "VITO",
+        "COPERNICUS",
+        "ESA",
+        "Land Cover",
+        "Sentinel-2",
+        "Environment",
+        "WorldCover",
+        "Composite"
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180.0,
+                    -60.0,
+                    180.0,
+                    83.0
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2022-08-01T00:00:00Z"
+                ]
+            ]
+        }
     },
-    "temporal": {
-      "interval": [
-        [
-          "1981-01-01T00:00:00Z",
-          null
+    "summaries": {
+        "datetime": {
+            "min": "2022-08-01T00:00:00Z"
+        },
+        "constellation": [
+            "Sentinel-2"
+        ],
+        "instruments": [
+            "MSI"
         ]
-      ]
-    }
-  },
-  "license": "Restricted Access",
-  "keywords": [
-    "VITO",
-    "COPERNICUS",
-    "ESA",
-    "Land Cover",
-    "Sentinel-2",
-    "Environment",
-    "WorldCover",
-    "Composite"
-  ],
-  "providers": [
-    {
-      "name": "WEkEO",
-      "description": "WEkEO DIAS",
-      "roles": [
-        "host"
-      ],
-      "url": "https://www.wekeo.eu/"
-    }
-  ]
+    },
+    "links": [
+        {
+            "rel": "self",
+            "type": "application/json",
+            "href": "https://services.terrascope.be/stac/collections/urn:eop:VITO:ESA_WorldCover_SWIR_10m_2021_V2"
+        },
+        {
+            "rel": "parent",
+            "type": "application/json",
+            "href": "https://services.terrascope.be/stac/"
+        },
+        {
+            "rel": "items",
+            "type": "application/geo+json",
+            "href": "https://services.terrascope.be/stac/collections/urn:eop:VITO:ESA_WorldCover_SWIR_10m_2021_V2/items"
+        },
+        {
+            "rel": "root",
+            "type": "application/json",
+            "href": "https://services.terrascope.be/stac/"
+        }
+    ]
 }

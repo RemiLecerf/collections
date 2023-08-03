@@ -1,52 +1,73 @@
 {
-  "type": "Collection",
-  "id": "urn:eop:VITO:TERRASCOPE_S2_RHOW_V1",
-  "stac_version": "1.0.0",
-  "description": "L2A atmospheric corrected Water-Leaving reflectance (RHOW) products V1, generated using the iCOR processing tool.",
-  "links": [],
-  "title": "Sentinel-2 Water-Leaving Reflectance (RHOW) Products (tiles) - V1",
-  "extent": {
-    "spatial": {
-      "bbox": [
-        [
-          -180.0,
-          -90.0,
-          180.0,
-          90.0
-        ]
-      ]
+    "type": "Collection",
+    "stac_version": "1.0.0",
+    "id": "urn:eop:VITO:TERRASCOPE_S2_RHOW_V1",
+    "title": "Sentinel-2 Water-Leaving Reflectance (RHOW) Products (tiles) - V1",
+    "description": "L2A atmospheric corrected Water-Leaving reflectance (RHOW) products V1, generated using the iCOR processing tool.",
+    "license": "Licence: https://terrascope.be/en/terms-use",
+    "keywords": [
+        "VITO",
+        "TERRASCOPE",
+        "COPERNICUS",
+        "ESA",
+        "Orthoimagery",
+        "Sentinel-2",
+        "MSI",
+        "Level-2A",
+        "Radiometry",
+        "Water Quality",
+        "Water Leaving Reflectance"
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180.0,
+                    -84.0,
+                    180.0,
+                    84
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2015-06-23T00:00:00Z"
+                ]
+            ]
+        }
     },
-    "temporal": {
-      "interval": [
-        [
-          "1981-01-01T00:00:00Z",
-          null
+    "summaries": {
+        "datetime": {
+            "min": "2015-06-23T00:00:00Z"
+        },
+        "constellation": [
+            "Sentinel-2"
+        ],
+        "instruments": [
+            "MSI"
         ]
-      ]
-    }
-  },
-  "license": "Licence: https://terrascope.be/en/terms-use",
-  "keywords": [
-    "VITO",
-    "TERRASCOPE",
-    "COPERNICUS",
-    "ESA",
-    "Orthoimagery",
-    "Sentinel-2",
-    "MSI",
-    "Level-2A",
-    "Radiometry",
-    "Water Quality",
-    "Water Leaving Reflectance"
-  ],
-  "providers": [
-    {
-      "name": "WEkEO",
-      "description": "WEkEO DIAS",
-      "roles": [
-        "host"
-      ],
-      "url": "https://www.wekeo.eu/"
-    }
-  ]
+    },
+    "links": [
+        {
+            "rel": "self",
+            "type": "application/json",
+            "href": "https://services.terrascope.be/stac/collections/urn:eop:VITO:TERRASCOPE_S2_RHOW_V1"
+        },
+        {
+            "rel": "parent",
+            "type": "application/json",
+            "href": "https://services.terrascope.be/stac/"
+        },
+        {
+            "rel": "items",
+            "type": "application/geo+json",
+            "href": "https://services.terrascope.be/stac/collections/urn:eop:VITO:TERRASCOPE_S2_RHOW_V1/items"
+        },
+        {
+            "rel": "root",
+            "type": "application/json",
+            "href": "https://services.terrascope.be/stac/"
+        }
+    ]
 }

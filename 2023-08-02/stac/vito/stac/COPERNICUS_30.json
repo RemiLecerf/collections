@@ -1,51 +1,131 @@
 {
-  "type": "Collection",
-  "id": "COPERNICUS_30",
-  "stac_version": "1.0.0",
-  "description": "Copernicus Global 30 meter Digital Elevation Model dataset in COG format.",
-  "links": [],
-  "title": "Copernicus Global 30 meter Digital Elevation Model dataset.",
-  "extent": {
-    "spatial": {
-      "bbox": [
-        [
-          -180.0,
-          -90.0,
-          180.0,
-          90.0
-        ]
-      ]
+    "assets": {
+        "metadata_iso_19139": {
+            "href": "https://services.terrascope.be/collectioncatalogue/srv/api/records/urn:eop:VITO:COP_DEM_GLO_30M_COG/formatters/xml?approved=true",
+            "roles": [
+                "metadata",
+                "iso-19139"
+            ],
+            "title": "ISO 19139 metadata",
+            "type": "application/vnd.iso.19139+xml"
+        },
+        "thumbnail": {
+            "href": "https://services.terrascope.be/collectioncatalogue/images/quicklooks/COP_DEM_GLO_30M_COG_QL.png",
+            "roles": [
+                "thumbnail"
+            ],
+            "title": "Thumbnail",
+            "type": "image/png"
+        }
     },
-    "temporal": {
-      "interval": [
-        [
-          "1981-01-01T00:00:00Z",
-          null
+    "cube:dimensions": {
+        "bands": {
+            "type": "bands",
+            "values": [
+                "DEM"
+            ]
+        },
+        "t": {
+            "extent": [
+                "2010-12-12T00:00:00Z"
+            ],
+            "type": "temporal"
+        },
+        "x": {
+            "axis": "x",
+            "extent": [
+                -180.0013889,
+                179.9986111
+            ],
+            "reference_system": 4326,
+            "step": 0.0002777777777777778,
+            "type": "spatial"
+        },
+        "y": {
+            "axis": "y",
+            "extent": [
+                -89.9998611,
+                84.0001389
+            ],
+            "reference_system": 4326,
+            "step": 0.0002777777777777778,
+            "type": "spatial"
+        }
+    },
+    "description": "Copernicus Global 30 meter Digital Elevation Model dataset in COG format.",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180.0013889,
+                    -89.9998611,
+                    179.9986111,
+                    84.0001389
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2010-12-12T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "id": "COPERNICUS_30",
+    "keywords": [
+        "VITO",
+        "TERRASCOPE",
+        "COPERNICUS",
+        "ESA",
+        "Radar",
+        "TDX",
+        "TSX",
+        "Elevation",
+        "DSM",
+        "DEM"
+    ],
+    "license": "proprietary",
+    "links": [
+        {
+            "href": "https://spacedata.copernicus.eu/documents/20126/0/CSCDA_ESA_Mission-specific+Annex.pdf",
+            "rel": "license"
+        },
+        {
+            "href": "https://services.terrascope.be/wmts/v2",
+            "rel": "wmts",
+            "wmts:layer": "COP_DEM_GLO_30M_COG"
+        }
+    ],
+    "providers": [
+        {
+            "name": "VITO, on behalf of the Belgian Science Policy Office (BELSPO).",
+            "roles": [
+                "producer",
+                "licensor"
+            ],
+            "url": "https://terrascope.be"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/datacube/v2.2.0/schema.json",
+        "https://stac-extensions.github.io/eo/v1.1.0/schema.json"
+    ],
+    "stac_version": "0.9.0",
+    "summaries": {
+        "eo:bands": [
+            {
+                "name": "DEM"
+            }
+        ],
+        "instruments": [
+            "TDX-1",
+            "TSX-1"
+        ],
+        "platform": [
+            "TSX",
+            "TDX"
         ]
-      ]
-    }
-  },
-  "license": "proprietary",
-  "keywords": [
-    "VITO",
-    "TERRASCOPE",
-    "COPERNICUS",
-    "ESA",
-    "Radar",
-    "TDX",
-    "TSX",
-    "Elevation",
-    "DSM",
-    "DEM"
-  ],
-  "providers": [
-    {
-      "name": "WEkEO",
-      "description": "WEkEO DIAS",
-      "roles": [
-        "host"
-      ],
-      "url": "https://www.wekeo.eu/"
-    }
-  ]
+    },
+    "title": "Copernicus Global 30 meter Digital Elevation Model dataset."
 }

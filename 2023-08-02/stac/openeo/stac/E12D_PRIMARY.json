@@ -1,48 +1,132 @@
 {
-  "type": "Collection",
-  "id": "CNES_LAND_COVER_MAP",
-  "stac_version": "1.0.0",
-  "description": "The CNES Land Cover Map (Occupation des Sols, OSO) produces land classification for Metropolitan France at 10 m spatial resolution based on Sentinel-2 L2A data within the Theia Land Cover CES framework.\nMaps for 2021, 2020, 2019, and 2018 use a 23-categories nomenclature. For earlier maps in 2017 and 2016, a fully compatible 17-classes nomenclature is employed.\n",
-  "links": [],
-  "title": "CNES Land Cover Map",
-  "extent": {
-    "spatial": {
-      "bbox": [
-        [
-          -180.0,
-          -90.0,
-          180.0,
-          90.0
-        ]
-      ]
+    "assets": {
+        "thumbnail": {
+            "href": "https://collections.eurodatacube.com/e12d_primary_corrected/e12d_primary_corrected.png",
+            "roles": [
+                "thumbnail"
+            ],
+            "title": "Thumbnail",
+            "type": "image/png"
+        }
     },
-    "temporal": {
-      "interval": [
-        [
-          "1981-01-01T00:00:00Z",
-          null
+    "cube:dimensions": {
+        "bands": {
+            "type": "bands",
+            "values": [
+                "PrimaryRoadsActivity"
+            ]
+        },
+        "t": {
+            "extent": [
+                "2017-05-15T00:00:00Z",
+                "2020-05-15T00:00:00Z"
+            ],
+            "type": "temporal"
+        },
+        "x": {
+            "axis": "x",
+            "extent": [
+                -31.26818657,
+                34.06794939183746
+            ],
+            "type": "spatial"
+        },
+        "y": {
+            "axis": "y",
+            "extent": [
+                27.693670044054727,
+                70.09145355
+            ],
+            "type": "spatial"
+        }
+    },
+    "datasource_type": "byoc-06e51c55-a10c-43ba-ad93-ddd6258d5e9a",
+    "description": "This indicator is based on the detection of moving trucks on motorways in the EU. The detection uses data from the Copernicus Sentinel-2 satellite.",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -31.26818657,
+                    27.693670044054727,
+                    34.06794939183746,
+                    70.09145355
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2017-05-15T00:00:00Z",
+                    "2020-05-15T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "id": "E12D_PRIMARY",
+    "keywords": [
+        "open data",
+        "sentinel hub",
+        "raster",
+        "race challenges"
+    ],
+    "links": [
+        {
+            "href": "https://collections.eurodatacube.com/e12d_primary_corrected",
+            "rel": "about",
+            "title": "Website describing the collection",
+            "type": "text/html"
+        },
+        {
+            "href": "https://docs.sentinel-hub.com/api/latest/api/process/",
+            "rel": "about",
+            "title": "Details about running Evalscripts",
+            "type": "text/html"
+        },
+        {
+            "href": "https://raw.githubusercontent.com/eurodatacube/public-collections/main/collections/e12d_primary_corrected/script.js",
+            "rel": "processing-expression",
+            "sentinelhub:layer_name": "Trucks E12D Motorway",
+            "sentinelhub:mosaicking_order": "mostRecent",
+            "sentinelhub:upsampling": "BICUBIC",
+            "title": "Evalscript to generate Trucks E12D Motorway imagery",
+            "type": "application/javascript"
+        },
+        {
+            "rel": "license",
+            "title": "License",
+            "type": "text/html"
+        },
+        {
+            "href": "https://openeocloud.vito.be/openeo/1.0.0/collections",
+            "rel": "root"
+        },
+        {
+            "href": "https://openeocloud.vito.be/openeo/1.0.0/collections",
+            "rel": "parent"
+        },
+        {
+            "href": "https://openeocloud.vito.be/openeo/1.0.0/collections/E12D_PRIMARY",
+            "rel": "self"
+        }
+    ],
+    "providers": [
+        {
+            "name": "Sentinel Hub",
+            "roles": [
+                "processor"
+            ],
+            "url": "https://services.sentinel-hub.com"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/datacube/v1.0.0/schema.json"
+    ],
+    "stac_version": "1.0.0",
+    "summaries": {
+        "federation:backends": [
+            "sentinelhub"
         ]
-      ]
-    }
-  },
-  "license": "proprietary",
-  "keywords": [
-    "derived data",
-    "land cover",
-    "machine learning",
-    "open data",
-    "raster",
-    "sentinel hub",
-    "systematic"
-  ],
-  "providers": [
-    {
-      "name": "WEkEO",
-      "description": "WEkEO DIAS",
-      "roles": [
-        "host"
-      ],
-      "url": "https://www.wekeo.eu/"
-    }
-  ]
+    },
+    "title": "E12D_Primary_corrected",
+    "type": "Collection"
 }

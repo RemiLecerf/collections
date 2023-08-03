@@ -1,48 +1,161 @@
 {
-  "type": "Collection",
-  "id": "CORINE_LAND_COVER_ACCOUNTING_LAYERS",
-  "stac_version": "1.0.0",
-  "description": "The CORINE Land Cover (CLC) Accounting Layers are CLC status layers modified for the purpose of consistent statistical analysis in the land cover change accounting system at EEA. \nThe modification combines CLC status and change layers in the 100m raster in order to create homogeneous quality time series of CLC / CLC-change layers for accounting purposes.\nThe CLC inventory consists of 44 land cover and land use classes derived from a series of satellite missions since it was first established. \nThere are altogether 5 mapping inventories implemented since 1986, producing five status layers (CLC1990, CLC2000, CLC2006, CLC2012, CLC2018), 4 CLC-Change layers for the corresponding periods (1990-2000, 2000-2006, 2006-2012, 2012-2018) and 4 CLC Accounting layers for 2000, 2006, 2012 and 2018. \nMore information can be found in Annex 5 of the [Product User manual](https://land.copernicus.eu/user-corner/technical-library/clc-product-user-manual). \n",
-  "links": [],
-  "title": "CORINE Land Cover Accounting Layers",
-  "extent": {
-    "spatial": {
-      "bbox": [
-        [
-          -180.0,
-          -90.0,
-          180.0,
-          90.0
-        ]
-      ]
+    "assets": {
+        "thumbnail": {
+            "href": "https://collections.eurodatacube.com/corine-land-cover-accounting-layers/thumbnail.png",
+            "roles": [
+                "thumbnail"
+            ],
+            "title": "Thumbnail",
+            "type": "image/png"
+        }
     },
-    "temporal": {
-      "interval": [
-        [
-          "1981-01-01T00:00:00Z",
-          null
+    "cube:dimensions": {
+        "bands": {
+            "type": "bands",
+            "values": [
+                "CLC_ACC",
+                "dataMask"
+            ]
+        },
+        "t": {
+            "extent": [
+                "2000-01-01T00:00:00Z",
+                "2018-01-01T00:00:00Z"
+            ],
+            "type": "temporal"
+        },
+        "x": {
+            "axis": "x",
+            "extent": [
+                -56,
+                72
+            ],
+            "reference_system": 3857,
+            "step": 0.000992063492063,
+            "type": "spatial"
+        },
+        "y": {
+            "axis": "y",
+            "extent": [
+                24,
+                72
+            ],
+            "reference_system": 3857,
+            "step": 0.000992063492063,
+            "type": "spatial"
+        }
+    },
+    "description": "The CORINE Land Cover (CLC) Accounting Layers are CLC status layers modified for the purpose of consistent statistical analysis in the land cover change accounting system at EEA. \nThe modification combines CLC status and change layers in the 100m raster in order to create homogeneous quality time series of CLC / CLC-change layers for accounting purposes.\nThe CLC inventory consists of 44 land cover and land use classes derived from a series of satellite missions since it was first established. \nThere are altogether 5 mapping inventories implemented since 1986, producing five status layers (CLC1990, CLC2000, CLC2006, CLC2012, CLC2018), 4 CLC-Change layers for the corresponding periods (1990-2000, 2000-2006, 2006-2012, 2012-2018) and 4 CLC Accounting layers for 2000, 2006, 2012 and 2018. \nMore information can be found in Annex 5 of the [Product User manual](https://land.copernicus.eu/user-corner/technical-library/clc-product-user-manual). \n",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -56,
+                    24,
+                    72,
+                    72
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-01-01T00:00:00Z",
+                    "2018-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "id": "CORINE_LAND_COVER_ACCOUNTING_LAYERS",
+    "keywords": [
+        "copernicus services",
+        "accounting",
+        "land cover",
+        "CLMS",
+        "corine",
+        "derived data",
+        "open data"
+    ],
+    "license": "proprietary",
+    "links": [
+        {
+            "href": "https://collections.eurodatacube.com/corine-land-cover-accounting-layers",
+            "rel": "about",
+            "title": "Website describing the collection",
+            "type": "text/html"
+        },
+        {
+            "href": "https://creodias.sentinel-hub.com/ogc/wmts/0f674e0c-f211-4df8-ad9f-fa31997a1e7f",
+            "rel": "wmts",
+            "wmts:dimensions": {
+                "warnings": true
+            },
+            "wmts:layer": "CORINE-LAND-COVER-ACCOUNTING-LAYER"
+        },
+        {
+            "href": "https://docs.sentinel-hub.com/api/latest/api/process/",
+            "rel": "about",
+            "title": "Details about running Evalscripts",
+            "type": "text/html"
+        },
+        {
+            "href": "https://custom-scripts.sentinel-hub.com/copernicus_services/corine/corine_land_cover_accounting_layer/script.js",
+            "rel": "processing-expression",
+            "sentinelhub:layer_name": "Corine Land Cover Accounting Layer",
+            "sentinelhub:mosaicking_order": "mostRecent",
+            "sentinelhub:upsampling": "BICUBIC",
+            "title": "Evalscript to generate Corine Land Cover Accounting Layer imagery",
+            "type": "application/javascript"
+        },
+        {
+            "href": "https://collections.eurodatacube.com/corine-land-cover-accounting-layers/readme.html#band-information",
+            "rel": "about",
+            "title": "Nomenclature mapping - band values CLC-ACC labels",
+            "type": "text/html"
+        },
+        {
+            "href": "https://www.eea.europa.eu/legal/copyright",
+            "rel": "license",
+            "title": "License",
+            "type": "text/html"
+        },
+        {
+            "href": "https://openeocloud.vito.be/openeo/1.0.0/collections",
+            "rel": "root"
+        },
+        {
+            "href": "https://openeocloud.vito.be/openeo/1.0.0/collections",
+            "rel": "parent"
+        },
+        {
+            "href": "https://openeocloud.vito.be/openeo/1.0.0/collections/CORINE_LAND_COVER_ACCOUNTING_LAYERS",
+            "rel": "self"
+        }
+    ],
+    "providers": [
+        {
+            "name": "Sentinel Hub",
+            "roles": [
+                "processor"
+            ],
+            "url": "https://creodias.sentinel-hub.com"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/datacube/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.0.0/schema.json"
+    ],
+    "stac_version": "1.0.0",
+    "summaries": {
+        "federation:backends": [
+            "vito",
+            "sentinelhub"
+        ],
+        "provider:backend": [
+            "vito",
+            "sentinelhub"
         ]
-      ]
-    }
-  },
-  "license": "proprietary",
-  "keywords": [
-    "copernicus services",
-    "accounting",
-    "land cover",
-    "CLMS",
-    "corine",
-    "derived data",
-    "open data"
-  ],
-  "providers": [
-    {
-      "name": "WEkEO",
-      "description": "WEkEO DIAS",
-      "roles": [
-        "host"
-      ],
-      "url": "https://www.wekeo.eu/"
-    }
-  ]
+    },
+    "title": "CORINE Land Cover Accounting Layers",
+    "type": "Collection"
 }

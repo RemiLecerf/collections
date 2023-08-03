@@ -1,51 +1,273 @@
 {
-  "type": "Collection",
-  "id": "GLOBAL_SURFACE_WATER",
-  "stac_version": "1.0.0",
-  "description": "The Global Surface Water dataset was developed by the European Commission's Joint Research Centre within the framework of the Copernicus Programme. It is derived from Landsat imagery and and shows different aspects of the spatio-temporal distribution of surface water between 1984 and 2021 at the global scale.",
-  "links": [],
-  "title": "Global Surface Water",
-  "extent": {
-    "spatial": {
-      "bbox": [
-        [
-          -180.0,
-          -90.0,
-          180.0,
-          90.0
-        ]
-      ]
+    "assets": {
+        "thumbnail": {
+            "href": "https://collections.eurodatacube.com/global-surface-water/global-surface-water.png",
+            "roles": [
+                "thumbnail"
+            ],
+            "title": "Thumbnail",
+            "type": "image/png"
+        }
     },
-    "temporal": {
-      "interval": [
-        [
-          "1981-01-01T00:00:00Z",
-          null
+    "cube:dimensions": {
+        "bands": {
+            "type": "bands",
+            "values": [
+                "change",
+                "extent",
+                "occurrence",
+                "recurrence",
+                "seasonality",
+                "transitions"
+            ]
+        },
+        "t": {
+            "extent": [
+                "2019-01-01T00:00:00Z",
+                "2020-01-01T00:00:00Z",
+                "2021-01-01T00:00:00Z"
+            ],
+            "step": "P1Y",
+            "type": "temporal"
+        },
+        "x": {
+            "axis": "x",
+            "extent": [
+                -180,
+                180
+            ],
+            "reference_system": 4326,
+            "step": 0.00025,
+            "type": "spatial"
+        },
+        "y": {
+            "axis": "y",
+            "extent": [
+                -50,
+                80
+            ],
+            "reference_system": 4326,
+            "step": 0.00025,
+            "type": "spatial"
+        }
+    },
+    "datasource_type": "byoc-9a525f12-33b6-424e-a0f2-d567eec0f277",
+    "description": "The Global Surface Water dataset was developed by the European Commission's Joint Research Centre within the framework of the Copernicus Programme. It is derived from Landsat imagery and and shows different aspects of the spatio-temporal distribution of surface water between 1984 and 2021 at the global scale.",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -50,
+                    180,
+                    80
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2019-01-01T00:00:00Z",
+                    "2020-01-01T00:00:00Z",
+                    "2021-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "id": "GLOBAL_SURFACE_WATER",
+    "keywords": [
+        "sentinel hub",
+        "xcube",
+        "raster",
+        "systematic",
+        "water bodies",
+        "surface water",
+        "inland water",
+        "derived data",
+        "climate change",
+        "open data"
+    ],
+    "license": "proprietary",
+    "links": [
+        {
+            "href": "https://collections.eurodatacube.com/stac/global-surface-water.json",
+            "rel": "self"
+        },
+        {
+            "href": "https://collections.eurodatacube.com/global-surface-water",
+            "rel": "about",
+            "title": "Website describing the collection",
+            "type": "text/html"
+        },
+        {
+            "href": "https://creodias.sentinel-hub.com/ogc/wmts/8c9bcae9-3c93-4587-8ada-9e55818979da",
+            "rel": "wmts",
+            "wmts:dimensions": {
+                "warnings": true
+            },
+            "wmts:layer": "GLOBAL-SURFACE-WATER-OCCURRENCE"
+        },
+        {
+            "href": "https://docs.sentinel-hub.com/api/latest/api/process/",
+            "rel": "about",
+            "title": "Details about running Evalscripts",
+            "type": "text/html"
+        },
+        {
+            "href": "https://custom-scripts.sentinel-hub.com/other_collections/global-surface-water/global_surface_water_occurrence/script.js",
+            "rel": "processing-expression",
+            "sentinelhub:layer_name": "Global Surface Water Occurrence",
+            "sentinelhub:mosaicking_order": "mostRecent",
+            "sentinelhub:upsampling": "BICUBIC",
+            "title": "Evalscript to generate Global Surface Water Occurrence imagery",
+            "type": "application/javascript"
+        },
+        {
+            "href": "https://custom-scripts.sentinel-hub.com/other_collections/global-surface-water/global_surface_water_change/script.js",
+            "rel": "processing-expression",
+            "sentinelhub:layer_name": "Global Surface Water Occurrence Change Intensity",
+            "sentinelhub:mosaicking_order": "mostRecent",
+            "sentinelhub:upsampling": "BICUBIC",
+            "title": "Evalscript to generate Global Surface Water Occurrence Change Intensity imagery",
+            "type": "application/javascript"
+        },
+        {
+            "href": "https://custom-scripts.sentinel-hub.com/other_collections/global-surface-water/global_surface_water_seasonality/script.js",
+            "rel": "processing-expression",
+            "sentinelhub:layer_name": "Global Surface Water Seasonality",
+            "sentinelhub:mosaicking_order": "mostRecent",
+            "sentinelhub:upsampling": "BICUBIC",
+            "title": "Evalscript to generate Global Surface Water Seasonality imagery",
+            "type": "application/javascript"
+        },
+        {
+            "href": "https://custom-scripts.sentinel-hub.com/other_collections/global-surface-water/global_surface_water_recurrence/script.js",
+            "rel": "processing-expression",
+            "sentinelhub:layer_name": "Global Surface Water Recurrence",
+            "sentinelhub:mosaicking_order": "mostRecent",
+            "sentinelhub:upsampling": "BICUBIC",
+            "title": "Evalscript to generate Global Surface Water Recurrence imagery",
+            "type": "application/javascript"
+        },
+        {
+            "href": "https://custom-scripts.sentinel-hub.com/other_collections/global-surface-water/global_surface_water_transitions/script.js",
+            "rel": "processing-expression",
+            "sentinelhub:layer_name": "Global Surface Water Transitions",
+            "sentinelhub:mosaicking_order": "mostRecent",
+            "sentinelhub:upsampling": "BICUBIC",
+            "title": "Evalscript to generate Global Surface Water Transitions imagery",
+            "type": "application/javascript"
+        },
+        {
+            "href": "https://custom-scripts.sentinel-hub.com/other_collections/global-surface-water/global_surface_water_extent/script.js",
+            "rel": "processing-expression",
+            "sentinelhub:layer_name": "Global Surface Water Extent",
+            "sentinelhub:mosaicking_order": "mostRecent",
+            "sentinelhub:upsampling": "BICUBIC",
+            "title": "Evalscript to generate Global Surface Water Extent imagery",
+            "type": "application/javascript"
+        },
+        {
+            "href": "https://collections.eurodatacube.com/global-surface-water/readme.html#band-information",
+            "rel": "about",
+            "title": "Nomenclature mapping - band values Global Surface Water labels",
+            "type": "text/html"
+        },
+        {
+            "href": "https://www.copernicus.eu/en/about-copernicus/international-cooperation",
+            "rel": "license",
+            "title": "License",
+            "type": "text/html"
+        }
+    ],
+    "providers": [
+        {
+            "name": "Sentinel Hub",
+            "roles": [
+                "processor"
+            ],
+            "url": "https://creodias.sentinel-hub.com"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/datacube/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.0.0/schema.json"
+    ],
+    "stac_version": "1.0.0",
+    "summaries": {
+        "raster:bands": [
+            {
+                "description": "Changes in water occurrence between two epochs, the first ranging from 1984 to 1999 and the second covering 2000 to 2021.",
+                "name": "change",
+                "openeo:gsd": {
+                    "unit": "\u00b0",
+                    "value": [
+                        0.000277777777778,
+                        0.000277777777778
+                    ]
+                }
+            },
+            {
+                "description": "Maximum extent of surface water bodies in the 38-year time range.",
+                "name": "extent",
+                "openeo:gsd": {
+                    "unit": "\u00b0",
+                    "value": [
+                        0.000277777777778,
+                        0.000277777777778
+                    ]
+                }
+            },
+            {
+                "description": "Intra- and inter-annual frequency of surface water presence in the time range between 1984 and 2021.",
+                "name": "occurrence",
+                "openeo:gsd": {
+                    "unit": "\u00b0",
+                    "value": [
+                        0.000277777777778,
+                        0.000277777777778
+                    ]
+                }
+            },
+            {
+                "description": "Inter-annual variability of surface water presence in a defined water period within the entire time range from 1984 to 2021.",
+                "name": "recurrence",
+                "openeo:gsd": {
+                    "unit": "\u00b0",
+                    "value": [
+                        0.000277777777778,
+                        0.000277777777778
+                    ]
+                }
+            },
+            {
+                "description": "Intra-annual distribution of surface water in the particular review year.",
+                "name": "seasonality",
+                "openeo:gsd": {
+                    "unit": "\u00b0",
+                    "value": [
+                        0.000277777777778,
+                        0.000277777777778
+                    ]
+                }
+            },
+            {
+                "description": "Visualises changes in the three surface water classes (1) not water, (2) seasonal water, and (3) permanent water between the first and last year in the 38-year time period.",
+                "name": "transitions",
+                "openeo:gsd": {
+                    "unit": "\u00b0",
+                    "value": [
+                        0.000277777777778,
+                        0.000277777777778
+                    ]
+                }
+            },
+            {
+                "description": "The mask of data/no data pixels.",
+                "name": "dataMask"
+            }
         ]
-      ]
-    }
-  },
-  "license": "proprietary",
-  "keywords": [
-    "sentinel hub",
-    "xcube",
-    "raster",
-    "systematic",
-    "water bodies",
-    "surface water",
-    "inland water",
-    "derived data",
-    "climate change",
-    "open data"
-  ],
-  "providers": [
-    {
-      "name": "WEkEO",
-      "description": "WEkEO DIAS",
-      "roles": [
-        "host"
-      ],
-      "url": "https://www.wekeo.eu/"
-    }
-  ]
+    },
+    "title": "Global Surface Water",
+    "type": "Collection"
 }

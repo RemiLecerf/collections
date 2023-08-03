@@ -1,50 +1,181 @@
 {
-  "type": "Collection",
-  "id": "FIRMS",
-  "stac_version": "1.0.0",
-  "description": "The Earth Engine version of the Fire Information for Resource Management\nSystem (FIRMS) dataset contains the LANCE fire detection product in\nrasterized form. The near real-time (NRT) active fire locations are\nprocessed by LANCE using the standard MODIS MOD14/MYD14 Fire and Thermal\nAnomalies product. Each active fire location represents the centroid of a\n1km pixel that is flagged by the algorithm as containing one or more fires\nwithin the pixel. The data are rasterized as follows: for each FIRMS active\nfire point, a 1km bounding box (BB) is defined; pixels in the MODIS\nsinusoidal projection that intersect the FIRMS BB are identified; if\nmultiple FIRMS BBs intersect the same pixel, the one with higher confidence\nis retained; in case of a tie, the brighter one is retained.\n\nThe data in the near-real-time dataset are not considered to be of science\nquality.\n\nAdditional information can be found [here](https://earthdata.nasa.gov/earth-observation-data/near-real-time/firms/about-firms).\n",
-  "links": [],
-  "title": "FIRMS: Fire Information for Resource Management System",
-  "extent": {
-    "spatial": {
-      "bbox": [
-        [
-          -180.0,
-          -90.0,
-          180.0,
-          90.0
-        ]
-      ]
+    "description": "The Earth Engine version of the Fire Information for Resource Management\nSystem (FIRMS) dataset contains the LANCE fire detection product in\nrasterized form. The near real-time (NRT) active fire locations are\nprocessed by LANCE using the standard MODIS MOD14/MYD14 Fire and Thermal\nAnomalies product. Each active fire location represents the centroid of a\n1km pixel that is flagged by the algorithm as containing one or more fires\nwithin the pixel. The data are rasterized as follows: for each FIRMS active\nfire point, a 1km bounding box (BB) is defined; pixels in the MODIS\nsinusoidal projection that intersect the FIRMS BB are identified; if\nmultiple FIRMS BBs intersect the same pixel, the one with higher confidence\nis retained; in case of a tie, the brighter one is retained.\n\nThe data in the near-real-time dataset are not considered to be of science\nquality.\n\nAdditional information can be found [here](https://earthdata.nasa.gov/earth-observation-data/near-real-time/firms/about-firms).\n",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-11-01T00:00:00Z",
+                    "2023-05-30T00:00:00"
+                ]
+            ]
+        }
     },
-    "temporal": {
-      "interval": [
-        [
-          "1981-01-01T00:00:00Z",
-          null
-        ]
-      ]
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "day"
+    },
+    "gee:provider_ids": [
+        "C1227495594-LANCEMODIS"
+    ],
+    "gee:terms_of_use": "NASA promotes the full and open sharing of all data with the research and\napplications communities, private industry, academia, and the general\npublic. Read the [NASA Data and Information Policy]\n(https://science.nasa.gov/earth-science/earth-science-data/data-information-policy/).\n\nIf you provide the [Land, Atmosphere Near real-time Capability for EOS\n(LANCE) / Fire Information for Resource Management System (FIRMS)]\n(https://earthdata.nasa.gov/earth-observation-data/near-real-time)\ndata to a third party, follow the guidelines in the [LANCE Citation,\nAcknowledgements, and Disclaimer]\n(https://earthdata.nasa.gov/earth-observation-data/near-real-time/citation#ed-lance-disclaimer)\nsite and replicate or provide a link to the [disclaimer]\n(https://earthdata.nasa.gov/earth-observation-data/near-real-time/citation#ed-lance-disclaimer).\n",
+    "gee:type": "image_collection",
+    "id": "FIRMS",
+    "keywords": [
+        "eosdis",
+        "fire",
+        "firms",
+        "geophysical",
+        "hotspot",
+        "lance",
+        "modis",
+        "nasa",
+        "thermal"
+    ],
+    "license": "proprietary",
+    "links": [
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections/FIRMS",
+            "rel": "self",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections",
+            "rel": "parent",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/",
+            "rel": "root",
+            "type": "application/json"
+        },
+        {
+            "code": "JavaScript",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/FIRMS/FIRMS",
+            "rel": "related",
+            "title": "Run the example for FIRMS in the Earth Engine Code Editor",
+            "type": "text/html"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/images/FIRMS/FIRMS_sample.png",
+            "rel": "preview",
+            "type": "image/png"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/FIRMS#terms-of-use",
+            "rel": "license",
+            "type": "text/html"
+        }
+    ],
+    "providers": [
+        {
+            "name": "NASA / LANCE / EOSDIS",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://earthdata.nasa.gov/earth-observation-data/near-real-time/firms"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/FIRMS"
+        }
+    ],
+    "sci:citation": "MODIS Collection 6 NRT Hotspot / Active Fire Detections MCD14DL.\nAvailable on-line [https://earthdata.nasa.gov/firms](https://earthdata.nasa.gov/firms).\n[doi:10.5067/FIRMS/MODIS/MCD14DL.NRT.006](https://doi.org/10.5067/FIRMS/MODIS/MCD14DL.NRT.006)\n",
+    "stac_extensions": [
+        "collection-assets"
+    ],
+    "stac_version": "1.0.0",
+    "summaries": {
+        "T21": {
+            "gee:estimated_range": true,
+            "maximum": 509.29,
+            "minimum": 300
+        },
+        "confidence": {
+            "maximum": 100
+        },
+        "eo:bands": [
+            {
+                "description": "The brightness temperature of a fire pixel using MODIS channels 21/22.",
+                "gee:units": "K",
+                "name": "T21"
+            },
+            {
+                "description": "A detection confidence intended to help users gauge the\nquality of individual active fire pixels. The confidence estimate ranges\nbetween 0% and 100% for all fire pixels within the fire mask. The\nconfidence field should be used with caution; it is likely that it will\nvary in meaning in different parts of the world.\n",
+                "gee:units": "%",
+                "name": "confidence"
+            },
+            {
+                "description": "Line number in the FIRMS CSV file that the pixel came from.",
+                "name": "line_number"
+            }
+        ],
+        "gsd": [
+            1000
+        ],
+        "line_number": {
+            "gee:estimated_range": true,
+            "maximum": 35302,
+            "minimum": 1
+        }
+    },
+    "title": "FIRMS: Fire Information for Resource Management System",
+    "type": "Collection",
+    "version": "6",
+    "cube:dimensions": {
+        "x": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                -180,
+                180
+            ]
+        },
+        "y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                -90,
+                90
+            ]
+        },
+        "t": {
+            "type": "temporal",
+            "extent": [
+                "2000-11-01T00:00:00Z",
+                "2023-05-30T00:00:00"
+            ]
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "T21",
+                "confidence",
+                "line_number"
+            ]
+        }
+    },
+    "assets": {
+        "preview_4": {
+            "href": "https://developers.google.com/earth-engine/datasets/images/FIRMS/FIRMS_sample.png",
+            "type": "image/png",
+            "roles": [
+                "thumbnail"
+            ]
+        }
     }
-  },
-  "license": "proprietary",
-  "keywords": [
-    "eosdis",
-    "fire",
-    "firms",
-    "geophysical",
-    "hotspot",
-    "lance",
-    "modis",
-    "nasa",
-    "thermal"
-  ],
-  "providers": [
-    {
-      "name": "WEkEO",
-      "description": "WEkEO DIAS",
-      "roles": [
-        "host"
-      ],
-      "url": "https://www.wekeo.eu/"
-    }
-  ]
 }

@@ -1,50 +1,223 @@
 {
-  "type": "Collection",
-  "id": "PROBAV_L3_S5_TOC_100M",
-  "stac_version": "1.0.0",
-  "description": "PROBA-V S5-TOC – 5-daily global composites, Top-Of-Canopy, 100m resolution (Collection 2)",
-  "links": [],
-  "title": "PROBA-V S5 TOC 100 m COG: Data corrected for atmospheric effects with the SMAC (Simplified Method for Atmosheric Corrections) algorithm, COG format - Collection 2",
-  "extent": {
-    "spatial": {
-      "bbox": [
-        [
-          -180.0,
-          -90.0,
-          180.0,
-          90.0
-        ]
-      ]
+    "assets": {
+        "metadata_iso_19139": {
+            "href": "https://services.terrascope.be/collectioncatalogue/srv/api/records/urn:eop:VITO:PROBAV_S5_TOC_100M_COG_V2/formatters/xml?approved=true",
+            "roles": [
+                "metadata",
+                "iso-19139"
+            ],
+            "title": "ISO 19139 metadata",
+            "type": "application/vnd.iso.19139+xml"
+        },
+        "thumbnail": {
+            "href": "https://services.terrascope.be/collectioncatalogue/images/quicklooks/Proba-V_S5.jpg",
+            "roles": [
+                "thumbnail"
+            ],
+            "title": "Thumbnail",
+            "type": "image/jpeg"
+        }
     },
-    "temporal": {
-      "interval": [
-        [
-          "1981-01-01T00:00:00Z",
-          null
+    "cube:dimensions": {
+        "bands": {
+            "type": "bands",
+            "values": [
+                "NDVI",
+                "RED",
+                "NIR",
+                "BLUE",
+                "SWIR",
+                "SZA",
+                "SAA",
+                "SWIRVAA",
+                "SWIRVZA",
+                "VNIRVAA",
+                "VNIRVZA",
+                "SM"
+            ]
+        },
+        "t": {
+            "extent": [
+                "2013-10-16T00:00:00Z",
+                "2020-06-30T00:00:00Z"
+            ],
+            "type": "temporal"
+        },
+        "x": {
+            "axis": "x",
+            "extent": [
+                -179.999,
+                179.999
+            ],
+            "step": 0.000992063492063,
+            "type": "spatial"
+        },
+        "y": {
+            "axis": "y",
+            "extent": [
+                -56,
+                75
+            ],
+            "step": 0.000992063492063,
+            "type": "spatial"
+        }
+    },
+    "description": "PROBA-V S5-TOC \u2013 5-daily global composites, Top-Of-Canopy, 100m resolution (Collection 2)",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -179.999,
+                    -56,
+                    179.999,
+                    75
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2013-10-16T00:00:00Z",
+                    "2020-06-30T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "id": "PROBAV_L3_S5_TOC_100M",
+    "keywords": [
+        "VITO",
+        "TERRASCOPE",
+        "ESA",
+        "Orthoimagery",
+        "PROBA-V",
+        "Level-3",
+        "Radiometry",
+        "Environment",
+        "TOC"
+    ],
+    "license": "proprietary",
+    "links": [
+        {
+            "href": "https://services.terrascope.be/wmts/v2",
+            "rel": "wmts",
+            "wmts:layer": "PROBAV_L3_S5_TOC_100M_RADIOMETRY"
+        }
+    ],
+    "providers": [
+        {
+            "name": "VITO, on behalf of the Belgian Science Policy Office (BELSPO).",
+            "roles": [
+                "producer",
+                "licensor"
+            ],
+            "url": "http://proba-v.vgt.vito.be"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/datacube/v2.2.0/schema.json",
+        "https://stac-extensions.github.io/eo/v1.1.0/schema.json"
+    ],
+    "stac_version": "0.9.0",
+    "summaries": {
+        "constellation": [
+            "PROBA-V"
+        ],
+        "eo:bands": [
+            {
+                "gsd": 100,
+                "name": "NDVI",
+                "offset": -0.08,
+                "scale": 0.004,
+                "type": "int8",
+                "unit": "1"
+            },
+            {
+                "gsd": 100,
+                "name": "RED",
+                "scale": 0.0005,
+                "type": "int16",
+                "unit": "1"
+            },
+            {
+                "gsd": 100,
+                "name": "NIR",
+                "scale": 0.0005,
+                "type": "int16",
+                "unit": "1"
+            },
+            {
+                "gsd": 100,
+                "name": "BLUE",
+                "scale": 0.0005,
+                "type": "int16",
+                "unit": "1"
+            },
+            {
+                "gsd": 100,
+                "name": "SWIR",
+                "scale": 0.0005,
+                "type": "int16",
+                "unit": "1"
+            },
+            {
+                "gsd": 100,
+                "name": "SZA",
+                "scale": 0.5,
+                "type": "int8",
+                "unit": "deg"
+            },
+            {
+                "gsd": 100,
+                "name": "SAA",
+                "scale": 1.5,
+                "type": "int8",
+                "unit": "deg"
+            },
+            {
+                "gsd": 100,
+                "name": "SWIRVAA",
+                "scale": 1.5,
+                "type": "int8",
+                "unit": "deg"
+            },
+            {
+                "gsd": 100,
+                "name": "SWIRVZA",
+                "scale": 0.5,
+                "type": "int8",
+                "unit": "deg"
+            },
+            {
+                "gsd": 100,
+                "name": "VNIRVAA",
+                "scale": 1.5,
+                "type": "int8",
+                "unit": "deg"
+            },
+            {
+                "gsd": 100,
+                "name": "VNIRVZA",
+                "scale": 0.5,
+                "type": "int8",
+                "unit": "deg"
+            },
+            {
+                "gsd": 100,
+                "name": "SM",
+                "scale": 1.0,
+                "type": "int8",
+                "unit": "1"
+            }
+        ],
+        "eo:gsd": [
+            100
+        ],
+        "instruments": [
+            "PROBA-V"
+        ],
+        "platform": [
+            "PROBA-V"
         ]
-      ]
-    }
-  },
-  "license": "proprietary",
-  "keywords": [
-    "VITO",
-    "TERRASCOPE",
-    "ESA",
-    "Orthoimagery",
-    "PROBA-V",
-    "Level-3",
-    "Radiometry",
-    "Environment",
-    "TOC"
-  ],
-  "providers": [
-    {
-      "name": "WEkEO",
-      "description": "WEkEO DIAS",
-      "roles": [
-        "host"
-      ],
-      "url": "https://www.wekeo.eu/"
-    }
-  ]
+    },
+    "title": "PROBA-V S5 TOC 100 m COG: Data corrected for atmospheric effects with the SMAC (Simplified Method for Atmosheric Corrections) algorithm, COG format - Collection 2"
 }

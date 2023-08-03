@@ -1,45 +1,30 @@
 {
-  "type": "Collection",
-  "id": "PLANETSCOPE",
-  "stac_version": "1.0.0",
-  "description": "PlanetScope is one of the satellite constellation operated by Planet. PlanetScope satellite constellation consists of more than 130 small satellites called Doves. Each Dove satellite is a CubeSat made of three cubic units and thus measures only 10 cm x 10 cm x 30 cm. The satellites are launched in groups, which constantly improves mission's characteristics such as revisit times, spatial and spectral resolutions. The constellation is constantly on and does not require an acquisition planning. PlanetScope is commercial data and has to be ordered by the user",
-  "links": [],
-  "title": "PlanetScope",
-  "extent": {
-    "spatial": {
-      "bbox": [
-        [
-          -180.0,
-          -90.0,
-          180.0,
-          90.0
-        ]
-      ]
+    "cube:dimensions": {
+        "x": {
+            "axis": "x",
+            "extent": [
+                -180,
+                179.99999999999983
+            ],
+            "step": 0.00833333333,
+            "type": "spatial"
+        },
+        "y": {
+            "axis": "y",
+            "extent": [
+                -90,
+                89.99999999999991
+            ],
+            "step": 0.00833333333,
+            "type": "spatial"
+        }
     },
-    "temporal": {
-      "interval": [
-        [
-          "1981-01-01T00:00:00Z",
-          null
-        ]
-      ]
-    }
-  },
-  "license": "various",
-  "keywords": [
-    "sentinel hub",
-    "PlanetScope",
-    "vhr",
-    "commercial data"
-  ],
-  "providers": [
-    {
-      "name": "WEkEO",
-      "description": "WEkEO DIAS",
-      "roles": [
-        "host"
-      ],
-      "url": "https://www.wekeo.eu/"
-    }
-  ]
+    "description": "POPULATION_DENSITY",
+    "id": "POPULATION_DENSITY",
+    "license": "proprietary",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/datacube/v2.2.0/schema.json",
+        "https://stac-extensions.github.io/eo/v1.1.0/schema.json"
+    ],
+    "stac_version": "0.9.0"
 }

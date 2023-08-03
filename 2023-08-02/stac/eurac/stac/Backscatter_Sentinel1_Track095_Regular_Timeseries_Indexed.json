@@ -1,46 +1,135 @@
 {
-  "type": "Collection",
-  "id": "Backscatter_Sentinel1_Track095_Regular_Timeseries_Indexed",
-  "stac_version": "1.0.0",
-  "description": "Sentinel-1A backscatter timeseries. Sigma0 for VH and VV polarization calculated using SNAP.",
-  "links": [],
-  "title": "Backscatter Sentinel-1 Track095",
-  "extent": {
-    "spatial": {
-      "bbox": [
-        [
-          -180.0,
-          -90.0,
-          180.0,
-          90.0
-        ]
-      ]
+    "engine": "WCPS",
+    "stac_version": "0.9.0",
+    "stac_extensions": [
+        "datacube"
+    ],
+    "type": "Collection",
+    "id": "Backscatter_Sentinel1_Track095_Regular_Timeseries_Indexed",
+    "title": "Backscatter Sentinel-1 Track095",
+    "description": "Sentinel-1A backscatter timeseries. Sigma0 for VH and VV polarization calculated using SNAP.",
+    "keywords": [
+        "S-1",
+        "WLF",
+        "sigma",
+        "backscatter",
+        "intensity"
+    ],
+    "version": "v1",
+    "license": "CC-BY-4.0",
+    "sci:citation": "Eurac Research 2020, contains modified Copernicus Sentinel data 2018, processed by ESA.",
+    "providers": [
+        {
+            "name": "Eurac EO WCS",
+            "url": "http://www.eurac.edu",
+            "roles": [
+                "Host"
+            ]
+        },
+        {
+            "name": "European Space Agency (ESA)",
+            "url": "https://www.esa.int/",
+            "roles": [
+                "Producer"
+            ]
+        },
+        {
+            "name": "Carlo Marin",
+            "url": "http://www.eurac.edu/en/research/mountains/remsen/staff/Pages/staffdetails.aspx?persId=36763",
+            "roles": [
+                "Processor"
+            ]
+        }
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    10.34907487330507,
+                    45.06293988692341,
+                    15.791755782530483,
+                    48.48890583680307
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2014-10-06T00:00:00Z",
+                    "2016-09-13T00:00:00Z"
+                ]
+            ]
+        }
     },
-    "temporal": {
-      "interval": [
-        [
-          "1981-01-01T00:00:00Z",
-          null
+    "links": [
+        {
+            "rel": "licence",
+            "href": "https://creativecommons.org/licenses/by/4.0/",
+            "type": "text/html",
+            "title": "License Link"
+        }
+    ],
+    "cube:dimensions": {
+        "DATE": {
+            "type": "temporal",
+            "extent": [
+                "2014-10-06T00:00:00.000Z",
+                "2016-09-13T00:00:00.000Z"
+            ],
+            "step": "P12D"
+        },
+        "X": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                10.34907487330507,
+                15.791755782530483
+            ],
+            "reference_system": 3035
+        },
+        "Y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                45.06293988692341,
+                48.48890583680307
+            ],
+            "reference_system": 3035
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "VH",
+                "VV"
+            ]
+        }
+    },
+    "summaries": {
+        "constellation": [
+            "Sentinel-1"
+        ],
+        "platform": [
+            "Sentinel-1A"
+        ],
+        "rows": 19861,
+        "columns": 20012,
+        "instruments": [
+            "SAR"
+        ],
+        "gsd": [
+            20.0
+        ],
+        "eo:bands": [
+            {
+                "name": "VH",
+                "common_name": "VH",
+                "gsd": 20.0
+            },
+            {
+                "name": "VV",
+                "common_name": "VV",
+                "gsd": 20.0
+            }
         ]
-      ]
     }
-  },
-  "license": "CC-BY-4.0",
-  "keywords": [
-    "S-1",
-    "WLF",
-    "sigma",
-    "backscatter",
-    "intensity"
-  ],
-  "providers": [
-    {
-      "name": "WEkEO",
-      "description": "WEkEO DIAS",
-      "roles": [
-        "host"
-      ],
-      "url": "https://www.wekeo.eu/"
-    }
-  ]
 }

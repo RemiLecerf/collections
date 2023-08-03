@@ -1,48 +1,102 @@
 {
-  "type": "Collection",
-  "id": "ADO_factor_elevation",
-  "stac_version": "1.0.0",
-  "description": "ADO_elevation is a digital surface model (DSM). For further information visit website copernicus land monitoring service: https://land.copernicus.eu/imagery-in-situ/eu-dem/eu-dem-v1-0-and-derived-products/eu-dem-v1.0?tab=metadata",
-  "links": [],
-  "title": "Factor elevation",
-  "extent": {
-    "spatial": {
-      "bbox": [
-        [
-          -180.0,
-          -90.0,
-          180.0,
-          90.0
-        ]
-      ]
+    "engine": "WCPS",
+    "stac_version": "0.9.0",
+    "stac_extensions": [
+        "datacube"
+    ],
+    "type": "Collection",
+    "id": "ADO_factor_elevation",
+    "title": "Factor elevation",
+    "description": "ADO_elevation is a digital surface model (DSM). For further information visit website copernicus land monitoring service: https://land.copernicus.eu/imagery-in-situ/eu-dem/eu-dem-v1-0-and-derived-products/eu-dem-v1.0?tab=metadata",
+    "keywords": [
+        "Digital Elevation Model",
+        "Elevation",
+        "Copernicus Land",
+        "Copernicus",
+        "Alps",
+        "ADO project",
+        "ADO"
+    ],
+    "version": "v1",
+    "license": "'Access to data is based on a principle of full, open and free access as established by the Copernicus data and information policy Regulation (EU) No 1159/2013 of 12 July 2013. This regulation establishes registration and licensing conditions for GMES/Copernicus users and can be found here. Free, full and open access to this data set is made on the conditions that: 1. When distributing or communicating Copernicus dedicated data and Copernicus service information to the public, users shall inform the public of the source of that data and information. 2. Users shall make sure not to convey the impression to the public that the user's activities are officially endorsed by the Union. 3. Where that data or information has been adapted or modified, the user shall clearly state this. 4. The data remain the sole property of the European Union. Any information and data produced in the framework of the action shall be the sole property of the European Union. Any communication and publication by the beneficiary shall acknowledge that the data were produced with funding by the European Union.'",
+    "sci:citation": "N/A",
+    "providers": [
+        {
+            "name": "eurac research",
+            "url": "http://www.eurac.edu",
+            "roles": [
+                "Host"
+            ]
+        },
+        {
+            "name": "Joint Research Centre (JRC) of the European Commission",
+            "url": "https://joint-research-centre.ec.europa.eu/jrc-sites-across-europe/jrc-ispra-italy_en",
+            "roles": [
+                "Processor"
+            ]
+        },
+        {
+            "name": "JRC (European Commission)",
+            "url": "https://joint-research-centre.ec.europa.eu/index_en",
+            "roles": [
+                "Producer"
+            ]
+        }
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    4.008691628723303,
+                    42.8850623133261,
+                    17.50812678651869,
+                    50.31849469803712
+                ]
+            ]
+        }
     },
-    "temporal": {
-      "interval": [
-        [
-          "1981-01-01T00:00:00Z",
-          null
+    "cube:dimensions": {
+        "X": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                4.008691628723303,
+                17.50812678651869
+            ],
+            "reference_system": 3035
+        },
+        "Y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                42.8850623133261,
+                50.31849469803712
+            ],
+            "reference_system": 3035
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "alps_dem"
+            ]
+        }
+    },
+    "summaries": {
+        "constellation": [
+            "N/A"
+        ],
+        "platform": [
+            "N/A"
+        ],
+        "rows": 33327,
+        "columns": 40961,
+        "instruments": [
+            "N/A"
+        ],
+        "eo:bands": [
+            {
+                "name": "alps_dem"
+            }
         ]
-      ]
     }
-  },
-  "license": "'Access to data is based on a principle of full, open and free access as established by the Copernicus data and information policy Regulation (EU) No 1159/2013 of 12 July 2013. This regulation establishes registration and licensing conditions for GMES/Copernicus users and can be found here. Free, full and open access to this data set is made on the conditions that: 1. When distributing or communicating Copernicus dedicated data and Copernicus service information to the public, users shall inform the public of the source of that data and information. 2. Users shall make sure not to convey the impression to the public that the user's activities are officially endorsed by the Union. 3. Where that data or information has been adapted or modified, the user shall clearly state this. 4. The data remain the sole property of the European Union. Any information and data produced in the framework of the action shall be the sole property of the European Union. Any communication and publication by the beneficiary shall acknowledge that the data were produced with funding by the European Union.'",
-  "keywords": [
-    "Digital Elevation Model",
-    "Elevation",
-    "Copernicus Land",
-    "Copernicus",
-    "Alps",
-    "ADO project",
-    "ADO"
-  ],
-  "providers": [
-    {
-      "name": "WEkEO",
-      "description": "WEkEO DIAS",
-      "roles": [
-        "host"
-      ],
-      "url": "https://www.wekeo.eu/"
-    }
-  ]
 }

@@ -1,53 +1,74 @@
 {
-  "type": "Collection",
-  "id": "urn:eop:VITO:TERRASCOPE_S2_SPM_V1",
-  "stac_version": "1.0.0",
-  "description": "Suspended particulate matter concentration in inland, coastal and transitional waters generated using a switching version of the semi-empirical single-band Nechad et al.(2010) algorithm. The algorithm switches between bands in function of the derived SPM concentrations. Lower wavelengths are more sensitive to small changes in low SPM concentration, but rapidly saturates with high SPM concentrations. Longer wavelengths saturate less at high SPM concentration, but are less sensitive for the low SPM concentrations. B04 (665 nm) is used for concentrations up till 50 g m-3 and B08 (865 nm) for concentrations > 150 g m-3. In between a weighted average of both bands is calculated. Land and clouds are masked.",
-  "links": [],
-  "title": "Sentinel-2 Suspended Particulate Matter (SPM) (tiles) - V1",
-  "extent": {
-    "spatial": {
-      "bbox": [
-        [
-          -180.0,
-          -90.0,
-          180.0,
-          90.0
-        ]
-      ]
+    "type": "Collection",
+    "stac_version": "1.0.0",
+    "id": "urn:eop:VITO:TERRASCOPE_S2_SPM_V1",
+    "title": "Sentinel-2 Suspended Particulate Matter (SPM) (tiles) - V1",
+    "description": "Suspended particulate matter concentration in inland, coastal and transitional waters generated using a switching version of the semi-empirical single-band Nechad et al.(2010) algorithm. The algorithm switches between bands in function of the derived SPM concentrations. Lower wavelengths are more sensitive to small changes in low SPM concentration, but rapidly saturates with high SPM concentrations. Longer wavelengths saturate less at high SPM concentration, but are less sensitive for the low SPM concentrations. B04 (665 nm) is used for concentrations up till 50 g m-3 and B08 (865 nm) for concentrations > 150 g m-3. In between a weighted average of both bands is calculated. Land and clouds are masked.",
+    "license": "Licence: https://terrascope.be/en/terms-use",
+    "keywords": [
+        "VITO",
+        "TERRASCOPE",
+        "COPERNICUS",
+        "ESA",
+        "Orthoimagery",
+        "Sentinel-2",
+        "MSI",
+        "Level-3",
+        "Radiometry",
+        "Water Quality",
+        "Total Suspended Matter",
+        "Suspended Particulate Matter"
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180.0,
+                    -84.0,
+                    180.0,
+                    84.0
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2017-06-15T00:00:00Z"
+                ]
+            ]
+        }
     },
-    "temporal": {
-      "interval": [
-        [
-          "1981-01-01T00:00:00Z",
-          null
+    "summaries": {
+        "datetime": {
+            "min": "2017-06-15T00:00:00Z"
+        },
+        "constellation": [
+            "Sentinel-2"
+        ],
+        "instruments": [
+            "MSI"
         ]
-      ]
-    }
-  },
-  "license": "Licence: https://terrascope.be/en/terms-use",
-  "keywords": [
-    "VITO",
-    "TERRASCOPE",
-    "COPERNICUS",
-    "ESA",
-    "Orthoimagery",
-    "Sentinel-2",
-    "MSI",
-    "Level-3",
-    "Radiometry",
-    "Water Quality",
-    "Total Suspended Matter",
-    "Suspended Particulate Matter"
-  ],
-  "providers": [
-    {
-      "name": "WEkEO",
-      "description": "WEkEO DIAS",
-      "roles": [
-        "host"
-      ],
-      "url": "https://www.wekeo.eu/"
-    }
-  ]
+    },
+    "links": [
+        {
+            "rel": "self",
+            "type": "application/json",
+            "href": "https://services.terrascope.be/stac/collections/urn:eop:VITO:TERRASCOPE_S2_SPM_V1"
+        },
+        {
+            "rel": "parent",
+            "type": "application/json",
+            "href": "https://services.terrascope.be/stac/"
+        },
+        {
+            "rel": "items",
+            "type": "application/geo+json",
+            "href": "https://services.terrascope.be/stac/collections/urn:eop:VITO:TERRASCOPE_S2_SPM_V1/items"
+        },
+        {
+            "rel": "root",
+            "type": "application/json",
+            "href": "https://services.terrascope.be/stac/"
+        }
+    ]
 }

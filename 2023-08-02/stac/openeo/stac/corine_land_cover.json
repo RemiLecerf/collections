@@ -1,45 +1,105 @@
 {
-  "type": "Collection",
-  "id": "corine_land_cover",
-  "stac_version": "1.0.0",
-  "description": "The CORINE Land Cover (CLC) inventory began in 1985, consisting of 44 land cover classes. This collection is resampled and stored at a 10m x 10m resolution. For further information on CORINE land cover see [here](https://land.copernicus.eu/pan-european/corine-land-cover)",
-  "links": [],
-  "title": "CORINE Land Cover",
-  "extent": {
-    "spatial": {
-      "bbox": [
-        [
-          -180.0,
-          -90.0,
-          180.0,
-          90.0
-        ]
-      ]
+    "cube:dimensions": {
+        "bands": {
+            "type": "bands",
+            "values": [
+                "CLC"
+            ]
+        },
+        "t": {
+            "extent": [
+                [
+                    "2000-12-15T00:00:00",
+                    "2018-12-15T00:00:00"
+                ]
+            ],
+            "type": "temporal"
+        },
+        "x": {
+            "axis": "x",
+            "extent": [
+                1400000.0,
+                7900000.0
+            ],
+            "reference_system": "PROJCS[\"Azimuthal_Equidistant\",GEOGCS[\"GCS_WGS_1984\",DATUM[\"D_WGS_1984\",SPHEROID[\"WGS_1984\",6378137,298.257223563]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433]],PROJECTION[\"Azimuthal_Equidistant\"],PARAMETER[\"latitude_of_center\",53],PARAMETER[\"longitude_of_center\",24],PARAMETER[\"false_easting\",5837287.81977],PARAMETER[\"false_northing\",2121415.69617],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]]]",
+            "type": "spatial"
+        },
+        "y": {
+            "axis": "y",
+            "extent": [
+                100000.0,
+                4500000.0
+            ],
+            "reference_system": "PROJCS[\"Azimuthal_Equidistant\",GEOGCS[\"GCS_WGS_1984\",DATUM[\"D_WGS_1984\",SPHEROID[\"WGS_1984\",6378137,298.257223563]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433]],PROJECTION[\"Azimuthal_Equidistant\"],PARAMETER[\"latitude_of_center\",53],PARAMETER[\"longitude_of_center\",24],PARAMETER[\"false_easting\",5837287.81977],PARAMETER[\"false_northing\",2121415.69617],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]]]",
+            "type": "spatial"
+        }
     },
-    "temporal": {
-      "interval": [
-        [
-          "1981-01-01T00:00:00Z",
-          null
-        ]
-      ]
-    }
-  },
-  "license": "proprietary",
-  "keywords": [
-    "EODC",
-    "Copernicus",
-    "ARD",
-    "Level-3"
-  ],
-  "providers": [
-    {
-      "name": "WEkEO",
-      "description": "WEkEO DIAS",
-      "roles": [
-        "host"
-      ],
-      "url": "https://www.wekeo.eu/"
-    }
-  ]
+    "description": "The CORINE Land Cover (CLC) inventory began in 1985, consisting of 44 land cover classes. This collection is resampled and stored at a 10m x 10m resolution. For further information on CORINE land cover see [here](https://land.copernicus.eu/pan-european/corine-land-cover)",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -32.091997820189285,
+                    31.6977150076753,
+                    55.116146716432254,
+                    72.11413813793037
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-12-15T00:00:00Z",
+                    "2018-12-15T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "id": "corine_land_cover",
+    "keywords": [
+        "EODC",
+        "Copernicus",
+        "ARD",
+        "Level-3"
+    ],
+    "license": "proprietary",
+    "links": [
+        {
+            "href": "https://openeocloud.vito.be/openeo/1.0.0/collections",
+            "rel": "root"
+        },
+        {
+            "href": "https://openeocloud.vito.be/openeo/1.0.0/collections",
+            "rel": "parent"
+        },
+        {
+            "href": "https://openeocloud.vito.be/openeo/1.0.0/collections/corine_land_cover",
+            "rel": "self"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
+        "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json",
+        "https://github.com/stac-extensions/eo"
+    ],
+    "stac_version": "1.0.0",
+    "summaries": {
+        "eo:bands": [
+            {
+                "common_name": "band_1",
+                "name": "CLC"
+            }
+        ],
+        "federation:backends": [
+            "eodc"
+        ],
+        "odc:file_format": {
+            "0": "GeoTIFF"
+        },
+        "odc:product_family": {
+            "0": "level2"
+        }
+    },
+    "title": "CORINE Land Cover",
+    "type": "Collection"
 }

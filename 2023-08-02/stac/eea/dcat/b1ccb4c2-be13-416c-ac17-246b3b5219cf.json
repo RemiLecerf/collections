@@ -1,90 +1,97 @@
 {
   "type": "Collection",
-  "id": "EO:ECMWF:DAT:CEMS_GLOFAS_SEASONAL_REFORECAST",
+  "id": "c62bb056-5ac3-4512-b642-7f484175d951",
   "stac_version": "1.0.0",
-  "description": "This dataset provides a gridded modelled time series of river discharge forced with seasonal range meteorological reforecasts. The data is a consistent representation of a key hydrological variable across the global domain, and is a product of the Global Flood Awareness System (GloFAS). It is accompanied by an ancillary file for interpretation that provides the upstream area (see the related variables table and associated link in the documentation).\nThis dataset was produced by forcing a hydrological modelling chain with input from the European Centre for Medium-range Weather Forecasts (ECMWF) ensemble seasonal forecasting system, SEAS5. For the period of 1981 to 2016 the number of ensemble members is 25, whilst reforecasts produced for 2017 onwards use a 51-member ensemble. Reforecasts are forecasts run over past dates, with those presented here used for producing the seasonal river discharge thresholds. In addition, they provide a suitably long time period against which the skill of the seasonal forecast can be assessed. The reforecasts are initialised monthly and run for 123 days, with a 24-hourly time step. For more specific information on the how the seasonal reforecast dataset is produced we refer to the documentation.\nCompanion datasets, also available through the Climate Data Store (CDS), include the seasonal forecasts, for which the dataset provided here can be useful for local skill assessment and post-processing. For users looking for shorter term forecasts there are also medium-range forecasts and reforecasts available, as well as historical simulations that can be used to derive the hydrological climatology. For users looking specifically for European hydrological data, we refer to the European Flood Awareness System (EFAS) forecasts and historical simulations. All these datasets are part of the operational flood forecasting within the Copernicus Emergency Management Service (CEMS).\n\nVariables in the dataset/application are:\nRiver discharge in the last 24 hours\n\nVariables in the dataset/application are:\nUpstream area",
+  "description": "Corine Land Cover Change 1990-2000 (CHA9000) is one of the Corine Land Cover (CLC) datasets produced within the frame the Copernicus Land Monitoring Service referring to changes in land cover / land use status between the years 1990 and 2000. CHA is derived from satellite imagery by direct mapping of changes taken place between two consecutive inventories, based on image-to-image comparison.\n\nCLC service has a long-time heritage (formerly known as \"CORINE Land Cover Programme\"), coordinated by the European Environment Agency (EEA). It provides consistent and thematically detailed information on land cover and land cover changes across Europe.\n\nCLC datasets are based on the classification of satellite images produced by the national teams of the participating countries - the EEA members and cooperating countries (EEA39). National CLC inventories are then further integrated into a seamless land cover map of Europe. The resulting European database relies on standard methodology and nomenclature with following base parameters: 44 classes in the hierarchical 3-level CLC nomenclature; minimum mapping unit (MMU) for status layers is 25 hectares; minimum width of linear elements is 100 metres. Change layers have higher resolution, i.e. minimum mapping unit (MMU) is 5 hectares for Land Cover Changes (CHA), and the minimum width of linear elements is 100 metres.\n\nThe CLC service delivers important data sets supporting the implementation of key priority areas of the Environment Action Programmes of the European Union as e.g. protecting ecosystems, halting the loss of biological diversity, tracking the impacts of climate change, monitoring urban land take, assessing developments in agriculture or dealing with water resources directives. CLC belongs to the Pan-European component of the Copernicus Land Monitoring Service (https://land.copernicus.eu/), part of the European Copernicus Programme coordinated by the European Environment Agency, providing environmental information from a combination of air- and space-based observation systems and in-situ monitoring.\n\nAdditional information about CLC product description including mapping guides can be found at https://land.copernicus.eu/user-corner/technical-library/. CLC class descriptions can be found at https://land.copernicus.eu/user-corner/technical-library/corine-land-cover-nomenclature-guidelines/html/.",
   "links": [
     {
       "rel": "describedby",
-      "href": "https://confluence.ecmwf.int/display/CEMS/Global+Flood+Awareness+System",
-      "type": "WWW:LINK-1.0-http--link",
-      "title": "Information pages for GloFAS"
+      "href": "https://land.copernicus.eu/pan-european/corine-land-cover/lcc-1990-2000/view",
+      "type": "WWW:LINK-1.0-http--link"
     },
     {
       "rel": "describedby",
-      "href": "https://confluence.ecmwf.int/display/COPSRV/GloFAS+available+data",
-      "type": "WWW:LINK-1.0-http--link",
-      "title": "Available GloFAS data"
+      "href": "https://image.discomap.eea.europa.eu/arcgis/rest/services/Corine/CHA1990_2000_WM/MapServer",
+      "type": "ESRI:REST"
     },
     {
       "rel": "describedby",
-      "href": "http://www.globalfloods.eu/",
-      "type": "WWW:LINK-1.0-http--link",
-      "title": "GloFAS web site"
-    },
-    {
-      "rel": "describedby",
-      "href": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.0aa9b9dd",
-      "type": "WWW:LINK-1.0-http--link",
-      "title": "Climate Data Store catalogue"
-    },
-    {
-      "rel": "describedby",
-      "href": "https://confluence.ecmwf.int/display/COPSRV/GloFAS+available+data",
-      "type": "WWW:LINK-1.0-http--link",
-      "title": "Static file for upstream area"
-    },
-    {
-      "rel": "describedby",
-      "href": "https://confluence.ecmwf.int/display/COPSRV/Global+Flood+Awareness+System",
-      "type": "WWW:LINK-1.0-http--link",
-      "title": "Information pages for GloFAS"
-    },
-    {
-      "rel": "describedby",
-      "href": "https://confluence.ecmwf.int/display/CEMS/Auxiliary+Data",
-      "type": "WWW:LINK-1.0-http--link",
-      "title": "Auxiliary data"
+      "href": "https://image.discomap.eea.europa.eu/arcgis/services/Corine/CHA1990_2000_WM/MapServer/WMSServer?service=WMS&request=GetCapabilities&version=1.3.0",
+      "type": "OGC:WMS",
+      "title": "0"
     }
   ],
-  "title": "Seasonal reforecasts of river discharge and related data from the Global Flood Awareness System",
+  "title": "Corine Land Cover Change 1990-2000 (raster 100m) - version 2020_20u1, May 2020",
   "extent": {
     "spatial": {
       "bbox": [
         [
-          -180.0,
-          -90.0,
-          180.0,
-          90.0
+          -31.5612,
+          27.4058,
+          44.8207,
+          71.4091
         ]
       ]
     },
     "temporal": {
       "interval": [
         [
-          "1981-01-01T00:00:00Z",
-          null
+          "1986-01-01T00:00:00Z",
+          "2001-12-31T00:00:00Z"
         ]
       ]
     }
   },
   "license": "proprietary",
   "keywords": [
-    "Product type: Seasonal reforecasts",
-    "Provider: Copernicus CEMS",
-    "Reforecast",
-    "Spatial coverage: Global",
-    "Temporal coverage: Past",
-    "Variable domain: Land (hydrology)"
+    "Austria",
+    "Belgium",
+    "Bulgaria",
+    "Croatia",
+    "Czechia",
+    "Denmark",
+    "Estonia",
+    "France",
+    "Germany",
+    "Greece",
+    "Hungary",
+    "Ireland",
+    "Italy",
+    "Land cover",
+    "Land use",
+    "Latvia",
+    "Liechtenstein",
+    "Lithuania",
+    "Luxembourg",
+    "Malta",
+    "Montenegro",
+    "Netherlands",
+    "Poland",
+    "Portugal",
+    "Romania",
+    "Serbia",
+    "Slovakia",
+    "Slovenia",
+    "Spain",
+    "Türkiye",
+    "United Kingdom",
+    "Water",
+    "land cover",
+    "land use",
+    "landscape",
+    "landscape alteration"
   ],
   "providers": [
     {
-      "name": "WEkEO",
-      "description": "WEkEO DIAS",
+      "name": "European Environment Agency",
+      "description": "SDI - EEA geospatial data catalogue",
       "roles": [
+        "licensor",
+        "producer",
+        "processor",
         "host"
       ],
-      "url": "https://www.wekeo.eu/"
+      "url": "https://sdi.eea.europa.eu/"
     }
   ]
 }

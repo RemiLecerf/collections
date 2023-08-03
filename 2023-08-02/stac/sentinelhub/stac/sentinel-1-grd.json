@@ -1,59 +1,176 @@
 {
-  "type": "Collection",
-  "id": "urn:ogc:def:EOP:VITO:VGT_S10",
-  "stac_version": "1.0.0",
-  "description": "The VGT-S10 are near-global, 10-daily composite images which are synthesised from the 'best available' observations registered in the course of every 'dekad' by the orbiting earth observation system SPOT-VEGETATION. The products provide data from all spectral bands (SWIR, NIR, RED, BLUE), the NDVI and auxiliary data on image acquisition parameters. The VEGETATION system allows operational and near real-time applications, at global, continental and regional scales, in very broad environmentally and socio-economically critical fields. The VEGETATION instrument is operational since April 1998, first with VGT1, from March 2003 onwards, with VGT2. More information is available on: https://www.vito-eodata.be/PDF/image/faq_help/Faq.html#SPOT-VEGETATION",
-  "links": [],
-  "title": "Global 10 Days Synthesis of SPOT VEGETATION Images (VGT-S10)",
-  "extent": {
-    "spatial": {
-      "bbox": [
-        [
-          -180.0,
-          -90.0,
-          180.0,
-          90.0
-        ]
-      ]
+    "stac_version": "1.0.0",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/sat/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/sar/v1.0.0/schema.json",
+        "https://docs.sentinel-hub.com/api/latest/stac/s1/v1.0.0/schema.json"
+    ],
+    "type": "Collection",
+    "id": "sentinel-1-grd",
+    "title": "Sentinel 1 GRD",
+    "description": "Sentinel 1 Ground Range Detected Imagery",
+    "sci:citation": "Modified Copernicus Sentinel data [Year]/Sentinel Hub",
+    "license": "proprietary",
+    "providers": [
+        {
+            "name": "ESA",
+            "roles": [
+                "producer"
+            ],
+            "url": "https://esa.int/"
+        },
+        {
+            "name": "AWS",
+            "roles": [
+                "host"
+            ],
+            "url": "https://aws.amazon.com/"
+        },
+        {
+            "name": "Sinergise",
+            "roles": [
+                "processor"
+            ],
+            "url": "https://www.sinergise.com/"
+        }
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180.0,
+                    -85.0,
+                    180.0,
+                    85.0
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2014-10-03T00:00:00Z"
+                ]
+            ]
+        }
     },
-    "temporal": {
-      "interval": [
-        [
-          "1981-01-01T00:00:00Z",
-          null
+    "summaries": {
+        "platform": [
+            "sentinel-1a",
+            "sentinel-1b"
+        ],
+        "instrument": [
+            "c-sar"
+        ],
+        "constellation": [
+            "sentinel-1"
+        ],
+        "sat:orbit_state": [
+            "ascending",
+            "descending"
+        ],
+        "sar:instrument_mode": [
+            "SM",
+            "IW",
+            "EW",
+            "WV"
+        ],
+        "sar:frequency_band": [
+            "C"
+        ],
+        "sar:center_frequency": [
+            5.405
+        ],
+        "sar:product_type": [
+            "GRD"
+        ],
+        "sar:polarizations": [
+            "HH",
+            "HV",
+            "VH",
+            "VV"
+        ],
+        "sar:resolution_range": [
+            9.0,
+            20.0,
+            23.0,
+            50.0,
+            52.0,
+            84.0,
+            88.0,
+            93.0
+        ],
+        "sar:resolution_azimuth": [
+            9.0,
+            22.0,
+            23.0,
+            50.0,
+            51.0,
+            84.0,
+            87.0
+        ],
+        "sar:pixel_spacing_range": [
+            3.5,
+            10.0,
+            25.0,
+            40.0
+        ],
+        "sar:pixel_spacing_azimuth": [
+            3.5,
+            10.0,
+            25.0,
+            40.0
+        ],
+        "s1:timeliness": [
+            "NRT10m",
+            "NRT1h",
+            "NRT3h",
+            "Fast24h",
+            "Offline",
+            "Reprocessing",
+            "ArchNormal"
+        ],
+        "s1:resolution": [
+            "HIGH",
+            "MEDIUM",
+            "FULL"
+        ],
+        "s1:polarization": [
+            "SH",
+            "SV",
+            "DH",
+            "DV",
+            "HH",
+            "HV",
+            "VV",
+            "VH"
         ]
-      ]
-    }
-  },
-  "license": "Copyright CNES.Distributed by VITO / Licence: https://terrascope.be/en/terms-use",
-  "keywords": [
-    "VITO",
-    "TERRASCOPE",
-    "ESA",
-    "Orthoimagery",
-    "SPOT",
-    "SPOT-4",
-    "SPOT-5",
-    "VEGETATION-1",
-    "VEGETATION-2",
-    "Level-2",
-    "Geohysical environment",
-    "Cloud",
-    "Shadow",
-    "Snow",
-    "Land use",
-    "Radiometric quality",
-    "10-day composite",
-    "Dekad"
-  ],
-  "providers": [
-    {
-      "name": "WEkEO",
-      "description": "WEkEO DIAS",
-      "roles": [
-        "host"
-      ],
-      "url": "https://www.wekeo.eu/"
-    }
-  ]
+    },
+    "links": [
+        {
+            "href": "https://services.sentinel-hub.com/api/v1/catalog/1.0.0/",
+            "rel": "root",
+            "type": "application/json"
+        },
+        {
+            "href": "https://services.sentinel-hub.com/api/v1/catalog/1.0.0/collections/sentinel-1-grd",
+            "rel": "self",
+            "type": "application/json"
+        },
+        {
+            "href": "https://services.sentinel-hub.com/api/v1/catalog/1.0.0/collections",
+            "rel": "parent",
+            "type": "application/json"
+        },
+        {
+            "href": "https://services.sentinel-hub.com/api/v1/catalog/1.0.0/collections/sentinel-1-grd/queryables",
+            "rel": "http://www.opengis.net/def/rel/ogc/1.0/queryables",
+            "type": "application/schema+json"
+        },
+        {
+            "href": "https://services.sentinel-hub.com/api/v1/catalog/1.0.0/collections/sentinel-1-grd/items",
+            "rel": "items",
+            "type": "application/geo+json"
+        }
+    ]
 }

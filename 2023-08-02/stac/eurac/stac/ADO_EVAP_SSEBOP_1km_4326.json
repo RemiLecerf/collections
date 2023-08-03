@@ -1,47 +1,118 @@
 {
-  "type": "Collection",
-  "id": "ADO_EVAP_SSEBOP_1km_4326",
-  "stac_version": "1.0.0",
-  "description": "Operational FEWS NET ET product over the Alps",
-  "links": [],
-  "title": "SSEBop Evapotranspiration - 1 km",
-  "extent": {
-    "spatial": {
-      "bbox": [
-        [
-          -180.0,
-          -90.0,
-          180.0,
-          90.0
-        ]
-      ]
+    "engine": "WCPS",
+    "stac_version": "0.9.0",
+    "stac_extensions": [
+        "datacube"
+    ],
+    "type": "Collection",
+    "id": "ADO_EVAP_SSEBOP_1km_4326",
+    "title": "SSEBop Evapotranspiration - 1 km",
+    "description": "Operational FEWS NET ET product over the Alps",
+    "keywords": [
+        "evapotranspiration",
+        "ssebop",
+        "energy balance",
+        "MOD16",
+        "ADO project",
+        "ADO"
+    ],
+    "version": "v1",
+    "license": "CC-BY-4.0",
+    "sci:citation": "Senay, G.B.; Kagone, S.; Velpuri, N.M. Operational Global Actual Evapotranspiration: Development, Evaluation, and Dissemination. Sensors 2020, 20, 1915. https://doi.org/10.3390/s20071915",
+    "providers": [
+        {
+            "name": "eurac research",
+            "url": "http://www.eurac.edu",
+            "roles": [
+                "Host"
+            ]
+        },
+        {
+            "name": "United States Geological Survey (USGS)",
+            "url": "https://earlywarning.usgs.gov/fews/datadownloads/Continental%20Africa/Monthly%20ET%20Anomaly",
+            "roles": [
+                "Producer"
+            ]
+        }
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    3.68721009679795,
+                    42.9942323832678,
+                    17.161401957190503,
+                    50.5614003048949
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2003-01-11T00:00:00Z",
+                    "2020-02-01T00:00:00Z"
+                ]
+            ]
+        }
     },
-    "temporal": {
-      "interval": [
-        [
-          "1981-01-01T00:00:00Z",
-          null
+    "links": [
+        {
+            "rel": "licence",
+            "href": "https://creativecommons.org/licenses/by/4.0/",
+            "type": "text/html",
+            "title": "License Link"
+        }
+    ],
+    "cube:dimensions": {
+        "DATE": {
+            "type": "temporal",
+            "extent": [
+                "2003-01-11T00:00:00.000Z",
+                "2020-02-01T00:00:00.000Z"
+            ],
+            "step": "P10D"
+        },
+        "Long": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                3.68721009679795,
+                17.161401957190503
+            ],
+            "reference_system": 4326
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "Evapotranspiration"
+            ]
+        },
+        "Lat": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                42.9942323832678,
+                50.5614003048949
+            ],
+            "reference_system": 4326
+        }
+    },
+    "summaries": {
+        "constellation": [
+            "Aqua, Terra"
+        ],
+        "platform": [
+            "Aqua, Terra"
+        ],
+        "rows": 784,
+        "columns": 1396,
+        "instruments": [
+            "MODIS"
+        ],
+        "eo:bands": [
+            {
+                "name": "Evapotranspiration"
+            }
         ]
-      ]
     }
-  },
-  "license": "CC-BY-4.0",
-  "keywords": [
-    "evapotranspiration",
-    "ssebop",
-    "energy balance",
-    "MOD16",
-    "ADO project",
-    "ADO"
-  ],
-  "providers": [
-    {
-      "name": "WEkEO",
-      "description": "WEkEO DIAS",
-      "roles": [
-        "host"
-      ],
-      "url": "https://www.wekeo.eu/"
-    }
-  ]
 }

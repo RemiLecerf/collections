@@ -1,47 +1,80 @@
 {
-  "type": "Collection",
-  "id": "ADO_CORINE_100m_3035_ODC",
-  "stac_version": "1.0.0",
-  "description": "CLC2018 is one of the Corine Land Cover (CLC) datasets produced within the frame the Copernicus Land Monitoring Service referring to land cover / land use status of year 2018. CLC service has a long-time heritage (formerly known as \"CORINE Land Cover Programme\"), coordinated by the European Environment Agency (EEA). It provides consistent and thematically detailed information on land cover and land cover changes across Europe.",
-  "links": [],
-  "title": "Corine Land Cover (CLC) 2018",
-  "extent": {
-    "spatial": {
-      "bbox": [
-        [
-          -180.0,
-          -90.0,
-          180.0,
-          90.0
-        ]
-      ]
+    "stac_version": "1.0.0",
+    "stac_extensions": [
+        "datacube"
+    ],
+    "type": "Collection",
+    "id": "ADO_VHI_MODIS_231m_3035_ODC",
+    "title": "Vegetation Health Index - 231 m 8 days",
+    "description": "The Vegetation Health Index (VHI) is based on a combination of products extracted from vegetation signals, namely the Normalized Difference Vegetation Index (NDVI) and the land surface temperature, both derived from MODIS satellite data. The NDVI is based on 8 day maximum value composite MOD09Q1 (v006) reflectance and the land surface temperature (LST) on 8 day MOD11A2 (v006) LST products. The spatial resolution is 231 m, therefore the original 1000 m resolution of the MOD11A2 LST is downscaled to 231 m of the MOD09Q1 reflectance. Both products are masked to the highest quality standards using the provided quality layers. Missing pixel values in the time series are linearly interpolated. Non-vegetated areas are masked using the most recent Corine Land Cover product version for the according year. The final product is regridded to the LAEA Projection (EPSG:3035). The VHI relies on a strong inverse correlation between NDVI and land surface temperature, since increasing land temperatures are assumed to act negatively on vegetation vigour and consequently to cause stress. The data is provided as 8 day measures. The time series is starting from 2001. The VHI values range from 0-100, whereas high values correspond to healthy vegetation and low values indicate stressed vegetation.",
+    "license": "CC-BY-4.0",
+    "providers": [
+        {
+            "name": "Eurac EO ODC",
+            "url": "http://www.eurac.edu/",
+            "roles": [
+                "producer",
+                "host"
+            ]
+        }
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    3.080800333295437,
+                    42.841014591998366,
+                    17.523924303829347,
+                    50.36459883616284
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2001-01-01T00:00:00Z",
+                    "2023-02-02T00:00:00Z"
+                ]
+            ]
+        }
     },
-    "temporal": {
-      "interval": [
-        [
-          "1981-01-01T00:00:00Z",
-          null
-        ]
-      ]
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://creativecommons.org/licenses/by/4.0/",
+            "type": "text/html",
+            "title": "License link"
+        }
+    ],
+    "cube:dimensions": {
+        "DATE": {
+            "type": "temporal",
+            "extent": [
+                "2001-01-01T00:00:00Z",
+                "2023-02-02T00:00:00Z"
+            ]
+        },
+        "X": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                3.080800333295437,
+                17.523924303829347
+            ]
+        },
+        "Y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                42.841014591998366,
+                50.36459883616284
+            ]
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "8d_vhi"
+            ]
+        }
     }
-  },
-  "license": "CC-BY-4.0",
-  "keywords": [
-    "Copernicus",
-    "Land",
-    "Satellite Image Interpretation",
-    "2018",
-    "Corine",
-    "Corine Land Cover"
-  ],
-  "providers": [
-    {
-      "name": "WEkEO",
-      "description": "WEkEO DIAS",
-      "roles": [
-        "host"
-      ],
-      "url": "https://www.wekeo.eu/"
-    }
-  ]
 }

@@ -1,47 +1,80 @@
 {
-  "type": "Collection",
-  "id": "ADO_CORINE_100m_3035_ODC",
-  "stac_version": "1.0.0",
-  "description": "CLC2018 is one of the Corine Land Cover (CLC) datasets produced within the frame the Copernicus Land Monitoring Service referring to land cover / land use status of year 2018. CLC service has a long-time heritage (formerly known as \"CORINE Land Cover Programme\"), coordinated by the European Environment Agency (EEA). It provides consistent and thematically detailed information on land cover and land cover changes across Europe.",
-  "links": [],
-  "title": "Corine Land Cover (CLC) 2018",
-  "extent": {
-    "spatial": {
-      "bbox": [
-        [
-          -180.0,
-          -90.0,
-          180.0,
-          90.0
-        ]
-      ]
+    "stac_version": "1.0.0",
+    "stac_extensions": [
+        "datacube"
+    ],
+    "type": "Collection",
+    "id": "ADO_REL_RR_3_ERA5_QM_ODC",
+    "title": "Precipitation Anomalies - ERA5_QM REL_RR-3",
+    "description": "Relative precipitation anomalies are based on downscaled ERA5 reanalysis data (downscaling is performed using quantile mapping method) and calculated for different time scales (1, 2, 3, 6, 12 months). The values represent the % of normal precipitation, where normal is defined as the long-term average (1981-2022).",
+    "license": "CC-BY-4.0",
+    "providers": [
+        {
+            "name": "Eurac EO ODC",
+            "url": "http://www.eurac.edu/",
+            "roles": [
+                "producer",
+                "host"
+            ]
+        }
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    3.152088135080526,
+                    42.82673634401954,
+                    17.360182784195487,
+                    50.34250644869748
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1979-01-01T00:00:00Z",
+                    "2023-02-06T00:00:00Z"
+                ]
+            ]
+        }
     },
-    "temporal": {
-      "interval": [
-        [
-          "1981-01-01T00:00:00Z",
-          null
-        ]
-      ]
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://creativecommons.org/licenses/by/4.0/",
+            "type": "text/html",
+            "title": "License link"
+        }
+    ],
+    "cube:dimensions": {
+        "DATE": {
+            "type": "temporal",
+            "extent": [
+                "1979-01-01T00:00:00Z",
+                "2023-02-06T00:00:00Z"
+            ]
+        },
+        "X": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                3.152088135080526,
+                17.360182784195487
+            ]
+        },
+        "Y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                42.82673634401954,
+                50.34250644869748
+            ]
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "REL_RR_3"
+            ]
+        }
     }
-  },
-  "license": "CC-BY-4.0",
-  "keywords": [
-    "Copernicus",
-    "Land",
-    "Satellite Image Interpretation",
-    "2018",
-    "Corine",
-    "Corine Land Cover"
-  ],
-  "providers": [
-    {
-      "name": "WEkEO",
-      "description": "WEkEO DIAS",
-      "roles": [
-        "host"
-      ],
-      "url": "https://www.wekeo.eu/"
-    }
-  ]
 }

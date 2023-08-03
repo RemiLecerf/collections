@@ -1,49 +1,95 @@
 {
-  "type": "Collection",
-  "id": "ADO_CORINE_100m_3035",
-  "stac_version": "1.0.0",
-  "description": "CLC2018 is one of the Corine Land Cover (CLC) datasets produced within the frame the Copernicus Land Monitoring Service referring to land cover / land use status of year 2018. CLC service has a long-time heritage (formerly known as \"CORINE Land Cover Programme\"), coordinated by the European Environment Agency (EEA). It provides consistent and thematically detailed information on land cover and land cover changes across Europe.",
-  "links": [],
-  "title": "Corine Land Cover (CLC) 2018",
-  "extent": {
-    "spatial": {
-      "bbox": [
-        [
-          -180.0,
-          -90.0,
-          180.0,
-          90.0
-        ]
-      ]
+    "engine": "WCPS",
+    "stac_version": "0.9.0",
+    "stac_extensions": [
+        "datacube"
+    ],
+    "type": "Collection",
+    "id": "ADO_CORINE_100m_3035",
+    "title": "Corine Land Cover (CLC) 2018",
+    "description": "CLC2018 is one of the Corine Land Cover (CLC) datasets produced within the frame the Copernicus Land Monitoring Service referring to land cover / land use status of year 2018. CLC service has a long-time heritage (formerly known as \"CORINE Land Cover Programme\"), coordinated by the European Environment Agency (EEA). It provides consistent and thematically detailed information on land cover and land cover changes across Europe.",
+    "keywords": [
+        "Copernicus",
+        "Land",
+        "Satellite Image Interpretation",
+        "2018",
+        "Corine",
+        "Corine Land Cover",
+        "ADO project",
+        "ADO"
+    ],
+    "version": "v1",
+    "license": "EUR-Lex",
+    "sci:citation": "Copyright holder: European Environment Agency (EEA)",
+    "providers": [
+        {
+            "name": "eurac research",
+            "url": "http://www.eurac.edu",
+            "roles": [
+                "Host"
+            ]
+        },
+        {
+            "name": "European Environment Agency (EEA)",
+            "url": "copernicus@eea.europa.eu",
+            "roles": [
+                "Producer"
+            ]
+        }
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    4.007710199040072,
+                    42.8856831393187,
+                    17.506871070250423,
+                    50.319480285426245
+                ]
+            ]
+        }
     },
-    "temporal": {
-      "interval": [
-        [
-          "1981-01-01T00:00:00Z",
-          null
+    "links": [
+        {
+            "rel": "licence",
+            "href": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32013R1159",
+            "type": "text/html",
+            "title": "License Link"
+        }
+    ],
+    "cube:dimensions": {
+        "X": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                4.007710199040072,
+                17.506871070250423
+            ],
+            "reference_system": 3035
+        },
+        "Y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                42.8856831393187,
+                50.319480285426245
+            ],
+            "reference_system": 3035
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "CLC2018_WM"
+            ]
+        }
+    },
+    "summaries": {
+        "rows": 8332,
+        "columns": 10240,
+        "eo:bands": [
+            {
+                "name": "CLC2018_WM"
+            }
         ]
-      ]
     }
-  },
-  "license": "EUR-Lex",
-  "keywords": [
-    "Copernicus",
-    "Land",
-    "Satellite Image Interpretation",
-    "2018",
-    "Corine",
-    "Corine Land Cover",
-    "ADO project",
-    "ADO"
-  ],
-  "providers": [
-    {
-      "name": "WEkEO",
-      "description": "WEkEO DIAS",
-      "roles": [
-        "host"
-      ],
-      "url": "https://www.wekeo.eu/"
-    }
-  ]
 }

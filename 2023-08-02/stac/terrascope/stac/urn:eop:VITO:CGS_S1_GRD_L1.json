@@ -1,51 +1,72 @@
 {
-  "type": "Collection",
-  "id": "urn:eop:VITO:CGS_S1_GRD_L1",
-  "stac_version": "1.0.0",
-  "description": "Level-1 Ground Range Detected (GRD) products consist of focused SAR data that has been detected, multi-looked and projected to ground range using an Earth ellipsoid model such as WGS84. The ellipsoid projection of the GRD products is corrected using the terrain height specified in the product general annotation. The terrain height used varies in azimuth but is constant in range. Ground range coordinates are the slant range coordinates projected onto the ellipsoid of the Earth. Pixel values represent detected amplitude. Phase information is lost. The resulting product has approximately square resolution pixels and square pixel spacing with reduced speckle at a cost of reduced spatial resolution. The Interferometric Wide (IW) swath mode is the main acquisition mode over land and satisfies the majority of service requirements. For the IW GRD products, multi-looking is performed on each burst individually. All bursts in all sub-swaths are then seamlessly merged to form a single, contiguous, ground range, detected image per polarisation.",
-  "links": [],
-  "title": "Sentinel-1 Level-1 Ground Range Detected (GRD) products",
-  "extent": {
-    "spatial": {
-      "bbox": [
-        [
-          -180.0,
-          -90.0,
-          180.0,
-          90.0
-        ]
-      ]
+    "type": "Collection",
+    "stac_version": "1.0.0",
+    "id": "urn:eop:VITO:CGS_S1_GRD_L1",
+    "title": "Sentinel-1 Level-1 Ground Range Detected (GRD) products",
+    "description": "Level-1 Ground Range Detected (GRD) products consist of focused SAR data that has been detected, multi-looked and projected to ground range using an Earth ellipsoid model such as WGS84. The ellipsoid projection of the GRD products is corrected using the terrain height specified in the product general annotation. The terrain height used varies in azimuth but is constant in range. Ground range coordinates are the slant range coordinates projected onto the ellipsoid of the Earth. Pixel values represent detected amplitude. Phase information is lost. The resulting product has approximately square resolution pixels and square pixel spacing with reduced speckle at a cost of reduced spatial resolution. The Interferometric Wide (IW) swath mode is the main acquisition mode over land and satisfies the majority of service requirements. For the IW GRD products, multi-looking is performed on each burst individually. All bursts in all sub-swaths are then seamlessly merged to form a single, contiguous, ground range, detected image per polarisation.",
+    "license": "Licence: https://terrascope.be/en/terms-use",
+    "keywords": [
+        "VITO",
+        "TERRASCOPE",
+        "COPERNICUS",
+        "ESA",
+        "Orthoimagery",
+        "Sentinel-1",
+        "C-SAR",
+        "Level-3",
+        "Radar",
+        "Radar Backscatter"
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180.0,
+                    -84.0,
+                    180.0,
+                    84.0
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2017-06-15T00:00:00Z"
+                ]
+            ]
+        }
     },
-    "temporal": {
-      "interval": [
-        [
-          "1981-01-01T00:00:00Z",
-          null
+    "summaries": {
+        "datetime": {
+            "min": "2017-06-15T00:00:00Z"
+        },
+        "constellation": [
+            "Sentinel-1"
+        ],
+        "instruments": [
+            "C-SAR"
         ]
-      ]
-    }
-  },
-  "license": "Licence: https://terrascope.be/en/terms-use",
-  "keywords": [
-    "VITO",
-    "TERRASCOPE",
-    "COPERNICUS",
-    "ESA",
-    "Orthoimagery",
-    "Sentinel-1",
-    "C-SAR",
-    "Level-3",
-    "Radar",
-    "Radar Backscatter"
-  ],
-  "providers": [
-    {
-      "name": "WEkEO",
-      "description": "WEkEO DIAS",
-      "roles": [
-        "host"
-      ],
-      "url": "https://www.wekeo.eu/"
-    }
-  ]
+    },
+    "links": [
+        {
+            "rel": "self",
+            "type": "application/json",
+            "href": "https://services.terrascope.be/stac/collections/urn:eop:VITO:CGS_S1_GRD_L1"
+        },
+        {
+            "rel": "parent",
+            "type": "application/json",
+            "href": "https://services.terrascope.be/stac/"
+        },
+        {
+            "rel": "items",
+            "type": "application/geo+json",
+            "href": "https://services.terrascope.be/stac/collections/urn:eop:VITO:CGS_S1_GRD_L1/items"
+        },
+        {
+            "rel": "root",
+            "type": "application/json",
+            "href": "https://services.terrascope.be/stac/"
+        }
+    ]
 }

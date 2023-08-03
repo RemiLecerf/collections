@@ -1,49 +1,146 @@
 {
-  "type": "Collection",
-  "id": "EEA_RIVER_AND_LAKE_ICE_EXTENT_SENTINEL1",
-  "stac_version": "1.0.0",
-  "description": "The River and Lake Ice Extent - Sentinel 1 (RLIE S1) product is part of the Copernicus Land Monitoring Service (CLMS), \npan-European High Resolution Snow and Ice Monitoring [(HR-S&I)](https://land.copernicus.eu/pan-european/biophysical-parameters/high-resolution-snow-and-ice-monitoring) Ice product suite.The River and Lake Ice Extent (RLIE) products measure the presence of ice in rivers and lakes described by the EU-HYDRO network database, in particular the area of snow-free or snow-covered ice. \nThe RLIE S1 product is released in near real time for the entire EEA39 zone based on the revisit time of the Sentinel 1 syntetic aperture radar constellation, and it is generated at a spatial resolution of 20 m x 20 m.  Because it is time critical for several applications, every effort is made to provide near real time ice products between 6 and 12 hours after the data sensing time. \nMore information about the RLIE S1 product methodology and workflow is outlined in the [product user manual](https://land.copernicus.eu/user-corner/technical-library/hrsi-ice-pum)\n",
-  "links": [],
-  "title": "High-Resolution Snow & Ice Monitoring; River and Lake Ice Extent - Sentinel 1",
-  "extent": {
-    "spatial": {
-      "bbox": [
-        [
-          -180.0,
-          -90.0,
-          180.0,
-          90.0
-        ]
-      ]
+    "assets": {
+        "thumbnail": {
+            "href": "https://collections.eurodatacube.com/hrsi-rlie-s1/thumbnail.png",
+            "roles": [
+                "thumbnail"
+            ],
+            "title": "Thumbnail",
+            "type": "image/png"
+        }
     },
-    "temporal": {
-      "interval": [
-        [
-          "1981-01-01T00:00:00Z",
-          null
+    "cube:dimensions": {
+        "bands": {
+            "type": "bands",
+            "values": [
+                "RLIE",
+                "QC"
+            ]
+        },
+        "t": {
+            "extent": [
+                "2016-09-01T00:00:00Z"
+            ],
+            "type": "temporal"
+        },
+        "x": {
+            "axis": "x",
+            "extent": [
+                -25,
+                45
+            ],
+            "type": "spatial"
+        },
+        "y": {
+            "axis": "y",
+            "extent": [
+                26,
+                72
+            ],
+            "type": "spatial"
+        }
+    },
+    "datasource_type": "byoc-fe2c0caf-fbe8-49a1-91ae-e730ea65116a",
+    "description": "The River and Lake Ice Extent - Sentinel 1 (RLIE S1) product is part of the Copernicus Land Monitoring Service (CLMS), \npan-European High Resolution Snow and Ice Monitoring [(HR-S&I)](https://land.copernicus.eu/pan-european/biophysical-parameters/high-resolution-snow-and-ice-monitoring) Ice product suite.The River and Lake Ice Extent (RLIE) products measure the presence of ice in rivers and lakes described by the EU-HYDRO network database, in particular the area of snow-free or snow-covered ice. \nThe RLIE S1 product is released in near real time for the entire EEA39 zone based on the revisit time of the Sentinel 1 syntetic aperture radar constellation, and it is generated at a spatial resolution of 20 m x 20 m.  Because it is time critical for several applications, every effort is made to provide near real time ice products between 6 and 12 hours after the data sensing time. \nMore information about the RLIE S1 product methodology and workflow is outlined in the [product user manual](https://land.copernicus.eu/user-corner/technical-library/hrsi-ice-pum)\n",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -25,
+                    26,
+                    45,
+                    72
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2016-09-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "id": "EEA_RIVER_AND_LAKE_ICE_EXTENT_SENTINEL1",
+    "keywords": [
+        "hrsi",
+        "water",
+        "river",
+        "lake",
+        "ice",
+        "CLMS",
+        "derived data",
+        "open data"
+    ],
+    "license": "proprietary",
+    "links": [
+        {
+            "href": "https://collections.eurodatacube.com/hrsi-rlie-s1",
+            "rel": "about",
+            "title": "Website describing the collection",
+            "type": "text/html"
+        },
+        {
+            "href": "https://docs.sentinel-hub.com/api/latest/api/process/",
+            "rel": "about",
+            "title": "Details about running Evalscripts",
+            "type": "text/html"
+        },
+        {
+            "href": "https://custom-scripts.sentinel-hub.com/copernicus_services/hrsi/hrsi-rlie-s1/script.js",
+            "rel": "processing-expression",
+            "sentinelhub:layer_name": "RLIE",
+            "sentinelhub:mosaicking_order": "mostRecent",
+            "sentinelhub:upsampling": "BICUBIC",
+            "title": "Evalscript to generate RLIE S1 imagery",
+            "type": "application/javascript"
+        },
+        {
+            "href": "https://custom-scripts.sentinel-hub.com/copernicus_services/hrsi/hrsi-rlie-s1-quality/script.js",
+            "rel": "processing-expression",
+            "sentinelhub:layer_name": "QC",
+            "sentinelhub:mosaicking_order": "mostRecent",
+            "sentinelhub:upsampling": "BICUBIC",
+            "title": "Evalscript to visualize the RLIE S1 quality imagery",
+            "type": "application/javascript"
+        },
+        {
+            "href": "https://land.copernicus.eu/terms-of-use",
+            "rel": "license",
+            "title": "License",
+            "type": "text/html"
+        },
+        {
+            "href": "https://openeocloud.vito.be/openeo/1.0.0/collections",
+            "rel": "root"
+        },
+        {
+            "href": "https://openeocloud.vito.be/openeo/1.0.0/collections",
+            "rel": "parent"
+        },
+        {
+            "href": "https://openeocloud.vito.be/openeo/1.0.0/collections/EEA_RIVER_AND_LAKE_ICE_EXTENT_SENTINEL1",
+            "rel": "self"
+        }
+    ],
+    "providers": [
+        {
+            "name": "Sentinel Hub",
+            "roles": [
+                "processor"
+            ],
+            "url": "https://creodias.sentinel-hub.com"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/datacube/v1.0.0/schema.json"
+    ],
+    "stac_version": "1.0.0",
+    "summaries": {
+        "federation:backends": [
+            "sentinelhub"
         ]
-      ]
-    }
-  },
-  "license": "proprietary",
-  "keywords": [
-    "hrsi",
-    "water",
-    "river",
-    "lake",
-    "ice",
-    "CLMS",
-    "derived data",
-    "open data"
-  ],
-  "providers": [
-    {
-      "name": "WEkEO",
-      "description": "WEkEO DIAS",
-      "roles": [
-        "host"
-      ],
-      "url": "https://www.wekeo.eu/"
-    }
-  ]
+    },
+    "title": "High-Resolution Snow & Ice Monitoring; River and Lake Ice Extent - Sentinel 1",
+    "type": "Collection"
 }

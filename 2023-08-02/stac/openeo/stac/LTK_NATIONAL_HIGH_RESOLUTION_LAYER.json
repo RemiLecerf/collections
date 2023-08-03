@@ -1,49 +1,139 @@
 {
-  "type": "Collection",
-  "id": "RIVER_AND_LAKE_ICE_EXTENT_SENTINEL1_SENTINEL2",
-  "stac_version": "1.0.0",
-  "description": "The River and Lake Ice Extent S1+S2 (RLIE S1+S2) product is part of the Copernicus Land Monitoring Service (CLMS), \npan-European High Resolution Snow and Ice Monitoring [(HR-S&I)](https://land.copernicus.eu/pan-european/biophysical-parameters/high-resolution-snow-and-ice-monitoring) Ice product suite.The River and Lake Ice Extent (RLIE) products measure the presence of ice in rivers and lakes described by the EU-HYDRO network database, in particular the area of snow-free or snow-covered ice. \nThe RLIE S1+S2 product is computed from the combination of RLIE S1 and RLIE S2 products.The RLIE S2 product from a given day is gap-filled using the RLIE S1 information from the same day. Because the RLIE S1+S2 is only produced when RLIE S2 and RLIE S1 products are aquired on the same day, it is delivered in delayed-time for the entire EEA39 zone at a spatial resolution of 20 m x 20 m.\nMore information about the RLIE S1+S2 product methodology and workflow is outlined in the [product user manual](https://land.copernicus.eu/user-corner/technical-library/hrsi-ice-pum)\n",
-  "links": [],
-  "title": "High-Resolution Snow & Ice Monitoring; River and Lake Ice Extent S1+S2",
-  "extent": {
-    "spatial": {
-      "bbox": [
-        [
-          -180.0,
-          -90.0,
-          180.0,
-          90.0
-        ]
-      ]
+    "assets": {
+        "thumbnail": {
+            "href": "https://collections.eurodatacube.com/nhrl/thumbnail.png",
+            "roles": [
+                "thumbnail"
+            ],
+            "title": "Thumbnail",
+            "type": "image/png"
+        }
     },
-    "temporal": {
-      "interval": [
-        [
-          "1981-01-01T00:00:00Z",
-          null
+    "cube:dimensions": {
+        "bands": {
+            "type": "bands",
+            "values": [
+                "nhrl"
+            ]
+        },
+        "t": {
+            "extent": [
+                "2016-01-01T00:00:00Z",
+                "2021-01-01T00:00:00"
+            ],
+            "step": "P1Y",
+            "type": "temporal"
+        },
+        "x": {
+            "axis": "x",
+            "extent": [
+                16,
+                23
+            ],
+            "type": "spatial"
+        },
+        "y": {
+            "axis": "y",
+            "extent": [
+                45,
+                49
+            ],
+            "type": "spatial"
+        }
+    },
+    "datasource_type": "byoc-86c76a3d-29f3-4eff-99fe-3eb84e422c66",
+    "description": "The concept of the NHRL was to create a dataset that provides wall-to-wall information on land cover, especially on land cover categories that can be more reliably identified by remote sensing methods. Its classification mixes land use and land cover elements according to human interest, providing map information from the built environment to agricultural cultivated areas and natural vegetation cover.\nIn addition to the machine-learning process (Random Forest), its production includes data integration (roads - railways - buildings) and other data filtering steps to reduce data noise.\nIn the future, this yearly dataset could provide the basis for the production of visually verified change data with a reduced nomenclature. The data published here is not suitable for change detection in its present form.\n",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    16,
+                    45,
+                    23,
+                    49
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2016-01-01T00:00:00Z",
+                    "2021-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "id": "LTK_NATIONAL_HIGH_RESOLUTION_LAYER",
+    "keywords": [
+        "DanubeDataCube",
+        "xcube",
+        "sentinel hub",
+        "raster",
+        "systematic",
+        "derived data",
+        "land cover",
+        "machine learning",
+        "open data"
+    ],
+    "links": [
+        {
+            "href": "https://collections.eurodatacube.com/nhrl",
+            "rel": "about",
+            "title": "Website describing the collection",
+            "type": "text/html"
+        },
+        {
+            "href": "https://docs.sentinel-hub.com/api/latest/api/process/",
+            "rel": "about",
+            "title": "Details about running Evalscripts",
+            "type": "text/html"
+        },
+        {
+            "href": "https://raw.githubusercontent.com/eurodatacube/public-collections/main/collections/nhrl/script.js",
+            "rel": "processing-expression",
+            "sentinelhub:layer_name": "NHRL Land Cover",
+            "sentinelhub:mosaicking_order": "mostRecent",
+            "sentinelhub:upsampling": "BICUBIC",
+            "title": "Evalscript to generate Land cover visualisation",
+            "type": "application/javascript"
+        },
+        {
+            "rel": "license",
+            "title": "License",
+            "type": "text/html"
+        },
+        {
+            "href": "https://openeocloud.vito.be/openeo/1.0.0/collections",
+            "rel": "root"
+        },
+        {
+            "href": "https://openeocloud.vito.be/openeo/1.0.0/collections",
+            "rel": "parent"
+        },
+        {
+            "href": "https://openeocloud.vito.be/openeo/1.0.0/collections/LTK_NATIONAL_HIGH_RESOLUTION_LAYER",
+            "rel": "self"
+        }
+    ],
+    "providers": [
+        {
+            "description": "Hungary, 2016 - 2021",
+            "name": "Sentinel Hub",
+            "roles": [
+                "processor"
+            ],
+            "url": "https://services.sentinel-hub.com"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/datacube/v1.0.0/schema.json"
+    ],
+    "stac_version": "1.0.0",
+    "summaries": {
+        "federation:backends": [
+            "sentinelhub"
         ]
-      ]
-    }
-  },
-  "license": "proprietary",
-  "keywords": [
-    "hrsi",
-    "water",
-    "river",
-    "lake",
-    "ice",
-    "CLMS",
-    "derived data",
-    "open data"
-  ],
-  "providers": [
-    {
-      "name": "WEkEO",
-      "description": "WEkEO DIAS",
-      "roles": [
-        "host"
-      ],
-      "url": "https://www.wekeo.eu/"
-    }
-  ]
+    },
+    "title": "National High Resolution Layer, Hungary",
+    "type": "Collection"
 }

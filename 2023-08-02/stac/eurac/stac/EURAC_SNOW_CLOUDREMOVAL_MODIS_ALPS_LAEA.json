@@ -1,42 +1,118 @@
 {
-  "type": "Collection",
-  "id": "EURAC_SNOW_CLOUDREMOVAL_MODIS_ALPS_LAEA",
-  "stac_version": "1.0.0",
-  "description": "Snow maps with clouds removed by spatial and temporal filters",
-  "links": [],
-  "title": "Eurac Snow Cloud Removal Modis",
-  "extent": {
-    "spatial": {
-      "bbox": [
-        [
-          -180.0,
-          -90.0,
-          180.0,
-          90.0
-        ]
-      ]
+    "engine": "WCPS",
+    "stac_version": "0.9.0",
+    "stac_extensions": [
+        "datacube"
+    ],
+    "type": "Collection",
+    "id": "EURAC_SNOW_CLOUDREMOVAL_MODIS_ALPS_LAEA",
+    "title": "Eurac Snow Cloud Removal Modis",
+    "description": "Snow maps with clouds removed by spatial and temporal filters",
+    "keywords": [
+        "No Keywords Available"
+    ],
+    "version": "v1",
+    "license": "CC-BY-4.0",
+    "sci:citation": "Matiu, M.; Jacob, A.; Notarnicola, C. Daily MODIS Snow Cover Maps for the European Alps from 2002 onwards at 250 m Horizontal Resolution Along with a Nearly Cloud-Free Version. Data 2020, 5, 1. https://doi.org/10.3390/data5010001",
+    "providers": [
+        {
+            "name": "Eurac EO WCS",
+            "url": "http://www.eurac.edu",
+            "roles": [
+                "Host"
+            ]
+        },
+        {
+            "name": "Michael Matiu",
+            "url": "http://www.eurac.it/en/research/mountains/remsen/staff/Pages/staffdetails.aspx?persId=39146",
+            "roles": [
+                "Processor"
+            ]
+        }
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    4.216447063264611,
+                    42.817151599184875,
+                    18.990559099334654,
+                    48.60184813603919
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2009-12-31T12:00:00Z",
+                    "2019-12-31T12:00:00Z"
+                ]
+            ]
+        }
     },
-    "temporal": {
-      "interval": [
-        [
-          "1981-01-01T00:00:00Z",
-          null
+    "links": [
+        {
+            "rel": "licence",
+            "href": "https://creativecommons.org/licenses/by/4.0/",
+            "type": "text/html",
+            "title": "License Link"
+        }
+    ],
+    "cube:dimensions": {
+        "DATE": {
+            "type": "temporal",
+            "extent": [
+                "2009-12-31T12:00:00.000Z",
+                "2019-12-31T12:00:00.000Z"
+            ],
+            "step": "P1D"
+        },
+        "X": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                4.216447063264611,
+                18.990559099334654
+            ],
+            "reference_system": 3035
+        },
+        "Y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                42.817151599184875,
+                48.60184813603919
+            ],
+            "reference_system": 3035
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "SnowMap"
+            ]
+        }
+    },
+    "summaries": {
+        "constellation": [
+            "Aqua, Terra"
+        ],
+        "platform": [
+            "Aqua, Terra"
+        ],
+        "rows": 2867,
+        "columns": 4901,
+        "instruments": [
+            "MODIS"
+        ],
+        "gsd": [
+            231.6564
+        ],
+        "eo:bands": [
+            {
+                "name": "SnowMap",
+                "common_name": "SnowMap",
+                "gsd": 231.6564
+            }
         ]
-      ]
     }
-  },
-  "license": "CC-BY-4.0",
-  "keywords": [
-    "No Keywords Available"
-  ],
-  "providers": [
-    {
-      "name": "WEkEO",
-      "description": "WEkEO DIAS",
-      "roles": [
-        "host"
-      ],
-      "url": "https://www.wekeo.eu/"
-    }
-  ]
 }

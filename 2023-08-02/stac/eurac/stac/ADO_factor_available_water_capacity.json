@@ -1,48 +1,110 @@
 {
-  "type": "Collection",
-  "id": "ADO_factor_available_water_capacity",
-  "stac_version": "1.0.0",
-  "description": "USDA soil property map: available water capacity. - Resolution: 500m - Geographical Coverage: Alpine space - Input data: LUCAS 2009 Topsoil- Model: Multivariate Additive Regression Splines (MARS) - Year: 2015. For further information visit the website European soil data centre (ESDAC).",
-  "links": [],
-  "title": "Factor available water capacity",
-  "extent": {
-    "spatial": {
-      "bbox": [
-        [
-          -180.0,
-          -90.0,
-          180.0,
-          90.0
-        ]
-      ]
+    "engine": "WCPS",
+    "stac_version": "0.9.0",
+    "stac_extensions": [
+        "datacube"
+    ],
+    "type": "Collection",
+    "id": "ADO_factor_available_water_capacity",
+    "title": "Factor available water capacity",
+    "description": "USDA soil property map: available water capacity. - Resolution: 500m - Geographical Coverage: Alpine space - Input data: LUCAS 2009 Topsoil- Model: Multivariate Additive Regression Splines (MARS) - Year: 2015. For further information visit the website European soil data centre (ESDAC).",
+    "keywords": [
+        "soil map",
+        "available water capacity",
+        "ESDAC",
+        "LUCAS",
+        "topsoil",
+        "ADO project",
+        "ADO"
+    ],
+    "version": "v1",
+    "license": "CC BY 4.0",
+    "sci:citation": "Ballabio C., Panagos P., Montanarella L. Mapping topsoil physical properties at European scale using the LUCAS database (2016) Geoderma, 261 , pp. 110-123.",
+    "providers": [
+        {
+            "name": "eurac research",
+            "url": "http://www.eurac.edu",
+            "roles": [
+                "Host"
+            ]
+        },
+        {
+            "name": "Joint Research Centre (JRC, Ispra)",
+            "url": "https://joint-research-centre.ec.europa.eu/jrc-sites-across-europe/jrc-ispra-italy_en",
+            "roles": [
+                "Processor"
+            ]
+        },
+        {
+            "name": "JRC (European Commission)",
+            "url": "https://joint-research-centre.ec.europa.eu/index_en",
+            "roles": [
+                "Producer"
+            ]
+        }
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    4.00892779336706,
+                    42.88575498619361,
+                    17.507984606136308,
+                    50.317601064649004
+                ]
+            ]
+        }
     },
-    "temporal": {
-      "interval": [
-        [
-          "1981-01-01T00:00:00Z",
-          null
+    "links": [
+        {
+            "rel": "licence",
+            "href": "https://ec.europa.eu/info/legal-notice_enhttp://creativecommons.org/licenses/by/4.0/",
+            "type": "text/html",
+            "title": "License Link"
+        }
+    ],
+    "cube:dimensions": {
+        "X": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                4.00892779336706,
+                17.507984606136308
+            ],
+            "reference_system": 3035
+        },
+        "Y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                42.88575498619361,
+                50.317601064649004
+            ],
+            "reference_system": 3035
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "available_water_capacity"
+            ]
+        }
+    },
+    "summaries": {
+        "constellation": [
+            "N/A"
+        ],
+        "platform": [
+            "N/A"
+        ],
+        "rows": 1666,
+        "columns": 2048,
+        "instruments": [
+            "N/A"
+        ],
+        "eo:bands": [
+            {
+                "name": "available_water_capacity"
+            }
         ]
-      ]
     }
-  },
-  "license": "CC BY 4.0",
-  "keywords": [
-    "soil map",
-    "available water capacity",
-    "ESDAC",
-    "LUCAS",
-    "topsoil",
-    "ADO project",
-    "ADO"
-  ],
-  "providers": [
-    {
-      "name": "WEkEO",
-      "description": "WEkEO DIAS",
-      "roles": [
-        "host"
-      ],
-      "url": "https://www.wekeo.eu/"
-    }
-  ]
 }

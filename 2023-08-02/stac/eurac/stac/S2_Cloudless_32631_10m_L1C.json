@@ -1,43 +1,110 @@
 {
-  "type": "Collection",
-  "id": "S2_Cloudless_32631_10m_L1C",
-  "stac_version": "1.0.0",
-  "description": "The Copernicus Sentinel-2 Cloudless dataset.",
-  "links": [],
-  "title": "Sentinel-2 Cloudless Data S2_Cloudless_32631_10m_L1C",
-  "extent": {
-    "spatial": {
-      "bbox": [
-        [
-          -180.0,
-          -90.0,
-          180.0,
-          90.0
-        ]
-      ]
+    "engine": "WCPS",
+    "stac_version": "0.9.0",
+    "stac_extensions": [
+        "datacube"
+    ],
+    "type": "Collection",
+    "id": "S2_Cloudless_32631_10m_L1C",
+    "title": "Sentinel-2 Cloudless Data S2_Cloudless_32631_10m_L1C",
+    "description": "The Copernicus Sentinel-2 Cloudless dataset.",
+    "keywords": [
+        "Cloudless",
+        "Sentinel-2"
+    ],
+    "version": "v1",
+    "license": "CC-BY-4.0",
+    "sci:citation": "Copernicus Sentinel data [2015-2021]",
+    "providers": [
+        {
+            "name": "Eurac EO WCS",
+            "url": "http://www.eurac.edu",
+            "roles": [
+                "Host"
+            ]
+        }
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    4.232032700036693,
+                    43.25815531863286,
+                    5.626645973699982,
+                    44.223209739975346
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2015-08-02T00:00:00Z",
+                    "2020-09-11T00:00:00Z"
+                ]
+            ]
+        }
     },
-    "temporal": {
-      "interval": [
-        [
-          "1981-01-01T00:00:00Z",
-          null
+    "links": [
+        {
+            "rel": "licence",
+            "href": "https://creativecommons.org/licenses/by/4.0/",
+            "title": "License Link"
+        }
+    ],
+    "cube:dimensions": {
+        "DATE": {
+            "type": "temporal",
+            "extent": [
+                "2015-08-02T00:00:00.000Z",
+                "2020-09-11T00:00:00.000Z"
+            ]
+        },
+        "E": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                4.232032700036693,
+                5.626645973699982
+            ],
+            "reference_system": 32631
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "Band1"
+            ]
+        },
+        "N": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                43.25815531863286,
+                44.223209739975346
+            ],
+            "reference_system": 32631
+        }
+    },
+    "summaries": {
+        "constellation": [
+            "Sentinel-2"
+        ],
+        "platform": [
+            "Sentinel-2A, Sentinel-2B"
+        ],
+        "rows": 10980,
+        "columns": 10980,
+        "instruments": [
+            "MSI"
+        ],
+        "gsd": [
+            10.0
+        ],
+        "eo:bands": [
+            {
+                "name": "Band1",
+                "common_name": "Band1",
+                "gsd": 10.0
+            }
         ]
-      ]
     }
-  },
-  "license": "CC-BY-4.0",
-  "keywords": [
-    "Cloudless",
-    "Sentinel-2"
-  ],
-  "providers": [
-    {
-      "name": "WEkEO",
-      "description": "WEkEO DIAS",
-      "roles": [
-        "host"
-      ],
-      "url": "https://www.wekeo.eu/"
-    }
-  ]
 }

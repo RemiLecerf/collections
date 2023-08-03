@@ -1,59 +1,232 @@
 {
-  "type": "Collection",
-  "id": "COPERNICUS_30",
-  "stac_version": "1.0.0",
-  "description": "Copernicus Global 30 meter Digital Elevation Model dataset in COG format.",
-  "links": [],
-  "title": "Copernicus Global 30 meter Digital Elevation Model dataset.",
-  "extent": {
-    "spatial": {
-      "bbox": [
-        [
-          -180.0,
-          -90.0,
-          180.0,
-          90.0
-        ]
-      ]
+    "assets": {
+        "metadata_iso_19139": {
+            "href": "https://services.terrascope.be/collectioncatalogue/srv/api/records/urn:eop:VITO:COP_DEM_GLO_30M_COG/formatters/xml?approved=true",
+            "roles": [
+                "metadata",
+                "iso-19139"
+            ],
+            "title": "ISO 19139 metadata",
+            "type": "application/vnd.iso.19139+xml"
+        },
+        "thumbnail": {
+            "href": "https://services.terrascope.be/collectioncatalogue/images/quicklooks/COP_DEM_GLO_30M_COG_QL.png",
+            "roles": [
+                "thumbnail"
+            ],
+            "title": "Thumbnail",
+            "type": "image/png"
+        }
     },
-    "temporal": {
-      "interval": [
-        [
-          "1981-01-01T00:00:00Z",
-          null
+    "cube:dimensions": {
+        "bands": {
+            "type": "bands",
+            "values": [
+                "DEM"
+            ]
+        },
+        "t": {
+            "extent": [
+                "2010-12-12T00:00:00Z"
+            ],
+            "type": "temporal"
+        },
+        "x": {
+            "axis": "x",
+            "extent": [
+                -180.0013889,
+                180
+            ],
+            "reference_system": 4326,
+            "step": 0.0002777777777777778,
+            "type": "spatial"
+        },
+        "y": {
+            "axis": "y",
+            "extent": [
+                -90,
+                90
+            ],
+            "reference_system": 4326,
+            "step": 0.0002777777777777778,
+            "type": "spatial"
+        }
+    },
+    "description": "Copernicus Global 30 meter Digital Elevation Model dataset in COG format.",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180.0013889,
+                    -89.9998611,
+                    179.9986111,
+                    84.0001389
+                ],
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2010-12-12T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "id": "COPERNICUS_30",
+    "keywords": [
+        "VITO",
+        "TERRASCOPE",
+        "COPERNICUS",
+        "ESA",
+        "Radar",
+        "TDX",
+        "TSX",
+        "Elevation",
+        "DSM",
+        "DEM",
+        "sentinel hub",
+        "xcube",
+        "terrain",
+        "3D",
+        "elevation",
+        "raster",
+        "open data",
+        "systematic"
+    ],
+    "license": "proprietary",
+    "links": [
+        {
+            "href": "https://spacedata.copernicus.eu/documents/20126/0/CSCDA_ESA_Mission-specific+Annex.pdf",
+            "rel": "license"
+        },
+        {
+            "href": "https://services.terrascope.be/wmts/v2",
+            "rel": "wmts",
+            "wmts:layer": "COP_DEM_GLO_30M_COG"
+        },
+        {
+            "href": "https://collections.eurodatacube.com/copernicus-dem",
+            "rel": "about",
+            "title": "Website describing the collection",
+            "type": "text/html"
+        },
+        {
+            "href": "https://services.sentinel-hub.com/ogc/wmts/6972d617-83a8-4e20-a3e3-85883e49cb8b",
+            "rel": "wmts",
+            "wmts:dimensions": {
+                "warnings": true
+            },
+            "wmts:layer": "TOPOGRAPHIC"
+        },
+        {
+            "href": "https://docs.sentinel-hub.com/api/latest/api/process/",
+            "rel": "about",
+            "title": "Details about running Evalscripts",
+            "type": "text/html"
+        },
+        {
+            "href": "https://custom-scripts.sentinel-hub.com/dem/dem-color/script.js",
+            "rel": "processing-expression",
+            "sentinelhub:dem_instance": "COPERNICUS_30",
+            "sentinelhub:layer_name": "Color",
+            "sentinelhub:mosaicking_order": "mostRecent",
+            "sentinelhub:upsampling": "BICUBIC",
+            "title": "Evalscript to generate Color imagery",
+            "type": "application/javascript"
+        },
+        {
+            "href": "https://custom-scripts.sentinel-hub.com/dem/dem-grayscale/script.js",
+            "rel": "processing-expression",
+            "sentinelhub:dem_instance": "COPERNICUS_30",
+            "sentinelhub:layer_name": "Grayscale",
+            "sentinelhub:mosaicking_order": "mostRecent",
+            "sentinelhub:upsampling": "BICUBIC",
+            "title": "Evalscript to generate Grayscale imagery",
+            "type": "application/javascript"
+        },
+        {
+            "href": "https://custom-scripts.sentinel-hub.com/dem/dem-sepia/script.js",
+            "rel": "processing-expression",
+            "sentinelhub:dem_instance": "COPERNICUS_30",
+            "sentinelhub:layer_name": "Sepia",
+            "sentinelhub:mosaicking_order": "mostRecent",
+            "sentinelhub:upsampling": "BICUBIC",
+            "title": "Evalscript to generate Sepia imagery",
+            "type": "application/javascript"
+        },
+        {
+            "href": "https://spacedata.copernicus.eu/en/web/guest/collections/copernicus-digital-elevation-model/#Licencing",
+            "rel": "license",
+            "title": "License",
+            "type": "text/html"
+        },
+        {
+            "href": "https://openeocloud.vito.be/openeo/1.0.0/collections",
+            "rel": "root"
+        },
+        {
+            "href": "https://openeocloud.vito.be/openeo/1.0.0/collections",
+            "rel": "parent"
+        },
+        {
+            "href": "https://openeocloud.vito.be/openeo/1.0.0/collections/COPERNICUS_30",
+            "rel": "self"
+        }
+    ],
+    "providers": [
+        {
+            "name": "VITO, on behalf of the Belgian Science Policy Office (BELSPO).",
+            "roles": [
+                "producer",
+                "licensor"
+            ],
+            "url": "https://terrascope.be"
+        },
+        {
+            "description": "Global",
+            "name": "Sentinel Hub",
+            "roles": [
+                "processor"
+            ],
+            "url": "https://services.sentinel-hub.com"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/datacube/v2.2.0/schema.json",
+        "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
+        "https://stac-extensions.github.io/datacube/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.0.0/schema.json"
+    ],
+    "stac_version": "1.0.0",
+    "summaries": {
+        "eo:bands": [
+            {
+                "name": "DEM"
+            }
+        ],
+        "federation:backends": [
+            "vito",
+            "sentinelhub"
+        ],
+        "instruments": [
+            "TDX-1",
+            "TSX-1"
+        ],
+        "platform": [
+            "TSX",
+            "TDX"
+        ],
+        "provider:backend": [
+            "vito",
+            "sentinelhub"
         ]
-      ]
-    }
-  },
-  "license": "proprietary",
-  "keywords": [
-    "VITO",
-    "TERRASCOPE",
-    "COPERNICUS",
-    "ESA",
-    "Radar",
-    "TDX",
-    "TSX",
-    "Elevation",
-    "DSM",
-    "DEM",
-    "sentinel hub",
-    "xcube",
-    "terrain",
-    "3D",
-    "elevation",
-    "raster",
-    "open data",
-    "systematic"
-  ],
-  "providers": [
-    {
-      "name": "WEkEO",
-      "description": "WEkEO DIAS",
-      "roles": [
-        "host"
-      ],
-      "url": "https://www.wekeo.eu/"
-    }
-  ]
+    },
+    "title": "Copernicus Global 30 meter Digital Elevation Model dataset.",
+    "type": "Collection"
 }

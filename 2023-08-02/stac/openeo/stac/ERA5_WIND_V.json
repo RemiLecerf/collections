@@ -1,49 +1,134 @@
 {
-  "type": "Collection",
-  "id": "RIVER_AND_LAKE_ICE_EXTENT_SENTINEL1_SENTINEL2",
-  "stac_version": "1.0.0",
-  "description": "The River and Lake Ice Extent S1+S2 (RLIE S1+S2) product is part of the Copernicus Land Monitoring Service (CLMS), \npan-European High Resolution Snow and Ice Monitoring [(HR-S&I)](https://land.copernicus.eu/pan-european/biophysical-parameters/high-resolution-snow-and-ice-monitoring) Ice product suite.The River and Lake Ice Extent (RLIE) products measure the presence of ice in rivers and lakes described by the EU-HYDRO network database, in particular the area of snow-free or snow-covered ice. \nThe RLIE S1+S2 product is computed from the combination of RLIE S1 and RLIE S2 products.The RLIE S2 product from a given day is gap-filled using the RLIE S1 information from the same day. Because the RLIE S1+S2 is only produced when RLIE S2 and RLIE S1 products are aquired on the same day, it is delivered in delayed-time for the entire EEA39 zone at a spatial resolution of 20 m x 20 m.\nMore information about the RLIE S1+S2 product methodology and workflow is outlined in the [product user manual](https://land.copernicus.eu/user-corner/technical-library/hrsi-ice-pum)\n",
-  "links": [],
-  "title": "High-Resolution Snow & Ice Monitoring; River and Lake Ice Extent S1+S2",
-  "extent": {
-    "spatial": {
-      "bbox": [
-        [
-          -180.0,
-          -90.0,
-          180.0,
-          90.0
-        ]
-      ]
+    "assets": {
+        "thumbnail": {
+            "href": "https://collections.eurodatacube.com/wind_10m_v/wind_10m_v.png",
+            "roles": [
+                "thumbnail"
+            ],
+            "title": "Thumbnail",
+            "type": "image/png"
+        }
     },
-    "temporal": {
-      "interval": [
-        [
-          "1981-01-01T00:00:00Z",
-          null
+    "cube:dimensions": {
+        "bands": {
+            "type": "bands",
+            "values": [
+                "windv10m"
+            ]
+        },
+        "t": {
+            "extent": [
+                "2019-01-01T00:00:00Z",
+                "2022-04-01T00:00:00Z"
+            ],
+            "type": "temporal"
+        },
+        "x": {
+            "axis": "x",
+            "extent": [
+                -179.999755859375,
+                179.99977453631897
+            ],
+            "type": "spatial"
+        },
+        "y": {
+            "axis": "y",
+            "extent": [
+                -90.12489004526765,
+                90.125
+            ],
+            "type": "spatial"
+        }
+    },
+    "datasource_type": "byoc-3043d07f-3c20-410c-9a87-7da720942ab8",
+    "description": "Gridded ERA5 is the fifth generation ECMWF reanalysis for the global climate and weather for the past 4 to 7 decades. This parameter is the wind V field",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -179.999755859375,
+                    -90.12489004526765,
+                    179.99977453631897,
+                    90.125
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2019-01-01T00:00:00Z",
+                    "2022-04-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "id": "ERA5_WIND_V",
+    "keywords": [
+        "copernicus services",
+        "C3S",
+        "open data",
+        "sentinel hub",
+        "raster",
+        "race challenges"
+    ],
+    "links": [
+        {
+            "href": "https://collections.eurodatacube.com/wind_10m_v",
+            "rel": "about",
+            "title": "Website describing the collection",
+            "type": "text/html"
+        },
+        {
+            "href": "https://docs.sentinel-hub.com/api/latest/api/process/",
+            "rel": "about",
+            "title": "Details about running Evalscripts",
+            "type": "text/html"
+        },
+        {
+            "href": "https://raw.githubusercontent.com/eurodatacube/public-collections/main/collections/wind_10m_v/script.js",
+            "rel": "processing-expression",
+            "sentinelhub:layer_name": "Wind V-component",
+            "sentinelhub:mosaicking_order": "mostRecent",
+            "sentinelhub:upsampling": "BICUBIC",
+            "title": "Evalscript to generate Wind V-component imagery",
+            "type": "application/javascript"
+        },
+        {
+            "rel": "license",
+            "title": "License",
+            "type": "text/html"
+        },
+        {
+            "href": "https://openeocloud.vito.be/openeo/1.0.0/collections",
+            "rel": "root"
+        },
+        {
+            "href": "https://openeocloud.vito.be/openeo/1.0.0/collections",
+            "rel": "parent"
+        },
+        {
+            "href": "https://openeocloud.vito.be/openeo/1.0.0/collections/ERA5_WIND_V",
+            "rel": "self"
+        }
+    ],
+    "providers": [
+        {
+            "name": "Sentinel Hub",
+            "roles": [
+                "processor"
+            ],
+            "url": "https://services.sentinel-hub.com"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/datacube/v1.0.0/schema.json"
+    ],
+    "stac_version": "1.0.0",
+    "summaries": {
+        "federation:backends": [
+            "sentinelhub"
         ]
-      ]
-    }
-  },
-  "license": "proprietary",
-  "keywords": [
-    "hrsi",
-    "water",
-    "river",
-    "lake",
-    "ice",
-    "CLMS",
-    "derived data",
-    "open data"
-  ],
-  "providers": [
-    {
-      "name": "WEkEO",
-      "description": "WEkEO DIAS",
-      "roles": [
-        "host"
-      ],
-      "url": "https://www.wekeo.eu/"
-    }
-  ]
+    },
+    "title": "Wind_10m_v",
+    "type": "Collection"
 }

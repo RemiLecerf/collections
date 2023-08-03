@@ -1,47 +1,275 @@
 {
-  "type": "Collection",
-  "id": "boa_sentinel_2",
-  "stac_version": "1.0.0",
-  "description": "Preprocessed analysis-ready-data (ARD) from Sentinel-2 processed with FORCE. ARD data can only be combined with other ARD data or loaded results of previous processed jobs. ARD data cannot be combined with Level-1 collections! As this is Level-2 (ARD) data, ARD processes (``ard_normalized_radar_backscatter()``, ``ard_surface_reflectance()``, ``sar_backscatter()``, ``atmospheric_correction()``) cannot be applied.",
-  "links": [],
-  "title": "Sentinel-2 bottom of atmosphere at 10m resolution, limited area",
-  "extent": {
-    "spatial": {
-      "bbox": [
-        [
-          -180.0,
-          -90.0,
-          180.0,
-          90.0
-        ]
-      ]
+    "cube:dimensions": {
+        "bands": {
+            "type": "bands",
+            "values": [
+                "B02",
+                "B03",
+                "B04",
+                "B05",
+                "B06",
+                "B07",
+                "B08",
+                "B08",
+                "B11",
+                "B12"
+            ]
+        },
+        "t": {
+            "extent": [
+                [
+                    "2015-07-04T12:00:00+00:00",
+                    "2021-06-22T12:00:00+00:00"
+                ]
+            ],
+            "type": "temporal"
+        },
+        "x": {
+            "axis": "x",
+            "extent": [
+                4100000.0,
+                5500000.0
+            ],
+            "reference_system": "PROJCS[\"Azimuthal_Equidistant\",GEOGCS[\"GCS_WGS_1984\",DATUM[\"D_WGS_1984\",SPHEROID[\"WGS_1984\",6378137,298.257223563]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433]],PROJECTION[\"Azimuthal_Equidistant\"],PARAMETER[\"latitude_of_center\",53],PARAMETER[\"longitude_of_center\",24],PARAMETER[\"false_easting\",5837287.81977],PARAMETER[\"false_northing\",2121415.69617],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]]]",
+            "type": "spatial"
+        },
+        "y": {
+            "axis": "y",
+            "extent": [
+                900000.0,
+                2200000.0
+            ],
+            "reference_system": "PROJCS[\"Azimuthal_Equidistant\",GEOGCS[\"GCS_WGS_1984\",DATUM[\"D_WGS_1984\",SPHEROID[\"WGS_1984\",6378137,298.257223563]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433]],PROJECTION[\"Azimuthal_Equidistant\"],PARAMETER[\"latitude_of_center\",53],PARAMETER[\"longitude_of_center\",24],PARAMETER[\"false_easting\",5837287.81977],PARAMETER[\"false_northing\",2121415.69617],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]]]",
+            "type": "spatial"
+        }
     },
-    "temporal": {
-      "interval": [
-        [
-          "1981-01-01T00:00:00Z",
-          null
-        ]
-      ]
-    }
-  },
-  "license": "proprietary",
-  "keywords": [
-    "EODC",
-    "MSI",
-    "ESA",
-    "Copernicus",
-    "Sentinel-2",
-    "Level-2"
-  ],
-  "providers": [
-    {
-      "name": "WEkEO",
-      "description": "WEkEO DIAS",
-      "roles": [
-        "host"
-      ],
-      "url": "https://www.wekeo.eu/"
-    }
-  ]
+    "description": "Preprocessed analysis-ready-data (ARD) from Sentinel-2 processed with FORCE. ARD data can only be combined with other ARD data or loaded results of previous processed jobs. ARD data cannot be combined with Level-1 collections! As this is Level-2 (ARD) data, ARD processes (``ard_normalized_radar_backscatter()``, ``ard_surface_reflectance()``, ``sar_backscatter()``, ``atmospheric_correction()``) cannot be applied.",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    1.4211922929976784,
+                    41.388795496730424,
+                    19.38022689396854,
+                    52.43260595832486
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2015-07-04T12:00:00Z",
+                    "2021-06-22T12:00:00Z"
+                ]
+            ]
+        }
+    },
+    "id": "boa_sentinel_2",
+    "item_assets": {
+        "cloud": {
+            "description": "The QAI dataset contains bit-wise stored quality information for each pixel. The cloud state is available in bit 1-2.",
+            "file:values": {
+                "0": {
+                    "summary": "clear"
+                },
+                "1": {
+                    "summary": "less confident cloud (i.e., buffered cloud)",
+                    "values": [
+                        1
+                    ]
+                },
+                "2": {
+                    "summary": "confident, opaque cloud",
+                    "values": [
+                        2
+                    ]
+                },
+                "3": {
+                    "summary": "cirrus",
+                    "values": [
+                        3
+                    ]
+                }
+            },
+            "roles": [
+                "cloud",
+                "metadata"
+            ],
+            "type": "image/tiff; application=geotiff"
+        },
+        "cloud_shadow": {
+            "description": "The QAI dataset contains bit-wise stored quality information for each pixel. The cloud-shadow flag is available in bit 3.",
+            "file:values": {
+                "0": {
+                    "summary": "no - no cloud-shadow on pixel"
+                },
+                "1": {
+                    "summary": "yes - cloud-shadow on pixel",
+                    "values": [
+                        1
+                    ]
+                }
+            },
+            "roles": [
+                "cloud-shadow",
+                "metadata"
+            ],
+            "type": "image/tiff; application=geotiff"
+        },
+        "saturation": {
+            "description": "The QAI dataset contains bit-wise stored quality information for each pixel. The saturation flag is available in bit 9.",
+            "file:values": {
+                "0": {
+                    "summary": "no - pixel is NOT saturated"
+                },
+                "1": {
+                    "summary": "yes - pixel is saturated",
+                    "values": [
+                        1
+                    ]
+                }
+            },
+            "roles": [
+                "saturation",
+                "metadata"
+            ],
+            "type": "image/tiff; application=geotiff"
+        }
+    },
+    "keywords": [
+        "EODC",
+        "MSI",
+        "ESA",
+        "Copernicus",
+        "Sentinel-2",
+        "Level-2"
+    ],
+    "license": "proprietary",
+    "links": [
+        {
+            "href": "https://openeo.eodc.eu/openeo/1.1.0/collections",
+            "rel": "about"
+        },
+        {
+            "href": "https://openeo.eodc.eu/openeo/1.1.0/collections",
+            "rel": "cloud"
+        },
+        {
+            "href": "https://openeo.eodc.eu/openeo/1.1.0/collections",
+            "rel": "snow-ice"
+        },
+        {
+            "href": "https://openeo.eodc.eu/openeo/1.1.0/collections",
+            "rel": "land-water"
+        },
+        {
+            "href": "https://openeo.eodc.eu/openeo/1.1.0/collections",
+            "rel": "water-vapor"
+        },
+        {
+            "href": "https://openeo.eodc.eu/openeo/1.1.0/collections",
+            "rel": "cloud-shadow"
+        },
+        {
+            "href": "https://openeo.eodc.eu/openeo/1.1.0/collections",
+            "rel": "card4l-document"
+        },
+        {
+            "href": "https://openeo.eodc.eu/openeo/1.1.0/collections",
+            "rel": "elevation-model"
+        },
+        {
+            "href": "https://openeo.eodc.eu/openeo/1.1.0/collections",
+            "rel": "atmospheric-scattering"
+        },
+        {
+            "href": "https://openeocloud.vito.be/openeo/1.0.0/collections",
+            "rel": "root"
+        },
+        {
+            "href": "https://openeocloud.vito.be/openeo/1.0.0/collections",
+            "rel": "parent"
+        },
+        {
+            "href": "https://openeocloud.vito.be/openeo/1.0.0/collections/boa_sentinel_2",
+            "rel": "self"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
+        "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json",
+        "https://github.com/stac-extensions/eo"
+    ],
+    "stac_version": "1.0.0",
+    "summaries": {
+        "constellation": {
+            "0": "sentinel-2"
+        },
+        "eo:bands": [
+            {
+                "central_wavelength": 0.49,
+                "common_name": "band_1",
+                "name": "B02"
+            },
+            {
+                "central_wavelength": 0.56,
+                "common_name": "band_2",
+                "name": "B03"
+            },
+            {
+                "central_wavelength": 0.67,
+                "common_name": "band_3",
+                "name": "B04"
+            },
+            {
+                "central_wavelength": 0.7,
+                "common_name": "band_4",
+                "name": "B05"
+            },
+            {
+                "central_wavelength": 0.74,
+                "common_name": "band_5",
+                "name": "B06"
+            },
+            {
+                "central_wavelength": 0.78,
+                "common_name": "band_6",
+                "name": "B07"
+            },
+            {
+                "central_wavelength": 0.83,
+                "common_name": "band_7",
+                "name": "B08"
+            },
+            {
+                "central_wavelength": 0.86,
+                "common_name": "band_8",
+                "name": "B08"
+            },
+            {
+                "central_wavelength": 1.61,
+                "common_name": "band_9",
+                "name": "B11"
+            },
+            {
+                "central_wavelength": 2.2,
+                "common_name": "band_10",
+                "name": "B12"
+            }
+        ],
+        "federation:backends": [
+            "eodc"
+        ],
+        "instruments": [
+            "msi"
+        ],
+        "odc:file_format": {
+            "0": "GeoTIFF"
+        },
+        "odc:product_family": {
+            "0": "level2"
+        }
+    },
+    "title": "Sentinel-2 bottom of atmosphere at 10m resolution, limited area",
+    "type": "Collection"
 }

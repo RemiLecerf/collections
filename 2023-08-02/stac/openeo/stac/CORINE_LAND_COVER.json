@@ -1,52 +1,166 @@
 {
-  "type": "Collection",
-  "id": "CORINE_LAND_COVER",
-  "stac_version": "1.0.0",
-  "description": "The CORINE Land Cover (CLC) inventory consists of 44 land cover and land use classes derived from a \nseries of satellite missions since it was first established.\n",
-  "links": [],
-  "title": "CORINE Land Cover",
-  "extent": {
-    "spatial": {
-      "bbox": [
-        [
-          -180.0,
-          -90.0,
-          180.0,
-          90.0
-        ]
-      ]
+    "assets": {
+        "thumbnail": {
+            "href": "https://collections.eurodatacube.com/corine-land-cover/corine-land-cover.png",
+            "roles": [
+                "thumbnail"
+            ],
+            "title": "Thumbnail",
+            "type": "image/png"
+        }
     },
-    "temporal": {
-      "interval": [
-        [
-          "1981-01-01T00:00:00Z",
-          null
+    "cube:dimensions": {
+        "bands": {
+            "type": "bands",
+            "values": [
+                "CLC",
+                "dataMask"
+            ]
+        },
+        "t": {
+            "extent": [
+                "1990-01-01T00:00:00Z",
+                "2018-01-01T00:00:00Z"
+            ],
+            "step": "P6Y",
+            "type": "temporal"
+        },
+        "x": {
+            "axis": "x",
+            "extent": [
+                -32,
+                45
+            ],
+            "reference_system": 3035,
+            "step": 0.000248016,
+            "type": "spatial"
+        },
+        "y": {
+            "axis": "y",
+            "extent": [
+                27,
+                71
+            ],
+            "reference_system": 3035,
+            "step": 0.000248016,
+            "type": "spatial"
+        }
+    },
+    "description": "The CORINE Land Cover (CLC) inventory consists of 44 land cover and land use classes derived from a \nseries of satellite missions since it was first established.\n",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -32,
+                    27,
+                    45,
+                    71
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1990-01-01T00:00:00Z",
+                    "2018-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "id": "CORINE_LAND_COVER",
+    "keywords": [
+        "copernicus services",
+        "sentinel hub",
+        "xcube",
+        "raster",
+        "systematic",
+        "machine learning",
+        "land cover",
+        "CLMS",
+        "corine",
+        "derived data",
+        "open data"
+    ],
+    "license": "proprietary",
+    "links": [
+        {
+            "href": "https://collections.eurodatacube.com/corine-land-cover",
+            "rel": "about",
+            "title": "Website describing the collection",
+            "type": "text/html"
+        },
+        {
+            "href": "https://creodias.sentinel-hub.com/ogc/wmts/d2344774-2e63-443f-ac1a-f961d7b19319",
+            "rel": "wmts",
+            "wmts:dimensions": {
+                "warnings": true
+            },
+            "wmts:layer": "CORINE-LAND-COVER"
+        },
+        {
+            "href": "https://docs.sentinel-hub.com/api/latest/api/process/",
+            "rel": "about",
+            "title": "Details about running Evalscripts",
+            "type": "text/html"
+        },
+        {
+            "href": "https://custom-scripts.sentinel-hub.com/copernicus_services/corine/corine_land_cover/script.js",
+            "rel": "processing-expression",
+            "sentinelhub:layer_name": "Corine Land Cover",
+            "sentinelhub:mosaicking_order": "mostRecent",
+            "sentinelhub:upsampling": "BICUBIC",
+            "title": "Evalscript to generate Corine Land Cover imagery",
+            "type": "application/javascript"
+        },
+        {
+            "href": "https://collections.eurodatacube.com/corine-land-cover/readme.html#band-information",
+            "rel": "about",
+            "title": "Nomenclature mapping - band values CLC labels",
+            "type": "text/html"
+        },
+        {
+            "href": "https://land.copernicus.eu/terms-of-use",
+            "rel": "license",
+            "title": "License",
+            "type": "text/html"
+        },
+        {
+            "href": "https://openeocloud.vito.be/openeo/1.0.0/collections",
+            "rel": "root"
+        },
+        {
+            "href": "https://openeocloud.vito.be/openeo/1.0.0/collections",
+            "rel": "parent"
+        },
+        {
+            "href": "https://openeocloud.vito.be/openeo/1.0.0/collections/CORINE_LAND_COVER",
+            "rel": "self"
+        }
+    ],
+    "providers": [
+        {
+            "name": "Sentinel Hub",
+            "roles": [
+                "processor"
+            ],
+            "url": "https://creodias.sentinel-hub.com"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/datacube/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.0.0/schema.json"
+    ],
+    "stac_version": "1.0.0",
+    "summaries": {
+        "federation:backends": [
+            "vito",
+            "sentinelhub"
+        ],
+        "provider:backend": [
+            "vito",
+            "sentinelhub"
         ]
-      ]
-    }
-  },
-  "license": "proprietary",
-  "keywords": [
-    "copernicus services",
-    "sentinel hub",
-    "xcube",
-    "raster",
-    "systematic",
-    "machine learning",
-    "land cover",
-    "CLMS",
-    "corine",
-    "derived data",
-    "open data"
-  ],
-  "providers": [
-    {
-      "name": "WEkEO",
-      "description": "WEkEO DIAS",
-      "roles": [
-        "host"
-      ],
-      "url": "https://www.wekeo.eu/"
-    }
-  ]
+    },
+    "title": "CORINE Land Cover",
+    "type": "Collection"
 }

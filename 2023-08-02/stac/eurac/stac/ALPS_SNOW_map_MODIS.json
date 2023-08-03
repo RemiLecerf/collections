@@ -1,45 +1,134 @@
 {
-  "type": "Collection",
-  "id": "ALPS_SNOW_map_MODIS",
-  "stac_version": "1.0.0",
-  "description": "The collection contains binary snow cover maps covering the entire Alpine Arc. The maps have a daily frequency and a ground resolution of 250 m. They are derived from daily MODIS observations (Aqua and Terra) for the entire Alps arc. The input data are the atmospherically-corrected reflectances of MODIS MOD09GQ, MOD09GA for tile h19v04 and h18v04. The map has two bands - SNOW MAP: Snow cover classification map with four classes [0 = NO DATA - missing or corrupt data of one or more input bands; 1 = SNOW - pixel covered by snow; 2 = NO_SNOW - pixel not covered by snow; 3 = CLOUD - pixel covered by clouds], QUALITY FLAG: Snow cover quality map [NO DATA - missing or corrupt data of one or more input bands; QUALITY_INDEX - higher values indicate higher likeliness of correct classification].",
-  "links": [],
-  "title": "MODIS SNOW map over the ALPS",
-  "extent": {
-    "spatial": {
-      "bbox": [
-        [
-          -180.0,
-          -90.0,
-          180.0,
-          90.0
-        ]
-      ]
+    "engine": "WCPS",
+    "stac_version": "0.9.0",
+    "stac_extensions": [
+        "datacube"
+    ],
+    "type": "Collection",
+    "id": "ALPS_SNOW_map_MODIS",
+    "title": "MODIS SNOW map over the ALPS",
+    "description": "The collection contains binary snow cover maps covering the entire Alpine Arc. The maps have a daily frequency and a ground resolution of 250 m. They are derived from daily MODIS observations (Aqua and Terra) for the entire Alps arc. The input data are the atmospherically-corrected reflectances of MODIS MOD09GQ, MOD09GA for tile h19v04 and h18v04. The map has two bands - SNOW MAP: Snow cover classification map with four classes [0 = NO DATA - missing or corrupt data of one or more input bands; 1 = SNOW - pixel covered by snow; 2 = NO_SNOW - pixel not covered by snow; 3 = CLOUD - pixel covered by clouds], QUALITY FLAG: Snow cover quality map [NO DATA - missing or corrupt data of one or more input bands; QUALITY_INDEX - higher values indicate higher likeliness of correct classification].",
+    "keywords": [
+        "SNOW",
+        "MODIS",
+        "snow map",
+        "Alps"
+    ],
+    "version": "v1",
+    "license": "CC-BY-4.0",
+    "sci:citation": "'Notarnicola, Claudia, Martial Duguay, Nico Moelg, Thomas Schellenberger, Anke Tetzlaff, Roberto Monsorno, Armin Costa, Christian Steurer, and Marc Zebisch. 2013. 'Snow Cover Maps from MODIS Images at 250 m Resolution, Part 1: Algorithm Description' Remote Sensing 5, no. 1: 110-126. https://doi.org/10.3390/rs5010110' - 'Notarnicola, Claudia, Martial Duguay, Nico Moelg, Thomas Schellenberger, Anke Tetzlaff, Roberto Monsorno, Armin Costa, Christian Steurer, and Marc Zebisch. 2013. 'Snow Cover Maps from MODIS Images at 250 m Resolution, Part 2: Validation' Remote Sensing 5, no. 4: 1568-1587. https://doi.org/10.3390/rs5041568'",
+    "providers": [
+        {
+            "name": "Eurac EO WCS",
+            "url": "http://www.eurac.edu",
+            "roles": [
+                "Host"
+            ]
+        },
+        {
+            "name": "National Aeronautics and Space Administration (NASA)",
+            "url": "https://www.nasa.gov/",
+            "roles": [
+                "Producer"
+            ]
+        },
+        {
+            "name": "Notarnicola Claudia",
+            "url": "https://www.eurac.edu/en/people/claudia-notarnicola",
+            "roles": [
+                "Processor"
+            ]
+        },
+        {
+            "name": "Alexander Jacob",
+            "url": "http://www.eurac.edu/en/people/alexander-jacob",
+            "roles": [
+                "Processor"
+            ]
+        }
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    4.216446958373531,
+                    42.817152675995985,
+                    18.99055634355496,
+                    48.601848359993454
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2002-07-03T12:00:00Z",
+                    "2023-07-04T12:00:00Z"
+                ]
+            ]
+        }
     },
-    "temporal": {
-      "interval": [
-        [
-          "1981-01-01T00:00:00Z",
-          null
+    "links": [
+        {
+            "rel": "licence",
+            "href": "https://creativecommons.org/licenses/by/4.0/",
+            "type": "Description of the adopted license",
+            "title": "License Link"
+        }
+    ],
+    "cube:dimensions": {
+        "DATE": {
+            "type": "temporal",
+            "extent": [
+                "2002-07-03T12:00:00.000Z",
+                "2023-07-04T12:00:00.000Z"
+            ],
+            "step": "P1D"
+        },
+        "X": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                4.216446958373531,
+                18.99055634355496
+            ],
+            "reference_system": 3035
+        },
+        "Y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                42.817152675995985,
+                48.601848359993454
+            ],
+            "reference_system": 3035
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "Snow_cover_classification_map",
+                "Snow_cover_quality_map"
+            ]
+        }
+    },
+    "summaries": {
+        "constellation": [
+            "Aqua, Terra"
+        ],
+        "platform": [
+            "Aqua, Terra"
+        ],
+        "rows": 2867,
+        "columns": 4901,
+        "instruments": [
+            "MODIS"
+        ],
+        "eo:bands": [
+            {
+                "name": "Snow_cover_classification_map"
+            },
+            {
+                "name": "Snow_cover_quality_map"
+            }
         ]
-      ]
     }
-  },
-  "license": "CC-BY-4.0",
-  "keywords": [
-    "SNOW",
-    "MODIS",
-    "snow map",
-    "Alps"
-  ],
-  "providers": [
-    {
-      "name": "WEkEO",
-      "description": "WEkEO DIAS",
-      "roles": [
-        "host"
-      ],
-      "url": "https://www.wekeo.eu/"
-    }
-  ]
 }

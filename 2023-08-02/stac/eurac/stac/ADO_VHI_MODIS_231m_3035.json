@@ -1,46 +1,124 @@
 {
-  "type": "Collection",
-  "id": "ADO_VHI_MODIS_231m_3035",
-  "stac_version": "1.0.0",
-  "description": "The Vegetation Health Index (VHI) is based on a combination of products extracted from vegetation signals, namely the Normalized Difference Vegetation Index (NDVI) and the land surface temperature, both derived from MODIS satellite data. The NDVI is based on 8 day maximum value composite MOD09Q1 (v006) reflectance and the land surface temperature (LST) on 8 day MOD11A2 (v006) LST products. The spatial resolution is 231 m, therefore the original 1000 m resolution of the MOD11A2 LST is downscaled to 231 m of the MOD09Q1 reflectance. Both products are masked to the highest quality standards using the provided quality layers. Missing pixel values in the time series are linearly interpolated. Non-vegetated areas are masked using the most recent Corine Land Cover product version for the according year. The final product is regridded to the LAEA Projection (EPSG:3035). The VHI relies on a strong inverse correlation between NDVI and land surface temperature, since increasing land temperatures are assumed to act negatively on vegetation vigour and consequently to cause stress. The data is provided as 8 day measures. The time series is starting from 2001. The VHI values range from 0-100, whereas high values correspond to healthy vegetation and low values indicate stressed vegetation.",
-  "links": [],
-  "title": "Vegetation Health Index - 231 m 8 days",
-  "extent": {
-    "spatial": {
-      "bbox": [
-        [
-          -180.0,
-          -90.0,
-          180.0,
-          90.0
-        ]
-      ]
+    "engine": "WCPS",
+    "stac_version": "0.9.0",
+    "stac_extensions": [
+        "datacube"
+    ],
+    "type": "Collection",
+    "id": "ADO_VHI_MODIS_231m_3035",
+    "title": "Vegetation Health Index - 231 m 8 days",
+    "description": "The Vegetation Health Index (VHI) is based on a combination of products extracted from vegetation signals, namely the Normalized Difference Vegetation Index (NDVI) and the land surface temperature, both derived from MODIS satellite data. The NDVI is based on 8 day maximum value composite MOD09Q1 (v006) reflectance and the land surface temperature (LST) on 8 day MOD11A2 (v006) LST products. The spatial resolution is 231 m, therefore the original 1000 m resolution of the MOD11A2 LST is downscaled to 231 m of the MOD09Q1 reflectance. Both products are masked to the highest quality standards using the provided quality layers. Missing pixel values in the time series are linearly interpolated. Non-vegetated areas are masked using the most recent Corine Land Cover product version for the according year. The final product is regridded to the LAEA Projection (EPSG:3035). The VHI relies on a strong inverse correlation between NDVI and land surface temperature, since increasing land temperatures are assumed to act negatively on vegetation vigour and consequently to cause stress. The data is provided as 8 day measures. The time series is starting from 2001. The VHI values range from 0-100, whereas high values correspond to healthy vegetation and low values indicate stressed vegetation.",
+    "keywords": [
+        "vegetation health index",
+        "vhi",
+        "modisi",
+        "ADO project",
+        "ADO"
+    ],
+    "version": "v1",
+    "license": "CC BY 4.0",
+    "sci:citation": "Kogan, F. N. (eds) (1995): Application of vegetation index and brightness temperature for drought detection. In: Advances in Space Research, 15 (11), 91\u2013100. Kogan, F. N. (eds) (1997): Global Drought Watch from Space. In: Bulletin of the American Meteorological Society, 78 (4), 621\u2013636. Kogan, F. N. (eds) (2000): Satellite-Observed Sensitivity of World Land Ecosystems to El Nino/La Nina. In: Remote Sensing of Environment, 74, 445\u2013462.",
+    "providers": [
+        {
+            "name": "Eurac EO WCS",
+            "url": "http://www.eurac.edu",
+            "roles": [
+                "Host"
+            ]
+        },
+        {
+            "name": "Eurac Research",
+            "url": "http://www.eurac.edu",
+            "roles": [
+                "Processor"
+            ]
+        },
+        {
+            "name": "NASA",
+            "url": "https://modis.gsfc.nasa.gov/",
+            "roles": [
+                "Producer"
+            ]
+        }
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    3.99537296130427,
+                    42.87349365119738,
+                    17.523924303829347,
+                    50.32636203215727
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2001-01-01T00:00:00Z",
+                    "2022-08-29T00:00:00Z"
+                ]
+            ]
+        }
     },
-    "temporal": {
-      "interval": [
-        [
-          "1981-01-01T00:00:00Z",
-          null
+    "links": [
+        {
+            "rel": "licence",
+            "href": "https://creativecommons.org/licenses/by/4.0/",
+            "type": "text/html",
+            "title": "License Link"
+        }
+    ],
+    "cube:dimensions": {
+        "DATE": {
+            "type": "temporal",
+            "extent": [
+                "2001-01-01T00:00:00.000Z",
+                "2022-08-29T00:00:00.000Z"
+            ],
+            "step": "P8D"
+        },
+        "X": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                3.99537296130427,
+                17.523924303829347
+            ],
+            "reference_system": 3035
+        },
+        "Y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                42.87349365119738,
+                50.32636203215727
+            ],
+            "reference_system": 3035
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "8d_vhi"
+            ]
+        }
+    },
+    "summaries": {
+        "constellation": [
+            "Terra"
+        ],
+        "platform": [
+            "Terra"
+        ],
+        "rows": 3606,
+        "columns": 4430,
+        "instruments": [
+            "MODIS"
+        ],
+        "eo:bands": [
+            {
+                "name": "8d_vhi"
+            }
         ]
-      ]
     }
-  },
-  "license": "CC BY 4.0",
-  "keywords": [
-    "vegetation health index",
-    "vhi",
-    "modisi",
-    "ADO project",
-    "ADO"
-  ],
-  "providers": [
-    {
-      "name": "WEkEO",
-      "description": "WEkEO DIAS",
-      "roles": [
-        "host"
-      ],
-      "url": "https://www.wekeo.eu/"
-    }
-  ]
 }

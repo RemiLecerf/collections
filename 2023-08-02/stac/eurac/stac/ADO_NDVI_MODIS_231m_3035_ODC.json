@@ -1,47 +1,80 @@
 {
-  "type": "Collection",
-  "id": "ADO_CORINE_100m_3035_ODC",
-  "stac_version": "1.0.0",
-  "description": "CLC2018 is one of the Corine Land Cover (CLC) datasets produced within the frame the Copernicus Land Monitoring Service referring to land cover / land use status of year 2018. CLC service has a long-time heritage (formerly known as \"CORINE Land Cover Programme\"), coordinated by the European Environment Agency (EEA). It provides consistent and thematically detailed information on land cover and land cover changes across Europe.",
-  "links": [],
-  "title": "Corine Land Cover (CLC) 2018",
-  "extent": {
-    "spatial": {
-      "bbox": [
-        [
-          -180.0,
-          -90.0,
-          180.0,
-          90.0
-        ]
-      ]
+    "stac_version": "1.0.0",
+    "stac_extensions": [
+        "datacube"
+    ],
+    "type": "Collection",
+    "id": "ADO_NDVI_MODIS_231m_3035_ODC",
+    "title": "Normalized Difference Vegetation Index - 231m 8 day Maximum Value Composite",
+    "description": "The Normalized Difference Vegetation Index (NDVI) is based on MODIS satellite data. The NDVI is based on 8 day maximum value composite MOD09Q1 (v006) reflectance products. The spatial resolution is 231 m. The NDVI is masked to the highest quality standards using the provided quality layers. Missing pixel values in the time series are linearly interpolated. Non-vegetatated areas are masked using the MODIS land cover product layer MCD12Q1 FAO-Land Cover Classification System 1 (LCCS1). The final product is regridded to the LAEA Projection (EPSG:3035). The NDVI is calculated using the formula NDVI = (NIR - Red) / (NIR + Red). The NDVI expresses the vitality of vegetation. The data is provided as 8 day measures. The time series is starting from 2001. The NDVI values range from -1 - 1, whereas high values correspond to healthy vegetation.",
+    "license": "CC-BY-4.0",
+    "providers": [
+        {
+            "name": "Eurac EO ODC",
+            "url": "http://www.eurac.edu/",
+            "roles": [
+                "producer",
+                "host"
+            ]
+        }
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    3.080800333295437,
+                    42.841014591998366,
+                    17.523924303829347,
+                    50.36459883616284
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2001-01-01T00:00:00Z",
+                    "2023-02-02T00:00:00Z"
+                ]
+            ]
+        }
     },
-    "temporal": {
-      "interval": [
-        [
-          "1981-01-01T00:00:00Z",
-          null
-        ]
-      ]
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://creativecommons.org/licenses/by/4.0/",
+            "type": "text/html",
+            "title": "License link"
+        }
+    ],
+    "cube:dimensions": {
+        "DATE": {
+            "type": "temporal",
+            "extent": [
+                "2001-01-01T00:00:00Z",
+                "2023-02-02T00:00:00Z"
+            ]
+        },
+        "X": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                3.080800333295437,
+                17.523924303829347
+            ]
+        },
+        "Y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                42.841014591998366,
+                50.36459883616284
+            ]
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "8d_ndvi_linint"
+            ]
+        }
     }
-  },
-  "license": "CC-BY-4.0",
-  "keywords": [
-    "Copernicus",
-    "Land",
-    "Satellite Image Interpretation",
-    "2018",
-    "Corine",
-    "Corine Land Cover"
-  ],
-  "providers": [
-    {
-      "name": "WEkEO",
-      "description": "WEkEO DIAS",
-      "roles": [
-        "host"
-      ],
-      "url": "https://www.wekeo.eu/"
-    }
-  ]
 }

@@ -1,59 +1,171 @@
 {
-  "type": "Collection",
-  "id": "urn:ogc:def:EOP:VITO:VGT_S10",
-  "stac_version": "1.0.0",
-  "description": "The VGT-S10 are near-global, 10-daily composite images which are synthesised from the 'best available' observations registered in the course of every 'dekad' by the orbiting earth observation system SPOT-VEGETATION. The products provide data from all spectral bands (SWIR, NIR, RED, BLUE), the NDVI and auxiliary data on image acquisition parameters. The VEGETATION system allows operational and near real-time applications, at global, continental and regional scales, in very broad environmentally and socio-economically critical fields. The VEGETATION instrument is operational since April 1998, first with VGT1, from March 2003 onwards, with VGT2. More information is available on: https://www.vito-eodata.be/PDF/image/faq_help/Faq.html#SPOT-VEGETATION",
-  "links": [],
-  "title": "Global 10 Days Synthesis of SPOT VEGETATION Images (VGT-S10)",
-  "extent": {
-    "spatial": {
-      "bbox": [
-        [
-          -180.0,
-          -90.0,
-          180.0,
-          90.0
-        ]
-      ]
+    "stac_version": "1.0.0",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/scientific/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+    ],
+    "type": "Collection",
+    "id": "sentinel-2-l2a",
+    "title": "Sentinel 2 L2A",
+    "description": "Sentinel 2 imagery processed to level 2A",
+    "sci:citation": "Modified Copernicus Sentinel data [Year]/Sentinel Hub",
+    "license": "proprietary",
+    "providers": [
+        {
+            "name": "ESA",
+            "roles": [
+                "producer"
+            ],
+            "url": "https://esa.int/"
+        },
+        {
+            "name": "AWS",
+            "roles": [
+                "host"
+            ],
+            "url": "https://aws.amazon.com/"
+        },
+        {
+            "name": "Sinergise",
+            "roles": [
+                "processor"
+            ],
+            "url": "https://www.sinergise.com/"
+        }
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180.0,
+                    -56.0,
+                    180.0,
+                    83.0
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2016-11-01T00:00:00Z"
+                ]
+            ]
+        }
     },
-    "temporal": {
-      "interval": [
-        [
-          "1981-01-01T00:00:00Z",
-          null
+    "summaries": {
+        "platform": [
+            "sentinel-2a",
+            "sentinel-2b"
+        ],
+        "instrument": [
+            "msi"
+        ],
+        "constellation": [
+            "sentinel-2"
+        ],
+        "gsd": [
+            10
+        ],
+        "eo:cloud_cover": {
+            "maximum": 100
+        },
+        "eo:bands": [
+            {
+                "name": "B01",
+                "common_name": "coastal",
+                "center_wavelength": 0.4427,
+                "full_width_half_max": 0.021
+            },
+            {
+                "name": "B02",
+                "common_name": "blue",
+                "center_wavelength": 0.4924,
+                "full_width_half_max": 0.066
+            },
+            {
+                "name": "B03",
+                "common_name": "green",
+                "center_wavelength": 0.5598,
+                "full_width_half_max": 0.036
+            },
+            {
+                "name": "B04",
+                "common_name": "red",
+                "center_wavelength": 0.6646,
+                "full_width_half_max": 0.031
+            },
+            {
+                "name": "B05",
+                "center_wavelength": 0.7041,
+                "full_width_half_max": 0.015
+            },
+            {
+                "name": "B06",
+                "center_wavelength": 0.7405,
+                "full_width_half_max": 0.015
+            },
+            {
+                "name": "B07",
+                "center_wavelength": 0.7828,
+                "full_width_half_max": 0.02
+            },
+            {
+                "name": "B08",
+                "common_name": "nir",
+                "center_wavelength": 0.8328,
+                "full_width_half_max": 0.106
+            },
+            {
+                "name": "B8A",
+                "common_name": "nir08",
+                "center_wavelength": 0.8647,
+                "full_width_half_max": 0.021
+            },
+            {
+                "name": "B09",
+                "common_name": "nir09",
+                "center_wavelength": 0.9451,
+                "full_width_half_max": 0.02
+            },
+            {
+                "name": "B11",
+                "common_name": "swir16",
+                "center_wavelength": 1.6137,
+                "full_width_half_max": 0.091
+            },
+            {
+                "name": "B12",
+                "common_name": "swir22",
+                "center_wavelength": 2.2024,
+                "full_width_half_max": 0.175
+            }
         ]
-      ]
-    }
-  },
-  "license": "Copyright CNES.Distributed by VITO / Licence: https://terrascope.be/en/terms-use",
-  "keywords": [
-    "VITO",
-    "TERRASCOPE",
-    "ESA",
-    "Orthoimagery",
-    "SPOT",
-    "SPOT-4",
-    "SPOT-5",
-    "VEGETATION-1",
-    "VEGETATION-2",
-    "Level-2",
-    "Geohysical environment",
-    "Cloud",
-    "Shadow",
-    "Snow",
-    "Land use",
-    "Radiometric quality",
-    "10-day composite",
-    "Dekad"
-  ],
-  "providers": [
-    {
-      "name": "WEkEO",
-      "description": "WEkEO DIAS",
-      "roles": [
-        "host"
-      ],
-      "url": "https://www.wekeo.eu/"
-    }
-  ]
+    },
+    "links": [
+        {
+            "href": "https://services.sentinel-hub.com/api/v1/catalog/1.0.0/",
+            "rel": "root",
+            "type": "application/json"
+        },
+        {
+            "href": "https://services.sentinel-hub.com/api/v1/catalog/1.0.0/collections/sentinel-2-l2a",
+            "rel": "self",
+            "type": "application/json"
+        },
+        {
+            "href": "https://services.sentinel-hub.com/api/v1/catalog/1.0.0/collections",
+            "rel": "parent",
+            "type": "application/json"
+        },
+        {
+            "href": "https://services.sentinel-hub.com/api/v1/catalog/1.0.0/collections/sentinel-2-l2a/queryables",
+            "rel": "http://www.opengis.net/def/rel/ogc/1.0/queryables",
+            "type": "application/schema+json"
+        },
+        {
+            "href": "https://services.sentinel-hub.com/api/v1/catalog/1.0.0/collections/sentinel-2-l2a/items",
+            "rel": "items",
+            "type": "application/geo+json"
+        }
+    ]
 }

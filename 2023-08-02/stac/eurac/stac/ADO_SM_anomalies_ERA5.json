@@ -1,48 +1,138 @@
 {
-  "type": "Collection",
-  "id": "ADO_SM_anomalies_ERA5",
-  "stac_version": "1.0.0",
-  "description": "ERA5 is the fifth generation ECMWF reanalysis for the global climate and weather for the past 4 to 7 decades. Currently data is available from 1950, split into Climate Data Store entries for 1950-1978 (preliminary back extension) and from 1979 onwards (final release plus timely updates, this page). ERA5 replaces the ERA-Interim reanalysis. ERA5-Land offers 'land' variables with an enhanced resolution, compared to ERA5. Albeit, at the time of processing with a higher latency. Therefore, ERA5 was downscaled to the 9 km ERA5-Land grid using a quantile mapping approach. The soil moisture anomalies are based on the original ERA5 fields 'Volumetric soil water layer 1 - 4', representing the following depths: layer 1 (0-7cm), layer 2 (7-28cm), layer 3 (28-100 cm), layer 4 (100-289 cm). Anomalies were calculated based on the period 1981-2010 as a reference. Contains modified Copernicus Climate Change Service information [1980-current year]; Contains modified Copernicus Atmosphere Monitoring Service information [1980-current year]. Neither the European Commission nor ECMWF is responsible for any use that may be made of the Copernicus information or data it contains.",
-  "links": [],
-  "title": "Soil Moisture Anomalies - ERA5_QM",
-  "extent": {
-    "spatial": {
-      "bbox": [
-        [
-          -180.0,
-          -90.0,
-          180.0,
-          90.0
-        ]
-      ]
+    "engine": "WCPS",
+    "stac_version": "0.9.0",
+    "stac_extensions": [
+        "datacube"
+    ],
+    "type": "Collection",
+    "id": "ADO_SM_anomalies_ERA5",
+    "title": "Soil Moisture Anomalies - ERA5_QM",
+    "description": "ERA5 is the fifth generation ECMWF reanalysis for the global climate and weather for the past 4 to 7 decades. Currently data is available from 1950, split into Climate Data Store entries for 1950-1978 (preliminary back extension) and from 1979 onwards (final release plus timely updates, this page). ERA5 replaces the ERA-Interim reanalysis. ERA5-Land offers 'land' variables with an enhanced resolution, compared to ERA5. Albeit, at the time of processing with a higher latency. Therefore, ERA5 was downscaled to the 9 km ERA5-Land grid using a quantile mapping approach. The soil moisture anomalies are based on the original ERA5 fields 'Volumetric soil water layer 1 - 4', representing the following depths: layer 1 (0-7cm), layer 2 (7-28cm), layer 3 (28-100 cm), layer 4 (100-289 cm). Anomalies were calculated based on the period 1981-2010 as a reference. Contains modified Copernicus Climate Change Service information [1980-current year]; Contains modified Copernicus Atmosphere Monitoring Service information [1980-current year]. Neither the European Commission nor ECMWF is responsible for any use that may be made of the Copernicus information or data it contains.",
+    "keywords": [
+        "Soil moisture",
+        "soil moisture anomalies",
+        "ERA5",
+        "ERA5-Land",
+        "Copernicus",
+        "ADO project",
+        "ADO"
+    ],
+    "version": "v1",
+    "license": "CC BY 4.0",
+    "sci:citation": "Hersbach, H., Bell, B., Berrisford, P., Biavati, G., Hor\u00e1nyi, A., Mu\u00f1oz Sabater, J., Nicolas, J., Peubey, C., Radu, R., Rozum, I., Schepers, D., Simmons, A., Soci, C., Dee, D., Th\u00e9paut, J-N. (2018): ERA5 hourly data on single levels from 1979 to present. Copernicus Climate Change Service (C3S) Climate Data Store (CDS). (Accessed on 10-May-2021), 10.24381/cds.adbb2d47",
+    "providers": [
+        {
+            "name": "eurac research",
+            "url": "http://www.eurac.edu",
+            "roles": [
+                "Host"
+            ]
+        },
+        {
+            "name": "eurac research",
+            "url": "https://www.eurac.edu/it/research/mountains/remsen/staff/pages/staffdetails.aspx?persId=32364",
+            "roles": [
+                "Producer"
+            ]
+        },
+        {
+            "name": "Zentralanstalt f\u00fcr Meteorologie und Geodynamik - ZAMG",
+            "url": "https://www.zamg.ac.at/cms/de/aktuell",
+            "roles": [
+                "Producer"
+            ]
+        }
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    3.9978523332797242,
+                    42.910440452698936,
+                    17.52615133738584,
+                    50.40489834686691
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1980-12-31T12:00:00Z",
+                    "2022-04-08T12:00:00Z"
+                ]
+            ]
+        }
     },
-    "temporal": {
-      "interval": [
-        [
-          "1981-01-01T00:00:00Z",
-          null
+    "links": [
+        {
+            "rel": "licence",
+            "href": "https://creativecommons.org/licenses/by/4.0/",
+            "type": "text/html",
+            "title": "License Link"
+        }
+    ],
+    "cube:dimensions": {
+        "DATE": {
+            "type": "temporal",
+            "extent": [
+                "1980-12-31T12:00:00.000Z",
+                "2022-04-08T12:00:00.000Z"
+            ],
+            "step": "P1D"
+        },
+        "X": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                3.9978523332797242,
+                17.52615133738584
+            ],
+            "reference_system": 3035
+        },
+        "Y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                42.910440452698936,
+                50.40489834686691
+            ],
+            "reference_system": 3035
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "swvl-1",
+                "swvl-2",
+                "swvl-3",
+                "swvl-4"
+            ]
+        }
+    },
+    "summaries": {
+        "constellation": [
+            "N/A"
+        ],
+        "platform": [
+            "N/A"
+        ],
+        "rows": 168,
+        "columns": 205,
+        "instruments": [
+            "N/A"
+        ],
+        "eo:bands": [
+            {
+                "name": "swvl-1"
+            },
+            {
+                "name": "swvl-2"
+            },
+            {
+                "name": "swvl-3"
+            },
+            {
+                "name": "swvl-4"
+            }
         ]
-      ]
     }
-  },
-  "license": "CC BY 4.0",
-  "keywords": [
-    "Soil moisture",
-    "soil moisture anomalies",
-    "ERA5",
-    "ERA5-Land",
-    "Copernicus",
-    "ADO project",
-    "ADO"
-  ],
-  "providers": [
-    {
-      "name": "WEkEO",
-      "description": "WEkEO DIAS",
-      "roles": [
-        "host"
-      ],
-      "url": "https://www.wekeo.eu/"
-    }
-  ]
 }

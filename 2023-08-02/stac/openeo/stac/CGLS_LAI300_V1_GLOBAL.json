@@ -1,49 +1,88 @@
 {
-  "type": "Collection",
-  "id": "VEGETATION_PHENOLOGY_AND_PRODUCTIVITY_PARAMETERS_SEASON_2",
-  "stac_version": "1.0.0",
-  "description": "Vegetation Phenology and Productivity Parameters (VPP) product is part of the Copernicus Land Monitoring Service (CLMS),\npan-European High Resolution Vegetation Phenology and Productivity [(HR-VPP)](https://land.copernicus.eu/pan-european/biophysical-parameters/high-resolution-vegetation-phenology-and-productivity) product suite.\nThe VPP product is comprised of 13 parameters that describe specific stages of the seasonal vegetation growth cycle.\nThese parameters are extracted from Seasonal Trajectories of the [Plant Phenology Index (PPI)](https://www.nateko.lu.se/research/remote-sensing-and-earth-observation/lund-earth-observation-research-group/vegetation-phenology)\nderived from Sentinel-2 satellite observations at 10m resolution. Since growing seasons can traverse years, VPP parameters are provided for a maximum of two growing seasons per year.\nThe parameters include (1) start of season (date, PPI value and slope), (2) end of season (date, PPI value and slope), (3)length of season, (4) minimum of season,\n(4) peak of the season (date and PPI value), (5) amplitude, (6) small integrated value and (7) large integrated value.\nVPP parameters are generated over the EEA39 region on a yearly frequency from January 1 2017 onwards.\nAmong other applications, the high-resolution phenology data provides a detailed assessment of the impacts of\nhuman or climate change on the ecosystem through monitoring of vegetation responses to disturbances, e.g. droughts, storms, insect infestations, and to human influence from global to local levels.\nMore information about VPP product is outlined in the [product user manual](https://land.copernicus.eu/user-corner/technical-library/product-user-manual-of-seasonal-trajectories/)\n",
-  "links": [],
-  "title": "Vegetation Phenology and Productivity Parameters Season 2, Yearly",
-  "extent": {
-    "spatial": {
-      "bbox": [
-        [
-          -180.0,
-          -90.0,
-          180.0,
-          90.0
-        ]
-      ]
+    "cube:dimensions": {
+        "bands": {
+            "type": "bands",
+            "values": [
+                "LAI"
+            ]
+        },
+        "t": {
+            "extent": [
+                "2014-01-10T00:00:00Z"
+            ],
+            "type": "temporal"
+        },
+        "x": {
+            "axis": "x",
+            "extent": [
+                -180.0014880952381,
+                179.9985119
+            ],
+            "reference_system": 4326,
+            "step": 0.00297619047619,
+            "type": "spatial"
+        },
+        "y": {
+            "axis": "y",
+            "extent": [
+                -59.9985119,
+                80.00148809523809
+            ],
+            "reference_system": 4326,
+            "step": 0.00297619047619,
+            "type": "spatial"
+        }
     },
-    "temporal": {
-      "interval": [
-        [
-          "1981-01-01T00:00:00Z",
-          null
+    "description": "Global LAI at 300m resolution, 10-daily. The Leaf Area Index is defined as half the total area of green elements of the canopy per unit horizontal ground area. The satellite-derived value corresponds to the total green LAI of all the canopy layers, including the understory which may represent a very significant contribution, particularly for forests. Practically, the LAI quantifies the thickness of the vegetation cover.",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180.0014880952381,
+                    -59.9985119,
+                    179.9985119,
+                    80.00148809523809
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2014-01-10T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "id": "CGLS_LAI300_V1_GLOBAL",
+    "license": "free",
+    "links": [
+        {
+            "href": "https://land.copernicus.eu/global/products/lai",
+            "rel": "alternate",
+            "title": "Product web page."
+        },
+        {
+            "href": "https://openeocloud.vito.be/openeo/1.0.0/collections",
+            "rel": "root"
+        },
+        {
+            "href": "https://openeocloud.vito.be/openeo/1.0.0/collections",
+            "rel": "parent"
+        },
+        {
+            "href": "https://openeocloud.vito.be/openeo/1.0.0/collections/CGLS_LAI300_V1_GLOBAL",
+            "rel": "self"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/datacube/v2.2.0/schema.json",
+        "https://stac-extensions.github.io/eo/v1.1.0/schema.json"
+    ],
+    "stac_version": "0.9.0",
+    "summaries": {
+        "federation:backends": [
+            "vito"
         ]
-      ]
-    }
-  },
-  "license": "proprietary",
-  "keywords": [
-    "copernicus services",
-    "vegetation",
-    "agriculture",
-    "Plant phenology index",
-    "CLMS",
-    "phenology",
-    "derived data",
-    "open data"
-  ],
-  "providers": [
-    {
-      "name": "WEkEO",
-      "description": "WEkEO DIAS",
-      "roles": [
-        "host"
-      ],
-      "url": "https://www.wekeo.eu/"
-    }
-  ]
+    },
+    "title": "Copernicus Global Land LAI product V1, 300m resolution, 10-daily"
 }
