@@ -1,0 +1,97 @@
+{
+  "type": "Collection",
+  "id": "5d5f72ce-80bc-4c90-80ed-f135596533e2",
+  "stac_version": "1.0.0",
+  "description": "This metadata refers to the Normalized Difference Vegetation Index (NDVI) dataset, one of the near real-time (NRT) Vegetation Index products of the pan-European High Resolution Vegetation Phenology and Productivity (HR-VPP), component of the Copernicus Land Monitoring Service (CLMS).\n\nThe Normalized Difference Vegetation Index (NDVI) is a widely used, dimensionless vegetation index that is indicative for vegetation density. It is defined as NDVI=(NIR-Red)/(NIR+Red) where NIR corresponds to the reflectance in the near infrared band, and Red to the reflectance in the red bands.\n         \nThe NDVI dataset is made available as raster files with 10 x 10m resolution, in UTM/WGS84 projection corresponding to the Sentinel-2 tiling grid, for those tiles that cover the EEA38 countries and the United Kingdom and for the period from October 2016 until today, with daily updates.\n\nEach file has an associated quality indicator (QFLAG2) to assist users with the screening of clouds, shadows from clouds and topography, snow and water surfaces.",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://www.wekeo.eu/data?view=viewer&t=1566840390697&z=0&center=13.08408%2C48.33915&zoom=12.34&layers=W3siaWQiOiJjMCIsImxheWVySWQiOiJFTzpIUlZQUDpEQVQ6VkVHRVRBVElPTi1JTkRJQ0VTL19fREVGQVVMVF9fL0NMTVNfSFJWUFBfVklfTkRWSV8xME0iLCJ6SW5kZXgiOjYwfSx7ImlkIjoiYzEiLCJsYXllcklkIjoiRU86SFJWUFA6REFUOlZFR0VUQVRJT04tSU5ESUNFUy9fX0RFRkFVTFRfXy9DTE1TX0hSVlBQX1ZJX1FGTEFHMl8xME0iLCJ6SW5kZXgiOjgwLCJpc0hpZGRlbiI6dHJ1ZX1d&initial=1",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "WEkEO portal"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://phenology.vgt.vito.be/wmts?request=GetCapabilities",
+      "type": "OGC:WMTS",
+      "title": "CLMS_HRVPP_VI_NDVI_10M"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://wekeo-broker.apps.mercator.dpi.wekeo.eu/databroker/ui/",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Harmonized Data Access (WEkEO)"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://phenology.vgt.vito.be/description?collection=copernicus_r_utm-wgs84_10_m_hrvpp-vi_p_2017-now_v01",
+      "type": "OGC:OpenSearch",
+      "title": "OpenSearch API"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://land.copernicus.eu/pan-european/biophysical-parameters/high-resolution-vegetation-phenology-and-productivity/vegetation-indices",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Product information"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://land.copernicus.eu/user-corner/technical-library/product-user-manual-of-vegetation-indices",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Product user manual"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://phenology.vgt.vito.be/wms?request=GetCapabilities",
+      "type": "OGC:WMS",
+      "title": "CLMS_HRVPP_VI_NDVI_10M"
+    }
+  ],
+  "title": "High Resolution Vegetation Phenology and Productivity: Normalized Difference Vegetation Index (raster 10m) - version 1 revision 1, Sep. 2021",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -25.0,
+          26.0,
+          45.0,
+          72.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2016-10-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Agriculture and food",
+    "Biodiversity",
+    "Daily",
+    "EEA38 (from 2020)",
+    "Land use",
+    "United Kingdom",
+    "index",
+    "land",
+    "plant ecology",
+    "plant resource",
+    "productivity",
+    "remote sensing",
+    "vegetation"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

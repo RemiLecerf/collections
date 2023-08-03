@@ -1,0 +1,85 @@
+{
+  "type": "Collection",
+  "id": "eu.copernicus.climate.satellite-humidity-profiles",
+  "stac_version": "1.0.0",
+  "description": "This dataset provides monthly and zonally averaged tropospheric humidity profiles derived from globally distributed GPS radio occultation (RO) measurements from EUMETSAT's Metop polar-orbiting satellites. Humidity plays an important role in the Earth's climate system, due to the strong greenhouse effect of water vapour but also for its role in the global energy transport, vertically in the atmosphere and horizontally between different geographical regions. It is central to the formation of clouds and precipitation, and determines the fundamental conditions for the biosphere, including distribution of rainfall and droughts. \nThe dataset is produced by the EUMETSAT Radio Occultation Meteorology Satellite Application Facility (ROM SAF) and comprises the Climate Data Record (CDR, December 2006 to December 2016, ROM SAF product ID GRM-29-R1) and the Interim Climate Data Record (ICDR, January 2017 to present, ROM SAF product ID GRM-29-I1). Tropospheric humidity profiles are retrieved using 1D variational assimilation of observed atmospheric refractivity profiles and background model information from the ECMWF reanalysis. Compared to other satellite observation techniques, RO observations have high vertical resolution and are not affected by clouds or the type of underlying surface (such as land and sea).\nThe RO retrievals are averaged in monthly and 5-degree latitude bands for altitudes below 12km which roughly covers the troposphere. The variability (standard deviation) within such monthly bins are also provided, as well as associated quantities such as observation counts, sampling errors and an estimate of the fraction of model information in the humidity retrievals. In addition, mean and variability are provided for humidity for the a priori ECMWF reanalysis data, sampled (i.e. collocated) similarly at the satellite observation locations. \nPlease note that the terms humidity and water vapour are used interchangeably on this page and in the documentation.\n\nVariables in the dataset/application are:\nSpecific humidity",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.e7b3213f",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Climate Data Store catalogue"
+    },
+    {
+      "rel": "describedby",
+      "href": "#",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "#"
+    },
+    {
+      "rel": "describedby",
+      "href": "#",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "#"
+    },
+    {
+      "rel": "describedby",
+      "href": "#",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "#"
+    },
+    {
+      "rel": "describedby",
+      "href": "#",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "#"
+    },
+    {
+      "rel": "describedby",
+      "href": "#",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "#"
+    }
+  ],
+  "title": "Tropospheric humidity profiles averaged monthly and zonally from 2006 to present derived from satellite observations",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          0.0,
+          -90.0,
+          360.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2006-01-01T00:00:00Z",
+          "2023-02-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Meteorological geographical features",
+    "Product type: Satellite observations",
+    "Provider: EUMETSAT SAF",
+    "Spatial coverage: Global",
+    "Temporal coverage: Past",
+    "Temporal coverage: Present",
+    "Variable domain: Atmosphere (upper air)"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

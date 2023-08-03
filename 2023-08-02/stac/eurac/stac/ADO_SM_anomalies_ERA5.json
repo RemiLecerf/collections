@@ -1,0 +1,48 @@
+{
+  "type": "Collection",
+  "id": "ADO_SM_anomalies_ERA5",
+  "stac_version": "1.0.0",
+  "description": "ERA5 is the fifth generation ECMWF reanalysis for the global climate and weather for the past 4 to 7 decades. Currently data is available from 1950, split into Climate Data Store entries for 1950-1978 (preliminary back extension) and from 1979 onwards (final release plus timely updates, this page). ERA5 replaces the ERA-Interim reanalysis. ERA5-Land offers 'land' variables with an enhanced resolution, compared to ERA5. Albeit, at the time of processing with a higher latency. Therefore, ERA5 was downscaled to the 9 km ERA5-Land grid using a quantile mapping approach. The soil moisture anomalies are based on the original ERA5 fields 'Volumetric soil water layer 1 - 4', representing the following depths: layer 1 (0-7cm), layer 2 (7-28cm), layer 3 (28-100 cm), layer 4 (100-289 cm). Anomalies were calculated based on the period 1981-2010 as a reference. Contains modified Copernicus Climate Change Service information [1980-current year]; Contains modified Copernicus Atmosphere Monitoring Service information [1980-current year]. Neither the European Commission nor ECMWF is responsible for any use that may be made of the Copernicus information or data it contains.",
+  "links": [],
+  "title": "Soil Moisture Anomalies - ERA5_QM",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1981-01-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "CC BY 4.0",
+  "keywords": [
+    "Soil moisture",
+    "soil moisture anomalies",
+    "ERA5",
+    "ERA5-Land",
+    "Copernicus",
+    "ADO project",
+    "ADO"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

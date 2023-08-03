@@ -1,0 +1,49 @@
+{
+  "type": "Collection",
+  "id": "LANDSAT/LE7_TOA_3YEAR",
+  "stac_version": "1.0.0",
+  "description": "These 3-year composites were created\n  from all Landsat 7 images in the specified composite period, excluding\n  images marked with a negative sun elevation in their metadata.  The\n  composites were created using\n  the [ee.Algorithms.Landsat.simpleComposite()](https://developers.google.com/earth-engine/landsat#simple-composite)\n  method with its default settings.\n  Reflectance ([0,1]) in bands B1, B2, B3, B4, B5, and B7 is scaled to 8 bits\n  ([0,255]) and temperature in band B6_VCID_2 is converted to units of\n  Kelvin-100.\n",
+  "links": [],
+  "title": "Landsat 7 3-year TOA percentile composites",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1981-01-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "PDDL-1.0",
+  "keywords": [
+    "etm",
+    "global",
+    "l7",
+    "landsat",
+    "le7",
+    "percentile",
+    "toa",
+    "usgs"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

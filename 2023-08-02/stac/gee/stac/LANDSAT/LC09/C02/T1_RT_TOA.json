@@ -1,0 +1,48 @@
+{
+  "type": "Collection",
+  "id": "LANDSAT/LC09/C02/T1_RT_TOA",
+  "stac_version": "1.0.0",
+  "description": "Landsat 9 Collection 2 Tier 1 and Real-Time data\n  calibrated top-of-atmosphere (TOA) reflectance.\n  Calibration coefficients are extracted from the image metadata.\n  See [Chander et al. (2009)](https://www.sciencedirect.com/science/article/pii/S0034425709000169)\n  for details on the TOA computation.\n\nLandsat scenes with the highest available data quality\nare placed into Tier 1 and are considered suitable for time-series processing\nanalysis. Tier 1 includes Level-1 Precision Terrain (L1TP) processed data\nthat have well-characterized radiometry and are inter-calibrated across the\ndifferent Landsat sensors. The georegistration of Tier 1 scenes will be\nconsistent and within prescribed tolerances [<=12 m root mean square error\n(RMSE)]. All Tier 1 Landsat data can be considered consistent and\ninter-calibrated (regardless of sensor) across the full collection. See more\ninformation [in the USGS\ndocs](https://www.usgs.gov/core-science-systems/nli/landsat/landsat-collections).\n",
+  "links": [],
+  "title": "USGS Landsat 9 Collection 2 Tier 1 and Real-Time data TOA Reflectance",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1981-01-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "PDDL-1.0",
+  "keywords": [
+    "c2",
+    "global",
+    "l9",
+    "landsat",
+    "lc9",
+    "toa",
+    "usgs"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

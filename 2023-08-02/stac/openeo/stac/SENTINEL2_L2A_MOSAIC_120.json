@@ -1,0 +1,51 @@
+{
+  "type": "Collection",
+  "id": "SENTINEL2_L2A_MOSAIC_120",
+  "stac_version": "1.0.0",
+  "description": "Sentinel-2 L2A 120m mosaic is a derived product, which contains best pixel values for 10-daily periods, \nmodelled by removing the cloudy pixels and then performing interpolation \namong remaining values. As clouds can be missed in the removal process and as there are some parts of the world, which have lengthy cloudy periods, \nclouds might be remaining in some parts. \nThe actual modelling script is available [here](https://sentinel-hub.github.io/custom-scripts/sentinel-2/interpolated_time_series/). \n",
+  "links": [],
+  "title": "Sentinel-2 L2A 120m Mosaic",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1981-01-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "sentinel hub",
+    "xcube",
+    "raster",
+    "systematic",
+    "satellite imagery",
+    "multi spectral imagery",
+    "machine learning",
+    "agriculture",
+    "open data",
+    "sentinel"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

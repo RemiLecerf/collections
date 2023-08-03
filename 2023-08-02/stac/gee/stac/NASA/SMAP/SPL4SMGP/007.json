@@ -1,0 +1,47 @@
+{
+  "type": "Collection",
+  "id": "NASA/SMAP/SPL4SMGP/007",
+  "stac_version": "1.0.0",
+  "description": "The SMAP Level-4 (L4) Soil Moisture product includes surface soil moisture\n(0-5 cm vertical average), root-zone soil moisture (0-100 cm vertical\naverage), and additional research products (not validated), including\nsurface meteorological forcing variables, soil temperature,\nevapotranspiration, and net radiation.\n\nSMAP L4 provides uninterrupted soil moisture data.  During outages of the\nSMAP instrument, SMAP L4 soil moisture is based on land model simulations\nalone, without the concomitant assimilation of SMAP brightness temperature\nobservations.  Significant SMAP instrument outages occurred between 19 June\nand 23 July 2019 and between 6 August and 20 September 2022.\n\nSMAP L-band brightness temperature data from descending and ascending\nhalf-orbit satellite passes (approximately 6:00 a.m. and 6:00 p.m. local\nsolar time, respectively) are assimilated into a land surface model that is\ngridded using an Earth-fixed, global cylindrical 9 km Equal-Area Scalable\nEarth Grid, Version 2.0 (EASE-Grid 2.0) projection.\n\nThe SPL4SMGP product includes a series of 3-hourly time-averaged geophysical\ndata fields from the assimilation system. SPL4SMGP data are transformed to\n[geographic coordinates using GDAL libraries](https://github.com/google/earthengine-community/blob/master/datasets/smap_convert_l4.py)\nbefore the data are ingested into Google Earth Engine.\n\nSee the [SMAP L4 Soil Moisture User Guide](https://nsidc.org/sites/default/files/documents/user-guide/multi_spl4smau-v007-userguide.pdf)\nand references therein for additional documentation and algorithm details.\n",
+  "links": [],
+  "title": "SPL4SMGP.007 SMAP L4 Global 3-hourly 9-km Surface and Root Zone Soil Moisture",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1981-01-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "drought",
+    "nasa",
+    "smap",
+    "soil_moisture",
+    "surface",
+    "weather"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

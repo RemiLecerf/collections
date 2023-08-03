@@ -1,0 +1,64 @@
+{
+  "type": "Collection",
+  "id": "4ba72359-9ed8-499f-aec7-b7122d171488",
+  "stac_version": "1.0.0",
+  "description": "'''Short description:'''\n\nArctic sea ice thickness from merged SMOS and Cryosat-2 (CS2) observations during freezing season between October and April. The SMOS mission provides L-band observations and the ice thickness-dependency of brightness temperature enables to estimate the sea-ice thickness for thin ice regimes. On the other hand, CS2 uses radar altimetry to measure the height of the ice surface above the water level, which can be converted into sea ice thickness assuming hydrostatic equilibrium.\n\n'''DOI (product) :'''   \nhttps://doi.org/10.48670/moi-00125",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=SEAICE_ARC_PHY_L4_NRT_011_014-TDS&product=esa_obs-si_arc_phy-sit_nrt_l4_multi_P1D-m",
+      "type": "MYO:MOTU-SUB",
+      "title": "esa_obs-si_arc_phy-sit_nrt_l4_multi_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/esa_obs-si_arc_phy-sit_nrt_l4_multi_P1D-m",
+      "type": "WWW:OPENDAP",
+      "title": "esa_obs-si_arc_phy-sit_nrt_l4_multi_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/SEAICE_ARC_PHY_L4_NRT_011_014/esa_obs-si_arc_phy-sit_nrt_l4_multi_P1D-m",
+      "type": "WWW:FTP",
+      "title": "esa_obs-si_arc_phy-sit_nrt_l4_multi_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/esa_obs-si_arc_phy-sit_nrt_l4_multi_P1D-m",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "esa_obs-si_arc_phy-sit_nrt_l4_multi_P1D-m"
+    }
+  ],
+  "title": "Sea Ice Thickness derived from merging CryoSat-2 and SMOS ice thickness",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -179.8,
+          16.62,
+          179.8,
+          89.84
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2019-10-31T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

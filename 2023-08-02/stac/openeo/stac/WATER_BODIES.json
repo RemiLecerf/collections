@@ -1,0 +1,53 @@
+{
+  "type": "Collection",
+  "id": "WATER_BODIES",
+  "stac_version": "1.0.0",
+  "description": "The Global Water Bodies product shows the surface extent covered by inland water on permanent, seasonal or occasional basis. The product available here is the Water Bodies 100m Version 1 collection which is derived from Sentinel-2 level 1C data, starting from October 2020 after the end of the PROBA-V mission and is delivered as a monthly composite product at 100m resolution.The Water Bodies product contain one main Water Bodies detection layer (WB) and one Quality layer (QUAL) that provides information on the seasonal dynamics of the detected water bodies. Water Bodies detection layer (WB) shows water bodies detected using the Modified Normalized Difference Water Index (MNDWI) derived from Sentinel-2 Level 1C data. The Quality layer (QUAL) is generated from water body occurrence statistics computed from previous monthly Water Bodies products.The occurrence statistics is ranked from low occurrence to permanent occurrence.",
+  "links": [],
+  "title": "Water Bodies",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1981-01-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "copernicus services",
+    "sentinel hub",
+    "water bodies",
+    "xcube",
+    "raster",
+    "systematic",
+    "water bodies occurence",
+    "inland water",
+    "CLMS",
+    "derived data",
+    "climate change",
+    "open data"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

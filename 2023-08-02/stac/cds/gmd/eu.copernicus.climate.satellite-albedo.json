@@ -1,0 +1,101 @@
+{
+  "type": "Collection",
+  "id": "eu.copernicus.climate.satellite-albedo",
+  "stac_version": "1.0.0",
+  "description": "This dataset provides global Earth surface albedo products. The albedo has an impact on the amount of energy that Earth absorbs from the Sun and, therefore, is an important variable in climate and weather studies.\nThe surface albedo quantifies the fraction of irradiance reflected by the surface of the Earth. It provides information on the radiative basis, thus on the temperature and water balance. The directional albedo or directional-hemispherical reflectance (also called black-sky albedo) is defined as the integration of the bi-directional reflectance over the viewing hemisphere. It assumes all energy is coming from a direct radiation from the sun and is computed for the local solar noon.\nThe current algorithm is applied at a 10-day frequency on daily surface reflectances acquired during a moving temporal window of 20 days. It first normalizes the reflectances through inversion of a semi-empiric, kernel-driven reflectance model and favouring the most recent observations. Directional albedo is then computed, per spectral band, by integration over the viewing hemisphere and for local solar noon. Broadband albedo is then calculated from the spectral albedo by a linear relationship.\nMultiple platform/sensors were used offering various spatial resolution and temporal coverage (1 km from SPOT-VGT and PROBA-V, 4 km from AVHRR). Products are available from 1981 to present.\n\nVariables in the dataset/application are:\nBroadband directional surface albedo (ALBB-DH), Broadband hemispherical surface albedo (ALBB-BH), Spectral directional surface albedo (ALSP-DH), Spectral hemispherical surface albedo (ALSP-BH)",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.ea87ed30",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Climate Data Store catalogue"
+    },
+    {
+      "rel": "describedby",
+      "href": "#",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "#"
+    },
+    {
+      "rel": "describedby",
+      "href": "#",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "#"
+    },
+    {
+      "rel": "describedby",
+      "href": "#",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "#"
+    },
+    {
+      "rel": "describedby",
+      "href": "#",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "#"
+    },
+    {
+      "rel": "describedby",
+      "href": "#",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "#"
+    },
+    {
+      "rel": "describedby",
+      "href": "#",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "#"
+    },
+    {
+      "rel": "describedby",
+      "href": "#",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "#"
+    },
+    {
+      "rel": "describedby",
+      "href": "#",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "#"
+    }
+  ],
+  "title": "Surface albedo 10-daily gridded data from 1981 to present",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          0.0,
+          -89.0,
+          360.0,
+          89.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1981-01-01T00:00:00Z",
+          "2020-06-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Land cover",
+    "Product type: Satellite observations",
+    "Spatial coverage: Global",
+    "Temporal coverage: Past",
+    "Variable domain: Land (biosphere)"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

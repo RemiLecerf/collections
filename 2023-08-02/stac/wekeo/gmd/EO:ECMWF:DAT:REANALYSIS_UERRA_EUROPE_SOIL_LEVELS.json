@@ -1,0 +1,84 @@
+{
+  "type": "Collection",
+  "id": "EO:ECMWF:DAT:REANALYSIS_UERRA_EUROPE_SOIL_LEVELS",
+  "stac_version": "1.0.0",
+  "description": "The UERRA dataset provides estimations of the climate in Europe based on model data\ncombined with observations using the UERRA-HARMONIE system and MESCAN-SURFEX system.\nUERRA-HARMONIE is a 3-dimensional data assimilation system, whereas\nMESCAN-SURFEX is a complementary surface analysis system. In general, the\nassimilation systems are able to estimate biases between observations and to\nsift good-quality data from poor data. The laws of physics allow for estimates\nat locations where data coverage is low. The provision of estimates at each\ngrid point in Europe for each regular output time, over a long period, always\nusing the same format, makes reanalysis a very convenient and popular dataset\nto work with.\nThe land surface platform SURFEX is forced with downscaled forecast fields from\nUERRA-HARMONIE as well as MESCAN analyses. It is run offline, i.e. without\nfeedback to the atmospheric analysis performed in MESCAN or the UERRA-HARMONIE\ndata assimilation cycles.\nThe observing system has changed drastically over time, and although the\nassimilation system can resolve data holes, the initially much sparser networks\nwill have an impact on the quality of analyses leading to less accurate\nestimates. The improvement over global reanalysis products comes with the\nhigher horizontal resolution that allows incorporating more regional details (e.g. topography).\nMoreover, it enables the system even to use more observations at places with dense observation networks.\n\nVariables in the dataset/application are:\nSoil temperature, Volumetric soil moisture, Volumetric transpiration stress-onset, Volumetric wilting point",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/eu.copernicus.climate.reanalysis-uerra-europe-soil-levels",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Climate Data Store catalogue"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://datastore.copernicus-climate.eu/documents/uerra/D322_Lot1.1.1.2_Documentation_of_the_RRA_system_UERRA_v2.pdf",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Documenting the UERRA system (PDF)"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://datastore.copernicus-climate.eu/documents/uerra/D322_Lot1.1.1.2_Documentation_of_the_RRA_system_UERRA_v2.pdf",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Documenting the UERRA system (PDF)"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://confluence.ecmwf.int/display/UER/Issues+with+data",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Known issues in UERRA"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.33525ca7",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Climate Data Store catalogue"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://datastore.copernicus-climate.eu/documents/uerra/D322_Lot1.4.1.2_User_guides_v3.3.pdf",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "UERRA product user guide v3.3 (PDF)"
+    }
+  ],
+  "title": "UERRA regional reanalysis for Europe on soil levels from 1961 to 2019",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2018-10-18T00:00:00Z",
+          "2019-07-31T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Atmospheric conditions",
+    "Product type: Reanalysis",
+    "Provider: Copernicus C3S",
+    "Spatial coverage: Europe",
+    "Temporal coverage: Past",
+    "Variable domain: Land (hydrology)"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

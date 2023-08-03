@@ -1,0 +1,574 @@
+{
+  "type": "Collection",
+  "id": "66fb61fa-c911-4f7e-aec1-959627bbf2b3",
+  "stac_version": "1.0.0",
+  "description": "'''Short Description'''\nThe physical component of the Mediterranean Forecasting System (Med-Physics) is a coupled hydrodynamic-wave model implemented over the whole Mediterranean Basin including tides. The model horizontal grid resolution is 1/24˚ (ca. 4 km) and has 141 unevenly spaced vertical levels.\nThe hydrodynamics are supplied by the Nucleous for European Modelling of the Ocean (NEMO v3.6) and include the representation of tides, while the wave component is provided by Wave Watch-III; the model solutions are corrected by a 3DVAR assimilation scheme (OceanVar) of temperature and salinity vertical profiles and along track satellite Sea Level Anomaly observations. \n\n''Product Citation'': Please refer to our Technical FAQ for citing products.http://marine.copernicus.eu/faq/cite-cmems-products-cmems-credit/?idpage=169\n\n''DOI (Product)'': https://doi.org/10.25423/CMCC/MEDSEA_ANALYSISFORECAST_PHY_006_013_EAS7",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/MEDSEA_ANALYSISFORECAST_PHY_006_013/cmems_mod_med_phy_anfc_4.2km_static",
+      "type": "WWW:FTP",
+      "title": "cmems_mod_med_phy_anfc_4.2km_static"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=MEDSEA_ANALYSISFORECAST_PHY_006_013-TDS&product=cmems_mod_med_phy-cur_anfc_4.2km_P1D-m",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_mod_med_phy-cur_anfc_4.2km_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/cmems_mod_med_phy-cur_anfc_4.2km_P1D-m",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_mod_med_phy-cur_anfc_4.2km_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/MEDSEA_ANALYSISFORECAST_PHY_006_013/cmems_mod_med_phy-cur_anfc_4.2km_P1D-m",
+      "type": "WWW:FTP",
+      "title": "cmems_mod_med_phy-cur_anfc_4.2km_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/cmems_mod_med_phy-cur_anfc_4.2km_P1D-m",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_mod_med_phy-cur_anfc_4.2km_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=MEDSEA_ANALYSISFORECAST_PHY_006_013-TDS&product=cmems_mod_med_phy-cur_anfc_4.2km_P1M-m",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_mod_med_phy-cur_anfc_4.2km_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/cmems_mod_med_phy-cur_anfc_4.2km_P1M-m",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_mod_med_phy-cur_anfc_4.2km_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/MEDSEA_ANALYSISFORECAST_PHY_006_013/cmems_mod_med_phy-cur_anfc_4.2km_P1M-m",
+      "type": "WWW:FTP",
+      "title": "cmems_mod_med_phy-cur_anfc_4.2km_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/cmems_mod_med_phy-cur_anfc_4.2km_P1M-m",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_mod_med_phy-cur_anfc_4.2km_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=MEDSEA_ANALYSISFORECAST_PHY_006_013-TDS&product=cmems_mod_med_phy-cur_anfc_4.2km_PT15M-i",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_mod_med_phy-cur_anfc_4.2km_PT15M-i"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/cmems_mod_med_phy-cur_anfc_4.2km_PT15M-i",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_mod_med_phy-cur_anfc_4.2km_PT15M-i"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/MEDSEA_ANALYSISFORECAST_PHY_006_013/cmems_mod_med_phy-cur_anfc_4.2km_PT15M-i",
+      "type": "WWW:FTP",
+      "title": "cmems_mod_med_phy-cur_anfc_4.2km_PT15M-i"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/cmems_mod_med_phy-cur_anfc_4.2km_PT15M-i",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_mod_med_phy-cur_anfc_4.2km_PT15M-i"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=MEDSEA_ANALYSISFORECAST_PHY_006_013-TDS&product=cmems_mod_med_phy-cur_anfc_4.2km_PT1H-m",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_mod_med_phy-cur_anfc_4.2km_PT1H-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/cmems_mod_med_phy-cur_anfc_4.2km_PT1H-m",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_mod_med_phy-cur_anfc_4.2km_PT1H-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/MEDSEA_ANALYSISFORECAST_PHY_006_013/cmems_mod_med_phy-cur_anfc_4.2km_PT1H-m",
+      "type": "WWW:FTP",
+      "title": "cmems_mod_med_phy-cur_anfc_4.2km_PT1H-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/cmems_mod_med_phy-cur_anfc_4.2km_PT1H-m",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_mod_med_phy-cur_anfc_4.2km_PT1H-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=MEDSEA_ANALYSISFORECAST_PHY_006_013-TDS&product=cmems_mod_med_phy-cur_anfc_4.2km_PT1HTS-m",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_mod_med_phy-cur_anfc_4.2km_PT1HTS-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/cmems_mod_med_phy-cur_anfc_4.2km_PT1HTS-m",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_mod_med_phy-cur_anfc_4.2km_PT1HTS-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/MEDSEA_ANALYSISFORECAST_PHY_006_013/cmems_mod_med_phy-cur_anfc_4.2km_PT1HTS-m",
+      "type": "WWW:FTP",
+      "title": "cmems_mod_med_phy-cur_anfc_4.2km_PT1HTS-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/cmems_mod_med_phy-cur_anfc_4.2km_PT1HTS-m",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_mod_med_phy-cur_anfc_4.2km_PT1HTS-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=MEDSEA_ANALYSISFORECAST_PHY_006_013-TDS&product=cmems_mod_med_phy-mld_anfc_4.2km_P1D-m",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_mod_med_phy-mld_anfc_4.2km_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/cmems_mod_med_phy-mld_anfc_4.2km_P1D-m",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_mod_med_phy-mld_anfc_4.2km_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/MEDSEA_ANALYSISFORECAST_PHY_006_013/cmems_mod_med_phy-mld_anfc_4.2km_P1D-m",
+      "type": "WWW:FTP",
+      "title": "cmems_mod_med_phy-mld_anfc_4.2km_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/cmems_mod_med_phy-mld_anfc_4.2km_P1D-m",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_mod_med_phy-mld_anfc_4.2km_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=MEDSEA_ANALYSISFORECAST_PHY_006_013-TDS&product=cmems_mod_med_phy-mld_anfc_4.2km_P1M-m",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_mod_med_phy-mld_anfc_4.2km_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/cmems_mod_med_phy-mld_anfc_4.2km_P1M-m",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_mod_med_phy-mld_anfc_4.2km_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/MEDSEA_ANALYSISFORECAST_PHY_006_013/cmems_mod_med_phy-mld_anfc_4.2km_P1M-m",
+      "type": "WWW:FTP",
+      "title": "cmems_mod_med_phy-mld_anfc_4.2km_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/cmems_mod_med_phy-mld_anfc_4.2km_P1M-m",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_mod_med_phy-mld_anfc_4.2km_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=MEDSEA_ANALYSISFORECAST_PHY_006_013-TDS&product=cmems_mod_med_phy-mld_anfc_4.2km_PT1HTS-m",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_mod_med_phy-mld_anfc_4.2km_PT1HTS-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/cmems_mod_med_phy-mld_anfc_4.2km_PT1HTS-m",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_mod_med_phy-mld_anfc_4.2km_PT1HTS-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/MEDSEA_ANALYSISFORECAST_PHY_006_013/cmems_mod_med_phy-mld_anfc_4.2km_PT1HTS-m",
+      "type": "WWW:FTP",
+      "title": "cmems_mod_med_phy-mld_anfc_4.2km_PT1HTS-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/cmems_mod_med_phy-mld_anfc_4.2km_PT1HTS-m",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_mod_med_phy-mld_anfc_4.2km_PT1HTS-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=MEDSEA_ANALYSISFORECAST_PHY_006_013-TDS&product=cmems_mod_med_phy-sal_anfc_4.2km_P1D-m",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_mod_med_phy-sal_anfc_4.2km_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/cmems_mod_med_phy-sal_anfc_4.2km_P1D-m",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_mod_med_phy-sal_anfc_4.2km_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/MEDSEA_ANALYSISFORECAST_PHY_006_013/cmems_mod_med_phy-sal_anfc_4.2km_P1D-m",
+      "type": "WWW:FTP",
+      "title": "cmems_mod_med_phy-sal_anfc_4.2km_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/cmems_mod_med_phy-sal_anfc_4.2km_P1D-m",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_mod_med_phy-sal_anfc_4.2km_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=MEDSEA_ANALYSISFORECAST_PHY_006_013-TDS&product=cmems_mod_med_phy-sal_anfc_4.2km_P1M-m",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_mod_med_phy-sal_anfc_4.2km_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/cmems_mod_med_phy-sal_anfc_4.2km_P1M-m",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_mod_med_phy-sal_anfc_4.2km_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/MEDSEA_ANALYSISFORECAST_PHY_006_013/cmems_mod_med_phy-sal_anfc_4.2km_P1M-m",
+      "type": "WWW:FTP",
+      "title": "cmems_mod_med_phy-sal_anfc_4.2km_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/cmems_mod_med_phy-sal_anfc_4.2km_P1M-m",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_mod_med_phy-sal_anfc_4.2km_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=MEDSEA_ANALYSISFORECAST_PHY_006_013-TDS&product=cmems_mod_med_phy-sal_anfc_4.2km_PT1H-m",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_mod_med_phy-sal_anfc_4.2km_PT1H-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/cmems_mod_med_phy-sal_anfc_4.2km_PT1H-m",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_mod_med_phy-sal_anfc_4.2km_PT1H-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/MEDSEA_ANALYSISFORECAST_PHY_006_013/cmems_mod_med_phy-sal_anfc_4.2km_PT1H-m",
+      "type": "WWW:FTP",
+      "title": "cmems_mod_med_phy-sal_anfc_4.2km_PT1H-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/cmems_mod_med_phy-sal_anfc_4.2km_PT1H-m",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_mod_med_phy-sal_anfc_4.2km_PT1H-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=MEDSEA_ANALYSISFORECAST_PHY_006_013-TDS&product=cmems_mod_med_phy-sal_anfc_4.2km_PT1HTS-m",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_mod_med_phy-sal_anfc_4.2km_PT1HTS-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/cmems_mod_med_phy-sal_anfc_4.2km_PT1HTS-m",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_mod_med_phy-sal_anfc_4.2km_PT1HTS-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/MEDSEA_ANALYSISFORECAST_PHY_006_013/cmems_mod_med_phy-sal_anfc_4.2km_PT1HTS-m",
+      "type": "WWW:FTP",
+      "title": "cmems_mod_med_phy-sal_anfc_4.2km_PT1HTS-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/cmems_mod_med_phy-sal_anfc_4.2km_PT1HTS-m",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_mod_med_phy-sal_anfc_4.2km_PT1HTS-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=MEDSEA_ANALYSISFORECAST_PHY_006_013-TDS&product=cmems_mod_med_phy-ssh_anfc_4.2km_P1D-m",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_mod_med_phy-ssh_anfc_4.2km_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/cmems_mod_med_phy-ssh_anfc_4.2km_P1D-m",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_mod_med_phy-ssh_anfc_4.2km_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/MEDSEA_ANALYSISFORECAST_PHY_006_013/cmems_mod_med_phy-ssh_anfc_4.2km_P1D-m",
+      "type": "WWW:FTP",
+      "title": "cmems_mod_med_phy-ssh_anfc_4.2km_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/cmems_mod_med_phy-ssh_anfc_4.2km_P1D-m",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_mod_med_phy-ssh_anfc_4.2km_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=MEDSEA_ANALYSISFORECAST_PHY_006_013-TDS&product=cmems_mod_med_phy-ssh_anfc_4.2km_P1M-m",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_mod_med_phy-ssh_anfc_4.2km_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/cmems_mod_med_phy-ssh_anfc_4.2km_P1M-m",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_mod_med_phy-ssh_anfc_4.2km_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/MEDSEA_ANALYSISFORECAST_PHY_006_013/cmems_mod_med_phy-ssh_anfc_4.2km_P1M-m",
+      "type": "WWW:FTP",
+      "title": "cmems_mod_med_phy-ssh_anfc_4.2km_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/cmems_mod_med_phy-ssh_anfc_4.2km_P1M-m",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_mod_med_phy-ssh_anfc_4.2km_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=MEDSEA_ANALYSISFORECAST_PHY_006_013-TDS&product=cmems_mod_med_phy-ssh_anfc_4.2km_PT15M-i",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_mod_med_phy-ssh_anfc_4.2km_PT15M-i"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/cmems_mod_med_phy-ssh_anfc_4.2km_PT15M-i",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_mod_med_phy-ssh_anfc_4.2km_PT15M-i"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/MEDSEA_ANALYSISFORECAST_PHY_006_013/cmems_mod_med_phy-ssh_anfc_4.2km_PT15M-i",
+      "type": "WWW:FTP",
+      "title": "cmems_mod_med_phy-ssh_anfc_4.2km_PT15M-i"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/cmems_mod_med_phy-ssh_anfc_4.2km_PT15M-i",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_mod_med_phy-ssh_anfc_4.2km_PT15M-i"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=MEDSEA_ANALYSISFORECAST_PHY_006_013-TDS&product=cmems_mod_med_phy-ssh_anfc_4.2km_PT1HTS-m",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_mod_med_phy-ssh_anfc_4.2km_PT1HTS-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/cmems_mod_med_phy-ssh_anfc_4.2km_PT1HTS-m",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_mod_med_phy-ssh_anfc_4.2km_PT1HTS-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/MEDSEA_ANALYSISFORECAST_PHY_006_013/cmems_mod_med_phy-ssh_anfc_4.2km_PT1HTS-m",
+      "type": "WWW:FTP",
+      "title": "cmems_mod_med_phy-ssh_anfc_4.2km_PT1HTS-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/cmems_mod_med_phy-ssh_anfc_4.2km_PT1HTS-m",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_mod_med_phy-ssh_anfc_4.2km_PT1HTS-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=MEDSEA_ANALYSISFORECAST_PHY_006_013-TDS&product=cmems_mod_med_phy-tem_anfc_4.2km_P1D-m",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_mod_med_phy-tem_anfc_4.2km_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/cmems_mod_med_phy-tem_anfc_4.2km_P1D-m",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_mod_med_phy-tem_anfc_4.2km_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/MEDSEA_ANALYSISFORECAST_PHY_006_013/cmems_mod_med_phy-tem_anfc_4.2km_P1D-m",
+      "type": "WWW:FTP",
+      "title": "cmems_mod_med_phy-tem_anfc_4.2km_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/cmems_mod_med_phy-tem_anfc_4.2km_P1D-m",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_mod_med_phy-tem_anfc_4.2km_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=MEDSEA_ANALYSISFORECAST_PHY_006_013-TDS&product=cmems_mod_med_phy-tem_anfc_4.2km_P1M-m",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_mod_med_phy-tem_anfc_4.2km_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/cmems_mod_med_phy-tem_anfc_4.2km_P1M-m",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_mod_med_phy-tem_anfc_4.2km_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/MEDSEA_ANALYSISFORECAST_PHY_006_013/cmems_mod_med_phy-tem_anfc_4.2km_P1M-m",
+      "type": "WWW:FTP",
+      "title": "cmems_mod_med_phy-tem_anfc_4.2km_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/cmems_mod_med_phy-tem_anfc_4.2km_P1M-m",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_mod_med_phy-tem_anfc_4.2km_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=MEDSEA_ANALYSISFORECAST_PHY_006_013-TDS&product=cmems_mod_med_phy-tem_anfc_4.2km_PT1H-m",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_mod_med_phy-tem_anfc_4.2km_PT1H-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/cmems_mod_med_phy-tem_anfc_4.2km_PT1H-m",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_mod_med_phy-tem_anfc_4.2km_PT1H-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/MEDSEA_ANALYSISFORECAST_PHY_006_013/cmems_mod_med_phy-tem_anfc_4.2km_PT1H-m",
+      "type": "WWW:FTP",
+      "title": "cmems_mod_med_phy-tem_anfc_4.2km_PT1H-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/cmems_mod_med_phy-tem_anfc_4.2km_PT1H-m",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_mod_med_phy-tem_anfc_4.2km_PT1H-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=MEDSEA_ANALYSISFORECAST_PHY_006_013-TDS&product=cmems_mod_med_phy-tem_anfc_4.2km_PT1HTS-m",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_mod_med_phy-tem_anfc_4.2km_PT1HTS-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/cmems_mod_med_phy-tem_anfc_4.2km_PT1HTS-m",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_mod_med_phy-tem_anfc_4.2km_PT1HTS-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/MEDSEA_ANALYSISFORECAST_PHY_006_013/cmems_mod_med_phy-tem_anfc_4.2km_PT1HTS-m",
+      "type": "WWW:FTP",
+      "title": "cmems_mod_med_phy-tem_anfc_4.2km_PT1HTS-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/cmems_mod_med_phy-tem_anfc_4.2km_PT1HTS-m",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_mod_med_phy-tem_anfc_4.2km_PT1HTS-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=MEDSEA_ANALYSISFORECAST_PHY_006_013-TDS&product=cmems_mod_med_phy-wcur_anfc_4.2km_P1D-m",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_mod_med_phy-wcur_anfc_4.2km_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/cmems_mod_med_phy-wcur_anfc_4.2km_P1D-m",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_mod_med_phy-wcur_anfc_4.2km_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/MEDSEA_ANALYSISFORECAST_PHY_006_013/cmems_mod_med_phy-wcur_anfc_4.2km_P1D-m",
+      "type": "WWW:FTP",
+      "title": "cmems_mod_med_phy-wcur_anfc_4.2km_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/cmems_mod_med_phy-wcur_anfc_4.2km_P1D-m",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_mod_med_phy-wcur_anfc_4.2km_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=MEDSEA_ANALYSISFORECAST_PHY_006_013-TDS&product=cmems_mod_med_phy-wcur_anfc_4.2km_P1M-m",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_mod_med_phy-wcur_anfc_4.2km_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/cmems_mod_med_phy-wcur_anfc_4.2km_P1M-m",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_mod_med_phy-wcur_anfc_4.2km_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/MEDSEA_ANALYSISFORECAST_PHY_006_013/cmems_mod_med_phy-wcur_anfc_4.2km_P1M-m",
+      "type": "WWW:FTP",
+      "title": "cmems_mod_med_phy-wcur_anfc_4.2km_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/cmems_mod_med_phy-wcur_anfc_4.2km_P1M-m",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_mod_med_phy-wcur_anfc_4.2km_P1M-m"
+    }
+  ],
+  "title": "Mediterranean Sea Physics Analysis and Forecast",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -17.29,
+          30.18,
+          36.3,
+          45.98
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2020-11-29T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

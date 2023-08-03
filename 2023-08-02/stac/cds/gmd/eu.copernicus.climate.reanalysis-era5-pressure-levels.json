@@ -1,0 +1,73 @@
+{
+  "type": "Collection",
+  "id": "eu.copernicus.climate.reanalysis-era5-pressure-levels",
+  "stac_version": "1.0.0",
+  "description": "ERA5 is the fifth generation ECMWF reanalysis for the global climate and weather for the past 8 decades.\nData is available from 1940 onwards.\nERA5 replaces the ERA-Interim reanalysis.\nReanalysis combines model data with observations from across the world into a globally complete and consistent dataset using the laws of physics. This principle, called data assimilation, is based on the method used by numerical weather prediction centres, where every so many hours (12 hours at ECMWF) a previous forecast is combined with newly available observations in an optimal way to produce a new best estimate of the state of the atmosphere, called analysis, from which an updated, improved forecast is issued. Reanalysis works in the same way, but at reduced resolution to allow for the provision of a dataset spanning back several decades. Reanalysis does not have the constraint of issuing timely forecasts, so there is more time to collect observations, and when going further back in time, to allow for the ingestion of improved versions of the original observations, which all benefit the quality of the reanalysis product.\nERA5 provides hourly estimates for a large number of atmospheric, ocean-wave and land-surface quantities.\nAn uncertainty estimate is sampled by an underlying 10-member ensemble\nat three-hourly intervals. Ensemble mean and spread have been pre-computed for convenience.\nSuch uncertainty estimates are closely related to the information content of the available observing system which\nhas evolved considerably over time. They also indicate flow-dependent sensitive areas.\nTo facilitate many climate applications, monthly-mean averages have been pre-calculated too,\nthough monthly means are not available for the ensemble mean and spread.\nERA5 is updated daily with a latency of about 5 days. In case that serious flaws are detected in this early release (called ERA5T), this data could be different from the final release 2 to 3 months later. In case that this occurs users are notified.\nThe data set presented here is a regridded subset of the full ERA5 data set on native resolution.\nIt is online on spinning disk, which should ensure fast and easy access.\nIt should satisfy the requirements for most common applications.\nAn overview of all ERA5 datasets can be found in this article.\nInformation on access to ERA5 data on native resolution is provided in these guidelines.\nData has been regridded to a regular lat-lon grid of 0.25 degrees for the reanalysis and 0.5 degrees for\nthe uncertainty estimate (0.5 and 1 degree respectively for ocean waves).\nThere are four main sub sets: hourly and monthly products, both on pressure levels (upper air fields) and single levels (atmospheric, ocean-wave and land surface quantities).\nThe present entry is \"ERA5 hourly data on pressure levels from 1940 to present\".\n\nVariables in the dataset/application are:\nDivergence, Fraction of cloud cover, Geopotential, Ozone mass mixing ratio, Potential vorticity, Relative humidity, Specific cloud ice water content, Specific cloud liquid water content, Specific humidity, Specific rain water content, Specific snow water content, Temperature, U-component of wind, V-component of wind, Vertical velocity, Vorticity (relative)",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.bd0915c6",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Climate Data Store catalogue"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://confluence.ecmwf.int/display/CKB/ERA5%3A+data+documentation",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "ERA5 data documentation"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://rmets.onlinelibrary.wiley.com/doi/10.1002/qj.4174",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "The ERA5 global reanalysis: Preliminary extension to 1950"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://rmets.onlinelibrary.wiley.com/doi/10.1002/qj.3803",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "The ERA5 global reanalysis"
+    }
+  ],
+  "title": "ERA5 hourly data on pressure levels from 1940 to present",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          0.0,
+          -89.0,
+          360.0,
+          89.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1959-01-01T00:00:00Z",
+          "2023-07-26T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Atmospheric conditions",
+    "Product type: Reanalysis",
+    "Provider: Copernicus C3S",
+    "Spatial coverage: Global",
+    "Temporal coverage: Past",
+    "Variable domain: Atmosphere (surface)",
+    "Variable domain: Atmosphere (upper air)"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

@@ -1,0 +1,256 @@
+{
+  "type": "Collection",
+  "id": "a0cef231-2f56-40f6-a039-d27dec2216e6",
+  "stac_version": "1.0.0",
+  "description": "'''Short description'''\n\nThe ocean biogeochemistry analysis and forecast for the North-West European Shelf is produced using the European Regional Seas Ecosystem Model (ERSEM), coupled online to the forecasting ocean assimilation model at 7 km horizontal resolution, NEMO-NEMOVAR. ERSEM (Butensch&ouml;n et al. 2016) is developed and maintained at Plymouth Marine Laboratory. NEMOVAR system was used to assimilate observations of sea surface chlorophyll concentration from ocean colour satellite data and all the physical variables described in [https://resources.marine.copernicus.eu/?option=com_csw&view=details&product_id= NWSHELF_ANALYSISFORECAST_PHY_LR_004_001].\nThe description of the model and its configuration, including the products validation is provided in the [http://catalogue.marine.copernicus.eu/documents/QUID/CMEMS-NWS-QUID-004-002.pdf CMEMS-NWS-QUID-004-002].\nProducts are provided as daily 25-hour, de-tided, averages. The datasets available are concentration of chlorophyll, nitrate, phosphate, oxygen, phytoplankton biomass, net primary production, light attenuation coefficient, pH and the partial pressure of CO2. All, as multi-level variables, are interpolated from the model 51 hybrid s-sigma terrain-following system to 24 standard geopotential depths (z-levels). Grid-points near to the model boundaries are masked. The product is updated daily, providing a 6-day forecast and the previous 2-day assimilative hindcast. See [http://catalogue.marine.copernicus.eu/documents/PUM/CMEMS-NWS-PUM-004-001_002.pdf CMEMS-NWS-PUM-004-001_002] for details.\n\n'''Associated products:'''\n\nThis model is coupled with a hydrodynamic model (NEMO) available as CMEMS product [https://resources.marine.copernicus.eu/?option=com_csw&view=details&product_id=NWSHELF_ANALYSISFORECAST_PHY_LR_004_001 NWSHELF_ANALYSISFORECAST_PHY_LR_004_001]\nA reanalysis product is available from: [https://resources.marine.copernicus.eu/?option=com_csw&view=details&product_id=NWSHELF_MULTIYEAR_BIO_004_011 NWSHELF_MULTIYEAR_BIO_004_011].\n\n'''DOI (product) :'''   \nhttps://doi.org/10.48670/moi-00056",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=NWSHELF_ANALYSISFORECAST_BGC_004_002-TDS&product=cmems_mod_nws_bgc-chl_anfc_7km-3D_P1D-m",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_mod_nws_bgc-chl_anfc_7km-3D_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/cmems_mod_nws_bgc-chl_anfc_7km-3D_P1D-m",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_mod_nws_bgc-chl_anfc_7km-3D_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/NWSHELF_ANALYSISFORECAST_BGC_004_002/cmems_mod_nws_bgc-chl_anfc_7km-3D_P1D-m",
+      "type": "WWW:FTP",
+      "title": "cmems_mod_nws_bgc-chl_anfc_7km-3D_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/cmems_mod_nws_bgc-chl_anfc_7km-3D_P1D-m",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_mod_nws_bgc-chl_anfc_7km-3D_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=NWSHELF_ANALYSISFORECAST_BGC_004_002-TDS&product=cmems_mod_nws_bgc-kd_anfc_7km-3D_P1D-m",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_mod_nws_bgc-kd_anfc_7km-3D_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/cmems_mod_nws_bgc-kd_anfc_7km-3D_P1D-m",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_mod_nws_bgc-kd_anfc_7km-3D_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/NWSHELF_ANALYSISFORECAST_BGC_004_002/cmems_mod_nws_bgc-kd_anfc_7km-3D_P1D-m",
+      "type": "WWW:FTP",
+      "title": "cmems_mod_nws_bgc-kd_anfc_7km-3D_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/cmems_mod_nws_bgc-kd_anfc_7km-3D_P1D-m",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_mod_nws_bgc-kd_anfc_7km-3D_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=NWSHELF_ANALYSISFORECAST_BGC_004_002-TDS&product=cmems_mod_nws_bgc-no3_anfc_7km-3D_P1D-m",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_mod_nws_bgc-no3_anfc_7km-3D_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/cmems_mod_nws_bgc-no3_anfc_7km-3D_P1D-m",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_mod_nws_bgc-no3_anfc_7km-3D_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/NWSHELF_ANALYSISFORECAST_BGC_004_002/cmems_mod_nws_bgc-no3_anfc_7km-3D_P1D-m",
+      "type": "WWW:FTP",
+      "title": "cmems_mod_nws_bgc-no3_anfc_7km-3D_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/cmems_mod_nws_bgc-no3_anfc_7km-3D_P1D-m",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_mod_nws_bgc-no3_anfc_7km-3D_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=NWSHELF_ANALYSISFORECAST_BGC_004_002-TDS&product=cmems_mod_nws_bgc-o2_anfc_7km-3D_P1D-m",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_mod_nws_bgc-o2_anfc_7km-3D_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/cmems_mod_nws_bgc-o2_anfc_7km-3D_P1D-m",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_mod_nws_bgc-o2_anfc_7km-3D_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/NWSHELF_ANALYSISFORECAST_BGC_004_002/cmems_mod_nws_bgc-o2_anfc_7km-3D_P1D-m",
+      "type": "WWW:FTP",
+      "title": "cmems_mod_nws_bgc-o2_anfc_7km-3D_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/cmems_mod_nws_bgc-o2_anfc_7km-3D_P1D-m",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_mod_nws_bgc-o2_anfc_7km-3D_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=NWSHELF_ANALYSISFORECAST_BGC_004_002-TDS&product=cmems_mod_nws_bgc-ph_anfc_7km-3D_P1D-m",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_mod_nws_bgc-ph_anfc_7km-3D_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/cmems_mod_nws_bgc-ph_anfc_7km-3D_P1D-m",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_mod_nws_bgc-ph_anfc_7km-3D_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/NWSHELF_ANALYSISFORECAST_BGC_004_002/cmems_mod_nws_bgc-ph_anfc_7km-3D_P1D-m",
+      "type": "WWW:FTP",
+      "title": "cmems_mod_nws_bgc-ph_anfc_7km-3D_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/cmems_mod_nws_bgc-ph_anfc_7km-3D_P1D-m",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_mod_nws_bgc-ph_anfc_7km-3D_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=NWSHELF_ANALYSISFORECAST_BGC_004_002-TDS&product=cmems_mod_nws_bgc-phyc_anfc_7km-3D_P1D-m",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_mod_nws_bgc-phyc_anfc_7km-3D_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/cmems_mod_nws_bgc-phyc_anfc_7km-3D_P1D-m",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_mod_nws_bgc-phyc_anfc_7km-3D_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/NWSHELF_ANALYSISFORECAST_BGC_004_002/cmems_mod_nws_bgc-phyc_anfc_7km-3D_P1D-m",
+      "type": "WWW:FTP",
+      "title": "cmems_mod_nws_bgc-phyc_anfc_7km-3D_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/cmems_mod_nws_bgc-phyc_anfc_7km-3D_P1D-m",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_mod_nws_bgc-phyc_anfc_7km-3D_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=NWSHELF_ANALYSISFORECAST_BGC_004_002-TDS&product=cmems_mod_nws_bgc-po4_anfc_7km-3D_P1D-m",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_mod_nws_bgc-po4_anfc_7km-3D_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/cmems_mod_nws_bgc-po4_anfc_7km-3D_P1D-m",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_mod_nws_bgc-po4_anfc_7km-3D_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/NWSHELF_ANALYSISFORECAST_BGC_004_002/cmems_mod_nws_bgc-po4_anfc_7km-3D_P1D-m",
+      "type": "WWW:FTP",
+      "title": "cmems_mod_nws_bgc-po4_anfc_7km-3D_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/cmems_mod_nws_bgc-po4_anfc_7km-3D_P1D-m",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_mod_nws_bgc-po4_anfc_7km-3D_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=NWSHELF_ANALYSISFORECAST_BGC_004_002-TDS&product=cmems_mod_nws_bgc-pp_anfc_7km-3D_P1D-m",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_mod_nws_bgc-pp_anfc_7km-3D_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/cmems_mod_nws_bgc-pp_anfc_7km-3D_P1D-m",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_mod_nws_bgc-pp_anfc_7km-3D_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/NWSHELF_ANALYSISFORECAST_BGC_004_002/cmems_mod_nws_bgc-pp_anfc_7km-3D_P1D-m",
+      "type": "WWW:FTP",
+      "title": "cmems_mod_nws_bgc-pp_anfc_7km-3D_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/cmems_mod_nws_bgc-pp_anfc_7km-3D_P1D-m",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_mod_nws_bgc-pp_anfc_7km-3D_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=NWSHELF_ANALYSISFORECAST_BGC_004_002-TDS&product=cmems_mod_nws_bgc-spco2_anfc_7km-2D_P1D-m",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_mod_nws_bgc-spco2_anfc_7km-2D_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/cmems_mod_nws_bgc-spco2_anfc_7km-2D_P1D-m",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_mod_nws_bgc-spco2_anfc_7km-2D_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/NWSHELF_ANALYSISFORECAST_BGC_004_002/cmems_mod_nws_bgc-spco2_anfc_7km-2D_P1D-m",
+      "type": "WWW:FTP",
+      "title": "cmems_mod_nws_bgc-spco2_anfc_7km-2D_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/cmems_mod_nws_bgc-spco2_anfc_7km-2D_P1D-m",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_mod_nws_bgc-spco2_anfc_7km-2D_P1D-m"
+    }
+  ],
+  "title": "Atlantic - European North West Shelf - Ocean Biogeochemistry Analysis and Forecast",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -20.0,
+          40.0,
+          13.0,
+          65.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2019-05-04T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

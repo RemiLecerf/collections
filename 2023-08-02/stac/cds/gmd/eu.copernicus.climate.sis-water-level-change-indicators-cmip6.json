@@ -1,0 +1,62 @@
+{
+  "type": "Collection",
+  "id": "eu.copernicus.climate.sis-water-level-change-indicators-cmip6",
+  "stac_version": "1.0.0",
+  "description": "This dataset provides statistical indicators of tides, storm surges and sea level that can be used to characterize global sea level in present-day conditions and also to assess changes under climate change. The indicators calculated include extreme-value indicators (e.g. return periods including confidence bounds for total water levels and surge levels), probability indicators (e.g. percentile for total water levels and surge levels). They provide a basis for studies aiming to evaluate sea level variability, coastal flooding, coastal erosion, and accessibility of ports at a global scale. The extreme value statistics for different return periods can be used to assess the frequency of an event and form the basis of risk assessments. The global coverage allows for world-wide assessments that are particularly useful for the data scarce regions where detailed modelling studies are currently lacking.\nThe indicators are computed from time series data available in a related dataset in the Climate Data Store named Global sea level change time series from 1950 to 2050 derived from reanalysis and high resolution CMIP6 climate projections (see Related data), where further details of the modelling are provided. The indicators are produced for three different 30-year periods corresponding to historical, present, and future climate conditions (1951-1980, 1985-2014, and 2021-2050). The future period is based on global climate projections using the high-emission scenario SSP5-8.5. The dataset is based on climate forcing from ERA5 global reanalysis and 4 Global Climate Models (GCMs) of the high resolution Coupled Model Intercomparison Project Phase 6 (CMIP6) global climate projection dataset from the High Resolution Model Intercomparison Project (HighResMIP) multi-model ensemble. An estimate of the uncertainties associated with the climate forcing has been obtained through the use of a multi-model ensemble. Each of the indicators provides ensemble statistics computed across the 4 members of the HighResMIP ensemble (e.g. median, mean, standard deviation, range). Absolute and relative changes for the future period (2015-2050) relative to the present-day (1985-2014) are provided to assess climate change impacts on water levels.\nThis dataset was produced on behalf of the Copernicus Climate Change Service.\n\nVariables in the dataset/application are:\nAnnual mean of highest high water, Annual mean of lowest low water, Highest astronomical tide, Lowest astronomical tide, Mean sea level, Surge level, Tidal range, Total water level",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.6edf04e0",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Climate Data Store catalogue"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://confluence.ecmwf.int/x/RiI7E",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Product user guide"
+    }
+  ],
+  "title": "Global sea level change indicators from 1950 to 2050 derived from reanalysis and high resolution CMIP6 climate projections",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1951-01-01T00:00:00Z",
+          "2050-12-31T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Product type: Climate projections",
+    "Product type: Reanalysis",
+    "Provider: Copernicus C3S",
+    "Sea regions",
+    "Spatial coverage: Global",
+    "Temporal coverage: Future",
+    "Temporal coverage: Past",
+    "Variable domain: Ocean (physics)"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "type": "Collection",
+  "id": "MODIS",
+  "stac_version": "1.0.0",
+  "description": "[MODIS](https://modis.gsfc.nasa.gov/about/) (Moderate Resolution Imaging Spectroradiometer) is the main\ninstrument operating on both NASA's [Terra](https://terra.nasa.gov/) and [Aqua](https://aqua.nasa.gov/) satellites.\nIt acquires images of the earth in 36 bands within the visible and the infrared regions of the spectrum at low to medium spatial resolutions. \nMODIS is designed to provide at least daily observations of land, oceans and lower atmosphere that contribute to\nlocal or global scale land or water applications. There are several products derived from MODIS which include land, atmosphere, cryospehere and ocean products.\nMCD43A4 Nadir BRDF-Adjusted Reflectance (NBAR) product Version 6 is a MODIS land product available in Sentinel Hub. \nIt is computed daily for each of MODIS bands 1 - 7 and it contains the most representative pixels from 16 day period temporarily weighted to the ninth day.\nMCD43A4.006 is available since February 2000 on a daily basis but with a 8 days delay.\n",
+  "links": [],
+  "title": "MODIS MCD43A4.006",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1981-01-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "sentinel hub",
+    "xcube",
+    "raster",
+    "systematic",
+    "satellite imagery",
+    "agriculture",
+    "natural resource",
+    "disaster response",
+    "open data",
+    "NASA",
+    "modis",
+    "terra",
+    "aqua"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

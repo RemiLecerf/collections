@@ -1,0 +1,95 @@
+{
+  "type": "Collection",
+  "id": "eu.copernicus.climate.seasonal-monthly-ocean",
+  "stac_version": "1.0.0",
+  "description": "This entry covers global ocean data aggregated to a monthly time resolution. The catalogue entry includes temperature and salinity characteristics of the upper oceans and complements the other seasonal forecast catalogue entries for the land and atmospheric variables. \nSeasonal forecasts provide a long-range outlook of changes in the Earth system over periods of a few weeks or months, as a result of predictable changes in some of the slow-varying components of the system. For example, ocean temperatures typically vary slowly, on timescales of weeks or months; as the ocean has an impact on the overlaying atmosphere, the variability of its properties (e.g. temperature) can modify both local and remote atmospheric conditions. Such modifications of the 'usual' atmospheric conditions are the essence of all long-range (e.g. seasonal) forecasts. This is different from a weather forecast, which gives a lot more precise detail - both in time and space - of the evolution of the state of the atmosphere over a few days into the future. Beyond a few days, the chaotic nature of the atmosphere limits the possibility to predict precise changes at local scales. This is one of the reasons long-range forecasts of atmospheric conditions have large uncertainties. To quantify such uncertainties, long-range forecasts use ensembles, and meaningful forecast products reflect distributions of outcomes.\nGiven the complex, non-linear interactions between the individual components of the Earth system, the best tools for long-range forecasting are climate models which include as many of the key components of the system and possible; typically, such models include representations of the atmosphere, ocean and land surface. These models are initialised with data describing the state of the system at the starting point of the forecast and used to predict the evolution of this state in time. While uncertainties coming from imperfect knowledge of the initial conditions of the components of the Earth system can be described with the use of ensembles, uncertainty arising from approximations made in the models are very much dependent on the choice of model. A convenient way to quantify the effect of these approximations is to combine outputs from several models, independently developed, initialised and operated.\nTo this effect, the C3S provides a multi-system seasonal forecast service, where data produced by state-of-the-art seasonal forecast systems developed, implemented and operated at forecast centres in several European countries is collected, processed and combined to enable user-relevant applications. The composition of the C3S seasonal multi-system and the full content of the database underpinning the service are described in the documentation. The seasonal forecast data is grouped in several catalogue entries (CDS datasets), currently defined by the model component and type of variable: outputs from the ocean component or the atmospheric one (single-level or multi-level, on pressure surfaces) and the level of post-processing applied (data at original time resolution, processing on temporal aggregation and post-processing related to bias adjustment).\nThe data includes forecasts created in real-time each month starting from the publication of this entry and retrospective forecasts (hindcasts) initialised over periods in the past specified in the documentation for each origin and system. \n\nVariables in the dataset/application are:\nDepth average potential temperature of upper 300m, Depth average salinity of upper 300m, Depth of 14°C isotherm, Depth of 17°C isotherm, Depth of 20°C isotherm, Depth of 26°C isotherm, Depth of 28°C isotherm, Mixed layer depth 0.01, Mixed layer depth 0.03, Sea ice thickness, Sea surface height above geoid, Sea surface salinity",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.2f9be611",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Climate Data Store catalogue"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://confluence.ecmwf.int/display/CKB/Announcements",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Announcements"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://confluence.ecmwf.int/display/CKB/Seasonal+forecasts+and+the+Copernicus+Climate+Change+Service",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Seasonal forecasts and the Copernicus Climate Change Service C3S"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://confluence.ecmwf.int/display/CKB/Description+of+the+C3S+seasonal+multi-system",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Description of the C3S seasonal multi-system"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://confluence.ecmwf.int/display/CKB/How+to+use+the+CDS+interactive+forms+for+seasonal+forecast+datasets",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "How to use the CDS interactive forms for seasonal forecast datasets"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://confluence.ecmwf.int/display/CKB/Summary+of+available+data",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Summary of available data"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://confluence.ecmwf.int/display/CKB/Detailed+list+of+parameters",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Detailed list of parameters"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://confluence.ecmwf.int/display/CKB/C3S+Seasonal+Forecast+known+issues",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Known issues"
+    }
+  ],
+  "title": "Seasonal forecast monthly averages of ocean variables",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          0.0,
+          -89.0,
+          360.0,
+          89.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1993-01-01T00:00:00Z",
+          "2023-07-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Oceanic conditions",
+    "Product type: Seasonal forecasts",
+    "Spatial coverage: Global",
+    "Temporal coverage: Past",
+    "Variable domain: Ocean (physics)"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

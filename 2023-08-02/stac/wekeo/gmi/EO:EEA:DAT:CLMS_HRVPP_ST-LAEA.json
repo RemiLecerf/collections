@@ -1,0 +1,76 @@
+{
+  "type": "Collection",
+  "id": "EO:EEA:DAT:CLMS_HRVPP_ST-LAEA",
+  "stac_version": "1.0.0",
+  "description": "The Seasonal Trajectories product is a filtered time series of Plant Phenology Index (PPI), with regular time step, part of the Copernicus Land Monitoring Service (CLMS) HR-VPP product suite. \n\nPlant Phenology Index (PPI) is a physically based vegetation index that is optimized for monitoring vegetation phenology and has a linear relationship with green leaf area index. \n\nThe Seasonal Trajectories (ST) products are derived from a function fitting of the time series of the PPI vegetation index and hence provide a filtered PPI time series, with regular 10-day time step, together with related quality information (QFLAG).\n\nThe PPI Seasonal Trajectories are derived from the PPI vegetation index and hence based on Copernicus Sentinel-2 satellite observations.\n\nThe ST products are made available as a set of raster files with 10m and 100m resolution, in ETRS89/LAEA projection corresponding to the High Resolution Layers tiling grid, for those tiles that cover the EEA38 countries and the United Kingdom, and for the period from 2017 until today, with yearly updates.\n\nThese Seasonal Trajectories are part of the pan-European High Resolution Vegetation Phenology and Productivity (HR-VPP) component of the Copernicus Land Monitoring Service (CLMS).",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://www.wekeo.eu/data",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "WEkEO portal"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://land.copernicus.eu/pan-european/biophysical-parameters/high-resolution-vegetation-phenology-and-productivity",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Product information"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://land.copernicus.eu/user-corner/technical-library/product-user-manual-of-seasonal-trajectories",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Product user manual"
+    }
+  ],
+  "title": "Seasonal Trajectories, 10-daily, LAEA projection",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -60.0,
+          180.0,
+          80.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2011-01-01T00:00:00Z",
+          "2013-12-31T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Copernicus",
+    "EEA38",
+    "Index",
+    "Land",
+    "Phenology",
+    "Plant",
+    "Season",
+    "Trajectory",
+    "United Kingdom",
+    "Vegetation",
+    "annually",
+    "geospatial data",
+    "plant ecology",
+    "plant production",
+    "remote sensing",
+    "vegetation"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

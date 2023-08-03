@@ -1,0 +1,43 @@
+{
+  "type": "Collection",
+  "id": "EO:EUM:DAT:0178",
+  "stac_version": "1.0.0",
+  "description": "This Ocean Colour product represents the algal pigment (Chlorophyll a)\n          concentration in clear open waters, and it is defined by the \"OC4Me\" Maximum Band Ratio\n          (MBR) semi-analytical algorithm. The product is derived from S3A OLCI L2 NRT water-leaving\n          reflectances (calculated from the Baseline Atmospheric Correction). A maximum band ratio\n          approach is used for reflectances at 443, 490 and 510 nm, over that 560 nm (O3 to O6). It\n          is expressed in Units of mg/m3 as: log10 [Chl]= ∑4 x=0 =(Ax * (log10(Rij))x) which is the\n          ratio of reflectance of band i, among 443, 490 and 510 nm, over that of band j at 560 nm.\n          The following flags were applied: INVALID, LAND, CLOUD, CLOUD_AMBIGUOUS, CLOUD_MARGIN,\n          SNOW_ICE, SUSPECT, HISOLZEN, SATURATED, HIGHGLINT, WHITECAPS, AC_FAIL, OC4ME_FAIL,\n          ANNOT_TAU06, RWNEG_O2, RWNEG_O3, RWNEG_O4, RWNEG_O5, RWNEG_O6, RWNEG_O7 and RWNEG_O8. Full\n          details of the chl_oc4me algorithm can be found in the case 1 resource link. Sentinel-3 is\n          part of a series of Sentinel satellites, under the umbrella of the EU Copernicus\n          programme.",
+  "links": [],
+  "title": "OLCI Level 2 CHL Concentration - Sentinel-3A",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -22.0,
+          -67.5,
+          113.0,
+          67.5
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2021-06-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Level 2 Data",
+    "Ocean"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "type": "Collection",
+  "id": "eu.copernicus.climate.satellite-total-column-water-vapour-land-ocean",
+  "stac_version": "1.0.0",
+  "description": "Water vapour is an Essential Climate Variable as it provides the basis for all cloud formation, cloud physics and furthermore influences the Earth's heat budget due to its high absorbance of long and short-wave radiation. Total column water vapour (TCWV) is a measure of the integrated water vapour content of the atmosphere.\nThis catalogue entry provides a combination of the Medium Resolution Imaging Spectrometer (MERIS) retrievals in the near-infrared (NIR) over land surfaces and coastal areas with the  Special Sensor Microwave Imager (SSM/I) TCWV   retrievals  in the microwave spectra over ocean surfaces. A related dataset providing TCWV data over ocean only but at a higher time resolution computed using a different set of sensors and algorithms  is also available (the link to that dataset is under the Related data section)\nSSM/I is a well-established instrument for TCWV retrieval over open ocean surfaces and provides a long time series and global coverage at a reasonable resolution. The MERIS TCWV dataset provides a continuous data record from May 2002 to March 2012 in line with World Mereorological Organization's (WMO) Observing Systems Capability Analysis and Review Tool (OSCAR) requirements for TCWV. The differential absorption technique used for MERIS is proven to be a reliable retrieval method for sensors with bands in the NIR at the water vapour absorption band centered at 940 nm. This MERIS dataset provides global coverage for almost 10 years. Although not necessarily needed as input for the retrieval, ERA-Interim reanalysis TCWV was used as a priori. Compared to this background TCWV field, the MERIS TCWV has a much higher spatial resolution and a good uncertainty estimate. Further input to the algorithm for MERIS TCWV is surface pressure and surface temperature over land, as well as surface winds over ocean. These data are taken from ERA Interim. They are not provided in the final dataset. SSM/I and MERIS retrievals were merged in order to have global coverage with each instrument used to its full potential.\nThis dataset is produced by the Copernicus Climate Change Service (C3S).\n\nVariables in the dataset/application are:\nTotal column water vapour",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.8e0e4724",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Climate Data Store catalogue"
+    },
+    {
+      "rel": "describedby",
+      "href": "#",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "#"
+    },
+    {
+      "rel": "describedby",
+      "href": "#",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "#"
+    },
+    {
+      "rel": "describedby",
+      "href": "#",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "#"
+    }
+  ],
+  "title": "Monthly total column water vapour over land and ocean from  2002 to 2012 derived from satellite observations",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          0.0,
+          -89.0,
+          360.0,
+          89.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2002-05-01T00:00:00Z",
+          "2012-03-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Ocean",
+    "Product type: Satellite observations",
+    "Provider: Copernicus C3S",
+    "Spatial coverage: Global",
+    "Temporal coverage: Past",
+    "Temporal coverage: Present",
+    "Variable domain: Atmosphere (upper air)"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "type": "Collection",
+  "id": "f60933b2-c2bf-4026-b540-a278c71b1cbc",
+  "stac_version": "1.0.0",
+  "description": "'''Short description:'''\nThe operational TOPAZ5-ECOSMO Arctic Ocean system uses the ECOSMO biological model coupled online to the TOPAZ5 physical model planned for a future update of the ARCTIC_ANALYSIS_FORECAST_PHYS_002_001_a physical forecast. It is run daily to provide 10 days of forecast of 3D biogeochemical variables ocean. The coupling is done by the FABM framework.\n\nCoupling to a biological ocean model provides a description of the evolution of basic biogeochemical variables. The output consists of daily mean fields interpolated onto a standard grid and 40 fixed levels in NetCDF4 CF format. Variables include 3D fields of nutrients (nitrate, phosphate, silicate), phytoplankton and zooplankton biomass, oxygen, chlorophyll, primary productivity, carbon cycle variables (pH, dissolved inorganic carbon and surface partial CO2 pressure in seawater, carbon export) and light attenuation coefficient. Surface Chlorophyll-a from satellite ocean colour is assimilated every week and projected downwards using the Uitz et al. (2006) method. A new 10-day forecast is produced daily using the previous day's forecast and the most up-to-date prognostic forcing fields.\nOutput products have 6.25 km resolution at the North Pole (equivalent to 1/8 deg) on a stereographic projection. See the Product User Manual for the exact projection parameters.\n\n'''DOI (product) :'''   \nhttps://doi.org/10.48670/moi-00003",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=ARCTIC_ANALYSISFORECAST_BGC_002_004-TDS&product=cmems_mod_arc_bgc_anfc_ecosmo_P1D-m",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_mod_arc_bgc_anfc_ecosmo_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/cmems_mod_arc_bgc_anfc_ecosmo_P1D-m",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_mod_arc_bgc_anfc_ecosmo_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/ARCTIC_ANALYSISFORECAST_BGC_002_004/cmems_mod_arc_bgc_anfc_ecosmo_P1D-m",
+      "type": "WWW:FTP",
+      "title": "cmems_mod_arc_bgc_anfc_ecosmo_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/cmems_mod_arc_bgc_anfc_ecosmo_P1D-m",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_mod_arc_bgc_anfc_ecosmo_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=ARCTIC_ANALYSISFORECAST_BGC_002_004-TDS&product=cmems_mod_arc_bgc_anfc_ecosmo_P1M-m",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_mod_arc_bgc_anfc_ecosmo_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/cmems_mod_arc_bgc_anfc_ecosmo_P1M-m",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_mod_arc_bgc_anfc_ecosmo_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/ARCTIC_ANALYSISFORECAST_BGC_002_004/cmems_mod_arc_bgc_anfc_ecosmo_P1M-m",
+      "type": "WWW:FTP",
+      "title": "cmems_mod_arc_bgc_anfc_ecosmo_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/cmems_mod_arc_bgc_anfc_ecosmo_P1M-m",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_mod_arc_bgc_anfc_ecosmo_P1M-m"
+    }
+  ],
+  "title": "Arctic Ocean Biogeochemistry Analysis and Forecast",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          53.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2019-05-04T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

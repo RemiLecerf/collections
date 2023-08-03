@@ -1,0 +1,43 @@
+{
+  "type": "Collection",
+  "id": "wms_test_true_full_wrt",
+  "stac_version": "1.0.0",
+  "description": "SNOW map derived from daily MODIS observations (Aqua and Terra) for the entire Alps arc. The input data are the atmospherically-corrected reflectances of MODIS MOD09GQ, MOD09GA for tile h19v04 and h18v04. The map has two bands: - SNOW MAP: Snow cover classification map with four classes [0 = NO DATA - missing or corrupt data of one or more input bands; 1 = SNOW - pixel covered by snow; 2 = NO_SNOW - pixel not covered by snow; 3 = CLOUD - pixel covered by clouds], QUALITY FLAG: Snow cover quality map [NO DATA - missing or corrupt data of one or more input bands; QUALITY_INDEX - higher values indicate higher likeliness of correct classification].",
+  "links": [],
+  "title": "WMS title",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1981-01-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "SNOW",
+    "MODIS"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "type": "Collection",
+  "id": "ADO_SSPI_10d_SNOWGRID",
+  "stac_version": "1.0.0",
+  "description": "The Standardized Snow Pack Index (SSPI) represents a standardized measure of what a certain value of snow water equivalent (SWE) averaged over the selected time period means in relation to the expected value for this period. SSPI is computed the same way as the SPI (using gamma distribution), except for being based on daily SWE timeseries instead of daily precipitation. It is calculated using the average SWE over a period of 10 and 30 days. The value of the SSPI index around 0 represents the normal expected conditions for the average SWE in the selected period based on the long-term average (1981-2020). The value of 1 represents approximately one standard deviation of the surplus, while the value of -1 is about one standard deviation of the deficit. SWE data used as input for the calculation of SSPI are derived using a modified version of the deterministic snow model SNOWGRID-CL, with downscaled ERA5 data used as model input data. Contains modified Copernicus Climate Change Service information [1978-current year]; Contains modified Copernicus Atmosphere Monitoring Service information [1978-current year].",
+  "links": [],
+  "title": "Standardised Snow Pack Index - ERA5_QM SSPI-10",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1981-01-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "CC BY 4.0",
+  "keywords": [
+    "SSPI",
+    "standardised snow pack index",
+    "ERA5",
+    "SNOWGRID"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

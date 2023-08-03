@@ -1,0 +1,66 @@
+{
+  "type": "Collection",
+  "id": "EO:ECMWF:DAT:SATELLITE_ICE_SHEET_ELEVATION_CHANGE",
+  "stac_version": "1.0.0",
+  "description": "This dataset provides estimates of surface elevation change over the Greenland and Antarctic ice sheets since 1992, utilizing satellite radar altimetry from five missions: ERS-1, ERS-2, ENVISAT, CryoSat-2, and Sentinel-3A. The surface elevation change is modelled over successive, overlapping periods and reported monthly. The dataset production method is an evolution of those employed by the European Space Agency (ESA)'s Greenland and Antarctic Ice Sheet Climate Change Initiatives and is guided by the Global Climate Observing System targets for the Ice Sheets Essential Climate Variable.\nAn annual Climate Data Record (CDR), and monthly intermediate CDRs (ICDRs) are issued. Each monthly record includes all previous data, from 1992 onwards, as well as that month's update.\nThis product is designed to provide data stability, so changes in the historic data, eg. if a satellite's elevation data is reprocessed or if inter-satellite cross-calibration is revised, are only introduced in the annual CDR. Each annual CDR is given a version number.\nThe differences in the geographical location of the two sheets result in site-specific processing:\nGreenland: Data consists of surface elevation change rate and its uncertainty in a five-year (for the early satellites: ERS-1, ERS-2, and ENVISat) or three-year (for CryoSat-2 and Sentinel-3A) moving window. The moving window is advanced at one-month steps. Elevation measurements from satellite radar altimetry are used to build time-series of elevation change by the most optimal combination of the crossover-, repeat-track- and plane-fitting methods. The timeseries is derived for each cell on a 25km by 25km polar stereographic grid, covering the main Greenland ice sheet, and not including peripheral glaciers and ice caps. Data gaps have been filled using an ordinary Kriging interpolation method, and the distance to the nearest observational point is provided as utility information. The distance can be used to flag filled data.\nAntarctica: Data consists of surface elevation change rate over a five-year moving window that advances in one-month steps. It covers the Antarctic ice sheet, ice shelves and associated ice rises and islands on a 25km by 25km polar stereographic grid. Elevation measurements from five satellite radar altimetry missions, ERS1, ERS2, EnviSat, CryoSat-2 and Sentinel-3A, are used to produce timeseries of surface elevation change by the crossover method for each grid cell. The mission timeseries are cross-calibrated into a consistent record, which is used to derive surface elevation change rates and their uncertainty estimates in each cell and time-window. Data gaps are flagged but not filled.\n\nVariables in the dataset/application are:\nRate of elevation change, Rate of elevation change uncertainty, Time\n\nVariables in the dataset/application are:\nLand mask, Slope mask, Valid flag",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.056d0df7",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Climate Data Store catalogue"
+    },
+    {
+      "rel": "describedby",
+      "href": "#",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "#"
+    },
+    {
+      "rel": "describedby",
+      "href": "#",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "#"
+    }
+  ],
+  "title": "Ice sheet surface elevation change rate for Greenland and Antarctica from 1992 to present derived from satellite observations",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1992-01-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Elevation",
+    "Product type: Satellite observations",
+    "Spatial coverage: Antarctic and Greenland",
+    "Temporal coverage: Past",
+    "Temporal coverage: Present",
+    "Variable domain: Land (cryosphere)"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

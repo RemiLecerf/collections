@@ -1,0 +1,45 @@
+{
+  "type": "Collection",
+  "id": "LANDSAT/LC08/C01/T1_ANNUAL_GREENEST_TOA",
+  "stac_version": "1.0.0",
+  "description": "Landsat 8 Collection 1 Tier 1\n  calibrated top-of-atmosphere (TOA) reflectance.\n  Calibration coefficients are extracted from the image metadata.\n  See [Chander et al. (2009)](https://www.sciencedirect.com/science/article/pii/S0034425709000169)\n  for details on the TOA computation.\n\nThese composites are created from\nall the scenes in\neach annual period beginning from the first day of the year and\ncontinuing to the last day of the year.  All the images from each year\nare included in the composite, with the greenest pixel as the composite value, where\nthe greenest pixel means the pixel with the highest value of\nthe Normalized Difference Vegetation Index (NDVI).\n",
+  "links": [],
+  "title": "Landsat 8 Collection 1 Tier 1 Landsat 8 Collection 1 Tier 1 Annual Greenest-Pixel TOA Reflectance Composite",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1981-01-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "greenest",
+    "landsat",
+    "toa",
+    "usgs"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

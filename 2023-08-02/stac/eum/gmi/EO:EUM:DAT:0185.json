@@ -1,0 +1,44 @@
+{
+  "type": "Collection",
+  "id": "EO:EUM:DAT:0185",
+  "stac_version": "1.0.0",
+  "description": "This product is the daily Level 3 uncollated Sea Surface Temperature product created from the Sentinel 3B SLSTR instrument measurements.\n          Sea Surface Temperature (SST) is the kinetic temperature of a water\n          body at a defined depth. Although SLSTR measures an infrared radiometric temperature, it\n          is provided as a kinetic temperature by considering the emissivity of the water body as\n          part of the SST retrieval process. It is important to note that the SLSTR instruments\n          return SST measurements for the ocean 'skin'. Due to the limited penetration of thermal\n          infra-red radiation through the water column, this corresponds to the temperature in the\n          top few tens of micrometres. At night, the skin temperature is typically a few tenths of a\n          degree cooler than the temperature measured by in situ systems; in the day, the skin can\n          be considerably higher if strong diurnal warming is present. For more details please see\n          “What is SST?” on the GHRSST web pages. The SST measurement is obtained by means of a\n          highly accurate calibration of the three infra-red channels at 3.74, 10.85 and 12 µm\n          (S7-S8-S9). Corrections for water vapour atmospheric absorption are performed using a\n          triple window at night, and a split window during the day as the 3.7 µm channel is not\n          used due to solar contamination. Each on-ground pixel is viewed twice, via nadir and\n          oblique views with different atmospheric path lengths, allowing for correction for aerosol\n          effects. Consequently, there are four possible retrieved SSTs, referred to as N2\n          (nadir-only 11 µm and 12 µm), N3 (nadir-only 3.7 µm, 11 µm and 12 µm), D2 (dual-view 11 µm\n          and 12 µm) and D3 (dual-view 3.7 µm, 11 µm and 12 µm). A fifth retrieval algorithm, N3R is\n          similar to N3, but uses the property of “aerosol robustness”, which is applicable in areas\n          of high atmospheric aerosol content, e.g. near volcanoes. The product is derived from\n          SLSTR L2 NRT data following derivation was applied to select the SST pixels to be plotted\n          from WST file: - if the observation is in the nadir-only / single-view part of swath (i.e.\n          \"sst_algorithm_types\" is N2, N3, N3R) then SST = sea_surface_temperature - If the\n          observation is in the dual-view part of swath ((i.e. \"sst_algorithm_types\" is D2 or D3)\n          then SST = sea_surface_temperature - dual_nadir_sst_difference. Besides, the following\n          flags were used to select which pixels to represent and display: (quality_level >=3) and\n          (l2p_flags.land == 0) and (l2p_flags.lake == 0) The SLSTR instrument and ground processing\n          system are required to produce SST retrievals routinely from the corresponding brightness\n          temperatures with an absolute accuracy of better than 0.3 K, globally, both for a single\n          sample and when averaged over areas of 0.5° longitude by 0.5° latitude, under certain\n          cloud-free conditions (i.e. >20% cloud-free samples within each area). The SLSTR\n          instrument also has a temporal stability of 0.1 K/decade.",
+  "links": [],
+  "title": "SLSTR Level 3 Uncollated Sea Surface Temperature (L3U SST) - Sentinel-3B",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -29.5,
+          -75.0,
+          120.5,
+          75.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2020-09-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Level 3 Data",
+    "Ocean",
+    "Sea Surface Temperature"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

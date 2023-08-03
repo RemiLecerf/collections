@@ -1,0 +1,101 @@
+{
+  "type": "Collection",
+  "id": "eu.copernicus.climate.satellite-lai-fapar",
+  "stac_version": "1.0.0",
+  "description": "Fraction of absorbed photosynthetically active radiation: FAPAR corresponds to the fraction of photosynthetically active radiation absorbed by the canopy. The FAPAR value results directly from the radiative transfer in the canopy which is instantaneous. It depends on canopy structure, vegetation element optical properties and illumination conditions. FAPAR is very useful as input to a number of primary productivity models based on simple efficiency considerations. FAPAR is relatively linearly related to reflectance values and is little sensitive to scaling issues. Note also that the FAPAR refers only to the green parts of the canopy.\nLeaf area Index: LAI is defined as half the developed area of photosynthetically active elements of the vegetation per unit horizontal ground area. It determines the size of the interface for exchange of energy (including radiation) and mass between the canopy and the atmosphere. This is an intrinsic canopy primary variable that should not depend on observation conditions. LAI is strongly non-linearly related to reflectance. Therefore, its estimation from remote sensing observations is scale dependent. Note that vegetation LAI as estimated from remote sensing includes all the green contributors such as the understory when existing under forests canopies. However, except when using directional observations, LAI is not directly accessible from remote sensing observations due to the possible heterogeneity in leaf distribution within the canopy volume. Therefore, remote sensing observations are rather sensitive to the ‘effective’ leaf area index, i.e. the value that provides the same diffuse gap fraction while assuming a random distribution of leaves. The difference between the actual LAI and the effective LAI may be quantified by the clumping index that roughly varies between 0.5 (very clumped canopies) and 1.0 (randomly distributed leaves). Note that similarly to the other variables, the retrieved LAI is mainly corresponding to the green elements: the correct term to be used would be GAI (Green Area Index) although we propose to still use LAI for the sake of simplicity.\nThe following product versions are available:\n\nVersion v0.0 is a brokered dataset from the Copernicus Global Land Service (CGLS).\nVersion v1.0 is produced by the C3S service. In this version, the theoretical framework for the CDR LAI and FAPAR algorithm capitalizes on the past experience gained in the Copernicus Global Land products (Baret et al. 2013). It capitalizes itself on the development and validation of already existing products: CYCLOPES Version 3.1 and MODIS Collection 5, and the use of neural networks. Verger et al. (2008) demonstrated that this approach could be used efficiently to estimate LAI and FAPAR from existing products provided that a strong link exists between the inputs and the outputs in the training dataset. Error propagation was included in the version v1.0 (compared to v0.0).\nVersion v2.0 is produced by the C3S service. This version is retrieved by applying the Two-stream Inversion Package (TIP) to visible (VIS) and near-infrared (NIR) broadband albedos. TIP is based on the Two-stream Model developed by Pinty et al. 2006, which implements the two-stream approximation of radiative transfer for a homogeneous canopy (“1D-canopy”).\nVersion v3.0 is produced by the C3S service. This version builds on version 2 and adds a multi-sensor aspect to the LAI/FAPAR products delivered so far. The inversion of the BRDF coefficients was improved. A climatological BRDF based on SPOT-VGT is introduced as a priori information used for the inversion of the albedos which is the input for the TIP model.\nVersion v4.0 is produced by the C3S service and builds on version 3 using the Sentinel3 A/B SLSTR and OLCI dataset.\n\nPlease note that LAI version v0.0 and v1.0 represent the actual LAI. Starting from version v2.0, the LAI produced by the TIP (Two Inversion Package) model represents the \"effective\" LAI. The difference between the actual LAI and the effective LAI may be quantified by the clumping index that roughly varies between 0.5 (very clumped canopies) and 1.0 (randomly distributed leaves).\n\nVariables in the dataset/application are:\nFraction of Absorbed  Photosynthetically Active Radiation (FAPAR), Leaf Area Index (LAI)",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.7e59b01a",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Climate Data Store catalogue"
+    },
+    {
+      "rel": "describedby",
+      "href": "#",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "#"
+    },
+    {
+      "rel": "describedby",
+      "href": "#",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "#"
+    },
+    {
+      "rel": "describedby",
+      "href": "#",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "#"
+    },
+    {
+      "rel": "describedby",
+      "href": "#",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "#"
+    },
+    {
+      "rel": "describedby",
+      "href": "#",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "#"
+    },
+    {
+      "rel": "describedby",
+      "href": "#",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "#"
+    },
+    {
+      "rel": "describedby",
+      "href": "#",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "#"
+    },
+    {
+      "rel": "describedby",
+      "href": "#",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "#"
+    }
+  ],
+  "title": "Leaf area index and fraction absorbed of photosynthetically active radiation 10-daily gridded data from 1981 to present",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          0.0,
+          -89.0,
+          360.0,
+          89.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1998-01-01T00:00:00Z",
+          "2020-06-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Land cover",
+    "Product type: Satellite observations",
+    "Spatial coverage: Global",
+    "Temporal coverage: Past",
+    "Variable domain: Land (biosphere)"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

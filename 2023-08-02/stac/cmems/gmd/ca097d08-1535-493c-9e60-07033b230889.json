@@ -1,0 +1,52 @@
+{
+  "type": "Collection",
+  "id": "ca097d08-1535-493c-9e60-07033b230889",
+  "stac_version": "1.0.0",
+  "description": "'''DEFINITION'''\n\nThe medsea_omi_tempsal_sst_trend product includes the cumulative/net Sea Surface Temperature (SST) trend for the Mediterranean Sea over the period 1993-2021, i.e. the rate of change (°C/year) multiplied by the number years in the time series (29 years). This OMI is derived from the CMEMS Reprocessed Mediterranean L4 SST product (SST_MED_SST_L4_REP_OBSERVATIONS_010_021, see also the OMI QUID, http://marine.copernicus.eu/documents/QUID/CMEMS-OMI-QUID-MEDSEA-SST.pdf), which provided the SSTs used to compute the SST trend over the Mediterranean Sea. This reprocessed product consists of daily (nighttime) optimally interpolated 0.05° grid resolution SST maps over the Mediterranean Sea built from the ESA Climate Change Initiative (CCI) (Merchant et al., 2019) and Copernicus Climate Change Service (C3S) initiatives, including also an adjusted version of the AVHRR Pathfinder dataset version 5.3 (Saha et al., 2018) to increase the input observation coverage. Trend analysis has been performed by using the X-11 seasonal adjustment procedure (see e.g. Pezzulli et al., 2005; Pisano et al., 2020), which has the effect of filtering the input SST time series acting as a low bandpass filter for interannual variations. Mann-Kendall test and Sens’s method (Sen 1968) were applied to assess whether there was a monotonic upward or downward trend and to estimate the slope of the trend and its 95% confidence interval. The reference for this OMI can be found in the first and second issue of the Copernicus Marine Service Ocean State Report (OSR), Section 1.1 (Roquet et al., 2016; Mulet et al., 2018).\n\n'''CONTEXT'''\n\nSea surface temperature (SST) is a key climate variable since it deeply contributes in regulating climate and its variability (Deser et al., 2010). SST is then essential to monitor and characterize the state of the global climate system (GCOS 2010). Long-term SST variability, from interannual to (multi-)decadal timescales, provides insight into the slow variations/changes in SST, i.e. the temperature trend (e.g., Pezzulli et al., 2005). In addition, on shorter timescales, SST anomalies become an essential indicator for extreme events, as e.g. marine heatwaves (Hobday et al., 2018). The Mediterranean Sea is a climate change hotspot (Giorgi F., 2006). Indeed, Mediterranean SST has experienced a continuous warming trend since the beginning of 1980s (e.g., Pisano et al., 2020; Pastor et al., 2020). Specifically, since the beginning of the 21st century (from 2000 onward), the Mediterranean Sea featured the highest SSTs and this warming trend is expected to continue throughout the 21st century (Kirtman et al., 2013).  \n\n'''CMEMS KEY FINDINGS'''\n\nThe spatial pattern of the Mediterranean SST trend shows a general warming tendency, ranging from 0.002 °C/year to 0.063 °C/year. Overall, a higher SST trend intensity characterizes the Eastern and Central Mediterranean basin with respect to the Western basin. In particular, the Balearic Sea, Tyrrhenian and Adriatic Seas, as well as the northern Ionian and Aegean-Levantine Seas show the highest SST trends (from 0.04 °C/year to 0.05 °C/year on average). Trend patterns of warmer intensity characterize some of main sub-basin Mediterranean features, such as the Pelops Anticyclone, the Cretan gyre and the Rhodes Gyre. On the contrary, less intense values characterize the southern Mediterranean Sea (toward the African coast), where the trend attains around 0.025 °C/year. The SST warming rate spatial change, mostly showing an eastward increase pattern (see, e.g., Pisano et al., 2020, and references therein), i.e. the Levantine basin getting warm faster than the Western, appears now to have tilted more along a North-South direction.\n\n'''DOI (product):''' \nhttps://doi.org/10.48670/moi-00269",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "ftp://my.cmems-du.eu/Core/MEDSEA_OMI_TEMPSAL_sst_trend/medsea_omi_tempsal_sst_trend",
+      "type": "WWW:FTP",
+      "title": "medsea_omi_tempsal_sst_trend"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://mdl1.marine.copernicus.eu/derived/MEDSEA_OMI_TEMPSAL_sst_trend/medsea_omi_tempsal_sst_trend_202211/medsea_omi_tempsal_sst_trend_2021_R19932014_P20220606.nc",
+      "type": "MYO:MOTU-DGF",
+      "title": "medsea_omi_tempsal_sst_trend"
+    }
+  ],
+  "title": "Mediterranean Sea Surface Temperature cumulative trend map from Observations Reprocessing",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          5.56,
+          30.13,
+          36.33,
+          46.03
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1993-01-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

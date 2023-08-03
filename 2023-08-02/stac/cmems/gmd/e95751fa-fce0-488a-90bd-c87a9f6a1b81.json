@@ -1,0 +1,64 @@
+{
+  "type": "Collection",
+  "id": "e95751fa-fce0-488a-90bd-c87a9f6a1b81",
+  "stac_version": "1.0.0",
+  "description": "'''Short description:''' \n\nThe CMEMS Reprocessed (REP) Black Sea (BS) dataset provides a stable and consistent long-term Sea Surface Temperature (SST) time series over the Black Sea developed for climate applications. This product consists of daily (nighttime), merged multi-sensor (L3S), satellite-based estimates of the foundation SST (namely, the temperature free, or nearly-free, of any diurnal cycle) at 0.05° resolution grid covering the period from January 1st 1982 to present (currently, up to six months before real time). The BS-REP-L3S product is built from a consistent reprocessing of the collated level-3 (merged single-sensor, L3C) climate data record provided by the ESA Climate Change Initiative (CCI) and the Copernicus Climate Change Service (C3S) initiatives, but also includes in input an adjusted version of the AVHRR Pathfinder dataset version 5.3 to increase the input observation coverage.\n\n'''DOI (product) :'''   \nhttps://doi.org/10.48670/moi-00313",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&service=SST_BS_PHY_L3S_MY_010_041-TDS&product=cmems_obs-sst_bs_phy_my_l3s_P1D-m",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_obs-sst_bs_phy_my_l3s_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/dodsC/cmems_obs-sst_bs_phy_my_l3s_P1D-m",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_obs-sst_bs_phy_my_l3s_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://my.cmems-du.eu/Core/SST_BS_PHY_L3S_MY_010_041/cmems_obs-sst_bs_phy_my_l3s_P1D-m",
+      "type": "WWW:FTP",
+      "title": "cmems_obs-sst_bs_phy_my_l3s_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/wms/cmems_obs-sst_bs_phy_my_l3s_P1D-m",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_obs-sst_bs_phy_my_l3s_P1D-m"
+    }
+  ],
+  "title": "Black Sea - High Resolution L3S Sea Surface Temperature Reprocessed",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          26.37,
+          38.75,
+          42.38,
+          48.82
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1981-08-25T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

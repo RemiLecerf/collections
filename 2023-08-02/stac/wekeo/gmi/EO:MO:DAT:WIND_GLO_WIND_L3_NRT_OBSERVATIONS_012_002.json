@@ -1,0 +1,904 @@
+{
+  "type": "Collection",
+  "id": "EO:MO:DAT:WIND_GLO_WIND_L3_NRT_OBSERVATIONS_012_002",
+  "stac_version": "1.0.0",
+  "description": "'''Short description:'''\n\nFor the Global Ocean - The product contains daily L3 gridded sea surface wind observations from available scatterometers with resolutions corresponding to the L2 swath products:\n\n*0.5 degrees grid for the 50 km scatterometer L2 inputs,\n*0.25 degrees grid based on 25 km scatterometer swath observations,\n*and 0.125 degrees based on 12.5 km scatterometer swath observations, i.e., from the coastal products.\n\nData from ascending and descending passes are gridded separately.\nThe reported wind is stress-equivalent wind and wind stress. Moreover, wind stress curl and divergence are also available. The NRT L3 products follow the NRT availability of the EUMETSAT OSI SAF L2 products and are available for:\n*The ASCAT scatterometers on Metop-A (discontinued on 15/11/2021), Metop-B and Metop-C at 0.125 and 0.25 degrees;\n*The OSCAT scatterometer on Scatsat-1 at 0.25 and 0.5 degrees (discontinued on 28/2/2021); \n*The HSCAT scatterometer on HY-2B, HY-2C and HY-2D at 0.25 and 0.5 degrees\n\n'''DOI (product) :'''   \nhttps://doi.org/10.48670/moi-00182",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=WIND_GLO_WIND_L3_NRT_OBSERVATIONS_012_002-TDS&product=KNMI-GLO-WIND_L3-OBS_HY-2D_HSCAT_25_DES_V2",
+      "type": "MYO:MOTU-SUB",
+      "title": "KNMI-GLO-WIND_L3-OBS_HY-2D_HSCAT_25_DES_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/WIND_GLO_WIND_L3_NRT_OBSERVATIONS_012_002/KNMI-GLO-WIND_L3-OBS_SCATSAT-1_OSCAT_50_ASC_V2",
+      "type": "WWW:FTP",
+      "title": "KNMI-GLO-WIND_L3-OBS_SCATSAT-1_OSCAT_50_ASC_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/KNMI-GLO-WIND_L3-OBS_METOP-A_ASCAT_12_DES_V2",
+      "type": "WWW:OPENDAP",
+      "title": "KNMI-GLO-WIND_L3-OBS_METOP-A_ASCAT_12_DES_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/KNMI-GLO-WIND_L3-OBS_METOP-B_ASCAT_12_ASC_V2",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "KNMI-GLO-WIND_L3-OBS_METOP-B_ASCAT_12_ASC_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/WIND_GLO_WIND_L3_NRT_OBSERVATIONS_012_002/KNMI-GLO-WIND_L3-OBS_HY-2D_HSCAT_50_ASC_V2",
+      "type": "WWW:FTP",
+      "title": "KNMI-GLO-WIND_L3-OBS_HY-2D_HSCAT_50_ASC_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/WIND_GLO_WIND_L3_NRT_OBSERVATIONS_012_002/KNMI-GLO-WIND_L3-OBS_METOP-A_ASCAT_12_DES_V2",
+      "type": "WWW:FTP",
+      "title": "KNMI-GLO-WIND_L3-OBS_METOP-A_ASCAT_12_DES_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/KNMI-GLO-WIND_L3-OBS_METOP-A_ASCAT_25_DES_V2",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "KNMI-GLO-WIND_L3-OBS_METOP-A_ASCAT_25_DES_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/KNMI-GLO-WIND_L3-OBS_SCATSAT-1_OSCAT_25_DES_V2",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "KNMI-GLO-WIND_L3-OBS_SCATSAT-1_OSCAT_25_DES_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/WIND_GLO_WIND_L3_NRT_OBSERVATIONS_012_002/KNMI-GLO-WIND_L3-OBS_HY-2B_HSCAT_50_ASC_V2",
+      "type": "WWW:FTP",
+      "title": "KNMI-GLO-WIND_L3-OBS_HY-2B_HSCAT_50_ASC_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/KNMI-GLO-WIND_L3-OBS_HY-2B_HSCAT_50_ASC_V2",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "KNMI-GLO-WIND_L3-OBS_HY-2B_HSCAT_50_ASC_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/WIND_GLO_WIND_L3_NRT_OBSERVATIONS_012_002/KNMI-GLO-WIND_L3-OBS_METOP-B_ASCAT_25_ASC_V2",
+      "type": "WWW:FTP",
+      "title": "KNMI-GLO-WIND_L3-OBS_METOP-B_ASCAT_25_ASC_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=WIND_GLO_WIND_L3_NRT_OBSERVATIONS_012_002-TDS&product=KNMI-GLO-WIND_L3-OBS_METOP-A_ASCAT_25_ASC_V2",
+      "type": "MYO:MOTU-SUB",
+      "title": "KNMI-GLO-WIND_L3-OBS_METOP-A_ASCAT_25_ASC_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/KNMI-GLO-WIND_L3-OBS_HY-2D_HSCAT_25_DES_V2",
+      "type": "WWW:OPENDAP",
+      "title": "KNMI-GLO-WIND_L3-OBS_HY-2D_HSCAT_25_DES_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/KNMI-GLO-WIND_L3-OBS_HY-2B_HSCAT_25_DES_V2",
+      "type": "WWW:OPENDAP",
+      "title": "KNMI-GLO-WIND_L3-OBS_HY-2B_HSCAT_25_DES_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/WIND_GLO_WIND_L3_NRT_OBSERVATIONS_012_002/KNMI-GLO-WIND_L3-OBS_HY-2C_HSCAT_50_DES_V2",
+      "type": "WWW:FTP",
+      "title": "KNMI-GLO-WIND_L3-OBS_HY-2C_HSCAT_50_DES_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/WIND_GLO_WIND_L3_NRT_OBSERVATIONS_012_002/KNMI-GLO-WIND_L3-OBS_HY-2C_HSCAT_25_ASC_V2",
+      "type": "WWW:FTP",
+      "title": "KNMI-GLO-WIND_L3-OBS_HY-2C_HSCAT_25_ASC_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/KNMI-GLO-WIND_L3-OBS_HY-2C_HSCAT_25_DES_V2",
+      "type": "WWW:OPENDAP",
+      "title": "KNMI-GLO-WIND_L3-OBS_HY-2C_HSCAT_25_DES_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/KNMI-GLO-WIND_L3-OBS_METOP-B_ASCAT_12_ASC_V2",
+      "type": "WWW:OPENDAP",
+      "title": "KNMI-GLO-WIND_L3-OBS_METOP-B_ASCAT_12_ASC_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/KNMI-GLO-WIND_L3-OBS_HY-2C_HSCAT_50_DES_V2",
+      "type": "WWW:OPENDAP",
+      "title": "KNMI-GLO-WIND_L3-OBS_HY-2C_HSCAT_50_DES_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=WIND_GLO_WIND_L3_NRT_OBSERVATIONS_012_002-TDS&product=KNMI-GLO-WIND_L3-OBS_HY-2B_HSCAT_25_ASC_V2",
+      "type": "MYO:MOTU-SUB",
+      "title": "KNMI-GLO-WIND_L3-OBS_HY-2B_HSCAT_25_ASC_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=WIND_GLO_WIND_L3_NRT_OBSERVATIONS_012_002-TDS&product=KNMI-GLO-WIND_L3-OBS_HY-2B_HSCAT_50_ASC_V2",
+      "type": "MYO:MOTU-SUB",
+      "title": "KNMI-GLO-WIND_L3-OBS_HY-2B_HSCAT_50_ASC_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/KNMI-GLO-WIND_L3-OBS_SCATSAT-1_OSCAT_25_ASC_V2",
+      "type": "WWW:OPENDAP",
+      "title": "KNMI-GLO-WIND_L3-OBS_SCATSAT-1_OSCAT_25_ASC_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/KNMI-GLO-WIND_L3-OBS_HY-2D_HSCAT_25_DES_V2",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "KNMI-GLO-WIND_L3-OBS_HY-2D_HSCAT_25_DES_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/WIND_GLO_WIND_L3_NRT_OBSERVATIONS_012_002/KNMI-GLO-WIND_L3-OBS_HY-2B_HSCAT_25_DES_V2",
+      "type": "WWW:FTP",
+      "title": "KNMI-GLO-WIND_L3-OBS_HY-2B_HSCAT_25_DES_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/KNMI-GLO-WIND_L3-OBS_METOP-B_ASCAT_25_DES_V2",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "KNMI-GLO-WIND_L3-OBS_METOP-B_ASCAT_25_DES_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/WIND_GLO_WIND_L3_NRT_OBSERVATIONS_012_002/KNMI-GLO-WIND_L3-OBS_METOP-B_ASCAT_12_DES_V2",
+      "type": "WWW:FTP",
+      "title": "KNMI-GLO-WIND_L3-OBS_METOP-B_ASCAT_12_DES_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/KNMI-GLO-WIND_L3-OBS_HY-2C_HSCAT_25_DES_V2",
+      "type": "WWW:OPENDAP",
+      "title": "KNMI-GLO-WIND_L3-OBS_HY-2C_HSCAT_25_DES_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=WIND_GLO_WIND_L3_NRT_OBSERVATIONS_012_002-TDS&product=KNMI-GLO-WIND_L3-OBS_SCATSAT-1_OSCAT_25_DES_V2",
+      "type": "MYO:MOTU-SUB",
+      "title": "KNMI-GLO-WIND_L3-OBS_SCATSAT-1_OSCAT_25_DES_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=WIND_GLO_WIND_L3_NRT_OBSERVATIONS_012_002-TDS&product=KNMI-GLO-WIND_L3-OBS_HY-2B_HSCAT_50_ASC_V2",
+      "type": "MYO:MOTU-SUB",
+      "title": "KNMI-GLO-WIND_L3-OBS_HY-2B_HSCAT_50_ASC_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/KNMI-GLO-WIND_L3-OBS_SCATSAT-1_OSCAT_50_DES_V2",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "KNMI-GLO-WIND_L3-OBS_SCATSAT-1_OSCAT_50_DES_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/KNMI-GLO-WIND_L3-OBS_METOP-C_ASCAT_12_DES_V2",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "KNMI-GLO-WIND_L3-OBS_METOP-C_ASCAT_12_DES_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/WIND_GLO_WIND_L3_NRT_OBSERVATIONS_012_002/KNMI-GLO-WIND_L3-OBS_HY-2D_HSCAT_25_ASC_V2",
+      "type": "WWW:FTP",
+      "title": "KNMI-GLO-WIND_L3-OBS_HY-2D_HSCAT_25_ASC_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=WIND_GLO_WIND_L3_NRT_OBSERVATIONS_012_002-TDS&product=KNMI-GLO-WIND_L3-OBS_SCATSAT-1_OSCAT_25_ASC_V2",
+      "type": "MYO:MOTU-SUB",
+      "title": "KNMI-GLO-WIND_L3-OBS_SCATSAT-1_OSCAT_25_ASC_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=WIND_GLO_WIND_L3_NRT_OBSERVATIONS_012_002-TDS&product=KNMI-GLO-WIND_L3-OBS_METOP-C_ASCAT_12_ASC_V2",
+      "type": "MYO:MOTU-SUB",
+      "title": "KNMI-GLO-WIND_L3-OBS_METOP-C_ASCAT_12_ASC_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=WIND_GLO_WIND_L3_NRT_OBSERVATIONS_012_002-TDS&product=KNMI-GLO-WIND_L3-OBS_SCATSAT-1_OSCAT_50_DES_V2",
+      "type": "MYO:MOTU-SUB",
+      "title": "KNMI-GLO-WIND_L3-OBS_SCATSAT-1_OSCAT_50_DES_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/WIND_GLO_WIND_L3_NRT_OBSERVATIONS_012_002/KNMI-GLO-WIND_L3-OBS_METOP-B_ASCAT_12_ASC_V2",
+      "type": "WWW:FTP",
+      "title": "KNMI-GLO-WIND_L3-OBS_METOP-B_ASCAT_12_ASC_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=WIND_GLO_WIND_L3_NRT_OBSERVATIONS_012_002-TDS&product=KNMI-GLO-WIND_L3-OBS_METOP-B_ASCAT_25_DES_V2",
+      "type": "MYO:MOTU-SUB",
+      "title": "KNMI-GLO-WIND_L3-OBS_METOP-B_ASCAT_25_DES_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/KNMI-GLO-WIND_L3-OBS_HY-2C_HSCAT_25_DES_V2",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "KNMI-GLO-WIND_L3-OBS_HY-2C_HSCAT_25_DES_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/KNMI-GLO-WIND_L3-OBS_METOP-A_ASCAT_25_ASC_V2",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "KNMI-GLO-WIND_L3-OBS_METOP-A_ASCAT_25_ASC_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/KNMI-GLO-WIND_L3-OBS_SCATSAT-1_OSCAT_50_ASC_V2",
+      "type": "WWW:OPENDAP",
+      "title": "KNMI-GLO-WIND_L3-OBS_SCATSAT-1_OSCAT_50_ASC_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/WIND_GLO_WIND_L3_NRT_OBSERVATIONS_012_002/KNMI-GLO-WIND_L3-OBS_METOP-C_ASCAT_25_DES_V2",
+      "type": "WWW:FTP",
+      "title": "KNMI-GLO-WIND_L3-OBS_METOP-C_ASCAT_25_DES_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=WIND_GLO_WIND_L3_NRT_OBSERVATIONS_012_002-TDS&product=KNMI-GLO-WIND_L3-OBS_HY-2C_HSCAT_50_ASC_V2",
+      "type": "MYO:MOTU-SUB",
+      "title": "KNMI-GLO-WIND_L3-OBS_HY-2C_HSCAT_50_ASC_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/KNMI-GLO-WIND_L3-OBS_METOP-B_ASCAT_12_DES_V2",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "KNMI-GLO-WIND_L3-OBS_METOP-B_ASCAT_12_DES_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/WIND_GLO_WIND_L3_NRT_OBSERVATIONS_012_002/KNMI-GLO-WIND_L3-OBS_SCATSAT-1_OSCAT_25_ASC_V2",
+      "type": "WWW:FTP",
+      "title": "KNMI-GLO-WIND_L3-OBS_SCATSAT-1_OSCAT_25_ASC_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/KNMI-GLO-WIND_L3-OBS_HY-2D_HSCAT_50_DES_V2",
+      "type": "WWW:OPENDAP",
+      "title": "KNMI-GLO-WIND_L3-OBS_HY-2D_HSCAT_50_DES_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/WIND_GLO_WIND_L3_NRT_OBSERVATIONS_012_002/KNMI-GLO-WIND_L3-OBS_HY-2B_HSCAT_25_ASC_V2",
+      "type": "WWW:FTP",
+      "title": "KNMI-GLO-WIND_L3-OBS_HY-2B_HSCAT_25_ASC_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/WIND_GLO_WIND_L3_NRT_OBSERVATIONS_012_002/KNMI-GLO-WIND_L3-OBS_HY-2B_HSCAT_25_ASC_V2",
+      "type": "WWW:FTP",
+      "title": "KNMI-GLO-WIND_L3-OBS_HY-2B_HSCAT_25_ASC_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/KNMI-GLO-WIND_L3-OBS_METOP-B_ASCAT_12_ASC_V2",
+      "type": "WWW:OPENDAP",
+      "title": "KNMI-GLO-WIND_L3-OBS_METOP-B_ASCAT_12_ASC_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/KNMI-GLO-WIND_L3-OBS_HY-2D_HSCAT_50_ASC_V2",
+      "type": "WWW:OPENDAP",
+      "title": "KNMI-GLO-WIND_L3-OBS_HY-2D_HSCAT_50_ASC_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/WIND_GLO_WIND_L3_NRT_OBSERVATIONS_012_002/KNMI-GLO-WIND_L3-OBS_HY-2D_HSCAT_50_DES_V2",
+      "type": "WWW:FTP",
+      "title": "KNMI-GLO-WIND_L3-OBS_HY-2D_HSCAT_50_DES_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/WIND_GLO_WIND_L3_NRT_OBSERVATIONS_012_002/KNMI-GLO-WIND_L3-OBS_HY-2B_HSCAT_25_DES_V2",
+      "type": "WWW:FTP",
+      "title": "KNMI-GLO-WIND_L3-OBS_HY-2B_HSCAT_25_DES_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=WIND_GLO_WIND_L3_NRT_OBSERVATIONS_012_002-TDS&product=KNMI-GLO-WIND_L3-OBS_HY-2D_HSCAT_25_ASC_V2",
+      "type": "MYO:MOTU-SUB",
+      "title": "KNMI-GLO-WIND_L3-OBS_HY-2D_HSCAT_25_ASC_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/WIND_GLO_WIND_L3_NRT_OBSERVATIONS_012_002/KNMI-GLO-WIND_L3-OBS_HY-2B_HSCAT_25_ASC_V2",
+      "type": "WWW:FTP",
+      "title": "KNMI-GLO-WIND_L3-OBS_HY-2B_HSCAT_25_ASC_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/KNMI-GLO-WIND_L3-OBS_HY-2D_HSCAT_50_DES_V2",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "KNMI-GLO-WIND_L3-OBS_HY-2D_HSCAT_50_DES_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=WIND_GLO_WIND_L3_NRT_OBSERVATIONS_012_002-TDS&product=KNMI-GLO-WIND_L3-OBS_METOP-C_ASCAT_12_DES_V2",
+      "type": "MYO:MOTU-SUB",
+      "title": "KNMI-GLO-WIND_L3-OBS_METOP-C_ASCAT_12_DES_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/KNMI-GLO-WIND_L3-OBS_HY-2D_HSCAT_50_DES_V2",
+      "type": "WWW:OPENDAP",
+      "title": "KNMI-GLO-WIND_L3-OBS_HY-2D_HSCAT_50_DES_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=WIND_GLO_WIND_L3_NRT_OBSERVATIONS_012_002-TDS&product=KNMI-GLO-WIND_L3-OBS_HY-2D_HSCAT_50_ASC_V2",
+      "type": "MYO:MOTU-SUB",
+      "title": "KNMI-GLO-WIND_L3-OBS_HY-2D_HSCAT_50_ASC_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/KNMI-GLO-WIND_L3-OBS_HY-2C_HSCAT_25_ASC_V2",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "KNMI-GLO-WIND_L3-OBS_HY-2C_HSCAT_25_ASC_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/WIND_GLO_WIND_L3_NRT_OBSERVATIONS_012_002/KNMI-GLO-WIND_L3-OBS_METOP-A_ASCAT_12_ASC_V2",
+      "type": "WWW:FTP",
+      "title": "KNMI-GLO-WIND_L3-OBS_METOP-A_ASCAT_12_ASC_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/WIND_GLO_WIND_L3_NRT_OBSERVATIONS_012_002/KNMI-GLO-WIND_L3-OBS_SCATSAT-1_OSCAT_50_DES_V2",
+      "type": "WWW:FTP",
+      "title": "KNMI-GLO-WIND_L3-OBS_SCATSAT-1_OSCAT_50_DES_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/KNMI-GLO-WIND_L3-OBS_METOP-C_ASCAT_12_ASC_V2",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "KNMI-GLO-WIND_L3-OBS_METOP-C_ASCAT_12_ASC_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/KNMI-GLO-WIND_L3-OBS_METOP-C_ASCAT_25_DES_V2",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "KNMI-GLO-WIND_L3-OBS_METOP-C_ASCAT_25_DES_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/WIND_GLO_WIND_L3_NRT_OBSERVATIONS_012_002/KNMI-GLO-WIND_L3-OBS_HY-2C_HSCAT_25_DES_V2",
+      "type": "WWW:FTP",
+      "title": "KNMI-GLO-WIND_L3-OBS_HY-2C_HSCAT_25_DES_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/WIND_GLO_WIND_L3_NRT_OBSERVATIONS_012_002/KNMI-GLO-WIND_L3-OBS_METOP-C_ASCAT_12_ASC_V2",
+      "type": "WWW:FTP",
+      "title": "KNMI-GLO-WIND_L3-OBS_METOP-C_ASCAT_12_ASC_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/KNMI-GLO-WIND_L3-OBS_METOP-B_ASCAT_25_DES_V2",
+      "type": "WWW:OPENDAP",
+      "title": "KNMI-GLO-WIND_L3-OBS_METOP-B_ASCAT_25_DES_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/WIND_GLO_WIND_L3_NRT_OBSERVATIONS_012_002/KNMI-GLO-WIND_L3-OBS_HY-2D_HSCAT_25_DES_V2",
+      "type": "WWW:FTP",
+      "title": "KNMI-GLO-WIND_L3-OBS_HY-2D_HSCAT_25_DES_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=WIND_GLO_WIND_L3_NRT_OBSERVATIONS_012_002-TDS&product=KNMI-GLO-WIND_L3-OBS_METOP-A_ASCAT_12_DES_V2",
+      "type": "MYO:MOTU-SUB",
+      "title": "KNMI-GLO-WIND_L3-OBS_METOP-A_ASCAT_12_DES_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=WIND_GLO_WIND_L3_NRT_OBSERVATIONS_012_002-TDS&product=KNMI-GLO-WIND_L3-OBS_SCATSAT-1_OSCAT_50_ASC_V2",
+      "type": "MYO:MOTU-SUB",
+      "title": "KNMI-GLO-WIND_L3-OBS_SCATSAT-1_OSCAT_50_ASC_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/KNMI-GLO-WIND_L3-OBS_METOP-B_ASCAT_25_ASC_V2",
+      "type": "WWW:OPENDAP",
+      "title": "KNMI-GLO-WIND_L3-OBS_METOP-B_ASCAT_25_ASC_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/KNMI-GLO-WIND_L3-OBS_HY-2D_HSCAT_25_ASC_V2",
+      "type": "WWW:OPENDAP",
+      "title": "KNMI-GLO-WIND_L3-OBS_HY-2D_HSCAT_25_ASC_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=WIND_GLO_WIND_L3_NRT_OBSERVATIONS_012_002-TDS&product=KNMI-GLO-WIND_L3-OBS_METOP-A_ASCAT_25_DES_V2",
+      "type": "MYO:MOTU-SUB",
+      "title": "KNMI-GLO-WIND_L3-OBS_METOP-A_ASCAT_25_DES_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/KNMI-GLO-WIND_L3-OBS_HY-2C_HSCAT_50_DES_V2",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "KNMI-GLO-WIND_L3-OBS_HY-2C_HSCAT_50_DES_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=WIND_GLO_WIND_L3_NRT_OBSERVATIONS_012_002-TDS&product=KNMI-GLO-WIND_L3-OBS_HY-2B_HSCAT_50_DES_V2",
+      "type": "MYO:MOTU-SUB",
+      "title": "KNMI-GLO-WIND_L3-OBS_HY-2B_HSCAT_50_DES_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=WIND_GLO_WIND_L3_NRT_OBSERVATIONS_012_002-TDS&product=KNMI-GLO-WIND_L3-OBS_HY-2D_HSCAT_50_DES_V2",
+      "type": "MYO:MOTU-SUB",
+      "title": "KNMI-GLO-WIND_L3-OBS_HY-2D_HSCAT_50_DES_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=WIND_GLO_WIND_L3_NRT_OBSERVATIONS_012_002-TDS&product=KNMI-GLO-WIND_L3-OBS_HY-2C_HSCAT_25_DES_V2",
+      "type": "MYO:MOTU-SUB",
+      "title": "KNMI-GLO-WIND_L3-OBS_HY-2C_HSCAT_25_DES_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/KNMI-GLO-WIND_L3-OBS_HY-2B_HSCAT_25_DES_V2",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "KNMI-GLO-WIND_L3-OBS_HY-2B_HSCAT_25_DES_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/WIND_GLO_WIND_L3_NRT_OBSERVATIONS_012_002/KNMI-GLO-WIND_L3-OBS_METOP-C_ASCAT_12_DES_V2",
+      "type": "WWW:FTP",
+      "title": "KNMI-GLO-WIND_L3-OBS_METOP-C_ASCAT_12_DES_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/KNMI-GLO-WIND_L3-OBS_METOP-A_ASCAT_25_ASC_V2",
+      "type": "WWW:OPENDAP",
+      "title": "KNMI-GLO-WIND_L3-OBS_METOP-A_ASCAT_25_ASC_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/KNMI-GLO-WIND_L3-OBS_SCATSAT-1_OSCAT_25_DES_V2",
+      "type": "WWW:OPENDAP",
+      "title": "KNMI-GLO-WIND_L3-OBS_SCATSAT-1_OSCAT_25_DES_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/KNMI-GLO-WIND_L3-OBS_HY-2D_HSCAT_50_ASC_V2",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "KNMI-GLO-WIND_L3-OBS_HY-2D_HSCAT_50_ASC_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/KNMI-GLO-WIND_L3-OBS_HY-2C_HSCAT_50_ASC_V2",
+      "type": "WWW:OPENDAP",
+      "title": "KNMI-GLO-WIND_L3-OBS_HY-2C_HSCAT_50_ASC_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/WIND_GLO_WIND_L3_NRT_OBSERVATIONS_012_002/KNMI-GLO-WIND_L3-OBS_HY-2B_HSCAT_50_DES_V2",
+      "type": "WWW:FTP",
+      "title": "KNMI-GLO-WIND_L3-OBS_HY-2B_HSCAT_50_DES_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/KNMI-GLO-WIND_L3-OBS_HY-2D_HSCAT_25_ASC_V2",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "KNMI-GLO-WIND_L3-OBS_HY-2D_HSCAT_25_ASC_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/KNMI-GLO-WIND_L3-OBS_SCATSAT-1_OSCAT_50_DES_V2",
+      "type": "WWW:OPENDAP",
+      "title": "KNMI-GLO-WIND_L3-OBS_SCATSAT-1_OSCAT_50_DES_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/KNMI-GLO-WIND_L3-OBS_METOP-B_ASCAT_12_DES_V2",
+      "type": "WWW:OPENDAP",
+      "title": "KNMI-GLO-WIND_L3-OBS_METOP-B_ASCAT_12_DES_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/KNMI-GLO-WIND_L3-OBS_METOP-A_ASCAT_12_ASC_V2",
+      "type": "WWW:OPENDAP",
+      "title": "KNMI-GLO-WIND_L3-OBS_METOP-A_ASCAT_12_ASC_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/KNMI-GLO-WIND_L3-OBS_METOP-B_ASCAT_25_ASC_V2",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "KNMI-GLO-WIND_L3-OBS_METOP-B_ASCAT_25_ASC_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/KNMI-GLO-WIND_L3-OBS_SCATSAT-1_OSCAT_50_ASC_V2",
+      "type": "WWW:OPENDAP",
+      "title": "KNMI-GLO-WIND_L3-OBS_SCATSAT-1_OSCAT_50_ASC_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=WIND_GLO_WIND_L3_NRT_OBSERVATIONS_012_002-TDS&product=KNMI-GLO-WIND_L3-OBS_METOP-C_ASCAT_25_DES_V2",
+      "type": "MYO:MOTU-SUB",
+      "title": "KNMI-GLO-WIND_L3-OBS_METOP-C_ASCAT_25_DES_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/KNMI-GLO-WIND_L3-OBS_HY-2C_HSCAT_50_ASC_V2",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "KNMI-GLO-WIND_L3-OBS_HY-2C_HSCAT_50_ASC_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/WIND_GLO_WIND_L3_NRT_OBSERVATIONS_012_002/KNMI-GLO-WIND_L3-OBS_SCATSAT-1_OSCAT_50_DES_V2",
+      "type": "WWW:FTP",
+      "title": "KNMI-GLO-WIND_L3-OBS_SCATSAT-1_OSCAT_50_DES_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/KNMI-GLO-WIND_L3-OBS_METOP-A_ASCAT_25_DES_V2",
+      "type": "WWW:OPENDAP",
+      "title": "KNMI-GLO-WIND_L3-OBS_METOP-A_ASCAT_25_DES_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/KNMI-GLO-WIND_L3-OBS_METOP-B_ASCAT_25_ASC_V2",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "KNMI-GLO-WIND_L3-OBS_METOP-B_ASCAT_25_ASC_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/KNMI-GLO-WIND_L3-OBS_METOP-B_ASCAT_12_DES_V2",
+      "type": "WWW:OPENDAP",
+      "title": "KNMI-GLO-WIND_L3-OBS_METOP-B_ASCAT_12_DES_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/WIND_GLO_WIND_L3_NRT_OBSERVATIONS_012_002/KNMI-GLO-WIND_L3-OBS_SCATSAT-1_OSCAT_25_DES_V2",
+      "type": "WWW:FTP",
+      "title": "KNMI-GLO-WIND_L3-OBS_SCATSAT-1_OSCAT_25_DES_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/KNMI-GLO-WIND_L3-OBS_METOP-C_ASCAT_12_ASC_V2",
+      "type": "WWW:OPENDAP",
+      "title": "KNMI-GLO-WIND_L3-OBS_METOP-C_ASCAT_12_ASC_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=WIND_GLO_WIND_L3_NRT_OBSERVATIONS_012_002-TDS&product=KNMI-GLO-WIND_L3-OBS_METOP-B_ASCAT_12_DES_V2",
+      "type": "MYO:MOTU-SUB",
+      "title": "KNMI-GLO-WIND_L3-OBS_METOP-B_ASCAT_12_DES_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/KNMI-GLO-WIND_L3-OBS_METOP-B_ASCAT_25_DES_V2",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "KNMI-GLO-WIND_L3-OBS_METOP-B_ASCAT_25_DES_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/KNMI-GLO-WIND_L3-OBS_HY-2C_HSCAT_50_ASC_V2",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "KNMI-GLO-WIND_L3-OBS_HY-2C_HSCAT_50_ASC_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/WIND_GLO_WIND_L3_NRT_OBSERVATIONS_012_002/KNMI-GLO-WIND_L3-OBS_HY-2B_HSCAT_25_DES_V2",
+      "type": "WWW:FTP",
+      "title": "KNMI-GLO-WIND_L3-OBS_HY-2B_HSCAT_25_DES_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/KNMI-GLO-WIND_L3-OBS_METOP-A_ASCAT_25_DES_V2",
+      "type": "WWW:OPENDAP",
+      "title": "KNMI-GLO-WIND_L3-OBS_METOP-A_ASCAT_25_DES_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/KNMI-GLO-WIND_L3-OBS_METOP-A_ASCAT_12_DES_V2",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "KNMI-GLO-WIND_L3-OBS_METOP-A_ASCAT_12_DES_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/KNMI-GLO-WIND_L3-OBS_SCATSAT-1_OSCAT_50_ASC_V2",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "KNMI-GLO-WIND_L3-OBS_SCATSAT-1_OSCAT_50_ASC_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/WIND_GLO_WIND_L3_NRT_OBSERVATIONS_012_002/KNMI-GLO-WIND_L3-OBS_METOP-A_ASCAT_25_ASC_V2",
+      "type": "WWW:FTP",
+      "title": "KNMI-GLO-WIND_L3-OBS_METOP-A_ASCAT_25_ASC_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/KNMI-GLO-WIND_L3-OBS_SCATSAT-1_OSCAT_25_ASC_V2",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "KNMI-GLO-WIND_L3-OBS_SCATSAT-1_OSCAT_25_ASC_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/WIND_GLO_WIND_L3_NRT_OBSERVATIONS_012_002/KNMI-GLO-WIND_L3-OBS_METOP-B_ASCAT_25_DES_V2",
+      "type": "WWW:FTP",
+      "title": "KNMI-GLO-WIND_L3-OBS_METOP-B_ASCAT_25_DES_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/KNMI-GLO-WIND_L3-OBS_HY-2C_HSCAT_25_ASC_V2",
+      "type": "WWW:OPENDAP",
+      "title": "KNMI-GLO-WIND_L3-OBS_HY-2C_HSCAT_25_ASC_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/KNMI-GLO-WIND_L3-OBS_METOP-C_ASCAT_12_DES_V2",
+      "type": "WWW:OPENDAP",
+      "title": "KNMI-GLO-WIND_L3-OBS_METOP-C_ASCAT_12_DES_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=WIND_GLO_WIND_L3_NRT_OBSERVATIONS_012_002-TDS&product=KNMI-GLO-WIND_L3-OBS_METOP-B_ASCAT_25_ASC_V2",
+      "type": "MYO:MOTU-SUB",
+      "title": "KNMI-GLO-WIND_L3-OBS_METOP-B_ASCAT_25_ASC_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/WIND_GLO_WIND_L3_NRT_OBSERVATIONS_012_002/KNMI-GLO-WIND_L3-OBS_METOP-C_ASCAT_25_ASC_V2",
+      "type": "WWW:FTP",
+      "title": "KNMI-GLO-WIND_L3-OBS_METOP-C_ASCAT_25_ASC_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/KNMI-GLO-WIND_L3-OBS_HY-2B_HSCAT_50_ASC_V2",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "KNMI-GLO-WIND_L3-OBS_HY-2B_HSCAT_50_ASC_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/KNMI-GLO-WIND_L3-OBS_METOP-A_ASCAT_25_ASC_V2",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "KNMI-GLO-WIND_L3-OBS_METOP-A_ASCAT_25_ASC_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/KNMI-GLO-WIND_L3-OBS_HY-2B_HSCAT_50_DES_V2",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "KNMI-GLO-WIND_L3-OBS_HY-2B_HSCAT_50_DES_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/KNMI-GLO-WIND_L3-OBS_HY-2C_HSCAT_25_ASC_V2",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "KNMI-GLO-WIND_L3-OBS_HY-2C_HSCAT_25_ASC_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/KNMI-GLO-WIND_L3-OBS_METOP-A_ASCAT_12_ASC_V2",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "KNMI-GLO-WIND_L3-OBS_METOP-A_ASCAT_12_ASC_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=WIND_GLO_WIND_L3_NRT_OBSERVATIONS_012_002-TDS&product=KNMI-GLO-WIND_L3-OBS_HY-2B_HSCAT_25_ASC_V2",
+      "type": "MYO:MOTU-SUB",
+      "title": "KNMI-GLO-WIND_L3-OBS_HY-2B_HSCAT_25_ASC_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=WIND_GLO_WIND_L3_NRT_OBSERVATIONS_012_002-TDS&product=KNMI-GLO-WIND_L3-OBS_SCATSAT-1_OSCAT_50_DES_V2",
+      "type": "MYO:MOTU-SUB",
+      "title": "KNMI-GLO-WIND_L3-OBS_SCATSAT-1_OSCAT_50_DES_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/WIND_GLO_WIND_L3_NRT_OBSERVATIONS_012_002/KNMI-GLO-WIND_L3-OBS_HY-2C_HSCAT_50_ASC_V2",
+      "type": "WWW:FTP",
+      "title": "KNMI-GLO-WIND_L3-OBS_HY-2C_HSCAT_50_ASC_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/KNMI-GLO-WIND_L3-OBS_METOP-C_ASCAT_25_ASC_V2",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "KNMI-GLO-WIND_L3-OBS_METOP-C_ASCAT_25_ASC_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/WIND_GLO_WIND_L3_NRT_OBSERVATIONS_012_002/KNMI-GLO-WIND_L3-OBS_METOP-A_ASCAT_25_DES_V2",
+      "type": "WWW:FTP",
+      "title": "KNMI-GLO-WIND_L3-OBS_METOP-A_ASCAT_25_DES_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=WIND_GLO_WIND_L3_NRT_OBSERVATIONS_012_002-TDS&product=KNMI-GLO-WIND_L3-OBS_METOP-B_ASCAT_12_ASC_V2",
+      "type": "MYO:MOTU-SUB",
+      "title": "KNMI-GLO-WIND_L3-OBS_METOP-B_ASCAT_12_ASC_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/WIND_GLO_WIND_L3_NRT_OBSERVATIONS_012_002/KNMI-GLO-WIND_L3-OBS_HY-2D_HSCAT_25_DES_V2",
+      "type": "WWW:FTP",
+      "title": "KNMI-GLO-WIND_L3-OBS_HY-2D_HSCAT_25_DES_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/KNMI-GLO-WIND_L3-OBS_HY-2B_HSCAT_50_ASC_V2",
+      "type": "WWW:OPENDAP",
+      "title": "KNMI-GLO-WIND_L3-OBS_HY-2B_HSCAT_50_ASC_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/WIND_GLO_WIND_L3_NRT_OBSERVATIONS_012_002/KNMI-GLO-WIND_L3-OBS_HY-2B_HSCAT_50_DES_V2",
+      "type": "WWW:FTP",
+      "title": "KNMI-GLO-WIND_L3-OBS_HY-2B_HSCAT_50_DES_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/KNMI-GLO-WIND_L3-OBS_HY-2B_HSCAT_50_DES_V2",
+      "type": "WWW:OPENDAP",
+      "title": "KNMI-GLO-WIND_L3-OBS_HY-2B_HSCAT_50_DES_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/KNMI-GLO-WIND_L3-OBS_HY-2B_HSCAT_50_DES_V2",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "KNMI-GLO-WIND_L3-OBS_HY-2B_HSCAT_50_DES_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/KNMI-GLO-WIND_L3-OBS_METOP-C_ASCAT_25_ASC_V2",
+      "type": "WWW:OPENDAP",
+      "title": "KNMI-GLO-WIND_L3-OBS_METOP-C_ASCAT_25_ASC_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/KNMI-GLO-WIND_L3-OBS_HY-2B_HSCAT_25_ASC_V2",
+      "type": "WWW:OPENDAP",
+      "title": "KNMI-GLO-WIND_L3-OBS_HY-2B_HSCAT_25_ASC_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=WIND_GLO_WIND_L3_NRT_OBSERVATIONS_012_002-TDS&product=KNMI-GLO-WIND_L3-OBS_METOP-C_ASCAT_25_ASC_V2",
+      "type": "MYO:MOTU-SUB",
+      "title": "KNMI-GLO-WIND_L3-OBS_METOP-C_ASCAT_25_ASC_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/KNMI-GLO-WIND_L3-OBS_METOP-A_ASCAT_12_DES_V2",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "KNMI-GLO-WIND_L3-OBS_METOP-A_ASCAT_12_DES_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=WIND_GLO_WIND_L3_NRT_OBSERVATIONS_012_002-TDS&product=KNMI-GLO-WIND_L3-OBS_HY-2B_HSCAT_25_DES_V2",
+      "type": "MYO:MOTU-SUB",
+      "title": "KNMI-GLO-WIND_L3-OBS_HY-2B_HSCAT_25_DES_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/KNMI-GLO-WIND_L3-OBS_METOP-C_ASCAT_12_ASC_V2",
+      "type": "WWW:OPENDAP",
+      "title": "KNMI-GLO-WIND_L3-OBS_METOP-C_ASCAT_12_ASC_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/KNMI-GLO-WIND_L3-OBS_HY-2D_HSCAT_25_DES_V2",
+      "type": "WWW:OPENDAP",
+      "title": "KNMI-GLO-WIND_L3-OBS_HY-2D_HSCAT_25_DES_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=WIND_GLO_WIND_L3_NRT_OBSERVATIONS_012_002-TDS&product=KNMI-GLO-WIND_L3-OBS_HY-2C_HSCAT_25_ASC_V2",
+      "type": "MYO:MOTU-SUB",
+      "title": "KNMI-GLO-WIND_L3-OBS_HY-2C_HSCAT_25_ASC_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/WIND_GLO_WIND_L3_NRT_OBSERVATIONS_012_002/KNMI-GLO-WIND_L3-OBS_HY-2B_HSCAT_50_DES_V2",
+      "type": "WWW:FTP",
+      "title": "KNMI-GLO-WIND_L3-OBS_HY-2B_HSCAT_50_DES_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/KNMI-GLO-WIND_L3-OBS_HY-2B_HSCAT_25_ASC_V2",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "KNMI-GLO-WIND_L3-OBS_HY-2B_HSCAT_25_ASC_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=WIND_GLO_WIND_L3_NRT_OBSERVATIONS_012_002-TDS&product=KNMI-GLO-WIND_L3-OBS_HY-2C_HSCAT_50_DES_V2",
+      "type": "MYO:MOTU-SUB",
+      "title": "KNMI-GLO-WIND_L3-OBS_HY-2C_HSCAT_50_DES_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/KNMI-GLO-WIND_L3-OBS_HY-2B_HSCAT_25_DES_V2",
+      "type": "WWW:OPENDAP",
+      "title": "KNMI-GLO-WIND_L3-OBS_HY-2B_HSCAT_25_DES_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/KNMI-GLO-WIND_L3-OBS_HY-2C_HSCAT_50_DES_V2",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "KNMI-GLO-WIND_L3-OBS_HY-2C_HSCAT_50_DES_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/KNMI-GLO-WIND_L3-OBS_HY-2B_HSCAT_25_ASC_V2",
+      "type": "WWW:OPENDAP",
+      "title": "KNMI-GLO-WIND_L3-OBS_HY-2B_HSCAT_25_ASC_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/KNMI-GLO-WIND_L3-OBS_SCATSAT-1_OSCAT_50_ASC_V2",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "KNMI-GLO-WIND_L3-OBS_SCATSAT-1_OSCAT_50_ASC_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=WIND_GLO_WIND_L3_NRT_OBSERVATIONS_012_002-TDS&product=KNMI-GLO-WIND_L3-OBS_METOP-A_ASCAT_12_ASC_V2",
+      "type": "MYO:MOTU-SUB",
+      "title": "KNMI-GLO-WIND_L3-OBS_METOP-A_ASCAT_12_ASC_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/KNMI-GLO-WIND_L3-OBS_METOP-B_ASCAT_12_ASC_V2",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "KNMI-GLO-WIND_L3-OBS_METOP-B_ASCAT_12_ASC_V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/KNMI-GLO-WIND_L3-OBS_METOP-C_ASCAT_25_DES_V2",
+      "type": "WWW:OPENDAP",
+      "title": "KNMI-GLO-WIND_L3-OBS_METOP-C_ASCAT_25_DES_V2"
+    }
+  ],
+  "title": "Global Ocean Daily Gridded Sea Surface Winds from Scatterometer",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2016-01-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

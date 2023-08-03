@@ -1,0 +1,73 @@
+{
+  "type": "Collection",
+  "id": "eu.copernicus.climate.sis-agrometeorological-indicators",
+  "stac_version": "1.0.0",
+  "description": "This dataset provides daily surface meteorological data for the period from 1979 to present as input for agriculture and agro-ecological studies. This dataset is based on the hourly ECMWF ERA5 data at surface level and is referred to as AgERA5. Acquisition and pre-processing of the original ERA5 data is a complex and specialized job. By providing the AgERA5 dataset, users are freed from this work and can directly start with meaningful input for their analyses and modelling. To this end, the variables provided in this dataset match the input needs of most agriculture and agro-ecological models.\nData were aggregated to daily time steps at the local time zone and corrected towards a finer topography at a 0.1° spatial resolution. The correction to the 0.1° grid was realized by applying grid and variable-specific regression equations to the ERA5 dataset interpolated at 0.1° grid. The equations were trained on ECMWF's operational high-resolution atmospheric model (HRES) at a 0.1° resolution. This way the data is tuned to the finer topography, finer land use pattern and finer land-sea delineation of the ECMWF HRES model.\nThe data was produced on behalf of the Copernicus Climate Change Service.\n\nVariables in the dataset/application are:\n10m wind speed, 2m dewpoint temperature, 2m relative humidity, 2m temperature, Cloud cover, Liquid precipitation duration fraction, Precipitation flux, Snow thickness, Snow thickness LWE, Solar radiation flux, Solid precipitation duration fraction, Vapour pressure",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.6c68c9bb",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Climate Data Store catalogue"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://confluence.ecmwf.int/x/3FmaE",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Product user guide and specification"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://confluence.ecmwf.int/x/yFmaE",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Algorithm theoretical basis documentation"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://confluence.ecmwf.int/x/4lmaE",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Downscaling and bias correction documentation"
+    }
+  ],
+  "title": "Agrometeorological indicators from 1979 to present derived from reanalysis",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          0.0,
+          -90.0,
+          360.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1979-01-01T00:00:00Z",
+          "2023-07-25T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Land cover",
+    "Product type: Reanalysis",
+    "Provider: Copernicus C3S",
+    "Sector: Agriculture",
+    "Spatial coverage: Global",
+    "Temporal coverage: Past",
+    "Variable domain: Land (biosphere)"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

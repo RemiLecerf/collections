@@ -1,0 +1,59 @@
+{
+  "type": "Collection",
+  "id": "eu.copernicus.climate.reanalysis-cerra-pressure-levels",
+  "stac_version": "1.0.0",
+  "description": "The Copernicus European Regional ReAnalysis (CERRA) datasets provide spatially and temporally consistent historical reconstruction of meteorological variables in the atmosphere and at the surface. There are four subsets: single levels (atmospheric and surface quantities), height levels (upper-air fields up to 500m), pressure levels (upper-air fields up to 1hPa) and model levels (native levels of the model). This entry provides reanalysis and forecast data on pressure levels for Europe from 1984 to present. Several atmospheric parameters are common to both reanalysis and forecast (e.g. temperature, wind), whilst others are produced only by the forecast model (e.g. cloud cover).\nReanalysis combines model data with observations into a complete and consistent dataset using the laws of physics. This principle, called data assimilation, is based on the method used by numerical weather prediction centres, where a previous forecast is combined with newly available observations in an optimal way to produce a new best estimate of the state of the atmosphere, called analysis, from which an updated, improved forecast is issued. Reanalysis works in the same way, but at reduced resolution to allow for the provision of a dataset spanning back several decades. Reanalysis does not have the constraint of issuing timely forecasts, so there is more time to collect observations, and when going further back in time, to allow for the ingestion of improved, reprocessed versions of the original observations, which all benefit the quality of the reanalysis product. The CERRA dataset was produced using the HARMONIE-ALADIN limited-area numerical weather prediction and data assimilation system, hereafter referred to as the CERRA system. The CERRA system employs a 3-dimensional variational data assimilation scheme of the atmospheric state at every assimilation time. The reanalysis dataset is convenient owing to its provision of atmospheric estimates at each model domain grid point over Europe for each regular output time, over a long period, and always using the same data format.\nThe inputs to CERRA reanalysis are the observational data, lateral boundary conditions from ERA5 global reanalysis as prior estimates of the atmospheric state and physiographic datasets describing the surface characteristics of the model. The observing system has evolved over time, and although the data assimilation system can resolve data holes, the much sparser observational networks in the past periods (for example a reduced amount of satellite data in the 1980s) can impact the quality of analyses leading to less accurate estimates. The uncertainty estimates for reanalysis variables are provided by the CERRA-EDA, a 10-member ensemble of data assimilation system.\nThe added value of the CERRA data with respect to the global reanalysis products is expected to come, for example, with the higher horizontal resolution that permits the usage of a better description of the model topography and physiographic data, and the assimilation of more surface observations.\nMore information about the CERRA dataset can be found in the Documentation section.\n\nVariables in the dataset/application are:\nCloud cover, Geopotential, Relative humidity, Specific cloud ice water content, Specific cloud liquid water content, Specific rain water content, Specific snow water content, Temperature, Turbulent kinetic energy, U-component of wind, V-component of wind",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.a39ff99f",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Climate Data Store catalogue"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://confluence.ecmwf.int/x/WFQ7E",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "CERRA User Guide."
+    }
+  ],
+  "title": "CERRA sub-daily regional reanalysis data for Europe on pressure levels from 1984 to present",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          17.0,
+          20.0,
+          35.0,
+          65.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1984-08-24T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Atmospheric conditions",
+    "Product type: Reanalysis",
+    "Spatial coverage: Europe",
+    "Temporal coverage: Past",
+    "Variable domain: Atmosphere (upper level)"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

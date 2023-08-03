@@ -1,0 +1,71 @@
+{
+  "type": "Collection",
+  "id": "EO:ECMWF:DAT:SATELLITE_SEA_ICE_THICKNESS",
+  "stac_version": "1.0.0",
+  "description": "This dataset provides monthly gridded data of sea ice thickness for the Arctic region based on satellite radar altimetry observations. Sea ice is an important component of our climate system and a sensitive indicator of climate change. Its presence or its retreat has a strong impact on air-sea interactions, the Earth’s energy budget as well as marine ecosystems. It is recognized by the Global Climate Observing System as an Essential Climate Variable. Sea ice thickness is one of the parameters commonly used to characterise sea ice, alongside sea ice concentration, sea ice edge, and sea ice type, also available in the Climate Data Store.\nSatellite radar altimeters provide measurements of the sea ice freeboard, which is the difference between the height of the surface of sea ice and the surface of water in open leads (areas of open water within the sea ice). Because of the buoyancy of ice in water, typically about 90% of the ice thickness remains under water and thus the total ice thickness is about 10 times the freeboard. However, snow on top of sea ice changes this ratio and complicates the estimation of the ice thickness, requiring the use of auxiliary information about snow depth and density. The retrieval of ice thickness uses the narrow radar swath at the nadir of the satellite at full resolution of approximately 1-10 km and a point spacing of 300 meters. This Level-2 sea-ice thickness products (not provided here) is then gridded for a period of a month to obtain full coverage of a north polar grid at a resolution of 25 km. The algorithm used was developed as part of the European Space Agency Climate Change Initiative (ESA CCI) on Sea Ice.\nThe data provided here are Level-3 Collated (L3C) products: they contain monthly gridded values from orbit data from a single platform (Envisat or CryoSat-2) without interpolation or any other form of gap filling. The files also contain estimates of the algorithm uncertainty as well as a quality status flag indicating potential issues with the retrieval not captured in the algorithm uncertainty. Sources of uncertainty in the algorithm are related to the auxiliary data and to the use of different radar altimeter concepts in Envisat (pulse-limited) and CryoSat-2 (synthetic aperture radar).\nThis dataset combines a Climate Data Record (CDR), which has sufficient length, consistency, and continuity to be used to assess climate variability and change, and an Interim Climate Data Record (ICDR), which provides regular temporal extensions to the CDR and where consistency with the CDR is expected but not extensively checked. Here, the CDR is based on measurements from the RA-2 altimeter on Envisat (October 2002  to October 2010) and the SIRAL altimeter on CryoSat-2 (November 2010 to April 2020). The ICDR is based on observations from CryoSat-2 only (from April 2015 onward) and is updated monthly with a one-month delay behind real time. Users should note that the quality and accuracy of the data record are higher during the CryoSat-2 period than during the Envisat period. As a result, care should be taken when combining the two missions to assess long-term changes and trends. More information can be found in the Product User Guide and Product Quality Assessment Report.\nThis dataset is currently limited spatially to the Arctic region and temporally to the winter months of October through April due to unresolved bias originating from melting snow or open melt ponds in the remaining five months. For a similar reason, no sea-ice thickness data with sufficient quality exist for the Southern Hemisphere. The extension of the CDR/ICDR to other periods, regions, and radar altimeter missions is under development in the extension of the ESA CCI Sea Ice project (ESA CCI+).\nThis dataset is produced on behalf of the Copernicus Climate Change Service (C3S).\n\nVariables in the dataset/application are:\nSea ice thickness\n\nVariables in the dataset/application are:\nQuality flag, Status flag, Uncertainty",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.6679a99a",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Climate Data Store catalogue"
+    },
+    {
+      "rel": "describedby",
+      "href": "#",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "#"
+    },
+    {
+      "rel": "describedby",
+      "href": "#",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "#"
+    },
+    {
+      "rel": "describedby",
+      "href": "#",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "#"
+    }
+  ],
+  "title": "Sea ice thickness monthly gridded data for the Arctic from 2002 to present derived from satellite observations",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -89.0,
+          180.0,
+          89.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1979-01-01T00:00:00Z",
+          "2022-04-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Oceanographic geographical features",
+    "Product type: Satellite observations",
+    "Spatial coverage: Global",
+    "Temporal coverage: Past",
+    "Variable domain: Ocean (physics)"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

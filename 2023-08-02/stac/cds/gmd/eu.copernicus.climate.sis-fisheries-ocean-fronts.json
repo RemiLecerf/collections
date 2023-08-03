@@ -1,0 +1,80 @@
+{
+  "type": "Collection",
+  "id": "eu.copernicus.climate.sis-fisheries-ocean-fronts",
+  "stac_version": "1.0.0",
+  "description": "This dataset provides monthly projections of changes in the spatial and temporal distribution of ocean fronts relative to a recent climatology. Ocean fronts are the interfaces between water masses of differing temperature, density or biological properties, which may be observed at the surface as a sharp change in temperature or colour. Fronts are recognised to enhance productivity and promote the aggregation of commercial pelagic fish species. Many front locations depend upon bathymetry, though future currents and weather have the potential to affect the strength and persistence of these features. Hence this dataset will contribute to studies of the potential for climate change to modify productive fishing zones and related marine conservation measures.\nFronts are automatically detected on daily fields of sea-surface temperature (SST) and chlorophyll-a from ocean circulation models coupled to marine biogeochemical models and satellite observations within the ESA Climate Change Initiative (CCI) SST and Ocean Colour datasets. Daily fronts are combined into monthly metrics of front strength, persistence and distance. The variables are provided as monthly maps indicating changes in front strength, persistence and location, relative to a baseline of climatological monthly maps from observations or historical model runs.\nThe primary data source for this dataset are:\n\n\nNEMO-ERSEM: NEMO ocean model run on the Atlantic Margin Model (7 km) domain for the NW European Shelf coupled with the marine biogeochemical ERSEM model.\n\n\nPOLCOMS-ERSEM: POLCOMS ocean model output for the NW European Shelf and Mediterranean Sea coupled with the marine biogeochemical ERSEM model.\n\n\nESA-CCI: ESA Climate Change Initiative satellite data.\n\n\nThe hydrodynamic biogeochemical models were each driven by a global climate model generated for the Coupled Model Inter-comparison Project Phase 5 (CMIP5) at the open ocean boundaries, in combination with downscaled atmospheric data generated using the Swedish Meteorological and Hydrological Institute (SMHI) Rossby Centre Regional Atmospheric Model (RCA4).\nThis dataset was produced on behalf of the Copernicus Climate Change Service.\n\nVariables in the dataset/application are:\nChange in distance to nearest major front, Change in frontal gradient magnitude, Change in frontal persistence, Distance to nearest major front, Frontal gradient magnitude, Frontal persistence",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.cc930b6e",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Climate Data Store catalogue"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://confluence.ecmwf.int/x/JaLmE",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Product user guide for the ocean fronts dataset"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://confluence.ecmwf.int/x/h6-mE",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "User guide for NEMO-ERSEM and POLCOMS-ERSEM products"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://confluence.ecmwf.int/x/c_-mE",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Technical guide for POLCOMS-ERSEM"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://confluence.ecmwf.int/x/he-mE",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Technical guide for NEMO-ERSEM"
+    }
+  ],
+  "title": "Ocean fronts data for the Northwest European Shelf and Mediterranean Sea from 1991 up to 2100",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -20.0,
+          11.0,
+          37.0,
+          65.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1991-01-01T00:00:00Z",
+          "2099-12-31T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Oceanographic geographical features",
+    "Product type: Climate projections",
+    "Product type: Satellite observations",
+    "Sector: Coastal regions",
+    "Spatial coverage: Europe",
+    "Temporal coverage: Future",
+    "Temporal coverage: Past",
+    "Variable domain: Ocean (physics)"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

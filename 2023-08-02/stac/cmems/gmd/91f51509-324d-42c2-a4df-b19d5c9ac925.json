@@ -1,0 +1,52 @@
+{
+  "type": "Collection",
+  "id": "91f51509-324d-42c2-a4df-b19d5c9ac925",
+  "stac_version": "1.0.0",
+  "description": "'''DEFINITION'''\n\nOcean heat content (OHC) is defined here as the deviation from a reference period (1993-2020) and is closely proportional to the average temperature change from z1 = 0 m to z2 = 2000 m depth. \nWith a reference density of ρ0 = 1030 kgm-3 and a specific heat capacity of cp = 3980 J/kg°C (e.g. von Schuckmann et al., 2009)\nAveraged time series for ocean heat content and their error bars are calculated for the Iberia-Biscay-Ireland region (26°N, 56°N; 19°W, 5°E).\nThis OMI is computed using IBI-MYP, GLO-MYP reanalysis and CORA, ARMOR data from observations which provide temperatures. Where the CMEMS product for each acronym is:\n* IBI-MYP: IBI_MULTIYEAR_PHY_005_002 (Reanalysis)\n* GLO-MYP: GLOBAL_REANALYSIS_PHY_001_031 (Reanalysis)\n* CORA: INSITU_GLO_TS_OA_REP_OBSERVATIONS_013_002_b (Observations)\n* ARMOR: MULTIOBS_GLO_PHY_TSUV_3D_MYNRT_015_012 (Reprocessed observations)\nThe figure comprises ensemble mean (blue line) and the ensemble spread (grey shaded). Details on the product are given in the corresponding PUM for this OMI as well as the CMEMS Ocean State Report: von Schuckmann et al., 2016; von Schuckmann et al., 2018.\n\n'''CONTEXT'''\n\nChange in OHC is a key player in ocean-atmosphere interactions and sea level change (WCRP, 2018) and can impact marine ecosystems and human livelihoods (IPCC, 2019). Additionally, OHC is one of the six Global Climate Indicators recommended by the World Meterological Organisation (WMO, 2017). \nIn the last decades, the upper North Atlantic Ocean experienced a reversal of climatic trends for temperature and salinity. While the period 1990-2004 is characterized by decadal-scale ocean warming, the period 2005-2014 shows a substantial cooling and freshening. Such variations are discussed to be linked to ocean internal dynamics, and air-sea interactions (Fox-Kemper et al., 2021; Collins et al., 2019; Robson et al 2016). Together with changes linked to the connectivity between the North Atlantic Ocean and the Mediterranean Sea (Masina et al., 2022), these variations affect the temporal evolution of regional ocean heat content in the IBI region.\n\n'''CMEMS KEY FINDINGS'''\n\nThe ensemble mean OHC anomaly time series over the Iberia-Biscay-Ireland region are dominated by strong year-to-year variations, and an ocean warming trend of 0.49±0.4 W/m2 is barely significant.\n\n'''DOI (product):''' \nhttps://doi.org/10.48670/mds-00316",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "ftp://my.cmems-du.eu/Core/OMI_CLIMATE_OHC_IBI_area_averaged_anomalies/omi_climate_ohc_ibi_area_averaged_anomalies",
+      "type": "WWW:FTP",
+      "title": "omi_climate_ohc_ibi_area_averaged_anomalies"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://mdl1.marine.copernicus.eu/derived/OMI_CLIMATE_OHC_IBI_area_averaged_anomalies/omi_climate_ohc_ibi_area_averaged_anomalies_202303/OMI_CLIMATE_OHC_IBI_area_averaged_anomalies_19930630_P20221201.nc",
+      "type": "MYO:MOTU-DGF",
+      "title": "omi_climate_ohc_ibi_area_averaged_anomalies"
+    }
+  ],
+  "title": "Iberia Biscay Ireland Ocean Heat Content Anomaly (0-2000m) time series and trend from Reanalysis & Multi-Observations Reprocessing",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -19.0,
+          26.0,
+          5.0,
+          56.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1993-01-01T00:00:00Z",
+          "2020-12-31T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

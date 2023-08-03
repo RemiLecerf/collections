@@ -1,0 +1,80 @@
+{
+  "type": "Collection",
+  "id": "eu.copernicus.climate.reanalysis-era5-complete",
+  "stac_version": "1.0.0",
+  "description": "ERA5 is the fifth generation ECMWF atmospheric reanalysis of the global climate covering the period from January 1940 to present1. It is produced by the Copernicus Climate Change Service (C3S) at ECMWF and provides hourly estimates of a large number of atmospheric, land and oceanic climate variables. The data cover the Earth on a 31km grid and resolve the atmosphere using 137 levels from the surface up to a height of 80km. ERA5 includes an ensemble component at half the resolution to provide information on synoptic uncertainty of its products.\nERA5.1 is a dedicated product with the same horizontal and vertical resolution that was produced for the years 2000 to 2006 inclusive to significantly improve a discontinuity in global-mean temperature in the stratosphere and uppermost troposphere that ERA5 suffers from during that period. Users that are interested in this part of the atmosphere in this era are advised to access ERA5.1 rather than ERA5.\nERA5 and ERA5.1 use a state-of-the-art numerical weather prediction model to assimilate a variety of observations, including satellite and ground-based measurements, and produces a comprehensive and consistent view of the Earth's atmosphere. These products are  widely used by researchers and practitioners in various fields, including climate science, weather forecasting, energy production and machine learning among others, to understand and analyse past and current weather and climate conditions.",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.143582cf",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Climate Data Store catalogue"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://confluence.ecmwf.int/display/CKB/ERA5%3A+data+documentation",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "ERA5 data documentation"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://rmets.onlinelibrary.wiley.com/doi/10.1002/qj.4174",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "The ERA5 global reanalysis: Preliminary extension to 1950"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://rmets.onlinelibrary.wiley.com/doi/10.1002/qj.3803",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "The ERA5 global reanalysis"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://www.ecmwf.int/en/elibrary/81149-global-stratospheric-temperature-bias-and-other-stratospheric-aspects-era5-and",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Global stratospheric temperature bias and other stratospheric aspects of ERA5 and ERA5.1"
+    }
+  ],
+  "title": "Complete ERA5 global atmospheric reanalysis",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          365.0,
+          0.0,
+          180.0,
+          0.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1949-01-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Atmospheric conditions",
+    "Product type: Reanalysis",
+    "Provider: Copernicus C3S",
+    "Spatial coverage: Global",
+    "Temporal coverage: Past",
+    "Temporal coverage: Present",
+    "Variable domain: Atmosphere (surface)",
+    "Variable domain: Atmosphere (upper air)"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

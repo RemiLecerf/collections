@@ -1,0 +1,80 @@
+{
+  "type": "Collection",
+  "id": "EO:CRYO:DAT:HRSI:PSA",
+  "stac_version": "1.0.0",
+  "description": "The Copernicus Persistent Snow Area (PSA) product is directly derived from the Fractional Snow Cover (FSC) information. It is generated on a yearly basis for the entire EEA38 and the UK and provides the extent of the persistent snow cover, i.e. the area where snow is present throughout the hydrological year with a spatial resolution of 20 m x 20 m. \n\nPSA is one of the products of the pan-European High-Resolution Snow & Ice service (HR-S&I), which are provided at high spatial resolution (20 m x 20 m), and are derived from the Sentinel-2 constellation data. They are generated over the entire EEA38 (32 member countries and 6 cooperating countries) and the United Kingdom, from September 1, 2016 onwards. Four types of HR-S&I products are proposed to users: the Fractional Snow Cover (FSC) product, the Persistent Snow Area (PSA) product, the River and Lake Ice Extent (RLIE) product and the Aggregated River and Lake Ice Extent (ARLIE) product.\n\nPSA is delivered in two different projections: (1) as tiles aligned with Sentinel-2 (UTM/WGS84) at 20 m x 20 m GSD; and (2) as tiles aligned with the Pan-European High-Resolution Layers in the European 20 m x 20 m grid (ETRS89 LAEA - EPSG: 3035). It is typically released on an annual basis with a release date in October, after the end of the hydrological year. Each PSA product is composed of two separate files corresponding to the two layers of the product, and another file containing metadata.",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://moi.wekeo.eu/data?view=dataset&dataset=EO:CRYO:DAT:HRSI:PSA",
+      "title": "Harmonized Data Access (WEkEO)"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://cryo.land.copernicus.eu/finder/",
+      "type": "WWW:LINK-1.0-http--link"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://cryo.land.copernicus.eu/wms/PSA?service=WMS&request=GetCapabilities&version=1.3.0",
+      "type": "OGC:WMS"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://cryo.land.copernicus.eu/resto/api/collections/HRSI/search.json",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "REST API"
+    }
+  ],
+  "title": "Copernicus High Resolution Snow and Ice Monitoring: Persistent Snow Area (raster 20m), Oct. 2020",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -39.771119,
+          27.572276,
+          52.272062,
+          67.355724
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2004-01-01T00:00:00Z",
+          "2008-12-31T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Annually",
+    "CLMS",
+    "Copernicus",
+    "EEA38 (from 2020)",
+    "HR-S&I",
+    "High Resolution",
+    "Land cover",
+    "PSA",
+    "Persistent Snow Area",
+    "Snow and Ice Monitoring Service",
+    "United Kingdom",
+    "climate change impact",
+    "geospatial data",
+    "land cover",
+    "landscape alteration",
+    "monitoring",
+    "snow"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "type": "Collection",
+  "id": "EO:ECMWF:DAT:SIS_EUROPEAN_RISK_FLOOD_INDICATORS",
+  "stac_version": "1.0.0",
+  "description": "The dataset presents indicators to evaluate the spatial distribution of flood risk in terms of hazards and direct damages. It is provided as a high-resolution product focused on 20 European cities that were identified as vulnerable to urban pluvial flooding by experts and practitioners from government agencies and Civil Protection. The dataset combines a high-resolution, probabilistic, description of extreme precipitation, exposure datasets and damage/vulnerability models into a comprehensive pluvial flood risk assessment for cities across Europe for the current climate. It allows city stakeholders to exploit flood risk analysis over the city.\nThe dataset is derived from data available on the Climate Data Store and the Copernicus Land Monitoring Service (CLMS). The former includes ERA5 reanalysis data, dynamically downscaled to 2km x 2km grid with the regional climate model COSMO-CLM and accounting for urban parameterization in order to reach the spatial and temporal resolution suitable for pluvial flood analysis at a city scale. This downscaled product is used for deriving hourly precipitation input at prescribed recurrence intervals that, in combination with supporting digital elevation models (DEM) from the CLMS, is used to feed hazard and damage models.\nThis dataset was produced on behalf of the Copernicus Climate Change Service.\n\nVariables in the dataset/application are:\nExpected damage, Urban depression, Water depth, Water mask",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://confluence.ecmwf.int/x/O8HmE",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Product user guide"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://confluence.ecmwf.int/x/O8HmE",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Product user guide"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.9d3db0eb",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Climate Data Store catalogue"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://datastore.copernicus-climate.eu/documents/sis-european-disaster-risk-reduction/C3S_D430_ProductUserGuide_Flood_indicators_for_Europe_v1.1.pdf",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Product user guide (PDF)"
+    }
+  ],
+  "title": "Flood risk indicators for European cities from 1989 to 2018",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1989-01-01T00:00:00Z",
+          "2018-12-31T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Meteorological geographical features",
+    "Product type: Climate indices",
+    "Provider: Copernicus C3S",
+    "Sector: Disaster risk reduction",
+    "Sector: Water management",
+    "Spatial coverage: Europe",
+    "Temporal coverage: Past",
+    "Variable domain: Land (hydrology)"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "type": "Collection",
+  "id": "fe8fe1b7-5686-42d4-95c9-692fce70a1e3",
+  "stac_version": "1.0.0",
+  "description": "'''Short description''': \nThe wave analysis and forecasts for the Black Sea are produced with the third generation spectral wave model WAM Cycle 6. The hindcast and ten days forecast are produced every day on the HPC at Helmholtz-Zentrum Hereon. The shallow water Black Sea version is implemented on a spherical grid with a spatial resolution of about 2.5 km (1/40° x 1/40°) with 24 directional and 30 frequency bins. The number of active wave model grid points is 74518. The model takes into account depth refraction, wave breaking, and assimilation of satellite wave and wind data. The system provides a hindcast and ten days forecast with one-hourly output once a day. The atmospheric forcing is taken from ECMWF analyses and forecast data. Additionally, WAM is forced by surface currents and sea surface height from BLKSEA_ANALYSISFORECAST_PHY_007_001. Monthly statistics are provided operationally following the CMEMS metrics definitions.\n\n'''Product Citation''': \nPlease refer to our Technical FAQ for citing products. http://marine.copernicus.eu/faq/cite-cmems-products-cmems-credit/?idpage=169\n\n'''DOI (Product)''': \nhttps://doi.org/10.25423/cmcc/blksea_analysisforecast_wav_007_003_eas5",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=BLKSEA_ANALYSISFORECAST_WAV_007_003-TDS&product=cmems_mod_blk_wav_anfc_2.5km_PT1H-i",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_mod_blk_wav_anfc_2.5km_PT1H-i"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/cmems_mod_blk_wav_anfc_2.5km_PT1H-i",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_mod_blk_wav_anfc_2.5km_PT1H-i"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/BLKSEA_ANALYSISFORECAST_WAV_007_003/cmems_mod_blk_wav_anfc_2.5km_PT1H-i",
+      "type": "WWW:FTP",
+      "title": "cmems_mod_blk_wav_anfc_2.5km_PT1H-i"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/cmems_mod_blk_wav_anfc_2.5km_PT1H-i",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_mod_blk_wav_anfc_2.5km_PT1H-i"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/BLKSEA_ANALYSISFORECAST_WAV_007_003/cmems_mod_blk_wav_anfc_2.5km_static",
+      "type": "WWW:FTP",
+      "title": "cmems_mod_blk_wav_anfc_2.5km_static"
+    }
+  ],
+  "title": "Black Sea Waves Analysis and Forecast",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          27.25,
+          40.5,
+          42.0,
+          47.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2019-12-31T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

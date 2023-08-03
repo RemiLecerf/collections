@@ -1,0 +1,66 @@
+{
+  "type": "Collection",
+  "id": "urn:cgls:global:ndvi300_v1_333m",
+  "stac_version": "1.0.0",
+  "description": "The Normalized Difference Vegetation Index (NDVI) is a proxy to quantify the vegetation amount. It is defined as NDVI=(NIR-Red)/(NIR+Red) where NIR corresponds to the reflectance in the near infrared band, and Red to the reflectance in the red band. It is closely related to FAPAR and is little scale dependant.",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "http://land.copernicus.eu/global/products/NDVI",
+      "type": "HTTP",
+      "title": "Copernicus Global Land Service"
+    },
+    {
+      "rel": "describedby",
+      "href": "http://land.copernicus.eu/global/access",
+      "type": "HTTP",
+      "title": "Copernicus Global Land Service"
+    },
+    {
+      "rel": "describedby",
+      "href": "http://eoportal.eumetsat.int",
+      "title": "Copernicus Global Land Service"
+    }
+  ],
+  "title": "Normalized Difference Vegetation Index: global 10-daily (raster 333m) - version 1, March 2016",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -60.0,
+          180.0,
+          80.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2014-01-01T00:00:00Z",
+          "2023-12-31T23:59:59Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "10-day composite",
+    "Dekad",
+    "GLOBE",
+    "Orthoimagery",
+    "biogeophysical",
+    "ndvi",
+    "plant resource"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

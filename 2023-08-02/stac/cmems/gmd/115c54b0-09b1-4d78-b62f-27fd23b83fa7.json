@@ -1,0 +1,52 @@
+{
+  "type": "Collection",
+  "id": "115c54b0-09b1-4d78-b62f-27fd23b83fa7",
+  "stac_version": "1.0.0",
+  "description": "'''DEFINITION'''\n\nThe OMI_EXTREME_WAVE_MEDSEA_swh_mean_and_anomaly_obs indicator is based on the computation of the 99th and the 1st percentiles from in situ data (observations). It is computed for the variable significant wave height (swh) measured by in situ buoys. The use of percentiles instead of annual maximum and minimum values, makes this extremes study less affected by individual data measurement errors. The percentiles are temporally averaged, and the spatial evolution is displayed, jointly with the anomaly in the target year. This study of extreme variability was first applied to sea level variable (Pérez Gómez et al 2016) and then extended to other essential variables, sea surface temperature and significant wave height (Pérez Gómez et al 2018). \n\n'''CONTEXT'''\n\nProjections on Climate Change foresee a future with a greater frequency of extreme sea states (Stott, 2016; Mitchell, 2006). The damages caused by severe wave storms can be considerable not only in infrastructure and buildings but also in the natural habitat, crops and ecosystems affected by erosion and flooding aggravated by the extreme wave heights. In addition, wave storms strongly hamper the maritime activities, especially in harbours. These extreme phenomena drive complex hydrodynamic processes, whose understanding is paramount for proper infrastructure management, design and maintenance (Goda, 2010).\n\n'''CMEMS KEY FINDINGS'''\n\nThe mean 99th percentiles showed in the area present a range from 1.5-3.5 in the Gibraltar Strait and Alboran Sea with 0.25-0.6 of standard deviation (std), 2-4m in the East coast of the Iberian Peninsula and Balearic Islands with 0.2-0.4m of std, 3m in the Ligurian Sea with 0.2m of std to 3-5m in the Gulf of Lyon with 0.2-0.5m of std. \nResults for this year show slight either negative or positive anomalies in the whole area from -0.3m to +0.3m, all of them around the std range.\n\n'''DOI (product):''' \nhttps://doi.org/10.48670/moi-00263",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "ftp://my.cmems-du.eu/Core/OMI_VAR_EXTREME_WAVE_MEDSEA_swh_mean_and_anomaly_obs/omi_var_extreme_wave_medsea_swh_mean_and_anomaly_obs",
+      "type": "WWW:FTP",
+      "title": "omi_var_extreme_wave_medsea_swh_mean_and_anomaly_obs"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://mdl1.marine.copernicus.eu/derived/OMI_VAR_EXTREME_WAVE_MEDSEA_swh_mean_and_anomaly_obs/omi_var_extreme_wave_medsea_swh_mean_and_anomaly_obs_202211/omi_var_extreme_wave_medsea_swh_mean_and_anomaly_obs.nc",
+      "type": "MYO:MOTU-DGF",
+      "title": "omi_var_extreme_wave_medsea_swh_mean_and_anomaly_obs"
+    }
+  ],
+  "title": "Mediterranean Sea Significant Wave Height extreme from Observations Reprocessing",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -6.0,
+          23.0,
+          35.0,
+          52.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2000-01-01T00:00:00Z",
+          "2020-12-31T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

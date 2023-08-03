@@ -1,0 +1,50 @@
+{
+  "type": "Collection",
+  "id": "MODIS/061/MCD43A1",
+  "stac_version": "1.0.0",
+  "description": "The MCD43A1 V6.1 Bidirectional Reflectance Distribution\nFunction and Albedo (BRDF/Albedo) Model Parameters dataset is\na 500 meter daily 16-day product. The Julian date represents\nthe 9th day of the 16-day retrieval period, and consequently\nthe observations are weighted to estimate the BRDF/Albedo for\nthat day. The MCD43A1 algorithm, as is with all combined products,\nchooses the best representative pixel from a pool that includes\nall the acquisitions from both the Terra and Aqua sensors from\nthe retrieval period.\n\nThe MCD43A1 provides the three model\nweighting parameters (isotropic, volumetric, and geometric) for\neach of the MODIS bands 1 through 7 and the visible (vis), near\ninfrared (nir), and shortwave bands used to derive the Albedo\nand BRDF products (MCD43A3 and MCD43A4). The Mandatory Quality\nlayers for each of the 10 bands are supplied as well.\n\nDocumentation:\n\n* [User's Guide](https://www.umb.edu/spectralmass/terra_aqua_modis/v006/mcd43a1_brdif_albedo_model_parameters_product)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://lpdaac.usgs.gov/documents/97/MCD43_ATBD.pdf)\n\n* [General Documentation](https://ladsweb.modaps.eosdis.nasa.gov/filespec/MODIS/61/MCD43A1)\n",
+  "links": [],
+  "title": "MCD43A1.061 MODIS BRDF-Albedo Model Parameters Daily 500m",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1981-01-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "albedo",
+    "brdf",
+    "daily",
+    "global",
+    "mcd43a1",
+    "modis",
+    "nasa",
+    "reflectance",
+    "usgs"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

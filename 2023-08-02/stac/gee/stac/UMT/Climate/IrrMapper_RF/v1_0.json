@@ -1,0 +1,43 @@
+{
+  "type": "Collection",
+  "id": "UMT/Climate/IrrMapper_RF/v1_0",
+  "stac_version": "1.0.0",
+  "description": "IrrMapper is an annual classification of irrigation status in the 11\nWestern United States made at Landsat scale (i.e., 30 m) using the\nRandom Forest algorithm, covering years 1986 - present.\nWhile the [IrrMapper paper](https://www.mdpi.com/2072-4292/12/14/2328)\ndescribes classification of four classes (i.e., irrigated, dryland,\nuncultivated, wetland), the dataset is converted to a binary\nclassification of irrigated and non-irrigated.\n'Irrigated' refers to the detection of any irrigation during the year.\nThe IrrMapper random forest model was trained using an extensive\ngeospatial database of land cover from each of four irrigated- and\nnon-irrigated classes, including over 50,000 human-verified irrigated\nfields, 38,000 dryland fields, and over 500,000 square kilometers of\nuncultivated lands.\n",
+  "links": [],
+  "title": "IrrMapper Irrigated Lands",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1981-01-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "irrigated_land",
+    "landsat_derived"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

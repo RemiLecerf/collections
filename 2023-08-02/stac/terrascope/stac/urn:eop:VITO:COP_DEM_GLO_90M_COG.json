@@ -1,0 +1,51 @@
+{
+  "type": "Collection",
+  "id": "urn:eop:VITO:COP_DEM_GLO_90M_COG",
+  "stac_version": "1.0.0",
+  "description": "The Copernicus DEM is a Digital Surface Model (DSM) which represents the surface of the Earth including buildings, infrastructure and vegetation. GLO-90 provides worldwide coverage at 90 meters (refers to 30 arc seconds). Note that ocean areas do not have tiles, there one can assume height values equal to zero. Data is provided as Cloud Optimized GeoTIFFs. Note that the vertical unit for measurement of elevation height is meters. The Copernicus DEM GLO-90 is mirrored from Open Data on AWS, dataset managed by Sinergise. https://registry.opendata.aws/copernicus-dem/.\n\n## Naming convention\nCopernicus_DSM_COG_[resolution]_[northing]_[easting]_DEM/ \n* [resolution] = resolution in arc seconds (not meters!), which is 10 for GLO-30, and 30 for GLO-90.\n* [northing] = e.g. S50_00 - decimal degrees where the decimal part is always 00. \nIn original files, this is the northing of the center of the bottom-most pixels, while in our files, because we removed the bottom-most pixels, the center of the new bottom-most pixels is one pixel-length (resolution) away to the north.\n* [easting] = e.g. w125_00 - decimal degrees where the decimal part is always 00.\nThe easting of of the center of the left-most pixels.\n\nFor example: //copernicus-dem-90m/Copernicus_DSM_COG_30_S90_00_W178_00_DEM/",
+  "links": [],
+  "title": "Copernicus Global 90 meter Digital Elevation Model dataset in COG format",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1981-01-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "GLO-90 is available on a free basis for the general public under the terms and conditions of the Licence found at https://spacedata.copernicus.eu/documents/20126/0/CSCDA_ESA_Mission-specific+Annex.pdf",
+  "keywords": [
+    "VITO",
+    "TERRASCOPE",
+    "COPERNICUS",
+    "ESA",
+    "Radar",
+    "TSX",
+    "TDX",
+    "Elevation",
+    "DSM",
+    "DEM"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

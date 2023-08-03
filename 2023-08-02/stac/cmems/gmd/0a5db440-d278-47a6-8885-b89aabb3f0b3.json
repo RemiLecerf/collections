@@ -1,0 +1,52 @@
+{
+  "type": "Collection",
+  "id": "0a5db440-d278-47a6-8885-b89aabb3f0b3",
+  "stac_version": "1.0.0",
+  "description": "'''DEFINITION'''\n\nEstimates of Antarctic sea ice extent are obtained from the surface of oceans grid cells that have at least 15% sea ice concentration. These values are cumulated in the entire Southern Hemisphere (excluding ice lakes) and from 1993 up to real time aiming to:\ni) obtain the Antarctic sea ice extent as expressed in millions of km squared (106 km2) to monitor both the large-scale variability and mean state and change.\nii) to monitor the change in sea ice extent as expressed in millions of km squared per decade (106 km2/decade), or in sea ice extent loss/gain since the beginning of the time series as expressed in percent per decade (%/decade; reference period being the first date of the key figure b) dot-dashed trend line, Vaughan et al., 2013)). For the Southern Hemisphere, these trends are calculated from the annual mean values.\nThe Antarctic sea ice extent used here is based on the “multi-product” approach as introduced in the second issue of the Ocean State Report (CMEMS OSR, 2017). Five global products have been used to build the ensemble mean, and its associated ensemble spread.\n\n'''CONTEXT'''\n\nSea ice is frozen seawater that floats on the ocean surface. This large blanket of millions of square kilometers insulates the relatively warm ocean waters from the cold polar atmosphere. The seasonal cycle of the sea ice, forming and melting with the polar seasons, impacts both human activities and biological habitat. Knowing how and how much the sea ice cover is changing is essential for monitoring the health of the Earth as sea ice is one of the highest sensitive natural environments. Variations in sea ice cover can induce changes in ocean stratification and modify the key rule played by the cold poles in the Earth engine (IPCC, 2019).  \nThe sea ice cover is monitored here in terms of sea ice extent quantity. More details and full scientific evaluations can be found in the CMEMS Ocean State Report (Samuelsen et al., 2016; Samuelsen et al., 2018).\n \n'''CMEMS KEY FINDINGS'''\n\nWith quasi regular highs and lows, the annual Antarctic sea ice extent shows large variability until several monthly record high in 2014 and record lows in 2017 and 2018. Since the year 1993, the Southern Hemisphere annual sea ice extent regularly alternates positive and negative trend. The period 1993-2018 have seen a slight decrease at a rate of -0.01*106km2 per decade. This represents a loss amount of 0.1% per decade of Southern Hemisphere sea ice extent during this period; with however large uncertainties. The last quarter of the year 2016 and years 2017 and 2018 experienced unusual losses of ice. 2019 is not a record year, but the summer of 2019 remains among the lowest since the 1990s.  \n\nNote: The key findings will be updated annually in November, in line with OMI evolutions.\n\n'''DOI (product):''' \nhttps://doi.org/10.48670/moi-00186",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "ftp://my.cmems-du.eu/Core/ANTARCTIC_OMI_SI_extent/antarctic_omi_si_extent",
+      "type": "WWW:FTP",
+      "title": "antarctic_omi_si_extent"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://mdl1.marine.copernicus.eu/derived/ANTARCTIC_OMI_SI_extent/antarctic_omi_si_extent_202207/antarctic_omi_si_extent_19930115_P20220328.nc",
+      "type": "MYO:MOTU-DGF",
+      "title": "antarctic_omi_si_extent"
+    }
+  ],
+  "title": "Antarctic Sea Ice Extent from Reanalysis",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          0.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1993-01-01T00:00:00Z",
+          "2019-12-31T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

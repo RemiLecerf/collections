@@ -1,0 +1,89 @@
+{
+  "type": "Collection",
+  "id": "add40e90-0175-49af-a641-361dda3c7e1d",
+  "stac_version": "1.0.0",
+  "description": "The Copernicus Wet/Dry Snow (WDS) product is generated in near real-time for the entire EEA38 and the United Kingdom, based on radar satellite data from the Sentinel-1 constellation. The product differentiates the snow state conditions within the snow mask defined by the FSCTOC information (snow fraction at the top of canopy - see the Copernicus Fractional Snow Cover product) with a spatial resolution of 60 m x 60 m. In other words, it provides a binary discrimination of wet and dry snow, identifying patchy snow or snow free areas.\n\nThe WDS product is distributed in raster files covering an area of 110 km by 110 km with a pixel size of 60 m by 60 m in UTM/WGS84 projection, which corresponds to the Sentinel-2 input L1C product tile. Each product is composed of two separate GeoTIFF files corresponding to the different layers of the product (the snow state classification -SSC- and the associated quality layer -QCSSC-) and a metadata file.\n\nThe WDS is one of the products of the pan-European High-Resolution Snow & Ice service (HR-S&I), which are provided at high spatial resolution (20 m x 20 m and 60 m x 60 m), from the Sentinel-2  and Sentinel-1 constellations data from September 1, 2016 onwards. Visit https://land.copernicus.eu/pan-european/biophysical-parameters/high-resolution-snow-and-ice-monitoring to get more information on the different HR-S&I products (Snow products : FSC, WDS, SWS, GFSC, and PSA. Ice products : RLIE and ARLIE).",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://cryo.land.copernicus.eu/finder/",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Cryo portal"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://cryo.land.copernicus.eu/wms/WDS?service=WMS&request=GetCapabilities&version=1.3.0.",
+      "type": "OGC:WMS"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://www.wekeo.eu/",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "WEKEO portal"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://cryo.land.copernicus.eu/resto/api/collections/HRSI/search.json",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "REST API"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://land.copernicus.eu/user-corner/technical-library/hrsi-snow-pum",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Product user manual"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://land.copernicus.eu/user-corner/technical-library/hrsi-snow-s1-atbd/",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Algorithm Theoretical Basis Document"
+    }
+  ],
+  "title": "High Resolution Snow and Ice Monitoring: Wet/Dry Snow (raster 60m)",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -26.0,
+          34.0,
+          44.0,
+          66.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2016-09-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "2020 3.6.7",
+    "EEA38 (from 2020)",
+    "Irregular",
+    "Land cover",
+    "Land use",
+    "United Kingdom",
+    "climate change impact",
+    "ice",
+    "land cover",
+    "landscape alteration",
+    "monitoring",
+    "snow"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

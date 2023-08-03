@@ -1,0 +1,67 @@
+{
+  "type": "Collection",
+  "id": "455be6a0-d6cf-42c3-a28f-e024abc8227f",
+  "stac_version": "1.0.0",
+  "description": "The pan-European Very High Resolution (VHR) Image Mosaic 2018 is a seamless mosaic of the VHR 2018 dataset, based on watershed segmentation of image overlaps.\n\nThe input data consists of a mix of Pleiades, SPOT, DOVE, Kompsat-4, Deimos-2, SuperView, and TripleSat images. The input imagery has been colour balanced against the Sentinel-2 based HR mosaic from 2018. Colour balancing is done through iterative histogram matching, where the first iteration is used to identify clouds and snow, and the second iteration re-balances, with the bright objects masked out. Cloud cover has been minimized through an innovative approach to cloud masking, which relies on automatically identifying and de-prioritizing overly bright areas in the resulting mosaic. Some clouds and snow remain, as all pixels have to have a value, meaning that if no cloud or snow free images were available for a given area, the bright pixels will remain.\n\nThe mosaic primarily is used as input data in the production of various Copernicus Land Monitoring Service (CLMS) datasets and services, such as land cover maps and high resolution layers on land cover characteristic and can be also useful for CLMS users for visualizations and classifications on land.\n\nThe input imagery for the creation of the mosaic is provided by ESA. Due to license restrictions, VHR Image Mosaic 2018 is only available as a web service (WMS), and not for data download.",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://land.copernicus.eu/imagery-in-situ/european-image-mosaics/very-high-resolution/very-high-resolution-image-mosaic-2018-true-colour-2m",
+      "type": "WWW:LINK-1.0-http--link"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://image.discomap.eea.europa.eu/arcgis/services/GioLand/VHR_2018/ImageServer/WMSServer?request=GetCapabilities&service=WMS",
+      "type": "OGC:WMS"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://image.discomap.eea.europa.eu/arcgis/rest/services/GioLand/VHR_2018/ImageServer",
+      "type": "ESRI:REST"
+    }
+  ],
+  "title": "Pan-European Very High Resolution Image Mosaic 2018 - True Colour (2 m), Oct. 2021",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -11.5,
+          35.3,
+          43.2,
+          81.4
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2017-05-01T00:00:00Z",
+          "2019-09-30T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "As needed",
+    "EEA38 (from 2020)",
+    "European",
+    "Land use",
+    "United Kingdom",
+    "environmental policy",
+    "general",
+    "mosaic",
+    "raster",
+    "satellite image"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

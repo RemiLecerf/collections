@@ -1,0 +1,49 @@
+{
+  "type": "Collection",
+  "id": "SEASONAL_TRAJECTORIES",
+  "stac_version": "1.0.0",
+  "description": "Seasonal Trajectories (ST) product is a filtered time series of [Plant Phenology Index (PPI)](https://www.nateko.lu.se/research/remote-sensing-and-earth-observation/lund-earth-observation-research-group/vegetation-phenology) provided yearly on a 10-daily basis at 10m resolution .\nIt is part of the Copernicus Land Monitoring Service (CLMS), pan-European High Resolution Vegetation Phenology and Productivity [(HR-VPP)](https://land.copernicus.eu/pan-european/biophysical-parameters/high-resolution-vegetation-phenology-and-productivity) product suite.\nThe Seasonal Trajectories PPI is derived through fitting a smoothing and gap filling function to the yearly time-series raw PPI values generated from Sentinel-2 satellite observations.\nIn addition to the PPI band, a QFLAG band indicating the quality of the smoothing process is included.\nThe Seasonal Trajectories provide the vegetation status for each pixel on a regular 10-day time step from January 1 2017 onwards over the EEA39 region.\nMore information about ST product is outlined in the [product user manual](https://land.copernicus.eu/user-corner/technical-library/product-user-manual-of-seasonal-trajectories/)\n",
+  "links": [],
+  "title": "Seasonal Trajectories, 10-daily",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1981-01-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "copernicus services",
+    "vegetation",
+    "agriculture",
+    "Plant phenology index",
+    "CLMS",
+    "phenology",
+    "derived data",
+    "open data"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

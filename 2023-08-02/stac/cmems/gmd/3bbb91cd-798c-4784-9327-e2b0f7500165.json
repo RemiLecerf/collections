@@ -1,0 +1,70 @@
+{
+  "type": "Collection",
+  "id": "3bbb91cd-798c-4784-9327-e2b0f7500165",
+  "stac_version": "1.0.0",
+  "description": "'''Short description:'''\nThe IBI-MFC provides a high-resolution wave analysis and forecast product (run twice a day by Nologin with the support of CESGA in terms of supercomputing resources), covering the European waters, and more specifically the Iberia–Biscay–Ireland (IBI) area. The last 2 years before now (historic best estimates) as well as hourly instantaneous forecasts with a horizon of up to 10 days (updated on a daily basis) are available on the catalogue.\nThe IBI wave model system is based on the MFWAM model and runs on a grid of 5 km of horizontal resolution forced with the ECMWF hourly wind data. The system assimilates significant wave height (SWH) altimeter data and CFOSAT wave spectral data (supplied by Météo-France), and it is forced by currents provided by the IBI ocean circulation system. \nThe product offers hourly instantaneous fields of different wave parameters, including Wave Height, Period and Direction for total spectrum and fields of Wind Wave (or wind sea), Primary Swell Wave and Secondary Swell for partitioned wave spectra. Additionally, the IBI wave system is set up to provide internally some key parameters adequate to be used as forcing in the IBI NEMO ocean model forecast run.\n\n'''Product Citation''': \nPlease refer to our Technical FAQ for citing products.[http://marine.copernicus.eu/faq/cite-cmems-products-cmems-credit/?idpage=169]\n\n'''DOI (Product)''': \nhttps://doi.org/10.48670/moi-00025",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=IBI_ANALYSIS_FORECAST_WAV_005_005-TDS&product=dataset-ibi-analysis-forecast-wav-005-005-hourly",
+      "type": "MYO:MOTU-SUB",
+      "title": "dataset-ibi-analysis-forecast-wav-005-005-hourly"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/dataset-ibi-analysis-forecast-wav-005-005-hourly",
+      "type": "WWW:OPENDAP",
+      "title": "dataset-ibi-analysis-forecast-wav-005-005-hourly"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/IBI_ANALYSIS_FORECAST_WAV_005_005/dataset-ibi-analysis-forecast-wav-005-005-hourly",
+      "type": "WWW:FTP",
+      "title": "dataset-ibi-analysis-forecast-wav-005-005-hourly"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/dataset-ibi-analysis-forecast-wav-005-005-hourly",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "dataset-ibi-analysis-forecast-wav-005-005-hourly"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/IBI_ANALYSIS_FORECAST_WAV_005_005/dataset-ibi-analysis-forecast-wav-005-005-statics",
+      "type": "WWW:FTP",
+      "title": "dataset-ibi-analysis-forecast-wav-005-005-statics"
+    }
+  ],
+  "title": "Atlantic-Iberian Biscay Irish- Ocean Wave Analysis and Forecast",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -19.0,
+          26.0,
+          5.0,
+          56.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2019-05-04T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

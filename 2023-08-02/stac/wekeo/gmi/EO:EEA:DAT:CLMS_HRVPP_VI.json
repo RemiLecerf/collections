@@ -1,0 +1,76 @@
+{
+  "type": "Collection",
+  "id": "EO:EEA:DAT:CLMS_HRVPP_VI",
+  "stac_version": "1.0.0",
+  "description": "Vegetation Indices (VI) comprises four daily vegetation indices (PPI, NDVI, LAI and FAPAR) and quality information, that are part of the Copernicus Land Monitoring Service (CLMS) HR-VPP product suite. \n\nThe 10m resolution, daily updated Plant Phenology Index (PPI), Normalized Difference Vegetation Index (NDVI), Leaf Area Index (LAI) and Fraction of Absorbed Photosynthetically Active Radiation (fAPAR) are derived from Copernicus Sentinel-2 satellite observations.\n\nThey are provided together with a related quality indicator (QFLAG2) that flags clouds, shadows, snow, open water and other areas where the VI retrieval is less reliable.\n\nThese Vegetation Indices are made available as a set of raster files with 10 x 10m resolution, in UTM/WGS84 projection corresponding to the Sentinel-2 tiling grid, for those tiles that cover the EEA38 countries and the United Kingdom and for the period from 2017 until today, with daily updates.\n\nThe Vegetation Indices are part of the pan-European High Resolution Vegetation Phenology and Productivity (HR-VPP) component of the Copernicus Land Monitoring Service (CLMS).",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://www.wekeo.eu/data",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "WEkEO portal"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://land.copernicus.eu/pan-european/biophysical-parameters/high-resolution-vegetation-phenology-and-productivity",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Product information"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://land.copernicus.eu/user-corner/technical-library/product-user-manual-of-vegetation-indices",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Product user manual"
+    }
+  ],
+  "title": "Vegetation Indices, daily, UTM projection",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -60.0,
+          180.0,
+          80.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2004-01-01T00:00:00Z",
+          "2008-12-31T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Copernicus",
+    "Daily",
+    "EEA38",
+    "Index",
+    "Land",
+    "Phenology",
+    "Plant",
+    "Productivity",
+    "Season",
+    "United Kingdom",
+    "Vegetation",
+    "geospatial data",
+    "plant ecology",
+    "plant production",
+    "remote sensing",
+    "vegetation"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

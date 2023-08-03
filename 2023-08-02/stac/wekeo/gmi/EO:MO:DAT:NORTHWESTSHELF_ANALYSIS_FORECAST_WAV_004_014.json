@@ -1,0 +1,460 @@
+{
+  "type": "Collection",
+  "id": "EO:MO:DAT:NORTHWESTSHELF_ANALYSIS_FORECAST_WAV_004_014",
+  "stac_version": "1.0.0",
+  "description": "'''Short description:'''\n\nThis product provides analysis-forecast outputs from a wave model for the North-West European Shelf coupled with an ocean model. The wave model is WAVEWATCH III and the North-West Shelf configuration is based on a two-tier Spherical Multiple Cell grid mesh (3 and 1.5 km cells) derived from with the 1.5km grid used for [https://resources.marine.copernicus.eu/?option=com_csw&view=details&product_id=NORTHWESTSHELF_ANALYSIS_FORECAST_PHY_004_013 NORTHWESTSHELF_ANALYSIS_FORECAST_PHY_004_013]. The model is forced by lateral boundary conditions from the Met Office Global wave forecast model. The atmospheric forcing is given by the operational ECMWF Numerical Weather Prediction model and surface current forcing is provided by the North-West Shelf ocean physics analysis and forecast model described in [https://resources.marine.copernicus.eu/?option=com_csw&view=details&product_id=NORTHWESTSHELF_ANALYSIS_FORECAST_PHY_004_013 NORTHWESTSHELF_ANALYSIS_FORECAST_PHY_004_013]. Model outputs comprise wave parameters integrated from the two-dimensional (frequency, direction) wave spectrum and describe wave height, period and directional characteristics for both the overall sea-state and wind-sea and swell components. The data are delivered on a regular grid at approximately 1.5km resolution, consistent with the physical ocean product. See [http://catalogue.marine.copernicus.eu/documents/PUM/CMEMS-NWS-PUM-004-013_014.pdf CMEMS-NWS-PUM-004-013_014] for more information.\nFurther details of the model, including source term physics, propagation schemes, forcing and boundary conditions, and validation, are provided in the [http://catalogue.marine.copernicus.eu/documents/QUID/CMEMS-NWS-QUID-004-014.pdf CMEMS-NWS-QUID-004-014].\n\n\n'''Associated products:'''\n\nThe analysis-forecast product from the ocean physics model is: [https://resources.marine.copernicus.eu/?option=com_csw&view=details&product_id=NORTHWESTSHELF_ANALYSIS_FORECAST_PHY_004_013 NORTHWESTSHELF_ANALYSIS_FORECAST_PHY_004_013].\n\n'''DOI (product) :'''   \nhttps://doi.org/10.48670/moi-00055",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=NORTHWESTSHELF_ANALYSIS_FORECAST_PHY_004_013-TDS&product=MetO-NWS-PHY-hi-SSH",
+      "type": "MYO:MOTU-SUB",
+      "title": "MetO-NWS-PHY-hi-SSH"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/MetO-NWS-WAV-hi",
+      "type": "WWW:OPENDAP",
+      "title": "MetO-NWS-WAV-hi"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=NORTHWESTSHELF_ANALYSIS_FORECAST_PHY_004_013-TDS&product=MetO-NWS-PHY-dm-SAL",
+      "type": "MYO:MOTU-SUB",
+      "title": "MetO-NWS-PHY-dm-SAL"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=NORTHWESTSHELF_ANALYSIS_FORECAST_PHY_004_013-TDS&product=MetO-NWS-PHY-dm-BED",
+      "type": "MYO:MOTU-SUB",
+      "title": "MetO-NWS-PHY-dm-BED"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/MetO-NWS-PHY-dm-BED",
+      "type": "WWW:OPENDAP",
+      "title": "MetO-NWS-PHY-dm-BED"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/MetO-NWS-PHY-dm-MLD",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "MetO-NWS-PHY-dm-MLD"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=NORTHWESTSHELF_ANALYSIS_FORECAST_PHY_004_013-TDS&product=MetO-NWS-PHY-dm-TEM",
+      "type": "MYO:MOTU-SUB",
+      "title": "MetO-NWS-PHY-dm-TEM"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/NORTHWESTSHELF_ANALYSIS_FORECAST_PHY_004_013/MetO-NWS-PHY-hi-SSH",
+      "type": "WWW:FTP",
+      "title": "MetO-NWS-PHY-hi-SSH"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/NORTHWESTSHELF_ANALYSIS_FORECAST_PHY_004_013/MetO-NWS-PHY-hi-SAL",
+      "type": "WWW:FTP",
+      "title": "MetO-NWS-PHY-hi-SAL"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/NORTHWESTSHELF_ANALYSIS_FORECAST_PHY_004_013/MetO-NWS-PHY-hi-CUR",
+      "type": "WWW:FTP",
+      "title": "MetO-NWS-PHY-hi-CUR"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/MetO-NWS-PHY-qh-SSH",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "MetO-NWS-PHY-qh-SSH"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/MetO-NWS-PHY-qh-SSH",
+      "type": "WWW:OPENDAP",
+      "title": "MetO-NWS-PHY-qh-SSH"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/MetO-NWS-PHY-dm-CUR",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "MetO-NWS-PHY-dm-CUR"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/MetO-NWS-PHY-hi-SSS",
+      "type": "WWW:OPENDAP",
+      "title": "MetO-NWS-PHY-hi-SSS"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/MetO-NWS-PHY-hi-SSC",
+      "type": "WWW:OPENDAP",
+      "title": "MetO-NWS-PHY-hi-SSC"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=NORTHWESTSHELF_ANALYSIS_FORECAST_PHY_004_013-TDS&product=MetO-NWS-PHY-hi-SSS",
+      "type": "MYO:MOTU-SUB",
+      "title": "MetO-NWS-PHY-hi-SSS"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=NORTHWESTSHELF_ANALYSIS_FORECAST_PHY_004_013-TDS&product=MetO-NWS-PHY-hi-SSC",
+      "type": "MYO:MOTU-SUB",
+      "title": "MetO-NWS-PHY-hi-SSC"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/MetO-NWS-PHY-hi-MLD",
+      "type": "WWW:OPENDAP",
+      "title": "MetO-NWS-PHY-hi-MLD"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/NORTHWESTSHELF_ANALYSIS_FORECAST_PHY_004_013/MetO-NWS-PHY-001-013-STATIC",
+      "type": "WWW:FTP",
+      "title": "MetO-NWS-PHY-001-013-STATIC"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=NORTHWESTSHELF_ANALYSIS_FORECAST_PHY_004_013-TDS&product=MetO-NWS-PHY-hi-SAL",
+      "type": "MYO:MOTU-SUB",
+      "title": "MetO-NWS-PHY-hi-SAL"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/MetO-NWS-PHY-hi-SSH",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "MetO-NWS-PHY-hi-SSH"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/NORTHWESTSHELF_ANALYSIS_FORECAST_PHY_004_013/MetO-NWS-PHY-hi-TEM",
+      "type": "WWW:FTP",
+      "title": "MetO-NWS-PHY-hi-TEM"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/NORTHWESTSHELF_ANALYSIS_FORECAST_PHY_004_013/MetO-NWS-PHY-dm-MLD",
+      "type": "WWW:FTP",
+      "title": "MetO-NWS-PHY-dm-MLD"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/NORTHWESTSHELF_ANALYSIS_FORECAST_PHY_004_013/MetO-NWS-PHY-dm-SAL",
+      "type": "WWW:FTP",
+      "title": "MetO-NWS-PHY-dm-SAL"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=NORTHWESTSHELF_ANALYSIS_FORECAST_PHY_004_013-TDS&product=MetO-NWS-PHY-dm-MLD",
+      "type": "MYO:MOTU-SUB",
+      "title": "MetO-NWS-PHY-dm-MLD"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/NORTHWESTSHELF_ANALYSIS_FORECAST_PHY_004_013/MetO-NWS-PHY-qh-SSC",
+      "type": "WWW:FTP",
+      "title": "MetO-NWS-PHY-qh-SSC"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/MetO-NWS-PHY-hi-SAL",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "MetO-NWS-PHY-hi-SAL"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/NORTHWESTSHELF_ANALYSIS_FORECAST_PHY_004_013/MetO-NWS-PHY-hi-BED",
+      "type": "WWW:FTP",
+      "title": "MetO-NWS-PHY-hi-BED"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/NORTHWESTSHELF_ANALYSIS_FORECAST_PHY_004_013/MetO-NWS-PHY-hi-SST",
+      "type": "WWW:FTP",
+      "title": "MetO-NWS-PHY-hi-SST"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/MetO-NWS-PHY-hi-TEM",
+      "type": "WWW:OPENDAP",
+      "title": "MetO-NWS-PHY-hi-TEM"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/MetO-NWS-PHY-qh-SSC",
+      "type": "WWW:OPENDAP",
+      "title": "MetO-NWS-PHY-qh-SSC"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/MetO-NWS-WAV-hi",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "MetO-NWS-WAV-hi"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/MetO-NWS-PHY-hi-SSS",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "MetO-NWS-PHY-hi-SSS"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/NORTHWESTSHELF_ANALYSIS_FORECAST_PHY_004_013/MetO-NWS-PHY-dm-BED",
+      "type": "WWW:FTP",
+      "title": "MetO-NWS-PHY-dm-BED"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/MetO-NWS-PHY-hi-MLD",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "MetO-NWS-PHY-hi-MLD"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=NORTHWESTSHELF_ANALYSIS_FORECAST_PHY_004_013-TDS&product=MetO-NWS-PHY-dm-CUR",
+      "type": "MYO:MOTU-SUB",
+      "title": "MetO-NWS-PHY-dm-CUR"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=NORTHWESTSHELF_ANALYSIS_FORECAST_PHY_004_013-TDS&product=MetO-NWS-PHY-hi-BED",
+      "type": "MYO:MOTU-SUB",
+      "title": "MetO-NWS-PHY-hi-BED"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/MetO-NWS-PHY-dm-TEM",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "MetO-NWS-PHY-dm-TEM"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/MetO-NWS-PHY-hi-TEM",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "MetO-NWS-PHY-hi-TEM"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/MetO-NWS-PHY-hi-CUR",
+      "type": "WWW:OPENDAP",
+      "title": "MetO-NWS-PHY-hi-CUR"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/NORTHWESTSHELF_ANALYSIS_FORECAST_WAV_004_014/MetO-NWS-WAV-hi",
+      "type": "WWW:FTP",
+      "title": "MetO-NWS-WAV-hi"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/MetO-NWS-PHY-hi-BED",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "MetO-NWS-PHY-hi-BED"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/MetO-NWS-PHY-hi-SSC",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "MetO-NWS-PHY-hi-SSC"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/NORTHWESTSHELF_ANALYSIS_FORECAST_PHY_004_013/MetO-NWS-PHY-dm-TEM",
+      "type": "WWW:FTP",
+      "title": "MetO-NWS-PHY-dm-TEM"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/MetO-NWS-PHY-dm-SAL",
+      "type": "WWW:OPENDAP",
+      "title": "MetO-NWS-PHY-dm-SAL"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/MetO-NWS-PHY-qh-SSC",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "MetO-NWS-PHY-qh-SSC"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=NORTHWESTSHELF_ANALYSIS_FORECAST_PHY_004_013-TDS&product=MetO-NWS-PHY-hi-MLD",
+      "type": "MYO:MOTU-SUB",
+      "title": "MetO-NWS-PHY-hi-MLD"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/MetO-NWS-PHY-hi-SAL",
+      "type": "WWW:OPENDAP",
+      "title": "MetO-NWS-PHY-hi-SAL"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/MetO-NWS-PHY-hi-SST",
+      "type": "WWW:OPENDAP",
+      "title": "MetO-NWS-PHY-hi-SST"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=NORTHWESTSHELF_ANALYSIS_FORECAST_PHY_004_013-TDS&product=MetO-NWS-PHY-qh-SSC",
+      "type": "MYO:MOTU-SUB",
+      "title": "MetO-NWS-PHY-qh-SSC"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/MetO-NWS-PHY-hi-SSH",
+      "type": "WWW:OPENDAP",
+      "title": "MetO-NWS-PHY-hi-SSH"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/MetO-NWS-PHY-dm-SAL",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "MetO-NWS-PHY-dm-SAL"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/MetO-NWS-PHY-dm-MLD",
+      "type": "WWW:OPENDAP",
+      "title": "MetO-NWS-PHY-dm-MLD"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/NORTHWESTSHELF_ANALYSIS_FORECAST_PHY_004_013/MetO-NWS-PHY-hi-MLD",
+      "type": "WWW:FTP",
+      "title": "MetO-NWS-PHY-hi-MLD"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/NORTHWESTSHELF_ANALYSIS_FORECAST_PHY_004_013/MetO-NWS-PHY-hi-SSC",
+      "type": "WWW:FTP",
+      "title": "MetO-NWS-PHY-hi-SSC"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/MetO-NWS-PHY-dm-TEM",
+      "type": "WWW:OPENDAP",
+      "title": "MetO-NWS-PHY-dm-TEM"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=NORTHWESTSHELF_ANALYSIS_FORECAST_WAV_004_014-TDS&product=MetO-NWS-WAV-hi",
+      "type": "MYO:MOTU-SUB",
+      "title": "MetO-NWS-WAV-hi"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/NORTHWESTSHELF_ANALYSIS_FORECAST_PHY_004_013/MetO-NWS-PHY-qh-SSH",
+      "type": "WWW:FTP",
+      "title": "MetO-NWS-PHY-qh-SSH"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=NORTHWESTSHELF_ANALYSIS_FORECAST_PHY_004_013-TDS&product=MetO-NWS-PHY-qh-SSH",
+      "type": "MYO:MOTU-SUB",
+      "title": "MetO-NWS-PHY-qh-SSH"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/MetO-NWS-WAV-hi",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "MetO-NWS-WAV-hi"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/MetO-NWS-PHY-dm-BED",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "MetO-NWS-PHY-dm-BED"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/MetO-NWS-PHY-hi-BED",
+      "type": "WWW:OPENDAP",
+      "title": "MetO-NWS-PHY-hi-BED"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/NORTHWESTSHELF_ANALYSIS_FORECAST_PHY_004_013/MetO-NWS-PHY-dm-CUR",
+      "type": "WWW:FTP",
+      "title": "MetO-NWS-PHY-dm-CUR"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/MetO-NWS-PHY-hi-SST",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "MetO-NWS-PHY-hi-SST"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=NORTHWESTSHELF_ANALYSIS_FORECAST_PHY_004_013-TDS&product=MetO-NWS-PHY-hi-SST",
+      "type": "MYO:MOTU-SUB",
+      "title": "MetO-NWS-PHY-hi-SST"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/NORTHWESTSHELF_ANALYSIS_FORECAST_PHY_004_013/MetO-NWS-PHY-hi-SSS",
+      "type": "WWW:FTP",
+      "title": "MetO-NWS-PHY-hi-SSS"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=NORTHWESTSHELF_ANALYSIS_FORECAST_PHY_004_013-TDS&product=MetO-NWS-PHY-hi-CUR",
+      "type": "MYO:MOTU-SUB",
+      "title": "MetO-NWS-PHY-hi-CUR"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/MetO-NWS-PHY-hi-CUR",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "MetO-NWS-PHY-hi-CUR"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=NORTHWESTSHELF_ANALYSIS_FORECAST_PHY_004_013-TDS&product=MetO-NWS-PHY-hi-TEM",
+      "type": "MYO:MOTU-SUB",
+      "title": "MetO-NWS-PHY-hi-TEM"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/MetO-NWS-PHY-dm-CUR",
+      "type": "WWW:OPENDAP",
+      "title": "MetO-NWS-PHY-dm-CUR"
+    }
+  ],
+  "title": "Atlantic - European North West Shelf - Ocean Wave Analysis and Forecast",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2019-05-04T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "type": "Collection",
+  "id": "LANDSAT/LT05/C02/T1_L2",
+  "stac_version": "1.0.0",
+  "description": "This dataset contains atmospherically corrected\nsurface reflectance and land surface temperature derived from the data\nproduced by the Landsat TM sensor.\nThese images contain 4 visible and near-infrared (VNIR) bands and\n2 short-wave infrared (SWIR) bands processed to orthorectified surface\nreflectance, and one thermal infrared (TIR) band processed to orthorectified\nsurface temperature. They also contain intermediate bands used in\ncalculation of the ST products, as well as QA bands.\n\nLandsat 4 and 5 SR products are created with the Landsat Ecosystem Disturbance\nAdaptive Processing System (LEDAPS) algorithm (version 3.4.0).\nAll Collection 2 ST products are created with a single-channel algorithm\njointly created by the Rochester Institute of Technology (RIT) and\nNational Aeronautics and Space Administration (NASA)\nJet Propulsion Laboratory (JPL).\n\nStrips of collected data are packaged into overlapping \\\"scenes\\\" covering approximately\n170km x 183km using a [standardized reference grid](https://landsat.gsfc.nasa.gov/about/worldwide-reference-system).\n\nSome assets have only SR data, in which case ST bands are present but empty.\nFor assets with both ST and SR bands, 'PROCESSING_LEVEL' is set to 'L2SP'.\nFor assets with only SR bands, 'PROCESSING_LEVEL' is set to 'L2SR'.\n\n[Additional documentation and usage examples.](/earth-engine/guides/landsat)\n\nData provider notes:\n\n* Data products must contain both optical and thermal data to be\n  successfully processed to surface temperature, as ASTER NDVI is\n  required to temporally adjust the ASTER GED product to the target Landsat\n  scene. Therefore, night time acquisitions cannot be processed to\n  surface temperature.\n\n* A known error exists in the surface temperature retrievals relative\n  to clouds and possibly cloud shadows. The characterization of these\n  issues has been documented by\n  [Cook et al., (2014)](https://doi.org/10.3390/rs61111244).\n",
+  "links": [],
+  "title": "USGS Landsat 5 Level 2, Collection 2, Tier 1",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1981-01-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "cfmask",
+    "cloud",
+    "fmask",
+    "global",
+    "landsat",
+    "lasrc",
+    "lst",
+    "lt05",
+    "reflectance",
+    "sr",
+    "tm",
+    "usgs"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

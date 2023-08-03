@@ -1,0 +1,72 @@
+{
+  "type": "Collection",
+  "id": "eu.copernicus.climate.sis-water-quantity-swicca",
+  "stac_version": "1.0.0",
+  "description": "This dataset contains  modelled data for water runoff and wetness, river flow, snow water equivalent, soil water content and other water related quantities for the European region. These variables were computed as a part of a proof of concept contract designed to speed up the workflow in impact assessments and to simplify climate change adaptation of water management practices across Europe.\nThese quantities were modelled using the  Swedish Meteorological and Hydrological Institute E-HYPE, the Wageningen University VIC model and the Joint Research Center Lisflood models. These models work at different resolutions, thus the data is provided at different resolutions. E-HYPE and Lisflood were upscaled in order to show the model ensemble.\nMost variables are provided as averages over 30 year periods, either for each calendar month or for the whole period. \nHowever, for some of the variables, day, percentile and return periods are also provided.\n\nVariables in the dataset/application are:\nAridity 1, Aridity 2, River flow, Snow water equivalent, Soil water content, Unregulated river flow, Water runoff, Wetness 1, Wetness 2",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/eu.copernicus.climate.sis-water-quantity-swicca",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Climate Data Store catalogue"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://datastore.copernicus-climate.eu/documents/sis-swicca/definition-new-climate-indicators-for-water-management.pdf",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Definition of the climate impact indicators for water management (PDF)"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://confluence.ecmwf.int/x/uQkbCg",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Access to the GIS shapefile describing the catchment areas"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://datastore.copernicus-climate.eu/documents/sis-swicca/sis-water-swicca-metadata.zip",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Full metadata for water quantity indicators (.zip)"
+    }
+  ],
+  "title": "Water quantity indicators for Europe",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -15.0,
+          30.0,
+          30.0,
+          72.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1971-01-01T00:00:00Z",
+          "2100-12-31T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Hydrography",
+    "Product type: Climate indices",
+    "Sector: Water management",
+    "Spatial coverage: Europe",
+    "Temporal coverage: Future",
+    "Variable domain: Land (hydrology)"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

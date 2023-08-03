@@ -1,0 +1,68 @@
+{
+  "type": "Collection",
+  "id": "urn:cgls:global:lcc100_v3_100m",
+  "stac_version": "1.0.0",
+  "description": "Land cover maps represent spatial information on different types (classes) of physical coverage of the Earth's surface, e.g. forests, grasslands, croplands, lakes, wetlands. \n\nDynamic land cover maps include transitions of land cover classes over time and hence captures land cover changes. \n\nThis Collection 3 includes the global land cover maps, at 100m resolution, for base year 2015 and subsequent years. These consist of different layers: the base classification with 23 classes, versatile fractional cover (0-100% per pixel) for the main classes, forest type and related quality information (e.g. classification probability, input data density and confidence level for the change detection).",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://lcviewer.vito.be",
+      "type": "HTTP",
+      "title": "Copernicus Global Land Service - Global Land Cover viewer"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://zenodo.org/communities/copernicus-land-cover",
+      "type": "HTTP",
+      "title": "Zenodo - Copernicus Land Cover Land Use community"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_Landcover_100m_Proba-V-C3_Global",
+      "type": "HTTP",
+      "title": "Google Earth Engine"
+    }
+  ],
+  "title": "Land Cover: global annual 2015-2019 (raster 100m) - collection 3, Sept. 2020",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -60.0,
+          180.0,
+          78.25
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1999-01-01T00:00:00Z",
+          "2020-09-30T23:59:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Dynamic Land Cover",
+    "Globe",
+    "LC",
+    "Orthoimagery",
+    "Vegetation",
+    "Year",
+    "geophysical environment",
+    "land cover"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

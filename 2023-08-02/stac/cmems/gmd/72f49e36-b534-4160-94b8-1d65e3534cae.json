@@ -1,0 +1,70 @@
+{
+  "type": "Collection",
+  "id": "72f49e36-b534-4160-94b8-1d65e3534cae",
+  "stac_version": "1.0.0",
+  "description": "'''Short description:'''\n                                                             \nMEDSEA_ANALYSISFORECAST_WAV_006_017 is the nominal wave product of the Mediterranean Sea Forecasting system, composed by hourly wave parameters at 1/24º horizontal resolution covering the Mediterranean Sea and extending up to 18.125W into the Atlantic Ocean. The waves forecast component (Med-WAV system) is a wave model based on the WAM Cycle 6. The Med-WAV modelling system resolves the prognostic part of the wave spectrum with 24 directional and 32 logarithmically distributed frequency bins and the model solutions are corrected by an optimal interpolation data assimilation scheme of all available along track satellite significant wave height observations. The atmospheric forcing is provided by the operational ECMWF Numerical Weather Prediction model and the wave model is forced with hourly averaged surface currents and sea level obtained from MEDSEA_ANALYSISFORECAST_PHY_006_013 at 1/24° resolution. The model uses wave spectra for Open Boundary Conditions from GLOBAL_ANALYSIS_FORECAST_WAV_001_027 product. The wave system includes 2 forecast cycles providing twice per day a Mediterranean wave analysis and 10 days of wave forecasts. \n\n''Product Citation'': Please refer to our Technical FAQ for citing products.http://marine.copernicus.eu/faq/cite-cmems-products-cmems-credit/?idpage=169\n\n'''DOI (Product)''': https://doi.org/10.25423/cmcc/medsea_analysisforecast_wav_006_017_medwam4",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=MEDSEA_ANALYSISFORECAST_WAV_006_017-TDS&product=med-hcmr-wav-an-fc-h",
+      "type": "MYO:MOTU-SUB",
+      "title": "med-hcmr-wav-an-fc-h"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/med-hcmr-wav-an-fc-h",
+      "type": "WWW:OPENDAP",
+      "title": "med-hcmr-wav-an-fc-h"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/MEDSEA_ANALYSISFORECAST_WAV_006_017/med-hcmr-wav-an-fc-h",
+      "type": "WWW:FTP",
+      "title": "med-hcmr-wav-an-fc-h"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/med-hcmr-wav-an-fc-h",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "med-hcmr-wav-an-fc-h"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/MEDSEA_ANALYSISFORECAST_WAV_006_017/MEDSEA_ANALYSISFORECAST_WAV_006_017-statics",
+      "type": "WWW:FTP",
+      "title": "MEDSEA_ANALYSISFORECAST_WAV_006_017-statics"
+    }
+  ],
+  "title": "Mediterranean Sea Waves Analysis and Forecast",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -18.12,
+          30.18,
+          36.3,
+          45.98
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2019-05-04T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

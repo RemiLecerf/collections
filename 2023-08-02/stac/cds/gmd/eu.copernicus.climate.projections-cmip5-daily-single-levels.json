@@ -1,0 +1,68 @@
+{
+  "type": "Collection",
+  "id": "eu.copernicus.climate.projections-cmip5-daily-single-levels",
+  "stac_version": "1.0.0",
+  "description": "This catalogue entry provides daily climate projections on single levels from a large number of experiments, models, members and time periods computed in the framework of the fifth phase of the Coupled Model Intercomparison Project (CMIP5). The term \"single levels\" is used to express that the variables are computed at one vertical level which can be surface (or a level close to the surface) or a dedicated pressure level in the atmosphere. Multiple vertical levels are excluded from this catalogue entry.\nCMIP5 data are used extensively in the Intergovernmental Panel on Climate Change Assessment Reports (the latest one is IPCC AR5, which was published in 2014). The use of these data is mostly aimed at:\n\naddressing outstanding scientific questions that arose as part of the IPCC reporting process;\nimproving the understanding of the climate system;\nproviding estimates of future climate change and related uncertainties;\nproviding input data for the adaptation to the climate change;\nexamining climate predictability and exploring the ability of models to predict climate on decadal time scales;\nevaluating how realistic the different models are in simulating the recent past.\n\nThe term \"experiments\" refers to the three main categories of CMIP5 simulations:\n\nHistorical experiments which cover the period where modern climate observations exist. These experiments show how the GCMs performs for the past climate and can be used as a reference period for comparison with scenario runs for the future. The period covered is typically 1850-2005.;\nEnsemble of experiments from the Atmospheric Model Intercomparison Project (AMIP), which prescribes the oceanic variables for all models and during all period of the experiment. This configuration removes the added complexity of ocean-atmosphere feedbacks in the climate system. The period covered is typically 1950-2005.\nEnsemble of climate projection experiments following the Representative Concentration Pathways (RCP) 2.6, 4.5, 6.0 and 8.5. The RCP scenarios provide different pathways of the future climate forcing. The period covered is typically, 2006-2100 some extended RCP experimental data is available from 2100-2300.\n\nIn CMIP5, the same experiments were run using different GCMs. In addition, for each model, the same experiment was repeatedly done using slightly different conditions (like initial conditions or different physical parameterisations for instance) producing in that way an ensemble of experiments closely related. Note that CMIP5 GCM data can be also used as lateral boundary conditions for Regional Climate Models (RCMs). RCMs are also available in the CDS (see CORDEX datasets). \nThe data are produced by the participating institutes of the CMIP5 project. The latest CMIP GCM experiments will form the CMIP6 dataset, which will be published in the CDS in a later stage. \n\nVariables in the dataset/application are:\n10m wind speed, 2m temperature, Daily near surface relative humidity, Maximum 2m temperature in the last 24 hours, Mean precipitation flux, Mean sea level pressure, Minimum 2m temperature in the last 24 hours, Near surface specific humidity, Snowfall, Surface solar radiation downwards",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.d3513dbf",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Climate Data Store catalogue"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://confluence.ecmwf.int/display/CKB/CMIP%3A+Global+climate+projections",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "CMIP5 data in  the Copernicus Climate Data Store"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://pcmdi.llnl.gov/mips/cmip5/guide.html",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "CMIP5 essential information (.html)"
+    }
+  ],
+  "title": "CMIP5 daily data on single levels",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          0.0,
+          -89.0,
+          360.0,
+          89.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1800-01-01T00:00:00Z",
+          "2100-12-31T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Atmospheric conditions",
+    "Product type: Climate projections",
+    "Spatial coverage: Global",
+    "Temporal coverage: Future",
+    "Temporal coverage: Past",
+    "Temporal coverage: Present",
+    "Variable domain: Atmosphere (surface)",
+    "Variable domain: Atmosphere (upper air)"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

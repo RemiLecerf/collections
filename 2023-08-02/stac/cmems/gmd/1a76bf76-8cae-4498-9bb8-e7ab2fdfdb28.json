@@ -1,0 +1,52 @@
+{
+  "type": "Collection",
+  "id": "1a76bf76-8cae-4498-9bb8-e7ab2fdfdb28",
+  "stac_version": "1.0.0",
+  "description": "'''DEFINITION'''\n\nThe linear change of zonal mean subsurface temperature over the period 1993-2019 at each grid point (in depth and latitude) is evaluated to obtain a global mean depth-latitude plot of subsurface temperature trend, expressed in °C.\nThe linear change is computed using the slope of the linear regression at each grid point scaled by the number of time steps (27 years, 1993-2019). A multi-product approach is used, meaning that the linear change is first computed for 5 different zonal mean temperature estimates. The average linear change is then computed, as well as the standard deviation between the five linear change computations. The evaluation method relies in the study of the consistency in between the 5 different estimates, which provides a qualitative estimate of the robustness of the indicator. See Mulet et al. (2018) for more details.\n\n'''CONTEXT'''\n\nLarge-scale temperature variations in the upper layers are mainly related to the heat exchange with the atmosphere and surrounding oceanic regions, while the deeper ocean temperature in the main thermocline and below varies due to many dynamical forcing mechanisms (Bindoff et al., 2019). Together with ocean acidification and deoxygenation (IPCC, 2019), ocean warming can lead to dramatic changes in ecosystem assemblages, biodiversity, population extinctions, coral bleaching and infectious disease, change in behavior (including reproduction), as well as redistribution of habitat (e.g. Gattuso et al., 2015, Molinos et al., 2016, Ramirez et al., 2017). Ocean warming also intensifies tropical cyclones (Hoegh-Guldberg et al., 2018; Trenberth et al., 2018; Sun et al., 2017).\n\n'''CMEMS KEY FINDINGS'''\n\nThe results show an overall ocean warming of the upper global ocean over the period 1993-2019, particularly in the upper 300m depth. In some areas, this warming signal reaches down to about 800m depth such as for example in the Southern Ocean south of 40°S. In other areas, the signal-to-noise ratio in the deeper ocean layers is less than two, i.e. the different products used for the ensemble mean show weak agreement. However, interannual-to-decadal fluctuations are superposed on the warming signal, and can interfere with the warming trend. For example, in the subpolar North Atlantic decadal variations such as the so called ‘cold event’ prevail (Dubois et al., 2018; Gourrion et al., 2018), and the cumulative trend over a quarter of a decade does not exceed twice the noise level below about 100m depth.\n\nNote: The key findings will be updated annually in November, in line with OMI evolutions.\n\n'''DOI (product):''' \nhttps://doi.org/10.48670/moi-00244",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "ftp://my.cmems-du.eu/Core/GLOBAL_OMI_TEMPSAL_Tyz_trend/global_omi_tempsal_tyz_trend",
+      "type": "WWW:FTP",
+      "title": "global_omi_tempsal_tyz_trend"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://mdl1.marine.copernicus.eu/derived/GLOBAL_OMI_TEMPSAL_Tyz_trend/global_omi_tempsal_tyz_trend_202105/global_omi_tempsal_tyz_trend_1993_P20210210.nc",
+      "type": "MYO:MOTU-DGF",
+      "title": "global_omi_tempsal_tyz_trend"
+    }
+  ],
+  "title": "Global Ocean Zonal Mean Subsurface Temperature cumulative trend from Multi-Observations Reprocessing",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1993-01-01T00:00:00Z",
+          "2019-12-31T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

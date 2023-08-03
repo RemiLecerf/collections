@@ -1,0 +1,97 @@
+{
+  "type": "Collection",
+  "id": "fb90adbb-8ff8-4dd3-89a8-9902e5c0914c",
+  "stac_version": "1.0.0",
+  "description": "'''Short description:'''\nThe Low and Mid-Trophic Levels (LMTL) reanalysis for global ocean is produced at [https://www.cls.fr CLS] on behalf of Global Ocean Marine Forecasting Center. It provides 2D fields of biomass content of zooplankton and six functional groups of micronekton. It uses the LMTL component of SEAPODYM dynamical population model (http://www.seapodym.eu). No data assimilation has been done. This product also contains forcing data: net primary production, euphotic depth, depth of each pelagic layers zooplankton and micronekton inhabit, average temperature and currents over pelagic layers.\n\n'''Forcings sources:'''\n* Ocean currents and temperature (CMEMS multiyear product)\n* Net Primary Production computed from chlorophyll a, Sea Surface Temperature and Photosynthetically Active Radiation observations (chlorophyll from CMEMS multiyear product, SST from NOAA NCEI AVHRR-only Reynolds, PAR from INTERIM) and relaxed by model outputs at high latitudes (CMEMS biogeochemistry multiyear product)\n\n'''Vertical coverage:'''\n* Epipelagic layer \n* Upper mesopelagic layer\n* Lower mesopelagic layer (max. 1000m)\n\n'''DOI (product) :'''   \nhttps://doi.org/10.48670/moi-00020",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&service=GLOBAL_MULTIYEAR_BGC_001_033-TDS&product=cmems_mod_glo_bgc_my_0.083deg-lmtl_PT1D-i",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_mod_glo_bgc_my_0.083deg-lmtl_PT1D-i"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/dodsC/cmems_mod_glo_bgc_my_0.083deg-lmtl_PT1D-i",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_mod_glo_bgc_my_0.083deg-lmtl_PT1D-i"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://my.cmems-du.eu/Core/GLOBAL_MULTIYEAR_BGC_001_033/cmems_mod_glo_bgc_my_0.083deg-lmtl_PT1D-i",
+      "type": "WWW:FTP",
+      "title": "cmems_mod_glo_bgc_my_0.083deg-lmtl_PT1D-i"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/wms/cmems_mod_glo_bgc_my_0.083deg-lmtl_PT1D-i",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_mod_glo_bgc_my_0.083deg-lmtl_PT1D-i"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&service=GLOBAL_MULTIYEAR_BGC_001_033-TDS&product=cmems_mod_glo_bgc_my_0.083deg-lmtl-Fphy_PT1D-i",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_mod_glo_bgc_my_0.083deg-lmtl-Fphy_PT1D-i"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/dodsC/cmems_mod_glo_bgc_my_0.083deg-lmtl-Fphy_PT1D-i",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_mod_glo_bgc_my_0.083deg-lmtl-Fphy_PT1D-i"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://my.cmems-du.eu/Core/GLOBAL_MULTIYEAR_BGC_001_033/cmems_mod_glo_bgc_my_0.083deg-lmtl-Fphy_PT1D-i",
+      "type": "WWW:FTP",
+      "title": "cmems_mod_glo_bgc_my_0.083deg-lmtl-Fphy_PT1D-i"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/wms/cmems_mod_glo_bgc_my_0.083deg-lmtl-Fphy_PT1D-i",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_mod_glo_bgc_my_0.083deg-lmtl-Fphy_PT1D-i"
+    }
+  ],
+  "title": "Global ocean low and mid trophic levels biomass content hindcast",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -80.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1998-01-01T00:00:00Z",
+          "2020-12-31T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "/Biological oceanography/Phytoplankton and microphytobenthos",
+    "/Biological oceanography/Zooplankton",
+    "Atlantic Ocean",
+    "Data",
+    "Modelling data",
+    "North Mid-Atlantic Ridge",
+    "WP3 Pelagic Mapping"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

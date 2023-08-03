@@ -1,0 +1,70 @@
+{
+  "type": "Collection",
+  "id": "3183791b-0f94-4697-8fe8-3c7db19a624c",
+  "stac_version": "1.0.0",
+  "description": "'''Short description:'''\nThis Baltic Sea wave model product provides forecasts for the wave conditions in the Baltic Sea. The Baltic forecast is updated twice a day providing a new six days forecast with hourly instantaneous data for significant wave height, wave period and wave direction for total sea, wind sea and swell, and also Stokes drift. The product is based on the wave model WAM cycle 4.6.2. The wave model is forced with surface currents, sea level anomaly and ice information from the CMEMS BAL MFC ocean forecast product (BALTICSEA_ANALYSISFORECAST_PHY_003_006). The product grid has a horizontal resolution of 1 nautical mile. The area covers the Baltic Sea including the transition area towards the North Sea (i.e. the Danish Belts, the Kattegat and Skagerrak).\n\n'''DOI (product) :'''   \nhttps://doi.org/10.48670/moi-00011",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/BALTICSEA_ANALYSISFORECAST_WAV_003_010/cmems_mod_bal_wav_anfc_static",
+      "type": "WWW:FTP",
+      "title": "cmems_mod_bal_wav_anfc_static"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=BALTICSEA_ANALYSISFORECAST_WAV_003_010-TDS&product=cmems_mod_bal_wav_anfc_PT1h-i",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_mod_bal_wav_anfc_PT1h-i"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/cmems_mod_bal_wav_anfc_PT1h-i",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_mod_bal_wav_anfc_PT1h-i"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/BALTICSEA_ANALYSISFORECAST_WAV_003_010/cmems_mod_bal_wav_anfc_PT1h-i",
+      "type": "WWW:FTP",
+      "title": "cmems_mod_bal_wav_anfc_PT1h-i"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/cmems_mod_bal_wav_anfc_PT1h-i",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_mod_bal_wav_anfc_PT1h-i"
+    }
+  ],
+  "title": "Baltic Sea Wave Analysis and Forecast",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          9.0,
+          53.0,
+          30.0,
+          66.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2019-05-04T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

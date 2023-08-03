@@ -1,0 +1,52 @@
+{
+  "type": "Collection",
+  "id": "e4b03720-36f0-4fd5-b5a4-d68d2b0508b4",
+  "stac_version": "1.0.0",
+  "description": "'''DEFINITION'''\n\nThis product includes the Mediterranean Sea satellite chlorophyll trend map based on regional chlorophyll reprocessed (MY) product as distributed by CMEMS OC-TAC. This dataset, derived from multi-sensor (SeaStar-SeaWiFS, AQUA-MODIS, NOAA20-VIIRS, NPP-VIIRS, Envisat-MERIS and Sentinel3A-OLCI) (at 1 km resolution) Rrs spectra produced by CNR using an in-house processing chain, is obtained by means of the Mediterranean Ocean Colour regional algorithms: an updated version of the MedOC4 (Case 1 (off-shore) waters, Volpe et al., 2019, with new coefficients) and AD4 (Case 2 (coastal) waters, Berthon and Zibordi, 2004). The processing chain and the techniques used for algorithms merging are detailed in Colella et al. (2021). \nThe trend map is obtained by applying Colella et al. (2016) methodology, where the Mann-Kendall test (Mann, 1945; Kendall, 1975) and Sens’s method (Sen, 1968) are applied on deseasonalized monthly time series, as obtained from the X-11 technique (see e. g. Pezzulli et al. 2005), to estimate, trend magnitude and its significance. The trend is expressed in % per year that represents the relative changes (i.e., percentage) corresponding to the dimensional trend [mg m-3 y-1] with respect to the reference climatology (1997-2014). Only significant trends (p < 0.05) are included.\n\n'''CONTEXT'''\n\nPhytoplankton are key actors in the carbon cycle and, as such, recognised as an Essential Climate Variable (ECV). Chlorophyll concentration - as a proxy for phytoplankton - respond rapidly to changes in environmental conditions, such as light, temperature, nutrients and mixing (Colella et al. 2016). The character of the response depends on the nature of the change drivers, and ranges from seasonal cycles to decadal oscillations (Basterretxea et al. 2018). The Mediterranean Sea is an oligotrophic basin, where chlorophyll concentration decreases following a specific gradient from West to East (Colella et al. 2016). The highest concentrations are observed in coastal areas and at the river mouths, where the anthropogenic pressure and nutrient loads impact on the eutrophication regimes (Colella et al. 2016). The use of long-term time series of consistent, well-calibrated, climate-quality data record is crucial for detecting eutrophication. Furthermore, chlorophyll analysis also demands the use of robust statistical temporal decomposition techniques, in order to separate the long-term signal from the seasonal component of the time series.\n\n'''CMEMS KEY FINDINGS'''\n\nChlorophyll trend in the Mediterranean Sea, for the period 1997-2021, is negative over most of the basin. With respect to the previous trend estimate (1997-2020) the negative values are even more widespread over the basin. Weak positive trend areas are visible only in the southern part of the western Mediterranean basin, Rhode Gyre and in the northern coast of the Aegean Sea (the only area where the positive trend is increased with respect the previous map). On average the trend in the Mediterranean Sea is about -0.6% per year. Contrary to what shown by Salgado-Hernanz et al. (2019) in their analysis (related to 1998-2014 satellite observations), western and eastern part of the Mediterranean Sea do not show differences. In the Ligurian Sea, the trend switch to negative values, differing from the positive regime observed in the trend maps of both Colella et al. (2016) and Salgado-Hernanz et al. (2019), referred, respectively, to 1998-2009 and 1998-2014 period, respectively. The waters offshore the Po River mouth show weak negative trend values, partially differing from the markable negative regime observed in the 1998-2009 period (Colella et al., 2016), and definitely moving from the positive trend observed by Salgado-Hernanz et al. (2019).\n\n'''DOI (product):''' \nhttps://doi.org/10.48670/moi-00260",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "ftp://my.cmems-du.eu/Core/OMI_HEALTH_CHL_MEDSEA_OCEANCOLOUR_trend/omi_health_chl_medsea_oceancolour_trend",
+      "type": "WWW:FTP",
+      "title": "omi_health_chl_medsea_oceancolour_trend"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://mdl1.marine.copernicus.eu/derived/OMI_HEALTH_CHL_MEDSEA_OCEANCOLOUR_trend/omi_health_chl_medsea_oceancolour_trend_202211/omi_health_chl_medsea_oceancolour_trend_19970901_P20220524.nc",
+      "type": "MYO:MOTU-DGF",
+      "title": "omi_health_chl_medsea_oceancolour_trend"
+    }
+  ],
+  "title": "Mediterranean Sea Chlorophyll-a trend map from Observations Reprocessing",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -6.0,
+          30.0,
+          36.5,
+          46.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1997-09-04T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

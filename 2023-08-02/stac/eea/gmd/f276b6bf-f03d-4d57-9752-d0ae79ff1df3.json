@@ -1,0 +1,112 @@
+{
+  "type": "Collection",
+  "id": "f276b6bf-f03d-4d57-9752-d0ae79ff1df3",
+  "stac_version": "1.0.0",
+  "description": "The Quality Flag (QFLAG), one of the Vegetation Phenology and Productivity (VPP) parameters, is a product of the pan-European High Resolution Vegetation Phenology and Productivity (HR-VPP) component of the Copernicus Land Monitoring Service (CLMS).\n\nThe Plant Phenology Index (PPI) is a physically based vegetation index, developed for improving the monitoring of the vegetation growth cycle. The PPI index values, with 5-day satellite revisit cycle, are first used in a function fitting to derive the PPI Seasonal Trajectories, which is a filtered time series with regular 10-day time step. From these Seasonal Trajectories, a suite of 13 Vegetation Phenology and Productivity (VPP) parameters are then computed and provided, for up to two seasons each year. The Seasonal Productivity is one of the 13 parameters. The full list is available in the table 3 of the Product User Manual https://land.copernicus.eu/user-corner/technical-library/product-user-manual-of-seasonal-trajectories/\n\nThe Quality Flag (QFLAG) is a quality indicator for the above set of 13 Vegetation Phenology and Productivity (VPP) parameters and provides a confidence level, that is described in table 4 of the same manual.\n\nThe QFLAG dataset is made available as raster files with 10 x 10m resolution, in UTM/WGS84 projection corresponding to the Sentinel-2 tiling grid, for those tiles that cover the EEA38 countries and the United Kingdom and for two seasons in each year from 2017 onwards. It is updated in the first quarter of each year.",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://www.wekeo.eu/data?view=viewer&t=1577751120000&z=0&center=13.08408%2C48.33915&zoom=12.34&layers=W3siaWQiOiJjMCIsImxheWVySWQiOiJFTzpFRUE6REFUOkNMTVNfSFJWUFBfVlBQL19fREVGQVVMVF9fL0NMTVNfSFJWUFBfVlBQX1FGTEFHX1NFQVNPTjFfMTBNIiwiekluZGV4IjoxMH1d&initial=1",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "WEkEO portal - season 1"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://www.wekeo.eu/data?view=viewer&t=1577751120000&z=0&center=13.08408%2C48.33915&zoom=12.34&layers=W3siaWQiOiJjMCIsImxheWVySWQiOiJFTzpFRUE6REFUOkNMTVNfSFJWUFBfVlBQL19fREVGQVVMVF9fL0NMTVNfSFJWUFBfVlBQX1FGTEFHX1NFQVNPTjJfMTBNIiwiekluZGV4IjoxMH1d&initial=1",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "WEkEO portal - season 2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://phenology.vgt.vito.be/wmts?request=GetCapabilities",
+      "type": "OGC:WMTS",
+      "title": "CLMS_HRVPP_VPP_SPROD_SEASON1_10M"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://phenology.vgt.vito.be/wmts?request=GetCapabilities",
+      "type": "OGC:WMTS",
+      "title": "CLMS_HRVPP_VPP_SPROD_SEASON2_10M"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://wekeo-broker.apps.mercator.dpi.wekeo.eu/databroker/ui/",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Harmonized Data Access (WEkEO)"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://phenology.vgt.vito.be/description?collection=copernicus_r_utm-wgs84_10_m_hrvpp-vpp_p_2017-now_v01",
+      "type": "OGC:OpenSearch",
+      "title": "OpenSearch API"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://land.copernicus.eu/pan-european/biophysical-parameters/high-resolution-vegetation-phenology-and-productivity/vegetation-phenology-and-productivity",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Product information"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://land.copernicus.eu/user-corner/technical-library/product-user-manual-of-seasonal-trajectories/",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Product user manual"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://phenology.vgt.vito.be/wms?request=GetCapabilities",
+      "type": "OGC:WMS",
+      "title": "CLMS_HRVPP_VPP_QFLAG_SEASON1_10M"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://phenology.vgt.vito.be/wms?request=GetCapabilities",
+      "type": "OGC:WMS",
+      "title": "CLMS_HRVPP_VPP_QFLAG_SEASON2_10M"
+    }
+  ],
+  "title": "High Resolution Vegetation Phenology and Productivity: VPP quality flag (raster 10m) version 1 revision 1, Sept. 2021",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -25.0,
+          26.0,
+          45.0,
+          72.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2017-01-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Annually",
+    "EEA38 (from 2020)",
+    "United Kingdom",
+    "index",
+    "land",
+    "plant ecology",
+    "plant production",
+    "productivity",
+    "remote sensing",
+    "vegetation"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

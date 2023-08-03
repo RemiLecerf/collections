@@ -1,0 +1,64 @@
+{
+  "type": "Collection",
+  "id": "2da2851e-00ea-4f66-8242-41dbf16154d7",
+  "stac_version": "1.0.0",
+  "description": "'''Short description:''' \nArctic Sea and Ice surface temperature\n\n'''Detailed description:'''\nArctic Sea and Ice surface temperature product based upon reprocessed AVHRR, (A)ATSR and SLSTR SST observations from the ESA CCI project, the Copernicus C3S project and the AASTI dataset. The product is a daily interpolated field with a 0.05 degrees resolution, and covers surface temperatures in the ocean, the sea ice and the marginal ice zone.\n\n'''DOI (product) :'''   \nhttps://doi.org/10.48670/moi-00123",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&service=SEAICE_ARC_PHY_CLIMATE_L4_MY_011_016-TDS&product=cmems_obs_si_arc_phy_my_L4-DMIOI_P1D-m",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_obs_si_arc_phy_my_L4-DMIOI_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/dodsC/cmems_obs_si_arc_phy_my_L4-DMIOI_P1D-m",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_obs_si_arc_phy_my_L4-DMIOI_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://my.cmems-du.eu/Core/SEAICE_ARC_PHY_CLIMATE_L4_MY_011_016/cmems_obs_si_arc_phy_my_L4-DMIOI_P1D-m",
+      "type": "WWW:FTP",
+      "title": "cmems_obs_si_arc_phy_my_L4-DMIOI_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/wms/cmems_obs_si_arc_phy_my_L4-DMIOI_P1D-m",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_obs_si_arc_phy_my_L4-DMIOI_P1D-m"
+    }
+  ],
+  "title": "Arctic Ocean - Sea and Ice Surface Temperature REPROCESSED",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          58.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1982-01-01T00:00:00Z",
+          "2021-05-31T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

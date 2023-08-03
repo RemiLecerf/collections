@@ -1,0 +1,60 @@
+{
+  "type": "Collection",
+  "id": "EO:ECMWF:DAT:SIS_EUROPEAN_WIND_STORM_INDICATORS",
+  "stac_version": "1.0.0",
+  "description": "This dataset provides climatological indicators on European winter windstorms and their economic impact derived from ERA5 reanalysis. Also provided are risk indicators from a synthetically derived set of physically realistic windstorm events based on modelled climatic conditions. The primary users include the insurance sector, reinsurers and insurance industry service providers in response to their requirements for a catalogue of historic windstorm events within Europe. It is important for this sector to be able to characterise the temporal and geographic distribution of potentially destructive windstorm events over Europe. These data can also support sectors such as energy, transport, civil engineering and government.\nThe indicators available in this dataset are categorised as follows: \n\n\nWindstorm tracks – the spatial track centred on the location of maximum relative vorticity above a threshold defining a windstorm as it moves over the North Atlantic Ocean and Europe. \n\n\nWindstorm footprints – the maximum wind speed of gusts for each grid point of the domain during the passage of the storm over a period of 72-hours since the selected storm is first identified.\n\n\nSummary indicators (Tier 1) – uses the windstorm tracks and maximum 10m wind speed to produce annual and decadal summary statistics for the land regions in Europe.\n\n\nLoss and risk indicators (Tier 3) – describing the socio-economic impact of windstorms for various land cover and building types in Europe.\n\n\nThis dataset was produced on behalf of the Copernicus Climate Change Service.",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.9b4ea013",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Climate Data Store catalogue"
+    },
+    {
+      "rel": "describedby",
+      "href": "#",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "#"
+    }
+  ],
+  "title": "Winter windstorm indicators for Europe from 1979 to 2021 derived from reanalysis",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1986-03-01T00:00:00Z",
+          "2011-11-30T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Meteorological geographical features",
+    "Product type: Reanalysis",
+    "Provider: Copernicus C3S",
+    "Spatial coverage: Europe",
+    "Temporal coverage: Past",
+    "Variable domain: Atmosphere (surface)"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

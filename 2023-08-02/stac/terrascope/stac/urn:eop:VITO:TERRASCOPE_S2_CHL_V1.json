@@ -1,0 +1,52 @@
+{
+  "type": "Collection",
+  "id": "urn:eop:VITO:TERRASCOPE_S2_CHL_V1",
+  "stac_version": "1.0.0",
+  "description": "Chlorophyll-a concentration in inland, transitional and coastal water, generated combing the OC3 algorithm (O’Reilly et al., 1998) and the two-band algorithm from Gilerson et al. (2010). The OC3 algorithm is used by default, except in turbid productive inland and coastal waters where its performance is poor. In those cases the workflow switches to Gilerson et al. (2010). This switching occurs at pixel level, which might cause small artefacts. Chlorophyll-a concentrations can range from 0 mg m-3 up till 1000 mg m-3  in high abundance of harmful algae blooms (Schallens, 2006). Land and clouds are masked.",
+  "links": [],
+  "title": "Sentinel-2 Chlorophyll-a (CHL) (tiles) - V1",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1981-01-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "Licence: https://terrascope.be/en/terms-use",
+  "keywords": [
+    "VITO",
+    "TERRASCOPE",
+    "COPERNICUS",
+    "ESA",
+    "Orthoimagery",
+    "Sentinel-2",
+    "MSI",
+    "Level-3",
+    "Radiometry",
+    "Water Quality",
+    "Chlorophyll-a"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "type": "Collection",
+  "id": "c58b4e38-c4ca-41e4-8ab3-45ba86dbae18",
+  "stac_version": "1.0.0",
+  "description": "'''DEFINITION'''\n\nThe CMEMS IBI_OMI_tempsal_extreme_var_temp_mean_and_anomaly OMI indicator is based on the computation of the annual 99th percentile of Sea Surface Temperature (SST) from model data. Two different CMEMS products are used to compute the indicator: The Iberia-Biscay-Ireland Multi Year Product (IBI_MULTIYEAR_PHY_005_002) and the Analysis product (IBI_ANALYSISFORECAST_PHY_005_001).\nTwo parameters have been considered for this OMI:\n•\tMap of the 99th mean percentile: It is obtained from the Multi Year Product, the annual 99th percentile is computed for each year of the product. The percentiles are temporally averaged over the whole period (1993-2019).\n•\tAnomaly of the 99th percentile in 2020: The 99th percentile of the year 2020 is computed from the Analysis product. The anomaly is obtained by subtracting the mean percentile from the 2020 percentile.\nThis indicator is aimed at monitoring the extremes of sea surface temperature every year and at checking their variations in space. The use of percentiles instead of annual maxima, makes this extremes study less affected by individual data. This study of extreme variability was first applied to the sea level variable (Pérez Gómez et al 2016) and then extended to other essential variables, such as sea surface temperature and significant wave height (Pérez Gómez et al 2018 and Alvarez Fanjul et al., 2019). More details and a full scientific evaluation can be found in the CMEMS Ocean State report (Alvarez Fanjul et al., 2019).\n\n'''CONTEXT'''\n\nThe Sea Surface Temperature is one of the essential ocean variables, hence the monitoring of this variable is of key importance, since its variations can affect the ocean circulation, marine ecosystems, and ocean-atmosphere exchange processes. As the oceans continuously interact with the atmosphere, trends of sea surface temperature can also have an effect on the global climate. While the global-averaged sea surface temperatures have increased since the beginning of the 20th century (Hartmann et al., 2013) in the North Atlantic, anomalous cold conditions have also been reported since 2014 (Mulet et al., 2018; Dubois et al., 2018).\n\nThe IBI area is a complex dynamic region with a remarkable variety of ocean physical processes and scales involved. The Sea Surface Temperature field in the region is strongly dependent on latitude, with higher values towards the South (Locarnini et al. 2013). This latitudinal gradient is supported by the presence of the eastern part of the North Atlantic subtropical gyre that transports cool water from the northern latitudes towards the equator. Additionally, the Iberia-Biscay-Ireland region is under the influence of the Sea Level Pressure dipole established between the Icelandic low and the Bermuda high. Therefore, the interannual and interdecadal variability of the surface temperature field may be influenced by the North Atlantic Oscillation pattern (Czaja and Frankignoul, 2002; Flatau et al., 2003).\nAlso relevant in the region are the upwelling processes taking place in the coastal margins. The most referenced one is the eastern boundary coastal upwelling system off the African and western Iberian coast (Sotillo et al., 2016), although other smaller upwelling systems have also been described in the northern coast of the Iberian Peninsula (Alvarez et al., 2011), the south-western Irish coast (Edwars et al., 1996) and the European Continental Slope (Dickson, 1980).\n\n'''CMEMS KEY FINDINGS'''\n\nIn the IBI region, the 99th mean percentile for 1993-2019 shows a north-south pattern driven by the climatological distribution of temperatures in the North Atlantic. In the coastal regions of Africa and the Iberian Peninsula, the mean values are influenced by the upwelling processes (Sotillo et al., 2016). These results are consistent with the ones presented in Álvarez Fanjul et al;, (2019) for the period 1993-2016.\nThe anomaly of the 99th percentile in 2021 is mainly positive with values that surpass the climatic standard deviation. However, the anomaly values range from -3°C to 5°C, consequently, results show localised regions where positive and negative anomalies exceeded twice the climatic standard deviation. The higher positive anomalies are spread on the open ocean mainly affecting latitudes from 30°N up to 45°N and from 50°N up to 56°N. The indicator shows negative anomalies higher than twice the mean variability (up to -3°C) in the upwelling regions near the north-west African coast (from 30°N to 33°N).\n\n'''DOI (product):''' \nhttps://doi.org/10.48670/moi-00254",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "ftp://my.cmems-du.eu/Core/IBI_OMI_TEMPSAL_extreme_var_temp_mean_and_anomaly/ibi_omi_tempsal_extreme_var_temp_mean_and_anomaly",
+      "type": "WWW:FTP",
+      "title": "ibi_omi_tempsal_extreme_var_temp_mean_and_anomaly"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://mdl1.marine.copernicus.eu/derived/IBI_OMI_TEMPSAL_extreme_var_temp_mean_and_anomaly/ibi_omi_tempsal_extreme_var_temp_mean_and_anomaly_202211/IBI_OMI_TEMPSAL_extreme_var_temp_mean_and_anomaly.nc",
+      "type": "MYO:MOTU-DGF",
+      "title": "ibi_omi_tempsal_extreme_var_temp_mean_and_anomaly"
+    }
+  ],
+  "title": "Iberia Biscay Ireland Sea Surface Temperature extreme from Reanalysis",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -19.0,
+          26.0,
+          5.0,
+          56.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2021-01-01T00:00:00Z",
+          "2021-12-31T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

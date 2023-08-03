@@ -1,0 +1,52 @@
+{
+  "type": "Collection",
+  "id": "ac5e6323-76fb-4b8d-9e65-9bf4bd4bd5b4",
+  "stac_version": "1.0.0",
+  "description": "'''DEFINITION'''\n\nThe subsurface salinity trends have been derived from regional reanalysis and forecast modelling results of the CMS BAL MFC group for the Baltic Sea (product references BALTICSEA_REANALYSIS_PHY_003_011). The salinity trend has been obtained through a linear fit for each time series of horizontally averaged (13 °E - 31 °E and 53 °N - 66 °N; excluding the Skagerrak strait) annual salinity and at each depth level.\n\n'''CONTEXT'''\n\nThe Baltic Sea is a brackish semi-enclosed sea in North-Eastern Europe. The surface salinity varies horizontally from ~10 near the Danish Straits down to ~2 at the northernmost and easternmost sub-basins of the Baltic Sea. The halocline, a vertical layer with rapid changes of salinity with depth that separates the well-mixed surface layer from the weakly stratified layer below, is located at the depth range of 60-80 metres (Matthäus, 1984). The bottom layer salinity below the halocline depth varies from 15 in the south down to 3 in the northern Baltic Sea (Väli et al., 2013). The long-term salinity is determined by net precipitation and river discharge as well as saline water inflows from the North Sea (BACCII Author Team, 2015). Long-term salinity decrease may reduce the occurrence and biomass of the Fucus vesiculosus - Idotea balthica association/symbiotic aggregations (Kotta et al., 2019). Changes in salinity and oxygen content affect the survival of the Baltic cod eggs (Raudsepp et al, 2019; von Dewitz et al., 2018). \n\n'''CMEMS KEY FINDINGS'''\n\nThe subsurface salinity over the 1993-2021 period shows no trend in the surface layer of 40-m. In the intermediate layer between 50 to 80 m the salinity trend increases from 0.01 to 0.03 per year. This layer coincides with the upper halocline in the Baltic Sea. Maximum salinity trend of about 0.05 per year is at a depth of 150 metres. Within and below the halocline i.e., at the depth range between 60 and 180 metres the confidence interval of the trend values is wide, which indicates that this depth range is relatively dynamic. \n\n'''DOI (product):''' \nhttps://doi.org/10.48670/moi-00207",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "ftp://my.cmems-du.eu/Core/BALTIC_OMI_TEMPSAL_Stz_trend/baltic_omi_tempsal_Stz_area_averaged_trend",
+      "type": "WWW:FTP",
+      "title": "baltic_omi_tempsal_Stz_area_averaged_trend"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://mdl1.marine.copernicus.eu/derived/BALTIC_OMI_TEMPSAL_Stz_trend/baltic_omi_tempsal_Stz_area_averaged_trend_202211/baltic_omi_tempsal_stz_area_averaged_trend_P20220721_R19932021.nc",
+      "type": "MYO:MOTU-DGF",
+      "title": "baltic_omi_tempsal_Stz_area_averaged_trend"
+    }
+  ],
+  "title": "Baltic Sea Subsurface Salinity trend from Reanalysis",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          9.0,
+          53.0,
+          30.0,
+          66.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1993-01-01T00:00:00Z",
+          "2021-12-31T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

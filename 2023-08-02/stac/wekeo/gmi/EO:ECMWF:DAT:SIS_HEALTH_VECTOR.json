@@ -1,0 +1,75 @@
+{
+  "type": "Collection",
+  "id": "EO:ECMWF:DAT:SIS_HEALTH_VECTOR",
+  "stac_version": "1.0.0",
+  "description": "This dataset contains climatic suitability indicators for the Aedes albopictus (tiger mosquito) for Europe produced within the C3S European Health service. The provided indicators are the climatic suitability for the presence of Aedes albopictus and the season length of presence of Aedes albopictus. This mosquito transmits vector-borne diseases, such as dengue and chikungunya.\nEnvironmental factors such as temperature and rainfall impact the survival chance and seasonal activity of Aedes albopictus. In Europe, the environmental conditions become more favorable for the establishment of Aedes albopictus, which is a serious threat for human health in Europe.\nThe temperature statistics are calculated, either for the season winter and summer or for the whole year, based on a bias-adjusted EURO-CORDEX dataset. Then, the statistics are averaged for 30 years as a smoothed average from 1971 to 2100. This results in a timeseries covering the period from 1986 to 2085. Finally, the timeseries are averaged for the model ensemble and the standard deviation to this ensemble mean is provided. \n\nVariables in the dataset/application are:\nSeason length, Suitabilty",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://datastore.copernicus-climate.eu/documents/sis-european-health/Vectors_extra_documentation.pdf",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Climatic suitability of Aedes albopictus documentation (PDF)"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.d08ed09a",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Climate Data Store catalogue"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/eu.copernicus.climate.sis-health-vector",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Climate Data Store catalogue"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://confluence.ecmwf.int/x/lJcvEQ",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Climatic suitability of Aedes albopictus documentation"
+    }
+  ],
+  "title": "Climatic suitability for the presence and seasonal activity of the Aedes albopictus mosquito for Europe derived from climate projections",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1999-01-01T00:00:00Z",
+          "2021-02-28T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Atmospheric conditions",
+    "Product type: Climate projections",
+    "Provider: Copernicus C3S",
+    "Sector: Health",
+    "Spatial coverage: Europe",
+    "Temporal coverage: Future",
+    "Temporal coverage: Past",
+    "Temporal coverage: Present",
+    "Variable domain: Land (biosphere)"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

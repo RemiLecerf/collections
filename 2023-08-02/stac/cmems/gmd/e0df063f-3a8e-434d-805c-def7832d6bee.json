@@ -1,0 +1,64 @@
+{
+  "type": "Collection",
+  "id": "e0df063f-3a8e-434d-805c-def7832d6bee",
+  "stac_version": "1.0.0",
+  "description": "'''Short description:'''\n\nMulti-Year gridded multi-mission merged satellite significant wave height. Only valid data are included. This Multi-Year product is processed by the WAVE-TAC multi-mission altimeter data processing system and is based on CMEMS Multi-Year level-3 SWH datasets (see the product WAVE_GLO_PHY_SWH_L3_MY_014_005).\nIt merges along-track SWH data from the following missions: Jason-1, Jason-2, Envisat, Cryosat-2, SARAL/AltiKa, Jason-3 and CFOSAT. The resulting gridded product has a 2° horizontal resolution and is produced daily. Different SWH fields are produced: VAVH_DAILY fields are daily statistics computed from all available level 3 along-track measurements from 00 UTC until 23:59 UTC ; VAVH_INST field provides an estimate of the instantaneous wave field at 12:00UTC (noon), using all available Level 3 along-track measurements and accounting for their spatial and temporal proximity.\n\n'''DOI (product) :'''   \nhttps://doi.org/10.48670/moi-00177",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&service=WAVE_GLO_PHY_SWH_L4_MY_014_007-TDS&product=cmems_obs-wave_glo_phy-swh_my_multi-l4-2deg_P1D",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_obs-wave_glo_phy-swh_my_multi-l4-2deg_P1D"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/dodsC/cmems_obs-wave_glo_phy-swh_my_multi-l4-2deg_P1D",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_obs-wave_glo_phy-swh_my_multi-l4-2deg_P1D"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://my.cmems-du.eu/Core/WAVE_GLO_PHY_SWH_L4_MY_014_007/cmems_obs-wave_glo_phy-swh_my_multi-l4-2deg_P1D",
+      "type": "WWW:FTP",
+      "title": "cmems_obs-wave_glo_phy-swh_my_multi-l4-2deg_P1D"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/wms/cmems_obs-wave_glo_phy-swh_my_multi-l4-2deg_P1D",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_obs-wave_glo_phy-swh_my_multi-l4-2deg_P1D"
+    }
+  ],
+  "title": "GLOBAL OCEAN L4 SIGNIFICANT WAVE HEIGHT FROM REPROCESSED SATELLITE MEASUREMENTS",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2002-01-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

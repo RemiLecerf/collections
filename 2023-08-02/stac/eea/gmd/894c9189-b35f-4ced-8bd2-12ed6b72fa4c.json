@@ -1,0 +1,67 @@
+{
+  "type": "Collection",
+  "id": "894c9189-b35f-4ced-8bd2-12ed6b72fa4c",
+  "stac_version": "1.0.0",
+  "description": "The high resolution forest product consists of three types of (status) products and additional change products. The status products are available for the 2012, 2015 and 2018 reference years: 1. Tree cover density providing level of tree cover density in a range from 0-100%; 2. Dominant leaf type providing information on the dominant leaf type: broadleaved or coniferous; 3. A Forest type product. The forest type product allows to get as close as possible to the FAO forest definition. In its original (20m) resolution it consists of two products: 1) a dominant leaf type product that has a MMU of 0.5 ha, as well as a 10% tree cover density threshold applied, and 2) a support layer that maps, based on the dominant leaf type product, trees under agricultural use and in urban context (derived from CLC and high resolution imperviousness 2009 data). For the final 100m product trees under agricultural use and urban context from the support layer are removed. The high resolution forest change products comprise a simple tree cover density change product for 2012-2015 (% increase or decrease of real tree cover density changes). \nThe production of the high resolution forest layers was coordinated by the European Environment Agency (EEA) in the frame of the EU Copernicus programme.",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://land.copernicus.eu/pan-european/high-resolution-layers/forests/forest-type-1/status-maps/2012/view",
+      "type": "WWW:LINK-1.0-http--link"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://image.discomap.eea.europa.eu/arcgis/rest/services/GioLandPublic/HRL_Forest_Cover_Type_2012/MapServer",
+      "type": "ESRI:REST"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://image.discomap.eea.europa.eu/arcgis/services/DownloadLayers/HRL_FTY_2012_DL/MapServer/WMSServer?service=WMS&request=GetCapabilities&version=1.3.0",
+      "type": "OGC:WMS",
+      "title": "FTY_Download"
+    }
+  ],
+  "title": "High Resolution Layer: Forest Type 2012 (raster 20m), Apr. 2018",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -31.2684,
+          27.6375,
+          -13.4198,
+          66.5662
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2011-01-01T00:00:00Z",
+          "2013-12-31T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Biodiversity",
+    "EEA39",
+    "Forests and forestry",
+    "Land cover",
+    "Land use",
+    "forest management",
+    "land cover",
+    "land use",
+    "landscape alteration"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

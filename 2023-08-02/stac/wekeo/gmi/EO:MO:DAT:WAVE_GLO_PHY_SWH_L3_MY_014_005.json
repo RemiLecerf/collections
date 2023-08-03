@@ -1,0 +1,82 @@
+{
+  "type": "Collection",
+  "id": "EO:MO:DAT:WAVE_GLO_PHY_SWH_L3_MY_014_005",
+  "stac_version": "1.0.0",
+  "description": "'''Short description:'''\n\nMulti-Year mono-mission satellite-based along-track significant wave height. Only valid data are included, based on a rigorous editing combining various criteria such as quality flags (surface flag, presence of ice) and thresholds on parameter values. Such thresholds are applied on parameters linked to significant wave height determination from retracking (e.g. SWH, sigma0, range, off nadir angle…). All the missions are homogenized with respect to a reference mission and in-situ buoy measurements. Finally, an along-track filter is applied to reduce the measurement noise.\n\nThis product is based on the ESA Sea State Climate Change Initiative data Level 3 product (version 2) and is formatted by the WAVE-TAC to be homogeneous with the CMEMS Level 3 Near-real-time product. It is based on the reprocessing of GDR data from the following altimeter missions: Jason-1, Jason-2, Envisat, Cryosat-2, SARAL/AltiKa and Jason-3. CFOSAT Multi-Year dataset is based on the reprocessing of CFOSAT Level-2P products (CNES/CLS), inter-calibrated on Jason-3 reference mission issued from the CCI Sea State dataset.\n\nOne file containing valid SWH is produced for each mission and for a 3-hour time window. It contains the filtered SWH (VAVH) and the unfiltered SWH (VAVH_UNFILTERED).\n\n'''DOI (product) :'''   \nhttps://doi.org/10.48670/moi-00176",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "ftp://my.cmems-du.eu/Core/WAVE_GLO_PHY_SWH_L3_MY_014_005/cci_obs-wave_glo_phy-swh_my_j2-l3_PT1S",
+      "type": "WWW:FTP",
+      "title": "cci_obs-wave_glo_phy-swh_my_j2-l3_PT1S"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://my.cmems-du.eu/Core/WAVE_GLO_PHY_SWH_L3_MY_014_005/cmems_obs-wave_glo_phy-swh_my_cfo-l3_PT1S",
+      "type": "WWW:FTP",
+      "title": "cmems_obs-wave_glo_phy-swh_my_cfo-l3_PT1S"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://my.cmems-du.eu/Core/WAVE_GLO_PHY_SWH_L3_MY_014_005/cci_obs-wave_glo_phy-swh_my_j3-l3_PT1S",
+      "type": "WWW:FTP",
+      "title": "cci_obs-wave_glo_phy-swh_my_j3-l3_PT1S"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://my.cmems-du.eu/Core/WAVE_GLO_PHY_SWH_L3_MY_014_005/cci_obs-wave_glo_phy-swh_my_en-l3_PT1S",
+      "type": "WWW:FTP",
+      "title": "cci_obs-wave_glo_phy-swh_my_en-l3_PT1S"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://my.cmems-du.eu/Core/WAVE_GLO_PHY_SWH_L3_MY_014_005/cci_obs-wave_glo_phy-swh_my_j1-l3_PT1S",
+      "type": "WWW:FTP",
+      "title": "cci_obs-wave_glo_phy-swh_my_j1-l3_PT1S"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://my.cmems-du.eu/Core/WAVE_GLO_PHY_SWH_L3_MY_014_005/cci_obs-wave_glo_phy-swh_my_al-l3_PT1S",
+      "type": "WWW:FTP",
+      "title": "cci_obs-wave_glo_phy-swh_my_al-l3_PT1S"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://my.cmems-du.eu/Core/WAVE_GLO_PHY_SWH_L3_MY_014_005/cci_obs-wave_glo_phy-swh_my_c2-l3_PT1S",
+      "type": "WWW:FTP",
+      "title": "cci_obs-wave_glo_phy-swh_my_c2-l3_PT1S"
+    }
+  ],
+  "title": "GLOBAL OCEAN L3 SIGNIFICANT WAVE HEIGHT FROM REPROCESSED SATELLITE MEASUREMENTS",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2002-01-15T00:00:00Z",
+          "2020-12-31T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

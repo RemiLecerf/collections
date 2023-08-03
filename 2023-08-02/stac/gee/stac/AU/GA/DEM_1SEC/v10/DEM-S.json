@@ -1,0 +1,49 @@
+{
+  "type": "Collection",
+  "id": "AU/GA/DEM_1SEC/v10/DEM-S",
+  "stac_version": "1.0.0",
+  "description": "The Smoothed Digital Elevation Model (DEM-S) was derived\nfrom the SRTM data acquired by NASA in February 2000. DEM-S represents\nground surface topography (excluding vegetation features) and has\nbeen smoothed to reduce noise and improve the representation of\nsurface shape. An adaptive process applied more smoothing in flatter\nareas than hilly areas, and more smoothing in noisier areas than\nin less noisy areas.\n\nThis DEM-S supports calculation of local terrain shape attributes\nsuch as slope, aspect, and curvature that could not be reliably\nderived from the unsmoothed 1 second DEM because of noise.\n\nThere are several areas with unexpected negative values: close to\nCanberra around (150.443044, -35.355281) with values of -55 and in Western\nAustralia around (124.84, -16.44) with -43.\n",
+  "links": [],
+  "title": "DEM-S: Australian Smoothed Digital Elevation Model",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1981-01-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "australia",
+    "dem",
+    "elevation",
+    "ga",
+    "geophysical",
+    "geoscience_australia",
+    "smoothed",
+    "srtm"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "type": "Collection",
+  "id": "EO:ECMWF:DAT:INSITU_OBSERVATIONS_WOUDC_OZONE_TOTAL_COLUMN_AND_PROFILES",
+  "stac_version": "1.0.0",
+  "description": "This dataset provides access to two types of ozone observations: total column ozone estimates and vertical profiles of ozone concentration.\nThe total ozone estimates are based on solar UV radiation measurements made by ground-based spectrophotometers (Dobson or Brewer type spectrophotometers).\nThe vertical profiles of ozone concentration are estimated primarily using ozonesonde observations.\nData are available for 159 Dobson stations, 109 Brewer stations and 135 ozonesondes stations.\nThe ozone data are included in the quadrennial Scientific Assessments of Ozone Depletion as part of the “Vienna convention for the protection of the ozone layer” and are used extensively for a range of studies and applications.\nThe data provided here are collated by the World Ozone and Ultraviolet Radiation Data Centre (WOUDC) which is part of the Global Atmosphere Watch programme of the World Meteorological Organization. WOUDC was established in 1960 with the objective to collect, quality-control, archive and provide long-term access to high quality observation data and metadata from WMO Global Atmosphere Watch (GAW) network of stations measuring ozone column and ozone vertical profiles. Furthermore, the data record provides sustainable high-quality data under all application areas via coordinated activities between the WOUDC and regional and global calibration and data quality centers.\nThe total column ozone and ozonesonde can be downloaded as comma-separated values (CSV) files organised in two different ways:\n\nCSV one row per level: for each observed height all variables are provided as individual columns in one row. \nCSV one row per observation: (no aggregation) each row provides information about one variable at one level only. All main variable are grouped together in the following columns: one for the observed variable (indicates variable in question), one for observation value.\n\nThis dataset is collated by WOUDC and guided by the WMO Ozone Scientific Advisory Group in Ozone and Solar UV Radiation. More details about the dataset are given in the Documentation section, and general information and background can be obtained from the WOUDC website.\n\nVariables in the dataset/application are:\nAir temperature, Column sulphur dioxide, Geopotential height, Ozone partial pressure, Relative humidity, Total ozone column, Total ozone column standard deviation, Wind from direction, Wind speed\n\nVariables in the dataset/application are:\nAir pressure, Daily timestamp, Harmonic mean relative slant path, Height of station above sea level, Latitude, Level code, Location latitude, Location longitude, Longitude, Monthly npts, Number of observations, Obs code, Observation height above station surface, Observation value, Observed variable, Other ids, Ozone reference time mean, Ozone reference total ozone, Pump motor current, Pump motor voltage, Reference model, Report timestamp, Sample temperature, Sensor id, Sensor model, Sonde current, Standard deviation, Station name, Time begin, Time end, Time mean, Time since launch, Type, Wl code",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.99842490",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Climate Data Store catalogue"
+    },
+    {
+      "rel": "describedby",
+      "href": "#",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "#"
+    },
+    {
+      "rel": "describedby",
+      "href": "#",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "#"
+    },
+    {
+      "rel": "describedby",
+      "href": "#",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "#"
+    }
+  ],
+  "title": "In situ total column ozone and ozone soundings from 1924 to present from the World Ozone and Ultraviolet Radiation Data Centre",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -89.0,
+          180.0,
+          89.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1924-01-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Atmospheric conditions",
+    "Product type: In-situ observations",
+    "Spatial coverage: Global",
+    "Temporal coverage: Past",
+    "Variable domain: Atmosphere (composition)",
+    "Variable domain: Atmosphere (surface)",
+    "Variable domain: Atmosphere (upper air)"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

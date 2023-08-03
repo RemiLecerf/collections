@@ -1,0 +1,64 @@
+{
+  "type": "Collection",
+  "id": "0a67ffbc-440e-4922-879b-436b34a3315f",
+  "stac_version": "1.0.0",
+  "description": "'''Short description:'''\nGlobal Ocean- in-situ reprocessed Carbon observations. This product contains observations and gridded files from two up-to-date carbon and biogeochemistry community data products: Surface Ocean Carbon ATlas SOCATv2021 and GLobal Ocean Data Analysis Project GLODAPv2.2021. \nThe SOCATv2022-OBS dataset contains >25 million observations of fugacity of CO2 of the surface global ocean from 1957 to early 2022. The quality control procedures are described in Bakker et al. (2016). These observations form the basis of the gridded products included in SOCATv2020-GRIDDED: monthly, yearly and decadal averages of fCO2 over a 1x1 degree grid over the global ocean, and a 0.25x0.25 degree, monthly average for the coastal ocean.\nGLODAPv2.2022-OBS contains >1 million observations from individual seawater samples of temperature, salinity, oxygen, nutrients, dissolved inorganic carbon, total alkalinity and pH from 1972 to 2020. These data were subjected to an extensive quality control and bias correction described in Olsen et al. (2020). GLODAPv2-GRIDDED contains global climatologies for temperature, salinity, oxygen, nitrate, phosphate, silicate, dissolved inorganic carbon, total alkalinity and pH over a 1x1 degree horizontal grid and 33 standard depths using the observations from the previous iteration of GLODAP, GLODAPv2. \nSOCAT and GLODAP are based on community, largely volunteer efforts, and the data providers will appreciate that those who use the data cite the corresponding articles (see References below) in order to support future sustainability of the data products.\n\n'''DOI (product) :'''   \nhttps://doi.org/10.48670/moi-00035",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "ftp://my.cmems-du.eu/Core/INSITU_GLO_BGC_CARBON_DISCRETE_MY_013_050/cmems_obs-ins_glo_bgc-car_my_glodap-gridded_irr",
+      "type": "WWW:FTP",
+      "title": "cmems_obs-ins_glo_bgc-car_my_glodap-gridded_irr"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://my.cmems-du.eu/Core/INSITU_GLO_BGC_CARBON_DISCRETE_MY_013_050/cmems_obs-ins_glo_bgc-car_my_glodap-obs_irr",
+      "type": "WWW:FTP",
+      "title": "cmems_obs-ins_glo_bgc-car_my_glodap-obs_irr"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://my.cmems-du.eu/Core/INSITU_GLO_BGC_CARBON_DISCRETE_MY_013_050/cmems_obs-ins_glo_bgc-car_my_socat-gridded_irr",
+      "type": "WWW:FTP",
+      "title": "cmems_obs-ins_glo_bgc-car_my_socat-gridded_irr"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://my.cmems-du.eu/Core/INSITU_GLO_BGC_CARBON_DISCRETE_MY_013_050/cmems_obs-ins_glo_bgc-car_my_socat-obs_irr",
+      "type": "WWW:FTP",
+      "title": "cmems_obs-ins_glo_bgc-car_my_socat-obs_irr"
+    }
+  ],
+  "title": "Global Ocean - In Situ reprocessed carbon observations - SOCATv2022 / GLODAPv2.2022",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1957-10-22T00:00:00Z",
+          "2022-01-01T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

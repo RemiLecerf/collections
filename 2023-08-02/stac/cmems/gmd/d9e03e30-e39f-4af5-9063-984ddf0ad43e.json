@@ -1,0 +1,52 @@
+{
+  "type": "Collection",
+  "id": "d9e03e30-e39f-4af5-9063-984ddf0ad43e",
+  "stac_version": "1.0.0",
+  "description": "'''DEFINITION'''\n\nThe OMI_VAR_EXTREME_SL_NORTHWESTSHELF_slev_mean_and_anomaly_obs indicator is based on the computation of the 99th and the 1st percentiles from in situ data (observations). It is computed for the variable sea level measured by tide gauges along the coast. The use of percentiles instead of annual maximum and minimum values, makes this extremes study less affected by individual data measurement errors. The annual percentiles referred to annual mean sea level are temporally averaged and their spatial evolution is displayed in the dataset northwestshelf_omi_sl_extreme_var_slev_mean_and_anomaly_obs, jointly with the anomaly in the target year. This study of extreme variability was first applied to sea level variable (Pérez Gómez et al 2016) and then extended to other essential variables, sea surface temperature and significant wave height (Pérez Gómez et al 2018).\n\n'''CONTEXT'''\n\nSea level  is one of the Essential Ocean Variables most affected by climate change. Global mean sea level rise has accelerated since the 1990’s (Abram et al., 2019, Legeais et al., 2020), due to the increase of ocean temperature and mass volume caused by land ice melting (WCRP, 2018). Basin scale oceanographic and meteorological features lead to regional variations of this trend that combined with changes in the frequency and intensity of storms could also rise extreme sea levels up to one metre by the end of the century (Vousdoukas et al., 2020). This will significantly increase coastal vulnerability to storms, with important consequences on the extent of flooding events, coastal erosion and damage to infrastructures caused by waves. \n\n'''CMEMS KEY FINDINGS'''\n\nThe completeness index criteria is fulfilled in this region by 23 stations, a significant increase with respect to those used in 2019 (only 6). Most of these new stations belong to UK and Denmark, and their reprocessed timeseries are now provided in product  INSITU_GLO_PHY_SSH_DISCRETE_MY_013_053. The mean 99th percentiles present a large spatial variability related to the tidal pattern, ranging from the 3.08 m and 3.38 m above mean sea level in Immingan (East England) and Calais (France, English Channel) respectively,  to 0.59 m above mean sea level in Aarhus (Denmark). The standard deviation ranges between 3 and 8 cm. There is a clear positive anomaly of 99th percentiles in 2020 for most of the stations, reaching 11 cm in Kungsvik (Sweden) and Ullapool (Scotland). Null or very small negative anomalies are only observed at two stations in the southeastern coast of England.   \n\n'''DOI (product):''' \nhttps://doi.org/10.48670/moi-00272",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "ftp://my.cmems-du.eu/Core/OMI_VAR_EXTREME_SL_NORTHWESTSHELF_slev_mean_and_anomaly_obs/omi_var_extreme_sl_northwestshelf_slev_mean_and_anomaly_obs",
+      "type": "WWW:FTP",
+      "title": "omi_var_extreme_sl_northwestshelf_slev_mean_and_anomaly_obs"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://mdl1.marine.copernicus.eu/derived/OMI_VAR_EXTREME_SL_NORTHWESTSHELF_slev_mean_and_anomaly_obs/omi_var_extreme_sl_northwestshelf_slev_mean_and_anomaly_obs_202211/omi_var_extreme_sl_northwestshelf_slev_mean_and_anomaly_obs.nc",
+      "type": "MYO:MOTU-DGF",
+      "title": "omi_var_extreme_sl_northwestshelf_slev_mean_and_anomaly_obs"
+    }
+  ],
+  "title": "North West Shelf Mean Sea Level extreme from Observations Reprocessing",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -13.0,
+          46.0,
+          13.0,
+          62.5
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1993-01-01T00:00:00Z",
+          "2020-12-31T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

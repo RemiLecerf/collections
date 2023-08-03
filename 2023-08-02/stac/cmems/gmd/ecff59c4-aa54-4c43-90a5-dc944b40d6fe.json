@@ -1,0 +1,52 @@
+{
+  "type": "Collection",
+  "id": "ecff59c4-aa54-4c43-90a5-dc944b40d6fe",
+  "stac_version": "1.0.0",
+  "description": "'''DEFINITION'''\n\nThe CMEMS IBI_OMI_seastate_extreme_var_swh_mean_and_anomaly OMI indicator is based on the computation of the annual 99th percentile of Significant Wave Height (SWH) from model data. Two different CMEMS products are used to compute the indicator: The Iberia-Biscay-Ireland Multi Year Product (IBI_MULTIYEAR_WAV_005_006) and the Analysis product (IBI_ANALYSIS_FORECAST_WAV_005_005).\nTwo parameters have been considered for this OMI:\n•\tMap of the 99th mean percentile: It is obtained from the Multi-Year Product, the annual 99th percentile is computed for each year of the product. The percentiles are temporally averaged in the whole period (1993-2019).\n•\tAnomaly of the 99th percentile in 2020: The 99th percentile of the year 2020 is computed from the Analysis product. The anomaly is obtained by subtracting the mean percentile to the percentile in 2020.\nThis indicator is aimed at monitoring the extremes of annual significant wave height and evaluate the spatio-temporal variability. The use of percentiles instead of annual maxima, makes this extremes study less affected by individual data. This approach was first successfully applied to sea level variable (Pérez Gómez et al., 2016) and then extended to other essential variables, such as sea surface temperature and significant wave height (Pérez Gómez et al 2018 and Álvarez-Fanjul et al., 2019). Further details and in-depth scientific evaluation can be found in the CMEMS Ocean State report (Álvarez- Fanjul et al., 2019).\n\n'''CONTEXT'''\n\nThe sea state and its related spatio-temporal variability affect dramatically maritime activities and the physical connectivity between offshore waters and coastal ecosystems, impacting therefore on the biodiversity of marine protected areas (González-Marco et al., 2008; Savina et al., 2003; Hewitt, 2003). Over the last decades, significant attention has been devoted to extreme wave height events since their destructive effects in both the shoreline environment and human infrastructures have prompted a wide range of adaptation strategies to deal with natural hazards in coastal areas (Hansom et al., 2019). Complementarily, there is also an emerging question about the role of anthropogenic global climate change on present and future extreme wave conditions.\nThe Iberia-Biscay-Ireland region, which covers the North-East Atlantic Ocean from Canary Islands to Ireland, is characterized by two different sea state wave climate regions: whereas the northern half, impacted by the North Atlantic subpolar front, is of one of the world’s greatest wave generating regions (Mørk et al., 2010; Folley, 2017), the southern half,  located at subtropical latitudes, is by contrast influenced by persistent trade winds and thus by constant and moderate wave regimes.\nThe North Atlantic Oscillation (NAO), which refers to changes in the atmospheric sea level pressure difference between the Azores and Iceland, is a significant driver of wave climate variability in the Northern Hemisphere. The influence of North Atlantic Oscillation on waves along the Atlantic coast of Europe is particularly strong in and has a major impact on northern latitudes wintertime (Martínez-Asensio et al. 2016; Bacon and Carter, 1991; Bouws et al., 1996; Bauer, 2001; Woolf et al., 2002; Gleeson et al., 2017). Swings in the North Atlantic Oscillation index produce changes in the storms track and subsequently in the wind speed and direction over the Atlantic that alter the wave regime. When North Atlantic Oscillation index is in its positive phase, storms usually track northeast of Europe and enhanced westerly winds induce higher than average waves in the northernmost Atlantic Ocean. Conversely, in the negative North Atlantic Oscillation phase, the track of the storms is more zonal and south than usual, with trade winds (mid latitude westerlies) being slower and producing higher than average waves in southern latitudes. \nAdditionally, a variety of previous studies have unequivocally determined the relationship between the sea state variability in the IBI region and other atmospheric climate modes such as the East Atlantic pattern, the Arctic Oscillation, the East Atlantic Western Russian pattern and the Scandinavian pattern (Izaguirre et al., 2011, Martínez-Asensio et al., 2016). \nIn this context, long‐term statistical analysis of reanalyzed model data is mandatory not only to disentangle other driving agents of wave climate but also to attempt inferring any potential trend in the number and/or intensity of extreme wave events in coastal areas with subsequent socio-economic and environmental consequences.\n\n'''CMEMS KEY FINDINGS'''\n\nThe climatic mean of 99th percentile (1993-2020) reveals a north-south gradient of Significant Wave Height with the highest values in northern latitudes (above 8m) and lowest values (2-3 m) detected southeastward of Canary Islands, in the seas between Canary Islands and the African Continental Shelf. This north-south pattern is the result of the two climatic conditions prevailing in the region.\nThe anomaly of the 99th percentile in 2021 shows a homogeneous distribution of negative anomalies affecting the Eastern North Atlantic from Canary Islands at 27°N up to Ireland at 56°N. These anomalies are significative and surpass the climatic standard deviation of Significant Wave Height in the region. The indicator does not show any region with negative anomalies bigger than twice the climatic standard deviation.\nThe indicator shows localized coastal regions where the maximum wave height surpasses twice the climatic standard deviation, i. e.: South of Canary islands, South coast of Iberian Peninsula, English Channel, and Irish Sea.\n\n'''DOI (product):''' \nhttps://doi.org/10.48670/moi-00249",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "ftp://my.cmems-du.eu/Core/IBI_OMI_SEASTATE_extreme_var_swh_mean_and_anomaly/ibi_omi_seastate_extreme_var_swh_mean_and_anomaly",
+      "type": "WWW:FTP",
+      "title": "ibi_omi_seastate_extreme_var_swh_mean_and_anomaly"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://mdl1.marine.copernicus.eu/derived/IBI_OMI_SEASTATE_extreme_var_swh_mean_and_anomaly/ibi_omi_seastate_extreme_var_swh_mean_and_anomaly_202211/IBI_OMI_SEASTATE_extreme_var_swh_mean_and_anomaly.nc",
+      "type": "MYO:MOTU-DGF",
+      "title": "ibi_omi_seastate_extreme_var_swh_mean_and_anomaly"
+    }
+  ],
+  "title": "Iberia Biscay Ireland Significant Wave Height extreme from Reanalysis",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -19.0,
+          26.0,
+          5.0,
+          56.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2021-01-01T00:00:00Z",
+          "2021-12-31T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

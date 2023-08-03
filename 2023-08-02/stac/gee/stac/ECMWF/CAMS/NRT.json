@@ -1,0 +1,48 @@
+{
+  "type": "Collection",
+  "id": "ECMWF/CAMS/NRT",
+  "stac_version": "1.0.0",
+  "description": "The Copernicus Atmosphere Monitoring Service provides the capacity to continuously monitor\nthe composition of the Earth's atmosphere at global and regional scales. The main global\nnear-real-time production system is a data assimilation and forecasting suite providing two\n5-day forecasts per day for aerosols and chemical compounds that are part of the chemical\nscheme.\n\nPrior to 2021-07-01 only two parameters were available,\n1. Total Aerosol Optical Depth at 550 nm surface\n2. Particulate matter d < 25 um surface\nNote that system:time_start refers to forecast time.\n",
+  "links": [],
+  "title": "Copernicus Atmosphere Monitoring Service (CAMS) Global Near-Real-Time",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1981-01-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "aerosol",
+    "atmosphere",
+    "climate",
+    "copernicus",
+    "ecmwf",
+    "forecast",
+    "particulate_matter"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

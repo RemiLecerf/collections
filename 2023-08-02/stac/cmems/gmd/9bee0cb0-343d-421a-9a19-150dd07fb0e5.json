@@ -1,0 +1,64 @@
+{
+  "type": "Collection",
+  "id": "9bee0cb0-343d-421a-9a19-150dd07fb0e5",
+  "stac_version": "1.0.0",
+  "description": "'''Short description:''' \n\nFor the Global Ocean- the OSTIA global foundation Sea Surface Temperature product provides daily gap-free maps of : Foundation Sea Surface Temperature at 0.05° x 0.05° horizontal grid resolution, using in-situ and satellite data from both infrared and microwave radiometers. \n\nThe Operational Sea Surface Temperature and Ice Analysis (OSTIA) system is run by the UK's Met Office and delivered by IFREMER PU. OSTIA uses satellite data provided by the GHRSST project together with in-situ observations to determine the sea surface temperature.\nA high resolution (1/20° - approx. 6 km) daily analysis of sea surface temperature (SST) is produced for the global ocean and some lakes.\n\n'''DOI (product) :'''   \nhttps://doi.org/10.48670/moi-00165",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=SST_GLO_SST_L4_NRT_OBSERVATIONS_010_001-TDS&product=METOFFICE-GLO-SST-L4-NRT-OBS-SST-V2",
+      "type": "MYO:MOTU-SUB",
+      "title": "METOFFICE-GLO-SST-L4-NRT-OBS-SST-V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/METOFFICE-GLO-SST-L4-NRT-OBS-SST-V2",
+      "type": "WWW:OPENDAP",
+      "title": "METOFFICE-GLO-SST-L4-NRT-OBS-SST-V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/SST_GLO_SST_L4_NRT_OBSERVATIONS_010_001/METOFFICE-GLO-SST-L4-NRT-OBS-SST-V2",
+      "type": "WWW:FTP",
+      "title": "METOFFICE-GLO-SST-L4-NRT-OBS-SST-V2"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/METOFFICE-GLO-SST-L4-NRT-OBS-SST-V2",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "METOFFICE-GLO-SST-L4-NRT-OBS-SST-V2"
+    }
+  ],
+  "title": "Global Ocean OSTIA Sea Surface Temperature and Sea Ice Analysis",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2007-01-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

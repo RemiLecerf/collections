@@ -1,0 +1,44 @@
+{
+  "type": "Collection",
+  "id": "LANDSAT/LT05/C01/T1_8DAY_NDSI",
+  "stac_version": "1.0.0",
+  "description": "These Landsat 5 TM Collection 1 Tier 1 composites are made from Tier 1 orthorectified scenes, using the\n  computed top-of-atmosphere (TOA) reflectance.\n  See [Chander et al. (2009)](https://www.sciencedirect.com/science/article/pii/S0034425709000169)\n  for details on the TOA computation.\n\nThe Normalized Difference Snow Index is used to\nidentify snow, based on its characteristically higher reflectance in\nthe visible portion of the spectrum compared to the mid-IR.  NDSI is\ncomputed using the Green and Mid-IR bands, and has a range of -1.0 to\n1.0. See\n[Riggs et al. (1994)](https://doi.org/10.1109/IGARSS.1994.399618)\nfor details.\n\nThese composites are created from\nall the scenes in each\n8-day period beginning from the first day of the year and continuing\nto the 360th day of the year.  The last composite of the year,\nbeginning on day 361, will overlap the first composite of the\nfollowing year by 3 days.  All the images from each 8-day period are\nincluded in the composite, with the most recent pixel as the composite value.\n",
+  "links": [],
+  "title": "Landsat 5 TM Collection 1 Tier 1 8-Day NDSI Composite",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1981-01-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "landsat",
+    "ndsi",
+    "usgs"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

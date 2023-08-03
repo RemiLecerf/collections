@@ -1,0 +1,52 @@
+{
+  "type": "Collection",
+  "id": "d0c45ba6-ed6a-4141-8b3b-1a01c15b0656",
+  "stac_version": "1.0.0",
+  "description": "'''DEFINITION'''\n\nWe have derived an annual eutrophication and eutrophication indicator map for the North Atlantic Ocean using satellite-derived chlorophyll concentration. Using the satellite-derived chlorophyll products distributed in the regional North Atlantic CMEMS MY Ocean Colour dataset (OC- CCI), we derived P90 and P10 daily climatologies. The time period selected for the climatology was 1998-2017. For a given pixel, P90 and P10 were defined as dynamic thresholds such as 90% of the 1998-2017 chlorophyll values for that pixel were below the P90 value, and 10% of the chlorophyll values were below the P10 value.  To minimise the effect of gaps in the data in the computation of these P90 and P10 climatological values, we imposed a threshold of 25% valid data for the daily climatology. For the 20-year 1998-2017 climatology this means that, for a given pixel and day of the year, at least 5 years must contain valid data for the resulting climatological value to be considered significant. Pixels where the minimum data requirements were met were not considered in further calculations.\n We compared every valid daily observation over 2021 with the corresponding daily climatology on a pixel-by-pixel basis, to determine if values were above the P90 threshold, below the P10 threshold or within the [P10, P90] range. Values above the P90 threshold or below the P10 were flagged as anomalous. The number of anomalous and total valid observations were stored during this process. We then calculated the percentage of valid anomalous observations (above/below the P90/P10 thresholds) for each pixel, to create percentile anomaly maps in terms of % days per year. Finally, we derived an annual indicator map for eutrophication levels: if 25% of the valid observations for a given pixel and year were above the P90 threshold, the pixel was flagged as eutrophic. Similarly, if 25% of the observations for a given pixel were below the P10 threshold, the pixel was flagged as oligotrophic.\n\n'''CONTEXT'''\n\nEutrophication is the process by which an excess of nutrients – mainly phosphorus and nitrogen – in a water body leads to increased growth of plant material in an aquatic body. Anthropogenic activities, such as farming, agriculture, aquaculture and industry, are the main source of nutrient input in problem areas (Jickells, 1998; Schindler, 2006; Galloway et al., 2008). Eutrophication is an issue particularly in coastal regions and areas with restricted water flow, such as lakes and rivers (Howarth and Marino, 2006; Smith, 2003). The impact of eutrophication on aquatic ecosystems is well known: nutrient availability boosts plant growth – particularly algal blooms – resulting in a decrease in water quality (Anderson et al., 2002; Howarth et al.; 2000). This can, in turn, cause death by hypoxia of aquatic organisms (Breitburg et al., 2018), ultimately driving changes in community composition (Van Meerssche et al., 2019). Eutrophication has also been linked to changes in the pH (Cai et al., 2011, Wallace et al. 2014) and depletion of inorganic carbon in the aquatic environment (Balmer and Downing, 2011). Oligotrophication is the opposite of eutrophication, where reduction in some limiting resource leads to a decrease in photosynthesis by aquatic plants, reducing the capacity of the ecosystem to sustain the higher organisms in it. \nEutrophication is one of the more long-lasting water quality problems in Europe (OSPAR ICG-EUT, 2017), and is on the forefront of most European Directives on water-protection. Efforts to reduce anthropogenically-induced pollution resulted in the implementation of the Water Framework Directive (WFD) in 2000. \n\n'''CMEMS KEY FINDINGS'''\n\nThe coastal and shelf waters, especially between 30 and 400N that showed active oligotrophication flags for 2020 have reduced in 2021 and a reversal to eutrophic flags can be seen in places. Again, the eutrophication index is positive only for a small number of coastal locations just north of 40oN in 2021, however south of 40oN there has been a significant increase in eutrophic flags, particularly around the Azores.  In general, the 2021 indicator map showed an increase in oligotrophic areas in the Northern Atlantic and an increase in eutrophic areas in the Southern Atlantic. The Third Integrated Report on the Eutrophication Status of the OSPAR Maritime Area (OSPAR ICG-EUT, 2017) reported an improvement from 2008 to 2017 in eutrophication status across offshore and outer coastal waters of the Greater North Sea, with a decrease in the size of coastal problem areas in Denmark, France, Germany, Ireland, Norway and the United Kingdom.\n\n'''DOI (product):'''\nhttps://doi.org/10.48670/moi-00195",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "ftp://my.cmems-du.eu/Core/OMI_HEALTH_CHL_ATLANTIC_OCEANCOLOUR_eutrophication/omi_health_chl_atlantic_oceancolour_euIndex",
+      "type": "WWW:FTP",
+      "title": "omi_health_chl_atlantic_oceancolour_euIndex"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://mdl1.marine.copernicus.eu/derived/OMI_HEALTH_CHL_ATLANTIC_OCEANCOLOUR_eutrophication/omi_health_chl_atlantic_oceancolour_euIndex_202211/omi_health_chl_atlantic_oceancolour_euIndex_2021_P20220517_R19982017.nc",
+      "type": "MYO:MOTU-DGF",
+      "title": "omi_health_chl_atlantic_oceancolour_euIndex"
+    }
+  ],
+  "title": "North Atlantic Ocean Eutrophication from Observations Reprocessing",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -46.0,
+          20.0,
+          13.0,
+          66.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2021-01-01T00:00:00Z",
+          "2021-12-31T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "type": "Collection",
+  "id": "ADO_VCI_MODIS_231m_3035",
+  "stac_version": "1.0.0",
+  "description": "The Vegetation Condition Index (VCI) is based on the Normalized Difference Vegetation Index (NDVI) derived from MODIS satellite data. The NDVI is based on 8 day maximum value composite MOD09Q1 (v006) reflectance products. The spatial resolution is 231 m. The NDVI is masked to the highest quality standards using the provided quality layers. Missing pixel values in the time series are linearly interpolated. Non-vegetated areas are masked using the most recent Corine Land Cover product version for the according year. The final product is regridded to the LAEA Projection (EPSG:3035). The VCI is calculated using the formula VCIi = (NDVIi - NDVImin,i)/(NDVImax,i - NDVImin,i) * 100. The VCI expresses anomalies of the NDVI. The data is provided as 8 day measures. The time series is starting from 2001. The VCI values range from 0-100, whereas high values correspond to healthy vegetation and low values indicate stressed vegetation.",
+  "links": [],
+  "title": "Vegetation Condition Index - 231 m 8 days",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1981-01-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "CC BY 4.0",
+  "keywords": [
+    "vegetation condition index",
+    "vci",
+    "modis",
+    "ADO project",
+    "ADO"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

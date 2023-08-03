@@ -1,0 +1,52 @@
+{
+  "type": "Collection",
+  "id": "470d9e41-9769-47ba-836d-5d88f7b9fdd7",
+  "stac_version": "1.0.0",
+  "description": "'''DEFINITION'''\n\nThe BALTIC_OMI_TEMPSAL_sst_trend product includes the cumulative/net trend in sea surface temperature anomalies for the Baltic Sea from 1993-2021. The cumulative trend is the rate of change (°C/year) scaled by the number of years (29 years). The SST Level 4 analysis products that provide the input to the trend calculations are taken from the reprocessed product SST_BAL_SST_L4_REP_OBSERVATIONS_010_016 with a recent update to include 2021. The product has a spatial resolution of 0.02 degrees in latitude and longitude.\nThe OMI time series runs from Jan 1, 1993 to December 31, 2021 and is constructed by calculating monthly averages from the daily level 4 SST analysis fields of the SST_BAL_SST_L4_REP_OBSERVATIONS_010_016 from 1993 to 2021. See the Copernicus Marine Service Ocean State Reports for more information on the OMI product (section 1.1 in Von Schuckmann et al., 2016; section 3 in Von Schuckmann et al., 2018). The times series of monthly anomalies have been used to calculate the trend in SST using Sen’s method with confidence intervals from the Mann-Kendall test (section 3 in Von Schuckmann et al., 2018).\n\n'''CONTEXT'''\n\nSST is an essential climate variable that is an important input for initialising numerical weather prediction models and fundamental for understanding air-sea interactions and monitoring climate change. The Baltic Sea is a region that requires special attention regarding the use of satellite SST records and the assessment of climatic variability (Høyer and She 2007; Høyer and Karagali 2016). The Baltic Sea is a semi-enclosed basin with natural variability and it is influenced by large-scale atmospheric processes and by the vicinity of land. In addition, the Baltic Sea is one of the largest brackish seas in the world. When analysing regional-scale climate variability, all these effects have to be considered, which requires dedicated regional and validated SST products. Satellite observations have previously been used to analyse the climatic SST signals in the North Sea and Baltic Sea (BACC II Author Team 2015; Lehmann et al. 2011). Recently, Høyer and Karagali (2016) demonstrated that the Baltic Sea had warmed 1-2oC from 1982 to 2012 considering all months of the year and 3-5oC when only July- September months were considered. This was corroborated in the Ocean State Reports (section 1.1 in Von Schuckmann et al., 2016; section 3 in Von Schuckmann et al., 2018). \n\n'''CMEMS KEY FINDINGS'''\n\nSST trends were calculated for the Baltic Sea area and the whole region including the North Sea, over the period January 1993 to December 2021. The average trend for the Baltic Sea domain (east of 9°E longitude) is 0.049 °C/year, which represents an average warming of 1.42 °C for the 1993-2021 period considered here. When the North Sea domain is included, the trend decreases to 0.03°C/year corresponding to an average warming of 0.87°C for the 1993-2021 period. Trends are highest for the Baltic Sea region and North Atlantic, especially offshore from Norway, compared to other regions. \n\n'''DOI (product):''' \nhttps://doi.org/10.48670/moi-00206",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "ftp://my.cmems-du.eu/Core/BALTIC_OMI_TEMPSAL_sst_trend/baltic_omi_tempsal_sst_trend",
+      "type": "WWW:FTP",
+      "title": "baltic_omi_tempsal_sst_trend"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://mdl1.marine.copernicus.eu/derived/BALTIC_OMI_TEMPSAL_sst_trend/baltic_omi_tempsal_sst_trend_202211/baltic_omi_tempsal_sst_trend_2021_P20220719_R19932014.nc",
+      "type": "MYO:MOTU-DGF",
+      "title": "baltic_omi_tempsal_sst_trend"
+    }
+  ],
+  "title": "Baltic Sea Surface Temperature cumulative trend map from Observations Reprocessing",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -12.0,
+          46.0,
+          32.01,
+          67.99
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1993-01-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

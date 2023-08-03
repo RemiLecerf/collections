@@ -1,0 +1,64 @@
+{
+  "type": "Collection",
+  "id": "319140a0-f18d-4ae2-9e6c-552d653e32c8",
+  "stac_version": "1.0.0",
+  "description": "'''Short description:'''\n\nThe Arctic Ocean Surface Currents Analysis and Forecast system uses the HYCOM model at 3 km resolution forced with tides at its lateral boundaries, surface winds sea level pressure from the ECMWF (European Centre for Medium-Range Weather Forecasts). HYCOM runs daily providing 10 days forecast. The output variables are the surface currents and sea surface heights, provided at 15 minutes frequency, which therefore include mesoscale signals (though without data assimilation so far), tides and storm surge signals.\n\n'''DOI (product) :'''   \nhttps://doi.org/10.48670/moi-00005",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=ARCTIC_ANALYSISFORECAST_PHY_TIDE_002_015-TDS&product=dataset-topaz6-arc-15min-3km-be",
+      "type": "MYO:MOTU-SUB",
+      "title": "dataset-topaz6-arc-15min-3km-be"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/dataset-topaz6-arc-15min-3km-be",
+      "type": "WWW:OPENDAP",
+      "title": "dataset-topaz6-arc-15min-3km-be"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/ARCTIC_ANALYSISFORECAST_PHY_TIDE_002_015/dataset-topaz6-arc-15min-3km-be",
+      "type": "WWW:FTP",
+      "title": "dataset-topaz6-arc-15min-3km-be"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/dataset-topaz6-arc-15min-3km-be",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "dataset-topaz6-arc-15min-3km-be"
+    }
+  ],
+  "title": "Arctic Ocean Tidal Analysis and Forecast",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          53.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2017-12-19T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

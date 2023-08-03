@@ -1,0 +1,52 @@
+{
+  "type": "Collection",
+  "id": "032a68ec-d82f-432c-90d6-80ea0bf7d418",
+  "stac_version": "1.0.0",
+  "description": "'''DEFINITION'''\n\nThe time series are derived from the regional chlorophyll reprocessed (REP) products as distributed by CMEMS which, in turn, result from the application of the regional chlorophyll algorithms to remote sensing reflectances (Rrs) provided by the ESA Ocean Colour Climate Change Initiative (ESA OC-CCI, Sathyendranath et al. 2019; Jackson 2020). Daily regional mean values are calculated by performing the average (weighted by pixel area) over the region of interest. A fixed annual cycle is extracted from the original signal, using the Census-I method as described in Vantrepotte et al. (2009). The deasonalised time series is derived by subtracting the seasonal cycle from the original time series, and then fitted to a linear regression to, finally, obtain the linear trend. \n\n'''CONTEXT'''\n\nPhytoplankton – and chlorophyll concentration , which is  a measure of  phytoplankton concentration – respond rapidly to changes in environmental conditions. Chlorophyll concentration is highly seasonal in the Arctic Ocean region due to a strong dependency on light and nutrient availability, which in turn are driven by seasonal sunlight and sea-ice cover dynamics, as well as changes in mixed layer. In the past two decades, an increase in annual net primary production by Arctic Ocean phytoplankton has been observed and linked to sea-ice decline (Arrigo and van Dijken, 2015); in the same line Kahru et al. (2011) have showed that chlorophyll concentration peaks are appearing increasingly earlier in the year in parts of the Arctic. It is therefore of critical importance to monitor chlorophyll concentration at multiple temporal and spatial scales in the area, in order to be able to separate potential long-term climate signals from natural variability in the short term.\n\n'''CMEMS KEY FINDINGS'''\n\nWhile the overall trend average for the 1997-2021 period in the Arctic Sea is positive (0.86 ± 0.17 % per year), a continued plateau in the linear trend, initiated in 2013 is observed in the time series extension, with both the amplitude and the baseline of the cycle continuing to decrease during 2021 as reported for previous years (Sathyendranath et al., 2018). In particular, the annual average for the region in 2021 is 1.05 mg m-3 - a 30% reduction on 2020 values. There appears to be no appreciable changes in the timings or amplitude of the 2021 spring and autumn blooms. \n\n'''DOI (product):''' \nhttps://doi.org/10.48670/moi-00188",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "ftp://my.cmems-du.eu/Core/OMI_HEALTH_CHL_ARCTIC_OCEANCOLOUR_area_averaged_mean/omi_health_chl_arctic_oceancolour_area_averaged_mean",
+      "type": "WWW:FTP",
+      "title": "omi_health_chl_arctic_oceancolour_area_averaged_mean"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://mdl1.marine.copernicus.eu/derived/OMI_HEALTH_CHL_ARCTIC_OCEANCOLOUR_area_averaged_mean/omi_health_chl_arctic_oceancolour_area_averaged_mean_202211/OMI_HEALTH_CHL_ARCTIC_OCEANCOLOUR_area_averaged_mean_19970901_20211231_20220831.nc",
+      "type": "MYO:MOTU-DGF",
+      "title": "omi_health_chl_arctic_oceancolour_area_averaged_mean"
+    }
+  ],
+  "title": "Arctic Ocean Chlorophyll-a time series and trend from Observations Reprocessing",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          65.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1997-09-04T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

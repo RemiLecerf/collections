@@ -1,0 +1,92 @@
+{
+  "type": "Collection",
+  "id": "EO:ECMWF:DAT:SATELLITE_TOTAL_COLUMN_WATER_VAPOUR_OCEAN",
+  "stac_version": "1.0.0",
+  "description": "Water vapour is has been recognised as an  Essential Climate Variable as it provides the basis for all cloud formation and physics and furthermore influences the Earth's heat budget due to its high absorbance of long and short-wave radiation. Total column water vapour (TCWV) is a measure of the integrated water vapour content of the atmosphere.\nThis catalogue entry provides the TCWV data product usually called Hamburg Ocean Atmosphere Parameters and Fluxes from Satellite Data (HOAPS).\nThe HOAPS product uses a 1D-Var retrieval concept for atmospheric water vapour content from the measurements of the Special Sensor Microwave Imager (SSM/I) and the Special Sensor Microwave Imager Sounder (SSMIS) sensors in the microwave spectra over ice-free ocean surfaces. \nThe dataset provides a continuous data record composed of a Thematic Climate Data Record (TCDR) from 1988 to 2014 and of an Interim Climate Data Record (ICDR) from 2015 onward. It was produced following the World Meteorological Organisation's Observing Systems Capability Analysis and Review Tool (OSCAR)  requirements for TCWV.\nThe SSM/I and SSMIS are well-established instruments for TCWV retrieval over ice-free open ocean surfaces and provide a long time series (1987 to present) and global coverage at a reasonable resolution.\nThe TCDR HOAPS dataset is produced on behalf of EUMETSAT Satellite Application Facility on Climate Monitoring (CM SAF) and the ICDR is produced within the Copernicus Climate Change Serice (C3S) project. Both products are based on the HOAPS 4.0 algorithm at DWD (Deutscher Wetterdienst).  A related dataset providing TCWV data over both land and ocean, but only at monthly  time resolution, computed using a different set of sensors and algorithms  is also available (the link to that dataset is under the Related data section).\n\nVariables in the dataset/application are:\nTotal column water vapour",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.92db7fef",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Climate Data Store catalogue"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://datastore.copernicus-climate.eu/documents/satellite-total-column-water-vapour/PREV_C3S_D312b_Lot1.2.3.7-v1.1_202102_SQAD_TCWV_SSMIS_TCDR+ICDR_v1.1.1_APPROVED_Ver1.pdf",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "System Quality Assurance Document (PDF)"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://datastore.copernicus-climate.eu/documents/satellite-total-column-water-vapour/PREV_C3S_D312b_Lot1.3.6.3-v1.1_202102_PUGS_TCWV_SSMIS_TCDR+ICDR_v1.1.1_APPROVED_Ver1.pdf",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Product User Guide and Specification (PDF)"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://datastore.copernicus-climate.eu/documents/satellite-total-column-water-vapour/PREV_C3S_D312b_Lot1.2.3.9-v1.1_202105_PQAR_TCWV_SSMIS_TCDR+ICDR_v1.1.1_APPROVED_Ver1.pdf",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Product Quality Assessment Report (PDF)"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://datastore.copernicus-climate.eu/documents/satellite-total-column-water-vapour/PREV_C3S_D312b_Lot1.1.3.3-v1.1_202102_ATBD_TCWV_SSMIS_TCDR+ICDR_v1.1.1_APPROVED_Ver1.pdf",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Algorithm Theoretical Basis Document (PDF)"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://datastore.copernicus-climate.eu/documents/satellite-total-column-water-vapour/PREV_C3S_D312b_Lot1.2.3.8-v1.1_202102_PQAD_TCWV_SSMIS_TCDR+ICDR_v1.1.1_APPROVED_Ver1.pdf",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Product Quality Assurance Document (PDF)"
+    },
+    {
+      "rel": "describedby",
+      "href": "#",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "#"
+    }
+  ],
+  "title": "Monthly and 6-hourly total column water vapour over ocean from 1988 to 2020 derived from satellite observations",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2003-01-01T00:00:00Z",
+          "2020-12-31T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Ocean",
+    "Product type: Satellite observations",
+    "Provider: Copernicus C3S",
+    "Provider: EUMETSAT SAF",
+    "Spatial coverage: Ocean",
+    "Temporal coverage: Past",
+    "Temporal coverage: Present",
+    "Variable domain: Atmosphere (upper air)"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

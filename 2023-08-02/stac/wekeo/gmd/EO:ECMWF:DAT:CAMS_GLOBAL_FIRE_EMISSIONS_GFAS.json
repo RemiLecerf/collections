@@ -1,0 +1,63 @@
+{
+  "type": "Collection",
+  "id": "EO:ECMWF:DAT:CAMS_GLOBAL_FIRE_EMISSIONS_GFAS",
+  "stac_version": "1.0.0",
+  "description": "Emissions of atmospheric pollutants from biomass burning and vegetation fires are key drivers of the evolution of atmospheric composition, with a high degree of spatial and temporal variability, and an accurate representation of them in models is essential.\nThe CAMS Global Fire Assimilation System (GFAS) utilises satellite observations of fire radiative power (FRP) to provide near-real-time information on the location, relative intensity and estimated emissions from biomass burning and vegetation fires. Emissions are estimated by (i) conversion of FRP observations to the dry matter (DM) consumed by the fire, and (ii) application of emission factors to DM for different biomes, based on field and laboratory studies in the scientific literature, to estimate the emissions. Emissions estimates for 40 pyrogenic species are available from GFAS, including aerosols, reactive gases and greenhouse gases, on a regular grid with a spatial resolution of 0.1 degrees longitude by 0.1 degrees latitude.\nThis version of GFAS (v1.2) provides daily averaged data based on a combination of FRP observations from two Moderate Resolution Imaging Spectroradiometer (MODIS) instruments, one on the NASA EOS-Terra satellite and the other on the NASA EOS-Aqua satellite from 1 January 2003 to present. GFAS also provides daily estimates of smoke plume injection heights derived from FRP observations and meteorological information from the operational weather forecasts from ECMWF.\nGFAS data have been used to provide surface boundary conditions for the CAMS global atmospheric composition and European regional air quality forecasts, and the wider atmospheric chemistry modelling community.\n\nVariables in the dataset/application are:\nAltitude of plume bottom, Altitude of plume top, Injection height (from IS4FIRES), Mean altitude of maximum injection, Wildfire combustion rate, Wildfire flux of acetaldehyde (C2H4O), Wildfire flux of acetone (C3H6O), Wildfire flux of ammonia (NH3), Wildfire flux of benzene (C6H6), Wildfire flux of black carbon, Wildfire flux of butanes (C4H10), Wildfire flux of butenes (C4H8), Wildfire flux of carbon dioxide (CO2), Wildfire flux of carbon monoxide (CO), Wildfire flux of dimethyl sulfide (DMS) (C2H6S), Wildfire flux of ethane (C2H6), Wildfire flux of ethanol (C2H5OH), Wildfire flux of ethene (C2H4), Wildfire flux of formaldehyde (CH2O), Wildfire flux of heptane (C7H16), Wildfire flux of hexanes (C6H14), Wildfire flux of hexene (C6H12), Wildfire flux of higher alkanes (CnH2n+2, c>=4), Wildfire flux of higher alkenes (CnH2n, c>=4), Wildfire flux of hydrogen (H), Wildfire flux of isoprene (C5H8), Wildfire flux of methane (CH4), Wildfire flux of methanol (CH3OH), Wildfire flux of nitrogen oxides (NOx), Wildfire flux of nitrous oxide (N20), Wildfire flux of non-methane hydrocarbons, Wildfire flux of octene (C8H16), Wildfire flux of organic carbon, Wildfire flux of particulate matter d < 2.5 µm (PM2.5), Wildfire flux of pentanes (C5H12), Wildfire flux of pentenes (C5H10), Wildfire flux of propane (C3H8), Wildfire flux of propene (C3H6), Wildfire flux of sulphur dioxide (SO2), Wildfire flux of terpenes ((C5H8)n), Wildfire flux of toluene (C7H8), Wildfire flux of toluene_lump (C7H8+ C6H6 + C8H10), Wildfire flux of total carbon in aerosols, Wildfire flux of total particulate matter, Wildfire flux of xylene (C8H10), Wildfire fraction of area observed, Wildfire overall flux of burnt carbon, Wildfire radiative power",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://ads.atmosphere.copernicus.eu/cdsapp#!/dataset/eu.copernicus.atmosphere.cams-global-fire-emissions-gfas",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Climate Data Store catalogue"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://confluence.ecmwf.int/x/to1CBQ",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Documentation on the CAMS global fire assimilation system"
+    }
+  ],
+  "title": "CAMS global biomass burning emissions based on fire radiative power (GFAS)",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2003-01-01T00:00:00Z",
+          "2022-12-20T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Atmospheric conditions",
+    "Parameter family: Aerosol",
+    "Parameter family: Reactive gas",
+    "Product type: Analysis",
+    "Spatial coverage: Global",
+    "Temporal coverage: Past",
+    "Temporal coverage: Present",
+    "Variable domain: Emissions and surface fluxes",
+    "airPollution"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

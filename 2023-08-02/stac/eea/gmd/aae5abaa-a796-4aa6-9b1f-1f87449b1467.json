@@ -1,0 +1,58 @@
+{
+  "type": "Collection",
+  "id": "aae5abaa-a796-4aa6-9b1f-1f87449b1467",
+  "stac_version": "1.0.0",
+  "description": "The raster file is the temporal trend in above ground vegetation biomass productivity. The vegetation productivity dataset is based on the time series of the Plant Phenology Index (PPI) derived from the MODIS BRDF-Adjusted Reflectance product (MODIS MCD43 NBAR). The PPI index is optimized for efficient monitoring of vegetation phenology and is derived from the source MODIS data using radiative transfer solutions applied to the reflectance in visible-red and near infrared spectral domains. The productivity indicator is based on calculating the area under the PPI temporal curve above the baseline (large integral - LINT) using the TIMESAT software for each year between and including 2000 and 2021.\n\nThe Total Productivity (TPROD), one of the Vegetation Phenology and Productivity (VPP) parameters, is a product of the pan-European High Resolution Vegetation Phenology and Productivity (HR-VPP) component of the Copernicus Land Monitoring Service (CLMS).\n\nThe Total Productivity (TPROD), or large integral, is the growing season integral computed as the sum of all daily Plant Phenology Index values between the dates of the season start (SOSD) and end (EOSD).\n\nThe Plant Phenology Index (PPI) is a physically based vegetation index, developed for improving the monitoring of the vegetation growth cycle. The PPI index values, with 5-day satellite revisit cycle, are first used in a function fitting to derive the PPI Seasonal Trajectories. From these Seasonal Trajectories, a suite of 13 Vegetation Phenology and Productivity (VPP) parameters are then computed and provided, for up to two seasons each year. The Total Productivity (TPROD) is one of the 13 parameters. The full list is available in the Product User Manual: https://land.copernicus.eu/user-corner/technical-library/clms_mrvpp_pum_d1-0.pdf\n\nThe Total Productivity (TPROD) time series dataset is made available as raster files with 500x 500m resolution, in ETRS89-LAEA projection corresponding to the MCD43 tiling grid, for those tiles that cover the EEA38 countries and the United Kingdom and for two seasons in each year from 2000 onwards. It is updated in the first quarter of each year.\n\nThe full on-line access to open and free data for this resource will be made available by the end of 2022. Until then the data will be made available 'on-demand' by filling in the form at: https://land.copernicus.eu/contact-form",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://land.copernicus.eu/user-corner/technical-library/clms_mrvpp_pum_d1-0.pdf",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "User manual"
+    }
+  ],
+  "title": "Medium Resolution Vegetation Phenology and Productivity: Large integral (raster 500m), Oct. 2022",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -25.0,
+          26.0,
+          45.0,
+          72.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2000-01-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Annually",
+    "EEA38 (from 2020)",
+    "United Kingdom",
+    "index",
+    "land",
+    "plant ecology",
+    "plant production",
+    "productivity",
+    "remote sensing",
+    "vegetation"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

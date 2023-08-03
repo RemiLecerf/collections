@@ -1,0 +1,78 @@
+{
+  "type": "Collection",
+  "id": "EO:CLMS:DAT:CGLS_GLOBAL_FAPAR_V2_1KM",
+  "stac_version": "1.0.0",
+  "description": "FAPAR was defined by CEOS as half the developed area of the convex hull wrapping the green canopy elements per unit horizontal ground. This definition allows accounting for elements which are not flat such as needles or stems. FAPAR is strongly non linearly related to reflectance. Therefore, its estimation from remote sensing observations will be scale dependant over heterogeneous landscapes. When observing a canopy made of different layers of vegetation, it is therefore mandatory to consider all the green layers. This is particularly important for forest canopies where the understory may represent a very significant contribution to the total canopy FAPAR. The derived FAPAR corresponds therefore to the total green FAPAR, including the contribution of the green elements of the understory. The resulting GEOV1 FAPAR products are relatively consistent with the actual FAPAR for low FAPAR values and ‘non-forest’ surfaces; while for forests, particularly for needle leaf types, significant departures with the true FAPAR are expected.",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://navigator.eumetsat.int/product/EO:CLMS:DAT:CGLS_GLOBAL_FAPAR_V2_1KM",
+      "type": "http",
+      "title": "EUMETSAT Product Navigator (Metadata)"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://navigator.eumetsat.int/product/EO:CLMS:DAT:CGLS_GLOBAL_FAPAR_V2_1KM",
+      "type": "http",
+      "title": "EUMETSAT Product Navigator (Metadata)"
+    },
+    {
+      "rel": "describedby",
+      "href": "http://land.copernicus.eu/global/products/fapar",
+      "type": "HTTP",
+      "title": "Copernicus Global Land Service"
+    },
+    {
+      "rel": "describedby",
+      "href": "http://land.copernicus.eu/global/access",
+      "type": "HTTP",
+      "title": "Copernicus Global Land Service"
+    },
+    {
+      "rel": "describedby",
+      "href": "http://eoportal.eumetsat.int",
+      "title": "Copernicus Global Land Service"
+    }
+  ],
+  "title": "Global 10-daily Fraction of Absorbed PAR 1km",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -60.0,
+          180.0,
+          80.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2011-01-01T00:00:00Z",
+          "2013-12-31T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "10-daily",
+    "Dekad",
+    "GLOBE",
+    "Orthoimagery",
+    "biogeophysical",
+    "geophysical environment",
+    "photosynthesis"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

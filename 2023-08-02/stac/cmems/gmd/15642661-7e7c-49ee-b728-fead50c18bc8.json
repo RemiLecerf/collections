@@ -1,0 +1,616 @@
+{
+  "type": "Collection",
+  "id": "15642661-7e7c-49ee-b728-fead50c18bc8",
+  "stac_version": "1.0.0",
+  "description": "'''Short  Description:'''\n\nThe ocean physics reanalysis for the North-West European Shelf is produced using an ocean assimilation model, with tides, at 7 km horizontal resolution.  \nThe ocean model is NEMO (Nucleus for European Modelling of the Ocean), using the 3DVar NEMOVAR system to assimilate observations. These are surface temperature and vertical profiles of temperature and salinity. The model is forced by lateral boundary conditions from the GloSea5, one of the multi-models used by [https://resources.marine.copernicus.eu/?option=com_csw&view=details&product_id=GLOBAL_REANALYSIS_PHY_001_026 GLOBAL_REANALYSIS_PHY_001_026] and at the Baltic boundary by the [https://resources.marine.copernicus.eu/?option=com_csw&view=details&product_id=BALTICSEA_REANALYSIS_PHY_003_011 BALTICSEA_REANALYSIS_PHY_003_011]. The atmospheric forcing is given by the ECMWF ERA5 atmospheric reanalysis. The river discharge is from a daily climatology. \n\nFurther details of the model, including the product validation are provided in the [http://catalogue.marine.copernicus.eu/documents/QUID/CMEMS-NWS-QUID-004-009.pdf CMEMS-NWS-QUID-004-009]. \n\nProducts are provided as monthly and daily 25-hour, de-tided, averages. The datasets available are temperature, salinity, horizontal currents, sea level, mixed layer depth, and bottom temperature. Temperature, salinity and currents, as multi-level variables, are interpolated from the model 51 hybrid s-sigma terrain-following system to 24 standard geopotential depths (z-levels). Grid-points near to the model boundaries are masked. The product is updated biannually provinding six-month extension of the time series.\n\nSee [http://catalogue.marine.copernicus.eu/documents/PUM/CMEMS-NWS-PUM-004-009_011.pdf CMEMS-NWS-PUM-004-009_011] for further details.\n\n'''Associated products:'''\n\nThis model is coupled with a biogeochemistry model (ERSEM) available as CMEMS product [https://resources.marine.copernicus.eu/?option=com_csw&view=details&product_id=NWSHELF_MULTIYEAR_BGC_004_011]. An analysis-forecast product is available from [https://resources.marine.copernicus.eu/?option=com_csw&view=details&product_id=NWSHELF_ANALYSISFORECAST_PHY_LR_004_001 NWSHELF_ANALYSISFORECAST_PHY_LR_004_011].\nThe product is updated biannually provinding six-month extension of the time series.\n\n'''DOI (product) :'''   \nhttps://doi.org/10.48670/moi-00059",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&service=NWSHELF_MULTIYEAR_PHY_004_009-TDS&product=cmems_mod_nws_phy-bottomt_my_7km-2D_PT1H-i",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_mod_nws_phy-bottomt_my_7km-2D_PT1H-i"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/dodsC/cmems_mod_nws_phy-bottomt_my_7km-2D_PT1H-i",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_mod_nws_phy-bottomt_my_7km-2D_PT1H-i"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://my.cmems-du.eu/Core/NWSHELF_MULTIYEAR_PHY_004_009/cmems_mod_nws_phy-bottomt_my_7km-2D_PT1H-i",
+      "type": "WWW:FTP",
+      "title": "cmems_mod_nws_phy-bottomt_my_7km-2D_PT1H-i"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/wms/cmems_mod_nws_phy-bottomt_my_7km-2D_PT1H-i",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_mod_nws_phy-bottomt_my_7km-2D_PT1H-i"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&service=NWSHELF_MULTIYEAR_PHY_004_009-TDS&product=cmems_mod_nws_phy-mld_my_7km-2D_PT1H-i",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_mod_nws_phy-mld_my_7km-2D_PT1H-i"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/dodsC/cmems_mod_nws_phy-mld_my_7km-2D_PT1H-i",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_mod_nws_phy-mld_my_7km-2D_PT1H-i"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://my.cmems-du.eu/Core/NWSHELF_MULTIYEAR_PHY_004_009/cmems_mod_nws_phy-mld_my_7km-2D_PT1H-i",
+      "type": "WWW:FTP",
+      "title": "cmems_mod_nws_phy-mld_my_7km-2D_PT1H-i"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/wms/cmems_mod_nws_phy-mld_my_7km-2D_PT1H-i",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_mod_nws_phy-mld_my_7km-2D_PT1H-i"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&service=NWSHELF_MULTIYEAR_PHY_004_009-TDS&product=cmems_mod_nws_phy-sss_my_7km-2D_PT1H-i",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_mod_nws_phy-sss_my_7km-2D_PT1H-i"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/dodsC/cmems_mod_nws_phy-sss_my_7km-2D_PT1H-i",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_mod_nws_phy-sss_my_7km-2D_PT1H-i"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://my.cmems-du.eu/Core/NWSHELF_MULTIYEAR_PHY_004_009/cmems_mod_nws_phy-sss_my_7km-2D_PT1H-i",
+      "type": "WWW:FTP",
+      "title": "cmems_mod_nws_phy-sss_my_7km-2D_PT1H-i"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/wms/cmems_mod_nws_phy-sss_my_7km-2D_PT1H-i",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_mod_nws_phy-sss_my_7km-2D_PT1H-i"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&service=NWSHELF_MULTIYEAR_PHY_004_009-TDS&product=cmems_mod_nws_phy-ssh_my_7km-2D_PT1H-i",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_mod_nws_phy-ssh_my_7km-2D_PT1H-i"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/dodsC/cmems_mod_nws_phy-ssh_my_7km-2D_PT1H-i",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_mod_nws_phy-ssh_my_7km-2D_PT1H-i"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://my.cmems-du.eu/Core/NWSHELF_MULTIYEAR_PHY_004_009/cmems_mod_nws_phy-ssh_my_7km-2D_PT1H-i",
+      "type": "WWW:FTP",
+      "title": "cmems_mod_nws_phy-ssh_my_7km-2D_PT1H-i"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/wms/cmems_mod_nws_phy-ssh_my_7km-2D_PT1H-i",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_mod_nws_phy-ssh_my_7km-2D_PT1H-i"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&service=NWSHELF_MULTIYEAR_PHY_004_009-TDS&product=cmems_mod_nws_phy-sst_my_7km-2D_PT1H-i",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_mod_nws_phy-sst_my_7km-2D_PT1H-i"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/dodsC/cmems_mod_nws_phy-sst_my_7km-2D_PT1H-i",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_mod_nws_phy-sst_my_7km-2D_PT1H-i"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://my.cmems-du.eu/Core/NWSHELF_MULTIYEAR_PHY_004_009/cmems_mod_nws_phy-sst_my_7km-2D_PT1H-i",
+      "type": "WWW:FTP",
+      "title": "cmems_mod_nws_phy-sst_my_7km-2D_PT1H-i"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/wms/cmems_mod_nws_phy-sst_my_7km-2D_PT1H-i",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_mod_nws_phy-sst_my_7km-2D_PT1H-i"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&service=NWSHELF_MULTIYEAR_PHY_004_009-TDS&product=cmems_mod_nws_phy-uv_my_7km-2D_PT1H-i",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_mod_nws_phy-uv_my_7km-2D_PT1H-i"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/dodsC/cmems_mod_nws_phy-uv_my_7km-2D_PT1H-i",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_mod_nws_phy-uv_my_7km-2D_PT1H-i"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://my.cmems-du.eu/Core/NWSHELF_MULTIYEAR_PHY_004_009/cmems_mod_nws_phy-uv_my_7km-2D_PT1H-i",
+      "type": "WWW:FTP",
+      "title": "cmems_mod_nws_phy-uv_my_7km-2D_PT1H-i"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/wms/cmems_mod_nws_phy-uv_my_7km-2D_PT1H-i",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_mod_nws_phy-uv_my_7km-2D_PT1H-i"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&service=NWSHELF_MULTIYEAR_PHY_004_009-TDS&product=cmems_mod_nws_phy-bottomt_my_7km-2D_P1D-m",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_mod_nws_phy-bottomt_my_7km-2D_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/dodsC/cmems_mod_nws_phy-bottomt_my_7km-2D_P1D-m",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_mod_nws_phy-bottomt_my_7km-2D_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://my.cmems-du.eu/Core/NWSHELF_MULTIYEAR_PHY_004_009/cmems_mod_nws_phy-bottomt_my_7km-2D_P1D-m",
+      "type": "WWW:FTP",
+      "title": "cmems_mod_nws_phy-bottomt_my_7km-2D_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/wms/cmems_mod_nws_phy-bottomt_my_7km-2D_P1D-m",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_mod_nws_phy-bottomt_my_7km-2D_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&service=NWSHELF_MULTIYEAR_PHY_004_009-TDS&product=cmems_mod_nws_phy-bottomt_my_7km-2D_P1M-m",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_mod_nws_phy-bottomt_my_7km-2D_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/dodsC/cmems_mod_nws_phy-bottomt_my_7km-2D_P1M-m",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_mod_nws_phy-bottomt_my_7km-2D_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://my.cmems-du.eu/Core/NWSHELF_MULTIYEAR_PHY_004_009/cmems_mod_nws_phy-bottomt_my_7km-2D_P1M-m",
+      "type": "WWW:FTP",
+      "title": "cmems_mod_nws_phy-bottomt_my_7km-2D_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/wms/cmems_mod_nws_phy-bottomt_my_7km-2D_P1M-m",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_mod_nws_phy-bottomt_my_7km-2D_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&service=NWSHELF_MULTIYEAR_PHY_004_009-TDS&product=cmems_mod_nws_phy-bottomt_myint_7km-2D_P1M-m",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_mod_nws_phy-bottomt_myint_7km-2D_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/dodsC/cmems_mod_nws_phy-bottomt_myint_7km-2D_P1M-m",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_mod_nws_phy-bottomt_myint_7km-2D_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://my.cmems-du.eu/Core/NWSHELF_MULTIYEAR_PHY_004_009/cmems_mod_nws_phy-bottomt_myint_7km-2D_P1M-m",
+      "type": "WWW:FTP",
+      "title": "cmems_mod_nws_phy-bottomt_myint_7km-2D_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/wms/cmems_mod_nws_phy-bottomt_myint_7km-2D_P1M-m",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_mod_nws_phy-bottomt_myint_7km-2D_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&service=NWSHELF_MULTIYEAR_PHY_004_009-TDS&product=cmems_mod_nws_phy-mld_my_7km-2D_P1D-m",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_mod_nws_phy-mld_my_7km-2D_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/dodsC/cmems_mod_nws_phy-mld_my_7km-2D_P1D-m",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_mod_nws_phy-mld_my_7km-2D_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://my.cmems-du.eu/Core/NWSHELF_MULTIYEAR_PHY_004_009/cmems_mod_nws_phy-mld_my_7km-2D_P1D-m",
+      "type": "WWW:FTP",
+      "title": "cmems_mod_nws_phy-mld_my_7km-2D_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/wms/cmems_mod_nws_phy-mld_my_7km-2D_P1D-m",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_mod_nws_phy-mld_my_7km-2D_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&service=NWSHELF_MULTIYEAR_PHY_004_009-TDS&product=cmems_mod_nws_phy-mld_my_7km-2D_P1M-m",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_mod_nws_phy-mld_my_7km-2D_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/dodsC/cmems_mod_nws_phy-mld_my_7km-2D_P1M-m",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_mod_nws_phy-mld_my_7km-2D_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://my.cmems-du.eu/Core/NWSHELF_MULTIYEAR_PHY_004_009/cmems_mod_nws_phy-mld_my_7km-2D_P1M-m",
+      "type": "WWW:FTP",
+      "title": "cmems_mod_nws_phy-mld_my_7km-2D_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/wms/cmems_mod_nws_phy-mld_my_7km-2D_P1M-m",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_mod_nws_phy-mld_my_7km-2D_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&service=NWSHELF_MULTIYEAR_PHY_004_009-TDS&product=cmems_mod_nws_phy-mld_myint_7km-2D_P1M-m",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_mod_nws_phy-mld_myint_7km-2D_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/dodsC/cmems_mod_nws_phy-mld_myint_7km-2D_P1M-m",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_mod_nws_phy-mld_myint_7km-2D_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://my.cmems-du.eu/Core/NWSHELF_MULTIYEAR_PHY_004_009/cmems_mod_nws_phy-mld_myint_7km-2D_P1M-m",
+      "type": "WWW:FTP",
+      "title": "cmems_mod_nws_phy-mld_myint_7km-2D_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/wms/cmems_mod_nws_phy-mld_myint_7km-2D_P1M-m",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_mod_nws_phy-mld_myint_7km-2D_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&service=NWSHELF_MULTIYEAR_PHY_004_009-TDS&product=cmems_mod_nws_phy-s_my_7km-3D_P1D-m",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_mod_nws_phy-s_my_7km-3D_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/dodsC/cmems_mod_nws_phy-s_my_7km-3D_P1D-m",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_mod_nws_phy-s_my_7km-3D_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://my.cmems-du.eu/Core/NWSHELF_MULTIYEAR_PHY_004_009/cmems_mod_nws_phy-s_my_7km-3D_P1D-m",
+      "type": "WWW:FTP",
+      "title": "cmems_mod_nws_phy-s_my_7km-3D_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/wms/cmems_mod_nws_phy-s_my_7km-3D_P1D-m",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_mod_nws_phy-s_my_7km-3D_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&service=NWSHELF_MULTIYEAR_PHY_004_009-TDS&product=cmems_mod_nws_phy-s_my_7km-3D_P1M-m",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_mod_nws_phy-s_my_7km-3D_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/dodsC/cmems_mod_nws_phy-s_my_7km-3D_P1M-m",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_mod_nws_phy-s_my_7km-3D_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://my.cmems-du.eu/Core/NWSHELF_MULTIYEAR_PHY_004_009/cmems_mod_nws_phy-s_my_7km-3D_P1M-m",
+      "type": "WWW:FTP",
+      "title": "cmems_mod_nws_phy-s_my_7km-3D_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/wms/cmems_mod_nws_phy-s_my_7km-3D_P1M-m",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_mod_nws_phy-s_my_7km-3D_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&service=NWSHELF_MULTIYEAR_PHY_004_009-TDS&product=cmems_mod_nws_phy-s_myint_7km-3D_P1M-m",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_mod_nws_phy-s_myint_7km-3D_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/dodsC/cmems_mod_nws_phy-s_myint_7km-3D_P1M-m",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_mod_nws_phy-s_myint_7km-3D_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://my.cmems-du.eu/Core/NWSHELF_MULTIYEAR_PHY_004_009/cmems_mod_nws_phy-s_myint_7km-3D_P1M-m",
+      "type": "WWW:FTP",
+      "title": "cmems_mod_nws_phy-s_myint_7km-3D_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/wms/cmems_mod_nws_phy-s_myint_7km-3D_P1M-m",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_mod_nws_phy-s_myint_7km-3D_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&service=NWSHELF_MULTIYEAR_PHY_004_009-TDS&product=cmems_mod_nws_phy-ssh_my_7km-2D_P1D-m",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_mod_nws_phy-ssh_my_7km-2D_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/dodsC/cmems_mod_nws_phy-ssh_my_7km-2D_P1D-m",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_mod_nws_phy-ssh_my_7km-2D_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://my.cmems-du.eu/Core/NWSHELF_MULTIYEAR_PHY_004_009/cmems_mod_nws_phy-ssh_my_7km-2D_P1D-m",
+      "type": "WWW:FTP",
+      "title": "cmems_mod_nws_phy-ssh_my_7km-2D_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/wms/cmems_mod_nws_phy-ssh_my_7km-2D_P1D-m",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_mod_nws_phy-ssh_my_7km-2D_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&service=NWSHELF_MULTIYEAR_PHY_004_009-TDS&product=cmems_mod_nws_phy-ssh_my_7km-2D_P1M-m",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_mod_nws_phy-ssh_my_7km-2D_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/dodsC/cmems_mod_nws_phy-ssh_my_7km-2D_P1M-m",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_mod_nws_phy-ssh_my_7km-2D_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://my.cmems-du.eu/Core/NWSHELF_MULTIYEAR_PHY_004_009/cmems_mod_nws_phy-ssh_my_7km-2D_P1M-m",
+      "type": "WWW:FTP",
+      "title": "cmems_mod_nws_phy-ssh_my_7km-2D_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/wms/cmems_mod_nws_phy-ssh_my_7km-2D_P1M-m",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_mod_nws_phy-ssh_my_7km-2D_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&service=NWSHELF_MULTIYEAR_PHY_004_009-TDS&product=cmems_mod_nws_phy-ssh_myint_7km-2D_P1M-m",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_mod_nws_phy-ssh_myint_7km-2D_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/dodsC/cmems_mod_nws_phy-ssh_myint_7km-2D_P1M-m",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_mod_nws_phy-ssh_myint_7km-2D_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://my.cmems-du.eu/Core/NWSHELF_MULTIYEAR_PHY_004_009/cmems_mod_nws_phy-ssh_myint_7km-2D_P1M-m",
+      "type": "WWW:FTP",
+      "title": "cmems_mod_nws_phy-ssh_myint_7km-2D_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/wms/cmems_mod_nws_phy-ssh_myint_7km-2D_P1M-m",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_mod_nws_phy-ssh_myint_7km-2D_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&service=NWSHELF_MULTIYEAR_PHY_004_009-TDS&product=cmems_mod_nws_phy-t_my_7km-3D_P1D-m",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_mod_nws_phy-t_my_7km-3D_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/dodsC/cmems_mod_nws_phy-t_my_7km-3D_P1D-m",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_mod_nws_phy-t_my_7km-3D_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://my.cmems-du.eu/Core/NWSHELF_MULTIYEAR_PHY_004_009/cmems_mod_nws_phy-t_my_7km-3D_P1D-m",
+      "type": "WWW:FTP",
+      "title": "cmems_mod_nws_phy-t_my_7km-3D_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/wms/cmems_mod_nws_phy-t_my_7km-3D_P1D-m",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_mod_nws_phy-t_my_7km-3D_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&service=NWSHELF_MULTIYEAR_PHY_004_009-TDS&product=cmems_mod_nws_phy-t_my_7km-3D_P1M-m",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_mod_nws_phy-t_my_7km-3D_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/dodsC/cmems_mod_nws_phy-t_my_7km-3D_P1M-m",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_mod_nws_phy-t_my_7km-3D_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://my.cmems-du.eu/Core/NWSHELF_MULTIYEAR_PHY_004_009/cmems_mod_nws_phy-t_my_7km-3D_P1M-m",
+      "type": "WWW:FTP",
+      "title": "cmems_mod_nws_phy-t_my_7km-3D_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/wms/cmems_mod_nws_phy-t_my_7km-3D_P1M-m",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_mod_nws_phy-t_my_7km-3D_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&service=NWSHELF_MULTIYEAR_PHY_004_009-TDS&product=cmems_mod_nws_phy-t_myint_7km-3D_P1M-m",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_mod_nws_phy-t_myint_7km-3D_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/dodsC/cmems_mod_nws_phy-t_myint_7km-3D_P1M-m",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_mod_nws_phy-t_myint_7km-3D_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://my.cmems-du.eu/Core/NWSHELF_MULTIYEAR_PHY_004_009/cmems_mod_nws_phy-t_myint_7km-3D_P1M-m",
+      "type": "WWW:FTP",
+      "title": "cmems_mod_nws_phy-t_myint_7km-3D_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/wms/cmems_mod_nws_phy-t_myint_7km-3D_P1M-m",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_mod_nws_phy-t_myint_7km-3D_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&service=NWSHELF_MULTIYEAR_PHY_004_009-TDS&product=cmems_mod_nws_phy-uv_my_7km-3D_P1D-m",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_mod_nws_phy-uv_my_7km-3D_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/dodsC/cmems_mod_nws_phy-uv_my_7km-3D_P1D-m",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_mod_nws_phy-uv_my_7km-3D_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://my.cmems-du.eu/Core/NWSHELF_MULTIYEAR_PHY_004_009/cmems_mod_nws_phy-uv_my_7km-3D_P1D-m",
+      "type": "WWW:FTP",
+      "title": "cmems_mod_nws_phy-uv_my_7km-3D_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/wms/cmems_mod_nws_phy-uv_my_7km-3D_P1D-m",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_mod_nws_phy-uv_my_7km-3D_P1D-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&service=NWSHELF_MULTIYEAR_PHY_004_009-TDS&product=cmems_mod_nws_phy-uv_my_7km-3D_P1M-m",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_mod_nws_phy-uv_my_7km-3D_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/dodsC/cmems_mod_nws_phy-uv_my_7km-3D_P1M-m",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_mod_nws_phy-uv_my_7km-3D_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://my.cmems-du.eu/Core/NWSHELF_MULTIYEAR_PHY_004_009/cmems_mod_nws_phy-uv_my_7km-3D_P1M-m",
+      "type": "WWW:FTP",
+      "title": "cmems_mod_nws_phy-uv_my_7km-3D_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/wms/cmems_mod_nws_phy-uv_my_7km-3D_P1M-m",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_mod_nws_phy-uv_my_7km-3D_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&service=NWSHELF_MULTIYEAR_PHY_004_009-TDS&product=cmems_mod_nws_phy-uv_myint_7km-3D_P1M-m",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_mod_nws_phy-uv_myint_7km-3D_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/dodsC/cmems_mod_nws_phy-uv_myint_7km-3D_P1M-m",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_mod_nws_phy-uv_myint_7km-3D_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://my.cmems-du.eu/Core/NWSHELF_MULTIYEAR_PHY_004_009/cmems_mod_nws_phy-uv_myint_7km-3D_P1M-m",
+      "type": "WWW:FTP",
+      "title": "cmems_mod_nws_phy-uv_myint_7km-3D_P1M-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/wms/cmems_mod_nws_phy-uv_myint_7km-3D_P1M-m",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_mod_nws_phy-uv_myint_7km-3D_P1M-m"
+    }
+  ],
+  "title": "Atlantic- European North West Shelf- Ocean Physics Reanalysis",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -20.0,
+          40.0,
+          13.0,
+          65.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1993-01-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

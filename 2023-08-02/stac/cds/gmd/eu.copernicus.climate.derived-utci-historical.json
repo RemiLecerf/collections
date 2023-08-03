@@ -1,0 +1,58 @@
+{
+  "type": "Collection",
+  "id": "eu.copernicus.climate.derived-utci-historical",
+  "stac_version": "1.0.0",
+  "description": "This dataset provides a complete historical reconstruction for a set of indices representing human thermal stress and discomfort in outdoor conditions. This dataset, also known as ERA5-HEAT (Human thErmAl comforT) represents the current state-of-the-art for bioclimatology data record production.\nThe dataset is organised around two main variables:\n\nthe mean radiant temperature (MRT)\nthe universal thermal climate index (UTCI)\n\nThese variables describe how the human body experiences atmospheric conditions, specifically air temperature, humidity, ventilation and radiation.\nThe dataset is computed using the ERA5 reanalysis from the European Centre for Medium-Range Forecasts (ECMWF). ERA5 combines model data with observations from across the world to provide a globally complete and consistent description of the Earth’s climate and its evolution in recent decades. ERA5 is regarded as a good proxy for observed atmospheric conditions.\nThe dataset currently covers 01/01/1940 to near real time and is regularly extended as ERA5 data become available.\nThe dataset is produced by the European Centre for Medium-range Weather Forecasts.\n\nVariables in the dataset/application are:\nMean radiant temperature, Universal thermal climate index",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.553b7518",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Climate Data Store catalogue"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://confluence.ecmwf.int/x/cZNPF",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Product User Guide"
+    }
+  ],
+  "title": "Thermal comfort indices derived from ERA5 reanalysis",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          0.0,
+          -60.0,
+          360.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1979-01-01T00:00:00Z",
+          "2023-07-29T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Climatology",
+    "Product type: Reanalysis",
+    "Spatial coverage: Global",
+    "Temporal coverage: Past"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

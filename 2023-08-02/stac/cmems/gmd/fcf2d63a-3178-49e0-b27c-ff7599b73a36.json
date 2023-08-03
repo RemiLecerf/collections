@@ -1,0 +1,52 @@
+{
+  "type": "Collection",
+  "id": "fcf2d63a-3178-49e0-b27c-ff7599b73a36",
+  "stac_version": "1.0.0",
+  "description": "'''DEFINITION'''\n\nMeridional Heat Transport is computed by integrating the heat fluxes along the zonal direction and from top to bottom of the ocean. \nThey are given over 3 basins (Global Ocean, Atlantic Ocean and Indian+Pacific Ocean) and for all the grid points in the meridional grid of each basin. The mean value over a reference period (1993-2014) and over the last full year are provided for the ensemble product and the individual reanalysis, as well as the standard deviation for the ensemble product over the reference period (1993-2014). The values are given in PetaWatt (PW).\n\n'''CONTEXT'''\n\nThe ocean transports heat and mass by vertical overturning and horizontal circulation, and is one of the fundamental dynamic components of the Earth’s energy budget (IPCC, 2013). There are spatial asymmetries in the energy budget resulting from the Earth’s orientation to the sun and the meridional variation in absorbed radiation which support a transfer of energy from the tropics towards the poles. However, there are spatial variations in the loss of heat by the ocean through sensible and latent heat fluxes, as well as differences in ocean basin geometry and current systems. These complexities support a pattern of oceanic heat transport that is not strictly from lower to high latitudes. Moreover, it is not stationary and we are only beginning to unravel its variability. \n\n'''CMEMS KEY FINDINGS'''\n\nAfter an anusual 2016 year (Bricaud 2016), with a higher global meridional heat transport in the tropical band explained by, the increase of northward heat transport at 5-10 ° N in the Pacific Ocean during the El Niño event, 2017 northward heat transport is lower than the 1993-2014 reference value in the tropical band, for both Atlantic and Indian + Pacific Oceans. At the higher latitudes, 2017 northward heat transport is closed to 1993-2014 values.\n\nNote: The key findings will be updated annually in November, in line with OMI evolutions.\n\n'''DOI (product):''' \nhttps://doi.org/10.48670/moi-00246",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "ftp://my.cmems-du.eu/Core/GLOBAL_OMI_WMHE_northward_mht/global_omi_wmhe_northward_mht",
+      "type": "WWW:FTP",
+      "title": "global_omi_wmhe_northward_mht"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://mdl1.marine.copernicus.eu/derived/GLOBAL_OMI_WMHE_northward_mht/global_omi_wmhe_northward_mht_202003/GLOBAL_OMI_WMHE_northward_heat_transport_R20193101.nc",
+      "type": "MYO:MOTU-DGF",
+      "title": "global_omi_wmhe_northward_mht"
+    }
+  ],
+  "title": "Northward Heat Transport for Global Ocean, Atlantic and Indian+Pacific basins from Reanalysis",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1993-01-01T00:00:00Z",
+          "2017-12-31T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

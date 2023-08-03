@@ -1,0 +1,55 @@
+{
+  "type": "Collection",
+  "id": "056be369-20b9-4fb0-9bd0-e6217e45691f",
+  "stac_version": "1.0.0",
+  "description": "'''DEFINITION'''\n\nThe CMEMS NORTHWESTSHELF_OMI_tempsal_extreme_var_temp_mean_and_anomaly OMI indicator is based on the computation of the annual 99th percentile of Sea Surface Temperature (SST) from model data. Two different CMEMS products are used to compute the indicator: The North-West Shelf Multi Year Product (NWSHELF_MULTIYEAR_PHY_004_009) and the Analysis product (NORTHWESTSHELF_ANALYSIS_FORECAST_PHY_004_013).\nTwo parameters are included on this OMI:\n* Map of the 99th mean percentile: It is obtained from the Multi Year Product, the annual 99th percentile is computed for each year of the product. The percentiles are temporally averaged over the whole period (1993-2019).\n* Anomaly of the 99th percentile in 2020: The 99th percentile of the year 2020 is computed from the Analysis product. The anomaly is obtained by subtracting the mean percentile from the 2020 percentile.\nThis indicator is aimed at monitoring the extremes of sea surface temperature every year and at checking their variations in space. The use of percentiles instead of annual maxima, makes this extremes study less affected by individual data. This study of extreme variability was first applied to the sea level variable (Pérez Gómez et al 2016) and then extended to other essential variables, such as sea surface temperature and significant wave height (Pérez Gómez et al 2018 and Alvarez Fanjul et al., 2019). More details and a full scientific evaluation can be found in the CMEMS Ocean State report (Alvarez Fanjul et al., 2019).\n\n'''CONTEXT'''\n\nThis domain comprises the North West European continental shelf where depths do not exceed 200m and deeper Atlantic waters to the North and West. For these deeper waters, the North-South temperature gradient dominates (Liu and Tanhua, 2021). Temperature over the continental shelf is affected also by the various local currents in this region and by the shallow depth of the water (Elliott et al., 1990). Atmospheric heat waves can warm the whole water column, especially in the southern North Sea, much of which is no more than 30m deep (Holt et al., 2012). Warm summertime water observed in the Norwegian trench is outflow heading North from the Baltic Sea and from the North Sea itself.\n\n'''CMEMS KEY FINDINGS'''\n\nThe 99th percentile SST product can be considered to represent approximately the warmest 4 days for the sea surface in Summer. Maximum anomalies for 2020 are up to 4oC warmer than the 1993-2019 average in the western approaches, Celtic and Irish Seas, English Channel and the southern North Sea. For the atmosphere, Summer 2020 was exceptionally warm and sunny in southern UK (Kendon et al., 2021), with heatwaves in June and August. Further north in the UK, the atmosphere was closer to long-term average temperatures. Overall, the 99th percentile SST anomalies show a similar pattern, with the exceptional warm anomalies in the south of the domain.\n\nNote: The key findings will be updated annually in November, in line with OMI evolutions.\n\n'''DOI (product)'''\nhttps://doi.org/10.48670/moi-00273",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "ftp://my.cmems-du.eu/Core/NORTHWESTSHELF_OMI_TEMPSAL_extreme_var_temp_mean_and_anomaly/northwestshelf_omi_tempsal_extreme_var_temp_mean_and_anomaly",
+      "type": "WWW:FTP",
+      "title": "northwestshelf_omi_tempsal_extreme_var_temp_mean_and_anomaly"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://mdl1.marine.copernicus.eu/derived/NORTHWESTSHELF_OMI_TEMPSAL_extreme_var_temp_mean_and_anomaly/northwestshelf_omi_tempsal_extreme_var_temp_mean_and_anomaly_202112/northwestshelf_omi_tempsal_extreme_var_temp_mean_and_anomaly.nc",
+      "type": "MYO:MOTU-DGF",
+      "title": "northwestshelf_omi_tempsal_extreme_var_temp_mean_and_anomaly"
+    }
+  ],
+  "title": "North West Shelf Sea Surface Temperature extreme from Reanalysis",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -16.0,
+          46.0,
+          13.0,
+          62.64
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2020-01-01T00:00:00Z",
+          "2020-12-31T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Brest"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "type": "Collection",
+  "id": "ADO_NDVI_MODIS_231m_3035",
+  "stac_version": "1.0.0",
+  "description": "The Normalized Difference Vegetation Index (NDVI) is based on MODIS satellite data. The NDVI is based on 8 day maximum value composite MOD09Q1 (v006) reflectance products. The spatial resolution is 231 m. The NDVI is masked to the highest quality standards using the provided quality layers. Missing pixel values in the time series are linearly interpolated. Non-vegetatated areas are masked using the MODIS land cover product layer MCD12Q1 FAO-Land Cover Classification System 1 (LCCS1). The final product is regridded to the LAEA Projection (EPSG:3035). The NDVI is calculated using the formula NDVI = (NIR - Red) / (NIR + Red). The NDVI expresses the vitality of vegetation. The data is provided as 8 day measures. The time series is starting from 2001. The NDVI values range from -1 - 1, whereas high values correspond to healthy vegetation.",
+  "links": [],
+  "title": "Normalized Difference Vegetation Index - 231m 8 day Maximum Value Composite",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1981-01-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "CC BY 4.0",
+  "keywords": [
+    "normalized difference vegetation index",
+    "ndvi",
+    "modis",
+    "ADO project",
+    "ADO"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

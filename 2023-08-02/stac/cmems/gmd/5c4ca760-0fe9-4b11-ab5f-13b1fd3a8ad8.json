@@ -1,0 +1,64 @@
+{
+  "type": "Collection",
+  "id": "5c4ca760-0fe9-4b11-ab5f-13b1fd3a8ad8",
+  "stac_version": "1.0.0",
+  "description": "'''Short description:'''\n\nFor the '''Global''' Ocean '''Satellite Observations''', Brockmann Consult (BC) is providing '''Bio-Geo_Chemical (BGC)''' products based on the ESA-CCI inputs.\n* Upstreams: SeaWiFS, MODIS, MERIS, VIIRS-SNPP,  OLCI-S3A & OLCI-S3B for the '''\"\"multi\"\"''' products.\n* Variables: Chlorophyll-a ('''CHL''').\n\n* Temporal resolutions: '''monthly'''.\n* Spatial resolutions: '''4 km''' (multi).\n* Recent products are organized in datasets called Near Real Time ('''NRT''') and long time-series (from 1997) in datasets called Multi-Years ('''MY''').\n\nTo find these products in the catalogue, use the search keyword '''\"\"ESA-CCI\"\"'''.\n\n'''DOI (product) :'''   \nhttps://doi.org/10.48670/moi-00283",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&service=OCEANCOLOUR_GLO_BGC_L4_MY_009_108-TDS&product=c3s_obs-oc_glo_bgc-plankton_my_l4-multi-4km_P1M",
+      "type": "MYO:MOTU-SUB",
+      "title": "c3s_obs-oc_glo_bgc-plankton_my_l4-multi-4km_P1M"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/dodsC/c3s_obs-oc_glo_bgc-plankton_my_l4-multi-4km_P1M",
+      "type": "WWW:OPENDAP",
+      "title": "c3s_obs-oc_glo_bgc-plankton_my_l4-multi-4km_P1M"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://my.cmems-du.eu/Core/OCEANCOLOUR_GLO_BGC_L4_MY_009_108/c3s_obs-oc_glo_bgc-plankton_my_l4-multi-4km_P1M",
+      "type": "WWW:FTP",
+      "title": "c3s_obs-oc_glo_bgc-plankton_my_l4-multi-4km_P1M"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/wms/c3s_obs-oc_glo_bgc-plankton_my_l4-multi-4km_P1M",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "c3s_obs-oc_glo_bgc-plankton_my_l4-multi-4km_P1M"
+    }
+  ],
+  "title": "Global Ocean Colour Plankton MY L4 monthly observations",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1997-09-04T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

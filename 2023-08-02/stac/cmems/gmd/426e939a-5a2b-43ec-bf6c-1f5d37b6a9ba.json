@@ -1,0 +1,52 @@
+{
+  "type": "Collection",
+  "id": "426e939a-5a2b-43ec-bf6c-1f5d37b6a9ba",
+  "stac_version": "1.0.0",
+  "description": "'''DEFINITION'''\n\nThe trend map is derived from version 5 of the global climate-quality chlorophyll time series produced by the ESA Ocean Colour Climate Change Initiative (ESA OC-CCI, Sathyendranath et al. 2019; Jackson 2020) and distributed by CMEMS. The trend detection method is based on the Census-I algorithm as described by Vantrepotte et al. (2009), where the time series is decomposed as a fixed seasonal cycle plus a linear trend component plus a residual component. The linear trend is expressed in % year -1, and its level of significance (p) calculated using a t-test. Only significant trends (p < 0.05) are included. \n\n'''CONTEXT'''\n\nPhytoplankton are key actors in the carbon cycle and, as such, recognised as an Essential Climate Variable (ECV). Chlorophyll concentration is the most widely used measure of the concentration of phytoplankton present in the ocean. Drivers for chlorophyll variability range from small-scale seasonal cycles to long-term climate oscillations and, most importantly, anthropogenic climate change. Due to such diverse factors, the detection of climate signals requires a long-term time series of consistent, well-calibrated, climate-quality data record. Furthermore, chlorophyll analysis also demands the use of robust statistical temporal decomposition techniques, in order to separate the long-term signal from the seasonal component of the time series.\n\n'''CMEMS KEY FINDINGS'''\n\nThe average global trend for the 1997-2021 period was 0.51% per year, with a maximum value of 25% per year and a minimum value of -6.1% per year. Positive trends are pronounced in the high latitudes of both northern and southern hemispheres. The significant increases in chlorophyll reported in 2016-2017 (Sathyendranath et al., 2018b) for the Atlantic and Pacific oceans at high latitudes appear to be plateauing after the 2021 extension.  The negative trends shown in equatorial waters in 2020 appear to be remain consistent in 2021.  \n\n'''DOI (product):''' \nhttps://doi.org/10.48670/moi-00230",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "ftp://my.cmems-du.eu/Core/OMI_HEALTH_CHL_GLOBAL_OCEANCOLOUR_trend/omi_health_chl_global_oceancolour_trend",
+      "type": "WWW:FTP",
+      "title": "omi_health_chl_global_oceancolour_trend"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://mdl1.marine.copernicus.eu/derived/OMI_HEALTH_CHL_GLOBAL_OCEANCOLOUR_trend/omi_health_chl_global_oceancolour_trend_202211/omi_health_chl_global_oceancolour_trend_19970801-20211231-P20220831.nc",
+      "type": "MYO:MOTU-DGF",
+      "title": "omi_health_chl_global_oceancolour_trend"
+    }
+  ],
+  "title": "Global Ocean Chlorophyll-a trend map from Observations Reprocessing",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1997-09-04T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

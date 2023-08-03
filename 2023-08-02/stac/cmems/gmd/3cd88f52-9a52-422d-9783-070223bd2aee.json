@@ -1,0 +1,52 @@
+{
+  "type": "Collection",
+  "id": "3cd88f52-9a52-422d-9783-070223bd2aee",
+  "stac_version": "1.0.0",
+  "description": "'''DEFINITION'''\n\nOligotrophic subtropical gyres are regions of the ocean with low levels of nutrients required for phytoplankton growth and low levels of surface chlorophyll-a whose concentration can be quantified through satellite observations. The gyre boundary has been defined using a threshold value of 0.15 mg m-3 chlorophyll for the Atlantic gyres (Aiken et al. 2016), and 0.07 mg m-3 for the Pacific gyres (Polovina et al. 2008). The area inside the gyres for each month is computed using monthly chlorophyll data from which the monthly climatology is subtracted to compute anomalies. A gap filling algorithm has been utilized to account for missing data inside the gyre.  Trends in the area anomaly are then calculated for the entire study period (September 1997 to December 2021).\n\n'''CONTEXT'''\n\nOligotrophic gyres of the oceans have been referred to as ocean deserts (Polovina et al. 2008). They are vast, covering approximately 50% of the Earth’s surface (Aiken et al. 2016). Despite low productivity, these regions contribute significantly to global productivity due to their immense size (McClain et al. 2004). Even modest changes in their size can have large impacts on a variety of global biogeochemical cycles and on trends in chlorophyll (Signorini et al 2015). Based on satellite data, Polovina et al. (2008) showed that the areas of subtropical gyres were expanding. The Ocean State Report (Sathyendranath et al. 2018) showed that the trends had reversed in the Pacific for the time segment from January 2007 to December 2016. \n\n'''CMEMS KEY FINDINGS'''\n\nThe trend in the North Pacific gyre area for the 1997 Sept – 2021 December period was positive, with a 1.75% increase in area relative to 2000-01-01 values. Note that this trend is lower than the 2.17% reported for the 1997-2020 period. The trend is statistically significant (p<0.05). \nDuring the 1997 Sept – 2021 December period, the trend in chlorophyll concentration was negative (-0.26% year-1) in the North Pacific gyre relative to 2000-01-01 values. This trend is slightly less negative than the trend of -0.31% year-1 for the 1997-2020 period, though the sign of the trend remains unchanged and is statistically significant (p<0.05).  It must be noted that the difference is small and within the uncertainty of the calculations, indicating that the trend is significant, however there may be no change associated with the timeseries extension.\nFor 2016, The Ocean State Report (Sathyendranath et al. 2018) reported a large increase in gyre area in the Pacific Ocean (both North and South Pacific gyres), probably linked with the 2016 ENSO event which saw large decreases in chlorophyll in the Pacific Ocean. \n\n'''DOI (product):''' \nhttps://doi.org/10.48670/moi-00227",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "ftp://my.cmems-du.eu/Core/OMI_HEALTH_CHL_GLOBAL_OCEANCOLOUR_oligo_npg_area_mean/omi_health_chl_global_oceancolour_oligo_npg_area_mean",
+      "type": "WWW:FTP",
+      "title": "omi_health_chl_global_oceancolour_oligo_npg_area_mean"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://mdl1.marine.copernicus.eu/derived/OMI_HEALTH_CHL_GLOBAL_OCEANCOLOUR_oligo_npg_area_mean/omi_health_chl_global_oceancolour_oligo_npg_area_mean_202211/omi_health_chl_global_oceancolour_oligo_npg_area_mean_19970901-20211231_P20220517.nc",
+      "type": "MYO:MOTU-DGF",
+      "title": "omi_health_chl_global_oceancolour_oligo_npg_area_mean"
+    }
+  ],
+  "title": "North Pacific Gyre Area Chlorophyll-a time series and trend from Observations Reprocessing",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          120.0,
+          5.0,
+          260.0,
+          45.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1997-09-04T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

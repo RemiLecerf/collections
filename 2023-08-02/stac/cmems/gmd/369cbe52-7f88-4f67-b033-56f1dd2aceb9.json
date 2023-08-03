@@ -1,0 +1,58 @@
+{
+  "type": "Collection",
+  "id": "369cbe52-7f88-4f67-b033-56f1dd2aceb9",
+  "stac_version": "1.0.0",
+  "description": "'''Short  description:'''\n\nThis product provides long term hindcast outputs from a wave model for the North-West European Shelf. The wave model is WAVEWATCH III and the North-West Shelf configuration is based on a two-tier Spherical Multiple Cell grid mesh (3 and 1.5 km cells) derived from with the 1.5km grid used for [https://resources.marine.copernicus.eu/?option=com_csw&view=details&product_id=NORTHWESTSHELF_ANALYSIS_FORECAST_PHY_004_013 NORTHWESTSHELF_ANALYSIS_FORECAST_PHY_004_013]. The model is forced by lateral boundary conditions from a Met Office Global wave hindcast. The atmospheric forcing is given by the [https://www.ecmwf.int/en/forecasts/datasets/reanalysis-datasets/era5 ECMWF ERA-5] Numerical Weather Prediction reanalysis. Model outputs comprise wave parameters integrated from the two-dimensional (frequency, direction) wave spectrum and describe wave height, period and directional characteristics for both the overall sea-state and wind-sea and swell components. The data are delivered on a regular grid at approximately 1.5km resolution, consistent with physical ocean and wave analysis-forecast products. See [http://catalogue.marine.copernicus.eu/documents/PUM/CMEMS-NWS-PUM-004-015.pdf CMEMS-NWS-PUM-004-015] for more information. Further details of the model, including source term physics, propagation schemes, forcing and boundary conditions, and validation, are provided in the [http://catalogue.marine.copernicus.eu/documents/QUID/CMEMS-NWS-QUID-004-015.pdf CMEMS-NWS-QUID-004-015].\nThe product is updated biannually provinding six-month extension of the time series.\n\n'''Associated products:'''\n\n[https://resources.marine.copernicus.eu/?option=com_csw&view=details&product_id=NORTHWESTSHELF_ANALYSIS_FORECAST_WAV_004_014 NORTHWESTSHELF_ANALYSIS_FORECAST_WAV_004_014].\n\n'''DOI (product) :'''   \nhttps://doi.org/10.48670/moi-00060",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&service=NWSHELF_REANALYSIS_WAV_004_015-TDS&product=MetO-NWS-WAV-RAN",
+      "type": "MYO:MOTU-SUB",
+      "title": "MetO-NWS-WAV-RAN"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/dodsC/MetO-NWS-WAV-RAN",
+      "type": "WWW:OPENDAP",
+      "title": "MetO-NWS-WAV-RAN"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/wms/MetO-NWS-WAV-RAN",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "MetO-NWS-WAV-RAN"
+    }
+  ],
+  "title": "Atlantic- European North West Shelf- Wave Physics Reanalysis",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -16.0,
+          46.0,
+          13.0,
+          62.75
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1980-01-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

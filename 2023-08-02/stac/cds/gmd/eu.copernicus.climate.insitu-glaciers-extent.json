@@ -1,0 +1,60 @@
+{
+  "type": "Collection",
+  "id": "eu.copernicus.climate.insitu-glaciers-extent",
+  "stac_version": "1.0.0",
+  "description": "This dataset, commonly known as the Randolph Glacier Inventory (RGI), provides global glacier outlines compiled from maps, aerial photographs and satellite images. The data is provided as a \"snapshot\" (single time-slice) constructed from images that were mostly acquired in the period 2000-2010.\nThe dataset represents the latest globally complete and homogenized state-of-the-art glacier outline collection. The regional datasets have been created by scientists from all over the world and were provided to the Global Land Ice Measurements from Space (GLIMS) glacier database at the National Snow and Ice Data Center (NSIDC). Among others, the dataset plays a key role in determining the contribution of glacier melt to global sea-level rise and regional hydrology, as well as modelling of past and future glacier evolution. \nThe provided RGI is brokered from the GLIMS glacier database at NSIDC and consists of two datasets which provide:\n\nglacier outlines with attribute information in shape file format\ntabular data describing the area of each glacier in a specific elevation interval, i.e. its hypsometry\n\nBoth datasets are arranged in 19 first order regions that cover all glacierized regions in the world. Coordinates are in longitude and latitude with the World Geodetic System 1984 (WGS84) datum.\nThe RGI glacier outlines provided here are widely used by the glacier community to spatially constrain calculations of the geodetic glacier mass balance, which are also available in the Climate Data Store when forwarded to the World Glacier Monitoring Service (WGMS).",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.553f1387",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Climate Data Store catalogue"
+    },
+    {
+      "rel": "describedby",
+      "href": "#",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "#"
+    }
+  ],
+  "title": "Glaciers distribution data from the Randolph Glacier Inventory for year 2000",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          0.0,
+          -89.0,
+          360.0,
+          89.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2000-01-01T00:00:00Z",
+          "2000-12-31T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Land cover",
+    "Product type: Satellite observations",
+    "Provider: Copernicus C3S",
+    "Spatial coverage: Global",
+    "Temporal coverage: Past",
+    "Variable domain: Land (cryosphere)"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

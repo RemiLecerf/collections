@@ -1,0 +1,64 @@
+{
+  "type": "Collection",
+  "id": "EO:MO:DAT:SST_BS_SST_L4_REP_OBSERVATIONS_010_022",
+  "stac_version": "1.0.0",
+  "description": "'''Short description:''' \n\nThe CMEMS Reprocessed (REP) Black Sea (BS) dataset provides a stable and consistent long-term Sea Surface Temperature (SST) time series over the Black Sea developed for climate applications. This product consists of daily (nighttime), optimally interpolated (L4), satellite-based estimates of the foundation SST (namely, the temperature free, or nearly-free, of any diurnal cycle) at 0.05° resolution grid covering the period from January 1st 1982 to present (currently, up to six months before real time). The BS-REP-L4 product is built from a consistent reprocessing of the collated level-3 (merged single-sensor, L3C) climate data record provided by the ESA Climate Change Initiative (CCI) and the Copernicus Climate Change Service (C3S) initiatives, but also includes in input an adjusted version of the AVHRR Pathfinder dataset version 5.3 to increase the input observation coverage.\n\n'''DOI (product) :'''   \nhttps://doi.org/10.48670/moi-00160",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "ftp://my.cmems-du.eu/Core/SST_BS_SST_L4_REP_OBSERVATIONS_010_022/cmems_SST_BS_SST_L4_REP_OBSERVATIONS_010_022",
+      "type": "WWW:FTP",
+      "title": "cmems_SST_BS_SST_L4_REP_OBSERVATIONS_010_022"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/dodsC/cmems_SST_BS_SST_L4_REP_OBSERVATIONS_010_022",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_SST_BS_SST_L4_REP_OBSERVATIONS_010_022"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&service=SST_BS_SST_L4_REP_OBSERVATIONS_010_022-TDS&product=cmems_SST_BS_SST_L4_REP_OBSERVATIONS_010_022",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_SST_BS_SST_L4_REP_OBSERVATIONS_010_022"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/wms/cmems_SST_BS_SST_L4_REP_OBSERVATIONS_010_022",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_SST_BS_SST_L4_REP_OBSERVATIONS_010_022"
+    }
+  ],
+  "title": "Black Sea - High Resolution L4 Sea Surface Temperature Reprocessed",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1981-08-25T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

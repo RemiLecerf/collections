@@ -1,0 +1,97 @@
+{
+  "type": "Collection",
+  "id": "65f095af-5225-490b-8a29-4500d4c31b8a",
+  "stac_version": "1.0.0",
+  "description": "This metadata refers to the Plant Phenology Index (PPI) dataset, one of the near real-time (NRT) Vegetation Index products of the pan-European High Resolution Vegetation Phenology and Productivity (HR-VPP), component of the Copernicus Land Monitoring Service (CLMS).\n\nThe Plant Phenology Index (PPI) is a physically based vegetation index for improved monitoring of plant phenology, that is developed from a simplified solution to the radiative transfer equation by Jin and Eklundh (2014). PPI has a linear relationship with green leaf area index, a strong correlation with gross primary productivity, and is capable of disentangling remotely sensed plant phenology from snow seasonality. It is reported to be superior to other indices for spring phenology retrieval over the northern latitudes and for GPP estimation in African semi-arid ecosystems. Comparison of satellite-derived PPI to ground observations of plant phenology and gross primary productivity (GPP) shows strong similarity of temporal patterns over several Nordic boreal forest sites.\n           \nThe PPI dataset is made available as raster files with 10 x 10m resolution, in UTM/WGS84 projection corresponding to the Sentinel-2 tiling grid, for those tiles that cover the EEA38 countries and the United Kingdom and for the period from October 2016 until today, with daily updates.\n\nEach file has an associated quality indicator (QFLAG2) to assist users with the screening of clouds, shadows from clouds and topography, snow and water surfaces.",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://www.wekeo.eu/data?view=viewer&t=1566840390697&z=0&center=13.08408%2C48.33915&zoom=12.34&layers=W3siaWQiOiJjMCIsImxheWVySWQiOiJFTzpIUlZQUDpEQVQ6VkVHRVRBVElPTi1JTkRJQ0VTL19fREVGQVVMVF9fL0NMTVNfSFJWUFBfVklfUFBJXzEwTSIsInpJbmRleCI6NjB9LHsiaWQiOiJjMSIsImxheWVySWQiOiJFTzpIUlZQUDpEQVQ6VkVHRVRBVElPTi1JTkRJQ0VTL19fREVGQVVMVF9fL0NMTVNfSFJWUFBfVklfUUZMQUcyXzEwTSIsInpJbmRleCI6ODAsImlzSGlkZGVuIjp0cnVlfV0%3D&initial=1",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "WEkEO portal"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://phenology.vgt.vito.be/wmts?request=GetCapabilities",
+      "type": "OGC:WMTS",
+      "title": "CLMS_HRVPP_VI_PPI_10M"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://wekeo-broker.apps.mercator.dpi.wekeo.eu/databroker/ui/",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Harmonized Data Access (WEkEO)"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://phenology.vgt.vito.be/description?collection=copernicus_r_utm-wgs84_10_m_hrvpp-vi_p_2017-now_v01",
+      "type": "OGC:OpenSearch",
+      "title": "OpenSearch API"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://land.copernicus.eu/pan-european/biophysical-parameters/high-resolution-vegetation-phenology-and-productivity/vegetation-indices",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Product information"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://land.copernicus.eu/user-corner/technical-library/product-user-manual-of-vegetation-indices/",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Product user manual"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://phenology.vgt.vito.be/wms?request=GetCapabilities",
+      "type": "OGC:WMS",
+      "title": "CLMS_HRVPP_VI_PPI_10M"
+    }
+  ],
+  "title": "High Resolution Vegetation Phenology and Productivity: Plant Phenology Index (raster 10m) version 1 revision 1, Sep. 2021",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -25.0,
+          26.0,
+          45.0,
+          72.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2016-10-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Agriculture and food",
+    "Biodiversity",
+    "Daily",
+    "EEA38 (from 2020)",
+    "Land use",
+    "United Kingdom",
+    "index",
+    "land",
+    "plant ecology",
+    "plant production",
+    "productivity",
+    "remote sensing",
+    "vegetation"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

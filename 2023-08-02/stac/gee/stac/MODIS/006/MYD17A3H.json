@@ -1,0 +1,53 @@
+{
+  "type": "Collection",
+  "id": "MODIS/006/MYD17A3H",
+  "stac_version": "1.0.0",
+  "description": "The MYD17A3H V6 product provides information about\nannual Net Primary Productivity (NPP) at 500m pixel resolution.\n Annual NPP is derived from the sum of the 45 8-day Net Photosynthesis\n(PSN) products (MYD17A2H) from the given year.  The PSN value\nis the difference of the GPP and the Maintenance Respiration\n(MR) (GPP-MR).\n\nThis is a NASA version of this product. Another\nversion is produced by the Numerical Terradynamic Simulation\nGroup ([NTSG](https://www.ntsg.umt.edu)), University of Montana\n(UMT).  The NTSG version corrects the problem with cloud-contaminated\nMODIS LAI-FPAR inputs to the MOD17 algorithm, but its resolution\nis 1km. It is ingested into Earth Engine as MODIS/055/MOD17A3.\n\nFor further details regarding the differences between the NTSG\nand NASA versions of this product, please consult [this document\n](https://lpdaac.usgs.gov/documents/188/MOD17_NTSG_Note.pdf).\n",
+  "links": [],
+  "title": "MYD17A3H.006: Aqua Net Primary Production Yearly Global 500m [deprecated]",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1981-01-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "aqua",
+    "global",
+    "gpp",
+    "modis",
+    "myd17a3",
+    "nasa",
+    "npp",
+    "photosynthesis",
+    "productivity",
+    "psn",
+    "usgs",
+    "yearly"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

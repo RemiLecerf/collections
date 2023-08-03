@@ -1,0 +1,48 @@
+{
+  "type": "Collection",
+  "id": "OSU/GIMP/2000_IMAGERY_MOSAIC",
+  "stac_version": "1.0.0",
+  "description": "This dataset provides a complete 15 m resolution image mosaic\nof the Greenland ice sheet derived from Landsat 7 ETM+ and\nRADARSAT-1 SAR imagery from the years 1999 to 2002. The methods\ninclude a combination of image cloud masking, pan sharpening,\nimage sampling and resizing, and image coregistration.\nPlease see Howat, 2014 for more information regarding\nprocessing methods.\n\n**Note**\n\n*  Users of GIMP DEM or GIMP 2000 Image Mosaic images may find\nit helpful to mask out areas outside of the Greenland coastline\nusing the corresponding 15 m ocean mask image\nGreenland Ice Mapping Project (GIMP) Land Ice and Ocean\nClassification Mask,\n*  The SAR data are distributed at 20 m resolution. Data were\nup-sampled through bilinear interpolation to 15 m to match\nthe resolution of Landsat band-8.\n\n[General documentation](https://doi.org/10.5067/4RNTRRE4JCYD)\n",
+  "links": [],
+  "title": "2000 Greenland Mosaic - Greenland Ice Mapping Project (GIMP)",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1981-01-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "arctic",
+    "gimp",
+    "greenland",
+    "imagery",
+    "nasa",
+    "polar",
+    "radarsat_1"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

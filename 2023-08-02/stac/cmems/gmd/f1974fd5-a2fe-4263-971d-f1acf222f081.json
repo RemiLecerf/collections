@@ -1,0 +1,64 @@
+{
+  "type": "Collection",
+  "id": "f1974fd5-a2fe-4263-971d-f1acf222f081",
+  "stac_version": "1.0.0",
+  "description": "'''Short description''':\n\nYou can find here the OMEGA3D observation-based  quasi-geostrophic vertical and horizontal ocean currents developed by the Consiglio Nazionale delle RIcerche. The data are provided weekly over a regular grid at 1/4° horizontal resolution, from the surface to 1500 m depth (representative of each Wednesday). The velocities are obtained by solving a diabatic formulation of the Omega equation, starting from ARMOR3D data (MULTIOBS_GLO_PHY_REP_015_002 which corresponds to former version of MULTIOBS_GLO_PHY_TSUV_3D_MYNRT_015_012) and ERA-Interim surface fluxes. \n\n'''DOI (product) :''' \nhttps://commons.datacite.org/doi.org/10.25423/cmcc/multiobs_glo_phy_w_rep_015_007\n\n\n'''Product citation''': \nPlease refer to our Technical FAQ for citing products.http://marine.copernicus.eu/faq/cite-cmems-products-cmems-credit/?idpage=169",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&service=MULTIOBS_GLO_PHY_W_3D_REP_015_007-TDS&product=dataset-omega-3d-rep-weekly",
+      "type": "MYO:MOTU-SUB",
+      "title": "dataset-omega-3d-rep-weekly"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/dodsC/dataset-omega-3d-rep-weekly",
+      "type": "WWW:OPENDAP",
+      "title": "dataset-omega-3d-rep-weekly"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://my.cmems-du.eu/Core/MULTIOBS_GLO_PHY_W_3D_REP_015_007/dataset-omega-3d-rep-weekly",
+      "type": "WWW:FTP",
+      "title": "dataset-omega-3d-rep-weekly"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/wms/dataset-omega-3d-rep-weekly",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "dataset-omega-3d-rep-weekly"
+    }
+  ],
+  "title": "Global Observed Ocean Physics 3D Quasi-Geostrophic Currents (OMEGA3D)",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -179.88,
+          -89.88,
+          179.88,
+          89.88
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1993-01-01T00:00:00Z",
+          "2018-12-31T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "type": "Collection",
+  "id": "473bf6f1-e2a4-4947-aa8e-f251ab87290a",
+  "stac_version": "1.0.0",
+  "description": "'''Short description:'''\n\nMean Dynamic Topography that combines the global CNES-CLS18 MDT, the Black Sea CMEMS2020 MDT and the Med Sea CMEMS2020 MDT. It  is an estimate of the mean over the 1993-2012 period of the sea surface height above geoid. This is consistent with the reference time period also used in the  DUACS products\n\n'''DOI (product) :'''  \nhttps://doi.org/10.48670/moi-00150",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&service=SEALEVEL_GLO_PHY_MDT_008_063-TDS&product=cnes_obs-sl_glo_phy-mdt_my_0.125deg_P20Y",
+      "type": "MYO:MOTU-SUB",
+      "title": "cnes_obs-sl_glo_phy-mdt_my_0.125deg_P20Y"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/dodsC/cnes_obs-sl_glo_phy-mdt_my_0.125deg_P20Y",
+      "type": "WWW:OPENDAP",
+      "title": "cnes_obs-sl_glo_phy-mdt_my_0.125deg_P20Y"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://my.cmems-du.eu/Core/SEALEVEL_GLO_PHY_MDT_008_063/cnes_obs-sl_glo_phy-mdt_my_0.125deg_P20Y",
+      "type": "WWW:FTP",
+      "title": "cnes_obs-sl_glo_phy-mdt_my_0.125deg_P20Y"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://my.cmems-du.eu/thredds/wms/cnes_obs-sl_glo_phy-mdt_my_0.125deg_P20Y",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cnes_obs-sl_glo_phy-mdt_my_0.125deg_P20Y"
+    }
+  ],
+  "title": "GLOBAL OCEAN MEAN DYNAMIC TOPOGRAPHY",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1993-01-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

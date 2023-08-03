@@ -1,0 +1,59 @@
+{
+  "type": "Collection",
+  "id": "eu.copernicus.climate.sis-offshore-windfarm-indicators",
+  "stac_version": "1.0.0",
+  "description": "The dataset presents operational indicators relating to offshore wind farm operations and maintenance and are based upon turbine availability (energy and time-based) and energy production (available and generated). These indicators were chosen because they are typical key performance indicators in the industry. They are commonly used by offshore wind farm developers and operators to measure the performance of wind farm maintenance systems, as well as revenue calculation and estimating running costs.\nTo compute these indicators, the JBA Consulting’s metocean risk management software, ForeCoast Marine, is used together with input metocean data generated from a member of the EURO-CORDEX climate model ensemble - the HIRHAM5 regional climate model downscaled from the global climate model EC-EARTH. The software steps through the metocean input, and for each time step calculates the statistical probability of weather windows that influence the operational capacity of the wind farm, including downtime and power production. In order to assess the impact of climate change, three different climate scenarios are used: the current climate (also termed historical), and two Representative Concentration Pathway (RCP) scenarios that correspond to an optimistic emission scenario where emissions start declining beyond 2040 (RCP4.5) and a pessimistic scenario where emissions continue to rise throughout the century often called the business-as-usual scenario (RCP8.5).\nThis dataset is created as a demonstrator project to show the capability of combining climate projections with operational tools to plan for future climate scenarios. Given that the projections of these climate scenarios are based on a single combination of the regional and global climate models, users of these data should take in consideration that there is an inevitable underestimation of the uncertainty associated with this dataset. Whilst this is less than ideal, it does provide for the purpose of this demonstrator, an indication of the likely effects of climate change on offshore wind farm operations. In addition, the parameters selected to represent the wind farm assests are based on a single wind farm configuration, modelled with metocean data that is specific to location, time period and climate scenario.\nThis dataset was produced on behalf of the Copernicus Climate Change Service.\n\nVariables in the dataset/application are:\nEnergy-based availability, Generated energy with downtime, Generated energy without downtime, Jack-up barge duration, Time-based availability",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.42c6e4dd",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Climate Data Store catalogue"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://confluence.ecmwf.int/x/XZovEQ",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Technical guide"
+    }
+  ],
+  "title": "Performance indicators for offshore wind farms in Europe from 1977 to 2100 derived from climate projections",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -30.0,
+          25.0,
+          45.0,
+          72.5
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1977-01-01T00:00:00Z",
+          "2100-12-31T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Hydrography",
+    "Product type: Climate projections",
+    "Sector: Energy",
+    "Temporal coverage: Future",
+    "Temporal coverage: Present"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "type": "Collection",
+  "id": "3519a722-e42b-4602-95f4-a04bacd7fb44",
+  "stac_version": "1.0.0",
+  "description": "'''Short description:'''\n\nFor the Black Sea - the CNR diurnal sub-skin Sea Surface Temperature product provides daily gap-free (L4) maps of hourly mean sub-skin SST at 1/16° (0.0625°) horizontal resolution over the CMEMS Black Sea (BS) domain, by combining infrared satellite and model data (Marullo et al., 2014). The implementation of this product takes advantage of the consolidated operational SST processing chains that provide daily mean SST fields over the same basin (Buongiorno Nardelli et al., 2013). The sub-skin temperature is the temperature at the base of the thermal skin layer and it is equivalent to the foundation SST at night, but during daytime it can be significantly different under favorable (clear sky and low wind) diurnal warming conditions. The sub-skin SST L4 product is created by combining geostationary satellite observations aquired from SEVIRI and model data (used as first-guess) aquired from the CMEMS BS Monitoring Forecasting Center (MFC). This approach takes advantage of geostationary satellite observations as the input signal source to produce hourly gap-free SST fields using model analyses as first-guess. The resulting SST anomaly field (satellite-model) is free, or nearly free, of any diurnal cycle, thus allowing to interpolate SST anomalies using satellite data acquired at different times of the day (Marullo et al., 2014).\n\n'''DOI (product) :'''   \nhttps://doi.org/10.48670/moi-00157",
+  "links": [
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&service=SST_BS_PHY_SUBSKIN_L4_NRT_010_035-TDS&product=cmems_obs-sst_blk_phy-sst_nrt_diurnal-oi-0.0625deg_PT1H-m",
+      "type": "MYO:MOTU-SUB",
+      "title": "cmems_obs-sst_blk_phy-sst_nrt_diurnal-oi-0.0625deg_PT1H-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/dodsC/cmems_obs-sst_blk_phy-sst_nrt_diurnal-oi-0.0625deg_PT1H-m",
+      "type": "WWW:OPENDAP",
+      "title": "cmems_obs-sst_blk_phy-sst_nrt_diurnal-oi-0.0625deg_PT1H-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "ftp://nrt.cmems-du.eu/Core/SST_BS_PHY_SUBSKIN_L4_NRT_010_035/cmems_obs-sst_blk_phy-sst_nrt_diurnal-oi-0.0625deg_PT1H-m",
+      "type": "WWW:FTP",
+      "title": "cmems_obs-sst_blk_phy-sst_nrt_diurnal-oi-0.0625deg_PT1H-m"
+    },
+    {
+      "rel": "describedby",
+      "href": "https://nrt.cmems-du.eu/thredds/wms/cmems_obs-sst_blk_phy-sst_nrt_diurnal-oi-0.0625deg_PT1H-m",
+      "type": "OGC:WMS:getCapabilities",
+      "title": "cmems_obs-sst_blk_phy-sst_nrt_diurnal-oi-0.0625deg_PT1H-m"
+    }
+  ],
+  "title": "Black Sea - High Resolution Diurnal Subskin Sea Surface Temperature Analysis",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          26.37,
+          38.75,
+          42.38,
+          48.82
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2020-01-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}
