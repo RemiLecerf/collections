@@ -1,0 +1,64 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:dct="http://purl.org/dc/terms/" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/b72f483b-3557-4e4d-ab86-4619e61e3d54">
+        <foaf:primaryTopic rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/resource/632ad0ed-0c25-43b7-803e-3cca9d3e1b9e"/>
+        <dct:issued>2023-03-22</dct:issued>
+        <dct:modified>2023-03-22</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/srv/eng/xml.metadata.get?uuid=b72f483b-3557-4e4d-ab86-4619e61e3d54">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork?uuid=b72f483b-3557-4e4d-ab86-4619e61e3d54">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/resource/632ad0ed-0c25-43b7-803e-3cca9d3e1b9e">
+        <dct:identifier>632ad0ed-0c25-43b7-803e-3cca9d3e1b9e</dct:identifier>
+        <dct:title>Global Ocean Waves Reanalysis</dct:title>
+        <dct:abstract>'''Short description:'''
+
+GLOBAL_REANALYSIS_WAV_001_032 for the global wave reanalysis describing past sea states since years 1993. This product also bears the name of WAVERYS within the GLO-HR MFC. for correspondence to other global multi-year products like GLORYS. BIORYS. etc. The core of WAVERYS is based on the MFWAM model. a third generation wave model that calculates the wave spectrum. i.e. the distribution of sea state energy in frequency and direction on a 1/5° irregular grid. Average wave quantities derived from this wave spectrum. such as the SWH (significant wave height) or the average wave period. are delivered on a regular 1/5° grid with a 3h time step. The wave spectrum is discretized into 30 frequencies obtained from a geometric sequence of first member 0.035 Hz and a reason 7.5. WAVERYS takes into account oceanic currents from the GLORYS12 physical ocean reanalysis and assimilates significant wave height observed from historical altimetry missions and directional wave spectra from Sentinel 1 SAR from 2017 onwards.   
+
+'''DOI (product):'''
+https://doi.org/10.48670/moi-00022</dct:abstract>
+        <dcat:theme rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/thesaurus/iso/topicCategory/oceans"/>
+        <foaf:thumbnail rdf:resource="https://catalogue.marine.copernicus.eu/documents/IMG/GLOBAL_REANALYSIS_WAV_001_032.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((-180.00 -90.00, -180.00 90.00, 180.00 90.00, 180.00 -90.00, -180.00 -90.00))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:issued>2019-10-31</dct:issued>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/GLO-MERCATOR-TOULOUSE-FR"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/GLO-MERCATOR-TOULOUSE-FR"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/GLO-MERCATOR-TOULOUSE-FR"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/GLO-RAN-MERCATOR-TOULOUSE-FR"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/GLO-MERCATOR-TOULOUSE-FR"/>
+        <dct:accrualPeriodicity>notApplicable</dct:accrualPeriodicity>
+        <dct:license>otherRestrictions</dct:license>
+        <dct:license>license</dct:license>
+        <dct:license>No limitations on public access</dct:license>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=GLOBAL_MULTIYEAR_WAV_001_032-TDS&amp;product=cmems_mod_glo_wav_my_0.2_PT3H-i"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/dodsC/cmems_mod_glo_wav_my_0.2_PT3H-i"/>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/GLOBAL_MULTIYEAR_WAV_001_032/cmems_mod_glo_wav_my_0.2_PT3H-i"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/wms/cmems_mod_glo_wav_my_0.2_PT3H-i"/>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/GLOBAL_MULTIYEAR_WAV_001_032/cmems_mod_glo_wav_my_0.2_static"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/36bda418-c401-4744-b686-7adb98ffb231"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/33f82eba-9967-4fdd-8f61-3b39407732aa"/>
+        <dcat:dataQuality>The myOcean products depends on other products for production or validation. The detailed list of dependencies is given in ISO19115's aggregationInfo (ISO19139 Xpath = "gmd:MD_Metadata/gmd:identificationInfo/gmd:aggregationInfo[./gmd:MD_AggregateInformation/gmd:initiativeType/gmd:DS_InitiativeTypeCode/@codeListValue='upstream-validation' or 'upstream-production']")</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+    

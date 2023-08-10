@@ -1,0 +1,79 @@
+{
+    "type": "Collection",
+    "stac_version": "1.0.0",
+    "stac_extensions": [
+        "datacube"
+    ],
+    "id": "ADO_SPI_3_ERA5_QM_ODC",
+    "title": "Standardised Precipitation Index - ERA5_QM SPI-3",
+    "description": "The Standardized Precipitation Index (SPI)  represents a standardized measure of what a certain amount of precipitation over the selected time period means in relation to expected amount of precipitation for this period. SPI is used on different time scales (1, 2, 3, 6, 12 months). The value of the SPI index around 0 represents the normal expected conditions regarding the amount of precipitation in the selected time scale compared to the long-term average (1981-2020). Value 1 represents approximately one standard deviation of precipitation amount during wet conditions and -1 denotes about one standard deviation of precipitation amount during dry conditions. Drought is usually defined as period when SPI values fall below -1. Input precipitation data is downscaled from ERA5 reanalysis using quantile mapping. Contains modified Copernicus Climate Change Service information [1978-current year]; Contains modified Copernicus Atmosphere Monitoring Service information [1978-current year].",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    3.152088135080526,
+                    42.82673634401954,
+                    17.360182784195487,
+                    50.34250644869748
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1979-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "providers": [
+        {
+            "name": "Eurac EO ODC",
+            "url": "http://www.eurac.edu/",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "license": "CC-BY-4.0",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://creativecommons.org/licenses/by/4.0/",
+            "type": "text/html",
+            "title": "License link"
+        }
+    ],
+    "cube:dimensions": {
+        "DATE": {
+            "type": "temporal",
+            "extent": [
+                "1979-01-01T00:00:00Z"
+            ]
+        },
+        "X": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                3.152088135080526,
+                17.360182784195487
+            ],
+            "reference_system": 4326
+        },
+        "Y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                42.82673634401954,
+                50.34250644869748
+            ],
+            "reference_system": 4326
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "SPI_3"
+            ]
+        }
+    }
+}

@@ -1,0 +1,193 @@
+{
+    "type": "Collection",
+    "version": "V061",
+    "stac_version": "1.0.0",
+    "stac_extensions": [
+        "collection-assets"
+    ],
+    "id": "MODIS/061/MCD18C2",
+    "title": "MCD18C2.061 Photosynthetically Active Radiation Daily 3-Hour",
+    "description": "The MCD18C2 Version 6.1 is a Moderate Resolution Imaging Spectroradiometer\n(MODIS) Terra and Aqua combined Photosynthetically Active Radiation (PAR)\ngridded Level 3 product produced daily at 0.05 degree (5,600 meters at the\nequator) resolution with estimates of PAR every 3 hours. PAR is incident\nsolar radiation in the visible spectrum (400-700 nanometers) and is an\nimportant variable in land-surface models that address a variety of\nscientific and application issues. The MCD18 products are based on a\nprototyping algorithm that uses multi-temporal signatures of MODIS data to\nderive surface reflectance and then calculate incident PAR using the look-up\ntable (LUT) approach. The LUTs consider different types of loadings of\naerosols and clouds at a variety of illumination/viewing geometry. Global\nPAR products are generated from MODIS and geostationary satellite data.\nAdditional details regarding the methodology used to create the data are\navailable in the\n[Algorithm Theoretical Basis Document](https://lpdaac.usgs.gov/documents/106/MCD18_ATBD.pdf)\n\nProvided in the MOD18C2 product are layers for instantaneous PAR array for\neach individual MODIS overpass and 3-hour PAR array along with a View Zenith\nAngle layer.\n",
+    "keywords": [
+        "par",
+        "radiation"
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2002-02-24T00:00:00Z",
+                    "2023-05-01T00:00:00"
+                ]
+            ]
+        }
+    },
+    "providers": [
+        {
+            "name": "NASA LP DAAC at the USGS EROS Center",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://lpdaac.usgs.gov/products/mcd18c2v061/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MCD18C2"
+        }
+    ],
+    "license": "proprietary",
+    "links": [
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections/MODIS/061/MCD18C2",
+            "rel": "self",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections",
+            "rel": "parent",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/",
+            "rel": "root",
+            "type": "application/json"
+        },
+        {
+            "code": "JavaScript",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/MODIS/MODIS_061_MCD18C2",
+            "rel": "related",
+            "title": "Run the example for MODIS/061/MCD18C2 in the Earth Engine Code Editor",
+            "type": "text/html"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/images/MODIS/MODIS_061_MCD18C2_sample.png",
+            "rel": "preview",
+            "type": "image/png"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MCD18C2#terms-of-use",
+            "rel": "license",
+            "type": "text/html"
+        },
+        {
+            "href": "https://doi.org/10.5067/MODIS/MCD18C2.061",
+            "rel": "cite-as"
+        }
+    ],
+    "cube:dimensions": {
+        "x": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                -180,
+                180
+            ]
+        },
+        "y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                -90,
+                90
+            ]
+        },
+        "t": {
+            "type": "temporal",
+            "extent": [
+                "2002-02-24T00:00:00Z",
+                "2023-05-01T00:00:00"
+            ]
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "GMT_0000_PAR",
+                "GMT_0300_PAR",
+                "GMT_0600_PAR",
+                "GMT_0900_PAR",
+                "GMT_1200_PAR",
+                "GMT_1500_PAR",
+                "GMT_1800_PAR",
+                "GMT_2100_PAR"
+            ]
+        }
+    },
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Total PAR at GMT 00:00",
+                "name": "GMT_0000_PAR"
+            },
+            {
+                "description": "Total PAR at GMT 03:00",
+                "name": "GMT_0300_PAR"
+            },
+            {
+                "description": "Total PAR at GMT 06:00",
+                "name": "GMT_0600_PAR"
+            },
+            {
+                "description": "Total PAR at GMT 09:00",
+                "name": "GMT_0900_PAR"
+            },
+            {
+                "description": "Total PAR at GMT 12:00",
+                "name": "GMT_1200_PAR"
+            },
+            {
+                "description": "Total PAR at GMT 15:00",
+                "name": "GMT_1500_PAR"
+            },
+            {
+                "description": "Total PAR at GMT 18:00",
+                "name": "GMT_1800_PAR"
+            },
+            {
+                "description": "Total PAR at GMT 21:00",
+                "name": "GMT_2100_PAR"
+            }
+        ],
+        "gsd": [
+            500
+        ],
+        "instruments": [
+            "MODIS"
+        ],
+        "platform": [
+            "Aqua",
+            "Terra"
+        ]
+    },
+    "assets": {
+        "preview_4": {
+            "href": "https://developers.google.com/earth-engine/datasets/images/MODIS/MODIS_061_MCD18C2_sample.png",
+            "type": "image/png",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    },
+    "sci:citation": "Please visit [LP DAAC 'Citing Our Data' page](https://lpdaac.usgs.gov/citing_our_data)\nfor information on citing LP DAAC datasets.\n",
+    "sci:doi": "10.5067/MODIS/MCD18C2.061",
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "day"
+    },
+    "gee:terms_of_use": "MODIS data and products acquired through the LP DAAC\nhave no restrictions on subsequent use, sale, or redistribution.\n",
+    "gee:type": "image_collection"
+}

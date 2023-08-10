@@ -1,0 +1,73 @@
+operation,base_url,endpoint,summary,description,operationId
+post,dataspace,/api/v1/process,Process,,process
+get,dataspace,/api/v1/catalog/1.0.0,landing page,Returns the root STAC Catalog or STAC Collection that is the entry point	for users to browse with STAC Browser or for search engines to crawl.	This can either return a single STAC Collection or more commonly a STAC	catalog.		The landing page provides links to the	API definition (link relations `service-desc` and `service-doc`)	and the STAC records such as collections/catalogs (link relation `child`)	or items (link relation `item`).		Extensions may add additional links with new relation types.,getCatalogLandingPage
+get,dataspace,/api/v1/catalog/1.0.0/conformance,information about specifications that this API conforms to,A list of all conformance classes specified in a standard that the	server conforms to.,getCatalogConformanceDeclaration
+get,dataspace,/api/v1/catalog/1.0.0/collections,the feature collections in the dataset,A body of Feature Collections that belong or are used together with additional links.	Request may not return the full set of metadata per Feature Collection.,getCatalogCollections
+get,dataspace,/api/v1/catalog/1.0.0/collections/{collectionId},describe the feature collection with id `collectionId`,A single Feature Collection for the given if `collectionId`.	Request this endpoint to get a full list of metadata for the Feature Collection.,getCatalogCollection
+get,dataspace,/api/v1/catalog/1.0.0/collections/{collectionId}/queryables,Get the JSON Schema defining the list of variable terms that can be used in CQL2 expressions.,This endpoint returns a list of variable terms that can be used in CQL2 expressions. The	precise definition of this can be found in the OGC API - Features - Part 3: Filtering and the	Common Query Language (CQL) specification.,getCatalogCollectionQueryables
+get,dataspace,/api/v1/catalog/1.0.0/collections/{collectionId}/items,fetch features,"Fetch features of the feature collection with id `collectionId`.		Every feature in a dataset belongs to a collection. A dataset may	consist of multiple feature collections. A feature collection is often a	collection of features of a similar type, based on a common schema.",getCatalogFeatures
+get,dataspace,/api/v1/catalog/1.0.0/collections/{collectionId}/items/{featureId},fetch a single feature,Fetch the feature with id `featureId` in the feature collection	with id `collectionId`.,getCatalogFeature
+get,dataspace,/api/v1/catalog/1.0.0/search,Search STAC items with simple filtering.,"Retrieve Items matching filters. Intended as a shorthand API for simple	queries.		This method is required to implement.		If this endpoint is implemented on a server, it is required to add a	link referring to this endpoint with `rel` set to `search` to the	`links` array in `GET /`. As `GET` is the default method, the `method`	may not be set explicitly in the link.",getCatalogItemSearch
+post,dataspace,/api/v1/catalog/1.0.0/search,Search STAC items with full-featured filtering.,"Retrieve items matching filters. Intended as the standard, full-featured	query API.		This method is optional to implement, but recommended.		If this endpoint is implemented on a server, it is required to add a	link referring to this endpoint with `rel` set to `search` and `method`	set to `POST` to the `links` array in `GET /`.",postCatalogItemSearch
+post,dataspace,/api/v1/batch/process,Submit new batch processing request,,createNewBatchProcessingRequest
+get,dataspace,/api/v1/batch/process,Query batch process requests,,getAllBatchProcessRequests
+get,dataspace,/api/v1/batch/process/{requestId},Retrieve a single batch process request,,getSingleBatchProcessRequestById
+put,dataspace,/api/v1/batch/process/{requestId},Update a batch process request,Only the requests that are not currently being processed nor waiting to be processed can be updated.	,updateBatchProcessRequest
+delete,dataspace,/api/v1/batch/process/{requestId},Delete a batch process request,"Deletes a batch process request if it:	* is not currently being processed or analysed,	* has not been confirmed for processing or analysis,	* has no successfully processed tiles.		Requests that have been confirmed or are currently being processed or analysed must be canceled before deletion.	Requests with processed tiles cannot be deleted.	",deleteBatchProcessRequest
+post,dataspace,/api/v1/batch/process/{requestId}/analyse,Request analysis of a batch process request,,batchAnalyse
+post,dataspace,/api/v1/batch/process/{requestId}/start,Start (confirm) processing of a batch process request,,batchStartProcessRequest
+post,dataspace,/api/v1/batch/process/{requestId}/cancel,Cancel a batch process request,,batchCancelProcessRequest
+post,dataspace,/api/v1/batch/process/{requestId}/restartpartial,Restart a partially processed request,Restart processing of failed tiles in a partially processed request,batchRestartPartialProcessRequest
+post,dataspace,/api/v1/batch/collections,Create a new batch collection,,createNewBatchCollection
+get,dataspace,/api/v1/batch/collections,Query batch collections,,getAllBatchCollections
+get,dataspace,/api/v1/batch/collections/{collectionId},Retrieve a single batch collection,,getSingleBatchCollectionById
+put,dataspace,/api/v1/batch/collections/{collectionId},Update a batch collection,,updateBatchCollection
+delete,dataspace,/api/v1/batch/collections/{collectionId},Delete a batch collection,"Deletes a batch collection if it is not being used by any batch process request,	except for possible `FAILED` and `CANCELED` requests.	",deleteBatchCollection
+get,dataspace,/api/v1/batch/process/{requestId}/tiles,Get all tiles of a batch process,,getAllBatchProcessTiles
+get,dataspace,/api/v1/batch/process/{requestId}/tiles/{tileId},Retrieve a single tile for the specific batch process,,getBatchTileById
+get,dataspace,/api/v1/batch/tilinggrids,Get properties of all supported tiling grids,,getBatchTilingGridsProperties
+get,dataspace,/api/v1/batch/tilinggrids/{id},Get properties of a single tiling grid,,getBatchTilingGridProperties
+post,dataspace,/api/v1/statistics,Submit statistical request,,submitStatisticalRequest
+post,dataspace,/api/v1/statistics/batch,Submit a new statistical batch request,,createNewBatchStatisticsRequest
+get,dataspace,/api/v1/statistics/batch,Query statistical batch requests,,searchBatchStatisticsRequests
+get,dataspace,/api/v1/statistics/batch/{requestId},Retrieve a single batch statistical request,,getSingleBatchStatisticalRequestById
+get,dataspace,/api/v1/statistics/batch/{requestId}/status,Retrieve the status of a batch statistical request.,,batchStatisticalGetStatus
+post,dataspace,/api/v1/statistics/batch/{requestId}/analyse,Request analysis of a batch statistical request,,batchStatisticalAnalyse
+post,dataspace,/api/v1/statistics/batch/{requestId}/start,Start (confirm) processing of a batch statistical request,,batchStartStatisticalRequest
+post,dataspace,/api/v1/statistics/batch/{requestId}/stop,Stop a batch statistical request,,batchStopStatisticalRequest
+post,dataspace,/api/v1/byoc/collections/{collectionId}/tiles,Create a tile,,createByocCollectionTile
+get,dataspace,/api/v1/byoc/collections/{collectionId}/tiles,Get collection tiles,,getByocCollectionTiles
+get,dataspace,/api/v1/byoc/collections/{collectionId}/tiles/{tileId},Get a tile,,getByocCollectionTileById
+put,dataspace,/api/v1/byoc/collections/{collectionId}/tiles/{tileId},Update a tile,,updateByocCollectionTileById
+delete,dataspace,/api/v1/byoc/collections/{collectionId}/tiles/{tileId},Delete a tile,,deleteByocCollectionTileById
+post,dataspace,/api/v1/byoc/collections/{collectionId}/tiles/{tileId}/reingest,Reingest a tile,Initiates reingestion of a tile.,reingestByocCollectionTileById
+post,dataspace,/api/v1/byoc/collections,Create a collection,,createByocCollection
+get,dataspace,/api/v1/byoc/collections,Query collections,,getByocCollections
+get,dataspace,/api/v1/byoc/collections/{collectionId},Get a collection,,getByocCollectionById
+put,dataspace,/api/v1/byoc/collections/{collectionId},Update a collection,,updateByocCollectionById
+delete,dataspace,/api/v1/byoc/collections/{collectionId},Delete a collection,,deleteByocCollectionById
+post,dataspace,/api/v1/byoc/collections/{collectionId}/copyTiles,Copy collection tiles,"Copies ingested tiles from one collection to another, but only those whose path isn't present in the target collection.		You need to have access to both source and target collections, and target collection needs to have either the same band names and types, or it should have no bands.	",copyByocCollectionTiles
+get,dataspace,/configuration/v1/datasets/{datasetType}/dataproducts,Search data product,,getDataProducts
+get,dataspace,/configuration/v1/datasets/{datasetType}/dataproducts/{id},Get data product,Get an existing data product,getDataProduct
+get,dataspace,/configuration/v1/datasets,Get all datasets,Get all existing datasets,getAllDatasetDescriptors
+get,dataspace,/configuration/v1/datasets/{datasetType},Get dataset,Get an existing dataset,getDatasetDescriptor
+get,dataspace,/configuration/v1/datasets/{datasetId}/sources,Get dataset sources,Get all existing dataset sources,getSourceDescriptors
+get,dataspace,/configuration/v1/datasets/{datasetId}/sources/{id},Get dataset source,Get an existing dataset source,getSourceDescriptor
+get,dataspace,/configuration/v1/wms/instances/{instanceId}/userData,Get instance user data,Get an existing WMS instance user data,getInstanceUserData
+put,dataspace,/configuration/v1/wms/instances/{instanceId}/userData,Update instance user data,Update an existing WMS instance user data,updateInstanceUserData
+post,dataspace,/configuration/v1/wms/instances/{instanceId}/userData,Create instance user data,Create a new WMS instance user data,createInstanceUserData
+delete,dataspace,/configuration/v1/wms/instances/{instanceId}/userData,Delete instance user data,Delete an existing WMS instance user data,deleteInstanceUserData
+get,dataspace,/configuration/v1/wms/instances/{instanceId}/{layerId}/userData,Get layer user data,Get an existing WMS layer user data,getWmsLayerUserData
+put,dataspace,/configuration/v1/wms/instances/{instanceId}/{layerId}/userData,Update layer user data,Update an existing layer user data,updateLayerUserData
+post,dataspace,/configuration/v1/wms/instances/{instanceId}/{layerId}/userData,Create layer user data,Create a new WMS layer user data,createWmsLayerUserData
+delete,dataspace,/configuration/v1/wms/instances/{instanceId}/{layerId}/userData,Delete layer user data,Delete an existing WMS layer user data,deleteLayerUserData
+get,dataspace,/configuration/v1/wms/instances/{instanceId}/layers,Get layers,Get all WMS layers for a WMS instance,getWmsLayers
+post,dataspace,/configuration/v1/wms/instances/{instanceId}/layers,Create layer,Create a new WMS layer,createWmsLayer
+get,dataspace,/configuration/v1/wms/instances/{instanceId}/layers/{layerId},Get layer,Get an existing WMS layer,getWmsLayer
+put,dataspace,/configuration/v1/wms/instances/{instanceId}/layers/{layerId},Update layer,Update an existing WMS layer,updateWmsLayer
+delete,dataspace,/configuration/v1/wms/instances/{instanceId}/layers/{layerId},Delete layer,Delete an existing WMS layer,deleteWmsLayer
+get,dataspace,/configuration/v1/wms/instances,Get instances,Returns user's WMS instances,searchWmsInstances
+post,dataspace,/configuration/v1/wms/instances,Create instance,Create a new WMS instance,createWmsInstance
+get,dataspace,/configuration/v1/wms/instances/{instanceId},Get instance,Get an existing WMS instance,getWmsInstance
+put,dataspace,/configuration/v1/wms/instances/{instanceId},Update instance,Update an existing WMS instance,updateWmsInstance
+delete,dataspace,/configuration/v1/wms/instances/{instanceId},Delete instance,Delete an existing WMS instance,deleteWmsInstance

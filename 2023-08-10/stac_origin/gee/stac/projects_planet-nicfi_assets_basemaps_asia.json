@@ -1,0 +1,190 @@
+{
+    "type": "Collection",
+    "stac_version": "1.0.0",
+    "stac_extensions": [
+        "collection-assets"
+    ],
+    "id": "projects/planet-nicfi/assets/basemaps/asia",
+    "title": "Planet & NICFI Basemaps for Tropical Forest Monitoring - Tropical Asia",
+    "description": "This image collection provides access to high-resolution satellite\nmonitoring of the tropics for the primary purpose of reducing and reversing the\nloss of tropical forests, contributing to combating climate change, conserving\nbiodiversity, contributing to forest regrowth, restoration and enhancement, and\nfacilitating sustainable development, all of which must be Non-Commercial Use.\n\nTo learn how to access the Basemaps, follow the\n[sign up instructions here](https://developers.planet.com/docs/integrations/gee/nicfi/).\n\nNICFI mosaics contain both monthly and biannual collections.\n(Biannual collections are generated every 6 months.)  The type of\nthe mosaic is stored in the image metadata field 'cadence'. Use that\nfield along with the start and end date for each mosaic to find\nthe desired imagery.\n\nFull details about the Basemaps are available in\n[Planet's NICFI Basemap spec](https://assets.planet.com/docs/NICFI_Basemap_Spec_Addendum.pdf).\n\nFor more information about NICFI (Norway's International Climate\nand Forest Initiative) and the NICFI Basemaps,\n[see the FAQ](https://assets.planet.com/docs/NICFI_General_FAQs.pdf).\n\nIn support of NICFI's mission, you can use this data for a number of projects including, but not limited to:\n\n* Advance scientific research about the world's tropical forests and the critical services they provide.\n* Implement and improve policies for sustainable forest management and land use in developing tropical forest countries and jurisdictions.\n* Increase transparency and accountability in the tropics.\n* Protect and improve the rights of indigenous peoples and local communities in tropical forest countries.\n* Innovate solutions towards reducing pressure on forests from global commodities and financial markets.\n",
+    "keywords": [
+        "basemaps",
+        "forest",
+        "nicfi",
+        "planet",
+        "sr",
+        "surface_reflectance",
+        "tropics"
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -27.5,
+                    180,
+                    30.2
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2015-12-01T00:00:00Z",
+                    "2021-06-29T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "providers": [
+        {
+            "name": "Planet",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://planet.com/nicfi"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/projects_planet-nicfi_assets_basemaps_asia"
+        }
+    ],
+    "license": "proprietary",
+    "links": [
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections/projects/planet-nicfi/assets/basemaps/asia",
+            "rel": "self",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections",
+            "rel": "parent",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/",
+            "rel": "root",
+            "type": "application/json"
+        },
+        {
+            "code": "JavaScript",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/planet-nicfi/projects_planet-nicfi_assets_basemaps_asia",
+            "rel": "related",
+            "title": "Run the example for projects/planet-nicfi/assets/basemaps/asia in the Earth Engine Code Editor",
+            "type": "text/html"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/images/planet-nicfi/projects_planet-nicfi_assets_basemaps_asia_sample.png",
+            "rel": "preview",
+            "type": "image/png"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/projects_planet-nicfi_assets_basemaps_asia#terms-of-use",
+            "rel": "license",
+            "type": "text/html"
+        },
+        {
+            "href": "https://assets.planet.com/docs/Planet_ParticipantLicenseAgreement_NICFI.pdf",
+            "rel": "license",
+            "type": "application/pdf"
+        }
+    ],
+    "cube:dimensions": {
+        "x": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                -180,
+                180
+            ]
+        },
+        "y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                -27.5,
+                30.2
+            ]
+        },
+        "t": {
+            "type": "temporal",
+            "extent": [
+                "2015-12-01T00:00:00Z",
+                "2021-06-29T00:00:00Z"
+            ]
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "B",
+                "G",
+                "R",
+                "N"
+            ]
+        }
+    },
+    "summaries": {
+        "B": {
+            "maximum": 10000
+        },
+        "G": {
+            "maximum": 10000
+        },
+        "N": {
+            "maximum": 10000
+        },
+        "R": {
+            "maximum": 10000
+        },
+        "eo:bands": [
+            {
+                "description": "Blue",
+                "gee:scale": 0.0001,
+                "name": "B"
+            },
+            {
+                "description": "Green",
+                "gee:scale": 0.0001,
+                "name": "G"
+            },
+            {
+                "description": "Red",
+                "gee:scale": 0.0001,
+                "name": "R"
+            },
+            {
+                "description": "Near-infrared",
+                "gee:scale": 0.0001,
+                "name": "N"
+            }
+        ],
+        "gee:schema": [
+            {
+                "description": "The interval the mosaic covers: monthly or biannual",
+                "name": "cadence",
+                "type": "STRING"
+            }
+        ],
+        "gsd": [
+            4.77
+        ]
+    },
+    "assets": {
+        "preview_4": {
+            "href": "https://developers.google.com/earth-engine/datasets/images/planet-nicfi/projects_planet-nicfi_assets_basemaps_asia_sample.png",
+            "type": "image/png",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    },
+    "sci:citation": "Planet Team (2017). Planet Application Program Interface: In Space for Life\non Earth. San Francisco, CA. [https://api.planet.com](https://api.planet.com)\n",
+    "gee:terms_of_use": "This data has usage, reproduction, and distribution restrictions in support\nof the NICFI Forest Monitoring Purpose. The full licensing agreement is available\n[here](https://assets.planet.com/docs/Planet_ParticipantLicenseAgreement_NICFI.pdf).\n",
+    "gee:type": "image_collection",
+    "gee:unusual_terms_of_use": true,
+    "gee:user_uploaded": true
+}

@@ -1,0 +1,47 @@
+{
+  "type": "Collection",
+  "id": "EO.ECMWF.DAT.CEMS-GLOFAS-SEASONAL",
+  "stac_version": "1.0.0",
+  "description": "This dataset provides a gridded modelled time series of river discharge, forced with seasonal range meteorological forecasts. The data is a consistent representation of a key hydrological variable across the global domain, and is a product of the Global Flood Awareness System (GloFAS). It is accompanied by an ancillary file for interpretation that provides the upstream area (see the related variables table and associated link in the documentation).\nThis dataset was produced by forcing the LISFLOOD hydrological model at a 0.1° (~11 km at the equator) resolution with downscaled runoff forecasts from the European Centre for Medium-range Weather Forecasts (ECMWF) 51-member ensemble seasonal forecasting system, SEAS5. The forecasts are initialised on the first of each month with a 24-hourly time step, and cover 123 days.\nCompanion datasets, also available through the Climate Data Store (CDS), are the operational forecasts, historical simulations that can be used to derive the hydrological climatology, and medium-range and seasonal reforecasts. The latter dataset enables research, local skill assessment and post-processing of the seasonal forecasts. In addition, the seasonal reforecasts are also used to derive a specific range dependent climatology for the seasonal system. For users looking specifically for European hydrological data, we refer to the European Flood Awareness System (EFAS) forecasts and historical simulations. All these datasets are part of the operational flood forecasting within the Copernicus Emergency Management Service (CEMS).\n\nVariables in the dataset/application are:\nRiver discharge in the last 24 hours\n\nVariables in the dataset/application are:\nUpstream area",
+  "links": [],
+  "title": "Seasonal forecasts of river discharge and related data by the Global Flood Awareness System",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2019-11-01T00:00:00Z",
+          "2023-05-01T23:59:59Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Forecast",
+    "Product type: Seasonal forecasts",
+    "Spatial coverage: Global",
+    "Variable domain: Land (hydrology)",
+    "Temporal coverage: Present",
+    "Provider: Copernicus CEMS"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

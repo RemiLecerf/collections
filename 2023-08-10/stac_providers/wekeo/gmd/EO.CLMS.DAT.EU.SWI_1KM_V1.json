@@ -1,0 +1,73 @@
+{
+  "type": "Collection",
+  "id": "EO.CLMS.DAT.EU.SWI_1KM_V1",
+  "stac_version": "1.0.0",
+  "description": "The Soil Water Index (SWI) quantifies the moisture condition at various depths in the soil. It is mainly driven by the precipitation via the process of infiltration. Soil moisture is a very heterogeneous variable and varies on small scales with soil properties and drainage patterns. Satellite measurements integrate over relative large-scale areas, with the presence of vegetation adding complexity to the interpretation. Soil moisture is a key parameter in numerous environmental studies including hydrology, meteorology and agriculture, and is recognized as an Essential Climate Variable (ECV) by the Global Climate Observing System (GCOS). The SWI product provides daily information about moisture conditions in different soil layers. It includes a quality flag (QFLAG) indicating the availability of SSM measurements for SWI calculations, and a Surface State Flag (SSF) indicating frozen or snow covered soils.",
+  "links": [
+    {
+      "rel": "hosts",
+      "href": "https://navigator.eumetsat.int/product/EO:EEA:DAT:VEGETATION:DAILY_SWI_1KM_EUROPE_V1",
+      "type": "http",
+      "title": "EUMETSAT Product Navigator (Metadata)"
+    },
+    {
+      "rel": "hosts",
+      "href": "https://land.copernicus.eu/global/products/swi",
+      "type": "HTTP",
+      "title": "Copernicus Global Land Service"
+    },
+    {
+      "rel": "hosts",
+      "href": "https://land.copernicus.eu/global/access",
+      "type": "HTTP",
+      "title": "Copernicus Global Land Service"
+    },
+    {
+      "rel": "hosts",
+      "href": "https://eoportal.eumetsat.int",
+      "title": "Copernicus Global Land Service"
+    }
+  ],
+  "title": "Soil Water Index: continental Europe daily (raster 1km) - version 1, Apr 2019",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -11.0,
+          35.0,
+          50.0,
+          72.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2015-01-01T12:00:01Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Orthoimagery",
+    "geophysical environment",
+    "biogeophysical",
+    "soil water index",
+    "soil moisture",
+    "Europe",
+    "Daily",
+    "daily composite"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

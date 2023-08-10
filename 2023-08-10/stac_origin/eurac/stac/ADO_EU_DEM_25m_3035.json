@@ -1,0 +1,97 @@
+{
+    "type": "Collection",
+    "version": "v1",
+    "stac_version": "0.9.0",
+    "stac_extensions": [
+        "datacube"
+    ],
+    "id": "ADO_EU_DEM_25m_3035",
+    "title": "Copernicus Land Monitoring Service - EU-DEM",
+    "description": "EU-DEM is a digital surface model (DSM) of EEA member and cooperating countries representing the first surface as illuminated by the sensors. It is a hybrid product based on SRTM and ASTER GDEM data fused by a weighted averaging approach.",
+    "keywords": [
+        "elevation",
+        "terrain",
+        "ADO project",
+        "ADO"
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    4.00836448784761,
+                    42.88526925644299,
+                    17.50816233265968,
+                    50.318718106310065
+                ]
+            ]
+        }
+    },
+    "providers": [
+        {
+            "name": "Eurac EO WCS",
+            "url": "http://www.eurac.edu",
+            "roles": [
+                "Host"
+            ]
+        },
+        {
+            "name": "European Environment Agency (EEA)",
+            "url": "copernicus@eea.europa.eu",
+            "roles": [
+                "Producer"
+            ]
+        }
+    ],
+    "license": "CC-BY-4.0",
+    "links": [
+        {
+            "rel": "licence",
+            "href": "https://creativecommons.org/licenses/by/4.0/",
+            "type": "text/html",
+            "title": "License Link"
+        }
+    ],
+    "cube:dimensions": {
+        "X": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                4.00836448784761,
+                17.50816233265968
+            ],
+            "reference_system": 3035
+        },
+        "Y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                42.88526925644299,
+                50.318718106310065
+            ],
+            "reference_system": 3035
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "EUElev_DEM_V11"
+            ]
+        }
+    },
+    "summaries": {
+        "constellation": [
+            "SRTM / ASTER GDEM"
+        ],
+        "platform": [
+            "SRTM / ASTER GDEM"
+        ],
+        "rows": 33327,
+        "columns": 40962,
+        "eo:bands": [
+            {
+                "name": "EUElev_DEM_V11"
+            }
+        ]
+    },
+    "sci:citation": "Copyright holder: European Environment Agency (EEA)",
+    "engine": "WCPS"
+}

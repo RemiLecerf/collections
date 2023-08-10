@@ -1,0 +1,98 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dct="http://purl.org/dc/terms/" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/metadata/eu.copernicus.climate.provider-cems-without">
+        <foaf:primaryTopic rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/resource/eu.copernicus.climate.provider-cems-without"/>
+        <dct:issued>2018-03-28</dct:issued>
+        <dct:modified>2018-03-28</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/srv/eng/xml.metadata.get?uuid=eu.copernicus.climate.provider-cems-without">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://cds.climate.copernicus.eu:443//geonetwork?uuid=eu.copernicus.climate.provider-cems-without">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/resource/eu.copernicus.climate.provider-cems-without">
+        <dct:identifier>eu.copernicus.climate.provider-cems-without</dct:identifier>
+        <dct:title>Copernicus Emergency Management Service contributions to the Climate Data Store</dct:title>
+        <dct:abstract>This page provides a brief overview of the Copernicus Emergency Management Service (CEMS) datasets made available to users 
+through the Climate Data Store (CDS). The CEMS is one of six thematic information services provided by the 
+European Union's Copernicus Earth Observation Programme, known as "Europe's eyes on Earth". 
+Created using satellite, in-situ, and model data, CEMS products provide support to all actors involved in the management of natural and 
+man-made disasters throughout the disaster lifecycle. This therefore includes prevention, preparedness, response and recovery activities.
+CEMS consists of two components:
+
+
+On-demand Mapping, of global coverage that provides satellite-based maps on the extent and impact of disasters for specific 
+events requested by eligible users
+
+
+Early Warning and Monitoring, of European and global coverage that provides overviews of near real-time and early warning 
+information for ongoing and forecasted events
+
+
+ECMWF contributes to two of the three early warning prediction systems that comprise the Early Warning and Monitoring component, these are Floods (CEMS-Floods) and Fires 
+(CEMS-Fires). A third prediction system for Droughts is produced elsewhere. For Floods, there are the Global and European Flood Awareness Systems (GloFAS and EFAS). 
+For Fires, there is the European Forest Fire Information Service (EFFIS) and the Global Wildfire Information Service (GWIS - under development). These services 
+are delivered through dedicated Information Services. More information about CEMS Floods and CEMS Fires Early Warning Systems (EWS) data and services delivered by 
+ECMWF can be found on the dedicated wiki pages.
+CEMS-Floods
+There are three types of hydrological datasets at the native EFAS and GloFAS temporal and spatial resolutions:
+
+
+Historical (or reanalysis) multi-decadal simulations, that aim to reproduce observations and serve as a reference dataset. They are used for initial conditions, to define climatology and thresholds for forecast evaluation.
+
+
+Real-time forecasts, that aim to represent possible scenarios of the future. Both seasonal and shorter range forecasts are produced.
+
+
+Reforecasts, that are a set of forecasts for the past produced with a model configuration that is as close as possible to the operational system. They are used to define thresholds and for forecast evaluation. Both seasonal and shorter range reforecasts are produced.
+
+
+All datasets are updated after a major operational system upgrade and are given a new version number.
+CEMS-Fire
+There are two types of fire danger datasets that for ease of use are provided at the same spatial resolution of the leading datasets (e.g. ERA5, System-5).
+
+
+Historical (or reanalysis) multi-decadal simulations, that aim to reproduce observations and serve as a reference dataset. They are used for initial conditions, to define climatology and thresholds for forecast evaluation.
+
+
+Reforecasts, that are a set of forecasts for the past produced with a model configuration that is as close as possible to the operational system. They are used to define thresholds and for forecast evaluation. Both seasonal and shorter-range reforecasts are produced.
+
+
+All datasets are updated after a major operational system upgrade and are given a new version number.</dct:abstract>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/GEMET%20-%20INSPIRE%20themes%2C%20version%201.0/Atmospheric conditions"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Provider: Copernicus CEMS"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/iso/topicCategory/climatologyMeteorologyAtmosphere"/>
+        <foaf:thumbnail rdf:resource="https://datastore.copernicus-climate.eu/c3s/published-forms-v2/c3sprod/provider-cems-without/overview.jpg"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((0 -89, 0 89, 360 89, 360 -89, 0 -89))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:temporal>1900-01-01
+          /
+          3000-01-01</dct:temporal>
+        <dct:publisher rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/organization/ECMWF"/>
+        <dct:accrualPeriodicity>asNeeded</dct:accrualPeriodicity>
+        <dct:language>eng</dct:language>
+        <dct:license>licence</dct:license>
+        <dct:license>https://cds.climate.copernicus.eu/api/v2/terms/static/provider-without.pdf</dct:license>
+        <dcat:distribution rdf:resource="https://cds.climate.copernicus.eu/cdsapp#!/dataset/eu.copernicus.climate.provider-cems-without"/>
+        <dcat:dataQuality>EC Copernicus program</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+    

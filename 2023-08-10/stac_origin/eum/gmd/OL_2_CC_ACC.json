@@ -1,0 +1,50 @@
+{
+  "type": "Collection",
+  "id": "OL_2_CC_ACC",
+  "stac_version": "1.0.0",
+  "description": "This Ocean Colour product represents the algal pigment (Chlorophyll a)\n          concentration in clear open waters, and it is defined by the \"OC4Me\" Maximum Band Ratio\n          (MBR) semi-analytical algorithm. The product is derived from S3A and S3B OLCI L2 NRT water-leaving\n          reflectances (calculated from the Baseline Atmospheric Correction). A maximum band ratio\n          approach is used for reflectances at 443, 490 and 510 nm, over that 560 nm (O3 to O6). It\n          is expressed in Units of mg/m3 as: log10 [Chl]= ∑4 x=0 =(Ax * (log10(Rij))x) which is the\n          ratio of reflectance of band i, among 443, 490 and 510 nm, over that of band j at 560 nm.\n          The following flags were applied: INVALID, LAND, CLOUD, CLOUD_AMBIGUOUS, CLOUD_MARGIN,\n          SNOW_ICE, SUSPECT, HISOLZEN, SATURATED, HIGHGLINT, WHITECAPS, AC_FAIL, OC4ME_FAIL,\n          ANNOT_TAU06. Full details of the chl_oc4me algorithm can be found in the case 1 resource\n          link. The image is an incrementally accumulated product of all the orbits over an entire\n          day. Sentinel-3 is part of a series of Sentinel satellites, under the umbrella of the EU\n          Copernicus programme.",
+  "links": [
+    {
+      "rel": "hosts",
+      "href": "https://navigator.eumetsat.int/product/EO:EUM:DAT:0027",
+      "type": "http",
+      "title": "EUMETSAT Product Navigator (Metadata)"
+    }
+  ],
+  "title": "OLCI Level 2 CHL Concentration Daily Accumulated -\n              Sentinel-3",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2019-06-11T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Ocean",
+    "Level 2 Data"
+  ],
+  "providers": [
+    {
+      "name": "European Organisation for the Exploitation of Meteorological Satellites (EUMETSAT)",
+      "description": "EUMETSAT Data store",
+      "roles": [
+        "host"
+      ],
+      "url": "https://data.eumetsat.int/"
+    }
+  ]
+}

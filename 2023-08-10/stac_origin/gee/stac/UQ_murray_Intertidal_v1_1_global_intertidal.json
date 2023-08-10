@@ -1,0 +1,181 @@
+{
+    "type": "Collection",
+    "version": "v1.1",
+    "stac_version": "1.0.0",
+    "stac_extensions": [
+        "collection-assets"
+    ],
+    "id": "UQ/murray/Intertidal/v1_1/global_intertidal",
+    "title": "Murray Global Intertidal Change Classification",
+    "description": "The Murray Global Intertidal Change Dataset contains global maps of tidal flat\necosystems produced via a supervised classification of 707,528 Landsat\nArchive images. Each pixel was classified into tidal flat, permanent water\nor other with reference to a globally distributed set of training data.\n\nThe classification was implemented along the entire global coastline\nbetween 60\u00b0 North and 60\u00b0 South from 1 January 1984 to 31 December 2016.\nThe image collection consists consists of a time-series of 11 global maps\nof tidal flats at 30m pixel resolution for set time-periods (1984-1986;\n1987-1989; 1990-1992; 1993-1995; 1996-1998; 1999-2001; 2002-2004;\n2005-2007; 2008-2010; 2011-2013; 2014-2016)\n\nThis product depicts tidal flat ecosystems around the global coastline.\n\nPixels classified as tidal flat in the analysis represent several types of\ntidal flat ecosystems, including unconsolidated fine-grain sediments (tidal\nmudflats), unconsolidated coarse-grain sediments (tidal sand flats), and\nconsolidated sediments, organic material or rocks (wide tidal\nrock-platforms), while excluding spectral signatures indicating the\npresence of vegetation dominated intertidal ecosystems such as mangroves\nand vegetated marshes. The analysis aimed to identify pixels that are\nsubject to regular tidal inundation, and therefore may also include other\nintertidal systems where intertidal dynamics are observable.\n",
+    "keywords": [
+        "coastal",
+        "google",
+        "intertidal",
+        "landsat_derived",
+        "murray",
+        "tidal_flats",
+        "uq"
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -60,
+                    180,
+                    60
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1984-01-01T00:00:00Z",
+                    "2017-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "providers": [
+        {
+            "name": "Murray/UQ/Google/USGS/NASA",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://intertidal.app"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/UQ_murray_Intertidal_v1_1_global_intertidal"
+        }
+    ],
+    "license": "CC-BY-4.0",
+    "links": [
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections/UQ/murray/Intertidal/v1_1/global_intertidal",
+            "rel": "self",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections",
+            "rel": "parent",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/",
+            "rel": "root",
+            "type": "application/json"
+        },
+        {
+            "code": "JavaScript",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/UQ/UQ_murray_Intertidal_v1_1_global_intertidal",
+            "rel": "related",
+            "title": "Run the example for UQ/murray/Intertidal/v1_1/global_intertidal in the Earth Engine Code Editor",
+            "type": "text/html"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/images/UQ/UQ_murray_Intertidal_v1_1_global_intertidal_sample.png",
+            "rel": "preview",
+            "type": "image/png"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/UQ_murray_Intertidal_v1_1_global_intertidal#terms-of-use",
+            "rel": "license",
+            "type": "text/html"
+        },
+        {
+            "href": "https://doi.org/10.1038/s41586-018-0805-8",
+            "rel": "cite-as"
+        }
+    ],
+    "cube:dimensions": {
+        "x": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                -180,
+                180
+            ]
+        },
+        "y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                -60,
+                60
+            ]
+        },
+        "t": {
+            "type": "temporal",
+            "extent": [
+                "1984-01-01T00:00:00Z",
+                "2017-01-01T00:00:00Z"
+            ]
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "classification"
+            ]
+        }
+    },
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Intertertidal area classification for the interval.",
+                "gee:bitmask": {
+                    "bitmask_parts": [
+                        {
+                            "bit_count": 1,
+                            "description": "Intertidal area classification.",
+                            "values": [
+                                {
+                                    "description": "Classified non-intertidal area"
+                                },
+                                {
+                                    "description": "Classified intertidal area",
+                                    "value": 1
+                                }
+                            ]
+                        }
+                    ],
+                    "total_bit_count": 1
+                },
+                "gee:units": "occurrence",
+                "name": "classification"
+            }
+        ],
+        "gsd": [
+            30
+        ]
+    },
+    "assets": {
+        "preview_4": {
+            "href": "https://developers.google.com/earth-engine/datasets/images/UQ/UQ_murray_Intertidal_v1_1_global_intertidal_sample.png",
+            "type": "image/png",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    },
+    "sci:citation": "Murray, N.J., Phinn, S.R., DeWitt, M., Ferrari, R., Johnston, R., Lyons, M.B.,\nClinton, N., Thau, D. & Fuller, R.A. (2019) The global distribution and\ntrajectory of tidal flats. Nature, 565, 222-225.\n[doi:10.1038/s41586-018-0805-8](https://doi.org/10.1038/s41586-018-0805-8),\n",
+    "sci:doi": "10.1038/s41586-018-0805-8",
+    "sci:publications": [
+        {
+            "citation": "Murray, N. J., Phinn, S. P., Fuller, R. A., DeWitt, M., Ferrari, R.,\nJohnston, R., Clinton, N., & Lyons, M. B. (2022). High-resolution global\nmaps of tidal flat ecosystems from 1984 to 2019. Scientific Data,\n9(1).\n[doi:10.1038/s41597-022-01635-5](https://doi.org/10.1038/s41597-022-01635-5),\n"
+        }
+    ],
+    "gee:interval": {
+        "interval": 3,
+        "type": "cadence",
+        "unit": "year"
+    },
+    "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)\n\nThis work is licensed under a Creative Commons Attribution 4.0\nInternational License.\n\nAny use of the intertidal data must include proper acknowledgement,\nincluding citing the associated journal article.\n",
+    "gee:type": "image_collection",
+    "gee:user_uploaded": true
+}

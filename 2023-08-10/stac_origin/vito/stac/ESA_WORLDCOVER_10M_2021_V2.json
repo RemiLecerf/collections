@@ -1,0 +1,154 @@
+{
+    "stac_version": "0.9.0",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/datacube/v2.2.0/schema.json",
+        "https://stac-extensions.github.io/eo/v1.1.0/schema.json"
+    ],
+    "id": "ESA_WORLDCOVER_10M_2021_V2",
+    "title": "ESA WorldCover 2021 products 10 meter COG format",
+    "description": "The WorldCover product will be released per 3 x 3 degree tile.",
+    "keywords": [
+        "VITO",
+        "COPERNICUS",
+        "ESA",
+        "Land Cover",
+        "Sentinel-1",
+        "Sentinel-2",
+        "Environment",
+        "WorldCover"
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180.0,
+                    -90.0,
+                    180.0,
+                    90.0
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2021-01-01T00:00:00Z",
+                    "2021-12-31T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "providers": [
+        {
+            "name": "VITO",
+            "roles": [
+                "producer"
+            ],
+            "url": "https://remotesensing.vito.be/"
+        }
+    ],
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "links": [
+        {
+            "href": "https://creativecommons.org/licenses/by/4.0/",
+            "rel": "license"
+        },
+        {
+            "href": "https://services.terrascope.be/catalogue/description?collection=urn:eop:VITO:ESA_WorldCover_10m_2021_V2",
+            "rel": "alternate",
+            "title": "EO OpenSearch catalog"
+        },
+        {
+            "href": "https://viewer.esa-worldcover.org/worldcover",
+            "rel": "alternate",
+            "title": "Product Viewer"
+        },
+        {
+            "href": "https://services.terrascope.be/wmts/v2",
+            "rel": "wmts",
+            "wmts:layer": "WORLDCOVER_2021_MAP"
+        }
+    ],
+    "cube:dimensions": {
+        "bands": {
+            "type": "bands",
+            "values": [
+                "MAP",
+                "INPUTQUALITY"
+            ]
+        },
+        "t": {
+            "extent": [
+                "2021-01-01T00:00:00Z",
+                "2021-12-31T00:00:00Z"
+            ],
+            "type": "temporal"
+        },
+        "x": {
+            "axis": "x",
+            "extent": [
+                -180,
+                180
+            ],
+            "reference_system": 4326,
+            "step": 8.3333333333e-05,
+            "type": "spatial"
+        },
+        "y": {
+            "axis": "y",
+            "extent": [
+                -60,
+                83
+            ],
+            "reference_system": 4326,
+            "step": 8.3333333333e-05,
+            "type": "spatial"
+        }
+    },
+    "summaries": {
+        "eo:bands": [
+            {
+                "aliases": [
+                    "ESA_WORLDCOVER_10M_MAP"
+                ],
+                "gsd": 10,
+                "name": "MAP",
+                "type": "uint8"
+            },
+            {
+                "aliases": [
+                    "ESA_WORLDCOVER_10M_INPUTQUALITY"
+                ],
+                "gsd": 10,
+                "name": "INPUTQUALITY",
+                "type": "uint8"
+            }
+        ],
+        "instruments": [
+            "MSI",
+            "C-SAR"
+        ],
+        "platform": [
+            "Sentinel-1",
+            "Sentinel-2"
+        ]
+    },
+    "assets": {
+        "metadata_iso_19139": {
+            "href": "https://services.terrascope.be/collectioncatalogue/srv/api/records/urn:eop:VITO:ESA_WorldCover_10m_2021_V2/formatters/xml?approved=true",
+            "roles": [
+                "metadata",
+                "iso-19139"
+            ],
+            "title": "ISO 19139 metadata",
+            "type": "application/vnd.iso.19139+xml"
+        },
+        "thumbnail": {
+            "href": "https://services.terrascope.be/collectioncatalogue/images/quicklooks/ESA_Worldcover_10m_QL.png",
+            "roles": [
+                "thumbnail"
+            ],
+            "title": "Thumbnail",
+            "type": "image/jpeg"
+        }
+    }
+}

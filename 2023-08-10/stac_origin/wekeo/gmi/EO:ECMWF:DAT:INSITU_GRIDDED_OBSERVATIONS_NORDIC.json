@@ -1,0 +1,78 @@
+{
+  "type": "Collection",
+  "id": "EO:ECMWF:DAT:INSITU_GRIDDED_OBSERVATIONS_NORDIC",
+  "stac_version": "1.0.0",
+  "description": "The Nordic Gridded Climate Dataset (NGCD) is a high resolution observational gridded dataset of daily minimum, maximum and mean temperature and daily precipitation sums covering Finland, Sweden and Norway. The time period covered begins in January 1971 and the dataset is regularly updated every 6 months, in March and in September.\nSpatial interpolation methods are applied to observation datasets to created gridded datasets. \nThere are three types of such methods: deterministic (type 1), stochastic (type 2) and pure mathematical (type 3).\nNGCD applies both a deterministic kriging (type 1) interpolation approach and a stochastic Bayesian (type 2) interpolation approach to the same in-situ observation dataset collected by weather stations. \nFor more details on the algorithms users are advised to read the product user guide.\nThe input data is provided by the National Meteorological and Hydrological Services of Finland, Norway and Sweden. The time-series used for Finland and Sweden are the non-blended time-series from the station network of the European Climate Assessment & Dataset (ECA&D) project. For Norway, time-series are extracted from the climate database of the Norwegian Meteorological Institute.\n\nVariables in the dataset/application are:\nMaximum temperature, Mean temperature, Minimum temperature, Precipitation",
+  "links": [
+    {
+      "rel": "hosts",
+      "href": "http://surfobs.climate.copernicus.eu/dataaccess/access_ngcd.php",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "NGCD web-portal (.php)"
+    },
+    {
+      "rel": "hosts",
+      "href": "https://datastore.copernicus-climate.eu/documents/insitu-gridded-observations-nordic/C3S_Report_M311a_Lot4.2.3.pdf",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Product user guide (PDF)"
+    },
+    {
+      "rel": "hosts",
+      "href": "https://confluence.ecmwf.int/x/r0maE",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Algorithm theoretical basis document"
+    },
+    {
+      "rel": "hosts",
+      "href": "https://confluence.ecmwf.int/x/wkmaE",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Product user guide"
+    },
+    {
+      "rel": "hosts",
+      "href": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.e8f4a10c",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Climate Data Store catalogue"
+    }
+  ],
+  "title": "Nordic gridded temperature and precipitation data from 1971 to present derived from in-situ observations",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1971-01-01T00:00:00Z",
+          "2023-01-26T23:59:59Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Atmospheric conditions",
+    "Spatial coverage: Fennoscandia",
+    "Variable domain: Atmosphere (surface)",
+    "Temporal coverage: Past",
+    "Product type: In-situ observations",
+    "Provider: Copernicus C3S"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

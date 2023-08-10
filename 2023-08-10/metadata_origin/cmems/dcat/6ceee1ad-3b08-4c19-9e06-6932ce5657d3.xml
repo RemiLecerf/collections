@@ -1,0 +1,76 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:dct="http://purl.org/dc/terms/" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/6ceee1ad-3b08-4c19-9e06-6932ce5657d3">
+        <foaf:primaryTopic rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/resource/056ee870-5906-415e-90e5-62a1264044b6"/>
+        <dct:issued>2023-03-28</dct:issued>
+        <dct:modified>2023-03-28</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/srv/eng/xml.metadata.get?uuid=6ceee1ad-3b08-4c19-9e06-6932ce5657d3">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork?uuid=6ceee1ad-3b08-4c19-9e06-6932ce5657d3">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/resource/056ee870-5906-415e-90e5-62a1264044b6">
+        <dct:identifier>056ee870-5906-415e-90e5-62a1264044b6</dct:identifier>
+        <dct:title>Mean Heat Transport across sections from Reanalysis</dct:title>
+        <dct:abstract>'''DEFINITION'''
+
+Heat transport across lines are obtained by integrating the heat fluxes along some selected sections and from top to bottom of the ocean. The values are computed from models’ daily output.
+The mean value over a reference period (1993-2014) and over the last full year are provided for the ensemble product and the individual reanalysis, as well as the standard deviation for the ensemble product over the reference period (1993-2014). The values are given in PetaWatt (PW).
+
+'''CONTEXT'''
+
+The ocean transports heat and mass by vertical overturning and horizontal circulation, and is one of the fundamental dynamic components of the Earth’s energy budget (IPCC, 2013). There are spatial asymmetries in the energy budget resulting from the Earth’s orientation to the sun and the meridional variation in absorbed radiation which support a transfer of energy from the tropics towards the poles. However, there are spatial variations in the loss of heat by the ocean through sensible and latent heat fluxes, as well as differences in ocean basin geometry and current systems. These complexities support a pattern of oceanic heat transport that is not strictly from lower to high latitudes. Moreover, it is not stationary and we are only beginning to unravel its variability. 
+
+'''CMEMS KEY FINDINGS'''
+
+The mean transports estimated by the ensemble global reanalysis are comparable to estimates based on observations; the uncertainties on these integrated quantities are still large in all the available products. 
+
+Note: The key findings will be updated annually in November, in line with OMI evolutions.
+
+'''DOI (product):''' 
+https://doi.org/10.48670/moi-00245</dct:abstract>
+        <dcat:theme rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/thesaurus/iso/topicCategory/oceans"/>
+        <foaf:thumbnail rdf:resource="https://catalogue.marine.copernicus.eu/documents/IMG/GLOBAL_OMI_WMHE_heattrp.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((-180.00 -90.00, -180.00 90.00, 180.00 90.00, 180.00 -90.00, -180.00 -90.00))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:issued>2018-02-12</dct:issued>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/GLO-MERCATOR-TOULOUSE-FR"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/GLO-MERCATOR-TOULOUSE-FR"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/GLO-MERCATOR-TOULOUSE-FR"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/GLO-MERCATOR-TOULOUSE-FR"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/MOI-OMI-SERVICE"/>
+        <dct:accrualPeriodicity>annually</dct:accrualPeriodicity>
+        <dct:license>otherRestrictions</dct:license>
+        <dct:license>license</dct:license>
+        <dct:license>No limitations on public access</dct:license>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/GLOBAL_OMI_WMHE_heattrp/global_omi_wmhe_heattrp"/>
+        <dcat:distribution rdf:resource="https://mdl1.marine.copernicus.eu/derived/GLOBAL_OMI_WMHE_heattrp/global_omi_wmhe_heattrp_202003/GLOBAL_OMI_WMHE_heattrp_R21090131.nc"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/57e5e101-31b1-4d93-90a3-59324780d7b5"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/fb306b65-4aab-479c-a38f-459a2204374c"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/27bd5904-8bf1-4525-8796-8f0c4b922b20"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dcat:dataQuality>The myOcean products depends on other products for production or validation. The detailed list of dependencies is given in ISO19115's aggregationInfo (ISO19139 Xpath = "gmd:MD_Metadata/gmd:identificationInfo/gmd:aggregationInfo[./gmd:MD_AggregateInformation/gmd:initiativeType/gmd:DS_InitiativeTypeCode/@codeListValue='upstream-validation' or 'upstream-production']")</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+    

@@ -1,0 +1,182 @@
+{
+    "stac_version": "1.0.0",
+    "type": "Collection",
+    "stac_extensions": [
+        "collection-assets"
+    ],
+    "id": "ISDASOIL/Africa/aluminium_extractable",
+    "title": "iSDAsoil extractable Aluminium",
+    "gee:type": "image",
+    "description": "Extractable aluminium at soil depths of 0-20 cm and 20-50 cm,\npredicted mean and standard deviation.\n\nPixel values must be back-transformed with `exp(x/10)-1`.\n\nSoil property predictions were made by\n[Innovative Solutions for Decision Agriculture Ltd. (iSDA)](https://isda-africa.com/)\nat 30 m pixel size using machine learning coupled with remote sensing data\nand a training set of over 100,000 analyzed soil samples.\n\nFurther information can be found in the\n[FAQ](https://www.isda-africa.com/isdasoil/faqs/) and\n[technical information documentation](https://www.isda-africa.com/isdasoil/technical-information/). To submit an issue or request support, please visit\n[the iSDAsoil site](https://isda-africa.com/isdasoil).",
+    "license": "proprietary",
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://earthengine.openeo.org/v1.0/collections/ISDASOIL/Africa/aluminium_extractable",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "https://earthengine.openeo.org/v1.0/collections",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "https://earthengine.openeo.org/v1.0/",
+            "type": "application/json"
+        },
+        {
+            "title": "Run the example for ISDASOIL/Africa/aluminium_extractable in the Google Playground",
+            "rel": "related",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/ISDASOIL_Africa_aluminium_extractable",
+            "type": "text/html",
+            "code": "JavaScript"
+        },
+        {
+            "rel": "preview",
+            "href": "https://mw1.google.com/ges/dd/images/ISDASOIL_Africa_aluminium_extractable_sample.png",
+            "type": "image/png"
+        },
+        {
+            "rel": "license",
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/ISDASOIL_Africa_aluminium_extractable#terms-of-use",
+            "type": "text/html"
+        },
+        {
+            "rel": "license",
+            "href": "https://spdx.org/licenses/CC-BY-4.0.html"
+        }
+    ],
+    "keywords": [
+        "Africa",
+        "aluminium",
+        "iSDA",
+        "soil"
+    ],
+    "providers": [
+        {
+            "name": "iSDA",
+            "roles": [
+                "producer",
+                "licensor"
+            ],
+            "url": "https://isda-africa.com/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/ISDASOIL_Africa_aluminium_extractable"
+        }
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -31.46,
+                    -35.22,
+                    57.08,
+                    37.98
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2001-01-01T00:00:00Z",
+                    "2017-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "summaries": {
+        "gsd": [
+            30
+        ],
+        "eo:bands": [
+            {
+                "name": "mean_0_20",
+                "description": "Aluminium, extractable, predicted mean at 0-20 cm depth",
+                "gee:unit": "ppm"
+            },
+            {
+                "name": "mean_20_50",
+                "description": "Aluminium, extractable, predicted mean at 20-50 cm depth",
+                "gee:unit": "ppm"
+            },
+            {
+                "name": "stdev_0_20",
+                "description": "Aluminium, extractable, standard deviation at 0-20 cm depth",
+                "gee:unit": "ppm"
+            },
+            {
+                "name": "stdev_20_50",
+                "description": "Aluminium, extractable, standard deviation at 20-50 cm depth",
+                "gee:unit": "ppm"
+            }
+        ],
+        "mean_0_20": {
+            "minimum": 3,
+            "maximum": 80
+        },
+        "mean_20_50": {
+            "minimum": 4,
+            "maximum": 79
+        },
+        "stdev_0_20": {
+            "minimum": 1,
+            "maximum": 53
+        },
+        "stdev_20_50": {
+            "minimum": 1,
+            "maximum": 51
+        }
+    },
+    "sci:citation": "Hengl, T., Miller, M.A.E., Kri\u017ean, J., et al. African soil properties and nutrients mapped at 30 m spatial resolution using two-scale ensemble machine learning. Sci Rep 11, 6130 (2021). [doi:10.1038/s41598-021-85639-y](https://doi.org/10.1038/s41598-021-85639-y)",
+    "gee:terms_of_use": "CC-BY-4.0",
+    "gee:user_uploaded": true,
+    "cube:dimensions": {
+        "x": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                -31.46,
+                57.08
+            ]
+        },
+        "y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                -35.22,
+                37.98
+            ]
+        },
+        "t": {
+            "type": "temporal",
+            "extent": [
+                "2001-01-01T00:00:00Z",
+                "2017-01-01T00:00:00Z"
+            ]
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "mean_0_20",
+                "mean_20_50",
+                "stdev_0_20",
+                "stdev_20_50"
+            ]
+        }
+    },
+    "assets": {
+        "preview_4": {
+            "href": "https://mw1.google.com/ges/dd/images/ISDASOIL_Africa_aluminium_extractable_sample.png",
+            "type": "image/png",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    }
+}

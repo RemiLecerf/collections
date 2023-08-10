@@ -1,0 +1,139 @@
+{
+    "slug": "synthetic-windstorm-events-for-europe-from-1986-to-2011",
+    "name": "sis-european-wind-storm-synthetic-events",
+    "id": "eu.copernicus.climate.sis-european-wind-storm-synthetic-events",
+    "type": "dataset",
+    "rich_abstract": "<div class='abstract-text'>\n         <hr />\n<p>This dataset contains a set of synthetic windstorm events consisting of 22,980 individual storm footprints over Europe. These are a physically realistic set of plausible windstorm events based on the modelled climatic conditions. It is not designed to reproduce actual historical observations but as a comparator for the stochastic event sets generally used for windstorm risk analysis in the insurance industry. This is because there is no data assimilation process used to align the model output to historical observations. The dataset aims to capture the windstorms' risk profile over the winter months and consider the characteristics of windstorms in a warming climate. The dataset may be downloaded by selecting the required years and months from which daily files are produced. These are there as mere reference; the associated storms bare no resembelence to what was actually observed and recorded at the time.</p>\n<p>The windstorms are identified from the maximum 3 second wind gusts derived from the 10m wind speed from the Met Office HadGEM3 model using the Global Atmosphere 3 and Global Land 3 configurations. The dataset covers the northern hemisphere winter months between September and May only. It includes three individual iterations of the event sets, whose methodology and inputs are slightly different:</p>\n<ul>\n<li>\n<p>Synthetic set 1.2: recalibrated using four historical windstorm events; Xynthia, Kyrill, Daria and 87J.</p>\n</li>\n<li>\n<p>Synthetic set 2: A storm severity index combining maximum wind gust speed above a threshold of 25 m s<sup>-1</sup> and land area was used to select the strongest six events from the Met Office historical events database.</p>\n</li>\n<li>\n<p>Synthetic set 3: downscaling was based on station observations from the four named storms used in Synthetic event set v1.2; Xynthia, Kyrill, Daria and 87J.</p>\n</li>\n</ul>\n<p>Five simulation ensembles initialized from one of five consecutive days and allowed to evolve independently were used to increase the number of events compared to the input data and to account for the uncertainty in forecasted climatic conditions. The three sets and all simulation ensembles may be combined and used together in further analysis. This synthetic event set is complementary to the catalogue of actual windstorms in Europe from 1979 to 2021 also available in the Climate Data Store.</p>\n<p>This dataset was produced on behalf of the Copernicus Climate Change Service.</p>\n         \n         \n            <p></p>\n            <table class=\"abstract-description abstract-table\">\n            <tr><th colspan=\"2\">DATA DESCRIPTION</th>\n            \n<tr><th>Data type</th><td>Gridded</td></tr>\n<tr><th>Horizontal coverage</th><td>25W to 40.5E, 34.4N to 71.5N</td></tr>\n<tr><th>Horizontal resolution</th><td>25km regridded to 4.4km by linear interpolation</td></tr>\n<tr><th>Vertical coverage</th><td>Surface</td></tr>\n<tr><th>Vertical resolution</th><td>Single level</td></tr>\n<tr><th>Temporal coverage</th><td>From 1986 to 2011; September-May</td></tr>\n<tr><th>Temporal resolution</th><td>72 hours, centred on the time of the maximum vorticity at 850 hPa along the storm track</td></tr>\n<tr><th>File format</th><td>NetCDF-4</td></tr>\n<tr><th>Conventions</th><td>Climate and Forecast Metadata Convention v1.6</td></tr>\n<tr><th>Versions</th><td>1.0</td></tr>\n<tr><th>Update frequency</th><td>No updates expected</td></tr>\n</table>\n\n    <p></p>\n    <table class=\"abstract-variables abstract-table\">\n    <tr><th colspan=\"3\">MAIN VARIABLES</th>\n    \n\n    <tr><th class='variables-name'>Name</th><th class='variables-units'>Units</th><th class='variables-description'>Description</th></tr>\n    \n<tr><td class='variables-name'>Wind speed of gusts</td><td class='variables-units'>m s<sup>-1</sup></td><td class='variables-description'>Maximum 3s wind gust at 10m over a 72-hour period centred on time of the maximum vorticity at 850 hPa along the storm track.</td></tr>\n</table>\n    </div>",
+    "terms": [
+        "licence-to-use-copernicus-products"
+    ],
+    "constraints": [
+        {
+            "month": [
+                "01",
+                "02"
+            ],
+            "variable": [
+                "wind_speed_of_gusts"
+            ],
+            "version_id": [
+                "synthetic_set_1_2",
+                "synthetic_set_2_0",
+                "synthetic_set_3_0"
+            ],
+            "year": [
+                "1987",
+                "1988",
+                "1989",
+                "1990",
+                "1991",
+                "1992",
+                "1993",
+                "1994",
+                "1995",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2000",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011"
+            ]
+        },
+        {
+            "month": [
+                "03",
+                "04",
+                "05",
+                "09",
+                "10",
+                "11"
+            ],
+            "variable": [
+                "wind_speed_of_gusts"
+            ],
+            "version_id": [
+                "synthetic_set_1_2",
+                "synthetic_set_2_0",
+                "synthetic_set_3_0"
+            ],
+            "year": [
+                "1986",
+                "1987",
+                "1988",
+                "1989",
+                "1990",
+                "1991",
+                "1992",
+                "1993",
+                "1994",
+                "1995",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2000",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011"
+            ]
+        },
+        {
+            "month": [
+                "12"
+            ],
+            "variable": [
+                "wind_speed_of_gusts"
+            ],
+            "version_id": [
+                "synthetic_set_1_2",
+                "synthetic_set_2_0",
+                "synthetic_set_3_0"
+            ],
+            "year": [
+                "1986",
+                "1987",
+                "1988",
+                "1989",
+                "1990",
+                "1991",
+                "1992",
+                "1993",
+                "1994",
+                "1995",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2000",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010"
+            ]
+        }
+    ]
+}

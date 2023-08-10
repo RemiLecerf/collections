@@ -1,0 +1,5572 @@
+{
+    "slug": "cmip5-daily-data-on-pressure-levels",
+    "name": "projections-cmip5-daily-pressure-levels",
+    "id": "eu.copernicus.climate.projections-cmip5-daily-pressure-levels",
+    "type": "dataset",
+    "rich_abstract": "<div class='abstract-text'>\n         <p>This catalogue entry provides daily climate projections on pressure levels from a large number of experiments, models, members and time periods computed in the framework of fifth phase of the Coupled Model Intercomparison Project (CMIP5). The term \"pressure levels\" is used to express that the variables were computed at multiple vertical levels, which may differ in number and location among the different models.</p>\n<p>CMIP5 data are used extensively in the Intergovernmental Panel on Climate Change Assessment Reports (the latest one is IPCC AR5, which was published in 2014). The use of these data is mostly aimed at:</p>\n<ul>\n<li>addressing outstanding scientific questions that arose as part of the IPCC reporting process;</li>\n<li>improving the understanding of the climate system;</li>\n<li>providing estimates of future climate change and related uncertainties;</li>\n<li>providing input data for the adaptation to the climate change;</li>\n<li>examining climate predictability and exploring the ability of models to predict climate on decadal time scales;</li>\n<li>evaluating how realistic the different models are in simulating the recent past.</li>\n</ul>\n<p>The term \"experiments\" refers to the three main categories of CMIP5 simulations:</p>\n<ul>\n<li>Historical experiments which cover the period where modern climate observations exist. These experiments show how the GCMs performs for the past climate and can be used as a reference period for comparison with scenario runs for the future. The period covered is typically 1850-2005.;</li>\n<li>Ensemble of experiments from the Atmospheric Model Intercomparison Project (AMIP), which prescribes the oceanic variables for all models and during all period of the experiment. This configuration removes the added complexity of ocean-atmosphere feedbacks in the climate system. The period covered is typically 1950-2005.</li>\n<li>Ensemble of climate projection experiments following the Representative Concentration Pathways (RCP) 2.6, 4.5, 6.0 and 8.5. The RCP scenarios provide different pathways of the future climate forcing. The period covered is typically 2006-2100, some extended RCP experimental data is available from 2100-2300.</li>\n</ul>\n<p>In CMIP5, the same experiments were run using different GCMs. In addition, for each model, the same experiment was repeatedly done using slightly different conditions (like initial conditions or different physical parameterisations for instance) producing in that way an ensemble of experiments closely related. Note that CMIP5 GCM data can be also used as lateral boundary conditions for Regional Climate Models (RCMs). RCMs are also available in the CDS (see CORDEX datasets). </p>\n<p>The data are produced by the participating institutes of the CMIP5 project. The latest CMIP GCM experiments will form the CMIP6 dataset, which will be published in the CDS in a later stage. </p>\n         \n         \n            <p></p>\n            <table class=\"abstract-description abstract-table\">\n            <tr><th colspan=\"2\">DATA DESCRIPTION</th>\n            \n<tr><th>Data type</th><td>Gridded</td></tr>\n<tr><th>Projection</th><td>Regular latitude-longitude grid</td></tr>\n<tr><th>Horizontal coverage</th><td>Global</td></tr>\n<tr><th>Horizontal resolution</th><td>From 0.125\u00b0 x 0.125\u00b0 to 5\u00b0 x 5\u00b0 depending on the model</td></tr>\n<tr><th>Vertical resolution</th><td>Levels are tipically at  10, 50, 100, 250, 500, 700, 850 and 1000 hPa depending on the model</td></tr>\n<tr><th>Temporal coverage</th><td>From 1850 to 2300 (shorter for some experiments)</td></tr>\n<tr><th>Temporal resolution</th><td>Day</td></tr>\n<tr><th>File format</th><td>NetCDF</td></tr>\n</table>\n\n    <p></p>\n    <table class=\"abstract-variables abstract-table\">\n    <tr><th colspan=\"3\">MAIN VARIABLES</th>\n    \n\n    <tr><th class='variables-name'>Name</th><th class='variables-units'>Units</th><th class='variables-description'>Description</th></tr>\n    \n<tr><td class='variables-name'>Geopotential height</td><td class='variables-units'>m</td><td class='variables-description'>Gravitational potential energy per unit mass  normalised by the standard gravity at mean sea level at the same latitude. It is also used as vertical coordinate referenced to Earth's mean sea level since its value is proportional to the elevation above the mean sea level.</td></tr>\n<tr><td class='variables-name'>Temperature</td><td class='variables-units'>K</td><td class='variables-description'>Temperature of the air.</td></tr>\n<tr><td class='variables-name'>U-component of wind</td><td class='variables-units'>m s<sup>-1</sup></td><td class='variables-description'>Magnitude of the eastward component of the two-dimensional horizontal air velocity.</td></tr>\n<tr><td class='variables-name'>V-component of wind</td><td class='variables-units'>m s<sup>-1</sup></td><td class='variables-description'>Magnitude of the northward component of the two-dimensional horizontal air velocity.</td></tr>\n</table>\n    </div>",
+    "terms": [
+        "esgf-cmip5"
+    ],
+    "constraints": [
+        {
+            "ensemble_member": [
+                "r10i1p1",
+                "r1i1p1",
+                "r2i1p1",
+                "r3i1p1",
+                "r4i1p1",
+                "r5i1p1",
+                "r6i1p1",
+                "r7i1p1",
+                "r8i1p1",
+                "r9i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "hadcm3"
+            ],
+            "period": [
+                "19341201-19591130",
+                "19591201-19841130",
+                "19841201-20051230"
+            ],
+            "variable": [
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r10i1p1",
+                "r1i1p1",
+                "r2i1p1",
+                "r3i1p1",
+                "r4i1p1",
+                "r5i1p1",
+                "r6i1p1",
+                "r7i1p1",
+                "r8i1p1",
+                "r9i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "hadcm3"
+            ],
+            "period": [
+                "19591201-19841130",
+                "19841201-20051230"
+            ],
+            "variable": [
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r10i1p1",
+                "r1i1p1",
+                "r2i1p1",
+                "r3i1p1",
+                "r4i1p1",
+                "r5i1p1",
+                "r6i1p1",
+                "r7i1p1",
+                "r8i1p1",
+                "r9i1p1"
+            ],
+            "experiment": [
+                "rcp_4_5"
+            ],
+            "model": [
+                "hadcm3"
+            ],
+            "period": [
+                "20060101-20301230",
+                "20310101-20351230"
+            ],
+            "variable": [
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r10i1p1",
+                "r1i1p1",
+                "r2i1p1",
+                "r3i1p1",
+                "r4i1p1",
+                "r5i1p1",
+                "r7i1p1",
+                "r8i1p1",
+                "r9i1p1"
+            ],
+            "experiment": [
+                "rcp_4_5"
+            ],
+            "model": [
+                "hadcm3"
+            ],
+            "period": [
+                "20060101-20301230",
+                "20310101-20351230"
+            ],
+            "variable": [
+                "temperature"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r12i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6"
+            ],
+            "model": [
+                "ec_earth"
+            ],
+            "period": [
+                "20060101-20301231",
+                "20310101-20551231",
+                "20560101-21001231"
+            ],
+            "variable": [
+                "temperature",
+                "u_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r12i1p1",
+                "r2i1p1",
+                "r9i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "ec_earth"
+            ],
+            "period": [
+                "19250101-19741231",
+                "19750101-20121231"
+            ],
+            "variable": [
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r12i1p1",
+                "r2i1p1",
+                "r9i1p1"
+            ],
+            "experiment": [
+                "rcp_4_5"
+            ],
+            "model": [
+                "ec_earth"
+            ],
+            "period": [
+                "20060101-20301231",
+                "20310101-20551231",
+                "20560101-21001231"
+            ],
+            "variable": [
+                "temperature"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r12i1p1",
+                "r2i1p1",
+                "r9i1p1"
+            ],
+            "experiment": [
+                "rcp_4_5",
+                "rcp_8_5"
+            ],
+            "model": [
+                "ec_earth"
+            ],
+            "period": [
+                "20060101-20301231",
+                "20310101-20551231",
+                "20560101-21001231"
+            ],
+            "variable": [
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r12i1p1",
+                "r2i1p1",
+                "r9i1p1"
+            ],
+            "experiment": [
+                "rcp_8_5"
+            ],
+            "model": [
+                "ec_earth"
+            ],
+            "period": [
+                "20060101-20301231",
+                "20310101-20551231",
+                "20560101-21001231"
+            ],
+            "variable": [
+                "u_component_of_wind",
+                "v_component_of_wind"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r12i1p1",
+                "r9i1p1"
+            ],
+            "experiment": [
+                "rcp_4_5"
+            ],
+            "model": [
+                "ec_earth"
+            ],
+            "period": [
+                "20060101-20301231",
+                "20310101-20551231",
+                "20560101-21001231"
+            ],
+            "variable": [
+                "u_component_of_wind",
+                "v_component_of_wind"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "amip"
+            ],
+            "model": [
+                "access1_0",
+                "cnrm_cm5",
+                "gfdl_cm3"
+            ],
+            "period": [
+                "19790101-19831231",
+                "19840101-19881231",
+                "19890101-19931231",
+                "19940101-19981231",
+                "19990101-20031231",
+                "20040101-20081231"
+            ],
+            "variable": [
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "amip"
+            ],
+            "model": [
+                "access1_0",
+                "cnrm_cm5",
+                "gfdl_cm3",
+                "inmcm4"
+            ],
+            "period": [
+                "19790101-19831231",
+                "19840101-19881231",
+                "19890101-19931231",
+                "19940101-19981231",
+                "19990101-20031231",
+                "20040101-20081231"
+            ],
+            "variable": [
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "amip"
+            ],
+            "model": [
+                "access1_3"
+            ],
+            "period": [
+                "19780101-19821231",
+                "19830101-19871231",
+                "19880101-19921231",
+                "19930101-19971231",
+                "19980101-20021231",
+                "20030101-20071231",
+                "20080101-20081231"
+            ],
+            "variable": [
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "amip"
+            ],
+            "model": [
+                "bnu_esm",
+                "fgoals_s2"
+            ],
+            "period": [
+                "19790101-20081231"
+            ],
+            "variable": [
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "amip"
+            ],
+            "model": [
+                "ccsm4"
+            ],
+            "period": [
+                "19790101-19841231",
+                "19850101-19891231",
+                "19900101-19941231",
+                "19950101-19991231",
+                "20000101-20051231",
+                "20060101-20101231"
+            ],
+            "variable": [
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "amip"
+            ],
+            "model": [
+                "ec_earth"
+            ],
+            "period": [
+                "19780401-19781231",
+                "19790101-19831231",
+                "19840101-19881231",
+                "19890101-19931231",
+                "19940101-19981231",
+                "19990101-20031231",
+                "20040101-20081231"
+            ],
+            "variable": [
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "amip"
+            ],
+            "model": [
+                "fgoals_g2",
+                "gfdl_hiram_c180",
+                "gfdl_hiram_c360",
+                "mpi_esm_lr",
+                "mpi_esm_mr"
+            ],
+            "period": [
+                "19790101-19791231",
+                "19800101-19801231",
+                "19810101-19811231",
+                "19820101-19821231",
+                "19830101-19831231",
+                "19840101-19841231",
+                "19850101-19851231",
+                "19860101-19861231",
+                "19870101-19871231",
+                "19880101-19881231",
+                "19890101-19891231",
+                "19900101-19901231",
+                "19910101-19911231",
+                "19920101-19921231",
+                "19930101-19931231",
+                "19940101-19941231",
+                "19950101-19951231",
+                "19960101-19961231",
+                "19970101-19971231",
+                "19980101-19981231",
+                "19990101-19991231",
+                "20000101-20001231",
+                "20010101-20011231",
+                "20020101-20021231",
+                "20030101-20031231",
+                "20040101-20041231",
+                "20050101-20051231",
+                "20060101-20061231",
+                "20070101-20071231",
+                "20080101-20081231"
+            ],
+            "variable": [
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "amip"
+            ],
+            "model": [
+                "hadgem2_a"
+            ],
+            "period": [
+                "19780901-19781230",
+                "19790101-19831230",
+                "19840101-19881230",
+                "19890101-19931230",
+                "19940101-19981230",
+                "19990101-20031230",
+                "20040101-20081230"
+            ],
+            "variable": [
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "amip"
+            ],
+            "model": [
+                "ipsl_cm5b_lr"
+            ],
+            "period": [
+                "19790101-19881231",
+                "19890101-19981231",
+                "19990101-20081231"
+            ],
+            "variable": [
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "amip"
+            ],
+            "model": [
+                "bcc_csm1_1"
+            ],
+            "period": [
+                "19790101-19931231",
+                "19940101-20081231"
+            ],
+            "variable": [
+                "u_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "amip"
+            ],
+            "model": [
+                "bcc_csm1_1_m"
+            ],
+            "period": [
+                "19790101-19811231",
+                "19820101-19841231",
+                "19850101-19871231",
+                "19880101-19901231",
+                "19910101-19931231",
+                "19940101-19961231",
+                "19970101-19991231",
+                "20000101-20021231",
+                "20030101-20051231",
+                "20060101-20081231"
+            ],
+            "variable": [
+                "u_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "amip"
+            ],
+            "model": [
+                "bcc_csm1_1_m"
+            ],
+            "period": [
+                "20060101-20081231"
+            ],
+            "variable": [
+                "temperature"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "access1_0",
+                "access1_3",
+                "cmcc_cesm",
+                "cnrm_cm5"
+            ],
+            "period": [
+                "19500101-19541231",
+                "19550101-19591231",
+                "19600101-19641231",
+                "19650101-19691231",
+                "19700101-19741231",
+                "19750101-19791231",
+                "19800101-19841231",
+                "19850101-19891231",
+                "19900101-19941231",
+                "19950101-19991231",
+                "20000101-20041231",
+                "20050101-20051231"
+            ],
+            "variable": [
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "access1_0",
+                "access1_3",
+                "cmcc_cesm",
+                "cnrm_cm5",
+                "inmcm4"
+            ],
+            "period": [
+                "19500101-19541231",
+                "19550101-19591231",
+                "19600101-19641231",
+                "19650101-19691231",
+                "19700101-19741231",
+                "19750101-19791231",
+                "19800101-19841231",
+                "19850101-19891231",
+                "19900101-19941231",
+                "19950101-19991231",
+                "20000101-20041231",
+                "20050101-20051231"
+            ],
+            "variable": [
+                "u_component_of_wind"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "access1_0",
+                "access1_3",
+                "cnrm_cm5",
+                "inmcm4"
+            ],
+            "period": [
+                "19500101-19541231",
+                "19550101-19591231",
+                "19600101-19641231",
+                "19650101-19691231",
+                "19700101-19741231",
+                "19750101-19791231",
+                "19800101-19841231",
+                "19850101-19891231",
+                "19900101-19941231",
+                "19950101-19991231",
+                "20000101-20041231",
+                "20050101-20051231"
+            ],
+            "variable": [
+                "temperature",
+                "v_component_of_wind"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "bnu_esm"
+            ],
+            "period": [
+                "19500101-20051231"
+            ],
+            "variable": [
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "cmcc_cm",
+                "fgoals_g2",
+                "mpi_esm_lr",
+                "mpi_esm_mr",
+                "mpi_esm_p"
+            ],
+            "period": [
+                "19500101-19501231",
+                "19510101-19511231",
+                "19520101-19521231",
+                "19530101-19531231",
+                "19540101-19541231",
+                "19550101-19551231",
+                "19560101-19561231",
+                "19570101-19571231",
+                "19580101-19581231",
+                "19590101-19591231",
+                "19600101-19601231",
+                "19610101-19611231",
+                "19620101-19621231",
+                "19630101-19631231",
+                "19640101-19641231",
+                "19650101-19651231",
+                "19660101-19661231",
+                "19670101-19671231",
+                "19680101-19681231",
+                "19690101-19691231",
+                "19700101-19701231",
+                "19710101-19711231",
+                "19720101-19721231",
+                "19730101-19731231",
+                "19740101-19741231",
+                "19750101-19751231",
+                "19760101-19761231",
+                "19770101-19771231",
+                "19780101-19781231",
+                "19790101-19791231",
+                "19800101-19801231",
+                "19810101-19811231",
+                "19820101-19821231",
+                "19830101-19831231",
+                "19840101-19841231",
+                "19850101-19851231",
+                "19860101-19861231",
+                "19870101-19871231",
+                "19880101-19881231",
+                "19890101-19891231",
+                "19900101-19901231",
+                "19910101-19911231",
+                "19920101-19921231",
+                "19930101-19931231",
+                "19940101-19941231",
+                "19950101-19951231",
+                "19960101-19961231",
+                "19970101-19971231",
+                "19980101-19981231",
+                "19990101-19991231",
+                "20000101-20001231",
+                "20010101-20011231",
+                "20020101-20021231",
+                "20030101-20031231",
+                "20040101-20041231",
+                "20050101-20051231"
+            ],
+            "variable": [
+                "u_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "cmcc_cms",
+                "ipsl_cm5a_lr",
+                "ipsl_cm5a_mr",
+                "ipsl_cm5b_lr",
+                "noresm1_m"
+            ],
+            "period": [
+                "19500101-19591231",
+                "19600101-19691231",
+                "19700101-19791231",
+                "19800101-19891231",
+                "19900101-19991231",
+                "20000101-20051231"
+            ],
+            "variable": [
+                "u_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "fgoals_g2",
+                "mpi_esm_lr",
+                "mpi_esm_mr",
+                "mpi_esm_p"
+            ],
+            "period": [
+                "19500101-19501231",
+                "19510101-19511231",
+                "19520101-19521231",
+                "19530101-19531231",
+                "19540101-19541231",
+                "19550101-19551231",
+                "19560101-19561231",
+                "19570101-19571231",
+                "19580101-19581231",
+                "19590101-19591231",
+                "19600101-19601231",
+                "19610101-19611231",
+                "19620101-19621231",
+                "19630101-19631231",
+                "19640101-19641231",
+                "19650101-19651231",
+                "19660101-19661231",
+                "19670101-19671231",
+                "19680101-19681231",
+                "19690101-19691231",
+                "19700101-19701231",
+                "19710101-19711231",
+                "19720101-19721231",
+                "19730101-19731231",
+                "19740101-19741231",
+                "19750101-19751231",
+                "19760101-19761231",
+                "19770101-19771231",
+                "19780101-19781231",
+                "19790101-19791231",
+                "19800101-19801231",
+                "19810101-19811231",
+                "19820101-19821231",
+                "19830101-19831231",
+                "19840101-19841231",
+                "19850101-19851231",
+                "19860101-19861231",
+                "19870101-19871231",
+                "19880101-19881231",
+                "19890101-19891231",
+                "19900101-19901231",
+                "19910101-19911231",
+                "19920101-19921231",
+                "19930101-19931231",
+                "19940101-19941231",
+                "19950101-19951231",
+                "19960101-19961231",
+                "19970101-19971231",
+                "19980101-19981231",
+                "19990101-19991231",
+                "20000101-20001231",
+                "20010101-20011231",
+                "20020101-20021231",
+                "20030101-20031231",
+                "20040101-20041231",
+                "20050101-20051231"
+            ],
+            "variable": [
+                "temperature",
+                "v_component_of_wind"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "gfdl_esm2g"
+            ],
+            "period": [
+                "18610101-18651231",
+                "18660101-18701231",
+                "18710101-18751231",
+                "18760101-18801231",
+                "18810101-18851231",
+                "18860101-18901231",
+                "18910101-18951231",
+                "18960101-19001231",
+                "19010101-19051231",
+                "19060101-19101231",
+                "19110101-19151231",
+                "19160101-19201231",
+                "19210101-19251231",
+                "19260101-19301231",
+                "19310101-19351231",
+                "19360101-19401231",
+                "19410101-19451231",
+                "19460101-19501231",
+                "19510101-19551231",
+                "19560101-19601231",
+                "19610101-19651231",
+                "19660101-19701231",
+                "19710101-19751231",
+                "19760101-19801231",
+                "19810101-19851231",
+                "19860101-19901231",
+                "19910101-19951231",
+                "19960101-20001231",
+                "20010101-20051231"
+            ],
+            "variable": [
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "gfdl_esm2g",
+                "gfdl_esm2m"
+            ],
+            "period": [
+                "18610101-18651231",
+                "18660101-18701231",
+                "18710101-18751231",
+                "18760101-18801231",
+                "18810101-18851231",
+                "18860101-18901231",
+                "18910101-18951231",
+                "18960101-19001231",
+                "19010101-19051231",
+                "19060101-19101231",
+                "19110101-19151231",
+                "19160101-19201231",
+                "19210101-19251231",
+                "19260101-19301231",
+                "19310101-19351231",
+                "19360101-19401231",
+                "19410101-19451231",
+                "19460101-19501231",
+                "19510101-19551231",
+                "19560101-19601231",
+                "19610101-19651231",
+                "19660101-19701231",
+                "19710101-19751231",
+                "19760101-19801231",
+                "19810101-19851231",
+                "19860101-19901231",
+                "19910101-19951231",
+                "19960101-20001231",
+                "20010101-20051231"
+            ],
+            "variable": [
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "hadgem2_cc"
+            ],
+            "period": [
+                "19491201-19541130",
+                "19541201-19591130",
+                "19591201-19641130",
+                "19641201-19691130",
+                "19691201-19741130",
+                "19741201-19791130",
+                "19791201-19841130",
+                "19841201-19891130",
+                "19891201-19941130",
+                "19941201-19991130",
+                "19991201-20041130",
+                "20041201-20051130"
+            ],
+            "variable": [
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "hadgem2_es"
+            ],
+            "period": [
+                "19801201-19851130",
+                "19851201-19901130",
+                "19901201-19951130",
+                "19951201-20001130",
+                "20001201-20051130"
+            ],
+            "variable": [
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "ipsl_cm5a_lr",
+                "ipsl_cm5a_mr",
+                "ipsl_cm5b_lr",
+                "noresm1_m"
+            ],
+            "period": [
+                "19500101-19591231",
+                "19600101-19691231",
+                "19700101-19791231",
+                "19800101-19891231",
+                "19900101-19991231",
+                "20000101-20051231"
+            ],
+            "variable": [
+                "v_component_of_wind"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "bcc_csm1_1"
+            ],
+            "period": [
+                "19500101-19651231",
+                "19660101-19811231",
+                "19820101-19971231"
+            ],
+            "variable": [
+                "temperature",
+                "u_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "bcc_csm1_1_m"
+            ],
+            "period": [
+                "19500101-19521231",
+                "19530101-19551231",
+                "19560101-19581231",
+                "19590101-19611231",
+                "19620101-19641231",
+                "19650101-19671231",
+                "19680101-19701231",
+                "19710101-19731231",
+                "19740101-19761231",
+                "19770101-19791231",
+                "19800101-19821231",
+                "19830101-19851231",
+                "19860101-19881231",
+                "19890101-19911231",
+                "19920101-19941231",
+                "19950101-19971231",
+                "19980101-20001231",
+                "20010101-20031231",
+                "20040101-20061231"
+            ],
+            "variable": [
+                "u_component_of_wind"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "bcc_csm1_1_m"
+            ],
+            "period": [
+                "19980101-20001231",
+                "20010101-20031231"
+            ],
+            "variable": [
+                "temperature"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "bcc_csm1_1_m"
+            ],
+            "period": [
+                "20040101-20061231"
+            ],
+            "variable": [
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6"
+            ],
+            "model": [
+                "cnrm_cm5",
+                "gfdl_esm2g"
+            ],
+            "period": [
+                "20060101-20101231",
+                "20110101-20151231",
+                "20160101-20201231",
+                "20210101-20251231",
+                "20260101-20301231",
+                "20310101-20351231",
+                "20360101-20401231",
+                "20410101-20451231",
+                "20460101-20501231",
+                "20510101-20551231",
+                "20560101-20601231",
+                "20610101-20651231",
+                "20660101-20701231",
+                "20710101-20751231",
+                "20760101-20801231",
+                "20810101-20851231",
+                "20860101-20901231",
+                "20910101-20951231",
+                "20960101-21001231"
+            ],
+            "variable": [
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6"
+            ],
+            "model": [
+                "cnrm_cm5",
+                "gfdl_esm2g"
+            ],
+            "period": [
+                "20960101-21001231"
+            ],
+            "variable": [
+                "temperature"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6"
+            ],
+            "model": [
+                "cnrm_cm5",
+                "gfdl_esm2g",
+                "gfdl_esm2m"
+            ],
+            "period": [
+                "20060101-20101231",
+                "20110101-20151231",
+                "20160101-20201231",
+                "20210101-20251231",
+                "20260101-20301231",
+                "20310101-20351231",
+                "20360101-20401231",
+                "20410101-20451231",
+                "20460101-20501231",
+                "20510101-20551231",
+                "20560101-20601231",
+                "20610101-20651231",
+                "20660101-20701231",
+                "20710101-20751231",
+                "20760101-20801231",
+                "20810101-20851231",
+                "20860101-20901231",
+                "20910101-20951231",
+                "20960101-21001231"
+            ],
+            "variable": [
+                "u_component_of_wind",
+                "v_component_of_wind"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6"
+            ],
+            "model": [
+                "fgoals_g2",
+                "mpi_esm_mr"
+            ],
+            "period": [
+                "20060101-20061231",
+                "20070101-20071231",
+                "20080101-20081231",
+                "20090101-20091231",
+                "20100101-20101231",
+                "20110101-20111231",
+                "20120101-20121231",
+                "20130101-20131231",
+                "20140101-20141231",
+                "20150101-20151231",
+                "20160101-20161231",
+                "20170101-20171231",
+                "20180101-20181231",
+                "20190101-20191231",
+                "20200101-20201231",
+                "20210101-20211231",
+                "20220101-20221231",
+                "20230101-20231231",
+                "20240101-20241231",
+                "20250101-20251231",
+                "20260101-20261231",
+                "20270101-20271231",
+                "20280101-20281231",
+                "20290101-20291231",
+                "20300101-20301231",
+                "20310101-20311231",
+                "20320101-20321231",
+                "20330101-20331231",
+                "20340101-20341231",
+                "20350101-20351231",
+                "20360101-20361231",
+                "20370101-20371231",
+                "20380101-20381231",
+                "20390101-20391231",
+                "20400101-20401231",
+                "20410101-20411231",
+                "20420101-20421231",
+                "20430101-20431231",
+                "20440101-20441231",
+                "20450101-20451231",
+                "20460101-20461231",
+                "20470101-20471231",
+                "20480101-20481231",
+                "20490101-20491231",
+                "20500101-20501231",
+                "20510101-20511231",
+                "20520101-20521231",
+                "20530101-20531231",
+                "20540101-20541231",
+                "20550101-20551231",
+                "20560101-20561231",
+                "20570101-20571231",
+                "20580101-20581231",
+                "20590101-20591231",
+                "20600101-20601231",
+                "20610101-20611231",
+                "20620101-20621231",
+                "20630101-20631231",
+                "20640101-20641231",
+                "20650101-20651231",
+                "20660101-20661231",
+                "20670101-20671231",
+                "20680101-20681231",
+                "20690101-20691231",
+                "20700101-20701231",
+                "20710101-20711231",
+                "20720101-20721231",
+                "20730101-20731231",
+                "20740101-20741231",
+                "20750101-20751231",
+                "20760101-20761231",
+                "20770101-20771231",
+                "20780101-20781231",
+                "20790101-20791231",
+                "20800101-20801231",
+                "20810101-20811231",
+                "20820101-20821231",
+                "20830101-20831231",
+                "20840101-20841231",
+                "20850101-20851231",
+                "20860101-20861231",
+                "20870101-20871231",
+                "20880101-20881231",
+                "20890101-20891231",
+                "20900101-20901231",
+                "20910101-20911231",
+                "20920101-20921231",
+                "20930101-20931231",
+                "20940101-20941231",
+                "20950101-20951231",
+                "20960101-20961231",
+                "20970101-20971231",
+                "20980101-20981231",
+                "20990101-20991231",
+                "21000101-21001231"
+            ],
+            "variable": [
+                "temperature",
+                "u_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6"
+            ],
+            "model": [
+                "gfdl_esm2m"
+            ],
+            "period": [
+                "20060101-20101231",
+                "20110101-20151231",
+                "20160101-20201231",
+                "20210101-20251231",
+                "20260101-20301231",
+                "20310101-20351231",
+                "20360101-20401231",
+                "20410101-20451231",
+                "20460101-20501231",
+                "20510101-20551231",
+                "20560101-20601231",
+                "20610101-20651231",
+                "20660101-20701231",
+                "20710101-20751231",
+                "20760101-20801231",
+                "20810101-20851231",
+                "20860101-20901231",
+                "20910101-20951231",
+                "20960101-21001231"
+            ],
+            "variable": [
+                "temperature"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6"
+            ],
+            "model": [
+                "ipsl_cm5a_mr",
+                "noresm1_m"
+            ],
+            "period": [
+                "20060101-20151231",
+                "20160101-20251231",
+                "20260101-20351231",
+                "20360101-20451231",
+                "20460101-20551231",
+                "20560101-20651231",
+                "20660101-20751231",
+                "20760101-20851231",
+                "20860101-20951231",
+                "20960101-21001231"
+            ],
+            "variable": [
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6"
+            ],
+            "model": [
+                "bcc_csm1_1_m"
+            ],
+            "period": [
+                "20060101-20081231",
+                "20090101-20111231",
+                "20120101-20141231",
+                "20150101-20171231",
+                "20180101-20201231",
+                "20210101-20231231",
+                "20240101-20261231",
+                "20270101-20291231",
+                "20300101-20321231",
+                "20330101-20351231",
+                "20360101-20381231",
+                "20390101-20411231",
+                "20420101-20441231",
+                "20450101-20471231",
+                "20480101-20501231",
+                "20510101-20531231",
+                "20540101-20561231",
+                "20570101-20591231",
+                "20600101-20621231",
+                "20630101-20651231",
+                "20660101-20681231",
+                "20690101-20711231",
+                "20720101-20741231",
+                "20750101-20771231",
+                "20780101-20801231",
+                "20810101-20831231",
+                "20840101-20861231",
+                "20870101-20891231",
+                "20900101-20921231",
+                "20930101-20951231",
+                "20960101-20981231",
+                "20990101-21001231"
+            ],
+            "variable": [
+                "temperature",
+                "u_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6",
+                "rcp_4_5"
+            ],
+            "model": [
+                "bcc_csm1_1"
+            ],
+            "period": [
+                "20060101-20251231",
+                "20260101-20451231",
+                "20460101-20651231",
+                "20660101-20851231",
+                "20860101-20991231",
+                "21000101-21001231",
+                "21810101-22001231",
+                "22810101-23001231"
+            ],
+            "variable": [
+                "temperature",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6",
+                "rcp_4_5",
+                "rcp_8_5"
+            ],
+            "model": [
+                "bnu_esm"
+            ],
+            "period": [
+                "20060101-21001231"
+            ],
+            "variable": [
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6",
+                "rcp_4_5",
+                "rcp_8_5"
+            ],
+            "model": [
+                "ipsl_cm5a_lr"
+            ],
+            "period": [
+                "20060101-20151231",
+                "20160101-20251231",
+                "20260101-20351231",
+                "20360101-20451231",
+                "20460101-20551231",
+                "20560101-20651231",
+                "20660101-20751231",
+                "20760101-20851231",
+                "20860101-20951231",
+                "20960101-21051231",
+                "21060101-21151231",
+                "21160101-21251231",
+                "21260101-21351231",
+                "21360101-21451231",
+                "21460101-21551231",
+                "21560101-21651231",
+                "21660101-21751231",
+                "21760101-21851231",
+                "21860101-21951231",
+                "21960101-22051231",
+                "22060101-22151231",
+                "22160101-22251231",
+                "22260101-22351231",
+                "22360101-22451231",
+                "22460101-22551231",
+                "22560101-22651231",
+                "22660101-22751231",
+                "22760101-22851231",
+                "22860101-22951231",
+                "22960101-23001231"
+            ],
+            "variable": [
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6",
+                "rcp_8_5"
+            ],
+            "model": [
+                "fgoals_g2",
+                "mpi_esm_mr"
+            ],
+            "period": [
+                "20060101-20061231",
+                "20070101-20071231",
+                "20080101-20081231",
+                "20090101-20091231",
+                "20100101-20101231",
+                "20110101-20111231",
+                "20120101-20121231",
+                "20130101-20131231",
+                "20140101-20141231",
+                "20150101-20151231",
+                "20160101-20161231",
+                "20170101-20171231",
+                "20180101-20181231",
+                "20190101-20191231",
+                "20200101-20201231",
+                "20210101-20211231",
+                "20220101-20221231",
+                "20230101-20231231",
+                "20240101-20241231",
+                "20250101-20251231",
+                "20260101-20261231",
+                "20270101-20271231",
+                "20280101-20281231",
+                "20290101-20291231",
+                "20300101-20301231",
+                "20310101-20311231",
+                "20320101-20321231",
+                "20330101-20331231",
+                "20340101-20341231",
+                "20350101-20351231",
+                "20360101-20361231",
+                "20370101-20371231",
+                "20380101-20381231",
+                "20390101-20391231",
+                "20400101-20401231",
+                "20410101-20411231",
+                "20420101-20421231",
+                "20430101-20431231",
+                "20440101-20441231",
+                "20450101-20451231",
+                "20460101-20461231",
+                "20470101-20471231",
+                "20480101-20481231",
+                "20490101-20491231",
+                "20500101-20501231",
+                "20510101-20511231",
+                "20520101-20521231",
+                "20530101-20531231",
+                "20540101-20541231",
+                "20550101-20551231",
+                "20560101-20561231",
+                "20570101-20571231",
+                "20580101-20581231",
+                "20590101-20591231",
+                "20600101-20601231",
+                "20610101-20611231",
+                "20620101-20621231",
+                "20630101-20631231",
+                "20640101-20641231",
+                "20650101-20651231",
+                "20660101-20661231",
+                "20670101-20671231",
+                "20680101-20681231",
+                "20690101-20691231",
+                "20700101-20701231",
+                "20710101-20711231",
+                "20720101-20721231",
+                "20730101-20731231",
+                "20740101-20741231",
+                "20750101-20751231",
+                "20760101-20761231",
+                "20770101-20771231",
+                "20780101-20781231",
+                "20790101-20791231",
+                "20800101-20801231",
+                "20810101-20811231",
+                "20820101-20821231",
+                "20830101-20831231",
+                "20840101-20841231",
+                "20850101-20851231",
+                "20860101-20861231",
+                "20870101-20871231",
+                "20880101-20881231",
+                "20890101-20891231",
+                "20900101-20901231",
+                "20910101-20911231",
+                "20920101-20921231",
+                "20930101-20931231",
+                "20940101-20941231",
+                "20950101-20951231",
+                "20960101-20961231",
+                "20970101-20971231",
+                "20980101-20981231",
+                "20990101-20991231",
+                "21000101-21001231"
+            ],
+            "variable": [
+                "v_component_of_wind"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6",
+                "rcp_8_5"
+            ],
+            "model": [
+                "hadgem2_es"
+            ],
+            "period": [
+                "20051201-20101130",
+                "20101201-20151130",
+                "20151201-20201130",
+                "20201201-20251130",
+                "20251201-20301130",
+                "20301201-20351130",
+                "20351201-20401130",
+                "20401201-20451130",
+                "20451201-20501130",
+                "20501201-20551130",
+                "20551201-20601130",
+                "20601201-20651130",
+                "20651201-20701130",
+                "20701201-20751130",
+                "20751201-20801130",
+                "20801201-20851130",
+                "20851201-20901130",
+                "20901201-20951130",
+                "20951201-20991130",
+                "20991201-20991230"
+            ],
+            "variable": [
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_4_5"
+            ],
+            "model": [
+                "access1_0",
+                "access1_3",
+                "cnrm_cm5",
+                "gfdl_cm3",
+                "gfdl_esm2g"
+            ],
+            "period": [
+                "20060101-20101231",
+                "20110101-20151231",
+                "20160101-20201231",
+                "20210101-20251231",
+                "20260101-20301231",
+                "20310101-20351231",
+                "20360101-20401231",
+                "20410101-20451231",
+                "20460101-20501231",
+                "20510101-20551231",
+                "20560101-20601231",
+                "20610101-20651231",
+                "20660101-20701231",
+                "20710101-20751231",
+                "20760101-20801231",
+                "20810101-20851231",
+                "20860101-20901231",
+                "20910101-20951231",
+                "20960101-21001231"
+            ],
+            "variable": [
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_4_5"
+            ],
+            "model": [
+                "access1_0",
+                "access1_3",
+                "cnrm_cm5",
+                "gfdl_cm3",
+                "gfdl_esm2g",
+                "gfdl_esm2m",
+                "inmcm4"
+            ],
+            "period": [
+                "20060101-20101231",
+                "20110101-20151231",
+                "20160101-20201231",
+                "20210101-20251231",
+                "20260101-20301231",
+                "20310101-20351231",
+                "20360101-20401231",
+                "20410101-20451231",
+                "20460101-20501231",
+                "20510101-20551231",
+                "20560101-20601231",
+                "20610101-20651231",
+                "20660101-20701231",
+                "20710101-20751231",
+                "20760101-20801231",
+                "20810101-20851231",
+                "20860101-20901231",
+                "20910101-20951231",
+                "20960101-21001231"
+            ],
+            "variable": [
+                "temperature"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_4_5"
+            ],
+            "model": [
+                "access1_0",
+                "access1_3",
+                "cnrm_cm5",
+                "gfdl_esm2g",
+                "gfdl_esm2m",
+                "inmcm4"
+            ],
+            "period": [
+                "20060101-20101231",
+                "20110101-20151231",
+                "20160101-20201231",
+                "20210101-20251231",
+                "20260101-20301231",
+                "20310101-20351231",
+                "20360101-20401231",
+                "20410101-20451231",
+                "20460101-20501231",
+                "20510101-20551231",
+                "20560101-20601231",
+                "20610101-20651231",
+                "20660101-20701231",
+                "20710101-20751231",
+                "20760101-20801231",
+                "20810101-20851231",
+                "20860101-20901231",
+                "20910101-20951231",
+                "20960101-21001231"
+            ],
+            "variable": [
+                "u_component_of_wind",
+                "v_component_of_wind"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_4_5"
+            ],
+            "model": [
+                "cmcc_cm"
+            ],
+            "period": [
+                "20060101-20061231",
+                "20070101-20071231",
+                "20080101-20081231",
+                "20090101-20091231",
+                "20100101-20101231",
+                "20110101-20111231",
+                "20120101-20121231",
+                "20130101-20131231",
+                "20140101-20141231",
+                "20150101-20151231",
+                "20160101-20161231",
+                "20170101-20171231",
+                "20180101-20181231",
+                "20190101-20191231",
+                "20200101-20201231",
+                "20210101-20211231",
+                "20220101-20221231",
+                "20230101-20231231",
+                "20240101-20241231",
+                "20250101-20251231",
+                "20260101-20261231",
+                "20270101-20271231",
+                "20280101-20281231",
+                "20290101-20291231",
+                "20300101-20301231",
+                "20310101-20311231",
+                "20320101-20321231",
+                "20330101-20331231",
+                "20340101-20341231",
+                "20350101-20351231",
+                "20360101-20361231",
+                "20370101-20371231",
+                "20380101-20381231",
+                "20390101-20391231",
+                "20400101-20401231",
+                "20410101-20411231",
+                "20420101-20421231",
+                "20430101-20431231",
+                "20440101-20441231",
+                "20450101-20451231",
+                "20460101-20461231",
+                "20470101-20471231",
+                "20480101-20481231",
+                "20490101-20491231",
+                "20500101-20501231",
+                "20510101-20511231",
+                "20520101-20521231",
+                "20530101-20531231",
+                "20540101-20541231",
+                "20550101-20551231",
+                "20560101-20561231",
+                "20570101-20571231",
+                "20580101-20581231",
+                "20590101-20591231",
+                "20600101-20601231",
+                "20610101-20611231",
+                "20620101-20621231",
+                "20630101-20631231",
+                "20640101-20641231",
+                "20650101-20651231",
+                "20660101-20661231",
+                "20670101-20671231",
+                "20680101-20681231",
+                "20690101-20691231",
+                "20700101-20701231",
+                "20710101-20711231",
+                "20720101-20721231",
+                "20730101-20731231",
+                "20740101-20741231",
+                "20750101-20751231",
+                "20760101-20761231",
+                "20770101-20771231",
+                "20780101-20781231",
+                "20790101-20791231",
+                "20800101-20801231",
+                "20810101-20811231",
+                "20820101-20821231",
+                "20830101-20831231",
+                "20840101-20841231",
+                "20850101-20851231",
+                "20860101-20861231",
+                "20870101-20871231",
+                "20880101-20881231",
+                "20890101-20891231",
+                "20900101-20901231",
+                "20910101-20911231",
+                "20920101-20921231",
+                "20930101-20931231",
+                "20940101-20941231",
+                "20950101-20951231",
+                "20960101-20961231",
+                "20970101-20971231",
+                "20980101-20981231",
+                "20990101-20991231",
+                "21000101-21001231"
+            ],
+            "variable": [
+                "temperature"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_4_5"
+            ],
+            "model": [
+                "cmcc_cm",
+                "mpi_esm_mr"
+            ],
+            "period": [
+                "20060101-20061231",
+                "20070101-20071231",
+                "20080101-20081231",
+                "20090101-20091231",
+                "20100101-20101231",
+                "20110101-20111231",
+                "20120101-20121231",
+                "20130101-20131231",
+                "20140101-20141231",
+                "20150101-20151231",
+                "20160101-20161231",
+                "20170101-20171231",
+                "20180101-20181231",
+                "20190101-20191231",
+                "20200101-20201231",
+                "20210101-20211231",
+                "20220101-20221231",
+                "20230101-20231231",
+                "20240101-20241231",
+                "20250101-20251231",
+                "20260101-20261231",
+                "20270101-20271231",
+                "20280101-20281231",
+                "20290101-20291231",
+                "20300101-20301231",
+                "20310101-20311231",
+                "20320101-20321231",
+                "20330101-20331231",
+                "20340101-20341231",
+                "20350101-20351231",
+                "20360101-20361231",
+                "20370101-20371231",
+                "20380101-20381231",
+                "20390101-20391231",
+                "20400101-20401231",
+                "20410101-20411231",
+                "20420101-20421231",
+                "20430101-20431231",
+                "20440101-20441231",
+                "20450101-20451231",
+                "20460101-20461231",
+                "20470101-20471231",
+                "20480101-20481231",
+                "20490101-20491231",
+                "20500101-20501231",
+                "20510101-20511231",
+                "20520101-20521231",
+                "20530101-20531231",
+                "20540101-20541231",
+                "20550101-20551231",
+                "20560101-20561231",
+                "20570101-20571231",
+                "20580101-20581231",
+                "20590101-20591231",
+                "20600101-20601231",
+                "20610101-20611231",
+                "20620101-20621231",
+                "20630101-20631231",
+                "20640101-20641231",
+                "20650101-20651231",
+                "20660101-20661231",
+                "20670101-20671231",
+                "20680101-20681231",
+                "20690101-20691231",
+                "20700101-20701231",
+                "20710101-20711231",
+                "20720101-20721231",
+                "20730101-20731231",
+                "20740101-20741231",
+                "20750101-20751231",
+                "20760101-20761231",
+                "20770101-20771231",
+                "20780101-20781231",
+                "20790101-20791231",
+                "20800101-20801231",
+                "20810101-20811231",
+                "20820101-20821231",
+                "20830101-20831231",
+                "20840101-20841231",
+                "20850101-20851231",
+                "20860101-20861231",
+                "20870101-20871231",
+                "20880101-20881231",
+                "20890101-20891231",
+                "20900101-20901231",
+                "20910101-20911231",
+                "20920101-20921231",
+                "20930101-20931231",
+                "20940101-20941231",
+                "20950101-20951231",
+                "20960101-20961231",
+                "20970101-20971231",
+                "20980101-20981231",
+                "20990101-20991231",
+                "21000101-21001231"
+            ],
+            "variable": [
+                "u_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_4_5"
+            ],
+            "model": [
+                "cmcc_cms"
+            ],
+            "period": [
+                "20900101-21001231"
+            ],
+            "variable": [
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_4_5"
+            ],
+            "model": [
+                "ec_earth"
+            ],
+            "period": [
+                "20060101-20061231",
+                "20070101-20071231",
+                "20080101-20081231",
+                "20090101-20091231",
+                "20100101-20101231",
+                "20110101-20111231",
+                "20120101-20121231",
+                "20130101-20131231",
+                "20140101-20141231",
+                "20150101-20151231",
+                "20160101-20161231",
+                "20170101-20171231",
+                "20180101-20181231",
+                "20190101-20191231",
+                "20200101-20201231",
+                "20210101-20211231",
+                "20220101-20221231",
+                "20230101-20231231",
+                "20240101-20241231",
+                "20250101-20251231",
+                "20260101-20261231",
+                "20270101-20271231",
+                "20280101-20281231",
+                "20290101-20291231",
+                "20300101-20301231",
+                "20310101-20311231",
+                "20320101-20321231",
+                "20330101-20331231",
+                "20340101-20341231",
+                "20350101-20351231",
+                "20360101-20361231",
+                "20370101-20371231",
+                "20380101-20381231",
+                "20390101-20391231",
+                "20400101-20401231",
+                "20410101-20411231",
+                "20420101-20421231",
+                "20430101-20431231",
+                "20440101-20441231",
+                "20450101-20451231",
+                "20460101-20461231",
+                "20470101-20471231",
+                "20480101-20481231",
+                "20490101-20491231",
+                "20500101-20501231",
+                "20510101-20511231",
+                "20520101-20521231",
+                "20530101-20531231",
+                "20540101-20541231",
+                "20550101-20551231",
+                "20560101-20561231",
+                "20570101-20571231",
+                "20580101-20581231",
+                "20590101-20591231",
+                "20600101-20601231",
+                "20610101-20611231",
+                "20620101-20621231",
+                "20630101-20631231",
+                "20640101-20641231",
+                "20650101-20651231",
+                "20660101-20661231",
+                "20670101-20671231",
+                "20680101-20681231",
+                "20690101-20691231",
+                "20700101-20701231",
+                "20710101-20711231",
+                "20720101-20721231",
+                "20730101-20731231",
+                "20740101-20741231",
+                "20750101-20751231",
+                "20760101-20761231",
+                "20770101-20771231",
+                "20780101-20781231",
+                "20790101-20791231",
+                "20800101-20801231",
+                "20810101-20811231",
+                "20820101-20821231",
+                "20830101-20831231",
+                "20840101-20841231",
+                "20850101-20851231",
+                "20860101-20861231",
+                "20870101-20871231",
+                "20880101-20881231",
+                "20890101-20891231",
+                "20900101-20901231",
+                "20910101-20911231",
+                "20920101-20921231",
+                "20930101-20931231",
+                "20940101-20941231",
+                "20950101-20951231",
+                "20960101-20961231",
+                "20970101-20971231",
+                "20980101-20981231",
+                "20990101-20991231"
+            ],
+            "variable": [
+                "temperature",
+                "u_component_of_wind"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_4_5"
+            ],
+            "model": [
+                "ec_earth"
+            ],
+            "period": [
+                "20060101-20061231",
+                "20070101-20071231",
+                "20080101-20081231",
+                "20090101-20091231",
+                "20100101-20101231",
+                "20110101-20111231",
+                "20120101-20121231",
+                "20130101-20131231",
+                "20140101-20141231",
+                "20150101-20151231",
+                "20160101-20161231",
+                "20170101-20171231",
+                "20180101-20181231",
+                "20190101-20191231",
+                "20200101-20201231",
+                "20210101-20211231",
+                "20220101-20221231",
+                "20230101-20231231",
+                "20240101-20241231",
+                "20250101-20251231",
+                "20260101-20261231",
+                "20270101-20271231",
+                "20280101-20281231",
+                "20290101-20291231",
+                "20300101-20301231",
+                "20310101-20311231",
+                "20320101-20321231",
+                "20330101-20331231",
+                "20340101-20341231",
+                "20350101-20351231",
+                "20360101-20361231",
+                "20370101-20371231",
+                "20380101-20381231",
+                "20390101-20391231",
+                "20400101-20401231",
+                "20410101-20411231",
+                "20420101-20421231",
+                "20430101-20431231",
+                "20440101-20441231",
+                "20450101-20451231",
+                "20460101-20461231",
+                "20470101-20471231",
+                "20480101-20481231",
+                "20490101-20491231",
+                "20500101-20501231",
+                "20510101-20511231",
+                "20520101-20521231",
+                "20530101-20531231",
+                "20540101-20541231",
+                "20550101-20551231",
+                "20560101-20561231",
+                "20570101-20571231",
+                "20580101-20581231",
+                "20590101-20591231",
+                "20600101-20601231",
+                "20610101-20611231",
+                "20620101-20621231",
+                "20630101-20631231",
+                "20640101-20641231",
+                "20650101-20651231",
+                "20660101-20661231",
+                "20670101-20671231",
+                "20680101-20681231",
+                "20690101-20691231",
+                "20700101-20701231",
+                "20710101-20711231",
+                "20720101-20721231",
+                "20730101-20731231",
+                "20740101-20741231",
+                "20750101-20751231",
+                "20760101-20761231",
+                "20770101-20771231",
+                "20780101-20781231",
+                "20790101-20791231",
+                "20800101-20801231",
+                "20810101-20811231",
+                "20820101-20821231",
+                "20830101-20831231",
+                "20840101-20841231",
+                "20850101-20851231",
+                "20860101-20861231",
+                "20870101-20871231",
+                "20880101-20881231",
+                "20890101-20891231",
+                "20900101-20901231",
+                "20910101-20911231",
+                "20920101-20921231",
+                "20930101-20931231",
+                "20940101-20941231",
+                "20950101-20951231",
+                "20960101-20961231",
+                "20970101-20971231",
+                "20980101-20981231",
+                "20990101-20991231",
+                "21000101-21000131"
+            ],
+            "variable": [
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_4_5"
+            ],
+            "model": [
+                "fgoals_g2"
+            ],
+            "period": [
+                "20060101-20061231",
+                "20070101-20071231",
+                "20080101-20081231",
+                "20090101-20091231",
+                "20100101-20101231",
+                "20110101-20111231",
+                "20120101-20121231",
+                "20130101-20131231",
+                "20140101-20141231",
+                "20150101-20151231",
+                "20160101-20161231",
+                "20170101-20171231",
+                "20180101-20181231",
+                "20190101-20191231",
+                "20200101-20201231",
+                "20210101-20211231",
+                "20220101-20221231",
+                "20230101-20231231",
+                "20240101-20241231",
+                "20250101-20251231",
+                "20260101-20261231",
+                "20270101-20271231",
+                "20280101-20281231",
+                "20290101-20291231",
+                "20300101-20301231",
+                "20310101-20311231",
+                "20320101-20321231",
+                "20330101-20331231",
+                "20340101-20341231",
+                "20350101-20351231",
+                "20360101-20361231",
+                "20370101-20371231",
+                "20380101-20381231",
+                "20390101-20391231",
+                "20400101-20401231",
+                "20410101-20411231",
+                "20420101-20421231",
+                "20430101-20431231",
+                "20440101-20441231",
+                "20450101-20451231",
+                "20460101-20461231",
+                "20470101-20471231",
+                "20480101-20481231",
+                "20490101-20491231",
+                "20500101-20501231",
+                "20510101-20511231",
+                "20520101-20521231",
+                "20530101-20531231",
+                "20540101-20541231",
+                "20550101-20551231",
+                "20560101-20561231",
+                "20570101-20571231",
+                "20580101-20581231",
+                "20590101-20591231",
+                "20600101-20601231",
+                "20610101-20611231",
+                "20620101-20621231",
+                "20630101-20631231",
+                "20640101-20641231",
+                "20650101-20651231",
+                "20660101-20661231",
+                "20670101-20671231",
+                "20680101-20681231",
+                "20690101-20691231",
+                "20700101-20701231",
+                "20710101-20711231",
+                "20720101-20721231",
+                "20730101-20731231",
+                "20740101-20741231",
+                "20750101-20751231",
+                "20760101-20761231",
+                "20770101-20771231",
+                "20780101-20781231",
+                "20790101-20791231",
+                "20800101-20801231",
+                "20810101-20811231",
+                "20820101-20821231",
+                "20830101-20831231",
+                "20840101-20841231",
+                "20850101-20851231",
+                "20860101-20861231",
+                "20870101-20871231",
+                "20880101-20881231",
+                "20890101-20891231",
+                "20900101-20901231",
+                "20910101-20911231",
+                "20920101-20921231",
+                "20930101-20931231",
+                "20940101-20941231",
+                "20950101-20951231",
+                "20960101-20961231",
+                "20970101-20971231",
+                "20980101-20981231",
+                "20990101-20991231",
+                "21000101-21001231",
+                "21810101-21811231",
+                "21820101-21821231",
+                "21830101-21831231",
+                "21840101-21841231",
+                "21850101-21851231",
+                "21860101-21861231",
+                "21870101-21871231",
+                "21880101-21881231",
+                "21890101-21891231",
+                "21900101-21901231",
+                "21910101-21911231",
+                "21920101-21921231",
+                "21930101-21931231",
+                "21940101-21941231",
+                "21950101-21951231",
+                "21960101-21961231",
+                "21970101-21971231",
+                "21980101-21981231",
+                "21990101-21991231",
+                "22000101-22001231"
+            ],
+            "variable": [
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_4_5"
+            ],
+            "model": [
+                "hadgem2_es"
+            ],
+            "period": [
+                "20051201-20101130",
+                "20101201-20151130",
+                "20151201-20201130",
+                "20201201-20251130",
+                "20251201-20301130",
+                "20301201-20351130",
+                "20351201-20401130",
+                "20401201-20451130",
+                "20451201-20501130",
+                "20501201-20551130",
+                "20551201-20601130",
+                "20601201-20651130",
+                "20651201-20701130",
+                "20701201-20751130",
+                "20751201-20801130",
+                "20801201-20851130",
+                "20851201-20901130",
+                "20901201-20951130",
+                "20951201-20991030",
+                "20991101-20991230"
+            ],
+            "variable": [
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_4_5"
+            ],
+            "model": [
+                "hadgem2_es"
+            ],
+            "period": [
+                "20851201-20901130",
+                "20901201-20951130"
+            ],
+            "variable": [
+                "temperature"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_4_5"
+            ],
+            "model": [
+                "ipsl_cm5a_mr"
+            ],
+            "period": [
+                "20060101-20151231",
+                "20160101-20251231",
+                "20260101-20351231",
+                "20360101-20451231",
+                "20460101-20551231",
+                "20560101-20651231",
+                "20660101-20751231",
+                "20760101-20851231",
+                "20860101-20951231",
+                "20960101-21001231",
+                "21010101-21101231",
+                "21110101-21201231",
+                "21210101-21301231",
+                "21310101-21401231",
+                "21410101-21501231",
+                "21510101-21601231",
+                "21610101-21701231",
+                "21710101-21801231",
+                "21810101-21901231",
+                "21910101-22001231",
+                "22010101-22101231",
+                "22110101-22201231",
+                "22210101-22301231",
+                "22310101-22401231",
+                "22410101-22501231",
+                "22510101-22601231",
+                "22610101-22701231",
+                "22710101-22801231",
+                "22810101-22901231",
+                "22910101-23001231"
+            ],
+            "variable": [
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_4_5"
+            ],
+            "model": [
+                "ipsl_cm5b_lr"
+            ],
+            "period": [
+                "20060101-20151231",
+                "20160101-20251231",
+                "20260101-20351231",
+                "20360101-20451231",
+                "20460101-20551231",
+                "20560101-20651231",
+                "20660101-20751231",
+                "20760101-20851231",
+                "20860101-20951231",
+                "20960101-21001231"
+            ],
+            "variable": [
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_4_5"
+            ],
+            "model": [
+                "mpi_esm_mr"
+            ],
+            "period": [
+                "20060101-20061231",
+                "20070101-20071231",
+                "20080101-20081231",
+                "20090101-20091231",
+                "20100101-20101231",
+                "20110101-20111231",
+                "20120101-20121231",
+                "20130101-20131231",
+                "20140101-20141231",
+                "20150101-20151231",
+                "20160101-20161231",
+                "20170101-20171231",
+                "20180101-20181231",
+                "20190101-20191231",
+                "20200101-20201231",
+                "20210101-20211231",
+                "20220101-20221231",
+                "20230101-20231231",
+                "20240101-20241231",
+                "20250101-20251231",
+                "20260101-20261231",
+                "20270101-20271231",
+                "20280101-20281231",
+                "20290101-20291231",
+                "20300101-20301231",
+                "20310101-20311231",
+                "20320101-20321231",
+                "20330101-20331231",
+                "20340101-20341231",
+                "20350101-20351231",
+                "20360101-20361231",
+                "20370101-20371231",
+                "20380101-20381231",
+                "20390101-20391231",
+                "20400101-20401231",
+                "20410101-20411231",
+                "20420101-20421231",
+                "20430101-20431231",
+                "20440101-20441231",
+                "20450101-20451231",
+                "20460101-20461231",
+                "20470101-20471231",
+                "20480101-20481231",
+                "20490101-20491231",
+                "20500101-20501231",
+                "20510101-20511231",
+                "20520101-20521231",
+                "20530101-20531231",
+                "20540101-20541231",
+                "20550101-20551231",
+                "20560101-20561231",
+                "20570101-20571231",
+                "20580101-20581231",
+                "20590101-20591231",
+                "20600101-20601231",
+                "20610101-20611231",
+                "20620101-20621231",
+                "20630101-20631231",
+                "20640101-20641231",
+                "20650101-20651231",
+                "20660101-20661231",
+                "20670101-20671231",
+                "20680101-20681231",
+                "20690101-20691231",
+                "20700101-20701231",
+                "20710101-20711231",
+                "20720101-20721231",
+                "20730101-20731231",
+                "20740101-20741231",
+                "20750101-20751231",
+                "20760101-20761231",
+                "20770101-20771231",
+                "20780101-20781231",
+                "20790101-20791231",
+                "20800101-20801231",
+                "20810101-20811231",
+                "20820101-20821231",
+                "20830101-20831231",
+                "20840101-20841231",
+                "20850101-20851231",
+                "20860101-20861231",
+                "20870101-20871231",
+                "20880101-20881231",
+                "20890101-20891231",
+                "20900101-20901231",
+                "20910101-20911231",
+                "20920101-20921231",
+                "20930101-20931231",
+                "20940101-20941231",
+                "20950101-20951231",
+                "20960101-20961231",
+                "20970101-20971231",
+                "20980101-20981231",
+                "20990101-20991231",
+                "21000101-21001231"
+            ],
+            "variable": [
+                "v_component_of_wind"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_4_5"
+            ],
+            "model": [
+                "mpi_esm_mr"
+            ],
+            "period": [
+                "20910101-20911231",
+                "20920101-20921231",
+                "20930101-20931231",
+                "20940101-20941231",
+                "20950101-20951231",
+                "20960101-20961231",
+                "20970101-20971231",
+                "20980101-20981231",
+                "20990101-20991231",
+                "21000101-21001231"
+            ],
+            "variable": [
+                "temperature"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_4_5",
+                "rcp_6_0"
+            ],
+            "model": [
+                "bcc_csm1_1_m"
+            ],
+            "period": [
+                "20060101-20081231",
+                "20090101-20111231",
+                "20120101-20141231",
+                "20150101-20171231",
+                "20180101-20201231",
+                "20210101-20231231",
+                "20240101-20261231",
+                "20270101-20291231",
+                "20300101-20321231",
+                "20330101-20351231",
+                "20360101-20381231",
+                "20390101-20411231",
+                "20420101-20441231",
+                "20450101-20471231",
+                "20480101-20501231",
+                "20510101-20531231",
+                "20540101-20561231",
+                "20570101-20591231",
+                "20600101-20621231",
+                "20630101-20651231",
+                "20660101-20681231",
+                "20690101-20711231",
+                "20720101-20741231",
+                "20750101-20771231",
+                "20780101-20801231",
+                "20810101-20831231",
+                "20840101-20861231",
+                "20870101-20891231",
+                "20900101-20921231",
+                "20930101-20951231",
+                "20960101-20981231",
+                "20990101-21001230"
+            ],
+            "variable": [
+                "temperature",
+                "u_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_4_5",
+                "rcp_8_5"
+            ],
+            "model": [
+                "cmcc_cms"
+            ],
+            "period": [
+                "20060101-20091231",
+                "20100101-20191231",
+                "20200101-20291231",
+                "20300101-20391231",
+                "20400101-20491231",
+                "20500101-20591231",
+                "20600101-20691231",
+                "20700101-20791231",
+                "20800101-20891231",
+                "20900101-21001231"
+            ],
+            "variable": [
+                "u_component_of_wind"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_4_5",
+                "rcp_8_5"
+            ],
+            "model": [
+                "hadgem2_cc"
+            ],
+            "period": [
+                "20051201-20101130",
+                "20101201-20151130",
+                "20151201-20201130",
+                "20201201-20251130",
+                "20251201-20301130",
+                "20301201-20351130",
+                "20351201-20401130",
+                "20401201-20451130",
+                "20451201-20501130",
+                "20501201-20551130",
+                "20551201-20601130",
+                "20601201-20651130",
+                "20651201-20701130",
+                "20701201-20751130",
+                "20751201-20801130",
+                "20801201-20851130",
+                "20851201-20901130",
+                "20901201-20951130",
+                "20951201-20991230",
+                "21000101-21001230"
+            ],
+            "variable": [
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_6_0"
+            ],
+            "model": [
+                "gfdl_cm3",
+                "gfdl_esm2g",
+                "gfdl_esm2m"
+            ],
+            "period": [
+                "20060101-20101231",
+                "20110101-20151231",
+                "20160101-20201231",
+                "20210101-20251231",
+                "20260101-20301231",
+                "20310101-20351231",
+                "20360101-20401231",
+                "20410101-20451231",
+                "20460101-20501231",
+                "20510101-20551231",
+                "20560101-20601231",
+                "20610101-20651231",
+                "20660101-20701231",
+                "20710101-20751231",
+                "20760101-20801231",
+                "20810101-20851231",
+                "20860101-20901231",
+                "20910101-20951231",
+                "20960101-21001231"
+            ],
+            "variable": [
+                "temperature",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_6_0"
+            ],
+            "model": [
+                "gfdl_cm3",
+                "gfdl_esm2m"
+            ],
+            "period": [
+                "20060101-20101231",
+                "20110101-20151231",
+                "20160101-20201231",
+                "20210101-20251231",
+                "20260101-20301231",
+                "20310101-20351231",
+                "20360101-20401231",
+                "20410101-20451231",
+                "20460101-20501231",
+                "20510101-20551231",
+                "20560101-20601231",
+                "20610101-20651231",
+                "20660101-20701231",
+                "20710101-20751231",
+                "20760101-20801231",
+                "20810101-20851231",
+                "20860101-20901231",
+                "20910101-20951231",
+                "20960101-21001231"
+            ],
+            "variable": [
+                "u_component_of_wind"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_6_0"
+            ],
+            "model": [
+                "gfdl_esm2g"
+            ],
+            "period": [
+                "20860101-20901231",
+                "20910101-20951231",
+                "20960101-21001231"
+            ],
+            "variable": [
+                "u_component_of_wind"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_6_0"
+            ],
+            "model": [
+                "hadgem2_es"
+            ],
+            "period": [
+                "20051201-20101130",
+                "20101201-20111130",
+                "20111201-20161130",
+                "20161201-20211130",
+                "20211201-20261130",
+                "20261201-20311130",
+                "20311201-20361130",
+                "20361201-20411130",
+                "20411201-20461130",
+                "20461201-20511130",
+                "20511201-20561130",
+                "20561201-20611130",
+                "20611201-20661130",
+                "20661201-20711130",
+                "20711201-20761130",
+                "20761201-20811130",
+                "20811201-20861130",
+                "20861201-20911130",
+                "20911201-20961130",
+                "20961201-20991230"
+            ],
+            "variable": [
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_6_0"
+            ],
+            "model": [
+                "ipsl_cm5a_lr",
+                "ipsl_cm5a_mr",
+                "noresm1_m"
+            ],
+            "period": [
+                "20060101-20151231",
+                "20160101-20251231",
+                "20260101-20351231",
+                "20360101-20451231",
+                "20460101-20551231",
+                "20560101-20651231",
+                "20660101-20751231",
+                "20760101-20851231",
+                "20860101-20951231",
+                "20960101-21001231"
+            ],
+            "variable": [
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_6_0"
+            ],
+            "model": [
+                "bcc_csm1_1"
+            ],
+            "period": [
+                "20060101-20251231",
+                "20260101-20451231",
+                "20460101-20651231",
+                "20660101-20851231",
+                "20860101-20991231",
+                "21000101-21001230"
+            ],
+            "variable": [
+                "temperature",
+                "u_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_8_5"
+            ],
+            "model": [
+                "access1_0",
+                "access1_3",
+                "gfdl_cm3",
+                "gfdl_esm2g",
+                "gfdl_esm2m"
+            ],
+            "period": [
+                "20060101-20101231",
+                "20110101-20151231",
+                "20160101-20201231",
+                "20210101-20251231",
+                "20260101-20301231",
+                "20310101-20351231",
+                "20360101-20401231",
+                "20410101-20451231",
+                "20460101-20501231",
+                "20510101-20551231",
+                "20560101-20601231",
+                "20610101-20651231",
+                "20660101-20701231",
+                "20710101-20751231",
+                "20760101-20801231",
+                "20810101-20851231",
+                "20860101-20901231",
+                "20910101-20951231",
+                "20960101-21001231"
+            ],
+            "variable": [
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_8_5"
+            ],
+            "model": [
+                "access1_0",
+                "access1_3",
+                "gfdl_cm3",
+                "gfdl_esm2g",
+                "gfdl_esm2m",
+                "inmcm4"
+            ],
+            "period": [
+                "20060101-20101231",
+                "20110101-20151231",
+                "20160101-20201231",
+                "20210101-20251231",
+                "20260101-20301231",
+                "20310101-20351231",
+                "20360101-20401231",
+                "20410101-20451231",
+                "20460101-20501231",
+                "20510101-20551231",
+                "20560101-20601231",
+                "20610101-20651231",
+                "20660101-20701231",
+                "20710101-20751231",
+                "20760101-20801231",
+                "20810101-20851231",
+                "20860101-20901231",
+                "20910101-20951231",
+                "20960101-21001231"
+            ],
+            "variable": [
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_8_5"
+            ],
+            "model": [
+                "cmcc_cesm",
+                "ipsl_cm5a_mr",
+                "ipsl_cm5b_lr",
+                "noresm1_m"
+            ],
+            "period": [
+                "20060101-20151231",
+                "20160101-20251231",
+                "20260101-20351231",
+                "20360101-20451231",
+                "20460101-20551231",
+                "20560101-20651231",
+                "20660101-20751231",
+                "20760101-20851231",
+                "20860101-20951231",
+                "20960101-21001231"
+            ],
+            "variable": [
+                "u_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_8_5"
+            ],
+            "model": [
+                "cmcc_cm",
+                "fgoals_g2"
+            ],
+            "period": [
+                "20060101-20061231",
+                "20070101-20071231",
+                "20080101-20081231",
+                "20090101-20091231",
+                "20100101-20101231",
+                "20110101-20111231",
+                "20120101-20121231",
+                "20130101-20131231",
+                "20140101-20141231",
+                "20150101-20151231",
+                "20160101-20161231",
+                "20170101-20171231",
+                "20180101-20181231",
+                "20190101-20191231",
+                "20200101-20201231",
+                "20210101-20211231",
+                "20220101-20221231",
+                "20230101-20231231",
+                "20240101-20241231",
+                "20250101-20251231",
+                "20260101-20261231",
+                "20270101-20271231",
+                "20280101-20281231",
+                "20290101-20291231",
+                "20300101-20301231",
+                "20310101-20311231",
+                "20320101-20321231",
+                "20330101-20331231",
+                "20340101-20341231",
+                "20350101-20351231",
+                "20360101-20361231",
+                "20370101-20371231",
+                "20380101-20381231",
+                "20390101-20391231",
+                "20400101-20401231",
+                "20410101-20411231",
+                "20420101-20421231",
+                "20430101-20431231",
+                "20440101-20441231",
+                "20450101-20451231",
+                "20460101-20461231",
+                "20470101-20471231",
+                "20480101-20481231",
+                "20490101-20491231",
+                "20500101-20501231",
+                "20510101-20511231",
+                "20520101-20521231",
+                "20530101-20531231",
+                "20540101-20541231",
+                "20550101-20551231",
+                "20560101-20561231",
+                "20570101-20571231",
+                "20580101-20581231",
+                "20590101-20591231",
+                "20600101-20601231",
+                "20610101-20611231",
+                "20620101-20621231",
+                "20630101-20631231",
+                "20640101-20641231",
+                "20650101-20651231",
+                "20660101-20661231",
+                "20670101-20671231",
+                "20680101-20681231",
+                "20690101-20691231",
+                "20700101-20701231",
+                "20710101-20711231",
+                "20720101-20721231",
+                "20730101-20731231",
+                "20740101-20741231",
+                "20750101-20751231",
+                "20760101-20761231",
+                "20770101-20771231",
+                "20780101-20781231",
+                "20790101-20791231",
+                "20800101-20801231",
+                "20810101-20811231",
+                "20820101-20821231",
+                "20830101-20831231",
+                "20840101-20841231",
+                "20850101-20851231",
+                "20860101-20861231",
+                "20870101-20871231",
+                "20880101-20881231",
+                "20890101-20891231",
+                "20900101-20901231",
+                "20910101-20911231",
+                "20920101-20921231",
+                "20930101-20931231",
+                "20940101-20941231",
+                "20950101-20951231",
+                "20960101-20961231",
+                "20970101-20971231",
+                "20980101-20981231",
+                "20990101-20991231",
+                "21000101-21001231"
+            ],
+            "variable": [
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_8_5"
+            ],
+            "model": [
+                "cmcc_cm",
+                "fgoals_g2",
+                "mpi_esm_mr"
+            ],
+            "period": [
+                "20060101-20061231",
+                "20070101-20071231",
+                "20080101-20081231",
+                "20090101-20091231",
+                "20100101-20101231",
+                "20110101-20111231",
+                "20120101-20121231",
+                "20130101-20131231",
+                "20140101-20141231",
+                "20150101-20151231",
+                "20160101-20161231",
+                "20170101-20171231",
+                "20180101-20181231",
+                "20190101-20191231",
+                "20200101-20201231",
+                "20210101-20211231",
+                "20220101-20221231",
+                "20230101-20231231",
+                "20240101-20241231",
+                "20250101-20251231",
+                "20260101-20261231",
+                "20270101-20271231",
+                "20280101-20281231",
+                "20290101-20291231",
+                "20300101-20301231",
+                "20310101-20311231",
+                "20320101-20321231",
+                "20330101-20331231",
+                "20340101-20341231",
+                "20350101-20351231",
+                "20360101-20361231",
+                "20370101-20371231",
+                "20380101-20381231",
+                "20390101-20391231",
+                "20400101-20401231",
+                "20410101-20411231",
+                "20420101-20421231",
+                "20430101-20431231",
+                "20440101-20441231",
+                "20450101-20451231",
+                "20460101-20461231",
+                "20470101-20471231",
+                "20480101-20481231",
+                "20490101-20491231",
+                "20500101-20501231",
+                "20510101-20511231",
+                "20520101-20521231",
+                "20530101-20531231",
+                "20540101-20541231",
+                "20550101-20551231",
+                "20560101-20561231",
+                "20570101-20571231",
+                "20580101-20581231",
+                "20590101-20591231",
+                "20600101-20601231",
+                "20610101-20611231",
+                "20620101-20621231",
+                "20630101-20631231",
+                "20640101-20641231",
+                "20650101-20651231",
+                "20660101-20661231",
+                "20670101-20671231",
+                "20680101-20681231",
+                "20690101-20691231",
+                "20700101-20701231",
+                "20710101-20711231",
+                "20720101-20721231",
+                "20730101-20731231",
+                "20740101-20741231",
+                "20750101-20751231",
+                "20760101-20761231",
+                "20770101-20771231",
+                "20780101-20781231",
+                "20790101-20791231",
+                "20800101-20801231",
+                "20810101-20811231",
+                "20820101-20821231",
+                "20830101-20831231",
+                "20840101-20841231",
+                "20850101-20851231",
+                "20860101-20861231",
+                "20870101-20871231",
+                "20880101-20881231",
+                "20890101-20891231",
+                "20900101-20901231",
+                "20910101-20911231",
+                "20920101-20921231",
+                "20930101-20931231",
+                "20940101-20941231",
+                "20950101-20951231",
+                "20960101-20961231",
+                "20970101-20971231",
+                "20980101-20981231",
+                "20990101-20991231",
+                "21000101-21001231"
+            ],
+            "variable": [
+                "u_component_of_wind"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_8_5"
+            ],
+            "model": [
+                "cmcc_cms"
+            ],
+            "period": [
+                "20060101-20091231",
+                "20100101-20191231",
+                "20200101-20291231",
+                "20300101-20391231",
+                "20400101-20491231",
+                "20500101-20591231",
+                "20600101-20691231",
+                "20700101-20791231",
+                "20800101-20891231",
+                "20900101-21001231"
+            ],
+            "variable": [
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_8_5"
+            ],
+            "model": [
+                "fgoals_g2"
+            ],
+            "period": [
+                "20060101-20061231",
+                "20070101-20071231",
+                "20080101-20081231",
+                "20090101-20091231",
+                "20100101-20101231",
+                "20110101-20111231",
+                "20120101-20121231",
+                "20130101-20131231",
+                "20140101-20141231",
+                "20150101-20151231",
+                "20160101-20161231",
+                "20170101-20171231",
+                "20180101-20181231",
+                "20190101-20191231",
+                "20200101-20201231",
+                "20210101-20211231",
+                "20220101-20221231",
+                "20230101-20231231",
+                "20240101-20241231",
+                "20250101-20251231",
+                "20260101-20261231",
+                "20270101-20271231",
+                "20280101-20281231",
+                "20290101-20291231",
+                "20300101-20301231",
+                "20310101-20311231",
+                "20320101-20321231",
+                "20330101-20331231",
+                "20340101-20341231",
+                "20350101-20351231",
+                "20360101-20361231",
+                "20370101-20371231",
+                "20380101-20381231",
+                "20390101-20391231",
+                "20400101-20401231",
+                "20410101-20411231",
+                "20420101-20421231",
+                "20430101-20431231",
+                "20440101-20441231",
+                "20450101-20451231",
+                "20460101-20461231",
+                "20470101-20471231",
+                "20480101-20481231",
+                "20490101-20491231",
+                "20500101-20501231",
+                "20510101-20511231",
+                "20520101-20521231",
+                "20530101-20531231",
+                "20540101-20541231",
+                "20550101-20551231",
+                "20560101-20561231",
+                "20570101-20571231",
+                "20580101-20581231",
+                "20590101-20591231",
+                "20600101-20601231",
+                "20610101-20611231",
+                "20620101-20621231",
+                "20630101-20631231",
+                "20640101-20641231",
+                "20650101-20651231",
+                "20660101-20661231",
+                "20670101-20671231",
+                "20680101-20681231",
+                "20690101-20691231",
+                "20700101-20701231",
+                "20710101-20711231",
+                "20720101-20721231",
+                "20730101-20731231",
+                "20740101-20741231",
+                "20750101-20751231",
+                "20760101-20761231",
+                "20770101-20771231",
+                "20780101-20781231",
+                "20790101-20791231",
+                "20800101-20801231",
+                "20810101-20811231",
+                "20820101-20821231",
+                "20830101-20831231",
+                "20840101-20841231",
+                "20850101-20851231",
+                "20860101-20861231",
+                "20870101-20871231",
+                "20880101-20881231",
+                "20890101-20891231",
+                "20900101-20901231",
+                "20910101-20911231",
+                "20920101-20921231",
+                "20930101-20931231",
+                "20940101-20941231",
+                "20950101-20951231",
+                "20960101-20961231",
+                "20970101-20971231",
+                "20980101-20981231",
+                "20990101-20991231",
+                "21000101-21001231"
+            ],
+            "variable": [
+                "temperature"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_8_5"
+            ],
+            "model": [
+                "ipsl_cm5a_mr",
+                "ipsl_cm5b_lr"
+            ],
+            "period": [
+                "20060101-20151231",
+                "20160101-20251231",
+                "20260101-20351231",
+                "20360101-20451231",
+                "20460101-20551231",
+                "20560101-20651231",
+                "20660101-20751231",
+                "20760101-20851231",
+                "20860101-20951231",
+                "20960101-21001231"
+            ],
+            "variable": [
+                "temperature"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_8_5"
+            ],
+            "model": [
+                "ipsl_cm5a_mr",
+                "ipsl_cm5b_lr",
+                "noresm1_m"
+            ],
+            "period": [
+                "20060101-20151231",
+                "20160101-20251231",
+                "20260101-20351231",
+                "20360101-20451231",
+                "20460101-20551231",
+                "20560101-20651231",
+                "20660101-20751231",
+                "20760101-20851231",
+                "20860101-20951231",
+                "20960101-21001231"
+            ],
+            "variable": [
+                "v_component_of_wind"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_8_5"
+            ],
+            "model": [
+                "mpi_esm_mr"
+            ],
+            "period": [
+                "20920101-20921231"
+            ],
+            "variable": [
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_8_5"
+            ],
+            "model": [
+                "mpi_esm_mr"
+            ],
+            "period": [
+                "20950101-20951231",
+                "20960101-20961231",
+                "20970101-20971231",
+                "20980101-20981231",
+                "20990101-20991231",
+                "21000101-21001231"
+            ],
+            "variable": [
+                "temperature"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_8_5"
+            ],
+            "model": [
+                "bcc_csm1_1"
+            ],
+            "period": [
+                "20060101-20251231",
+                "20260101-20451231",
+                "20460101-20651231",
+                "20660101-20851231",
+                "20860101-20991230",
+                "21000101-21001231",
+                "21810101-22001231",
+                "22810101-23001231"
+            ],
+            "variable": [
+                "temperature",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp_8_5"
+            ],
+            "model": [
+                "bcc_csm1_1_m"
+            ],
+            "period": [
+                "20060101-20081231",
+                "20090101-20111231",
+                "20120101-20141231",
+                "20150101-20171231",
+                "20180101-20201231",
+                "20210101-20231231",
+                "20240101-20261231",
+                "20270101-20291231",
+                "20300101-20321231",
+                "20330101-20351231",
+                "20360101-20381231",
+                "20390101-20411231",
+                "20420101-20441231",
+                "20450101-20471231",
+                "20480101-20501231",
+                "20510101-20531231",
+                "20540101-20561231",
+                "20570101-20591231",
+                "20600101-20621231",
+                "20630101-20651231",
+                "20660101-20681231",
+                "20690101-20711231",
+                "20720101-20741231",
+                "20750101-20771231",
+                "20780101-20801231",
+                "20810101-20831231",
+                "20840101-20861231",
+                "20870101-20891231",
+                "20900101-20921231",
+                "20930101-20951231",
+                "20960101-20981231",
+                "20990101-20991231",
+                "21000101-21001231"
+            ],
+            "variable": [
+                "temperature",
+                "u_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1",
+                "r2i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "noresm1_m"
+            ],
+            "period": [
+                "19500101-19591231",
+                "19600101-19691231",
+                "19700101-19791231",
+                "19800101-19891231",
+                "19900101-19991231",
+                "20000101-20051231"
+            ],
+            "variable": [
+                "temperature"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1",
+                "r2i1p1",
+                "r3i1p1"
+            ],
+            "experiment": [
+                "amip"
+            ],
+            "model": [
+                "ipsl_cm5a_mr"
+            ],
+            "period": [
+                "19500101-19591231",
+                "19600101-19691231",
+                "19700101-19791231",
+                "19800101-19891231",
+                "19900101-19991231",
+                "20000101-20091231"
+            ],
+            "variable": [
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1",
+                "r2i1p1",
+                "r3i1p1"
+            ],
+            "experiment": [
+                "amip"
+            ],
+            "model": [
+                "noresm1_m"
+            ],
+            "period": [
+                "19790101-19881231",
+                "19890101-19981231",
+                "19990101-20051231",
+                "20060101-20081231"
+            ],
+            "variable": [
+                "temperature",
+                "u_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1",
+                "r2i1p1",
+                "r3i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "gfdl_cm3"
+            ],
+            "period": [
+                "18600101-18641231",
+                "18650101-18691231",
+                "18700101-18741231",
+                "18750101-18791231",
+                "18800101-18841231",
+                "18850101-18891231",
+                "18900101-18941231",
+                "18950101-18991231",
+                "19000101-19041231",
+                "19050101-19091231",
+                "19100101-19141231",
+                "19150101-19191231",
+                "19200101-19241231",
+                "19250101-19291231",
+                "19300101-19341231",
+                "19350101-19391231",
+                "19400101-19441231",
+                "19450101-19491231",
+                "19500101-19541231",
+                "19550101-19591231",
+                "19600101-19641231",
+                "19650101-19691231",
+                "19700101-19741231",
+                "19750101-19791231",
+                "19800101-19841231",
+                "19850101-19891231",
+                "19900101-19941231",
+                "19950101-19991231",
+                "20000101-20041231",
+                "20050101-20051231"
+            ],
+            "variable": [
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1",
+                "r2i1p1",
+                "r3i1p1",
+                "r4i1p1"
+            ],
+            "experiment": [
+                "amip"
+            ],
+            "model": [
+                "canam4"
+            ],
+            "period": [
+                "19790101-20091231"
+            ],
+            "variable": [
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1",
+                "r2i1p1",
+                "r3i1p1",
+                "r4i1p1",
+                "r5i1p1"
+            ],
+            "experiment": [
+                "rcp_8_5"
+            ],
+            "model": [
+                "canesm2"
+            ],
+            "period": [
+                "20060101-20101231",
+                "20110101-20201231",
+                "20210101-20301231",
+                "20310101-20401231",
+                "20410101-20501231",
+                "20510101-20601231",
+                "20610101-20701231",
+                "20710101-20801231",
+                "20810101-20901231",
+                "20910101-21001231"
+            ],
+            "variable": [
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1",
+                "r2i1p1",
+                "r3i1p1",
+                "r4i1p1",
+                "r5i1p1",
+                "r6i1p1"
+            ],
+            "experiment": [
+                "amip"
+            ],
+            "model": [
+                "ipsl_cm5a_lr"
+            ],
+            "period": [
+                "19790101-19881231",
+                "19890101-19981231",
+                "19990101-20081231",
+                "20090101-20091231"
+            ],
+            "variable": [
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1",
+                "r4i1p1",
+                "r5i1p1"
+            ],
+            "experiment": [
+                "amip"
+            ],
+            "model": [
+                "ipsl_cm5a_lr"
+            ],
+            "period": [
+                "19790101-19881231",
+                "19890101-19981231",
+                "19990101-20081231",
+                "20090101-20091231"
+            ],
+            "variable": [
+                "temperature"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r2i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "hadgem2_cc"
+            ],
+            "period": [
+                "19591201-19641130",
+                "19641201-19691130",
+                "19691201-19741130",
+                "19741201-19791130",
+                "19791201-19841130",
+                "19841201-19891130",
+                "19891201-19941130",
+                "19941201-19991130",
+                "19991201-20041130",
+                "20041201-20051130"
+            ],
+            "variable": [
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r2i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "mpi_esm_lr",
+                "mpi_esm_mr",
+                "mpi_esm_p"
+            ],
+            "period": [
+                "19500101-19501231",
+                "19510101-19511231",
+                "19520101-19521231",
+                "19530101-19531231",
+                "19540101-19541231",
+                "19550101-19551231",
+                "19560101-19561231",
+                "19570101-19571231",
+                "19580101-19581231",
+                "19590101-19591231",
+                "19600101-19601231",
+                "19610101-19611231",
+                "19620101-19621231",
+                "19630101-19631231",
+                "19640101-19641231",
+                "19650101-19651231",
+                "19660101-19661231",
+                "19670101-19671231",
+                "19680101-19681231",
+                "19690101-19691231",
+                "19700101-19701231",
+                "19710101-19711231",
+                "19720101-19721231",
+                "19730101-19731231",
+                "19740101-19741231",
+                "19750101-19751231",
+                "19760101-19761231",
+                "19770101-19771231",
+                "19780101-19781231",
+                "19790101-19791231",
+                "19800101-19801231",
+                "19810101-19811231",
+                "19820101-19821231",
+                "19830101-19831231",
+                "19840101-19841231",
+                "19850101-19851231",
+                "19860101-19861231",
+                "19870101-19871231",
+                "19880101-19881231",
+                "19890101-19891231",
+                "19900101-19901231",
+                "19910101-19911231",
+                "19920101-19921231",
+                "19930101-19931231",
+                "19940101-19941231",
+                "19950101-19951231",
+                "19960101-19961231",
+                "19970101-19971231",
+                "19980101-19981231",
+                "19990101-19991231",
+                "20000101-20001231",
+                "20010101-20011231",
+                "20020101-20021231",
+                "20030101-20031231",
+                "20040101-20041231",
+                "20050101-20051231"
+            ],
+            "variable": [
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r2i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6"
+            ],
+            "model": [
+                "canesm2"
+            ],
+            "period": [
+                "20910101-21001231"
+            ],
+            "variable": [
+                "u_component_of_wind"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r2i1p1"
+            ],
+            "experiment": [
+                "rcp_4_5"
+            ],
+            "model": [
+                "mpi_esm_lr"
+            ],
+            "period": [
+                "20790101-20791231",
+                "20800101-20801231",
+                "20810101-20811231",
+                "20820101-20821231",
+                "20830101-20831231",
+                "20840101-20841231",
+                "20850101-20851231",
+                "20860101-20861231",
+                "20870101-20871231",
+                "20880101-20881231",
+                "20890101-20891231",
+                "20900101-20901231",
+                "20910101-20911231",
+                "20920101-20921231",
+                "20930101-20931231",
+                "20940101-20941231",
+                "20950101-20951231",
+                "20960101-20961231",
+                "20970101-20971231",
+                "20980101-20981231",
+                "20990101-20991231",
+                "21000101-21001231"
+            ],
+            "variable": [
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r2i1p1"
+            ],
+            "experiment": [
+                "rcp_4_5"
+            ],
+            "model": [
+                "mpi_esm_mr"
+            ],
+            "period": [
+                "20060101-20061231",
+                "20070101-20071231",
+                "20080101-20081231",
+                "20090101-20091231",
+                "20100101-20101231",
+                "20110101-20111231",
+                "20120101-20121231",
+                "20130101-20131231",
+                "20140101-20141231",
+                "20150101-20151231",
+                "20160101-20161231",
+                "20170101-20171231",
+                "20180101-20181231",
+                "20190101-20191231",
+                "20200101-20201231",
+                "20210101-20211231",
+                "20220101-20221231",
+                "20230101-20231231",
+                "20240101-20241231",
+                "20250101-20251231",
+                "20260101-20261231",
+                "20270101-20271231",
+                "20280101-20281231",
+                "20290101-20291231",
+                "20300101-20301231",
+                "20310101-20311231",
+                "20320101-20321231",
+                "20330101-20331231",
+                "20340101-20341231",
+                "20350101-20351231",
+                "20360101-20361231",
+                "20370101-20371231",
+                "20380101-20381231",
+                "20390101-20391231",
+                "20400101-20401231",
+                "20410101-20411231",
+                "20420101-20421231",
+                "20430101-20431231",
+                "20440101-20441231",
+                "20450101-20451231",
+                "20460101-20461231",
+                "20470101-20471231",
+                "20480101-20481231",
+                "20490101-20491231",
+                "20500101-20501231",
+                "20510101-20511231",
+                "20520101-20521231",
+                "20530101-20531231",
+                "20540101-20541231",
+                "20550101-20551231",
+                "20560101-20561231",
+                "20570101-20571231",
+                "20580101-20581231",
+                "20590101-20591231",
+                "20600101-20601231",
+                "20610101-20611231",
+                "20620101-20621231",
+                "20630101-20631231",
+                "20640101-20641231",
+                "20650101-20651231",
+                "20660101-20661231",
+                "20670101-20671231",
+                "20680101-20681231",
+                "20690101-20691231",
+                "20700101-20701231",
+                "20710101-20711231",
+                "20720101-20721231",
+                "20730101-20731231",
+                "20740101-20741231",
+                "20750101-20751231",
+                "20760101-20761231",
+                "20770101-20771231",
+                "20780101-20781231",
+                "20790101-20791231",
+                "20800101-20801231",
+                "20810101-20811231",
+                "20820101-20821231",
+                "20830101-20831231",
+                "20840101-20841231",
+                "20850101-20851231",
+                "20860101-20861231",
+                "20870101-20871231",
+                "20880101-20881231",
+                "20890101-20891231",
+                "20900101-20901231",
+                "20910101-20911231",
+                "20920101-20921231",
+                "20930101-20931231",
+                "20940101-20941231",
+                "20950101-20951231",
+                "20960101-20961231",
+                "20970101-20971231",
+                "20980101-20981231",
+                "20990101-20991231",
+                "21000101-21001231"
+            ],
+            "variable": [
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r2i1p1"
+            ],
+            "experiment": [
+                "rcp_4_5",
+                "rcp_8_5"
+            ],
+            "model": [
+                "canesm2"
+            ],
+            "period": [
+                "20060101-20101231",
+                "20110101-20201231",
+                "20210101-20301231",
+                "20310101-20401231",
+                "20410101-20501231",
+                "20510101-20601231",
+                "20610101-20701231",
+                "20710101-20801231",
+                "20810101-20901231",
+                "20910101-21001231"
+            ],
+            "variable": [
+                "temperature"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r2i1p1",
+                "r3i1p1"
+            ],
+            "experiment": [
+                "amip"
+            ],
+            "model": [
+                "cmcc_cm",
+                "mpi_esm_lr",
+                "mpi_esm_mr"
+            ],
+            "period": [
+                "19790101-19791231",
+                "19800101-19801231",
+                "19810101-19811231",
+                "19820101-19821231",
+                "19830101-19831231",
+                "19840101-19841231",
+                "19850101-19851231",
+                "19860101-19861231",
+                "19870101-19871231",
+                "19880101-19881231",
+                "19890101-19891231",
+                "19900101-19901231",
+                "19910101-19911231",
+                "19920101-19921231",
+                "19930101-19931231",
+                "19940101-19941231",
+                "19950101-19951231",
+                "19960101-19961231",
+                "19970101-19971231",
+                "19980101-19981231",
+                "19990101-19991231",
+                "20000101-20001231",
+                "20010101-20011231",
+                "20020101-20021231",
+                "20030101-20031231",
+                "20040101-20041231",
+                "20050101-20051231",
+                "20060101-20061231",
+                "20070101-20071231",
+                "20080101-20081231"
+            ],
+            "variable": [
+                "u_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r2i1p1",
+                "r3i1p1"
+            ],
+            "experiment": [
+                "amip"
+            ],
+            "model": [
+                "mpi_esm_lr",
+                "mpi_esm_mr"
+            ],
+            "period": [
+                "19790101-19791231",
+                "19800101-19801231",
+                "19810101-19811231",
+                "19820101-19821231",
+                "19830101-19831231",
+                "19840101-19841231",
+                "19850101-19851231",
+                "19860101-19861231",
+                "19870101-19871231",
+                "19880101-19881231",
+                "19890101-19891231",
+                "19900101-19901231",
+                "19910101-19911231",
+                "19920101-19921231",
+                "19930101-19931231",
+                "19940101-19941231",
+                "19950101-19951231",
+                "19960101-19961231",
+                "19970101-19971231",
+                "19980101-19981231",
+                "19990101-19991231",
+                "20000101-20001231",
+                "20010101-20011231",
+                "20020101-20021231",
+                "20030101-20031231",
+                "20040101-20041231",
+                "20050101-20051231",
+                "20060101-20061231",
+                "20070101-20071231",
+                "20080101-20081231"
+            ],
+            "variable": [
+                "temperature",
+                "v_component_of_wind"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r2i1p1",
+                "r3i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "ipsl_cm5a_lr",
+                "ipsl_cm5a_mr",
+                "noresm1_m"
+            ],
+            "period": [
+                "19500101-19591231",
+                "19600101-19691231",
+                "19700101-19791231",
+                "19800101-19891231",
+                "19900101-19991231",
+                "20000101-20051231"
+            ],
+            "variable": [
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r2i1p1",
+                "r3i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6"
+            ],
+            "model": [
+                "ipsl_cm5a_lr"
+            ],
+            "period": [
+                "20060101-20151231",
+                "20160101-20251231",
+                "20260101-20351231",
+                "20360101-20451231",
+                "20460101-20551231",
+                "20560101-20651231",
+                "20660101-20751231",
+                "20760101-20851231",
+                "20860101-20951231",
+                "20960101-21001231"
+            ],
+            "variable": [
+                "u_component_of_wind"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r2i1p1",
+                "r3i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6",
+                "rcp_8_5"
+            ],
+            "model": [
+                "mpi_esm_lr"
+            ],
+            "period": [
+                "20060101-20061231",
+                "20070101-20071231",
+                "20080101-20081231",
+                "20090101-20091231",
+                "20100101-20101231",
+                "20110101-20111231",
+                "20120101-20121231",
+                "20130101-20131231",
+                "20140101-20141231",
+                "20150101-20151231",
+                "20160101-20161231",
+                "20170101-20171231",
+                "20180101-20181231",
+                "20190101-20191231",
+                "20200101-20201231",
+                "20210101-20211231",
+                "20220101-20221231",
+                "20230101-20231231",
+                "20240101-20241231",
+                "20250101-20251231",
+                "20260101-20261231",
+                "20270101-20271231",
+                "20280101-20281231",
+                "20290101-20291231",
+                "20300101-20301231",
+                "20310101-20311231",
+                "20320101-20321231",
+                "20330101-20331231",
+                "20340101-20341231",
+                "20350101-20351231",
+                "20360101-20361231",
+                "20370101-20371231",
+                "20380101-20381231",
+                "20390101-20391231",
+                "20400101-20401231",
+                "20410101-20411231",
+                "20420101-20421231",
+                "20430101-20431231",
+                "20440101-20441231",
+                "20450101-20451231",
+                "20460101-20461231",
+                "20470101-20471231",
+                "20480101-20481231",
+                "20490101-20491231",
+                "20500101-20501231",
+                "20510101-20511231",
+                "20520101-20521231",
+                "20530101-20531231",
+                "20540101-20541231",
+                "20550101-20551231",
+                "20560101-20561231",
+                "20570101-20571231",
+                "20580101-20581231",
+                "20590101-20591231",
+                "20600101-20601231",
+                "20610101-20611231",
+                "20620101-20621231",
+                "20630101-20631231",
+                "20640101-20641231",
+                "20650101-20651231",
+                "20660101-20661231",
+                "20670101-20671231",
+                "20680101-20681231",
+                "20690101-20691231",
+                "20700101-20701231",
+                "20710101-20711231",
+                "20720101-20721231",
+                "20730101-20731231",
+                "20740101-20741231",
+                "20750101-20751231",
+                "20760101-20761231",
+                "20770101-20771231",
+                "20780101-20781231",
+                "20790101-20791231",
+                "20800101-20801231",
+                "20810101-20811231",
+                "20820101-20821231",
+                "20830101-20831231",
+                "20840101-20841231",
+                "20850101-20851231",
+                "20860101-20861231",
+                "20870101-20871231",
+                "20880101-20881231",
+                "20890101-20891231",
+                "20900101-20901231",
+                "20910101-20911231",
+                "20920101-20921231",
+                "20930101-20931231",
+                "20940101-20941231",
+                "20950101-20951231",
+                "20960101-20961231",
+                "20970101-20971231",
+                "20980101-20981231",
+                "20990101-20991231",
+                "21000101-21001231"
+            ],
+            "variable": [
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r2i1p1",
+                "r3i1p1"
+            ],
+            "experiment": [
+                "rcp_4_5"
+            ],
+            "model": [
+                "mpi_esm_lr",
+                "mpi_esm_mr"
+            ],
+            "period": [
+                "20060101-20061231",
+                "20070101-20071231",
+                "20080101-20081231",
+                "20090101-20091231",
+                "20100101-20101231",
+                "20110101-20111231",
+                "20120101-20121231",
+                "20130101-20131231",
+                "20140101-20141231",
+                "20150101-20151231",
+                "20160101-20161231",
+                "20170101-20171231",
+                "20180101-20181231",
+                "20190101-20191231",
+                "20200101-20201231",
+                "20210101-20211231",
+                "20220101-20221231",
+                "20230101-20231231",
+                "20240101-20241231",
+                "20250101-20251231",
+                "20260101-20261231",
+                "20270101-20271231",
+                "20280101-20281231",
+                "20290101-20291231",
+                "20300101-20301231",
+                "20310101-20311231",
+                "20320101-20321231",
+                "20330101-20331231",
+                "20340101-20341231",
+                "20350101-20351231",
+                "20360101-20361231",
+                "20370101-20371231",
+                "20380101-20381231",
+                "20390101-20391231",
+                "20400101-20401231",
+                "20410101-20411231",
+                "20420101-20421231",
+                "20430101-20431231",
+                "20440101-20441231",
+                "20450101-20451231",
+                "20460101-20461231",
+                "20470101-20471231",
+                "20480101-20481231",
+                "20490101-20491231",
+                "20500101-20501231",
+                "20510101-20511231",
+                "20520101-20521231",
+                "20530101-20531231",
+                "20540101-20541231",
+                "20550101-20551231",
+                "20560101-20561231",
+                "20570101-20571231",
+                "20580101-20581231",
+                "20590101-20591231",
+                "20600101-20601231",
+                "20610101-20611231",
+                "20620101-20621231",
+                "20630101-20631231",
+                "20640101-20641231",
+                "20650101-20651231",
+                "20660101-20661231",
+                "20670101-20671231",
+                "20680101-20681231",
+                "20690101-20691231",
+                "20700101-20701231",
+                "20710101-20711231",
+                "20720101-20721231",
+                "20730101-20731231",
+                "20740101-20741231",
+                "20750101-20751231",
+                "20760101-20761231",
+                "20770101-20771231",
+                "20780101-20781231",
+                "20790101-20791231",
+                "20800101-20801231",
+                "20810101-20811231",
+                "20820101-20821231",
+                "20830101-20831231",
+                "20840101-20841231",
+                "20850101-20851231",
+                "20860101-20861231",
+                "20870101-20871231",
+                "20880101-20881231",
+                "20890101-20891231",
+                "20900101-20901231",
+                "20910101-20911231",
+                "20920101-20921231",
+                "20930101-20931231",
+                "20940101-20941231",
+                "20950101-20951231",
+                "20960101-20961231",
+                "20970101-20971231",
+                "20980101-20981231",
+                "20990101-20991231",
+                "21000101-21001231"
+            ],
+            "variable": [
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r2i1p1",
+                "r3i1p1"
+            ],
+            "experiment": [
+                "rcp_8_5"
+            ],
+            "model": [
+                "hadgem2_cc"
+            ],
+            "period": [
+                "20051201-20101130",
+                "20101201-20151130",
+                "20151201-20201130",
+                "20201201-20251130",
+                "20251201-20301130",
+                "20301201-20351130",
+                "20351201-20401130",
+                "20401201-20451130",
+                "20451201-20501130",
+                "20501201-20551130",
+                "20551201-20601130",
+                "20601201-20651130",
+                "20651201-20701130",
+                "20701201-20751130",
+                "20751201-20801130",
+                "20801201-20851130",
+                "20851201-20901130",
+                "20901201-20951130",
+                "20951201-20991230"
+            ],
+            "variable": [
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r2i1p1",
+                "r3i1p1",
+                "r4i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6"
+            ],
+            "model": [
+                "canesm2"
+            ],
+            "period": [
+                "20060101-20101231",
+                "20110101-20201231",
+                "20210101-20301231",
+                "20310101-20401231",
+                "20410101-20501231",
+                "20510101-20601231",
+                "20610101-20701231",
+                "20710101-20801231",
+                "20810101-20901231",
+                "20910101-21001231"
+            ],
+            "variable": [
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r2i1p1",
+                "r3i1p1",
+                "r4i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6",
+                "rcp_4_5"
+            ],
+            "model": [
+                "ipsl_cm5a_lr"
+            ],
+            "period": [
+                "20060101-20151231",
+                "20160101-20251231",
+                "20260101-20351231",
+                "20360101-20451231",
+                "20460101-20551231",
+                "20560101-20651231",
+                "20660101-20751231",
+                "20760101-20851231",
+                "20860101-20951231",
+                "20960101-21001231"
+            ],
+            "variable": [
+                "v_component_of_wind"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r2i1p1",
+                "r3i1p1",
+                "r4i1p1"
+            ],
+            "experiment": [
+                "rcp_4_5"
+            ],
+            "model": [
+                "ipsl_cm5a_lr"
+            ],
+            "period": [
+                "20060101-20151231",
+                "20160101-20251231",
+                "20260101-20351231",
+                "20360101-20451231",
+                "20460101-20551231",
+                "20560101-20651231",
+                "20660101-20751231",
+                "20760101-20851231",
+                "20860101-20951231",
+                "20960101-21001231"
+            ],
+            "variable": [
+                "temperature",
+                "u_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r2i1p1",
+                "r3i1p1",
+                "r4i1p1",
+                "r5i1p1"
+            ],
+            "experiment": [
+                "amip"
+            ],
+            "model": [
+                "gfdl_cm3"
+            ],
+            "period": [
+                "19790101-19831231",
+                "19840101-19881231",
+                "19890101-19931231",
+                "19940101-19981231",
+                "19990101-20031231",
+                "20040101-20081231"
+            ],
+            "variable": [
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r2i1p1",
+                "r3i1p1",
+                "r4i1p1",
+                "r5i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "canesm2"
+            ],
+            "period": [
+                "19410101-19501231",
+                "19510101-19601231",
+                "19610101-19701231",
+                "19710101-19801231",
+                "19810101-19901231",
+                "19910101-20001231",
+                "20010101-20051231"
+            ],
+            "variable": [
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r2i1p1",
+                "r3i1p1",
+                "r4i1p1",
+                "r5i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6"
+            ],
+            "model": [
+                "canesm2"
+            ],
+            "period": [
+                "20060101-20101231",
+                "20110101-20201231",
+                "20210101-20301231",
+                "20310101-20401231",
+                "20410101-20501231",
+                "20510101-20601231",
+                "20610101-20701231",
+                "20710101-20801231",
+                "20810101-20901231",
+                "20910101-21001231"
+            ],
+            "variable": [
+                "v_component_of_wind"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r2i1p1",
+                "r3i1p1",
+                "r5i1p1"
+            ],
+            "experiment": [
+                "rcp_4_5"
+            ],
+            "model": [
+                "canesm2"
+            ],
+            "period": [
+                "20060101-20101231",
+                "20110101-20201231",
+                "20210101-20301231",
+                "20310101-20401231",
+                "20410101-20501231",
+                "20510101-20601231",
+                "20610101-20701231",
+                "20710101-20801231",
+                "20810101-20901231",
+                "20910101-21001231"
+            ],
+            "variable": [
+                "u_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r3i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "fgoals_g2",
+                "mpi_esm_lr",
+                "mpi_esm_mr"
+            ],
+            "period": [
+                "19500101-19501231",
+                "19510101-19511231",
+                "19520101-19521231",
+                "19530101-19531231",
+                "19540101-19541231",
+                "19550101-19551231",
+                "19560101-19561231",
+                "19570101-19571231",
+                "19580101-19581231",
+                "19590101-19591231",
+                "19600101-19601231",
+                "19610101-19611231",
+                "19620101-19621231",
+                "19630101-19631231",
+                "19640101-19641231",
+                "19650101-19651231",
+                "19660101-19661231",
+                "19670101-19671231",
+                "19680101-19681231",
+                "19690101-19691231",
+                "19700101-19701231",
+                "19710101-19711231",
+                "19720101-19721231",
+                "19730101-19731231",
+                "19740101-19741231",
+                "19750101-19751231",
+                "19760101-19761231",
+                "19770101-19771231",
+                "19780101-19781231",
+                "19790101-19791231",
+                "19800101-19801231",
+                "19810101-19811231",
+                "19820101-19821231",
+                "19830101-19831231",
+                "19840101-19841231",
+                "19850101-19851231",
+                "19860101-19861231",
+                "19870101-19871231",
+                "19880101-19881231",
+                "19890101-19891231",
+                "19900101-19901231",
+                "19910101-19911231",
+                "19920101-19921231",
+                "19930101-19931231",
+                "19940101-19941231",
+                "19950101-19951231",
+                "19960101-19961231",
+                "19970101-19971231",
+                "19980101-19981231",
+                "19990101-19991231",
+                "20000101-20001231",
+                "20010101-20011231",
+                "20020101-20021231",
+                "20030101-20031231",
+                "20040101-20041231",
+                "20050101-20051231"
+            ],
+            "variable": [
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r3i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "hadgem2_cc"
+            ],
+            "period": [
+                "19591201-19641130",
+                "19641201-19691130",
+                "19691201-19741130",
+                "19741201-19791130",
+                "19791201-19841130",
+                "19841201-19891130",
+                "19891201-19941130",
+                "19941201-19991130",
+                "19991201-20041130",
+                "20041201-20051230"
+            ],
+            "variable": [
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r3i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "ipsl_cm5a_mr",
+                "noresm1_m"
+            ],
+            "period": [
+                "19500101-19591231",
+                "19600101-19691231",
+                "19700101-19791231",
+                "19800101-19891231",
+                "19900101-19991231",
+                "20000101-20051231"
+            ],
+            "variable": [
+                "temperature"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r3i1p1"
+            ],
+            "experiment": [
+                "rcp_4_5"
+            ],
+            "model": [
+                "mpi_esm_lr",
+                "mpi_esm_mr"
+            ],
+            "period": [
+                "20060101-20061231",
+                "20070101-20071231",
+                "20080101-20081231",
+                "20090101-20091231",
+                "20100101-20101231",
+                "20110101-20111231",
+                "20120101-20121231",
+                "20130101-20131231",
+                "20140101-20141231",
+                "20150101-20151231",
+                "20160101-20161231",
+                "20170101-20171231",
+                "20180101-20181231",
+                "20190101-20191231",
+                "20200101-20201231",
+                "20210101-20211231",
+                "20220101-20221231",
+                "20230101-20231231",
+                "20240101-20241231",
+                "20250101-20251231",
+                "20260101-20261231",
+                "20270101-20271231",
+                "20280101-20281231",
+                "20290101-20291231",
+                "20300101-20301231",
+                "20310101-20311231",
+                "20320101-20321231",
+                "20330101-20331231",
+                "20340101-20341231",
+                "20350101-20351231",
+                "20360101-20361231",
+                "20370101-20371231",
+                "20380101-20381231",
+                "20390101-20391231",
+                "20400101-20401231",
+                "20410101-20411231",
+                "20420101-20421231",
+                "20430101-20431231",
+                "20440101-20441231",
+                "20450101-20451231",
+                "20460101-20461231",
+                "20470101-20471231",
+                "20480101-20481231",
+                "20490101-20491231",
+                "20500101-20501231",
+                "20510101-20511231",
+                "20520101-20521231",
+                "20530101-20531231",
+                "20540101-20541231",
+                "20550101-20551231",
+                "20560101-20561231",
+                "20570101-20571231",
+                "20580101-20581231",
+                "20590101-20591231",
+                "20600101-20601231",
+                "20610101-20611231",
+                "20620101-20621231",
+                "20630101-20631231",
+                "20640101-20641231",
+                "20650101-20651231",
+                "20660101-20661231",
+                "20670101-20671231",
+                "20680101-20681231",
+                "20690101-20691231",
+                "20700101-20701231",
+                "20710101-20711231",
+                "20720101-20721231",
+                "20730101-20731231",
+                "20740101-20741231",
+                "20750101-20751231",
+                "20760101-20761231",
+                "20770101-20771231",
+                "20780101-20781231",
+                "20790101-20791231",
+                "20800101-20801231",
+                "20810101-20811231",
+                "20820101-20821231",
+                "20830101-20831231",
+                "20840101-20841231",
+                "20850101-20851231",
+                "20860101-20861231",
+                "20870101-20871231",
+                "20880101-20881231",
+                "20890101-20891231",
+                "20900101-20901231",
+                "20910101-20911231",
+                "20920101-20921231",
+                "20930101-20931231",
+                "20940101-20941231",
+                "20950101-20951231",
+                "20960101-20961231",
+                "20970101-20971231",
+                "20980101-20981231",
+                "20990101-20991231",
+                "21000101-21001231"
+            ],
+            "variable": [
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r3i1p1",
+                "r4i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6",
+                "rcp_8_5"
+            ],
+            "model": [
+                "ipsl_cm5a_lr"
+            ],
+            "period": [
+                "20060101-20151231",
+                "20160101-20251231",
+                "20260101-20351231",
+                "20360101-20451231",
+                "20460101-20551231",
+                "20560101-20651231",
+                "20660101-20751231",
+                "20760101-20851231",
+                "20860101-20951231",
+                "20960101-21001231"
+            ],
+            "variable": [
+                "temperature",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r3i1p1",
+                "r4i1p1"
+            ],
+            "experiment": [
+                "rcp_8_5"
+            ],
+            "model": [
+                "ipsl_cm5a_lr"
+            ],
+            "period": [
+                "20060101-20151231",
+                "20160101-20251231",
+                "20260101-20351231",
+                "20360101-20451231",
+                "20460101-20551231",
+                "20560101-20651231",
+                "20660101-20751231",
+                "20760101-20851231",
+                "20860101-20951231",
+                "20960101-21001231"
+            ],
+            "variable": [
+                "u_component_of_wind",
+                "v_component_of_wind"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r3i1p1",
+                "r4i1p1",
+                "r5i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6"
+            ],
+            "model": [
+                "canesm2"
+            ],
+            "period": [
+                "20060101-20101231",
+                "20110101-20201231",
+                "20210101-20301231",
+                "20310101-20401231",
+                "20410101-20501231",
+                "20510101-20601231",
+                "20610101-20701231",
+                "20710101-20801231",
+                "20810101-20901231",
+                "20910101-21001231"
+            ],
+            "variable": [
+                "u_component_of_wind"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r3i1p1",
+                "r5i1p1"
+            ],
+            "experiment": [
+                "rcp_4_5"
+            ],
+            "model": [
+                "gfdl_cm3"
+            ],
+            "period": [
+                "20060101-20101231",
+                "20110101-20151231",
+                "20160101-20201231",
+                "20210101-20251231",
+                "20260101-20301231",
+                "20310101-20351231",
+                "20360101-20401231",
+                "20410101-20451231",
+                "20460101-20501231",
+                "20510101-20551231",
+                "20560101-20601231",
+                "20610101-20651231",
+                "20660101-20701231",
+                "20710101-20751231",
+                "20760101-20801231",
+                "20810101-20851231",
+                "20860101-20901231",
+                "20910101-20951231",
+                "20960101-21001231"
+            ],
+            "variable": [
+                "temperature",
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r4i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6"
+            ],
+            "model": [
+                "canesm2"
+            ],
+            "period": [
+                "20060101-20101231",
+                "20110101-20201231",
+                "20210101-20301231",
+                "20310101-20401231",
+                "20410101-20501231",
+                "20510101-20601231",
+                "20610101-20701231",
+                "20710101-20801231",
+                "20810101-20901231",
+                "20910101-21001231"
+            ],
+            "variable": [
+                "temperature"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r4i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6"
+            ],
+            "model": [
+                "ipsl_cm5a_lr"
+            ],
+            "period": [
+                "20860101-20951231",
+                "20960101-21001231"
+            ],
+            "variable": [
+                "u_component_of_wind"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r4i1p1",
+                "r5i1p1",
+                "r6i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "ipsl_cm5a_lr"
+            ],
+            "period": [
+                "19500101-19591231",
+                "19600101-19691231",
+                "19700101-19791231",
+                "19800101-19891231",
+                "19900101-19991231",
+                "20000101-20051231"
+            ],
+            "variable": [
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r5i1p1"
+            ],
+            "experiment": [
+                "rcp_2_6"
+            ],
+            "model": [
+                "canesm2"
+            ],
+            "period": [
+                "20910101-21001231"
+            ],
+            "variable": [
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r5i1p1",
+                "r6i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "ipsl_cm5a_lr"
+            ],
+            "period": [
+                "19500101-19591231",
+                "19600101-19691231",
+                "19700101-19791231",
+                "19800101-19891231",
+                "19900101-19991231",
+                "20000101-20051231"
+            ],
+            "variable": [
+                "temperature"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r6i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "ccsm4"
+            ],
+            "period": [
+                "19500102-19541231",
+                "19550101-19591231",
+                "19600101-19641231",
+                "19650101-19691231",
+                "19700101-19741231",
+                "19750101-19791231",
+                "19800101-19841231",
+                "19850101-19891231",
+                "19900101-19941231",
+                "19950101-19991231",
+                "20000101-20051231"
+            ],
+            "variable": [
+                "u_component_of_wind",
+                "v_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r6i1p1"
+            ],
+            "experiment": [
+                "rcp_4_5"
+            ],
+            "model": [
+                "hadcm3"
+            ],
+            "period": [
+                "20060101-20301230"
+            ],
+            "variable": [
+                "temperature"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r6i1p1"
+            ],
+            "experiment": [
+                "rcp_4_5",
+                "rcp_6_0",
+                "rcp_8_5"
+            ],
+            "model": [
+                "ccsm4"
+            ],
+            "period": [
+                "20060101-20091231",
+                "20100101-20141231",
+                "20150101-20191231",
+                "20200101-20241231",
+                "20250101-20291231",
+                "20300101-20341231",
+                "20350101-20391231",
+                "20400101-20441231",
+                "20450101-20491231",
+                "20500101-20541231",
+                "20550101-20591231",
+                "20600101-20641231",
+                "20650101-20691231",
+                "20700101-20741231",
+                "20750101-20791231",
+                "20800101-20841231",
+                "20850101-20891231",
+                "20900101-20941231",
+                "20950101-21001231"
+            ],
+            "variable": [
+                "temperature",
+                "u_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r6i1p1"
+            ],
+            "experiment": [
+                "rcp_4_5",
+                "rcp_8_5"
+            ],
+            "model": [
+                "ccsm4"
+            ],
+            "period": [
+                "20060101-20091231",
+                "20100101-20141231",
+                "20150101-20191231",
+                "20200101-20241231",
+                "20250101-20291231",
+                "20300101-20341231",
+                "20350101-20391231",
+                "20400101-20441231",
+                "20450101-20491231",
+                "20500101-20541231",
+                "20550101-20591231",
+                "20600101-20641231",
+                "20650101-20691231",
+                "20700101-20741231",
+                "20750101-20791231",
+                "20800101-20841231",
+                "20850101-20891231",
+                "20900101-20941231",
+                "20950101-21001231"
+            ],
+            "variable": [
+                "v_component_of_wind"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r6i1p1"
+            ],
+            "experiment": [
+                "rcp_6_0"
+            ],
+            "model": [
+                "ccsm4"
+            ],
+            "period": [
+                "20050101-20091231",
+                "20100101-20141231",
+                "20150101-20191231",
+                "20200101-20241231",
+                "20250101-20291231",
+                "20300101-20341231",
+                "20350101-20391231",
+                "20400101-20441231",
+                "20450101-20491231",
+                "20500101-20541231",
+                "20550101-20591231",
+                "20600101-20641231",
+                "20650101-20691231",
+                "20700101-20741231",
+                "20750101-20791231",
+                "20800101-20841231",
+                "20850101-20891231",
+                "20900101-20941231",
+                "20950101-20991231",
+                "21000101-21001231"
+            ],
+            "variable": [
+                "v_component_of_wind"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r7i1p1"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "ec_earth"
+            ],
+            "period": [
+                "19500101-19541231",
+                "19550101-19591231",
+                "19600101-19641231",
+                "19650101-19691231",
+                "19700101-19741231",
+                "19750101-19791231",
+                "19800101-19841231",
+                "19850101-19891231",
+                "19900101-19941231",
+                "19950101-19991231",
+                "20000101-20041231",
+                "20050101-20091231"
+            ],
+            "variable": [
+                "u_component_of_wind",
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r7i1p1"
+            ],
+            "experiment": [
+                "rcp_4_5"
+            ],
+            "model": [
+                "ec_earth"
+            ],
+            "period": [
+                "20060101-20101231",
+                "20110101-20151231",
+                "20160101-20201231",
+                "20210101-20251231",
+                "20260101-20301231",
+                "20310101-20351231",
+                "20360101-20401231",
+                "20410101-20451231",
+                "20460101-20501231",
+                "20510101-20551231",
+                "20560101-20601231",
+                "20610101-20651231",
+                "20660101-20701231",
+                "20710101-20751231",
+                "20760101-20801231",
+                "20810101-20851231",
+                "20860101-20901231",
+                "20910101-20951231",
+                "20960101-21001231"
+            ],
+            "variable": [
+                "temperature"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r7i1p1"
+            ],
+            "experiment": [
+                "rcp_4_5"
+            ],
+            "model": [
+                "ec_earth"
+            ],
+            "period": [
+                "20860101-20901231",
+                "20910101-20951231",
+                "20960101-21001231"
+            ],
+            "variable": [
+                "u_component_of_wind"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r7i1p1",
+                "r8i1p1"
+            ],
+            "experiment": [
+                "rcp_4_5"
+            ],
+            "model": [
+                "ec_earth"
+            ],
+            "period": [
+                "20060101-20101231",
+                "20110101-20151231",
+                "20160101-20201231",
+                "20210101-20251231",
+                "20260101-20301231",
+                "20310101-20351231",
+                "20360101-20401231",
+                "20410101-20451231",
+                "20460101-20501231",
+                "20510101-20551231",
+                "20560101-20601231",
+                "20610101-20651231",
+                "20660101-20701231",
+                "20710101-20751231",
+                "20760101-20801231",
+                "20810101-20851231",
+                "20860101-20901231",
+                "20910101-20951231",
+                "20960101-21001231"
+            ],
+            "variable": [
+                "geopotential_height"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r8i1p1"
+            ],
+            "experiment": [
+                "rcp_4_5"
+            ],
+            "model": [
+                "ec_earth"
+            ],
+            "period": [
+                "20060101-20101231",
+                "20110101-20151231",
+                "20160101-20201231",
+                "20210101-20251231",
+                "20260101-20301231",
+                "20310101-20351231",
+                "20360101-20401231",
+                "20410101-20451231",
+                "20460101-20501231",
+                "20510101-20551231",
+                "20560101-20601231",
+                "20610101-20651231",
+                "20660101-20701231",
+                "20710101-20751231",
+                "20760101-20801231",
+                "20810101-20851231",
+                "20860101-20901231",
+                "20910101-20951231",
+                "20960101-21001231"
+            ],
+            "variable": [
+                "u_component_of_wind",
+                "v_component_of_wind"
+            ]
+        }
+    ]
+}

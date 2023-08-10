@@ -1,0 +1,37 @@
+<csw:Record xmlns:ows="http://www.opengis.net/ows" xmlns:dct="http://purl.org/dc/terms/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:geonet="http://www.fao.org/geonetwork" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dc:identifier>urn:cgls:global:swi10_v3_0.1degree</dc:identifier>
+      <dc:date>2023-03-06T18:27:28</dc:date>
+      <dc:title>Soil Water Index: global 10-daily (raster 0.1 degree) - version 3, Dec 2015</dc:title>
+      <dc:type>series</dc:type>
+      <dc:subject>Orthoimagery</dc:subject>
+      <dc:subject>geophysical environment</dc:subject>
+      <dc:subject>biogeophysical</dc:subject>
+      <dc:subject>soil water index</dc:subject>
+      <dc:subject>soil moisture</dc:subject>
+      <dc:subject>global</dc:subject>
+      <dc:subject>decadal</dc:subject>
+      <dc:subject>decadal composite</dc:subject>
+      <dc:subject>Vegetation</dc:subject>
+      <dc:subject>Soil Water Index</dc:subject>
+      <dc:subject>imageryBaseMapsEarthCover</dc:subject>
+      <dc:subject>biota</dc:subject>
+      <dc:subject>farming</dc:subject>
+      <dc:subject>environment</dc:subject>
+      <dc:format>ZIP archive</dc:format>
+      <dct:abstract>The Soil Water Index 10 day product (SWI10) averages the daily SWI product over 10 days. It is produced on every 10th, 20th and last of each Month.</dct:abstract>
+      <dc:description>The Soil Water Index 10 day product (SWI10) averages the daily SWI product over 10 days. It is produced on every 10th, 20th and last of each Month.</dc:description>
+      <dc:rights>copyright</dc:rights>
+      <dc:rights>otherRestrictions</dc:rights>
+      <dc:language>eng</dc:language>
+      <dc:source>The SWI10 day product is based on the SWI product which was originally developed at Vienna University of Technology (TU Wien) and later improved by other research groups. It uses an infiltration model describing the relation between surface soil moisture and profile soil moisture as a function of time. The algorithm is based on a two-layer water balance model to estimate profile soil moisture from SSM retrieved from scatterometer data. The remotely sensed topsoil represents the first layerand the second layer extends downwards from the bottom of the surface layer. In this model, the water content of the reservoir layer is described in terms of an Index, which is controlled only by the past soil moisture conditions in the surface layer in a way that the influence of measurements decreases by increasing the time. The SWI processing algorithm uses near-real-time ASCAT-25km SSM product as input to generate daily global SWI images. Therefore a computational adaption of SWI algorithm has been made based on a recursive formulation. In this method, a gain factor is introduced that relates the past SWI measurements to the current measurements. SWI images are calculated for eight different T values (1, 5, 10, 15, 20, 40, 60, 100) together with the respective quality flags. The SWI quality flag is a parameter related to the number of available SSM measurements used for calculation of SWIT at time t. It is calculated also by using a recursive formulation and expressed in percentage after normalization. The SWI10 algorithm averages the SWI data in the time domain producing three products per month. One per decad, meaning days 1-10, 11-20 and 21 to the end of the month. Only valid observations are used during the averaging and the percent of valid observations per grid point and averaging period is given in the product.</dc:source>
+      <dc:format>ZIP archive</dc:format>
+      <ows:BoundingBox crs="urn:ogc:def:crs:EPSG Geodetic Parameter Dataset::EPSG:32662">
+        <ows:LowerCorner>180 -90</ows:LowerCorner>
+        <ows:UpperCorner>-180 90</ows:UpperCorner>
+      </ows:BoundingBox>
+      <dc:URI protocol="HTTP" name="Copernicus Global Land Service" description="Download product">http://web.vgt.vito.be/download_g2.php?file=&amp;path=http://geoland2.meteo.pt/g2system/operations/products/SWI/</dc:URI>
+      <dc:URI name="Copernicus Global Land Service" description="Request to receive products via FTP">mailto:helpdeskticket@vgt.vito.be</dc:URI>
+      <dc:URI name="Copernicus Global Land Service" description="Receive products via EUMETCAST">mailto:helpdeskticket@vgt.vito.be</dc:URI>
+      <dc:URI protocol="image/png" name="SWI.png">https://land.copernicus.vgt.vito.be/geonetwork/srv/api/records/urn:cgls:global:swi10_v3_0.1degree/attachments/SWI.png</dc:URI>
+    </csw:Record>
+    

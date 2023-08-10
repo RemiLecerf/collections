@@ -1,0 +1,81 @@
+{
+    "type": "Collection",
+    "stac_version": "1.0.0",
+    "stac_extensions": [
+        "datacube"
+    ],
+    "id": "ADO_LST_MODIS_231m_3035_ODC",
+    "title": "Land Surface Temperature - 231m 8 day mean",
+    "description": "The Land Surface Temperature (LST) is based on MODIS satellite data. The LST is based on 8 day MOD11A2 (v006) LST products. The spatial resolution is 231 m after regridding from the original 1000 m resolution. The LST is masked to the highest quality standards using the provided quality layers. Missing pixel values in the time series are linearly interpolated. Non-vegetatated areas are masked using the MODIS land cover product layer MCD12Q1 FAO-Land Cover Classification System 1 (LCCS1). The final product is regridded to the LAEA Projection (EPSG:3035). The Land Surface Temperature is expressed in degree Celsius.",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    3.080800333295437,
+                    42.841014591998366,
+                    17.523924303829347,
+                    50.36459883616284
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2001-01-01T00:00:00Z",
+                    "2023-02-02T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "providers": [
+        {
+            "name": "Eurac EO ODC",
+            "url": "http://www.eurac.edu/",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "license": "CC-BY-4.0",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://creativecommons.org/licenses/by/4.0/",
+            "type": "text/html",
+            "title": "License link"
+        }
+    ],
+    "cube:dimensions": {
+        "DATE": {
+            "type": "temporal",
+            "extent": [
+                "2001-01-01T00:00:00Z",
+                "2023-02-02T00:00:00Z"
+            ]
+        },
+        "X": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                3.080800333295437,
+                17.523924303829347
+            ],
+            "reference_system": 4326
+        },
+        "Y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                42.841014591998366,
+                50.36459883616284
+            ],
+            "reference_system": 4326
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "8d_lst_celsius_linint"
+            ]
+        }
+    }
+}

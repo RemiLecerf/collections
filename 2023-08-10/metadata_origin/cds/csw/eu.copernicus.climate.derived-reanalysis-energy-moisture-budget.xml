@@ -1,0 +1,61 @@
+<csw:Record xmlns:dct="http://purl.org/dc/terms/" xmlns:ows="http://www.opengis.net/ows" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:geonet="http://www.fao.org/geonetwork" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dc:identifier>eu.copernicus.climate.derived-reanalysis-energy-moisture-budget</dc:identifier>
+      <dc:date>2018-03-28T16:07:22</dc:date>
+      <dc:title>Mass-consistent atmospheric energy and moisture budget monthly data from 1979 to present derived from ERA5 reanalysis</dc:title>
+      <dc:type>dataset</dc:type>
+      <dc:subject>Atmospheric conditions</dc:subject>
+      <dc:subject>Product type: Reanalysis</dc:subject>
+      <dc:subject>Spatial coverage: Global</dc:subject>
+      <dc:subject>Variable domain: Atmosphere (upper air)</dc:subject>
+      <dc:subject>Temporal coverage: Past</dc:subject>
+      <dc:subject>Provider: Copernicus C3S</dc:subject>
+      <dc:subject>climatologyMeteorologyAtmosphere</dc:subject>
+      <dc:format>netcdf</dc:format>
+      <dct:abstract>This dataset provides monthly means of mass-consistent, vertically integrated, atmospheric energy and moisture budget quantities derived from 1-hourly ERA5 reanalysis data. 
+The vertically integrated budget diagnostics include the tendencies and lateral fluxes of total energy, water vapour, and latent heat (with the latent heat of vaporization varying with temperature). In addition, the divergences of the lateral fluxes are provided. 
+These divergences and  fluxes are also available in the ERA5 archive, but do not employ mass-consistent horizontal wind fields and are contaminated with numerical noise. In the present dataset, mass consistency is achieved by iteratively adjusting the horizontal wind field at every time step. 
+The divergence and tendency terms from this dataset can be combined to indirectly estimate mass-consistent surface flux terms of the atmospheric energy and moisture budget. In the energy budget, horizontal and vertical enthalpy fluxes associated with water and snow are neglected. This framework allows for unambiguous estimation of net surface heat fluxes (sum of radiative and turbulent heat fluxes) when combined with net radiative fluxes  at the top of the atmosphere (not included in this dataset).  The divergence and tendency term of the atmospheric moisture budget can be combined to indirectly estimate surface freshwater fluxes (P+E) which have an unbiased global mean.
+In addition,  this dataset allows the computation of the following:
+
+
+The divergence of total energy flux with temperature-independent latent heat of vaporization is obtained by subtracting the divergence of latent heat flux and add the divergence of water vapour flux multiplied by Lv = 2.5008 J kg-1 instead (this works analogously for tendency and transport terms).
+
+
+Divergence fields with full spectral resolution can be derived from corresponding east- and northward transports (divergence terms in this dataset are truncated at wave number 180 to reduce artificial noise over high topography).  
+
+
+This dataset is produced on behalf of Copernicus Climate Change Service by the Department of Meteorology and Geophysics, University of Vienna.
+
+Variables in the dataset/application are:
+Divergence of vertical integral of  latent heat flux, Divergence of vertical integral of  total energy flux, Divergence of vertical integral of  water vapour flux, Tendency of vertical integral of  latent heat, Tendency of vertical integral of  total energy, Tendency of vertical integral of water vapour, Vertical integral of eastward  latent heat flux, Vertical integral of eastward total energy flux, Vertical integral of eastward water vapour flux, Vertical integral of northward  latent heat flux, Vertical integral of northward total energy flux, Vertical integral of northward water vapour flux</dct:abstract>
+      <dc:description>This dataset provides monthly means of mass-consistent, vertically integrated, atmospheric energy and moisture budget quantities derived from 1-hourly ERA5 reanalysis data. 
+The vertically integrated budget diagnostics include the tendencies and lateral fluxes of total energy, water vapour, and latent heat (with the latent heat of vaporization varying with temperature). In addition, the divergences of the lateral fluxes are provided. 
+These divergences and  fluxes are also available in the ERA5 archive, but do not employ mass-consistent horizontal wind fields and are contaminated with numerical noise. In the present dataset, mass consistency is achieved by iteratively adjusting the horizontal wind field at every time step. 
+The divergence and tendency terms from this dataset can be combined to indirectly estimate mass-consistent surface flux terms of the atmospheric energy and moisture budget. In the energy budget, horizontal and vertical enthalpy fluxes associated with water and snow are neglected. This framework allows for unambiguous estimation of net surface heat fluxes (sum of radiative and turbulent heat fluxes) when combined with net radiative fluxes  at the top of the atmosphere (not included in this dataset).  The divergence and tendency term of the atmospheric moisture budget can be combined to indirectly estimate surface freshwater fluxes (P+E) which have an unbiased global mean.
+In addition,  this dataset allows the computation of the following:
+
+
+The divergence of total energy flux with temperature-independent latent heat of vaporization is obtained by subtracting the divergence of latent heat flux and add the divergence of water vapour flux multiplied by Lv = 2.5008 J kg-1 instead (this works analogously for tendency and transport terms).
+
+
+Divergence fields with full spectral resolution can be derived from corresponding east- and northward transports (divergence terms in this dataset are truncated at wave number 180 to reduce artificial noise over high topography).  
+
+
+This dataset is produced on behalf of Copernicus Climate Change Service by the Department of Meteorology and Geophysics, University of Vienna.
+
+Variables in the dataset/application are:
+Divergence of vertical integral of  latent heat flux, Divergence of vertical integral of  total energy flux, Divergence of vertical integral of  water vapour flux, Tendency of vertical integral of  latent heat, Tendency of vertical integral of  total energy, Tendency of vertical integral of water vapour, Vertical integral of eastward  latent heat flux, Vertical integral of eastward total energy flux, Vertical integral of eastward water vapour flux, Vertical integral of northward  latent heat flux, Vertical integral of northward total energy flux, Vertical integral of northward water vapour flux</dc:description>
+      <dc:rights>licence</dc:rights>
+      <dc:language>eng</dc:language>
+      <dc:source>EC Copernicus programme</dc:source>
+      <dc:format>netcdf</dc:format>
+      <ows:BoundingBox crs="urn:ogc:def:crs:::EPSG:4326">
+        <ows:LowerCorner>180 -90</ows:LowerCorner>
+        <ows:UpperCorner>-180 90</ows:UpperCorner>
+      </ows:BoundingBox>
+      <dc:URI protocol="WWW:LINK-1.0-http--link" name="Climate Data Store catalogue" description="Catalogued record: Mass-consistent atmospheric energy and moisture budget monthly data from 1979 to present derived from ERA5 reanalysis">https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.c2451f6b</dc:URI>
+      <dc:URI protocol="WWW:LINK-1.0-http--link" name="Product user guide" description="Provides in-depth documentation on the improved energy and mass budget quantities derived from ERA5.">https://confluence.ecmwf.int/x/hwCIDw</dc:URI>
+      <dc:URI protocol="WWW:LINK-1.0-http--link" name="Consistency and Homogeneity of Atmospheric Energy, Moisture, and Mass Budgets in ERA5 (.1)" description="Related manuscript in Journal of Climate">https://doi.org/10.1175/JCLI-D-20-0676.1</dc:URI>
+      <dc:URI protocol="image/png" name="large_thumbnail">https://datastore.copernicus-climate.eu/c3s/published-forms-v2/c3sprod/derived-reanalysis-energy-moisture-budget/overview.png</dc:URI>
+    </csw:Record>
+  

@@ -1,0 +1,50 @@
+{
+  "type": "Collection",
+  "id": "eu.copernicus.climate.insitu-observations-gnss",
+  "stac_version": "1.0.0",
+  "description": "This dataset provides estimates of water vapour derived from atmospheric delays in Global Navigation Satellite System\n(GNSS) radio signals.\nThe initial data is collected from two in situ ground-based network of GNSS receivers – the International GNSS Service\n(IGS) and EUREF Permanent Network (EPN). The IGS collects, archives, and freely distributes GNSS data from a \ncooperatively operated global network of more than 500 ground-based GNSS stations since 1994. The EPN is a European \nnetwork of more than 300 continuously operating GNSS reference stations with precisely known coordinates.\nThe fundamental observable of ground-based GNSS is the Zenith Total Delay (ZTD). This observable represents the \npropagation delay induced by the atmosphere on GNSS signals between the GNSS satellites and a GNSS receiver.\nUsing in-situ measurements of ZTD as well as ancillary meteorological data at the site, the vertically-integrated total \namount if water vapour in the air column can be retrieved. This integrated quantity is referred to as Total Column \nWater Vapour (TCWV), or Total Precipitable Water (TPW), or Integrated Precipitable Water (IPW) or also Integrated Water\nVapour (IWV).\nThe TCWV values, with corresponding uncertainties, are based on the daily product of IGS and the 2nd reprocessing campaign\nof the EPN (EPN-repro2). Both networks provide hourly records of ZTD as part of the products derived from GNSS data processing.\nThe GNSS TCWV derived from these ZTD data is a new product, made available exclusively for the Climate Data Store (CDS).\nThe data user must consider that while the EPN-repro2 consists of tropospheric parameters derived from consistently \nreprocessed data spanning multiple decades, the IGS daily product is a near real-time product which may contain jumps \nin the time-series when a new processing model is introduced. Therefore, IGS daily ZTD and TCWV should not be considered\nas reference products. \nThe method for retrieval of GNSS TCWV and details on the algorithms can be found in the documentation. For comparison, \nTCWV values from the ECMWF ERA5 reanalysis are also made available for the user.\nThe datasets can be downloaded as comma-separated values (CSV) files organized in two different ways:\n\nOne row per report: for each report all variables are provided as individual columns in one row (referenced as csv-lev in the variable lists below).\nOne row per observable: (no aggregation) each row provides information about one variable only (referenced as csv-obs in the variable lists below).\n\n\nVariables in the dataset/application are:\nTotal column water vapour, Total column water vapour combined uncertainty, Total column water vapour era5, Zenith total delay, Zenith total delay random uncertainty\n\nVariables in the dataset/application are:\nCity, Combined uncertainty, Era5, Height of station above sea level, Latitude, Longitude, Observation value, Observed variable, Organisation name, Random uncertainty, Report id, Report timestamp, Sensor altitude, Start date, Station name",
+  "links": [],
+  "title": "In-situ observations of water vapour and atmospheric delay from the ground-based GNSS network from 1996 to present",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          0.0,
+          -89.0,
+          360.0,
+          89.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1996-01-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Atmospheric conditions",
+    "Product type: In-situ observations",
+    "Spatial coverage: Global",
+    "Variable domain: Atmosphere",
+    "Variable domain: Atmosphere (upper air)",
+    "Variable domain: Atmosphere (columnar property)",
+    "Variable domain: Water Vapour (upper air)",
+    "Temporal coverage: Past",
+    "Temporal coverage: Present"
+  ],
+  "providers": [
+    {
+      "name": "Copernicus Climate Data Store",
+      "description": "Copernicus Climate Data Store - European Centre for Medium-Range Weather Forecasts (ECMWF)",
+      "roles": [
+        "host"
+      ],
+      "url": "https://cds.climate.copernicus.eu/"
+    }
+  ]
+}

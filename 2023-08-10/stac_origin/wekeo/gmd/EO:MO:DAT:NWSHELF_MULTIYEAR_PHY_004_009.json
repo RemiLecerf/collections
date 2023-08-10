@@ -1,0 +1,59 @@
+{
+  "type": "Collection",
+  "id": "EO:MO:DAT:NWSHELF_MULTIYEAR_PHY_004_009",
+  "stac_version": "1.0.0",
+  "description": "'''Short  Description:'''\n\nThe ocean physics reanalysis for the North-West European Shelf is produced using an ocean assimilation model, with tides, at 7 km horizontal resolution.  \nThe ocean model is NEMO (Nucleus for European Modelling of the Ocean), using the 3DVar NEMOVAR system to assimilate observations. These are surface temperature and vertical profiles of temperature and salinity. The model is forced by lateral boundary conditions from the GloSea5, one of the multi-models used by [https://resources.marine.copernicus.eu/?option=com_csw&view=details&product_id=GLOBAL_REANALYSIS_PHY_001_026 GLOBAL_REANALYSIS_PHY_001_026] and at the Baltic boundary by the [https://resources.marine.copernicus.eu/?option=com_csw&view=details&product_id=BALTICSEA_REANALYSIS_PHY_003_011 BALTICSEA_REANALYSIS_PHY_003_011]. The atmospheric forcing is given by the ECMWF ERA5 atmospheric reanalysis. The river discharge is from a daily climatology. \n\nFurther details of the model, including the product validation are provided in the [http://catalogue.marine.copernicus.eu/documents/QUID/CMEMS-NWS-QUID-004-009.pdf CMEMS-NWS-QUID-004-009]. \n\nProducts are provided as monthly and daily 25-hour, de-tided, averages. The datasets available are temperature, salinity, horizontal currents, sea level, mixed layer depth, and bottom temperature. Temperature, salinity and currents, as multi-level variables, are interpolated from the model 51 hybrid s-sigma terrain-following system to 24 standard geopotential depths (z-levels). Grid-points near to the model boundaries are masked. The product is updated biannually provinding six-month extension of the time series.\n\nSee [http://catalogue.marine.copernicus.eu/documents/PUM/CMEMS-NWS-PUM-004-009_011.pdf CMEMS-NWS-PUM-004-009_011] for further details.\n\n'''Associated products:'''\n\nThis model is coupled with a biogeochemistry model (ERSEM) available as CMEMS product [https://resources.marine.copernicus.eu/?option=com_csw&view=details&product_id=NWSHELF_MULTIYEAR_BGC_004_011]. An analysis-forecast product is available from [https://resources.marine.copernicus.eu/?option=com_csw&view=details&product_id=NWSHELF_ANALYSISFORECAST_PHY_LR_004_001 NWSHELF_ANALYSISFORECAST_PHY_LR_004_011].\nThe product is updated biannually provinding six-month extension of the time series.\n\n'''DOI (product) :'''   \nhttps://doi.org/10.48670/moi-00059",
+  "links": [],
+  "title": "Atlantic- European North West Shelf- Ocean Physics Reanalysis",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1993-01-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Oceanographic geographical features",
+    "numerical-model",
+    "sea_water_potential_temperature",
+    "sea_surface_height_above_geoid",
+    "sea_water_salinity",
+    "eastward_sea_water_velocity",
+    "ocean_mixed_layer_thickness_defined_by_sigma_theta",
+    "sea_water_potential_temperature_at_sea_floor",
+    "northward_sea_water_velocity",
+    "multi-year",
+    "marine-resources",
+    "coastal-marine-environment",
+    "marine-safety",
+    "weather-climate-and-seasonal-forecasting",
+    "north-west-shelf-seas",
+    "Level 4",
+    "SST",
+    "In-Situ TS Profiles"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dct="http://purl.org/dc/terms/" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/metadata/eu.copernicus.climate.sis-tourism-snow-indicators">
+        <foaf:primaryTopic rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/resource/10.24381/cds.2fe6a082"/>
+        <dct:issued>2018-03-28</dct:issued>
+        <dct:modified>2018-03-28</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/srv/eng/xml.metadata.get?uuid=eu.copernicus.climate.sis-tourism-snow-indicators">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://cds.climate.copernicus.eu:443//geonetwork?uuid=eu.copernicus.climate.sis-tourism-snow-indicators">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/resource/10.24381/cds.2fe6a082">
+        <dct:identifier>10.24381/cds.2fe6a082</dct:identifier>
+        <dct:title>Mountain tourism meteorological and snow indicators for Europe from 1950 to 2100 derived from reanalysis and climate projections</dct:title>
+        <dct:abstract>This dataset provides meteorological and snow indicators for Europe, characterizing operating conditions of winter ski resorts under past and future climate scenarios. The dataset consists of 39 indicators of atmospheric and snow conditions computed in a similar manner for all mountain regions in Europe at the scale of NUTS-3 regions (Nomenclature of Territorial Units for Statistics) and by steps of 100 m elevation. The snow indicators are generated using the Crocus snowpack model, a multi-layer snowpack model embedded in the land surface model, SURFEX (Surface Externalisée). In order to assess the impact of climate change, the model is run for four different climate scenarios: the present climate (labelled 'historical'), and three Representative Concentration Pathway (RCP) scenarios that correspond to an optimistic emission scenario where emissions start declining beyond 2020 (RCP2.6), a further optimistic emission scenario where emissions start declining beyond 2040 (RCP4.5) and a pessimistic scenario where emissions continue to rise throughout the century, often called the high emission scenario (RCP8.5). In order to simulate these climate scenarios the SURFEX model is forced with atmospheric fields provided by adjusted EURO-CORDEX ensemble climate projections (European branch of the Coordinated Downscaling Experiment). Regional climate models downscaled from global climate models are used to provide the high resolution, pan-European, indicators required to assess the snow reliability for all mountainous regions across Europe. In addition to the climate scenarios, a reanalysis dataset is computed using UERRA reanalysis.
+A total of 39 indicators are made available in this dataset, divided into seven distinct groups:
+
+Start and end date of snow season
+Annual amount of machine made snow produced
+Precipitation
+Snow depth
+Snow water equivalent
+Air temperature
+Potential snow making hours
+
+The Crocus model makes it possible to account for both snow grooming and mechanical snow-making based upon the physical representation of these snow management practices, adding further value to the end-user by providing indicated snow management requirements under future climate conditions. However, it is not designed to replace higher resolution products available in some European regions that provide a more detailed view of ski conditions; for example, accounting for slope, local meteorological phenomena and local snow management practices. Instead this dataset presents a homogenous product at a pan-European level and hence its main goal is to compare the main features of past and future snow conditions across Europe or to compare distant destinations; for example, Scandinavia and Eastern Europe (for a given elevation and time horizon). 
+This dataset was produced on behalf of the Copernicus Climate Change Service.
+
+Variables in the dataset/application are:
+Annual amount of machine made snow produced, End of the longest period with groomed snow, End of the longest period with managed snow, End of the longest period with natural snow, Mean winter air temperature, Monthly mean air temperature for April, Monthly mean air temperature for December, Monthly mean air temperature for February, Monthly mean air temperature for January, Monthly mean air temperature for March, Monthly mean air temperature for November, Period with high amount of groomed snow, Period with high amount of managed snow, Period with high amount of natural snow, Period with high height of groomed snow, Period with high height of managed snow, Period with high height of natural snow, Period with low height of groomed snow, Period with low height of managed snow, Period with low height of natural snow, Period with medium amount of groomed snow, Period with medium amount of managed snow, Period with medium amount of natural snow, Period with medium height of groomed snow, Period with medium height of groomed snow between the fourth and tenth December, Period with medium height of groomed snow between twenty second December and fourth January, Period with medium height of managed snow, Period with medium height of managed snow between the fourth and tenth December, Period with medium height of managed snow between twenty second December and fourth January, Period with medium height of natural snow, Period with medium height of natural snow between the fourth and tenth December, Period with medium height of natural snow between twenty second December and fourth January, Snow making hours for WBT lower than -2°C, Snow making hours for WBT lower than -5°C, Start of the longest period with groomed snow, Start of the longest period with managed snow, Start of the longest period with natural snow, Total precipitation from November to April, Total snow precipitation from November to April</dct:abstract>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/GEMET%20-%20INSPIRE%20themes%2C%20version%201.0/Meteorological geographical features"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Sector: Tourism"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Product type: Climate projections"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Spatial coverage: Europe"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Variable domain: Land (hydrology)"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Temporal coverage: Past"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Temporal coverage: Future"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/iso/topicCategory/climatologyMeteorologyAtmosphere"/>
+        <foaf:thumbnail rdf:resource="https://datastore.copernicus-climate.eu/c3s/published-forms-v2/c3sprod/sis-tourism-snow-indicators/overview.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((-27.3 27.7, -27.3 70.0, 44.0 70.0, 44.0 27.7, -27.3 27.7))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:temporal>1950-01-01
+          /
+          2100-01-01</dct:temporal>
+        <dct:publisher rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/organization/ECMWF"/>
+        <dct:accrualPeriodicity>asNeeded</dct:accrualPeriodicity>
+        <dct:language>eng</dct:language>
+        <dct:license>licence</dct:license>
+        <dct:license>https://cds.climate.copernicus.eu/api/v2/terms/static/licence-to-use-copernicus-products.pdf</dct:license>
+        <dcat:distribution rdf:resource="https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.2fe6a082"/>
+        <dcat:distribution rdf:resource="https://confluence.ecmwf.int/x/eu7mE"/>
+        <dcat:distribution rdf:resource="#"/>
+        <dcat:dataQuality>C3S - Sectoral Information System for tourism</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+    

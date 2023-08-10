@@ -1,0 +1,70 @@
+<csw:Record xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/" xmlns:ows="http://www.opengis.net/ows" xmlns:geonet="http://www.fao.org/geonetwork" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dc:identifier>cbe65f19-c0f8-432f-8fd3-f8e13cb2ba74</dc:identifier>
+      <dc:date>2022-11-24T15:32:33.817Z</dc:date>
+      <dc:title>GLOBAL OCEAN L3 SIGNIFICANT WAVE HEIGHT FROM NRT SATELLITE MEASUREMENTS</dc:title>
+      <dc:type>series</dc:type>
+      <dc:subject>Oceanographic geographical features</dc:subject>
+      <dc:subject>satellite-observation</dc:subject>
+      <dc:subject>sea_surface_wave_significant_height</dc:subject>
+      <dc:subject>wind_speed</dc:subject>
+      <dc:subject>near-real-time</dc:subject>
+      <dc:subject>marine-safety</dc:subject>
+      <dc:subject>weather-climate-and-seasonal-forecasting</dc:subject>
+      <dc:subject>coastal-marine-environment</dc:subject>
+      <dc:subject>marine-resources</dc:subject>
+      <dc:subject>iberian-biscay-irish-seas</dc:subject>
+      <dc:subject>arctic-ocean</dc:subject>
+      <dc:subject>black-sea</dc:subject>
+      <dc:subject>baltic-sea</dc:subject>
+      <dc:subject>global-ocean</dc:subject>
+      <dc:subject>north-west-shelf-seas</dc:subject>
+      <dc:subject>mediterranean-sea</dc:subject>
+      <dc:subject>Level 3</dc:subject>
+      <dc:subject>Not Applicable</dc:subject>
+      <dc:subject>oceans</dc:subject>
+      <dc:format>NetCDF-4</dc:format>
+      <dct:abstract>'''Short description:'''
+
+Near-Real-Time mono-mission satellite-based along-track significant wave height. Only valid data are included, based on a rigorous editing combining various criteria such as quality flags (surface flag, presence of ice) and thresholds on parameter values. Such thresholds are applied on parameters linked to significant wave height determination from retracking (e.g. SWH, sigma0, range, off nadir angle&#8230;). All the missions are homogenized with respect to a reference mission (Jason-3 until April 2022, Sentinel-6A afterwards) and calibrated on in-situ buoy measurements. Finally, an along-track filter is applied to reduce the measurement noise.
+
+As a support of information to the significant wave height, wind speed measured by the altimeters is also processed and included in the files. Wind speed values are provided by upstream products (L2) for each mission and are based on different algorithms. Only valid data are included and all the missions are homogenized with respect to the reference mission.
+
+This product is processed by the WAVE-TAC multi-mission altimeter data processing system. It serves in near-real time the main operational oceanography and climate forecasting centers in Europe and worldwide. It processes operational data (OGDR and NRT, produced in near-real-time) from the following altimeter missions: Sentinel-6A, Jason-3, Sentinel-3A, Sentinel-3B, Cryosat-2, SARAL/AltiKa, CFOSAT ; and interim data (IGDR, 1 to 2 days delay) from Hai Yang-2B mission.
+
+One file containing valid SWH is produced for each mission and for a 3-hour time window. It contains the filtered SWH (VAVH), the unfiltered SWH (VAVH_UNFILTERED) and the wind speed (wind_speed).
+
+'''DOI (product) :'''   
+https://doi.org/10.48670/moi-00179</dct:abstract>
+      <dc:description>'''Short description:'''
+
+Near-Real-Time mono-mission satellite-based along-track significant wave height. Only valid data are included, based on a rigorous editing combining various criteria such as quality flags (surface flag, presence of ice) and thresholds on parameter values. Such thresholds are applied on parameters linked to significant wave height determination from retracking (e.g. SWH, sigma0, range, off nadir angle&#8230;). All the missions are homogenized with respect to a reference mission (Jason-3 until April 2022, Sentinel-6A afterwards) and calibrated on in-situ buoy measurements. Finally, an along-track filter is applied to reduce the measurement noise.
+
+As a support of information to the significant wave height, wind speed measured by the altimeters is also processed and included in the files. Wind speed values are provided by upstream products (L2) for each mission and are based on different algorithms. Only valid data are included and all the missions are homogenized with respect to the reference mission.
+
+This product is processed by the WAVE-TAC multi-mission altimeter data processing system. It serves in near-real time the main operational oceanography and climate forecasting centers in Europe and worldwide. It processes operational data (OGDR and NRT, produced in near-real-time) from the following altimeter missions: Sentinel-6A, Jason-3, Sentinel-3A, Sentinel-3B, Cryosat-2, SARAL/AltiKa, CFOSAT ; and interim data (IGDR, 1 to 2 days delay) from Hai Yang-2B mission.
+
+One file containing valid SWH is produced for each mission and for a 3-hour time window. It contains the filtered SWH (VAVH), the unfiltered SWH (VAVH_UNFILTERED) and the wind speed (wind_speed).
+
+'''DOI (product) :'''   
+https://doi.org/10.48670/moi-00179</dc:description>
+      <dc:rights>otherRestrictions</dc:rights>
+      <dc:rights>license</dc:rights>
+      <dc:language>eng</dc:language>
+      <dc:source>The myOcean products depends on other products for production or validation. The detailed list of dependencies is given in ISO19115's aggregationInfo (ISO19139 Xpath = "gmd:MD_Metadata/gmd:identificationInfo/gmd:aggregationInfo[./gmd:MD_AggregateInformation/gmd:initiativeType/gmd:DS_InitiativeTypeCode/@codeListValue='upstream-validation' or 'upstream-production']")</dc:source>
+      <dc:format>NetCDF-4</dc:format>
+      <ows:BoundingBox crs="urn:ogc:def:crs:EPSG:6.6:4326">
+        <ows:LowerCorner>-90.00 -180.00</ows:LowerCorner>
+        <ows:UpperCorner>90.00 180.00</ows:UpperCorner>
+      </ows:BoundingBox>
+      <dc:URI protocol="WWW:FTP" name="cmems_obs-wave_glo_phy-swh_nrt_al-l3_PT1S">ftp://nrt.cmems-du.eu/Core/WAVE_GLO_PHY_SWH_L3_NRT_014_001/cmems_obs-wave_glo_phy-swh_nrt_al-l3_PT1S</dc:URI>
+      <dc:URI protocol="WWW:FTP" name="cmems_obs-wave_glo_phy-swh_nrt_c2-l3_PT1S">ftp://nrt.cmems-du.eu/Core/WAVE_GLO_PHY_SWH_L3_NRT_014_001/cmems_obs-wave_glo_phy-swh_nrt_c2-l3_PT1S</dc:URI>
+      <dc:URI protocol="WWW:FTP" name="cmems_obs-wave_glo_phy-swh_nrt_cfo-l3_PT1S">ftp://nrt.cmems-du.eu/Core/WAVE_GLO_PHY_SWH_L3_NRT_014_001/cmems_obs-wave_glo_phy-swh_nrt_cfo-l3_PT1S</dc:URI>
+      <dc:URI protocol="WWW:FTP" name="cmems_obs-wave_glo_phy-swh_nrt_h2b-l3_PT1S">ftp://nrt.cmems-du.eu/Core/WAVE_GLO_PHY_SWH_L3_NRT_014_001/cmems_obs-wave_glo_phy-swh_nrt_h2b-l3_PT1S</dc:URI>
+      <dc:URI protocol="WWW:FTP" name="cmems_obs-wave_glo_phy-swh_nrt_h2c-l3_PT1S">ftp://nrt.cmems-du.eu/Core/WAVE_GLO_PHY_SWH_L3_NRT_014_001/cmems_obs-wave_glo_phy-swh_nrt_h2c-l3_PT1S</dc:URI>
+      <dc:URI protocol="WWW:FTP" name="cmems_obs-wave_glo_phy-swh_nrt_j3-l3_PT1S">ftp://nrt.cmems-du.eu/Core/WAVE_GLO_PHY_SWH_L3_NRT_014_001/cmems_obs-wave_glo_phy-swh_nrt_j3-l3_PT1S</dc:URI>
+      <dc:URI protocol="WWW:FTP" name="cmems_obs-wave_glo_phy-swh_nrt_s3a-l3_PT1S">ftp://nrt.cmems-du.eu/Core/WAVE_GLO_PHY_SWH_L3_NRT_014_001/cmems_obs-wave_glo_phy-swh_nrt_s3a-l3_PT1S</dc:URI>
+      <dc:URI protocol="WWW:FTP" name="cmems_obs-wave_glo_phy-swh_nrt_s3b-l3_PT1S">ftp://nrt.cmems-du.eu/Core/WAVE_GLO_PHY_SWH_L3_NRT_014_001/cmems_obs-wave_glo_phy-swh_nrt_s3b-l3_PT1S</dc:URI>
+      <dc:URI protocol="WWW:FTP" name="cmems_obs-wave_glo_phy-swh_nrt_s6a-l3_PT1S">ftp://nrt.cmems-du.eu/Core/WAVE_GLO_PHY_SWH_L3_NRT_014_001/cmems_obs-wave_glo_phy-swh_nrt_s6a-l3_PT1S</dc:URI>
+      <dc:URI protocol="image/png">https://catalogue.marine.copernicus.eu/documents/IMG/WAVE_GLO_WAV_L3_SWH_NRT_OBSERVATIONS_014_001.png</dc:URI>
+    </csw:Record>
+    

@@ -1,0 +1,151 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:dct="http://purl.org/dc/terms/" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://sdi.eea.europa.eu/catalogue/records/3646d800-2028-4dd4-94f2-ac4f724d6f46">
+        <foaf:primaryTopic rdf:resource="http://localhost:8080/geonetwork//copernicus_r_3035_20_m_hrim-tc-cov2-2012_i_2011-2013_v01_r00"/>
+        <dct:conformsTo rdf:resource="https://www.iso.org/standard/32557.html"/>
+        <dct:issued>2021-11-25</dct:issued>
+        <dct:modified>2021-11-25</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://sdi.eea.europa.eu/catalogue/srv/api/records/3646d800-2028-4dd4-94f2-ac4f724d6f46/formatters/xml">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://sdi.eea.europa.eu/catalogue/srv/api/records/3646d800-2028-4dd4-94f2-ac4f724d6f46">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="http://localhost:8080/geonetwork//datasets/copernicus_r_3035_20_m_hrim-tc-cov2-2012_i_2011-2013_v01_r00">
+        <dct:identifier>copernicus_r_3035_20_m_hrim-tc-cov2-2012_i_2011-2013_v01_r00</dct:identifier>
+        <dct:title>Pan-European High Resolution Image Mosaic 2012 - True Colour, Coverage 2 (20 m), Febr. 2015</dct:title>
+        <dct:abstract>The pan-European High Resolution (HR) Image Mosaic 2006 provides HR2 (High Resolution: 20 meter) coverage over Europe for the continuation of Corine Land Cover like exercises and for the generation of HR layers by the EU and EEA.
+
+The surface covered by the image dataset is 5.8 million square kilometres and has a spatial resolution of 20 meters. The imagery is composed during specific acquisition windows in 2011, 2012 and 2013. Coverage 2 acquisitions are expected to be 6 weeks away from Coverage 1, down to a minimum of 2 weeks for northern countries, including United Kingdom. The ± 6 weeks criteria might not be strictly applied over Atlantic Islands and French DOMs (seasonal changes are limited in the equatorial DOMs). Images are derived from the following satellite sensors:
+
+RapidEye constellation
+
+The mosaic primarily is used as input data in the production of various Copernicus Land Monitoring Service (CLMS) datasets and services, such as land cover maps and high resolution layers on land cover characteristic and can be also useful for CLMS users for visualizations and classifications on land.
+
+The input imagery for the creation of the mosaic is provided by ESA. Due to license restrictions, HR Image Mosaic 2006 is only available as a web service (WMS), and not for data download.</dct:abstract>
+        <dcat:theme rdf:resource="http://inspire.ec.europa.eu/theme/oi"/>
+        <dcat:theme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET/concepts/general"/>
+        <dcat:theme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET/concepts/environmental%20policy"/>
+        <dcat:theme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET/concepts/mosaic"/>
+        <dcat:theme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET/concepts/raster"/>
+        <dcat:theme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET/concepts/satellite%20image"/>
+        <dcat:theme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/Continents%2C%20countries%2C%20sea%20regions%20of%20the%20world./concepts/EEA38%20%28from%202020%29"/>
+        <dcat:theme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/Continents%2C%20countries%2C%20sea%20regions%20of%20the%20world./concepts/United%20Kingdom"/>
+        <dcat:theme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/Spatial%20scope/concepts/European"/>
+        <dcat:theme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/Temporal%20resolution/concepts/As%20needed"/>
+        <dcat:theme rdf:resource="https://www.eea.europa.eu/themes/concepts/Land%20use"/>
+        <dcat:theme rdf:resource="https://inspire.ec.europa.eu/metadata-codelist/TopicCategory/environment"/>
+        <dcat:theme rdf:resource="https://inspire.ec.europa.eu/metadata-codelist/TopicCategory/imageryBaseMapsEarthCover"/>
+        <foaf:thumbnail rdf:resource="https://sdi.eea.europa.eu/public/catalogue-graphic-overview/3646d800-2028-4dd4-94f2-ac4f724d6f46.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <geo:asWKT xmlns:geo="http://www.opengis.net/ont/geosparql#" rdf:datatype="http://www.opengis.net/rdf#wktLiteral">Polygon((-11.50 35.30, -11.50 81.40, 43.20 81.40, 43.20 35.30, -11.50 35.30))</geo:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:temporal>2011-01-01
+          /
+          2013-12-31</dct:temporal>
+        <dct:issued>2015-02-26T00:00:00</dct:issued>
+        <dct:accrualPeriodicity>asNeeded</dct:accrualPeriodicity>
+        <dct:language>eng</dct:language>
+        <dct:license>This dataset is based on inputs from several Copernicus Contributing Missions. Hence, the following license conditions apply: ESA-User license for the use of Copernicus Contributing Missions data - Data Warehouse phase 2 (2014-2020): 
+https://spacedata.copernicus.eu/documents/20126/0/CSCDA_ESA_User_Licence_last_uploaded_2020_02_10.pdf/b879907e-bd00-688e-bf42-bf27a00d70cb?t=1581335391752</dct:license>
+        <dct:license rdf:resource="http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/INSPIRE_Directive_Article13_1e">Public access limited according to Article 13(1)(e) of the INSPIRE Directive</dct:license>
+        <dcat:distribution rdf:resource="https://sdi.eea.europa.eu/catalogue/records/3646d800-2028-4dd4-94f2-ac4f724d6f46#WWW%3ALINK-1.0-http--link-"/>
+        <dcat:distribution rdf:resource="https://sdi.eea.europa.eu/catalogue/records/3646d800-2028-4dd4-94f2-ac4f724d6f46#OGC%3AWMS-"/>
+        <dcat:distribution rdf:resource="https://sdi.eea.europa.eu/catalogue/records/3646d800-2028-4dd4-94f2-ac4f724d6f46#ESRI%3AREST-"/>
+        <dcat:dataQuality>Original narrow and extended acquisition windows have been progressively reviewed in 2012 and in 2013, in order to meet user requirements:
+
+• Cloud coverage: ≤ 5% per country.
+• 20m RMSE/ Geolocation accuracy after orthorectification. Exception is made for mountainous areas such as the Alps and the Pyrenees where slope angles are &gt; 10%.
+
+In addition, products should mostly be:
+• Without haze
+• Snow coverage &lt; 10%: [only for glaciers/perennial snow]
+• Instrument incidence/Pointing angle &lt; 30%.
+
+Note: SPOT products are:
+• Not atmospherically corrected
+• 1% saturated pixels.
+
+Two Step Resampling is applied i.e. the 6.5 meter raw data are orthorectified with a single resampling step to 5 meters resolution in UTM projection. The UTM projection products are then reprojected to European projection with 25m resolution and National projection for the 38 countries with 20m resolution using CubicAlignment with the European grid since processing version CRS-v17-20130213. Convolution for the resampling kernel.</dcat:dataQuality>
+      </dcat:Dataset>
+      <skos:Concept rdf:about="http://inspire.ec.europa.eu/theme/oi">
+        <skos:inScheme rdf:resource="http://inspire.ec.europa.eu/theme"/>
+        <skos:prefLabel>Orthoimagery</skos:prefLabel>
+      </skos:Concept>
+      <skos:Concept rdf:about="http://localhost:8080/geonetwork//registries/vocabularies/GEMET/concepts/general">
+        <skos:inScheme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET"/>
+        <skos:prefLabel>general</skos:prefLabel>
+      </skos:Concept>
+      <skos:Concept rdf:about="http://localhost:8080/geonetwork//registries/vocabularies/GEMET/concepts/environmental%20policy">
+        <skos:inScheme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET"/>
+        <skos:prefLabel>environmental policy</skos:prefLabel>
+      </skos:Concept>
+      <skos:Concept rdf:about="http://localhost:8080/geonetwork//registries/vocabularies/GEMET/concepts/mosaic">
+        <skos:inScheme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET"/>
+        <skos:prefLabel>mosaic</skos:prefLabel>
+      </skos:Concept>
+      <skos:Concept rdf:about="http://localhost:8080/geonetwork//registries/vocabularies/GEMET/concepts/raster">
+        <skos:inScheme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET"/>
+        <skos:prefLabel>raster</skos:prefLabel>
+      </skos:Concept>
+      <skos:Concept rdf:about="http://localhost:8080/geonetwork//registries/vocabularies/GEMET/concepts/satellite%20image">
+        <skos:inScheme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET"/>
+        <skos:prefLabel>satellite image</skos:prefLabel>
+      </skos:Concept>
+      <skos:Concept rdf:about="http://localhost:8080/geonetwork//registries/vocabularies/Continents%2C%20countries%2C%20sea%20regions%20of%20the%20world./concepts/EEA38%20%28from%202020%29">
+        <skos:inScheme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/Continents%2C%20countries%2C%20sea%20regions%20of%20the%20world."/>
+        <skos:prefLabel>EEA38 (from 2020)</skos:prefLabel>
+      </skos:Concept>
+      <skos:Concept rdf:about="http://localhost:8080/geonetwork//registries/vocabularies/Continents%2C%20countries%2C%20sea%20regions%20of%20the%20world./concepts/United%20Kingdom">
+        <skos:inScheme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/Continents%2C%20countries%2C%20sea%20regions%20of%20the%20world."/>
+        <skos:prefLabel>United Kingdom</skos:prefLabel>
+      </skos:Concept>
+      <skos:Concept rdf:about="http://localhost:8080/geonetwork//registries/vocabularies/Spatial%20scope/concepts/European">
+        <skos:inScheme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/Spatial%20scope"/>
+        <skos:prefLabel>European</skos:prefLabel>
+      </skos:Concept>
+      <skos:Concept rdf:about="http://localhost:8080/geonetwork//registries/vocabularies/Temporal%20resolution/concepts/As%20needed">
+        <skos:inScheme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/Temporal%20resolution"/>
+        <skos:prefLabel>As needed</skos:prefLabel>
+      </skos:Concept>
+      <skos:Concept rdf:about="https://www.eea.europa.eu/themes/concepts/Land%20use">
+        <skos:inScheme rdf:resource="https://www.eea.europa.eu/themes"/>
+        <skos:prefLabel>Land use</skos:prefLabel>
+      </skos:Concept>
+      <dcat:Distribution rdf:about="https://sdi.eea.europa.eu/catalogue/records/3646d800-2028-4dd4-94f2-ac4f724d6f46#WWW%3ALINK-1.0-http--link-">
+        <dcat:accessURL>https://land.copernicus.eu/imagery-in-situ/european-image-mosaics/high-resolution/Image%202012/COV%202</dcat:accessURL>
+        <dct:format>WWW:LINK-1.0-http--link</dct:format>
+      </dcat:Distribution>
+      <dcat:Distribution rdf:about="https://sdi.eea.europa.eu/catalogue/records/3646d800-2028-4dd4-94f2-ac4f724d6f46#OGC%3AWMS-">
+        <dcat:accessURL>https://copernicus.discomap.eea.europa.eu/arcgis/services/GioLand/Core01Cov2_2012/MapServer/WMSServer?request=GetCapabilities&amp;service=WMS</dcat:accessURL>
+        <dct:format>OGC:WMS</dct:format>
+      </dcat:Distribution>
+      <dcat:Distribution rdf:about="https://sdi.eea.europa.eu/catalogue/records/3646d800-2028-4dd4-94f2-ac4f724d6f46#ESRI%3AREST-">
+        <dcat:accessURL>https://copernicus.discomap.eea.europa.eu/arcgis/rest/services/GioLand/Core01Cov2_2012/MapServer</dcat:accessURL>
+        <dct:format>ESRI:REST</dct:format>
+      </dcat:Distribution>
+      <foaf:Organization rdf:about="http://localhost:8080/geonetwork//organizations/European%20Environment%20Agency">
+        <foaf:name>European Environment Agency</foaf:name>
+        <foaf:member rdf:resource="http://localhost:8080/geonetwork//persons/sdi%40eea.europa.eu"/>
+      </foaf:Organization>
+      <foaf:Agent rdf:about="http://localhost:8080/geonetwork//persons/sdi%40eea.europa.eu">
+        <foaf:mbox rdf:resource="mailto:sdi@eea.europa.eu"/>
+      </foaf:Agent>
+    </rdf:RDF>
+    

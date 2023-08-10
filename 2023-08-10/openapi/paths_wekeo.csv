@@ -1,0 +1,46 @@
+operation,base_url,endpoint,summary,description,operationId
+get,wekeo,/adapters,ADMIN ONLY,Retrieve the adapter list.,adapters_get
+post,wekeo,/adapters,ADMIN ONLY,Add new adapter.,adapters_post
+get,wekeo,/adapters/searchsync,ADMIN ONLY,Get actions list,adapters_sync_action_search
+get,wekeo,/adapters/sync/status/{actionId},ADMIN ONLY,Get existing action,adapters_sync_action_get
+put,wekeo,/adapters/sync/status/{actionId},ADAPTER ONLY,Update existing action,adapters_sync_action_put
+get,wekeo,/adapters/sync/{actionId}/result,ADMIN ONLY,Get action results,adapters_sync_action_result
+post,wekeo,/adapters/sync/{adapterId},ADMIN ONLY,Trigger the synchronization between adapter and datasource provider,adapters_sync_post
+delete,wekeo,/adapters/{adapterId},ADMIN ONLY,Delete adapter.,adapters_delete_id
+get,wekeo,/adapters/{adapterId},ADMIN ONLY,Retrieve the adapter info.,adapters_get_id
+put,wekeo,/adapters/{adapterId},ADMIN ONLY,Update existing adapter.,adapters_put_id
+get,wekeo,/catalogue/datasets,,It returns the list of dataset ids synchronized the mongo catalogue. Catalogue populate the datasets trought a datasync,get_dataset_ids
+delete,wekeo,/catalogue/{datasetId},ADMIN ONLY,This API deletes the entire dataset from the mongo catalogue or remove a set of records specifing a temporal range,delete_products
+get,wekeo,/catalogue/{datasetId}/datasync,,This API calls the adapter datasync to collect specific information for a dataset,catalogue_datasync_get
+post,wekeo,/catalogue/{datasetId}/querycatalogue,,This returns available products for the dataset {datasetid}.,get_catalogue_dataset
+post,wekeo,/catalogue/{datasetId}/querymetadata,,It returns the querables fields available for the dataset specified by {datasetid}.,get_catalogue_metadata
+get,wekeo,/catalogue/{datasetId}/querytemporal,,It returns the timestamp list for a specific datasetId and a time range,get_temporal_bar
+put,wekeo,/catalogue/{syncId}/datasync,,This API synchronizes the catalogue. It starts products ingestion . Used by adapter to put information in the mongo catalogue,catalogue_datasync_put
+get,wekeo,/dataorder,,Retrieve a list of orders,dataorder_get
+post,wekeo,/dataorder,,Submit an order,dataorder_post
+get,wekeo,/dataorder/download/{orderId},,This endpoint can be used to download a specific data from the result set,dataorder_get_download_id
+get,wekeo,/dataorder/status/{orderId},,Get order status,dataorder_get_status_id
+put,wekeo,/dataorder/status/{orderId},ADAPTER ONLY,Update the dataorder status,dataorder_put_status_id
+post,wekeo,/datarequest,,,post_datarequest_v1_1
+get,wekeo,/datarequest/jobs,,This returns JSON object containing all the jobs submitted by the user along with the job status and result array for each of the job,datarequest_jobs_get
+get,wekeo,/datarequest/jobs/{jobId}/result,,API endpoint provides pagination limiting the number of items per request. Parameters for page number and the number of results per page can be used to fetch only the necessary results. The page number are numbered from 0,get_datarequest_job_result
+get,wekeo,/datarequest/searchjobs,ADMIN ONLY,This endpoint return a filtered list of jobs,datarequest_searchjobs_get
+get,wekeo,/datarequest/status/{jobId},,"The current status of the submitted job (started, running, completed, failed) can be obtained by using the API endpoint. If the job is successfully completed, the result is an array of strings of the form /datarequest/result/{jobId}. This string when appended to the broker address forms the URL to download the data",get_datarequest_status_id
+put,wekeo,/datarequest/status/{jobId},ADAPTER ONLY,Update the datarequest status,put_datarequest_status_id
+delete,wekeo,/datarequest/{jobId},,Delete the job specified in the {jobId},dataorder_delete
+get,wekeo,/datasets,,Retrieve the datasets list.,datasets_get
+post,wekeo,/datasets,ADMIN ONLY,Add new dataset.,datasets_post
+delete,wekeo,/datasets/{datasetId},ADMIN ONLY,Delete a dataset.,datasets_delete_id
+get,wekeo,/datasets/{datasetId},,Retrieve the dataset info.,datasets_get_id
+put,wekeo,/datasets/{datasetId},,Update existing dataset.,datasets_put_id
+put,wekeo,/datasets/{datasetId}/preview,ADMIN ONLY,Update dataset preview image.,datasets_put_id_preview
+get,wekeo,/gettoken,, Authenticate users via Basic HTTP and returns the access token,get_accesstoken
+get,wekeo,/querymetadata/{datasetId},,This returns the parameters/metadata that are available for querying the dataset specified by {datasetid}. The response also includes the infromation if the user has accepted the Terms & Conditions of the dataset {datasetid},get_querymetadata
+get,wekeo,/termsaccepted,,This endpoint returns all the IDs of the different terms and conditions.,termsaccepted_get
+delete,wekeo,/termsaccepted/{termId},,The request remove the acceptance of the Terms and Conditions,termsaccepted_term_id_delete
+get,wekeo,/termsaccepted/{termId},,This endpoint returns boolean flag indicating if the user has accepted or not the Terms and Conditions of the {termId}.,termsaccepted_term_id_get
+put,wekeo,/termsaccepted/{termId},,"The request sets the acceptance of the Terms and Conditions of the {termId} to True, meaning user has accepted the conditions.",termsaccepted_term_id_put
+get,wekeo,/users,ADMIN ONLY,Retrieve user list.,get_users
+get,wekeo,/users/{userId},ADMIN ONLY,Retrieve details about user specified in {userId}.,get_users_id
+put,wekeo,/users/{userId},ADMIN ONLY,Update role of the user specified in {userId}.,put_users_id
+post,wekeo,/v1.0/datarequest,,,post_datarequest

@@ -1,0 +1,51 @@
+{
+  "type": "Collection",
+  "id": "EO:EUM:DAT:0196",
+  "stac_version": "1.0.0",
+  "description": "This is an RGB (Red, Green, Blue) composite image based upon data from solar and infrared channels from Advanced Very High Resolution Radiometer/3 (AVHRR/3). The images are a combination of two AVHRR RGB composite products: the Natural Colour (daytime product based on solar channels) and Night Microphysics (i.e. Fog) product (based upon infrared channels, tuned for night-time conditions). \nThe product displays images composed of the last six AVHRR orbits, using the Natural Colour product in the daytime part and the Fog product in the night-time part. The indicated time represents the end of the last orbit (when the satellite crosses the equator in the ascending node). \nNatural Colour RGB images are created by combining data from three solar channels: 1.6 µm channel (NIR1.61, visualized in red), 0.87 µm channel (NIR0.87, visualized in green) and 0.63 µm channel (VIS0.63, visualized in blue). Its purpose is to supply general cloud analysis, by providing information on cloud top phase and cloud optical thickness in cloudy areas, and on the green vegetation fraction ('chlorophyll content') in cloud-free areas. In most cases, water clouds can be distinguished from ice clouds. Snow-covered land is easy to distinguish from snow-free land and from water clouds and fog. The colours are (relatively) close to the natural colours of the depicted features. \nThe Night Microphysics RGB (i.e. RGB Fog) images are created by combining data from the 12.0, 10.8 and 3.74 µm channels (IR12.0, IR10.8 and IR3.74 respectively). Brightness temperature differences are displayed in red (IR12.0- IR10.8) and green (IR12.0- IR3.9), while the IR10.8 channel is shown in blue beam. Its main purpose is to distinguish fog and low clouds from cloud-free areas at night, but it contains also information on cloud top temperature, cloud optical thickness and cloud top phase, thus revealing other cloud types. Cloud-free areas contain information on low-level moisture and surface temperature. \nThe Advanced Very High Resolution Radiometer/3 (AVHRR/3) is a multipurpose imaging instrument used for global monitoring of cloud cover, sea surface temperature, ice, snow and vegetation cover characteristics. It operates at six different channels simultaneously at a spatial resolution of about 1 Km near-nadir. AVHRR has many applications in oceanography, meteorology and terrestrial sciences.",
+  "links": [
+    {
+      "rel": "hosts",
+      "href": "https://navigator.eumetsat.int/product/EO:EUM:DAT:0196",
+      "type": "http",
+      "title": "EUMETSAT Product Navigator (Metadata)"
+    }
+  ],
+  "title": "AVHRR RGB Natural Colour + Fog 6 orbits accumulated - Metop A",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          null,
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Atmosphere",
+    "Cloud",
+    "Land"
+  ],
+  "providers": [
+    {
+      "name": "European Organisation for the Exploitation of Meteorological Satellites (EUMETSAT)",
+      "description": "EUMETSAT Data store",
+      "roles": [
+        "host"
+      ],
+      "url": "https://data.eumetsat.int/"
+    }
+  ]
+}

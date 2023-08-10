@@ -1,0 +1,60 @@
+{
+  "type": "Collection",
+  "id": "EO.MO.DAT.WAVE-GLO-WAV-L3-SPC-NRT-OBSERVATIONS-014-002",
+  "stac_version": "1.0.0",
+  "description": "'''Short description:'''\n\nNear-Real-Time mono-mission satellite-based integral parameters derived from the directional wave spectra. Using linear propagation wave model, only wave observations that can be back-propagated to wave converging regions are considered. The dataset parameters includes partition significant wave height, partition peak period and partition peak or principal direction given along swell propagation path in space and time at a 3-hour timestep, from source to land. Validity flags are also included for each parameter and indicates the valid time steps along propagation (eg. no propagation for significant wave height close to the storm source or any integral parameter when reaching the land). The integral parameters at observation point are also available together with a quality flag based on the consistency between each propagated observation and the overall swell field.This product is processed by the WAVE-TAC multi-mission SAR data processing system. It serves in near-real time the main operational oceanography and climate forecasting centers in Europe and worldwide. It processes near-real-time data from the following SAR missions: Sentinel-1A and Sentinel-1B.One file is produced for each mission and is available in two formats: one gathering in one netcdf file all observations related to the same swell field, and for another all observations available in a 3-hour time range, and for both formats, propagated information from source to land.\n\n'''DOI (product) :'''   \nhttps://doi.org/10.48670/moi-00178",
+  "links": [],
+  "title": "GLOBAL OCEAN L3 SPECTRAL PARAMETERS FROM NRT SATELLITE MEASUREMENTS",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2018-05-28T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Oceanographic geographical features",
+    "satellite-observation",
+    "sea_surface_wave_from_direction_at_variance_spectral_density_maximum",
+    "sea_surface_wave_period_at_variance_spectral_density_maximum",
+    "sea_surface_wave_significant_height",
+    "near-real-time",
+    "coastal-marine-environment",
+    "weather-climate-and-seasonal-forecasting",
+    "marine-resources",
+    "marine-safety",
+    "north-west-shelf-seas",
+    "iberian-biscay-irish-seas",
+    "mediterranean-sea",
+    "arctic-ocean",
+    "global-ocean",
+    "baltic-sea",
+    "black-sea",
+    "Level 3",
+    "Not Applicable"
+  ],
+  "providers": [
+    {
+      "name": "Copernicus Marine Service",
+      "description": "Copernicus Marine Service - Mercator Ocean International",
+      "roles": [
+        "host"
+      ],
+      "url": "https://marine.copernicus.eu/"
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+    "assets": {
+        "thumbnail": {
+            "href": "https://collections.eurodatacube.com/hrsi-gfsc/hrsi-gfsc.png",
+            "roles": [
+                "thumbnail"
+            ],
+            "title": "Thumbnail",
+            "type": "image/png"
+        }
+    },
+    "cube:dimensions": {
+        "bands": {
+            "type": "bands",
+            "values": [
+                "GF",
+                "QC"
+            ]
+        },
+        "t": {
+            "extent": [
+                "2016-09-01T00:00:00Z"
+            ],
+            "type": "temporal"
+        },
+        "x": {
+            "axis": "x",
+            "extent": [
+                -26,
+                44
+            ],
+            "type": "spatial"
+        },
+        "y": {
+            "axis": "y",
+            "extent": [
+                34,
+                66
+            ],
+            "type": "spatial"
+        }
+    },
+    "datasource_type": "byoc-e0e66010-ab8a-46d5-94bd-ae5c750e7341",
+    "description": "The High-Resolution Snow & Ice Monitoring service (HR-S&I) is part of the Copernicus Land Monitoring Service (CLMS). The snow aspect of the service provides products \nmeasuring Snow cover (FSC, FSTOC, FSCOG, GFSC), Snow state conditions (WDS, SWS) and persistent snow area (PSA). There are also ice products that measure ice cover \n(RLIE) and aggregated river and lake ice extent (ARLIE).\n\nMore information about the data can be found [here](https://land.copernicus.eu/pan-european/biophysical-parameters/high-resolution-snow-and-ice-monitoring) and\nthe snow products user manual is located [here](https://land.copernicus.eu/user-corner/technical-library/hrsi-snow-pum). \n\nThe daily cumulative Gap-filled Fractional Snow Cover (GFSC) product is a more complete version of the FSC product; gap-filled both at a spatial and temporal scale.\n",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -26,
+                    34,
+                    44,
+                    66
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2016-09-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "id": "DAILY_CUMULATIVE_GAP_FILLED_FRACTIONAL_SNOW_COVER",
+    "keywords": [
+        "CLMS",
+        "derived data",
+        "open data",
+        "snow",
+        "hrsi"
+    ],
+    "license": "proprietary",
+    "links": [
+        {
+            "href": "https://collections.eurodatacube.com/hrsi-gfsc",
+            "rel": "about",
+            "title": "Website describing the collection",
+            "type": "text/html"
+        },
+        {
+            "href": "https://docs.sentinel-hub.com/api/latest/api/process/",
+            "rel": "about",
+            "title": "Details about running Evalscripts",
+            "type": "text/html"
+        },
+        {
+            "href": "https://custom-scripts.sentinel-hub.com/copernicus_services/hrsi/hrsi-gfsc-fsc/script.js",
+            "rel": "processing-expression",
+            "sentinelhub:layer_name": "Gap Filled Fractional Snow Cover",
+            "sentinelhub:mosaicking_order": "mostRecent",
+            "sentinelhub:upsampling": "BICUBIC",
+            "title": "Evalscript to generate FSCOG (%) (Fractional Snow Cover On-ground) visualisation",
+            "type": "application/javascript"
+        },
+        {
+            "href": "https://custom-scripts.sentinel-hub.com/copernicus_services/hrsi/hrsi-fsc-on-ground-fsi-quality/script.js",
+            "rel": "processing-expression",
+            "sentinelhub:layer_name": "Gap Filled Fractional Snow Cover Quality ",
+            "sentinelhub:mosaicking_order": "mostRecent",
+            "sentinelhub:upsampling": "BICUBIC",
+            "title": "Evalscript to generate FSCOG (%) (Fractional Snow Cover On-ground) quality layer visualisation",
+            "type": "application/javascript"
+        },
+        {
+            "href": "https://land.copernicus.eu/terms-of-use",
+            "rel": "license",
+            "title": "License",
+            "type": "text/html"
+        },
+        {
+            "href": "https://openeocloud.vito.be/openeo/1.0.0/collections",
+            "rel": "root"
+        },
+        {
+            "href": "https://openeocloud.vito.be/openeo/1.0.0/collections",
+            "rel": "parent"
+        },
+        {
+            "href": "https://openeocloud.vito.be/openeo/1.0.0/collections/DAILY_CUMULATIVE_GAP_FILLED_FRACTIONAL_SNOW_COVER",
+            "rel": "self"
+        }
+    ],
+    "providers": [
+        {
+            "name": "Sentinel Hub",
+            "roles": [
+                "processor"
+            ],
+            "url": "https://creodias.sentinel-hub.com"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/datacube/v1.0.0/schema.json"
+    ],
+    "stac_version": "1.0.0",
+    "summaries": {
+        "federation:backends": [
+            "sentinelhub"
+        ]
+    },
+    "title": "High-Resolution Snow & Ice Monitoring; Daily cumulative Gap-filled Fractional Snow Cover",
+    "type": "Collection"
+}

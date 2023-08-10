@@ -1,0 +1,72 @@
+{
+  "type": "Collection",
+  "id": "EO:ECMWF:DAT:SIS_URBAN_CLIMATE_CITIES",
+  "stac_version": "1.0.0",
+  "description": "The dataset contains air temperature, specific humidity, relative humidity and wind speed for 100 European cities for the current climate.\nThe data were generated using the urban climate model UrbClim, developed at VITO. This model was designed to simulate and study the urban heat island effect (UHI) and other urban climate variables at a spatial resolution of 100 metres. The unique capabilities of UrbClim allow to generate spatially explicit timeseries of hourly variables from which a variety of indicators can be retrieved in postprocessing at the scale of a city neighbourhood.\nFor this specific dataset, the ERA5 reanalysis large-scale weather conditions are downscaled to agglomeration-scale. UrbClim then computes the impact of urban development on the most frequent weather parameters, such as temperature and humidity. \nThe 100 European cities for the urban simulations were selected based on user requirements within the health community. Furthermore, a high spatial distribution was aimed with specific focus on Eastern European countries that often lack access to relevant information.\nThe data was produced on behalf of the Copernicus Climate Change Service.\n\nVariables in the dataset/application are:\nAir temperature, Land-sea mask, Relative humidity, Rural-urban mask, Specific humidity, Wind speed",
+  "links": [
+    {
+      "rel": "hosts",
+      "href": "https://confluence.ecmwf.int/x/gZcvEQ",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Extra documentation for UrbClim model"
+    },
+    {
+      "rel": "hosts",
+      "href": "https://datastore.copernicus-climate.eu/documents/sis-european-health/UrbClim_extra_documentation_v2.pdf",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Extra documentation for UrbClim model (PDF)"
+    },
+    {
+      "rel": "hosts",
+      "href": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/eu.copernicus.climate.sis-urban-climate-cities",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Climate Data Store catalogue"
+    },
+    {
+      "rel": "hosts",
+      "href": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.c6459d3a",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Climate Data Store catalogue"
+    }
+  ],
+  "title": "Climate variables for cities in Europe from 2008 to 2017",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2008-01-01T00:00:00Z",
+          "2017-12-31T23:59:59Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Atmospheric conditions",
+    "Temporal coverage: Past",
+    "Spatial coverage: Europe",
+    "Product type: Reanalysis",
+    "Variable domain: Atmosphere (surface)",
+    "Provider: Copernicus C3S"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

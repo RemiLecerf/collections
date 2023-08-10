@@ -1,0 +1,2753 @@
+{
+    "slug": "global-bioclimatic-indicators-from-1950-to-2100-derived-from-climate-projections",
+    "name": "sis-biodiversity-cmip5-global",
+    "id": "eu.copernicus.climate.sis-biodiversity-cmip5-global",
+    "type": "dataset",
+    "rich_abstract": "<div class='abstract-text'>\n         <hr />\n<p>This dataset provides global bioclimatic indicators derived from CMIP5 climate projections. These bioclimatic indicators describe how the climate affects ecosystems, the services ecosystems deliver and nature\u2019s biodiversity. They are specifically relevant for applications within the biodiversity and ecosystem community. </p>\n<p>The 78 indicators cover bioclimatic variables for both land and marine environments characterising surface energy, drought, soil moisture and the (near-)surface climate including wind as well as Essential Climate Variables (ECV). The selection of indicators is based on user requirements and consultation with stakeholders, in order to facilitate the direct use of climate information in screening analyses or in diverse downstream applications.</p>\n<p>The indicators calculated based on daily CMIP5 climate projections from 10 Global Circulation Models for two future climate scenarios, Representative Concentration Pathway (RCP) 4.5 &amp; RCP 8.5. The data have been additionally bias-adjusted against ERA5 reanalysis data. The temporal resolution differs depending on the indicator, varying between monthly, annual and multi-annual averages.</p>\n<p>This dataset was produced on behalf of the Copernicus Climate Change Service.</p>\n         \n         \n            <p></p>\n            <table class=\"abstract-description abstract-table\">\n            <tr><th colspan=\"2\">DATA DESCRIPTION</th>\n            \n<tr><th>Data type</th><td>Gridded</td></tr>\n<tr><th>Horizontal coverage</th><td>Global</td></tr>\n<tr><th>Horizontal resolution</th><td>0.5\u00b0 x 0.5\u00b0</td></tr>\n<tr><th>Vertical coverage</th><td>Surface</td></tr>\n<tr><th>Vertical resolution</th><td>Single level</td></tr>\n<tr><th>Temporal coverage</th><td>1950-2100</td></tr>\n<tr><th>Temporal resolution</th><td>Monthly, annual, and 20-year averages</td></tr>\n<tr><th>File format</th><td>NetCDF-4</td></tr>\n<tr><th>Conventions</th><td>Climate and Forecast (CF) Metadata Convention v1.6, Attribute Convention for Dataset Discovery (ACDD) v1.3</td></tr>\n<tr><th>Versions</th><td>1.0</td></tr>\n<tr><th>Update frequency</th><td>No updates expected</td></tr>\n</table>\n\n    <p></p>\n    <table class=\"abstract-variables abstract-table\">\n    <tr><th colspan=\"3\">MAIN VARIABLES</th>\n    \n\n    <tr><th class='variables-name'>Name</th><th class='variables-units'>Units</th><th class='variables-description'>Description</th></tr>\n    \n<tr><td class='variables-name'>Annual mean temperature (BIO01)</td><td class='variables-units'>K</td><td class='variables-description'>Annual mean of the daily mean temperature at 2 m above the surface. This indicator corresponds to the official BIOCLIM variable BIO01 that is used in ecological niche modelling.</td></tr>\n<tr><td class='variables-name'>Annual precipitation (BIO12)</td><td class='variables-units'>m s<sup>-1</sup></td><td class='variables-description'>Annual mean of the daily mean precipitation rate (both liquid and solid phases). This indicator corresponds to the official BIOCLIM variable BIO12. To compute the total precipitation sum over the year, a conversion factor should be applied of 3600x24x365x1000 (mm year<sup>-1</sup>).</td></tr>\n<tr><td class='variables-name'>Aridity annual mean</td><td class='variables-units'>Dimensionless</td><td class='variables-description'>Monthly potential evaporation divided by the monthly mean precipitation, averaged over the year.</td></tr>\n<tr><td class='variables-name'>Aridity coldest quarter</td><td class='variables-units'>Dimensionless</td><td class='variables-description'>Monthly potential evaporation divided by the monthly mean precipitation, averaged over the coldest quarter.</td></tr>\n<tr><td class='variables-name'>Aridity driest quarter</td><td class='variables-units'>Dimensionless</td><td class='variables-description'>Monthly potential evaporation divided by the monthly mean precipitation, averaged over the driest quarter.</td></tr>\n<tr><td class='variables-name'>Aridity warmest quarter</td><td class='variables-units'>Dimensionless</td><td class='variables-description'>Monthly potential evaporation divided by the monthly mean precipitation, averaged over the warmest quarter.</td></tr>\n<tr><td class='variables-name'>Aridity wettest quarter</td><td class='variables-units'>Dimensionless</td><td class='variables-description'>Monthly potential evaporation divided by the monthly mean precipitation, averaged over the wettest quarter.</td></tr>\n<tr><td class='variables-name'>Cloud cover</td><td class='variables-units'>Dimensionless</td><td class='variables-description'>Fraction of the grid cell for which the sky is covered with clouds. Clouds at any height above the surface are considered.</td></tr>\n<tr><td class='variables-name'>Dry days</td><td class='variables-units'>day</td><td class='variables-description'>Number of days within a year where total daily precipitation does not exceed 2 mm.</td></tr>\n<tr><td class='variables-name'>Evaporative fraction annual mean</td><td class='variables-units'>Dimensionless</td><td class='variables-description'>Monthly surface latent heat divided by the monthly total sensible and latent heat flux, averaged over the year.</td></tr>\n<tr><td class='variables-name'>Evaporative fraction coldest quarter</td><td class='variables-units'>Dimensionless</td><td class='variables-description'>Monthly surface latent heat flux divided by the monthly total sensible and latent heat flux, averaged over the coldest quarter.</td></tr>\n<tr><td class='variables-name'>Evaporative fraction driest quarter</td><td class='variables-units'>Dimensionless</td><td class='variables-description'>Monthly surface latent heat flux divided by the monthly total sensible and latent heat flux, averaged over the driest quarter.</td></tr>\n<tr><td class='variables-name'>Evaporative fraction warmest quarter</td><td class='variables-units'>Dimensionless</td><td class='variables-description'>Monthly surface latent heat divided by the monthly total sensible and latent heat flux, averaged over the warmest quarter.</td></tr>\n<tr><td class='variables-name'>Evaporative fraction wettest quarter</td><td class='variables-units'>Dimensionless</td><td class='variables-description'>Monthly surface latent heat divided by the monthly total sensible and latent heat flux, averaged over the wettest quarter.</td></tr>\n<tr><td class='variables-name'>Frost days</td><td class='variables-units'>day</td><td class='variables-description'>Number of days during the growing season with minimum temperature below 273 K (0 <sup>o</sup>C). The data is aggregated over the months.</td></tr>\n<tr><td class='variables-name'>Growing degree days</td><td class='variables-units'>K day year<sup>-1</sup></td><td class='variables-description'>The sum of daily degrees above the daily mean temperature of 278 K (5 <sup>o</sup>C). The data is aggregated over the months.</td></tr>\n<tr><td class='variables-name'>Growing degree days during growing season length</td><td class='variables-units'>K day year<sup>-1</sup></td><td class='variables-description'>The sum of daily degrees above the daily mean temperature of 278 K (5 <sup>o</sup>C) during the period between the growing season start and end.</td></tr>\n<tr><td class='variables-name'>Growing season end of season</td><td class='variables-units'>day of year</td><td class='variables-description'>The first day of a period of 5 consecutive days in the second half of the year with a mean daily temperature below 278 K (5<sup>o</sup>C).</td></tr>\n<tr><td class='variables-name'>Growing season length</td><td class='variables-units'>day</td><td class='variables-description'>Number of days between the start and the end of the growing season.</td></tr>\n<tr><td class='variables-name'>Growing season start of season</td><td class='variables-units'>day of year</td><td class='variables-description'>The first day of the year of a period of 5 consecutive days with a mean daily temperature above 278 K (5 <sup>o</sup>C).</td></tr>\n<tr><td class='variables-name'>Isothermality (BIO03)</td><td class='variables-units'>%</td><td class='variables-description'>Monthly mean diurnal range divided by temperature annual range multiplied by 100. This indicator corresponds to the official BIOCLIM variable BIO03.</td></tr>\n<tr><td class='variables-name'>Koeppen-Geiger class</td><td class='variables-units'>Dimensionless</td><td class='variables-description'>A climate classification that divides worldwide climates into separate classes depending on temperature and precipitation thresholds.</td></tr>\n<tr><td class='variables-name'>Maximum 2m temperature</td><td class='variables-units'>K</td><td class='variables-description'>Mean of the daily maximum temperature near the surface. The data is aggregated as an average over the months and as an average and a maximum over the year.</td></tr>\n<tr><td class='variables-name'>Maximum length of dry spells</td><td class='variables-units'>day</td><td class='variables-description'>Maximum number of consecutive dry spell days within a year.</td></tr>\n<tr><td class='variables-name'>Maximum precipitation</td><td class='variables-units'>m s<sup>-1</sup></td><td class='variables-description'>Maximum of the daily mean precipitation. The data is aggregated over the year. To compute the total precipitation sum over the year, a conversion factor should be applied of 3600x24x365x1000.</td></tr>\n<tr><td class='variables-name'>Maximum temperature of the warmest month (BIO05)</td><td class='variables-units'>K</td><td class='variables-description'>Maximum daily temperature of the month with the highest monthly mean of daily mean temperature. This indicator corresponds to the official BIOCLIM variable BIO05.</td></tr>\n<tr><td class='variables-name'>Mean diurnal range (BIO02)</td><td class='variables-units'>K</td><td class='variables-description'>Mean of the daily maximum temperature minus the daily minimum temperature. The data is aggregated over the months. This indicator corresponds to the official BIOCLIM variable BIO02.</td></tr>\n<tr><td class='variables-name'>Mean intensity of dry spells</td><td class='variables-units'>day</td><td class='variables-description'>Determine the consecutive dry days at each day in a year, then take the average of these daily values over the year.</td></tr>\n<tr><td class='variables-name'>Mean length of dry spells</td><td class='variables-units'>day</td><td class='variables-description'>Mean length of dry spell days with a minimum of 5 days within a year.</td></tr>\n<tr><td class='variables-name'>Mean precipitation</td><td class='variables-units'>m s<sup>-1</sup></td><td class='variables-description'>Average over the daily mean precipitation. The data is aggregated over the month and the year. To compute the total precipitation sum over the aggregation period, a conversion factor should be applied of 3600x24x1000x30.4 (average number of days per month) or x365 (average number of days per year).</td></tr>\n<tr><td class='variables-name'>Mean temperature of coldest quarter (BIO11)</td><td class='variables-units'>K</td><td class='variables-description'>The mean of monthly mean temperature during the coldest quarter, defined as the quarter with the lowest monthly mean (of the daily mean) temperature using a moving average of 3 consecutive months. This indicator corresponds to the official BIOCLIM variable BIO11.</td></tr>\n<tr><td class='variables-name'>Mean temperature of driest quarter (BIO09)</td><td class='variables-units'>K</td><td class='variables-description'>The mean of monthly mean temperature during the driest quarter, defined as the quarter with the lowest monthly mean (of the daily mean) precipitation using a moving average of 3 consecutive months. This indicator corresponds to the official BIOCLIM variable BIO09.</td></tr>\n<tr><td class='variables-name'>Mean temperature of warmest quarter (BIO10)</td><td class='variables-units'>K</td><td class='variables-description'>The mean of monthly mean temperature during the warmest quarter, defined as the quarter with the highest monthly mean (of the daily mean) temperature using a moving average of 3 consecutive months. This indicator corresponds to the official BIOCLIM variable BIO10.</td></tr>\n<tr><td class='variables-name'>Mean temperature of wettest quarter (BIO08)</td><td class='variables-units'>K</td><td class='variables-description'>The mean of monthly mean temperature during the wettest quarter, defined as the quarter with the highest monthly mean (of the daily mean) precipitation using a moving average of 3 consecutive months. This indicator corresponds to the official BIOCLIM variable BIO08.</td></tr>\n<tr><td class='variables-name'>Meridional wind speed</td><td class='variables-units'>m s<sup>-1</sup></td><td class='variables-description'>Monthly mean of the northward component of the two-dimensional horizontal air velocity near the surface.</td></tr>\n<tr><td class='variables-name'>Minimum temperature</td><td class='variables-units'>K</td><td class='variables-description'>Mean of the daily minimum temperature near the surface. The data is aggregated as an average over the months and as an average and a maximum over the year.</td></tr>\n<tr><td class='variables-name'>Minimum temperature of the coldest month (BIO06)</td><td class='variables-units'>K</td><td class='variables-description'>Minimum daily temperature of the month with the lowest monthly mean of daily mean temperature. This indicator corresponds to the official BIOCLIM variable BIO06.</td></tr>\n<tr><td class='variables-name'>Number of dry spells</td><td class='variables-units'>Dimensionless</td><td class='variables-description'>Number of dry spells with a minimum of 5 days that occur in a year.</td></tr>\n<tr><td class='variables-name'>Potential evaporation annual mean</td><td class='variables-units'>m s<sup>-1</sup></td><td class='variables-description'>Annual averaged amount of water that would evaporate and transpire if there is unlimited water supply.</td></tr>\n<tr><td class='variables-name'>Potential evaporation coldest quarter</td><td class='variables-units'>m s<sup>-1</sup></td><td class='variables-description'>The amount of water that would evaporate and transpire if there is unlimited water supply, averaged for the coldest quarter.</td></tr>\n<tr><td class='variables-name'>Potential evaporation driest quarter</td><td class='variables-units'>m s<sup>-1</sup></td><td class='variables-description'>The amount of water that would evaporate and transpire if there is unlimited water supply, averaged for the driest quarter.</td></tr>\n<tr><td class='variables-name'>Potential evaporation warmest quarter</td><td class='variables-units'>m s<sup>-1</sup></td><td class='variables-description'>The amount of water that would evaporate and transpire if there is unlimited water supply, averaged for the warmest quarter.</td></tr>\n<tr><td class='variables-name'>Potential evaporation wettest quarter</td><td class='variables-units'>m s<sup>-1</sup></td><td class='variables-description'>The amount of water that would evaporate and transpire if there is unlimited water supply, averaged for the wettest quarter.</td></tr>\n<tr><td class='variables-name'>Precipitation in coldest quarter (BIO19)</td><td class='variables-units'>m s<sup>-1</sup></td><td class='variables-description'>The mean of monthly mean precipitation during the coldest quarter, defined as the quarter with the lowest monthly mean (of the daily mean) temperature using a moving average of 3 consecutive months. To compute the total precipitation sum over the month, a conversion factor should be applied of 3600x24x91.3 (average number of days per quarter)x1000. This indicator corresponds to the official BIOCLIM variable BIO19.</td></tr>\n<tr><td class='variables-name'>Precipitation in driest quarter (BIO17)</td><td class='variables-units'>m s<sup>-1</sup></td><td class='variables-description'>The mean of monthly mean precipitation during the driest quarter, defined as the quarter with the lowest monthly mean (of the daily mean) precipitation using a moving average of 3 consecutive months. To compute the total precipitation sum over the month, a conversion factor should be applied of 3600x24x91.3 (average number of days per quarter)x1000. This indicator corresponds to the official BIOCLIM variable BIO17.</td></tr>\n<tr><td class='variables-name'>Precipitation in warmest quarter (BIO18)</td><td class='variables-units'>m s<sup>-1</sup></td><td class='variables-description'>The mean of monthly mean precipitation during the warmest quarter, defined as the quarter with the highest monthly mean (of the daily mean) temperature using a moving average of 3 consecutive months. To compute the total precipitation sum over the month, a conversion factor should be applied of 3600x24x91.3 (average number of days per quarter)x1000. This indicator corresponds to the official BIOCLIM variable BIO18.</td></tr>\n<tr><td class='variables-name'>Precipitation in wettest quarter (BIO16)</td><td class='variables-units'>m s<sup>-1</sup></td><td class='variables-description'>The mean of monthly mean precipitation during the wettest quarter, defined as the quarter with the highest monthly mean (of the daily mean) precipitation using a moving average of 3 consecutive months. To compute the total precipitation sum over the month, a conversion factor should be applied of 3600x24x91.3 (average number of days per quarter)*1000. This indicator corresponds to the official BIOCLIM variable BIO16.</td></tr>\n<tr><td class='variables-name'>Precipitation of driest month (BIO14)</td><td class='variables-units'>m s<sup>-1</sup></td><td class='variables-description'>Minimum of the monthly precipitation rate. To compute the total precipitation sum over the month, a conversion factor should be applied of 3600x24x30.4 (average number of days per month)x1000. This indicator corresponds to the official BIOCLIM variable BIO14.</td></tr>\n<tr><td class='variables-name'>Precipitation of wettest month (BIO13)</td><td class='variables-units'>m s<sup>-1</sup></td><td class='variables-description'>Maximum of the monthly precipitation rate. To compute the total precipitation sum over the month, a conversion factor should be applied of 3600x24x30.4 (average number of days per month)x1000. This indicator corresponds to the official BIOCLIM variable BIO13.</td></tr>\n<tr><td class='variables-name'>Precipitation seasonality (BIO15)</td><td class='variables-units'>%</td><td class='variables-description'>Annual coefficient of variation of the monthly precipitation sums. This indicator corresponds to the official BIOCLIM variable BIO15.</td></tr>\n<tr><td class='variables-name'>Sea ice concentration</td><td class='variables-units'>Dimensionless</td><td class='variables-description'>The fraction of a grid box which is covered by sea ice. Sea ice can only occur in a grid box which includes ocean or inland water according to the land sea mask and lake cover, at the resolution being used. The data is available per month.</td></tr>\n<tr><td class='variables-name'>Sea surface temperature</td><td class='variables-units'>K</td><td class='variables-description'>Temperature of sea water near the surface. The data is available per month.</td></tr>\n<tr><td class='variables-name'>Summer days</td><td class='variables-units'>day</td><td class='variables-description'>Number of days in a year for which the daily maximum temperature is not lower than 298.15 K (25 <sup>o</sup>C).</td></tr>\n<tr><td class='variables-name'>Surface latent heat flux annual mean</td><td class='variables-units'>W m<sup>-2</sup></td><td class='variables-description'>The transfer of latent heat (resulting from water phase changes, such as evaporation or condensation) between the Earths surface and the atmosphere through the effects of turbulent air motion, averaged over the year. The vector component is positive when directed upward (negative downward).</td></tr>\n<tr><td class='variables-name'>Surface latent heat flux coldest quarter</td><td class='variables-units'>W m<sup>-2</sup></td><td class='variables-description'>The transfer of latent heat (resulting from water phase changes, such as evaporation or condensation) between the Earths surface and the through the effects of turbulent air motion, averaged over the coldest quarter.</td></tr>\n<tr><td class='variables-name'>Surface latent heat flux driest quarter</td><td class='variables-units'>W m<sup>-2</sup></td><td class='variables-description'>The transfer of latent heat (resulting from water phase changes, such as evaporation or condensation) between the Earths surface and the atmosphere through the effects of turbulent air motion, averaged over the driest quarter.</td></tr>\n<tr><td class='variables-name'>Surface latent heat flux warmest quarter</td><td class='variables-units'>W m<sup>-2</sup></td><td class='variables-description'>The transfer of latent heat (resulting from water phase changes, such as evaporation or condensation) between the Earths surface and the atmosphere through the effects of turbulent air motion, averaged over the warmest quarter.</td></tr>\n<tr><td class='variables-name'>Surface latent heat flux wettest quarter</td><td class='variables-units'>W m<sup>-2</sup></td><td class='variables-description'>The transfer of latent heat (resulting from water phase changes, such as evaporation or condensation) between the Earths surface and the atmosphere through the effects of turbulent air motion, averaged over the wettest quarter.</td></tr>\n<tr><td class='variables-name'>Surface sensible heat flux annual mean</td><td class='variables-units'>W m<sup>-2</sup></td><td class='variables-description'>The transfer of heat between the Earths surface and the atmosphere through the effects of turbulent air motion, averaged over the year. The vector component is positive when directed upward (negative downward).</td></tr>\n<tr><td class='variables-name'>Surface sensible heat flux coldest quarter</td><td class='variables-units'>W m<sup>-2</sup></td><td class='variables-description'>The transfer of heat between the Earths surface and the atmosphere through the effects of turbulent air motion, averaged over the coldest quarter.</td></tr>\n<tr><td class='variables-name'>Surface sensible heat flux driest quarter</td><td class='variables-units'>W m<sup>-2</sup></td><td class='variables-description'>The transfer of heat between the Earths surface and the atmosphere through the effects of turbulent air motion, averaged over the driest quarter.</td></tr>\n<tr><td class='variables-name'>Surface sensible heat flux warmest quarter</td><td class='variables-units'>W m<sup>-2</sup></td><td class='variables-description'>The transfer of heat between the Earths surface and the atmosphere through the effects of turbulent air motion, averaged over the warmest quarter.</td></tr>\n<tr><td class='variables-name'>Surface sensible heat flux wettest quarter</td><td class='variables-units'>W m<sup>-2</sup></td><td class='variables-description'>The transfer of heat between the Earths surface and the atmosphere the effects of turbulent air motion, averaged over the wettest quarter.</td></tr>\n<tr><td class='variables-name'>Temperature annual range (BIO07)</td><td class='variables-units'>K</td><td class='variables-description'>Maximum temperature of the warmest month minus minimum temperature of the coldest month. This indicator corresponds to the official BIOCLIM variable BIO07.</td></tr>\n<tr><td class='variables-name'>Temperature seasonality (BIO04)</td><td class='variables-units'>K</td><td class='variables-description'>Standard deviation of the monthly mean temperature multiplied by 100. This indicator corresponds to the official BIOCLIM variable BIO04.</td></tr>\n<tr><td class='variables-name'>Volumetric soil water layer 1 annual mean</td><td class='variables-units'>m<sup>3</sup> m<sup>-3</sup></td><td class='variables-description'>The volume of water in soil layer 1 (0-7cm, the surface is at 0 cm) averaged over the year. The ECMWF Integrated Forecasting System model has a four-layer representation of soil; Layer 1: 0-7 cm; Layer 2: 7-28 cm; Layer 3: 28-100 cm; Layer 4: 100-289 cm. The volumetric soil water is associated with the soil texture (or classification), soil depth, and the underlying groundwater level.</td></tr>\n<tr><td class='variables-name'>Volumetric soil water layer 1 coldest quarter</td><td class='variables-units'>m<sup>3</sup> m<sup>-3</sup></td><td class='variables-description'>The volume of water in soil layer 1 (0-7 cm, the surface is at 0 cm) averaged over the coldest quarter.</td></tr>\n<tr><td class='variables-name'>Volumetric soil water layer 1 driest quarter</td><td class='variables-units'>m<sup>3</sup> m<sup>-3</sup></td><td class='variables-description'>The volume of water in soil layer 1 (0-7 cm, the surface is at 0 cm) averaged over the driest quarter.</td></tr>\n<tr><td class='variables-name'>Volumetric soil water layer 1 warmest quarter</td><td class='variables-units'>m<sup>3</sup> m<sup>-3</sup></td><td class='variables-description'>The volume of water in soil layer 1 (0-7 cm, the surface is at 0 cm) averaged over the warmest quarter.</td></tr>\n<tr><td class='variables-name'>Volumetric soil water layer 1 wettest quarter</td><td class='variables-units'>m<sup>3</sup> m<sup>-3</sup></td><td class='variables-description'>The volume of water in soil layer 1 (0-7 cm, the surface is at 0 cm) averaged over the wettest quarter.</td></tr>\n<tr><td class='variables-name'>Water vapor pressure</td><td class='variables-units'>Pa</td><td class='variables-description'>Contribution to the total atmospheric pressure provided by the water vapor over the period 00-24h local time per unit of time. Indicator offered as a monthly or annual mean.</td></tr>\n<tr><td class='variables-name'>Wind speed</td><td class='variables-units'>m s<sup>-1</sup></td><td class='variables-description'>Magnitude of the two-dimensional horizontal air velocity near the surface.</td></tr>\n<tr><td class='variables-name'>Zonal wind speed</td><td class='variables-units'>m s<sup>-1</sup></td><td class='variables-description'>Monthly mean of the eastward component of the two-dimensional horizontal air velocity near the surface. Indicator offered as a monthly or annual mean.</td></tr>\n</table>\n    </div>",
+    "terms": [
+        "licence-to-use-copernicus-products"
+    ],
+    "constraints": [
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp4_5"
+            ],
+            "model": [
+                "access1_0",
+                "bcc_csm1_1_m",
+                "csiro_mk3_6_0",
+                "gfdl_esm2m",
+                "hadgem2_cc",
+                "ipsl_cm5a_mr",
+                "noresm1_m"
+            ],
+            "temporal_aggregation": [
+                "annual"
+            ],
+            "variable": [
+                "annual_mean_temperature",
+                "mean_diurnal_range",
+                "isothermality",
+                "temperature_seasonality",
+                "maximum_temperature_of_warmest_month",
+                "minimum_temperature_of_coldest_month",
+                "temperature_annual_range",
+                "mean_temperature_of_wettest_quarter",
+                "mean_temperature_of_driest_quarter",
+                "mean_temperature_of_warmest_quarter",
+                "mean_temperature_of_coldest_quarter",
+                "annual_precipitation",
+                "precipitation_of_wettest_month",
+                "precipitation_of_driest_month",
+                "precipitation_seasonality",
+                "precipitation_of_wettest_quarter",
+                "precipitation_of_driest_quarter",
+                "precipitation_of_warmest_quarter",
+                "precipitation_of_coldest_quarter",
+                "growing_degree_days_during_growing_season_length"
+            ],
+            "version": [
+                "1.0"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp4_5"
+            ],
+            "model": [
+                "ipsl_cm5a_lr",
+                "ipsl_cm5b_lr"
+            ],
+            "temporal_aggregation": [
+                "annual"
+            ],
+            "variable": [
+                "annual_mean_temperature",
+                "mean_diurnal_range",
+                "isothermality",
+                "temperature_seasonality",
+                "maximum_temperature_of_warmest_month",
+                "minimum_temperature_of_coldest_month",
+                "temperature_annual_range",
+                "mean_temperature_of_wettest_quarter",
+                "mean_temperature_of_driest_quarter",
+                "mean_temperature_of_warmest_quarter",
+                "mean_temperature_of_coldest_quarter",
+                "annual_precipitation",
+                "precipitation_of_wettest_month",
+                "precipitation_of_driest_month",
+                "precipitation_seasonality",
+                "precipitation_of_wettest_quarter",
+                "precipitation_of_driest_quarter",
+                "precipitation_of_warmest_quarter",
+                "precipitation_of_coldest_quarter"
+            ],
+            "version": [
+                "1.0"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp4_5",
+                "rcp8_5"
+            ],
+            "model": [
+                "access1_0",
+                "bcc_csm1_1_m",
+                "hadgem2_cc",
+                "ipsl_cm5a_lr"
+            ],
+            "statistic": [
+                "mean"
+            ],
+            "temporal_aggregation": [
+                "climatology"
+            ],
+            "variable": [
+                "annual_mean_temperature",
+                "mean_diurnal_range",
+                "isothermality",
+                "temperature_seasonality",
+                "maximum_temperature_of_warmest_month",
+                "minimum_temperature_of_coldest_month",
+                "temperature_annual_range",
+                "mean_temperature_of_wettest_quarter",
+                "mean_temperature_of_driest_quarter",
+                "mean_temperature_of_warmest_quarter",
+                "mean_temperature_of_coldest_quarter",
+                "annual_precipitation",
+                "precipitation_of_wettest_month",
+                "precipitation_of_driest_month",
+                "precipitation_seasonality",
+                "precipitation_of_wettest_quarter",
+                "precipitation_of_driest_quarter",
+                "precipitation_of_warmest_quarter",
+                "precipitation_of_coldest_quarter",
+                "koeppen_geiger_class"
+            ],
+            "version": [
+                "1.0"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp4_5",
+                "rcp8_5"
+            ],
+            "model": [
+                "access1_0",
+                "bcc_csm1_1_m",
+                "hadgem2_cc",
+                "ipsl_cm5a_lr"
+            ],
+            "statistic": [
+                "median",
+                "25th_quartile",
+                "75th_quartile"
+            ],
+            "temporal_aggregation": [
+                "climatology"
+            ],
+            "variable": [
+                "annual_mean_temperature",
+                "mean_diurnal_range",
+                "isothermality",
+                "temperature_seasonality",
+                "maximum_temperature_of_warmest_month",
+                "minimum_temperature_of_coldest_month",
+                "temperature_annual_range",
+                "mean_temperature_of_wettest_quarter",
+                "mean_temperature_of_driest_quarter",
+                "mean_temperature_of_warmest_quarter",
+                "mean_temperature_of_coldest_quarter",
+                "annual_precipitation",
+                "precipitation_of_wettest_month",
+                "precipitation_of_driest_month",
+                "precipitation_seasonality",
+                "precipitation_of_wettest_quarter",
+                "precipitation_of_driest_quarter",
+                "precipitation_of_warmest_quarter",
+                "precipitation_of_coldest_quarter"
+            ],
+            "version": [
+                "1.0"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp4_5",
+                "rcp8_5"
+            ],
+            "model": [
+                "csiro_mk3_6_0",
+                "gfdl_esm2m",
+                "ipsl_cm5a_mr",
+                "ipsl_cm5b_lr",
+                "noresm1_m"
+            ],
+            "statistic": [
+                "mean"
+            ],
+            "temporal_aggregation": [
+                "climatology"
+            ],
+            "variable": [
+                "annual_mean_temperature",
+                "mean_diurnal_range",
+                "isothermality",
+                "temperature_seasonality",
+                "maximum_temperature_of_warmest_month",
+                "minimum_temperature_of_coldest_month",
+                "temperature_annual_range",
+                "mean_temperature_of_wettest_quarter",
+                "mean_temperature_of_driest_quarter",
+                "mean_temperature_of_warmest_quarter",
+                "mean_temperature_of_coldest_quarter",
+                "annual_precipitation",
+                "precipitation_of_wettest_month",
+                "precipitation_of_driest_month",
+                "precipitation_seasonality",
+                "precipitation_of_wettest_quarter",
+                "precipitation_of_driest_quarter",
+                "precipitation_of_warmest_quarter",
+                "precipitation_of_coldest_quarter",
+                "growing_degree_days_during_growing_season_length",
+                "koeppen_geiger_class"
+            ],
+            "version": [
+                "1.0"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp4_5",
+                "rcp8_5"
+            ],
+            "model": [
+                "csiro_mk3_6_0",
+                "gfdl_esm2m",
+                "ipsl_cm5a_mr",
+                "ipsl_cm5b_lr",
+                "noresm1_m"
+            ],
+            "statistic": [
+                "median",
+                "25th_quartile",
+                "75th_quartile"
+            ],
+            "temporal_aggregation": [
+                "climatology"
+            ],
+            "variable": [
+                "annual_mean_temperature",
+                "mean_diurnal_range",
+                "isothermality",
+                "temperature_seasonality",
+                "maximum_temperature_of_warmest_month",
+                "minimum_temperature_of_coldest_month",
+                "temperature_annual_range",
+                "mean_temperature_of_wettest_quarter",
+                "mean_temperature_of_driest_quarter",
+                "mean_temperature_of_warmest_quarter",
+                "mean_temperature_of_coldest_quarter",
+                "annual_precipitation",
+                "precipitation_of_wettest_month",
+                "precipitation_of_driest_month",
+                "precipitation_seasonality",
+                "precipitation_of_wettest_quarter",
+                "precipitation_of_driest_quarter",
+                "precipitation_of_warmest_quarter",
+                "precipitation_of_coldest_quarter",
+                "growing_degree_days_during_growing_season_length"
+            ],
+            "version": [
+                "1.0"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp8_5"
+            ],
+            "model": [
+                "access1_0",
+                "csiro_mk3_6_0",
+                "gfdl_esm2m",
+                "hadgem2_cc",
+                "ipsl_cm5a_mr",
+                "noresm1_m"
+            ],
+            "temporal_aggregation": [
+                "annual"
+            ],
+            "variable": [
+                "annual_mean_temperature",
+                "mean_diurnal_range",
+                "isothermality",
+                "temperature_seasonality",
+                "maximum_temperature_of_warmest_month",
+                "minimum_temperature_of_coldest_month",
+                "temperature_annual_range",
+                "mean_temperature_of_wettest_quarter",
+                "mean_temperature_of_driest_quarter",
+                "mean_temperature_of_warmest_quarter",
+                "mean_temperature_of_coldest_quarter",
+                "annual_precipitation",
+                "precipitation_of_wettest_month",
+                "precipitation_of_driest_month",
+                "precipitation_seasonality",
+                "precipitation_of_wettest_quarter",
+                "precipitation_of_driest_quarter",
+                "precipitation_of_warmest_quarter",
+                "precipitation_of_coldest_quarter",
+                "growing_degree_days_during_growing_season_length"
+            ],
+            "version": [
+                "1.0"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp8_5"
+            ],
+            "model": [
+                "bcc_csm1_1_m",
+                "ipsl_cm5a_lr",
+                "ipsl_cm5b_lr"
+            ],
+            "temporal_aggregation": [
+                "annual"
+            ],
+            "variable": [
+                "annual_mean_temperature",
+                "mean_diurnal_range",
+                "isothermality",
+                "temperature_seasonality",
+                "maximum_temperature_of_warmest_month",
+                "minimum_temperature_of_coldest_month",
+                "temperature_annual_range",
+                "mean_temperature_of_wettest_quarter",
+                "mean_temperature_of_driest_quarter",
+                "mean_temperature_of_warmest_quarter",
+                "mean_temperature_of_coldest_quarter",
+                "annual_precipitation",
+                "precipitation_of_wettest_month",
+                "precipitation_of_driest_month",
+                "precipitation_seasonality",
+                "precipitation_of_wettest_quarter",
+                "precipitation_of_driest_quarter",
+                "precipitation_of_warmest_quarter",
+                "precipitation_of_coldest_quarter"
+            ],
+            "version": [
+                "1.0"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r2i1p1"
+            ],
+            "experiment": [
+                "rcp4_5",
+                "rcp8_5"
+            ],
+            "model": [
+                "hadgem2_es"
+            ],
+            "temporal_aggregation": [
+                "annual"
+            ],
+            "variable": [
+                "annual_mean_temperature",
+                "mean_diurnal_range",
+                "isothermality",
+                "temperature_seasonality",
+                "maximum_temperature_of_warmest_month",
+                "minimum_temperature_of_coldest_month",
+                "temperature_annual_range",
+                "mean_temperature_of_wettest_quarter",
+                "mean_temperature_of_driest_quarter",
+                "mean_temperature_of_warmest_quarter",
+                "mean_temperature_of_coldest_quarter",
+                "annual_precipitation",
+                "precipitation_of_wettest_month",
+                "precipitation_of_driest_month",
+                "precipitation_seasonality",
+                "precipitation_of_wettest_quarter",
+                "precipitation_of_driest_quarter",
+                "precipitation_of_warmest_quarter",
+                "precipitation_of_coldest_quarter",
+                "growing_degree_days_during_growing_season_length"
+            ],
+            "version": [
+                "1.0"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r2i1p1"
+            ],
+            "experiment": [
+                "rcp4_5",
+                "rcp8_5"
+            ],
+            "model": [
+                "hadgem2_es"
+            ],
+            "statistic": [
+                "mean"
+            ],
+            "temporal_aggregation": [
+                "climatology"
+            ],
+            "variable": [
+                "annual_mean_temperature",
+                "mean_diurnal_range",
+                "isothermality",
+                "temperature_seasonality",
+                "maximum_temperature_of_warmest_month",
+                "minimum_temperature_of_coldest_month",
+                "temperature_annual_range",
+                "mean_temperature_of_wettest_quarter",
+                "mean_temperature_of_driest_quarter",
+                "mean_temperature_of_warmest_quarter",
+                "mean_temperature_of_coldest_quarter",
+                "annual_precipitation",
+                "precipitation_of_wettest_month",
+                "precipitation_of_driest_month",
+                "precipitation_seasonality",
+                "precipitation_of_wettest_quarter",
+                "precipitation_of_driest_quarter",
+                "precipitation_of_warmest_quarter",
+                "precipitation_of_coldest_quarter",
+                "growing_degree_days_during_growing_season_length",
+                "koeppen_geiger_class"
+            ],
+            "version": [
+                "1.0"
+            ]
+        },
+        {
+            "ensemble_member": [
+                "r2i1p1"
+            ],
+            "experiment": [
+                "rcp4_5",
+                "rcp8_5"
+            ],
+            "model": [
+                "hadgem2_es"
+            ],
+            "statistic": [
+                "median",
+                "25th_quartile",
+                "75th_quartile"
+            ],
+            "temporal_aggregation": [
+                "climatology"
+            ],
+            "variable": [
+                "annual_mean_temperature",
+                "mean_diurnal_range",
+                "isothermality",
+                "temperature_seasonality",
+                "maximum_temperature_of_warmest_month",
+                "minimum_temperature_of_coldest_month",
+                "temperature_annual_range",
+                "mean_temperature_of_wettest_quarter",
+                "mean_temperature_of_driest_quarter",
+                "mean_temperature_of_warmest_quarter",
+                "mean_temperature_of_coldest_quarter",
+                "annual_precipitation",
+                "precipitation_of_wettest_month",
+                "precipitation_of_driest_month",
+                "precipitation_seasonality",
+                "precipitation_of_wettest_quarter",
+                "precipitation_of_driest_quarter",
+                "precipitation_of_warmest_quarter",
+                "precipitation_of_coldest_quarter",
+                "growing_degree_days_during_growing_season_length"
+            ],
+            "version": [
+                "1.0"
+            ]
+        },
+        {
+            "derived_variable": [
+                "annual_maximum",
+                "annual_minimum",
+                "annual_mean_of_daily_maximum",
+                "monthly_mean_of_daily_maximum",
+                "annual_mean_of_daily_minimum",
+                "monthly_mean_of_daily_minimum"
+            ],
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp4_5"
+            ],
+            "model": [
+                "access1_0",
+                "bcc_csm1_1_m",
+                "csiro_mk3_6_0",
+                "gfdl_esm2m",
+                "hadgem2_cc",
+                "ipsl_cm5a_mr",
+                "ipsl_cm5b_lr",
+                "noresm1_m"
+            ],
+            "statistic": [
+                "mean",
+                "median",
+                "25th_quartile",
+                "75th_quartile"
+            ],
+            "temporal_aggregation": [
+                "climatology"
+            ],
+            "variable": [
+                "2m_temperature"
+            ],
+            "version": [
+                "1.0"
+            ]
+        },
+        {
+            "derived_variable": [
+                "annual_maximum",
+                "annual_minimum",
+                "annual_mean_of_daily_maximum",
+                "monthly_mean_of_daily_maximum",
+                "annual_mean_of_daily_minimum",
+                "monthly_mean_of_daily_minimum"
+            ],
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp8_5"
+            ],
+            "model": [
+                "access1_0",
+                "csiro_mk3_6_0",
+                "gfdl_esm2m",
+                "hadgem2_cc",
+                "ipsl_cm5a_mr",
+                "ipsl_cm5b_lr",
+                "noresm1_m"
+            ],
+            "statistic": [
+                "mean",
+                "median",
+                "25th_quartile",
+                "75th_quartile"
+            ],
+            "temporal_aggregation": [
+                "climatology"
+            ],
+            "variable": [
+                "2m_temperature"
+            ],
+            "version": [
+                "1.0"
+            ]
+        },
+        {
+            "derived_variable": [
+                "annual_maximum",
+                "annual_minimum",
+                "annual_mean_of_daily_maximum",
+                "monthly_mean_of_daily_maximum",
+                "annual_mean_of_daily_minimum",
+                "monthly_mean_of_daily_minimum"
+            ],
+            "ensemble_member": [
+                "r2i1p1"
+            ],
+            "experiment": [
+                "rcp4_5",
+                "rcp8_5"
+            ],
+            "model": [
+                "hadgem2_es"
+            ],
+            "statistic": [
+                "mean",
+                "median",
+                "25th_quartile",
+                "75th_quartile"
+            ],
+            "temporal_aggregation": [
+                "climatology"
+            ],
+            "variable": [
+                "2m_temperature"
+            ],
+            "version": [
+                "1.0"
+            ]
+        },
+        {
+            "derived_variable": [
+                "annual_maximum",
+                "annual_minimum",
+                "annual_mean_of_daily_maximum",
+                "annual_mean_of_daily_minimum"
+            ],
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp4_5"
+            ],
+            "model": [
+                "access1_0",
+                "bcc_csm1_1_m",
+                "csiro_mk3_6_0",
+                "gfdl_esm2m",
+                "hadgem2_cc",
+                "ipsl_cm5a_mr",
+                "noresm1_m"
+            ],
+            "temporal_aggregation": [
+                "annual"
+            ],
+            "variable": [
+                "2m_temperature"
+            ],
+            "version": [
+                "1.0"
+            ]
+        },
+        {
+            "derived_variable": [
+                "annual_maximum",
+                "annual_minimum",
+                "annual_mean_of_daily_maximum",
+                "annual_mean_of_daily_minimum"
+            ],
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp8_5"
+            ],
+            "model": [
+                "access1_0",
+                "csiro_mk3_6_0",
+                "gfdl_esm2m",
+                "hadgem2_cc",
+                "ipsl_cm5a_mr",
+                "noresm1_m"
+            ],
+            "temporal_aggregation": [
+                "annual"
+            ],
+            "variable": [
+                "2m_temperature"
+            ],
+            "version": [
+                "1.0"
+            ]
+        },
+        {
+            "derived_variable": [
+                "annual_maximum",
+                "annual_minimum",
+                "annual_mean_of_daily_maximum",
+                "annual_mean_of_daily_minimum"
+            ],
+            "ensemble_member": [
+                "r2i1p1"
+            ],
+            "experiment": [
+                "rcp4_5",
+                "rcp8_5"
+            ],
+            "model": [
+                "hadgem2_es"
+            ],
+            "temporal_aggregation": [
+                "annual"
+            ],
+            "variable": [
+                "2m_temperature"
+            ],
+            "version": [
+                "1.0"
+            ]
+        },
+        {
+            "derived_variable": [
+                "annual_mean"
+            ],
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp4_5",
+                "rcp8_5"
+            ],
+            "model": [
+                "access1_0",
+                "bcc_csm1_1_m",
+                "csiro_mk3_6_0",
+                "gfdl_esm2m",
+                "hadgem2_cc",
+                "ipsl_cm5a_lr",
+                "ipsl_cm5a_mr",
+                "ipsl_cm5b_lr",
+                "noresm1_m"
+            ],
+            "temporal_aggregation": [
+                "annual"
+            ],
+            "variable": [
+                "aridity",
+                "cloud_cover",
+                "evaporative_fraction",
+                "potential_evaporation",
+                "surface_latent_heat_flux",
+                "surface_sensible_heat_flux",
+                "volumetric_soil_water",
+                "water_vapor_pressure"
+            ],
+            "version": [
+                "1.0"
+            ]
+        },
+        {
+            "derived_variable": [
+                "annual_mean"
+            ],
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp4_5",
+                "rcp8_5"
+            ],
+            "model": [
+                "access1_0",
+                "bcc_csm1_1_m",
+                "csiro_mk3_6_0",
+                "gfdl_esm2m",
+                "hadgem2_cc",
+                "ipsl_cm5a_lr",
+                "ipsl_cm5a_mr",
+                "ipsl_cm5b_lr",
+                "noresm1_m"
+            ],
+            "statistic": [
+                "mean",
+                "median",
+                "25th_quartile",
+                "75th_quartile"
+            ],
+            "temporal_aggregation": [
+                "climatology"
+            ],
+            "variable": [
+                "aridity",
+                "cloud_cover",
+                "evaporative_fraction",
+                "potential_evaporation",
+                "surface_latent_heat_flux",
+                "surface_sensible_heat_flux",
+                "volumetric_soil_water",
+                "water_vapor_pressure"
+            ],
+            "version": [
+                "1.0"
+            ]
+        },
+        {
+            "derived_variable": [
+                "annual_mean"
+            ],
+            "ensemble_member": [
+                "r2i1p1"
+            ],
+            "experiment": [
+                "rcp4_5",
+                "rcp8_5"
+            ],
+            "model": [
+                "hadgem2_es"
+            ],
+            "temporal_aggregation": [
+                "annual"
+            ],
+            "variable": [
+                "aridity",
+                "cloud_cover",
+                "evaporative_fraction",
+                "potential_evaporation",
+                "surface_latent_heat_flux",
+                "surface_sensible_heat_flux",
+                "volumetric_soil_water",
+                "water_vapor_pressure"
+            ],
+            "version": [
+                "1.0"
+            ]
+        },
+        {
+            "derived_variable": [
+                "annual_mean"
+            ],
+            "ensemble_member": [
+                "r2i1p1"
+            ],
+            "experiment": [
+                "rcp4_5",
+                "rcp8_5"
+            ],
+            "model": [
+                "hadgem2_es"
+            ],
+            "statistic": [
+                "mean",
+                "median",
+                "25th_quartile",
+                "75th_quartile"
+            ],
+            "temporal_aggregation": [
+                "climatology"
+            ],
+            "variable": [
+                "aridity",
+                "cloud_cover",
+                "evaporative_fraction",
+                "potential_evaporation",
+                "surface_latent_heat_flux",
+                "surface_sensible_heat_flux",
+                "volumetric_soil_water",
+                "water_vapor_pressure"
+            ],
+            "version": [
+                "1.0"
+            ]
+        },
+        {
+            "derived_variable": [
+                "annual_sum"
+            ],
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp4_5"
+            ],
+            "model": [
+                "access1_0",
+                "bcc_csm1_1_m",
+                "csiro_mk3_6_0",
+                "gfdl_esm2m",
+                "hadgem2_cc",
+                "ipsl_cm5a_mr",
+                "noresm1_m"
+            ],
+            "temporal_aggregation": [
+                "annual"
+            ],
+            "variable": [
+                "dry_days",
+                "frost_days",
+                "growing_degree_days",
+                "summer_days"
+            ],
+            "version": [
+                "1.0"
+            ]
+        },
+        {
+            "derived_variable": [
+                "annual_sum"
+            ],
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp4_5",
+                "rcp8_5"
+            ],
+            "model": [
+                "access1_0",
+                "csiro_mk3_6_0",
+                "gfdl_esm2m",
+                "hadgem2_cc",
+                "ipsl_cm5a_mr",
+                "ipsl_cm5b_lr",
+                "noresm1_m"
+            ],
+            "statistic": [
+                "mean",
+                "median",
+                "25th_quartile",
+                "75th_quartile"
+            ],
+            "temporal_aggregation": [
+                "climatology"
+            ],
+            "variable": [
+                "dry_days",
+                "frost_days",
+                "growing_degree_days",
+                "summer_days"
+            ],
+            "version": [
+                "1.0"
+            ]
+        },
+        {
+            "derived_variable": [
+                "annual_sum"
+            ],
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp8_5"
+            ],
+            "model": [
+                "access1_0",
+                "csiro_mk3_6_0",
+                "gfdl_esm2m",
+                "hadgem2_cc",
+                "ipsl_cm5a_mr",
+                "noresm1_m"
+            ],
+            "temporal_aggregation": [
+                "annual"
+            ],
+            "variable": [
+                "dry_days",
+                "frost_days",
+                "growing_degree_days",
+                "summer_days"
+            ],
+            "version": [
+                "1.0"
+            ]
+        },
+        {
+            "derived_variable": [
+                "annual_sum"
+            ],
+            "ensemble_member": [
+                "r2i1p1"
+            ],
+            "experiment": [
+                "rcp4_5",
+                "rcp8_5"
+            ],
+            "model": [
+                "hadgem2_es"
+            ],
+            "temporal_aggregation": [
+                "annual"
+            ],
+            "variable": [
+                "dry_days",
+                "frost_days",
+                "growing_degree_days",
+                "summer_days"
+            ],
+            "version": [
+                "1.0"
+            ]
+        },
+        {
+            "derived_variable": [
+                "annual_sum"
+            ],
+            "ensemble_member": [
+                "r2i1p1"
+            ],
+            "experiment": [
+                "rcp4_5",
+                "rcp8_5"
+            ],
+            "model": [
+                "hadgem2_es"
+            ],
+            "statistic": [
+                "mean",
+                "median",
+                "25th_quartile",
+                "75th_quartile"
+            ],
+            "temporal_aggregation": [
+                "climatology"
+            ],
+            "variable": [
+                "dry_days",
+                "frost_days",
+                "growing_degree_days",
+                "summer_days"
+            ],
+            "version": [
+                "1.0"
+            ]
+        },
+        {
+            "derived_variable": [
+                "coldest_quarter",
+                "driest_quarter",
+                "warmest_quarter",
+                "wettest_quarter"
+            ],
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp4_5",
+                "rcp8_5"
+            ],
+            "model": [
+                "access1_0",
+                "bcc_csm1_1_m",
+                "csiro_mk3_6_0",
+                "gfdl_esm2m",
+                "hadgem2_cc",
+                "ipsl_cm5a_lr",
+                "ipsl_cm5a_mr",
+                "ipsl_cm5b_lr",
+                "noresm1_m"
+            ],
+            "temporal_aggregation": [
+                "annual"
+            ],
+            "variable": [
+                "aridity",
+                "evaporative_fraction",
+                "potential_evaporation",
+                "surface_latent_heat_flux",
+                "surface_sensible_heat_flux",
+                "volumetric_soil_water"
+            ],
+            "version": [
+                "1.0"
+            ]
+        },
+        {
+            "derived_variable": [
+                "coldest_quarter",
+                "driest_quarter",
+                "warmest_quarter",
+                "wettest_quarter"
+            ],
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp4_5",
+                "rcp8_5"
+            ],
+            "model": [
+                "access1_0",
+                "bcc_csm1_1_m",
+                "csiro_mk3_6_0",
+                "gfdl_esm2m",
+                "hadgem2_cc",
+                "ipsl_cm5a_lr",
+                "ipsl_cm5a_mr",
+                "ipsl_cm5b_lr",
+                "noresm1_m"
+            ],
+            "statistic": [
+                "mean",
+                "median",
+                "25th_quartile",
+                "75th_quartile"
+            ],
+            "temporal_aggregation": [
+                "climatology"
+            ],
+            "variable": [
+                "aridity",
+                "evaporative_fraction",
+                "potential_evaporation",
+                "surface_latent_heat_flux",
+                "surface_sensible_heat_flux",
+                "volumetric_soil_water"
+            ],
+            "version": [
+                "1.0"
+            ]
+        },
+        {
+            "derived_variable": [
+                "coldest_quarter",
+                "driest_quarter",
+                "warmest_quarter",
+                "wettest_quarter"
+            ],
+            "ensemble_member": [
+                "r2i1p1"
+            ],
+            "experiment": [
+                "rcp4_5",
+                "rcp8_5"
+            ],
+            "model": [
+                "hadgem2_es"
+            ],
+            "temporal_aggregation": [
+                "annual"
+            ],
+            "variable": [
+                "aridity",
+                "evaporative_fraction",
+                "potential_evaporation",
+                "surface_latent_heat_flux",
+                "surface_sensible_heat_flux",
+                "volumetric_soil_water"
+            ],
+            "version": [
+                "1.0"
+            ]
+        },
+        {
+            "derived_variable": [
+                "coldest_quarter",
+                "driest_quarter",
+                "warmest_quarter",
+                "wettest_quarter"
+            ],
+            "ensemble_member": [
+                "r2i1p1"
+            ],
+            "experiment": [
+                "rcp4_5",
+                "rcp8_5"
+            ],
+            "model": [
+                "hadgem2_es"
+            ],
+            "statistic": [
+                "mean",
+                "median",
+                "25th_quartile",
+                "75th_quartile"
+            ],
+            "temporal_aggregation": [
+                "climatology"
+            ],
+            "variable": [
+                "aridity",
+                "evaporative_fraction",
+                "potential_evaporation",
+                "surface_latent_heat_flux",
+                "surface_sensible_heat_flux",
+                "volumetric_soil_water"
+            ],
+            "version": [
+                "1.0"
+            ]
+        },
+        {
+            "derived_variable": [
+                "annual_mean_of_daily_maximum",
+                "monthly_mean_of_daily_maximum",
+                "annual_mean_of_daily_minimum",
+                "monthly_mean_of_daily_minimum"
+            ],
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp4_5"
+            ],
+            "model": [
+                "ipsl_cm5a_lr"
+            ],
+            "statistic": [
+                "mean",
+                "median",
+                "25th_quartile",
+                "75th_quartile"
+            ],
+            "temporal_aggregation": [
+                "climatology"
+            ],
+            "variable": [
+                "2m_temperature"
+            ],
+            "version": [
+                "1.0"
+            ]
+        },
+        {
+            "derived_variable": [
+                "annual_mean_of_daily_maximum",
+                "monthly_mean_of_daily_maximum",
+                "annual_mean_of_daily_minimum",
+                "monthly_mean_of_daily_minimum"
+            ],
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp8_5"
+            ],
+            "model": [
+                "bcc_csm1_1_m",
+                "ipsl_cm5a_lr"
+            ],
+            "statistic": [
+                "mean",
+                "median",
+                "25th_quartile",
+                "75th_quartile"
+            ],
+            "temporal_aggregation": [
+                "climatology"
+            ],
+            "variable": [
+                "2m_temperature"
+            ],
+            "version": [
+                "1.0"
+            ]
+        },
+        {
+            "derived_variable": [
+                "annual_mean_of_daily_maximum",
+                "annual_mean_of_daily_minimum"
+            ],
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp4_5"
+            ],
+            "model": [
+                "ipsl_cm5a_lr"
+            ],
+            "temporal_aggregation": [
+                "annual"
+            ],
+            "variable": [
+                "2m_temperature"
+            ],
+            "version": [
+                "1.0"
+            ]
+        },
+        {
+            "derived_variable": [
+                "annual_mean_of_daily_maximum",
+                "annual_mean_of_daily_minimum"
+            ],
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp8_5"
+            ],
+            "model": [
+                "bcc_csm1_1_m",
+                "ipsl_cm5a_lr"
+            ],
+            "temporal_aggregation": [
+                "annual"
+            ],
+            "variable": [
+                "2m_temperature"
+            ],
+            "version": [
+                "1.0"
+            ]
+        },
+        {
+            "derived_variable": [
+                "monthly_mean_of_daily_maximum",
+                "monthly_mean_of_daily_minimum"
+            ],
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp4_5",
+                "rcp8_5"
+            ],
+            "model": [
+                "access1_0",
+                "bcc_csm1_1_m",
+                "csiro_mk3_6_0",
+                "gfdl_esm2m",
+                "hadgem2_cc",
+                "ipsl_cm5a_lr",
+                "ipsl_cm5a_mr",
+                "ipsl_cm5b_lr",
+                "noresm1_m"
+            ],
+            "temporal_aggregation": [
+                "monthly"
+            ],
+            "variable": [
+                "2m_temperature"
+            ],
+            "version": [
+                "1.0"
+            ]
+        },
+        {
+            "derived_variable": [
+                "monthly_mean_of_daily_maximum",
+                "monthly_mean_of_daily_minimum"
+            ],
+            "ensemble_member": [
+                "r2i1p1"
+            ],
+            "experiment": [
+                "rcp4_5",
+                "rcp8_5"
+            ],
+            "model": [
+                "hadgem2_es"
+            ],
+            "temporal_aggregation": [
+                "monthly"
+            ],
+            "variable": [
+                "2m_temperature"
+            ],
+            "version": [
+                "1.0"
+            ]
+        },
+        {
+            "derived_variable": [
+                "annual_maximum_of_daily_mean"
+            ],
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp4_5"
+            ],
+            "model": [
+                "access1_0",
+                "bcc_csm1_1_m",
+                "csiro_mk3_6_0",
+                "gfdl_esm2m",
+                "hadgem2_cc",
+                "ipsl_cm5a_mr",
+                "ipsl_cm5b_lr",
+                "noresm1_m"
+            ],
+            "statistic": [
+                "mean",
+                "median",
+                "25th_quartile",
+                "75th_quartile"
+            ],
+            "temporal_aggregation": [
+                "climatology"
+            ],
+            "variable": [
+                "precipitation"
+            ],
+            "version": [
+                "1.0"
+            ]
+        },
+        {
+            "derived_variable": [
+                "annual_maximum_of_daily_mean"
+            ],
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp4_5"
+            ],
+            "model": [
+                "access1_0",
+                "bcc_csm1_1_m",
+                "csiro_mk3_6_0",
+                "gfdl_esm2m",
+                "hadgem2_cc",
+                "ipsl_cm5a_mr",
+                "noresm1_m"
+            ],
+            "temporal_aggregation": [
+                "annual"
+            ],
+            "variable": [
+                "precipitation"
+            ],
+            "version": [
+                "1.0"
+            ]
+        },
+        {
+            "derived_variable": [
+                "annual_maximum_of_daily_mean"
+            ],
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp8_5"
+            ],
+            "model": [
+                "access1_0",
+                "bcc_csm1_1_m",
+                "csiro_mk3_6_0",
+                "gfdl_esm2m",
+                "hadgem2_cc",
+                "ipsl_cm5a_mr",
+                "ipsl_cm5b_lr",
+                "noresm1_m"
+            ],
+            "statistic": [
+                "mean",
+                "25th_quartile",
+                "75th_quartile"
+            ],
+            "temporal_aggregation": [
+                "climatology"
+            ],
+            "variable": [
+                "precipitation"
+            ],
+            "version": [
+                "1.0"
+            ]
+        },
+        {
+            "derived_variable": [
+                "annual_maximum_of_daily_mean"
+            ],
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp8_5"
+            ],
+            "model": [
+                "access1_0",
+                "csiro_mk3_6_0",
+                "gfdl_esm2m",
+                "hadgem2_cc",
+                "ipsl_cm5a_mr",
+                "ipsl_cm5b_lr",
+                "noresm1_m"
+            ],
+            "statistic": [
+                "median"
+            ],
+            "temporal_aggregation": [
+                "climatology"
+            ],
+            "variable": [
+                "precipitation"
+            ],
+            "version": [
+                "1.0"
+            ]
+        },
+        {
+            "derived_variable": [
+                "annual_maximum_of_daily_mean"
+            ],
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp8_5"
+            ],
+            "model": [
+                "access1_0",
+                "csiro_mk3_6_0",
+                "gfdl_esm2m",
+                "hadgem2_cc",
+                "ipsl_cm5a_mr",
+                "noresm1_m"
+            ],
+            "temporal_aggregation": [
+                "annual"
+            ],
+            "variable": [
+                "precipitation"
+            ],
+            "version": [
+                "1.0"
+            ]
+        },
+        {
+            "derived_variable": [
+                "annual_maximum_of_daily_mean"
+            ],
+            "ensemble_member": [
+                "r2i1p1"
+            ],
+            "experiment": [
+                "rcp4_5",
+                "rcp8_5"
+            ],
+            "model": [
+                "hadgem2_es"
+            ],
+            "temporal_aggregation": [
+                "annual"
+            ],
+            "variable": [
+                "precipitation"
+            ],
+            "version": [
+                "1.0"
+            ]
+        },
+        {
+            "derived_variable": [
+                "annual_maximum_of_daily_mean"
+            ],
+            "ensemble_member": [
+                "r2i1p1"
+            ],
+            "experiment": [
+                "rcp4_5",
+                "rcp8_5"
+            ],
+            "model": [
+                "hadgem2_es"
+            ],
+            "statistic": [
+                "mean",
+                "median",
+                "25th_quartile",
+                "75th_quartile"
+            ],
+            "temporal_aggregation": [
+                "climatology"
+            ],
+            "variable": [
+                "precipitation"
+            ],
+            "version": [
+                "1.0"
+            ]
+        },
+        {
+            "derived_variable": [
+                "end_of_season",
+                "length_of_season",
+                "start_of_season"
+            ],
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp4_5"
+            ],
+            "model": [
+                "access1_0",
+                "bcc_csm1_1_m",
+                "csiro_mk3_6_0",
+                "gfdl_esm2m",
+                "hadgem2_cc",
+                "ipsl_cm5a_mr",
+                "ipsl_cm5b_lr",
+                "noresm1_m"
+            ],
+            "statistic": [
+                "mean",
+                "median",
+                "25th_quartile",
+                "75th_quartile"
+            ],
+            "temporal_aggregation": [
+                "climatology"
+            ],
+            "variable": [
+                "growing_season"
+            ],
+            "version": [
+                "1.0"
+            ]
+        },
+        {
+            "derived_variable": [
+                "end_of_season",
+                "length_of_season",
+                "start_of_season"
+            ],
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp4_5"
+            ],
+            "model": [
+                "access1_0",
+                "bcc_csm1_1_m",
+                "csiro_mk3_6_0",
+                "gfdl_esm2m",
+                "hadgem2_cc",
+                "ipsl_cm5a_mr",
+                "noresm1_m"
+            ],
+            "temporal_aggregation": [
+                "annual"
+            ],
+            "variable": [
+                "growing_season"
+            ],
+            "version": [
+                "1.0"
+            ]
+        },
+        {
+            "derived_variable": [
+                "end_of_season",
+                "length_of_season",
+                "start_of_season"
+            ],
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp8_5"
+            ],
+            "model": [
+                "access1_0",
+                "csiro_mk3_6_0",
+                "gfdl_esm2m",
+                "hadgem2_cc",
+                "ipsl_cm5a_mr",
+                "ipsl_cm5b_lr",
+                "noresm1_m"
+            ],
+            "statistic": [
+                "mean",
+                "median",
+                "25th_quartile",
+                "75th_quartile"
+            ],
+            "temporal_aggregation": [
+                "climatology"
+            ],
+            "variable": [
+                "growing_season"
+            ],
+            "version": [
+                "1.0"
+            ]
+        },
+        {
+            "derived_variable": [
+                "end_of_season",
+                "length_of_season",
+                "start_of_season"
+            ],
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp8_5"
+            ],
+            "model": [
+                "access1_0",
+                "csiro_mk3_6_0",
+                "gfdl_esm2m",
+                "hadgem2_cc",
+                "ipsl_cm5a_mr",
+                "noresm1_m"
+            ],
+            "temporal_aggregation": [
+                "annual"
+            ],
+            "variable": [
+                "growing_season"
+            ],
+            "version": [
+                "1.0"
+            ]
+        },
+        {
+            "derived_variable": [
+                "end_of_season",
+                "length_of_season",
+                "start_of_season"
+            ],
+            "ensemble_member": [
+                "r2i1p1"
+            ],
+            "experiment": [
+                "rcp4_5",
+                "rcp8_5"
+            ],
+            "model": [
+                "hadgem2_es"
+            ],
+            "temporal_aggregation": [
+                "annual"
+            ],
+            "variable": [
+                "growing_season"
+            ],
+            "version": [
+                "1.0"
+            ]
+        },
+        {
+            "derived_variable": [
+                "end_of_season",
+                "length_of_season",
+                "start_of_season"
+            ],
+            "ensemble_member": [
+                "r2i1p1"
+            ],
+            "experiment": [
+                "rcp4_5",
+                "rcp8_5"
+            ],
+            "model": [
+                "hadgem2_es"
+            ],
+            "statistic": [
+                "mean",
+                "median",
+                "25th_quartile",
+                "75th_quartile"
+            ],
+            "temporal_aggregation": [
+                "climatology"
+            ],
+            "variable": [
+                "growing_season"
+            ],
+            "version": [
+                "1.0"
+            ]
+        },
+        {
+            "derived_variable": [
+                "maximum_length",
+                "mean_intensity",
+                "mean_length_with_minimum_5_days",
+                "number_of_occurrences"
+            ],
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp4_5"
+            ],
+            "model": [
+                "access1_0",
+                "bcc_csm1_1_m",
+                "csiro_mk3_6_0",
+                "gfdl_esm2m",
+                "hadgem2_cc",
+                "ipsl_cm5a_mr",
+                "ipsl_cm5b_lr",
+                "noresm1_m"
+            ],
+            "statistic": [
+                "mean",
+                "median",
+                "25th_quartile",
+                "75th_quartile"
+            ],
+            "temporal_aggregation": [
+                "climatology"
+            ],
+            "variable": [
+                "dry_spells"
+            ],
+            "version": [
+                "1.0"
+            ]
+        },
+        {
+            "derived_variable": [
+                "maximum_length",
+                "mean_intensity",
+                "mean_length_with_minimum_5_days",
+                "number_of_occurrences"
+            ],
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp4_5"
+            ],
+            "model": [
+                "access1_0",
+                "bcc_csm1_1_m",
+                "csiro_mk3_6_0",
+                "gfdl_esm2m",
+                "hadgem2_cc",
+                "ipsl_cm5a_mr",
+                "noresm1_m"
+            ],
+            "temporal_aggregation": [
+                "annual"
+            ],
+            "variable": [
+                "dry_spells"
+            ],
+            "version": [
+                "1.0"
+            ]
+        },
+        {
+            "derived_variable": [
+                "maximum_length",
+                "mean_intensity",
+                "mean_length_with_minimum_5_days",
+                "number_of_occurrences"
+            ],
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp8_5"
+            ],
+            "model": [
+                "access1_0",
+                "bcc_csm1_1_m",
+                "csiro_mk3_6_0",
+                "gfdl_esm2m",
+                "hadgem2_cc",
+                "ipsl_cm5a_mr",
+                "ipsl_cm5b_lr",
+                "noresm1_m"
+            ],
+            "statistic": [
+                "mean",
+                "25th_quartile",
+                "75th_quartile"
+            ],
+            "temporal_aggregation": [
+                "climatology"
+            ],
+            "variable": [
+                "dry_spells"
+            ],
+            "version": [
+                "1.0"
+            ]
+        },
+        {
+            "derived_variable": [
+                "maximum_length",
+                "mean_intensity",
+                "mean_length_with_minimum_5_days",
+                "number_of_occurrences"
+            ],
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp8_5"
+            ],
+            "model": [
+                "access1_0",
+                "csiro_mk3_6_0",
+                "gfdl_esm2m",
+                "hadgem2_cc",
+                "ipsl_cm5a_mr",
+                "ipsl_cm5b_lr",
+                "noresm1_m"
+            ],
+            "statistic": [
+                "median"
+            ],
+            "temporal_aggregation": [
+                "climatology"
+            ],
+            "variable": [
+                "dry_spells"
+            ],
+            "version": [
+                "1.0"
+            ]
+        },
+        {
+            "derived_variable": [
+                "maximum_length",
+                "mean_intensity",
+                "mean_length_with_minimum_5_days",
+                "number_of_occurrences"
+            ],
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp8_5"
+            ],
+            "model": [
+                "access1_0",
+                "csiro_mk3_6_0",
+                "gfdl_esm2m",
+                "hadgem2_cc",
+                "ipsl_cm5a_mr",
+                "noresm1_m"
+            ],
+            "temporal_aggregation": [
+                "annual"
+            ],
+            "variable": [
+                "dry_spells"
+            ],
+            "version": [
+                "1.0"
+            ]
+        },
+        {
+            "derived_variable": [
+                "maximum_length",
+                "mean_intensity",
+                "mean_length_with_minimum_5_days",
+                "number_of_occurrences"
+            ],
+            "ensemble_member": [
+                "r2i1p1"
+            ],
+            "experiment": [
+                "rcp4_5",
+                "rcp8_5"
+            ],
+            "model": [
+                "hadgem2_es"
+            ],
+            "temporal_aggregation": [
+                "annual"
+            ],
+            "variable": [
+                "dry_spells"
+            ],
+            "version": [
+                "1.0"
+            ]
+        },
+        {
+            "derived_variable": [
+                "maximum_length",
+                "mean_intensity",
+                "mean_length_with_minimum_5_days",
+                "number_of_occurrences"
+            ],
+            "ensemble_member": [
+                "r2i1p1"
+            ],
+            "experiment": [
+                "rcp4_5",
+                "rcp8_5"
+            ],
+            "model": [
+                "hadgem2_es"
+            ],
+            "statistic": [
+                "mean",
+                "median",
+                "25th_quartile",
+                "75th_quartile"
+            ],
+            "temporal_aggregation": [
+                "climatology"
+            ],
+            "variable": [
+                "dry_spells"
+            ],
+            "version": [
+                "1.0"
+            ]
+        },
+        {
+            "derived_variable": [
+                "monthly_mean"
+            ],
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp4_5"
+            ],
+            "model": [
+                "access1_0",
+                "csiro_mk3_6_0",
+                "gfdl_esm2m",
+                "hadgem2_cc",
+                "ipsl_cm5a_lr",
+                "ipsl_cm5a_mr",
+                "ipsl_cm5b_lr"
+            ],
+            "statistic": [
+                "mean",
+                "median"
+            ],
+            "temporal_aggregation": [
+                "climatology"
+            ],
+            "variable": [
+                "cloud_cover",
+                "meridional_wind_speed",
+                "precipitation",
+                "sea_ice_concentration",
+                "sea_surface_temperature",
+                "2m_temperature",
+                "water_vapor_pressure",
+                "wind_speed",
+                "zonal_wind_speed"
+            ],
+            "version": [
+                "1.0"
+            ]
+        },
+        {
+            "derived_variable": [
+                "monthly_mean"
+            ],
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp4_5"
+            ],
+            "model": [
+                "access1_0",
+                "csiro_mk3_6_0",
+                "gfdl_esm2m",
+                "ipsl_cm5a_lr",
+                "ipsl_cm5a_mr",
+                "ipsl_cm5b_lr"
+            ],
+            "statistic": [
+                "25th_quartile"
+            ],
+            "temporal_aggregation": [
+                "climatology"
+            ],
+            "variable": [
+                "cloud_cover",
+                "meridional_wind_speed",
+                "precipitation",
+                "sea_ice_concentration",
+                "sea_surface_temperature",
+                "2m_temperature",
+                "water_vapor_pressure",
+                "wind_speed",
+                "zonal_wind_speed"
+            ],
+            "version": [
+                "1.0"
+            ]
+        },
+        {
+            "derived_variable": [
+                "monthly_mean"
+            ],
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp4_5"
+            ],
+            "model": [
+                "access1_0",
+                "gfdl_esm2m",
+                "hadgem2_cc",
+                "ipsl_cm5a_lr",
+                "ipsl_cm5a_mr",
+                "ipsl_cm5b_lr"
+            ],
+            "temporal_aggregation": [
+                "monthly"
+            ],
+            "variable": [
+                "cloud_cover",
+                "meridional_wind_speed",
+                "precipitation",
+                "sea_ice_concentration",
+                "sea_surface_temperature",
+                "2m_temperature",
+                "water_vapor_pressure",
+                "wind_speed",
+                "zonal_wind_speed"
+            ],
+            "version": [
+                "1.0"
+            ]
+        },
+        {
+            "derived_variable": [
+                "monthly_mean"
+            ],
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp4_5"
+            ],
+            "model": [
+                "csiro_mk3_6_0",
+                "hadgem2_cc",
+                "ipsl_cm5a_lr",
+                "ipsl_cm5a_mr",
+                "ipsl_cm5b_lr"
+            ],
+            "statistic": [
+                "75th_quartile"
+            ],
+            "temporal_aggregation": [
+                "climatology"
+            ],
+            "variable": [
+                "cloud_cover",
+                "meridional_wind_speed",
+                "precipitation",
+                "sea_ice_concentration",
+                "sea_surface_temperature",
+                "2m_temperature",
+                "water_vapor_pressure",
+                "wind_speed",
+                "zonal_wind_speed"
+            ],
+            "version": [
+                "1.0"
+            ]
+        },
+        {
+            "derived_variable": [
+                "monthly_mean"
+            ],
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp4_5"
+            ],
+            "model": [
+                "hadgem2_cc"
+            ],
+            "statistic": [
+                "25th_quartile"
+            ],
+            "temporal_aggregation": [
+                "climatology"
+            ],
+            "variable": [
+                "cloud_cover",
+                "meridional_wind_speed",
+                "precipitation",
+                "sea_ice_concentration",
+                "sea_surface_temperature",
+                "2m_temperature",
+                "water_vapor_pressure",
+                "wind_speed"
+            ],
+            "version": [
+                "1.0"
+            ]
+        },
+        {
+            "derived_variable": [
+                "monthly_mean"
+            ],
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp4_5",
+                "rcp8_5"
+            ],
+            "model": [
+                "access1_0",
+                "gfdl_esm2m"
+            ],
+            "statistic": [
+                "75th_quartile"
+            ],
+            "temporal_aggregation": [
+                "climatology"
+            ],
+            "variable": [
+                "cloud_cover",
+                "meridional_wind_speed",
+                "precipitation",
+                "sea_ice_concentration",
+                "sea_surface_temperature",
+                "2m_temperature",
+                "water_vapor_pressure",
+                "wind_speed"
+            ],
+            "version": [
+                "1.0"
+            ]
+        },
+        {
+            "derived_variable": [
+                "monthly_mean"
+            ],
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp4_5",
+                "rcp8_5"
+            ],
+            "model": [
+                "bcc_csm1_1_m",
+                "noresm1_m"
+            ],
+            "temporal_aggregation": [
+                "monthly"
+            ],
+            "variable": [
+                "cloud_cover",
+                "meridional_wind_speed",
+                "precipitation",
+                "sea_ice_concentration",
+                "sea_surface_temperature",
+                "2m_temperature",
+                "water_vapor_pressure",
+                "zonal_wind_speed"
+            ],
+            "version": [
+                "1.0"
+            ]
+        },
+        {
+            "derived_variable": [
+                "monthly_mean"
+            ],
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp4_5",
+                "rcp8_5"
+            ],
+            "model": [
+                "bcc_csm1_1_m",
+                "noresm1_m"
+            ],
+            "statistic": [
+                "mean",
+                "median",
+                "25th_quartile",
+                "75th_quartile"
+            ],
+            "temporal_aggregation": [
+                "climatology"
+            ],
+            "variable": [
+                "cloud_cover",
+                "meridional_wind_speed",
+                "precipitation",
+                "sea_ice_concentration",
+                "sea_surface_temperature",
+                "2m_temperature",
+                "water_vapor_pressure",
+                "zonal_wind_speed"
+            ],
+            "version": [
+                "1.0"
+            ]
+        },
+        {
+            "derived_variable": [
+                "monthly_mean"
+            ],
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp4_5",
+                "rcp8_5"
+            ],
+            "model": [
+                "csiro_mk3_6_0"
+            ],
+            "temporal_aggregation": [
+                "monthly"
+            ],
+            "variable": [
+                "cloud_cover",
+                "meridional_wind_speed",
+                "precipitation",
+                "2m_temperature",
+                "water_vapor_pressure",
+                "wind_speed",
+                "zonal_wind_speed"
+            ],
+            "version": [
+                "1.0"
+            ]
+        },
+        {
+            "derived_variable": [
+                "monthly_mean"
+            ],
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp8_5"
+            ],
+            "model": [
+                "access1_0",
+                "csiro_mk3_6_0",
+                "gfdl_esm2m",
+                "ipsl_cm5a_lr",
+                "ipsl_cm5a_mr",
+                "ipsl_cm5b_lr"
+            ],
+            "statistic": [
+                "mean",
+                "median",
+                "25th_quartile"
+            ],
+            "temporal_aggregation": [
+                "climatology"
+            ],
+            "variable": [
+                "cloud_cover",
+                "meridional_wind_speed",
+                "precipitation",
+                "sea_ice_concentration",
+                "sea_surface_temperature",
+                "2m_temperature",
+                "water_vapor_pressure",
+                "wind_speed",
+                "zonal_wind_speed"
+            ],
+            "version": [
+                "1.0"
+            ]
+        },
+        {
+            "derived_variable": [
+                "monthly_mean"
+            ],
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp8_5"
+            ],
+            "model": [
+                "access1_0",
+                "gfdl_esm2m",
+                "ipsl_cm5a_lr",
+                "ipsl_cm5a_mr",
+                "ipsl_cm5b_lr"
+            ],
+            "temporal_aggregation": [
+                "monthly"
+            ],
+            "variable": [
+                "cloud_cover",
+                "meridional_wind_speed",
+                "precipitation",
+                "sea_ice_concentration",
+                "sea_surface_temperature",
+                "2m_temperature",
+                "water_vapor_pressure",
+                "wind_speed",
+                "zonal_wind_speed"
+            ],
+            "version": [
+                "1.0"
+            ]
+        },
+        {
+            "derived_variable": [
+                "monthly_mean"
+            ],
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp8_5"
+            ],
+            "model": [
+                "csiro_mk3_6_0",
+                "ipsl_cm5a_lr",
+                "ipsl_cm5a_mr",
+                "ipsl_cm5b_lr"
+            ],
+            "statistic": [
+                "75th_quartile"
+            ],
+            "temporal_aggregation": [
+                "climatology"
+            ],
+            "variable": [
+                "cloud_cover",
+                "meridional_wind_speed",
+                "precipitation",
+                "sea_ice_concentration",
+                "sea_surface_temperature",
+                "2m_temperature",
+                "water_vapor_pressure",
+                "wind_speed",
+                "zonal_wind_speed"
+            ],
+            "version": [
+                "1.0"
+            ]
+        },
+        {
+            "derived_variable": [
+                "monthly_mean"
+            ],
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp8_5"
+            ],
+            "model": [
+                "hadgem2_cc"
+            ],
+            "temporal_aggregation": [
+                "monthly"
+            ],
+            "variable": [
+                "cloud_cover",
+                "meridional_wind_speed",
+                "precipitation",
+                "sea_surface_temperature",
+                "2m_temperature",
+                "water_vapor_pressure",
+                "wind_speed",
+                "zonal_wind_speed"
+            ],
+            "version": [
+                "1.0"
+            ]
+        },
+        {
+            "derived_variable": [
+                "monthly_mean"
+            ],
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp8_5"
+            ],
+            "model": [
+                "hadgem2_cc"
+            ],
+            "statistic": [
+                "mean",
+                "median",
+                "75th_quartile"
+            ],
+            "temporal_aggregation": [
+                "climatology"
+            ],
+            "variable": [
+                "cloud_cover",
+                "meridional_wind_speed",
+                "precipitation",
+                "sea_surface_temperature",
+                "2m_temperature",
+                "water_vapor_pressure",
+                "wind_speed",
+                "zonal_wind_speed"
+            ],
+            "version": [
+                "1.0"
+            ]
+        },
+        {
+            "derived_variable": [
+                "monthly_mean"
+            ],
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp8_5"
+            ],
+            "model": [
+                "hadgem2_cc"
+            ],
+            "statistic": [
+                "25th_quartile"
+            ],
+            "temporal_aggregation": [
+                "climatology"
+            ],
+            "variable": [
+                "cloud_cover",
+                "meridional_wind_speed",
+                "precipitation",
+                "sea_surface_temperature",
+                "2m_temperature",
+                "water_vapor_pressure",
+                "wind_speed"
+            ],
+            "version": [
+                "1.0"
+            ]
+        },
+        {
+            "derived_variable": [
+                "monthly_mean"
+            ],
+            "ensemble_member": [
+                "r2i1p1"
+            ],
+            "experiment": [
+                "rcp4_5",
+                "rcp8_5"
+            ],
+            "model": [
+                "hadgem2_es"
+            ],
+            "temporal_aggregation": [
+                "monthly"
+            ],
+            "variable": [
+                "cloud_cover",
+                "meridional_wind_speed",
+                "precipitation",
+                "sea_ice_concentration",
+                "sea_surface_temperature",
+                "2m_temperature",
+                "water_vapor_pressure",
+                "wind_speed",
+                "zonal_wind_speed"
+            ],
+            "version": [
+                "1.0"
+            ]
+        },
+        {
+            "derived_variable": [
+                "monthly_mean"
+            ],
+            "ensemble_member": [
+                "r2i1p1"
+            ],
+            "experiment": [
+                "rcp4_5",
+                "rcp8_5"
+            ],
+            "model": [
+                "hadgem2_es"
+            ],
+            "statistic": [
+                "mean",
+                "median",
+                "25th_quartile",
+                "75th_quartile"
+            ],
+            "temporal_aggregation": [
+                "climatology"
+            ],
+            "variable": [
+                "cloud_cover",
+                "meridional_wind_speed",
+                "precipitation",
+                "sea_ice_concentration",
+                "sea_surface_temperature",
+                "2m_temperature",
+                "water_vapor_pressure",
+                "wind_speed",
+                "zonal_wind_speed"
+            ],
+            "version": [
+                "1.0"
+            ]
+        },
+        {
+            "derived_variable": [
+                "monthly_sum"
+            ],
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp4_5"
+            ],
+            "model": [
+                "access1_0",
+                "bcc_csm1_1_m",
+                "csiro_mk3_6_0",
+                "gfdl_esm2m",
+                "ipsl_cm5a_mr",
+                "ipsl_cm5b_lr",
+                "noresm1_m"
+            ],
+            "temporal_aggregation": [
+                "monthly"
+            ],
+            "variable": [
+                "frost_days",
+                "growing_degree_days"
+            ],
+            "version": [
+                "1.0"
+            ]
+        },
+        {
+            "derived_variable": [
+                "monthly_sum"
+            ],
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp4_5"
+            ],
+            "model": [
+                "access1_0",
+                "bcc_csm1_1_m",
+                "csiro_mk3_6_0",
+                "gfdl_esm2m",
+                "ipsl_cm5a_mr",
+                "ipsl_cm5b_lr",
+                "noresm1_m"
+            ],
+            "statistic": [
+                "mean",
+                "median",
+                "25th_quartile",
+                "75th_quartile"
+            ],
+            "temporal_aggregation": [
+                "climatology"
+            ],
+            "variable": [
+                "frost_days",
+                "growing_degree_days"
+            ],
+            "version": [
+                "1.0"
+            ]
+        },
+        {
+            "derived_variable": [
+                "monthly_sum"
+            ],
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp8_5"
+            ],
+            "model": [
+                "access1_0",
+                "csiro_mk3_6_0",
+                "gfdl_esm2m",
+                "ipsl_cm5a_mr",
+                "ipsl_cm5b_lr",
+                "noresm1_m"
+            ],
+            "temporal_aggregation": [
+                "monthly"
+            ],
+            "variable": [
+                "frost_days",
+                "growing_degree_days"
+            ],
+            "version": [
+                "1.0"
+            ]
+        },
+        {
+            "derived_variable": [
+                "monthly_sum"
+            ],
+            "ensemble_member": [
+                "r1i1p1"
+            ],
+            "experiment": [
+                "rcp8_5"
+            ],
+            "model": [
+                "access1_0",
+                "csiro_mk3_6_0",
+                "gfdl_esm2m",
+                "ipsl_cm5a_mr",
+                "ipsl_cm5b_lr",
+                "noresm1_m"
+            ],
+            "statistic": [
+                "mean",
+                "median",
+                "25th_quartile",
+                "75th_quartile"
+            ],
+            "temporal_aggregation": [
+                "climatology"
+            ],
+            "variable": [
+                "frost_days",
+                "growing_degree_days"
+            ],
+            "version": [
+                "1.0"
+            ]
+        },
+        {
+            "derived_variable": [
+                "monthly_sum"
+            ],
+            "ensemble_member": [
+                "r2i1p1"
+            ],
+            "experiment": [
+                "rcp4_5",
+                "rcp8_5"
+            ],
+            "model": [
+                "hadgem2_es"
+            ],
+            "statistic": [
+                "mean",
+                "median",
+                "25th_quartile",
+                "75th_quartile"
+            ],
+            "temporal_aggregation": [
+                "climatology"
+            ],
+            "variable": [
+                "frost_days",
+                "growing_degree_days"
+            ],
+            "version": [
+                "1.0"
+            ]
+        }
+    ]
+}

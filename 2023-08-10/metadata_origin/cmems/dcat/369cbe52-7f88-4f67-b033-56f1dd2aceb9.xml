@@ -1,0 +1,67 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:dct="http://purl.org/dc/terms/" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/369cbe52-7f88-4f67-b033-56f1dd2aceb9">
+        <foaf:primaryTopic rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/resource/29e709a0-1425-4031-8a44-beaa04f7e1f7"/>
+        <dct:issued>2023-03-22</dct:issued>
+        <dct:modified>2023-03-22</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/srv/eng/xml.metadata.get?uuid=369cbe52-7f88-4f67-b033-56f1dd2aceb9">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork?uuid=369cbe52-7f88-4f67-b033-56f1dd2aceb9">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/resource/29e709a0-1425-4031-8a44-beaa04f7e1f7">
+        <dct:identifier>29e709a0-1425-4031-8a44-beaa04f7e1f7</dct:identifier>
+        <dct:title>Atlantic- European North West Shelf- Wave Physics Reanalysis</dct:title>
+        <dct:abstract>'''Short  description:'''
+
+This product provides long term hindcast outputs from a wave model for the North-West European Shelf. The wave model is WAVEWATCH III and the North-West Shelf configuration is based on a two-tier Spherical Multiple Cell grid mesh (3 and 1.5 km cells) derived from with the 1.5km grid used for [https://resources.marine.copernicus.eu/?option=com_csw&amp;view=details&amp;product_id=NORTHWESTSHELF_ANALYSIS_FORECAST_PHY_004_013 NORTHWESTSHELF_ANALYSIS_FORECAST_PHY_004_013]. The model is forced by lateral boundary conditions from a Met Office Global wave hindcast. The atmospheric forcing is given by the [https://www.ecmwf.int/en/forecasts/datasets/reanalysis-datasets/era5 ECMWF ERA-5] Numerical Weather Prediction reanalysis. Model outputs comprise wave parameters integrated from the two-dimensional (frequency, direction) wave spectrum and describe wave height, period and directional characteristics for both the overall sea-state and wind-sea and swell components. The data are delivered on a regular grid at approximately 1.5km resolution, consistent with physical ocean and wave analysis-forecast products. See [http://catalogue.marine.copernicus.eu/documents/PUM/CMEMS-NWS-PUM-004-015.pdf CMEMS-NWS-PUM-004-015] for more information. Further details of the model, including source term physics, propagation schemes, forcing and boundary conditions, and validation, are provided in the [http://catalogue.marine.copernicus.eu/documents/QUID/CMEMS-NWS-QUID-004-015.pdf CMEMS-NWS-QUID-004-015].
+The product is updated biannually provinding six-month extension of the time series.
+
+'''Associated products:'''
+
+[https://resources.marine.copernicus.eu/?option=com_csw&amp;view=details&amp;product_id=NORTHWESTSHELF_ANALYSIS_FORECAST_WAV_004_014 NORTHWESTSHELF_ANALYSIS_FORECAST_WAV_004_014].
+
+'''DOI (product) :'''   
+https://doi.org/10.48670/moi-00060</dct:abstract>
+        <dcat:theme rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/thesaurus/iso/topicCategory/oceans"/>
+        <foaf:thumbnail rdf:resource="https://catalogue.marine.copernicus.eu/documents/IMG/NWSHELF_REANALYSIS_WAV_004_015.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((-16.00 46.00, -16.00 62.75, 13.00 62.75, 13.00 46.00, -16.00 46.00))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:issued>2012-08-26</dct:issued>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/NWS-METOFFICE-EXETER-UK"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/NWS-METOFFICE-EXETER-UK"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/NWS-METOFFICE-EXETER-UK"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/NWS-METOFFICE-EXETER-UK"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/NWS-METOFFICE-EXETER-UK"/>
+        <dct:accrualPeriodicity>biannually</dct:accrualPeriodicity>
+        <dct:license>otherRestrictions</dct:license>
+        <dct:license>license</dct:license>
+        <dct:license>No limitations on public access</dct:license>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=NWSHELF_REANALYSIS_WAV_004_015-TDS&amp;product=MetO-NWS-WAV-RAN"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/dodsC/MetO-NWS-WAV-RAN"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/wms/MetO-NWS-WAV-RAN"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/997b963a-eb35-46ad-a472-d5b88bf2a187"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/b2d65096-c085-4ee9-b071-1b14d6bddf6e"/>
+        <dcat:dataQuality>The myOcean products depends on other products for production or validation. The detailed list of dependencies is given in ISO19115's aggregationInfo (ISO19139 Xpath = "gmd:MD_Metadata/gmd:identificationInfo/gmd:aggregationInfo[./gmd:MD_AggregateInformation/gmd:initiativeType/gmd:DS_InitiativeTypeCode/@codeListValue='upstream-validation' or 'upstream-production']")</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+    

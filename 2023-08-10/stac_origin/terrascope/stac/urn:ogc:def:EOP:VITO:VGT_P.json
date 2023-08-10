@@ -1,0 +1,82 @@
+{
+    "type": "Collection",
+    "stac_version": "1.0.0",
+    "id": "urn:ogc:def:EOP:VITO:VGT_P",
+    "title": "Physical products of SPOT VEGETATION (VGT-P)",
+    "description": "VGT-P (P= physical) products are adapted for scientific applications requiring highly accurate physical measurements. The data is corrected for system errors (error registration of the different channels, calibration of all the detectors along the line-array detectors for each spectral band) and resampled to predefined geographic projections chosen by the user. The pixel brightness count is the ground area's apparent reflectance as seen at the top of atmosphere (TOA). Auxiliary data supplied with the products allow users to process the original reflectance values using their own algorithms. The image products cover all or a part of a VEGETATION segment (data strip over land). The VEGETATION instrument is operational since April 1998, first with VGT1, from March 2003 onwards, with VGT2. More information is available on: https://www.vito-eodata.be/PDF/image/faq_help/Faq.html#SPOT-VEGETATION",
+    "keywords": [
+        "VITO",
+        "TERRASCOPE",
+        "ESA",
+        "Orthoimagery",
+        "SPOT",
+        "SPOT-4",
+        "SPOT-5",
+        "VEGETATION-1",
+        "VEGETATION-2",
+        "Level-2",
+        "Geohysical environment",
+        "Cloud",
+        "Shadow",
+        "Snow",
+        "Land use",
+        "Radiometric quality"
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -179.999,
+                    -56,
+                    179.999,
+                    75
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1998-04-01T00:00:00Z",
+                    "2014-05-31T23:59:59Z"
+                ]
+            ]
+        }
+    },
+    "license": "Copyright CNES.Distributed by VITO / Licence: https://terrascope.be/en/terms-use",
+    "links": [
+        {
+            "rel": "self",
+            "type": "application/json",
+            "href": "https://services.terrascope.be/stac/collections/urn:ogc:def:EOP:VITO:VGT_P"
+        },
+        {
+            "rel": "parent",
+            "type": "application/json",
+            "href": "https://services.terrascope.be/stac/"
+        },
+        {
+            "rel": "items",
+            "type": "application/geo+json",
+            "href": "https://services.terrascope.be/stac/collections/urn:ogc:def:EOP:VITO:VGT_P/items"
+        },
+        {
+            "rel": "root",
+            "type": "application/json",
+            "href": "https://services.terrascope.be/stac/"
+        }
+    ],
+    "summaries": {
+        "datetime": {
+            "min": "1998-04-01T00:00:00Z",
+            "max": "2014-05-31T23:59:59Z"
+        },
+        "constellation": [
+            "SPOT-5",
+            "SPOT-4"
+        ],
+        "instruments": [
+            "VEGETATION-1",
+            "VEGETATION-2"
+        ]
+    }
+}

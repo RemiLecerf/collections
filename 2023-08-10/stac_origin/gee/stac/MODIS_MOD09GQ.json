@@ -1,0 +1,139 @@
+{
+    "type": "Collection",
+    "stac_version": "1.0.0",
+    "stac_extensions": [
+        "collection-assets"
+    ],
+    "id": "MODIS/MOD09GQ",
+    "title": "MOD09GQ.005 Terra Surface Reflectance Daily L2G Global 250m [deprecated]",
+    "description": "The MODIS Surface Reflectance products\nprovide an estimate of the surface spectral reflectance as it would be\nmeasured at ground level in the absence of atmospheric scattering or\nabsorption. Low-level data are corrected for atmospheric gases and\naerosols, yielding a level-2 basis for several higher-order gridded\nlevel-2 (L2G) and level-3 products.\n\nMOD09GQ provides Bands\n1 and 2 at a 250-meter resolution in a daily gridded L2G product in\nthe Sinusoidal projection. Science Data Sets provided for this product\ninclude reflectance for Bands 1 and 2, a quality rating, observation\ncoverage, and observation number. This product is meant to be used in\nconjunction with the MOD09GA where important quality and viewing\ngeometry information is stored.\n\nPlease visit [LP DAAC 'Citing Our Data' page](https://lpdaac.usgs.gov/citing_our_data) for information on citing LP DAAC datasets.\n",
+    "keywords": [
+        "daily",
+        "global",
+        "mod09gq",
+        "modis",
+        "surface_reflectance",
+        "terra",
+        "usgs"
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-02-24T00:00:00Z",
+                    "2017-03-30T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "providers": [
+        {
+            "name": "NASA LP DAAC at the USGS EROS Center",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://lpdaac.usgs.gov/dataset_discovery/modis/modis_products_table/mod09gq"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_MOD09GQ"
+        }
+    ],
+    "license": "proprietary",
+    "links": [
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections/MODIS/MOD09GQ",
+            "rel": "self",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections",
+            "rel": "parent",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/",
+            "rel": "root",
+            "type": "application/json"
+        },
+        {
+            "code": "JavaScript",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/MODIS/MODIS_MOD09GQ",
+            "rel": "related",
+            "title": "Run the example for MODIS/MOD09GQ in the Earth Engine Code Editor",
+            "type": "text/html"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/images/MODIS/MODIS_MOD09GQ_sample.png",
+            "rel": "preview",
+            "type": "image/png"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_MOD09GQ#terms-of-use",
+            "rel": "license",
+            "type": "text/html"
+        },
+        {
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_006_MOD09GQ.json",
+            "rel": "successor-version",
+            "title": "MODIS/006/MOD09GQ",
+            "type": "application/json"
+        }
+    ],
+    "cube:dimensions": {
+        "x": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                -180,
+                180
+            ]
+        },
+        "y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                -90,
+                90
+            ]
+        },
+        "t": {
+            "type": "temporal",
+            "extent": [
+                "2000-02-24T00:00:00Z",
+                "2017-03-30T00:00:00Z"
+            ]
+        }
+    },
+    "assets": {
+        "preview_4": {
+            "href": "https://developers.google.com/earth-engine/datasets/images/MODIS/MODIS_MOD09GQ_sample.png",
+            "type": "image/png",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    },
+    "deprecated": true,
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "day"
+    },
+    "gee:terms_of_use": "MODIS data and products acquired through the LP DAAC have no restrictions on subsequent use, sale, or redistribution.\n",
+    "gee:type": "image_collection"
+}

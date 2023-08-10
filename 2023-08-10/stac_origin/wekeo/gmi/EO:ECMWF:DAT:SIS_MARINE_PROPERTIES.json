@@ -1,0 +1,80 @@
+{
+  "type": "Collection",
+  "id": "EO:ECMWF:DAT:SIS_MARINE_PROPERTIES",
+  "stac_version": "1.0.0",
+  "description": "The dataset contains model projections of changes in marine physics and biogeochemistry and the lower trophic levels of the marine food web across the Northwest European Shelf and Mediterranean Sea out to the year 2100. The dataset has been produced using the marine ecosystem model, ERSEM v15.06 (European Regional Seas Ecosystem Model), coupled to the regional ocean circulation models, POLCOMS (the Proudman Oceanographic Laboratory Coastal Ocean Modelling System) and NEMO (Nucleus for European Modelling of the Ocean) using the FABM (Framework for Aquatic Biogeochemical Models) coupler. ERSEM is designed to simulate the cycles of carbon and the major nutrient elements nitrogen, phosphorous and silicon within the marine environment. Organisms at the base of the marine food web – the microscopic aquatic plants known as phytoplankton – play an integral role in these cycles and are explicitly represented in the model. So are the microscopic marine organisms which feed upon them and provide a vital link to commercially exploited species of fish and shell fish higher up the food chain.\nPOLCOMS and NEMO are well-established physical models with the ability to simulate regions that include both the deep ocean and the continental shelf. They track the movement of water and transfer of energy and momentum in three dimensions, enabling the water temperature, salinity (the salt content of sea water) and currents to be modelled. The coupled POLCOMS/NEMO-ERSEM system makes it possible to include the effects of physical transport and mixing processes on the spatiotemporal distribution of nutrients, phytoplankton, and other components of the marine ecosystem. The dataset includes physical variables, such as horizontal velocity components, temperature and salinity; and a range of biogeochemical variables, including the concentration of dissolved oxygen and the concentration of different nutrients. These variables were simulated under two future scenarios, based on different Representative Concentration Pathways (RCP) for future greenhouse gas emissions: the intermediate scenario, RCP4.5, in which greenhouse gas emissions peak around 2040 before declining; and the business as usual scenario, RCP8.5, in which greenhouse gas emissions continue to rise throughout the century. The hydrodynamic biogeochemical models were each driven by a global climate model generated for the Coupled Model Inter-comparison Project Phase 5 (CMIP5) at the open ocean boundaries, in combination with downscaled atmospheric data generated using the Swedish Meteorological and Hydrological Institute (SMHI) Rossby Centre Regional Atmospheric Model (RCA4).\nThis dataset was produced on behalf of the Copernicus Climate Change Service. \n\nVariables in the dataset/application are:\nApparent oxygen utilisation, Euphotic zone chlorophyll-a, Euphotic zone depth, Mole concentration of dissolved oxygen, Mole concentration of nitrate and nitrite, Mole concentration of phosphate, Mole concentration of silicate, Net primary production, Organic carbon in the water column, Phytoplankton carbon, Potential energy anomaly, Saturation state of aragonite, Sea water pH, Sea water potential temperature, Sea water salinity, Secondary production, Total chlorophyll-a, Zooplankton carbon, u-velocity component, v-velocity component",
+  "links": [
+    {
+      "rel": "hosts",
+      "href": "https://confluence.ecmwf.int/x/6KHmE",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Product user guide for the marine biogeochemistry products"
+    },
+    {
+      "rel": "hosts",
+      "href": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.dcc9295c",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Climate Data Store catalogue"
+    },
+    {
+      "rel": "hosts",
+      "href": "https://confluence.ecmwf.int/x/he-mE",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Technical guide for NEMO-ERSEM"
+    },
+    {
+      "rel": "hosts",
+      "href": "https://confluence.ecmwf.int/x/c_-mE",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Technical guide for POLCOMS-ERSEM"
+    },
+    {
+      "rel": "hosts",
+      "href": "http://datastore.copernicus-climate.eu/documents/sis-european-fisheries/SIS_Fisheries_User_Guides_for_Products_ERSEM_v1.1.pdf",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "User guide for NEMO-ERSEM and POLCOMS-ERSEM products (v1.1) (PDF)"
+    }
+  ],
+  "title": "Marine biogeochemistry data for the Northwest European Shelf and Mediterranean Sea from 2006 up to 2100 derived from climate projections",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1979-01-01T00:00:00Z",
+          "2018-12-31T23:59:59Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Oceanographic geographical features",
+    "Sector: Coastal regions",
+    "Product type: Climate projections",
+    "Spatial coverage: Europe",
+    "Variable domain: Ocean (biology)",
+    "Temporal coverage: Present",
+    "Temporal coverage: Future",
+    "Provider: Copernicus C3S"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

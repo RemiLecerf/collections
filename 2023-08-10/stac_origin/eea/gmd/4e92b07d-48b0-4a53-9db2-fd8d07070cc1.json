@@ -1,0 +1,72 @@
+{
+  "type": "Collection",
+  "id": "4e92b07d-48b0-4a53-9db2-fd8d07070cc1",
+  "stac_version": "1.0.0",
+  "description": "The HRL Small Woody Features (SWF) is a new Copernicus Land Monitoring Service (CMLS) product, which provides harmonized information on linear structures such as hedgerows, as well as patches (200 m² ≤ area ≤ 5000 m²) of woody features across the EEA39 countries. \nSmall woody landscape features are important vectors of biodiversity and provide information on fragmentation of habitats with a direct potential for restoration while also providing a link to hazard protection and green infrastructure, amongst others. The SWF layer contains woody linear, and small patchy elements, but is not differentiated into trees, hedges, bushes and scrub. The spatial pattern are limited to linear structures and isolated patches (patchy structures) on the basis of geometric characteristics. Additional Woody Features (AWF) are also included in this product. They consist of woody structures that do not fulfil the SWF geometric specifications but which are connected to valid SWFs structures. VHR imagery (DEIMOS-2, Pleiades 1A, Pleiades 1B, GeoEye-1, SPOT 6, SPOT 7, WorldView-2, WorldView-3 images from 2015) made available in the ESA Copernicus DWH are the main data source for the detection of small woody features identifiable within the given image resolution.\nThe dataset is available for the 2015 reference year and is produced in three different formats. This metadata corresponds to the SWF 5m spatial resolution raster layer, which distinguishes between SWF (code =1) and AWF (code =3)  ). This layer is derived from the SWF vector product in order to be more in line with other HR layers, and for allowing raster processing of the results. It describes the SWF landscape according to the high resolution of the input data, but without taking into account the possible small geometric inaccuracy of the vector product (due to VHR geometric imprecision, automatic processing such as smoothing, etc.). The geometric resolution is consistent with the EEA reference grid.",
+  "links": [
+    {
+      "rel": "hosts",
+      "href": "https://land.copernicus.eu/pan-european/high-resolution-layers/small-woody-features/small-woody-features-2015",
+      "type": "WWW:LINK-1.0-http--link"
+    },
+    {
+      "rel": "hosts",
+      "href": "https://image.discomap.eea.europa.eu/arcgis/services/GioLandPublic/HRL_SmallWoodyFeatures_2015_005m/ImageServer/WMSServer?request=GetCapabilities&service=WMS",
+      "type": "OGC:WMS",
+      "title": "0"
+    },
+    {
+      "rel": "hosts",
+      "href": "https://image.discomap.eea.europa.eu/arcgis/rest/services/GioLandPublic/HRL_SmallWoodyFeatures_2015_005m/ImageServer",
+      "type": "ESRI:REST"
+    }
+  ],
+  "title": "High Resolution Layer: Small Woody Features 2015 (raster 5m), Nov. 2019",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -31.268814,
+          27.638029,
+          44.820546,
+          71.185417
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2014-01-01T00:00:00Z",
+          "2016-12-31T23:59:59Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Land cover",
+    "EEA39",
+    "land cover",
+    "urban area",
+    "sealing",
+    "built environment",
+    "land use",
+    "landscape alteration",
+    "soil surface sealing",
+    "European",
+    "2020 3.6.7",
+    "Biodiversity",
+    "Agriculture and food",
+    "Land use"
+  ],
+  "providers": [
+    {
+      "name": "European Environment Agency",
+      "description": "SDI - EEA geospatial data catalogue",
+      "roles": [
+        "host"
+      ],
+      "url": "https://sdi.eea.europa.eu/"
+    }
+  ]
+}

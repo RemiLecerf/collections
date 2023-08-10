@@ -1,0 +1,66 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dct="http://purl.org/dc/terms/" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/metadata/eu.copernicus.climate.sis-shipping-consumption-on-routes">
+        <foaf:primaryTopic rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/resource/10.24381/cds.3c5cc681"/>
+        <dct:issued>2018-03-28</dct:issued>
+        <dct:modified>2018-03-28</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/srv/eng/xml.metadata.get?uuid=eu.copernicus.climate.sis-shipping-consumption-on-routes">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://cds.climate.copernicus.eu:443//geonetwork?uuid=eu.copernicus.climate.sis-shipping-consumption-on-routes">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/resource/10.24381/cds.3c5cc681">
+        <dct:identifier>10.24381/cds.3c5cc681</dct:identifier>
+        <dct:title>Ship performance along standard shipping routes derived from reanalysis and seasonal forecasts</dct:title>
+        <dct:abstract>The dataset presents ship performance indicators for 80 popular global commercial shipping routes computed using a bespoke Fuel Consumption Model (FCM) developed for the Copernicus Climate Change Service. The purpose of the dataset is to provide information on the weather dependence and seasonality of ship performances with the aim of reducing fuel consumption by optimizing the route selection and ship's sailing speed. A trader or a fleet manager can use this information to estimate the average time and fuel consumption of a journey for a given month together with the uncertainty on meeting the target time of arrival. The seasonal forecast data quantifies the impact of the monthly wind anomalies on the fuel consumption and trip duration. 
+The fuel consumption model comprises two major modules: resistance due to calm water, and resistance due to met-ocean parameters of wind, waves, and currents. For wind (eastward wind speed component, northward wind speed component), and waves (significant wave height, mean wave direction, peak wave period), the fifth generation ECMWF reanalysis for the global climate (ERA5) is used. For ocean currents (eastward current speed component, northward current speed component), monthly mean reanalysis from the ECMWF's ocean reanalysis system 4 (ORAS4) is used. For seasonal forecast products, monthly anomalies from the ECMWF's seasonal prediction system 5 (SEAS5) are used for wind, whilst the monthly mean climatology from ERA5 and ORAS4 is used for waves and currents, respectively.
+The dataset was produced on behalf of the Copernicus Climate Change Sector using reanalysis data available on the Climate Data Store.
+
+Variables in the dataset/application are:
+Fuel consumption at fixed power, Fuel consumption at fixed speed, Shaft power at fixed speed, Ship speed at fixed shaft power, Trip duration at fixed power</dct:abstract>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/GEMET%20-%20INSPIRE%20themes%2C%20version%201.0/Transport networks"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Sector: Transport"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Spatial coverage: Global"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Variable domain: Atmosphere (surface)"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Temporal coverage: Past"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Temporal coverage: Future"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Provider: Copernicus C3S"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/iso/topicCategory/climatologyMeteorologyAtmosphere"/>
+        <foaf:thumbnail rdf:resource="https://datastore.copernicus-climate.eu/c3s/published-forms-v2/c3sprod/sis-shipping-consumption-on-routes/overview.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((0 -89, 0 89, 360 89, 360 -89, 0 -89))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:temporal>1993-01-01
+          /</dct:temporal>
+        <dct:publisher rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/organization/ECMWF"/>
+        <dct:accrualPeriodicity>asNeeded</dct:accrualPeriodicity>
+        <dct:language>eng</dct:language>
+        <dct:license>licence</dct:license>
+        <dct:license>https://cds.climate.copernicus.eu/api/v2/terms/static/20180314_Copernicus_License_V1.1.pdf</dct:license>
+        <dcat:distribution rdf:resource="https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.3c5cc681"/>
+        <dcat:distribution rdf:resource="https://confluence.ecmwf.int/x/u4ByEw"/>
+        <dcat:distribution rdf:resource="https://confluence.ecmwf.int/x/yoByEw"/>
+        <dcat:distribution rdf:resource="https://confluence.ecmwf.int/x/94ByEw"/>
+        <dcat:distribution rdf:resource="https://confluence.ecmwf.int/x/GIFyEw"/>
+        <dcat:dataQuality>EC Copernicus program</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+    

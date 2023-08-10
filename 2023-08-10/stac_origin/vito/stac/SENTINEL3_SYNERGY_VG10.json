@@ -1,0 +1,236 @@
+{
+    "stac_version": "0.9.0",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/datacube/v2.2.0/schema.json",
+        "https://stac-extensions.github.io/eo/v1.1.0/schema.json"
+    ],
+    "id": "SENTINEL3_SYNERGY_VG10",
+    "title": "Sentinel-3 Level 2 Synergy 1 km VEGETATION-Like 10-daily synthesis TOC reflectance and NDVI  - V1",
+    "description": "The Sentinel-3, Level 2 Synergy V10 products (SY_2_V10) contain 1 km VEGETATION-like TOC reflectances and NDVI. The '1 km VEGETATION-like product' label means that measurements are provided on a regular latitude-longitude grid, with an equatorial sampling distance of approximately 1 km (1\u00b0 / 112). The NDVI is provided, derived from surface reflectances in B2 and B3.",
+    "keywords": [
+        "VITO",
+        "Orthoimagery",
+        "plant resource",
+        "TOC",
+        "SYN",
+        "OLCI",
+        "SLSTR",
+        "radiometry",
+        "sentinel",
+        "Sentinel-3",
+        "ESA",
+        "VGT-S10 like"
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180.0,
+                    -56.0,
+                    180.0,
+                    75
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2020-07-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "links": [
+        {
+            "href": "https://services.terrascope.be/collectioncatalogue/srv/eng/catalog.search#/metadata/urn:eop:VITO:TERRASCOPE_S3_SY_2_V10_V1",
+            "rel": "alternate",
+            "title": "Collection Catalogue Entry"
+        },
+        {
+            "href": "https://docs.terrascope.be/#/DataProducts/Sentinel-3/ProductsOverview",
+            "rel": "alternate",
+            "title": "Online User Documentation"
+        },
+        {
+            "href": "https://services.terrascope.be/catalogue/catalogue/description.geojson?collection=urn:eop:VITO:TERRASCOPE_S3_SY_2_V10_V1",
+            "rel": "alternate",
+            "title": "OpenSearch entry point"
+        }
+    ],
+    "cube:dimensions": {
+        "bands": {
+            "type": "bands",
+            "values": [
+                "B0",
+                "B2",
+                "B3",
+                "MIR",
+                "og",
+                "ag",
+                "saa",
+                "sm",
+                "sza",
+                "vaa",
+                "vza",
+                "wvg",
+                "tg",
+                "NDVI"
+            ]
+        },
+        "t": {
+            "extent": [
+                "2020-07-01T00:00:00Z"
+            ],
+            "type": "temporal"
+        },
+        "x": {
+            "axis": "x",
+            "extent": [
+                -180.0044643,
+                179.9955357
+            ],
+            "reference_system": 4326,
+            "step": 0.008928571428571,
+            "type": "spatial"
+        },
+        "y": {
+            "axis": "y",
+            "extent": [
+                -55.9955357,
+                75.0044643
+            ],
+            "reference_system": 4326,
+            "step": 0.008928571428571,
+            "type": "spatial"
+        }
+    },
+    "summaries": {
+        "eo:bands": [
+            {
+                "bitPerValue": 16,
+                "name": "B0",
+                "resolution": 1000,
+                "scaleFactor": 0.0001,
+                "title": "B0"
+            },
+            {
+                "bitPerValue": 16,
+                "name": "B2",
+                "resolution": 1000,
+                "scaleFactor": 0.0001,
+                "title": "B2"
+            },
+            {
+                "bitPerValue": 16,
+                "name": "B3",
+                "resolution": 1000,
+                "scaleFactor": 0.0001,
+                "title": "B3"
+            },
+            {
+                "bitPerValue": 16,
+                "name": "MIR",
+                "resolution": 1000,
+                "scaleFactor": 0.0001,
+                "title": "MIR"
+            },
+            {
+                "bitPerValue": 8,
+                "name": "og",
+                "resolution": 1000,
+                "scaleFactor": 0.004,
+                "title": "og"
+            },
+            {
+                "bitPerValue": 8,
+                "name": "ag",
+                "resolution": 1000,
+                "scaleFactor": 0.004,
+                "title": "ag"
+            },
+            {
+                "bitPerValue": 8,
+                "name": "saa",
+                "resolution": 1000,
+                "scaleFactor": 1.5,
+                "title": "saa"
+            },
+            {
+                "bitPerValue": 8,
+                "name": "sm",
+                "resolution": 1000,
+                "scaleFactor": 1,
+                "title": "sm"
+            },
+            {
+                "bitPerValue": 8,
+                "name": "sza",
+                "resolution": 1000,
+                "scaleFactor": 0.5,
+                "title": "sza"
+            },
+            {
+                "bitPerValue": 8,
+                "name": "vaa",
+                "resolution": 1000,
+                "scaleFactor": 1.5,
+                "title": "vaa"
+            },
+            {
+                "bitPerValue": 8,
+                "name": "vza",
+                "resolution": 1000,
+                "scaleFactor": 0.5,
+                "title": "vza"
+            },
+            {
+                "bitPerValue": 8,
+                "name": "wvg",
+                "resolution": 1000,
+                "scaleFactor": 0.04,
+                "title": "wvg"
+            },
+            {
+                "bitPerValue": 32,
+                "name": "tg",
+                "resolution": 1000,
+                "scaleFactor": 1.0,
+                "title": "tg"
+            },
+            {
+                "bitPerValue": 8,
+                "name": "NDVI",
+                "offset": -0.08,
+                "resolution": 1000,
+                "scaleFactor": 0.004,
+                "title": "NDVI"
+            }
+        ],
+        "instruments": [
+            "SYN"
+        ],
+        "platform": [
+            "Sentinel-3"
+        ]
+    },
+    "assets": {
+        "metadata_iso_19139": {
+            "href": "https://services.terrascope.be/collectioncatalogue/srv/api/records/urn:eop:VITO:TERRASCOPE_S3_SY_2_V10_V1/formatters/xml?approved=true",
+            "roles": [
+                "metadata",
+                "iso-19139"
+            ],
+            "title": "ISO 19139 metadata",
+            "type": "application/vnd.iso.19139+xml"
+        },
+        "thumbnail": {
+            "href": "https://services.terrascope.be/collectioncatalogue/images/quicklooks/TERRASCOPE_S3_SY_2_V10_V1.JPG",
+            "roles": [
+                "thumbnail"
+            ],
+            "title": "Thumbnail",
+            "type": "image/jpeg"
+        }
+    }
+}

@@ -1,0 +1,153 @@
+{
+    "type": "Collection",
+    "version": "1.0",
+    "stac_version": "1.0.0",
+    "stac_extensions": [
+        "collection-assets"
+    ],
+    "id": "CSP/ERGo/1_0/US/physioDiversity",
+    "title": "US NED Physiographic Diversity",
+    "description": "The Physiographic Diversity dataset provides an index of the diversity of\nphysiographic types. It was calculated using the Shannon diversity index at\nmultiple-scales (km): 115.8, 89.9, 35.5, 13.1, 5.6, 2.8, and 1.2. It is\nbased on the USGS's 10m NED DEM (available in EE as USGS/NED).\n\nThe Conservation Science Partners (CSP) Ecologically Relevant Geomorphology\n(ERGo) Datasets, Landforms and Physiography contain detailed, multi-scale\ndata on landforms and physiographic (aka land facet) patterns. Although\nthere are many potential uses of these data, the original purpose for these\ndata was to develop an ecologically relevant classification and map of\nlandforms and physiographic classes that are suitable for climate adaptation\nplanning. Because there is large uncertainty associated with future climate\nconditions and even more uncertainty around ecological responses, providing\ninformation about what is unlikely to change offers a strong foundation for\nmanagers to build robust climate adaptation plans. The quantification of\nthese features of the landscape is sensitive to the resolution, so we\nprovide the highest resolution possible given the extent and characteristics\nof a given index.\n",
+    "keywords": [
+        "aspect",
+        "csp",
+        "elevation",
+        "ergo",
+        "geophysical",
+        "landforms",
+        "slope",
+        "topography",
+        "us"
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -132.09,
+                    12.54,
+                    -60.35,
+                    56.21
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2006-01-24T00:00:00Z",
+                    "2011-05-13T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "providers": [
+        {
+            "name": "Conservation Science Partners",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.csp-inc.org/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/CSP_ERGo_1_0_US_physioDiversity"
+        }
+    ],
+    "license": "CC-BY-NC-SA-4.0",
+    "links": [
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections/CSP/ERGo/1_0/US/physioDiversity",
+            "rel": "self",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections",
+            "rel": "parent",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/",
+            "rel": "root",
+            "type": "application/json"
+        },
+        {
+            "code": "JavaScript",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/CSP/CSP_ERGo_1_0_US_physioDiversity",
+            "rel": "related",
+            "title": "Run the example for CSP/ERGo/1_0/US/physioDiversity in the Earth Engine Code Editor",
+            "type": "text/html"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/images/CSP/CSP_ERGo_1_0_US_physioDiversity_sample.png",
+            "rel": "preview",
+            "type": "image/png"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/CSP_ERGo_1_0_US_physioDiversity#terms-of-use",
+            "rel": "license",
+            "type": "text/html"
+        }
+    ],
+    "cube:dimensions": {
+        "x": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                -132.09,
+                -60.35
+            ]
+        },
+        "y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                12.54,
+                56.21
+            ]
+        },
+        "t": {
+            "type": "temporal",
+            "extent": [
+                "2006-01-24T00:00:00Z",
+                "2011-05-13T00:00:00Z"
+            ]
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "b1"
+            ]
+        }
+    },
+    "summaries": {
+        "b1": {
+            "maximum": 1
+        },
+        "eo:bands": [
+            {
+                "description": "Physiographic diversity",
+                "name": "b1"
+            }
+        ],
+        "gsd": [
+            270
+        ]
+    },
+    "assets": {
+        "preview_4": {
+            "href": "https://developers.google.com/earth-engine/datasets/images/CSP/CSP_ERGo_1_0_US_physioDiversity_sample.png",
+            "type": "image/png",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    },
+    "sci:citation": "Theobald, D. M., Harrison-Atlas, D., Monahan, W. B., & Albano, C. M.\n(2015). Ecologically-relevant maps of landforms and physiographic diversity\nfor climate adaptation planning. PloS one, 10(12),\n[e0143619](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0143619)\n",
+    "gee:terms_of_use": "[CC-BY-NC-SA-4.0](https://spdx.org/licenses/CC-BY-NC-SA-4.0.html)",
+    "gee:type": "image",
+    "gee:unusual_terms_of_use": true,
+    "gee:user_uploaded": true
+}

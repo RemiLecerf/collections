@@ -1,0 +1,128 @@
+{
+    "assets": {
+        "metadata_iso_19139": {
+            "href": "https://services.terrascope.be/collectioncatalogue/srv/api/records/urn:eop:VITO:TERRASCOPE_S5P_L3_CO_TD_V1/formatters/xml?approved=true",
+            "roles": [
+                "metadata",
+                "iso-19139"
+            ],
+            "title": "ISO 19139 metadata",
+            "type": "application/vnd.iso.19139+xml"
+        },
+        "thumbnail": {
+            "href": "https://services.terrascope.be/collectioncatalogue/images/quicklooks/S5P_CO_TD.png",
+            "roles": [
+                "thumbnail"
+            ],
+            "title": "Thumbnail",
+            "type": "image/png"
+        }
+    },
+    "cube:dimensions": {
+        "bands": {
+            "type": "bands",
+            "values": [
+                "CO"
+            ]
+        },
+        "t": {
+            "extent": [
+                "2019-01-01T00:00:00Z"
+            ],
+            "type": "temporal"
+        },
+        "x": {
+            "axis": "x",
+            "extent": [
+                -180,
+                180
+            ],
+            "step": 0.05,
+            "type": "spatial"
+        },
+        "y": {
+            "axis": "y",
+            "extent": [
+                -89,
+                89
+            ],
+            "step": 0.05,
+            "type": "spatial"
+        }
+    },
+    "description": "Sentinel-5P daily carbon monoxide binned into a 0.05\u00b0x0.05\u00b0 grid.\n\nCarbon monoxide (CO) is an important atmospheric trace gas for our understanding of tropospheric chemistry. In certain urban areas, it is a major atmospheric pollutant. Its main sources are fossil fuel combustion, biomass burning, and atmospheric oxidation of methane (CH4) and other hydrocarbons. While fossil fuel combustion is the main CO source at northern mid-latitudes, isoprene and biomass burning oxidation play an important role in the tropics.",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -89,
+                    180,
+                    89
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2019-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "id": "TERRASCOPE_S5P_L3_CO_TD_V1",
+    "keywords": [
+        "VITO",
+        "TERRASCOPE",
+        "COPERNICUS",
+        "ESA",
+        "Orthoimagery",
+        "Sentinel-5P",
+        "TROPOMI",
+        "Level-3",
+        "Atmospheric Components",
+        "CO",
+        "Day"
+    ],
+    "license": "proprietary",
+    "links": [
+        {
+            "href": "https://sentinel.esa.int/documents/247904/690755/Sentinel_Data_Legal_Notice",
+            "rel": "license"
+        },
+        {
+            "href": "https://services.terrascope.be/wmts/v2",
+            "rel": "wmts",
+            "wmts:layer": "TERRASCOPE_S5P_L3_CO_TD_V1"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/datacube/v2.2.0/schema.json",
+        "https://stac-extensions.github.io/eo/v1.1.0/schema.json"
+    ],
+    "stac_version": "0.9.0",
+    "summaries": {
+        "constellation": [
+            "Sentinel-5"
+        ],
+        "eo:bands": [
+            {
+                "gsd": 5600,
+                "name": "CO",
+                "scale": 5,
+                "type": "int16",
+                "unit": "\u00b5mol/m\u00b2"
+            }
+        ],
+        "eo:gsd": [
+            5600
+        ],
+        "instruments": [
+            "TROPOMI"
+        ],
+        "platform": [
+            "Sentinel-5P"
+        ]
+    },
+    "title": "Sentinel-5P Daily carbon monoxide,  full archive, by Terrascope."
+}

@@ -1,0 +1,435 @@
+{
+    "description": "The MYD10A1 V6 Snow Cover Daily Global 500m product\ncontains snow cover, snow albedo, fractional snow cover, and quality\nassessment (QA) data. Snow cover data are based on a snow mapping\nalgorithm that employs a Normalized Difference Snow Index (NDSI)\nand other criteria tests.\n\n[General documentation](https://doi.org/10.5067/MODIS/MYD10A1.006)\n",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2002-07-04T00:00:00Z",
+                    "2023-02-25T00:00:00"
+                ]
+            ]
+        }
+    },
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "day"
+    },
+    "gee:provider_ids": [
+        "C1000001204-NSIDC_ECS"
+    ],
+    "gee:terms_of_use": "You may download and use photographs, imagery, or text\nfrom the NSIDC web site, unless limitations for its use are specifically\nstated. For more information on usage and citing NSIDC datasets,\nplease visit the [NSIDC 'Use and Copyright' page](https://nsidc.org/about/data-use-and-copyright).\n",
+    "gee:type": "image_collection",
+    "id": "MODIS/006/MYD10A1",
+    "keywords": [
+        "albedo",
+        "aqua",
+        "daily",
+        "geophysical",
+        "global",
+        "modis",
+        "myd10a1",
+        "nasa",
+        "nsidc",
+        "snow"
+    ],
+    "license": "proprietary",
+    "links": [
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections/MODIS/006/MYD10A1",
+            "rel": "self",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections",
+            "rel": "parent",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/",
+            "rel": "root",
+            "type": "application/json"
+        },
+        {
+            "code": "JavaScript",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/MODIS/MODIS_006_MYD10A1",
+            "rel": "related",
+            "title": "Run the example for MODIS/006/MYD10A1 in the Earth Engine Code Editor",
+            "type": "text/html"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/images/MODIS/MODIS_006_MYD10A1_sample.png",
+            "rel": "preview",
+            "type": "image/png"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_006_MYD10A1#terms-of-use",
+            "rel": "license",
+            "type": "text/html"
+        },
+        {
+            "href": "https://doi.org/10.5067/MODIS/MYD10A1.006",
+            "rel": "cite-as"
+        }
+    ],
+    "providers": [
+        {
+            "name": "NASA NSIDC DAAC at CIRES",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://doi.org/10.5067/MODIS/MYD10A1.006"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_006_MYD10A1"
+        }
+    ],
+    "sci:citation": "Hall, D. K., V. V. Salomonson, and G. A. Riggs. 2016. MODIS/Terra\nSnow Cover Daily L3 Global 500m Grid. Version 6. Boulder, Colorado\nUSA: NASA National Snow and Ice Data Center Distributed Active\nArchive Center.\n",
+    "sci:doi": "10.5067/MODIS/MYD10A1.006",
+    "stac_extensions": [
+        "collection-assets"
+    ],
+    "stac_version": "1.0.0",
+    "summaries": {
+        "NDSI": {
+            "maximum": 10000
+        },
+        "NDSI_Snow_Cover": {
+            "maximum": 100
+        },
+        "Snow_Albedo_Daily_Tile": {
+            "maximum": 100,
+            "minimum": 1
+        },
+        "eo:bands": [
+            {
+                "description": "NDSI snow cover. This value is\ncomputed for MOD10_L2 and retrieved when the observation of\nthe day is selected. Provider values above 100 are masked out in\nthis band (they can be found in the \"NDSI_Snow_Cover_Class\" band).\n",
+                "name": "NDSI_Snow_Cover"
+            },
+            {
+                "description": "A basic estimate of the quality of the algorithm result.\nThis value is computed for MOD10_L2 and retrieved with the corresponding\nobservation of the day.\n",
+                "gee:bitmask": {
+                    "bitmask_parts": [
+                        {
+                            "bit_count": 16,
+                            "description": "QA",
+                            "values": [
+                                {
+                                    "description": "Best"
+                                },
+                                {
+                                    "description": "Good",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "Ok",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "Poor - not currently in use",
+                                    "value": 3
+                                },
+                                {
+                                    "description": "Night",
+                                    "value": 211
+                                },
+                                {
+                                    "description": "Ocean",
+                                    "value": 239
+                                }
+                            ]
+                        }
+                    ],
+                    "total_bit_count": 16
+                },
+                "name": "NDSI_Snow_Cover_Basic_QA"
+            },
+            {
+                "description": "Bit flags indicating screen results and the presence\nof inland water. These flags are set when MOD10_L2 is generated\nand retrieved with the corresponding observation of the day.\n",
+                "gee:bitmask": {
+                    "bitmask_parts": [
+                        {
+                            "bit_count": 1,
+                            "description": "Inland water",
+                            "values": [
+                                {
+                                    "description": "No"
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Low visible screen failed. Snow detection reversed.",
+                            "first_bit": 1,
+                            "values": [
+                                {
+                                    "description": "No fail/not reversed"
+                                },
+                                {
+                                    "description": "The MODIS band 2 reflectance is <= 0.10\nor the band 4 reflectance is <= 0.11",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Low NDSI screen failed. Snow detection reversed.",
+                            "first_bit": 2,
+                            "values": [
+                                {
+                                    "description": "No fail/not reversed"
+                                },
+                                {
+                                    "description": "Pixels detected as having snow cover with 0.0\n< NDSI < 0.10 are reversed to no snow",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Combined temperature/height screen failed.",
+                            "first_bit": 3,
+                            "values": [
+                                {
+                                    "description": "Brightness temperature >= 281K, pixel height\n< 1300m, flag set, snow detection reversed to not snow\nor brightness temperature >= 281K, pixel height >=\n1300m, flag set, snow detection NOT reversed.\n",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Shortwave IR (SWIR) reflectance anomalously high.",
+                            "first_bit": 4,
+                            "values": [
+                                {
+                                    "description": "Snow pixel with SWIR > 0.45, flag set, snow\ndetection reversed to not snow or snow pixel with 25%\n< SWIR <= 45%, flag set to indicate unusual snow\ncondition, snow detection NOT reversed.\n",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Spare",
+                            "first_bit": 5,
+                            "values": [
+                                {
+                                    "description": "N/A"
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Spare",
+                            "first_bit": 6,
+                            "values": [
+                                {
+                                    "description": "N/A"
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Solar zenith screen failed (angles exceed 70\u00b0), uncertainty increased.",
+                            "first_bit": 7,
+                            "values": [
+                                {
+                                    "description": "No"
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        }
+                    ],
+                    "total_bit_count": 8
+                },
+                "name": "NDSI_Snow_Cover_Algorithm_Flags_QA"
+            },
+            {
+                "description": "Raw NDSI (i.e. prior to screening). This value is\ncomputed for MOD10_L2 and retrieved with the corresponding observation\nof the day.\n",
+                "gee:scale": 0.0001,
+                "name": "NDSI"
+            },
+            {
+                "description": "Snow albedo percentage. Provider values above 100 are masked out in\nthis band (they can be found in the \"Snow_Albedo_Daily_Tile_Class\" band).\n",
+                "name": "Snow_Albedo_Daily_Tile"
+            },
+            {
+                "description": "Pointer to the orbit number of the swath that was\nselected as the observation of the day. The pointer references\nby index the list of orbit numbers written to the ORBITNUMBERARRAY\nmetadata object in ArchiveMetadata.0.\n",
+                "name": "orbit_pnt"
+            },
+            {
+                "description": "Pointer to the granule (swath) that was mapped into\nthe tile. The pointer references the corresponding value in the\nGRANULEPOINTERARRAY metadata object written to ArchiveMetadata.0.\n",
+                "name": "granule_pnt"
+            },
+            {
+                "description": "Landcover classes from the \"NDSI_Snow_Cover\" subdataset\n(provider values less than or equal to 100 are masked out).\n",
+                "gee:classes": [
+                    {
+                        "description": "Missing data",
+                        "value": 200
+                    },
+                    {
+                        "description": "No decision",
+                        "value": 201
+                    },
+                    {
+                        "description": "Night",
+                        "value": 211
+                    },
+                    {
+                        "description": "Inland water",
+                        "value": 237
+                    },
+                    {
+                        "description": "Ocean",
+                        "value": 239
+                    },
+                    {
+                        "description": "Cloud",
+                        "value": 250
+                    },
+                    {
+                        "description": "Detector saturated",
+                        "value": 254
+                    }
+                ],
+                "name": "NDSI_Snow_Cover_Class"
+            },
+            {
+                "description": "Landcover classes from the \"Snow_Albedo_Daily_Tile\" subdataset\n(provider values less than or equal to 100 are masked out).\n",
+                "gee:classes": [
+                    {
+                        "description": "No decision",
+                        "value": 101
+                    },
+                    {
+                        "description": "Night",
+                        "value": 111
+                    },
+                    {
+                        "description": "Land",
+                        "value": 125
+                    },
+                    {
+                        "description": "Inland water",
+                        "value": 137
+                    },
+                    {
+                        "description": "Ocean",
+                        "value": 139
+                    },
+                    {
+                        "description": "Cloud",
+                        "value": 150
+                    },
+                    {
+                        "description": "Cloud detected as snow",
+                        "value": 151
+                    },
+                    {
+                        "description": "Missing",
+                        "value": 250
+                    },
+                    {
+                        "description": "Self-shadowing",
+                        "value": 251
+                    },
+                    {
+                        "description": "Land mask mismatch",
+                        "value": 252
+                    },
+                    {
+                        "description": "BRDF failure",
+                        "value": 253
+                    },
+                    {
+                        "description": "Non-production mask",
+                        "value": 254
+                    }
+                ],
+                "name": "Snow_Albedo_Daily_Tile_Class"
+            }
+        ],
+        "gsd": [
+            500
+        ],
+        "instruments": [
+            "MODIS"
+        ],
+        "platform": [
+            "Aqua"
+        ]
+    },
+    "title": "MYD10A1.006 Aqua Snow Cover Daily Global 500m",
+    "type": "Collection",
+    "version": "V006",
+    "cube:dimensions": {
+        "x": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                -180,
+                180
+            ]
+        },
+        "y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                -90,
+                90
+            ]
+        },
+        "t": {
+            "type": "temporal",
+            "extent": [
+                "2002-07-04T00:00:00Z",
+                "2023-02-25T00:00:00"
+            ]
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "NDSI_Snow_Cover",
+                "NDSI_Snow_Cover_Basic_QA",
+                "NDSI_Snow_Cover_Algorithm_Flags_QA",
+                "NDSI",
+                "Snow_Albedo_Daily_Tile",
+                "orbit_pnt",
+                "granule_pnt",
+                "NDSI_Snow_Cover_Class",
+                "Snow_Albedo_Daily_Tile_Class"
+            ]
+        }
+    },
+    "assets": {
+        "preview_4": {
+            "href": "https://developers.google.com/earth-engine/datasets/images/MODIS/MODIS_006_MYD10A1_sample.png",
+            "type": "image/png",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    }
+}

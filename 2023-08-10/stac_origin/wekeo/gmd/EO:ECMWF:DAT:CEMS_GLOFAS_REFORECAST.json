@@ -1,0 +1,47 @@
+{
+  "type": "Collection",
+  "id": "EO:ECMWF:DAT:CEMS_GLOFAS_REFORECAST",
+  "stac_version": "1.0.0",
+  "description": "This dataset provides a gridded modelled time series of river discharge, forced with medium- to sub-seasonal range meteorological reforecasts. The data is a consistent representation of a key hydrological variable across the global domain, and is a product of the Global Flood Awareness System (GloFAS). It is accompanied by an ancillary file for interpretation that provides the upstream area (see the related variables table and associated link in the documentation).\nThis dataset was produced by forcing a hydrological modelling chain with input from the European Centre for Medium-range Weather Forecasts (ECMWF) 11-member ensemble ECMWF-ENS reforecasts. Reforecasts are forecasts run over past dates, and those presented here are used for providing a suitably long time period against which the skill of the 30-day real-time operational forecast can be assessed. The reforecasts are initialised twice weekly with lead times up to 46 days, at 24-hour steps for 20 years in the recent history. For more specific information on the how the reforecast dataset is produced we refer to the documentation.\nCompanion datasets, also available through the Climate Data Store (CDS), are the operational forecasts, historical simulations that can be used to derive the hydrological climatology, and seasonal forecasts and reforecasts for users looking for long term forecasts. For users looking specifically for European hydrological data, we refer to the European Flood Awareness System (EFAS) forecasts and historical simulations. All these datasets are part of the operational flood forecasting within the Copernicus Emergency Management Service (CEMS).\n\nVariables in the dataset/application are:\nRiver discharge in the last 24 hours\n\nVariables in the dataset/application are:\nUpstream area",
+  "links": [],
+  "title": "Reforecasts of river discharge and related data by the Global Flood Awareness System",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1999-01-03T00:00:00Z",
+          "2018-12-30T23:59:59Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Reforecast",
+    "Product type: Reforecasts",
+    "Spatial coverage: Global",
+    "Variable domain: Land (hydrology)",
+    "Temporal coverage: Past",
+    "Provider: Copernicus CEMS"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

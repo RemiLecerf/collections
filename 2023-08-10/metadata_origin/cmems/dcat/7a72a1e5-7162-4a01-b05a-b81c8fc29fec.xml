@@ -1,0 +1,73 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:dct="http://purl.org/dc/terms/" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/7a72a1e5-7162-4a01-b05a-b81c8fc29fec">
+        <foaf:primaryTopic rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/resource/7a72a1e5-7162-4a01-b05a-b81c8fc29fec"/>
+        <dct:issued>2022-11-22</dct:issued>
+        <dct:modified>2022-11-22</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/srv/eng/xml.metadata.get?uuid=7a72a1e5-7162-4a01-b05a-b81c8fc29fec">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork?uuid=7a72a1e5-7162-4a01-b05a-b81c8fc29fec">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/resource/7a72a1e5-7162-4a01-b05a-b81c8fc29fec">
+        <dct:identifier>7a72a1e5-7162-4a01-b05a-b81c8fc29fec</dct:identifier>
+        <dct:title>Baltic Sea Biogeochemistry Analysis and Forecast</dct:title>
+        <dct:abstract>'''Short description:'''
+
+This Baltic Sea biogeochemical model product provides forecasts for the biogeochemical conditions in the Baltic Sea. The Baltic forecast is updated daily providing a new six days forecast. Three different datasets are provided. One with daily means and one with monthly means values for these parameters: nitrate, phosphate, chl-a, ammonium, dissolved oxygen, ph, phytoplankton, zooplankton, silicate,  dissolved inorganic carbon, and partial pressure of co2 at the surface. Instantaenous hourly values for the Secchi Depth and light attenuation valid for noon (12Z) are included in the daily mean files/dataset. Additionally a third dataset with daily accumulated values of the netto primary production is available.  The product is produced by the biogeochemical model ERGOM (Neumann, 2000) one way coupled to a Baltic Sea set up of  the NEMO ocean model, which provides the CMEMS Baltic physical ocean forecast product (BALTICSEA_ANALYSISFORECAST_PHY_003_006). This biogeochemical product is provided at the models native grid with a resolution of 1 nautical mile in the horizontal, and up to 56 vertical depth levels. The product covers the Baltic Sea including the transition area towards the North Sea (i.e. the Danish Belts, the Kattegat and Skagerrak).
+
+'''DOI (product) :'''   
+https://doi.org/10.48670/moi-00009</dct:abstract>
+        <dcat:theme rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/thesaurus/iso/topicCategory/oceans"/>
+        <foaf:thumbnail rdf:resource="https://catalogue.marine.copernicus.eu/documents/IMG/BALTICSEA_ANALYSISFORECAST_BGC_003_007.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((9.00 53.00, 9.00 66.00, 30.00 66.00, 30.00 53.00, 9.00 53.00))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:issued>2011-10-05</dct:issued>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/BAL-SMHI-NORRKOPING-SE%20%28SD%29"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/BAL-DMI-COPENHAGEN-DK"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/BAL-SMHI-NORRKOPING-SE"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/BAL-SMHI-NORRKOPING-SE"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/BAL-SMHI-NORRKOPING-SE"/>
+        <dct:accrualPeriodicity>daily</dct:accrualPeriodicity>
+        <dct:accrualPeriodicity>monthly</dct:accrualPeriodicity>
+        <dct:license>otherRestrictions</dct:license>
+        <dct:license>license</dct:license>
+        <dct:license>No limitations on public access</dct:license>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=BALTICSEA_ANALYSISFORECAST_BGC_003_007-TDS&amp;product=cmems_mod_bal_bgc_anfc_P1D-m"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/thredds/dodsC/cmems_mod_bal_bgc_anfc_P1D-m"/>
+        <dcat:distribution rdf:resource="ftp://nrt.cmems-du.eu/Core/BALTICSEA_ANALYSISFORECAST_BGC_003_007/cmems_mod_bal_bgc_anfc_P1D-m"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/thredds/wms/cmems_mod_bal_bgc_anfc_P1D-m"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=BALTICSEA_ANALYSISFORECAST_BGC_003_007-TDS&amp;product=cmems_mod_bal_bgc_anfc_P1M-m"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/thredds/dodsC/cmems_mod_bal_bgc_anfc_P1M-m"/>
+        <dcat:distribution rdf:resource="ftp://nrt.cmems-du.eu/Core/BALTICSEA_ANALYSISFORECAST_BGC_003_007/cmems_mod_bal_bgc_anfc_P1M-m"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/thredds/wms/cmems_mod_bal_bgc_anfc_P1M-m"/>
+        <dcat:distribution rdf:resource="ftp://nrt.cmems-du.eu/Core/BALTICSEA_ANALYSISFORECAST_BGC_003_007/cmems_mod_bal_bgc_anfc_static"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=BALTICSEA_ANALYSISFORECAST_BGC_003_007-TDS&amp;product=cmems_mod_bal_bgc-pp_anfc_P1D-i"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/thredds/dodsC/cmems_mod_bal_bgc-pp_anfc_P1D-i"/>
+        <dcat:distribution rdf:resource="ftp://nrt.cmems-du.eu/Core/BALTICSEA_ANALYSISFORECAST_BGC_003_007/cmems_mod_bal_bgc-pp_anfc_P1D-i"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/thredds/wms/cmems_mod_bal_bgc-pp_anfc_P1D-i"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/7875138c-eee8-468f-bf55-05f390b152fb"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/5e2697ae-9ad5-4486-96f2-ca36255b5ed9"/>
+        <dcat:dataQuality>The myOcean products depends on other products for production or validation. The detailed list of dependencies is given in ISO19115's aggregationInfo (ISO19139 Xpath = "gmd:MD_Metadata/gmd:identificationInfo/gmd:aggregationInfo[./gmd:MD_AggregateInformation/gmd:initiativeType/gmd:DS_InitiativeTypeCode/@codeListValue='upstream-validation' or 'upstream-production']")</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+    

@@ -1,0 +1,35 @@
+<csw:Record xmlns:ows="http://www.opengis.net/ows" xmlns:dct="http://purl.org/dc/terms/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:geonet="http://www.fao.org/geonetwork" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dc:identifier>urn:cgls:global:ba300_v3_333m</dc:identifier>
+      <dc:date>2023-03-06T19:57:15</dc:date>
+      <dc:title>Burnt Area: global monthly (raster 333m) - version 3, June 2021</dc:title>
+      <dc:type>series</dc:type>
+      <dc:subject>Orthoimagery</dc:subject>
+      <dc:subject>biomass burning</dc:subject>
+      <dc:subject>vegetation</dc:subject>
+      <dc:subject>fire</dc:subject>
+      <dc:subject>burnt area</dc:subject>
+      <dc:subject>burn scar</dc:subject>
+      <dc:subject>GLOBAL</dc:subject>
+      <dc:subject>Month</dc:subject>
+      <dc:subject>imageryBaseMapsEarthCover</dc:subject>
+      <dc:subject>biota</dc:subject>
+      <dc:subject>farming</dc:subject>
+      <dc:subject>environment</dc:subject>
+      <dc:format>netCDF</dc:format>
+      <dct:abstract>Burnt Area products map burn scars, surfaces which have been sufficiently affected by fire to display significant changes in the vegetation cover (destruction of dry material, reduction or loss of green material) and in the ground surface (temporarily darker because of ash). As fire can occur in any type of environmental context, the properties of the burnt surface may differ significantly from place to place. Therefore their identification is based on a combination of surface's properties and change detection, i.e. differences in spectral properties before and after the fire occurance. The burnt area detections are provided at 333 m resolution.</dct:abstract>
+      <dc:description>Burnt Area products map burn scars, surfaces which have been sufficiently affected by fire to display significant changes in the vegetation cover (destruction of dry material, reduction or loss of green material) and in the ground surface (temporarily darker because of ash). As fire can occur in any type of environmental context, the properties of the burnt surface may differ significantly from place to place. Therefore their identification is based on a combination of surface's properties and change detection, i.e. differences in spectral properties before and after the fire occurance. The burnt area detections are provided at 333 m resolution.</dc:description>
+      <dc:rights>copyright</dc:rights>
+      <dc:rights>otherRestrictions</dc:rights>
+      <dc:language>eng</dc:language>
+      <dc:source>The burnt area surfaces are calculated from Top-of-Canopy reflectance images from the Sentinel-3 SLSTR sensor. The method is based a random forest regression, trained with synthetic data from a spectral model of fire effects and a bidirectional reflectance model, calibrated at active fire detections. The training data takes into account the large variability of angular acquisition geometries commonly present in Sentinel-3 and the common anisotropy in most land surface reflectance. Temporal persistency checks (change detection) is used to make sure the detected spectral change lasts over time, as is common in burns. This allows to filter out cloud shadows and atmospheric correction errors with sudden, short-lived reflectance changes.</dc:source>
+      <dc:format>netCDF</dc:format>
+      <ows:BoundingBox crs="urn:ogc:def:crs:EPSG Geodetic Parameter Dataset::EPSG:4326">
+        <ows:LowerCorner>180 -60</ows:LowerCorner>
+        <ows:UpperCorner>-180 80</ows:UpperCorner>
+      </ows:BoundingBox>
+      <dc:URI protocol="HTTP" name="Copernicus Global Land Service" description="Information on how to search, download, order products or subscribe to future products">https://land.copernicus.eu/global/access</dc:URI>
+      <dc:URI protocol="HTTP" name="Copernicus Global Land Service" description="Product information and documentation">https://land.copernicus.eu/global/products/ba</dc:URI>
+      <dc:URI name="EUMETSAT EO Portal" description="Register to receive products via EUMETCast telecom satellite">https://eoportal.eumetsat.int</dc:URI>
+      <dc:URI name="Subsampled quicklook image of day_of_burn layer">resources.get?id=1001&amp;fname=c_gls_BA300_QL_202107010000_GLOBE_S3_V3.0.1.tiff&amp;access=public</dc:URI>
+    </csw:Record>
+    

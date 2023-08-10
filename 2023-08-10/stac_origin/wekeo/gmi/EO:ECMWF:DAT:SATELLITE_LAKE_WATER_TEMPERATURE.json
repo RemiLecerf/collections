@@ -1,0 +1,46 @@
+{
+  "type": "Collection",
+  "id": "EO:ECMWF:DAT:SATELLITE_LAKE_WATER_TEMPERATURE",
+  "stac_version": "1.0.0",
+  "description": "This dataset provides  mid-morning daily values for lake surface water temperature (LSWT) retrieved from satellite over a regular grid together with associated LSWT uncertainty and quality levels based on statistical confidence levels. The data represent current state-of-the-art for LSWT record production.\nThe satellite data are from the Along Track Scanning Radiometer (ATSR), Advanced Very High Resolution Radiometer (AVHRR), Moderate Resolution Imaging Spectroradiometer (MODIS) and Sea and Land Surface Temperature Radiometer (SLSTR) sensors. The retrieved temperatures have been bias adjusted for consistency between sensors using overlap periods. The dataset contains only observations and therefore gaps in time and space may be present.\nLSWT is a recognised Essential Climate Variable (ECV) of the Global Climate Observing System (GCOS). It is one of the key parameters determining the ecological conditions within a lake, since it influences physical, chemical and biological processes. Lake water temperatures also determine air-water heat and moisture exchange and therefore they are important for understanding the hydrological cycle. This dataset supports the investigation of large-scale lake-climate interaction on inter-annual time scales.\nThis dataset is produced on behalf of the Copernicus Climate Change Service (C3S).\n\nVariables in the dataset/application are:\nLake surface water temperature\n\nVariables in the dataset/application are:\nBias correction flag, Lake id, Observation instruments, Quality levels, Total uncertainty",
+  "links": [],
+  "title": "Lake surface water temperature from 1995 to present derived from satellite observations",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1995-06-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Land cover",
+    "Product type: Satellite observations",
+    "Spatial coverage: Global",
+    "Variable domain: Lakes",
+    "Temporal coverage: Past"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

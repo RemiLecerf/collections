@@ -1,0 +1,134 @@
+{
+    "assets": {
+        "thumbnail": {
+            "href": "https://collections.eurodatacube.com/vessel_density_cargo/vessel_density_cargo.png",
+            "roles": [
+                "thumbnail"
+            ],
+            "title": "Thumbnail",
+            "type": "image/png"
+        }
+    },
+    "cube:dimensions": {
+        "bands": {
+            "type": "bands",
+            "values": [
+                "cargo"
+            ]
+        },
+        "t": {
+            "extent": [
+                "2017-01-01T00:00:00Z",
+                "2020-12-01T00:00:00Z"
+            ],
+            "type": "temporal"
+        },
+        "x": {
+            "axis": "x",
+            "extent": [
+                -66.949482215,
+                72.48195026
+            ],
+            "type": "spatial"
+        },
+        "y": {
+            "axis": "y",
+            "extent": [
+                19.222315519,
+                74.653019863
+            ],
+            "type": "spatial"
+        }
+    },
+    "datasource_type": "byoc-093a3988-6ed6-4bb0-ae37-e356f14d7daf",
+    "description": "The Vessel Density maps in the EU are created since the 2019 by Cogea for the European Marine Observation and Data Network (EMODnet). The dataset is updated every year and is available for viewing and download on EMODnet Human Activities web portal (www.emodnet-humanactivities.eu). The maps are based on AIS data yearly purchased from Collecte Localisation Satellites (CLS) and ORBCOMM. The maps, GeoTIFF format, show shipping density in 1x1km cells of a grid covering all EU waters and some neighbouring areas. Density is expressed as hours per square kilometre per month. The following ship types are available:0 Other, 1 Fishing, 2 Service, 3 Dredging or underwater ops, 4 Sailing, 5 Pleasure Craft, 6 High speed craft, 7 Tug and towing, 8 Passenger, 9 Cargo, 10 Tanker, 11 Military and Law Enforcement, 12 Unknown and All ship types.\nThis particular layer refers to EMODnet ship type \"9 cargo\" that includes the following AIS ship Type codes;\n70 Cargo, all ships of this type\n71 Cargo, Hazardous category A\n72 Cargo, Hazardous category B\n73 Cargo, Hazardous category C\n74 Cargo, Hazardous category D\n75 Cargo, Reserved for future use\n76 Cargo, Reserved for future use\n77 Cargo, Reserved for future use\n78 Cargo, Reserved for future use\n79 Cargo, No additional information\n",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -66.949482215,
+                    19.222315519,
+                    72.48195026,
+                    74.653019863
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2017-01-01T00:00:00Z",
+                    "2020-12-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "id": "EMODNET_VESSEL_DENSITY_CARGO",
+    "keywords": [
+        "copernicus services",
+        "C3S",
+        "open data",
+        "sentinel hub",
+        "raster",
+        "race challenges"
+    ],
+    "links": [
+        {
+            "href": "https://collections.eurodatacube.com/vessel_density_cargo",
+            "rel": "about",
+            "title": "Website describing the collection",
+            "type": "text/html"
+        },
+        {
+            "href": "https://docs.sentinel-hub.com/api/latest/api/process/",
+            "rel": "about",
+            "title": "Details about running Evalscripts",
+            "type": "text/html"
+        },
+        {
+            "href": "https://raw.githubusercontent.com/eurodatacube/public-collections/main/collections/vessel_density_cargo/script.js",
+            "rel": "processing-expression",
+            "sentinelhub:layer_name": "vessel_density_cargo",
+            "sentinelhub:mosaicking_order": "mostRecent",
+            "sentinelhub:upsampling": "BICUBIC",
+            "title": "Evalscript to generate Vessel Density imagery",
+            "type": "application/javascript"
+        },
+        {
+            "rel": "license",
+            "title": "License",
+            "type": "text/html"
+        },
+        {
+            "href": "https://openeocloud.vito.be/openeo/1.0.0/collections",
+            "rel": "root"
+        },
+        {
+            "href": "https://openeocloud.vito.be/openeo/1.0.0/collections",
+            "rel": "parent"
+        },
+        {
+            "href": "https://openeocloud.vito.be/openeo/1.0.0/collections/EMODNET_VESSEL_DENSITY_CARGO",
+            "rel": "self"
+        }
+    ],
+    "providers": [
+        {
+            "name": "Sentinel Hub",
+            "roles": [
+                "processor"
+            ],
+            "url": "https://services.sentinel-hub.com"
+        }
+    ],
+    "stac_extensions": [
+        "https://stac-extensions.github.io/datacube/v1.0.0/schema.json"
+    ],
+    "stac_version": "1.0.0",
+    "summaries": {
+        "federation:backends": [
+            "sentinelhub"
+        ]
+    },
+    "title": "Vessel_Density_cargo",
+    "type": "Collection"
+}

@@ -1,0 +1,158 @@
+{
+    "type": "Collection",
+    "version": "1.0",
+    "stac_version": "1.0.0",
+    "stac_extensions": [
+        "collection-assets"
+    ],
+    "id": "AU/GA/DEM_1SEC/v10/DEM-H",
+    "title": "DEM-H: Australian SRTM Hydrologically Enforced Digital Elevation Model",
+    "description": "The Hydrologically Enforced Digital Elevation Model\n(DEM-H) was derived from the SRTM data acquired by NASA in February\n2000. The model has been hydrologically conditioned and drainage\nenforced. The DEM-H captures flow paths based on SRTM elevations\nand mapped stream lines, and supports delineation of catchments\nand related hydrological attributes. The dataset was derived from\nthe 1 second smoothed Digital Elevation Model (DEM-S; ANZCW0703014016)\nby enforcing hydrological connectivity with the ANUDEM software,\nusing selected AusHydro V1.6 (February 2010) 1:250,000 scale watercourse\nlines (ANZCW0503900101) and lines derived from DEM-S to define\nthe watercourses. The drainage enforcement has produced a consistent\nrepresentation of hydrological connectivity with some elevation\nartifacts resulting from the drainage enforcement. A full description\nof the methods is in preparation (Dowling et al., in prep).\n\nThis product provides a DEM suitable for use in hydrological analysis\nsuch as catchment definition and flow routing.\n\nThere are several areas with unexpected negative values: close to\nCanberra around (150.443044, -35.355281) with values of -55 and in Western\nAustralia around (124.84, -16.44) with -43.\n",
+    "keywords": [
+        "australia",
+        "dem",
+        "elevation",
+        "ga",
+        "geophysical",
+        "geoscience_australia",
+        "smoothed",
+        "srtm"
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    112.99,
+                    -44.06,
+                    154,
+                    -9.99
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2010-02-01T00:00:00Z",
+                    "2010-02-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "providers": [
+        {
+            "name": "Geoscience Australia",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.ga.gov.au/metadata-gateway/metadata/record/72759/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/AU_GA_DEM_1SEC_v10_DEM-H"
+        }
+    ],
+    "license": "CC-BY-4.0",
+    "links": [
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections/AU/GA/DEM_1SEC/v10/DEM-H",
+            "rel": "self",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections",
+            "rel": "parent",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/",
+            "rel": "root",
+            "type": "application/json"
+        },
+        {
+            "code": "JavaScript",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/AU/AU_GA_DEM_1SEC_v10_DEM-H",
+            "rel": "related",
+            "title": "Run the example for AU/GA/DEM_1SEC/v10/DEM-H in the Earth Engine Code Editor",
+            "type": "text/html"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/images/AU/AU_GA_DEM_1SEC_v10_DEM-H_sample.png",
+            "rel": "preview",
+            "type": "image/png"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/AU_GA_DEM_1SEC_v10_DEM-H#terms-of-use",
+            "rel": "license",
+            "type": "text/html"
+        },
+        {
+            "href": "https://spdx.org/licenses/CC-BY-4.0.html",
+            "rel": "license",
+            "type": "text/html"
+        }
+    ],
+    "cube:dimensions": {
+        "x": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                112.99,
+                154
+            ]
+        },
+        "y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                -44.06,
+                -9.99
+            ]
+        },
+        "t": {
+            "type": "temporal",
+            "extent": [
+                "2010-02-01T00:00:00Z",
+                "2010-02-01T00:00:00Z"
+            ]
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "elevation"
+            ]
+        }
+    },
+    "summaries": {
+        "elevation": {
+            "gee:estimated_range": true,
+            "maximum": 2223.24,
+            "minimum": -31.37
+        },
+        "eo:bands": [
+            {
+                "description": "Elevation",
+                "gee:units": "m",
+                "name": "elevation"
+            }
+        ],
+        "gsd": [
+            30.92
+        ]
+    },
+    "assets": {
+        "preview_4": {
+            "href": "https://developers.google.com/earth-engine/datasets/images/AU/AU_GA_DEM_1SEC_v10_DEM-H_sample.png",
+            "type": "image/png",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    },
+    "sci:citation": "Geoscience Australia, 2015. Digital Elevation Model (DEM) of Australia\nderived from LiDAR 5 Metre Grid. Geoscience Australia, Canberra.\n",
+    "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
+    "gee:type": "image"
+}

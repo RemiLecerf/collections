@@ -1,0 +1,52 @@
+{
+  "type": "Collection",
+  "id": "EO:EUM:DAT:0558",
+  "stac_version": "1.0.0",
+  "description": "This is the second release of the reprocessed polar Atmospheric Motion Vectors (AMV) Thematic Climate Data Record (TCDR) from the Advanced Very High Resolution Radiometer (AVHRR) in Global Area Coverage (GAC), from TIROS-N, NOAA-06, 07, 08, 09, 10, 11, 12, 14, 15, 16, 17, 18 and 19 and Metop-A and -B. It contains AMVs at all heights below the tropopause, derived from images in the Infrared channel at 10.8 microns. Vectors are retrieved by tracking the motion of clouds in two consecutive images. The height assignment of the AMVs is calculated using the Cross-Correlation Contribution (CCC) function to determine the height using the pixels that contribute the most to the vectors. A quality indicator is derived for each vector to assess the reliability of the retrieval. Products are stored in netCDF4 format and cover the period from January 1979 to September 2019.\n\nThis is a Thematic Climate Data Record (TCDR).",
+  "links": [
+    {
+      "rel": "hosts",
+      "href": "https://navigator.eumetsat.int/product/EO:EUM:DAT:0558",
+      "type": "http",
+      "title": "EUMETSAT Product Navigator (Metadata)"
+    }
+  ],
+  "title": "AVHRR GAC Atmospheric Motion Vectors Climate Data Record Release 2 - Multimission - Polar",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1979-01-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Atmosphere",
+    "Climate",
+    "Thematic Climate Data Record",
+    "Wind"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "type": "Collection",
+  "id": "EO:EUM:DAT:MSG:TR_AIRMASS",
+  "stac_version": "1.0.0",
+  "description": "The “Tropical Airmass” product is an RGB (Red, Green, Blue) composite derivate of the existing “Airmass RGB” visualisation. It is based upon data from infra-red channels (namely WV6.2, WV7.3, IR9.7 and IR10.8) of the SEVIRI instrument. The target of this product is an improved detection of over-shooting tops and cold, high-reaching clouds in general (typically found in the tropical regions). \nWith the standard Airmass RGB these clouds are in a strong white colour with no gradients on their tops.\nThe recipe is similar to the one of Airmass RGB with slight difference in colour range selection - in particular, for the green beam (IR9.7-IR10.8) it uses a range from -25 to +25 K (instead of -40 to +5 K).",
+  "links": [
+    {
+      "rel": "hosts",
+      "href": "https://navigator.eumetsat.int/product/EO:EUM:DAT:MSG:TR_AIRMASS",
+      "type": "http",
+      "title": "EUMETSAT Product Navigator (Metadata)"
+    }
+  ],
+  "title": "Tropical Airmass RGB - MSG - 0 degree",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -79.0,
+          -81.0,
+          79.0,
+          81.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2019-01-17T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Atmosphere",
+    "Cloud",
+    "Level 1 Data"
+  ],
+  "providers": [
+    {
+      "name": "European Organisation for the Exploitation of Meteorological Satellites (EUMETSAT)",
+      "description": "EUMETSAT Data store",
+      "roles": [
+        "host"
+      ],
+      "url": "https://data.eumetsat.int/"
+    }
+  ]
+}

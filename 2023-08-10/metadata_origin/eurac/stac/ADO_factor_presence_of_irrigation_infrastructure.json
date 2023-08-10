@@ -1,0 +1,107 @@
+{
+    "engine": "WCPS",
+    "stac_version": "0.9.0",
+    "stac_extensions": [
+        "datacube"
+    ],
+    "type": "Collection",
+    "id": "ADO_factor_presence_of_irrigation_infrastructure",
+    "title": "Factor presence of irrigation infrastructure",
+    "description": "Permanently irrigated agricultural land is based on the corine land cover 2018 (CLC) from Copernicus. It has been extracted the permanent irrigated class, which is the class 12 in the CLC raster. The output is a binary raster, whereas 1 corresponds for permanent irrigated land and 0 corresponds to not permanent irrigated land.",
+    "keywords": [
+        "permanent irrigated land",
+        "presence of irrigation infrastructure",
+        "ADO project",
+        "ADO"
+    ],
+    "version": "v1",
+    "license": "Access to data is based on a principle of full, open and free access as established by the Copernicus data and information policy Regulation (EU) No 1159/2013 of 12 July 2013.",
+    "sci:citation": "N/A",
+    "providers": [
+        {
+            "name": "eurac research",
+            "url": "http://www.eurac.edu",
+            "roles": [
+                "Host"
+            ]
+        },
+        {
+            "name": "eurac research",
+            "url": "http://www.eurac.edu",
+            "roles": [
+                "Processor"
+            ]
+        },
+        {
+            "name": "European Environment Agency (EEA) under the framework of the Copernicus programme - copernicus@eea.europa.eu",
+            "url": "https://www.eea.europa.eu/",
+            "roles": [
+                "Producer"
+            ]
+        }
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    4.00892779336706,
+                    42.88575498619361,
+                    17.50812678651869,
+                    50.31849469803712
+                ]
+            ]
+        }
+    },
+    "links": [
+        {
+            "rel": "licence",
+            "href": "https://eur-lex.europa.eu/eli/reg_del/2013/1159/oj",
+            "type": "text/html",
+            "title": "License Link"
+        }
+    ],
+    "cube:dimensions": {
+        "X": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                4.00892779336706,
+                17.50812678651869
+            ],
+            "reference_system": 3035
+        },
+        "Y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                42.88575498619361,
+                50.31849469803712
+            ],
+            "reference_system": 3035
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "clc18_irriagric"
+            ]
+        }
+    },
+    "summaries": {
+        "constellation": [
+            "N/A"
+        ],
+        "platform": [
+            "N/A"
+        ],
+        "rows": 8331,
+        "columns": 10240,
+        "instruments": [
+            "N/A"
+        ],
+        "eo:bands": [
+            {
+                "name": "clc18_irriagric"
+            }
+        ]
+    }
+}

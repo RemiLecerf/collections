@@ -1,0 +1,79 @@
+{
+    "type": "Collection",
+    "stac_version": "1.0.0",
+    "stac_extensions": [
+        "datacube"
+    ],
+    "id": "ADO_SPEI_1_ERA5_QM_ODC",
+    "title": "Standardisied Precipitation-Evapotranspiration Index - ERA5_QM SPEI-1",
+    "description": "The Standardized Precipitation-Evapotranspiration Index (SPEI) represents a standardized measure of what a certain value of surface water balance (precipitation minus potential evapotranspiration) over the selected time period means in relation to expected value of surface water balance for this period. SPEI is calculated on different time scales (1, 2, 3, 6, 12 months). The value of the SPEI index around 0 represents the normal expected conditions for the surface water balance in the selected period based on the long-term average (1981-2020). The value of 1 represents approximately one standard deviation of the surplus in the surface water balance, while the value of -1 is about one standard deviation of the deficit. Drought is usually defined as period when SPEI values fall below -1. Input precipitation data is downscaled from ERA5 reanalysis using quantile mapping. Contains modified Copernicus Climate Change Service information [1978-current year]; Contains modified Copernicus Atmosphere Monitoring Service information [1978-current year].",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    3.152088135080526,
+                    42.82673634401954,
+                    17.360182784195487,
+                    50.34250644869748
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1979-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "providers": [
+        {
+            "name": "Eurac EO ODC",
+            "url": "http://www.eurac.edu/",
+            "roles": [
+                "host"
+            ]
+        }
+    ],
+    "license": "CC-BY-4.0",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://creativecommons.org/licenses/by/4.0/",
+            "type": "text/html",
+            "title": "License link"
+        }
+    ],
+    "cube:dimensions": {
+        "DATE": {
+            "type": "temporal",
+            "extent": [
+                "1979-01-01T00:00:00Z"
+            ]
+        },
+        "X": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                3.152088135080526,
+                17.360182784195487
+            ],
+            "reference_system": 4326
+        },
+        "Y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                42.82673634401954,
+                50.34250644869748
+            ],
+            "reference_system": 4326
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "SPEI_1"
+            ]
+        }
+    }
+}

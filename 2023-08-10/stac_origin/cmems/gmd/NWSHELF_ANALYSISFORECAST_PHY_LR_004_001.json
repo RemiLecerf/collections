@@ -1,0 +1,67 @@
+{
+  "type": "Collection",
+  "id": "NWSHELF_ANALYSISFORECAST_PHY_LR_004_001",
+  "stac_version": "1.0.0",
+  "description": "'''Short description:'''\n\nThe low resolution ocean physics analysis and forecast for the North-West European Shelf is produced using a forecasting ocean assimilation model, with tides, at 7 km horizontal resolution.  \nThe ocean model is NEMO (Nucleus for European Modelling of the Ocean), using the 3DVar NEMOVAR system to assimilate observations. These are surface temperature, vertical profiles of temperature and salinity, and along track satellite sea level anomaly data. The model is forced by lateral boundary conditions from the UK Met Office North Atlantic Ocean forecast model and by the CMEMS Baltic forecast product [https://resources.marine.copernicus.eu/?option=com_csw&view=details&product_id=BALTICSEA_ANALYSISFORECAST_PHY_003_006 BALTICSEA_ANALYSISFORECAST_PHY_003_006]. The atmospheric forcing is given by the operational UK Met Office Global Atmospheric model.  The river discharge is from a daily climatology. Further details of the model, including the product validation are provided in the [http://catalogue.marine.copernicus.eu/documents/QUID/CMEMS-NWS-QUID-004-001.pdf CMEMS-NWS-QUID-004-001].\nProducts are provided as hourly instantaneous and daily 25-hour, de-tided, averages. The datasets available are temperature, salinity, horizontal currents, sea level, mixed layer depth, and bottom temperature. Temperature, salinity and currents, as multi-level variables, are interpolated from the model 51 hybrid s-sigma terrain-following system to 24 standard geopotential depths (z-levels). Grid-points near to the model boundaries are masked.\nThe product is updated daily, providing a 6-day forecast and the previous 2-day assimilative hindcast. See [http://catalogue.marine.copernicus.eu/documents/PUM/CMEMS-NWS-PUM-004-001_002.pdf CMEMS-NWS-PUM-004-001_002] for further details.\n\n'''Associated products:'''\n \nThis model is coupled with a biogeochemistry model (ERSEM) available as CMEMS product [https://resources.marine.copernicus.eu/?option=com_csw&view=details&product_id=NWSHELF_ANALYSISFORECAST_BGC_004_002 NWSHELF_ANALYSISFORECAST_BGC_004_002]\nA reanalysis product is available from: [https://resources.marine.copernicus.eu/?option=com_csw&view=details&product_id=NWSHELF_MULTIYEAR_PHY_004_009 NWSHELF_MULTIYEAR_PHY_004_009].\n\n'''DOI (product) :'''   \nhttps://doi.org/10.48670/moi-00057",
+  "links": [],
+  "title": "Atlantic - European North West Shelf - Ocean Physics Analysis and Forecast",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -20.0,
+          40.0,
+          13.0,
+          65.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2019-05-04T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Oceanographic geographical features",
+    "numerical-model",
+    "sea_water_potential_temperature_at_sea_floor",
+    "sea_binary_mask",
+    "sea_surface_height_above_geoid",
+    "depth",
+    "deptho_lev_interp",
+    "sea_floor_depth_below_geoid",
+    "eastward_sea_water_velocity",
+    "sea_water_salinity",
+    "sea_surface_height_above_geoid",
+    "ocean_mixed_layer_thickness_defined_by_sigma_theta",
+    "northward_sea_water_velocity",
+    "sea_water_potential_temperature",
+    "depth",
+    "near-real-time",
+    "forecast",
+    "marine-safety",
+    "marine-resources",
+    "coastal-marine-environment",
+    "weather-climate-and-seasonal-forecasting",
+    "north-west-shelf-seas",
+    "Level 4",
+    "In-Situ TS Profiles",
+    "SST",
+    "Sea Level"
+  ],
+  "providers": [
+    {
+      "name": "Copernicus Marine Service",
+      "description": "Copernicus Marine Service - Mercator Ocean International",
+      "roles": [
+        "host"
+      ],
+      "url": "https://marine.copernicus.eu/"
+    }
+  ]
+}

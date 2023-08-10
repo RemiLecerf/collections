@@ -1,0 +1,211 @@
+{
+    "type": "Collection",
+    "version": "v200",
+    "stac_version": "1.0.0",
+    "stac_extensions": [
+        "collection-assets"
+    ],
+    "id": "ESA/WorldCover/v200",
+    "title": "ESA WorldCover 10m v200",
+    "description": "The European Space Agency (ESA) WorldCover 10 m 2021 product provides a\nglobal land cover map for 2021 at 10 m resolution based on Sentinel-1 and\nSentinel-2 data.\n The WorldCover product comes with 11 land cover classes and has been\ngenerated in the framework of the ESA WorldCover project, part of the\n5th Earth Observation Envelope Programme (EOEP-5) of the European Space\nAgency.\n\nSee also:\n\n* [ESA WorldCover website](https://esa-worldcover.org)\n* [User Manual and Validation Report](https://esa-worldcover.org/en/data-access)\n",
+    "keywords": [
+        "esa",
+        "landcover",
+        "landuse",
+        "sentinel1_derived",
+        "sentinel2_derived"
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2021-01-01T00:00:00Z",
+                    "2022-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "providers": [
+        {
+            "name": "ESA/VITO/Brockmann Consult/CS/GAMMA Remote Sensing/IIASA/WUR",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://esa-worldcover.org/en"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/ESA_WorldCover_v200"
+        }
+    ],
+    "license": "CC-BY-4.0",
+    "links": [
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections/ESA/WorldCover/v200",
+            "rel": "self",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections",
+            "rel": "parent",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/",
+            "rel": "root",
+            "type": "application/json"
+        },
+        {
+            "code": "JavaScript",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/ESA/ESA_WorldCover_v200",
+            "rel": "related",
+            "title": "Run the example for ESA/WorldCover/v200 in the Earth Engine Code Editor",
+            "type": "text/html"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/images/ESA/ESA_WorldCover_v200_sample.png",
+            "rel": "preview",
+            "type": "image/png"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/ESA_WorldCover_v200#terms-of-use",
+            "rel": "license",
+            "type": "text/html"
+        },
+        {
+            "href": "https://spdx.org/licenses/CC-BY-4.0.html",
+            "rel": "license",
+            "type": "text/html"
+        },
+        {
+            "href": "https://esa-worldcover.org/en/data-access",
+            "rel": "source"
+        }
+    ],
+    "cube:dimensions": {
+        "x": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                -180,
+                180
+            ]
+        },
+        "y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                -90,
+                90
+            ]
+        },
+        "t": {
+            "type": "temporal",
+            "extent": [
+                "2021-01-01T00:00:00Z",
+                "2022-01-01T00:00:00Z"
+            ]
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "Map"
+            ]
+        }
+    },
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Landcover class",
+                "gee:classes": [
+                    {
+                        "color": "006400",
+                        "description": "Tree cover",
+                        "value": 10
+                    },
+                    {
+                        "color": "ffbb22",
+                        "description": "Shrubland",
+                        "value": 20
+                    },
+                    {
+                        "color": "ffff4c",
+                        "description": "Grassland",
+                        "value": 30
+                    },
+                    {
+                        "color": "f096ff",
+                        "description": "Cropland",
+                        "value": 40
+                    },
+                    {
+                        "color": "fa0000",
+                        "description": "Built-up",
+                        "value": 50
+                    },
+                    {
+                        "color": "b4b4b4",
+                        "description": "Bare / sparse vegetation",
+                        "value": 60
+                    },
+                    {
+                        "color": "f0f0f0",
+                        "description": "Snow and ice",
+                        "value": 70
+                    },
+                    {
+                        "color": "0064c8",
+                        "description": "Permanent water bodies",
+                        "value": 80
+                    },
+                    {
+                        "color": "0096a0",
+                        "description": "Herbaceous wetland",
+                        "value": 90
+                    },
+                    {
+                        "color": "00cf75",
+                        "description": "Mangroves",
+                        "value": 95
+                    },
+                    {
+                        "color": "fae6a0",
+                        "description": "Moss and lichen",
+                        "value": 100
+                    }
+                ],
+                "name": "Map"
+            }
+        ],
+        "gsd": [
+            10
+        ]
+    },
+    "assets": {
+        "preview_4": {
+            "href": "https://developers.google.com/earth-engine/datasets/images/ESA/ESA_WorldCover_v200_sample.png",
+            "type": "image/png",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    },
+    "sci:citation": "Zanaga, D., Van De Kerchove, R., Daems, D., De Keersmaecker, W., Brockmann,\nC., Kirches, G., Wevers, J., Cartus, O., Santoro, M., Fritz, S., Lesiv, M.,\nHerold, M., Tsendbazar, N.E., Xu, P., Ramoino, F., Arino, O., 2022. ESA\nWorldCover 10 m 2021 v200.\n([doi:10.5281/zenodo.7254221](https://doi.org/10.5281/zenodo.7254221))\n",
+    "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
+    "gee:type": "image_collection",
+    "gee:user_uploaded": true
+}

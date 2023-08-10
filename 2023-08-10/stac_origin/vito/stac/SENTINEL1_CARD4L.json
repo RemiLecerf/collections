@@ -1,0 +1,214 @@
+{
+    "type": "Collection",
+    "stac_version": "1.0.0",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/datacube/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.0.0/schema.json"
+    ],
+    "id": "SENTINEL1_CARD4L",
+    "title": "Sentinel-1 Radiometric Terrain Corrected SAR Backscatter",
+    "description": "Sentinel-1 Radiometric Terrain Corrected SAR Backscatter is a product processed from [Sentinel-1 ground range detected (GRD)](https://docs.sentinel-hub.com/api/latest/data/sentinel-1-grd/) and is compliant with [CEOS Analysis Ready Data for Land (CARD4L)](https://ceos.org/ard/) specifications for Normalised Radar Backscatter (NRB) products. CARD4L compliant products fulfil requirements for general metadata, per-pixel metadata, radiometric and atmospheric corrections and geometric corrections outlined in the NRB [product family specifications](https://ceos.org/ard/files/PFS/NRB/v5.5/CARD4L-PFS_NRB_v5.5.pdf).\nThese products are processed using Sentinel Hub [CARD4L generation tool](https://apps.sentinel-hub.com/s1-card4l/) and are radiometrically calibrated to \u03b3\u00b0 (gamma-nought) backscatter, and provided as linear backscatter power. Full radiometric terrain correction (RTC) based on the technique developed by David Small which is described in the article [Flattening Gamma: Radiometric Terrain Correction for SAR Imagery](https://doi.org/10.1109/TGRS.2011.2120616), has been applied using the [Copernicus DEM](https://docs.sentinel-hub.com/api/latest/data/dem/) in order to mitigate topographic terrain effects on the backscatter induced by side-looking geometry of SAR imaging and compounded by rugged terrain. Speckle filtering has not been applied in order to preserve spatial resolution and user freedom. \nThe twin Sentinel-1A and 1B satellites are designed to acquire data with a revisit cycle of 6 to 12 days providing continuous all-weather, day and night imagery for Land and Maritime Monitoring. This collection is comprised of CARD4L compliant Sentinel-1 VV and VH backscatter products over Africa for archived data, with new acquisitions being updated daily as they become available. To obtain CARD4L compliant Sentinel-1 data for other parts of the world, registered users have the possibility of custom processing using [CARD4L generation tool](https://apps.sentinel-hub.com/s1-card4l/). \n",
+    "keywords": [
+        "sentinel hub",
+        "xcube",
+        "raster",
+        "systematic",
+        "satellite imagery",
+        "SAR",
+        "radar",
+        "backscattering",
+        "polarization",
+        "Copernicus",
+        "maritime monitoring",
+        "land monitoring",
+        "disaster response",
+        "open data",
+        "sentinel",
+        "card4l",
+        "radiometric terrain correction"
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -26.15,
+                    -48,
+                    60.42,
+                    39
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2018-01-01T02:50:58Z"
+                ]
+            ]
+        }
+    },
+    "providers": [
+        {
+            "name": "Sentinel Hub",
+            "roles": [
+                "processor"
+            ],
+            "url": "https://creodias.sentinel-hub.com"
+        }
+    ],
+    "license": "proprietary",
+    "links": [
+        {
+            "href": "https://collections.eurodatacube.com/stac/card4l.json",
+            "rel": "self"
+        },
+        {
+            "href": "https://collections.eurodatacube.com/card4l",
+            "rel": "about",
+            "title": "Website describing the collection",
+            "type": "text/html"
+        },
+        {
+            "href": "https://creodias.sentinel-hub.com/ogc/wmts/c23384ad-ffd4-4397-9b0d-5229d2885331",
+            "rel": "wmts",
+            "wmts:dimensions": {
+                "warnings": true
+            },
+            "wmts:layer": "SAR-URBAN"
+        },
+        {
+            "evalscript_url": "https://custom-scripts.sentinel-hub.com/sentinel-1/urban_areas/script.js",
+            "href": "https://docs.sentinel-hub.com/api/latest/api/process/",
+            "layer_name": "SAR urban",
+            "mosaicking_order": "mostRecent",
+            "rel": "processing-expression",
+            "upsampling": "BICUBIC"
+        },
+        {
+            "evalscript_url": "https://custom-scripts.sentinel-hub.com/sentinel-1/sar_false_color_visualization-2/script.js",
+            "href": "https://docs.sentinel-hub.com/api/latest/api/process/",
+            "layer_name": "Enhanced visualization",
+            "mosaicking_order": "mostRecent",
+            "rel": "processing-expression",
+            "upsampling": "BICUBIC"
+        },
+        {
+            "href": "https://scihub.copernicus.eu/twiki/do/view/SciHubWebPortal/TermsConditions",
+            "rel": "license",
+            "title": "License",
+            "type": "text/html"
+        }
+    ],
+    "cube:dimensions": {
+        "bands": {
+            "type": "bands",
+            "values": [
+                "VV",
+                "VH",
+                "AREA",
+                "ANGLE",
+                "MASK",
+                "dataMask"
+            ]
+        },
+        "t": {
+            "extent": [
+                "2018-01-01T02:50:58Z"
+            ],
+            "type": "temporal"
+        },
+        "x": {
+            "axis": "x",
+            "extent": [
+                -26.15,
+                60.42
+            ],
+            "reference_system": 4326,
+            "step": 0.0002,
+            "type": "spatial"
+        },
+        "y": {
+            "axis": "y",
+            "extent": [
+                -48,
+                39
+            ],
+            "reference_system": 4326,
+            "step": 0.0002,
+            "type": "spatial"
+        }
+    },
+    "summaries": {
+        "raster:bands": [
+            {
+                "description": "Linear backscatter intensity in VV polarization.",
+                "name": "VV",
+                "openeo:gsd": {
+                    "unit": "\u00b0",
+                    "value": [
+                        0.000925925925926,
+                        0.000925925925926
+                    ]
+                }
+            },
+            {
+                "description": "Linear backscatter intensity in VH polarization.",
+                "name": "VH",
+                "openeo:gsd": {
+                    "unit": "\u00b0",
+                    "value": [
+                        0.000925925925926,
+                        0.000925925925926
+                    ]
+                }
+            },
+            {
+                "description": "Normalized scattering area.",
+                "name": "AREA",
+                "openeo:gsd": {
+                    "unit": "\u00b0",
+                    "value": [
+                        0.000925925925926,
+                        0.000925925925926
+                    ]
+                }
+            },
+            {
+                "description": "Local incidence angle (degree).",
+                "name": "ANGLE",
+                "openeo:gsd": {
+                    "unit": "\u00b0",
+                    "value": [
+                        0.000925925925926,
+                        0.000925925925926
+                    ]
+                }
+            },
+            {
+                "description": "Data mask.",
+                "name": "MASK",
+                "openeo:gsd": {
+                    "unit": "\u00b0",
+                    "value": [
+                        0.000925925925926,
+                        0.000925925925926
+                    ]
+                }
+            },
+            {
+                "description": "The mask of data/no data pixels.",
+                "name": "dataMask"
+            }
+        ]
+    },
+    "assets": {
+        "thumbnail": {
+            "href": "https://collections.eurodatacube.com/card4l/thumbnail.png",
+            "roles": [
+                "thumbnail"
+            ],
+            "title": "Thumbnail",
+            "type": "image/png"
+        }
+    },
+    "datasource_type": "byoc-608bffb4-5012-4489-abec-71e134a7a609"
+}

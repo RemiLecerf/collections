@@ -1,0 +1,86 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:dct="http://purl.org/dc/terms/" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/1c5fe986-1cd7-4c56-aeff-7bba0b4ff554">
+        <foaf:primaryTopic rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/resource/1c5fe986-1cd7-4c56-aeff-7bba0b4ff554"/>
+        <dct:issued>2023-04-13</dct:issued>
+        <dct:modified>2023-04-13</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/srv/eng/xml.metadata.get?uuid=1c5fe986-1cd7-4c56-aeff-7bba0b4ff554">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork?uuid=1c5fe986-1cd7-4c56-aeff-7bba0b4ff554">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/resource/1c5fe986-1cd7-4c56-aeff-7bba0b4ff554">
+        <dct:identifier>1c5fe986-1cd7-4c56-aeff-7bba0b4ff554</dct:identifier>
+        <dct:title>Global Ocean acidification - mean sea water pH time series and trend from Multi-Observations Reprocessing</dct:title>
+        <dct:abstract>'''DEFINITION'''
+
+Ocean acidification is quantified by decreases in pH, which is a measure of acidity: a decrease in pH value means an increase in acidity, that is, acidification. The observed decrease in ocean pH resulting from increasing concentrations of CO2 is an important indicator of global change. The estimate of global mean pH builds on a reconstruction methodology, 
+* Obtain values for alkalinity based on the so called “locally interpolated alkalinity regression (LIAR)” method after Carter et al., 2016; 2018. 
+* Build on surface ocean partial pressure of carbon dioxide (CMEMS product: MULTIOBS_GLO_BIO_CARBON_SURFACE_REP_015_008) obtained from an ensemble of Feed-Forward Neural Networks (Chau et al. 2022) which exploit sampling data gathered in the Surface Ocean CO2 Atlas (SOCAT) (https://www.socat.info/)
+* Derive a gridded field of ocean surface pH based on the van Heuven et al., (2011) CO2 system calculations using reconstructed pCO2 (MULTIOBS_GLO_BIO_CARBON_SURFACE_REP_015_008) and alkalinity.
+The global mean average of pH at yearly time steps is then calculated from the gridded ocean surface pH field. It is expressed in pH unit on total hydrogen ion scale. In the figure, the amplitude of the uncertainty (1σ  ) of yearly mean surface sea water pH varies at a range of (0.0023, 0.0029) pH unit (see Quality Information Document for more details). The trend and uncertainty estimates amount to -0.0017±0.0004e-1 pH units per year.
+The indicator is derived from in situ observations of CO2 fugacity (SOCAT data base, www.socat.info, Bakker et al., 2016). These observations are still sparse in space and time.  Monitoring pH at higher space and time resolutions, as well as in coastal regions will require a denser network of observations and preferably direct pH measurements.  
+A full discussion regarding this OMI can be found in section 2.10 of the Ocean State Report 4 (Gehlen et al., 2020).
+
+'''CONTEXT'''
+
+The decrease in surface ocean pH is a direct consequence of the uptake by the ocean of carbon dioxide. It is referred to as ocean acidification. The International Panel on Climate Change (IPCC) Workshop on Impacts of Ocean Acidification on Marine Biology and Ecosystems (2011) defined Ocean Acidification as “a reduction in the pH of the ocean over an extended period, typically decades or longer, which is caused primarily by uptake of carbon dioxide from the atmosphere, but can also be caused by other chemical additions or subtractions from the ocean”. The pH of contemporary surface ocean waters is already 0.1 lower than at pre-industrial times and an additional decrease by 0.33 pH units is projected over the 21st century in response to the high concentration pathway RCP8.5 (Bopp et al., 2013). Ocean acidification will put marine ecosystems at risk (e.g. Orr et al., 2005; Gehlen et al., 2011; Kroeker et al., 2013). The monitoring of surface ocean pH has become a focus of many international scientific initiatives (http://goa-on.org/) and constitutes one target for SDG14 (https://sustainabledevelopment.un.org/sdg14).  
+
+'''CMEMS KEY FINDINGS'''
+
+Since the year 1985, global ocean surface pH is decreasing at a rate of  -0.0017±0.0004e-1 per year. 
+
+'''DOI (product):''' 
+https://doi.org/10.48670/moi-00224</dct:abstract>
+        <dcat:theme rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/thesaurus/iso/topicCategory/oceans"/>
+        <foaf:thumbnail rdf:resource="https://catalogue.marine.copernicus.eu/documents/IMG/GLOBAL_OMI_HEALTH_carbon_ph_area_averaged.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((-180.00 -90.00, -180.00 90.00, 180.00 90.00, 180.00 -90.00, -180.00 -90.00))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:issued>2018-02-12</dct:issued>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/MULTIOBS-CLS-TOULOUSE-FR"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/MULTIOBS-CLS-TOULOUSE-FR"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/MULTIOBS-CLS-TOULOUSE-FR"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/MULTIOBS-LSCE-GIF-FR"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/MOI-OMI-SERVICE"/>
+        <dct:accrualPeriodicity>annually</dct:accrualPeriodicity>
+        <dct:license>otherRestrictions</dct:license>
+        <dct:license>license</dct:license>
+        <dct:license>No limitations on public access</dct:license>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/GLOBAL_OMI_HEALTH_carbon_ph_area_averaged/global_omi_health_carbon_ph_area_averaged"/>
+        <dcat:distribution rdf:resource="https://mdl1.marine.copernicus.eu/derived/GLOBAL_OMI_HEALTH_carbon_ph_area_averaged/global_omi_health_carbon_ph_area_averaged_202303/global_omi_health_carbon_ph_area_averaged_1985_P20220930.nc"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/ceab89ee-9a9a-4e6c-9ff2-9bbf8b28d8b1"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/9bc2bb3b-6a2a-471e-962f-2479145bec8e"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/810388db-580e-4e78-a6c1-648cf88b02ad"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dcat:dataQuality>The myOcean products depends on other products for production or validation. The detailed list of dependencies is given in ISO19115's aggregationInfo (ISO19139 Xpath = "gmd:MD_Metadata/gmd:identificationInfo/gmd:aggregationInfo[./gmd:MD_AggregateInformation/gmd:initiativeType/gmd:DS_InitiativeTypeCode/@codeListValue='upstream-validation' or 'upstream-production']")</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+    

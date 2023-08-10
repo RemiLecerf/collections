@@ -1,0 +1,287 @@
+{
+    "description": "The Real-Time Mesoscale Analysis (RTMA) is a high-spatial and temporal\nresolution analysis for near-surface weather conditions.  This dataset\nincludes hourly analyses at 2.5 km for CONUS.\n",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -130.17,
+                    20.15,
+                    -60.81,
+                    52.91
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2011-01-01T00:00:00Z",
+                    "2023-03-14T18:00:00"
+                ]
+            ]
+        }
+    },
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "hour"
+    },
+    "gee:terms_of_use": "NOAA data, information, and products, regardless of the method of delivery,\nare not subject to copyright and carry no restrictions on their subsequent\nuse by the public. Once obtained, they may be put to any lawful use. The\nforgoing data is in the public domain and is being provided without\nrestriction on use and distribution. For more information visit the\n[NWS disclaimer site](https://www.weather.gov/disclaimer/).\n",
+    "gee:type": "image_collection",
+    "id": "NOAA/NWS/RTMA",
+    "keywords": [
+        "climate",
+        "cloud",
+        "geophysical",
+        "humidity",
+        "noaa",
+        "nws",
+        "precipitation",
+        "pressure",
+        "rtma",
+        "surface",
+        "temperature",
+        "visibility",
+        "weather",
+        "wind"
+    ],
+    "license": "proprietary",
+    "links": [
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections/NOAA/NWS/RTMA",
+            "rel": "self",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections",
+            "rel": "parent",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/",
+            "rel": "root",
+            "type": "application/json"
+        },
+        {
+            "code": "JavaScript",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NOAA_NWS_RTMA",
+            "rel": "related",
+            "title": "Run the example for NOAA/NWS/RTMA in the Earth Engine Code Editor",
+            "type": "text/html"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/images/NOAA/NWS/NOAA_NWS_RTMA_sample.png",
+            "rel": "preview",
+            "type": "image/png"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_NWS_RTMA#terms-of-use",
+            "rel": "license",
+            "type": "text/html"
+        }
+    ],
+    "providers": [
+        {
+            "name": "NOAA/NWS",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.nco.ncep.noaa.gov/pmb/products/rtma/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_NWS_RTMA"
+        }
+    ],
+    "stac_extensions": [
+        "collection-assets"
+    ],
+    "stac_version": "1.0.0",
+    "summaries": {
+        "ACPC01": {
+            "gee:estimated_range": true,
+            "maximum": 1
+        },
+        "DPT": {
+            "gee:estimated_range": true,
+            "maximum": 30.92,
+            "minimum": -81.41
+        },
+        "GUST": {
+            "gee:estimated_range": true,
+            "maximum": 58.02
+        },
+        "HGT": {
+            "gee:estimated_range": true,
+            "maximum": 4226,
+            "minimum": -81
+        },
+        "PRES": {
+            "gee:estimated_range": true,
+            "maximum": 105183,
+            "minimum": 60848
+        },
+        "SPFH": {
+            "gee:estimated_range": true,
+            "maximum": 0.02
+        },
+        "TCDC": {
+            "gee:estimated_range": true,
+            "maximum": 100
+        },
+        "TMP": {
+            "gee:estimated_range": true,
+            "maximum": 43.73,
+            "minimum": -43.2
+        },
+        "UGRD": {
+            "gee:estimated_range": true,
+            "maximum": 34.04,
+            "minimum": -32.93
+        },
+        "VGRD": {
+            "gee:estimated_range": true,
+            "maximum": 39.21,
+            "minimum": -28.44
+        },
+        "VIS": {
+            "gee:estimated_range": true,
+            "maximum": 20000
+        },
+        "WDIR": {
+            "gee:estimated_range": true,
+            "maximum": 360
+        },
+        "WIND": {
+            "gee:estimated_range": true,
+            "maximum": 42.46
+        },
+        "eo:bands": [
+            {
+                "description": "Model terrain elevation",
+                "gee:units": "m",
+                "name": "HGT"
+            },
+            {
+                "description": "Pressure",
+                "gee:units": "Pa",
+                "name": "PRES"
+            },
+            {
+                "description": "Temperature",
+                "gee:units": "\u00b0C",
+                "name": "TMP"
+            },
+            {
+                "description": "Dew point temperature",
+                "gee:units": "\u00b0C",
+                "name": "DPT"
+            },
+            {
+                "description": "U-component of wind",
+                "gee:units": "m/s",
+                "name": "UGRD"
+            },
+            {
+                "description": "V-component of wind",
+                "gee:units": "m/s",
+                "name": "VGRD"
+            },
+            {
+                "description": "Specific humidity",
+                "gee:units": "1 (mass fraction)",
+                "name": "SPFH"
+            },
+            {
+                "description": "Wind direction (from which blowing)",
+                "gee:units": "deg true",
+                "name": "WDIR"
+            },
+            {
+                "description": "Wind speed",
+                "gee:units": "m/s",
+                "name": "WIND"
+            },
+            {
+                "description": "Wind speed (gust)",
+                "gee:units": "m/s",
+                "name": "GUST"
+            },
+            {
+                "description": "Visibility",
+                "gee:units": "m",
+                "name": "VIS"
+            },
+            {
+                "description": "Total cloud cover",
+                "gee:units": "%",
+                "name": "TCDC"
+            },
+            {
+                "description": "Total precipitation",
+                "gee:units": "kg/(m^2)",
+                "name": "ACPC01"
+            }
+        ],
+        "gsd": [
+            2500
+        ]
+    },
+    "title": "RTMA: Real-Time Mesoscale Analysis",
+    "type": "Collection",
+    "cube:dimensions": {
+        "x": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                -130.17,
+                -60.81
+            ]
+        },
+        "y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                20.15,
+                52.91
+            ]
+        },
+        "t": {
+            "type": "temporal",
+            "extent": [
+                "2011-01-01T00:00:00Z",
+                "2023-03-14T18:00:00"
+            ]
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "HGT",
+                "PRES",
+                "TMP",
+                "DPT",
+                "UGRD",
+                "VGRD",
+                "SPFH",
+                "WDIR",
+                "WIND",
+                "GUST",
+                "VIS",
+                "TCDC",
+                "ACPC01"
+            ]
+        }
+    },
+    "assets": {
+        "preview_4": {
+            "href": "https://developers.google.com/earth-engine/datasets/images/NOAA/NWS/NOAA_NWS_RTMA_sample.png",
+            "type": "image/png",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    }
+}

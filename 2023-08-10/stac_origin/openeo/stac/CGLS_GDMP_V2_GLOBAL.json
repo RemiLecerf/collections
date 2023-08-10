@@ -1,0 +1,101 @@
+{
+    "stac_version": "0.9.0",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/datacube/v2.2.0/schema.json",
+        "https://stac-extensions.github.io/eo/v1.1.0/schema.json"
+    ],
+    "id": "CGLS_GDMP_V2_GLOBAL",
+    "title": "Copernicus Global Land GDMP (Gross dry matter productivity) product V2, 1km resolution, 10-daily",
+    "description": "Global GDMP (Gross dry matter productivity) at 1km resolution, 10-daily. ",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180.00446428571428,
+                    -59.9955357,
+                    179.9955357,
+                    80.0044643
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1998-04-01T00:00:00Z",
+                    "2020-07-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "free",
+    "links": [
+        {
+            "href": "https://land.copernicus.eu/global/products/dmp",
+            "rel": "alternate",
+            "title": "Product web page."
+        },
+        {
+            "href": "https://openeocloud.vito.be/openeo/1.0.0/collections",
+            "rel": "root"
+        },
+        {
+            "href": "https://openeocloud.vito.be/openeo/1.0.0/collections",
+            "rel": "parent"
+        },
+        {
+            "href": "https://openeocloud.vito.be/openeo/1.0.0/collections/CGLS_GDMP_V2_GLOBAL",
+            "rel": "self"
+        }
+    ],
+    "cube:dimensions": {
+        "bands": {
+            "type": "bands",
+            "values": [
+                "GDMP"
+            ]
+        },
+        "t": {
+            "extent": [
+                "1998-04-01T00:00:00Z",
+                "2020-07-01T00:00:00Z"
+            ],
+            "type": "temporal"
+        },
+        "x": {
+            "axis": "x",
+            "extent": [
+                -180.00446428571428,
+                179.9955357
+            ],
+            "reference_system": 4326,
+            "step": 0.0089285714,
+            "type": "spatial"
+        },
+        "y": {
+            "axis": "y",
+            "extent": [
+                -59.9955357,
+                80.0044643
+            ],
+            "reference_system": 4326,
+            "step": 0.0089285714,
+            "type": "spatial"
+        }
+    },
+    "summaries": {
+        "federation:backends": [
+            "vito"
+        ],
+        "raster:bands": [
+            {
+                "data_type": "int16",
+                "name": "GDMP",
+                "nodata": -1,
+                "scale": 0.02,
+                "statistics": {
+                    "maximum": 32767
+                }
+            }
+        ]
+    }
+}

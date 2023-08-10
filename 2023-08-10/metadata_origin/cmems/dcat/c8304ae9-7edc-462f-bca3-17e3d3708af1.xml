@@ -1,0 +1,74 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:dct="http://purl.org/dc/terms/" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/c8304ae9-7edc-462f-bca3-17e3d3708af1">
+        <foaf:primaryTopic rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/resource/c8304ae9-7edc-462f-bca3-17e3d3708af1"/>
+        <dct:issued>2022-07-04</dct:issued>
+        <dct:modified>2022-07-04</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/srv/eng/xml.metadata.get?uuid=c8304ae9-7edc-462f-bca3-17e3d3708af1">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork?uuid=c8304ae9-7edc-462f-bca3-17e3d3708af1">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/resource/c8304ae9-7edc-462f-bca3-17e3d3708af1">
+        <dct:identifier>c8304ae9-7edc-462f-bca3-17e3d3708af1</dct:identifier>
+        <dct:title>Baltic Sea - SAR Sea Ice Thickness and Drift, Multisensor Sea Ice Concentration</dct:title>
+        <dct:abstract>'''Short description:'''
+
+For the Baltic Sea - The operational sea ice service at FMI provides ice parameters over the Baltic Sea. The products are based on SAR images and are produced on pass-by-pass basis during the Baltic Sea ice season, and show the ice thickness and drift in a 500 m and 800m grid, respectively.  The Baltic sea ice concentration product is based on data from SAR and microwave radiometer. The algorithm uses SENTINEL-1 SAR EW mode dual-polarized HH/HV data combined with AMSR2 radiometer data.
+
+'''DOI (product) :'''   
+https://doi.org/10.48670/moi-00133</dct:abstract>
+        <dcat:theme rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/thesaurus/iso/topicCategory/oceans"/>
+        <foaf:thumbnail rdf:resource="https://catalogue.marine.copernicus.eu/documents/IMG/SEAICE_BAL_SEAICE_L4_NRT_OBSERVATIONS_011_011.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((9.00 53.00, 9.00 66.00, 31.00 66.00, 31.00 53.00, 9.00 53.00))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:issued>2011-10-26</dct:issued>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/OSI-METNO-OSLO-NO%20%28SD%29"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/OSI-METNO-OSLO-NO%20%28PM%29"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/OSI-METNO-OSLO-NO%20%28WPL%29"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/SIW-FMI-HELSINKI-FI"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/SIW-METNO-OSLO-NO"/>
+        <dct:accrualPeriodicity>daily</dct:accrualPeriodicity>
+        <dct:license>otherRestrictions</dct:license>
+        <dct:license>license</dct:license>
+        <dct:license>No limitations on public access</dct:license>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=SEAICE_BAL_SEAICE_L4_NRT_OBSERVATIONS_011_011-TDS&amp;product=cmems_sat-si_bal_conc_nrt_500m_d"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/thredds/dodsC/cmems_sat-si_bal_conc_nrt_500m_d"/>
+        <dcat:distribution rdf:resource="ftp://nrt.cmems-du.eu/Core/SEAICE_BAL_SEAICE_L4_NRT_OBSERVATIONS_011_011/cmems_sat-si_bal_conc_nrt_500m_d"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/thredds/wms/cmems_sat-si_bal_conc_nrt_500m_d"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=SEAICE_BAL_SEAICE_L4_NRT_OBSERVATIONS_011_011-TDS&amp;product=cmems_sat-si_bal_thick_nrt_500m_hi"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/thredds/dodsC/cmems_sat-si_bal_thick_nrt_500m_hi"/>
+        <dcat:distribution rdf:resource="ftp://nrt.cmems-du.eu/Core/SEAICE_BAL_SEAICE_L4_NRT_OBSERVATIONS_011_011/cmems_sat-si_bal_thick_nrt_500m_hi"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/thredds/wms/cmems_sat-si_bal_thick_nrt_500m_hi"/>
+        <dcat:distribution rdf:resource="ftp://nrt.cmems-du.eu/Core/SEAICE_BAL_SEAICE_L4_NRT_OBSERVATIONS_011_011/FMI-BAL-SEAICE_DRIFT-SAR-NRT-OBS"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=SEAICE_BAL_SEAICE_L4_NRT_OBSERVATIONS_011_011-TDS&amp;product=FMI-BAL-SEAICE_THICK-MOSAIC-SAR-NRT-OBS"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/thredds/dodsC/FMI-BAL-SEAICE_THICK-MOSAIC-SAR-NRT-OBS"/>
+        <dcat:distribution rdf:resource="ftp://nrt.cmems-du.eu/Core/SEAICE_BAL_SEAICE_L4_NRT_OBSERVATIONS_011_011/FMI-BAL-SEAICE_THICK-MOSAIC-SAR-NRT-OBS"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/thredds/wms/FMI-BAL-SEAICE_THICK-MOSAIC-SAR-NRT-OBS"/>
+        <dcat:distribution rdf:resource="ftp://nrt.cmems-du.eu/Core/SEAICE_BAL_SEAICE_L4_NRT_OBSERVATIONS_011_011/FMI-BAL-SEAICE_THICK-SAR-NRT-OBS"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/6f0bfdf0-7934-41dc-bec8-edb8e7232083"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/54077ea3-887b-4975-bdb7-029858b5ea3f"/>
+        <dcat:dataQuality>The myOcean products depends on other products for production or validation. The detailed list of dependencies is given in ISO19115's aggregationInfo (ISO19139 Xpath = "gmd:MD_Metadata/gmd:identificationInfo/gmd:aggregationInfo[./gmd:MD_AggregateInformation/gmd:initiativeType/gmd:DS_InitiativeTypeCode/@codeListValue='upstream-validation' or 'upstream-production']")</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+    

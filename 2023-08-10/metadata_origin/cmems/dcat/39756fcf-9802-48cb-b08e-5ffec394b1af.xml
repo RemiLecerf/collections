@@ -1,0 +1,75 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:dct="http://purl.org/dc/terms/" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/39756fcf-9802-48cb-b08e-5ffec394b1af">
+        <foaf:primaryTopic rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/resource/a78600a4-a280-47b5-8ddd-0dc8b5e9c9d9"/>
+        <dct:issued>2023-03-29</dct:issued>
+        <dct:modified>2023-03-29</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/srv/eng/xml.metadata.get?uuid=39756fcf-9802-48cb-b08e-5ffec394b1af">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork?uuid=39756fcf-9802-48cb-b08e-5ffec394b1af">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/resource/a78600a4-a280-47b5-8ddd-0dc8b5e9c9d9">
+        <dct:identifier>a78600a4-a280-47b5-8ddd-0dc8b5e9c9d9</dct:identifier>
+        <dct:title>Iberia Biscay Ireland Sea Surface Temperature trend map from Observations Reprocessing</dct:title>
+        <dct:abstract>'''DEFINITION'''
+
+The ibi_omi_tempsal_sst_trend product includes the Sea Surface Temperature (SST) trend for the Iberia-Biscay-Irish Seas over the period 1993-2019, i.e. the rate of change (°C/year). This OMI is derived from the CMEMS REP ATL L4 SST product (SST_ATL_SST_L4_REP_OBSERVATIONS_010_026), see e.g. the OMI QUID, http://marine.copernicus.eu/documents/QUID/CMEMS-OMI-QUID-ATL-SST.pdf), which provided the SSTs used to compute the SST trend over the Iberia-Biscay-Irish Seas. This reprocessed product consists of daily (nighttime) interpolated 0.05° grid resolution SST maps built from the ESA Climate Change Initiative (CCI) (Merchant et al., 2019) and Copernicus Climate Change Service (C3S) initiatives. Trend analysis has been performed by using the X-11 seasonal adjustment procedure (see e.g. Pezzulli et al., 2005), which has the effect of filtering the input SST time series acting as a low bandpass filter for interannual variations. Mann-Kendall test and Sens’s method (Sen 1968) were applied to assess whether there was a monotonic upward or downward trend and to estimate the slope of the trend and its 95% confidence interval. 
+
+'''CONTEXT'''
+
+Sea surface temperature (SST) is a key climate variable since it deeply contributes in regulating climate and its variability (Deser et al., 2010). SST is then essential to monitor and characterise the state of the global climate system (GCOS 2010). Long-term SST variability, from interannual to (multi-)decadal timescales, provides insight into the slow variations/changes in SST, i.e. the temperature trend (e.g., Pezzulli et al., 2005). In addition, on shorter timescales, SST anomalies become an essential indicator for extreme events, as e.g. marine heatwaves (Hobday et al., 2018). 
+
+'''CMEMS KEY FINDINGS'''
+
+Over the period 1993-2021, the Iberia-Biscay-Irish Seas mean Sea Surface Temperature (SST) increased at a rate of 0.011 ± 0.001 °C/Year.
+
+'''DOI (product):''' 
+https://doi.org/10.48670/moi-00257</dct:abstract>
+        <dcat:theme rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/thesaurus/iso/topicCategory/oceans"/>
+        <foaf:thumbnail rdf:resource="https://catalogue.marine.copernicus.eu/documents/IMG/IBI_OMI_TEMPSAL_sst_trend.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((-19.00 26.00, -19.00 56.00, 5.00 56.00, 5.00 26.00, -19.00 26.00))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:issued>2019-11-28</dct:issued>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/SST-CNR-ROMA-IT"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/SST-CNR-ROMA-IT"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/OSI-METNO-OSLO-NO"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/SST-IFREMER-BREST-FR"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/MOI-OMI-SERVICE"/>
+        <dct:accrualPeriodicity>annually</dct:accrualPeriodicity>
+        <dct:license>otherRestrictions</dct:license>
+        <dct:license>license</dct:license>
+        <dct:license>No limitations on public access</dct:license>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/IBI_OMI_TEMPSAL_sst_trend/ibi_omi_tempsal_sst_trend"/>
+        <dcat:distribution rdf:resource="https://mdl1.marine.copernicus.eu/derived/IBI_OMI_TEMPSAL_sst_trend/ibi_omi_tempsal_sst_trend_202211/ibi_omi_tempsal_sst_trend_2021_R19932021_P20220601.nc"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/de51c4e2-c04c-4d93-bb56-8d23fad523f7"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/d62cd093-925f-4312-8570-58319aadbb8f"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/6f26ac93-ad03-47ae-9614-98980cb077d2"/>
+        <dcat:dataQuality>The myOcean products depends on other products for production or validation. The detailed list of dependencies is given in ISO19115's aggregationInfo (ISO19139 Xpath = "gmd:MD_Metadata/gmd:identificationInfo/gmd:aggregationInfo[./gmd:MD_AggregateInformation/gmd:initiativeType/gmd:DS_InitiativeTypeCode/@codeListValue='upstream-validation' or 'upstream-production']")</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+    

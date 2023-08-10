@@ -1,0 +1,57 @@
+<csw:Record xmlns:dct="http://purl.org/dc/terms/" xmlns:geonet="http://www.fao.org/geonetwork" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ows="http://www.opengis.net/ows" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dc:identifier>8aef5abd-3146-4b38-a869-afb9a97c037e</dc:identifier>
+      <dc:date>2023-08-07T13:04:51.527Z</dc:date>
+      <dc:title>High Resolution Snow and Ice Monitoring: River and Lake Ice Extent (raster 20m)</dc:title>
+      <dc:type>dataset</dc:type>
+      <dc:subject>Land cover</dc:subject>
+      <dc:subject>EEA38 (from 2020)</dc:subject>
+      <dc:subject>United Kingdom</dc:subject>
+      <dc:subject>monitoring</dc:subject>
+      <dc:subject>ice</dc:subject>
+      <dc:subject>climate change impact</dc:subject>
+      <dc:subject>land cover</dc:subject>
+      <dc:subject>landscape alteration</dc:subject>
+      <dc:subject>river</dc:subject>
+      <dc:subject>lake</dc:subject>
+      <dc:subject>European</dc:subject>
+      <dc:subject>Land use</dc:subject>
+      <dc:subject>Five days</dc:subject>
+      <dc:subject>2020 3.6.7</dc:subject>
+      <dc:subject>environment</dc:subject>
+      <dc:subject>imageryBaseMapsEarthCover</dc:subject>
+      <dc:subject>climatologyMeteorologyAtmosphere</dc:subject>
+      <dc:format>GeoTIFF</dc:format>
+      <dct:abstract>The Copernicus River and Lake Ice Extent (RLIE) products provide pixel-based information about ice presence on rivers and lakes. There are several RLIE products available for the entire EEA38 and the United Kingdom, depending on their data source. RLIE S1 and RLIE S2 are generated in near real-time based on observations from the Sentinel-1 and the Sentinel-2 constellations respectively while RLIE S1+S2 is a delayed-time product derived from the previous products - an RLIE S2 for a given day is enriched with RLIE S1 of the same day.
+
+All RLIE products are distributed in raster files covering an area of 110 km by 110 km with a pixel size of 60 m by 60 m in UTM/WGS84 projection, which corresponds to the Sentinel-2 L1C product tile. They inform of the presence of snow-covered or snow-free ice on the various water bodies described by the EU-HYDRO river and lake network database. Each product is composed of three separate files corresponding to the different layers of the product, and another metadata file.
+
+The RLIE products are part of the products of the pan-European High-Resolution Snow &amp; Ice service (HR-S&amp;I), which are provided at high spatial resolution (20 m x 20 m and 60 m x 60 m), from the Sentinel-2 and Sentinel-1 constellations data from September 1, 2016 onwards.
+Visit https://land.copernicus.eu/pan-european/biophysical-parameters/high-resolution-snow-and-ice-monitoring to get more information on the different HR-S&amp;I products (Snow products : FSC, WDS, SWS, GFSC, and PSA. Ice products : RLIE and ARLIE).</dct:abstract>
+      <dc:description>The Copernicus River and Lake Ice Extent (RLIE) products provide pixel-based information about ice presence on rivers and lakes. There are several RLIE products available for the entire EEA38 and the United Kingdom, depending on their data source. RLIE S1 and RLIE S2 are generated in near real-time based on observations from the Sentinel-1 and the Sentinel-2 constellations respectively while RLIE S1+S2 is a delayed-time product derived from the previous products - an RLIE S2 for a given day is enriched with RLIE S1 of the same day.
+
+All RLIE products are distributed in raster files covering an area of 110 km by 110 km with a pixel size of 60 m by 60 m in UTM/WGS84 projection, which corresponds to the Sentinel-2 L1C product tile. They inform of the presence of snow-covered or snow-free ice on the various water bodies described by the EU-HYDRO river and lake network database. Each product is composed of three separate files corresponding to the different layers of the product, and another metadata file.
+
+The RLIE products are part of the products of the pan-European High-Resolution Snow &amp; Ice service (HR-S&amp;I), which are provided at high spatial resolution (20 m x 20 m and 60 m x 60 m), from the Sentinel-2 and Sentinel-1 constellations data from September 1, 2016 onwards.
+Visit https://land.copernicus.eu/pan-european/biophysical-parameters/high-resolution-snow-and-ice-monitoring to get more information on the different HR-S&amp;I products (Snow products : FSC, WDS, SWS, GFSC, and PSA. Ice products : RLIE and ARLIE).</dc:description>
+      <dc:rights>otherRestrictions</dc:rights>
+      <dc:rights>otherRestrictions</dc:rights>
+      <dc:language>eng</dc:language>
+      <dc:source>The Sentinel-2 L1C product is converted into L2A using the MAJA processor, which performs atmospheric correction and provides an accurate cloud mask. A supervised classification method using multi-spectral indices is performed on L2A images. Pixels are assigned to one of the following classes: (1) open water, (2) snow-covered or snow-free ice and (3) other features (mainly vegetation and bare soil).
+More information about this product can be found in the Product User Manual: https://land.copernicus.eu/user-corner/technical-library/hrsi-ice-pum. 
+The quality assessment report (QAR) can be accessed here: https://land.copernicus.eu/user-corner/technical-library/hrsi-ice-qar.</dc:source>
+      <dc:format>GeoTIFF</dc:format>
+      <ows:BoundingBox crs="urn:ogc:def:crs:EPSG:6.6:4326">
+        <ows:LowerCorner>34.00 -26.00</ows:LowerCorner>
+        <ows:UpperCorner>66.00 44.00</ows:UpperCorner>
+      </ows:BoundingBox>
+      <dc:URI protocol="WWW:LINK-1.0-http--link" name="Cryo portal">https://cryo.land.copernicus.eu/finder/</dc:URI>
+      <dc:URI protocol="OGC:WMS">https://cryo.land.copernicus.eu/wms/RLIE?service=WMS&amp;request=GetCapabilities&amp;version=1.3.0</dc:URI>
+      <dc:URI protocol="WWW:LINK-1.0-http--link" name="REST API">https://cryo.land.copernicus.eu/resto/api/collections/HRSI/search.json</dc:URI>
+      <dc:URI protocol="WWW:LINK-1.0-http--link" name="WEKEO portal" description="">https://www.wekeo.eu</dc:URI>
+      <dc:URI protocol="WWW:LINK-1.0-http--link" name="Product user manual" description="">https://land.copernicus.eu/user-corner/technical-library/hrsi-ice-pum</dc:URI>
+      <dc:URI protocol="WWW:LINK-1.0-http--link" name="Algorithm theoretical basis document for RLIE based on Sentinel-2" description="">https://land.copernicus.eu/user-corner/technical-library/hrsi-ice-atbd</dc:URI>
+      <dc:URI protocol="WWW:LINK-1.0-http--link" name="Algorithm theoretical basis document for RLIE based on Sentinel-1 and Sentinel-2" description="">https://land.copernicus.eu/user-corner/technical-library/hrsi-ice-s1-atbd/</dc:URI>
+      <dc:URI protocol="WWW:LINK-1.0-http--link" name="HDA API (Harmonized Data Access (WEkEO)">https://wekeo-broker.apps.mercator.dpi.wekeo.eu/databroker/ui/</dc:URI>
+      <dc:URI protocol="image/png">https://sdi.eea.europa.eu/public/catalogue-graphic-overview/8aef5abd-3146-4b38-a869-afb9a97c037e.png</dc:URI>
+    </csw:Record>
+    

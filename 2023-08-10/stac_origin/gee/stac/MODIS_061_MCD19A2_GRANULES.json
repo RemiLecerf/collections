@@ -1,0 +1,475 @@
+{
+    "type": "Collection",
+    "version": "V061",
+    "stac_version": "1.0.0",
+    "stac_extensions": [
+        "collection-assets"
+    ],
+    "id": "MODIS/061/MCD19A2_GRANULES",
+    "title": "MCD19A2.061: Terra & Aqua MAIAC Land Aerosol Optical Depth Daily 1km",
+    "description": "The MCD19A2 V6.1 data product is a MODIS Terra and Aqua combined Multi-angle\nImplementation of Atmospheric Correction (MAIAC) Land Aerosol Optical Depth\n(AOD) gridded Level 2 product produced daily at 1 km resolution. For more\ninformation see the [MAIAC user guide](https://lpdaac.usgs.gov/documents/1500/MCD19_User_Guide_V61.pdf).\n\nNOTE: This product has been released with the caveat that the reprocessing\nfor the full mission is expected to continue through summer 2023.\n",
+    "keywords": [
+        "aerosol",
+        "aod",
+        "aqua",
+        "daily",
+        "global",
+        "maiac",
+        "mcd19a2",
+        "modis",
+        "nasa",
+        "terra",
+        "usgs"
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-02-24T00:00:00Z",
+                    "2023-05-29T23:40:00"
+                ]
+            ]
+        }
+    },
+    "providers": [
+        {
+            "name": "NASA LP DAAC at the USGS EROS Center",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://lpdaac.usgs.gov/products/mcd19a2v061/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MCD19A2_GRANULES"
+        }
+    ],
+    "license": "proprietary",
+    "links": [
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections/MODIS/061/MCD19A2_GRANULES",
+            "rel": "self",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections",
+            "rel": "parent",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/",
+            "rel": "root",
+            "type": "application/json"
+        },
+        {
+            "code": "JavaScript",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/MODIS/MODIS_061_MCD19A2_GRANULES",
+            "rel": "related",
+            "title": "Run the example for MODIS/061/MCD19A2_GRANULES in the Earth Engine Code Editor",
+            "type": "text/html"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/images/MODIS/MODIS_061_MCD19A2_GRANULES_sample.png",
+            "rel": "preview",
+            "type": "image/png"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MCD19A2_GRANULES#terms-of-use",
+            "rel": "license",
+            "type": "text/html"
+        },
+        {
+            "href": "https://lpdaac.usgs.gov/products/mcd19a2v061/",
+            "rel": "cite-as"
+        }
+    ],
+    "cube:dimensions": {
+        "x": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                -180,
+                180
+            ]
+        },
+        "y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                -90,
+                90
+            ]
+        },
+        "t": {
+            "type": "temporal",
+            "extent": [
+                "2000-02-24T00:00:00Z",
+                "2023-05-29T23:40:00"
+            ]
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "Optical_Depth_047",
+                "Optical_Depth_055",
+                "AOD_Uncertainty",
+                "FineModeFraction",
+                "Column_WV",
+                "AOD_QA",
+                "Injection_Height",
+                "AngstromExp_470-780",
+                "cosSZA",
+                "cosVZA",
+                "RelAZ",
+                "Scattering_Angle",
+                "Glint_Angle"
+            ]
+        }
+    },
+    "summaries": {
+        "AOD_Uncertainty": {
+            "maximum": 30000
+        },
+        "AngstromExp_470_780": {
+            "maximum": 30000,
+            "minimum": -5000
+        },
+        "Column_WV": {
+            "maximum": 30000
+        },
+        "FineModeFraction": {
+            "maximum": 1000
+        },
+        "Glint_Angle": {
+            "maximum": 18000,
+            "minimum": -18000
+        },
+        "Injection_Height": {
+            "maximum": 10000
+        },
+        "Optical_Depth_047": {
+            "maximum": 8000,
+            "minimum": -100
+        },
+        "Optical_Depth_055": {
+            "maximum": 8000,
+            "minimum": -100
+        },
+        "RelAZ": {
+            "maximum": 18000,
+            "minimum": -18000
+        },
+        "Scattering_Angle": {
+            "maximum": 18000,
+            "minimum": -18000
+        },
+        "cosSZA": {
+            "maximum": 10000
+        },
+        "cosVZA": {
+            "maximum": 10000
+        },
+        "eo:bands": [
+            {
+                "center_wavelength": 0.47,
+                "description": "Aerosol optical depth over land retrieved in the MODIS Blue band (0.47\n&mu;m). AOD is not received at high altitude (greater than 4.2 km)\nexcept when smoke or dust is detected; rather, we report a static\nvalue of 0.02 used for atmospheric correction.\n",
+                "gee:scale": 0.001,
+                "name": "Optical_Depth_047",
+                "common_name": "blue"
+            },
+            {
+                "center_wavelength": 0.55,
+                "description": "Aerosol optical depth over land retrieved in the MODIS Green band\n(0.55 &mu;m).\n",
+                "gee:scale": 0.001,
+                "name": "Optical_Depth_055",
+                "common_name": "green"
+            },
+            {
+                "description": "AOD uncertainty based on blue-band surface brightness (reflectance)\n",
+                "gee:scale": 0.0001,
+                "name": "AOD_Uncertainty"
+            },
+            {
+                "description": "Fine mode fraction for ocean and large inland lakes",
+                "name": "FineModeFraction"
+            },
+            {
+                "center_wavelength": 0.94,
+                "description": "Column water vapor over land, retrieved from MODIS near-IR bands at\n0.94 &mu;m. When reported for cloudy pixels, it represents water vapor\nabove the cloud.\n",
+                "gee:scale": 0.001,
+                "gee:units": "cm",
+                "name": "Column_WV",
+                "common_name": "nir09"
+            },
+            {
+                "description": "AOD QA",
+                "gee:bitmask": {
+                    "bitmask_parts": [
+                        {
+                            "bit_count": 3,
+                            "description": "Cloud mask",
+                            "values": [
+                                {
+                                    "description": "Undefined"
+                                },
+                                {
+                                    "description": "Clear",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "Possibly cloudy (detected by AOD filter)",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "Cloudy (detected by cloud mask algorithm)",
+                                    "value": 3
+                                },
+                                {
+                                    "description": "Cloud shadow",
+                                    "value": 5
+                                },
+                                {
+                                    "description": "Hot spot of fire",
+                                    "value": 6
+                                },
+                                {
+                                    "description": "Water sediments",
+                                    "value": 7
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 2,
+                            "description": "Land water snow/ice mask",
+                            "first_bit": 3,
+                            "values": [
+                                {
+                                    "description": "Land"
+                                },
+                                {
+                                    "description": "Water",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "Snow",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "Ice",
+                                    "value": 3
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 3,
+                            "description": "Adjacency mask",
+                            "first_bit": 5,
+                            "values": [
+                                {
+                                    "description": "Normal condition/Clear"
+                                },
+                                {
+                                    "description": "Adjacent to clouds",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "Surrounded by more than 4 cloudy pixels",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "Adjacent to a single cloudy pixel",
+                                    "value": 3
+                                },
+                                {
+                                    "description": "Adjacent to snow",
+                                    "value": 4
+                                },
+                                {
+                                    "description": "Snow was previously detected in this pixel",
+                                    "value": 5
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 4,
+                            "description": "QA for AOD",
+                            "first_bit": 8,
+                            "values": [
+                                {
+                                    "description": "Best quality"
+                                },
+                                {
+                                    "description": "Water Sediments are detected (water)",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "There is 1 neighbor cloud",
+                                    "value": 3
+                                },
+                                {
+                                    "description": "There is >1 neighbor clouds",
+                                    "value": 4
+                                },
+                                {
+                                    "description": "No retrieval (cloudy, or whatever)",
+                                    "value": 5
+                                },
+                                {
+                                    "description": "No retrievals near detected or previously detected snow'\n",
+                                    "value": 6
+                                },
+                                {
+                                    "description": "Climatology AOD - altitude above 3.5km (water) and 4.2km\n(land)'\n",
+                                    "value": 7
+                                },
+                                {
+                                    "description": "No retrieval due to sun glint (water)",
+                                    "value": 8
+                                },
+                                {
+                                    "description": "Retrieved AOD is very low (<0.05) due to glint (water)\n",
+                                    "value": 9
+                                },
+                                {
+                                    "description": "AOD within +-2km from the coastline is replaced by nearby\nAOD\n",
+                                    "value": 10
+                                },
+                                {
+                                    "description": "Land, research quality: AOD retrieved but CM is possibly\ncloudy\n",
+                                    "value": 11
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Glint mask",
+                            "first_bit": 12,
+                            "values": [
+                                {
+                                    "description": "No glint"
+                                },
+                                {
+                                    "description": "Glint (glint angle < 40&deg;)",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 2,
+                            "description": "Aerosol model",
+                            "first_bit": 13,
+                            "values": [
+                                {
+                                    "description": "Background model (regional)"
+                                },
+                                {
+                                    "description": "Smoke model (regional)",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "Dust model",
+                                    "value": 2
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Reserved",
+                            "first_bit": 15,
+                            "values": [
+                                {
+                                    "description": "Reserved for future use"
+                                },
+                                {
+                                    "description": "Reserved for future use",
+                                    "value": 1
+                                }
+                            ]
+                        }
+                    ],
+                    "total_bit_count": 16
+                },
+                "name": "AOD_QA"
+            },
+            {
+                "description": "Smoke injection height",
+                "gee:units": "m",
+                "name": "Injection_Height"
+            },
+            {
+                "description": "Angstrom exponent 470-780nm over the ocean",
+                "gee:scale": 0.0001,
+                "name": "AngstromExp_470-780"
+            },
+            {
+                "description": "Cosine of solar zenith angle (5 km resolution)",
+                "gee:scale": 0.0001,
+                "name": "cosSZA"
+            },
+            {
+                "description": "Cosine view zenith angle (5 km resolution)",
+                "gee:scale": 0.0001,
+                "name": "cosVZA"
+            },
+            {
+                "description": "Relative azimuth angle (5 km resolution)",
+                "gee:scale": 0.01,
+                "name": "RelAZ"
+            },
+            {
+                "description": "Scattering angle (5 km resolution)",
+                "gee:scale": 0.01,
+                "name": "Scattering_Angle"
+            },
+            {
+                "description": "Glint angle (5 km resolution)",
+                "gee:scale": 0.01,
+                "name": "Glint_Angle"
+            }
+        ],
+        "gsd": [
+            1000
+        ],
+        "instruments": [
+            "MODIS"
+        ],
+        "platform": [
+            "Aqua",
+            "Terra"
+        ]
+    },
+    "assets": {
+        "preview_4": {
+            "href": "https://developers.google.com/earth-engine/datasets/images/MODIS/MODIS_061_MCD19A2_GRANULES_sample.png",
+            "type": "image/png",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    },
+    "sci:citation": "Please visit [LP DAAC 'Citing Our Data' page](https://lpdaac.usgs.gov/citing_our_data)\nfor information on citing LP DAAC datasets.\n",
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "day"
+    },
+    "gee:provider_ids": [
+        "C1000000505-LPDAAC_ECS"
+    ],
+    "gee:terms_of_use": "MODIS data and products acquired through the LP DAAC\nhave no restrictions on subsequent use, sale, or redistribution.\n",
+    "gee:type": "image_collection"
+}

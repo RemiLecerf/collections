@@ -1,0 +1,80 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dct="http://purl.org/dc/terms/" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/metadata/eu.copernicus.climate.sis-fisheries-abundance">
+        <foaf:primaryTopic rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/resource/10.24381/cds.39c97304"/>
+        <dct:issued>2018-03-28</dct:issued>
+        <dct:modified>2018-03-28</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/srv/eng/xml.metadata.get?uuid=eu.copernicus.climate.sis-fisheries-abundance">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://cds.climate.copernicus.eu:443//geonetwork?uuid=eu.copernicus.climate.sis-fisheries-abundance">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/resource/10.24381/cds.39c97304">
+        <dct:identifier>10.24381/cds.39c97304</dct:identifier>
+        <dct:title>Fish abundance and catch data for the Northwest European Shelf and Mediterranean Sea from 2006 to 2098 derived from climate projections</dct:title>
+        <dct:abstract>The dataset contains model projections of fish catch and abundance in European seas out to 2098 produced using the Size Spectra – Dynamic Bioclimate Envelope Model (SS-DBEM). The SS-DBEM is a mechanistic model, which means that it takes into account aspects of ecology (e.g. habitat preference, migration) and physiology (e.g. growth and reproduction) to determine biomass and distribution of fish species in response to changes in the environment (e.g. temperature, competition with other species, food availability). The SS-DBEM projects the impact of changes in the environment (e.g. warming, deoxygenation) and human activity (fishing pressure) on the abundance and biomass of modelled species. All this makes it a state of the art model in regard to projecting fish distribution and trends in both abundance and catch in response to climate change. Model outputs consist of fish abundance (number of fish per grid cell) and fish catch (number of fish caught per grid cell) considering three different fishing activity scenarios, termed the Maximum Sustainable Yield (MSY). Whilst the model units are expressed as “Number of individuals”, they are not to be used to predict actual future stocks but rather numbers relative to the initial starting values of the model. This is because the model was not intialised with actual fish numbers and subsequently the significance of this dataset is to show temporal and geographical trends, relative to other years and other grid points, in response to changes in the climate and the applied Maximum Sustainable Yield (MSY).
+In order to assess the impact of climate change, simulations under two future climate scenarios based on different Representative Concentration Pathways (RCP) for future greenhouse gas concentrations are conducted: the intermediate scenario, RCP4.5, in which greenhouse gas concentrations peak around 2040 before declining mainly due to successful mitigation measures in place; and the more pessimistic scenario, RCP8.5, where greenhouse gas concentrations continue to rise throughout the century. Fishing activity was defined according to the MSY under these environmental conditions. The combination of MSY and RCP scenarios included in this dataset are:
+
+
+Global sustainability: RCP4.5 with a MSY of 0.6 (fish stock is managed globally toward sustainability)
+
+
+World Markets: RCP8.5 with a MSY of 0.8 (fish stock is managed globally to avoid overfishing)
+
+
+National Enterprise: RCP8.5 with a MSY of 1.1 (fish stocks are managed at the national level resulting in overfishing)
+
+
+The simulations were run using inputs from two marine hydrodynamic-biogeochemical models: the POLCOM-ERSEM and NEMO-ERSEM models. These models were driven by one Coupled Model Inter-comparison Project Phase 5 (CMIP5) global climate model (GCM) projections with downscaled atmospheric data from a regional climate model (RCM), the Swedish Meteorological and Hydrological Institute (SMHI) Rossby Centre Regional Atmospheric Model (RCA4). Using only one of the many possible combinations of GCM-RCM pairs leads to an incomplete estimate of the true uncertainty in the outcome in a changing climate by, most likely, indicating a smaller spread of outcomes than if the estimate were based on a larger ensemble of such GCM-RCM combinations. This does not necessarily mean a reduction in the true uncertainty, but simply an incomplete estimate of it.
+The fish model outputs were created and post-processed by Plymouth Marine Laboratory. The fish model outputs created using POLCOMS-ERSEM input data used funding from the EU H2020 project CERES (grant agreement No 678193).
+This dataset was produced on behalf of the Copernicus Climate Change Service.
+
+Variables in the dataset/application are:
+Species abundance, Species catch</dct:abstract>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/GEMET%20-%20INSPIRE%20themes%2C%20version%201.0/Oceanographic geographical features"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Sector: Coastal regions"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Product type: Climate projections"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Spatial coverage: Europe"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Variable domain: Ocean (biology)"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Temporal coverage: Present"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Temporal coverage: Future"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/iso/topicCategory/biota"/>
+        <foaf:thumbnail rdf:resource="https://datastore.copernicus-climate.eu/c3s/published-forms-v2/c3sprod/sis-fisheries-abundance/overview.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((-20 11, -20 65, 37 65, 37 11, -20 11))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:temporal>1979-01-01
+          /
+          2098-12-31</dct:temporal>
+        <dct:publisher rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/organization/ECMWF"/>
+        <dct:accrualPeriodicity>asNeeded</dct:accrualPeriodicity>
+        <dct:language>eng</dct:language>
+        <dct:license>licence</dct:license>
+        <dct:license>https://cds.climate.copernicus.eu/api/v2/terms/static/20191121_Copernicus_License_V1.2.pdf</dct:license>
+        <dcat:distribution rdf:resource="https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.39c97304"/>
+        <dcat:distribution rdf:resource="https://confluence.ecmwf.int/x/_KHmE"/>
+        <dcat:distribution rdf:resource="https://confluence.ecmwf.int/x/h6-mE"/>
+        <dcat:distribution rdf:resource="https://confluence.ecmwf.int/x/c_-mE"/>
+        <dcat:distribution rdf:resource="https://confluence.ecmwf.int/x/he-mE"/>
+        <dcat:dataQuality>ESA CCI and  EC Copernicus program</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+    

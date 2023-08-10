@@ -1,0 +1,47 @@
+{
+  "type": "Collection",
+  "id": "EO.ECMWF.DAT.CEMS-GLOFAS-HISTORICAL",
+  "stac_version": "1.0.0",
+  "description": "This dataset provides a modelled time series of gridded river discharge. It is a product of the Global Flood Awareness System (GloFAS) and offers a consistent representation of a key hydrological variable across the global domain. This dataset is accompanied by two ancillary files for interpretation, one containing upstream area data and the other elevation data (see the table of related variables and the associated link in the documentation).\nThis dataset was produced by forcing the open-source LISFLOOD hydrological model with ERA5 meteorological reanalysis data, interpolated to the GloFAS resolution, produced at a 24-hourly timestep. Two variations of the ERA5 forcing data are used, resulting in two types of river discharge data, intermediate and consolidated. Intermediate river discharge data is produced using ERA5 Near Real Time (ERA5T) data and is updated daily, whilst consolidated data is produced using the consolidated ERA5 reanalysis and is updated monthly.\nCompanion datasets, also available through the CDS, are forecasts for users who are looking for medium-range forecasts, reforecasts for research, local skill assessment and post-processing, and seasonal forecasts and reforecasts for users looking for long-term forecasts. For users specifically interested in European hydrological data, we refer to the European Flood Awareness System (EFAS) forecasts and historical simulations. \nAll the GloFAS and EFAS datasets are part of the operational flood forecasting within the Copernicus Emergency Management Service (CEMS), which is managed, technically implemented and developed by the European Commission’s Joint Research Centre.\n\nVariables in the dataset/application are:\nRiver discharge in the last 24 hours\n\nVariables in the dataset/application are:\nElevation, Upstream area",
+  "links": [],
+  "title": "River discharge and related historical data from the Global Flood Awareness System",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          0.0,
+          -60.0,
+          360.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1979-01-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Climatology",
+    "Product type: Reanalysis",
+    "Spatial coverage: Global",
+    "Variable domain: Land (hydrology)",
+    "Temporal coverage: Past",
+    "Provider: Copernicus CEMS"
+  ],
+  "providers": [
+    {
+      "name": "Copernicus Climate Data Store",
+      "description": "Copernicus Climate Data Store - European Centre for Medium-Range Weather Forecasts (ECMWF)",
+      "roles": [
+        "host"
+      ],
+      "url": "https://cds.climate.copernicus.eu/"
+    }
+  ]
+}

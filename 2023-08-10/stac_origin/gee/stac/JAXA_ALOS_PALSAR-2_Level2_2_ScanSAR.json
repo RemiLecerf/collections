@@ -1,0 +1,456 @@
+{
+    "type": "Collection",
+    "stac_version": "1.0.0",
+    "stac_extensions": [
+        "collection-assets"
+    ],
+    "id": "JAXA/ALOS/PALSAR-2/Level2_2/ScanSAR",
+    "title": "PALSAR-2 ScanSAR Level 2.2",
+    "description": "The 25 m PALSAR-2 ScanSAR is normalized backscatter data\nof PALSAR-2 broad area observation mode with observation width of 350 km.\nThe SAR imagery was ortho-rectificatied and slope corrected\nusing the ALOS World 3D - 30 m (AW3D30) Digital Surface Model.\nPolarization data are stored as 16-bit digital numbers (DN).\nThe DN values can be converted to gamma naught values in decibel unit (dB)\nusing the following equation:\n\n* &gamma;<sub>0</sub> = 10*log<sub>10</sub>(DN<sup>2</sup>) - 83.0 dB\n\nLevel 2.2 data are ortho-rectified and radiometrically terrain-corrected.\n\nThis dataset is compatible with the\n[Committee on Earth Observation (CEOS)](https://ceos.org/)\n[Analysis Ready Data for LAND (CARD4L)](https://ceos.org/ard/files/PFS/NRB/v5.5/CARD4L-PFS_NRB_v5.5.pdf) standard.\n",
+    "keywords": [
+        "alos2",
+        "eroc",
+        "jaxa",
+        "palsar2",
+        "radar",
+        "sar"
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2014-08-04T00:00:00Z",
+                    "2022-12-31T05:54:30"
+                ]
+            ]
+        }
+    },
+    "providers": [
+        {
+            "name": "JAXA EORC",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.eorc.jaxa.jp/ALOS/en/dataset/palsar2_l22_e.htm"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/JAXA_ALOS_PALSAR-2_Level2_2_ScanSAR"
+        }
+    ],
+    "license": "proprietary",
+    "links": [
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections/JAXA/ALOS/PALSAR-2/Level2_2/ScanSAR",
+            "rel": "self",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections",
+            "rel": "parent",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/",
+            "rel": "root",
+            "type": "application/json"
+        },
+        {
+            "code": "JavaScript",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/JAXA/JAXA_ALOS_PALSAR-2_Level2_2_ScanSAR",
+            "rel": "related",
+            "title": "Run the example for JAXA/ALOS/PALSAR-2/Level2_2/ScanSAR in the Earth Engine Code Editor",
+            "type": "text/html"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/images/JAXA/JAXA_ALOS_PALSAR-2_Level2_2_ScanSAR_sample.png",
+            "rel": "preview",
+            "type": "image/png"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/JAXA_ALOS_PALSAR-2_Level2_2_ScanSAR#terms-of-use",
+            "rel": "license",
+            "type": "text/html"
+        }
+    ],
+    "cube:dimensions": {
+        "x": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                -180,
+                180
+            ]
+        },
+        "y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                -90,
+                90
+            ]
+        },
+        "t": {
+            "type": "temporal",
+            "extent": [
+                "2014-08-04T00:00:00Z",
+                "2022-12-31T05:54:30"
+            ]
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "HH",
+                "HV",
+                "LIN",
+                "MSK"
+            ]
+        }
+    },
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "HH polarization Terrain-flattened Gamma-Nought backscatter\ncoefficient.\n",
+                "name": "HH"
+            },
+            {
+                "description": "HV polarization Terrain-flattened Gamma-Nought backscatter\ncoefficient.\n",
+                "name": "HV"
+            },
+            {
+                "description": "Local incidence angle. The angle formed by the radar irradiation\ndirection and the normal of the slope.\n",
+                "gee:scale": 0.01,
+                "gee:units": "deg",
+                "name": "LIN"
+            },
+            {
+                "description": "Data quality bitmask.",
+                "gee:bitmask": {
+                    "bitmask_parts": [
+                        {
+                            "bit_count": 3,
+                            "description": "Data quality",
+                            "values": [
+                                {
+                                    "description": "Valid data",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "Layover",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "Shadowing",
+                                    "value": 3
+                                },
+                                {
+                                    "description": "Ocean water",
+                                    "value": 4
+                                },
+                                {
+                                    "description": "Invalid data",
+                                    "value": 5
+                                }
+                            ]
+                        }
+                    ],
+                    "total_bit_count": 3
+                },
+                "name": "MSK"
+            }
+        ],
+        "gee:schema": [
+            {
+                "description": "Antenna pointing direction (\"Right\" or \"Left\").",
+                "name": "AntennaPointing",
+                "type": "STRING"
+            },
+            {
+                "description": "Azimuth pixel spacing.",
+                "name": "AzimuthPixelSpacing",
+                "type": "DOUBLE",
+                "units": "m"
+            },
+            {
+                "description": "Azimuth resolution.",
+                "name": "AzimuthResolution",
+                "type": "DOUBLE",
+                "units": "m"
+            },
+            {
+                "description": "Beam ID.",
+                "name": "BeamID",
+                "type": "STRING"
+            },
+            {
+                "description": "Processing time of this product (ISO8601 string).",
+                "name": "DataAccess_ProcessingTime",
+                "type": "STRING"
+            },
+            {
+                "description": "Software version of this product.",
+                "name": "DataAccess_SoftwareVersion",
+                "type": "STRING"
+            },
+            {
+                "description": "Type of DEM used (\"Elevation\" or \"Surface\").",
+                "name": "DigitalElevationModel",
+                "type": "STRING"
+            },
+            {
+                "description": "Bias of easting error.",
+                "name": "EasternBias",
+                "type": "DOUBLE",
+                "units": "deg"
+            },
+            {
+                "description": "Standard deviation of easting error.",
+                "name": "EasternSTDev",
+                "type": "DOUBLE",
+                "units": "deg"
+            },
+            {
+                "description": "Easting of Lower Right of Product.",
+                "name": "Easting_LR",
+                "type": "DOUBLE",
+                "units": "m"
+            },
+            {
+                "description": "Easting of upper left of product.",
+                "name": "Easting_UL",
+                "type": "DOUBLE",
+                "units": "m"
+            },
+            {
+                "description": "Estimated HH value in Noise Equivalent Intensity (NESZ).",
+                "name": "Estimates_HH",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Estimated HV value in Noise Equivalent Intensity (NESZ).",
+                "name": "Estimates_HV",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Whether a filter was applied (\"TRUE\" or \"FALSE\").",
+                "name": "FilterApplied",
+                "type": "STRING"
+            },
+            {
+                "description": "Filter type (N/A if no filtering was applied).",
+                "name": "FilterType",
+                "type": "STRING"
+            },
+            {
+                "description": "Observation date of the first acquisition (ISO8601 string).\n",
+                "name": "FirstAcquisitionDate",
+                "type": "STRING"
+            },
+            {
+                "description": "Ionospheric delay correction (\"TEC model\" or \"Coregistration\").\n",
+                "name": "IDCMethod",
+                "type": "STRING"
+            },
+            {
+                "description": "Incident angle in far range.",
+                "name": "IncAngleFarRange",
+                "type": "DOUBLE",
+                "units": "deg"
+            },
+            {
+                "description": "Incident angle in near range.",
+                "name": "IncAngleNearRange",
+                "type": "DOUBLE",
+                "units": "deg"
+            },
+            {
+                "description": "Whether ionospheric delay correction was applied (\"TRUE\" or \"FALSE\").\n",
+                "name": "IonosphericDelayCorrectionApplied",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Observation date of the last acquisition (ISO 8601 string).\n",
+                "name": "LastAcquisitionDate",
+                "type": "STRING"
+            },
+            {
+                "description": "Noise removal algorithm.",
+                "name": "NRAlgorithm",
+                "type": "STRING"
+            },
+            {
+                "description": "Whether noise removal algorithm was applied (\"TRUE\" or \"FALSE\").\n",
+                "name": "NoiseRemovalApplied",
+                "type": "STRING"
+            },
+            {
+                "description": "Bias of northing error.",
+                "name": "NorthernBias",
+                "type": "DOUBLE",
+                "units": "deg"
+            },
+            {
+                "description": "Standard deviation of northing error.",
+                "name": "NorthernSTDev",
+                "type": "DOUBLE",
+                "units": "deg"
+            },
+            {
+                "description": "Northing of lower right of product.",
+                "name": "Northing_LR",
+                "type": "DOUBLE",
+                "units": "m"
+            },
+            {
+                "description": "Northing of upper left of product.",
+                "name": "Northing_UL",
+                "type": "DOUBLE",
+                "units": "m"
+            },
+            {
+                "description": "Observation mode.",
+                "name": "ObservationMode",
+                "type": "STRING"
+            },
+            {
+                "description": "Orbit data source (e.g., predicted, definite, precise, downlinked).\n",
+                "name": "OrbitDataSource",
+                "type": "STRING"
+            },
+            {
+                "description": "Pass direction (\"Ascending\" or \"Descending\").",
+                "name": "PassDirection",
+                "type": "STRING"
+            },
+            {
+                "description": "Transmit/Receive polarisation for the data. There\nis one element for each Tx/Rx combination: ['VV'], ['HH'],\n['VV', 'VH'], or ['HH', 'HV'].\n",
+                "name": "Polarizations",
+                "type": "STRING_LIST"
+            },
+            {
+                "description": "Product column spacing.",
+                "name": "ProductColumnSpacing",
+                "type": "DOUBLE",
+                "units": "m"
+            },
+            {
+                "description": "Product row spacing.",
+                "name": "ProductRowSpacing",
+                "type": "DOUBLE",
+                "units": "m"
+            },
+            {
+                "description": "Product version.",
+                "name": "Product_Version",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Scene frame number.",
+                "name": "RSP_Frame_Number",
+                "type": "INT"
+            },
+            {
+                "description": "Scene path number.",
+                "name": "RSP_Path_Number",
+                "type": "INT"
+            },
+            {
+                "description": "Center frequency.",
+                "name": "RadarCenterFrequency",
+                "type": "DOUBLE",
+                "units": "GHz"
+            },
+            {
+                "description": "Range pixel spacing.",
+                "name": "RangePixelSpacing",
+                "type": "DOUBLE",
+                "units": "m"
+            },
+            {
+                "description": "Range resolution.",
+                "name": "RangeResolution",
+                "type": "INT",
+                "units": "m"
+            },
+            {
+                "description": "The correction for each scan described from the first scan.\n",
+                "name": "SlantRangeCorrection",
+                "type": "INT_LIST",
+                "units": "m"
+            },
+            {
+                "description": "Processing date of the source product (ISO8601 string).",
+                "name": "SourceProcParam_ProcessingDate",
+                "type": "STRING"
+            },
+            {
+                "description": "Processing facility of the source product.",
+                "name": "SourceProcParam_ProcessingFacility",
+                "type": "STRING"
+            },
+            {
+                "description": "Product ID of the source product.",
+                "name": "SourceProcParam_ProductID",
+                "type": "STRING"
+            },
+            {
+                "description": "Software version of the source product.",
+                "name": "SourceProcParam_SoftwareVersion",
+                "type": "DOUBLE"
+            }
+        ],
+        "gsd": [
+            25
+        ],
+        "sar:center_frequency": [
+            1.27
+        ],
+        "sar:frequency_band": [
+            "L"
+        ],
+        "sar:instrument_mode": [
+            "ScanSAR"
+        ],
+        "sar:polarizations": [
+            "HH",
+            "HV",
+            "VH",
+            "VV"
+        ],
+        "sar:product_type": [
+            "Normalised Radar Backscatter"
+        ],
+        "sar:resolution_azimuth": [
+            25
+        ],
+        "sar:resolution_range": [
+            25
+        ]
+    },
+    "assets": {
+        "preview_4": {
+            "href": "https://developers.google.com/earth-engine/datasets/images/JAXA/JAXA_ALOS_PALSAR-2_Level2_2_ScanSAR_sample.png",
+            "type": "image/png",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    },
+    "sci:citation": "The data used for this paper have been provided by Earth Observation\nResearch Center (EORC) of Japan Aerospace Exploration Agency (JAXA).\n",
+    "gee:terms_of_use": "Anyone can use this data free of charge subject to the to the attribution\nrequirements. For detailed terms of use see JAXA\n[G-Portal Terms of service](https://gportal.jaxa.jp/gpr/index/eula?lang=en)\n(Section 7. Condition concerning of G-Portal data).\n",
+    "gee:type": "image_collection"
+}

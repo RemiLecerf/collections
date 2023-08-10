@@ -1,0 +1,158 @@
+{
+    "type": "Collection",
+    "version": "1.0",
+    "stac_version": "1.0.0",
+    "stac_extensions": [
+        "collection-assets"
+    ],
+    "id": "AU/GA/DEM_1SEC/v10/DEM-S",
+    "title": "DEM-S: Australian Smoothed Digital Elevation Model",
+    "description": "The Smoothed Digital Elevation Model (DEM-S) was derived\nfrom the SRTM data acquired by NASA in February 2000. DEM-S represents\nground surface topography (excluding vegetation features) and has\nbeen smoothed to reduce noise and improve the representation of\nsurface shape. An adaptive process applied more smoothing in flatter\nareas than hilly areas, and more smoothing in noisier areas than\nin less noisy areas.\n\nThis DEM-S supports calculation of local terrain shape attributes\nsuch as slope, aspect, and curvature that could not be reliably\nderived from the unsmoothed 1 second DEM because of noise.\n\nThere are several areas with unexpected negative values: close to\nCanberra around (150.443044, -35.355281) with values of -55 and in Western\nAustralia around (124.84, -16.44) with -43.\n",
+    "keywords": [
+        "australia",
+        "dem",
+        "elevation",
+        "ga",
+        "geophysical",
+        "geoscience_australia",
+        "smoothed",
+        "srtm"
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    112.99,
+                    -44.06,
+                    154,
+                    -9.99
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2010-02-01T00:00:00Z",
+                    "2010-02-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "providers": [
+        {
+            "name": "Geoscience Australia",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.ga.gov.au/metadata-gateway/metadata/record/72759/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/AU_GA_DEM_1SEC_v10_DEM-S"
+        }
+    ],
+    "license": "CC-BY-4.0",
+    "links": [
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections/AU/GA/DEM_1SEC/v10/DEM-S",
+            "rel": "self",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections",
+            "rel": "parent",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/",
+            "rel": "root",
+            "type": "application/json"
+        },
+        {
+            "code": "JavaScript",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/AU/AU_GA_DEM_1SEC_v10_DEM-S",
+            "rel": "related",
+            "title": "Run the example for AU/GA/DEM_1SEC/v10/DEM-S in the Earth Engine Code Editor",
+            "type": "text/html"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/images/AU/AU_GA_DEM_1SEC_v10_DEM-S_sample.png",
+            "rel": "preview",
+            "type": "image/png"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/AU_GA_DEM_1SEC_v10_DEM-S#terms-of-use",
+            "rel": "license",
+            "type": "text/html"
+        },
+        {
+            "href": "https://spdx.org/licenses/CC-BY-4.0.html",
+            "rel": "license",
+            "type": "text/html"
+        }
+    ],
+    "cube:dimensions": {
+        "x": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                112.99,
+                154
+            ]
+        },
+        "y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                -44.06,
+                -9.99
+            ]
+        },
+        "t": {
+            "type": "temporal",
+            "extent": [
+                "2010-02-01T00:00:00Z",
+                "2010-02-01T00:00:00Z"
+            ]
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "elevation"
+            ]
+        }
+    },
+    "summaries": {
+        "elevation": {
+            "gee:estimated_range": true,
+            "maximum": 2224.32,
+            "minimum": -73.31
+        },
+        "eo:bands": [
+            {
+                "description": "Elevation",
+                "gee:units": "m",
+                "name": "elevation"
+            }
+        ],
+        "gsd": [
+            30.92
+        ]
+    },
+    "assets": {
+        "preview_4": {
+            "href": "https://developers.google.com/earth-engine/datasets/images/AU/AU_GA_DEM_1SEC_v10_DEM-S_sample.png",
+            "type": "image/png",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    },
+    "sci:citation": "Geoscience Australia, 2015. Digital Elevation Model (DEM) of Australia\nderived from LiDAR 5 Metre Grid. Geoscience Australia, Canberra.\n",
+    "gee:terms_of_use": "[CC-BY-4.0](https://spdx.org/licenses/CC-BY-4.0.html)",
+    "gee:type": "image"
+}

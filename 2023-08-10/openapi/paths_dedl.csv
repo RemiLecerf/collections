@@ -1,0 +1,14 @@
+operation,base_url,endpoint,summary,description,operationId
+get,dedl,/,DEDL API root endpoint,Root endpoint of the Destination Earth Data Lake API.,get
+get,dedl,/services,The services advertised with the API.,The list of services available for users of the platform.,getServices
+get,dedl,/services/{serviceId},Describe the service for the given `serviceId`,Endpoint providing the information related to a specific service identified by its `serviceId`.,getService
+get,dedl,/stac,DEDL STAC capabilities discovery,Endpoint providing the search capabilities provided by the DEDL STAC interface.,getStac
+get,dedl,/stac/conformance,information about specifications that this API conforms to,A list of all conformance classes specified in a standard that the	server conforms to.,getConformanceDeclaration
+get,dedl,/stac/collections,The feature collections in the dataset.,A body of Feature Collections that belong or are used together with additional links. Request may not return the full set of metadata per Feature Collection.,getCollections
+get,dedl,/stac/collections/{collectionId},Describe the feature Collection for the given `collectionId`.,A single Feature Colletion for the give `collectionId`. Request this endpoint to get a full list of metadata for the Feature Collection.,get_collections_collectionId
+get,dedl,/stac/collections/{collectionId}/items,List of items avaialble in a given collection,Endpoint providing the list of items that are available in a specific collection identified by its `collectionId`.,getFeatures
+get,dedl,/stac/collections/{collectionId}/items/{featureId},Fetch a single feature.,Fetch the feature with id `featureId` in the feature collection	with id `collectionId`.,get collections__collectionId__items_itemId
+get,dedl,/stac/search,Search STAC items with simple filtering.,Retrieve Items matching filters. Intended as a shorthand API for simple	queries.,getItemSearch
+post,dedl,/stac/search,Search STAC items with full-featured filtering.,"Retrieve items matching filters. Intended as the standard, full-featured	query API.",postItemSearch
+post,dedl,/stac/download,Download request,Endpoint allowing user to request the download of a given item. The content of the download is specified in the body of the request.,postDownload
+get,dedl,/stac/collections/{collectionId}/items/{featureId}/download,Download a single feature assets .zip archive.,Download the feature with id `featureId` in the feature collection	with id `collectionId` assets .zip archive.,download collections__collectionId__items_itemId

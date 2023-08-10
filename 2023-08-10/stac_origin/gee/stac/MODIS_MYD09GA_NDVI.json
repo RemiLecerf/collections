@@ -1,0 +1,156 @@
+{
+    "type": "Collection",
+    "stac_version": "1.0.0",
+    "stac_extensions": [
+        "collection-assets"
+    ],
+    "id": "MODIS/MYD09GA_NDVI",
+    "title": "MODIS Aqua Daily NDVI [deprecated]",
+    "description": "The Normalized Difference Vegetation Index is\ngenerated from the Near-IR and Red bands of each scene as (NIR - Red) /\n(NIR + Red), and ranges in value from -1.0 to 1.0. This product is generated from the MODIS/MYD09GA surface reflectance composites.\n",
+    "keywords": [
+        "modis",
+        "ndvi",
+        "usgs"
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2002-07-04T00:00:00Z",
+                    "2017-03-30T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "providers": [
+        {
+            "name": "Google",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://earthengine.google.com/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_MYD09GA_NDVI"
+        }
+    ],
+    "license": "proprietary",
+    "links": [
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections/MODIS/MYD09GA_NDVI",
+            "rel": "self",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections",
+            "rel": "parent",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/",
+            "rel": "root",
+            "type": "application/json"
+        },
+        {
+            "code": "JavaScript",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/MODIS/MODIS_MYD09GA_NDVI",
+            "rel": "related",
+            "title": "Run the example for MODIS/MYD09GA_NDVI in the Earth Engine Code Editor",
+            "type": "text/html"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/images/MODIS/MODIS_MYD09GA_NDVI_sample.png",
+            "rel": "preview",
+            "type": "image/png"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_MYD09GA_NDVI#terms-of-use",
+            "rel": "license",
+            "type": "text/html"
+        },
+        {
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_MYD09GA_006_NDVI.json",
+            "rel": "successor-version",
+            "title": "MODIS/MYD09GA_006_NDVI",
+            "type": "application/json"
+        }
+    ],
+    "cube:dimensions": {
+        "x": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                -180,
+                180
+            ]
+        },
+        "y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                -90,
+                90
+            ]
+        },
+        "t": {
+            "type": "temporal",
+            "extent": [
+                "2002-07-04T00:00:00Z",
+                "2017-03-30T00:00:00Z"
+            ]
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "NDVI"
+            ]
+        }
+    },
+    "summaries": {
+        "NDVI": {
+            "gee:estimated_range": true,
+            "maximum": 1,
+            "minimum": -1
+        },
+        "eo:bands": [
+            {
+                "description": "Normalized Difference Vegetation Index",
+                "gsd": 463.312716528,
+                "name": "NDVI"
+            }
+        ]
+    },
+    "assets": {
+        "preview_4": {
+            "href": "https://developers.google.com/earth-engine/datasets/images/MODIS/MODIS_MYD09GA_NDVI_sample.png",
+            "type": "image/png",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    },
+    "deprecated": true,
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "day"
+    },
+    "gee:is_derived": true,
+    "gee:terms_of_use": "MODIS data and products acquired through the LP DAAC have no restrictions on subsequent use, sale, or redistribution.\n",
+    "gee:type": "image_collection"
+}

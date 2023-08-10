@@ -1,0 +1,72 @@
+{
+  "type": "Collection",
+  "id": "EO:ECMWF:DAT:SIS_EUROPEAN_RISK_EXTREME_PRECIPITATION_INDICATORS",
+  "stac_version": "1.0.0",
+  "description": "The dataset presents climate impact indicators related to extreme precipitation in Europe under current climate conditions. The suite of indicators include recent historic records, recurrence intervals, and other relevant statistical measures to evaluate the magnitude and frequency of extreme precipitation events. These are provided as gridded products, with one product covering the whole of Europe, and the other higher resolution product focused on 20 European cities that were identified as vulnerable to urban pluvial flooding based on stakeholder surveys.\nThis dataset makes use of precipitation data available in the Climate Data Store (i.e. E-OBS gridded land-only observational dataset and ERA5 reanalysis) combined with additional datasets capable of improving the spatial and temporal resolution of the precipitation data, making it suitable for pluvial flood analysis at city scales. These are derived from i) the network of meteorological stations included in the European Climate Assessment & Dataset (ECA&D) programme and ii) dynamically downscaled ERA5 reanalysis at 2 km x 2 km (ERA5-2km) using the regional climate model COSMO-CLM and accounting for urban parameterization, specifically performed for the 20 European cities identified as vulnerable to urban pluvial flooding.\nAt the European scale, E-OBS and ERA5 precipitation data are used to compute indicators at different temporal resolutions (i.e. daily, monthly, yearly, and 30-year) according to the type of indicator. The precipitation amounts at fixed return periods are also computed for point observations from meteorological stations using the ECA&D network and are then interpolated onto the E-OBS grid. At the city scale, a dynamically downscaled ERA5-2km precipitation data are instead used to derive daily indicators, allowing city stakeholders to detect and rank local extreme precipitation events and evaluate their magnitude.\nThis dataset was produced on behalf of the Copernicus Climate Change Service.\n\nVariables in the dataset/application are:\nMaximum 1-day precipitation, Maximum 5-day precipitation, Number of consecutive wet days, Number of precipitation days exceeding 20mm, Number of precipitation days exceeding fixed percentiles, Number of wet days, Precipitation at fixed percentiles, Precipitation at fixed return periods, Standardised precipitation exceeding fixed percentiles, Total precipitation",
+  "links": [
+    {
+      "rel": "hosts",
+      "href": "https://confluence.ecmwf.int/x/EsHmE",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Product user guide"
+    },
+    {
+      "rel": "hosts",
+      "href": "https://datastore.copernicus-climate.eu/documents/sis-european-disaster-risk-reduction/C3S_D430_ProductUserGuide_Extreme_Precipitation_Events_v2.2.pdf",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Product user guide (PDF)"
+    },
+    {
+      "rel": "hosts",
+      "href": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.3a9c4f89",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Climate Data Store catalogue"
+    },
+    {
+      "rel": "hosts",
+      "href": "https://confluence.ecmwf.int/x/EsHmE",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Product user guide"
+    }
+  ],
+  "title": "Extreme precipitation risk indicators for Europe and European cities from 1950 to 2019",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1950-01-01T00:00:00Z",
+          "2019-12-31T23:59:59Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Meteorological geographical features",
+    "Spatial coverage: Europe",
+    "Variable domain: Land (hydrology)",
+    "Temporal coverage: Past",
+    "Product type: Climate indices",
+    "Provider: Copernicus C3S"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

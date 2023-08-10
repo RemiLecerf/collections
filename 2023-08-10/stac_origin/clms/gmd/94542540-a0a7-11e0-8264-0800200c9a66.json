@@ -1,0 +1,60 @@
+{
+  "type": "Collection",
+  "id": "94542540-a0a7-11e0-8264-0800200c9a66",
+  "stac_version": "1.0.0",
+  "description": "The Normalized Difference Vegetation Index (NDVI) is a proxy to quantify the vegetation amount. It is defined as NDVI=(NIR-Red)/(NIR+Red) where NIR corresponds to the reflectance in the near infrared band (B3 of VEGETATION sensor), and Red to the reflectance in the red band (B2 of VEGETATION sensor). It is closely related to FAPAR and is little scale dependant",
+  "links": [
+    {
+      "rel": "hosts",
+      "href": "http://land.copernicus.eu/global/products/ndvi",
+      "type": "HTTP",
+      "title": "Copernicus Global Land Service"
+    },
+    {
+      "rel": "hosts",
+      "href": "http://eoportal.eumetsat.int",
+      "title": "Copernicus Global Land Service"
+    }
+  ],
+  "title": "Normalized Difference Vegetation Index: global 10-daily tiles (raster 1km) - version 1, Sept 2014",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -70.0,
+          180.0,
+          80.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1999-01-01T00:00:00Z",
+          "2014-05-31T23:59:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Orthoimagery",
+    "plant resource",
+    "biogeophysical",
+    "ndvi",
+    "global 10° tiles",
+    "Dekad",
+    "30-day composite"
+  ],
+  "providers": [
+    {
+      "name": "Copernicus Land Monitoring Service",
+      "description": "Copernicus Land Monitoring Service - VITO NV",
+      "roles": [
+        "host"
+      ],
+      "url": "https://land.copernicus.eu/"
+    }
+  ]
+}

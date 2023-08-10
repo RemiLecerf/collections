@@ -1,0 +1,329 @@
+{
+    "slug": "e-obs-daily-gridded-meteorological-data-for-europe-from-1950-to-present-derived-from-in-situ-observations",
+    "name": "insitu-gridded-observations-europe",
+    "id": "eu.copernicus.climate.insitu-gridded-observations-europe",
+    "type": "dataset",
+    "rich_abstract": "<div class='abstract-text'>\n         <p>E-OBS is a daily gridded land-only observational dataset over Europe. The blended time series from the station network of the European Climate Assessment &amp; Dataset (ECA&amp;D) project form the basis for the E-OBS gridded dataset. All station data are sourced directly from the European National Meteorological and Hydrological Services (NMHSs) or other data holding institutions. For a considerable number of countries the number of stations used is the complete national network and therefore much more dense than the station network that is routinely shared among NMHSs (which is the basis of other gridded datasets). The density of stations gradually increases through collaborations with NMHSs within European research contracts. </p>\n<p>Initially, in 2008, this gridded dataset was developed to provide validation for the suite of Europe-wide climate model simulations produced as part of the European Union ENSEMBLES project. While E-OBS remains an important dataset for model validation, it is also used more generally for monitoring the climate across Europe, particularly with regard to the assessment of the magnitude and frequency of daily extremes.</p>\n<p>The position of E-OBS is unique in Europe because of the relatively high spatial horizontal grid spacing, the daily resolution of the dataset, the provision of multiple variables and the length of the dataset. Finally, the station data on which E-OBS is based are available through the ECA&amp;D webpages (where the owner of the data has given permission to do so). In these respects it contrasts with other datasets.</p>\n<p>The dataset is daily, meaning the observations cover 24 hours per time step. The exact 24-hour period can be different per region. The reason for this is that some data providers measure between midnight to midnight while others might measure from morning to morning. Since E-OBS is an observational dataset, no attempts have been made to adjust time series for this 24-hour offset. It is made sure, where known, that the largest part of the measured 24-hour period corresponds to the day attached to the time step in E-OBS (and ECA&amp;D).</p>\n         \n         \n            <p></p>\n            <table class=\"abstract-description abstract-table\">\n            <tr><th colspan=\"2\">DATA DESCRIPTION</th>\n            \n<tr><th>Data type</th><td>Gridded</td></tr>\n<tr><th>Projection</th><td>Regular latitude-longitude grid</td></tr>\n<tr><th>Horizontal coverage</th><td>Europe</td></tr>\n<tr><th>Horizontal resolution</th><td>0.1\u00b0 x 0.1\u00b0  and  0.25\u00b0 x 0.25\u00b0</td></tr>\n<tr><th>Vertical coverage</th><td>Near surface</td></tr>\n<tr><th>Vertical resolution</th><td>Single level</td></tr>\n<tr><th>Temporal coverage</th><td>January 1950 to present</td></tr>\n<tr><th>Temporal resolution</th><td>Day</td></tr>\n<tr><th>File format</th><td>NetCDF-4</td></tr>\n<tr><th>Conventions</th><td>Climate and Forecast Metadata Convention v1.4 (CF-v1.4)</td></tr>\n<tr><th>Versions</th><td>v19.0e to v27.0e</td></tr>\n<tr><th>Update frequency</th><td>New versions added every 6 months</td></tr>\n</table>\n\n    <p></p>\n    <table class=\"abstract-variables abstract-table\">\n    <tr><th colspan=\"3\">MAIN VARIABLES</th>\n    \n\n    <tr><th class='variables-name'>Name</th><th class='variables-units'>Units</th><th class='variables-description'>Description</th></tr>\n    \n<tr><td class='variables-name'>Land surface elevation</td><td class='variables-units'>m</td><td class='variables-description'>Earth's surface height above sea level derived from the Global 30 Arc-Second Elevation Data Set (GTOPO30) developed by the United States Geological Survey.</td></tr>\n<tr><td class='variables-name'>Maximum temperature</td><td class='variables-units'>\u00b0C</td><td class='variables-description'>Daily maximum air temperature measured near the surface, usually at height of 2 meters.</td></tr>\n<tr><td class='variables-name'>Mean temperature</td><td class='variables-units'>\u00b0C</td><td class='variables-description'>Daily mean air temperature measured near the surface, usually at height of 2 meters.</td></tr>\n<tr><td class='variables-name'>Minimum temperature</td><td class='variables-units'>\u00b0C</td><td class='variables-description'>Daily minimum air temperature measured near the surface, usually at height of 2 meters.</td></tr>\n<tr><td class='variables-name'>Precipitation amount</td><td class='variables-units'>mm</td><td class='variables-description'>Total daily  amount of rain, snow and  hail measured as the height of the equivalent liquid water in a square meter  The data sources for the precipitation  are  rain gauge data which do not have a uniform way of defining the 24-hour period over which precipitation measurements are made. Therefore, there is no uniform time period (for instance, 06 UTC previous day to 06 UTC today)  which could be attached to the  daily precipitation.</td></tr>\n<tr><td class='variables-name'>Relative humidity</td><td class='variables-units'>%</td><td class='variables-description'>Daily mean relative humidity measured near the surface usually at a height of 2 meters. Relative humidity values relate to actual humidity and saturation humidity. Values are in the interval [0,100]. 0% means that the air in the grid cell is totally dry whereas 100% indicates that the air in the cell is saturated with water vapour.</td></tr>\n<tr><td class='variables-name'>Sea level pressure</td><td class='variables-units'>hPa</td><td class='variables-description'>Daily mean air pressure at sea level. In regions where the Earth's surface is above sea level the surface pressure is used to compute the air pressure that would exist at sea level directly below given a constant air temperature from the surface to the sea level point.</td></tr>\n<tr><td class='variables-name'>Surface shortwave downwelling radiation</td><td class='variables-units'>W m-2</td><td class='variables-description'>The flux of shortwave radiation (also known as solar radiation) measured at the Earth's surface.</td></tr>\n<tr><td class='variables-name'>Wind speed</td><td class='variables-units'>m s-1</td><td class='variables-description'>Daily mean wind speed at 10 meter height.</td></tr>\n</table>\n    </div>",
+    "terms": [
+        "licence-to-use-E-OBS-products"
+    ],
+    "constraints": [
+        {
+            "grid_resolution": [
+                "0.1deg",
+                "0.25deg"
+            ],
+            "period": [
+                "full_period"
+            ],
+            "product_type": [
+                "elevation"
+            ],
+            "variable": [
+                "land_surface_elevation"
+            ],
+            "version": [
+                "19.0e",
+                "20.0e",
+                "21.0e",
+                "22.0e",
+                "23.1e",
+                "24.0e",
+                "25.0e",
+                "26.0e",
+                "27.0e"
+            ]
+        },
+        {
+            "grid_resolution": [
+                "0.1deg",
+                "0.25deg"
+            ],
+            "period": [
+                "full_period",
+                "1950_1964",
+                "1965_1979",
+                "1980_1994",
+                "1995_2010",
+                "2011_2018"
+            ],
+            "product_type": [
+                "ensemble_mean",
+                "ensemble_spread"
+            ],
+            "variable": [
+                "sea_level_pressure",
+                "precipitation_amount",
+                "mean_temperature",
+                "minimum_temperature",
+                "maximum_temperature"
+            ],
+            "version": [
+                "19.0e"
+            ]
+        },
+        {
+            "grid_resolution": [
+                "0.1deg",
+                "0.25deg"
+            ],
+            "period": [
+                "full_period",
+                "1950_1964",
+                "1965_1979",
+                "1980_1994",
+                "1995_2010",
+                "2011_2019"
+            ],
+            "product_type": [
+                "ensemble_mean",
+                "ensemble_spread"
+            ],
+            "variable": [
+                "sea_level_pressure",
+                "precipitation_amount",
+                "mean_temperature",
+                "minimum_temperature",
+                "maximum_temperature"
+            ],
+            "version": [
+                "20.0e",
+                "21.0e"
+            ]
+        },
+        {
+            "grid_resolution": [
+                "0.1deg",
+                "0.25deg"
+            ],
+            "period": [
+                "full_period",
+                "1950_1964",
+                "1965_1979",
+                "1980_1994",
+                "1995_2010",
+                "2011_2020"
+            ],
+            "product_type": [
+                "ensemble_mean",
+                "ensemble_spread"
+            ],
+            "variable": [
+                "relative_humidity",
+                "sea_level_pressure",
+                "surface_shortwave_downwelling_radiation",
+                "precipitation_amount",
+                "mean_temperature",
+                "minimum_temperature",
+                "maximum_temperature"
+            ],
+            "version": [
+                "23.1e"
+            ]
+        },
+        {
+            "grid_resolution": [
+                "0.1deg",
+                "0.25deg"
+            ],
+            "period": [
+                "full_period",
+                "1950_1964",
+                "1965_1979",
+                "1980_1994",
+                "1995_2010",
+                "2011_2020"
+            ],
+            "product_type": [
+                "ensemble_mean",
+                "ensemble_spread"
+            ],
+            "variable": [
+                "sea_level_pressure",
+                "precipitation_amount",
+                "mean_temperature",
+                "minimum_temperature",
+                "maximum_temperature"
+            ],
+            "version": [
+                "22.0e"
+            ]
+        },
+        {
+            "grid_resolution": [
+                "0.1deg",
+                "0.25deg"
+            ],
+            "period": [
+                "full_period",
+                "1950_1964",
+                "1965_1979",
+                "1980_1994",
+                "1995_2010",
+                "2011_2021"
+            ],
+            "product_type": [
+                "ensemble_mean",
+                "ensemble_spread"
+            ],
+            "variable": [
+                "relative_humidity",
+                "sea_level_pressure",
+                "surface_shortwave_downwelling_radiation",
+                "precipitation_amount",
+                "mean_temperature",
+                "minimum_temperature",
+                "maximum_temperature"
+            ],
+            "version": [
+                "24.0e",
+                "25.0e"
+            ]
+        },
+        {
+            "grid_resolution": [
+                "0.1deg",
+                "0.25deg"
+            ],
+            "period": [
+                "full_period",
+                "1950_1964",
+                "1965_1979",
+                "1980_1994",
+                "1995_2010",
+                "2011_2022"
+            ],
+            "product_type": [
+                "ensemble_mean",
+                "ensemble_spread"
+            ],
+            "variable": [
+                "relative_humidity",
+                "sea_level_pressure",
+                "surface_shortwave_downwelling_radiation",
+                "precipitation_amount",
+                "mean_temperature",
+                "minimum_temperature",
+                "maximum_temperature"
+            ],
+            "version": [
+                "26.0e",
+                "27.0e"
+            ]
+        },
+        {
+            "grid_resolution": [
+                "0.1deg",
+                "0.25deg"
+            ],
+            "period": [
+                "full_period",
+                "1980_1994",
+                "1995_2010",
+                "2011_2019"
+            ],
+            "product_type": [
+                "ensemble_mean",
+                "ensemble_spread"
+            ],
+            "variable": [
+                "surface_shortwave_downwelling_radiation"
+            ],
+            "version": [
+                "20.0e",
+                "21.0e"
+            ]
+        },
+        {
+            "grid_resolution": [
+                "0.1deg",
+                "0.25deg"
+            ],
+            "period": [
+                "full_period",
+                "1980_1994",
+                "1995_2010",
+                "2011_2020"
+            ],
+            "product_type": [
+                "ensemble_mean",
+                "ensemble_spread"
+            ],
+            "variable": [
+                "wind_speed"
+            ],
+            "version": [
+                "23.1e"
+            ]
+        },
+        {
+            "grid_resolution": [
+                "0.1deg",
+                "0.25deg"
+            ],
+            "period": [
+                "full_period",
+                "1980_1994",
+                "1995_2010",
+                "2011_2020"
+            ],
+            "product_type": [
+                "ensemble_mean",
+                "ensemble_spread"
+            ],
+            "variable": [
+                "relative_humidity",
+                "surface_shortwave_downwelling_radiation"
+            ],
+            "version": [
+                "22.0e"
+            ]
+        },
+        {
+            "grid_resolution": [
+                "0.1deg",
+                "0.25deg"
+            ],
+            "period": [
+                "full_period",
+                "1980_1994",
+                "1995_2010",
+                "2011_2021"
+            ],
+            "product_type": [
+                "ensemble_mean",
+                "ensemble_spread"
+            ],
+            "variable": [
+                "wind_speed"
+            ],
+            "version": [
+                "24.0e",
+                "25.0e"
+            ]
+        },
+        {
+            "grid_resolution": [
+                "0.1deg",
+                "0.25deg"
+            ],
+            "period": [
+                "full_period",
+                "1980_1994",
+                "1995_2010",
+                "2011_2022"
+            ],
+            "product_type": [
+                "ensemble_mean",
+                "ensemble_spread"
+            ],
+            "variable": [
+                "wind_speed"
+            ],
+            "version": [
+                "26.0e",
+                "27.0e"
+            ]
+        }
+    ]
+}

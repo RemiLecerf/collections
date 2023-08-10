@@ -1,0 +1,71 @@
+{
+    "stac_version": "0.9.0",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/datacube/v2.2.0/schema.json",
+        "https://stac-extensions.github.io/eo/v1.1.0/schema.json"
+    ],
+    "id": "CGLS_LAI300_V1_GLOBAL",
+    "title": "Copernicus Global Land LAI product V1, 300m resolution, 10-daily",
+    "description": "Global LAI at 300m resolution, 10-daily. The Leaf Area Index is defined as half the total area of green elements of the canopy per unit horizontal ground area. The satellite-derived value corresponds to the total green LAI of all the canopy layers, including the understory which may represent a very significant contribution, particularly for forests. Practically, the LAI quantifies the thickness of the vegetation cover.",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180.0014880952381,
+                    -59.9985119,
+                    179.9985119,
+                    80.00148809523809
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2014-01-10T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "free",
+    "links": [
+        {
+            "href": "https://land.copernicus.eu/global/products/lai",
+            "rel": "alternate",
+            "title": "Product web page."
+        }
+    ],
+    "cube:dimensions": {
+        "bands": {
+            "type": "bands",
+            "values": [
+                "LAI"
+            ]
+        },
+        "t": {
+            "extent": [
+                "2014-01-10T00:00:00Z"
+            ],
+            "type": "temporal"
+        },
+        "x": {
+            "axis": "x",
+            "extent": [
+                -180.0014880952381,
+                179.9985119
+            ],
+            "reference_system": 4326,
+            "step": 0.00297619047619,
+            "type": "spatial"
+        },
+        "y": {
+            "axis": "y",
+            "extent": [
+                -59.9985119,
+                80.00148809523809
+            ],
+            "reference_system": 4326,
+            "step": 0.00297619047619,
+            "type": "spatial"
+        }
+    }
+}

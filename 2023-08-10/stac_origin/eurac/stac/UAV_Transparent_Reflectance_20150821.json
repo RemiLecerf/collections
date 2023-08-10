@@ -1,0 +1,104 @@
+{
+    "type": "Collection",
+    "version": "v1",
+    "stac_version": "0.9.0",
+    "stac_extensions": [
+        "datacube"
+    ],
+    "id": "UAV_Transparent_Reflectance_20150821",
+    "title": "UAV DataCubes 20150821",
+    "description": "HR Digital surface models, HR Land monitoring, HR Multi-spectral imaging",
+    "keywords": [
+        "UAV",
+        "Multispectral",
+        "Suface models"
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    10.58420850479641,
+                    46.68349363156077,
+                    10.586211640777409,
+                    46.68500478183006
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2015-08-21T00:00:00Z",
+                    "2015-08-21T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "providers": [
+        {
+            "name": "Eurac EO WCS",
+            "url": "http://www.eurac.edu",
+            "roles": [
+                "Producer"
+            ]
+        }
+    ],
+    "license": "Propreitary",
+    "cube:dimensions": {
+        "DATE": {
+            "type": "temporal",
+            "extent": [
+                "2015-08-21T00:00:00.000Z",
+                "2015-08-21T00:00:00.000Z"
+            ],
+            "step": "null"
+        },
+        "E": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                10.58420850479641,
+                10.586211640777409
+            ],
+            "reference_system": 32632
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "Band1",
+                "Band2"
+            ]
+        },
+        "N": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                46.68349363156077,
+                46.68500478183006
+            ],
+            "reference_system": 32632
+        }
+    },
+    "summaries": {
+        "constellation": [
+            "Soleon"
+        ],
+        "platform": [
+            "Soleon"
+        ],
+        "rows": 1665,
+        "columns": 1435,
+        "instruments": [
+            "RGB, Multispectral, hyperspectral, thermal"
+        ],
+        "eo:bands": [
+            {
+                "name": "Band1"
+            },
+            {
+                "name": "Band2"
+            }
+        ]
+    },
+    "sci:citation": "UAV Mission [20150821]",
+    "engine": "WCPS"
+}

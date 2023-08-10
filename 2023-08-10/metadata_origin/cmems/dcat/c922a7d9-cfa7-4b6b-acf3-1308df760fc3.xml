@@ -1,0 +1,87 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:dct="http://purl.org/dc/terms/" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/c922a7d9-cfa7-4b6b-acf3-1308df760fc3">
+        <foaf:primaryTopic rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/resource/da5e467c-7cbd-4cde-a759-9b29b897c722"/>
+        <dct:issued>2022-07-19</dct:issued>
+        <dct:modified>2022-07-19</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/srv/eng/xml.metadata.get?uuid=c922a7d9-cfa7-4b6b-acf3-1308df760fc3">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork?uuid=c922a7d9-cfa7-4b6b-acf3-1308df760fc3">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/resource/da5e467c-7cbd-4cde-a759-9b29b897c722">
+        <dct:identifier>da5e467c-7cbd-4cde-a759-9b29b897c722</dct:identifier>
+        <dct:title>Global Ocean Ensemble Physics Reanalysis</dct:title>
+        <dct:abstract>'''Short description:'''
+
+ You can find here the CMEMS Global Ocean Ensemble Reanalysis product at ¼ degree resolution : monthly means of Temperature, Salinity, Currents and Ice variables for 75 vertical levels, starting from 1993 onward.
+ 
+Global ocean reanalyses are homogeneous 3D gridded descriptions of the physical state of the ocean covering several decades, produced with a numerical ocean model constrained with data assimilation of satellite and in situ observations. These reanalyses are built to be as close as possible to the observations (i.e. realistic) and in agreement with the model physics The multi-model ensemble approach allows uncertainties or error bars in the ocean state to be estimated.
+
+The ensemble mean may even provide for certain regions and/or periods a more reliable estimate than any individual reanalysis product.
+
+The four reanalyses, used to create the ensemble, covering “altimetric era” period (starting from 1st of January 1993) during which altimeter altimetry data observations are available:
+ * GLORYS2V4 from Mercator Ocean (Fr);
+ * ORAS5 from ECMWF;
+ * GloSea5 from Met Office (UK);
+ * and C-GLORSv7 from CMCC (It);
+ 
+These four products provided four different time series of global ocean simulations 3D monthly estimates. All numerical products available for users are monthly or daily mean averages describing the ocean.
+
+'''DOI (product) :'''   
+https://doi.org/10.48670/moi-00024</dct:abstract>
+        <dcat:theme rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/thesaurus/iso/topicCategory/oceans"/>
+        <foaf:thumbnail rdf:resource="https://catalogue.marine.copernicus.eu/documents/IMG/GLOBAL_REANALYSIS_PHY_001_031.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((-180.00 -80.00, -180.00 90.00, 180.00 90.00, 180.00 -80.00, -180.00 -80.00))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:issued>2012-08-26</dct:issued>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/GLO-MERCATOR-TOULOUSE-FR"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/GLO-MERCATOR-TOULOUSE-FR"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/GLO-MERCATOR-TOULOUSE-FR"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/GLO-RAN-MERCATOR-TOULOUSE-FR"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/GLO-MERCATOR-TOULOUSE-FR"/>
+        <dct:accrualPeriodicity>annually</dct:accrualPeriodicity>
+        <dct:license>otherRestrictions</dct:license>
+        <dct:license>license</dct:license>
+        <dct:license>No limitations on public access</dct:license>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=GLOBAL_REANALYSIS_PHY_001_031-TDS&amp;product=global-reanalysis-phy-001-031-grepv2-daily"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/dodsC/global-reanalysis-phy-001-031-grepv2-daily"/>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/GLOBAL_REANALYSIS_PHY_001_031/global-reanalysis-phy-001-031-grepv2-daily"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=GLOBAL_REANALYSIS_PHY_001_031-TDS&amp;product=global-reanalysis-phy-001-031-grepv2-mnstd-daily"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/dodsC/global-reanalysis-phy-001-031-grepv2-mnstd-daily"/>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/GLOBAL_REANALYSIS_PHY_001_031/global-reanalysis-phy-001-031-grepv2-mnstd-daily"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/wms/global-reanalysis-phy-001-031-grepv2-mnstd-daily"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=GLOBAL_REANALYSIS_PHY_001_031-TDS&amp;product=global-reanalysis-phy-001-031-grepv2-mnstd-monthly"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/dodsC/global-reanalysis-phy-001-031-grepv2-mnstd-monthly"/>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/GLOBAL_REANALYSIS_PHY_001_031/global-reanalysis-phy-001-031-grepv2-mnstd-monthly"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/wms/global-reanalysis-phy-001-031-grepv2-mnstd-monthly"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=GLOBAL_REANALYSIS_PHY_001_031-TDS&amp;product=global-reanalysis-phy-001-031-grepv2-monthly"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/dodsC/global-reanalysis-phy-001-031-grepv2-monthly"/>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/GLOBAL_REANALYSIS_PHY_001_031/global-reanalysis-phy-001-031-grepv2-monthly"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/wms/global-reanalysis-phy-001-031-grepv2-daily"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/wms/global-reanalysis-phy-001-031-grepv2-monthly"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/75e55f55-a86c-4f12-bc8e-61def41e025e"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/a7ea6dd3-0e21-46e1-9a7e-0318963c6c5a"/>
+        <dcat:dataQuality>The myOcean products depends on other products for production or validation. The detailed list of dependencies is given in ISO19115's aggregationInfo (ISO19139 Xpath = "gmd:MD_Metadata/gmd:identificationInfo/gmd:aggregationInfo[./gmd:MD_AggregateInformation/gmd:initiativeType/gmd:DS_InitiativeTypeCode/@codeListValue='upstream-validation' or 'upstream-production']")</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+    

@@ -1,0 +1,66 @@
+{
+  "type": "Collection",
+  "id": "EO.CLMS.DAT.GLO.FCOVER300_V1",
+  "stac_version": "1.0.0",
+  "description": "The Fraction of Vegetation Cover (FCover) corresponds to the fraction of ground covered by green vegetation. \n        Practically, it quantifies the spatial extent of the vegetation. Because it is independent from the \n        illumination direction and it is sensitive to the vegetation amount, FCover is a very good candidate \n        for the replacement of classical vegetation indices for the monitoring of ecosystems.\n        The product at 333m resolution is provided in Near Real Time and consolidated in the next six periods.",
+  "links": [
+    {
+      "rel": "hosts",
+      "href": "http://land.copernicus.eu/global/products/fcover",
+      "type": "HTTP",
+      "title": "Copernicus Global Land Service"
+    },
+    {
+      "rel": "hosts",
+      "href": "http://land.copernicus.eu/global/access",
+      "type": "HTTP",
+      "title": "Copernicus Global Land Service"
+    },
+    {
+      "rel": "hosts",
+      "href": "http://eoportal.eumetsat.int",
+      "title": "Copernicus Global Land Service"
+    }
+  ],
+  "title": "Global 10-daily Fraction of Vegetation Cover 333m",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -60.0,
+          180.0,
+          80.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2014-01-10T00:00:00Z",
+          "2030-12-31T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Orthoimagery",
+    "geophysical environment",
+    "biogeophysical",
+    "leaf area",
+    "GLOBE",
+    "Dekad",
+    "10-daily composite"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

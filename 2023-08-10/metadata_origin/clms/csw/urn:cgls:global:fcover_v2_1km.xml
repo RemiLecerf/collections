@@ -1,0 +1,34 @@
+<csw:Record xmlns:ows="http://www.opengis.net/ows" xmlns:dct="http://purl.org/dc/terms/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:geonet="http://www.fao.org/geonetwork" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dc:identifier>urn:cgls:global:fcover_v2_1km</dc:identifier>
+      <dc:date>2022-03-17T17:09:11</dc:date>
+      <dc:title>Fraction of Vegetation Cover: global 10-daily (raster 1km) - version 2, Apr 2017</dc:title>
+      <dc:type>series</dc:type>
+      <dc:subject>Orthoimagery</dc:subject>
+      <dc:subject>geophysical environment</dc:subject>
+      <dc:subject>biogeophysical</dc:subject>
+      <dc:subject>leaf area</dc:subject>
+      <dc:subject>GLOBE</dc:subject>
+      <dc:subject>Dekad</dc:subject>
+      <dc:subject>10-daily</dc:subject>
+      <dc:subject>imageryBaseMapsEarthCover</dc:subject>
+      <dc:subject>biota</dc:subject>
+      <dc:subject>farming</dc:subject>
+      <dc:subject>environment</dc:subject>
+      <dc:format>NetCDF</dc:format>
+      <dct:abstract>FCOVER was defined by CEOS as half the developed area of the convex hull wrapping the green canopy elements per unit horizontal ground. This definition allows accounting for elements which are not flat such as needles or stems. FCOVER is strongly non linearly related to reflectance. Therefore, its estimation from remote sensing observations will be scale dependant over heterogeneous landscapes. When observing a canopy made of different layers of vegetation, it is therefore mandatory to consider all the green layers. This is particularly important for forest canopies where the understory may represent a very significant contribution to the total canopy FCOVER. The derived FCOVER corresponds therefore to the total green FCOVER, including the contribution of the green elements of the understory. The resulting GEOV1 FCOVER products are relatively consistent with the actual FCOVER for low FCOVER values and &#8216;non-forest&#8217; surfaces; while for forests, particularly for needle leaf types, significant departures with the true FCOVER are expected.</dct:abstract>
+      <dc:description>FCOVER was defined by CEOS as half the developed area of the convex hull wrapping the green canopy elements per unit horizontal ground. This definition allows accounting for elements which are not flat such as needles or stems. FCOVER is strongly non linearly related to reflectance. Therefore, its estimation from remote sensing observations will be scale dependant over heterogeneous landscapes. When observing a canopy made of different layers of vegetation, it is therefore mandatory to consider all the green layers. This is particularly important for forest canopies where the understory may represent a very significant contribution to the total canopy FCOVER. The derived FCOVER corresponds therefore to the total green FCOVER, including the contribution of the green elements of the understory. The resulting GEOV1 FCOVER products are relatively consistent with the actual FCOVER for low FCOVER values and &#8216;non-forest&#8217; surfaces; while for forests, particularly for needle leaf types, significant departures with the true FCOVER are expected.</dc:description>
+      <dc:rights>copyright</dc:rights>
+      <dc:rights>otherRestrictions</dc:rights>
+      <dc:language>eng</dc:language>
+      <dc:source>The input data are the daily Top of the Atmosphere reflectances measured by the sensor at 1/3 km. The calibrated reflectances are used to calculate instantaneous estimates of the products using a neural network trained with MODIS and CYCLOPES products, removing outliers as clouds and their shadows and atmospherically corrected (SMAC). In a second stage these instantaneous first guess of products are composited using an asymmetric period. The compositing is performing a temporal smooth and gap fill operation based on the land cover type (Evergreen Broadleaf Forest or not).</dc:source>
+      <dc:format>NetCDF</dc:format>
+      <ows:BoundingBox crs="urn:ogc:def:crs:EPSG Geodetic Parameter Dataset::EPSG:4326">
+        <ows:LowerCorner>180 -60</ows:LowerCorner>
+        <ows:UpperCorner>-180 80</ows:UpperCorner>
+      </ows:BoundingBox>
+      <dc:URI protocol="HTTP" name="Copernicus Global Land Service" description="1. Search, download and custom order products from Catalogue and Ordering services">http://land.copernicus.eu/global/products/LORUM_IPSUM</dc:URI>
+      <dc:URI protocol="HTTP" name="Copernicus Global Land Service" description="2. Subscribe to receive future products via e-mail">http://land.copernicus.eu/global/access</dc:URI>
+      <dc:URI name="Copernicus Global Land Service" description="3. Register to receive products via EUMETCast">http://eoportal.eumetsat.int</dc:URI>
+      <dc:URI protocol="image/png" name="Quick-look image of FCOVER layer, with width and height sub-sampled to 5% of their original dataset size.">http://globallandseries.vgt.vito.be/geonetwork/images/quicklooks/VegetationDynamics.png</dc:URI>
+    </csw:Record>
+    

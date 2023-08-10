@@ -1,0 +1,50 @@
+{
+  "type": "Collection",
+  "id": "H60B",
+  "stac_version": "1.0.0",
+  "description": "Instantaneous precipitation maps generated combining geostationary (GEO) IR images from operational geostationary satellites 'calibrated' by precipitation measurements from MW images on Low Earth Orbit (LEO) satellites, processed soon after each acquisition of a new image from GEO. The blending algorithm ('Rapid Update’) generates precipitation estimates combining the equivalent blackbody temperatures (TBB) at 10.8 μm with rain rates from all available Passive MW measurements. A separate treatment is performed for convective precipitation: the morphologic information and the enhancement of precipitation estimate is done by the use of NEFODINA software.",
+  "links": [
+    {
+      "rel": "hosts",
+      "href": "https://navigator.eumetsat.int/product/EO:EUM:DAT:0620",
+      "type": "http",
+      "title": "EUMETSAT Product Navigator (Metadata)"
+    }
+  ],
+  "title": "Blended SEVIRI / LEO MW precipitation and morphologic information - MSG - 0 degree",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -80.0,
+          -60.0,
+          80.0,
+          67.5
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2022-06-09T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Weather",
+    "Precipitation"
+  ],
+  "providers": [
+    {
+      "name": "European Organisation for the Exploitation of Meteorological Satellites (EUMETSAT)",
+      "description": "EUMETSAT Data store",
+      "roles": [
+        "host"
+      ],
+      "url": "https://data.eumetsat.int/"
+    }
+  ]
+}

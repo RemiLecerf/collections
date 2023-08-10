@@ -1,0 +1,76 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:dct="http://purl.org/dc/terms/" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/b3630a60-f3d7-4bc3-b41c-ab2eafdaf6ec">
+        <foaf:primaryTopic rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/resource/65b1548d-eb1f-4745-a6d7-ad1bc74c571d"/>
+        <dct:issued>2022-10-03</dct:issued>
+        <dct:modified>2022-10-03</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/srv/eng/xml.metadata.get?uuid=b3630a60-f3d7-4bc3-b41c-ab2eafdaf6ec">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork?uuid=b3630a60-f3d7-4bc3-b41c-ab2eafdaf6ec">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/resource/65b1548d-eb1f-4745-a6d7-ad1bc74c571d">
+        <dct:identifier>65b1548d-eb1f-4745-a6d7-ad1bc74c571d</dct:identifier>
+        <dct:title>Global Ocean Thermosteric Sea Level anomaly (0-700m) time series and trend from Reanalysis &amp; Multi-Observations Reprocessing</dct:title>
+        <dct:abstract>'''DEFINITION'''
+
+The temporal evolution of thermosteric sea level in an ocean layer is obtained from an integration of temperature driven ocean density variations, which are subtracted from a reference climatology to obtain the fluctuations from an average field. The regional thermosteric sea level values are then averaged from 60°S-60°N aiming to monitor interannual to long term global sea level variations caused by temperature driven ocean volume changes through thermal expansion as expressed in meters (m). 
+
+'''CONTEXT'''
+
+The global mean sea level is reflecting changes in the Earth’s climate system in response to natural and anthropogenic forcing factors such as ocean warming, land ice mass loss and changes in water storage in continental river basins. Thermosteric sea-level variations result from temperature related density changes in sea water associated with volume expansion and contraction. Global thermosteric sea level rise caused by ocean warming is known as one of the major drivers of contemporary global mean sea level rise (Cazenave et al., 2018; Oppenheimer et al., 2019).
+
+'''CMEMS KEY FINDINGS'''
+
+Since the year 2005 the upper (0-700m) near-global (60°S-60°N) thermosteric sea level rises at a rate of 0.9±0.1 mm/year. 
+
+Note: The key findings will be updated annually in November, in line with OMI evolutions.
+
+'''DOI (product):'''
+https://doi.org/10.48670/moi-00239</dct:abstract>
+        <dcat:theme rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/thesaurus/iso/topicCategory/oceans"/>
+        <foaf:thumbnail rdf:resource="https://catalogue.marine.copernicus.eu/documents/IMG/GLOBAL_OMI_SL_thsl_area_averaged_anomalies_0_700.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((-180.00 -60.00, -180.00 60.00, 180.00 60.00, 180.00 -60.00, -180.00 -60.00))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:issued>2018-02-12</dct:issued>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/GLO-MERCATOR-TOULOUSE-FR"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/GLO-MERCATOR-TOULOUSE-FR"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/GLO-MERCATOR-TOULOUSE-FR"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/GLO-MERCATOR-TOULOUSE-FR"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/MOI-OMI-SERVICE"/>
+        <dct:accrualPeriodicity>annually</dct:accrualPeriodicity>
+        <dct:license>otherRestrictions</dct:license>
+        <dct:license>license</dct:license>
+        <dct:license>No limitations on public access</dct:license>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/GLOBAL_OMI_SL_thsl_area_averaged_anomalies_0_700/global_omi_sl_thsl_area_averaged_anomalies_0_700"/>
+        <dcat:distribution rdf:resource="https://mdl1.marine.copernicus.eu/derived/GLOBAL_OMI_SL_thsl_area_averaged_anomalies_0_700/global_omi_sl_thsl_area_averaged_anomalies_0_700_202112/global_omi_sl_thsl_area_averaged_anomalies_d0-700_20050630_P20210810_lat60-60_R20052019.nc"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/797be33e-59ae-4fd8-a12c-30d362b53e12"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/42c62c40-61f9-463c-b1ad-1b1aa28e7fed"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/1be31466-e8e6-4a77-bcf1-db0388f8aab3"/>
+        <dcat:dataQuality>The myOcean products depends on other products for production or validation. The detailed list of dependencies is given in ISO19115's aggregationInfo (ISO19139 Xpath = "gmd:MD_Metadata/gmd:identificationInfo/gmd:aggregationInfo[./gmd:MD_AggregateInformation/gmd:initiativeType/gmd:DS_InitiativeTypeCode/@codeListValue='upstream-validation' or 'upstream-production']")</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+    

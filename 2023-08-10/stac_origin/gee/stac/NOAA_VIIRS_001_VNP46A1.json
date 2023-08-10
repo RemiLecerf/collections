@@ -1,0 +1,757 @@
+{
+    "type": "Collection",
+    "version": "1",
+    "stac_version": "1.0.0",
+    "stac_extensions": [
+        "collection-assets"
+    ],
+    "id": "NOAA/VIIRS/001/VNP46A1",
+    "title": "VNP46A1: VIIRS Daily Gridded Day Night Band 500m Linear Lat Lon Grid Night",
+    "description": "The Suomi National Polar-orbiting Partnership (SNPP) Visible Infrared\nImaging Radiometer Suite (VIIRS) supports a Day-Night Band (DNB) sensor\nthat provides global daily measurements of nocturnal visible and\nnear-infrared (NIR) light that are suitable for Earth system science and\napplications. The VIIRS DNB's ultra-sensitivity in lowlight conditions\nenables us to generate a new set of science-quality nighttime products that\nmanifest substantial improvements in sensor resolution and calibration when\ncompared to the previous era of Defense Meteorological Satellite\nProgram/Operational Linescan System's (DMSP/OLS) nighttime lights image\nproducts.\n\nVNP46A1 is a daily, top-of-atmosphere, at-sensor nighttime radiance product\ncalled VIIRS/NPP Daily Gridded Day Night Band 15 arc-second Linear Lat Lon\nGrid Night. The product contains 26 Science Data Sets (SDS) that include\nsensor radiance, zenith and azimuth angles (at-sensor, solar, and lunar),\ncloud-mask flags, time, shortwave IR radiance, brightness temperatures,\nVIIRS quality flags, moon phase angle, and moon illumination fraction. It\nalso provides Quality Flag (QF) information specific to the cloud-mask,\nVIIRS moderate-resolution bands M10, M11, M12, M13, M15, M16, and DNB.\n\nDocumentation:\n\n* [User's Guide](https://ladsweb.modaps.eosdis.nasa.gov/api/v2/content/archives/Document%20Archive/Science%20Data%20Product%20Documentation/VIIRS_Black_Marble_UG_v1.1_July_2020.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://ladsweb.modaps.eosdis.nasa.gov/api/v2/content/archives/Document%20Archive/Science%20Data%20Product%20Documentation/Product%20Generation%20Algorithms/VIIRS_Black_Marble_ATBD_v1.1_July_2020.pdf)\n\n* [General Documentation](https://ladsweb.modaps.eosdis.nasa.gov/missions-and-measurements/products/VNP46A1/)\n",
+    "keywords": [
+        "daily",
+        "dnb",
+        "nasa",
+        "noaa",
+        "viirs"
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2012-01-19T00:00:00Z",
+                    "2023-05-29T00:00:00"
+                ]
+            ]
+        }
+    },
+    "providers": [
+        {
+            "name": "NASA LP DAAC at the USGS EROS Center",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://doi.org/10.5067/VIIRS/VNP46A1.001"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_VIIRS_001_VNP46A1"
+        }
+    ],
+    "license": "proprietary",
+    "links": [
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections/NOAA/VIIRS/001/VNP46A1",
+            "rel": "self",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections",
+            "rel": "parent",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/",
+            "rel": "root",
+            "type": "application/json"
+        },
+        {
+            "code": "JavaScript",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NOAA/NOAA_VIIRS_001_VNP46A1",
+            "rel": "related",
+            "title": "Run the example for NOAA/VIIRS/001/VNP46A1 in the Earth Engine Code Editor",
+            "type": "text/html"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/images/NOAA/NOAA_VIIRS_001_VNP46A1_sample.png",
+            "rel": "preview",
+            "type": "image/png"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_VIIRS_001_VNP46A1#terms-of-use",
+            "rel": "license",
+            "type": "text/html"
+        },
+        {
+            "href": "https://doi.org/10.5067/VIIRS/VNP46A1.001",
+            "rel": "cite-as"
+        }
+    ],
+    "cube:dimensions": {
+        "x": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                -180,
+                180
+            ]
+        },
+        "y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                -90,
+                90
+            ]
+        },
+        "t": {
+            "type": "temporal",
+            "extent": [
+                "2012-01-19T00:00:00Z",
+                "2023-05-29T00:00:00"
+            ]
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "BrightnessTemperature_M12",
+                "BrightnessTemperature_M13",
+                "BrightnessTemperature_M15",
+                "BrightnessTemperature_M16",
+                "DNB_At_Sensor_Radiance_500m",
+                "Glint_Angle",
+                "Granule",
+                "Lunar_Zenith",
+                "Lunar_Azimuth",
+                "Moon_Illumination_Fraction",
+                "Moon_Phase_Angle",
+                "QF_Cloud_Mask",
+                "QF_DNB",
+                "QF_VIIRS_M10",
+                "QF_VIIRS_M11",
+                "QF_VIIRS_M12",
+                "QF_VIIRS_M13",
+                "QF_VIIRS_M15",
+                "QF_VIIRS_M16",
+                "Radiance_M10",
+                "Radiance_M11",
+                "Sensor_Azimuth",
+                "Sensor_Zenith",
+                "Solar_Azimuth",
+                "Solar_Zenith",
+                "UTC_Time"
+            ]
+        }
+    },
+    "summaries": {
+        "BrightnessTemperature_M12": {
+            "maximum": 163.835
+        },
+        "BrightnessTemperature_M13": {
+            "maximum": 163.835
+        },
+        "BrightnessTemperature_M15": {
+            "maximum": 163.835
+        },
+        "BrightnessTemperature_M16": {
+            "maximum": 163.835
+        },
+        "DNB_At_Sensor_Radiance_500m": {
+            "maximum": 6553.4
+        },
+        "Glint_Angle": {
+            "maximum": 180,
+            "minimum": -180
+        },
+        "Granule": {
+            "maximum": 254
+        },
+        "Lunar_Azimuth": {
+            "maximum": 180,
+            "minimum": -180
+        },
+        "Lunar_Zenith": {
+            "maximum": 180
+        },
+        "Moon_Illumination_Fraction": {
+            "maximum": 100
+        },
+        "Moon_Phase_Angle": {
+            "maximum": 180
+        },
+        "QF_Cloud_Mask": {
+            "maximum": 65534
+        },
+        "QF_DNB": {
+            "maximum": 65534
+        },
+        "QF_VIIRS_M10": {
+            "maximum": 65534
+        },
+        "QF_VIIRS_M11": {
+            "maximum": 65534
+        },
+        "QF_VIIRS_M12": {
+            "maximum": 65534
+        },
+        "QF_VIIRS_M13": {
+            "maximum": 65534
+        },
+        "QF_VIIRS_M15": {
+            "maximum": 65534
+        },
+        "QF_VIIRS_M16": {
+            "maximum": 65534
+        },
+        "Radiance_M10": {
+            "maximum": 85.1942
+        },
+        "Radiance_M11": {
+            "maximum": 38.00972
+        },
+        "Sensor_Azimuth": {
+            "maximum": 180,
+            "minimum": -180
+        },
+        "Sensor_Zenith": {
+            "maximum": 90,
+            "minimum": -90
+        },
+        "Solar_Azimuth": {
+            "maximum": 180,
+            "minimum": -180
+        },
+        "Solar_Zenith": {
+            "maximum": 180
+        },
+        "UTC_Time": {
+            "maximum": 24
+        },
+        "eo:bands": [
+            {
+                "description": "Brightness temperature of band M12",
+                "gee:units": "K",
+                "name": "BrightnessTemperature_M12"
+            },
+            {
+                "description": "Brightness temperature of band M13",
+                "gee:units": "K",
+                "name": "BrightnessTemperature_M13"
+            },
+            {
+                "description": "Brightness temperature of band M15",
+                "gee:units": "K",
+                "name": "BrightnessTemperature_M15"
+            },
+            {
+                "description": "Brightness temperature of band M16",
+                "gee:units": "K",
+                "name": "BrightnessTemperature_M16"
+            },
+            {
+                "description": "At-sensor DNB radiance",
+                "name": "DNB_At_Sensor_Radiance_500m"
+            },
+            {
+                "description": "Moon glint angle",
+                "gee:units": "deg",
+                "name": "Glint_Angle"
+            },
+            {
+                "description": "Number of selected Granule",
+                "name": "Granule"
+            },
+            {
+                "description": "Lunar zenith angle",
+                "gee:units": "deg",
+                "name": "Lunar_Zenith"
+            },
+            {
+                "description": "Lunar azimuth angle",
+                "gee:units": "deg",
+                "name": "Lunar_Azimuth"
+            },
+            {
+                "description": "Moon illumination fraction",
+                "gee:units": "%",
+                "name": "Moon_Illumination_Fraction"
+            },
+            {
+                "description": "Moon phase angle",
+                "gee:units": "deg",
+                "name": "Moon_Phase_Angle"
+            },
+            {
+                "description": "Quality flag for cloud mask",
+                "gee:bitmask": {
+                    "bitmask_parts": [
+                        {
+                            "bit_count": 1,
+                            "description": "Day/Night",
+                            "values": [
+                                {
+                                    "description": "Night"
+                                },
+                                {
+                                    "description": "Day",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 3,
+                            "description": "Land/Water Background",
+                            "first_bit": 1,
+                            "values": [
+                                {
+                                    "description": "Land & Desert"
+                                },
+                                {
+                                    "description": "Land no Desert",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "Inland Water",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "Sea Water",
+                                    "value": 3
+                                },
+                                {
+                                    "description": "Coastal",
+                                    "value": 5
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 2,
+                            "description": "Cloud Mask Quality",
+                            "first_bit": 4,
+                            "values": [
+                                {
+                                    "description": "Poor"
+                                },
+                                {
+                                    "description": "Low",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "Medium",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "High",
+                                    "value": 3
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 2,
+                            "description": "Cloud Detection Results & Confidence Indicator",
+                            "first_bit": 6,
+                            "values": [
+                                {
+                                    "description": " Confident Clear"
+                                },
+                                {
+                                    "description": "Probably Clear",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "Probably Cloudy",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "Confident Cloudy",
+                                    "value": 3
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Shadow Detected",
+                            "first_bit": 8,
+                            "values": [
+                                {
+                                    "description": "No"
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Cirrus Detection (IR) (BTM15 - BTM16)",
+                            "first_bit": 9,
+                            "values": [
+                                {
+                                    "description": "No cloud"
+                                },
+                                {
+                                    "description": "Cloud",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Snow/Ice Surface",
+                            "first_bit": 10,
+                            "values": [
+                                {
+                                    "description": "No Snow/Ice"
+                                },
+                                {
+                                    "description": "Snow/Ice",
+                                    "value": 1
+                                }
+                            ]
+                        }
+                    ],
+                    "total_bit_count": 11
+                },
+                "name": "QF_Cloud_Mask"
+            },
+            {
+                "description": "DNB quality flag",
+                "gee:classes": [
+                    {
+                        "description": "Substitute_Cal",
+                        "value": 1
+                    },
+                    {
+                        "description": "Out_of_Range",
+                        "value": 2
+                    },
+                    {
+                        "description": "Saturation",
+                        "value": 4
+                    },
+                    {
+                        "description": "Temp_not_Nominal",
+                        "value": 8
+                    },
+                    {
+                        "description": "Stray_light",
+                        "value": 16
+                    },
+                    {
+                        "description": "Bowtie_Deleted",
+                        "value": 256
+                    },
+                    {
+                        "description": "Missing_EV",
+                        "value": 512
+                    },
+                    {
+                        "description": "Cal_Fail",
+                        "value": 1024
+                    },
+                    {
+                        "description": "Dead_Detector",
+                        "value": 2048
+                    }
+                ],
+                "name": "QF_DNB"
+            },
+            {
+                "description": "Quality flag of band M10",
+                "gee:classes": [
+                    {
+                        "description": "Substitute_Cal",
+                        "value": 1
+                    },
+                    {
+                        "description": "Out_of_Range",
+                        "value": 2
+                    },
+                    {
+                        "description": "Saturation",
+                        "value": 4
+                    },
+                    {
+                        "description": "Temp_not_Nominal",
+                        "value": 8
+                    },
+                    {
+                        "description": "Bowtie_Deleted",
+                        "value": 256
+                    },
+                    {
+                        "description": "Missing_EV",
+                        "value": 512
+                    },
+                    {
+                        "description": "Cal_Fail",
+                        "value": 1024
+                    },
+                    {
+                        "description": "Dead_Detector",
+                        "value": 2048
+                    }
+                ],
+                "name": "QF_VIIRS_M10"
+            },
+            {
+                "description": "Quality flag of band M11",
+                "gee:classes": [
+                    {
+                        "description": "Substitute_Cal",
+                        "value": 1
+                    },
+                    {
+                        "description": "Out_of_Range",
+                        "value": 2
+                    },
+                    {
+                        "description": "Saturation",
+                        "value": 4
+                    },
+                    {
+                        "description": "Temp_not_Nominal",
+                        "value": 8
+                    },
+                    {
+                        "description": "Bowtie_Deleted",
+                        "value": 256
+                    },
+                    {
+                        "description": "Missing_EV",
+                        "value": 512
+                    },
+                    {
+                        "description": "Cal_Fail",
+                        "value": 1024
+                    },
+                    {
+                        "description": "Dead_Detector",
+                        "value": 2048
+                    }
+                ],
+                "name": "QF_VIIRS_M11"
+            },
+            {
+                "description": "Quality flag of band M12",
+                "gee:classes": [
+                    {
+                        "description": "Substitute_Cal",
+                        "value": 1
+                    },
+                    {
+                        "description": "Out_of_Range",
+                        "value": 2
+                    },
+                    {
+                        "description": "Saturation",
+                        "value": 4
+                    },
+                    {
+                        "description": "Temp_not_Nominal",
+                        "value": 8
+                    },
+                    {
+                        "description": "Bowtie_Deleted",
+                        "value": 256
+                    },
+                    {
+                        "description": "Missing_EV",
+                        "value": 512
+                    },
+                    {
+                        "description": "Cal_Fail",
+                        "value": 1024
+                    },
+                    {
+                        "description": "Dead_Detector",
+                        "value": 2048
+                    }
+                ],
+                "name": "QF_VIIRS_M12"
+            },
+            {
+                "description": "Quality flag of band M13",
+                "gee:classes": [
+                    {
+                        "description": "Substitute_Cal",
+                        "value": 1
+                    },
+                    {
+                        "description": "Out_of_Range",
+                        "value": 2
+                    },
+                    {
+                        "description": "Saturation",
+                        "value": 4
+                    },
+                    {
+                        "description": "Temp_not_Nominal",
+                        "value": 8
+                    },
+                    {
+                        "description": "Bowtie_Deleted",
+                        "value": 256
+                    },
+                    {
+                        "description": "Missing_EV",
+                        "value": 512
+                    },
+                    {
+                        "description": "Cal_Fail",
+                        "value": 1024
+                    },
+                    {
+                        "description": "Dead_Detector",
+                        "value": 2048
+                    }
+                ],
+                "name": "QF_VIIRS_M13"
+            },
+            {
+                "description": "Quality flag of band M15",
+                "gee:classes": [
+                    {
+                        "description": "Substitute_Cal",
+                        "value": 1
+                    },
+                    {
+                        "description": "Out_of_Range",
+                        "value": 2
+                    },
+                    {
+                        "description": "Saturation",
+                        "value": 4
+                    },
+                    {
+                        "description": "Temp_not_Nominal",
+                        "value": 8
+                    },
+                    {
+                        "description": "Bowtie_Deleted",
+                        "value": 256
+                    },
+                    {
+                        "description": "Missing_EV",
+                        "value": 512
+                    },
+                    {
+                        "description": "Cal_Fail",
+                        "value": 1024
+                    },
+                    {
+                        "description": "Dead_Detector",
+                        "value": 2048
+                    }
+                ],
+                "name": "QF_VIIRS_M15"
+            },
+            {
+                "description": "Quality flag of band M16",
+                "gee:classes": [
+                    {
+                        "description": "Substitute_Cal",
+                        "value": 1
+                    },
+                    {
+                        "description": "Out_of_Range",
+                        "value": 2
+                    },
+                    {
+                        "description": "Saturation",
+                        "value": 4
+                    },
+                    {
+                        "description": "Temp_not_Nominal",
+                        "value": 8
+                    },
+                    {
+                        "description": "Bowtie_Deleted",
+                        "value": 256
+                    },
+                    {
+                        "description": "Missing_EV",
+                        "value": 512
+                    },
+                    {
+                        "description": "Cal_Fail",
+                        "value": 1024
+                    },
+                    {
+                        "description": "Dead_Detector",
+                        "value": 2048
+                    }
+                ],
+                "name": "QF_VIIRS_M16"
+            },
+            {
+                "description": "Radiance in band M10",
+                "name": "Radiance_M10"
+            },
+            {
+                "description": "Radiance in band M11",
+                "name": "Radiance_M11"
+            },
+            {
+                "description": "Sensor azimuth angle",
+                "gee:units": "deg",
+                "name": "Sensor_Azimuth"
+            },
+            {
+                "description": "Sensor zenith angle",
+                "gee:units": "deg",
+                "name": "Sensor_Zenith"
+            },
+            {
+                "description": "Solar azimuth angle",
+                "gee:units": "deg",
+                "name": "Solar_Azimuth"
+            },
+            {
+                "description": "Solar zenith angle",
+                "gee:units": "deg",
+                "name": "Solar_Zenith"
+            },
+            {
+                "description": "UTC time",
+                "gee:units": "h",
+                "name": "UTC_Time"
+            }
+        ],
+        "gsd": [
+            500
+        ],
+        "instruments": [
+            "VIIRS"
+        ],
+        "platform": [
+            "Suomi NPP"
+        ]
+    },
+    "assets": {
+        "preview_4": {
+            "href": "https://developers.google.com/earth-engine/datasets/images/NOAA/NOAA_VIIRS_001_VNP46A1_sample.png",
+            "type": "image/png",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    },
+    "sci:citation": "Please visit [LP DAAC 'Citing Our Data' page](https://lpdaac.usgs.gov/citing_our_data)",
+    "sci:doi": "10.5067/VIIRS/VNP46A1.001",
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "day"
+    },
+    "gee:provider_ids": [
+        "C1373412048-LPDAAC_ECS"
+    ],
+    "gee:terms_of_use": "LP DAAC NASA data are freely accessible; however, when an author\npublishes these data or works based on the data, it is requested that the\nauthor cite the datasets within the text of the publication and include a\nreference to them in the reference list.\n",
+    "gee:type": "image_collection"
+}

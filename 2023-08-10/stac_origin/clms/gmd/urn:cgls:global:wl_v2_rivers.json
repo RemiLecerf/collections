@@ -1,0 +1,66 @@
+{
+  "type": "Collection",
+  "id": "urn:cgls:global:wl_v2_rivers",
+  "stac_version": "1.0.0",
+  "description": "The Water Level is defined as the height, in meters above the geoid, of the reflecting surface of continental water bodies. It is observed by space radar altimeters that measure the time it takes for radar pulses to reach the ground targets, directly below the spacecraft (nadir position), and return.  Hence, only water bodies located along the satellite's ground tracks can be monitored, with a quality of measurement that not only depends of the size of the water body, but also on the reflecting targets in its surroundings such as topography or vegetation. Water Level is computed as time series over lakes and at the intersections of rivers and the satellite ground tracks.",
+  "links": [
+    {
+      "rel": "hosts",
+      "href": "https://land.copernicus.eu/global/products/wl",
+      "type": "HTTPS",
+      "title": "Copernicus Global Land Service"
+    },
+    {
+      "rel": "hosts",
+      "href": "http://land.copernicus.eu/global/access",
+      "type": "HTTP",
+      "title": "Copernicus Global Land Service"
+    },
+    {
+      "rel": "hosts",
+      "href": "http://eoportal.eumetsat.int",
+      "title": "Copernicus Global Land Service"
+    }
+  ],
+  "title": "Water Level: Rivers (vector) - version 2, Feb 2018",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2008-07-01T00:00:00Z",
+          "2019-12-31T23:59:59Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Hydrography",
+    "water level",
+    "biogeophysical",
+    "Rivers",
+    "Time series",
+    "Water",
+    "Water Level"
+  ],
+  "providers": [
+    {
+      "name": "Copernicus Land Monitoring Service",
+      "description": "Copernicus Land Monitoring Service - VITO NV",
+      "roles": [
+        "host"
+      ],
+      "url": "https://land.copernicus.eu/"
+    }
+  ]
+}

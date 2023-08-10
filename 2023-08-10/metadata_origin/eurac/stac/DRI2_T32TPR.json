@@ -1,0 +1,82 @@
+{
+    "stac_version": "0.9.0",
+    "stac_extensions": [
+        "datacube"
+    ],
+    "type": "Collection",
+    "id": "DRI2_T32TPR",
+    "title": "DRI2_T32TPR",
+    "description": "Sentinel-2 pre-processed data for DRI2 project.",
+    "license": "CC-BY-4.0",
+    "providers": [
+        {
+            "name": "Eurac EO ODC",
+            "url": "http://www.eurac.edu/",
+            "roles": [
+                "producer",
+                "host"
+            ]
+        }
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    10.27007567177171,
+                    45.03419013978915,
+                    11.710544147585775,
+                    46.046265455836064
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2015-07-04T10:10:06Z",
+                    "2021-11-24T10:12:39Z"
+                ]
+            ]
+        }
+    },
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://creativecommons.org/licenses/by/4.0/",
+            "type": "text/html",
+            "title": "License link"
+        }
+    ],
+    "cube:dimensions": {
+        "DATE": {
+            "type": "temporal",
+            "extent": [
+                "2015-07-04T10:10:06+00:00",
+                "2021-11-24T10:12:39+00:00"
+            ]
+        },
+        "X": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                10.27007567177171,
+                11.710544147585775
+            ],
+            "reference_system": 32632
+        },
+        "Y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                45.03419013978915,
+                46.046265455836064
+            ],
+            "reference_system": 32632
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "LAI"
+            ]
+        }
+    }
+}

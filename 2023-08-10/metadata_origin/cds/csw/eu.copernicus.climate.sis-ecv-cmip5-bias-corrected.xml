@@ -1,0 +1,72 @@
+<csw:Record xmlns:dct="http://purl.org/dc/terms/" xmlns:ows="http://www.opengis.net/ows" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:geonet="http://www.fao.org/geonetwork" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dc:identifier>eu.copernicus.climate.sis-ecv-cmip5-bias-corrected</dc:identifier>
+      <dc:date>2018-03-28T16:07:22</dc:date>
+      <dc:title>Essential climate variables for water sector applications derived from climate projections</dc:title>
+      <dc:type>dataset</dc:type>
+      <dc:subject>Atmospheric conditions</dc:subject>
+      <dc:subject>Product type: Climate projections</dc:subject>
+      <dc:subject>Spatial coverage: Global</dc:subject>
+      <dc:subject>Variable domain: Atmosphere (surface)</dc:subject>
+      <dc:subject>Temporal coverage: Past</dc:subject>
+      <dc:subject>Temporal coverage: Future</dc:subject>
+      <dc:subject>Provider: Copernicus C3S</dc:subject>
+      <dc:subject>climatologyMeteorologyAtmosphere</dc:subject>
+      <dc:format>NetCDF</dc:format>
+      <dct:abstract>This dataset contains 4 Essential Climate Variables (ECV) for the 18 bias adjusted Global Climate Models (GCM) from CMIP5: daily precipitation rate, and daily mean, maximum and minimum temperatures. 
+The data are bias adjusted using the Distribution Based Scaling (DBS) method  versus the global reference dataset HydroGFD2.0, both bias adjustment method and global reference dataset developed by the Swedish Meteorological and Hydrological Institute (SMHI).
+The DBS method is a parametric quantile-mapping variant. 
+This type of methods fit a statistical distribution to the cumulative distribution function and use those fitted distributions to conduct the quantile-mapping. 
+Here, we used a double-gamma distribution (i.e. separate gamma distributions for the bulk and the high tail) for precipitation and the normal distribution for all temperature variables. 
+Temperature corrections were done conditional on the wet/dry state of the corresponding precipitation time series.
+The seasonal variations in the biases were represented by monthly parameter windows for precipitation and a smoothed seasonal cycle for the temperature distribution parameters. 
+The smoothing was done using twelve harmonic components.
+There is some post-processing in place for the data set to be suitable for hydrological impact modeling. 
+Bias-adjustment of daily mean, maximum and minimum temperature using quantile mapping can in some cases lead to inconsistencies. 
+For instance, maximum (minimum) temperature could be lower (higher) than mean temperature. 
+If such inconsistencies occur, daily minimum and maximum temperatures are adjusted in such a way that the anomalies with respect to the daily mean temperature are in line with the climatological anomalies for the particular day in the seasonal cycle. 
+This means, for example, that an inconsistency occurring on June 25 will be adjusted using the climatological anomalies for June 25, estimated by a moving window. 
+Also, the adjustment is done conditional on the wet/dry state of the corresponding precipitation series. 
+The climatology of the anomalies was derived from the HydroGFD2.0 dataset.
+In addition, DBS&#8217;s limitations lead to some data not being bias-adjusted or values beyond physically plausible ranges.
+In those cases, DBS gives missing values as output. 
+Grid cells where the DBS method resulted in such missing values have been interpolated in time or space. 
+If interpolation was not possible, full time series from nearest grid cell was copied to relating grid point.
+
+Variables in the dataset/application are:
+Maximum 2m temperature, Mean 2m temperature, Minimum 2m temperature, Precipitation flux</dct:abstract>
+      <dc:description>This dataset contains 4 Essential Climate Variables (ECV) for the 18 bias adjusted Global Climate Models (GCM) from CMIP5: daily precipitation rate, and daily mean, maximum and minimum temperatures. 
+The data are bias adjusted using the Distribution Based Scaling (DBS) method  versus the global reference dataset HydroGFD2.0, both bias adjustment method and global reference dataset developed by the Swedish Meteorological and Hydrological Institute (SMHI).
+The DBS method is a parametric quantile-mapping variant. 
+This type of methods fit a statistical distribution to the cumulative distribution function and use those fitted distributions to conduct the quantile-mapping. 
+Here, we used a double-gamma distribution (i.e. separate gamma distributions for the bulk and the high tail) for precipitation and the normal distribution for all temperature variables. 
+Temperature corrections were done conditional on the wet/dry state of the corresponding precipitation time series.
+The seasonal variations in the biases were represented by monthly parameter windows for precipitation and a smoothed seasonal cycle for the temperature distribution parameters. 
+The smoothing was done using twelve harmonic components.
+There is some post-processing in place for the data set to be suitable for hydrological impact modeling. 
+Bias-adjustment of daily mean, maximum and minimum temperature using quantile mapping can in some cases lead to inconsistencies. 
+For instance, maximum (minimum) temperature could be lower (higher) than mean temperature. 
+If such inconsistencies occur, daily minimum and maximum temperatures are adjusted in such a way that the anomalies with respect to the daily mean temperature are in line with the climatological anomalies for the particular day in the seasonal cycle. 
+This means, for example, that an inconsistency occurring on June 25 will be adjusted using the climatological anomalies for June 25, estimated by a moving window. 
+Also, the adjustment is done conditional on the wet/dry state of the corresponding precipitation series. 
+The climatology of the anomalies was derived from the HydroGFD2.0 dataset.
+In addition, DBS&#8217;s limitations lead to some data not being bias-adjusted or values beyond physically plausible ranges.
+In those cases, DBS gives missing values as output. 
+Grid cells where the DBS method resulted in such missing values have been interpolated in time or space. 
+If interpolation was not possible, full time series from nearest grid cell was copied to relating grid point.
+
+Variables in the dataset/application are:
+Maximum 2m temperature, Mean 2m temperature, Minimum 2m temperature, Precipitation flux</dc:description>
+      <dc:rights>licence</dc:rights>
+      <dc:language>eng</dc:language>
+      <dc:source>EC Copernicus program</dc:source>
+      <dc:format>NetCDF</dc:format>
+      <ows:BoundingBox crs="urn:ogc:def:crs:::EPSG:4326">
+        <ows:LowerCorner>360 -89</ows:LowerCorner>
+        <ows:UpperCorner>0 89</ows:UpperCorner>
+      </ows:BoundingBox>
+      <dc:URI protocol="WWW:LINK-1.0-http--link" name="Climate Data Store catalogue" description="Catalogued record: Essential climate variables for water sector applications derived from climate projections">https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.201321f6</dc:URI>
+      <dc:URI protocol="WWW:LINK-1.0-http--link" name="Peer reviewed article on the bias adjustement method used in this dataset (.004)" description="Distribution Based Scaling method.">https://doi.org/10.2166/nh.2010.004</dc:URI>
+      <dc:URI protocol="WWW:LINK-1.0-http--link" name="Peer reviewed article on the dataset used as reference." description="Reference dataset (HydroGFD2.0) developed by the Swedish Meteorological and Hydrological Institute (SMHI)">https://doi.org/10.5194/hess-22-989-2018</dc:URI>
+      <dc:URI protocol="image/png" name="large_thumbnail">https://datastore.copernicus-climate.eu/c3s/published-forms-v2/c3sprod/sis-ecv-cmip5-bias-corrected/overview.png</dc:URI>
+    </csw:Record>
+    

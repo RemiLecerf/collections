@@ -1,0 +1,73 @@
+{
+    "type": "Collection",
+    "stac_version": "1.0.0",
+    "id": "urn:eop:VITO:ESA_WORLDCEREAL_WINTERCEREALS_V1",
+    "title": "ESA WorldCereal products for wintercereals per agro-ecological zone - V1",
+    "description": "The WorldCereal winter cereals products provide binary maps for the winter cereals growing season as defined by the WorldCereal global crop calendars, showing where cereals are grown. This season describes the main cereals season in a region. Cereals include wheat, barley and rye, which belong to the Triticeae tribe. These crops were grouped together because their spectral signatures and growing seasons were too similar to reliably distinguish them at a global scale. The WorldCereal winter cereals products were generated within the respective annual temporary crops mask.",
+    "keywords": [
+        "VITO",
+        "COPERNICUS",
+        "ESA",
+        "WorldCereal",
+        "Sentinel-1",
+        "Sentinel-2",
+        "Environment",
+        "Wintercereals",
+        "Agriculture"
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180.0,
+                    -90.0,
+                    180.0,
+                    90.0
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2021-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "ESA WorldCereals products are available on a free basis for the general public under the terms and conditions of the Licence found at https://creativecommons.org/licenses/by/4.0/. The products contain modified Copernicus Sentinel data see https://sentinel.esa.int/documents/247904/690755/Sentinel_Data_Legal_Notice",
+    "links": [
+        {
+            "rel": "self",
+            "type": "application/json",
+            "href": "https://services.terrascope.be/stac/collections/urn:eop:VITO:ESA_WORLDCEREAL_WINTERCEREALS_V1"
+        },
+        {
+            "rel": "parent",
+            "type": "application/json",
+            "href": "https://services.terrascope.be/stac/"
+        },
+        {
+            "rel": "items",
+            "type": "application/geo+json",
+            "href": "https://services.terrascope.be/stac/collections/urn:eop:VITO:ESA_WORLDCEREAL_WINTERCEREALS_V1/items"
+        },
+        {
+            "rel": "root",
+            "type": "application/json",
+            "href": "https://services.terrascope.be/stac/"
+        }
+    ],
+    "summaries": {
+        "datetime": {
+            "min": "2021-01-01T00:00:00Z"
+        },
+        "constellation": [
+            "Sentinel-2",
+            "Sentinel-1"
+        ],
+        "instruments": [
+            "C-SAR",
+            "MSI"
+        ]
+    }
+}

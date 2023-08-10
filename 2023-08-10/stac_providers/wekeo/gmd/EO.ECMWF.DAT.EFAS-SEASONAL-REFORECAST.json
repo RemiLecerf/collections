@@ -1,0 +1,66 @@
+{
+  "type": "Collection",
+  "id": "EO.ECMWF.DAT.EFAS-SEASONAL-REFORECAST",
+  "stac_version": "1.0.0",
+  "description": "This dataset provides modelled daily hydrological time series forced with seasonal meteorological reforecasts. The dataset is a consistent representation of the most important hydrological variables across the European Flood Awareness (EFAS) domain. The temporal resolution is daily forecasts initialised once a month over the reforecast period 1991-2020 of:\n\nRiver discharge\nSoil moisture for three soil layers\nSnow water equivalent\n\nIt also provides static data on soil depth for the three soil layers. Soil moisture and river discharge data are accompanied by ancillary files for interpretation (see related variables and links in the documentation).\nThis dataset was produced by forcing the LISFLOOD hydrological model at a 5x5km gridded resolution with seasonal meteorological ensemble reforecasts. Reforecasts are forecasts run over past dates and are typically used to assess the skill of a forecast system or to develop tools for statistical error correction of the forecasts. The reforecasts are initialised on the first of each month with a lead time of 215 days at 24-hour time steps. The forcing meteorological data are seasonal reforecasts from the European Centre of Medium-range Weather Forecasts (ECMWF), consisting of 25 ensemble members up until December 2016, and after that 51 members. Hydrometeorological reforecasts are available from 1991-01-01 up until 2020-10-01.\nCompanion datasets, also available through the Climate Data Store (CDS), are seasonal forecasts, for which the seasonal reforecasts can be useful for local skill assessment and post-processing of the seasonal forecasts. For users looking for shorter time ranges there are medium-range forecasts and reforecasts, as well as historical simulations which can be used to derive the hydrological climatology. For users looking for global hydrological data, we refer to the Global Flood Awareness System (GloFAS) forecasts and historical simulations. All these datasets are part of the operational flood forecasting within the Copernicus Emergency Management Service (CEMS).\n\nVariables in the dataset/application are:\nRiver discharge in the last 24 hours, Snow depth water equivalent, Soil depth, Volumetric soil moisture\n\nVariables in the dataset/application are:\nOrography, Upstream area",
+  "links": [
+    {
+      "rel": "hosts",
+      "href": "https://www.efas.eu",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "EFAS web pages (.eu)"
+    },
+    {
+      "rel": "hosts",
+      "href": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.768eefc2",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Climate Data Store catalogue"
+    },
+    {
+      "rel": "hosts",
+      "href": "https://confluence.ecmwf.int/display/CEMS/European+Flood+Awareness+System",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "EFAS wiki pages"
+    }
+  ],
+  "title": "Seasonal reforecasts of river discharge and related data by the European Flood Awareness System",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1999-01-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Reforecast",
+    "Product type: Seasonal reforecasts",
+    "Spatial coverage: Europe",
+    "Variable domain: Land (hydrology)",
+    "Temporal coverage: Present",
+    "Provider: Copernicus CEMS"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

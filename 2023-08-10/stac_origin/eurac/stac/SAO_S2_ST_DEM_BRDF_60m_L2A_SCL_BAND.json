@@ -1,0 +1,132 @@
+{
+    "type": "Collection",
+    "version": "v1",
+    "stac_version": "0.9.0",
+    "stac_extensions": [
+        "datacube"
+    ],
+    "id": "SAO_S2_ST_DEM_BRDF_60m_L2A_SCL_BAND",
+    "title": "SAO Sentinel-2 L2A Reference data S2_ST_BRDF_60m_L2A_SCL",
+    "description": "The Copernicus Sentinel-2 L2A Scene Classification Dataset for South Tyrol Region",
+    "keywords": [
+        "SAO",
+        "Sentinel-2",
+        "L2A"
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    10.290484068721142,
+                    45.9582645179246,
+                    13.135258475368447,
+                    47.77915707185737
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2015-07-04T00:00:00Z",
+                    "2019-12-30T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "providers": [
+        {
+            "name": "Eurac EO WCS",
+            "url": "http://www.eurac.edu",
+            "roles": [
+                "Host"
+            ]
+        },
+        {
+            "name": "European Space Agency (ESA)",
+            "url": "https://www.esa.int/",
+            "roles": [
+                "Producer"
+            ]
+        },
+        {
+            "name": "Bartolomeo Ventura",
+            "url": "http://www.eurac.edu/en/research/mountains/remsen/staff/Pages/staffdetails.aspx?persId=15903",
+            "roles": [
+                "Processor"
+            ]
+        }
+    ],
+    "license": "CC-BY-4.0",
+    "links": [
+        {
+            "rel": "licence",
+            "href": "https://creativecommons.org/licenses/by/4.0/",
+            "type": "text/html",
+            "title": "License Link"
+        }
+    ],
+    "cube:dimensions": {
+        "DATE": {
+            "type": "temporal",
+            "extent": [
+                "2015-07-04T00:00:00.000Z",
+                "2019-12-30T00:00:00.000Z"
+            ],
+            "step": "null"
+        },
+        "E": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                10.290484068721142,
+                13.135258475368447
+            ],
+            "reference_system": 32632
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "SCL"
+            ]
+        },
+        "N": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                45.9582645179246,
+                47.77915707185737
+            ],
+            "reference_system": 32632
+        }
+    },
+    "summaries": {
+        "constellation": [
+            "Sentinel-2"
+        ],
+        "platform": [
+            "Sentinel-2A",
+            "Sentinel-2B"
+        ],
+        "rows": 1830,
+        "columns": 3496,
+        "instruments": [
+            "MSI"
+        ],
+        "eo:cloud cover": {
+            "min": 0.170941,
+            "max": 100.0
+        },
+        "gsd": [
+            60.0
+        ],
+        "eo:bands": [
+            {
+                "name": "SCL",
+                "common_name": "scene classification map",
+                "gsd": 60.0
+            }
+        ]
+    },
+    "sci:citation": "Copernicus Sentinel data [2015-2021]",
+    "engine": "WCPS"
+}

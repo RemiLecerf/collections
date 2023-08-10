@@ -1,0 +1,71 @@
+{
+  "type": "Collection",
+  "id": "eu.copernicus.climate.reanalysis-oras5",
+  "stac_version": "1.0.0",
+  "description": "This dataset provides global ocean and sea-ice reanalysis (ORAS5: Ocean Reanalysis System 5) monthly mean data prepared by the  European Centre for Medium-Range Weather Forecasts (ECMWF) OCEAN5 ocean analysis-reanalysis system. This system comprises 5 ensemble members from which one member is published in this catalogue entry.\nReanalysis combines model data with observations from across the world into a globally complete and consistent dataset taking into account the laws of physics. The reanalysis provides information without temporal and spatial gaps, i.e. the data are continuous in time, and the assimilation system provides information on every model grid point independently of whether observations are available nearby or not.\nThe OCEAN5 reanalysis system uses the Nucleus for European Modelling of the Ocean (NEMO) ocean model and the NEMOVAR ocean assimilation system. NEMOVAR uses the so-called 3D-Var FGAT (First Guess at Appropriate Time) assimilation technique, which assimilates sub-surface temperature, salinity, sea-ice concentration and sea-level anomalies.\nThe ORAS5 data is forced by either global atmospheric reanalysis (for the consolidated product) or the ECMWF/IFS operational analysis (for the operational product) and is also constrained by observational data of sea surface temperature, sea surface salinity, sea-ice concentration, global-mean-sea-level trends and climatological variations of the ocean mass.\nThe consolidated product (referred to as \"Consolidated\" in the download form) uses reanalysis atmospheric forcing (ERA-40 until 1978 and ERA-Interim from 1979 to 2014) and re-processed observations. The near real-time (referred to as \"Operational\" in the download form) ORAS5 product is available from 2015 onwards and is updated on a monthly basis 15 days behind real time. It uses ECMWF operational atmospheric forcing and near real time observations. The consolidated data benefits from atmospheric forcing consistency. The operational data benefits from near real-time latency.\nORAS5 data are also available at the Copernicus Marine Environment Monitoring Service (CMEMS) and at the Integrated Climate Data Centre (ICDC), Hamburg University.  The present dataset, at the time of publication, provides more variables than the others and has regular updates with near real-time data. For the period from 2015 to the present, the operational ORAS5 data provided in the CDS is different from the dataset provided by CMEMS, because different atmospheric forcings and ocean observation data were used in the generation of the two products.\nThe ORAS5 dataset is produced by ECMWF and funded by the Copernicus Climate Change Service (C3S).\n\nVariables in the dataset/application are:\nDepth of 14°C isotherm, Depth of 17°C isotherm, Depth of 20°C isotherm, Depth of 26°C isotherm, Depth of 28°C isotherm, Meridional velocity, Meridional wind stress, Mixed layer depth 0.01, Mixed layer depth 0.03, Net downward heat flux, Net upward water flux, Ocean heat content for the total water column, Ocean heat content for the upper 300m, Ocean heat content for the upper 700m, Potential temperature, Rotated meridional velocity, Rotated zonal velocity, Salinity, Sea ice concentration, Sea ice meridional velocity, Sea ice thickness, Sea ice zonal velocity, Sea surface height, Sea surface salinity, Sea surface temperature, Zonal velocity, Zonal wind stress",
+  "links": [
+    {
+      "rel": "hosts",
+      "href": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.67e8eeb7",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Climate Data Store catalogue"
+    },
+    {
+      "rel": "hosts",
+      "href": "https://www.ecmwf.int/en/elibrary/18519-ocean5-ecmwf-ocean-reanalysis-system-and-its-real-time-analysis-component",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "ECMWF Ocean Reanalysis System and its Real-Time analysis component (OCEAN5)"
+    },
+    {
+      "rel": "hosts",
+      "href": "https://os.copernicus.org/articles/15/779/2019/os-15-779-2019.pdf",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "The ECMWF operational ensemble reanalysis-analysis system for ocean and sea ice: a description of the system and assessment (PDF)"
+    },
+    {
+      "rel": "hosts",
+      "href": "https://www.ecmwf.int/en/research/climate-reanalysis/ocean-reanalysis",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Ocean Reanalysis and analysis at ECMWF"
+    }
+  ],
+  "title": "ORAS5 global ocean reanalysis monthly data from 1958 to present",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          0.0,
+          -89.0,
+          360.0,
+          89.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1958-01-01T00:00:00Z",
+          "2023-06-01T23:59:59Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Ocean",
+    "Product type: Reanalysis",
+    "Spatial coverage: Global",
+    "Variable domain: Ocean (physics)",
+    "Temporal coverage: Past"
+  ],
+  "providers": [
+    {
+      "name": "Copernicus Climate Data Store",
+      "description": "Copernicus Climate Data Store - European Centre for Medium-Range Weather Forecasts (ECMWF)",
+      "roles": [
+        "host"
+      ],
+      "url": "https://cds.climate.copernicus.eu/"
+    }
+  ]
+}

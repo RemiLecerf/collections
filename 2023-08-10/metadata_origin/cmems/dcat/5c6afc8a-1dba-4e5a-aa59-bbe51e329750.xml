@@ -1,0 +1,66 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:dct="http://purl.org/dc/terms/" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/5c6afc8a-1dba-4e5a-aa59-bbe51e329750">
+        <foaf:primaryTopic rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/resource/5c6afc8a-1dba-4e5a-aa59-bbe51e329750"/>
+        <dct:issued>2023-01-05</dct:issued>
+        <dct:modified>2023-01-05</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/srv/eng/xml.metadata.get?uuid=5c6afc8a-1dba-4e5a-aa59-bbe51e329750">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork?uuid=5c6afc8a-1dba-4e5a-aa59-bbe51e329750">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/resource/5c6afc8a-1dba-4e5a-aa59-bbe51e329750">
+        <dct:identifier>5c6afc8a-1dba-4e5a-aa59-bbe51e329750</dct:identifier>
+        <dct:title>Global Ocean- in-situ Near real time observations of ocean currents</dct:title>
+        <dct:abstract>'''Short description'''
+This product is entirely dedicated to ocean current data observed in near-real time. Current data from 3 different types of instruments are distributed:
+* The near-surface zonal and meridional velocities calculated along the trajectories of the drifting buoys which are part of the DBCP’s Global Drifter Program. These data are delivered together with wind stress components and surface temperature. 
+* The near-surface zonal and meridional total velocities, and near-surface radial velocities, measured by High Frequency radars that are part of the European High Frequency radar Network. These data are delivered together with standard deviation of near-surface zonal and meridional raw velocities, Geometrical Dilution of Precision (GDOP), quality flags and metadata.
+* The zonal and meridional velocities, at parking depth and in surface, calculated along the trajectories of the floats which are part of the Argo Program.
+
+'''DOI (product) :'''
+https://doi.org/10.48670/moi-00041</dct:abstract>
+        <dcat:theme rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/thesaurus/iso/topicCategory/oceans"/>
+        <foaf:thumbnail rdf:resource="https://catalogue.marine.copernicus.eu/documents/IMG/INSITU_GLO_PHY_UV_DISCRETE_NRT_013_048.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((-180.00 -90.00, -180.00 90.00, 180.00 90.00, 180.00 -90.00, -180.00 -90.00))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:issued>2012-08-26</dct:issued>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/INS-IFREMER-BREST-FR"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/INS-CLS-TOULOUSE-FR"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/INS-IFREMER-BREST-FR"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/INS-IFREMER-BREST-FR%3BINS-AZTI-PASAIA-SP"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/INS-IFREMER-BREST-FR"/>
+        <dct:accrualPeriodicity>biannually</dct:accrualPeriodicity>
+        <dct:license>otherRestrictions</dct:license>
+        <dct:license>license</dct:license>
+        <dct:license>No limitations on public access</dct:license>
+        <dcat:distribution rdf:resource="ftp://nrt.cmems-du.eu/Core/INSITU_GLO_PHY_UV_DISCRETE_NRT_013_048/cmems_obs-ins_glo_phy-cur_nrt_argo_irr"/>
+        <dcat:distribution rdf:resource="ftp://nrt.cmems-du.eu/Core/INSITU_GLO_PHY_UV_DISCRETE_NRT_013_048/cmems_obs-ins_glo_phy-cur_nrt_drifter_irr"/>
+        <dcat:distribution rdf:resource="ftp://nrt.cmems-du.eu/Core/INSITU_GLO_PHY_UV_DISCRETE_NRT_013_048/cmems_obs-ins_glo_phy-cur_nrt_radar-radial_irr"/>
+        <dcat:distribution rdf:resource="ftp://nrt.cmems-du.eu/Core/INSITU_GLO_PHY_UV_DISCRETE_NRT_013_048/cmems_obs-ins_glo_phy-cur_nrt_radar-total_irr"/>
+        <dcat:distribution rdf:resource="/home/ref-copernicus-insitu/INSITU_GLO_PHY_UV_DISCRETE_NRT_013_048"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/e0488289-4fa6-4e12-b28e-516e955849ec"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/d5bb52ff-f175-4560-abf0-30852e76a3b0"/>
+        <dcat:dataQuality>The myOcean products depends on other products for production or validation. The detailed list of dependencies is given in ISO19115's aggregationInfo (ISO19139 Xpath = "gmd:MD_Metadata/gmd:identificationInfo/gmd:aggregationInfo[./gmd:MD_AggregateInformation/gmd:initiativeType/gmd:DS_InitiativeTypeCode/@codeListValue='upstream-validation' or 'upstream-production']")</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+    

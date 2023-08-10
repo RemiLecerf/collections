@@ -1,0 +1,778 @@
+{
+    "slug": "global-sea-level-change-indicators-from-1950-to-2050-derived-from-reanalysis-and-high-resolution-cmip6-climate-projections",
+    "name": "sis-water-level-change-indicators-cmip6",
+    "id": "eu.copernicus.climate.sis-water-level-change-indicators-cmip6",
+    "type": "dataset",
+    "rich_abstract": "<div class='abstract-text'>\n         <hr />\n<p>This dataset provides statistical indicators of tides, storm surges and sea level that can be used to characterize global sea level in present-day conditions and also to assess changes under climate change. The indicators calculated include extreme-value indicators (e.g. return periods including confidence bounds for total water levels and surge levels), probability indicators (e.g. percentile for total water levels and surge levels). They provide a basis for studies aiming to evaluate sea level variability, coastal flooding, coastal erosion, and accessibility of ports at a global scale. The extreme value statistics for different return periods can be used to assess the frequency of an event and form the basis of risk assessments. The global coverage allows for world-wide assessments that are particularly useful for the data scarce regions where detailed modelling studies are currently lacking.</p>\n<p>The indicators are computed from time series data available in a related dataset in the Climate Data Store named <em>Global sea level change time series from 1950 to 2050 derived from reanalysis and high resolution CMIP6 climate projections</em> (see Related data), where further details of the modelling are provided. The indicators are produced for three different 30-year periods corresponding to historical, present, and future climate conditions (1951-1980, 1985-2014, and 2021-2050). The future period is based on global climate projections using the high-emission scenario SSP5-8.5. The dataset is based on climate forcing from ERA5 global reanalysis and 4 Global Climate Models (GCMs) of the high resolution Coupled Model Intercomparison Project Phase 6 (CMIP6) global climate projection dataset from the High Resolution Model Intercomparison Project (HighResMIP) multi-model ensemble. An estimate of the uncertainties associated with the climate forcing has been obtained through the use of a multi-model ensemble. Each of the indicators provides ensemble statistics computed across the 4 members of the HighResMIP ensemble (e.g. median, mean, standard deviation, range). Absolute and relative changes for the future period (2015-2050) relative to the present-day (1985-2014) are provided to assess climate change impacts on water levels.</p>\n<p>This dataset was produced on behalf of the Copernicus Climate Change Service.</p>\n         \n         \n            <p></p>\n            <table class=\"abstract-description abstract-table\">\n            <tr><th colspan=\"2\">DATA DESCRIPTION</th>\n            \n<tr><th>Data type</th><td>Gridded with variable grid step</td></tr>\n<tr><th>Projection</th><td>Latitude-longitude grid</td></tr>\n<tr><th>Horizontal coverage</th><td>Global</td></tr>\n<tr><th>Horizontal resolution</th><td><p>Coastal grid points: 0.1\u00b0</p>\n<p>Ocean grid points: 0.25\u00b0, 0.5\u00b0, and 1\u00b0 within 100 km, 500 km, and &gt;500 km of the coastline, respectively</p></td></tr>\n<tr><th>Vertical coverage</th><td>Surface</td></tr>\n<tr><th>Vertical resolution</th><td>Single level</td></tr>\n<tr><th>Temporal coverage</th><td>1950-2050</td></tr>\n<tr><th>Temporal resolution</th><td>Annual and 30-year periods (1951-1980, 1985-2014 and 2021-2050)</td></tr>\n<tr><th>File format</th><td>NetCDF-4</td></tr>\n<tr><th>Conventions</th><td>Climate and Forecast (CF) Metadata Convention v1.6, Attribute Convention for Dataset Discovery (ACDD) v1.3</td></tr>\n<tr><th>Versions</th><td>Dataset version 1.0</td></tr>\n<tr><th>Update frequency</th><td>No updates expected</td></tr>\n</table>\n\n    <p></p>\n    <table class=\"abstract-variables abstract-table\">\n    <tr><th colspan=\"3\">MAIN VARIABLES</th>\n    \n\n    <tr><th class='variables-name'>Name</th><th class='variables-units'>Units</th><th class='variables-description'>Description</th></tr>\n    \n<tr><td class='variables-name'>Annual mean of highest high water</td><td class='variables-units'>m</td><td class='variables-description'>Annual average of the highest high tide (MHHW) of each tidal day (25-hour window) including sea level rise. Storm surge caused by atmospheric forcing is not taken into account. The vertical reference level is mean sea level (MSL) over the 1986-2005 reference period. Please refer to the appendix in the user documentation for details on the vertical reference level.</td></tr>\n<tr><td class='variables-name'>Annual mean of lowest low water</td><td class='variables-units'>m</td><td class='variables-description'>Annual average of the lowest low tide (MLLW) of each tidal day (25-hour window) including  sea level rise. Storm surge caused by atmospheric forcing is not taken into account. The vertical reference level is mean sea level (MSL) over the 1986-2005 reference period. Please refer to the appendix in the user documentation for details on the vertical reference level.</td></tr>\n<tr><td class='variables-name'>Highest astronomical tide</td><td class='variables-units'>m</td><td class='variables-description'>Highest Astronomical Tide (HAT) is the elevation of the highest predicted astronomical tide expected to occur at a specific location over the datum (i.e. MSL). HAT is calculated as the maximum over the 30-year simulation period. All tide variables are derived from a tide-only simulation with GTSM. The vertical reference level is mean sea level (MSL) over the 1986-2005 reference period. Please refer to the appendix in the user documentation for details on the vertical reference level.</td></tr>\n<tr><td class='variables-name'>Lowest astronomical tide</td><td class='variables-units'>m</td><td class='variables-description'>Lowest Astronomical Tide (LAT) is the elevation of the lowest predicted astronomical tide expected to occur at a specific location over the datum (i.e. MSL). LAT is calculated as the minimum over the 30-year simulation period. All tide variables are derived from a tide-only simulation with GTSM. The vertical reference level is mean sea level (MSL) over the 1986-2005 reference period. Please refer to the appendix in the user documentation for details on the vertical reference level.</td></tr>\n<tr><td class='variables-name'>Mean sea level</td><td class='variables-units'>m</td><td class='variables-description'>The average water level of a 30-year tide-only simulation (MSL). This includes the interaction effects with tides and sea level rise over the 30-year period simulated. Storm surge caused by atmospheric forcing is not taken into account. The vertical reference level is mean sea level over the 1986-2005 reference period. Please refer to the appendix in the user documentation for details on the vertical reference level.</td></tr>\n<tr><td class='variables-name'>Surge level</td><td class='variables-units'>m</td><td class='variables-description'>Surge level are defined as the difference between the tide-only and the total water level simulations, and include (changes in) surge levels and interactions. Total water level and surge level simulations are forced by ERA5 reanalysis and the HighResMIP ensemble. The following percentiles are computed: 5th, 10th, 25th, 50th, 75th, 90th and 95th. The following return periods are also computed: 1, 2, 5, 10, 25, 50, 75, 100 year. The relative change is computed for the HighResMIP ensemble for 2021-2050 and 1951-1980, using 1985-2014 as the reference period. The vertical reference level is mean sea level (MSL) over the 1986-2005 reference period. Please refer to the appendix in the user documentation for details on the vertical reference level.</td></tr>\n<tr><td class='variables-name'>Tidal range</td><td class='variables-units'>m</td><td class='variables-description'>Tidal range (TR) is the height difference between the mean higher high water and mean lower low water over the 30-year period simulated. The vertical reference level is mean sea level (MSL) over the 1986-2005 reference period. Please refer to the appendix in the user documentation for details on the vertical reference level.</td></tr>\n<tr><td class='variables-name'>Total water level</td><td class='variables-units'>m</td><td class='variables-description'>Total water levels include (changes in) tidal levels, surge levels and interactions, but with sea level rise removed. Total water level and surge level simulations are forced by ERA5 reanalysis and the HighResMIP ensemble. The following percentiles are computed: 5th, 10th, 25th, 50th, 75th, 90th and 95th. The following return periods are also computed: 1, 2, 5, 10, 25, 50, 75, 100 year. The relative change is computed for the HighResMIP ensemble for 2021-2050 and 1951-1980, using 1985-2014 as the reference period. The vertical reference level is mean sea level (MSL) over the 1986-2005 reference period. Please refer to the appendix in the user documentation for details on the vertical reference level.</td></tr>\n</table>\n<p></p><table class=\"abstract-description abstract-table\"><tr><th>RELATED VARIABLES</th></tr><tr><td>The longitude and latitude coordinates for the stations are provided in the variables named as station_x_coordinates and station_y_coordinates respectively.</td></tr></table></br>\n    </div>",
+    "terms": [
+        "licence-to-use-copernicus-products"
+    ],
+    "constraints": [
+        {
+            "derived_variable": [
+                "absolute_change"
+            ],
+            "experiment": [
+                "future"
+            ],
+            "multi_model_ensemble_statistic": [
+                "negative_ensemble_counts",
+                "positive_ensemble_counts"
+            ],
+            "period": [
+                "2021-2050"
+            ],
+            "product_type": [
+                "multi_model_ensemble"
+            ],
+            "statistic": [
+                "10th",
+                "25th",
+                "5th",
+                "50th",
+                "75th",
+                "90th",
+                "95th"
+            ],
+            "variable": [
+                "surge_level",
+                "total_water_level"
+            ]
+        },
+        {
+            "derived_variable": [
+                "absolute_change"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "multi_model_ensemble_statistic": [
+                "negative_ensemble_counts",
+                "positive_ensemble_counts"
+            ],
+            "period": [
+                "1951-1980"
+            ],
+            "product_type": [
+                "multi_model_ensemble"
+            ],
+            "statistic": [
+                "10th",
+                "25th",
+                "5th",
+                "50th",
+                "75th",
+                "90th",
+                "95th"
+            ],
+            "variable": [
+                "surge_level",
+                "total_water_level"
+            ]
+        },
+        {
+            "derived_variable": [
+                "absolute_change",
+                "absolute_value",
+                "percentage_change"
+            ],
+            "experiment": [
+                "future"
+            ],
+            "model": [
+                "cmcc_cm2_vhr4",
+                "ec_earth3p_hr",
+                "hadgem3_gc31_hm",
+                "hadgem3_gc31_hm_sst"
+            ],
+            "period": [
+                "2021-2050"
+            ],
+            "product_type": [
+                "single_model"
+            ],
+            "statistic": [
+                "10th",
+                "25th",
+                "5th",
+                "50th",
+                "75th",
+                "90th",
+                "95th"
+            ],
+            "variable": [
+                "surge_level",
+                "total_water_level"
+            ]
+        },
+        {
+            "derived_variable": [
+                "absolute_change",
+                "percentage_change"
+            ],
+            "experiment": [
+                "future"
+            ],
+            "period": [
+                "2021-2050"
+            ],
+            "variable": [
+                "highest_astronomical_tide",
+                "lowest_astronomical_tide",
+                "annual_mean_of_highest_high_water",
+                "annual_mean_of_lowest_low_water",
+                "mean_sea_level",
+                "tidal_range"
+            ]
+        },
+        {
+            "derived_variable": [
+                "absolute_change",
+                "percentage_change"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "period": [
+                "1951-1980"
+            ],
+            "variable": [
+                "highest_astronomical_tide",
+                "lowest_astronomical_tide",
+                "annual_mean_of_highest_high_water",
+                "annual_mean_of_lowest_low_water",
+                "mean_sea_level",
+                "tidal_range"
+            ]
+        },
+        {
+            "derived_variable": [
+                "absolute_change",
+                "percentage_change"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "cmcc_cm2_vhr4",
+                "ec_earth3p_hr",
+                "hadgem3_gc31_hm",
+                "hadgem3_gc31_hm_sst"
+            ],
+            "period": [
+                "1951-1980"
+            ],
+            "product_type": [
+                "single_model"
+            ],
+            "statistic": [
+                "10th",
+                "25th",
+                "5th",
+                "50th",
+                "75th",
+                "90th",
+                "95th"
+            ],
+            "variable": [
+                "surge_level",
+                "total_water_level"
+            ]
+        },
+        {
+            "derived_variable": [
+                "absolute_value"
+            ],
+            "period": [
+                "1985-2014"
+            ],
+            "product_type": [
+                "reanalysis"
+            ],
+            "statistic": [
+                "10th",
+                "25th",
+                "5th",
+                "50th",
+                "75th",
+                "90th",
+                "95th"
+            ],
+            "variable": [
+                "surge_level",
+                "total_water_level"
+            ]
+        },
+        {
+            "derived_variable": [
+                "absolute_value"
+            ],
+            "experiment": [
+                "future"
+            ],
+            "period": [
+                "2015",
+                "2016",
+                "2017",
+                "2018",
+                "2019",
+                "2020",
+                "2021",
+                "2021-2050",
+                "2022",
+                "2023",
+                "2024",
+                "2025",
+                "2026",
+                "2027",
+                "2028",
+                "2029",
+                "2030",
+                "2031",
+                "2032",
+                "2033",
+                "2034",
+                "2035",
+                "2036",
+                "2037",
+                "2038",
+                "2039",
+                "2040",
+                "2041",
+                "2042",
+                "2043",
+                "2044",
+                "2045",
+                "2046",
+                "2047",
+                "2048",
+                "2049",
+                "2050"
+            ],
+            "variable": [
+                "highest_astronomical_tide",
+                "lowest_astronomical_tide",
+                "annual_mean_of_highest_high_water",
+                "annual_mean_of_lowest_low_water",
+                "mean_sea_level",
+                "tidal_range"
+            ]
+        },
+        {
+            "derived_variable": [
+                "absolute_value"
+            ],
+            "experiment": [
+                "future"
+            ],
+            "multi_model_ensemble_statistic": [
+                "ensemble_mean",
+                "ensemble_median",
+                "ensemble_range",
+                "ensemble_standard_deviation"
+            ],
+            "period": [
+                "2021-2050"
+            ],
+            "product_type": [
+                "multi_model_ensemble"
+            ],
+            "statistic": [
+                "10th",
+                "25th",
+                "5th",
+                "50th",
+                "75th",
+                "90th",
+                "95th"
+            ],
+            "variable": [
+                "surge_level",
+                "total_water_level"
+            ]
+        },
+        {
+            "derived_variable": [
+                "absolute_value"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "period": [
+                "1950",
+                "1951",
+                "1951-1980",
+                "1952",
+                "1953",
+                "1954",
+                "1955",
+                "1956",
+                "1957",
+                "1958",
+                "1959",
+                "1960",
+                "1961",
+                "1962",
+                "1963",
+                "1964",
+                "1965",
+                "1966",
+                "1967",
+                "1968",
+                "1969",
+                "1970",
+                "1971",
+                "1972",
+                "1973",
+                "1974",
+                "1975",
+                "1976",
+                "1977",
+                "1978",
+                "1979",
+                "1980",
+                "1981",
+                "1982",
+                "1983",
+                "1984",
+                "1985",
+                "1985-2014",
+                "1986",
+                "1987",
+                "1988",
+                "1989",
+                "1990",
+                "1991",
+                "1992",
+                "1993",
+                "1994",
+                "1995",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2000",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014"
+            ],
+            "variable": [
+                "highest_astronomical_tide",
+                "lowest_astronomical_tide",
+                "annual_mean_of_highest_high_water",
+                "annual_mean_of_lowest_low_water",
+                "mean_sea_level",
+                "tidal_range"
+            ]
+        },
+        {
+            "derived_variable": [
+                "absolute_value"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "multi_model_ensemble_statistic": [
+                "ensemble_mean",
+                "ensemble_median",
+                "ensemble_range",
+                "ensemble_standard_deviation"
+            ],
+            "period": [
+                "1951-1980",
+                "1985-2014"
+            ],
+            "product_type": [
+                "multi_model_ensemble"
+            ],
+            "statistic": [
+                "10th",
+                "25th",
+                "5th",
+                "50th",
+                "75th",
+                "90th",
+                "95th"
+            ],
+            "variable": [
+                "surge_level",
+                "total_water_level"
+            ]
+        },
+        {
+            "derived_variable": [
+                "absolute_value"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "cmcc_cm2_vhr4",
+                "ec_earth3p_hr",
+                "hadgem3_gc31_hm",
+                "hadgem3_gc31_hm_sst"
+            ],
+            "period": [
+                "1951-1980",
+                "1985-2014"
+            ],
+            "product_type": [
+                "single_model"
+            ],
+            "statistic": [
+                "10th",
+                "25th",
+                "5th",
+                "50th",
+                "75th",
+                "90th",
+                "95th"
+            ],
+            "variable": [
+                "surge_level",
+                "total_water_level"
+            ]
+        },
+        {
+            "confidence_interval": [
+                "best_fit"
+            ],
+            "derived_variable": [
+                "absolute_change"
+            ],
+            "experiment": [
+                "future"
+            ],
+            "multi_model_ensemble_statistic": [
+                "negative_ensemble_counts",
+                "positive_ensemble_counts"
+            ],
+            "period": [
+                "2021-2050"
+            ],
+            "product_type": [
+                "multi_model_ensemble"
+            ],
+            "statistic": [
+                "1_year",
+                "10_year",
+                "100_year",
+                "2_year",
+                "25_year",
+                "5_year",
+                "50_year",
+                "75_year"
+            ],
+            "variable": [
+                "surge_level",
+                "total_water_level"
+            ]
+        },
+        {
+            "confidence_interval": [
+                "best_fit"
+            ],
+            "derived_variable": [
+                "absolute_change"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "multi_model_ensemble_statistic": [
+                "negative_ensemble_counts",
+                "positive_ensemble_counts"
+            ],
+            "period": [
+                "1951-1980"
+            ],
+            "product_type": [
+                "multi_model_ensemble"
+            ],
+            "statistic": [
+                "1_year",
+                "10_year",
+                "100_year",
+                "2_year",
+                "25_year",
+                "5_year",
+                "50_year",
+                "75_year"
+            ],
+            "variable": [
+                "surge_level",
+                "total_water_level"
+            ]
+        },
+        {
+            "confidence_interval": [
+                "best_fit"
+            ],
+            "derived_variable": [
+                "absolute_change",
+                "percentage_change"
+            ],
+            "experiment": [
+                "future"
+            ],
+            "model": [
+                "cmcc_cm2_vhr4",
+                "ec_earth3p_hr",
+                "hadgem3_gc31_hm",
+                "hadgem3_gc31_hm_sst"
+            ],
+            "period": [
+                "2021-2050"
+            ],
+            "product_type": [
+                "single_model"
+            ],
+            "statistic": [
+                "1_year",
+                "10_year",
+                "100_year",
+                "2_year",
+                "25_year",
+                "5_year",
+                "50_year",
+                "75_year"
+            ],
+            "variable": [
+                "surge_level",
+                "total_water_level"
+            ]
+        },
+        {
+            "confidence_interval": [
+                "best_fit"
+            ],
+            "derived_variable": [
+                "absolute_change",
+                "percentage_change"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "cmcc_cm2_vhr4",
+                "ec_earth3p_hr",
+                "hadgem3_gc31_hm",
+                "hadgem3_gc31_hm_sst"
+            ],
+            "period": [
+                "1951-1980"
+            ],
+            "product_type": [
+                "single_model"
+            ],
+            "statistic": [
+                "1_year",
+                "10_year",
+                "100_year",
+                "2_year",
+                "25_year",
+                "5_year",
+                "50_year",
+                "75_year"
+            ],
+            "variable": [
+                "surge_level",
+                "total_water_level"
+            ]
+        },
+        {
+            "confidence_interval": [
+                "best_fit"
+            ],
+            "derived_variable": [
+                "absolute_value"
+            ],
+            "experiment": [
+                "future"
+            ],
+            "multi_model_ensemble_statistic": [
+                "ensemble_mean",
+                "ensemble_median",
+                "ensemble_range",
+                "ensemble_standard_deviation"
+            ],
+            "period": [
+                "2021-2050"
+            ],
+            "product_type": [
+                "multi_model_ensemble"
+            ],
+            "statistic": [
+                "1_year",
+                "10_year",
+                "100_year",
+                "2_year",
+                "25_year",
+                "5_year",
+                "50_year",
+                "75_year"
+            ],
+            "variable": [
+                "surge_level",
+                "total_water_level"
+            ]
+        },
+        {
+            "confidence_interval": [
+                "best_fit"
+            ],
+            "derived_variable": [
+                "absolute_value"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "multi_model_ensemble_statistic": [
+                "ensemble_mean",
+                "ensemble_median",
+                "ensemble_range",
+                "ensemble_standard_deviation"
+            ],
+            "period": [
+                "1951-1980",
+                "1985-2014"
+            ],
+            "product_type": [
+                "multi_model_ensemble"
+            ],
+            "statistic": [
+                "1_year",
+                "10_year",
+                "100_year",
+                "2_year",
+                "25_year",
+                "5_year",
+                "50_year",
+                "75_year"
+            ],
+            "variable": [
+                "surge_level",
+                "total_water_level"
+            ]
+        },
+        {
+            "confidence_interval": [
+                "best_fit",
+                "high_bound_confidence_interval",
+                "low_bound_confidence_interval"
+            ],
+            "derived_variable": [
+                "absolute_value"
+            ],
+            "period": [
+                "1985-2014"
+            ],
+            "product_type": [
+                "reanalysis"
+            ],
+            "statistic": [
+                "1_year",
+                "10_year",
+                "100_year",
+                "2_year",
+                "25_year",
+                "5_year",
+                "50_year",
+                "75_year"
+            ],
+            "variable": [
+                "surge_level",
+                "total_water_level"
+            ]
+        },
+        {
+            "confidence_interval": [
+                "best_fit",
+                "high_bound_confidence_interval",
+                "low_bound_confidence_interval"
+            ],
+            "derived_variable": [
+                "absolute_value"
+            ],
+            "experiment": [
+                "future"
+            ],
+            "model": [
+                "cmcc_cm2_vhr4",
+                "ec_earth3p_hr",
+                "hadgem3_gc31_hm",
+                "hadgem3_gc31_hm_sst"
+            ],
+            "period": [
+                "2021-2050"
+            ],
+            "product_type": [
+                "single_model"
+            ],
+            "statistic": [
+                "1_year",
+                "10_year",
+                "100_year",
+                "2_year",
+                "25_year",
+                "5_year",
+                "50_year",
+                "75_year"
+            ],
+            "variable": [
+                "surge_level",
+                "total_water_level"
+            ]
+        },
+        {
+            "confidence_interval": [
+                "best_fit",
+                "high_bound_confidence_interval",
+                "low_bound_confidence_interval"
+            ],
+            "derived_variable": [
+                "absolute_value"
+            ],
+            "experiment": [
+                "historical"
+            ],
+            "model": [
+                "cmcc_cm2_vhr4",
+                "ec_earth3p_hr",
+                "hadgem3_gc31_hm",
+                "hadgem3_gc31_hm_sst"
+            ],
+            "period": [
+                "1951-1980",
+                "1985-2014"
+            ],
+            "product_type": [
+                "single_model"
+            ],
+            "statistic": [
+                "1_year",
+                "10_year",
+                "100_year",
+                "2_year",
+                "25_year",
+                "5_year",
+                "50_year",
+                "75_year"
+            ],
+            "variable": [
+                "surge_level",
+                "total_water_level"
+            ]
+        }
+    ]
+}

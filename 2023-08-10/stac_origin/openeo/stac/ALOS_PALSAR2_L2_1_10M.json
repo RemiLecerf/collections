@@ -1,0 +1,174 @@
+{
+    "type": "Collection",
+    "stac_version": "1.0.0",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/datacube/v1.0.0/schema.json"
+    ],
+    "id": "ALOS_PALSAR2_L2_1_10M",
+    "title": "ALOS-2 PALSAR-2 Stripmap for Economy (SM1, SM3)",
+    "description": "This [ALOS-2 PALSAR-2](https://alos-pasco.com/en/alos-2/spec/) Strip Map (SM1 with 3m single/dual polarization or SM3 with 10m dual polarization) L2.1 product contains\ngeometrically corrected (orthorectified) in selected AOIs between 2019 and 2020 for NASA/ESA/JAXA EODashboard Hackathon. \nThe PALSAR-2 aboard the ALOS-2 is a Synthetic Aperture Radar (SAR), which emits microwave and receives the reflection \nfrom the ground to acquire information. Since it does not need other sources of light such as the sun, SAR has the \nadvantage of providing satellite images during day or night. For transmitting and receiving microwaves PALSAR-2 uses \nthe L-band, which is less affected by clouds and rains. This all-weather observing capability is suitable for \nmonitoring disasters rapidly. In addition, L-band microwave can reach to the ground partially penetrating through \nvegetation to obtain information about vegetation and ground surface. \nData for Paris and Dunkirk are Strip Map mode 3 (SM3) which is fine mode with 10m spatial resolution with 70km width swath and dual polarization (HH/HV),\nwhile Beijing data is both Strip Map mode 3 (SM3) and Strip Map mode 1 (SM1) which is also fine mode with 3m spatial resolution with 50km width swath and dual polarization (HH/HV).\n",
+    "keywords": [
+        "open data",
+        "sentinel hub",
+        "raster",
+        "SAR",
+        "dashboard hackathon",
+        "JAXA"
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -118.002,
+                    33.707,
+                    139.897,
+                    51.587
+                ],
+                [
+                    3.111,
+                    48.519,
+                    3.672,
+                    49.004
+                ],
+                [
+                    1.127,
+                    50.466,
+                    3.204,
+                    51.587
+                ],
+                [
+                    -118.002,
+                    33.707,
+                    -117.869,
+                    34.226
+                ],
+                [
+                    116.283,
+                    39.637,
+                    117.247,
+                    40.129
+                ],
+                [
+                    139.651,
+                    35.267,
+                    139.897,
+                    35.965
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2019-03-06T00:00:00Z",
+                    "2021-04-08T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "providers": [
+        {
+            "name": "Sentinel Hub",
+            "roles": [
+                "processor"
+            ],
+            "url": "https://services.sentinel-hub.com"
+        }
+    ],
+    "links": [
+        {
+            "href": "https://collections.eurodatacube.com/alos-2-palsar-2-stripmap-for-economy",
+            "rel": "about",
+            "title": "Website describing the collection",
+            "type": "text/html"
+        },
+        {
+            "href": "https://docs.sentinel-hub.com/api/latest/api/process/",
+            "rel": "about",
+            "title": "Details about running Evalscripts",
+            "type": "text/html"
+        },
+        {
+            "href": "https://raw.githubusercontent.com/eurodatacube/public-collections/main/collections/alos-2-palsar-2-stripmap-for-economy/hh_script.js",
+            "rel": "processing-expression",
+            "sentinelhub:layer_name": "HH",
+            "sentinelhub:mosaicking_order": "mostRecent",
+            "sentinelhub:upsampling": "BICUBIC",
+            "title": "Evalscript to generate HH imagery",
+            "type": "application/javascript"
+        },
+        {
+            "href": "https://raw.githubusercontent.com/eurodatacube/public-collections/main/collections/alos-2-palsar-2-stripmap-for-economy/hv_script.js",
+            "rel": "processing-expression",
+            "sentinelhub:layer_name": "HV",
+            "sentinelhub:mosaicking_order": "mostRecent",
+            "sentinelhub:upsampling": "BICUBIC",
+            "title": "Evalscript to generate HV imagery",
+            "type": "application/javascript"
+        },
+        {
+            "rel": "license",
+            "title": "License",
+            "type": "text/html"
+        },
+        {
+            "href": "https://openeocloud.vito.be/openeo/1.0.0/collections",
+            "rel": "root"
+        },
+        {
+            "href": "https://openeocloud.vito.be/openeo/1.0.0/collections",
+            "rel": "parent"
+        },
+        {
+            "href": "https://openeocloud.vito.be/openeo/1.0.0/collections/ALOS_PALSAR2_L2_1_10M",
+            "rel": "self"
+        }
+    ],
+    "cube:dimensions": {
+        "bands": {
+            "type": "bands",
+            "values": [
+                "HH",
+                "HV"
+            ]
+        },
+        "t": {
+            "extent": [
+                "2019-03-06T00:00:00Z",
+                "2021-04-08T00:00:00Z"
+            ],
+            "type": "temporal"
+        },
+        "x": {
+            "axis": "x",
+            "extent": [
+                -118.002,
+                139.897
+            ],
+            "type": "spatial"
+        },
+        "y": {
+            "axis": "y",
+            "extent": [
+                33.707,
+                51.587
+            ],
+            "type": "spatial"
+        }
+    },
+    "summaries": {
+        "federation:backends": [
+            "sentinelhub"
+        ]
+    },
+    "assets": {
+        "thumbnail": {
+            "href": "https://collections.eurodatacube.com/alos-2-palsar-2-stripmap-for-economy/alos-2-palsar-2-stripmap-for-economy.png",
+            "roles": [
+                "thumbnail"
+            ],
+            "title": "Thumbnail",
+            "type": "image/png"
+        }
+    },
+    "datasource_type": "byoc-5014c166-c13e-4bcf-b7cf-52d0312c54b8"
+}

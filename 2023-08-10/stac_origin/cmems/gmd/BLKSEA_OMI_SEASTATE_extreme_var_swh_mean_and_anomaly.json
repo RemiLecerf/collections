@@ -1,0 +1,52 @@
+{
+  "type": "Collection",
+  "id": "BLKSEA_OMI_SEASTATE_extreme_var_swh_mean_and_anomaly",
+  "stac_version": "1.0.0",
+  "description": "'''DEFINITION'''\n\nThe CMEMS BLKSEA_OMI_seastate_extreme_var_swh_mean_and_anomaly OMI indicator is based on the computation of the annual 99th percentile of Significant Wave Height (SWH) from model data. Two different CMEMS products are used to compute the indicator: The Iberia-Biscay-Ireland Multi Year Product (BLKSEA_MULTIYEAR_WAV_007_006) and the Analysis product (BLKSEA_ANALYSISFORECAST_WAV_007_003).\nTwo parameters have been considered for this OMI:\n* Map of the 99th mean percentile: It is obtained from the Multy Year Product, the annual 99th percentile is computed for each year of the product. The percentiles are temporally averaged in the whole period (1979-2019).\n* Anomaly of the 99th percentile in 2020: The 99th percentile of the year 2020 is computed from the Analysis product. The anomaly is obtained by subtracting the mean percentile to the percentile in 2020.\nThis indicator is aimed at monitoring the extremes of annual significant wave height and evaluate the spatio-temporal variability. The use of percentiles instead of annual maxima, makes this extremes study less affected by individual data. This approach was first successfully applied to sea level variable (Pérez Gómez et al., 2016) and then extended to other essential variables, such as sea surface temperature and significant wave height (Pérez Gómez et al 2018 and Álvarez-Fanjul et al., 2019). Further details and in-depth scientific evaluation can be found in the CMEMS Ocean State report (Álvarez- Fanjul et al., 2019).\n\n'''CONTEXT'''\n\nThe sea state and its related spatio-temporal variability affect maritime activities and the physical connectivity between offshore waters and coastal ecosystems, including biodiversity of marine protected areas (González-Marco et al., 2008; Savina et al., 2003; Hewitt, 2003). Over the last decades, significant attention has been devoted to extreme wave height events since their destructive effects in both the shoreline environment and human infrastructures have prompted a wide range of adaptation strategies to deal with natural hazards in coastal areas (Hansom et al., 2015, IPCC, 2019). Complementarily, there is also an emerging question about the role of anthropogenic global climate change on present and future extreme wave conditions (IPCC, 2021).\nSignificant Wave Height mean 99th percentile in the Black Sea region shows west-eastern  dependence demonstrating that the highest values of the average annual 99th percentiles are in the areas where high winds and long fetch are simultaneously present. The largest values of the mean 99th percentile in the Black Sea in the southewestern Black Sea are around 3.5 m, while in the eastern part of the basin are around 2.5 m (Staneva et al., 2019a and 2019b).\n\n'''CMEMS KEY FINDINGS'''\n\nSignificant Wave Height mean 99th percentile in the Black Sea region shows west-eastern  dependence with largest values in the southwestern Black Sea, with values as high as 3.5 m, while the 99th percentile values in the eastern part of the basin are around 2.5 m.  The Black Sea, the 99th mean percentile for 2002-2019 shows a similar pattern demonstrating that the highest values of the mean annual 99th percentile are in the western Black Sea. This pattern is consistent with the previous studies, e.g. of (Akpınar and Kömürcü, 2012; and Akpinar et al., 2016).\nThe anomaly of the 99th percentile in 2020 is mostly negative with values down to ~-45 cm. The highest negative anomalies for 2020 are observed in the southeastern area where the multi-year mean 99th percentile is the lowest. The highest positive anomalies of the 99th percentile in 2020 are located in the southwestern Black Sea and along the eastern coast. The map of anomalies for 2020, presenting alternate bands of positive and negative values depending on latitude, is consistent with the yearly west-east displacement of the tracks of the largest storms. \n\nNote: The key findings will be updated annually in November, in line with OMI evolutions.\n\n'''DOI (product):'''\nhttps://doi.org/10.48670/moi-00214",
+  "links": [],
+  "title": "Black Sea Significant Wave Height extreme from Reanalysis",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          27.37,
+          40.86,
+          41.96,
+          46.8
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1979-01-01T00:00:00Z",
+          "2020-12-31T23:59:59Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Oceanographic geographical features",
+    "numerical-model",
+    null,
+    "multi-year",
+    "weather-climate-and-seasonal-forecasting",
+    "marine-safety",
+    "coastal-marine-environment",
+    "marine-resources",
+    "black-sea",
+    "N/A",
+    "Not Applicable"
+  ],
+  "providers": [
+    {
+      "name": "Copernicus Marine Service",
+      "description": "Copernicus Marine Service - Mercator Ocean International",
+      "roles": [
+        "host"
+      ],
+      "url": "https://marine.copernicus.eu/"
+    }
+  ]
+}

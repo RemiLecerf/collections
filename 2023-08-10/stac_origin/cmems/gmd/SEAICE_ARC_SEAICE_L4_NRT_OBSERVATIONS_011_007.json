@@ -1,0 +1,54 @@
+{
+  "type": "Collection",
+  "id": "SEAICE_ARC_SEAICE_L4_NRT_OBSERVATIONS_011_007",
+  "stac_version": "1.0.0",
+  "description": "'''Short description:''' \n\nThe iceberg product contains 4 datasets (IW and EW modes and mosaic for the two modes) describing iceberg concentration as number of icebergs counted within 10x10 km grid cells. The iceberg concentration is derived by applying a Constant False Alarm Rate (CFAR) algorithm on data from Synthetic Aperture Radar (SAR) satellite sensors.\n\nThe iceberg product also contains two additional datasets of individual iceberg positions in Greenland-Newfoundland-Labrador Waters. These datasets are in shapefile format to allow the best representation of the icebergs (the 1st dataset contains the iceberg point observations, the 2nd dataset contains the polygonized satellite coverage). These are also derived by applying a Constant False Alarm Rate (CFAR) algorithm on Sentinel-1 SAR imagery.\nDespite its precision (individual icebergs are proposed), this product is a generic and automated product and needs expertise to be correctly used. For all applications concerning marine navigation, please refer to the national Ice Service of the country concerned.\n\n'''DOI (product) :'''  \nhttps://doi.org/10.48670/moi-00129",
+  "links": [],
+  "title": "SAR Sea Ice Berg Concentration and Individual Icebergs Observed with Sentinel-1",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -122.6,
+          54.5,
+          42.9,
+          84.9
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2019-05-04T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "target-application#seaiceservices",
+    "target-application#seaiceforecastingapplication",
+    "Oceanographic geographical features",
+    "satellite-observation",
+    "number_of_icebergs_per_unit_area",
+    "near-real-time",
+    "coastal-marine-environment",
+    "marine-resources",
+    "weather-climate-and-seasonal-forecasting",
+    "marine-safety",
+    "arctic-ocean",
+    "Level 4",
+    "Not Applicable"
+  ],
+  "providers": [
+    {
+      "name": "Copernicus Marine Service",
+      "description": "Copernicus Marine Service - Mercator Ocean International",
+      "roles": [
+        "host"
+      ],
+      "url": "https://marine.copernicus.eu/"
+    }
+  ]
+}

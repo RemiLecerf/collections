@@ -1,0 +1,99 @@
+{
+  "type": "Collection",
+  "id": "EO:ECMWF:DAT:SIS_HYDROLOGY_VARIABLES_DERIVED_PROJECTIONS",
+  "stac_version": "1.0.0",
+  "description": "This dataset provides water variables and indicators based on hydrological impact modelling, forced by bias adjusted regional climate simulations from the European Coordinated Regional Climate Downscaling Experiment (EURO-CORDEX). The dataset contains Essential Climate Variable (ECV) data in the form of daily mean river discharge and a set of climate impact indicators (CIIs) for both water quantity and quality. \nECV datasets provide the empirical evidence needed to understand the current climate and predict future changes. \nCIIs contain condensed climate information which facilitate relatively quick and efficient subsequent analysis. Therefore, CIIs make climate information accessible to application focussed users within a sector.\nThe ECVs and CIIs provided here were derived within the water management sectoral information service to address questions specific to the water sector. However, the products are provided in a generic form and are relevant for a range of sectors, for example agriculture and energy.\nThe data represent the current state-of-the-art in Europe for regional climate and hydrological modelling and indicator production. Eight bias adjusted model simulations from the EURO-CORDEX EUR-11 were used to force a multi-model setup of the hydrological model E-HYPEcatch at a pan-European domain. A total of 18 water quality and quantity CIIs and 1 water ECV are provided in this dataset at catchment scale and on a 5km x 5km grid. \nThe CIIs are provided as mean values over a 30-year time period. For the reference period (1971-2000) data is provided as absolute values, for the future periods the data is provided as absolute values and as the relative or absolute change from the reference period. The future periods cover 3 fixed time periods (2011-2040, 2041-2070 and 2071-2100) and 3 \"degree scenario\" periods defined by when global warming exceeds a given threshold (1.5 °C, 2.0 °C and 3.0 °C). The global warming is calculated from the global climate model (GCM) used, therefore the actual time period of the degree scenarios will be different for each GCM.\nThe river discharge ECV data meet the technical specification set by the Global Climate Observing System (GCOS), as such they are provided on a daily time step. Note these are model output data, not observation data as is the general case for ECVs.\nThis dataset is produced and quality assured by the Swedish Meteorological and Hydrological Institute on behalf of the Copernicus Climate Change Service. \n\nVariables in the dataset/application are:\nAridity actual, Aridity potential, Flood recurrence, Maximum river discharge, Mean runoff, Mean soil moisture, Minimum river discharge, River discharge, Total Nitrogen concentration in catchments, Total Nitrogen concentration in local streams, Total Nitrogen load in catchments, Total Phosphorus concentration in catchments, Total Phosphorus concentration in local streams, Total Phosphorus load in catchments, Water temperature in catchments, Water temperature in local streams, Wetness actual, Wetness potential",
+  "links": [
+    {
+      "rel": "hosts",
+      "href": "https://confluence.ecmwf.int/x/dKDmE",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Product user guide and specification"
+    },
+    {
+      "rel": "hosts",
+      "href": "https://datastore.copernicus-climate.eu/documents/sis-hydrology-derived/C3S_D424.SMHI.3.1c_Biasadjustment_v1-1.pdf",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Bias adjustment specification (PDF)"
+    },
+    {
+      "rel": "hosts",
+      "href": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.73237ad6",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Climate Data Store catalogue"
+    },
+    {
+      "rel": "hosts",
+      "href": "https://datastore.copernicus-climate.eu/documents/sis-hydrology-derived/C3S_D424.SMHI.3.1c_ProductUserGuideSpecification_and_Workflow_Hydro_v1-1-1.pdf",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Product user guide and specification (PDF)"
+    },
+    {
+      "rel": "hosts",
+      "href": "https://datastore.copernicus-climate.eu/documents/sis-hydrology-derived/C3S_D424.SMHI.3.1c_HydrologicalModelsSpecification_v1-1.pdf",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Hydrological model specification (PDF)"
+    },
+    {
+      "rel": "hosts",
+      "href": "https://confluence.ecmwf.int/x/dKDmE",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Product user guide and specification"
+    },
+    {
+      "rel": "hosts",
+      "href": "https://confluence.ecmwf.int/x/MaHmE",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Bias adjustment specification"
+    },
+    {
+      "rel": "hosts",
+      "href": "https://confluence.ecmwf.int/x/kvDmE",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Hydrological model specification"
+    }
+  ],
+  "title": "Hydrology-related climate impact indicators from 1970 to 2100 derived from bias adjusted European climate projections",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1970-01-01T00:00:00Z",
+          "2100-12-31T23:59:59Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Meteorological geographical features",
+    "Temporal coverage: Past",
+    "Temporal coverage: Present",
+    "Temporal coverage: Future",
+    "Spatial coverage: Europe",
+    "Product type: Climate projections",
+    "Variable domain: Atmosphere (hydrology)",
+    "Provider: Copernicus C3S",
+    "Sector: Water management"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

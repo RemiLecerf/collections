@@ -1,0 +1,66 @@
+{
+  "type": "Collection",
+  "id": "urn:cgls:global:fapar300_v1_333m",
+  "stac_version": "1.0.0",
+  "description": "The FAPAR quantifies the fraction of the solar radiation absorbed by plants for photosynthesis. It refers only to the green and living elements of the canopy. \n\tThe FAPAR depends on the canopy structure, vegetation element optical properties, atmospheric conditions and angular configuration.\n\tTo overcome this latter dependency, a daily integrated FAPAR value is assessed. FAPAR is very useful as input to a number of primary productivity models and is recognized as an Essential Climate Variable (ECV) by the Global Climate Observing System (GCOS).\n    The product at 333m resolution is provided in Near Real Time and consolidated in the next six periods.",
+  "links": [
+    {
+      "rel": "hosts",
+      "href": "http://land.copernicus.eu/global/products/fapar",
+      "type": "HTTP",
+      "title": "Copernicus Global Land Service"
+    },
+    {
+      "rel": "hosts",
+      "href": "http://land.copernicus.eu/global/access",
+      "type": "HTTP",
+      "title": "Copernicus Global Land Service"
+    },
+    {
+      "rel": "hosts",
+      "href": "http://eoportal.eumetsat.int",
+      "title": "Copernicus Global Land Service"
+    }
+  ],
+  "title": "Fraction of Absorbed Photosynthetically Active Radiation: global 10-daily (raster 333m) - version 1, Apr 2017",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -60.0,
+          180.0,
+          80.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2014-01-01T00:00:00Z",
+          "2023-12-31T23:59:59Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Orthoimagery",
+    "geophysical environment",
+    "biogeophysical",
+    "fapar",
+    "GLOBE",
+    "Dekad",
+    "10-daily composite"
+  ],
+  "providers": [
+    {
+      "name": "Copernicus Land Monitoring Service",
+      "description": "Copernicus Land Monitoring Service - VITO NV",
+      "roles": [
+        "host"
+      ],
+      "url": "https://land.copernicus.eu/"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dct="http://purl.org/dc/terms/" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/metadata/eu.copernicus.climate.sis-soil-erosion">
+        <foaf:primaryTopic rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/resource/10.24381/cds.66d88ff8"/>
+        <dct:issued>2018-03-28</dct:issued>
+        <dct:modified>2018-03-28</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/srv/eng/xml.metadata.get?uuid=eu.copernicus.climate.sis-soil-erosion">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://cds.climate.copernicus.eu:443//geonetwork?uuid=eu.copernicus.climate.sis-soil-erosion">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/resource/10.24381/cds.66d88ff8">
+        <dct:identifier>10.24381/cds.66d88ff8</dct:identifier>
+        <dct:title>Soil erosion indicators for Italy from 1981 to 2080</dct:title>
+        <dct:abstract>This dataset provides rainfall erosivity (R factor), associated indicators, and the potential for soil loss induced by water erosion for Italy. The dataset is derived from integrating rainfall data included in Climate Data Store with non-climate data to assess soil susceptibility to water erosion according to Revised Universal Soil Loss Equation (RUSLE) approach. The gridded dataset can support the decision-making process of many stakeholders for strategical planning purposes across different sectors addressed by the Copernicus Climate Change Service. The dataset provides:
+
+
+Key information on water erosion dynamics in terms of R factor and potential soil loss for the historical period. The assessment of R factor uses as input gridded observations (E-OBS) and reanalysis data (ERA5, ERA5-Land) for precipitation included in Climate Data Store. The soil loss assessment is obtained by further operating the R factor derived from ERA5-Land with non-climate gridded data representing soil susceptibility to water erosion in accordance to the RUSLE formulation. These are provided at ≈500m horizontal resolution in this dataset.
+
+
+Key information on water erosion dynamics in terms of R factor and potential soil loss for future periods. The assessment is again based on the RUSLE approach and uses as input precipitation data included in the EURO-CORDEX ensemble climate projections (0.11°) under several Representative Concentration Pathways (RCPs). In this case, bias-corrected monthly precipitation data are used and the R factor is provided both at native horizontal resolution and regridded to ≈500m to be operated with other RUSLE factors to derive potential soil loss for the future. Additional R factor proxy variables, based on daily precipitation data, are provided at native horizontal resolution and as anomalies with respect to the historical period, with no bias-correction.
+
+
+This dataset was produced on behalf of the Copernicus Climate Change Service.
+
+Variables in the dataset/application are:
+Maximum 1-day precipitation, Maximum 5-day precipitation, Number of days with LWE greater than 1 mm, Number of days with LWE greater than 20 mm, R factor, Soil loss, Spell length of days with LWE greater than 1 mm, Total precipitation</dct:abstract>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/GEMET%20-%20INSPIRE%20themes%2C%20version%201.0/Meteorological geographical features"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Sector: Agriculture"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Sector: Infrastructure"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Product type: Climate projections"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Product type: Reanalysis"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Product type: In-situ observations"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Spatial coverage: Europe"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Variable domain: Land (hydrology)"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Temporal coverage: Future"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Temporal coverage: Past"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/iso/topicCategory/climatologyMeteorologyAtmosphere"/>
+        <foaf:thumbnail rdf:resource="https://datastore.copernicus-climate.eu/c3s/published-forms-v2/c3sprod/sis-soil-erosion/overview.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((6.4 36.4, 6.4 47.3, 19.0 47.3, 19.0 36.4, 6.4 36.4))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:temporal>1981-01-01
+          /
+          2080-12-31</dct:temporal>
+        <dct:publisher rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/organization/ECMWF"/>
+        <dct:accrualPeriodicity>asNeeded</dct:accrualPeriodicity>
+        <dct:language>eng</dct:language>
+        <dct:license>licence</dct:license>
+        <dct:license>https://cds.climate.copernicus.eu/api/v2/terms/static/licence-to-use-copernicus-products.pdf</dct:license>
+        <dcat:distribution rdf:resource="https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.66d88ff8"/>
+        <dcat:distribution rdf:resource="https://datastore.copernicus-climate.eu/documents/sis-soil-erosion/C3S_D429d.2.3.2_Product_User_Guide_v1.2.pdf"/>
+        <dcat:dataQuality>C3S - Sectoral services demonstration case for soil erosion indicators</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+    

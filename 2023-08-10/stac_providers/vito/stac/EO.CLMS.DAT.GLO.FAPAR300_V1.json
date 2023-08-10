@@ -1,0 +1,84 @@
+{
+    "stac_version": "0.9.0",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/datacube/v2.2.0/schema.json",
+        "https://stac-extensions.github.io/eo/v1.1.0/schema.json"
+    ],
+    "id": "EO.CLMS.DAT.GLO.FAPAR300_V1",
+    "title": "Copernicus Global Land fAPAR product V1, 300m resolution, 10-daily",
+    "description": "Global FAPAR at 300m resolution, 10-daily. The FAPAR quantifies the fraction of the solar radiation absorbed by live leaves for the photosynthesis activity. Then, it refers only to the green and alive elements of the canopy. The FAPAR depends on the canopy structure, vegetation element optical properties, atmospheric conditions, and angular configuration. To overcome this latter dependency, a daily integrated FAPAR value is assessed.\n\nFAPAR is recognized as an Essential Climate Variable (ECV) by the Global Climate Observing System (GCOS).",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180.0014880952381,
+                    -59.9985119,
+                    179.9985119,
+                    80.00148809523809
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2014-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "free",
+    "links": [
+        {
+            "href": "https://land.copernicus.eu/global/products/ndvi",
+            "rel": "alternate",
+            "title": "Product web page."
+        }
+    ],
+    "cube:dimensions": {
+        "bands": {
+            "type": "bands",
+            "values": [
+                "FAPAR"
+            ]
+        },
+        "t": {
+            "extent": [
+                "2014-01-01T00:00:00Z"
+            ],
+            "type": "temporal"
+        },
+        "x": {
+            "axis": "x",
+            "extent": [
+                -180.0014880952381,
+                179.9985119
+            ],
+            "reference_system": 4326,
+            "step": 0.00297619047619,
+            "type": "spatial"
+        },
+        "y": {
+            "axis": "y",
+            "extent": [
+                -59.9985119,
+                80.00148809523809
+            ],
+            "reference_system": 4326,
+            "step": 0.00297619047619,
+            "type": "spatial"
+        }
+    },
+    "summaries": {
+        "raster:bands": [
+            {
+                "data_type": "uint8",
+                "name": "FAPAR",
+                "nodata": 255,
+                "scale": 0.004,
+                "statistics": {
+                    "maximum": 235
+                }
+            }
+        ]
+    }
+}

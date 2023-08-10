@@ -1,0 +1,71 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:dct="http://purl.org/dc/terms/" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/7573c7e8-5cb1-4998-8dcf-e90641b4968c">
+        <foaf:primaryTopic rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/resource/7573c7e8-5cb1-4998-8dcf-e90641b4968c"/>
+        <dct:issued>2023-03-24</dct:issued>
+        <dct:modified>2023-03-24</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/srv/eng/xml.metadata.get?uuid=7573c7e8-5cb1-4998-8dcf-e90641b4968c">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork?uuid=7573c7e8-5cb1-4998-8dcf-e90641b4968c">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/resource/7573c7e8-5cb1-4998-8dcf-e90641b4968c">
+        <dct:identifier>7573c7e8-5cb1-4998-8dcf-e90641b4968c</dct:identifier>
+        <dct:title>Atlantic Ocean Colour (Copernicus-GlobColour), Bio-Geo-Chemical, L4 (daily interpolated) from Satellite Observations (1997-ongoing)</dct:title>
+        <dct:abstract>'''Short description: '''
+
+For the '''Global''' Ocean '''Satellite Observations''', ACRI-ST company (Sophia Antipolis, France) is providing '''Bio-Geo-Chemical (BGC)''' products based on the '''Copernicus-GlobColour''' processor.
+* Upstreams: SeaWiFS, MODIS, MERIS, VIIRS-SNPP &amp; JPSS1, OLCI-S3A &amp; S3B for the '''""multi""''' products, and S3A &amp; S3B only for the '''""olci""''' products.
+* Variables: Chlorophyll-a ('''CHL'''), Primary Production ('''PP'''), Phytoplankton Functional types and sizes ('''PFT'''), Suspended Matter ('''SPM'''), Particulate Backscattering ('''BBP'''), Secchi Transparency Depth ('''ZSD'''), Diffuse Attenuation ('''KD490'''), Absorption Coef. ('''ADG440/CDM440''') and  Reflectance ('''RRS''').
+
+* Temporal resolutions: '''daily''', '''monthly''' plus, for some variables, '''daily gap-free''' based on a space-time interpolation to provide a ""cloud free"" product.
+* Spatial resolutions: '''4 km''' (global), '''1 km''' (Atlantic ; 46°W-13°E , 20°N-66°N), and a finer resolution based on olci '''300 meters''' inputs (Atlantic and global coastal).
+* Recent products are organized in datasets called Near Real Time ('''NRT''') and long time-series (from 1997) in datasets called Multi-Years ('''MY''').
+
+To find the '''Copernicus-GlobColour''' products in the catalogue, use the search keyword '''""GlobColour""'''.
+
+'''DOI (product) :'''   
+https://doi.org/10.48670/moi-00289</dct:abstract>
+        <dcat:theme rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/thesaurus/iso/topicCategory/oceans"/>
+        <foaf:thumbnail rdf:resource="https://catalogue.marine.copernicus.eu/documents/IMG/OCEANCOLOUR_ATL_BGC_L4_MY_009_118.jpg"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((-46.00 20.00, -46.00 66.00, 13.00 66.00, 13.00 20.00, -46.00 20.00))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:issued>2013-03-13</dct:issued>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/OC-CNR-ROMA-IT"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/OC-CNR-ROMA-IT"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/OC-ACRI-NICE-FR"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/OC-ACRI-NICE-FR"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/OC-ACRI-NICE-FR"/>
+        <dct:accrualPeriodicity>daily</dct:accrualPeriodicity>
+        <dct:license>otherRestrictions</dct:license>
+        <dct:license>license</dct:license>
+        <dct:license>No limitations on public access</dct:license>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=OCEANCOLOUR_ATL_BGC_L4_MY_009_118-TDS&amp;product=cmems_obs-oc_atl_bgc-plankton_my_l4-gapfree-multi-1km_P1D"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/dodsC/cmems_obs-oc_atl_bgc-plankton_my_l4-gapfree-multi-1km_P1D"/>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/OCEANCOLOUR_ATL_BGC_L4_MY_009_118/cmems_obs-oc_atl_bgc-plankton_my_l4-gapfree-multi-1km_P1D"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/wms/cmems_obs-oc_atl_bgc-plankton_my_l4-gapfree-multi-1km_P1D"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/50371139-21a6-42e9-b9d2-7d96fab6b923"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/11b2eeb0-a631-4c95-8a94-d92361ea19c7"/>
+        <dcat:dataQuality>The myOcean products depends on other products for production or validation. The detailed list of dependencies is given in ISO19115's aggregationInfo (ISO19139 Xpath = "gmd:MD_Metadata/gmd:identificationInfo/gmd:aggregationInfo[./gmd:MD_AggregateInformation/gmd:initiativeType/gmd:DS_InitiativeTypeCode/@codeListValue='upstream-validation' or 'upstream-production']")</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+  

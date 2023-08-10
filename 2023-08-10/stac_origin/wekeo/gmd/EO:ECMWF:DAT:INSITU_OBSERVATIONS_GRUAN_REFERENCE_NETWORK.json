@@ -1,0 +1,46 @@
+{
+  "type": "Collection",
+  "id": "EO:ECMWF:DAT:INSITU_OBSERVATIONS_GRUAN_REFERENCE_NETWORK",
+  "stac_version": "1.0.0",
+  "description": "The Global Climate Observing System (GCOS) Reference Upper-Air Network (GRUAN) is an international reference observing network, established in 2006, of sites measuring essential climate variables above Earth's surface, designed to fill an important gap in the current global observing system. GRUAN measurements are providing high-quality climate data records from the surface, through the troposphere, and into the stratosphere. These are being used to determine trends, constrain and calibrate data from more spatially comprehensive observing systems (including satellites and current radiosonde networks), and provide appropriate data for studying atmospheric processes. GRUAN is envisaged as a global network of eventually 30-40 sites that, to the extent possible, builds on existing observational networks and capabilities.\nGRUAN observation processing is designed to adjust systematic errors in radiosonde measurements of pressure, temperature, humidity, and wind, and to quantify how the uncertainties related to these error sources are derived. \nThis characterization ensures the traceability to SI units or accepted standards, providing extensive metadata and full documentation of measurements and algorithms.\nThis allows the full reprocessing from the raw data.\nThe Climate Data Store provides access to the GRUAN data version 2 (V2). Currently, only two GRUAN data products (GDP), for Vaisala RS92 and for Meisei RS-11G sondes, are available. In due time (expected early 2021) GRUAN data products for the new Vaisala RS41 sondes will be added. Specific GRUAN data products for other sonde types are also under development. \nThe current dataset provides radiosoundings from 17 stations.\nThe GRUAN dataset provides the vertical aggregation of 12 quantities as listed below in the main-variables table. \nAttributes are described in the related-variables tables.\nRadiosoundings can be downloaded as comma-separated values (CSV) files organised in two different ways:\n\nCSV one row per level: for each observed height all variables are provided as individual columns in one row. \nEach main variable has its dedicated columns for related uncertainty and bias correction, where applies (referenced as csv-lev in the variable lists below). \nCSV one row per observation: no aggregation; each row provides information about one variable at one level only. \nAll main variable are grouped together in the following columns: one for the observed variable (indicates variable in question), one for observation value,\none column for each of the three flavours of uncertainty and one for bias correction (referenced as csv-obs in the variable lists below).\n\nMore details about the the GRUAN dataset are given in the Documentation section, and\ngeneral information and background can be obtained from the GRUAN website (www.gruan.org).\n\nVariables in the dataset/application are:\nAir temperature, Air temperature post processing radiation correction, Air temperature random uncertainty, Air temperature systematic uncertainty, Air temperature total uncertainty, Altitude, Altitude total uncertainty, Eastward wind component, Frost point temperature, Geopotential height, Northward wind component, Relative humidity, Relative humidity effective vertical resolution, Relative humidity post processing radiation correction, Relative humidity random uncertainty, Relative humidity systematic uncertainty, Relative humidity total uncertainty, Shortwave radiation, Shortwave radiation total uncertainty, Vertical speed of radiosonde, Water vapor volume mixing ratio, Wind from direction, Wind from direction total uncertainty, Wind speed, Wind speed total uncertainty\n\nVariables in the dataset/application are:\nAir pressure, Height of station above sea level, Latitude, Longitude, Observation value, Observed variable, Post processing radiation correction, Random uncertainty, Record number, Relative humidity effective vertical resolution, Report time stamp, Station name, Systematic uncertainty, Time since launch, Total uncertainty",
+  "links": [],
+  "title": "In situ temperature, relative humidity and wind profiles from 2006 to March 2020 from the GRUAN reference network",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -89.0,
+          180.0,
+          89.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1978-01-01T00:00:00Z",
+          "2018-10-17T23:59:59Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Atmospheric conditions",
+    "Product type: In-situ observations",
+    "Spatial coverage: Global",
+    "Variable domain: Atmosphere (upper air)",
+    "Temporal coverage: Past"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

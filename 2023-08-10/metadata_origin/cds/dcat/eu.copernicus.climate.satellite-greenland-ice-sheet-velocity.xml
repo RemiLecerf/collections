@@ -1,0 +1,68 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dct="http://purl.org/dc/terms/" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/metadata/eu.copernicus.climate.satellite-greenland-ice-sheet-velocity">
+        <foaf:primaryTopic rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/resource/10.24381/cds.0b96b838"/>
+        <dct:issued>2018-03-28</dct:issued>
+        <dct:modified>2018-03-28</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/srv/eng/xml.metadata.get?uuid=eu.copernicus.climate.satellite-greenland-ice-sheet-velocity">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://cds.climate.copernicus.eu:443//geonetwork?uuid=eu.copernicus.climate.satellite-greenland-ice-sheet-velocity">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/resource/10.24381/cds.0b96b838">
+        <dct:identifier>10.24381/cds.0b96b838</dct:identifier>
+        <dct:title>Greenland ice sheet annual gridded velocity data from 2017 to present derived from satellite observations</dct:title>
+        <dct:abstract>This dataset contains annual ice velocity maps of the Greenland Ice Sheet derived from Sentinel-1 data. The data represent the current state-of-the-art in Europe for production of satellite-based ice velocity data records. It follows on from the ESA Greenland Ice Sheet Climate Change Initiative and is guided by the GCOS (Global Climate Observing System) targets for the Ice Sheets Essential Climate Variable.
+Mapping glacier flow velocity and its temporal changes provides key information for investigating the dynamic response of glaciers and ice sheets to changing boundary environmental conditions. Remote sensing techniques that utilise satellite data are the only feasible manner to derive accurate surface velocities of the remote Greenland glaciers on a regular basis. 
+The surface velocity is derived by applying feature tracking techniques using Sentinel-1 synthetic aperture radar (SAR) data acquired in the Interferometric Wide (IW) swath mode. Ice velocity is provided at 250m and 500m grid spacing in North Polar Stereographic projection (depending on version). The horizontal velocity components are provided in true meters per day, towards easting and northing direction of the grid. The vertical displacement is derived from a digital elevation model. Provided is a NetCDF file with the velocity components: vx, vy, vz, along with maps showing the magnitude of the horizontal components, the valid pixel count and uncertainty (based on the standard deviation). The product combines all ice velocity maps, based on 6- and 12-day repeats, acquired over a full year in an annually averaged product running from October 1st to September 30th, mimicking a glaciological year. The dataset is extended on an annual basis.
+This dataset is produced on behalf of the Copernicus Climate Change Service (C3S).
+
+Variables in the dataset/application are:
+Land ice surface easting velocity, Land ice surface northing velocity, Land ice surface velocity magnitude, Land ice surface vertical velocity
+
+Variables in the dataset/application are:
+Land ice surface measurement count, Land ice surface velocity standard deviation</dct:abstract>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/GEMET%20-%20INSPIRE%20themes%2C%20version%201.0/Ocean"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Spatial coverage: Antarctic and Greenland"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Variable domain: Land (cryosphere)"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Product type: Satellite observations"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Temporal coverage: Past"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Temporal coverage: Present"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/iso/topicCategory/climatologyMeteorologyOcean"/>
+        <foaf:thumbnail rdf:resource="https://datastore.copernicus-climate.eu/c3s/published-forms-v2/c3sprod/satellite-greenland-ice-sheet-velocity/overview.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((-73 60, -73 83, -10 83, -10 60, -73 60))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:temporal>2017-10-01
+          /</dct:temporal>
+        <dct:publisher rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/organization/ECMWF"/>
+        <dct:accrualPeriodicity>asNeeded</dct:accrualPeriodicity>
+        <dct:language>eng</dct:language>
+        <dct:license>licence</dct:license>
+        <dct:license>https://cds.climate.copernicus.eu/api/v2/terms/static/20191121_Copernicus_License_V1.2.pdf</dct:license>
+        <dcat:distribution rdf:resource="https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.0b96b838"/>
+        <dcat:distribution rdf:resource="#"/>
+        <dcat:distribution rdf:resource="#"/>
+        <dcat:distribution rdf:resource="#"/>
+        <dcat:dataQuality>ESA CCI and  EC Copernicus program</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+    

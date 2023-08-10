@@ -1,0 +1,210 @@
+{
+    "type": "Collection",
+    "version": "V005",
+    "stac_version": "1.0.0",
+    "stac_extensions": [
+        "collection-assets"
+    ],
+    "id": "MODIS/MOD44W/MOD44W_005_2000_02_24",
+    "title": "MOD44W.005 Land Water Mask Derived From MODIS and SRTM",
+    "description": "The Global Water Mask uses the SWBD (SRTM Water Body\nData) in combination with MODIS 250m data to create a complete\nglobal map of surface water at 250m spatial resolution, circa 2000-2002.  This\ndataset is intended for use in processing of raster data and for\nmasking out water in final raster data products.\n",
+    "keywords": [
+        "geophysical",
+        "mod44w",
+        "modis",
+        "srtm",
+        "water_mask"
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-02-24T00:00:00Z",
+                    "2000-02-24T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "providers": [
+        {
+            "name": "NASA LP DAAC at the USGS EROS Center",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://lpdaac.usgs.gov/dataset_discovery/modis/modis_products_table/mod44w"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_MOD44W_MOD44W_005_2000_02_24"
+        }
+    ],
+    "license": "proprietary",
+    "links": [
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections/MODIS/MOD44W/MOD44W_005_2000_02_24",
+            "rel": "self",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections",
+            "rel": "parent",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/",
+            "rel": "root",
+            "type": "application/json"
+        },
+        {
+            "code": "JavaScript",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/MODIS/MODIS_MOD44W_MOD44W_005_2000_02_24",
+            "rel": "related",
+            "title": "Run the example for MODIS/MOD44W/MOD44W_005_2000_02_24 in the Earth Engine Code Editor",
+            "type": "text/html"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/images/MODIS/MODIS_MOD44W_MOD44W_005_2000_02_24_sample.png",
+            "rel": "preview",
+            "type": "image/png"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_MOD44W_MOD44W_005_2000_02_24#terms-of-use",
+            "rel": "license",
+            "type": "text/html"
+        }
+    ],
+    "cube:dimensions": {
+        "x": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                -180,
+                180
+            ]
+        },
+        "y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                -90,
+                90
+            ]
+        },
+        "t": {
+            "type": "temporal",
+            "extent": [
+                "2000-02-24T00:00:00Z",
+                "2000-02-24T00:00:00Z"
+            ]
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "water_mask",
+                "water_mask_qa"
+            ]
+        }
+    },
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Land-water mask",
+                "gee:bitmask": {
+                    "bitmask_parts": [
+                        {
+                            "bit_count": 1,
+                            "description": "Land-water mask",
+                            "values": [
+                                {
+                                    "description": "Land"
+                                },
+                                {
+                                    "description": "Water",
+                                    "value": 1
+                                }
+                            ]
+                        }
+                    ],
+                    "total_bit_count": 1
+                },
+                "name": "water_mask"
+            },
+            {
+                "description": "Shows which data source provided the water pixel.",
+                "gee:bitmask": {
+                    "bitmask_parts": [
+                        {
+                            "bit_count": 4,
+                            "description": "Land-water mask HDF science QA",
+                            "values": [
+                                {
+                                    "description": "SRTM water body dataset (SWBD) water",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "MODIS 250m water-hits water",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "MODIS 250m decision-tree water",
+                                    "value": 3
+                                },
+                                {
+                                    "description": "Digitized water",
+                                    "value": 4
+                                },
+                                {
+                                    "description": "Mosaic of Antarctica (MOA) water",
+                                    "value": 5
+                                },
+                                {
+                                    "description": "Digitized land",
+                                    "value": 10
+                                }
+                            ]
+                        }
+                    ],
+                    "total_bit_count": 4
+                },
+                "name": "water_mask_qa"
+            }
+        ],
+        "gsd": [
+            250
+        ],
+        "instruments": [
+            "MODIS",
+            "SRTM"
+        ],
+        "platform": [
+            "Space Shuttle Endeavour",
+            "Terra"
+        ]
+    },
+    "assets": {
+        "preview_4": {
+            "href": "https://developers.google.com/earth-engine/datasets/images/MODIS/MODIS_MOD44W_MOD44W_005_2000_02_24_sample.png",
+            "type": "image/png",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    },
+    "sci:citation": "Please visit [LP DAAC 'Citing Our Data' page](https://lpdaac.usgs.gov/citing_our_data)\nfor information on citing LP DAAC datasets.\n",
+    "gee:terms_of_use": "MODIS data and products acquired through the LP DAAC\nhave no restrictions on subsequent use, sale, or redistribution.\n",
+    "gee:type": "image"
+}

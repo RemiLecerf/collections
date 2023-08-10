@@ -1,0 +1,966 @@
+{
+    "type": "Collection",
+    "stac_version": "1.0.0",
+    "stac_extensions": [
+        "collection-assets"
+    ],
+    "id": "LANDSAT/LC8_L1T",
+    "title": "USGS Landsat 8 Raw Scenes (Orthorectified) [deprecated]",
+    "description": "Landsat 8 DN values, representing scaled, calibrated at-sensor radiance, orthorectified scenes only.\n\nAs of May 1, 2017, the USGS is no longer producing Pre-Collection Landsat, and therefore this collection is complete. Please switch to a Collection 1-based dataset. See [this documentation page](https://developers.google.com/earth-engine/landsat) for more information.\n",
+    "keywords": [
+        "global",
+        "l8",
+        "landsat",
+        "lc8",
+        "oli_tirs",
+        "radiance",
+        "usgs"
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2013-04-11T00:14:45Z",
+                    "2017-05-01T08:14:12Z"
+                ]
+            ]
+        }
+    },
+    "providers": [
+        {
+            "name": "USGS",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://landsat.usgs.gov/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/LANDSAT_LC8_L1T"
+        }
+    ],
+    "license": "PDDL-1.0",
+    "links": [
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections/LANDSAT/LC8_L1T",
+            "rel": "self",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections",
+            "rel": "parent",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/",
+            "rel": "root",
+            "type": "application/json"
+        },
+        {
+            "code": "JavaScript",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/LANDSAT/LANDSAT_LC8_L1T",
+            "rel": "related",
+            "title": "Run the example for LANDSAT/LC8_L1T in the Earth Engine Code Editor",
+            "type": "text/html"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/images/LANDSAT/LANDSAT_LC8_L1T_sample.png",
+            "rel": "preview",
+            "type": "image/png"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/LANDSAT_LC8_L1T#terms-of-use",
+            "rel": "license",
+            "type": "text/html"
+        },
+        {
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/LANDSAT/LANDSAT_LC08_C01_T1.json",
+            "rel": "successor-version",
+            "title": "LANDSAT/LC08/C01/T1",
+            "type": "application/json"
+        }
+    ],
+    "cube:dimensions": {
+        "x": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                -180,
+                180
+            ]
+        },
+        "y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                -90,
+                90
+            ]
+        },
+        "t": {
+            "type": "temporal",
+            "extent": [
+                "2013-04-11T00:14:45Z",
+                "2017-05-01T08:14:12Z"
+            ]
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "B1",
+                "B2",
+                "B3",
+                "B4",
+                "B5",
+                "B6",
+                "B7",
+                "B8",
+                "B9",
+                "B10",
+                "B11",
+                "BQA"
+            ]
+        }
+    },
+    "summaries": {
+        "eo:bands": [
+            {
+                "center_wavelength": 0.44,
+                "description": "Coastal aerosol",
+                "gee:wavelength": "0.43 - 0.45 &mu;m",
+                "gsd": 30,
+                "name": "B1",
+                "common_name": "coastal"
+            },
+            {
+                "center_wavelength": 0.48,
+                "description": "Blue",
+                "gee:wavelength": "0.45 - 0.51 &mu;m",
+                "gsd": 30,
+                "name": "B2",
+                "common_name": "blue"
+            },
+            {
+                "center_wavelength": 0.56,
+                "description": "Green",
+                "gee:wavelength": "0.53 - 0.59 &mu;m",
+                "gsd": 30,
+                "name": "B3",
+                "common_name": "green"
+            },
+            {
+                "center_wavelength": 0.655,
+                "description": "Red",
+                "gee:wavelength": "0.64 - 0.67 &mu;m",
+                "gsd": 30,
+                "name": "B4",
+                "common_name": "red"
+            },
+            {
+                "center_wavelength": 0.865,
+                "description": "Near infrared",
+                "gee:wavelength": "0.85 - 0.88 &mu;m",
+                "gsd": 30,
+                "name": "B5",
+                "common_name": "nir08"
+            },
+            {
+                "center_wavelength": 1.61,
+                "description": "Shortwave infrared 1",
+                "gee:wavelength": "1.57 - 1.65 &mu;m",
+                "gsd": 30,
+                "name": "B6",
+                "common_name": "swir16"
+            },
+            {
+                "center_wavelength": 2.2,
+                "description": "Shortwave infrared 2",
+                "gee:wavelength": "2.11 - 2.29 &mu;m",
+                "gsd": 30,
+                "name": "B7",
+                "common_name": "swir22"
+            },
+            {
+                "center_wavelength": 0.71,
+                "description": "Band 8 Panchromatic",
+                "gee:wavelength": "0.52 - 0.90 &mu;m",
+                "gsd": 15,
+                "name": "B8",
+                "common_name": "rededge"
+            },
+            {
+                "center_wavelength": 1.37,
+                "description": "Cirrus",
+                "gee:wavelength": "1.36 - 1.38 &mu;m",
+                "gsd": 15,
+                "name": "B9",
+                "common_name": "cirrus"
+            },
+            {
+                "center_wavelength": 10.895,
+                "description": "Thermal infrared 1, resampled from 100m to 30m",
+                "gee:wavelength": "10.60 - 11.19 &mu;m",
+                "gsd": 30,
+                "name": "B10",
+                "common_name": "lwir11"
+            },
+            {
+                "center_wavelength": 12.005,
+                "description": "Thermal infrared 2, resampled from 100m to 30m",
+                "gee:wavelength": "11.50 - 12.51 &mu;m",
+                "gsd": 30,
+                "name": "B11",
+                "common_name": "lwir12"
+            },
+            {
+                "description": "Landsat Collection 1 QA Bitmask ([See Landsat QA page](https://www.usgs.gov/land-resources/nli/landsat/landsat-collection-1-level-1-quality-assessment-band))\n",
+                "gee:bitmask": {
+                    "bitmask_parts": [
+                        {
+                            "bit_count": 1,
+                            "description": "Designated Fill",
+                            "values": [
+                                {
+                                    "description": "No"
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Terrain Occlusion",
+                            "first_bit": 1,
+                            "values": [
+                                {
+                                    "description": "No"
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 2,
+                            "description": "Radiometric Saturation",
+                            "first_bit": 2,
+                            "values": [
+                                {
+                                    "description": "No bands contain saturation"
+                                },
+                                {
+                                    "description": "1-2 bands contain saturation",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "3-4 bands contain saturation",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "5 or more bands contain saturation",
+                                    "value": 3
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Cloud",
+                            "first_bit": 4,
+                            "values": [
+                                {
+                                    "description": "No"
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 2,
+                            "description": "Cloud Confidence",
+                            "first_bit": 5,
+                            "values": [
+                                {
+                                    "description": "Not Determined / Condition does not exist."
+                                },
+                                {
+                                    "description": "Low, (0-33 percent confidence)",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "Medium, (34-66 percent confidence)",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "High, (67-100 percent confidence)",
+                                    "value": 3
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 2,
+                            "description": "Cloud Shadow Confidence",
+                            "first_bit": 7,
+                            "values": [
+                                {
+                                    "description": "Not Determined / Condition does not exist."
+                                },
+                                {
+                                    "description": "Low, (0-33 percent confidence)",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "Medium, (34-66 percent confidence)",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "High, (67-100 percent confidence)",
+                                    "value": 3
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 2,
+                            "description": "Snow / Ice Confidence",
+                            "first_bit": 9,
+                            "values": [
+                                {
+                                    "description": "Not Determined / Condition does not exist."
+                                },
+                                {
+                                    "description": "Low, (0-33 percent confidence)",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "Medium, (34-66 percent confidence)",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "High, (67-100 percent confidence)",
+                                    "value": 3
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 2,
+                            "description": "Cirrus Confidence",
+                            "first_bit": 11,
+                            "values": [
+                                {
+                                    "description": "Not Determined / Condition does not exist."
+                                },
+                                {
+                                    "description": "Low, (0-33 percent confidence)",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "Medium, (34-66 percent confidence)",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "High, (67-100 percent confidence)",
+                                    "value": 3
+                                }
+                            ]
+                        }
+                    ],
+                    "total_bit_count": 13
+                },
+                "gsd": 30,
+                "name": "BQA"
+            }
+        ],
+        "gee:schema": [
+            {
+                "description": "The file name for the Bias Parameter File (BPF) used to generate the product, if applicable. This only applies to products that contain OLI bands.\n",
+                "name": "BPF_NAME_OLI",
+                "type": "STRING"
+            },
+            {
+                "description": "The file name for the Bias Parameter File (BPF) used to generate the product, if applicable. This only applies to products that contain TIRS bands.\n",
+                "name": "BPF_NAME_TIRS",
+                "type": "STRING"
+            },
+            {
+                "description": "Percentage cloud cover (0-100), -1 = not calculated.",
+                "name": "CLOUD_COVER",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Percentage cloud cover over land (0-100), -1 = not calculated.",
+                "name": "CLOUD_COVER_LAND",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Tier of scene. (T1 or T2)",
+                "name": "COLLECTION_CATEGORY",
+                "type": "STRING"
+            },
+            {
+                "description": "Number of collection.",
+                "name": "COLLECTION_NUMBER",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Calibration parameter file name.",
+                "name": "CPF_NAME",
+                "type": "STRING"
+            },
+            {
+                "description": "Data type identifier. (L1T or L1G)",
+                "name": "DATA_TYPE",
+                "type": "STRING"
+            },
+            {
+                "description": "Image acquisition date. \"YYYY-MM-DD\"",
+                "name": "DATE_ACQUIRED",
+                "type": "STRING"
+            },
+            {
+                "description": "Datum used in image creation.",
+                "name": "DATUM",
+                "type": "STRING"
+            },
+            {
+                "description": "Earth sun distance in astronomical units (AU).",
+                "name": "EARTH_SUN_DISTANCE",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Elevation model source used for standard terrain corrected (L1T) products.",
+                "name": "ELEVATION_SOURCE",
+                "type": "STRING"
+            },
+            {
+                "description": "Ellipsoid used in image creation.",
+                "name": "ELLIPSOID",
+                "type": "STRING"
+            },
+            {
+                "description": "Ephemeris data type used to perform geometric correction. (Definitive or Predictive)",
+                "name": "EPHEMERIS_TYPE",
+                "type": "STRING"
+            },
+            {
+                "description": "File date in milliseconds since epoch.",
+                "name": "FILE_DATE",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Combined Root Mean Square Error (RMSE) of the geometric residuals\n(meters) in both across-track and along-track directions\nmeasured on the GCPs used in geometric precision correction.\nNot present in L1G products.\n",
+                "name": "GEOMETRIC_RMSE_MODEL",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "RMSE of the X direction geometric residuals (in meters) measured\non the GCPs used in geometric precision correction. Not present in\nL1G products.\n",
+                "name": "GEOMETRIC_RMSE_MODEL_X",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "RMSE of the Y direction geometric residuals (in meters) measured\non the GCPs used in geometric precision correction. Not present in\nL1G products.\n",
+                "name": "GEOMETRIC_RMSE_MODEL_Y",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Grid cell size used in creating the image for the panchromatic band.",
+                "name": "GRID_CELL_SIZE_PANCHROMATIC",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Grid cell size used in creating the image for the reflective band.",
+                "name": "GRID_CELL_SIZE_REFLECTIVE",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Grid cell size used in creating the image for the thermal band.",
+                "name": "GRID_CELL_SIZE_THERMAL",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "The number of ground control points used. Not used in L1GT products.\nValues: 0 - 999 (0 is used for L1T products that have used\nMulti-scene refinement).\n",
+                "name": "GROUND_CONTROL_POINTS_MODEL",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "The number of ground control points used in the verification of\nthe terrain corrected product. Values: -1 to 1615 (-1 = not available)\n",
+                "name": "GROUND_CONTROL_POINTS_VERSION",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Image quality, 0 = worst, 9 = best, -1 = quality not calculated",
+                "name": "IMAGE_QUALITY",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "The composite image quality for the OLI bands. Values: 9 = Best. 1 = Worst. 0 = Image quality not calculated. This parameter is only present if OLI bands are present in the product.\n",
+                "name": "IMAGE_QUALITY_OLI",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "The composite image quality for the TIRS bands. Values: 9 = Best. 1 = Worst. 0 = Image quality not calculated. This parameter is only present if OLI bands are present in the product.\n",
+                "name": "IMAGE_QUALITY_TIRS",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Calibration K1 constant for Band 10 radiance to temperature conversion.",
+                "name": "K1_CONSTANT_BAND_10",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Calibration K1 constant for Band 11 radiance to temperature conversion.",
+                "name": "K1_CONSTANT_BAND_11",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Calibration K2 constant for Band 10 radiance to temperature conversion.",
+                "name": "K2_CONSTANT_BAND_10",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Calibration K2 constant for Band 11 radiance to temperature conversion.",
+                "name": "K2_CONSTANT_BAND_11",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "The naming convention of each Landsat Collection 1 Level-1 image based\non acquisition parameters and processing parameters.\n\nFormat: LXSS_LLLL_PPPRRR_YYYYMMDD_yyyymmdd_CC_TX\n\n*  L = Landsat\n*  X = Sensor (O = Operational Land Imager,\nT = Thermal Infrared Sensor, C = Combined OLI/TIRS)\n*  SS = Satellite (08 = Landsat 8)\n*  LLLL = Processing Correction Level (L1TP = precision and terrain,\nL1GT = systematic terrain, L1GS = systematic)\n*  PPP = WRS Path\n*  RRR = WRS Row\n*  YYYYMMDD = Acquisition Date expressed in Year, Month, Day\n*  yyyymmdd = Processing Date expressed in Year, Month, Day\n*  CC = Collection Number (01)\n*  TX = Collection Category (RT = Real Time, T1 = Tier 1, T2 = Tier 2)\n",
+                "name": "LANDSAT_PRODUCT_ID",
+                "type": "STRING"
+            },
+            {
+                "description": "The Pre-Collection naming convention of each image is based on acquisition\nparameters. This was the naming convention used prior to Collection 1.\n\nFormat: LXSPPPRRRYYYYDDDGSIVV\n\n*  L = Landsat\n*  X = Sensor (O = Operational Land Imager, T = Thermal Infrared Sensor, C = Combined OLI/TIRS)\n*  S = Satellite (08 = Landsat 8)\n*  PPP = WRS Path\n*  RRR = WRS Row\n*  YYYY = Year of Acquisition\n*  DDD = Julian Day of Acquisition\n*  GSI = Ground Station Identifier\n*  VV = Version\n",
+                "name": "LANDSAT_SCENE_ID",
+                "type": "STRING"
+            },
+            {
+                "description": "Projection used to represent the 3-dimensional surface of the earth for the Level-1 product.",
+                "name": "MAP_PROJECTION",
+                "type": "STRING"
+            },
+            {
+                "description": "Nadir or Off-Nadir condition of the scene.",
+                "name": "NADIR_OFFNADIR",
+                "type": "STRING"
+            },
+            {
+                "description": "Orientation used in creating the image. Values: NOMINAL = Nominal Path, NORTH_UP = North Up, TRUE_NORTH = True North, USER = User\n",
+                "name": "ORIENTATION",
+                "type": "STRING"
+            },
+            {
+                "description": "Number of product lines for the panchromatic band.",
+                "name": "PANCHROMATIC_LINES",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Number of product samples for the panchromatic bands.",
+                "name": "PANCHROMATIC_SAMPLES",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Name and version of the processing software used to generate the L1 product.",
+                "name": "PROCESSING_SOFTWARE_VERSION",
+                "type": "STRING"
+            },
+            {
+                "description": "Additive rescaling factor used to convert calibrated DN to radiance for Band 1.",
+                "name": "RADIANCE_ADD_BAND_1",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Additive rescaling factor used to convert calibrated DN to radiance for Band 10.",
+                "name": "RADIANCE_ADD_BAND_10",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Additive rescaling factor used to convert calibrated DN to radiance for Band 11.",
+                "name": "RADIANCE_ADD_BAND_11",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Additive rescaling factor used to convert calibrated DN to radiance for Band 2.",
+                "name": "RADIANCE_ADD_BAND_2",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Additive rescaling factor used to convert calibrated DN to radiance for Band 3.",
+                "name": "RADIANCE_ADD_BAND_3",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Additive rescaling factor used to convert calibrated DN to radiance for Band 4.",
+                "name": "RADIANCE_ADD_BAND_4",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Additive rescaling factor used to convert calibrated DN to radiance for Band 5.",
+                "name": "RADIANCE_ADD_BAND_5",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Additive rescaling factor used to convert calibrated DN to radiance for Band 6.",
+                "name": "RADIANCE_ADD_BAND_6",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Additive rescaling factor used to convert calibrated DN to radiance for Band 7.",
+                "name": "RADIANCE_ADD_BAND_7",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Additive rescaling factor used to convert calibrated DN to radiance for Band 8.",
+                "name": "RADIANCE_ADD_BAND_8",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Additive rescaling factor used to convert calibrated DN to radiance for Band 9.",
+                "name": "RADIANCE_ADD_BAND_9",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Multiplicative rescaling factor used to convert calibrated Band 1 DN to radiance.",
+                "name": "RADIANCE_MULT_BAND_1",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Multiplicative rescaling factor used to convert calibrated Band 10 DN to radiance.",
+                "name": "RADIANCE_MULT_BAND_10",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Multiplicative rescaling factor used to convert calibrated Band 11 DN to radiance.",
+                "name": "RADIANCE_MULT_BAND_11",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Multiplicative rescaling factor used to convert calibrated Band 2 DN to radiance.",
+                "name": "RADIANCE_MULT_BAND_2",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Multiplicative rescaling factor used to convert calibrated Band 3 DN to radiance.",
+                "name": "RADIANCE_MULT_BAND_3",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Multiplicative rescaling factor used to convert calibrated Band 4 DN to radiance.",
+                "name": "RADIANCE_MULT_BAND_4",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Multiplicative rescaling factor used to convert calibrated Band 5 DN to radiance.",
+                "name": "RADIANCE_MULT_BAND_5",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Multiplicative rescaling factor used to convert calibrated Band 6 DN to radiance.",
+                "name": "RADIANCE_MULT_BAND_6",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Multiplicative rescaling factor used to convert calibrated Band 7 DN to radiance.",
+                "name": "RADIANCE_MULT_BAND_7",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Multiplicative rescaling factor used to convert calibrated Band 8 DN to radiance.",
+                "name": "RADIANCE_MULT_BAND_8",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Multiplicative rescaling factor used to convert calibrated Band 9 DN to radiance.",
+                "name": "RADIANCE_MULT_BAND_9",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Additive rescaling factor used to convert calibrated Band 1 DN to reflectance.",
+                "name": "REFLECTANCE_ADD_BAND_1",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Additive rescaling factor used to convert calibrated Band 2 DN to reflectance.",
+                "name": "REFLECTANCE_ADD_BAND_2",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Additive rescaling factor used to convert calibrated Band 3 DN to reflectance.",
+                "name": "REFLECTANCE_ADD_BAND_3",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Additive rescaling factor used to convert calibrated Band 4 DN to reflectance.",
+                "name": "REFLECTANCE_ADD_BAND_4",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Additive rescaling factor used to convert calibrated Band 5 DN to reflectance.",
+                "name": "REFLECTANCE_ADD_BAND_5",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Multiplicative factor used to convert calibrated Band 7 DN to reflectance.",
+                "name": "REFLECTANCE_ADD_BAND_7",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Multiplicative factor used to convert calibrated Band 8 DN to reflectance.",
+                "name": "REFLECTANCE_ADD_BAND_8",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Minimum achievable spectral reflectance value for Band 8.",
+                "name": "REFLECTANCE_ADD_BAND_9",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Multiplicative factor used to convert calibrated Band 1 DN to reflectance.",
+                "name": "REFLECTANCE_MULT_BAND_1",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Multiplicative factor used to convert calibrated Band 2 DN to reflectance.",
+                "name": "REFLECTANCE_MULT_BAND_2",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Multiplicative factor used to convert calibrated Band 3 DN to reflectance.",
+                "name": "REFLECTANCE_MULT_BAND_3",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Multiplicative factor used to convert calibrated Band 4 DN to reflectance.",
+                "name": "REFLECTANCE_MULT_BAND_4",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Multiplicative factor used to convert calibrated Band 5 DN to reflectance.",
+                "name": "REFLECTANCE_MULT_BAND_5",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Multiplicative factor used to convert calibrated Band 6 DN to reflectance.",
+                "name": "REFLECTANCE_MULT_BAND_6",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Multiplicative factor used to convert calibrated Band 7 DN to reflectance.",
+                "name": "REFLECTANCE_MULT_BAND_7",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Multiplicative factor used to convert calibrated Band 8 DN to reflectance.",
+                "name": "REFLECTANCE_MULT_BAND_8",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Multiplicative factor used to convert calibrated Band 9 DN to reflectance.",
+                "name": "REFLECTANCE_MULT_BAND_9",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Number of product lines for the reflective bands.",
+                "name": "REFLECTIVE_LINES",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Number of product samples for the reflective bands.",
+                "name": "REFLECTIVE_SAMPLES",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Request id, nnnyymmdd0000_0000\n\n*  nnn = node number\n*  yy = year\n*  mm = month\n*  dd = day",
+                "name": "REQUEST_ID",
+                "type": "STRING"
+            },
+            {
+                "description": "Resampling option used in creating the image.",
+                "name": "RESAMPLING_OPTION",
+                "type": "STRING"
+            },
+            {
+                "description": "The file name for the Response Linearization Lookup Table (RLUT) used to generate the product, if applicable.\n",
+                "name": "RLUT_FILE_NAME",
+                "type": "STRING"
+            },
+            {
+                "description": "The amount of spacecraft roll angle at the scene center.",
+                "name": "ROLL_ANGLE",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Flag indicating saturated pixels for band 1 ('Y'/'N')",
+                "name": "SATURATION_BAND_1",
+                "type": "STRING"
+            },
+            {
+                "description": "Flag indicating saturated pixels for band 10 ('Y'/'N')",
+                "name": "SATURATION_BAND_10",
+                "type": "STRING"
+            },
+            {
+                "description": "Flag indicating saturated pixels for band 11 ('Y'/'N')",
+                "name": "SATURATION_BAND_11",
+                "type": "STRING"
+            },
+            {
+                "description": "Flag indicating saturated pixels for band 2 ('Y'/'N')",
+                "name": "SATURATION_BAND_2",
+                "type": "STRING"
+            },
+            {
+                "description": "Flag indicating saturated pixels for band 3 ('Y'/'N')",
+                "name": "SATURATION_BAND_3",
+                "type": "STRING"
+            },
+            {
+                "description": "Flag indicating saturated pixels for band 4 ('Y'/'N')",
+                "name": "SATURATION_BAND_4",
+                "type": "STRING"
+            },
+            {
+                "description": "Flag indicating saturated pixels for band 5 ('Y'/'N')",
+                "name": "SATURATION_BAND_5",
+                "type": "STRING"
+            },
+            {
+                "description": "Flag indicating saturated pixels for band 6 ('Y'/'N')",
+                "name": "SATURATION_BAND_6",
+                "type": "STRING"
+            },
+            {
+                "description": "Flag indicating saturated pixels for band 7 ('Y'/'N')",
+                "name": "SATURATION_BAND_7",
+                "type": "STRING"
+            },
+            {
+                "description": "Flag indicating saturated pixels for band 8 ('Y'/'N')",
+                "name": "SATURATION_BAND_8",
+                "type": "STRING"
+            },
+            {
+                "description": "Flag indicating saturated pixels for band 9 ('Y'/'N')",
+                "name": "SATURATION_BAND_9",
+                "type": "STRING"
+            },
+            {
+                "description": "Scene center time of acquired image. HH:MM:SS.SSSSSSSZ\n\n*  HH = Hour (00-23)\n*  MM = Minutes\n*  SS.SSSSSSS = Fractional seconds\n*  Z = \"Zulu\" time (same as GMT)\n",
+                "name": "SCENE_CENTER_TIME",
+                "type": "STRING"
+            },
+            {
+                "description": "Sensor used to capture data.",
+                "name": "SENSOR_ID",
+                "type": "STRING"
+            },
+            {
+                "description": "Spacecraft identification.",
+                "name": "SPACECRAFT_ID",
+                "type": "STRING"
+            },
+            {
+                "description": "Ground Station/Organisation that received the data.",
+                "name": "STATION_ID",
+                "type": "STRING"
+            },
+            {
+                "description": "Sun azimuth angle in degrees for the image center location at the image center acquisition time.",
+                "name": "SUN_AZIMUTH",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Sun elevation angle in degrees for the image center location at the image center acquisition time.",
+                "name": "SUN_ELEVATION",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Nearest WRS-2 path to the line-of-sight scene center of the image.",
+                "name": "TARGET_WRS_PATH",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Nearest WRS-2 row to the line-of-sight scene center of the image. Rows 880-889 and 990-999 are reserved for the polar regions where it is undefined in the WRS-2.\n",
+                "name": "TARGET_WRS_ROW",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Number of product lines for the thermal band.",
+                "name": "THERMAL_LINES",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Number of product samples for the thermal band.",
+                "name": "THERMAL_SAMPLES",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Due to an anomalous condition on the Thermal Infrared\nSensor (TIRS) Scene Select Mirror (SSM) encoder electronics,\nthis field has been added to indicate which model was used to process the data.\n(Actual, Preliminary, Final)\n",
+                "name": "TIRS_SSM_MODEL",
+                "type": "STRING"
+            },
+            {
+                "description": "TIRS SSM position status.",
+                "name": "TIRS_SSM_POSITION_STATUS",
+                "type": "STRING"
+            },
+            {
+                "description": "TIRS stray light correction source.",
+                "name": "TIRS_STRAY_LIGHT_CORRECTION_SOURCE",
+                "type": "STRING"
+            },
+            {
+                "description": "Region of OLCI truncated.",
+                "name": "TRUNCATION_OLI",
+                "type": "STRING"
+            },
+            {
+                "description": "UTM zone number used in product map projection.",
+                "name": "UTM_ZONE",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "The WRS orbital path number (001 - 251).",
+                "name": "WRS_PATH",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Landsat satellite WRS row (001-248).",
+                "name": "WRS_ROW",
+                "type": "DOUBLE"
+            }
+        ]
+    },
+    "assets": {
+        "preview_4": {
+            "href": "https://developers.google.com/earth-engine/datasets/images/LANDSAT/LANDSAT_LC8_L1T_sample.png",
+            "type": "image/png",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    },
+    "deprecated": true,
+    "gee:interval": {
+        "interval": 16,
+        "type": "revisit_interval",
+        "unit": "day"
+    },
+    "gee:terms_of_use": "Landsat datasets are federally created data\nand therefore reside in the public domain and may be used, transferred, or reproduced without copyright restriction.\n\nAcknowledgement or credit of the USGS as data source should be provided\nby including a line of text citation such as the example shown below.\n\n(Product, Image, Photograph, or Dataset Name) courtesy of\nthe U.S. Geological Survey\n\nExample: Landsat-7 image courtesy of the U.S. Geological Survey\n\nSee the\n[USGS Visual Identity System Guidance](https://www.usgs.gov/information-policies-and-instructions/usgs-visual-identity-system)\nfor further details on proper citation and acknowledgement of USGS products.\n",
+    "gee:type": "image_collection"
+}

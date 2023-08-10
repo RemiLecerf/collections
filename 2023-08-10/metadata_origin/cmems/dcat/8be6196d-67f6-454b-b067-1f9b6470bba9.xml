@@ -1,0 +1,82 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:dct="http://purl.org/dc/terms/" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/8be6196d-67f6-454b-b067-1f9b6470bba9">
+        <foaf:primaryTopic rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/resource/a78600a4-a280-47b5-8ddd-0dc8b5e9c9d9"/>
+        <dct:issued>2023-03-29</dct:issued>
+        <dct:modified>2023-03-29</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/srv/eng/xml.metadata.get?uuid=8be6196d-67f6-454b-b067-1f9b6470bba9">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork?uuid=8be6196d-67f6-454b-b067-1f9b6470bba9">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/resource/a78600a4-a280-47b5-8ddd-0dc8b5e9c9d9">
+        <dct:identifier>a78600a4-a280-47b5-8ddd-0dc8b5e9c9d9</dct:identifier>
+        <dct:title>Black Sea Chlorophyll-a time series and trend from Observations Reprocessing</dct:title>
+        <dct:abstract>'''DEFINITION'''
+
+The time series are derived from the regional chlorophyll reprocessed (MY) product as distributed by CMEMS. This dataset, derived from multi-sensor (SeaStar-SeaWiFS, AQUA-MODIS, NOAA20-VIIRS, NPP-VIIRS, Envisat-MERIS and Sentinel3A-OLCI) Rrs spectra produced by CNR using an in-house processing chain, is obtained by means of two different regional algorithms developed with the BiOMaP data set (Zibordi et al., 2011): a band-ratio algorithm (B/R) (Zibordi et al., 2015) and a Multilayer Perceptron (MLP) neural net algorithm based on Rrs values at three individual wavelengths (490, 510 and 555 nm) (Kajiyama et al., 2018). The processing chain and the techniques used for algorithms merging are detailed in Colella et al. (2021). Monthly regional mean values are calculated by performing the average of 2D monthly mean (weighted by pixel area) over the region of interest. The deseasonalized time series is obtained by applying the X-11 seasonal adjustment methodology on the original time series as described in Colella et al. (2016), and then the Mann-Kendall test (Mann, 1945; Kendall, 1975) and Sens’s method (Sen, 1968) are subsequently applied to obtain the magnitude of trend. 
+
+'''CONTEXT '''
+
+Phytoplankton and chlorophyll concentration as a proxy for phytoplankton respond rapidly to changes in environmental conditions, such as light, temperature, nutrients and mixing (Gregg and Rousseaux, 2014, Colella et al. 2016). The character of the response depends on the nature of the change drivers, and ranges from seasonal cycles to decadal oscillations (Basterretxea et al. 2018). Therefore, it is of critical importance to monitor chlorophyll concentration at multiple temporal and spatial scales, in order to be able to separate potential long-term climate signals from natural variability in the short term. In particular, phytoplankton in the Black Sea is known to respond to climate variability associated with the North Atlantic Oscillation (NAO) (Oguz et al. 2003). 
+
+'''CMEMS KEY FINDINGS'''
+
+In the Black Sea, the trend average for the 1997-2021 period is definitely negative (-1.39±0.91% per year). Nevertheless, this negative trend is lower than the one estimated in the previous release (related to 1997-2020). The negative trend is mainly due to the marked change on chlorophyll concentrations between 2002 and 2004. From 2004 onwards, minima and maxima are strongly variable year by year. However, on average, the minima/maxima variability can be considered quite constant with a continuous decrease of maxima from 2015 up to mid 2020 where signal seems to change again with relative high chlorophyll values in 2021. The general negative trend in the Black Sea is also confirmed by the analysis of Sathyendranath et al. (2018), that reveals an increasing trend in chlorophyll concentration in all the European Seas, except for the Black Sea. 
+
+'''DOI (product):''' 
+https://doi.org/10.48670/moi-00211</dct:abstract>
+        <dcat:theme rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/thesaurus/iso/topicCategory/oceans"/>
+        <foaf:thumbnail rdf:resource="https://catalogue.marine.copernicus.eu/documents/IMG/OMI_HEALTH_CHL_BLKSEA_OCEANCOLOUR_area_averaged_mean.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((26.50 40.00, 26.50 48.00, 42.00 48.00, 42.00 40.00, 26.50 40.00))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:issued>2018-02-12</dct:issued>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/OC-CNR-ROMA-IT"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/OC-CNR-ROMA-IT"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/OC-CNR-ROMA-IT"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/OC-CNR-ROMA-IT"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/MOI-OMI-SERVICE"/>
+        <dct:accrualPeriodicity>annually</dct:accrualPeriodicity>
+        <dct:license>otherRestrictions</dct:license>
+        <dct:license>license</dct:license>
+        <dct:license>No limitations on public access</dct:license>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/OMI_HEALTH_CHL_BLKSEA_OCEANCOLOUR_area_averaged_mean/omi_health_chl_blksea_oceancolour_area_averaged_mean"/>
+        <dcat:distribution rdf:resource="https://mdl1.marine.copernicus.eu/derived/OMI_HEALTH_CHL_BLKSEA_OCEANCOLOUR_area_averaged_mean/omi_health_chl_blksea_oceancolour_area_averaged_mean_202211/omi_health_chl_blksea_oceancolour_area_averaged_mean_19970901_P20220524.nc"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/7277cedd-3404-4502-a80b-64a16be9110c"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/0353efc7-c1e0-4420-baca-77d6bff6ab02"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/75c2f83c-7159-492a-b383-a1cc3f5f2ede"/>
+        <dcat:dataQuality>The myOcean products depends on other products for production or validation. The detailed list of dependencies is given in ISO19115's aggregationInfo (ISO19139 Xpath = "gmd:MD_Metadata/gmd:identificationInfo/gmd:aggregationInfo[./gmd:MD_AggregateInformation/gmd:initiativeType/gmd:DS_InitiativeTypeCode/@codeListValue='upstream-validation' or 'upstream-production']")</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+    

@@ -1,0 +1,46 @@
+{
+  "type": "Collection",
+  "id": "eu.copernicus.climate.satellite-aerosol-properties",
+  "stac_version": "1.0.0",
+  "description": "This data set provides observational records of aerosol properties obtained from observations collected by various satellite instruments. Aerosols are minor constituents of the atmosphere by mass, but critical components in terms of impact on climate. Aerosols influence the global radiation balance directly by scattering and absorbing radiation, and indirectly through influencing cloud reflectivity, cloud cover and cloud lifetime.\nThe main variables provided by this dataset are: aerosol optical depth, fine mode aerosol optical depth, dust aerosol optical depth, single scattering albedo, aerosol layer height and aerosol extinction coefficient. These variables are derived from observations from several sensors using a set of different processing techniques. This provides the possibility to derive a large set of complementary aerosol properties needed to describe the complex nature of atmospheric aerosols. Furthermore, different algorithms have their specific strengths and weaknesses, meaning that datasets originating from the same sensor but processed by different algorithms provide a way to evaluate uncertainties (e.g. areas of good or bad agreement between them). Altogether, the aerosol properties dataset is very extensive and offers a choice of complementary options – which is appropriate depends on the intended application.\nSelected observational records in this dataset are extended in time on a semi-annual basis. At the moment of extending, these records are up-to-date until five months behind present time.   \nThis dataset is produced on behalf of C3S.\n\nVariables in the dataset/application are:\nAerosol extinction coefficient, Aerosol layer height, Aerosol optical depth, Dust aerosol layer height, Dust aerosol optical depth, Fine mode aerosol optical depth, Single scattering albedo",
+  "links": [],
+  "title": "Aerosol properties gridded data from 1995 to present derived from satellite observations",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          0.0,
+          -90.0,
+          360.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1995-06-01T00:00:00Z",
+          "2022-12-31T23:59:59Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Atmospheric conditions",
+    "Spatial coverage: Global",
+    "Variable domain: Atmosphere (composition)",
+    "Temporal coverage: Past",
+    "Product type: Satellite observations"
+  ],
+  "providers": [
+    {
+      "name": "Copernicus Climate Data Store",
+      "description": "Copernicus Climate Data Store - European Centre for Medium-Range Weather Forecasts (ECMWF)",
+      "roles": [
+        "host"
+      ],
+      "url": "https://cds.climate.copernicus.eu/"
+    }
+  ]
+}

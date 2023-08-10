@@ -1,0 +1,52 @@
+{
+  "type": "Collection",
+  "id": "GLOBAL_OMI_HEALTH_carbon_ph_area_averaged",
+  "stac_version": "1.0.0",
+  "description": "'''DEFINITION'''\n\nOcean acidification is quantified by decreases in pH, which is a measure of acidity: a decrease in pH value means an increase in acidity, that is, acidification. The observed decrease in ocean pH resulting from increasing concentrations of CO2 is an important indicator of global change. The estimate of global mean pH builds on a reconstruction methodology, \n* Obtain values for alkalinity based on the so called “locally interpolated alkalinity regression (LIAR)” method after Carter et al., 2016; 2018. \n* Build on surface ocean partial pressure of carbon dioxide (CMEMS product: MULTIOBS_GLO_BIO_CARBON_SURFACE_REP_015_008) obtained from an ensemble of Feed-Forward Neural Networks (Chau et al. 2022) which exploit sampling data gathered in the Surface Ocean CO2 Atlas (SOCAT) (https://www.socat.info/)\n* Derive a gridded field of ocean surface pH based on the van Heuven et al., (2011) CO2 system calculations using reconstructed pCO2 (MULTIOBS_GLO_BIO_CARBON_SURFACE_REP_015_008) and alkalinity.\nThe global mean average of pH at yearly time steps is then calculated from the gridded ocean surface pH field. It is expressed in pH unit on total hydrogen ion scale. In the figure, the amplitude of the uncertainty (1σ  ) of yearly mean surface sea water pH varies at a range of (0.0023, 0.0029) pH unit (see Quality Information Document for more details). The trend and uncertainty estimates amount to -0.0017±0.0004e-1 pH units per year.\nThe indicator is derived from in situ observations of CO2 fugacity (SOCAT data base, www.socat.info, Bakker et al., 2016). These observations are still sparse in space and time.  Monitoring pH at higher space and time resolutions, as well as in coastal regions will require a denser network of observations and preferably direct pH measurements.  \nA full discussion regarding this OMI can be found in section 2.10 of the Ocean State Report 4 (Gehlen et al., 2020).\n\n'''CONTEXT'''\n\nThe decrease in surface ocean pH is a direct consequence of the uptake by the ocean of carbon dioxide. It is referred to as ocean acidification. The International Panel on Climate Change (IPCC) Workshop on Impacts of Ocean Acidification on Marine Biology and Ecosystems (2011) defined Ocean Acidification as “a reduction in the pH of the ocean over an extended period, typically decades or longer, which is caused primarily by uptake of carbon dioxide from the atmosphere, but can also be caused by other chemical additions or subtractions from the ocean”. The pH of contemporary surface ocean waters is already 0.1 lower than at pre-industrial times and an additional decrease by 0.33 pH units is projected over the 21st century in response to the high concentration pathway RCP8.5 (Bopp et al., 2013). Ocean acidification will put marine ecosystems at risk (e.g. Orr et al., 2005; Gehlen et al., 2011; Kroeker et al., 2013). The monitoring of surface ocean pH has become a focus of many international scientific initiatives (http://goa-on.org/) and constitutes one target for SDG14 (https://sustainabledevelopment.un.org/sdg14).  \n\n'''CMEMS KEY FINDINGS'''\n\nSince the year 1985, global ocean surface pH is decreasing at a rate of  -0.0017±0.0004e-1 per year. \n\n'''DOI (product):''' \nhttps://doi.org/10.48670/moi-00224",
+  "links": [],
+  "title": "Global Ocean acidification - mean sea water pH time series and trend from Multi-Observations Reprocessing",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1985-01-01T00:00:00Z",
+          "2021-12-31T23:59:59Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Oceanographic geographical features",
+    "in-situ-observation",
+    "sea_water_ph_reported_on_total_scale",
+    "multi-year",
+    "marine-safety",
+    "coastal-marine-environment",
+    "weather-climate-and-seasonal-forecasting",
+    "marine-resources",
+    "global-ocean",
+    "N/A",
+    "Not Applicable"
+  ],
+  "providers": [
+    {
+      "name": "Copernicus Marine Service",
+      "description": "Copernicus Marine Service - Mercator Ocean International",
+      "roles": [
+        "host"
+      ],
+      "url": "https://marine.copernicus.eu/"
+    }
+  ]
+}

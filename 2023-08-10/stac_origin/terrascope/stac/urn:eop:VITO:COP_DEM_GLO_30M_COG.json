@@ -1,0 +1,74 @@
+{
+    "type": "Collection",
+    "stac_version": "1.0.0",
+    "id": "urn:eop:VITO:COP_DEM_GLO_30M_COG",
+    "title": "Copernicus Global 30 meter Digital Elevation Model dataset in COG format  ",
+    "description": "The Copernicus DEM is a Digital Surface Model (DSM) which represents the surface of the Earth including buildings, infrastructure and vegetation. GLO-30 provides worldwide coverage at 30 meters (refers to 10 arc seconds). Note that ocean areas do not have tiles, there one can assume height values equal to zero. Data is provided as Cloud Optimized GeoTIFFs. Note that the vertical unit for measurement of elevation height is meters. The Copernicus DEM GLO-30 is mirrored from Open Data on AWS, dataset managed by Sinergise. https://registry.opendata.aws/copernicus-dem/.\n\n## Naming convention\nCopernicus_DSM_COG_[resolution]_[northing]_[easting]_DEM/ \n* [resolution] = resolution in arc seconds (not meters!), which is 10 for GLO-30, and 30 for GLO-90.\n* [northing] = e.g. S50_00 - decimal degrees where the decimal part is always 00. \nIn original files, this is the northing of the center of the bottom-most pixels, while in our files, because we removed the bottom-most pixels, the center of the new bottom-most pixels is one pixel-length (resolution) away to the north.\n* [easting] = e.g. w125_00 - decimal degrees where the decimal part is always 00.\nThe easting of of the center of the left-most pixels.\n\nFor example: //copernicus-dem-90m/Copernicus_DSM_COG_30_S90_00_W178_00_DEM/",
+    "keywords": [
+        "VITO",
+        "TERRASCOPE",
+        "COPERNICUS",
+        "ESA",
+        "Radar",
+        "TDX",
+        "TSX",
+        "Elevation",
+        "DSM",
+        "DEM"
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180.0,
+                    -90.0,
+                    180.0,
+                    90.0
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2021-03-03T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "GLO-30 Public is available on a free basis for the general public under the terms and conditions of the Licence found at https://spacedata.copernicus.eu/documents/20126/0/CSCDA_ESA_Mission-specific+Annex.pdf",
+    "links": [
+        {
+            "rel": "self",
+            "type": "application/json",
+            "href": "https://services.terrascope.be/stac/collections/urn:eop:VITO:COP_DEM_GLO_30M_COG"
+        },
+        {
+            "rel": "parent",
+            "type": "application/json",
+            "href": "https://services.terrascope.be/stac/"
+        },
+        {
+            "rel": "items",
+            "type": "application/geo+json",
+            "href": "https://services.terrascope.be/stac/collections/urn:eop:VITO:COP_DEM_GLO_30M_COG/items"
+        },
+        {
+            "rel": "root",
+            "type": "application/json",
+            "href": "https://services.terrascope.be/stac/"
+        }
+    ],
+    "summaries": {
+        "datetime": {
+            "min": "2021-03-03T00:00:00Z"
+        },
+        "constellation": [
+            "TDX",
+            "TSX"
+        ],
+        "instruments": [
+            "TDX-1",
+            "TSX-1"
+        ]
+    }
+}

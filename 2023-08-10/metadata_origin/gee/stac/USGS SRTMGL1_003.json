@@ -1,0 +1,159 @@
+{
+    "description": "The Shuttle Radar Topography Mission (SRTM, see [Farr\net al. 2007](https://onlinelibrary.wiley.com/doi/10.1029/2005RG000183/full))\ndigital elevation data is an international research effort that\nobtained digital elevation models on a near-global scale. This\nSRTM V3 product (SRTM Plus) is provided by NASA JPL\nat a resolution of 1 arc-second (approximately 30m).\n\nThis dataset has undergone a void-filling process using open-source data\n(ASTER GDEM2, GMTED2010, and NED), as opposed to other versions that\ncontain voids or have been void-filled with commercial sources.\nFor more information on the different versions see the\n[SRTM Quick Guide](https://lpdaac.usgs.gov/documents/13/SRTM_Quick_Guide.pdf).\n\nDocumentation:\n\n* [User's Guide](https://lpdaac.usgs.gov/documents/179/SRTM_User_Guide_V3.pdf)\n\n* [General Documentation](https://lpdaac.usgs.gov/documents/13/SRTM_Quick_Guide.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://doi.org/10.1029/2005RG000183)\n",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -56,
+                    180,
+                    60
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-02-11T00:00:00Z",
+                    "2000-02-22T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "gee:provider_ids": [
+        "C1000000240-LPDAAC_ECS"
+    ],
+    "gee:terms_of_use": "Unless otherwise noted, images and video on JPL public\nweb sites (public sites ending with a jpl.nasa.gov address) may\nbe used for any purpose without prior permission. For more information\nand exceptions visit the [JPL Image Use Policy site](https://www.jpl.nasa.gov/imagepolicy/).\n",
+    "gee:type": "image",
+    "id": "USGS/SRTMGL1_003",
+    "keywords": [
+        "dem",
+        "elevation",
+        "geophysical",
+        "nasa",
+        "srtm",
+        "topography",
+        "usgs"
+    ],
+    "license": "proprietary",
+    "links": [
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections/USGS/SRTMGL1_003",
+            "rel": "self",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections",
+            "rel": "parent",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/",
+            "rel": "root",
+            "type": "application/json"
+        },
+        {
+            "code": "JavaScript",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/USGS/USGS_SRTMGL1_003",
+            "rel": "related",
+            "title": "Run the example for USGS/SRTMGL1_003 in the Earth Engine Code Editor",
+            "type": "text/html"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/images/USGS/USGS_SRTMGL1_003_sample.png",
+            "rel": "preview",
+            "type": "image/png"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/USGS_SRTMGL1_003#terms-of-use",
+            "rel": "license",
+            "type": "text/html"
+        }
+    ],
+    "providers": [
+        {
+            "name": "NASA / USGS / JPL-Caltech",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://cmr.earthdata.nasa.gov/search/concepts/C1000000240-LPDAAC_ECS.html"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/USGS_SRTMGL1_003"
+        }
+    ],
+    "sci:citation": "Farr, T.G., Rosen, P.A., Caro, E., Crippen, R., Duren, R., Hensley,\nS., Kobrick, M., Paller, M., Rodriguez, E., Roth, L., Seal, D.,\nShaffer, S., Shimada, J., Umland, J., Werner, M., Oskin, M., Burbank,\nD., and Alsdorf, D.E., 2007, The shuttle radar topography mission:\nReviews of Geophysics, v. 45, no. 2, RG2004, at\n[https://doi.org/10.1029/2005RG000183](https://doi.org/10.1029/2005RG000183).\n",
+    "stac_extensions": [
+        "collection-assets"
+    ],
+    "stac_version": "1.0.0",
+    "summaries": {
+        "elevation": {
+            "gee:estimated_range": true,
+            "maximum": 6500,
+            "minimum": -10
+        },
+        "eo:bands": [
+            {
+                "description": "Elevation",
+                "gee:units": "m",
+                "gsd": 30,
+                "name": "elevation"
+            }
+        ],
+        "instruments": [
+            "Shuttle Imaging Radar-C (SIR-C)"
+        ],
+        "platform": [
+            "Space Shuttle Endeavour"
+        ]
+    },
+    "title": "NASA SRTM Digital Elevation 30m",
+    "type": "Collection",
+    "version": "3",
+    "cube:dimensions": {
+        "x": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                -180,
+                180
+            ]
+        },
+        "y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                -56,
+                60
+            ]
+        },
+        "t": {
+            "type": "temporal",
+            "extent": [
+                "2000-02-11T00:00:00Z",
+                "2000-02-22T00:00:00Z"
+            ]
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "elevation"
+            ]
+        }
+    },
+    "assets": {
+        "preview_4": {
+            "href": "https://developers.google.com/earth-engine/datasets/images/USGS/USGS_SRTMGL1_003_sample.png",
+            "type": "image/png",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    }
+}

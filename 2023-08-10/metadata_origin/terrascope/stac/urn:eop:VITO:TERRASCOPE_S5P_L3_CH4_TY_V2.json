@@ -1,0 +1,73 @@
+{
+    "type": "Collection",
+    "stac_version": "1.0.0",
+    "id": "urn:eop:VITO:TERRASCOPE_S5P_L3_CH4_TY_V2",
+    "title": "Sentinel-5P Level-3 CH4 Yearly Product - V2",
+    "description": "Contains binned Level-2 TROPOMI CH4 retrievals. The L3 binning algorithm weighs individual pixels with the overlap area of the pixel and the Level-3 grid cell. The weighing and count vectors are used to apply this weighted average consistently, see http://stcorp.github.io/harp/doc/html/libharp_product.html? ",
+    "license": "Licence: https://terrascope.be/en/terms-use",
+    "keywords": [
+        "VITO",
+        "TERRASCOPE",
+        "COPERNICUS",
+        "ESA",
+        "Orthoimagery",
+        "Sentinel-5P",
+        "TROPOMI",
+        "Level-3",
+        "Atmospheric Components",
+        "CH4",
+        "Year"
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180.0,
+                    -89.0,
+                    180.0,
+                    89.0
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2023-04-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "summaries": {
+        "datetime": {
+            "min": "2023-04-01T00:00:00Z"
+        },
+        "constellation": [
+            "Sentinel-5P"
+        ],
+        "instruments": [
+            "TROPOMI"
+        ]
+    },
+    "links": [
+        {
+            "rel": "self",
+            "type": "application/json",
+            "href": "https://services.terrascope.be/stac/collections/urn:eop:VITO:TERRASCOPE_S5P_L3_CH4_TY_V2"
+        },
+        {
+            "rel": "parent",
+            "type": "application/json",
+            "href": "https://services.terrascope.be/stac/"
+        },
+        {
+            "rel": "items",
+            "type": "application/geo+json",
+            "href": "https://services.terrascope.be/stac/collections/urn:eop:VITO:TERRASCOPE_S5P_L3_CH4_TY_V2/items"
+        },
+        {
+            "rel": "root",
+            "type": "application/json",
+            "href": "https://services.terrascope.be/stac/"
+        }
+    ]
+}

@@ -1,0 +1,71 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:dct="http://purl.org/dc/terms/" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/2b6bf019-29d2-4b2b-b337-fbe8303196d6">
+        <foaf:primaryTopic rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/resource/1f64849a-ca3e-4f75-8854-33e1590486db"/>
+        <dct:issued>2022-11-22</dct:issued>
+        <dct:modified>2022-11-22</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/srv/eng/xml.metadata.get?uuid=2b6bf019-29d2-4b2b-b337-fbe8303196d6">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork?uuid=2b6bf019-29d2-4b2b-b337-fbe8303196d6">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/resource/1f64849a-ca3e-4f75-8854-33e1590486db">
+        <dct:identifier>1f64849a-ca3e-4f75-8854-33e1590486db</dct:identifier>
+        <dct:title>Arctic Ocean Physics Reanalysis</dct:title>
+        <dct:abstract>'''Short description:'''
+
+The current version of the TOPAZ system - TOPAZ4b -  is nearly identical to the real-time forecast system run at MET Norway. It uses a recent version of the Hybrid Coordinate Ocean Model (HYCOM) developed at University of Miami (Bleck 2002). HYCOM is coupled to a sea ice model; ice thermodynamics are described in Drange and Simonsen (1996) and the elastic-viscous-plastic rheology in Hunke and Dukowicz (1997). The model's native grid covers the Arctic and North Atlantic Oceans,  has fairly homogeneous horizontal spacing (between 11 and 16 km). 50 hybrid layers are used in the vertical (z-isopycnal), more than the TOPAZ4 system (28 layers). TOPAZ4b uses the Deterministic version of the Ensemble Kalman filter (DEnKF; Sakov and Oke 2008) to assimilate remotely sensed as well as temperature and salinity profiles. The output is interpolated onto standard grids and depths. Daily values are provided at all depths. Data assimilation, including the 100-member ensemble production, is performed weekly.
+
+'''DOI (product) :'''   
+https://doi.org/10.48670/moi-00007</dct:abstract>
+        <dcat:theme rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/thesaurus/iso/topicCategory/oceans"/>
+        <foaf:thumbnail rdf:resource="https://catalogue.marine.copernicus.eu/documents/IMG/ARCTIC_MULTIYEAR_PHY_002_003.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((-180.00 53.00, -180.00 90.00, 180.00 90.00, 180.00 53.00, -180.00 53.00))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:issued>2013-03-13</dct:issued>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/ARC-METNO-OSLO-NO"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/ARC-NERSC-BERGEN-NO%20%28WPL%29"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/ARC-NERSC-BERGEN-NO%20%28PM%29"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/ARC-NERSC-BERGEN-NO"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/ARC-NERSC-BERGEN-NO"/>
+        <dct:accrualPeriodicity>biannually</dct:accrualPeriodicity>
+        <dct:license>otherRestrictions</dct:license>
+        <dct:license>license</dct:license>
+        <dct:license>No limitations on public access</dct:license>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=ARCTIC_MULTIYEAR_PHY_002_003-TDS&amp;product=cmems_mod_arc_phy_my_topaz4_P1D-m"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/dodsC/cmems_mod_arc_phy_my_topaz4_P1D-m"/>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/ARCTIC_MULTIYEAR_PHY_002_003/cmems_mod_arc_phy_my_topaz4_P1D-m"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/wms/cmems_mod_arc_phy_my_topaz4_P1D-m"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=ARCTIC_MULTIYEAR_PHY_002_003-TDS&amp;product=cmems_mod_arc_phy_my_topaz4_P1M"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/dodsC/cmems_mod_arc_phy_my_topaz4_P1M"/>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/ARCTIC_MULTIYEAR_PHY_002_003/cmems_mod_arc_phy_my_topaz4_P1M"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/wms/cmems_mod_arc_phy_my_topaz4_P1M"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=ARCTIC_MULTIYEAR_PHY_002_003-TDS&amp;product=cmems_mod_arc_phy_my_topaz4_P1Y"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/dodsC/cmems_mod_arc_phy_my_topaz4_P1Y"/>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/ARCTIC_MULTIYEAR_PHY_002_003/cmems_mod_arc_phy_my_topaz4_P1Y"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/wms/cmems_mod_arc_phy_my_topaz4_P1Y"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/368fe88e-26c9-4b3a-a95d-05ce6317cb1f"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/4312091d-1474-4c66-9248-96b92440eb45"/>
+        <dcat:dataQuality>The myOcean products depends on other products for production or validation. The detailed list of dependencies is given in ISO19115's aggregationInfo (ISO19139 Xpath = "gmd:MD_Metadata/gmd:identificationInfo/gmd:aggregationInfo[./gmd:MD_AggregateInformation/gmd:initiativeType/gmd:DS_InitiativeTypeCode/@codeListValue='upstream-validation' or 'upstream-production']")</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+    

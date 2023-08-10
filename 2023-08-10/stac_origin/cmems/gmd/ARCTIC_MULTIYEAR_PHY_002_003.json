@@ -1,0 +1,68 @@
+{
+  "type": "Collection",
+  "id": "ARCTIC_MULTIYEAR_PHY_002_003",
+  "stac_version": "1.0.0",
+  "description": "'''Short description:'''\n\nThe current version of the TOPAZ system - TOPAZ4b -  is nearly identical to the real-time forecast system run at MET Norway. It uses a recent version of the Hybrid Coordinate Ocean Model (HYCOM) developed at University of Miami (Bleck 2002). HYCOM is coupled to a sea ice model; ice thermodynamics are described in Drange and Simonsen (1996) and the elastic-viscous-plastic rheology in Hunke and Dukowicz (1997). The model's native grid covers the Arctic and North Atlantic Oceans,  has fairly homogeneous horizontal spacing (between 11 and 16 km). 50 hybrid layers are used in the vertical (z-isopycnal), more than the TOPAZ4 system (28 layers). TOPAZ4b uses the Deterministic version of the Ensemble Kalman filter (DEnKF; Sakov and Oke 2008) to assimilate remotely sensed as well as temperature and salinity profiles. The output is interpolated onto standard grids and depths. Daily values are provided at all depths. Data assimilation, including the 100-member ensemble production, is performed weekly.\n\n'''DOI (product) :'''   \nhttps://doi.org/10.48670/moi-00007",
+  "links": [],
+  "title": "Arctic Ocean Physics Reanalysis",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          53.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1991-01-01T00:00:00Z",
+          "2021-12-31T23:59:59Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Oceanographic geographical features",
+    "numerical-model",
+    "sea_water_potential_temperature",
+    "sea_ice_x_velocity",
+    "ocean_mixed_layer_thickness",
+    "y_sea_water_velocity",
+    "sea_ice_area_fraction",
+    "ocean_barotropic_streamfunction",
+    "sea_floor_depth_below_sea_level",
+    "surface_snow_thickness",
+    "sea_surface_elevation",
+    "x_sea_water_velocity",
+    "sea_ice_y_velocity",
+    "sea_water_salinity",
+    "sea_water_potential_temperature_at_sea_floor",
+    "sea_ice_thickness",
+    "multi-year",
+    "marine-safety",
+    "weather-climate-and-seasonal-forecasting",
+    "coastal-marine-environment",
+    "marine-resources",
+    "arctic-ocean",
+    "Level 4",
+    "In-Situ TS Profiles",
+    "SST",
+    "Sea Ice Concentration and/or Thickness",
+    "Sea Level"
+  ],
+  "providers": [
+    {
+      "name": "Copernicus Marine Service",
+      "description": "Copernicus Marine Service - Mercator Ocean International",
+      "roles": [
+        "host"
+      ],
+      "url": "https://marine.copernicus.eu/"
+    }
+  ]
+}

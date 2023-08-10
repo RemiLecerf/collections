@@ -1,0 +1,88 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:dct="http://purl.org/dc/terms/" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/29921cce-da8e-4e22-a4bb-fdb03e54f866">
+        <foaf:primaryTopic rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/resource/0a5db440-d278-47a6-8885-b89aabb3f0b3"/>
+        <dct:issued>2023-03-29</dct:issued>
+        <dct:modified>2023-03-29</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/srv/eng/xml.metadata.get?uuid=29921cce-da8e-4e22-a4bb-fdb03e54f866">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork?uuid=29921cce-da8e-4e22-a4bb-fdb03e54f866">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/resource/0a5db440-d278-47a6-8885-b89aabb3f0b3">
+        <dct:identifier>0a5db440-d278-47a6-8885-b89aabb3f0b3</dct:identifier>
+        <dct:title>Nordic Seas Volume Transports from Reanalysis</dct:title>
+        <dct:abstract>'''DEFINITION'''
+
+Net (positive minus negative) volume transport of Atlantic Water through the sections (see Figure 1):  Faroe Shetland Channel (Water mass criteria, T &gt; 5 °C); Barents Sea Opening (T &gt; 3 °C) and the Fram Strait (T &gt; 2 °C). Net volume transport of Overflow Waters (σθ &gt;27.8 kg/m3) exiting from the Nordic Seas to the North Atlantic via the Denmark Strait and Faroe Shetland Channel. For further details, see Ch. 3.2 in von Schuckmann et al. (2018).
+
+'''CONTEXT'''
+
+The poleward flow of relatively warm and saline Atlantic Water through the Nordic Seas to the Arctic Basin, balanced by the overflow waters exiting the Nordic Seas, governs the exchanges between the North Atlantic and the Arctic as well as the distribution of oceanic heat within the Arctic (e.g., Mauritzen et al., 2011; Rudels, 2012). Atlantic Water transported poleward has been found to significantly influence the sea-ice cover in the Barents Sea (Sandø et al., 2010; Årthun et al., 2012; Onarheim et al., 2015) and near Svalbard (Piechura and Walczowski, 2009). Furthermore, Atlantic Water flow through the eastern Nordic seas and its associated heat loss and densification are important factors for the formation of overflow waters in the region (Mauritzen, 1996; Eldevik et al., 2009). These overflow waters together with those generated in the Arctic, exit the Greenland Scotland Ridge, which further contribute to the North Atlantic Deep Water (Dickson and Brown, 1994) and thus play an important role in the Atlantic Meridional Overturning Circulation (Eldevik et al., 2009; Ch. 2.3 in von Schuckmann et al., 2016). In addition to the transport of heat, the Atlantic Water also transports nutrients and zooplankton (e.g., Sundby, 2000), and it carries large amounts of ichthyoplankton of commercially important species, such as Arcto-Norwegian cod (Gadus morhua) and Norwegian spring-spawning herring (Clupea harengus) along the Norwegian coast. The Atlantic Water flow thus plays an integral part in defining both the physical and biological border between the boreal and Arctic realm. Variability of Atlantic Water flow to the Barents Sea has been found to move the position of the ice edge (Onarheim et al., 2015) as well as habitats of various species in the Barents Sea ecosystem (Fossheim et al., 2015).
+
+'''CMEMS KEY FINDINGS'''
+
+The flow of Atlantic Water through the Færøy-Shetland Channel amounts to 2.7 Sv (Berx et al., 2013). The corresponding model-based estimate was 2.5 Sv for the period 1993-2021. 
+In the Barents Sea Opening, the model indicates a long-term average net Atlantic Water inflow of 2.2 Sv, as compared with the long-term estimate from observations of 1.8 Sv (Smedsrud et al., 2013).
+In the Fram Strait, the model data indicates a positive trend in the Atlantic Water transport to the Arctic. This trend may be explained by increased temperature in the West Spitsbergen Current during the period 2005-2010 (e.g., Walczowski et al., 2012), which caused a larger fraction of the water mass to be characterized as Atlantic Water (T &gt; 2 °C).
+
+'''DOI (product):''' 
+https://doi.org/10.48670/moi-00189</dct:abstract>
+        <dcat:theme rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/thesaurus/iso/topicCategory/oceans"/>
+        <foaf:thumbnail rdf:resource="https://catalogue.marine.copernicus.eu/documents/IMG/ARCTIC_OMI_NATLANTIC_NordicSeas.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((-180.00 60.00, -180.00 90.00, 180.00 90.00, 180.00 60.00, -180.00 60.00))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:issued>2018-02-12</dct:issued>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/ARC-NERSC-BERGEN-NO"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/ARC-NERSC-BERGEN-NO"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/ARC-METNO-OSLO-NO"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/ARC-NERSC-BERGEN-NO"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/MOI-OMI-SERVICE"/>
+        <dct:accrualPeriodicity>annually</dct:accrualPeriodicity>
+        <dct:license>otherRestrictions</dct:license>
+        <dct:license>license</dct:license>
+        <dct:license>No limitations on public access</dct:license>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/OMI_CIRCULATION_VOLTRANS_ARCTIC_averaged/omi_circulation_voltrans_arctic_averaged"/>
+        <dcat:distribution rdf:resource="https://mdl1.marine.copernicus.eu/derived/OMI_CIRCULATION_VOLTRANS_ARCTIC_averaged/omi_circulation_voltrans_arctic_averaged_202211/omi_circulation_voltrans_arctic_averaged_19930115_P20220815_R19932021.nc"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/e64c4ac4-009f-4316-88be-f6a2e126d7be"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/110a9e7b-5bd3-4b6e-bf8c-651d6f3ac7d4"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/50c275da-0f27-4f90-9045-61e9a6a948b0"/>
+        <dcat:dataQuality>The myOcean products depends on other products for production or validation. The detailed list of dependencies is given in ISO19115's aggregationInfo (ISO19139 Xpath = "gmd:MD_Metadata/gmd:identificationInfo/gmd:aggregationInfo[./gmd:MD_AggregateInformation/gmd:initiativeType/gmd:DS_InitiativeTypeCode/@codeListValue='upstream-validation' or 'upstream-production']")</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+    

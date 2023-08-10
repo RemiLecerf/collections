@@ -1,0 +1,166 @@
+{
+    "description": "Monthly average radiance composite images using nighttime data from the\nVisible Infrared Imaging Radiometer Suite (VIIRS) Day/Night Band (DNB).\n\nAs these data are composited monthly, there are many areas of the globe\nwhere it is impossible to get good quality data coverage for that month.\nThis can be due to cloud cover, especially in the tropical regions, or due\nto solar illumination, as happens toward the poles in their respective\nsummer months. Therefore it is recommended that users of these data utilize\nthe 'cf_cvg' band and not assume a value of zero in the average radiance\nimage means that no lights were observed.\n\nCloud cover is determined using the VIIRS Cloud\nMask product (VCM). In addition, data near the edges of the swath are not\nincluded in the composites (aggregation zones 29-32). Version 1 has NOT\nbeen filtered to screen out lights from aurora, fires, boats, and other\ntemporal lights. This separation is under development and will be included\nin a later version of this time series. Also in development is a method to\nseparate lights from background (non-light) values.\n\nPrior to averaging, the DNB data is filtered to exclude data impacted by\nstray light, lightning, lunar illumination, and cloud-cover.\n",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -65,
+                    180,
+                    75
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2012-04-01T00:00:00Z",
+                    "2022-10-01T00:00:00"
+                ]
+            ]
+        }
+    },
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "month"
+    },
+    "gee:terms_of_use": "Colorado School of Mines data, information, and products,\nregardless of the method of delivery,\nare not subject to copyright and carry no restrictions on their subsequent\nuse by the public. Once obtained, they may be put to any lawful use. The\nforgoing data is in the public domain and is being provided without\nrestriction on use and distribution.\n",
+    "gee:type": "image_collection",
+    "id": "NOAA/VIIRS/DNB/MONTHLY_V1/VCMCFG",
+    "keywords": [
+        "dnb",
+        "eog",
+        "lights",
+        "monthly",
+        "nighttime",
+        "noaa",
+        "viirs",
+        "visible"
+    ],
+    "license": "proprietary",
+    "links": [
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections/NOAA/VIIRS/DNB/MONTHLY_V1/VCMCFG",
+            "rel": "self",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections",
+            "rel": "parent",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/",
+            "rel": "root",
+            "type": "application/json"
+        },
+        {
+            "code": "JavaScript",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NOAA_VIIRS_DNB_MONTHLY_V1_VCMCFG",
+            "rel": "related",
+            "title": "Run the example for NOAA/VIIRS/DNB/MONTHLY_V1/VCMCFG in the Earth Engine Code Editor",
+            "type": "text/html"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/images/NOAA/VIIRS/NOAA_VIIRS_DNB_MONTHLY_V1_VCMCFG_sample.png",
+            "rel": "preview",
+            "type": "image/png"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_VIIRS_DNB_MONTHLY_V1_VCMCFG#terms-of-use",
+            "rel": "license",
+            "type": "text/html"
+        }
+    ],
+    "providers": [
+        {
+            "name": "Earth Observation Group, Payne Institute for Public Policy, Colorado School of Mines",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://eogdata.mines.edu/download_dnb_composites.html"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_VIIRS_DNB_MONTHLY_V1_VCMCFG"
+        }
+    ],
+    "stac_extensions": [
+        "collection-assets"
+    ],
+    "stac_version": "1.0.0",
+    "summaries": {
+        "avg_rad": {
+            "gee:estimated_range": true,
+            "maximum": 340572.84,
+            "minimum": -1.5
+        },
+        "cf_cvg": {
+            "gee:estimated_range": true,
+            "maximum": 58
+        },
+        "eo:bands": [
+            {
+                "description": "Average DNB radiance values.",
+                "gee:units": "nanoWatts/cm2/sr",
+                "name": "avg_rad"
+            },
+            {
+                "description": "Cloud-free coverages; the total number of observations that\nwent into each pixel. This band can be used to identify areas with low\nnumbers of observations where the quality is reduced.\n",
+                "name": "cf_cvg"
+            }
+        ],
+        "gsd": [
+            463.83
+        ]
+    },
+    "title": "VIIRS Nighttime Day/Night Band Composites Version 1",
+    "type": "Collection",
+    "version": "Version 1",
+    "cube:dimensions": {
+        "x": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                -180,
+                180
+            ]
+        },
+        "y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                -65,
+                75
+            ]
+        },
+        "t": {
+            "type": "temporal",
+            "extent": [
+                "2012-04-01T00:00:00Z",
+                "2022-10-01T00:00:00"
+            ]
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "avg_rad",
+                "cf_cvg"
+            ]
+        }
+    },
+    "assets": {
+        "preview_4": {
+            "href": "https://developers.google.com/earth-engine/datasets/images/NOAA/VIIRS/NOAA_VIIRS_DNB_MONTHLY_V1_VCMCFG_sample.png",
+            "type": "image/png",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    }
+}

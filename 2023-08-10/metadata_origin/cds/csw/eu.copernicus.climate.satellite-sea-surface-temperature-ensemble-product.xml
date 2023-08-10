@@ -1,0 +1,58 @@
+<csw:Record xmlns:dct="http://purl.org/dc/terms/" xmlns:ows="http://www.opengis.net/ows" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:geonet="http://www.fao.org/geonetwork" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dc:identifier>eu.copernicus.climate.satellite-sea-surface-temperature-ensemble-product</dc:identifier>
+      <dc:date>2018-03-28T16:07:22</dc:date>
+      <dc:title>Sea surface temperature daily gridded data from 1981 to 2016 derived from a multi-product satellite-based ensemble</dc:title>
+      <dc:type>dataset</dc:type>
+      <dc:subject>Atmospheric conditions</dc:subject>
+      <dc:subject>Product type: Satellite observations</dc:subject>
+      <dc:subject>Spatial coverage: Global</dc:subject>
+      <dc:subject>Variable domain: Ocean (physics)</dc:subject>
+      <dc:subject>Temporal coverage: Past</dc:subject>
+      <dc:subject>climatologyMeteorologyAtmosphere</dc:subject>
+      <dc:format>NetCDF</dc:format>
+      <dct:abstract>This dataset provides global daily sea surface temperature (SST) data from the Group for High Resolution Sea Surface Temperature (GHRSST) multi-product ensemble (GMPE) produced by the European Space Agency SST Climate Change Initiative (ESA SST CCI). The GMPE system was designed to allow users to compare the outputs from different SST analysis systems and understand their similarities and differences. Although originally intended for comparison of near real time data, it has also been used to compare long historical datasets. Note that the dataset provided here is the climate version of the GMPE dataset. An operational version, with different input products and time coverage, also exists but is not distributed by the CDS.
+The SST analyses ingested into the GMPE system come from the following seven SST products and providers:
+
+ESA SST CCI Analysis version 2.0
+ESA SST CCI Analysis version 1.1
+Copernicus Marine Environment Monitoring Service (CMEMS) Operational Sea Surface Temperature and Sea Ice Analysis (OSTIA) Reprocessing
+National Centers for Environmental Information (NCEI) Advanced Very High Resolution Radiometer (AVHRR) Optimal Interpolation (OI) Global Blended SST Analysis
+Canada Meteorological Center (CMC) 0.2-degree Global Foundation SST Analysis
+Hadley Centre Sea Ice and Sea Surface Temperature (HadISST) Analysis version 2.2.0.0
+Japan Meteorological Agency (JMA) Merged satellite and in-situ Data Global Daily SST (MGDSST) Analysis
+
+These products are all spatially complete (through use of infilling or reconstruction techniques) but were originally produced for different purposes and with different user requirements in mind. Therefore, each producer has made different choices on aspects of data production such as which input observations to use and what type of SST to represent. For example, the CMEMS OSTIA, CMC, and MGDSST analyses attempt to represent the foundation SST (water temperature free of diurnal temperature variability) while the ESA SST CCI and HadISST analyses estimate the SST at a standard depth of 20 cm. The AVHRR OI product, on the other hand, is bias-corrected to in situ observations and hence will be representative of their depths.
+The GMPE dataset provides the median and standard deviation of the input SST products, the differences between each input product and the median, and the horizontal gradients in each of the input SST products as well as the final ensemble product. The HadISST product consists of 10 different realisations, therefore the median and standard deviation are calculated for an ensemble of 16 input fields. All fields are provided on a common 0.25 degree regular latitude-longitude grid and extend from 1 September 1981 to 31 December 2016, although some of the individual input products cover shorter periods. The dataset will not be extended beyond 2016.
+
+Variables in the dataset/application are:
+Analysed SST, Gradient fields, SST anomaly, SST standard deviation</dct:abstract>
+      <dc:description>This dataset provides global daily sea surface temperature (SST) data from the Group for High Resolution Sea Surface Temperature (GHRSST) multi-product ensemble (GMPE) produced by the European Space Agency SST Climate Change Initiative (ESA SST CCI). The GMPE system was designed to allow users to compare the outputs from different SST analysis systems and understand their similarities and differences. Although originally intended for comparison of near real time data, it has also been used to compare long historical datasets. Note that the dataset provided here is the climate version of the GMPE dataset. An operational version, with different input products and time coverage, also exists but is not distributed by the CDS.
+The SST analyses ingested into the GMPE system come from the following seven SST products and providers:
+
+ESA SST CCI Analysis version 2.0
+ESA SST CCI Analysis version 1.1
+Copernicus Marine Environment Monitoring Service (CMEMS) Operational Sea Surface Temperature and Sea Ice Analysis (OSTIA) Reprocessing
+National Centers for Environmental Information (NCEI) Advanced Very High Resolution Radiometer (AVHRR) Optimal Interpolation (OI) Global Blended SST Analysis
+Canada Meteorological Center (CMC) 0.2-degree Global Foundation SST Analysis
+Hadley Centre Sea Ice and Sea Surface Temperature (HadISST) Analysis version 2.2.0.0
+Japan Meteorological Agency (JMA) Merged satellite and in-situ Data Global Daily SST (MGDSST) Analysis
+
+These products are all spatially complete (through use of infilling or reconstruction techniques) but were originally produced for different purposes and with different user requirements in mind. Therefore, each producer has made different choices on aspects of data production such as which input observations to use and what type of SST to represent. For example, the CMEMS OSTIA, CMC, and MGDSST analyses attempt to represent the foundation SST (water temperature free of diurnal temperature variability) while the ESA SST CCI and HadISST analyses estimate the SST at a standard depth of 20 cm. The AVHRR OI product, on the other hand, is bias-corrected to in situ observations and hence will be representative of their depths.
+The GMPE dataset provides the median and standard deviation of the input SST products, the differences between each input product and the median, and the horizontal gradients in each of the input SST products as well as the final ensemble product. The HadISST product consists of 10 different realisations, therefore the median and standard deviation are calculated for an ensemble of 16 input fields. All fields are provided on a common 0.25 degree regular latitude-longitude grid and extend from 1 September 1981 to 31 December 2016, although some of the individual input products cover shorter periods. The dataset will not be extended beyond 2016.
+
+Variables in the dataset/application are:
+Analysed SST, Gradient fields, SST anomaly, SST standard deviation</dc:description>
+      <dc:rights>licence</dc:rights>
+      <dc:language>eng</dc:language>
+      <dc:source>EC Copernicus program</dc:source>
+      <dc:format>NetCDF</dc:format>
+      <ows:BoundingBox crs="urn:ogc:def:crs:::EPSG:4326">
+        <ows:LowerCorner>360 -89</ows:LowerCorner>
+        <ows:UpperCorner>0 89</ows:UpperCorner>
+      </ows:BoundingBox>
+      <dc:URI protocol="WWW:LINK-1.0-http--link" name="Climate Data Store catalogue" description="Catalogued record: Sea surface temperature daily gridded data from 1981 to 2016 derived from a multi-product satellite-based ensemble">https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.ab205634</dc:URI>
+      <dc:URI protocol="WWW:LINK-1.0-http--link" name="Algorithm theoretical basis document (PDF)" description="Provides in-depth documentation on the algorithms used to derive the dataset(s).">https://datastore.copernicus-climate.eu/documents/satellite-sea-surface-temperature/C3S_D312a_Lot3.2.2.9_201906_ATBD_SST_GMPE_v1.1.pdf</dc:URI>
+      <dc:URI protocol="WWW:LINK-1.0-http--link" name="Product user guide and specification document (PDF)" description="Summarizes the characteristics of the dataset(s) in a concise manner with focus on: space and time extent and resolution; data formats, metadata and flags; description of variables, strengths and limitations.">https://datastore.copernicus-climate.eu/documents/satellite-sea-surface-temperature/C3S_D312a_Lot3.3.2.23_201906_PUGS_SST_GMPE_v1.1.pdf</dc:URI>
+      <dc:URI protocol="image/png" name="large_thumbnail">https://datastore.copernicus-climate.eu/c3s/published-forms-v2/c3sprod/satellite-sea-surface-temperature-ensemble-product/overview.png</dc:URI>
+    </csw:Record>
+    

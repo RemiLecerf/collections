@@ -1,0 +1,69 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:dct="http://purl.org/dc/terms/" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/0a67ffbc-440e-4922-879b-436b34a3315f">
+        <foaf:primaryTopic rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/resource/0a67ffbc-440e-4922-879b-436b34a3315f"/>
+        <dct:issued>2022-11-25</dct:issued>
+        <dct:modified>2022-11-25</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/srv/eng/xml.metadata.get?uuid=0a67ffbc-440e-4922-879b-436b34a3315f">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork?uuid=0a67ffbc-440e-4922-879b-436b34a3315f">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/resource/0a67ffbc-440e-4922-879b-436b34a3315f">
+        <dct:identifier>0a67ffbc-440e-4922-879b-436b34a3315f</dct:identifier>
+        <dct:title>Global Ocean - In Situ reprocessed carbon observations - SOCATv2022 / GLODAPv2.2022</dct:title>
+        <dct:abstract>'''Short description:'''
+Global Ocean- in-situ reprocessed Carbon observations. This product contains observations and gridded files from two up-to-date carbon and biogeochemistry community data products: Surface Ocean Carbon ATlas SOCATv2021 and GLobal Ocean Data Analysis Project GLODAPv2.2021. 
+The SOCATv2022-OBS dataset contains &gt;25 million observations of fugacity of CO2 of the surface global ocean from 1957 to early 2022. The quality control procedures are described in Bakker et al. (2016). These observations form the basis of the gridded products included in SOCATv2020-GRIDDED: monthly, yearly and decadal averages of fCO2 over a 1x1 degree grid over the global ocean, and a 0.25x0.25 degree, monthly average for the coastal ocean.
+GLODAPv2.2022-OBS contains &gt;1 million observations from individual seawater samples of temperature, salinity, oxygen, nutrients, dissolved inorganic carbon, total alkalinity and pH from 1972 to 2020. These data were subjected to an extensive quality control and bias correction described in Olsen et al. (2020). GLODAPv2-GRIDDED contains global climatologies for temperature, salinity, oxygen, nitrate, phosphate, silicate, dissolved inorganic carbon, total alkalinity and pH over a 1x1 degree horizontal grid and 33 standard depths using the observations from the previous iteration of GLODAP, GLODAPv2. 
+SOCAT and GLODAP are based on community, largely volunteer efforts, and the data providers will appreciate that those who use the data cite the corresponding articles (see References below) in order to support future sustainability of the data products.
+
+'''DOI (product) :'''   
+https://doi.org/10.48670/moi-00035</dct:abstract>
+        <dcat:theme rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/thesaurus/iso/topicCategory/oceans"/>
+        <foaf:thumbnail rdf:resource="https://catalogue.marine.copernicus.eu/documents/IMG/INSITU_GLO_BGC_CARBON_DISCRETE_MY_013_050.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((-180.00 -90.00, -180.00 90.00, 180.00 90.00, 180.00 -90.00, -180.00 -90.00))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:issued>2012-08-26</dct:issued>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/INS-IFREMER-BREST-FR"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/INS-UIB-BERGEN-NO"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/INS-IFREMER-BREST-FR"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/INS-UIB-BERGEN-NO"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/INS-UIB-BERGEN-NO"/>
+        <dct:accrualPeriodicity>irregular</dct:accrualPeriodicity>
+        <dct:accrualPeriodicity>annually</dct:accrualPeriodicity>
+        <dct:license>otherRestrictions</dct:license>
+        <dct:license>license</dct:license>
+        <dct:license>No limitations on public access</dct:license>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/INSITU_GLO_BGC_CARBON_DISCRETE_MY_013_050/cmems_obs-ins_glo_bgc-car_my_glodap-gridded_irr"/>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/INSITU_GLO_BGC_CARBON_DISCRETE_MY_013_050/cmems_obs-ins_glo_bgc-car_my_glodap-obs_irr"/>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/INSITU_GLO_BGC_CARBON_DISCRETE_MY_013_050/cmems_obs-ins_glo_bgc-car_my_socat-gridded_irr"/>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/INSITU_GLO_BGC_CARBON_DISCRETE_MY_013_050/cmems_obs-ins_glo_bgc-car_my_socat-obs_irr"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/2283e339-9882-4d6a-bc99-deb36b68edb7"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/26f0cab6-b6d4-427b-8ddd-2558f3758b00"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dcat:dataQuality>The myOcean products depends on other products for production or validation. The detailed list of dependencies is given in ISO19115's aggregationInfo (ISO19139 Xpath = "gmd:MD_Metadata/gmd:identificationInfo/gmd:aggregationInfo[./gmd:MD_AggregateInformation/gmd:initiativeType/gmd:DS_InitiativeTypeCode/@codeListValue='upstream-validation' or 'upstream-production']")</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+    

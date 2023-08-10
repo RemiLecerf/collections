@@ -1,0 +1,74 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:dct="http://purl.org/dc/terms/" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/cbe65f19-c0f8-432f-8fd3-f8e13cb2ba74">
+        <foaf:primaryTopic rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/resource/cbe65f19-c0f8-432f-8fd3-f8e13cb2ba74"/>
+        <dct:issued>2022-11-24</dct:issued>
+        <dct:modified>2022-11-24</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/srv/eng/xml.metadata.get?uuid=cbe65f19-c0f8-432f-8fd3-f8e13cb2ba74">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork?uuid=cbe65f19-c0f8-432f-8fd3-f8e13cb2ba74">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/resource/cbe65f19-c0f8-432f-8fd3-f8e13cb2ba74">
+        <dct:identifier>cbe65f19-c0f8-432f-8fd3-f8e13cb2ba74</dct:identifier>
+        <dct:title>GLOBAL OCEAN L3 SIGNIFICANT WAVE HEIGHT FROM NRT SATELLITE MEASUREMENTS</dct:title>
+        <dct:abstract>'''Short description:'''
+
+Near-Real-Time mono-mission satellite-based along-track significant wave height. Only valid data are included, based on a rigorous editing combining various criteria such as quality flags (surface flag, presence of ice) and thresholds on parameter values. Such thresholds are applied on parameters linked to significant wave height determination from retracking (e.g. SWH, sigma0, range, off nadir angle…). All the missions are homogenized with respect to a reference mission (Jason-3 until April 2022, Sentinel-6A afterwards) and calibrated on in-situ buoy measurements. Finally, an along-track filter is applied to reduce the measurement noise.
+
+As a support of information to the significant wave height, wind speed measured by the altimeters is also processed and included in the files. Wind speed values are provided by upstream products (L2) for each mission and are based on different algorithms. Only valid data are included and all the missions are homogenized with respect to the reference mission.
+
+This product is processed by the WAVE-TAC multi-mission altimeter data processing system. It serves in near-real time the main operational oceanography and climate forecasting centers in Europe and worldwide. It processes operational data (OGDR and NRT, produced in near-real-time) from the following altimeter missions: Sentinel-6A, Jason-3, Sentinel-3A, Sentinel-3B, Cryosat-2, SARAL/AltiKa, CFOSAT ; and interim data (IGDR, 1 to 2 days delay) from Hai Yang-2B mission.
+
+One file containing valid SWH is produced for each mission and for a 3-hour time window. It contains the filtered SWH (VAVH), the unfiltered SWH (VAVH_UNFILTERED) and the wind speed (wind_speed).
+
+'''DOI (product) :'''   
+https://doi.org/10.48670/moi-00179</dct:abstract>
+        <dcat:theme rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/thesaurus/iso/topicCategory/oceans"/>
+        <foaf:thumbnail rdf:resource="https://catalogue.marine.copernicus.eu/documents/IMG/WAVE_GLO_WAV_L3_SWH_NRT_OBSERVATIONS_014_001.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((-180.00 -90.00, -180.00 90.00, 180.00 90.00, 180.00 -90.00, -180.00 -90.00))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:issued>2012-08-26</dct:issued>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/WAVE-CLS-TOULOUSE-FR"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/WAVE-CLS-TOULOUSE-FR"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/WAVE-CLS-TOULOUSE-FR"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/WAVE-CLS-TOULOUSE-FR"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/WAVE-CLS-TOULOUSE-FR"/>
+        <dct:accrualPeriodicity>continual</dct:accrualPeriodicity>
+        <dct:license>otherRestrictions</dct:license>
+        <dct:license>license</dct:license>
+        <dct:license>No limitations on public access</dct:license>
+        <dcat:distribution rdf:resource="ftp://nrt.cmems-du.eu/Core/WAVE_GLO_PHY_SWH_L3_NRT_014_001/cmems_obs-wave_glo_phy-swh_nrt_al-l3_PT1S"/>
+        <dcat:distribution rdf:resource="ftp://nrt.cmems-du.eu/Core/WAVE_GLO_PHY_SWH_L3_NRT_014_001/cmems_obs-wave_glo_phy-swh_nrt_c2-l3_PT1S"/>
+        <dcat:distribution rdf:resource="ftp://nrt.cmems-du.eu/Core/WAVE_GLO_PHY_SWH_L3_NRT_014_001/cmems_obs-wave_glo_phy-swh_nrt_cfo-l3_PT1S"/>
+        <dcat:distribution rdf:resource="ftp://nrt.cmems-du.eu/Core/WAVE_GLO_PHY_SWH_L3_NRT_014_001/cmems_obs-wave_glo_phy-swh_nrt_h2b-l3_PT1S"/>
+        <dcat:distribution rdf:resource="ftp://nrt.cmems-du.eu/Core/WAVE_GLO_PHY_SWH_L3_NRT_014_001/cmems_obs-wave_glo_phy-swh_nrt_h2c-l3_PT1S"/>
+        <dcat:distribution rdf:resource="ftp://nrt.cmems-du.eu/Core/WAVE_GLO_PHY_SWH_L3_NRT_014_001/cmems_obs-wave_glo_phy-swh_nrt_j3-l3_PT1S"/>
+        <dcat:distribution rdf:resource="ftp://nrt.cmems-du.eu/Core/WAVE_GLO_PHY_SWH_L3_NRT_014_001/cmems_obs-wave_glo_phy-swh_nrt_s3a-l3_PT1S"/>
+        <dcat:distribution rdf:resource="ftp://nrt.cmems-du.eu/Core/WAVE_GLO_PHY_SWH_L3_NRT_014_001/cmems_obs-wave_glo_phy-swh_nrt_s3b-l3_PT1S"/>
+        <dcat:distribution rdf:resource="ftp://nrt.cmems-du.eu/Core/WAVE_GLO_PHY_SWH_L3_NRT_014_001/cmems_obs-wave_glo_phy-swh_nrt_s6a-l3_PT1S"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/56971f7b-51b1-43f0-8592-c040174f5048"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/e0d70a32-8b89-4b8d-9fe7-354632f77ee7"/>
+        <dcat:dataQuality>The myOcean products depends on other products for production or validation. The detailed list of dependencies is given in ISO19115's aggregationInfo (ISO19139 Xpath = "gmd:MD_Metadata/gmd:identificationInfo/gmd:aggregationInfo[./gmd:MD_AggregateInformation/gmd:initiativeType/gmd:DS_InitiativeTypeCode/@codeListValue='upstream-validation' or 'upstream-production']")</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+    

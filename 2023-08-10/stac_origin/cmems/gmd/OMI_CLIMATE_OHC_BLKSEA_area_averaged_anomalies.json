@@ -1,0 +1,53 @@
+{
+  "type": "Collection",
+  "id": "OMI_CLIMATE_OHC_BLKSEA_area_averaged_anomalies",
+  "stac_version": "1.0.0",
+  "description": "'''DEFINITION'''\n\nOcean heat content (OHC) is defined here as the deviation from a reference period (1993-2014) and is closely proportional to the average temperature change from z1 = 0 m to z2 = 300 m depth:\nOHC=∫_(z_1)^(z_2)ρ_0  c_p (T_m-T_clim )dz [1]\nwith a reference density = 1020 kg m-3 and a specific heat capacity of cp = 4181.3 J kg-1 °C-1 (e.g. von Schuckmann et al., 2009; Lima et al., 2020); T_m corresponds to the monthly average temperature and T_clim is the climatological temperature of the corresponding month that varies according to each individual product.\nTime series of monthly mean values area averaged ocean heat content is provided for the Black Sea (40.86°N, 46.8°N; 27.32°E, 41.96°E) and is evaluated in areas where the topography is deeper than 300m. The Azov and Marmara Seas are not considered.\n\n'''CONTEXT'''\n\nKnowing how much and where heat energy is stored and released in the ocean is essential for understanding the contemporary Earth system state, variability and change, as the oceans shape our perspectives for the future.\nThe quality evaluation of OMI_CLIMATE_OHC_BLKSEA_area_averaged_anomalies is based on the “multi-product” approach as introduced in the second issue of the Ocean State Report (von Schuckmann et al., 2018), and following the MyOcean’s experience (Masina et al., 2017). \nThree global products and one regional (Black Sea) product have been used to build an ensemble mean, and its associated ensemble spread. The reference products are:\n\tThe Black Sea Reanalysis at 1/36-degree horizontal resolution (BLKSEA_MULTIYEAR_PHY_006_004, DOI: https://doi.org/10.25423/CMCC/BLKSEA_MULTIYEAR_PHY_007_004, Lima et al., 2021)\n\tA global reanalysis at 1/12 degree horizontal resolution (GLOBAL_REANALYSIS_PHY_001_031).\n\tTwo observation-based products: \nCORA (INSITU_GLO_TS_REP_OBSERVATIONS_013_001_b) and \nARMOR3D (MULTIOBS_GLO_PHY_TSUV_3D_MYNRT_015_012). \nDetails on the products are delivered in the PUM and QUID of this OMI. \n\n'''CMEMS KEY FINDINGS'''\n\nSince 2005 the Black Sea experienced a continuous increase in ocean heat content (0-300 m), and record OHC values are noticed in recent years. The Black Sea is warming at a rate of 1.00±0.09 W m-2, which is higher than the global average warming rate Previous studies also detected a warming in the Black Sea (Akpinar et al., 2017; Stanev et al. 2019; Lima et al. 2020). Stanev et al. (2019) found a warming trend in the cold intermediate layer (CIL) of ~0.05 oC year-1 in recent years.   \nThe increase in ocean heat content weakens the CIL, whereas its decreasing favors the CIL restoration (Akpinar et al., 2017). The years 2012 and 2017 exhibited a more evident warming interruption that induced a replenishment of the CIL (Lima et al. 2021).\n\n'''DOI (product):''' \n https://doi.org/10.48670/moi-00306",
+  "links": [],
+  "title": "Black Sea Ocean Heat Content Anomaly (0-300m) time series and trend from Reanalysis & Multi-Observations Reprocessing",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          27.5,
+          40.5,
+          41.1,
+          47.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2005-01-01T00:00:00Z",
+          "2020-05-01T23:59:59Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Oceanographic geographical features",
+    "numerical-model",
+    "in-situ-observation",
+    null,
+    "multi-year",
+    "weather-climate-and-seasonal-forecasting",
+    "marine-safety",
+    "coastal-marine-environment",
+    "marine-resources",
+    "black-sea",
+    "N/A",
+    "Not Applicable"
+  ],
+  "providers": [
+    {
+      "name": "Copernicus Marine Service",
+      "description": "Copernicus Marine Service - Mercator Ocean International",
+      "roles": [
+        "host"
+      ],
+      "url": "https://marine.copernicus.eu/"
+    }
+  ]
+}

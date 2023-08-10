@@ -1,0 +1,179 @@
+{
+    "engine": "WCPS",
+    "stac_version": "0.9.0",
+    "stac_extensions": [
+        "datacube"
+    ],
+    "type": "Collection",
+    "id": "SAO_S2_ST_BRDF_20m_L2A",
+    "title": "SAO Sentinel-2 L2A Reference data S2_ST_BRDF_20m_L2A",
+    "description": "The Copernicus Sentinel-2 L2A Dataset for South Tyrol Region",
+    "keywords": [
+        "SAO",
+        "Sentinel-2",
+        "L2A"
+    ],
+    "version": "v1",
+    "license": "CC-BY-4.0",
+    "sci:citation": "Copernicus Sentinel data [2015-2021]",
+    "providers": [
+        {
+            "name": "Eurac EO WCS",
+            "url": "http://www.eurac.edu",
+            "roles": [
+                "Host"
+            ]
+        },
+        {
+            "name": "European Space Agency (ESA)",
+            "url": "https://www.esa.int/",
+            "roles": [
+                "Producer"
+            ]
+        },
+        {
+            "name": "Bartolomeo Ventura",
+            "url": "http://www.eurac.edu/en/research/mountains/remsen/staff/Pages/staffdetails.aspx?persId=15903",
+            "roles": [
+                "Processor"
+            ]
+        }
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    10.290484068721142,
+                    45.9582645179246,
+                    13.135258475368447,
+                    47.77915707185737
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2015-07-04T00:00:00Z",
+                    "2017-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "links": [
+        {
+            "rel": "licence",
+            "href": "https://creativecommons.org/licenses/by/4.0/",
+            "type": "text/html",
+            "title": "License Link"
+        }
+    ],
+    "cube:dimensions": {
+        "DATE": {
+            "type": "temporal",
+            "extent": [
+                "2015-07-04T00:00:00.000Z",
+                "2017-01-01T00:00:00.000Z"
+            ],
+            "step": "null"
+        },
+        "E": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                10.290484068721142,
+                13.135258475368447
+            ],
+            "reference_system": 32632
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "B05",
+                "B06",
+                "B07",
+                "B8A",
+                "B11",
+                "B12",
+                "AOT",
+                "WVP"
+            ]
+        },
+        "N": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                45.9582645179246,
+                47.77915707185737
+            ],
+            "reference_system": 32632
+        }
+    },
+    "summaries": {
+        "constellation": [
+            "Sentinel-2"
+        ],
+        "platform": [
+            "Sentinel-2A"
+        ],
+        "rows": 5490,
+        "columns": 10488,
+        "instruments": [
+            "MSI"
+        ],
+        "eo:cloud cover": {
+            "min": 0.589038,
+            "max": 100.0
+        },
+        "gsd": [
+            20.0
+        ],
+        "eo:bands": [
+            {
+                "name": "B05",
+                "common_name": "vegetation red edge 1",
+                "center_wavelength": 705.0,
+                "gsd": 20.0
+            },
+            {
+                "name": "B06",
+                "common_name": "vegetation red edge 2",
+                "center_wavelength": 740.0,
+                "gsd": 20.0
+            },
+            {
+                "name": "B07",
+                "common_name": "vegetation red edge 3",
+                "center_wavelength": 783.0,
+                "gsd": 20.0
+            },
+            {
+                "name": "B8A",
+                "common_name": "narrow nir",
+                "center_wavelength": 865.0,
+                "gsd": 20.0
+            },
+            {
+                "name": "B11",
+                "common_name": "swir 1",
+                "center_wavelength": 1610.0,
+                "gsd": 20.0
+            },
+            {
+                "name": "B12",
+                "common_name": "swir 2",
+                "center_wavelength": 2190.0,
+                "gsd": 20.0
+            },
+            {
+                "name": "AOT",
+                "common_name": "aerosol optical thickness map",
+                "gsd": 20.0
+            },
+            {
+                "name": "WVP",
+                "common_name": "scene-average water-vapour map",
+                "gsd": 20.0
+            }
+        ]
+    }
+}

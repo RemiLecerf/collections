@@ -1,0 +1,48 @@
+{
+  "type": "Collection",
+  "id": "EO:ECMWF:DAT:INSITU_OBSERVATIONS_SURFACE_MARINE",
+  "stac_version": "1.0.0",
+  "description": "This set of holdings provides access to surface marine meteorological weather reports and observations made by merchant \nand naval ships, drifting buoys and other platforms and vessels over \nthe global ocean. Data have been collated and harmonised and quality control checks have been performed, but no attempt\nhas been made to assess or correct for potential biases. \nData are provided for a range of commonly observed variables.\nThe weather reports contain instantaneous, or point, observations of a number of key Essential Climate Variables (ECVs) \nand other parameters as denoted in the main variables table, made at routine intervals (typically 1, 3, or 6 hourly).\nNote that not all reports will contain information for all variables. \nAttributes are described in the related-variables table and users can choose whether to receive all\nattributes or solely essential attributes. Data are downloaded as comma-seperated values (CSV) files organised as one \nobservation of one variable per row.\nThe data available is released in the CDS  as version 1 and consist in a reprocessing of the International Comprehensive Ocean-Atmosphere Data\nSet (ICOADS), Release 3.0 with major improvements made to the quality control and duplicate flagging of observations and\nimproved availability of metadata. The current release represents a preliminary reprocessing of the period 1851-2010,\nwith additional data and flags planned to be added in subsequent releases. \nUsers should ensure an appropriate assessment of long-term data quality prior to use in those applications which require\nconsideration of such aspects. Users should be aware that data availability is spatio-temporally incomplete and varies \nsignificantly throughout the period of record.\nMore details about the marine data holdings are available in the product user guide, and details around data formatting \ncan be found in the common data model documentation, both of which can be found in the documentation section.\nThis work is being completed on behalf of Copernicus Climate Change Services in sustained collaboration with colleagues\nat NOAA's National Centres for Environmental Information who are the WMO designated World Data Centre for meteorology.\n\nVariables in the dataset/application are:\nAir pressure at sea level, Air temperature, Dew point temperature, Water temperature, Wind from direction, Wind speed\n\nVariables in the dataset/application are:\nData policy licence, Date time, Date time meaning, Height above surface, Latitude, Longitude, Observation duration, Observation id, Observation value, Observed variable, Platform type, Primary station id, Quality flag, Report type, Station name, Station type, Units, Value significance",
+  "links": [],
+  "title": "Global marine surface meteorological variables from 1851 to 2010 from comprehensive in-situ observations",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1851-01-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Land cover",
+    "Product type: In-situ observations",
+    "Variable domain: Ocean (surface)",
+    "Variable domain: Atmosphere (surface)",
+    "Temporal coverage: Past",
+    "Spatial coverage: Global",
+    "Spatial coverage: Point data"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

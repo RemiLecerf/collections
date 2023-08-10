@@ -1,0 +1,81 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:dct="http://purl.org/dc/terms/" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/de7af518-351f-482c-ae89-d2a3574890b0">
+        <foaf:primaryTopic rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/resource/de7af518-351f-482c-ae89-d2a3574890b0"/>
+        <dct:issued>2022-07-04</dct:issued>
+        <dct:modified>2022-07-04</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/srv/eng/xml.metadata.get?uuid=de7af518-351f-482c-ae89-d2a3574890b0">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork?uuid=de7af518-351f-482c-ae89-d2a3574890b0">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/resource/de7af518-351f-482c-ae89-d2a3574890b0">
+        <dct:identifier>de7af518-351f-482c-ae89-d2a3574890b0</dct:identifier>
+        <dct:title>SAR Sea Ice Berg Concentration and Individual Icebergs Observed with Sentinel-1</dct:title>
+        <dct:abstract>'''Short description:''' 
+
+The iceberg product contains 4 datasets (IW and EW modes and mosaic for the two modes) describing iceberg concentration as number of icebergs counted within 10x10 km grid cells. The iceberg concentration is derived by applying a Constant False Alarm Rate (CFAR) algorithm on data from Synthetic Aperture Radar (SAR) satellite sensors.
+
+The iceberg product also contains two additional datasets of individual iceberg positions in Greenland-Newfoundland-Labrador Waters. These datasets are in shapefile format to allow the best representation of the icebergs (the 1st dataset contains the iceberg point observations, the 2nd dataset contains the polygonized satellite coverage). These are also derived by applying a Constant False Alarm Rate (CFAR) algorithm on Sentinel-1 SAR imagery.
+Despite its precision (individual icebergs are proposed), this product is a generic and automated product and needs expertise to be correctly used. For all applications concerning marine navigation, please refer to the national Ice Service of the country concerned.
+
+'''DOI (product) :'''  
+https://doi.org/10.48670/moi-00129</dct:abstract>
+        <dcat:theme rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/thesaurus/iso/topicCategory/oceans"/>
+        <foaf:thumbnail rdf:resource="https://catalogue.marine.copernicus.eu/documents/IMG/SEAICE_ARC_SEAICE_L4_NRT_OBSERVATIONS_011_007.gif"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((-122.60 54.50, -122.60 84.90, 42.90 84.90, 42.90 54.50, -122.60 54.50))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:issued>2010-11-08</dct:issued>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/OSI-METNO-OSLO-NO%20%28SD%29"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/OSI-METNO-OSLO-NO%20%28PM%29"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/OSI-METNO-OSLO-NO%20%28WPL%29"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/SIW-DMI-COPENHAGEN-DK"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/SIW-METNO-OSLO-NO"/>
+        <dct:accrualPeriodicity>irregular</dct:accrualPeriodicity>
+        <dct:accrualPeriodicity>daily</dct:accrualPeriodicity>
+        <dct:license>otherRestrictions</dct:license>
+        <dct:license>license</dct:license>
+        <dct:license>No limitations on public access</dct:license>
+        <dcat:distribution rdf:resource="ftp://nrt.cmems-du.eu/Core/SEAICE_ARC_SEAICE_L4_NRT_OBSERVATIONS_011_007/cmems_sat-si_arc_berg-point_nrt_ew_d"/>
+        <dcat:distribution rdf:resource="ftp://nrt.cmems-du.eu/Core/SEAICE_ARC_SEAICE_L4_NRT_OBSERVATIONS_011_007/cmems_sat-si_arc_berg-point_nrt_iw_d"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=SEAICE_ARC_SEAICE_L4_NRT_OBSERVATIONS_011_007-TDS&amp;product=DMI-ARC-SEAICE_BERG_IW-L4-NRT-OBS"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/thredds/dodsC/DMI-ARC-SEAICE_BERG_IW-L4-NRT-OBS"/>
+        <dcat:distribution rdf:resource="ftp://nrt.cmems-du.eu/Core/SEAICE_ARC_SEAICE_L4_NRT_OBSERVATIONS_011_007/DMI-ARC-SEAICE_BERG_IW-L4-NRT-OBS"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/thredds/wms/DMI-ARC-SEAICE_BERG_IW-L4-NRT-OBS"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=SEAICE_ARC_SEAICE_L4_NRT_OBSERVATIONS_011_007-TDS&amp;product=DMI-ARC-SEAICE_BERG_MOSAIC_IW-L4-NRT-OBS"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/thredds/dodsC/DMI-ARC-SEAICE_BERG_MOSAIC_IW-L4-NRT-OBS"/>
+        <dcat:distribution rdf:resource="ftp://nrt.cmems-du.eu/Core/SEAICE_ARC_SEAICE_L4_NRT_OBSERVATIONS_011_007/DMI-ARC-SEAICE_BERG_MOSAIC_IW-L4-NRT-OBS"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/thredds/wms/DMI-ARC-SEAICE_BERG_MOSAIC_IW-L4-NRT-OBS"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=SEAICE_ARC_SEAICE_L4_NRT_OBSERVATIONS_011_007-TDS&amp;product=DMI-ARC-SEAICE_BERG_MOSAIC-L4-NRT-OBS"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/thredds/dodsC/DMI-ARC-SEAICE_BERG_MOSAIC-L4-NRT-OBS"/>
+        <dcat:distribution rdf:resource="ftp://nrt.cmems-du.eu/Core/SEAICE_ARC_SEAICE_L4_NRT_OBSERVATIONS_011_007/DMI-ARC-SEAICE_BERG_MOSAIC-L4-NRT-OBS"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/thredds/wms/DMI-ARC-SEAICE_BERG_MOSAIC-L4-NRT-OBS"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=SEAICE_ARC_SEAICE_L4_NRT_OBSERVATIONS_011_007-TDS&amp;product=DMI-ARC-SEAICE_BERG-L4-NRT-OBS"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/thredds/dodsC/DMI-ARC-SEAICE_BERG-L4-NRT-OBS"/>
+        <dcat:distribution rdf:resource="ftp://nrt.cmems-du.eu/Core/SEAICE_ARC_SEAICE_L4_NRT_OBSERVATIONS_011_007/DMI-ARC-SEAICE_BERG-L4-NRT-OBS"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/thredds/wms/DMI-ARC-SEAICE_BERG-L4-NRT-OBS"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/43827b9c-45d0-420e-8c16-91ced57972b9"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/54077ea3-887b-4975-bdb7-029858b5ea3f"/>
+        <dcat:dataQuality>The myOcean products depends on other products for production or validation. The detailed list of dependencies is given in ISO19115's aggregationInfo (ISO19139 Xpath = "gmd:MD_Metadata/gmd:identificationInfo/gmd:aggregationInfo[./gmd:MD_AggregateInformation/gmd:initiativeType/gmd:DS_InitiativeTypeCode/@codeListValue='upstream-validation' or 'upstream-production']")</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+    

@@ -1,0 +1,78 @@
+{
+  "type": "Collection",
+  "id": "EO:CLMS:DAT:CGLS_GLOBAL_FCOVER_V1_1KM",
+  "stac_version": "1.0.0",
+  "description": "Fraction of vegetation Cover (FCOVER) corresponds to the gap fraction for nadir direction. It is used to separate vegetation and soil in energy balance processes, including temperature and evapotranspiration. It is computed from the leaf area index and other canopy structural variables and does not depend on variables such as the geometry of illumination as compared to FAPAR. For this reason, it is a very good candidate for the replacement of classical vegetation indices for the monitoring of green vegetation. Because of the linear relationship with radiometric signal, FCOVER will be only marginally scale dependent. Note that similarly to LAI and FAPAR, only the green elements will be considered, either belonging both to the overstorey and understorey.",
+  "links": [
+    {
+      "rel": "hosts",
+      "href": "https://navigator.eumetsat.int/product/EO:CLMS:DAT:CGLS_GLOBAL_FCOVER_V1_1KM",
+      "type": "http",
+      "title": "EUMETSAT Product Navigator (Metadata)"
+    },
+    {
+      "rel": "hosts",
+      "href": "https://navigator.eumetsat.int/product/EO:CLMS:DAT:CGLS_GLOBAL_FCOVER_V1_1KM",
+      "type": "http",
+      "title": "EUMETSAT Product Navigator (Metadata)"
+    },
+    {
+      "rel": "hosts",
+      "href": "http://land.copernicus.eu/global/products/fcover",
+      "type": "HTTP",
+      "title": "Copernicus Global Land Service"
+    },
+    {
+      "rel": "hosts",
+      "href": "http://land.copernicus.eu/global/access",
+      "type": "HTTP",
+      "title": "Copernicus Global Land Service"
+    },
+    {
+      "rel": "hosts",
+      "href": "http://eoportal.eumetsat.int",
+      "title": "Copernicus Global Land Service"
+    }
+  ],
+  "title": "Global 10-daily Fraction of Vegetation Cover 1km",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -60.0,
+          180.0,
+          80.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1999-01-03T00:00:00Z",
+          "2030-12-31T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Orthoimagery",
+    "geophysical environment",
+    "biogeophysical",
+    "vegetation cover",
+    "GLOBE",
+    "Dekad",
+    "10-daily"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

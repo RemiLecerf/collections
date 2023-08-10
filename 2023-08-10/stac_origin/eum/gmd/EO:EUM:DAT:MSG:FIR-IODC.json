@@ -1,0 +1,51 @@
+{
+  "type": "Collection",
+  "id": "EO:EUM:DAT:MSG:FIR-IODC",
+  "stac_version": "1.0.0",
+  "description": "The active fire monitoring product is a fire detection product indicating the presence of fire within a pixel. The underlying concept of the algorithm takes advantage of the fact that SEVIRI channel IR3.9 is very sensitive to hot spots which are caused by fires. \nThe algorithm distinguishes between potential fire and active fire. \nApplications and Users: Fire detection and monitoring. This product is available in CAP (Common Alert Protocol) format. The CAP formatted product is only disseminated when a fire/potential fire is detected in any given repeat cycle.\nPlease note, the MSG SEVIRI instrument presents some limitations when using it for fire detection, and this could lead in a underestimation of pixel with actual fire. This underestimation can be caused by:\n- The “fire channel” of SEVIRI (IR3.9) being up to 5 K colder than a “clean” channel due to CO2 absorption.\n- The low spatial resolution.\n- The limited dynamic range of the 3.9 µm channel  (335 K for SEVIRI), which does not make it ideal for hot fires.\n\nFrom 1 June 2022, Meteosat-9 at 45.5° E is the prime satellite for the IODC service, replacing Meteosat-8 (located at 41.5° E while in operation).",
+  "links": [
+    {
+      "rel": "hosts",
+      "href": "https://navigator.eumetsat.int/product/EO:EUM:DAT:MSG:FIR-IODC",
+      "type": "http",
+      "title": "EUMETSAT Product Navigator (Metadata)"
+    }
+  ],
+  "title": "Active Fire Monitoring (GRIB) - MSG - Indian Ocean",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -22.0,
+          -67.5,
+          113.0,
+          67.5
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2020-09-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Fire",
+    "Atmospheric Composition",
+    "Land"
+  ],
+  "providers": [
+    {
+      "name": "European Organisation for the Exploitation of Meteorological Satellites (EUMETSAT)",
+      "description": "EUMETSAT Data store",
+      "roles": [
+        "host"
+      ],
+      "url": "https://data.eumetsat.int/"
+    }
+  ]
+}

@@ -1,0 +1,161 @@
+{
+    "description": "The global Human Modification dataset (gHM) provides a cumulative measure of human modification\nof terrestrial lands globally at 1 square-kilometer resolution. The gHM\nvalues range from 0.0-1.0 and are calculated by estimating the proportion of a given location\n(pixel) that is modified, the estimated intensity of modification\nassociated with a given type of human modification or \"stressor\".\n5 major anthropogenic stressors circa 2016 were mapped using 13\nindividual datasets:\n\n* human settlement (population density, built-up areas)\n* agriculture (cropland, livestock)\n* transportation (major, minor, and two-track roads; railroads)\n* mining and energy production\n* electrical infrastructure (power lines, nighttime lights)\n\nPlease see the paper for additional methodological details.\nThis asset was re-projected to WGS84 for use in Earth Engine.\n",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2016-01-01T00:00:00Z",
+                    "2016-12-31T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "year"
+    },
+    "gee:terms_of_use": "[CC-BY-NC-SA-4.0](https://spdx.org/licenses/CC-BY-NC-SA-4.0.html)",
+    "gee:type": "image_collection",
+    "gee:unusual_terms_of_use": true,
+    "gee:user_uploaded": true,
+    "id": "CSP/HM/GlobalHumanModification",
+    "keywords": [
+        "csp",
+        "fragmentation",
+        "human_modification",
+        "landcover",
+        "landscape_gradient",
+        "stressors",
+        "tnc"
+    ],
+    "license": "CC-BY-NC-SA-4.0",
+    "links": [
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections/CSP/HM/GlobalHumanModification",
+            "rel": "self",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections",
+            "rel": "parent",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/",
+            "rel": "root",
+            "type": "application/json"
+        },
+        {
+            "code": "JavaScript",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/CSP/CSP_HM_GlobalHumanModification",
+            "rel": "related",
+            "title": "Run the example for CSP/HM/GlobalHumanModification in the Earth Engine Code Editor",
+            "type": "text/html"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/images/CSP/CSP_HM_GlobalHumanModification_sample.png",
+            "rel": "preview",
+            "type": "image/png"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/CSP_HM_GlobalHumanModification#terms-of-use",
+            "rel": "license",
+            "type": "text/html"
+        },
+        {
+            "href": "https://gdra-tnc.org/current/",
+            "rel": "source"
+        }
+    ],
+    "providers": [
+        {
+            "name": "Conservation Science Partners",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.csp-inc.org/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/CSP_HM_GlobalHumanModification"
+        }
+    ],
+    "sci:citation": "Kennedy, C.M., J.R. Oakleaf, D.M. Theobald, S. Baurch-Murdo, and J. Kiesecker. 2019. Managing\nthe middle: A shift in conservation priorities based on the global human modification gradient.\nGlobal Change Biology 00:1-16. [doi:10.1111/gcb.14549](https://doi.org/10.1111/gcb.14549)\n",
+    "stac_extensions": [
+        "collection-assets"
+    ],
+    "stac_version": "1.0.0",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "global Human Modification",
+                "gee:units": "km^2",
+                "name": "gHM"
+            }
+        ],
+        "gHM": {
+            "maximum": 1
+        },
+        "gsd": [
+            1000
+        ]
+    },
+    "title": "CSP gHM: Global Human Modification",
+    "type": "Collection",
+    "version": "1.0",
+    "cube:dimensions": {
+        "x": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                -180,
+                180
+            ]
+        },
+        "y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                -90,
+                90
+            ]
+        },
+        "t": {
+            "type": "temporal",
+            "extent": [
+                "2016-01-01T00:00:00Z",
+                "2016-12-31T00:00:00Z"
+            ]
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "gHM"
+            ]
+        }
+    },
+    "assets": {
+        "preview_4": {
+            "href": "https://developers.google.com/earth-engine/datasets/images/CSP/CSP_HM_GlobalHumanModification_sample.png",
+            "type": "image/png",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    }
+}

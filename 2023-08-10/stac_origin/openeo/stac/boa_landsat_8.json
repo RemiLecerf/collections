@@ -1,0 +1,248 @@
+{
+    "type": "Collection",
+    "stac_version": "1.0.0",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/datacube/v2.0.0/schema.json",
+        "https://stac-extensions.github.io/item-assets/v1.0.0/schema.json",
+        "https://github.com/stac-extensions/eo"
+    ],
+    "id": "boa_landsat_8",
+    "title": "Landsat-8 bottom of atmosphere at 30m resolution, limited area",
+    "description": "Preprocessed analysis-ready-data (ARD) from Landsat-8 processed with FORCE. ARD data can only be combined with other ARD data or loaded results of previous processed jobs. ARD data cannot be combined with Level-1 collections! As this is Level-2 (ARD) data, ARD processes (``ard_normalized_radar_backscatter()``, ``ard_surface_reflectance()``, ``sar_backscatter()``, ``atmospheric_correction()``) cannot be applied.",
+    "keywords": [
+        "EODC",
+        "NASA",
+        "Landsat-8",
+        "Level-2"
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    5.014148226142465,
+                    42.50120437013096,
+                    18.59706624229073,
+                    51.419674834228985
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2015-01-04T12:00:00Z",
+                    "2020-12-26T12:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "links": [
+        {
+            "href": "https://openeo.eodc.eu/openeo/1.1.0/collections",
+            "rel": "about"
+        },
+        {
+            "href": "https://openeo.eodc.eu/openeo/1.1.0/collections",
+            "rel": "cloud"
+        },
+        {
+            "href": "https://openeo.eodc.eu/openeo/1.1.0/collections",
+            "rel": "related"
+        },
+        {
+            "href": "https://openeo.eodc.eu/openeo/1.1.0/collections",
+            "rel": "water-vapor"
+        },
+        {
+            "href": "https://openeo.eodc.eu/openeo/1.1.0/collections",
+            "rel": "cloud-shadow"
+        },
+        {
+            "href": "https://openeo.eodc.eu/openeo/1.1.0/collections",
+            "rel": "card4l-document"
+        },
+        {
+            "href": "https://openeo.eodc.eu/openeo/1.1.0/collections",
+            "rel": "elevation-model"
+        },
+        {
+            "href": "https://openeo.eodc.eu/openeo/1.1.0/collections",
+            "rel": "atmospheric-scattering"
+        },
+        {
+            "href": "https://openeocloud.vito.be/openeo/1.0.0/collections",
+            "rel": "root"
+        },
+        {
+            "href": "https://openeocloud.vito.be/openeo/1.0.0/collections",
+            "rel": "parent"
+        },
+        {
+            "href": "https://openeocloud.vito.be/openeo/1.0.0/collections/boa_landsat_8",
+            "rel": "self"
+        }
+    ],
+    "properties": {
+        "platform": "landsat-8"
+    },
+    "cube:dimensions": {
+        "bands": {
+            "type": "bands",
+            "values": [
+                "B02",
+                "B03",
+                "B04",
+                "B05",
+                "B06",
+                "B07"
+            ]
+        },
+        "t": {
+            "extent": [
+                [
+                    "2015-01-04T12:00:00+00:00",
+                    "2020-12-26T12:00:00+00:00"
+                ]
+            ],
+            "type": "temporal"
+        },
+        "x": {
+            "axis": "x",
+            "extent": [
+                4500000.052695129,
+                5400000.052695129
+            ],
+            "reference_system": "PROJCS[\"Azimuthal_Equidistant\",GEOGCS[\"GCS_WGS_1984\",DATUM[\"D_WGS_1984\",SPHEROID[\"WGS_1984\",6378137,298.257223563]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433]],PROJECTION[\"Azimuthal_Equidistant\"],PARAMETER[\"latitude_of_center\",53],PARAMETER[\"longitude_of_center\",24],PARAMETER[\"false_easting\",5837287.81977],PARAMETER[\"false_northing\",2121415.69617],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]]]",
+            "type": "spatial"
+        },
+        "y": {
+            "axis": "y",
+            "extent": [
+                1100000.041661947,
+                2000000.041661947
+            ],
+            "reference_system": "PROJCS[\"Azimuthal_Equidistant\",GEOGCS[\"GCS_WGS_1984\",DATUM[\"D_WGS_1984\",SPHEROID[\"WGS_1984\",6378137,298.257223563]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433]],PROJECTION[\"Azimuthal_Equidistant\"],PARAMETER[\"latitude_of_center\",53],PARAMETER[\"longitude_of_center\",24],PARAMETER[\"false_easting\",5837287.81977],PARAMETER[\"false_northing\",2121415.69617],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]]]",
+            "type": "spatial"
+        }
+    },
+    "summaries": {
+        "eo:bands": [
+            {
+                "central_wavelength": 0.48,
+                "common_name": "band_1",
+                "name": "B02"
+            },
+            {
+                "central_wavelength": 0.56,
+                "common_name": "band_2",
+                "name": "B03"
+            },
+            {
+                "central_wavelength": 0.65,
+                "common_name": "band_3",
+                "name": "B04"
+            },
+            {
+                "central_wavelength": 0.86,
+                "common_name": "band_4",
+                "name": "B05"
+            },
+            {
+                "central_wavelength": 1.61,
+                "common_name": "band_5",
+                "name": "B06"
+            },
+            {
+                "central_wavelength": 2.2,
+                "common_name": "band_6",
+                "name": "B07"
+            }
+        ],
+        "federation:backends": [
+            "eodc"
+        ],
+        "instruments": [
+            "oli"
+        ],
+        "odc:file_format": {
+            "0": "GeoTIFF"
+        },
+        "odc:product_family": {
+            "0": "level2"
+        },
+        "platform": {
+            "0": "landsat-8"
+        }
+    },
+    "item_assets": {
+        "cloud": {
+            "description": "The QAI dataset contains bit-wise stored quality information for each pixel. The cloud state is available in bit 1-2.",
+            "file:values": {
+                "0": {
+                    "summary": "clear"
+                },
+                "1": {
+                    "summary": "less confident cloud (i.e., buffered cloud)",
+                    "values": [
+                        1
+                    ]
+                },
+                "2": {
+                    "summary": "confident, opaque cloud",
+                    "values": [
+                        2
+                    ]
+                },
+                "3": {
+                    "summary": "cirrus",
+                    "values": [
+                        3
+                    ]
+                }
+            },
+            "roles": [
+                "cloud",
+                "metadata"
+            ],
+            "type": "image/tiff; application=geotiff"
+        },
+        "cloud_shadow": {
+            "description": "The QAI dataset contains bit-wise stored quality information for each pixel. The cloud-shadow flag is available in bit 3.",
+            "file:values": {
+                "0": {
+                    "summary": "no - no cloud-shadow on pixel"
+                },
+                "1": {
+                    "summary": "yes - cloud-shadow on pixel",
+                    "values": [
+                        1
+                    ]
+                }
+            },
+            "roles": [
+                "cloud-shadow",
+                "metadata"
+            ],
+            "type": "image/tiff; application=geotiff"
+        },
+        "saturation": {
+            "description": "The QAI dataset contains bit-wise stored quality information for each pixel. The saturation flag is available in bit 9.",
+            "file:values": {
+                "0": {
+                    "summary": "no - pixel is NOT saturated"
+                },
+                "1": {
+                    "summary": "yes - pixel is saturated",
+                    "values": [
+                        1
+                    ]
+                }
+            },
+            "roles": [
+                "saturation",
+                "metadata"
+            ],
+            "type": "image/tiff; application=geotiff"
+        }
+    }
+}

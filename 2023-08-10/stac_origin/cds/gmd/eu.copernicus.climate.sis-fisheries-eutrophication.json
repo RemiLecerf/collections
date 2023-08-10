@@ -1,0 +1,79 @@
+{
+  "type": "Collection",
+  "id": "eu.copernicus.climate.sis-fisheries-eutrophication",
+  "stac_version": "1.0.0",
+  "description": "The dataset includes ocean eutrophication indicators derived from climate projections and ocean colour remote-sensing satellite products. Eutrophication refers to the excessive nutrient input into water bodies that lead to increased primary production, algal blooms, and low-oxygenated waters, consequently causing a reduction to marine life and habitat degradation. These indicators are useful to the long-term planning and monitoring of water quality since coastal areas of Europe are subject to the adverse effects of eutrophication, i.e. the increased occurrence of harmful algal blooms.\nOcean eutrophication may be determined by measuring the concentration of chlorophyll-a, a measure of the amount of primary production in the water column. This may be modelled using biogeochemical models or observed by its green colour in the ocean using satellite remote sensing. In this dataset, the indicators are derived from the Copernicus Marine Environment Monitoring Service (CMEMS) ocean colour satellite product for 2006-2016 and climate projections. To produce the climate projections, two marine hydrodynamic-biogeochemical models forced with climate simulations were used: the NEMO-ERSEM model run on a domain for the Northwest European Shelf, and the POLCOM-ERSEM model run on a domain covering the Northwest European Shelf and Mediterranean Sea.\nThe indicators are based on comparisons between daily chlorophyll-a concentration values and the daily 90th percentile (P90) chlorophyll-a concentration from climatology. The P90 of chlorophyll-a concentration can itself be used to detect abnormal levels of chlorophyll-a concentration in an ecosystem and has been adopted as a measure of eutrophication in coastal waters by the Convention for the Protection of the Marine Environment of the Northeast Atlantic 2008 (OSPAR). It is considered to be a robust ecological indicator of trophic ecological status. This is developed upon in this dataset and the measure of eutrophication used is the proportion of days in each month which have unusually high chlorophyll values (greater than that day’s climatological P90 value). It has dimensionless units and its expected value in the absence of changes in eutrophication state is 0.1. The main eutrophication indicator in this dataset is the difference between this proportion and 0.1 and is referred to as the chlorophyll-a anomaly indicator. Additional derived indicators are also included that further measure changes in eutrophication status over different periods. For instance, we could ask whether a location has become generally more eutrophic up to August 2000, or whether Augusts have become more eutrophic up to 2000. The algorithms and metrics for eutrophication were developed and applied by Plymouth Marine Laboratory (UK).\nIn order to assess the impact of climate change, simulations under two future climate scenarios based on different Representative Concentration Pathways (RCP) for future greenhouse gas concentration are conducted: the intermediate scenario, RCP4.5, in which greenhouse gas concentration peak around 2040 before declining mainly due to successful mitigation measures in place; and the more pessimistic scenario, RCP8.5, where greenhouse gas concentration continue to rise throughout the century. The hydrodynamic-biogeochemical models were driven by one Coupled Model Inter-comparison Project Phase 5 (CMIP5) global climate model (GCM) projection downscaled to a regional climate model (RCM). Note that by using only one of the many possible combinations of GCM-RCM pairs leads to an incomplete estimate of the true uncertainty in the outcome in a changing climate by, most likely, indicating a smaller spread of outcomes than if the estimate were based on a larger ensemble of such GCM-RCM combinations. This does not necessarily mean a reduction in the true uncertainty, but simply an incomplete estimate of it.\nThis dataset was produced on behalf of the Copernicus Climate Change Service.\n\nVariables in the dataset/application are:\nChlorophyll-a anomaly, Chlorophyll-a anomaly P-value, Chlorophyll-a anomaly gradient, Cumulative chlorophyll-a anomaly, Standard error of the cumulative chlorophyll-a anomaly",
+  "links": [
+    {
+      "rel": "hosts",
+      "href": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.dcfb0bf4",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Climate Data Store catalogue"
+    },
+    {
+      "rel": "hosts",
+      "href": "https://confluence.ecmwf.int/x/EKLmE",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Product user guide for the eutrophication dataset"
+    },
+    {
+      "rel": "hosts",
+      "href": "https://confluence.ecmwf.int/x/h6-mE",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "User guide for NEMO-ERSEM and POLCOMS-ERSEM products"
+    },
+    {
+      "rel": "hosts",
+      "href": "https://confluence.ecmwf.int/x/c_-mE",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Technical guide for POLCOMS-ERSEM"
+    },
+    {
+      "rel": "hosts",
+      "href": "https://confluence.ecmwf.int/x/he-mE",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Technical guide for NEMO-ERSEM"
+    }
+  ],
+  "title": "Eutrophication indicators for the Northwest European Shelf and Mediterranean Sea from 2006 up to 2100",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -46.0,
+          11.0,
+          36.0,
+          66.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2006-01-01T00:00:00Z",
+          "2099-12-31T23:59:59Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Oceanographic geographical features",
+    "Sector: Coastal regions",
+    "Product type: Climate projections",
+    "Spatial coverage: Global",
+    "Variable domain: Ocean (biochemestry)",
+    "Temporal coverage: Present",
+    "Temporal coverage: Future"
+  ],
+  "providers": [
+    {
+      "name": "Copernicus Climate Data Store",
+      "description": "Copernicus Climate Data Store - European Centre for Medium-Range Weather Forecasts (ECMWF)",
+      "roles": [
+        "host"
+      ],
+      "url": "https://cds.climate.copernicus.eu/"
+    }
+  ]
+}

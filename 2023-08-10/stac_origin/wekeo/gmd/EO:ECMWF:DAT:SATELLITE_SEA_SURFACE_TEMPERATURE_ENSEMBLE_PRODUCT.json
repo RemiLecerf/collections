@@ -1,0 +1,65 @@
+{
+  "type": "Collection",
+  "id": "EO:ECMWF:DAT:SATELLITE_SEA_SURFACE_TEMPERATURE_ENSEMBLE_PRODUCT",
+  "stac_version": "1.0.0",
+  "description": "This dataset provides global daily sea surface temperature (SST) data from the Group for High Resolution Sea Surface Temperature (GHRSST) multi-product ensemble (GMPE) produced by the European Space Agency SST Climate Change Initiative (ESA SST CCI). The GMPE system was designed to allow users to compare the outputs from different SST analysis systems and understand their similarities and differences. Although originally intended for comparison of near real time data, it has also been used to compare long historical datasets. Note that the dataset provided here is the climate version of the GMPE dataset. An operational version, with different input products and time coverage, also exists but is not distributed by the CDS.\nThe SST analyses ingested into the GMPE system come from the following seven SST products and providers:\n\nESA SST CCI Analysis version 2.0\nESA SST CCI Analysis version 1.1\nCopernicus Marine Environment Monitoring Service (CMEMS) Operational Sea Surface Temperature and Sea Ice Analysis (OSTIA) Reprocessing\nNational Centers for Environmental Information (NCEI) Advanced Very High Resolution Radiometer (AVHRR) Optimal Interpolation (OI) Global Blended SST Analysis\nCanada Meteorological Center (CMC) 0.2-degree Global Foundation SST Analysis\nHadley Centre Sea Ice and Sea Surface Temperature (HadISST) Analysis version 2.2.0.0\nJapan Meteorological Agency (JMA) Merged satellite and in-situ Data Global Daily SST (MGDSST) Analysis\n\nThese products are all spatially complete (through use of infilling or reconstruction techniques) but were originally produced for different purposes and with different user requirements in mind. Therefore, each producer has made different choices on aspects of data production such as which input observations to use and what type of SST to represent. For example, the CMEMS OSTIA, CMC, and MGDSST analyses attempt to represent the foundation SST (water temperature free of diurnal temperature variability) while the ESA SST CCI and HadISST analyses estimate the SST at a standard depth of 20 cm. The AVHRR OI product, on the other hand, is bias-corrected to in situ observations and hence will be representative of their depths.\nThe GMPE dataset provides the median and standard deviation of the input SST products, the differences between each input product and the median, and the horizontal gradients in each of the input SST products as well as the final ensemble product. The HadISST product consists of 10 different realisations, therefore the median and standard deviation are calculated for an ensemble of 16 input fields. All fields are provided on a common 0.25 degree regular latitude-longitude grid and extend from 1 September 1981 to 31 December 2016, although some of the individual input products cover shorter periods. The dataset will not be extended beyond 2016.\n\nVariables in the dataset/application are:\nAnalysed SST, Gradient fields, SST anomaly, SST standard deviation",
+  "links": [
+    {
+      "rel": "hosts",
+      "href": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.ab205634",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Climate Data Store catalogue"
+    },
+    {
+      "rel": "hosts",
+      "href": "https://datastore.copernicus-climate.eu/documents/satellite-sea-surface-temperature/C3S_D312a_Lot3.2.2.9_201906_ATBD_SST_GMPE_v1.1.pdf",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Algorithm theoretical basis document (PDF)"
+    },
+    {
+      "rel": "hosts",
+      "href": "https://datastore.copernicus-climate.eu/documents/satellite-sea-surface-temperature/C3S_D312a_Lot3.3.2.23_201906_PUGS_SST_GMPE_v1.1.pdf",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Product user guide and specification document (PDF)"
+    }
+  ],
+  "title": "Sea surface temperature daily gridded data from 1981 to 2016 derived from a multi-product satellite-based ensemble",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -89.0,
+          180.0,
+          89.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2018-10-18T00:00:00Z",
+          "2000-10-12T23:59:59Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Atmospheric conditions",
+    "Product type: Satellite observations",
+    "Spatial coverage: Global",
+    "Variable domain: Ocean (physics)",
+    "Temporal coverage: Past"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

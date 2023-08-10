@@ -1,0 +1,68 @@
+{
+  "type": "Collection",
+  "id": "EO:ECMWF:DAT:SIS_AGROCLIMATIC_INDICATORS",
+  "stac_version": "1.0.0",
+  "description": "This dataset provides agroclimatic indicators used to characterise plant-climate interactions for global agriculture. Agroclimatic indicators are useful in conveying climate variability and change in the terms that are meaningful to the agricultural sector. The objective of this dataset is to provide these indicators at a global scale in an easily accessible and usable format for further downstream analysis and the forcing of agricultural impact models.\nERA-interim reanalysis and bias-corrected climate datasets have been used to generate the agroclimatic indicators for historical and future time periods. The input data was provided through the Inter-Sectoral Impact Model Intercomparison Project (ISIMIP), of which the ISIMIP Fast Track product was used. This product contains daily, biased-corrected, climate data from 5 CMIP5 General Circulation Models covering the period 1951-2099 (historical run up to 2005). The agroclimatic indicators were also generated using the WFDEI (Watch Forcing Data methodology applied to ERA-Interim) for the 1981-2010 climatological period. A total of 26 indicators are provided in this dataset at a spatial resolution of 0.5°x0.5° on a lat-lon grid. The temporal resolution of the variables differs depending on the indicator - they are available at 10 consecutive days (10-day), seasonal or annual resolution.\nAgroclimatic indicators are often used in species distribution modelling to study phenological developments of plants under varying climate conditions. For many users in the agricultural community, assessments of crop development for the current or future cropping seasons are particularly important. This is especially true for the agro-policy and the agro-business communities, as early indications of production anomalies are of paramount importance for tax/subsidies and price volatility. The provision of pre-computed agroclimatic indicators make them readily available to the user and will facilitate the use of climate data by the agricultural community.\nThe data was produced on behalf of the Copernicus Climate Change Service.\n\nVariables in the dataset/application are:\nBiologically effective degree days, Cold spell duration index, Frost days, Growing season length, Heavy precipitation days, Ice days, Maximum number of consecutive dry days, Maximum number of consecutive frost days, Maximum number of consecutive summer days, Maximum number of consecutive wet days, Maximum of daily maximum temperature, Maximum of daily minimum temperature, Mean of daily maximum temperature, Mean of daily mean temperature, Mean of daily minimum temperature, Mean of diurnal temperature range, Minimum of daily maximum temperature, Minimum of daily minimum temperature, Precipitation sum, Simple daily intensity index, Summer days, Tropical nights, Very heavy precipitation days, Warm and wet days, Warm spell duration index, Wet days",
+  "links": [
+    {
+      "rel": "hosts",
+      "href": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.dad6e055",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Climate Data Store catalogue"
+    },
+    {
+      "rel": "hosts",
+      "href": "https://confluence.ecmwf.int/x/vFmaE",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Product user guide"
+    },
+    {
+      "rel": "hosts",
+      "href": "https://confluence.ecmwf.int/x/v1maE",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Algorithm theoretical basis documentation (ATBD)"
+    }
+  ],
+  "title": "Agroclimatic indicators from 1951 to 2099 derived from climate projections",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1951-01-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Land cover",
+    "Sector: Agriculture",
+    "Product type: Climate projections",
+    "Spatial coverage: Global",
+    "Variable domain: Land (biosphere)",
+    "Temporal coverage: Past",
+    "Temporal coverage: Present",
+    "Temporal coverage: Future"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

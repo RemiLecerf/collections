@@ -1,0 +1,66 @@
+{
+  "type": "Collection",
+  "id": "eu.copernicus.climate.sis-water-quality-swicca",
+  "stac_version": "1.0.0",
+  "description": "This dataset contains  modelled data for phosphorous and nitrogen concentrations and loads. \nThe data comes from the Swedish Meteorological and Hydrological Institute E-HYPE model at catchment level for Europe.\nThese water quality indicators were computed as a part of a proof of concept contract designed to speed up the workflow in impact assessments and to simplify climate change adaptation of water management practices across Europe.\nThese indicators are provided as averages over 30 year periods, either for each calendar month or for the whole period.\nFor the reference period (1971-2000) the absolute values are given, whereas for the future periods the relative changes are provided.\nIn addition to total amounts, organic and inorganic parts are provided for nitrogen. \nFor phosphorous, in addition to the total amount, particulate and soluble parts are provided.\nValues of the temperature of the water is provided for the same periods. \n\nVariables in the dataset/application are:\nNitrogen concentrations, Nitrogen loads, Phosphorous concentrations, Phosphorous loads, Water temperature",
+  "links": [
+    {
+      "rel": "hosts",
+      "href": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/eu.copernicus.climate.sis-water-quality-swicca",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Climate Data Store catalogue"
+    },
+    {
+      "rel": "hosts",
+      "href": "https://datastore.copernicus-climate.eu/documents/sis-swicca/definition-new-climate-indicators-for-water-management.pdf",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Definition of new climate impact indicators for water management (PDF)"
+    },
+    {
+      "rel": "hosts",
+      "href": "https://datastore.copernicus-climate.eu/documents/sis-swicca/sis-water-swicca-metadata.zip",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Full metadata for water quality indicators (.zip)"
+    }
+  ],
+  "title": "Water quality indicators for European rivers",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -15.0,
+          30.0,
+          30.0,
+          72.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1971-01-01T00:00:00Z",
+          "2100-12-31T23:59:59Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Hydrography",
+    "Sector: Water management",
+    "Spatial coverage: Europe",
+    "Variable domain: Land (hydrology)",
+    "Product type: Climate indices",
+    "Temporal coverage: Future"
+  ],
+  "providers": [
+    {
+      "name": "Copernicus Climate Data Store",
+      "description": "Copernicus Climate Data Store - European Centre for Medium-Range Weather Forecasts (ECMWF)",
+      "roles": [
+        "host"
+      ],
+      "url": "https://cds.climate.copernicus.eu/"
+    }
+  ]
+}

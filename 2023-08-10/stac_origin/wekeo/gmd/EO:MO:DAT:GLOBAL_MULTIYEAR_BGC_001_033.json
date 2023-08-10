@@ -1,0 +1,72 @@
+{
+  "type": "Collection",
+  "id": "EO:MO:DAT:GLOBAL_MULTIYEAR_BGC_001_033",
+  "stac_version": "1.0.0",
+  "description": "'''Short description:'''\nThe Low and Mid-Trophic Levels (LMTL) reanalysis for global ocean is produced at [https://www.cls.fr CLS] on behalf of Global Ocean Marine Forecasting Center. It provides 2D fields of biomass content of zooplankton and six functional groups of micronekton. It uses the LMTL component of SEAPODYM dynamical population model (http://www.seapodym.eu). No data assimilation has been done. This product also contains forcing data: net primary production, euphotic depth, depth of each pelagic layers zooplankton and micronekton inhabit, average temperature and currents over pelagic layers.\n\n'''Forcings sources:'''\n* Ocean currents and temperature (CMEMS multiyear product)\n* Net Primary Production computed from chlorophyll a, Sea Surface Temperature and Photosynthetically Active Radiation observations (chlorophyll from CMEMS multiyear product, SST from NOAA NCEI AVHRR-only Reynolds, PAR from INTERIM) and relaxed by model outputs at high latitudes (CMEMS biogeochemistry multiyear product)\n\n'''Vertical coverage:'''\n* Epipelagic layer \n* Upper mesopelagic layer\n* Lower mesopelagic layer (max. 1000m)\n\n'''DOI (product) :'''   \nhttps://doi.org/10.48670/moi-00020",
+  "links": [],
+  "title": "Global ocean low and mid trophic levels biomass content hindcast",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1998-01-01T00:00:00Z",
+          "2020-12-31T23:59:59Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Oceanographic geographical features",
+    "numerical-model",
+    "euphotic_zone_depth",
+    "mass_content_of_zooplankton_expressed_as_carbon_in_sea_water",
+    "mass_content_of_epipelagic_micronekton_expressed_as_wet_weight_in_sea_water",
+    "mass_content_of_upper_mesopelagic_micronekton_expressed_as_wet_weight_in_sea_water",
+    "mass_content_of_migrant_upper_mesopelagic_micronekton_expressed_as_wet_weight_in_sea_water",
+    "mass_content_of_lower_mesopelagic_micronekton_expressed_as_wet_weight_in_sea_water",
+    "mass_content_of_migrant_lower_mesopelagic_micronekton_expressed_as_wet_weight_in_sea_water",
+    "mass_content_of_highly_migrant_lower_mesopelagic_micronekton_expressed_as_wet_weight_in_sea_water",
+    "net_primary_productivity_of_biomass_expressed_as_carbon_in_sea_water",
+    "sea_water_pelagic_layer_bottom_depth",
+    "eastward_sea_water_velocity_vertical_mean_over_pelagic_layer",
+    "northward_sea_water_velocity_vertical_mean_over_pelagic_layer",
+    "sea_water_potential_temperature_vertical_mean_over_pelagic_layer",
+    "multi-year",
+    "invariant",
+    "marine-resources",
+    "coastal-marine-environment",
+    "weather-climate-and-seasonal-forecasting",
+    "marine-safety",
+    "global-ocean",
+    "Level 4",
+    "Not Applicable",
+    "Data",
+    "/Biological oceanography/Zooplankton",
+    "/Biological oceanography/Phytoplankton and microphytobenthos",
+    "North Mid-Atlantic Ridge",
+    "Atlantic Ocean",
+    "Modelling data",
+    "WP3 Pelagic Mapping"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

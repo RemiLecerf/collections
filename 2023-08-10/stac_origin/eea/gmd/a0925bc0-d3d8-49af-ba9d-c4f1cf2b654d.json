@@ -1,0 +1,67 @@
+{
+  "type": "Collection",
+  "id": "a0925bc0-d3d8-49af-ba9d-c4f1cf2b654d",
+  "stac_version": "1.0.0",
+  "description": "The High Resolution Layer (HRL) Grassland Change 2015-2018 raster product at 20m resolution provides information on changes in grassland vegetation cover between the reference years 2015 and 2018. The thematic classes indicate all non-grassland areas, grassland gain and grassland loss, unchanged grassland in both years and unverified grassland gain and loss areas for the pan-European area of EEA38 and the United Kingdom. The production of the High Resolution grassland layers was coordinated by the European Environment Agency (EEA) in the frame of the EU Copernicus programme.\nThis dataset is provided as 20 meter rasters in 100 x 100 km tiles grouped according to the EEA38 countries and the United Kingdom (fully conformant with the EEA reference grid).\nThe HRL Grassland layer is the main High Resolution grassland product. This grassy and non-woody vegetation baseline product includes all kinds of grasslands: managed grassland, semi-natural grassland and natural grassy vegetation. It is a binary status layer for the 2015 reference year mapping grassland and all non-grassland areas in 20m and (aggregated) 100m pixel size and, for the 2018 reference year, in 10m and (aggregated) 100m pixel size.",
+  "links": [
+    {
+      "rel": "hosts",
+      "href": "https://land.copernicus.eu/pan-european/high-resolution-layers/grassland/change-maps/grassland-change-2015-2018?tab=download",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Download (requires authentication)"
+    },
+    {
+      "rel": "hosts",
+      "href": "https://image.discomap.eea.europa.eu/arcgis/rest/services/GioLandPublic/HRL_GrasslandChange_15_18/ImageServer",
+      "type": "ESRI:REST"
+    },
+    {
+      "rel": "hosts",
+      "href": "https://image.discomap.eea.europa.eu/arcgis/services/GioLandPublic/HRL_GrasslandChange_15_18/ImageServer/WMSServer?request=GetCapabilities&service=WMS",
+      "type": "OGC:WMS"
+    }
+  ],
+  "title": "High Resolution Layer: Grassland Change 2015-2018 (raster 20m), Oct. 2020",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -56.506,
+          24.284,
+          72.907,
+          72.665
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2010-01-01T00:00:00Z",
+          "2018-10-31T23:59:59Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Land cover",
+    "EEA38 (from 2020)",
+    "United Kingdom",
+    "land cover",
+    "forest management",
+    "land use",
+    "landscape alteration",
+    "European",
+    "Land use"
+  ],
+  "providers": [
+    {
+      "name": "European Environment Agency",
+      "description": "SDI - EEA geospatial data catalogue",
+      "roles": [
+        "host"
+      ],
+      "url": "https://sdi.eea.europa.eu/"
+    }
+  ]
+}

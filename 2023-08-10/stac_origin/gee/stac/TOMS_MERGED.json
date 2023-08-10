@@ -1,0 +1,169 @@
+{
+    "type": "Collection",
+    "stac_version": "1.0.0",
+    "stac_extensions": [
+        "collection-assets"
+    ],
+    "id": "TOMS/MERGED",
+    "title": "TOMS and OMI Merged Ozone Data",
+    "description": "The Total Ozone Mapping Spectrometer (TOMS) data represent the primary\nlong-term, continuous record of satellite-based observations available for\nuse in monitoring global and regional trends in total ozone over the past\n25 years. The data are produced by the Laboratory for Atmospheres at NASA's\nGoddard Space Flight Center. Version 8 TOMS data products include level 3\ngridded data (1.0 x 1.25 deg). The Ozone Monitoring Instrument (OMI), aboard\nthe Aura satellite (July 2004 - current), has a higher resolution\n(1.0 x 1.0 deg).\n\nThese data represent a merged ozone product from TOMS/EarthProbe,\nTOMS/Nimbus-7, TOMS/Meteor-3, OMI/Aura and USGS-interpolated data for dates\nwith no data.\n\n[Additional TOMS and OMI information](https://ozoneaq.gsfc.nasa.gov/missions/)\n",
+    "keywords": [
+        "atmosphere",
+        "aura",
+        "climate",
+        "geophysical",
+        "ges_disc",
+        "goddard",
+        "nasa",
+        "omi",
+        "ozone",
+        "toms"
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1978-11-01T00:00:00Z",
+                    "2023-05-29T00:00:00"
+                ]
+            ]
+        }
+    },
+    "providers": [
+        {
+            "name": "NASA / GES DISC",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://disc.gsfc.nasa.gov/information?page=1&keywords=acdisc"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/TOMS_MERGED"
+        }
+    ],
+    "license": "proprietary",
+    "links": [
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections/TOMS/MERGED",
+            "rel": "self",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections",
+            "rel": "parent",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/",
+            "rel": "root",
+            "type": "application/json"
+        },
+        {
+            "code": "JavaScript",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/TOMS/TOMS_MERGED",
+            "rel": "related",
+            "title": "Run the example for TOMS/MERGED in the Earth Engine Code Editor",
+            "type": "text/html"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/images/TOMS/TOMS_MERGED_sample.png",
+            "rel": "preview",
+            "type": "image/png"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/TOMS_MERGED#terms-of-use",
+            "rel": "license",
+            "type": "text/html"
+        }
+    ],
+    "cube:dimensions": {
+        "x": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                -180,
+                180
+            ]
+        },
+        "y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                -90,
+                90
+            ]
+        },
+        "t": {
+            "type": "temporal",
+            "extent": [
+                "1978-11-01T00:00:00Z",
+                "2023-05-29T00:00:00"
+            ]
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "ozone"
+            ]
+        }
+    },
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Total column ozone",
+                "gee:units": "Dobson",
+                "name": "ozone"
+            }
+        ],
+        "gsd": [
+            111000
+        ],
+        "instruments": [
+            "OMI",
+            "TOMS"
+        ],
+        "ozone": {
+            "gee:estimated_range": true,
+            "maximum": 983,
+            "minimum": 73
+        },
+        "platform": [
+            "Aura",
+            "EarthProbe",
+            "Meteor-3",
+            "Nimbus-7"
+        ]
+    },
+    "assets": {
+        "preview_4": {
+            "href": "https://developers.google.com/earth-engine/datasets/images/TOMS/TOMS_MERGED_sample.png",
+            "type": "image/png",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    },
+    "sci:citation": "The data set source should be properly cited when the data are used.\nA formal reference of the form: \\\\<authors\\\\>, 2012, last updated 2013:\n\\\\<dataset name\\\\>. NASA/GSFC, Greenbelt, MD, USA, NASA Goddard Earth Sciences\nData and Information Services Center (GES DISC). Accessed\n\\\\<enter user data access date\\\\> at \\\\<DOI\\\\> is suggested following\nParsons et al. (2010),\n[doi:10.1029/2010EO340001](https://doi.org/10.1029/2010EO340001)\n",
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "day"
+    },
+    "gee:terms_of_use": "Distribution of data from the Goddard Earth Sciences Data and\nInformation Services Center (GES DISC) is funded by NASA's Science Mission\nDirectorate (SMD). Consistent with NASA\n[Earth Science Data and Information Policy](https://science.nasa.gov/earth-science/earth-science-data/data-information-policy/),\ndata from the GES DISC archive are available free to the user community.\nFor more information visit the GES DISC\n[Data Policy](https://disc.sci.gsfc.nasa.gov/citing) page.\n",
+    "gee:type": "image_collection"
+}

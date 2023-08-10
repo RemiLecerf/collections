@@ -1,0 +1,96 @@
+{
+    "type": "Collection",
+    "version": "v1",
+    "stac_version": "0.9.0",
+    "stac_extensions": [
+        "datacube"
+    ],
+    "id": "ST_MONTHLY_GRIDDED_CLIMATOLOGIES_PRECIPITATION",
+    "title": "ST_MONTHLY_GRIDDED_CLIMATOLOGIES_PRECIPITATION",
+    "description": "The product contains the gridded climatologies of monthly total precipitation for Trentino \u2013 South Tyrol for the period 1981\u20132010. The dataset was obtained by interpolating on a 250-m resolution grid the observed monthly climatologies of more than 200 station sites of the regional meteorological network and some extra-regional sites close to the borders. All observation data used for deriving the gridded fields were prior checked for quality and homogeneity and they are stored in the Climate Database: https://edp-portal.eurac.edu/cdb_doc/. The climatologies refer to the averages over a reference 30-year period. Further details can be found in the published paper (Crespi et al., 2021; https://doi.org/10.5194/essd-13-2801-2021). The dataset is also available in PANGAEA repository (Crespi et al., 2020; https://doi.org/10.1594/PANGAEA.924502).",
+    "keywords": [
+        "Precipitation",
+        "Climatologies",
+        "High-resolution"
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    10.341342179522309,
+                    45.652588645280176,
+                    12.520154533789643,
+                    47.109837663480135
+                ]
+            ]
+        }
+    },
+    "providers": [
+        {
+            "name": "Eurac EO WCS",
+            "url": "http://www.eurac.edu",
+            "roles": [
+                "Host"
+            ]
+        },
+        {
+            "name": "Michael Matiu",
+            "url": "https://www.eurac.edu/it/people/michael-matiu",
+            "roles": [
+                "Processor"
+            ]
+        },
+        {
+            "name": "Alice Crespi",
+            "url": "https://www.eurac.edu/it/people/alice-crespi",
+            "roles": [
+                "Processor"
+            ]
+        }
+    ],
+    "license": "CC-BY-4.0",
+    "links": [
+        {
+            "rel": "licence",
+            "href": "https://creativecommons.org/licenses/by/4.0/",
+            "title": "License Link"
+        }
+    ],
+    "cube:dimensions": {
+        "X": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                10.341342179522309,
+                12.520154533789643
+            ],
+            "reference_system": 3035
+        },
+        "Y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                45.652588645280176,
+                47.109837663480135
+            ],
+            "reference_system": 3035
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "Precipitation"
+            ]
+        }
+    },
+    "summaries": {
+        "rows": 660,
+        "columns": 659,
+        "eo:bands": [
+            {
+                "name": "Precipitation"
+            }
+        ]
+    },
+    "sci:citation": "Crespi, Alice; Matiu, Michael; Bertoldi, Giacomo; Petitta, Marcello; Zebisch, Marc (2020): High-resolution daily series (1980 - 2018) and monthly climatologies (1981 - 2010) of mean temperature and precipitation for Trentino - South Tyrol (north-eastern Italian Alps). PANGAEA",
+    "engine": "WCPS"
+}

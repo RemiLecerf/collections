@@ -1,0 +1,50 @@
+{
+  "type": "Collection",
+  "id": "EO:ECMWF:DAT:SATELLITE_CLOUD_PROPERTIES",
+  "stac_version": "1.0.0",
+  "description": "This dataset provides the Essential Climate Variable (ECV) Cloud Properties. Cloud properties describe the state of the Earth´s upper-air atmosphere. Clouds have an effect on weather and climate through their contribution to the Earth’s water cycle and impact on the Earth’s energy budget. They influence the motion of the atmosphere on many scales and modify the atmospheric composition. By accumulating and carrying the evaporated and transpired water in the atmosphere, clouds redistribute water over the globe, which often involves precipitation. Further, the variable cloud properties determines the feedback mechanism that clouds have on the hydrological cycle, directly in terms of precipitation, but also indirectly on the Earth´s energy budget by interacting with radiation fluxes. Usually, clouds reflect more solar radiation back to space than the underlying surface and absorb and re-emit infrared (IR) radiation, leading to less IR radiation leaving the system than without clouds. According to the 5th Intergovernmental Panel on Climate Change (IPCC) assessment report, clouds (together with aerosols) contribute the largest uncertainty to the estimates of the Earth´s energy budget, as well as to the potential feedback mechanisms and responses to climate change.\nThe ECV Cloud Properties contains four main variables, which can be separated into averaged cloudiness, cloud height products and cloud physical properties for ice and liquid water phase. These variables were produced by two “product families”, based on the data from different sensors and algorithms that cover the same four variables. The \"CCI product family\" was originated by different projects within different organisations at different times. The third organisation, alongside CM SAF and CCI, the Copernicus Climate Change Service (C3S) is only associated with the CCI product family in this dataset to which it provides a continuation of their production chain. This means that the datasets contains three organisation but just two product families.\nThe “CLARA (CM SAF cLoud, Albedo and surface Radiation) product family” and “CCI (Climate Change Initiative) product family” provide two complementary Thematic Climate Data Records (TCDRs), differing in temporal and horizontal resolution. These TCDR timeseries are intended to have sufficient length, consistency, and continuity to detect climate variability and change. They are frequently updated with Interim Climate Data Records (ICDRs) or simply extensions, generated using the same software and algorithms to cover more recent periods. Further details on algorithms, data description, and extensive validation results are given in the Documentation section.",
+  "links": [],
+  "title": "Cloud properties global gridded monthly and daily data from 1982 to present derived from satellite observations",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -89.0,
+          180.0,
+          89.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1982-01-01T00:00:00Z",
+          "2021-12-31T23:59:59Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Atmospheric conditions",
+    "Product type: Satellite observations",
+    "Temporal coverage: Past",
+    "Temporal coverage: Present",
+    "Variable domain: Atmosphere (upper air)",
+    "Spatial coverage: Global",
+    "Provider: EUMETSAT SAF",
+    "Provider: Copernicus C3S",
+    "Provider: ESA CCI"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

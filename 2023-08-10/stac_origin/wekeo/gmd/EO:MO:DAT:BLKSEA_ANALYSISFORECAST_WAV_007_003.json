@@ -1,0 +1,74 @@
+{
+  "type": "Collection",
+  "id": "EO:MO:DAT:BLKSEA_ANALYSISFORECAST_WAV_007_003",
+  "stac_version": "1.0.0",
+  "description": "'''Short description''': \nThe wave analysis and forecasts for the Black Sea are produced with the third generation spectral wave model WAM Cycle 6. The hindcast and ten days forecast are produced every day on the HPC at Helmholtz-Zentrum Hereon. The shallow water Black Sea version is implemented on a spherical grid with a spatial resolution of about 2.5 km (1/40° x 1/40°) with 24 directional and 30 frequency bins. The number of active wave model grid points is 74518. The model takes into account depth refraction, wave breaking, and assimilation of satellite wave and wind data. The system provides a hindcast and ten days forecast with one-hourly output once a day. The atmospheric forcing is taken from ECMWF analyses and forecast data. Additionally, WAM is forced by surface currents and sea surface height from BLKSEA_ANALYSISFORECAST_PHY_007_001. Monthly statistics are provided operationally following the CMEMS metrics definitions.\n\n'''Product Citation''': \nPlease refer to our Technical FAQ for citing products. http://marine.copernicus.eu/faq/cite-cmems-products-cmems-credit/?idpage=169\n\n'''DOI (Product)''': \nhttps://doi.org/10.25423/cmcc/blksea_analysisforecast_wav_007_003_eas5",
+  "links": [],
+  "title": "Black Sea Waves Analysis and Forecast",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2019-12-31T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Oceanographic geographical features",
+    "numerical-model",
+    "sea_surface_wave_significant_height",
+    "sea_surface_wave_period_at_variance_spectral_density_maximum",
+    "sea_surface_wave_mean_period_from_variance_spectral_density_inverse_frequency_moment",
+    "sea_surface_wave_mean_period_from_variance_spectral_density_second_frequency_moment",
+    "sea_surface_wave_from_direction",
+    "sea_surface_wind_wave_mean_period",
+    "sea_surface_wind_wave_significant_height",
+    "sea_surface_wind_wave_from_direction",
+    "sea_surface_primary_swell_wave_significant_height",
+    "sea_surface_primary_swell_wave_mean_period",
+    "sea_surface_primary_swell_wave_from_direction",
+    "sea_surface_wave_stokes_drift_x_velocity",
+    "sea_surface_wave_stokes_drift_y_velocity",
+    "sea_surface_secondary_swell_wave_significant_height",
+    "sea_surface_secondary_swell_wave_mean_period",
+    "sea_surface_secondary_swell_wave_from_direction",
+    "sea_surface_wave_maximum_height",
+    "sea_surface_wave_maximum_period",
+    "sea_floor_depth_below_geoid",
+    "sea_surface_wave_from_direction_at_spectral_peak",
+    "sea_binary_mask",
+    "near-real-time",
+    "forecast",
+    "marine-resources",
+    "weather-climate-and-seasonal-forecasting",
+    "coastal-marine-environment",
+    "marine-safety",
+    "black-sea",
+    "Level 4",
+    "Significant Wave Height (SWH)",
+    "Wind Speed"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

@@ -1,0 +1,151 @@
+{
+    "deprecated": true,
+    "description": "The Burn Area Index (BAI) is generated from the Red and\nNear-IR bands, and measures the spectral distance of each pixel from a\nreference spectral point (the measured reflectance of charcoal).  This\nindex is intended to emphasize the charcoal signal in post-fire\nimages. See\n[Chuvieco et al. (2002)](https://www.tandfonline.com/doi/abs/10.1080/01431160210153129)\nfor details. This product is generated from the MODIS/MYD09GA surface reflectance composites.\n",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2002-07-04T00:00:00Z",
+                    "2017-03-30T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "day"
+    },
+    "gee:is_derived": true,
+    "gee:terms_of_use": "MODIS data and products acquired through the LP DAAC have no restrictions on subsequent use, sale, or redistribution.\n",
+    "gee:type": "image_collection",
+    "id": "MODIS/MYD09GA_BAI",
+    "keywords": [
+        "bai",
+        "modis",
+        "usgs"
+    ],
+    "license": "proprietary",
+    "links": [
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections/MODIS/MYD09GA_BAI",
+            "rel": "self",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections",
+            "rel": "parent",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/",
+            "rel": "root",
+            "type": "application/json"
+        },
+        {
+            "code": "JavaScript",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/MODIS/MODIS_MYD09GA_BAI",
+            "rel": "related",
+            "title": "Run the example for MODIS/MYD09GA_BAI in the Earth Engine Code Editor",
+            "type": "text/html"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/images/MODIS/MODIS_MYD09GA_BAI_sample.png",
+            "rel": "preview",
+            "type": "image/png"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_MYD09GA_BAI#terms-of-use",
+            "rel": "license",
+            "type": "text/html"
+        },
+        {
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_MYD09GA_006_BAI.json",
+            "rel": "successor-version",
+            "title": "MODIS/MYD09GA_006_BAI",
+            "type": "application/json"
+        }
+    ],
+    "providers": [
+        {
+            "name": "Google",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://earthengine.google.com/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_MYD09GA_BAI"
+        }
+    ],
+    "stac_extensions": [
+        "collection-assets"
+    ],
+    "stac_version": "1.0.0",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Burn Area Index",
+                "gsd": 463.312716528,
+                "name": "BAI"
+            }
+        ]
+    },
+    "title": "MODIS Aqua Daily BAI [deprecated]",
+    "type": "Collection",
+    "cube:dimensions": {
+        "x": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                -180,
+                180
+            ]
+        },
+        "y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                -90,
+                90
+            ]
+        },
+        "t": {
+            "type": "temporal",
+            "extent": [
+                "2002-07-04T00:00:00Z",
+                "2017-03-30T00:00:00Z"
+            ]
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "BAI"
+            ]
+        }
+    },
+    "assets": {
+        "preview_4": {
+            "href": "https://developers.google.com/earth-engine/datasets/images/MODIS/MODIS_MYD09GA_BAI_sample.png",
+            "type": "image/png",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    }
+}

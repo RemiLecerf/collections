@@ -1,0 +1,83 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:dct="http://purl.org/dc/terms/" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/7b5af282-d6cb-4f53-80bc-e7f3bdef44dd">
+        <foaf:primaryTopic rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/resource/a78600a4-a280-47b5-8ddd-0dc8b5e9c9d9"/>
+        <dct:issued>2023-03-29</dct:issued>
+        <dct:modified>2023-03-29</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/srv/eng/xml.metadata.get?uuid=7b5af282-d6cb-4f53-80bc-e7f3bdef44dd">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork?uuid=7b5af282-d6cb-4f53-80bc-e7f3bdef44dd">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/resource/a78600a4-a280-47b5-8ddd-0dc8b5e9c9d9">
+        <dct:identifier>a78600a4-a280-47b5-8ddd-0dc8b5e9c9d9</dct:identifier>
+        <dct:title>Black Sea Oxygen Trend from Observations Reprocessing</dct:title>
+        <dct:abstract>'''DEFINITION'''
+
+The oxygenation status of the Black Sea open basin is described by three complementary indicators, derived from vertical profiles and spatially averaged over the Black Sea open basin (depth &gt; 50m). (1) The oxygen penetration depth is the depth at which  [O2] &lt; 20µM, expressed in [m]. (2) The oxygen penetration density is the potential density anomaly at the oxygen penetration depth [kg/m³]. (3) The oxygen inventory is the vertically integrated oxygen content [mol O2/m²]. The 20µM threshold was chosen to minimize the indicator sensitivity to sensor’s precision. Those three metrics are complementary: Oxygen penetration depth is more easily understood, but present more spatial variability. Oxygen penetration density helps in dissociating biogeochemical processes from shifts in the physical structure. Although less intuitive, the oxygen inventory is a more integrative diagnostic and its definition is more easily transposed to other areas.
+
+'''CONTEXT'''
+
+The Black Sea is permanently stratified, due to the contrast in density between large riverine and Mediterranean inflows. This stratification restrains the ventilation of intermediate and deep waters and confines, within a restricted surface layer, the waters that are oxygenated by photosynthesis and exchanges with the atmosphere. The vertical extent of the oxic layer determines the volume of habitat available for pelagic populations (Ostrovskii and Zatsepin 2011, Sakınan and Gücü 2017) and present spatial and temporal variations (Murray et al. 1989; Tugrul et al. 1992; Konovalov and Murray 2001). At long and mid-term, these variations can be monitored with three metrics (Capet et al. 2016), derived from the vertical profiles that can obtained from traditional ship casts or autonomous Argo profilers (Stanev et al., 2013). A large source of uncertainty associated with the spatial and temporal average of those metrics stems from the small number of Argo floats, scarcely adequate to sample the known spatial variability of those metrics.
+
+'''CMEMS KEY FINDINGS'''
+
+During the past 60 years, the vertical extent of the Black Sea oxygenated layer has narrowed from 140m to 90m (Capet et al. 2016). The Argo profilers active for 2016 suggested an ongoing deoxygenation trend and indicated an average oxygen penetration depth of 72m at the end of 2016, the lowest value recorded during the past 60 years. The oxygenation of subsurface water is closely related to the intensity of cold water formation, an annual ventilation processes which has been recently limited by warmer-than-usual winter air temperature (Capet et al. 2020). In 2017, 2018 and 2020, cold waters formation resulted in a partial reoxygenation of the intermediate layer. Yet, such ventilation has been lacking in winter 2020-2021, and the updated 2021 indicators reveals the lowest oxygen inventory ever reported in this OMI time series. This results in significant detrimental trends now depicted also over the Argo period (2012-2021).
+
+'''DOI (product):''' 
+https://doi.org/10.48670/moi-00213</dct:abstract>
+        <dcat:theme rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/thesaurus/iso/topicCategory/oceans"/>
+        <foaf:thumbnail rdf:resource="https://catalogue.marine.copernicus.eu/documents/IMG/BLKSEA_OMI_HEALTH_oxygen_trend.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((0.00 0.00, 0.00 0.00, 0.00 0.00, 0.00 0.00, 0.00 0.00))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:issued>2018-02-12</dct:issued>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/BS-IOBAS-VARNA-BG"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/BS-ULG-LIEGE-BE"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/BS-IOBAS-VARNA-BG"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/BS-ULG-LIEGE-BE"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/MOI-OMI-SERVICE"/>
+        <dct:accrualPeriodicity>annually</dct:accrualPeriodicity>
+        <dct:license>otherRestrictions</dct:license>
+        <dct:license>license</dct:license>
+        <dct:license>No limitations on public access</dct:license>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/BLKSEA_OMI_HEALTH_oxygen_trend/blksea_omi_health_oxygen_trend_annual"/>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/BLKSEA_OMI_HEALTH_oxygen_trend/blksea_omi_health_oxygen_trend_monthly"/>
+        <dcat:distribution rdf:resource="https://mdl1.marine.copernicus.eu/derived/BLKSEA_OMI_HEALTH_oxygen_trend/blksea_omi_health_oxygen_trend_annual_202211/blksea_omi_health_oxygen_trend_annual_P20220610.nc"/>
+        <dcat:distribution rdf:resource="https://mdl1.marine.copernicus.eu/derived/BLKSEA_OMI_HEALTH_oxygen_trend/blksea_omi_health_oxygen_trend_monthly_202211/blksea_omi_health_oxygen_trend_monthly_P20220610.nc"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/eebf8649-37c5-4de4-80ef-1f46ba02bb2c"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/8210d77d-d6ed-452b-a714-86c98fd72704"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/0554b777-73e0-4c73-a075-b019a4c161c5"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dcat:dataQuality>The myOcean products depends on other products for production or validation. The detailed list of dependencies is given in ISO19115's aggregationInfo (ISO19139 Xpath = "gmd:MD_Metadata/gmd:identificationInfo/gmd:aggregationInfo[./gmd:MD_AggregateInformation/gmd:initiativeType/gmd:DS_InitiativeTypeCode/@codeListValue='upstream-validation' or 'upstream-production']")</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+    

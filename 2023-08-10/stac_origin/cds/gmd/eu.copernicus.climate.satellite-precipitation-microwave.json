@@ -1,0 +1,48 @@
+{
+  "type": "Collection",
+  "id": "eu.copernicus.climate.satellite-precipitation-microwave",
+  "stac_version": "1.0.0",
+  "description": "This dataset provides global estimates of daily accumulated and monthly means of precipitation. The precipitation estimates are based on a merge of passive microwave observations from two different radiometer classes operating on multiple Low Earth Orbit (LEO) satellites.\nSpaceborne passive microwave (MW) provides the most effective measurements for the remote sensing of precipitation because the MW upwelling radiation is directly responsive to the cloud microphysical structure and, in particular, to the emission and scattering properties of precipitation-size hydrometeors (solid and liquid). However, they are available at low spatial and temporal resolution, due to the limited number of passes per day (depending on latitude and number of platforms) at each location.\n On the other hand, infrared (IR) sensors, available also on geostationary platforms, provide measurements that mostly respond to upper-level cloud structure, but at much higher temporal and spatial resolution. Since precipitation is not directly sensed in the infrared, these observations are often merged with microwave-based precipitation estimates and rain gauges. A precipitation product merging IR and MW is also available on the Climate Data Store: GPCP precipitation dataset.\nThe two different radiometer classes used in the present  Copernicus micrOwave-based gloBal pRecipitAtion (COBRA) dataset are: \ni) Conically scanning MW imagers; observations obtained by applying methodologies of the Hamburg Ocean Atmosphere Parameters and Fluxes from Satellite (HOAPS) in the Satellite Application Facility on Climate Monitoring (CM SAF).\nii) Cross-track scanning MW sounders; observations obtained through the dedicated Passive microwave Neural network Precipitation Retrieval for Climate Applications (PNPR-CLIM) algorithm.\nThis datset is independent of IR imagery and rain-gauge observations. \nA pure passive MW-based precipitation dataset overcomes the challenges and limitations of precipitation estimates based on IR observations, and the issues related to the inadequacy of the rain gauge networks in some regions and their almost complete absence over the ocean. \nThe main limitations, however, are linked to the varying (in time and space) revisiting time of the LEO satellites and low temporal sampling compared to geostanionary IR observations.\nThis dataset is produced by the Copernicus Climate Change Service (C3S).\n\nVariables in the dataset/application are:\nPrecipitation",
+  "links": [],
+  "title": "Precipitation monthly and daily gridded data from 2000 to 2017 derived from satellite microwave observations",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          0.0,
+          -89.0,
+          360.0,
+          89.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2000-01-01T00:00:00Z",
+          "2017-12-31T23:59:59Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Ocean",
+    "Product type: Satellite observations",
+    "Spatial coverage: Global",
+    "Variable domain: Land (hydrology)",
+    "Variable domain: Atmosphere (surface)",
+    "Temporal coverage: Past",
+    "Provider: Copernicus C3S"
+  ],
+  "providers": [
+    {
+      "name": "Copernicus Climate Data Store",
+      "description": "Copernicus Climate Data Store - European Centre for Medium-Range Weather Forecasts (ECMWF)",
+      "roles": [
+        "host"
+      ],
+      "url": "https://cds.climate.copernicus.eu/"
+    }
+  ]
+}

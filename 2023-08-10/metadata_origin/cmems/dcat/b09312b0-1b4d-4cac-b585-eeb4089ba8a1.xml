@@ -1,0 +1,127 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:dct="http://purl.org/dc/terms/" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/b09312b0-1b4d-4cac-b585-eeb4089ba8a1">
+        <foaf:primaryTopic rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/resource/b09312b0-1b4d-4cac-b585-eeb4089ba8a1"/>
+        <dct:issued>2022-11-28</dct:issued>
+        <dct:modified>2022-11-28</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/srv/eng/xml.metadata.get?uuid=b09312b0-1b4d-4cac-b585-eeb4089ba8a1">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork?uuid=b09312b0-1b4d-4cac-b585-eeb4089ba8a1">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/resource/b09312b0-1b4d-4cac-b585-eeb4089ba8a1">
+        <dct:identifier>b09312b0-1b4d-4cac-b585-eeb4089ba8a1</dct:identifier>
+        <dct:title>Black Sea Physics Analysis and Forecast</dct:title>
+        <dct:abstract>'''Short description''':  
+
+The BLKSEA_ANALYSISFORECAST_PHY_007_001 is produced with a hydrodynamic model implemented over the whole Black Sea basin, including the Bosporus Strait and a portion of the Marmara Sea for the optimal interface with the Mediterranean Sea through lateral open boundary conditions. The model horizontal grid resolution is 1/40° in zonal and 1/40° in meridional direction (ca. 121 km) and has 121 unevenly spaced vertical levels. The product provides analysis and forecast for 3D potential temperature, salinity, horizontal and vertical currents. Together with the 2D variables sea surface height, bottom potential temperature and mixed layer thickness.
+
+'''Product Citation''': 
+Please refer to our Technical FAQ for citing products. http://marine.copernicus.eu/faq/cite-cmems-products-cmems-credit/?idpage=169
+
+'''DOI (Product)''': 
+https://doi.org/10.25423/cmcc/blksea_analysisforecast_phy_007_001_eas5</dct:abstract>
+        <dcat:theme rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/thesaurus/iso/topicCategory/oceans"/>
+        <foaf:thumbnail rdf:resource="https://catalogue.marine.copernicus.eu/documents/IMG/BLKSEA_ANALYSISFORECAST_PHY_007_001.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((27.25 40.50, 27.25 47.00, 41.10 47.00, 41.10 40.50, 27.25 40.50))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:issued>2016-10-13</dct:issued>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/BS-IOBAS-VARNA-BG"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/BS-IOBAS-VARNA-BG"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/BS-ULG-LIEGE-BE"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/BS-CMCC-LECCE-IT"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/BS-CMCC-LECCE-IT"/>
+        <dct:accrualPeriodicity>daily</dct:accrualPeriodicity>
+        <dct:accrualPeriodicity>monthly</dct:accrualPeriodicity>
+        <dct:license>otherRestrictions</dct:license>
+        <dct:license>license</dct:license>
+        <dct:license>No limitations on public access</dct:license>
+        <dcat:distribution rdf:resource="ftp://nrt.cmems-du.eu/Core/BLKSEA_ANALYSISFORECAST_PHY_007_001/cmems_mod_blk_phy_anfc_2.5km_static"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=BLKSEA_ANALYSISFORECAST_PHY_007_001-TDS&amp;product=cmems_mod_blk_phy-cur_anfc_2.5km_P1D-m"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/thredds/dodsC/cmems_mod_blk_phy-cur_anfc_2.5km_P1D-m"/>
+        <dcat:distribution rdf:resource="ftp://nrt.cmems-du.eu/Core/BLKSEA_ANALYSISFORECAST_PHY_007_001/cmems_mod_blk_phy-cur_anfc_2.5km_P1D-m"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/thredds/wms/cmems_mod_blk_phy-cur_anfc_2.5km_P1D-m"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=BLKSEA_ANALYSISFORECAST_PHY_007_001-TDS&amp;product=cmems_mod_blk_phy-cur_anfc_2.5km_P1M-m"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/thredds/dodsC/cmems_mod_blk_phy-cur_anfc_2.5km_P1M-m"/>
+        <dcat:distribution rdf:resource="ftp://nrt.cmems-du.eu/Core/BLKSEA_ANALYSISFORECAST_PHY_007_001/cmems_mod_blk_phy-cur_anfc_2.5km_P1M-m"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/thredds/wms/cmems_mod_blk_phy-cur_anfc_2.5km_P1M-m"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=BLKSEA_ANALYSISFORECAST_PHY_007_001-TDS&amp;product=cmems_mod_blk_phy-cur_anfc_2.5km_PT1H-m"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/thredds/dodsC/cmems_mod_blk_phy-cur_anfc_2.5km_PT1H-m"/>
+        <dcat:distribution rdf:resource="ftp://nrt.cmems-du.eu/Core/BLKSEA_ANALYSISFORECAST_PHY_007_001/cmems_mod_blk_phy-cur_anfc_2.5km_PT1H-m"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/thredds/wms/cmems_mod_blk_phy-cur_anfc_2.5km_PT1H-m"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=BLKSEA_ANALYSISFORECAST_PHY_007_001-TDS&amp;product=cmems_mod_blk_phy-mld_anfc_2.5km_P1D-m"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/thredds/dodsC/cmems_mod_blk_phy-mld_anfc_2.5km_P1D-m"/>
+        <dcat:distribution rdf:resource="ftp://nrt.cmems-du.eu/Core/BLKSEA_ANALYSISFORECAST_PHY_007_001/cmems_mod_blk_phy-mld_anfc_2.5km_P1D-m"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/thredds/wms/cmems_mod_blk_phy-mld_anfc_2.5km_P1D-m"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=BLKSEA_ANALYSISFORECAST_PHY_007_001-TDS&amp;product=cmems_mod_blk_phy-mld_anfc_2.5km_P1M-m"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/thredds/dodsC/cmems_mod_blk_phy-mld_anfc_2.5km_P1M-m"/>
+        <dcat:distribution rdf:resource="ftp://nrt.cmems-du.eu/Core/BLKSEA_ANALYSISFORECAST_PHY_007_001/cmems_mod_blk_phy-mld_anfc_2.5km_P1M-m"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/thredds/wms/cmems_mod_blk_phy-mld_anfc_2.5km_P1M-m"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=BLKSEA_ANALYSISFORECAST_PHY_007_001-TDS&amp;product=cmems_mod_blk_phy-mld_anfc_2.5km_PT1H-m"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/thredds/dodsC/cmems_mod_blk_phy-mld_anfc_2.5km_PT1H-m"/>
+        <dcat:distribution rdf:resource="ftp://nrt.cmems-du.eu/Core/BLKSEA_ANALYSISFORECAST_PHY_007_001/cmems_mod_blk_phy-mld_anfc_2.5km_PT1H-m"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/thredds/wms/cmems_mod_blk_phy-mld_anfc_2.5km_PT1H-m"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=BLKSEA_ANALYSISFORECAST_PHY_007_001-TDS&amp;product=cmems_mod_blk_phy-sal_anfc_2.5km_P1D-m"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/thredds/dodsC/cmems_mod_blk_phy-sal_anfc_2.5km_P1D-m"/>
+        <dcat:distribution rdf:resource="ftp://nrt.cmems-du.eu/Core/BLKSEA_ANALYSISFORECAST_PHY_007_001/cmems_mod_blk_phy-sal_anfc_2.5km_P1D-m"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/thredds/wms/cmems_mod_blk_phy-sal_anfc_2.5km_P1D-m"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=BLKSEA_ANALYSISFORECAST_PHY_007_001-TDS&amp;product=cmems_mod_blk_phy-sal_anfc_2.5km_P1M-m"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/thredds/dodsC/cmems_mod_blk_phy-sal_anfc_2.5km_P1M-m"/>
+        <dcat:distribution rdf:resource="ftp://nrt.cmems-du.eu/Core/BLKSEA_ANALYSISFORECAST_PHY_007_001/cmems_mod_blk_phy-sal_anfc_2.5km_P1M-m"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/thredds/wms/cmems_mod_blk_phy-sal_anfc_2.5km_P1M-m"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=BLKSEA_ANALYSISFORECAST_PHY_007_001-TDS&amp;product=cmems_mod_blk_phy-sal_anfc_2.5km_PT1H-m"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/thredds/dodsC/cmems_mod_blk_phy-sal_anfc_2.5km_PT1H-m"/>
+        <dcat:distribution rdf:resource="ftp://nrt.cmems-du.eu/Core/BLKSEA_ANALYSISFORECAST_PHY_007_001/cmems_mod_blk_phy-sal_anfc_2.5km_PT1H-m"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/thredds/wms/cmems_mod_blk_phy-sal_anfc_2.5km_PT1H-m"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=BLKSEA_ANALYSISFORECAST_PHY_007_001-TDS&amp;product=cmems_mod_blk_phy-ssh_anfc_2.5km_P1D-m"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/thredds/dodsC/cmems_mod_blk_phy-ssh_anfc_2.5km_P1D-m"/>
+        <dcat:distribution rdf:resource="ftp://nrt.cmems-du.eu/Core/BLKSEA_ANALYSISFORECAST_PHY_007_001/cmems_mod_blk_phy-ssh_anfc_2.5km_P1D-m"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/thredds/wms/cmems_mod_blk_phy-ssh_anfc_2.5km_P1D-m"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=BLKSEA_ANALYSISFORECAST_PHY_007_001-TDS&amp;product=cmems_mod_blk_phy-ssh_anfc_2.5km_P1M-m"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/thredds/dodsC/cmems_mod_blk_phy-ssh_anfc_2.5km_P1M-m"/>
+        <dcat:distribution rdf:resource="ftp://nrt.cmems-du.eu/Core/BLKSEA_ANALYSISFORECAST_PHY_007_001/cmems_mod_blk_phy-ssh_anfc_2.5km_P1M-m"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/thredds/wms/cmems_mod_blk_phy-ssh_anfc_2.5km_P1M-m"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=BLKSEA_ANALYSISFORECAST_PHY_007_001-TDS&amp;product=cmems_mod_blk_phy-ssh_anfc_2.5km_PT1H-m"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/thredds/dodsC/cmems_mod_blk_phy-ssh_anfc_2.5km_PT1H-m"/>
+        <dcat:distribution rdf:resource="ftp://nrt.cmems-du.eu/Core/BLKSEA_ANALYSISFORECAST_PHY_007_001/cmems_mod_blk_phy-ssh_anfc_2.5km_PT1H-m"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/thredds/wms/cmems_mod_blk_phy-ssh_anfc_2.5km_PT1H-m"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=BLKSEA_ANALYSISFORECAST_PHY_007_001-TDS&amp;product=cmems_mod_blk_phy-tem_anfc_2.5km_P1D-m"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/thredds/dodsC/cmems_mod_blk_phy-tem_anfc_2.5km_P1D-m"/>
+        <dcat:distribution rdf:resource="ftp://nrt.cmems-du.eu/Core/BLKSEA_ANALYSISFORECAST_PHY_007_001/cmems_mod_blk_phy-tem_anfc_2.5km_P1D-m"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/thredds/wms/cmems_mod_blk_phy-tem_anfc_2.5km_P1D-m"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=BLKSEA_ANALYSISFORECAST_PHY_007_001-TDS&amp;product=cmems_mod_blk_phy-tem_anfc_2.5km_P1M-m"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/thredds/dodsC/cmems_mod_blk_phy-tem_anfc_2.5km_P1M-m"/>
+        <dcat:distribution rdf:resource="ftp://nrt.cmems-du.eu/Core/BLKSEA_ANALYSISFORECAST_PHY_007_001/cmems_mod_blk_phy-tem_anfc_2.5km_P1M-m"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/thredds/wms/cmems_mod_blk_phy-tem_anfc_2.5km_P1M-m"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=BLKSEA_ANALYSISFORECAST_PHY_007_001-TDS&amp;product=cmems_mod_blk_phy-tem_anfc_2.5km_PT1H-m"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/thredds/dodsC/cmems_mod_blk_phy-tem_anfc_2.5km_PT1H-m"/>
+        <dcat:distribution rdf:resource="ftp://nrt.cmems-du.eu/Core/BLKSEA_ANALYSISFORECAST_PHY_007_001/cmems_mod_blk_phy-tem_anfc_2.5km_PT1H-m"/>
+        <dcat:distribution rdf:resource="https://nrt.cmems-du.eu/thredds/wms/cmems_mod_blk_phy-tem_anfc_2.5km_PT1H-m"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/4c32ee2e-8368-4dd9-8143-643cdd74c9fd"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/6786214d-235f-49fa-96f8-dda7659b1447"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dcat:dataQuality>The myOcean products depends on other products for production or validation. The detailed list of dependencies is given in ISO19115's aggregationInfo (ISO19139 Xpath = "gmd:MD_Metadata/gmd:identificationInfo/gmd:aggregationInfo[./gmd:MD_AggregateInformation/gmd:initiativeType/gmd:DS_InitiativeTypeCode/@codeListValue='upstream-validation' or 'upstream-production']")</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+    

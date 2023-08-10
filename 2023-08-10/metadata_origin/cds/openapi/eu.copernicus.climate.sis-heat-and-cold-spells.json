@@ -1,0 +1,46 @@
+{
+    "slug": "heat-waves-and-cold-spells-in-europe-derived-from-climate-projections",
+    "name": "sis-heat-and-cold-spells",
+    "id": "eu.copernicus.climate.sis-heat-and-cold-spells",
+    "type": "dataset",
+    "rich_abstract": "<div class='abstract-text'>\n         <p>The dataset contains the number of hot and cold spell days using different European-wide and national/regional definitions developed within the C3S European Health service.\n These heat wave and cold spell days are available for different future time periods and use different climate change scenarios.</p>\n<p>A heat wave or cold spell is a prolonged period of extremely high or extremely low temperature for a particular region. However, there is a lack of rigorous definitions for heat waves and cold spells. This dataset combines multiple definitions and allows the user to compare European-wide definitions with national/regional definitions.</p>\n<p>First, the temperature statistics are calculated, either for the season winter and summer or for the whole year, based on a bias-adjusted EURO-CORDEX dataset. Then, the statistics are averaged for 30 years as a smoothed average from 1971 to 2100. This results in a timeseries covering the period from 1986 to 2085. Finally, the timeseries are averaged for the model ensemble and the standard deviation to this ensemble mean is provided. </p>\n         \n         \n            <p></p>\n            <table class=\"abstract-description abstract-table\">\n            <tr><th colspan=\"2\">DATA DESCRIPTION</th>\n            \n<tr><th>Data type</th><td>Gridded</td></tr>\n<tr><th>Projection</th><td>Regular latitude-longitude grid.</td></tr>\n<tr><th>Horizontal coverage</th><td>European region (Extent: ~ 27N \u2013 72N, ~22W \u2013 45E)</td></tr>\n<tr><th>Horizontal resolution</th><td>0.1\u00b0 x 0.1\u00b0 </td></tr>\n<tr><th>Temporal coverage</th><td>From 1986 to  2085</td></tr>\n<tr><th>Temporal resolution</th><td>Year (season average)</td></tr>\n<tr><th>File format</th><td>NetCDF 4</td></tr>\n<tr><th>Conventions</th><td>Climate and Forecast (CF) Metadata Convention v1.6, Attribute Convention for Dataset Discovery (ACDD) v1.3</td></tr>\n<tr><th>Update frequency</th><td>No updates expected.</td></tr>\n</table>\n\n    <p></p>\n    <table class=\"abstract-variables abstract-table\">\n    <tr><th colspan=\"3\">MAIN VARIABLES</th>\n    \n\n    <tr><th class='variables-name'>Name</th><th class='variables-units'>Units</th><th class='variables-description'>Description</th></tr>\n    \n<tr><td class='variables-name'>Cold spell days</td><td class='variables-units'>days</td><td class='variables-description'>Number of cold  days in a year  using  specific definitions.</td></tr>\n<tr><td class='variables-name'>Heat wave days</td><td class='variables-units'>days</td><td class='variables-description'>Number of hot  days in a year  using  specific definitions.</td></tr>\n</table>\n    </div>",
+    "terms": [
+        "licence-to-use-copernicus-products"
+    ],
+    "constraints": [
+        {
+            "definition": [
+                "climatological_related",
+                "health_related",
+                "country_related"
+            ],
+            "ensemble_statistic": [
+                "ensemble_members_average",
+                "ensemble_members_standard_deviation"
+            ],
+            "experiment": [
+                "rcp4_5",
+                "rcp8_5"
+            ],
+            "variable": [
+                "heat_wave_days"
+            ]
+        },
+        {
+            "definition": [
+                "country_related"
+            ],
+            "ensemble_statistic": [
+                "ensemble_members_average",
+                "ensemble_members_standard_deviation"
+            ],
+            "experiment": [
+                "rcp4_5",
+                "rcp8_5"
+            ],
+            "variable": [
+                "cold_spell_days"
+            ]
+        }
+    ]
+}

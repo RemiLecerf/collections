@@ -1,0 +1,78 @@
+{
+    "type": "Collection",
+    "stac_version": "1.0.0",
+    "id": "urn:eop:VITO:MAPEO_WATER_RHOW_V1",
+    "title": "MapEO Water Water-Leaving Reflectance (RHOW) Products - V1",
+    "description": "Optical data collected with airborne drone platform, and processed with MapEO Water software v1 at VITO into water-leaving reflectance. This is a geometrically and atmospherically corrected reflectance product.",
+    "keywords": [
+        "Orthoimagery",
+        "Water leaving reflectance",
+        "Aquatic reflectance",
+        "RHOW",
+        "Water quality",
+        "Airborne drone data",
+        "UAV",
+        "RPAS",
+        "Drone",
+        "MicaSense",
+        "DJI",
+        "cm resolution",
+        "super high resultion",
+        "VITO"
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180.0,
+                    -84.0,
+                    180.0,
+                    84.0
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2018-02-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "Licence: https://terrascope.be/en/terms-use",
+    "links": [
+        {
+            "rel": "self",
+            "type": "application/json",
+            "href": "https://services.terrascope.be/stac/collections/urn:eop:VITO:MAPEO_WATER_RHOW_V1"
+        },
+        {
+            "rel": "parent",
+            "type": "application/json",
+            "href": "https://services.terrascope.be/stac/"
+        },
+        {
+            "rel": "items",
+            "type": "application/geo+json",
+            "href": "https://services.terrascope.be/stac/collections/urn:eop:VITO:MAPEO_WATER_RHOW_V1/items"
+        },
+        {
+            "rel": "root",
+            "type": "application/json",
+            "href": "https://services.terrascope.be/stac/"
+        }
+    ],
+    "summaries": {
+        "datetime": {
+            "min": "2018-02-01T00:00:00Z"
+        },
+        "instruments": [
+            "MSREM1",
+            "PHA4RGB",
+            "MSREM2",
+            "MSREP2",
+            "MSDC2",
+            "MSDC1"
+        ]
+    }
+}

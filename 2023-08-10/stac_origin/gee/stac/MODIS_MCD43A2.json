@@ -1,0 +1,140 @@
+{
+    "type": "Collection",
+    "stac_version": "1.0.0",
+    "stac_extensions": [
+        "collection-assets"
+    ],
+    "id": "MODIS/MCD43A2",
+    "title": "MCD43A2.005 BRDF-Albedo Quality 16-Day Global 500m [deprecated]",
+    "description": "The MODerate-resolution Imaging\nSpectroradiometer (MODIS) BRDF/Albedo Quality product (MCD43A2)\ndescribes the overall condition of the other BRDF and Albedo\nproducts. The MCD43A2 product contains 16 days of data at 500 meter\nspatial resolution provided in a level-3 gridded data set in\nSinusoidal projection, and includes albedo quality, snow conditions,\nancillary information, and inversion information.  Both Terra and Aqua\ndata are used in the generation of this product, providing the highest\nprobability for quality input data and designating it as an MCD,\nmeaning Combined, product.\n\nVersion-5 MODIS/Terra+Aqua BRDF/Albedo\nproducts are Validated Stage 1, meaning that accuracy has been\nestimated using a small number of independent measurements obtained\nfrom selected locations and time periods and ground-truth/field\nprogram efforts. Although there may be later improved versions, these\ndata are ready for use in scientific publications.\n\nPlease visit [LP DAAC 'Citing Our Data' page](https://lpdaac.usgs.gov/citing_our_data) for information on citing LP DAAC datasets.\n",
+    "keywords": [
+        "16_day",
+        "albedo",
+        "brdf",
+        "global",
+        "modis",
+        "quality",
+        "reflectance",
+        "usgs"
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-02-18T00:00:00Z",
+                    "2017-03-14T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "providers": [
+        {
+            "name": "NASA LP DAAC at the USGS EROS Center",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://lpdaac.usgs.gov/dataset_discovery/modis/modis_products_table/mcd43a2"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_MCD43A2"
+        }
+    ],
+    "license": "proprietary",
+    "links": [
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections/MODIS/MCD43A2",
+            "rel": "self",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections",
+            "rel": "parent",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/",
+            "rel": "root",
+            "type": "application/json"
+        },
+        {
+            "code": "JavaScript",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/MODIS/MODIS_MCD43A2",
+            "rel": "related",
+            "title": "Run the example for MODIS/MCD43A2 in the Earth Engine Code Editor",
+            "type": "text/html"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/images/MODIS/MODIS_MCD43A2_sample.png",
+            "rel": "preview",
+            "type": "image/png"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_MCD43A2#terms-of-use",
+            "rel": "license",
+            "type": "text/html"
+        },
+        {
+            "href": "https://storage.googleapis.com/earthengine-stac/catalog/MODIS/MODIS_006_MCD43A2.json",
+            "rel": "successor-version",
+            "title": "MODIS/006/MCD43A2",
+            "type": "application/json"
+        }
+    ],
+    "cube:dimensions": {
+        "x": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                -180,
+                180
+            ]
+        },
+        "y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                -90,
+                90
+            ]
+        },
+        "t": {
+            "type": "temporal",
+            "extent": [
+                "2000-02-18T00:00:00Z",
+                "2017-03-14T00:00:00Z"
+            ]
+        }
+    },
+    "assets": {
+        "preview_4": {
+            "href": "https://developers.google.com/earth-engine/datasets/images/MODIS/MODIS_MCD43A2_sample.png",
+            "type": "image/png",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    },
+    "deprecated": true,
+    "gee:interval": {
+        "interval": 8,
+        "type": "cadence",
+        "unit": "day"
+    },
+    "gee:terms_of_use": "MODIS data and products acquired through the LP DAAC have no restrictions on subsequent use, sale, or redistribution.\n",
+    "gee:type": "image_collection"
+}

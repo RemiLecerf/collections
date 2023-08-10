@@ -1,0 +1,31 @@
+<csw:Record xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">EO:ECMWF:DAT:SIS_HYDROLOGY_VARIABLES_DERIVED_SEASONAL_FORECAST</dc:identifier>
+      <dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">Multi-model seasonal forecasts of river discharge for Europe from January 2021 to present</dc:title>
+      <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/">dataset</dc:type>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Meteorological geographical features</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Temporal coverage: Past</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Temporal coverage: Present</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Temporal coverage: Future</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Spatial coverage: Europe</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Product type: Seasonal forecasts</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Variable domain: Land (hydrology)</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Provider: Copernicus C3S</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Sector: Water management</dc:subject>
+      <dc:format xmlns:dc="http://purl.org/dc/elements/1.1/">NetCDF</dc:format>
+      <dct:abstract xmlns:dct="http://purl.org/dc/terms/">This dataset provides hydrological seasonal forecasts of monthly mean river discharge across Europe. Two hydrological model ensembles are provided. The first is an E-HYPE multi-model system comprising eight model realisations using a catchment-based resolution. The second comprises the E-HYPEgrid, VIC-WUR and EFAS (LISFLOOD) hydrological models at a 5km gridded resolution.
+The initialisation of the hydrological seasonal forecast uses the European Flood Awareness System (EFAS) daily gridded meteorological observations (EFAS-Meteo) up until the start of the forecast, and the subsequent integration of the meteorological seasonal forecasts using all 51 members of the ECMWF seasonal forecast system 5 (SEAS5) meteorological forecasts. A bias adjustment step using quantile mapping for temperature and precipitation was used for the E-HYPE and ViC-WUR models to minimize drift in the forecasts caused by biases in SEAS5 compared to EFAS-Meteo.
+The final output is in the form of monthly mean river discharge for the coming seven months. The context of the forecasts is provided by upper and lower terciles of the historical EFAS-Meteo driven simulation for each month of the year.
+This dataset is produced by the Swedish Meteorological and Hydrological Institute on behalf of the Copernicus Climate Change Service. The operational production is performed by C3S in collaboration with Copernicus Emergency Management Service (CEMS).
+
+Variables in the dataset/application are:
+Brier skill score above normal conditions, Brier skill score below normal conditions, Continuous ranked probability skill score, Fair ranked probability skill score, Reference river discharge lower tercile, Reference river discharge upper tercile, River discharge</dct:abstract>
+      <dct:spatial xmlns:dct="http://purl.org/dc/terms/">::EPSG:4326</dct:spatial>
+      <dc:rights xmlns:dc="http://purl.org/dc/elements/1.1/">https://cds.climate.copernicus.eu/api/v2/terms/static/licence-to-use-copernicus-products.pdf</dc:rights>
+      <dc:rights xmlns:dc="http://purl.org/dc/elements/1.1/">Content accessible through the CDS may only be used under the terms of the licenses attributed to each particular resource.</dc:rights>
+      <dct:accessRights xmlns:dct="http://purl.org/dc/terms/">licence</dct:accessRights>
+      <ows:BoundingBox xmlns:ows="http://www.opengis.net/ows">
+        <ows:LowerCorner>-180 -90</ows:LowerCorner>
+        <ows:UpperCorner>180 90</ows:UpperCorner>
+      </ows:BoundingBox>
+    </csw:Record>
+    

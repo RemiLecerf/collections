@@ -1,0 +1,47 @@
+{
+  "type": "Collection",
+  "id": "EO:ECMWF:DAT:SATELLITE_FIRE_BURNED_AREA",
+  "stac_version": "1.0.0",
+  "description": "The Burned Area products provide global information of total burned area (BA) at pixel and grid scale. The BA is identified with the date of first detection of the burned signal in the case of the pixel product, and with the total BA per grid cell in the case of the grid product. The products were obtained through the analysis of reflectance changes from medium resolution sensors (Terra MODIS, Sentinel-3 OLCI), supported by the use of MODIS thermal information. The burned area products also include information related to the land cover that has been burned, which has been extracted from the Copernicus Climate Change Service (C3S) land cover dataset, thus assuring consistency between the datasets.\nThe algorithms for BA retrieval were developed by the University of Alcala (Spain), and processed by Brockmann Consult GmbH (Germany).\nDifferent product versions are available. FireCCI v5.0cds and FireCCI v5.1cds were developed as part of the Fire ECV Climate Change Initiative Project (Fire CCI) and brokered to C3S, offering the first global burned area time series at 250m spatial resolution. FireCCI v5.1cds used a more mature algorithm than the previous version. This algorithm was adapted to Sentinel-3 OLCI data to create the C3S v1.0 burned area product, extending the BA database to the present.\nDuring July 2020, an error in some files in the version v5.1cds were identified, affecting the files of the grid product of January 2018, and the pixel and grid products of October, November and December 2019. These errors were fixed, and a new version, v5.1.1cds, was created for the whole time series, to replace version v5.1cds. The latter product has been deprecated, but it is temporally kept in the database for transparency and traceability reasons. Only version v5.1.1cds should be used.\nThe BA products are useful for researchers studying climate change, as they provide crucial information on burned biomass, which can be translated to greenhouse gases emissions amongst other contaminants. Burned area is also useful for land cover change studies, fire management and risk analysis.\n\nVariables in the dataset/application are:\nBurned area (Grid product), Burned area in vegetation class (Grid product), Confidence level (Pixel product), Flag of pixel detection (Pixel product), Fraction of burnable area (Grid product), Fraction of observed area (Grid product), Land cover of burned pixels  (Pixel product), Number of patches (Grid product), Standard error (Grid product)",
+  "links": [],
+  "title": "Fire burned area from 2001 to present derived from satellite observations",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2001-01-01T00:00:00Z",
+          "2022-04-01T23:59:59Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Land cover",
+    "Product type: Satellite observations",
+    "Spatial coverage: Global",
+    "Variable domain: Land (biosphere)",
+    "Variable domain: Land (physics)",
+    "Temporal coverage: Past"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

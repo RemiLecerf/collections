@@ -1,0 +1,124 @@
+{
+    "type": "Collection",
+    "version": "v1",
+    "stac_version": "0.9.0",
+    "stac_extensions": [
+        "datacube"
+    ],
+    "id": "ADO_SPEI_3_ERA5_QM",
+    "title": "Standardised Precipitation-Evapotranspiration Index - ERA5_QM SPEI-3",
+    "description": "The Standardized Precipitation-Evapotranspiration Index (SPEI) represents a standardized measure of what a certain value of surface water balance (precipitation minus potential evapotranspiration) over the selected time period means in relation to expected value of surface water balance for this period. SPEI is calculated on different time scales (1, 2, 3, 6, 12 months). The value of the SPEI index around 0 represents the normal expected conditions for the surface water balance in the selected period based on the long-term average (1981-2020). The value of 1 represents approximately one standard deviation of the surplus in the surface water balance, while the value of -1 is about one standard deviation of the deficit. Drought is usually defined as period when SPEI values fall below -1. Input precipitation data is downscaled from ERA5 reanalysis using quantile mapping.Contains modified Copernicus Climate Change Service information [1978-current year]; Contains modified Copernicus Atmosphere Monitoring Service information [1978-current year].",
+    "keywords": [
+        "SPEI",
+        "standardised precipitation-evapotranspiration index,surface water balance anomalies",
+        "ERA5",
+        "ADO project",
+        "ADO"
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    4.0563685981112565,
+                    42.85381219788743,
+                    17.360182784195487,
+                    50.310634900383555
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1978-12-31T12:00:00Z",
+                    "2022-11-12T12:00:00Z"
+                ]
+            ]
+        }
+    },
+    "providers": [
+        {
+            "name": "Eurac EO WCS",
+            "url": "http://www.eurac.edu",
+            "roles": [
+                "Host"
+            ]
+        },
+        {
+            "name": "Slovenian Environment Agency - ARSO",
+            "url": "https://www.arso.gov.si/",
+            "roles": [
+                "Processor"
+            ]
+        },
+        {
+            "name": "Zentralanstalt f\u00fcr Meteorologie und Geodynamik - ZAMG",
+            "url": "https://www.zamg.ac.at/cms/de/aktuell",
+            "roles": [
+                "Producer"
+            ]
+        }
+    ],
+    "license": "CC BY 4.0",
+    "links": [
+        {
+            "rel": "licence",
+            "href": "https://creativecommons.org/licenses/by/4.0/",
+            "type": "text/html",
+            "title": "License Link"
+        }
+    ],
+    "cube:dimensions": {
+        "DATE": {
+            "type": "temporal",
+            "extent": [
+                "1978-12-31T12:00:00.000Z",
+                "2022-11-12T12:00:00.000Z"
+            ],
+            "step": "P1D"
+        },
+        "X": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                4.0563685981112565,
+                17.360182784195487
+            ],
+            "reference_system": 3035
+        },
+        "Y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                42.85381219788743,
+                50.310634900383555
+            ],
+            "reference_system": 3035
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "SPEI_3"
+            ]
+        }
+    },
+    "summaries": {
+        "constellation": [
+            "N/A"
+        ],
+        "platform": [
+            "N/A"
+        ],
+        "rows": 167,
+        "columns": 202,
+        "instruments": [
+            "N/A"
+        ],
+        "eo:bands": [
+            {
+                "name": "SPEI_3"
+            }
+        ]
+    },
+    "sci:citation": "Vicente-Serrano, S.M., Beguer\u00eda, S. and J.I. L\u00f3pez-Moreno, 2009: A Multiscalar Drought Index Sensitive to Global Warming: The Standardized Precipitation Evapotranspiration Index. In: Journal of Climate, 23(7), 1696\u20131718. doi: 10.1175/2009JCLI2909.1.",
+    "engine": "WCPS"
+}

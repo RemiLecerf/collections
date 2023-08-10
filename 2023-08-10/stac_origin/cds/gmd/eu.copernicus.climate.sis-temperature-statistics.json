@@ -1,0 +1,62 @@
+{
+  "type": "Collection",
+  "id": "eu.copernicus.climate.sis-temperature-statistics",
+  "stac_version": "1.0.0",
+  "description": "This dataset contains temperature exposure statistics for Europe (e.g. percentiles) derived from the daily 2 metre mean, minimum and maximum air temperature for the entire year, winter (DJF: December-January-February) and summer (JJA: June-July-August). These statistics were derived within the C3S European Health service and are available for different future time periods and using different climate change scenarios.\nTemperature percentiles are typically used in epidemiology and public health when defining health risk estimates and when looking at current and future health impacts, and they allow to identify a common threshold and comparison between different cities/areas. \nThe temperature statistics are calculated, either for the season winter and summer or for the whole year, based on a bias-adjusted EURO-CORDEX dataset. The statistics are averaged for 30 years as a smoothed average from 1971 to 2100. This results in a timeseries covering the period from 1986 to 2085. Finally, the timeseries are averaged for the model ensemble and the standard deviation to this ensemble mean is provided. \n\nVariables in the dataset/application are:\nAverage temperature, Maximum temperature, Minimum temperature",
+  "links": [
+    {
+      "rel": "hosts",
+      "href": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.8be2c014",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Climate Data Store catalogue"
+    },
+    {
+      "rel": "hosts",
+      "href": "https://confluence.ecmwf.int/x/d5cvEQ",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Temperature statistics for Europe documentation"
+    }
+  ],
+  "title": "Temperature statistics for Europe derived from climate projections",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          35.0,
+          30.0,
+          25.0,
+          73.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1986-01-01T00:00:00Z",
+          "2085-12-31T23:59:59Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Atmospheric conditions",
+    "Temporal coverage: Past",
+    "Temporal coverage: Present",
+    "Temporal coverage: Future",
+    "Spatial coverage: Europe",
+    "Product type: Climate projections",
+    "Variable domain: Atmosphere (surface)",
+    "Provider: Copernicus C3S"
+  ],
+  "providers": [
+    {
+      "name": "Copernicus Climate Data Store",
+      "description": "Copernicus Climate Data Store - European Centre for Medium-Range Weather Forecasts (ECMWF)",
+      "roles": [
+        "host"
+      ],
+      "url": "https://cds.climate.copernicus.eu/"
+    }
+  ]
+}

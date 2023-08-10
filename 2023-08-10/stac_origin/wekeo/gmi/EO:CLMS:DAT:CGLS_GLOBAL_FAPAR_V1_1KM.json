@@ -1,0 +1,66 @@
+{
+  "type": "Collection",
+  "id": "EO:CLMS:DAT:CGLS_GLOBAL_FAPAR_V1_1KM",
+  "stac_version": "1.0.0",
+  "description": "The FAPAR quantifies the fraction of the solar radiation absorbed by plants for photosynthesis. It refers only to the green and living elements of the canopy. The FAPAR depends on the canopy structure, vegetation element optical properties, atmospheric conditions and angular configuration. To overcome this latter dependency, a daily integrated FAPAR value is assessed. FAPAR is very useful as input to a number of primary productivity models and is recognized as an Essential Climate Variable (ECV) by the Global Climate Observing System (GCOS).",
+  "links": [
+    {
+      "rel": "hosts",
+      "href": "http://land.copernicus.eu/global/products/fapar",
+      "type": "HTTP",
+      "title": "Copernicus Global Land Service"
+    },
+    {
+      "rel": "hosts",
+      "href": "http://land.copernicus.eu/global/access",
+      "type": "HTTP",
+      "title": "Copernicus Global Land Service"
+    },
+    {
+      "rel": "hosts",
+      "href": "http://eoportal.eumetsat.int",
+      "title": "Copernicus Global Land Service"
+    }
+  ],
+  "title": "Global 10-daily Fraction of Absorbed Photosynthetically Active Radiation 1km",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -60.0,
+          180.0,
+          80.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1999-01-03T00:00:00Z",
+          "2030-12-31T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Orthoimagery",
+    "geophysical environment",
+    "biogeophysical",
+    "fapar",
+    "GLOBE",
+    "Dekad",
+    "10-daily"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

@@ -1,0 +1,159 @@
+{
+    "slug": "monthly-and-6-hourly-total-column-water-vapour-over-ocean-from-1988-to-2020-derived-from-satellite-observations",
+    "name": "satellite-total-column-water-vapour-ocean",
+    "id": "eu.copernicus.climate.satellite-total-column-water-vapour-ocean",
+    "type": "dataset",
+    "rich_abstract": "<div class='abstract-text'>\n         <p>Water vapour is has been recognised as an  Essential Climate Variable as it provides the basis for all cloud formation and physics and furthermore influences the Earth's heat budget due to its high absorbance of long and short-wave radiation. Total column water vapour (TCWV) is a measure of the integrated water vapour content of the atmosphere.</p>\n<p>This catalogue entry provides the TCWV data product usually called Hamburg Ocean Atmosphere Parameters and Fluxes from Satellite Data (HOAPS).</p>\n<p>The HOAPS product uses a 1D-Var retrieval concept for atmospheric water vapour content from the measurements of the Special Sensor Microwave Imager (SSM/I) and the Special Sensor Microwave Imager Sounder (SSMIS) sensors in the microwave spectra over ice-free ocean surfaces. \nThe dataset provides a continuous data record composed of a Thematic Climate Data Record (TCDR) from 1988 to 2014 and of an Interim Climate Data Record (ICDR) from 2015 onward. It was produced following the World Meteorological Organisation's Observing Systems Capability Analysis and Review Tool (OSCAR)  requirements for TCWV.</p>\n<p>The SSM/I and SSMIS are well-established instruments for TCWV retrieval over ice-free open ocean surfaces and provide a long time series (1987 to present) and global coverage at a reasonable resolution.</p>\n<p>The TCDR HOAPS dataset is produced on behalf of EUMETSAT Satellite Application Facility on Climate Monitoring (CM SAF) and the ICDR is produced within the Copernicus Climate Change Serice (C3S) project. Both products are based on the HOAPS 4.0 algorithm at DWD (Deutscher Wetterdienst).  A related dataset providing TCWV data over both land and ocean, but only at monthly  time resolution, computed using a different set of sensors and algorithms  is also available (the link to that dataset is under the Related data section).</p>\n         \n         \n            <p></p>\n            <table class=\"abstract-description abstract-table\">\n            <tr><th colspan=\"2\">DATA DESCRIPTION</th>\n            \n<tr><th>Data type</th><td>Gridded</td></tr>\n<tr><th>Horizontal coverage</th><td>Global ice-free ocean</td></tr>\n<tr><th>Horizontal resolution</th><td>0.5\u00b0 x 0.5\u00b0. A number of gaps are to be expected.</td></tr>\n<tr><th>Vertical coverage</th><td>Total atmospheric column</td></tr>\n<tr><th>Vertical resolution</th><td>Single level</td></tr>\n<tr><th>Temporal coverage</th><td><p>TCDR: From 1988 to 2014</p>\n<p>ICDR: From 2015 to 2020 </p></td></tr>\n<tr><th>Temporal resolution</th><td><p>Monthly means stored in yearly files</p>\n<p>6-hourly  stored in monthly files</p></td></tr>\n<tr><th>File format</th><td>NetCDF4</td></tr>\n<tr><th>Conventions</th><td>Climate and Forecast (CF) Metadata Convention v1.7</td></tr>\n<tr><th>Versions</th><td>HOAPS algorithm version 4.0</td></tr>\n<tr><th>Update frequency</th><td>No updates expected</td></tr>\n</table>\n\n    <p></p>\n    <table class=\"abstract-variables abstract-table\">\n    <tr><th colspan=\"3\">MAIN VARIABLES</th>\n    \n\n    <tr><th class='variables-name'>Name</th><th class='variables-units'>Units</th><th class='variables-description'>Description</th></tr>\n    \n<tr><td class='variables-name'>Total column water vapour</td><td class='variables-units'>kg m<sup>-2</sup></td><td class='variables-description'>Total Column Water Vapour (also called integrated Water Vapour (IWV) or Precipitable Water Vapour (PWV)) is the integrated mass of gaseous water in the total column of the atmosphere over an area of 1 m\u00b2.</td></tr>\n</table>\n<p></p><table class=\"abstract-description abstract-table\"><tr><th>RELATED VARIABLES</th></tr><tr><td>The files contain a number of auxiliary variables describing the uncertainty and statistical distribution of the main variables. For more information on the contents of the downloaded files, please refer to the documentation. </td></tr></table></br>\n    </div>",
+    "terms": [
+        "eumetsat-cm-saf",
+        "licence-to-use-copernicus-products"
+    ],
+    "constraints": [
+        {
+            "climate_data_record_type": [
+                "icdr"
+            ],
+            "origin": [
+                "c3s"
+            ],
+            "temporal_aggregation": [
+                "monthly"
+            ],
+            "year": [
+                "2015",
+                "2016",
+                "2017",
+                "2018",
+                "2019",
+                "2020"
+            ]
+        },
+        {
+            "climate_data_record_type": [
+                "icdr"
+            ],
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06",
+                "07",
+                "08",
+                "09",
+                "10",
+                "11",
+                "12"
+            ],
+            "origin": [
+                "c3s"
+            ],
+            "temporal_aggregation": [
+                "6_hourly"
+            ],
+            "year": [
+                "2015",
+                "2016",
+                "2017",
+                "2018",
+                "2019",
+                "2020"
+            ]
+        },
+        {
+            "climate_data_record_type": [
+                "tcdr"
+            ],
+            "origin": [
+                "eumetsat"
+            ],
+            "temporal_aggregation": [
+                "monthly"
+            ],
+            "year": [
+                "1988",
+                "1989",
+                "1990",
+                "1991",
+                "1992",
+                "1993",
+                "1994",
+                "1995",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2000",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014"
+            ]
+        },
+        {
+            "climate_data_record_type": [
+                "tcdr"
+            ],
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06",
+                "07",
+                "08",
+                "09",
+                "10",
+                "11",
+                "12"
+            ],
+            "origin": [
+                "eumetsat"
+            ],
+            "temporal_aggregation": [
+                "6_hourly"
+            ],
+            "year": [
+                "1988",
+                "1989",
+                "1990",
+                "1991",
+                "1992",
+                "1993",
+                "1994",
+                "1995",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2000",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014"
+            ]
+        }
+    ]
+}

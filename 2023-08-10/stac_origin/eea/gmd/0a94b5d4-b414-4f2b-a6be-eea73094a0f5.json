@@ -1,0 +1,88 @@
+{
+  "type": "Collection",
+  "id": "0a94b5d4-b414-4f2b-a6be-eea73094a0f5",
+  "stac_version": "1.0.0",
+  "description": "The European Ground Motion Service (EGMS) is a component of the Copernicus Land Monitoring Service. EGMS provides consistent, regular, standardised, harmonised and reliable information regarding natural and anthropogenic ground motion phenomena over the Copernicus Participating States and across national borders, with millimetre accuracy. This set of metadata describes the third product level of EGMS: Ortho. \n\nThe EGMS Ortho product exploits the information provided by ascending and descending orbits of the Calibrated product (https://sdi.eea.europa.eu/catalogue/srv/eng/catalog.search#/metadata/bef2507a-13cf-44c0-a809-0a1566f27631) to derive two further layers; one of purely vertical displacements (the one described by this metadata), the other of purely east-west displacements. Both layers are resampled to a 100 m grid. The Ortho product eases the interpretation process of non-experts since the viewing geometry has not to be considered anymore.\nEGMS Ortho is visualised as a vector map of measurement points colour-coded by average velocity (vertical or east-west components) and distributed to users in comma-separated values format. Each point is associated with a time series of displacement, i.e. a plot with values of displacement per acquisition of the satellite.",
+  "links": [
+    {
+      "rel": "hosts",
+      "href": "https://egms.land.copernicus.eu/",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "EGMS Explorer"
+    },
+    {
+      "rel": "hosts",
+      "href": "https://land.copernicus.eu/user-corner/technical-library/egms-algorithm-theoretical-basis-document",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Quality Assurance & EGMS and the Ortho product"
+    },
+    {
+      "rel": "hosts",
+      "href": "https://land.copernicus.eu/user-corner/technical-library/egms-product-user-manual",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Product User Manual"
+    },
+    {
+      "rel": "hosts",
+      "href": "https://land.copernicus.eu/user-corner/technical-library/egms-quality-control-report",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Quality Assurance & Control Report"
+    },
+    {
+      "rel": "hosts",
+      "href": "https://land.copernicus.eu/pan-european/european-ground-motion-service",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Other useful documents"
+    }
+  ],
+  "title": "European Ground Motion Service: Ortho product – Vertical Component between 2015 and 2021, Feb. 2023",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -31.3,
+          27.6,
+          34.76,
+          71.21
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2015-02-01T00:00:00Z",
+          "2021-12-31T23:59:59Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Natural risk zones",
+    "Iceland",
+    "Norway",
+    "EU27 (from 2020)",
+    "United Kingdom",
+    "infrastructure",
+    "geological process",
+    "built environment",
+    "urban area",
+    "earth observation",
+    "geo-referenced data",
+    "risk reduction",
+    "subsidence",
+    "landslide",
+    "European",
+    "Weekly"
+  ],
+  "providers": [
+    {
+      "name": "European Environment Agency",
+      "description": "SDI - EEA geospatial data catalogue",
+      "roles": [
+        "host"
+      ],
+      "url": "https://sdi.eea.europa.eu/"
+    }
+  ]
+}

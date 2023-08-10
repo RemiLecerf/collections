@@ -1,0 +1,78 @@
+<csw:Record xmlns:dct="http://purl.org/dc/terms/" xmlns:geonet="http://www.fao.org/geonetwork" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ows="http://www.opengis.net/ows" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dc:identifier>cd534ebf-f553-42f0-9ac1-62c1dc36d32c</dc:identifier>
+      <dc:date>2023-02-21T09:50:52.852Z</dc:date>
+      <dc:title>Corine Land Cover Change CLC+ Backbone raster product 2018, Feb. 2023</dc:title>
+      <dc:type>dataset</dc:type>
+      <dc:subject>Land cover</dc:subject>
+      <dc:subject>EEA38 (from 2020)</dc:subject>
+      <dc:subject>United Kingdom</dc:subject>
+      <dc:subject>land cover</dc:subject>
+      <dc:subject>land</dc:subject>
+      <dc:subject>European</dc:subject>
+      <dc:subject>Land use</dc:subject>
+      <dc:subject>environment</dc:subject>
+      <dc:subject>imageryBaseMapsEarthCover</dc:subject>
+      <dc:format>GeoTIFF</dc:format>
+      <dct:abstract>This metadata refer to the 'Corine Land Cover + Backbone' (CLC+ Backbone) which is a spatially detailed, large scale, Earth Observation-based land cover inventory. The CLC+ Backbone Raster Product is a 10m pixel-based land cover map based on Sentinel satelitte time series from July 2017 to June 2019. For each pixel it shows the dominant land cover among the 11 basic land cover classes.
+
+Thematic pixel values:
+1: Sealed
+2: Woody &#8211; needle leaved trees
+3: Woody &#8211; Broadleaved deciduous trees
+4: Woody &#8211; Broadleaved evergreen trees
+5: Low-growing woody plants (bushes, shrubs)
+6: Permanent herbaceous
+7: Periodically herbaceous
+8: Lichens and mosses
+9: Non- and sparsely-vegetated
+10: Water
+11: Snow and ice
+254: outside area
+255: No data
+
+The product has a three years update cycle and is available for the 2018 reference year.</dct:abstract>
+      <dc:description>This metadata refer to the 'Corine Land Cover + Backbone' (CLC+ Backbone) which is a spatially detailed, large scale, Earth Observation-based land cover inventory. The CLC+ Backbone Raster Product is a 10m pixel-based land cover map based on Sentinel satelitte time series from July 2017 to June 2019. For each pixel it shows the dominant land cover among the 11 basic land cover classes.
+
+Thematic pixel values:
+1: Sealed
+2: Woody &#8211; needle leaved trees
+3: Woody &#8211; Broadleaved deciduous trees
+4: Woody &#8211; Broadleaved evergreen trees
+5: Low-growing woody plants (bushes, shrubs)
+6: Permanent herbaceous
+7: Periodically herbaceous
+8: Lichens and mosses
+9: Non- and sparsely-vegetated
+10: Water
+11: Snow and ice
+254: outside area
+255: No data
+
+The product has a three years update cycle and is available for the 2018 reference year.</dc:description>
+      <dc:rights>otherRestrictions</dc:rights>
+      <dc:rights>otherRestrictions</dc:rights>
+      <dc:language>eng</dc:language>
+      <dc:source>The CLC+ Backbone Raster Product is primarily based on a supervised classification of satellite image time-series from Sentinel-2 L2A including all scenes with a cloud cover below 80% and acquired from July 2017 and June 2019. The time series is initially resampled in along the time axis to obtain an equidistant time-series at 10-day intervals. Clouds and cloud shadows are masked out before based on masks produced with FMask 4.1.
+
+Training and test data were compiled for the reference year 2018 from various sources, such as from adjusted and filtered LUCAS 2018 survey point data; stratified automated LC class annotations based on existing land use/land cover maps, as well as from additional visual sample point photointerpretation relying on VHR imagery, NDVI time series and auxiliary datasets.
+ 
+A temporal Convolutional Neural Network with four hierarchical layers was calibrated on the collected training data and input time-series / features. Given the heterogeneity of the addressed European landscapes, all classifier training, testing and, finally, LC classification, is performed along substrata based on biogeographical regions and existing LC layers. 
+
+Dedicated post-processing steps include bilateral filtering to reduce labelling noise, as well as adjustments of the class probabilities and threshold based on auxiliary data such as street networks, national and regional land cover and land use maps or existing Pan-European land cover maps.
+
+Quality assurance follows the ISO 9001:2015 standards for Quality Management and comprises of dedicated procedures of quality checks (QA breakpoints) during implementation of the production chain, in order to keep persistent control over the various stages of production, assure fitness-for-purpose of the end-products and that all quality requirements are fulfilled. Priority has been given to the target thematic accuracy to be achieved by each product, as well as to the issues of product consistency (spatial, thematic, temporal) and homogeneity. 
+Quality Assessment: The quality assessment has been performed according to INSPIRE Data Specifications. The data quality elements considered are: (i) Completeness, (ii) Logical Consistency, (iii) positional accuracy, (iv) Thematic Accuracy, (v) Temporal quality and (vi) Usability.
+
+Geometric accuracy (positioning scale): Equals Sentinel-2 positional accuracy in 2018 (~11m at 95.5% confidence).
+
+Thematic target accuracy: An independent internal accuracy assessment based on the interpretation of more than 42,000 samples (plausibility analysis) assessed the overall accuracy for the EU27 area at 92.8% (+-0.3%) and for the full EEA38+UK coverage at 91.9% (+-0.3%). The targeted producer's and user's accuracies are above the target of at least 85% for all classes except for Low-growing woody plants, Lichens and Mosses, and Non-and sparsely vegetated which are subject to regionally lower accuracies. Further details on the internal validation results are presented in the Product User Manual.</dc:source>
+      <dc:format>GeoTIFF</dc:format>
+      <ows:BoundingBox crs="urn:ogc:def:crs:EPSG:6.6:4326">
+        <ows:LowerCorner>24.2841 -56.5052</ows:LowerCorner>
+        <ows:UpperCorner>72.6338 72.9061</ows:UpperCorner>
+      </ows:BoundingBox>
+      <dc:URI protocol="WWW:LINK" name="CLC+ Backbone &#8212; Copernicus Land Monitoring Service">https://land.copernicus.eu/pan-european/clc-plus</dc:URI>
+      <dc:URI protocol="" name="Detailed specifications and user guidelines" description="Detailed specifications and user guidelines">https://land.copernicus.eu/pan-european/clc-plus/resolveuid/44ddae8b83f341f8b258d60266af4b76</dc:URI>
+      <dc:URI protocol="image/png">https://sdi.eea.europa.eu/public/catalogue-graphic-overview/cd534ebf-f553-42f0-9ac1-62c1dc36d32c.png</dc:URI>
+    </csw:Record>
+    

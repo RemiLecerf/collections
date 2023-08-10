@@ -1,0 +1,51 @@
+{
+  "type": "Collection",
+  "id": "EO:EUM:DAT:0410",
+  "stac_version": "1.0.0",
+  "description": "OLCI (Ocean and Land Colour Instrument) Reduced resolution: 1200m at nadir. All Sentinel-3 NRT products are available at pick-up point in less than 3h. Level 1 products are calibrated Top Of Atmosphere radiance values at OLCI 21 spectral bands. Radiances are computed from the instrument digital counts by applying geo-referencing, radiometric processing (non-linearity correction, smear correction, dark offset correction, absolute gain calibration adjusted for gain evolution with time), and stray-light correction for straylight effects in OLCI camera's spectrometer and ground imager. Additionally, spatial resampling of OLCI pixels to the 'ideal' instrument grid, initial pixel classification, and annotation at tie points with auxiliary meteorological data and acquisition geometry are provided. The radiance products are accompanied by error estimate products, however the error values are currently not available. \n\n- All Sentinel-3 NRT products are available at pick-up point in less than 3h\n- All Sentinel-3 Non Time Critical (NTC) products are available at pick-up point in less than 30 days\nSentinel-3 is part of a series of Sentinel satellites, under the umbrella of the EU Copernicus programme.",
+  "links": [
+    {
+      "rel": "hosts",
+      "href": "https://navigator.eumetsat.int/product/EO:EUM:DAT:0410",
+      "type": "http",
+      "title": "EUMETSAT Product Navigator (Metadata)"
+    }
+  ],
+  "title": "OLCI Level 1B Reduced Resolution - Sentinel-3",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2016-10-20T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Ocean",
+    "Ocean Colour",
+    "Level 1 Data"
+  ],
+  "providers": [
+    {
+      "name": "European Organisation for the Exploitation of Meteorological Satellites (EUMETSAT)",
+      "description": "EUMETSAT Data store",
+      "roles": [
+        "host"
+      ],
+      "url": "https://data.eumetsat.int/"
+    }
+  ]
+}

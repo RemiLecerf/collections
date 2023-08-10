@@ -1,0 +1,73 @@
+{
+    "type": "Collection",
+    "stac_version": "1.0.0",
+    "id": "EO.CLMS.DAT.SENTINEL-2.HRVPP.FCOVER",
+    "title": "Sentinel-2 Fraction of Vegetation Cover (FCOVER) (tiles) - V2",
+    "description": "Fraction of vegetation Cover (FCOVER) corresponds to the gap fraction for nadir direction. It is used to separate vegetation and soil in energy balance processes, including temperature and evapotranspiration. It is computed from the leaf area index and other canopy structural variables and does not depend on variables such as the geometry of illumination as compared to FAPAR. For this reason, it is a very good candidate for the replacement of classical vegetation indices for the monitoring of green vegetation. Because of the linear relationship with radiometric signal, FCOVER will be only marginally scale dependent. Note that similarly to LAI and FAPAR, only the green elements will be considered, either belonging both to the overstorey and understorey.",
+    "keywords": [
+        "VITO",
+        "TERRASCOPE",
+        "COPERNICUS",
+        "ESA",
+        "Orthoimagery",
+        "Sentinel-2",
+        "MSI",
+        "Level-3",
+        "Radiometry",
+        "Plant Resource",
+        "FCOVER"
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180.0,
+                    -84.0,
+                    180.0,
+                    84.0
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2020-03-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "Licence: https://terrascope.be/en/terms-use",
+    "links": [
+        {
+            "rel": "self",
+            "type": "application/json",
+            "href": "https://services.terrascope.be/stac/collections/urn:eop:VITO:TERRASCOPE_S2_FCOVER_V2"
+        },
+        {
+            "rel": "parent",
+            "type": "application/json",
+            "href": "https://services.terrascope.be/stac/"
+        },
+        {
+            "rel": "items",
+            "type": "application/geo+json",
+            "href": "https://services.terrascope.be/stac/collections/urn:eop:VITO:TERRASCOPE_S2_FCOVER_V2/items"
+        },
+        {
+            "rel": "root",
+            "type": "application/json",
+            "href": "https://services.terrascope.be/stac/"
+        }
+    ],
+    "summaries": {
+        "datetime": {
+            "min": "2020-03-01T00:00:00Z"
+        },
+        "constellation": [
+            "Sentinel-2"
+        ],
+        "instruments": [
+            "MSI"
+        ]
+    }
+}

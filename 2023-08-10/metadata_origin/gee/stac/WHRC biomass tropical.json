@@ -1,0 +1,151 @@
+{
+    "description": "A national-level map of above-ground live woody biomass density for\ntropical countries at 500m. This dataset was assembled from a combination\nof co-located field measurements, LiDAR observations, and imagery recorded\nfrom the Moderate Resolution Imaging Spectroradiometer (MODIS).\n",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2012-01-29T00:00:00Z",
+                    "2012-01-29T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "gee:terms_of_use": "- The national level dataset is freely available for use for\n  scientific, conservation, and educational purposes.\n- Users acknowledge that they themselves are responsible for determining\n  whether the dataset is of sufficient quality and appropriateness for\n  their objectives.\n- Users agree that they will make reasonable efforts to provide appropriate\n  feedbacks and notification of any significant errors that they identify\n  in the dataset.\n",
+    "gee:type": "image",
+    "id": "WHRC/biomass/tropical",
+    "keywords": [
+        "aboveground",
+        "biomass",
+        "carbon",
+        "geophysical",
+        "pantropical",
+        "tropical",
+        "umd",
+        "whrc"
+    ],
+    "license": "proprietary",
+    "links": [
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections/WHRC/biomass/tropical",
+            "rel": "self",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections",
+            "rel": "parent",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/",
+            "rel": "root",
+            "type": "application/json"
+        },
+        {
+            "code": "JavaScript",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/WHRC/WHRC_biomass_tropical",
+            "rel": "related",
+            "title": "Run the example for WHRC/biomass/tropical in the Earth Engine Code Editor",
+            "type": "text/html"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/images/WHRC/WHRC_biomass_tropical_sample.png",
+            "rel": "preview",
+            "type": "image/png"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/WHRC_biomass_tropical#terms-of-use",
+            "rel": "license",
+            "type": "text/html"
+        }
+    ],
+    "providers": [
+        {
+            "name": "WHRC",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.woodwellclimate.org/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/WHRC_biomass_tropical"
+        }
+    ],
+    "sci:citation": "A. Baccini, S J. Goetz, W.S. Walker, N. T. Laporte, M. Sun, D.\nSulla-Menashe, J. Hackler, P.S.A. Beck, R. Dubayah, M.A. Friedl, S. Samanta\nand R. A. Houghton. Estimated carbon dioxide emissions from tropical\ndeforestation improved by carbon-density maps. 2012 Nature Climate Change,\n[doi:10.1038/NCLIMATE1354](https://doi.org/10.1038/NCLIMATE1354)\n",
+    "stac_extensions": [
+        "collection-assets"
+    ],
+    "stac_version": "1.0.0",
+    "summaries": {
+        "Mg": {
+            "gee:estimated_range": true,
+            "maximum": 503
+        },
+        "eo:bands": [
+            {
+                "description": "Megagrams of aboveground live woody biomass per Hectare",
+                "gee:units": "Mg/ha",
+                "name": "Mg"
+            }
+        ],
+        "gsd": [
+            500
+        ]
+    },
+    "title": "WHRC Pantropical National Level Carbon Stock Dataset",
+    "type": "Collection",
+    "cube:dimensions": {
+        "x": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                -180,
+                180
+            ]
+        },
+        "y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                -90,
+                90
+            ]
+        },
+        "t": {
+            "type": "temporal",
+            "extent": [
+                "2012-01-29T00:00:00Z",
+                "2012-01-29T00:00:00Z"
+            ]
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "Mg"
+            ]
+        }
+    },
+    "assets": {
+        "preview_4": {
+            "href": "https://developers.google.com/earth-engine/datasets/images/WHRC/WHRC_biomass_tropical_sample.png",
+            "type": "image/png",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    }
+}

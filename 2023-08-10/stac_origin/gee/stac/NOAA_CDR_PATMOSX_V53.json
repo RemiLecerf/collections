@@ -1,0 +1,1407 @@
+{
+    "type": "Collection",
+    "version": "V5.3",
+    "stac_version": "1.0.0",
+    "stac_extensions": [
+        "collection-assets"
+    ],
+    "id": "NOAA/CDR/PATMOSX/V53",
+    "title": "NOAA CDR PATMOSX: Cloud Properties, Reflectance, and Brightness Temperatures, Version 5.3",
+    "description": "This dataset provides high quality Climate Data Record (CDR) of multiple\ncloud properties along with Advanced Very High Resolution Radiometer (AVHRR)\nPathfinder Atmospheres Extended (PATMOS-x) brightness temperatures and\nreflectances. These data have been fitted to a 0.1 x 0.1 equal angle-grid\nwith both ascending and descending assets generated daily from two to ten\nNOAA and MetOp satellite passes per day.\n\nThis dataset includes 48 bands, 11 of which are deemed CDR quality\n(marked with \"CDR variable\" in the band list).\nThe cloud products are derived using the ABI (Advanced Baseline Imager)\nCloud Height Algorithm (ACHA), and the Daytime Cloud Optical Properties\n(DCOMP) algorithm. For more detail on the processing see the\n[Climate Algorithm Theoretical Basis Document (C-ATBD)](\nhttps://www.ncei.noaa.gov/pub/data/sds/cdr/CDRs/AVHRR-HIRS_Reflectance_PATMOS-x/AlgorithmDescription%20_01B-1c.pdf).\n",
+    "keywords": [
+        "atmospheric",
+        "avhrr",
+        "brightness",
+        "cdr",
+        "cloud",
+        "metop",
+        "noaa",
+        "optical",
+        "poes",
+        "reflectance",
+        "temperature"
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1979-01-01T00:00:00Z",
+                    "2022-01-01T00:00:00"
+                ]
+            ]
+        }
+    },
+    "providers": [
+        {
+            "name": "NOAA",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.ncdc.noaa.gov/cdr/atmospheric/avhrr-cloud-properties-patmos-x"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_CDR_PATMOSX_V53"
+        }
+    ],
+    "license": "proprietary",
+    "links": [
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections/NOAA/CDR/PATMOSX/V53",
+            "rel": "self",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections",
+            "rel": "parent",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/",
+            "rel": "root",
+            "type": "application/json"
+        },
+        {
+            "code": "JavaScript",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NOAA/NOAA_CDR_PATMOSX_V53",
+            "rel": "related",
+            "title": "Run the example for NOAA/CDR/PATMOSX/V53 in the Earth Engine Code Editor",
+            "type": "text/html"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/images/NOAA/NOAA_CDR_PATMOSX_V53_sample.png",
+            "rel": "preview",
+            "type": "image/png"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_CDR_PATMOSX_V53#terms-of-use",
+            "rel": "license",
+            "type": "text/html"
+        },
+        {
+            "href": "https://doi.org/10.7289/V5348HCK",
+            "rel": "cite-as"
+        }
+    ],
+    "cube:dimensions": {
+        "x": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                -180,
+                180
+            ]
+        },
+        "y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                -90,
+                90
+            ]
+        },
+        "t": {
+            "type": "temporal",
+            "extent": [
+                "1979-01-01T00:00:00Z",
+                "2022-01-01T00:00:00"
+            ]
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "cld_emiss_acha",
+                "cld_height_acha",
+                "cld_height_uncer_acha",
+                "cld_opd_acha",
+                "cld_opd_dcomp",
+                "cld_opd_dcomp_unc",
+                "cld_press_acha",
+                "cld_reff_acha",
+                "cld_reff_dcomp",
+                "cld_reff_dcomp_unc",
+                "cld_temp_acha",
+                "cloud_fraction",
+                "cloud_fraction_uncertainty",
+                "cloud_probability",
+                "cloud_transmission_0_65um",
+                "cloud_type",
+                "cloud_water_path",
+                "land_class",
+                "refl_0_65um",
+                "refl_0_65um_counts",
+                "refl_0_65um_stddev_3x3",
+                "refl_0_86um",
+                "refl_0_86um_counts",
+                "refl_1_60um",
+                "refl_1_60um_counts",
+                "refl_3_75um",
+                "relative_azimuth_angle",
+                "scan_element_number",
+                "scan_line_number",
+                "scan_line_time",
+                "sensor_zenith_angle",
+                "snow_class",
+                "solar_azimuth_angle",
+                "solar_zenith_angle",
+                "surface_temperature_retrieved",
+                "surface_type",
+                "temp_11_0um",
+                "temp_11_0um_clear_sky",
+                "temp_11_0um_stddev_3x3",
+                "temp_12_0um",
+                "temp_3_75um",
+                "acha_info",
+                "acha_quality",
+                "bad_pixel_mask",
+                "cloud_mask",
+                "dcomp_info",
+                "dcomp_quality",
+                "glint_mask"
+            ]
+        }
+    },
+    "summaries": {
+        "cld_emiss_acha": {
+            "gee:estimated_range": true,
+            "maximum": 127,
+            "minimum": -127
+        },
+        "cld_height_acha": {
+            "gee:estimated_range": true,
+            "maximum": 32767,
+            "minimum": -32767
+        },
+        "cld_height_uncer_acha": {
+            "gee:estimated_range": true,
+            "maximum": 127,
+            "minimum": -127
+        },
+        "cld_opd_acha": {
+            "gee:estimated_range": true,
+            "maximum": 127,
+            "minimum": -127
+        },
+        "cld_opd_dcomp": {
+            "gee:estimated_range": true,
+            "maximum": 32149,
+            "minimum": -32685
+        },
+        "cld_opd_dcomp_unc": {
+            "gee:estimated_range": true,
+            "maximum": -32276,
+            "minimum": -32685
+        },
+        "cld_press_acha": {
+            "gee:estimated_range": true,
+            "maximum": 32767,
+            "minimum": -32767
+        },
+        "cld_reff_acha": {
+            "gee:estimated_range": true,
+            "maximum": 127,
+            "minimum": -127
+        },
+        "cld_reff_dcomp": {
+            "gee:estimated_range": true,
+            "maximum": 32767,
+            "minimum": -32767
+        },
+        "cld_reff_dcomp_unc": {
+            "gee:estimated_range": true,
+            "maximum": -32357,
+            "minimum": -32767
+        },
+        "cld_temp_acha": {
+            "gee:estimated_range": true,
+            "maximum": 32767,
+            "minimum": -32767
+        },
+        "cloud_fraction": {
+            "gee:estimated_range": true,
+            "maximum": 127,
+            "minimum": -127
+        },
+        "cloud_fraction_uncertainty": {
+            "gee:estimated_range": true,
+            "minimum": -127
+        },
+        "cloud_probability": {
+            "gee:estimated_range": true,
+            "maximum": 127,
+            "minimum": -127
+        },
+        "cloud_transmission_0_65um": {
+            "gee:estimated_range": true,
+            "maximum": 127,
+            "minimum": -127
+        },
+        "cloud_water_path": {
+            "gee:estimated_range": true,
+            "maximum": 127,
+            "minimum": -127
+        },
+        "eo:bands": [
+            {
+                "center_wavelength": 11,
+                "description": "Cloud emissivity at 11&micro;m, determined from ACHA (CDR variable)",
+                "gee:offset": 0.5,
+                "gee:scale": 0.003937008,
+                "gee:wavelength": "11&micro;m",
+                "name": "cld_emiss_acha",
+                "common_name": "lwir11"
+            },
+            {
+                "description": "Cloud height computed using ACHA",
+                "gee:offset": 10,
+                "gee:scale": 0.0003051851,
+                "gee:units": "km",
+                "name": "cld_height_acha"
+            },
+            {
+                "description": "Cloud height uncertainty computed using ACHA",
+                "gee:offset": 5,
+                "gee:scale": 0.03937008,
+                "gee:units": "km",
+                "name": "cld_height_uncer_acha"
+            },
+            {
+                "center_wavelength": 0.65,
+                "description": "Cloud optical depth at 0.65&micro;m, determined from ACHA",
+                "gee:offset": 3.9,
+                "gee:scale": 0.03228346,
+                "gee:wavelength": "0.65&micro;m",
+                "name": "cld_opd_acha",
+                "common_name": "red"
+            },
+            {
+                "center_wavelength": 0.65,
+                "description": "Cloud optical depth at 0.65&micro;m, determined from DCOMP (CDR variable)",
+                "gee:offset": 79.9,
+                "gee:scale": 0.002444532,
+                "gee:wavelength": "0.65&micro;m",
+                "name": "cld_opd_dcomp",
+                "common_name": "red"
+            },
+            {
+                "description": "Uncertainty in the cloud optical depth at 0.65&micro;m, determined from DCOMP",
+                "gee:offset": 79.9,
+                "gee:scale": 0.002444532,
+                "name": "cld_opd_dcomp_unc"
+            },
+            {
+                "description": "Cloud-top pressure computed using ACHA",
+                "gee:offset": 550,
+                "gee:scale": 0.01678518,
+                "gee:units": "hPa",
+                "name": "cld_press_acha"
+            },
+            {
+                "description": "Effective radius of cloud particles determined from ACHA",
+                "gee:offset": 80,
+                "gee:scale": 0.6299213,
+                "gee:units": "&micro;m",
+                "name": "cld_reff_acha"
+            },
+            {
+                "description": "Effective radius of cloud particles determined from DCOMP (CDR variable)",
+                "gee:offset": 80,
+                "gee:scale": 0.002441481,
+                "gee:units": "&micro;m",
+                "name": "cld_reff_dcomp"
+            },
+            {
+                "description": "Uncertainty in the effective radius of cloud particle determined from DCOMP",
+                "gee:offset": 80,
+                "gee:scale": 0.002441481,
+                "gee:units": "&micro;m",
+                "name": "cld_reff_dcomp_unc"
+            },
+            {
+                "description": "Cloud-top temperature computed using ACHA (CDR variable)",
+                "gee:offset": 240,
+                "gee:scale": 0.002441481,
+                "gee:units": "K",
+                "name": "cld_temp_acha"
+            },
+            {
+                "description": "Cloud fraction computed over a 3x3 pixel array at the native resolution centered on this pixel",
+                "gee:offset": 0.5,
+                "gee:scale": 0.003937008,
+                "name": "cloud_fraction"
+            },
+            {
+                "description": "Cloud fraction uncertainty computed over a 3x3 array",
+                "gee:offset": 0.5,
+                "gee:scale": 0.003937008,
+                "name": "cloud_fraction_uncertainty"
+            },
+            {
+                "description": "Probability of a pixel being cloudy from the Bayesian cloud mask",
+                "gee:offset": 0.5,
+                "gee:scale": 0.003937008,
+                "name": "cloud_probability"
+            },
+            {
+                "center_wavelength": 0.65,
+                "description": "Cloud transmission at 0.65&micro;m from DCOMP",
+                "gee:offset": 0.5,
+                "gee:scale": 0.003937008,
+                "gee:wavelength": "0.65&micro;m",
+                "name": "cloud_transmission_0_65um",
+                "common_name": "red"
+            },
+            {
+                "description": "Integer classification of the cloud type including clear and aerosol type",
+                "gee:classes": [
+                    {
+                        "color": "73d8ff",
+                        "description": "Clear"
+                    },
+                    {
+                        "color": "73d8ff",
+                        "description": "Probably clear",
+                        "value": 1
+                    },
+                    {
+                        "color": "b1d8dc",
+                        "description": "Fog",
+                        "value": 2
+                    },
+                    {
+                        "color": "030bff",
+                        "description": "Water",
+                        "value": 3
+                    },
+                    {
+                        "color": "0013a1",
+                        "description": "Supercooled water",
+                        "value": 4
+                    },
+                    {
+                        "color": "05ffa3",
+                        "description": "Mixed",
+                        "value": 5
+                    },
+                    {
+                        "color": "d5fff9",
+                        "description": "Opaque ice",
+                        "value": 6
+                    },
+                    {
+                        "color": "ffffff",
+                        "description": "Cirrus",
+                        "value": 7
+                    },
+                    {
+                        "color": "b2b8ff",
+                        "description": "Overlapping",
+                        "value": 8
+                    },
+                    {
+                        "color": "b2b8ff",
+                        "description": "Overshooting",
+                        "value": 9
+                    },
+                    {
+                        "color": "f8c4ff",
+                        "description": "Unknown",
+                        "value": 10
+                    },
+                    {
+                        "color": "d7e9a1",
+                        "description": "Dust",
+                        "value": 11
+                    },
+                    {
+                        "color": "adadad",
+                        "description": "Smoke",
+                        "value": 12
+                    }
+                ],
+                "name": "cloud_type"
+            },
+            {
+                "description": "Integrated total cloud water over whole column",
+                "gee:offset": 600,
+                "gee:scale": 4.72441,
+                "gee:units": "g/m^2",
+                "name": "cloud_water_path"
+            },
+            {
+                "description": "Land classes",
+                "gee:classes": [
+                    {
+                        "color": "46ffba",
+                        "description": "Shallow ocean"
+                    },
+                    {
+                        "color": "c09968",
+                        "description": "Land",
+                        "value": 1
+                    },
+                    {
+                        "color": "eddc66",
+                        "description": "Coastline",
+                        "value": 2
+                    },
+                    {
+                        "color": "32bc76",
+                        "description": "Shallow inland water",
+                        "value": 3
+                    },
+                    {
+                        "color": "00b5c8",
+                        "description": "Ephemeral water",
+                        "value": 4
+                    },
+                    {
+                        "color": "338c91",
+                        "description": "Deep inland water",
+                        "value": 5
+                    },
+                    {
+                        "color": "0109ff",
+                        "description": "Moderate ocean",
+                        "value": 6
+                    },
+                    {
+                        "color": "010583",
+                        "description": "Deep ocean",
+                        "value": 7
+                    }
+                ],
+                "name": "land_class"
+            },
+            {
+                "center_wavelength": 0.65,
+                "description": "Top of atmosphere reflectance 0.65&micro;m (CDR variable)",
+                "gee:offset": 59,
+                "gee:scale": 0.001861629,
+                "gee:wavelength": "0.65&micro;m",
+                "name": "refl_0_65um",
+                "common_name": "red"
+            },
+            {
+                "description": "Instrument counts for the 0.65&micro;m channel",
+                "name": "refl_0_65um_counts"
+            },
+            {
+                "description": "Standard deviation of the 0.63&micro;m reflectance computed over\na 3x3 pixel array",
+                "gee:offset": 10,
+                "gee:scale": 0.07874016,
+                "name": "refl_0_65um_stddev_3x3"
+            },
+            {
+                "center_wavelength": 0.86,
+                "description": "Top of atmosphere reflectance at 0.86&micro;m (CDR variable)",
+                "gee:offset": 59,
+                "gee:scale": 0.001861629,
+                "gee:wavelength": "0.86&micro;m",
+                "name": "refl_0_86um",
+                "common_name": "nir08"
+            },
+            {
+                "description": "Instrument counts for the 0.86&micro;m channel",
+                "name": "refl_0_86um_counts"
+            },
+            {
+                "center_wavelength": 1.6,
+                "description": "Top of atmosphere reflectance at 1.60&micro;m (CDR variable)",
+                "gee:offset": 59,
+                "gee:scale": 0.001861629,
+                "gee:wavelength": "1.60&micro;m",
+                "name": "refl_1_60um",
+                "common_name": "swir16"
+            },
+            {
+                "description": "Instrument counts for the 1.60&micro;m channel",
+                "name": "refl_1_60um_counts"
+            },
+            {
+                "center_wavelength": 3.75,
+                "description": "Top of atmosphere reflectance at 3.75&micro;m (CDR variable)",
+                "gee:offset": 30,
+                "gee:scale": 0.001525925,
+                "gee:wavelength": "3.75&micro;m",
+                "name": "refl_3_75um"
+            },
+            {
+                "description": "Sun-sensor relative azimuth angle; 0 is the principal plane looking towards sun",
+                "gee:offset": 90,
+                "gee:scale": 0.7086614,
+                "gee:units": "deg",
+                "name": "relative_azimuth_angle"
+            },
+            {
+                "description": "Scan element index of the pixel chosen for inclusion in level-2b",
+                "name": "scan_element_number"
+            },
+            {
+                "description": "Scan line number",
+                "name": "scan_line_number"
+            },
+            {
+                "description": "Scan line time",
+                "gee:units": "h",
+                "name": "scan_line_time"
+            },
+            {
+                "description": "Sensor zenith for each pixel measured in degrees from nadir",
+                "gee:offset": 45,
+                "gee:scale": 0.3543307,
+                "gee:units": "deg",
+                "name": "sensor_zenith_angle"
+            },
+            {
+                "description": "Snow classes and values",
+                "gee:classes": [
+                    {
+                        "color": "000000",
+                        "description": "No snow/ice",
+                        "value": 1
+                    },
+                    {
+                        "color": "17b0c0",
+                        "description": "Sea-ice",
+                        "value": 2
+                    },
+                    {
+                        "color": "ffffff",
+                        "description": "Snow",
+                        "value": 3
+                    }
+                ],
+                "name": "snow_class"
+            },
+            {
+                "description": "Solar azimuth angle in degrees from north, pixel to sun,\npositive values are clockwise from north",
+                "gee:scale": 1.417323,
+                "gee:units": "deg",
+                "name": "solar_azimuth_angle"
+            },
+            {
+                "description": "Solar zenith for each pixel measured in degrees away from the\nsun (0=looking at sun)",
+                "gee:offset": 90,
+                "gee:scale": 0.7086614,
+                "gee:units": "deg",
+                "name": "solar_zenith_angle"
+            },
+            {
+                "description": "Surface temperature retrieved using atmospherically corrected 11&micro;m radiance",
+                "gee:offset": 280,
+                "gee:scale": 0.472441,
+                "gee:units": "K",
+                "name": "surface_temperature_retrieved"
+            },
+            {
+                "description": "UMD surface type",
+                "gee:classes": [
+                    {
+                        "color": "0d00d4",
+                        "description": "Water"
+                    },
+                    {
+                        "color": "096619",
+                        "description": "Evergreen needle",
+                        "value": 1
+                    },
+                    {
+                        "color": "096619",
+                        "description": "Evergreen broad",
+                        "value": 2
+                    },
+                    {
+                        "color": "2ac027",
+                        "description": "Deciduous needle",
+                        "value": 3
+                    },
+                    {
+                        "color": "2ac027",
+                        "description": "Deciduous broad",
+                        "value": 4
+                    },
+                    {
+                        "color": "a0c800",
+                        "description": "Mixed forest",
+                        "value": 5
+                    },
+                    {
+                        "color": "7c6e48",
+                        "description": "Woodlands",
+                        "value": 6
+                    },
+                    {
+                        "color": "dcca76",
+                        "description": "Wooded grass",
+                        "value": 7
+                    },
+                    {
+                        "color": "c7ff42",
+                        "description": "Closed shrubs",
+                        "value": 8
+                    },
+                    {
+                        "color": "c7ff42",
+                        "description": "Open shrubs",
+                        "value": 9
+                    },
+                    {
+                        "color": "00ff5a",
+                        "description": "Grasses",
+                        "value": 10
+                    },
+                    {
+                        "color": "fff700",
+                        "description": "Croplands",
+                        "value": 11
+                    },
+                    {
+                        "color": "ffdb77",
+                        "description": "Bare",
+                        "value": 12
+                    },
+                    {
+                        "color": "9f9f9f",
+                        "description": "Urban",
+                        "value": 13
+                    }
+                ],
+                "name": "surface_type"
+            },
+            {
+                "center_wavelength": 11,
+                "description": "Top of atmosphere brightness temperature at 11.0&micro;m (CDR variable)",
+                "gee:offset": 260,
+                "gee:scale": 0.002441481,
+                "gee:units": "K",
+                "gee:wavelength": "11.0&micro;m",
+                "name": "temp_11_0um",
+                "common_name": "lwir11"
+            },
+            {
+                "description": "Top of atmosphere brightness temperature modeled assuming clear skies at 11.0&micro;m",
+                "gee:offset": 260,
+                "gee:scale": 0.002441481,
+                "gee:units": "K",
+                "name": "temp_11_0um_clear_sky"
+            },
+            {
+                "description": "Standard deviation of the 11.0&micro;m brightness temperature computed over a 3x3 pixel array",
+                "gee:offset": 10.9,
+                "gee:scale": 0.07874016,
+                "gee:units": "K",
+                "name": "temp_11_0um_stddev_3x3"
+            },
+            {
+                "center_wavelength": 12,
+                "description": "Top of atmosphere brightness temperature 12.0&micro;m (CDR variable)",
+                "gee:offset": 260,
+                "gee:scale": 0.002441481,
+                "gee:units": "K",
+                "gee:wavelength": "12.0&micro;m",
+                "name": "temp_12_0um",
+                "common_name": "lwir12"
+            },
+            {
+                "center_wavelength": 3.75,
+                "description": "Top of atmosphere brightness temperature 3.75&micro;m (CDR variable)",
+                "gee:offset": 260,
+                "gee:scale": 0.002441481,
+                "gee:units": "K",
+                "gee:wavelength": "3.75&micro;m",
+                "name": "temp_3_75um"
+            },
+            {
+                "description": "ACHA processing information bit flags",
+                "gee:bitmask": {
+                    "bitmask_parts": [
+                        {
+                            "bit_count": 1,
+                            "description": "Cloud height attempted",
+                            "values": [
+                                {
+                                    "description": "No"
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Bias correction employed",
+                            "first_bit": 1,
+                            "values": [
+                                {
+                                    "description": "No"
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Ice cloud retrieval",
+                            "first_bit": 2,
+                            "values": [
+                                {
+                                    "description": "No"
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Local radiative center processing used",
+                            "first_bit": 3,
+                            "values": [
+                                {
+                                    "description": "No"
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Multi-layer retrieval",
+                            "first_bit": 4,
+                            "values": [
+                                {
+                                    "description": "No"
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Lower cloud interpolation used",
+                            "first_bit": 5,
+                            "values": [
+                                {
+                                    "description": "No"
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Boundary layer inversion assumed",
+                            "first_bit": 6,
+                            "values": [
+                                {
+                                    "description": "No"
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        }
+                    ],
+                    "total_bit_count": 7
+                },
+                "name": "acha_info"
+            },
+            {
+                "description": "ACHA quality flags",
+                "gee:bitmask": {
+                    "bitmask_parts": [
+                        {
+                            "bit_count": 1,
+                            "description": "ACHA products processed",
+                            "values": [
+                                {
+                                    "description": "No"
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Valid Tc retrieval",
+                            "first_bit": 1,
+                            "values": [
+                                {
+                                    "description": "No"
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Valid ec retrieval",
+                            "first_bit": 2,
+                            "values": [
+                                {
+                                    "description": "No"
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Valid beta retrieval",
+                            "first_bit": 3,
+                            "values": [
+                                {
+                                    "description": "No"
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Degraded Tc retrieval",
+                            "first_bit": 4,
+                            "values": [
+                                {
+                                    "description": "No"
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Degraded ec retrieval",
+                            "first_bit": 5,
+                            "values": [
+                                {
+                                    "description": "No"
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Degraded beta retrieval",
+                            "first_bit": 6,
+                            "values": [
+                                {
+                                    "description": "No"
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        }
+                    ],
+                    "total_bit_count": 7
+                },
+                "name": "acha_quality"
+            },
+            {
+                "description": "Mask that distinguishes good from bad pixels",
+                "gee:bitmask": {
+                    "bitmask_parts": [
+                        {
+                            "bit_count": 1,
+                            "description": "Bad pixel mask",
+                            "values": [
+                                {
+                                    "description": "Good"
+                                },
+                                {
+                                    "description": "Bad",
+                                    "value": 1
+                                }
+                            ]
+                        }
+                    ],
+                    "total_bit_count": 1
+                },
+                "name": "bad_pixel_mask"
+            },
+            {
+                "description": "Integer classification of the cloud mask",
+                "gee:classes": [
+                    {
+                        "color": "73d8ff",
+                        "description": "Clear"
+                    },
+                    {
+                        "color": "b1d8dc",
+                        "description": "Probably clear",
+                        "value": 1
+                    },
+                    {
+                        "color": "d0d0d0",
+                        "description": "Probably cloudy",
+                        "value": 2
+                    },
+                    {
+                        "color": "9d9d9d",
+                        "description": "Cloudy",
+                        "value": 3
+                    }
+                ],
+                "name": "cloud_mask"
+            },
+            {
+                "description": "Processing flags for DCOMP",
+                "gee:bitmask": {
+                    "bitmask_parts": [
+                        {
+                            "bit_count": 1,
+                            "description": "Info flag set",
+                            "values": [
+                                {
+                                    "description": "No"
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Land/sea mask",
+                            "first_bit": 1,
+                            "values": [
+                                {
+                                    "description": "Land"
+                                },
+                                {
+                                    "description": "Sea",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Day/night mask",
+                            "first_bit": 2,
+                            "values": [
+                                {
+                                    "description": "Day"
+                                },
+                                {
+                                    "description": "Night",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Twilight (65-82 solar zenith)",
+                            "first_bit": 3,
+                            "values": [
+                                {
+                                    "description": "No"
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Snow",
+                            "first_bit": 4,
+                            "values": [
+                                {
+                                    "description": "No"
+                                },
+                                {
+                                    "description": "Snow",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Sea-ice",
+                            "first_bit": 5,
+                            "values": [
+                                {
+                                    "description": "No"
+                                },
+                                {
+                                    "description": "Sea-ice",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Phase",
+                            "first_bit": 6,
+                            "values": [
+                                {
+                                    "description": "Liquid"
+                                },
+                                {
+                                    "description": "Ice",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Thick cloud",
+                            "first_bit": 7,
+                            "values": [
+                                {
+                                    "description": "No"
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Thin cloud",
+                            "first_bit": 8,
+                            "values": [
+                                {
+                                    "description": "No"
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        }
+                    ],
+                    "total_bit_count": 9
+                },
+                "name": "dcomp_info"
+            },
+            {
+                "description": "DCOMP processing information bit flags",
+                "gee:bitmask": {
+                    "bitmask_parts": [
+                        {
+                            "bit_count": 1,
+                            "description": "DCOMP products processed",
+                            "values": [
+                                {
+                                    "description": "No"
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Valid COD retrieval",
+                            "first_bit": 1,
+                            "values": [
+                                {
+                                    "description": "No"
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Valid REF retrieval",
+                            "first_bit": 2,
+                            "values": [
+                                {
+                                    "description": "No"
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Degraded COD retrieval",
+                            "first_bit": 3,
+                            "values": [
+                                {
+                                    "description": "No"
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Degraded REF retrieval",
+                            "first_bit": 4,
+                            "values": [
+                                {
+                                    "description": "No"
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Convergency",
+                            "first_bit": 5,
+                            "values": [
+                                {
+                                    "description": "No"
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Glint",
+                            "first_bit": 6,
+                            "values": [
+                                {
+                                    "description": "No"
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        }
+                    ],
+                    "total_bit_count": 7
+                },
+                "name": "dcomp_quality"
+            },
+            {
+                "description": "Glint mask",
+                "gee:bitmask": {
+                    "bitmask_parts": [
+                        {
+                            "bit_count": 1,
+                            "description": "Glint mask",
+                            "values": [
+                                {
+                                    "description": "No"
+                                },
+                                {
+                                    "description": "Yes",
+                                    "value": 1
+                                }
+                            ]
+                        }
+                    ],
+                    "total_bit_count": 1
+                },
+                "name": "glint_mask"
+            }
+        ],
+        "gee:schema": [
+            {
+                "description": "'ascending' or 'descending'",
+                "name": "orbit_node",
+                "type": "STRING"
+            },
+            {
+                "description": "Name of platform",
+                "name": "platform",
+                "type": "STRING"
+            },
+            {
+                "description": "'provisional' or 'permanent'",
+                "name": "status",
+                "type": "STRING"
+            }
+        ],
+        "gsd": [
+            11132
+        ],
+        "instruments": [
+            "AVHRR"
+        ],
+        "platform": [
+            "MetOP",
+            "NOAA"
+        ],
+        "refl_0_65um": {
+            "gee:estimated_range": true,
+            "maximum": 32767,
+            "minimum": -32767
+        },
+        "refl_0_65um_counts": {
+            "gee:estimated_range": true,
+            "maximum": 1017,
+            "minimum": -21
+        },
+        "refl_0_65um_stddev_3x3": {
+            "gee:estimated_range": true,
+            "maximum": 127,
+            "minimum": -127
+        },
+        "refl_0_86um": {
+            "gee:estimated_range": true,
+            "maximum": 32767,
+            "minimum": -32767
+        },
+        "refl_0_86um_counts": {
+            "gee:estimated_range": true,
+            "maximum": 1016,
+            "minimum": -21
+        },
+        "refl_1_60um": {
+            "gee:estimated_range": true,
+            "maximum": 32767,
+            "minimum": -32767
+        },
+        "refl_1_60um_counts": {
+            "gee:estimated_range": true,
+            "maximum": 1629,
+            "minimum": -12
+        },
+        "refl_3_75um": {
+            "gee:estimated_range": true,
+            "maximum": 32767,
+            "minimum": -32767
+        },
+        "relative_azimuth_angle": {
+            "gee:estimated_range": true,
+            "maximum": 127,
+            "minimum": -127
+        },
+        "scan_element_number": {
+            "gee:estimated_range": true,
+            "maximum": 409,
+            "minimum": -999
+        },
+        "scan_line_number": {
+            "gee:estimated_range": true,
+            "maximum": 13835,
+            "minimum": -999
+        },
+        "scan_line_time": {
+            "gee:estimated_range": true,
+            "maximum": 23.99
+        },
+        "sensor_zenith_angle": {
+            "gee:estimated_range": true,
+            "maximum": 68,
+            "minimum": -127
+        },
+        "solar_azimuth_angle": {
+            "gee:estimated_range": true,
+            "maximum": 127,
+            "minimum": -127
+        },
+        "solar_zenith_angle": {
+            "gee:estimated_range": true,
+            "maximum": 101,
+            "minimum": -101
+        },
+        "surface_temperature_retrieved": {
+            "gee:estimated_range": true,
+            "maximum": 127,
+            "minimum": -127
+        },
+        "temp_11_0um": {
+            "gee:estimated_range": true,
+            "maximum": 32767,
+            "minimum": -32767
+        },
+        "temp_11_0um_clear_sky": {
+            "gee:estimated_range": true,
+            "maximum": 32767,
+            "minimum": -30853
+        },
+        "temp_11_0um_stddev_3x3": {
+            "gee:estimated_range": true,
+            "maximum": 127,
+            "minimum": -127
+        },
+        "temp_12_0um": {
+            "gee:estimated_range": true,
+            "maximum": 32767,
+            "minimum": -32767
+        },
+        "temp_3_75um": {
+            "gee:estimated_range": true,
+            "maximum": 32767,
+            "minimum": -32767
+        }
+    },
+    "assets": {
+        "preview_4": {
+            "href": "https://developers.google.com/earth-engine/datasets/images/NOAA/NOAA_CDR_PATMOSX_V53_sample.png",
+            "type": "image/png",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    },
+    "sci:citation": "For the TOA Reflectances and Brightness Temperatures users must cite:\nAndrew K. Heidinger, Michael J. Foster, Andi Walther, Xuepeng Zhao, and\nNOAA CDR Program (2014): NOAA Climate Data Record (CDR) of Reflectance\nand Brightness Temperatures from AVHRR Pathfinder Atmospheres - Extended\n(PATMOS-x), Version 5.3. [indicate subset used]. NOAA National Centers for\nEnvironmental Information.\n[doi:10.7289/V56W982J](https://doi.org/10.7289/V56W982J)\n[access date].\n",
+    "sci:doi": "10.7289/V5348HCK",
+    "sci:publications": [
+        {
+            "citation": "For the cloud properties users must cite: Andrew K. Heidinger, Michael J.\nFoster, Andi Walther, Xuepeng Zhao, and NOAA CDR Program (2014): NOAA\nClimate Data Record (CDR) of Cloud Properties from AVHRR Pathfinder\nAtmospheres - Extended (PATMOS-x), Version 5.3. [indicate subset used].\nNOAA National Centers for Environmental Information.\n[doi:10.7289/V5348HCK](https://doi.org/10.7289/V5348HCK)\n[access date].\n",
+            "doi": "10.7289/V5348HCK"
+        }
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "day"
+    },
+    "gee:terms_of_use": "The NOAA CDR Program's official distribution point for CDRs is NOAA's\nNational Climatic Data Center which provides sustained, open access and\nactive data management of the CDR packages and related information in\nkeeping with the United States' open data policies and practices as\ndescribed in the President's Memorandum on \\\"Open Data Policy\\\" and pursuant\nto the Executive Order of May 9, 2013, \\\"Making Open and Machine Readable\nthe New Default for Government Information\\\". In line with these policies,\nthe CDR data sets are nonproprietary, publicly available, and no\nrestrictions are placed upon their use. For more information, see the\n[Fair Use of NOAA's CDR Data Sets, Algorithms and Documentation](https://www1.ncdc.noaa.gov/pub/data/sds/cdr/CDRs/Aerosol_Optical_Thickness/UseAgreement_01B-04.pdf)\npdf.\n",
+    "gee:type": "image_collection"
+}

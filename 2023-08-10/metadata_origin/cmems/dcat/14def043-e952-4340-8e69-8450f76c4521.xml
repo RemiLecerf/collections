@@ -1,0 +1,79 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:dct="http://purl.org/dc/terms/" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/14def043-e952-4340-8e69-8450f76c4521">
+        <foaf:primaryTopic rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/resource/a78600a4-a280-47b5-8ddd-0dc8b5e9c9d9"/>
+        <dct:issued>2023-03-29</dct:issued>
+        <dct:modified>2023-03-29</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/srv/eng/xml.metadata.get?uuid=14def043-e952-4340-8e69-8450f76c4521">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork?uuid=14def043-e952-4340-8e69-8450f76c4521">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/resource/a78600a4-a280-47b5-8ddd-0dc8b5e9c9d9">
+        <dct:identifier>a78600a4-a280-47b5-8ddd-0dc8b5e9c9d9</dct:identifier>
+        <dct:title>Baltic Sea Ice Volume from Observations Reprocessing</dct:title>
+        <dct:abstract>'''DEFINITION'''
+
+The sea ice volume is a product of sea ice concentration and sea ice thickness integrated over respective area. Sea ice concentration is the fractional coverage of an ocean area covered with sea ice. The Baltic Sea area having more than 15% of sea ice concentration is included into the sea ice volume analysis. Daily sea ice volume values are computed from the daily sea ice concentration and sea ice thickness maps. The data used to produce the charts are Synthetic Aperture Radar images as well as in situ observations from ice breakers (Uiboupin et al., 2010; https://www.smhi.se/data/oceanografi/havsis). The annual course of the sea ice volume has been calculated as daily mean ice volume for each day-of-year over the period October 1992 – September 2014. Weekly smoothed time series of the sea ice volume have been calculated from daily values using a 7-day moving average filter. 
+
+'''CONTEXT'''
+
+Sea ice coverage has a vital role in the annual course of physical and ecological conditions in the Baltic Sea. Knowledge of the sea ice volume facilitates planning of icebreaking activity and operation of the icebreakers (Valdez Banda et al., 2015; Boström and Österman, 2017). A long-term monitoring of ice parameters is required for design and installation of offshore constructions in seasonally ice covered seas (Heinonen and Rissanen, 2017). A reduction of the sea ice volume in the Baltic Sea has a critical impact on the population of ringed seals (Harkonen et al., 2008). Ringed seals need stable ice conditions for about two months for breeding and moulting (Sundqvist et al., 2012). The sea ice is a habitat for diverse biological assemblages (Enberg et al., 2018).
+
+'''CMEMS KEY FINDINGS'''
+
+In the Baltic Sea, ice season may start in October and may last until June. Maximum sea ice volume is observed in March on average. The ice season 2020/21 had low maximum sea ice volume in the Baltic Sea reaching about 18 km3. During the preceding period 1993-2019, the yearly maximum ice volume varied from 4 km3 in 2020 to 60 km3 in 1996. There is a statistically significant decreasing trend of -0.75 km3/year (p=0.02) in the maximum sea ice volume of the Baltic Sea. 
+
+'''DOI (product):''' 
+https://doi.org/10.48670/moi-00201</dct:abstract>
+        <dcat:theme rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/thesaurus/iso/topicCategory/oceans"/>
+        <foaf:thumbnail rdf:resource="https://catalogue.marine.copernicus.eu/documents/IMG/BALTIC_OMI_SI_volume.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((9.00 53.00, 9.00 66.00, 30.00 66.00, 30.00 53.00, 9.00 53.00))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:issued>2018-02-12</dct:issued>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/BAL-DMI-COPENHAGEN-DK"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/BAL-TTU-TALLINN-EE"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/BAL-SMHI-NORRKOPING-SE"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/BAL-SMHI-NORRKOPING-SE"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/MOI-OMI-SERVICE"/>
+        <dct:accrualPeriodicity>annually</dct:accrualPeriodicity>
+        <dct:license>otherRestrictions</dct:license>
+        <dct:license>license</dct:license>
+        <dct:license>No limitations on public access</dct:license>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/BALTIC_OMI_SI_volume/BALTIC_OMI_SI_volume"/>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/BALTIC_OMI_SI_volume/BALTIC_OMI_SI_volume_yday"/>
+        <dcat:distribution rdf:resource="https://mdl1.marine.copernicus.eu/derived/BALTIC_OMI_SI_volume/BALTIC_OMI_SI_volume_202211/baltic_omi_si_volume_19930101_P20220824.nc"/>
+        <dcat:distribution rdf:resource="https://mdl1.marine.copernicus.eu/derived/BALTIC_OMI_SI_volume/BALTIC_OMI_SI_volume_yday_202211/baltic_omi_si_volume_yday_20201001_P20220824.nc"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/e2b3b54a-3ba3-48bc-bc7b-7df142af11ad"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/010cb645-09f8-4465-b1f9-df28118a6de5"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/67b86092-bc5c-4595-abf3-5a0c39a2f8e3"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dcat:dataQuality>The myOcean products depends on other products for production or validation. The detailed list of dependencies is given in ISO19115's aggregationInfo (ISO19139 Xpath = "gmd:MD_Metadata/gmd:identificationInfo/gmd:aggregationInfo[./gmd:MD_AggregateInformation/gmd:initiativeType/gmd:DS_InitiativeTypeCode/@codeListValue='upstream-validation' or 'upstream-production']")</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+    

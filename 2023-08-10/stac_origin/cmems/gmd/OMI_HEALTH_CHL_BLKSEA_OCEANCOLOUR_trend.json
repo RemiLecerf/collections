@@ -1,0 +1,52 @@
+{
+  "type": "Collection",
+  "id": "OMI_HEALTH_CHL_BLKSEA_OCEANCOLOUR_trend",
+  "stac_version": "1.0.0",
+  "description": "'''DEFINITION'''\n\nThis product includes the Black Sea satellite chlorophyll trend map based on regional chlorophyll reprocessed (MY) product as distributed by CMEMS OC-TAC. This dataset, derived from multi-sensor (SeaStar-SeaWiFS, AQUA-MODIS, NOAA20-VIIRS, NPP-VIIRS, Envisat-MERIS and Sentinel3A-OLCI) Rrs spectra produced by CNR using an in-house processing chain, is obtained by means of two different regional algorithms developed with the BiOMaP data set (Zibordi et al., 2011): a band-ratio algorithm (B/R) (Zibordi et al., 2015) and a Multilayer Perceptron (MLP) neural net algorithm based on Rrs values at three individual wavelengths (490, 510 and 555 nm) (Kajiyama et al., 2018). The processing chain and the techniques used for algorithms merging are detailed in Colella et al. (2021).  \nThe trend map is obtained by applying Colella et al. (2016) methodology, where the Mann-Kendall test (Mann, 1945; Kendall, 1975) and Sens’s method (Sen, 1968) are applied on deseasonalized monthly time series, as obtained from the X-11 technique (see e. g. Pezzulli et al. 2005), to estimate, trend magnitude and its significance. The trend is expressed in % per year that represents the relative changes (i.e., percentage) corresponding to the dimensional trend [mg m-3 y-1] with respect to the reference climatology (1997-2014). Only significant trends (p < 0.05) are included.\n\n'''CONTEXT'''\n\nPhytoplankton are key actors in the carbon cycle and, as such, recognised as an Essential Climate Variable (ECV). Chlorophyll concentration - as a proxy for phytoplankton - respond rapidly to changes in environmental conditions, such as light, temperature, nutrients and mixing (Colella et al. 2016). The character of the response depends on the nature of the change drivers, and ranges from seasonal cycles to decadal oscillations (Basterretxea et al. 2018). Therefore, it is of critical importance to monitor chlorophyll concentration at multiple temporal and spatial scales, in order to be able to separate potential long-term climate signals from natural variability in the short term. In particular, phytoplankton in the Black Sea is known to respond to climate variability associated with the North Atlantic Oscillation (NAO) (Oguz et al .2003). Furthermore, chlorophyll analysis also demands the use of robust statistical temporal decomposition techniques, in order to separate the long-term signal from the seasonal component of the time series.\n\n'''CMEMS KEY FINDINGS'''\n\nThe average Black Sea trend for the 1997-2021 period is about -1.4% per year. The trend is negative overall the basin, with weaker values in the central area, up to no significant trend percentages. The western side of the basin highlights markable negative trend. Negative values are shown in the Azov Sea with a strong inversion offshore the Don River. The overall negative trend in the map is in accordance with the results of Bengil and Mavruk (2018), that revealed a decreasing trend of chlorophyll during the post-eutrophication phase in the years 1997-2017.\n\n'''DOI (product):''' \nhttps://doi.org/10.48670/moi-00212",
+  "links": [],
+  "title": "Black Sea Chlorophyll-a trend map from Observations Reprocessing",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          26.5,
+          40.0,
+          42.0,
+          48.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1997-01-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Oceanographic geographical features",
+    "satellite-observation",
+    "change_in_mass_concentration_of_chlorophyll_in_seawater_over_time",
+    "multi-year",
+    "marine-resources",
+    "coastal-marine-environment",
+    "weather-climate-and-seasonal-forecasting",
+    "marine-safety",
+    "black-sea",
+    "Level 4",
+    "Not Applicable"
+  ],
+  "providers": [
+    {
+      "name": "Copernicus Marine Service",
+      "description": "Copernicus Marine Service - Mercator Ocean International",
+      "roles": [
+        "host"
+      ],
+      "url": "https://marine.copernicus.eu/"
+    }
+  ]
+}

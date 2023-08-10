@@ -1,0 +1,161 @@
+{
+    "type": "Collection",
+    "stac_version": "1.0.0",
+    "stac_extensions": [
+        "collection-assets"
+    ],
+    "id": "Finland/SMK/V/50cm",
+    "title": "Finland RGB NLS orthophotos 50 cm by SMK",
+    "description": "NLS Orthophotos are an aerial photo dataset covering the whole of Finland.\nThis data is provided by SMK([The Energy Agency](https://energiavirasto.fi/etusivu),\nformerly abbreviated SMK). An orthophoto is a combination of several\nindividual aerial photos. The aerial photo data set in orthophoto format is\navailable as the most recent data set consisting of the most recent aerial\nphotos available. The most recent data is usually 1-3 years old. NLS\nOrthophotos are updated every 3 years (in Northern Lapland 12 years).\n\n(In Dataset id, V stands for \"v&auml;ri\", which means \"color\" as opposed to\n\"false color\")\nFor more information, please see the [NLS orthophotos documentation]\n(https://www.maanmittauslaitos.fi/en/maps-and-spatial-data/expert-users/product-descriptions/orthophotos)\n",
+    "keywords": [
+        "finland",
+        "orthophoto",
+        "rgb",
+        "smk"
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    59,
+                    18,
+                    69.4,
+                    29.2
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2015-01-01T00:00:00Z",
+                    "2023-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "providers": [
+        {
+            "name": "NLS orthophotos",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.maanmittauslaitos.fi/en/maps-and-spatial-data/expert-users/product-descriptions/orthophotos"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/Finland_SMK_V_50cm"
+        }
+    ],
+    "license": "proprietary",
+    "links": [
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections/Finland/SMK/V/50cm",
+            "rel": "self",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections",
+            "rel": "parent",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/",
+            "rel": "root",
+            "type": "application/json"
+        },
+        {
+            "code": "JavaScript",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/Finland/Finland_SMK_V_50cm",
+            "rel": "related",
+            "title": "Run the example for Finland/SMK/V/50cm in the Earth Engine Code Editor",
+            "type": "text/html"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/images/Finland/Finland_SMK_V_50cm_sample.png",
+            "rel": "preview",
+            "type": "image/png"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/Finland_SMK_V_50cm#terms-of-use",
+            "rel": "license",
+            "type": "text/html"
+        }
+    ],
+    "cube:dimensions": {
+        "x": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                59,
+                69.4
+            ]
+        },
+        "y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                18,
+                29.2
+            ]
+        },
+        "t": {
+            "type": "temporal",
+            "extent": [
+                "2015-01-01T00:00:00Z",
+                "2023-01-01T00:00:00Z"
+            ]
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "R",
+                "G",
+                "B"
+            ]
+        }
+    },
+    "summaries": {
+        "B": {
+            "maximum": 255
+        },
+        "G": {
+            "maximum": 255
+        },
+        "R": {
+            "maximum": 255
+        },
+        "eo:bands": [
+            {
+                "description": "Red",
+                "name": "R"
+            },
+            {
+                "description": "Green",
+                "name": "G"
+            },
+            {
+                "description": "Blue",
+                "name": "B"
+            }
+        ],
+        "gsd": [
+            0.5
+        ]
+    },
+    "assets": {
+        "preview_4": {
+            "href": "https://developers.google.com/earth-engine/datasets/images/Finland/Finland_SMK_V_50cm_sample.png",
+            "type": "image/png",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    },
+    "sci:citation": "The National Land Survey of Finland",
+    "gee:terms_of_use": "Mention the name of the Licensor (the National Land Survey of Finland),\nthe name of the dataset(s) and the time when the National Land Survey has\ndelivered the dataset(s) (e.g.: contains data from the National Land Survey\nof Finland Topographic Database 06/2014).\nplease see the [Terms of use](\nhttps://creativecommons.org/licenses/by/4.0/)\n",
+    "gee:type": "image_collection"
+}

@@ -1,0 +1,606 @@
+{
+    "type": "Collection",
+    "version": "V061",
+    "stac_version": "1.0.0",
+    "stac_extensions": [
+        "collection-assets"
+    ],
+    "id": "MODIS/061/MYD21C1",
+    "title": "MYD21C1.061 Aqua Land Surface Temperature and 3-Band Emissivity Daily L3 Global 0.05 Deg CMG",
+    "description": "The MYD21C1 dataset is produced daily in a 0.05 degree (5,600 meters at the\nequator) Climate Modeling Grid (CMG) from daytime Level 2 Gridded (L2G)\nintermediate LST products. The L2G process maps the daily MYD21 swath\ngranules onto a sinusoidal MODIS grid and stores all observations falling\nover a gridded cell for a given day. The MYD21C1 algorithm sorts through\nthese observations for each cell and estimates the final LST value as an\naverage from all observations that are cloud free and have good LST&E\naccuracies. The daytime average is weighted by the observation coverage for\nthat cell. Only observations having an observation coverage greater than a\n15% threshold are considered. The MYD21C1 product contains the calculated\nLST as well as quality control, the three emissivity bands, view zenith\nangle, and time of observation.\n\nDocumentation:\n\n* [User's Guide](https://lpdaac.usgs.gov/documents/1398/MOD21_User_Guide_V61.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://lpdaac.usgs.gov/documents/1399/MOD21_ATBD.pdf)\n\n* [General Documentation](https://ladsweb.modaps.eosdis.nasa.gov/filespec/MODIS/61/MYD21C1)\n",
+    "keywords": [
+        "aqua",
+        "daily",
+        "emissivity",
+        "global",
+        "lst",
+        "nasa",
+        "surface_temperature",
+        "usgs"
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-02-24T00:00:00Z",
+                    "2023-05-29T00:00:00"
+                ]
+            ]
+        }
+    },
+    "providers": [
+        {
+            "name": "NASA LP DAAC at the USGS EROS Center",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://doi.org/10.5067/MODIS/MYD21C1.061"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MYD21C1"
+        }
+    ],
+    "license": "proprietary",
+    "links": [
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections/MODIS/061/MYD21C1",
+            "rel": "self",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections",
+            "rel": "parent",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/",
+            "rel": "root",
+            "type": "application/json"
+        },
+        {
+            "code": "JavaScript",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/MODIS/MODIS_061_MYD21C1",
+            "rel": "related",
+            "title": "Run the example for MODIS/061/MYD21C1 in the Earth Engine Code Editor",
+            "type": "text/html"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/images/MODIS/MODIS_061_MYD21C1_sample.png",
+            "rel": "preview",
+            "type": "image/png"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MYD21C1#terms-of-use",
+            "rel": "license",
+            "type": "text/html"
+        },
+        {
+            "href": "https://doi.org/10.5067/MODIS/MYD21C1.061",
+            "rel": "cite-as"
+        }
+    ],
+    "cube:dimensions": {
+        "x": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                -180,
+                180
+            ]
+        },
+        "y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                -90,
+                90
+            ]
+        },
+        "t": {
+            "type": "temporal",
+            "extent": [
+                "2000-02-24T00:00:00Z",
+                "2023-05-29T00:00:00"
+            ]
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "Count_Day",
+                "Count_Night",
+                "QC_Day",
+                "QC_Night",
+                "LST_Day",
+                "LST_Night",
+                "LST_Day_err",
+                "LST_Night_err",
+                "Day_view_angle",
+                "Night_view_angle",
+                "Day_view_time",
+                "Night_view_time",
+                "Emis_29_Day",
+                "Emis_29_Night",
+                "Emis_29_Day_err",
+                "Emis_29_Night_err",
+                "Emis_31_Day",
+                "Emis_31_Night",
+                "Emis_31_Day_err",
+                "Emis_31_Night_err",
+                "Emis_32_Day",
+                "Emis_32_Night",
+                "Emis_32_Day_err",
+                "Emis_32_Night_err",
+                "View_Angle",
+                "Percent_land_in_grid"
+            ]
+        }
+    },
+    "summaries": {
+        "Count_Day": {
+            "maximum": 65535,
+            "minimum": 1
+        },
+        "Count_Night": {
+            "maximum": 65535,
+            "minimum": 1
+        },
+        "Day_view_angle": {
+            "maximum": 130
+        },
+        "Day_view_time": {
+            "maximum": 120
+        },
+        "Emis_29_Day": {
+            "maximum": 255,
+            "minimum": 1
+        },
+        "Emis_29_Day_err": {
+            "maximum": 65535,
+            "minimum": 1
+        },
+        "Emis_29_Night": {
+            "maximum": 255,
+            "minimum": 1
+        },
+        "Emis_29_Night_err": {
+            "maximum": 65535,
+            "minimum": 1
+        },
+        "Emis_31_Day": {
+            "maximum": 255,
+            "minimum": 1
+        },
+        "Emis_31_Day_err": {
+            "maximum": 65535,
+            "minimum": 1
+        },
+        "Emis_31_Night": {
+            "maximum": 255,
+            "minimum": 1
+        },
+        "Emis_31_Night_err": {
+            "maximum": 65535,
+            "minimum": 1
+        },
+        "Emis_32_Day": {
+            "maximum": 255,
+            "minimum": 1
+        },
+        "Emis_32_Day_err": {
+            "maximum": 65535,
+            "minimum": 1
+        },
+        "Emis_32_Night": {
+            "maximum": 255,
+            "minimum": 1
+        },
+        "Emis_32_Night_err": {
+            "maximum": 65535,
+            "minimum": 1
+        },
+        "LST_Day": {
+            "maximum": 65535,
+            "minimum": 7500
+        },
+        "LST_Day_err": {
+            "maximum": 255,
+            "minimum": 1
+        },
+        "LST_Night": {
+            "maximum": 65535,
+            "minimum": 7500
+        },
+        "LST_Night_err": {
+            "maximum": 255,
+            "minimum": 1
+        },
+        "Night_view_angle": {
+            "maximum": 130
+        },
+        "Night_view_time": {
+            "maximum": 120
+        },
+        "Percent_land_in_grid": {
+            "maximum": 100,
+            "minimum": 1
+        },
+        "QC_Day": {
+            "maximum": 255
+        },
+        "QC_Night": {
+            "maximum": 255
+        },
+        "eo:bands": [
+            {
+                "description": "Count of Daytime Input Values",
+                "name": "Count_Day"
+            },
+            {
+                "description": "Count of Nighttime Input Values",
+                "name": "Count_Night"
+            },
+            {
+                "description": "Quality Control for Daytime LST and Emissivity",
+                "gee:bitmask": {
+                    "bitmask_parts": [
+                        {
+                            "bit_count": 2,
+                            "description": "Mandatory QA flags",
+                            "values": [
+                                {
+                                    "description": "Pixel produced, good quality, no further QA info necessary"
+                                },
+                                {
+                                    "description": "Pixel produced, nominal quality. Recommend more detailed analysis of other QC information",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "Pixel not produced due to cloud",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "Pixel not produced due to reasons other than cloud",
+                                    "value": 3
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 2,
+                            "description": "Data quality flag",
+                            "first_bit": 2,
+                            "values": [
+                                {
+                                    "description": "Good data quality of L1B bands 29, 31, 32"
+                                },
+                                {
+                                    "description": "Missing pixel",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "Fairly calibrated",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "Poorly calibrated, TES processing skipped",
+                                    "value": 3
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 2,
+                            "description": "Emissivity accuracy",
+                            "first_bit": 4,
+                            "values": [
+                                {
+                                    "description": ">0.02 (Poor performance)"
+                                },
+                                {
+                                    "description": "0.015 - 0.02 (Marginal performance)",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "0.01 - 0.015 (Good performance)",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "<0.01 (Excellent performance)",
+                                    "value": 3
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 2,
+                            "description": "LST accuracy",
+                            "first_bit": 6,
+                            "values": [
+                                {
+                                    "description": ">2K (Poor performance)"
+                                },
+                                {
+                                    "description": "1.5 - 2K (Marginal performance)",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "1 - 1.5K (Good performance)",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "<1K (Excellent performance)",
+                                    "value": 3
+                                }
+                            ]
+                        }
+                    ],
+                    "total_bit_count": 8
+                },
+                "name": "QC_Day"
+            },
+            {
+                "description": "Quality Control for Nighttime LST and Emissivity",
+                "gee:bitmask": {
+                    "bitmask_parts": [
+                        {
+                            "bit_count": 2,
+                            "description": "Mandatory QA flags",
+                            "values": [
+                                {
+                                    "description": "Pixel produced, good quality, no further QA info necessary"
+                                },
+                                {
+                                    "description": "Pixel produced, nominal quality. Recommend more detailed analysis of other QC information",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "Pixel not produced due to cloud",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "Pixel not produced due to reasons other than cloud",
+                                    "value": 3
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 2,
+                            "description": "Data quality flag",
+                            "first_bit": 2,
+                            "values": [
+                                {
+                                    "description": "Good data quality of L1B bands 29, 31, 32"
+                                },
+                                {
+                                    "description": "Missing pixel",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "Fairly calibrated",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "Poorly calibrated, TES processing skipped",
+                                    "value": 3
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 2,
+                            "description": "Emissivity accuracy",
+                            "first_bit": 4,
+                            "values": [
+                                {
+                                    "description": ">0.02 (Poor performance)"
+                                },
+                                {
+                                    "description": "0.015 - 0.02 (Marginal performance)",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "0.01 - 0.015 (Good performance)",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "<0.01 (Excellent performance)",
+                                    "value": 3
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 2,
+                            "description": "LST accuracy",
+                            "first_bit": 6,
+                            "values": [
+                                {
+                                    "description": ">2K (Poor performance)"
+                                },
+                                {
+                                    "description": "1.5 - 2K (Marginal performance)",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "1 - 1.5K (Good performance)",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "<1K (Excellent performance)",
+                                    "value": 3
+                                }
+                            ]
+                        }
+                    ],
+                    "total_bit_count": 8
+                },
+                "name": "QC_Night"
+            },
+            {
+                "description": "Average Daytime Land Surface Temperature",
+                "gee:scale": 0.02,
+                "gee:units": "K",
+                "name": "LST_Day"
+            },
+            {
+                "description": "Average Nighttime Land Surface Temperature",
+                "gee:scale": 0.02,
+                "gee:units": "K",
+                "name": "LST_Night"
+            },
+            {
+                "description": "Root-mean-square-error Daytime Land Surface Temperature",
+                "gee:scale": 0.04,
+                "gee:units": "K",
+                "name": "LST_Day_err"
+            },
+            {
+                "description": "Average Nighttime Land Surface Temperature",
+                "gee:scale": 0.04,
+                "gee:units": "K",
+                "name": "LST_Night_err"
+            },
+            {
+                "description": "Average Daytime View Zenith Angle",
+                "gee:offset": -65,
+                "gee:units": "deg",
+                "name": "Day_view_angle"
+            },
+            {
+                "description": "Average Nighttime View Zenith Angle",
+                "gee:offset": -65,
+                "gee:units": "deg",
+                "name": "Night_view_angle"
+            },
+            {
+                "description": "Average Daytime View Time (UTC)",
+                "gee:scale": 0.2,
+                "gee:units": "h",
+                "name": "Day_view_time"
+            },
+            {
+                "description": "Average Nighttime View Time (UTC)",
+                "gee:scale": 0.2,
+                "gee:units": "h",
+                "name": "Night_view_time"
+            },
+            {
+                "description": "Average Daytime Band 29 Emissivity",
+                "gee:offset": 0.49,
+                "gee:scale": 0.002,
+                "name": "Emis_29_Day"
+            },
+            {
+                "description": "Average Nighttime Band 29 Emissivity",
+                "gee:offset": 0.49,
+                "gee:scale": 0.002,
+                "name": "Emis_29_Night"
+            },
+            {
+                "description": "Root-mean-square-error Daytime Band 29 Emissivity",
+                "gee:scale": 0.0001,
+                "name": "Emis_29_Day_err"
+            },
+            {
+                "description": "Root-mean-square-error Nighttime Band 29 Emissivity",
+                "gee:scale": 0.0001,
+                "name": "Emis_29_Night_err"
+            },
+            {
+                "description": "Average Daytime Band 31 Emissivity",
+                "gee:offset": 0.49,
+                "gee:scale": 0.002,
+                "name": "Emis_31_Day"
+            },
+            {
+                "description": "Average Nighttime Band 31 Emissivity",
+                "gee:offset": 0.49,
+                "gee:scale": 0.002,
+                "name": "Emis_31_Night"
+            },
+            {
+                "description": "Root-mean-square-error Daytime Band 31 Emissivity",
+                "gee:scale": 0.0001,
+                "name": "Emis_31_Day_err"
+            },
+            {
+                "description": "Root-mean-square-error Nighttime Band 31 Emissivity",
+                "gee:scale": 0.0001,
+                "name": "Emis_31_Night_err"
+            },
+            {
+                "description": "Average Daytime Band 32 Emissivity",
+                "gee:offset": 0.49,
+                "gee:scale": 0.002,
+                "name": "Emis_32_Day"
+            },
+            {
+                "description": "Average Nighttime Band 32 Emissivity",
+                "gee:offset": 0.49,
+                "gee:scale": 0.002,
+                "name": "Emis_32_Night"
+            },
+            {
+                "description": "Root-mean-square-error Daytime Band 32 Emissivity",
+                "gee:scale": 0.0001,
+                "name": "Emis_32_Day_err"
+            },
+            {
+                "description": "Root-mean-square-error Nighttime Band 32 Emissivity",
+                "gee:scale": 0.0001,
+                "name": "Emis_32_Night_err"
+            },
+            {
+                "description": "MODIS view zenith angle",
+                "gee:offset": -65,
+                "gee:units": "deg",
+                "name": "View_Angle"
+            },
+            {
+                "description": "Percent of Land Detections in Grid Cell",
+                "gee:units": "%",
+                "name": "Percent_land_in_grid"
+            }
+        ],
+        "gsd": [
+            1000
+        ],
+        "instruments": [
+            "MODIS"
+        ],
+        "platform": [
+            "Aqua"
+        ]
+    },
+    "assets": {
+        "preview_4": {
+            "href": "https://developers.google.com/earth-engine/datasets/images/MODIS/MODIS_061_MYD21C1_sample.png",
+            "type": "image/png",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    },
+    "sci:citation": "Please visit [LP DAAC 'Citing Our Data' page](https://lpdaac.usgs.gov/citing_our_data)\nfor information on citing LP DAAC datasets.\n",
+    "sci:doi": "10.5067/MODIS/MYD21C1.061",
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "day"
+    },
+    "gee:provider_ids": [
+        "C1646692274-LPDAAC_ECS"
+    ],
+    "gee:terms_of_use": "MODIS data and products acquired through the LP DAAC\nhave no restrictions on subsequent use, sale, or redistribution.\n",
+    "gee:type": "image_collection"
+}

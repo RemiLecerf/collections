@@ -1,0 +1,312 @@
+{
+    "type": "Collection",
+    "stac_version": "1.0.0",
+    "stac_extensions": [
+        "collection-assets"
+    ],
+    "id": "IDAHO_EPSCOR/TERRACLIMATE",
+    "title": "TerraClimate:  Monthly Climate and Climatic Water Balance for Global Terrestrial Surfaces, University of Idaho",
+    "description": "TerraClimate is a dataset of monthly climate and climatic water balance for\nglobal terrestrial surfaces. It uses climatically aided interpolation,\ncombining high-spatial resolution climatological normals from the\n[WorldClim dataset](https://www.worldclim.org/), with coarser spatial\nresolution, but time-varying data from\n[CRU Ts4.0](https://data.ceda.ac.uk/badc/cru/data/cru_ts/) and the\n[Japanese 55-year Reanalysis (JRA55)](https://jra.kishou.go.jp/JRA-55/index_en.html).\nConceptually, the procedure applies interpolated time-varying anomalies\nfrom CRU Ts4.0/JRA55 to the high-spatial resolution climatology of\nWorldClim to create a high-spatial resolution dataset that covers a broader\ntemporal record.\n\nTemporal information is inherited from CRU Ts4.0 for most global land\nsurfaces for temperature, precipitation, and vapor pressure. However,\nJRA55 data is used for regions where CRU data had zero climate stations\ncontributing (including all of Antarctica, and parts of Africa,\nSouth America, and scattered islands). For primary climate variables of\ntemperature, vapor pressure, and precipitation, the University of Idaho\nprovides additional data on the number of stations (between 0 and 8) that\ncontributed to the CRU Ts4.0 data used by TerraClimate. JRA55 was used\nexclusively for solar radiation and wind speeds.\n\nTerraClimate additionally produces monthly surface water balance datasets\nusing a water balance model that incorporates reference evapotranspiration,\nprecipitation, temperature, and interpolated plant extractable soil water\ncapacity. A modified Thornthwaite-Mather climatic water-balance model and\nextractable soil water storage capacity data was used at a 0.5\u00b0 grid from\nWang-Erlandsson et al. (2016).\n\nData Limitations:\n\n 1. Long-term trends in data are inherited from parent datasets.\n    TerraClimate should not be used directly for independent assessments of\n    trends.\n\n 2. TerraClimate will not capture temporal variability at finer scales than\n    parent datasets and thus is not able to capture variability in\n    orographic precipitation ratios and inversions.\n\n 3. The water balance model is very simple and does not account for\n    heterogeneity in vegetation types or their physiological response to\n    changing environmental conditions.\n\n 4. Limited validation in data-sparse regions (e.g., Antarctica).\n",
+    "keywords": [
+        "climate",
+        "drought",
+        "evapotranspiration",
+        "geophysical",
+        "global",
+        "merced",
+        "monthly",
+        "palmer",
+        "pdsi",
+        "precipitation",
+        "runoff",
+        "temperature",
+        "vapor",
+        "wind"
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1958-01-01T00:00:00Z",
+                    "2022-12-01T00:00:00"
+                ]
+            ]
+        }
+    },
+    "providers": [
+        {
+            "name": "University of California Merced",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "http://www.climatologylab.org/terraclimate.html"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/IDAHO_EPSCOR_TERRACLIMATE"
+        }
+    ],
+    "license": "CC0-1.0",
+    "links": [
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections/IDAHO_EPSCOR/TERRACLIMATE",
+            "rel": "self",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections",
+            "rel": "parent",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/",
+            "rel": "root",
+            "type": "application/json"
+        },
+        {
+            "code": "JavaScript",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/IDAHO_EPSCOR/IDAHO_EPSCOR_TERRACLIMATE",
+            "rel": "related",
+            "title": "Run the example for IDAHO_EPSCOR/TERRACLIMATE in the Earth Engine Code Editor",
+            "type": "text/html"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/images/IDAHO_EPSCOR/IDAHO_EPSCOR_TERRACLIMATE_sample.png",
+            "rel": "preview",
+            "type": "image/png"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/IDAHO_EPSCOR_TERRACLIMATE#terms-of-use",
+            "rel": "license",
+            "type": "text/html"
+        }
+    ],
+    "cube:dimensions": {
+        "x": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                -180,
+                180
+            ]
+        },
+        "y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                -90,
+                90
+            ]
+        },
+        "t": {
+            "type": "temporal",
+            "extent": [
+                "1958-01-01T00:00:00Z",
+                "2022-12-01T00:00:00"
+            ]
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "aet",
+                "def",
+                "pdsi",
+                "pet",
+                "pr",
+                "ro",
+                "soil",
+                "srad",
+                "swe",
+                "tmmn",
+                "tmmx",
+                "vap",
+                "vpd",
+                "vs"
+            ]
+        }
+    },
+    "summaries": {
+        "aet": {
+            "gee:estimated_range": true,
+            "maximum": 3140
+        },
+        "def": {
+            "gee:estimated_range": true,
+            "maximum": 4548
+        },
+        "eo:bands": [
+            {
+                "description": "Actual evapotranspiration, derived using a one-dimensional soil water balance model",
+                "gee:scale": 0.1,
+                "gee:units": "mm",
+                "name": "aet"
+            },
+            {
+                "description": "Climate water deficit, derived using a one-dimensional soil water balance model",
+                "gee:scale": 0.1,
+                "gee:units": "mm",
+                "name": "def"
+            },
+            {
+                "description": "Palmer Drought Severity Index",
+                "gee:scale": 0.01,
+                "name": "pdsi"
+            },
+            {
+                "description": "Reference evapotranspiration (ASCE Penman-Montieth)",
+                "gee:scale": 0.1,
+                "gee:units": "mm",
+                "name": "pet"
+            },
+            {
+                "description": "Precipitation accumulation",
+                "gee:units": "mm",
+                "name": "pr"
+            },
+            {
+                "description": "Runoff, derived using a one-dimensional soil water balance model",
+                "gee:units": "mm",
+                "name": "ro"
+            },
+            {
+                "description": "Soil moisture, derived using a one-dimensional soil water balance model",
+                "gee:scale": 0.1,
+                "gee:units": "mm",
+                "name": "soil"
+            },
+            {
+                "description": "Downward surface shortwave radiation",
+                "gee:scale": 0.1,
+                "gee:units": "W/m^2",
+                "name": "srad"
+            },
+            {
+                "description": "Snow water equivalent, derived using a one-dimensional soil water balance model",
+                "gee:units": "mm",
+                "name": "swe"
+            },
+            {
+                "description": "Minimum temperature",
+                "gee:scale": 0.1,
+                "gee:units": "&deg;C",
+                "name": "tmmn"
+            },
+            {
+                "description": "Maximum temperature",
+                "gee:scale": 0.1,
+                "gee:units": "&deg;C",
+                "name": "tmmx"
+            },
+            {
+                "description": "Vapor pressure",
+                "gee:scale": 0.001,
+                "gee:units": "kPa",
+                "name": "vap"
+            },
+            {
+                "description": "Vapor pressure deficit",
+                "gee:scale": 0.01,
+                "gee:units": "kPa",
+                "name": "vpd"
+            },
+            {
+                "description": "Wind-speed at 10m",
+                "gee:scale": 0.01,
+                "gee:units": "m/s",
+                "name": "vs"
+            }
+        ],
+        "gee:schema": [
+            {
+                "description": "'provisional' or 'permanent'",
+                "name": "status",
+                "type": "STRING"
+            }
+        ],
+        "gsd": [
+            4638.3
+        ],
+        "pdsi": {
+            "gee:estimated_range": true,
+            "maximum": 3418,
+            "minimum": -4317
+        },
+        "pet": {
+            "gee:estimated_range": true,
+            "maximum": 4548
+        },
+        "pr": {
+            "gee:estimated_range": true,
+            "maximum": 7245
+        },
+        "ro": {
+            "gee:estimated_range": true,
+            "maximum": 12560
+        },
+        "soil": {
+            "gee:estimated_range": true,
+            "maximum": 8882
+        },
+        "srad": {
+            "gee:estimated_range": true,
+            "maximum": 5477
+        },
+        "swe": {
+            "gee:estimated_range": true,
+            "maximum": 32767
+        },
+        "tmmn": {
+            "gee:estimated_range": true,
+            "maximum": 387,
+            "minimum": -770
+        },
+        "tmmx": {
+            "gee:estimated_range": true,
+            "maximum": 576,
+            "minimum": -670
+        },
+        "vap": {
+            "gee:estimated_range": true,
+            "maximum": 14749
+        },
+        "vpd": {
+            "gee:estimated_range": true,
+            "maximum": 1113
+        },
+        "vs": {
+            "gee:estimated_range": true,
+            "maximum": 2923
+        }
+    },
+    "assets": {
+        "preview_4": {
+            "href": "https://developers.google.com/earth-engine/datasets/images/IDAHO_EPSCOR/IDAHO_EPSCOR_TERRACLIMATE_sample.png",
+            "type": "image/png",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    },
+    "sci:citation": "Abatzoglou, J.T., S.Z. Dobrowski, S.A. Parks, K.C. Hegewisch, 2018,\nTerraclimate, a high-resolution global dataset of monthly climate and\nclimatic water balance from 1958-2015, Scientific Data 5:170191,\n[doi:10.1038/sdata.2017.191](https://doi.org/10.1038/sdata.2017.191)\n",
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "month"
+    },
+    "gee:terms_of_use": "The data set is in the public domain as licensed under the Creative Commons\nPublic Domain (CC0) license.\n",
+    "gee:type": "image_collection"
+}

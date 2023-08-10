@@ -1,0 +1,127 @@
+{
+    "type": "Collection",
+    "version": "v1",
+    "stac_version": "0.9.0",
+    "stac_extensions": [
+        "datacube"
+    ],
+    "id": "LIA_Sentinel1_Track117_Indexed",
+    "title": "LIA Sentinel-1 Track117",
+    "description": "Sentinel-1A Local Incidence Angle. This LIA layer belongs to the respective Backscatter Sentinel-1 collection. It contains only one time step, since the LIA is stable over time.",
+    "keywords": [
+        "S-1",
+        "Local Incidence Angle",
+        "LIA"
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    8.682142543194024,
+                    45.05524956959129,
+                    13.93807712630896,
+                    48.124406750178245
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2014-10-25T00:00:00Z",
+                    "2014-10-25T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "providers": [
+        {
+            "name": "Eurac EO WCS",
+            "url": "http://www.eurac.edu",
+            "roles": [
+                "Host"
+            ]
+        },
+        {
+            "name": "European Space Agency (ESA)",
+            "url": "https://www.esa.int/",
+            "roles": [
+                "Producer"
+            ]
+        },
+        {
+            "name": "Carlo Marin",
+            "url": "http://www.eurac.edu/en/research/mountains/remsen/staff/Pages/staffdetails.aspx?persId=36763",
+            "roles": [
+                "Processor"
+            ]
+        }
+    ],
+    "license": "CC-BY-4.0",
+    "links": [
+        {
+            "rel": "licence",
+            "href": "https://creativecommons.org/licenses/by/4.0/",
+            "type": "text/html",
+            "title": "License Link"
+        }
+    ],
+    "cube:dimensions": {
+        "DATE": {
+            "type": "temporal",
+            "extent": [
+                "2014-10-25T00:00:00.000Z",
+                "2014-10-25T00:00:00.000Z"
+            ],
+            "step": "null"
+        },
+        "X": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                8.682142543194024,
+                13.93807712630896
+            ],
+            "reference_system": 3035
+        },
+        "Y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                45.05524956959129,
+                48.124406750178245
+            ],
+            "reference_system": 3035
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "LIA"
+            ]
+        }
+    },
+    "summaries": {
+        "constellation": [
+            "Sentinel-1"
+        ],
+        "platform": [
+            "Sentinel-1A"
+        ],
+        "rows": 17386,
+        "columns": 19857,
+        "instruments": [
+            "SAR"
+        ],
+        "gsd": [
+            20.0
+        ],
+        "eo:bands": [
+            {
+                "name": "LIA",
+                "common_name": "Local Incidence Angle",
+                "gsd": 20.0
+            }
+        ]
+    },
+    "sci:citation": "Copernicus Sentinel data 2018. Processed by ESA.",
+    "engine": "WCPS"
+}

@@ -1,0 +1,52 @@
+{
+  "type": "Collection",
+  "id": "OMI_HEALTH_CHL_BLKSEA_OCEANCOLOUR_area_averaged_mean",
+  "stac_version": "1.0.0",
+  "description": "'''DEFINITION'''\n\nThe time series are derived from the regional chlorophyll reprocessed (MY) product as distributed by CMEMS. This dataset, derived from multi-sensor (SeaStar-SeaWiFS, AQUA-MODIS, NOAA20-VIIRS, NPP-VIIRS, Envisat-MERIS and Sentinel3A-OLCI) Rrs spectra produced by CNR using an in-house processing chain, is obtained by means of two different regional algorithms developed with the BiOMaP data set (Zibordi et al., 2011): a band-ratio algorithm (B/R) (Zibordi et al., 2015) and a Multilayer Perceptron (MLP) neural net algorithm based on Rrs values at three individual wavelengths (490, 510 and 555 nm) (Kajiyama et al., 2018). The processing chain and the techniques used for algorithms merging are detailed in Colella et al. (2021). Monthly regional mean values are calculated by performing the average of 2D monthly mean (weighted by pixel area) over the region of interest. The deseasonalized time series is obtained by applying the X-11 seasonal adjustment methodology on the original time series as described in Colella et al. (2016), and then the Mann-Kendall test (Mann, 1945; Kendall, 1975) and Sens’s method (Sen, 1968) are subsequently applied to obtain the magnitude of trend. \n\n'''CONTEXT '''\n\nPhytoplankton and chlorophyll concentration as a proxy for phytoplankton respond rapidly to changes in environmental conditions, such as light, temperature, nutrients and mixing (Gregg and Rousseaux, 2014, Colella et al. 2016). The character of the response depends on the nature of the change drivers, and ranges from seasonal cycles to decadal oscillations (Basterretxea et al. 2018). Therefore, it is of critical importance to monitor chlorophyll concentration at multiple temporal and spatial scales, in order to be able to separate potential long-term climate signals from natural variability in the short term. In particular, phytoplankton in the Black Sea is known to respond to climate variability associated with the North Atlantic Oscillation (NAO) (Oguz et al. 2003). \n\n'''CMEMS KEY FINDINGS'''\n\nIn the Black Sea, the trend average for the 1997-2021 period is definitely negative (-1.39±0.91% per year). Nevertheless, this negative trend is lower than the one estimated in the previous release (related to 1997-2020). The negative trend is mainly due to the marked change on chlorophyll concentrations between 2002 and 2004. From 2004 onwards, minima and maxima are strongly variable year by year. However, on average, the minima/maxima variability can be considered quite constant with a continuous decrease of maxima from 2015 up to mid 2020 where signal seems to change again with relative high chlorophyll values in 2021. The general negative trend in the Black Sea is also confirmed by the analysis of Sathyendranath et al. (2018), that reveals an increasing trend in chlorophyll concentration in all the European Seas, except for the Black Sea. \n\n'''DOI (product):''' \nhttps://doi.org/10.48670/moi-00211",
+  "links": [],
+  "title": "Black Sea Chlorophyll-a time series and trend from Observations Reprocessing",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          26.5,
+          40.0,
+          42.0,
+          48.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1997-01-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Oceanographic geographical features",
+    "satellite-observation",
+    "mass_concentration_of_chlorophyll_in_seawater",
+    "multi-year",
+    "marine-resources",
+    "weather-climate-and-seasonal-forecasting",
+    "marine-safety",
+    "coastal-marine-environment",
+    "black-sea",
+    "Level 4",
+    "Not Applicable"
+  ],
+  "providers": [
+    {
+      "name": "Copernicus Marine Service",
+      "description": "Copernicus Marine Service - Mercator Ocean International",
+      "roles": [
+        "host"
+      ],
+      "url": "https://marine.copernicus.eu/"
+    }
+  ]
+}

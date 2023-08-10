@@ -1,0 +1,92 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dct="http://purl.org/dc/terms/" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/metadata/eu.copernicus.climate.insitu-observations-gnss">
+        <foaf:primaryTopic rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/resource/10.24381/cds.34a04494"/>
+        <dct:issued>2018-03-28</dct:issued>
+        <dct:modified>2018-03-28</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/srv/eng/xml.metadata.get?uuid=eu.copernicus.climate.insitu-observations-gnss">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://cds.climate.copernicus.eu:443//geonetwork?uuid=eu.copernicus.climate.insitu-observations-gnss">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/resource/10.24381/cds.34a04494">
+        <dct:identifier>10.24381/cds.34a04494</dct:identifier>
+        <dct:title>In-situ observations of water vapour and atmospheric delay from the ground-based GNSS network from 1996 to present</dct:title>
+        <dct:abstract>This dataset provides estimates of water vapour derived from atmospheric delays in Global Navigation Satellite System
+(GNSS) radio signals.
+The initial data is collected from two in situ ground-based network of GNSS receivers – the International GNSS Service
+(IGS) and EUREF Permanent Network (EPN). The IGS collects, archives, and freely distributes GNSS data from a 
+cooperatively operated global network of more than 500 ground-based GNSS stations since 1994. The EPN is a European 
+network of more than 300 continuously operating GNSS reference stations with precisely known coordinates.
+The fundamental observable of ground-based GNSS is the Zenith Total Delay (ZTD). This observable represents the 
+propagation delay induced by the atmosphere on GNSS signals between the GNSS satellites and a GNSS receiver.
+Using in-situ measurements of ZTD as well as ancillary meteorological data at the site, the vertically-integrated total 
+amount if water vapour in the air column can be retrieved. This integrated quantity is referred to as Total Column 
+Water Vapour (TCWV), or Total Precipitable Water (TPW), or Integrated Precipitable Water (IPW) or also Integrated Water
+Vapour (IWV).
+The TCWV values, with corresponding uncertainties, are based on the daily product of IGS and the 2nd reprocessing campaign
+of the EPN (EPN-repro2). Both networks provide hourly records of ZTD as part of the products derived from GNSS data processing.
+The GNSS TCWV derived from these ZTD data is a new product, made available exclusively for the Climate Data Store (CDS).
+The data user must consider that while the EPN-repro2 consists of tropospheric parameters derived from consistently 
+reprocessed data spanning multiple decades, the IGS daily product is a near real-time product which may contain jumps 
+in the time-series when a new processing model is introduced. Therefore, IGS daily ZTD and TCWV should not be considered
+as reference products. 
+The method for retrieval of GNSS TCWV and details on the algorithms can be found in the documentation. For comparison, 
+TCWV values from the ECMWF ERA5 reanalysis are also made available for the user.
+The datasets can be downloaded as comma-separated values (CSV) files organized in two different ways:
+
+One row per report: for each report all variables are provided as individual columns in one row (referenced as csv-lev in the variable lists below).
+One row per observable: (no aggregation) each row provides information about one variable only (referenced as csv-obs in the variable lists below).
+
+
+Variables in the dataset/application are:
+Total column water vapour, Total column water vapour combined uncertainty, Total column water vapour era5, Zenith total delay, Zenith total delay random uncertainty
+
+Variables in the dataset/application are:
+City, Combined uncertainty, Era5, Height of station above sea level, Latitude, Longitude, Observation value, Observed variable, Organisation name, Random uncertainty, Report id, Report timestamp, Sensor altitude, Start date, Station name</dct:abstract>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/GEMET%20-%20INSPIRE%20themes%2C%20version%201.0/Atmospheric conditions"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Product type: In-situ observations"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Spatial coverage: Global"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Variable domain: Atmosphere"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Variable domain: Atmosphere (upper air)"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Variable domain: Atmosphere (columnar property)"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Variable domain: Water Vapour (upper air)"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Temporal coverage: Past"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Temporal coverage: Present"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/iso/topicCategory/climatologyMeteorologyAtmosphere"/>
+        <foaf:thumbnail rdf:resource="https://datastore.copernicus-climate.eu/c3s/published-forms-v2/c3sprod/insitu-observations-gnss/overview.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((0 -89, 0 89, 360 89, 360 -89, 0 -89))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:temporal>1996-01-01
+          /</dct:temporal>
+        <dct:publisher rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/organization/ECMWF"/>
+        <dct:accrualPeriodicity>asNeeded</dct:accrualPeriodicity>
+        <dct:language>eng</dct:language>
+        <dct:license>licence</dct:license>
+        <dct:license>https://cds.climate.copernicus.eu/api/v2/terms/static/20180314_Copernicus_License_V1.1.pdf</dct:license>
+        <dct:license>https://cds.climate.copernicus.eu/api/v2/terms/static/gnss-data-policy.pdf</dct:license>
+        <dcat:distribution rdf:resource="https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.34a04494"/>
+        <dcat:distribution rdf:resource="#"/>
+        <dcat:dataQuality>EC Copernicus program</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+    

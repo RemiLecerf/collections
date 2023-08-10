@@ -1,0 +1,778 @@
+{
+    "type": "Collection",
+    "stac_version": "1.0.0",
+    "stac_extensions": [
+        "collection-assets"
+    ],
+    "id": "LANDSAT/LE07/C02/T2_L2",
+    "title": "USGS Landsat 7 Level 2, Collection 2, Tier 2",
+    "description": "This dataset contains atmospherically corrected\nsurface reflectance and land surface temperature derived from the data\nproduced by the Landsat 7 ETM+ sensor.\nThese images contain 4 visible and near-infrared (VNIR) bands and\n2 short-wave infrared (SWIR) bands processed to orthorectified surface\nreflectance, and one thermal infrared (TIR) band processed to orthorectified\nsurface temperature. They also contain intermediate bands used in\ncalculation of the ST products, as well as QA bands.\n\nLandsat 7 SR products are created with the Landsat Ecosystem Disturbance\nAdaptive Processing System (LEDAPS) algorithm (version 3.4.0).\nAll Collection 2 ST products are created with a single-channel algorithm\njointly created by the Rochester Institute of Technology (RIT) and\nNational Aeronautics and Space Administration (NASA)\nJet Propulsion Laboratory (JPL).\n\nStrips of collected data are packaged into overlapping \\\"scenes\\\" covering approximately\n170km x 183km using a [standardized reference grid](https://landsat.gsfc.nasa.gov/about/worldwide-reference-system).\n\nSome assets have only SR data, in which case ST bands are present but empty.\nFor assets with both ST and SR bands, 'PROCESSING_LEVEL' is set to 'L2SP'.\nFor assets with only SR bands, 'PROCESSING_LEVEL' is set to 'L2SR'.\n\n[Additional documentation and usage examples.](/earth-engine/guides/landsat)\n\nData provider notes:\n\n* Data products must contain both optical and thermal data to be\n  successfully processed to surface temperature, as ASTER NDVI is\n  required to temporally adjust the ASTER GED product to the target Landsat\n  scene. Therefore, night time acquisitions cannot be processed to\n  surface temperature.\n\n* A known error exists in the surface temperature retrievals relative\n  to clouds and possibly cloud shadows. The characterization of these\n  issues has been documented by\n  [Cook et al., (2014)](https://doi.org/10.3390/rs61111244).\n\n* For Landsat 7 ETM+ products, Band 6 TOA BT and ST data are generated from\n  ETM+ Band 6 High (6H) and 6 Low (6L) merged together. The merged band\n  contains unsaturated pixels from Band 6H. If Band 6H pixels have a BT\n  outside of the 6H dynamic range (240 to 322 Kelvin) then 6L band pixels\n  are used. Pixels that are saturated in Band 6L remain saturated in the\n  merged Band 6 product. The merged thermal radiance is then used in the\n  creation of the TOA BT and ST data.\n\nNote that [Landsat 7's orbit has been drifting to an earlier acquisition time since\n2017](https://www.sciencedirect.com/science/article/pii/S2666017221000134?via%3Dihub).\n",
+    "keywords": [
+        "cfmask",
+        "cloud",
+        "etm",
+        "fmask",
+        "global",
+        "landsat",
+        "lasrc",
+        "le07",
+        "lst",
+        "reflectance",
+        "sr",
+        "usgs"
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1999-05-28T01:06:16Z",
+                    "2023-05-02T00:50:52"
+                ]
+            ]
+        }
+    },
+    "providers": [
+        {
+            "name": "USGS",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.usgs.gov/core-science-systems/nli/landsat/landsat-collection-2-level-2-science-products"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/LANDSAT_LE07_C02_T2_L2"
+        }
+    ],
+    "license": "proprietary",
+    "links": [
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections/LANDSAT/LE07/C02/T2_L2",
+            "rel": "self",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections",
+            "rel": "parent",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/",
+            "rel": "root",
+            "type": "application/json"
+        },
+        {
+            "code": "JavaScript",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/LANDSAT/LANDSAT_LE07_C02_T2_L2",
+            "rel": "related",
+            "title": "Run the example for LANDSAT/LE07/C02/T2_L2 in the Earth Engine Code Editor",
+            "type": "text/html"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/images/LANDSAT/LANDSAT_LE07_C02_T2_L2_sample.png",
+            "rel": "preview",
+            "type": "image/png"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/LANDSAT_LE07_C02_T2_L2#terms-of-use",
+            "rel": "license",
+            "type": "text/html"
+        },
+        {
+            "href": "https://www.usgs.gov/centers/eros/data-citation",
+            "rel": "license",
+            "type": "text/html"
+        }
+    ],
+    "cube:dimensions": {
+        "x": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                -180,
+                180
+            ]
+        },
+        "y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                -90,
+                90
+            ]
+        },
+        "t": {
+            "type": "temporal",
+            "extent": [
+                "1999-05-28T01:06:16Z",
+                "2023-05-02T00:50:52"
+            ]
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "SR_B1",
+                "SR_B2",
+                "SR_B3",
+                "SR_B4",
+                "SR_B5",
+                "SR_B7",
+                "SR_ATMOS_OPACITY",
+                "SR_CLOUD_QA",
+                "ST_B6",
+                "ST_ATRAN",
+                "ST_CDIST",
+                "ST_DRAD",
+                "ST_EMIS",
+                "ST_EMSD",
+                "ST_QA",
+                "ST_TRAD",
+                "ST_URAD",
+                "QA_PIXEL",
+                "QA_RADSAT"
+            ]
+        }
+    },
+    "summaries": {
+        "SR_ATMOS_OPACITY": {
+            "maximum": 10000
+        },
+        "SR_B1": {
+            "maximum": 65455,
+            "minimum": 1
+        },
+        "SR_B2": {
+            "maximum": 65455,
+            "minimum": 1
+        },
+        "SR_B3": {
+            "maximum": 65455,
+            "minimum": 1
+        },
+        "SR_B4": {
+            "maximum": 65455,
+            "minimum": 1
+        },
+        "SR_B5": {
+            "maximum": 65455,
+            "minimum": 1
+        },
+        "SR_B7": {
+            "maximum": 65455,
+            "minimum": 1
+        },
+        "ST_ATRAN": {
+            "maximum": 10000
+        },
+        "ST_B6": {
+            "maximum": 65535
+        },
+        "ST_CDIST": {
+            "maximum": 24000
+        },
+        "ST_DRAD": {
+            "maximum": 28000
+        },
+        "ST_EMIS": {
+            "maximum": 10000
+        },
+        "ST_EMSD": {
+            "maximum": 10000
+        },
+        "ST_QA": {
+            "maximum": 32767
+        },
+        "ST_TRAD": {
+            "maximum": 22000
+        },
+        "ST_URAD": {
+            "maximum": 28000
+        },
+        "eo:bands": [
+            {
+                "center_wavelength": 0.485,
+                "description": "Band 1 (blue) surface reflectance",
+                "gee:offset": -0.2,
+                "gee:scale": 2.75e-05,
+                "gee:wavelength": "0.45-0.52 &mu;m",
+                "name": "SR_B1",
+                "common_name": "blue"
+            },
+            {
+                "center_wavelength": 0.56,
+                "description": "Band 2 (green) surface reflectance",
+                "gee:offset": -0.2,
+                "gee:scale": 2.75e-05,
+                "gee:wavelength": "0.52-0.60 &mu;m",
+                "name": "SR_B2",
+                "common_name": "green"
+            },
+            {
+                "center_wavelength": 0.66,
+                "description": "Band 3 (red) surface reflectance",
+                "gee:offset": -0.2,
+                "gee:scale": 2.75e-05,
+                "gee:wavelength": "0.63-0.69 &mu;m",
+                "name": "SR_B3",
+                "common_name": "red"
+            },
+            {
+                "center_wavelength": 0.835,
+                "description": "Band 4 (near infrared) surface reflectance",
+                "gee:offset": -0.2,
+                "gee:scale": 2.75e-05,
+                "gee:wavelength": "0.77-0.90 &mu;m",
+                "name": "SR_B4",
+                "common_name": "nir"
+            },
+            {
+                "center_wavelength": 1.65,
+                "description": "Band 5 (shortwave infrared 1) surface reflectance",
+                "gee:offset": -0.2,
+                "gee:scale": 2.75e-05,
+                "gee:wavelength": "1.55-1.75 &mu;m",
+                "name": "SR_B5",
+                "common_name": "swir16"
+            },
+            {
+                "center_wavelength": 2.215,
+                "description": "Band 7 (shortwave infrared 2) surface reflectance",
+                "gee:offset": -0.2,
+                "gee:scale": 2.75e-05,
+                "gee:wavelength": "2.08-2.35 &mu;m",
+                "name": "SR_B7",
+                "common_name": "swir22"
+            },
+            {
+                "description": "A general interpretation of atmospheric opacity\ngenerated by LEDAPS and based on the radiance viewed over Dark Dense\nVegetation (DDV) within the scene. A general interpretation of atmospheric\nopacity is that values (after scaling by 0.001 is applied)\nless than 0.1 are clear, 0.1-0.3 are average,\nand values greater than 0.3 indicate haze or other cloud situations.\nSR values from pixels with high atmospheric opacity will be less reliable,\nespecially under high solar zenith angle conditions. The\nSR_ATMOS_OPACITY band is provided for advanced users and for product quality\nassessment and has not been validated. Most users are advised to instead use\nthe QA_PIXEL band information for cloud discrimination.\n",
+                "gee:scale": 0.001,
+                "name": "SR_ATMOS_OPACITY"
+            },
+            {
+                "description": "Cloud Quality Assessment",
+                "gee:bitmask": {
+                    "bitmask_parts": [
+                        {
+                            "bit_count": 1,
+                            "description": "Dark Dense Vegetation (DDV)"
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Cloud",
+                            "first_bit": 1
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Cloud Shadow",
+                            "first_bit": 2
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Adjacent to Cloud",
+                            "first_bit": 3
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Snow",
+                            "first_bit": 4
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Water",
+                            "first_bit": 5
+                        }
+                    ],
+                    "total_bit_count": 6
+                },
+                "name": "SR_CLOUD_QA"
+            },
+            {
+                "center_wavelength": 11.45,
+                "description": "Band 6 surface temperature. If 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.",
+                "gee:offset": 149,
+                "gee:scale": 0.00341802,
+                "gee:units": "K",
+                "gee:wavelength": "10.40-12.50 &mu;m",
+                "name": "ST_B6",
+                "common_name": "lwir11"
+            },
+            {
+                "description": "Atmospheric Transmittance. If 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.",
+                "gee:scale": 0.0001,
+                "name": "ST_ATRAN"
+            },
+            {
+                "description": "Pixel distance to cloud. If 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.",
+                "gee:scale": 0.01,
+                "gee:units": "km",
+                "name": "ST_CDIST"
+            },
+            {
+                "description": "Downwelled Radiance. If 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.",
+                "gee:scale": 0.001,
+                "gee:units": "W/(m^2*sr*um)/ DN",
+                "name": "ST_DRAD"
+            },
+            {
+                "description": "Emissivity estimated from ASTER GED. If 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.\n",
+                "gee:scale": 0.0001,
+                "name": "ST_EMIS"
+            },
+            {
+                "description": "Emissivity standard deviation. If 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.",
+                "gee:scale": 0.0001,
+                "name": "ST_EMSD"
+            },
+            {
+                "description": "Uncertainty of the Surface Temperature band. If 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.\n",
+                "gee:scale": 0.01,
+                "gee:units": "K",
+                "name": "ST_QA"
+            },
+            {
+                "description": "Thermal band converted to radiance. If 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.\n",
+                "gee:scale": 0.001,
+                "gee:units": "W/(m^2*sr*um)/ DN",
+                "name": "ST_TRAD"
+            },
+            {
+                "description": "Upwelled Radiance. If 'PROCESSING_LEVEL' is set to 'L2SR', this band is fully masked out.",
+                "gee:scale": 0.001,
+                "gee:units": "W/(m^2*sr*um)/ DN",
+                "name": "ST_URAD"
+            },
+            {
+                "description": "Pixel quality attributes generated from the CFMASK algorithm.",
+                "gee:bitmask": {
+                    "bitmask_parts": [
+                        {
+                            "bit_count": 1,
+                            "description": "Fill"
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Dilated Cloud",
+                            "first_bit": 1
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Unused",
+                            "first_bit": 2
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Cloud",
+                            "first_bit": 3
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Cloud Shadow",
+                            "first_bit": 4
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Snow",
+                            "first_bit": 5
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Clear",
+                            "first_bit": 6,
+                            "values": [
+                                {
+                                    "description": "Cloud or Dilated Cloud bits are set"
+                                },
+                                {
+                                    "description": "Cloud and Dilated Cloud bits are not set",
+                                    "value": 1
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Water",
+                            "first_bit": 7
+                        },
+                        {
+                            "bit_count": 2,
+                            "description": "Cloud Confidence",
+                            "first_bit": 8,
+                            "values": [
+                                {
+                                    "description": "None"
+                                },
+                                {
+                                    "description": "Low",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "Medium",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "High",
+                                    "value": 3
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 2,
+                            "description": "Cloud Shadow Confidence",
+                            "first_bit": 10,
+                            "values": [
+                                {
+                                    "description": "None"
+                                },
+                                {
+                                    "description": "Low",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "Medium",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "High",
+                                    "value": 3
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 2,
+                            "description": "Snow/Ice Confidence",
+                            "first_bit": 12,
+                            "values": [
+                                {
+                                    "description": "None"
+                                },
+                                {
+                                    "description": "Low",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "Medium",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "High",
+                                    "value": 3
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 2,
+                            "description": "Cirrus Confidence",
+                            "first_bit": 14,
+                            "values": [
+                                {
+                                    "description": "None"
+                                },
+                                {
+                                    "description": "Low",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "Medium",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "High",
+                                    "value": 3
+                                }
+                            ]
+                        }
+                    ],
+                    "total_bit_count": 16
+                },
+                "name": "QA_PIXEL"
+            },
+            {
+                "description": "Radiometric saturation QA",
+                "gee:bitmask": {
+                    "bitmask_parts": [
+                        {
+                            "bit_count": 1,
+                            "description": "Band 1 data saturated"
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Band 2 data saturated",
+                            "first_bit": 1
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Band 3 data saturated",
+                            "first_bit": 2
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Band 4 data saturated",
+                            "first_bit": 3
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Band 5 data saturated",
+                            "first_bit": 4
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Band 6L data saturated",
+                            "first_bit": 5
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Band 7 data saturated",
+                            "first_bit": 6
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Unused",
+                            "first_bit": 7
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Band 6H data saturated",
+                            "first_bit": 8
+                        },
+                        {
+                            "bit_count": 1,
+                            "description": "Dropped pixel",
+                            "first_bit": 9,
+                            "values": [
+                                {
+                                    "description": "Pixel present"
+                                },
+                                {
+                                    "description": "Detector doesn't have a value",
+                                    "value": 1
+                                }
+                            ]
+                        }
+                    ],
+                    "total_bit_count": 10
+                },
+                "name": "QA_RADSAT"
+            }
+        ],
+        "gee:schema": [
+            {
+                "description": "Name and version of the surface reflectance algorithm.",
+                "name": "ALGORITHM_SOURCE_SURFACE_REFLECTANCE",
+                "type": "STRING"
+            },
+            {
+                "description": "Name and version of the surface temperature algorithm.",
+                "name": "ALGORITHM_SOURCE_SURFACE_TEMPERATURE",
+                "type": "STRING"
+            },
+            {
+                "description": "Percentage cloud cover (0-100), -1 = not calculated.",
+                "name": "CLOUD_COVER",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Percentage cloud cover over land (0-100), -1 = not calculated.",
+                "name": "CLOUD_COVER_LAND",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Scene collection category, \"T1\" or \"T2\".",
+                "name": "COLLECTION_CATEGORY",
+                "type": "STRING"
+            },
+            {
+                "description": "Air temperature data source.",
+                "name": "DATA_SOURCE_AIR_TEMPERATURE",
+                "type": "STRING"
+            },
+            {
+                "description": "Elevation data source.",
+                "name": "DATA_SOURCE_ELEVATION",
+                "type": "STRING"
+            },
+            {
+                "description": "Ozone data source.",
+                "name": "DATA_SOURCE_OZONE",
+                "type": "STRING"
+            },
+            {
+                "description": "Pressure data source.",
+                "name": "DATA_SOURCE_PRESSURE",
+                "type": "STRING"
+            },
+            {
+                "description": "Reanalysis data source.",
+                "name": "DATA_SOURCE_REANALYSIS",
+                "type": "STRING"
+            },
+            {
+                "description": "Water vapor data source.",
+                "name": "DATA_SOURCE_WATER_VAPOR",
+                "type": "STRING"
+            },
+            {
+                "description": "Timestamp of the date when the product was generated.",
+                "name": "DATE_PRODUCT_GENERATED",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Earth-Sun distance (AU).",
+                "name": "EARTH_SUN_DISTANCE",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Identifier to inform the user of the orbital ephemeris type used:\n\"DEFINITIVE\" or \"PREDICTIVE\". If the field is not present, the user should\nassume \"PREDICTIVE\".\n",
+                "name": "EPHEMERIS_TYPE",
+                "type": "STRING"
+            },
+            {
+                "description": "Combined RMSE (Root Mean Square Error) of the geometric\nresiduals (meters) in both across-track and along-track\ndirections. This parameter is only present if the L1_PROCESSING_LEVEL\nis L1TP.\n",
+                "name": "GEOMETRIC_RMSE_MODEL",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "RMSE (Root Mean Square Error) of the geometric residuals (meters)\nmeasured on the GCPs (Ground Control Points) used in geometric\nprecision correction in the across-track direction. This parameter is\nonly present if the L1_PROCESSING_LEVEL is L1TP.\n",
+                "name": "GEOMETRIC_RMSE_MODEL_X",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "RMSE (Root Mean Square Error) of the geometric residuals (meters)\nmeasured on the GCPs (Ground Control Points) used in geometric\nprecision correction in the along-track direction. This parameter is\nonly present if the L1_PROCESSING_LEVEL is L1TP.\n",
+                "name": "GEOMETRIC_RMSE_MODEL_Y",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Number of GCPs used in the precision correction process.\nThis parameter is only present if the L1_PROCESSING_LEVEL is L1TP.\n",
+                "name": "GROUND_CONTROL_POINTS_MODEL",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "GCP dataset version used in the precision correction process. This\nparameter is only present if the L1_PROCESSING_LEVEL is L1TP.\n",
+                "name": "GROUND_CONTROL_POINTS_VERSION",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Composite image quality for the bands.\n0 = worst, 9 = best, -1 = quality not calculated or assessed.",
+                "name": "IMAGE_QUALITY",
+                "type": "INT"
+            },
+            {
+                "description": "Product generation date for the corresponding L1 product.",
+                "name": "L1_DATE_PRODUCT_GENERATED",
+                "type": "STRING"
+            },
+            {
+                "description": "Landsat Product Identifier for the corresponding L1 product.",
+                "name": "L1_LANDSAT_PRODUCT_ID",
+                "type": "STRING"
+            },
+            {
+                "description": "Processing Level for the corresponding L1 product.",
+                "name": "L1_PROCESSING_LEVEL",
+                "type": "STRING"
+            },
+            {
+                "description": "Processing software version for the corresponding L1 product.",
+                "name": "L1_PROCESSING_SOFTWARE_VERSION",
+                "type": "STRING"
+            },
+            {
+                "description": "Landsat Product Identifier",
+                "name": "LANDSAT_PRODUCT_ID",
+                "type": "STRING"
+            },
+            {
+                "description": "Short Landsat Scene Identifier",
+                "name": "LANDSAT_SCENE_ID",
+                "type": "STRING"
+            },
+            {
+                "description": "\"L2SP\" when both SR and LST bands are present, or \"L2SR\" when only\nSR bands are present.",
+                "name": "PROCESSING_LEVEL",
+                "type": "STRING"
+            },
+            {
+                "description": "The processing software version that created the product.",
+                "name": "PROCESSING_SOFTWARE_VERSION",
+                "type": "STRING"
+            },
+            {
+                "description": "Time of the observations as in ISO 8601 string.",
+                "name": "SCENE_CENTER_TIME",
+                "type": "STRING"
+            },
+            {
+                "description": "Name of the sensor.",
+                "name": "SENSOR_ID",
+                "type": "STRING"
+            },
+            {
+                "description": "Name of the spacecraft.",
+                "name": "SPACECRAFT_ID",
+                "type": "STRING"
+            },
+            {
+                "description": "Sun azimuth angle in degrees for the image center location at the\nimage center acquisition time. A positive value indicates angles to the\neast or clockwise from the north. A negative value indicates angles to\nthe west or counterclockwise from the north.\n",
+                "name": "SUN_AZIMUTH",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Sun elevation angle in degrees for the image center location at the\nimage center acquisition time. A positive value indicates a daytime\nscene. A negative value indicates a nighttime scene.\nNote: For reflectance calculation, the sun zenith angle is needed,\nwhich is 90 - sun elevation angle.\n",
+                "name": "SUN_ELEVATION",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Maximum achievable temperature value for Band 6.",
+                "name": "TEMPERATURE_MAXIMUM_BAND_ST_B6",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Minimum achievable temperature value for Band 6.",
+                "name": "TEMPERATURE_MINIMUM_BAND_ST_B6",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "WRS path number of scene.",
+                "name": "WRS_PATH",
+                "type": "INT"
+            },
+            {
+                "description": "WRS row number of scene.",
+                "name": "WRS_ROW",
+                "type": "INT"
+            }
+        ],
+        "gsd": [
+            30
+        ]
+    },
+    "assets": {
+        "preview_4": {
+            "href": "https://developers.google.com/earth-engine/datasets/images/LANDSAT/LANDSAT_LE07_C02_T2_L2_sample.png",
+            "type": "image/png",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    },
+    "gee:interval": {
+        "interval": 16,
+        "type": "revisit_interval",
+        "unit": "day"
+    },
+    "gee:terms_of_use": "Landsat datasets are federally created data\nand therefore reside in the public domain and may be used, transferred, or reproduced without copyright restriction.\n\nAcknowledgement or credit of the USGS as data source should be provided\nby including a line of text citation such as the example shown below.\n\n(Product, Image, Photograph, or Dataset Name) courtesy of\nthe U.S. Geological Survey\n\nExample: Landsat-7 image courtesy of the U.S. Geological Survey\n\nSee the\n[USGS Visual Identity System Guidance](https://www.usgs.gov/information-policies-and-instructions/usgs-visual-identity-system)\nfor further details on proper citation and acknowledgement of USGS products.\n",
+    "gee:type": "image_collection"
+}

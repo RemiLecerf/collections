@@ -1,0 +1,79 @@
+{
+  "type": "Collection",
+  "id": "eu.copernicus.climate.ecv-for-climate-change",
+  "stac_version": "1.0.0",
+  "description": "The Essential Climate Variables for assessment of climate variability from 1979 to present dataset contains a selection of climatologies, monthly anomalies and monthly mean fields of Essential Climate Variables (ECVs) suitable for monitoring and assessment of climate variability and change. Selection criteria are based on accuracy and temporal consistency on monthly to decadal time scales. The ECV data products in this set have been estimated from climate reanalyses ERA-Interim and ERA5, and, depending on the source, may have been adjusted to account for biases and other known deficiencies. Data sources and adjustment methods used are described in the Product User Guide, as are various particulars such as the baseline periods used to calculate monthly climatologies and the corresponding anomalies.\nThe statistics provided are monthly average fields, climatologies and anomalies, as well as 12-month running mean anomalies. Climatologies and anomalies are calculated with respect to two reference periods: 1981-2010 (ERA5 and ERA-Int) and 1991-2020 (ERA5 only).\nThe C3S monthly climate bulletin (https://climate.copernicus.eu/climate-bulletins) provides an assessment of the monthly state of the climate with an emphasis on the European geographical domain. This data record is used as the basis for these monthly bulletins.\n\nVariables in the dataset/application are:\n0-7cm volumetric soil moisture, Precipitation, Sea-ice cover, Surface air relative humidity, Surface air temperature",
+  "links": [
+    {
+      "rel": "hosts",
+      "href": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/eu.copernicus.climate.ecv-for-climate-change",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Climate Data Store catalogue"
+    },
+    {
+      "rel": "hosts",
+      "href": "https://confluence.ecmwf.int/x/-ijnDg",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Product User Guide for the \"Essential Climate Variables for assessment of climate variability from 1979 to present\" dataset"
+    },
+    {
+      "rel": "hosts",
+      "href": "https://climate.copernicus.eu/node/74",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Surface air temperature bulletin"
+    },
+    {
+      "rel": "hosts",
+      "href": "https://climate.copernicus.eu/node/181",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Hydrological climate variables bulletin"
+    },
+    {
+      "rel": "hosts",
+      "href": "https://climate.copernicus.eu/node/8",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Sea ice bulletin"
+    }
+  ],
+  "title": "Essential climate variables for assessment of climate variability from 1979 to present",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          0.0,
+          -89.0,
+          360.0,
+          89.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1979-01-01T00:00:00Z",
+          "2023-08-01T23:59:59Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Atmospheric conditions",
+    "Temporal coverage: Past",
+    "Spatial coverage: Global",
+    "Product type: Reanalysis",
+    "Variable domain: Atmosphere (surface)",
+    "Variable domain: Land (hydrology)",
+    "Variable domain: Ocean (physics)"
+  ],
+  "providers": [
+    {
+      "name": "Copernicus Climate Data Store",
+      "description": "Copernicus Climate Data Store - European Centre for Medium-Range Weather Forecasts (ECMWF)",
+      "roles": [
+        "host"
+      ],
+      "url": "https://cds.climate.copernicus.eu/"
+    }
+  ]
+}

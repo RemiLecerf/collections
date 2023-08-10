@@ -1,0 +1,154 @@
+{
+    "description": "[LandScan High Definition (HD)](https://landscan.ornl.gov)\nprovides gridded population estimates at 3\narc-second (~100m) resolution. Values for each LandScan HD cell represent an\nambient (i.e. 24 hour average) population count estimate.  In this way, the\ndata capture the full potential activity space of people throughout the\ncourse of the day and night rather than just a residential location. The\nLandScan HD model incorporates current land use and infrastructure data from\na variety of sources, applies facility occupancy estimates from ORNL's\nPopulation Density Tables (PDT) project, and leverages novel image\nprocessing algorithms developed at ORNL to rapidly map building\nstructures and neighborhood areas using high-performance computing\nenvironments.\n\nThe source for subnational population counts used in the development of this\ndata comes from\n[State Statistics Service of Ukraine](https://ukrstat.org/en/operativ/operativ2021/ds/kn/arh_kn2021_e.html).\n\nThese subnational estimates were adjusted to the country total population\nprovided by the\n[CIA World Factbook](https://www.cia.gov/the-world-factbook/countries/ukraine/#people-and-society).\n",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    22.125,
+                    44.175,
+                    40.225,
+                    52.4
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2022-01-01T00:00:00Z",
+                    "2022-02-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "gee:terms_of_use": "This dataset is licensed under\n[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/).'\n",
+    "gee:type": "image",
+    "id": "DOE/ORNL/LandScan_HD/Ukraine_202201",
+    "keywords": [
+        "landscan",
+        "population",
+        "ukraine"
+    ],
+    "license": "CC-BY-4.0",
+    "links": [
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections/DOE/ORNL/LandScan_HD/Ukraine_202201",
+            "rel": "self",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections",
+            "rel": "parent",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/",
+            "rel": "root",
+            "type": "application/json"
+        },
+        {
+            "code": "JavaScript",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/DOE/DOE_ORNL_LandScan_HD_Ukraine_202201",
+            "rel": "related",
+            "title": "Run the example for DOE/ORNL/LandScan_HD/Ukraine_202201 in the Earth Engine Code Editor",
+            "type": "text/html"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/images/DOE/DOE_ORNL_LandScan_HD_Ukraine_202201_sample.png",
+            "rel": "preview",
+            "type": "image/png"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/DOE_ORNL_LandScan_HD_Ukraine_202201#terms-of-use",
+            "rel": "license",
+            "type": "text/html"
+        },
+        {
+            "href": "https://landscan.ornl.gov/sites/default/files/ukraine2022/LandScanHDUkraine.zip",
+            "rel": "source"
+        },
+        {
+            "href": "https://spdx.org/licenses/CC-BY-4.0.html",
+            "rel": "license",
+            "type": "text/html"
+        }
+    ],
+    "providers": [
+        {
+            "name": "Oak Ridge National Laboratory",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://landscan.ornl.gov/ukraine-landscan-hd-data"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/DOE_ORNL_LandScan_HD_Ukraine_202201"
+        }
+    ],
+    "stac_extensions": [
+        "collection-assets"
+    ],
+    "stac_version": "1.0.0",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "24 hour average population count estimate",
+                "name": "population"
+            }
+        ],
+        "gsd": [
+            100
+        ],
+        "population": {
+            "gee:estimated_range": true,
+            "maximum": 1020
+        }
+    },
+    "title": "LandScan High Definition Data for Ukraine, January 2022",
+    "type": "Collection",
+    "version": "202201",
+    "cube:dimensions": {
+        "x": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                22.125,
+                40.225
+            ]
+        },
+        "y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                44.175,
+                52.4
+            ]
+        },
+        "t": {
+            "type": "temporal",
+            "extent": [
+                "2022-01-01T00:00:00Z",
+                "2022-02-01T00:00:00Z"
+            ]
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "population"
+            ]
+        }
+    },
+    "assets": {
+        "preview_4": {
+            "href": "https://developers.google.com/earth-engine/datasets/images/DOE/DOE_ORNL_LandScan_HD_Ukraine_202201_sample.png",
+            "type": "image/png",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    }
+}

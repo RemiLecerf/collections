@@ -1,0 +1,28 @@
+<csw:Record xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">EO:ECMWF:DAT:SIS_SHIPPING_CONSUMPTION_ON_ROUTES</dc:identifier>
+      <dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">Ship performance along standard shipping routes derived from reanalysis and seasonal forecasts</dc:title>
+      <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/">dataset</dc:type>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Transport networks</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Sector: Transport</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Spatial coverage: Global</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Variable domain: Atmosphere (surface)</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Temporal coverage: Past</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Temporal coverage: Future</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Provider: Copernicus C3S</dc:subject>
+      <dc:format xmlns:dc="http://purl.org/dc/elements/1.1/">netcdf</dc:format>
+      <dct:abstract xmlns:dct="http://purl.org/dc/terms/">The dataset presents ship performance indicators for 80 popular global commercial shipping routes computed using a bespoke Fuel Consumption Model (FCM) developed for the Copernicus Climate Change Service. The purpose of the dataset is to provide information on the weather dependence and seasonality of ship performances with the aim of reducing fuel consumption by optimizing the route selection and ship's sailing speed. A trader or a fleet manager can use this information to estimate the average time and fuel consumption of a journey for a given month together with the uncertainty on meeting the target time of arrival. The seasonal forecast data quantifies the impact of the monthly wind anomalies on the fuel consumption and trip duration. 
+The fuel consumption model comprises two major modules: resistance due to calm water, and resistance due to met-ocean parameters of wind, waves, and currents. For wind (eastward wind speed component, northward wind speed component), and waves (significant wave height, mean wave direction, peak wave period), the fifth generation ECMWF reanalysis for the global climate (ERA5) is used. For ocean currents (eastward current speed component, northward current speed component), monthly mean reanalysis from the ECMWF's ocean reanalysis system 4 (ORAS4) is used. For seasonal forecast products, monthly anomalies from the ECMWF's seasonal prediction system 5 (SEAS5) are used for wind, whilst the monthly mean climatology from ERA5 and ORAS4 is used for waves and currents, respectively.
+The dataset was produced on behalf of the Copernicus Climate Change Sector using reanalysis data available on the Climate Data Store.
+
+Variables in the dataset/application are:
+Fuel consumption at fixed power, Fuel consumption at fixed speed, Shaft power at fixed speed, Ship speed at fixed shaft power, Trip duration at fixed power</dct:abstract>
+      <dct:spatial xmlns:dct="http://purl.org/dc/terms/">::EPSG:4326</dct:spatial>
+      <dc:rights xmlns:dc="http://purl.org/dc/elements/1.1/">https://cds.climate.copernicus.eu/api/v2/terms/static/20180314_Copernicus_License_V1.1.pdf</dc:rights>
+      <dc:rights xmlns:dc="http://purl.org/dc/elements/1.1/">Content accessible through the CDS may only be used under the terms of the licenses attributed to each particular resource.</dc:rights>
+      <dct:accessRights xmlns:dct="http://purl.org/dc/terms/">licence</dct:accessRights>
+      <ows:BoundingBox xmlns:ows="http://www.opengis.net/ows">
+        <ows:LowerCorner>-180 -90</ows:LowerCorner>
+        <ows:UpperCorner>180 90</ows:UpperCorner>
+      </ows:BoundingBox>
+    </csw:Record>
+    

@@ -1,0 +1,82 @@
+{
+    "stac_version": "0.9.0",
+    "stac_extensions": [
+        "datacube"
+    ],
+    "type": "Collection",
+    "id": "DRI2_SOIL_MOISTURE_ESTIMATIONS",
+    "title": "DRI2_SOIL_MOISTURE_ESTIMATIONS",
+    "description": "Surface Soil Moisture Estimations generated with the code from the paper: A Machine Learning-Based Approach for Surface Soil Moisture Estimations with Google Earth Engine: https://www.mdpi.com/2072-4292/13/11/2099 . For the the source code please refer to https://gitlab.inf.unibz.it/Felix.Greifeneder/pysmm . The original data range is between 0 and 1. A scale factor of 100 has been applied and hence, to get the original values, the data must be divided by 100. ",
+    "license": "CC-BY-4.0",
+    "providers": [
+        {
+            "name": "Eurac EO ODC",
+            "url": "http://www.eurac.edu/",
+            "roles": [
+                "producer",
+                "host"
+            ]
+        }
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    10.030304515662102,
+                    45.594040636434116,
+                    12.872559599491968,
+                    47.74343450443847
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2021-01-01T05:26:02Z",
+                    "2021-12-30T16:58:06Z"
+                ]
+            ]
+        }
+    },
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://creativecommons.org/licenses/by/4.0/",
+            "type": "text/html",
+            "title": "License link"
+        }
+    ],
+    "cube:dimensions": {
+        "DATE": {
+            "type": "temporal",
+            "extent": [
+                "2021-01-01T05:26:02+00:00",
+                "2021-12-30T16:58:06+00:00"
+            ]
+        },
+        "X": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                10.030304515662102,
+                12.872559599491968
+            ],
+            "reference_system": 32632
+        },
+        "Y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                45.594040636434116,
+                47.74343450443847
+            ],
+            "reference_system": 32632
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "ESTIMATED_SM"
+            ]
+        }
+    }
+}

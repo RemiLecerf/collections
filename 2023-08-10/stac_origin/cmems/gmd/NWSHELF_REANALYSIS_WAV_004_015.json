@@ -1,0 +1,75 @@
+{
+  "type": "Collection",
+  "id": "NWSHELF_REANALYSIS_WAV_004_015",
+  "stac_version": "1.0.0",
+  "description": "'''Short  description:'''\n\nThis product provides long term hindcast outputs from a wave model for the North-West European Shelf. The wave model is WAVEWATCH III and the North-West Shelf configuration is based on a two-tier Spherical Multiple Cell grid mesh (3 and 1.5 km cells) derived from with the 1.5km grid used for [https://resources.marine.copernicus.eu/?option=com_csw&view=details&product_id=NORTHWESTSHELF_ANALYSIS_FORECAST_PHY_004_013 NORTHWESTSHELF_ANALYSIS_FORECAST_PHY_004_013]. The model is forced by lateral boundary conditions from a Met Office Global wave hindcast. The atmospheric forcing is given by the [https://www.ecmwf.int/en/forecasts/datasets/reanalysis-datasets/era5 ECMWF ERA-5] Numerical Weather Prediction reanalysis. Model outputs comprise wave parameters integrated from the two-dimensional (frequency, direction) wave spectrum and describe wave height, period and directional characteristics for both the overall sea-state and wind-sea and swell components. The data are delivered on a regular grid at approximately 1.5km resolution, consistent with physical ocean and wave analysis-forecast products. See [http://catalogue.marine.copernicus.eu/documents/PUM/CMEMS-NWS-PUM-004-015.pdf CMEMS-NWS-PUM-004-015] for more information. Further details of the model, including source term physics, propagation schemes, forcing and boundary conditions, and validation, are provided in the [http://catalogue.marine.copernicus.eu/documents/QUID/CMEMS-NWS-QUID-004-015.pdf CMEMS-NWS-QUID-004-015].\nThe product is updated biannually provinding six-month extension of the time series.\n\n'''Associated products:'''\n\n[https://resources.marine.copernicus.eu/?option=com_csw&view=details&product_id=NORTHWESTSHELF_ANALYSIS_FORECAST_WAV_004_014 NORTHWESTSHELF_ANALYSIS_FORECAST_WAV_004_014].\n\n'''DOI (product) :'''   \nhttps://doi.org/10.48670/moi-00060",
+  "links": [
+    {
+      "rel": "hosts",
+      "href": "https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&service=NWSHELF_REANALYSIS_WAV_004_015-TDS&product=MetO-NWS-WAV-RAN",
+      "type": "MYO:MOTU-SUB",
+      "title": "MetO-NWS-WAV-RAN"
+    }
+  ],
+  "title": "Atlantic- European North West Shelf- Wave Physics Reanalysis",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -16.0,
+          46.0,
+          13.0,
+          62.75
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1980-01-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Oceanographic geographical features",
+    "numerical-model",
+    "sea_surface_wave_significant_height",
+    "sea_surface_wave_period_at_variance_spectral_density_maximum",
+    "sea_surface_wind_wave_significant_height",
+    "sea_surface_wind_wave_from_direction",
+    "sea_surface_primary_swell_wave_significant_height",
+    "sea_surface_wave_from_direction",
+    "sea_surface_wave_mean_period_from_variance_spectral_density_second_frequency_moment",
+    "sea_surface_wave_from_direction_at_variance_spectral_density_maximum",
+    "sea_surface_secondary_swell_wave_mean_period",
+    "sea_surface_primary_swell_wave_mean_period",
+    "sea_surface_wave_stokes_drift_x_velocity",
+    "sea_surface_secondary_swell_wave_from_direction",
+    "sea_surface_primary_swell_wave_from_direction",
+    "sea_surface_wind_wave_mean_period",
+    "sea_surface_wave_stokes_drift_y_velocity",
+    "sea_surface_secondary_swell_wave_significant_height",
+    "sea_surface_wave_mean_period_from_variance_spectral_density_inverse_frequency_moment",
+    "multi-year",
+    "coastal-marine-environment",
+    "weather-climate-and-seasonal-forecasting",
+    "marine-resources",
+    "marine-safety",
+    "north-west-shelf-seas",
+    "Level 4",
+    "None"
+  ],
+  "providers": [
+    {
+      "name": "Copernicus Marine Service",
+      "description": "Copernicus Marine Service - Mercator Ocean International",
+      "roles": [
+        "host"
+      ],
+      "url": "https://marine.copernicus.eu/"
+    }
+  ]
+}

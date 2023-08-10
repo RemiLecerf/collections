@@ -1,0 +1,124 @@
+{
+    "engine": "WCPS",
+    "stac_version": "0.9.0",
+    "stac_extensions": [
+        "datacube"
+    ],
+    "type": "Collection",
+    "id": "ADO_NDVI_MODIS_231m_3035",
+    "title": "Normalized Difference Vegetation Index - 231m 8 day Maximum Value Composite",
+    "description": "The Normalized Difference Vegetation Index (NDVI) is based on MODIS satellite data. The NDVI is based on 8 day maximum value composite MOD09Q1 (v006) reflectance products. The spatial resolution is 231 m. The NDVI is masked to the highest quality standards using the provided quality layers. Missing pixel values in the time series are linearly interpolated. Non-vegetatated areas are masked using the MODIS land cover product layer MCD12Q1 FAO-Land Cover Classification System 1 (LCCS1). The final product is regridded to the LAEA Projection (EPSG:3035). The NDVI is calculated using the formula NDVI = (NIR - Red) / (NIR + Red). The NDVI expresses the vitality of vegetation. The data is provided as 8 day measures. The time series is starting from 2001. The NDVI values range from -1 - 1, whereas high values correspond to healthy vegetation.",
+    "keywords": [
+        "normalized difference vegetation index",
+        "ndvi",
+        "modis",
+        "ADO project",
+        "ADO"
+    ],
+    "version": "v1",
+    "license": "CC BY 4.0",
+    "sci:citation": "N/A",
+    "providers": [
+        {
+            "name": "eurac research",
+            "url": "http://www.eurac.edu",
+            "roles": [
+                "Host"
+            ]
+        },
+        {
+            "name": "eurac research",
+            "url": "http://www.eurac.edu",
+            "roles": [
+                "Processor"
+            ]
+        },
+        {
+            "name": "NASA",
+            "url": "https://modis.gsfc.nasa.gov/",
+            "roles": [
+                "Producer"
+            ]
+        }
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    3.99537296130427,
+                    42.87349365119738,
+                    17.523924303829347,
+                    50.32636203215727
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2001-01-01T00:00:00Z",
+                    "2021-01-03T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "links": [
+        {
+            "rel": "licence",
+            "href": "https://creativecommons.org/licenses/by/4.0/",
+            "type": "text/html",
+            "title": "License Link"
+        }
+    ],
+    "cube:dimensions": {
+        "DATE": {
+            "type": "temporal",
+            "extent": [
+                "2001-01-01T00:00:00.000Z",
+                "2021-01-03T00:00:00.000Z"
+            ],
+            "step": "P8D"
+        },
+        "X": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                3.99537296130427,
+                17.523924303829347
+            ],
+            "reference_system": 3035
+        },
+        "Y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                42.87349365119738,
+                50.32636203215727
+            ],
+            "reference_system": 3035
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "8d_ndvi_linint"
+            ]
+        }
+    },
+    "summaries": {
+        "constellation": [
+            "Terra"
+        ],
+        "platform": [
+            "Terra"
+        ],
+        "rows": 3606,
+        "columns": 4430,
+        "instruments": [
+            "MODIS"
+        ],
+        "eo:bands": [
+            {
+                "name": "8d_ndvi_linint"
+            }
+        ]
+    }
+}

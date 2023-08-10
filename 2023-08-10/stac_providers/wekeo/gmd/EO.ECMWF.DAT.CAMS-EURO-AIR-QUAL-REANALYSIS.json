@@ -1,0 +1,62 @@
+{
+  "type": "Collection",
+  "id": "EO.ECMWF.DAT.CAMS-EURO-AIR-QUAL-REANALYSIS",
+  "stac_version": "1.0.0",
+  "description": "This dataset provides annual air quality reanalyses for Europe based on both unvalidated (interim) and validated observations.\n\nCAMS produces annual air quality (interim) reanalyses for the European domain at significantly higher spatial resolution (0.1 degrees, approx. 10km) than is available from the global reanalyses. The production is currently based on an ensemble of nine air quality data assimilation systems across Europe. A median ensemble is calculated from individual outputs, since ensemble products yield on average better performance than the individual model products. The spread between the nine models can be used to provide an estimate of the analysis uncertainty.\n\nThe reanalysis combines model data with observations provided by the European Environment Agency (EEA) into a complete and consistent dataset using various data assimilation techniques depending upon the air-quality forecasting system used. Additional sources of observations can complement the in-situ data assimilation, like satellite data.\n\nAn interim reanalysis is provided each year for the year before based on the unvalidated near-real-time observation data stream that has not undergone full quality control by the data providers yet. Once the fully quality-controlled observations are available from the data provider, typically with an additional delay of about 1 year, a final validated annual reanalysis is provided. Both reanalyses are available at hourly time steps at height levels.",
+  "links": [
+    {
+      "rel": "hosts",
+      "href": "https://confluence.ecmwf.int/x/SDOkDQ",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "CAMS European air quality reanalyses documentation"
+    },
+    {
+      "rel": "hosts",
+      "href": "https://ads.atmosphere.copernicus.eu/cdsapp#!/dataset/eu.copernicus.atmosphere.cams-europe-air-quality-reanalyses",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Climate Data Store catalogue"
+    }
+  ],
+  "title": "CAMS European air quality reanalyses",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -30.0,
+          20.0,
+          42.0,
+          65.85
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2018-01-01T00:00:00Z",
+          "2018-12-31T23:59:59Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "airPollution",
+    "Atmospheric conditions",
+    "Variable domain: Atmosphere (composition)",
+    "Parameter family: Aerosol",
+    "Parameter family: Reactive gas",
+    "Spatial coverage: Europe",
+    "Product type: Reanalysis",
+    "Temporal coverage: Past"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

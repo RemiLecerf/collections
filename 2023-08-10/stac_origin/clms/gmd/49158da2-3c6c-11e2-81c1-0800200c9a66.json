@@ -1,0 +1,61 @@
+{
+  "type": "Collection",
+  "id": "49158da2-3c6c-11e2-81c1-0800200c9a66",
+  "stac_version": "1.0.0",
+  "description": "The Vegetation Condition Indicator (VCI) is a categorical type of difference vegetation index. The VCI compares the observed NDVI to the range of values observed in the same period in previous years. The VCI is expressed in % and gives an idea where the observed value is situated between the extreme values (minimum and maximum) in the previous years. Lower and higher values indicate bad and good vegetation state conditions, respectively.",
+  "links": [
+    {
+      "rel": "hosts",
+      "href": "http://land.copernicus.eu/global/products/vci",
+      "type": "HTTP",
+      "title": "Copernicus Global Land Service"
+    },
+    {
+      "rel": "hosts",
+      "href": "http://eoportal.eumetsat.int",
+      "title": "Copernicus Global Land Service"
+    }
+  ],
+  "title": "Vegetation Condition Index: global 10-daily continents (raster 1km) - version 1, Sept 2014",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -70.0,
+          180.0,
+          80.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2013-01-01T00:00:00Z",
+          "2020-06-30T23:59:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Orthoimagery",
+    "geophysical environment",
+    "biogeophysical",
+    "vegetation",
+    "historical NDVI",
+    "global continents",
+    "Dekad",
+    "10-day composite"
+  ],
+  "providers": [
+    {
+      "name": "Copernicus Land Monitoring Service",
+      "description": "Copernicus Land Monitoring Service - VITO NV",
+      "roles": [
+        "host"
+      ],
+      "url": "https://land.copernicus.eu/"
+    }
+  ]
+}

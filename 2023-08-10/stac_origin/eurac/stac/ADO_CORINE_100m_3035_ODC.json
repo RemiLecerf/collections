@@ -1,0 +1,106 @@
+{
+    "type": "Collection",
+    "version": "v1",
+    "stac_version": "1.0.0",
+    "stac_extensions": [
+        "datacube",
+        "scientific"
+    ],
+    "id": "ADO_CORINE_100m_3035_ODC",
+    "title": "Corine Land Cover (CLC) 2018",
+    "description": "CLC2018 is one of the Corine Land Cover (CLC) datasets produced within the frame the Copernicus Land Monitoring Service referring to land cover / land use status of year 2018. CLC service has a long-time heritage (formerly known as \"CORINE Land Cover Programme\"), coordinated by the European Environment Agency (EEA). It provides consistent and thematically detailed information on land cover and land cover changes across Europe.",
+    "keywords": [
+        "Copernicus",
+        "Land",
+        "Satellite Image Interpretation",
+        "2018",
+        "Corine",
+        "Corine Land Cover"
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    3.097476122153772,
+                    42.85328336956984,
+                    17.506871070250423,
+                    50.35760818883288
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2018-01-01T23:59:00Z",
+                    "2018-01-01T23:59:00Z"
+                ]
+            ]
+        }
+    },
+    "providers": [
+        {
+            "name": "Eurac EO ODC",
+            "url": "https://www.eurac.edu",
+            "roles": [
+                "host"
+            ]
+        },
+        {
+            "name": "European Environment Agency (EEA)",
+            "url": "mailto:copernicus@eea.europa.eu",
+            "roles": [
+                "producer"
+            ]
+        }
+    ],
+    "license": "CC-BY-4.0",
+    "links": [
+        {
+            "rel": "licence",
+            "href": "https://creativecommons.org/licenses/by/4.0/",
+            "type": "text/html",
+            "title": "License Link"
+        }
+    ],
+    "cube:dimensions": {
+        "DATE": {
+            "type": "temporal",
+            "extent": [
+                "2018-01-01T23:59:00Z",
+                "2018-01-01T23:59:00Z"
+            ]
+        },
+        "X": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                3.097476122153772,
+                17.506871070250423
+            ],
+            "reference_system": 3035
+        },
+        "Y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                42.85328336956984,
+                50.35760818883288
+            ],
+            "reference_system": 3035
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "CLC2018_WM"
+            ]
+        }
+    },
+    "summaries": {
+        "rows": 8332,
+        "columns": 10240,
+        "gsd": [
+            100.0
+        ]
+    },
+    "sci:citation": "Copyright holder: European Environment Agency (EEA)"
+}

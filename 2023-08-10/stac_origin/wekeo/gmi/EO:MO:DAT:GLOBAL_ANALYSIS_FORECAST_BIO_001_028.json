@@ -1,0 +1,65 @@
+{
+  "type": "Collection",
+  "id": "EO:MO:DAT:GLOBAL_ANALYSIS_FORECAST_BIO_001_028",
+  "stac_version": "1.0.0",
+  "description": "'''Short description:'''\n\nThe Operational Mercator Ocean biogeochemical global ocean analysis and forecast system  at 1/4 degree is providing 10 days of 3D global ocean forecasts updated weekly. The time series is aggregated in time, in order to reach a two full year’s time series sliding window. This product includes daily and monthly mean files of biogeochemical parameters (chlorophyll, nitrate, phosphate, silicate, dissolved oxygen, dissolved iron, primary production, phytoplankton, PH, and surface partial pressure of carbon dioxyde) over the global ocean. The global ocean output files are displayed with a 1/4 degree horizontal resolution with regular longitude/latitude equirectangular projection. 50 vertical levels are ranging from 0 to 5700 meters.\n\n* NEMO version (v3.6_STABLE)\n* Forcings: GLOBAL_ANALYSIS_FORECAST_PHYS_001_024 at daily frequency.                                                                           \n* Outputs mean fields are interpolated on a standard regular grid in NetCDF format.\n* Initial conditions: World Ocean Atlas 2013 for nitrate, phosphate, silicate and dissolved oxygen, GLODAPv2 for DIC and Alkalinity, and climatological model outputs for Iron and DOC \n* Quality/Accuracy/Calibration information: See the related QuID[http://marine.copernicus.eu/documents/QUID/CMEMS-GLO-QUID-001-028.pdf]\n\n'''DOI (product) :'''   \nhttps://doi.org/10.48670/moi-00015",
+  "links": [],
+  "title": "Global Ocean Biogeochemistry Analysis and Forecast",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2019-05-04T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Oceanographic geographical features",
+    "numerical-model",
+    "sea_water_alkalinity_expressed_as_mole_equivalent",
+    "mass_concentration_of_chlorophyll_a_in_sea_water",
+    "mole_concentration_of_dissolved_inorganic_carbon_in_sea_water",
+    "mole_concentration_of_dissolved_iron_in_sea_water",
+    "mole_concentration_of_nitrate_in_sea_water",
+    "net_primary_production_of_biomass_expressed_as_carbon_per_unit_volume_in_sea_water",
+    "mole_concentration_of_dissolved_molecular_oxygen_in_sea_water",
+    "sea_water_ph_reported_on_total_scale",
+    "mole_concentration_of_phytoplankton_expressed_as_carbon_in_sea_water",
+    "mole_concentration_of_phosphate_in_sea_water",
+    "mole_concentration_of_silicate_in_sea_water",
+    "surface_partial_pressure_of_carbon_dioxide_in_sea_water",
+    "near-real-time",
+    "forecast",
+    "marine-safety",
+    "coastal-marine-environment",
+    "marine-resources",
+    "weather-climate-and-seasonal-forecasting",
+    "global-ocean",
+    "Level 4",
+    "Satellite Chlorophyll",
+    "Brest"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

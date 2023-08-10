@@ -1,0 +1,71 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dct="http://purl.org/dc/terms/" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://land.copernicus.vgt.vito.be:8443//geonetwork/metadata/urn:cgls:global:swi_v1_1km">
+        <foaf:primaryTopic rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/resource/urn:cgls:global:swi_v1_1km"/>
+        <dct:issued>2022-03-17</dct:issued>
+        <dct:modified>2022-03-17</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://land.copernicus.vgt.vito.be:8443//geonetwork/srv/eng/xml.metadata.get?uuid=urn:cgls:global:swi_v1_1km">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://land.copernicus.vgt.vito.be:8443//geonetwork?uuid=urn:cgls:global:swi_v1_1km">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://land.copernicus.vgt.vito.be:8443//geonetwork/resource/urn:cgls:global:swi_v1_1km">
+        <dct:identifier>urn:cgls:global:swi_v1_1km</dct:identifier>
+        <dct:title>Soil Water Index: continental Europe daily (raster 1km) - version 1, Apr 2019</dct:title>
+        <dct:abstract>The Soil Water Index (SWI) quantifies the moisture condition at various depths in the soil. It is mainly driven by the precipitation via the process of infiltration. Soil moisture is a very heterogeneous variable and varies on small scales with soil properties and drainage patterns. Satellite measurements integrate over relative large-scale areas, with the presence of vegetation adding complexity to the interpretation. Soil moisture is a key parameter in numerous environmental studies including hydrology, meteorology and agriculture, and is recognized as an Essential Climate Variable (ECV) by the Global Climate Observing System (GCOS). The SWI product provides daily information about moisture conditions in different soil layers. It includes a quality flag (QFLAG) indicating the availability of SSM measurements for SWI calculations, and a Surface State Flag (SSF) indicating frozen or snow covered soils.</dct:abstract>
+        <dcat:keyword>biogeophysical</dcat:keyword>
+        <dcat:keyword>soil water index</dcat:keyword>
+        <dcat:keyword>soil moisture</dcat:keyword>
+        <dcat:keyword>Europe</dcat:keyword>
+        <dcat:keyword>Daily</dcat:keyword>
+        <dcat:keyword>daily composite</dcat:keyword>
+        <dcat:theme rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/thesaurus/GEMET%20-%20INSPIRE%20themes%2C%20version%201.0/Orthoimagery"/>
+        <dcat:theme rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/thesaurus/GEMET%20-%20Concepts%2C%20version%202.1/geophysical environment"/>
+        <dcat:theme rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/thesaurus/iso/topicCategory/imageryBaseMapsEarthCover"/>
+        <dcat:theme rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/thesaurus/iso/topicCategory/biota"/>
+        <dcat:theme rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/thesaurus/iso/topicCategory/farming"/>
+        <dcat:theme rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/thesaurus/iso/topicCategory/environment"/>
+        <foaf:thumbnail rdf:resource="c_gls_SWI1km_QL_202203071200_CEURO_SCATSAR_V1.0.1.tiff"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((-11 35, -11 72, 50 72, 50 35, -11 35))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:temporal>2015-01-01T12:00:01Z
+          /
+          2022-12-31T12:00:00Z</dct:temporal>
+        <dct:issued>2019-04-29</dct:issued>
+        <dct:publisher rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/organization/TU%20Wien"/>
+        <dct:publisher rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/organization/Earth%20Observation%20Data%20Centre%20for%20Water%20Resources%20Monitoring%20GmbH"/>
+        <dct:publisher rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/organization/European%20Commission%20Directorate-General%20for%20Internal%20Market%2C%20Industry%2C%20Entrepreneurship%20and%20SMEs"/>
+        <dct:publisher rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/organization/European%20Commission%20Directorate-General%20Joint%20Research%20Centre"/>
+        <dct:accrualPeriodicity>asNeeded</dct:accrualPeriodicity>
+        <dct:license>copyright</dct:license>
+        <dct:license>otherRestrictions</dct:license>
+        <dct:license>(d) the confidentiality of commercial or industrial information, where such confidentiality is provided for by national or Community law to protect a legitimate economic interest, including the public interest in maintaining statistical confidentiality and tax secrecy.</dct:license>
+        <dcat:distribution rdf:resource="https://land.copernicus.eu/global/products/swi"/>
+        <dcat:distribution rdf:resource="https://land.copernicus.eu/global/access"/>
+        <dcat:distribution rdf:resource="https://eoportal.eumetsat.int"/>
+        <dct:relation rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/metadata/"/>
+        <dcat:dataQuality>Soil moisture in plant root zone can be estimated by an infiltration model using information on surface soil moisture and soil characteristics. The SWI algorithm, originally developed at TU Wien and later improved by other research groups, uses an infiltration model describing the relation between surface soil moisture (SSM) and profile soil moisture as a function of time. The algorithm is based on a two-layer water balance model to estimate profile soil moisture from SSM retrieved from satellite radar data. The remotely sensed topsoil represents the first layer and the second layer extends downwards from the bottom of the surface layer. In this model, the water content of the reservoir layer is described in terms of an Index, which is controlled only by the past soil moisture conditions in the surface layer in a way that the influence of measurements decreases by increasing time. The SWI processing algorithm uses near-real-time SSM products as input to generate daily SWI images. Therefore a computational adaption of SWI algorithm was made based on a recursive formulation. In this method, a gain factor is introduced that relates past SWI measurements to current measurements. SWI images are calculated for eight different T values (2, 5, 10, 15, 20, 40, 60, 100) together with the respective quality flags. The SWI quality flag is a parameter related to the number of available SSM measurements used for calculation of SWI_T at time t. It is also calculated by using a recursive formulation and expressed in percentage after normalization.</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+    

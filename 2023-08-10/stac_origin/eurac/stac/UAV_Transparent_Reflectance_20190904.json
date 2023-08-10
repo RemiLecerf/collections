@@ -1,0 +1,107 @@
+{
+    "type": "Collection",
+    "version": "v1",
+    "stac_version": "0.9.0",
+    "stac_extensions": [
+        "datacube"
+    ],
+    "id": "UAV_Transparent_Reflectance_20190904",
+    "title": "UAV DataCubes",
+    "description": "High resolution - hyperspectral maps as part of the data time series produced by MONALISA project. 16 Hyperspectral bands and Orthomosaic and Digital Surface models",
+    "keywords": [
+        "UAV",
+        "Multispectral",
+        "Suface models"
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    11.799452975730224,
+                    46.635872292057776,
+                    11.803874398381012,
+                    46.637337128829145
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2019-09-04T00:00:00Z",
+                    "2019-09-04T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "providers": [
+        {
+            "name": "Eurac EO WCS",
+            "url": "http://www.eurac.edu",
+            "roles": [
+                "Host"
+            ]
+        },
+        {
+            "name": "Abraham Mejia-Aguilar",
+            "url": "https://www.eurac.edu/it/people/abraham-mejia-aguilar",
+            "roles": [
+                "Processor"
+            ]
+        }
+    ],
+    "license": "CC-BY-4.0",
+    "cube:dimensions": {
+        "DATE": {
+            "type": "temporal",
+            "extent": [
+                "2019-09-04T00:00:00.000Z",
+                "2019-09-04T00:00:00.000Z"
+            ],
+            "step": "P1D"
+        },
+        "E": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                11.799452975730224,
+                11.803874398381012
+            ],
+            "reference_system": 32632
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "Band1"
+            ]
+        },
+        "N": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                46.635872292057776,
+                46.637337128829145
+            ],
+            "reference_system": 32632
+        }
+    },
+    "summaries": {
+        "constellation": [
+            "Soleon"
+        ],
+        "platform": [
+            "UAV octocopter"
+        ],
+        "rows": 3467,
+        "columns": 6650,
+        "instruments": [
+            "RGB, Multispectral,hyperspectral"
+        ],
+        "eo:bands": [
+            {
+                "name": "Band1"
+            }
+        ]
+    },
+    "sci:citation": "UAV - DPS4ESLAB mission [2019.04.04]",
+    "engine": "WCPS"
+}

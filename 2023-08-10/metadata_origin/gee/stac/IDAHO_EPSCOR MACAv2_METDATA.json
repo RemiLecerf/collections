@@ -1,0 +1,259 @@
+{
+    "description": "The MACAv2-METDATA dataset is a collection of 20 global\nclimate models covering the conterminous USA. The Multivariate Adaptive\nConstructed Analogs (MACA) method is a statistical downscaling\nmethod which utilizes a training dataset (i.e. a meteorological\nobservation dataset) to remove historical biases and match spatial\npatterns in climate model output.\n\nThe MACA method was used to downscale the model output from 20\nglobal climate models (GCMs) of the Coupled Model Inter-Comparison\nProject 5 (CMIP5) for the historical GCM forcings (1950-2005) and\nthe future Representative Concentration Pathways (RCPs) RCP 4.5\nand RCP 8.5 scenarios (2006-2100) from the native resolution of\nthe GCMS to 4km.\n\nThe full list of models can be found at:\n[https://climate.northwestknowledge.net/MACA/GCMs.php](https://climate.northwestknowledge.net/MACA/GCMs.php)\n",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -124.9,
+                    24.9,
+                    -67,
+                    49.6
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1900-01-01T00:00:00Z",
+                    "2100-12-31T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "day"
+    },
+    "gee:terms_of_use": "The MACA datasets were created with funding from the\nUS government and are in the public domain in the United States.\nFor further clarity, unless otherwise noted, the MACA datasets\nare made available with a Creative Commons CC0 1.0 Universal dedication.\nIn short, John Abatzoglou waives all rights to the work worldwide\nunder copyright law, including all related and neighboring rights,\nto the extent allowed by law. You can copy, modify, distribute,\nand perform the work, even for commercial purposes, all without\nasking permission. John Abatzoglou makes no warranties about the\nwork, and disclaims liability for all uses of the work, to the\nfullest extent permitted by applicable law. Users should properly\ncite the source used in the creation of any reports and publications\nresulting from the use of this dataset and note the date when the\ndata was acquired. For more information refer to the [MACA References\nand License](https://climate.northwestknowledge.net/MACA/MACAreferences.php)\npage.\n",
+    "gee:type": "image_collection",
+    "id": "IDAHO_EPSCOR/MACAv2_METDATA",
+    "keywords": [
+        "climate",
+        "conus",
+        "geophysical",
+        "idaho",
+        "maca",
+        "monthly"
+    ],
+    "license": "CC0-1.0",
+    "links": [
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections/IDAHO_EPSCOR/MACAv2_METDATA",
+            "rel": "self",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections",
+            "rel": "parent",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/",
+            "rel": "root",
+            "type": "application/json"
+        },
+        {
+            "code": "JavaScript",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/IDAHO_EPSCOR/IDAHO_EPSCOR_MACAv2_METDATA",
+            "rel": "related",
+            "title": "Run the example for IDAHO_EPSCOR/MACAv2_METDATA in the Earth Engine Code Editor",
+            "type": "text/html"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/images/IDAHO_EPSCOR/IDAHO_EPSCOR_MACAv2_METDATA_sample.png",
+            "rel": "preview",
+            "type": "image/png"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/IDAHO_EPSCOR_MACAv2_METDATA#terms-of-use",
+            "rel": "license",
+            "type": "text/html"
+        }
+    ],
+    "providers": [
+        {
+            "name": "University of California Merced",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "http://www.climatologylab.org/maca.html"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/IDAHO_EPSCOR_MACAv2_METDATA"
+        }
+    ],
+    "sci:citation": "Abatzoglou J.T. and Brown T.J., A comparison of statistical downscaling\nmethods suited for wildfire applications, International Journal\nof Climatology(2012) [doi:10.1002/joc.2312](https://doi.org/10.1002/joc.2312).\n",
+    "stac_extensions": [
+        "collection-assets"
+    ],
+    "stac_version": "1.0.0",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Maximum daily temperature near surface",
+                "gee:units": "K",
+                "name": "tasmax"
+            },
+            {
+                "description": "Minimum daily temperature near surface",
+                "gee:units": "K",
+                "name": "tasmin"
+            },
+            {
+                "description": "Maximum daily relative humidity near surface, not present in models CCSM4 or NorESM1-M",
+                "gee:units": "%",
+                "name": "rhsmax"
+            },
+            {
+                "description": "Minimum daily relative humidity near surface, not present in models CCSM4 or NorESM1-M",
+                "gee:units": "%",
+                "name": "rhsmin"
+            },
+            {
+                "description": "Average daily specific humidity near surface",
+                "gee:units": "1 (mass fraction)",
+                "name": "huss"
+            },
+            {
+                "description": "Average daily precipitation amount at surface",
+                "gee:units": "mm",
+                "name": "pr"
+            },
+            {
+                "description": "Average daily downward shortwave radiation at surface",
+                "gee:units": "W/m^2",
+                "name": "rsds"
+            },
+            {
+                "description": "Average daily eastward component of wind near surface",
+                "gee:units": "m/s",
+                "name": "uas"
+            },
+            {
+                "description": "Average daily northward component of wind near surface",
+                "gee:units": "m/s",
+                "name": "vas"
+            }
+        ],
+        "gee:schema": [
+            {
+                "description": "Name of the CMIP5 scenario, one of 'rcp85', 'rcp45', or 'historical'",
+                "name": "scenario",
+                "type": "STRING"
+            },
+            {
+                "description": "Name of the CMIP5 model, eg 'inmcm4'",
+                "name": "model",
+                "type": "STRING"
+            },
+            {
+                "description": "Either 'r1i1p1' or 'r6i1p1'",
+                "name": "ensemble",
+                "type": "STRING"
+            }
+        ],
+        "gsd": [
+            4638.3
+        ],
+        "huss": {
+            "gee:estimated_range": true,
+            "maximum": 0.05
+        },
+        "pr": {
+            "gee:estimated_range": true,
+            "maximum": 1609.77
+        },
+        "rhsmax": {
+            "gee:estimated_range": true,
+            "maximum": 100,
+            "minimum": 1
+        },
+        "rhsmin": {
+            "gee:estimated_range": true,
+            "maximum": 100,
+            "minimum": 1
+        },
+        "rsds": {
+            "gee:estimated_range": true,
+            "maximum": 455.61,
+            "minimum": 9.06
+        },
+        "tasmax": {
+            "gee:estimated_range": true,
+            "maximum": 334.92,
+            "minimum": 222.4
+        },
+        "tasmin": {
+            "gee:estimated_range": true,
+            "maximum": 315.61,
+            "minimum": 215.33
+        },
+        "uas": {
+            "gee:estimated_range": true,
+            "maximum": 25.96,
+            "minimum": -29.74
+        },
+        "vas": {
+            "gee:estimated_range": true,
+            "maximum": 33.06,
+            "minimum": -29.26
+        }
+    },
+    "title": "MACAv2-METDATA: University of Idaho, Multivariate Adaptive Constructed Analogs Applied to Global Climate Models",
+    "type": "Collection",
+    "version": "2",
+    "cube:dimensions": {
+        "x": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                -124.9,
+                -67
+            ]
+        },
+        "y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                24.9,
+                49.6
+            ]
+        },
+        "t": {
+            "type": "temporal",
+            "extent": [
+                "1900-01-01T00:00:00Z",
+                "2100-12-31T00:00:00Z"
+            ]
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "tasmax",
+                "tasmin",
+                "rhsmax",
+                "rhsmin",
+                "huss",
+                "pr",
+                "rsds",
+                "uas",
+                "vas"
+            ]
+        }
+    },
+    "assets": {
+        "preview_4": {
+            "href": "https://developers.google.com/earth-engine/datasets/images/IDAHO_EPSCOR/IDAHO_EPSCOR_MACAv2_METDATA_sample.png",
+            "type": "image/png",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    }
+}

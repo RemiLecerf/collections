@@ -1,0 +1,81 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dct="http://purl.org/dc/terms/" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/metadata/eu.copernicus.climate.projections-cmip6">
+        <foaf:primaryTopic rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/resource/10.24381/cds.c866074c"/>
+        <dct:issued>2018-03-28</dct:issued>
+        <dct:modified>2018-03-28</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/srv/eng/xml.metadata.get?uuid=eu.copernicus.climate.projections-cmip6">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://cds.climate.copernicus.eu:443//geonetwork?uuid=eu.copernicus.climate.projections-cmip6">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/resource/10.24381/cds.c866074c">
+        <dct:identifier>10.24381/cds.c866074c</dct:identifier>
+        <dct:title>CMIP6 climate projections</dct:title>
+        <dct:abstract>This catalogue entry provides daily and monthly global climate projections data from a large number of experiments, models and time periods computed in the framework of the sixth phase of the Coupled Model Intercomparison Project (CMIP6).
+CMIP6 data underpins the Intergovernmental Panel on Climate Change 6th Assessment Report. The use of these data is mostly aimed at:
+
+addressing outstanding scientific questions that arose as part of the IPCC reporting process;
+improving the understanding of the climate system;
+providing estimates of future climate change and related uncertainties;
+providing input data for the adaptation to the climate change;
+examining climate predictability and exploring the ability of models to predict climate on decadal time scales;
+evaluating how realistic the different models are in simulating the recent past.
+
+The term "experiments" refers to the three main categories of CMIP6 simulations:
+
+Historical experiments which cover the period where modern climate observations exist. These experiments show how the GCMs performs for the past climate and can be used as a reference period for comparison with scenario runs for the future. The period covered is typically 1850-2014.
+Climate projection experiments following the combined pathways of Shared Socioeconomic Pathway (SSP) and Representative Concentration Pathway (RCP). The SSP scenarios provide different pathways of the future climate forcing. The period covered is typically 2015-2100.
+
+This catalogue entry provides both two- and three-dimensional data, along with an option to apply spatial and/or temporal subsetting to data requests. This is a new feature of the global climate projection dataset, which relies on compute processes run simultaneously in the ESGF nodes, where the data are originally located.
+The data are produced by the participating institutes of the CMIP6 project.
+
+Variables in the dataset/application are:
+Air temperature, Capacity of soil to store water (field capacity), Daily maximum near-surface air temperature, Daily minimum near-surface air temperature, Eastward near-surface wind, Eastward wind, Evaporation including sublimation and transpiration, Grid-cell area for ocean variables, Land ice area percentage, Moisture in upper portion of soil column, Near-Surface air temperature, Near-surface relative humidity, Near-surface specific humidity, Near-surface wind speed, Northward near-surface wind, Percentage of the grid cell occupied by land including lakes, Precipitation, Relative humidity, Sea area percentage, Sea ice thickness, Sea level pressure, Sea surface height above geoid, Sea surface salinity, Sea surface temperature, Sea-ice area percentage on ocean grid, Snow depth, Snowfall flux, Specific humidity, Surface air pressure, Surface altitude, Surface downward eastward wind stress, Surface downward northward wind stress, Surface downwelling longwave radiation, Surface downwelling shortwave radiation, Surface snow amount, Surface temperature, Surface temperature of sea ice, Surface upward latent heat flux, Surface upward sensible heat flux, Surface upwelling longwave radiation, Surface upwelling shortwave radiation, TOA incident shortwave radiation, TOA outgoing longwave radiation, TOA outgoing shortwave radiation, Total cloud cover percentage, Total runoff</dct:abstract>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/GEMET%20-%20INSPIRE%20themes%2C%20version%201.0/Atmospheric conditions"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Spatial coverage: Global"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Variable domain: Atmosphere (surface)"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Variable domain: Atmosphere (upper air)"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Temporal coverage: Future"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Temporal coverage: Past"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Temporal coverage: Present"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Product type: Climate projections"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/iso/topicCategory/climatologyMeteorologyAtmosphere"/>
+        <foaf:thumbnail rdf:resource="https://datastore.copernicus-climate.eu/c3s/published-forms-v2/c3sprod/projections-cmip6/overview.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((0 -89, 0 89, 360 89, 360 -89, 0 -89))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:temporal>1860-01-01
+          /
+          2300-12-31</dct:temporal>
+        <dct:publisher rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/organization/ECMWF"/>
+        <dct:accrualPeriodicity>asNeeded</dct:accrualPeriodicity>
+        <dct:language>eng</dct:language>
+        <dct:license>licence</dct:license>
+        <dct:license>https://cds.climate.copernicus.eu/api/v2/terms/static/esgf-cmip5.pdf</dct:license>
+        <dcat:distribution rdf:resource="https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.c866074c"/>
+        <dcat:distribution rdf:resource="https://confluence.ecmwf.int/x/_lVtD"/>
+        <dcat:distribution rdf:resource="https://pcmdi.llnl.gov/CMIP6/"/>
+        <dcat:distribution rdf:resource="https://gmd.copernicus.org/articles/9/3461/2016/gmd-9-3461-2016.pdf"/>
+        <dcat:dataQuality>EC Copernicus program</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+    

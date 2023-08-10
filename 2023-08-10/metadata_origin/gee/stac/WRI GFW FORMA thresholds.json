@@ -1,0 +1,163 @@
+{
+    "description": "**NOTE from WRI**: WRI decided to stop updating FORMA alerts. The goal was\nto simplify the [Global Forest Watch](https://www.globalforestwatch.org)\nuser experience and reduce redundancy.\nWe found that [Terra-i](http://www.terra-i.org/terra-i.html) and\n[GLAD](https://glad-forest-alert.appspot.com/) were more frequently used.\nMoreover, using GLAD as a standard, found that Terra-i outperformed\nFORMA globally.\n\nFORMA alerts are detected using a combination of two MODIS\nproducts: NDVI (Normalized Difference Vegetation Index) and FIRMS\n(Fires Information for Resource Management System). NDVI updates are\nprocessed every 16 days, while fire updates are processed daily. Models\nare developed individually for each ecogroup to relate the two inputs to\nthe area of clearing, using the Hansen annual tree cover loss data to train\nthe model. The minimum threshold to qualify as an alert is 25% of the pixel\ncleared, though thresholds vary by ecogroup to minimize false positives.\nHere is an [example script](https://code.earthengine.google.com/f29b1e4360f3fc36847bd789ceeb20f6)\nfor a quick introduction to the FORMA datasets.\n\nThis image contains the thresholds at which, when crossed, a FORMA alert is\nproduced. The values are equal to max(25,40%*RegionalMax), where RegionalMax\nis the historical maximum clearing for a pixel in this ecogroup.\n",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -120,
+                    -50,
+                    180,
+                    40
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2012-01-01T00:00:00Z",
+                    "2016-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "gee:terms_of_use": "The FORMA datasets are available without restriction\non use or distribution. WRI does request that the\nuser give proper attribution and identify WRI and GFW, where applicable,\nas the source of the data.\n",
+    "gee:type": "image",
+    "gee:user_uploaded": true,
+    "id": "WRI/GFW/FORMA/thresholds",
+    "keywords": [
+        "daily",
+        "deforestation",
+        "forest",
+        "forma",
+        "gfw",
+        "modis",
+        "monitoring",
+        "wri"
+    ],
+    "license": "proprietary",
+    "links": [
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections/WRI/GFW/FORMA/thresholds",
+            "rel": "self",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections",
+            "rel": "parent",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/",
+            "rel": "root",
+            "type": "application/json"
+        },
+        {
+            "code": "JavaScript",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/WRI/WRI_GFW_FORMA_thresholds",
+            "rel": "related",
+            "title": "Run the example for WRI/GFW/FORMA/thresholds in the Earth Engine Code Editor",
+            "type": "text/html"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/images/WRI/WRI_GFW_FORMA_thresholds_sample.png",
+            "rel": "preview",
+            "type": "image/png"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/WRI_GFW_FORMA_thresholds#terms-of-use",
+            "rel": "license",
+            "type": "text/html"
+        }
+    ],
+    "providers": [
+        {
+            "name": "World Resources Institute / Global Forest Watch",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.globalforestwatch.org/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/WRI_GFW_FORMA_thresholds"
+        }
+    ],
+    "stac_extensions": [
+        "collection-assets"
+    ],
+    "stac_version": "1.0.0",
+    "summaries": {
+        "delta_bound": {
+            "maximum": 40,
+            "minimum": 25
+        },
+        "eo:bands": [
+            {
+                "description": "The thresholds at which, when crossed, a FORMA alert is produced",
+                "gee:units": "%",
+                "name": "delta_bound"
+            }
+        ],
+        "gee:schema": [
+            {
+                "description": "The first year included in determining the historical max for the ecogroup",
+                "name": "start_year",
+                "type": "INT"
+            },
+            {
+                "description": "The last year included in determining the historical max for the ecogroup",
+                "name": "year",
+                "type": "INT"
+            }
+        ],
+        "gsd": [
+            250
+        ]
+    },
+    "title": "FORMA Alert Thresholds",
+    "type": "Collection",
+    "cube:dimensions": {
+        "x": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                -120,
+                180
+            ]
+        },
+        "y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                -50,
+                40
+            ]
+        },
+        "t": {
+            "type": "temporal",
+            "extent": [
+                "2012-01-01T00:00:00Z",
+                "2016-01-01T00:00:00Z"
+            ]
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "delta_bound"
+            ]
+        }
+    },
+    "assets": {
+        "preview_4": {
+            "href": "https://developers.google.com/earth-engine/datasets/images/WRI/WRI_GFW_FORMA_thresholds_sample.png",
+            "type": "image/png",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    }
+}

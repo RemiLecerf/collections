@@ -1,0 +1,52 @@
+{
+  "type": "Collection",
+  "id": "BLKSEA_OMI_TEMPSAL_extreme_var_temp_mean_and_anomaly",
+  "stac_version": "1.0.0",
+  "description": "'''DEFINITION'''\n\nThe CMEMS BLKSEA_OMI_tempsal_extreme_var_temp_mean_and_anomaly OMI indicator is based on the computation of the annual 99th percentile of Sea Surface Temperature (SST) from model data. Two different CMEMS products are used to compute the indicator: The Iberia-Biscay-Ireland Multi Year Product (BLKSEA_MULTIYEAR_PHY_007_004) and the Analysis product (BLKSEA_ANALYSIS_FORECAST_PHYS_007_001).\nTwo parameters have been considered for this OMI:\n* Map of the 99th mean percentile: It is obtained from the Multi Year Product, the annual 99th percentile is computed for each year of the product. The percentiles are temporally averaged over the whole period (1993-2019).\n* Anomaly of the 99th percentile in 2020: The 99th percentile of the year 2020 is computed from the Analysis product. The anomaly is obtained by subtracting the mean percentile from the 2020 percentile.\nThis indicator is aimed at monitoring the extremes of sea surface temperature every year and at checking their variations in space. The use of percentiles instead of annual maxima, makes this extremes study less affected by individual data. This study of extreme variability was first applied to the sea level variable (Pérez Gómez et al 2016) and then extended to other essential variables, such as sea surface temperature and significant wave height (Pérez Gómez et al 2018 and Alvarez Fanjul et al., 2019). More details and a full scientific evaluation can be found in the CMEMS Ocean State report (Alvarez Fanjul et al., 2019).\n\n'''CONTEXT'''\n\nThe Sea Surface Temperature is one of the Essential Ocean Variables, hence the monitoring of this variable is of key importance, since its variations can affect the ocean circulation, marine ecosystems, and ocean-atmosphere exchange processes. Particularly in the Black Sea, ocean-atmospheric processes together with its general cyclonic circulation (Rim Current) play an important role on the sea surface temperature variability (Capet et al. 2012). As the oceans continuously interact with the atmosphere, trends of sea surface temperature can also have an effect on the global climate. The 99th mean percentile of sea surface temperature provides a worth information about the variability of the sea surface temperature and warming trends but has not been investigated with details in the Black Sea.\nWhile the global-averaged sea surface temperatures have increased since the beginning of the 20th century (Hartmann et al., 2013). Recent studies indicated a warming trend of the sea surface temperature in the Black Sea in the latest years (Mulet et al., 2018; Sakali and Başusta, 2018). A specific analysis on the interannual variability of the basin-averaged sea surface temperature revealed a higher positive trend in its eastern region (Ginzburg et al., 2004). For the past three decades, Sakali and Başusta (2018) presented an increase in sea surface temperature that varied along both east–west and south–north directions in the Black Sea. \n\n'''CMEMS KEY FINDINGS'''\n\nThe mean annual 99th percentile in the period 1993–2019 exhibits values ranging from 25.50 to 26.50 oC in the western and central regions of the Black Sea. The values increase towards the east, exceeding 27.5 oC. This contrasting west-east pattern may be linked to the basin wide cyclonic circulation. There are regions showing lower values, below 25.75 oC, such as a small area west of Crimean Peninsula in the vicinity of the Sevastopol anticyclone, the Northern Ukraine region, in particular close to the Odessa and the Karkinytska Gulf due to the freshwaters from the land and a narrow area along the Turkish coastline in the south. Results for 2020 show negative anomalies in the area of influence of the Bosporus and the Bulgarian offshore region up to the Crimean peninsula, while the North West shelf exhibits a positive anomaly as in the Eastern basin. The highest positive value is occurring in the Eastern Tukish coastline nearest the Batumi gyre area. This may be related to the variously increase of sea surface temperature in such a way the southern regions have experienced a higher warming.\n\nNote: The key findings will be updated annually in November, in line with OMI evolutions.\n\n'''DOI (product):''' \nhttps://doi.org/10.48670/moi-00216",
+  "links": [],
+  "title": "Black Sea Surface Temperature extreme from Reanalysis",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          27.37,
+          40.86,
+          41.96,
+          46.8
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2020-01-01T00:00:00Z",
+          "2020-12-31T23:59:59Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Oceanographic geographical features",
+    "numerical-model",
+    null,
+    "multi-year",
+    "marine-safety",
+    "weather-climate-and-seasonal-forecasting",
+    "coastal-marine-environment",
+    "marine-resources",
+    "black-sea",
+    "N/A",
+    "Not Applicable"
+  ],
+  "providers": [
+    {
+      "name": "Copernicus Marine Service",
+      "description": "Copernicus Marine Service - Mercator Ocean International",
+      "roles": [
+        "host"
+      ],
+      "url": "https://marine.copernicus.eu/"
+    }
+  ]
+}

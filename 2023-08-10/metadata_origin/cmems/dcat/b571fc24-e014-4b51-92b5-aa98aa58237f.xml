@@ -1,0 +1,78 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:dct="http://purl.org/dc/terms/" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/b571fc24-e014-4b51-92b5-aa98aa58237f">
+        <foaf:primaryTopic rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/resource/ef932fc0-04e7-4a25-b7b2-08a2d85d4039"/>
+        <dct:issued>2023-03-29</dct:issued>
+        <dct:modified>2023-03-29</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/srv/eng/xml.metadata.get?uuid=b571fc24-e014-4b51-92b5-aa98aa58237f">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork?uuid=b571fc24-e014-4b51-92b5-aa98aa58237f">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/resource/ef932fc0-04e7-4a25-b7b2-08a2d85d4039">
+        <dct:identifier>ef932fc0-04e7-4a25-b7b2-08a2d85d4039</dct:identifier>
+        <dct:title>North West Shelf Sea Surface Temperature extreme from Observations Reprocessing</dct:title>
+        <dct:abstract>'''DEFINITION'''
+
+The OMI_VAR_EXTREME_SST_NORTHWESTSHELF_sst_mean_and_anomaly_obs indicator is based on the computation of the 99th and the 1st percentiles from in situ data (observations). It is computed for the variable sea surface temperature measured by in situ buoys at depths between 0 and 5 meters. The use of percentiles instead of annual maximum and minimum values, makes this extremes study less affected by individual data measurement errors. The percentiles are temporally averaged, and the spatial evolution is displayed, jointly with the anomaly in the target year. This study of extreme variability was first applied to sea level variable (Pérez Gómez et al 2016) and then extended to other essential variables, sea surface temperature and significant wave height (Pérez Gómez et al 2018).
+
+'''CONTEXT'''
+
+Sea surface temperature (SST) is one of the essential ocean variables affected by climate change (mean SST trends, SST spatial and interannual variability, and extreme events). In Europe, several studies show warming trends in mean SST for the last years.  An exception seems to be the North Atlantic, where, in contrast, anomalous cold conditions have been observed since 2014 (Mulet et al., 2018; Dubois et al. 2018). Extremes may have a stronger direct influence in population dynamics and biodiversity. According to Alexander et al. 2018 the observed warming trend will continue during the 21st Century and this can result in exceptionally large warm extremes. Monitoring the evolution of sea surface temperature extremes is, therefore, crucial.
+The North-West Self area comprises part of the North Atlantic, where this refreshing trend has been observed, and the North Sea, where a warming trend has been taking place in the last three decades (e.g. Høyer and Karagali, 2016).
+
+'''CMEMS KEY FINDINGS'''
+
+The mean 99th percentiles showed in the area present a range from 14ºC in the Northwest of the British Isles, 15.6ºC in the North of the North Sea (Heimdal Station), 18ºC in the English Channel to 20-21ºC around Denmark (Helgoland Bight, Skagerrak and Kattegat Seas). The standard deviation ranges from 0.5ºC in the English Channel and 0.8/0.9ºC in the Northwest of the British Isles and Heimdal Station to 1.0/1.7ºC in the buoys around Denmark.
+Results for this year show either positive (+1.3ºC in Helgoland Bight) or negative (-0.6ºC  in the North West of the British Isles) anomalies around their corresponding standard deviation in all the area, except in Aarhus station in the North East of Zealand Island where the negative anomaly reaches -2.0ºC in concordance with the negative anomalies found in the Zealand Region in the Baltic OMI.
+
+'''DOI (product):''' 
+https://doi.org/10.48670/moi-00274</dct:abstract>
+        <dcat:theme rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/thesaurus/iso/topicCategory/oceans"/>
+        <foaf:thumbnail rdf:resource="https://catalogue.marine.copernicus.eu/documents/IMG/OMI_VAR_EXTREME_SST_NORTHWESTSHELF_sst_mean_and_anomaly_obs.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((-13.00 46.00, -13.00 62.50, 13.00 62.50, 13.00 46.00, -13.00 46.00))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:issued>2020-06-18</dct:issued>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/INS-IFREMER-BREST-FR"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/INS-PUERTOS-MADRID-ES"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/INS-PUERTOS-MADRID-ES"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/INS-PUERTOS-MADRID-ES"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/MOI-OMI-SERVICE"/>
+        <dct:accrualPeriodicity>annually</dct:accrualPeriodicity>
+        <dct:license>otherRestrictions</dct:license>
+        <dct:license>license</dct:license>
+        <dct:license>No limitations on public access</dct:license>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/OMI_VAR_EXTREME_SST_NORTHWESTSHELF_sst_mean_and_anomaly_obs/omi_var_extreme_sst_northwestshelf_sst_mean_and_anomaly_obs"/>
+        <dcat:distribution rdf:resource="https://mdl1.marine.copernicus.eu/derived/OMI_VAR_EXTREME_SST_NORTHWESTSHELF_sst_mean_and_anomaly_obs/omi_var_extreme_sst_northwestshelf_sst_mean_and_anomaly_obs_202211/omi_var_extreme_sst_northwestshelf_sst_mean_and_anomaly_obs.nc"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/cd5478ae-5f51-422b-a326-babd0a333c0a"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/de9281be-92ca-49fe-b579-ceac95cd406f"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/0bbb01d5-1e66-4cb9-8023-149aaad9d3e0"/>
+        <dcat:dataQuality>The myOcean products depends on other products for production or validation. The detailed list of dependencies is given in ISO19115's aggregationInfo (ISO19139 Xpath = "gmd:MD_Metadata/gmd:identificationInfo/gmd:aggregationInfo[./gmd:MD_AggregateInformation/gmd:initiativeType/gmd:DS_InitiativeTypeCode/@codeListValue='upstream-validation' or 'upstream-production']")</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+    

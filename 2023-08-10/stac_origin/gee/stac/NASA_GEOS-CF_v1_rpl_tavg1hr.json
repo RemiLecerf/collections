@@ -1,0 +1,940 @@
+{
+    "type": "Collection",
+    "version": "v1",
+    "stac_version": "1.0.0",
+    "stac_extensions": [
+        "collection-assets"
+    ],
+    "id": "NASA/GEOS-CF/v1/rpl/tavg1hr",
+    "title": "GEOS-CF rpl tavg1hr v1: Goddard Earth Observing System Composition Forecast",
+    "description": "This dataset contains meteorological replay (rpl) of time-average one hour\ndata (tavg1hr). It is built by merging the original GEOS-CF collections\nchm_tavg_1hr_g1440x721_v1, met_tavg_1hr_g1440x721_x1, and\nxgc_tavg_1hr_g1440x721_x1.\nThe Goddard Earth Observing System Composition Forecast (GEOS-CF) system is\na high-resolution (0.25&deg;) global constituent prediction system from\nNASA's [Global Modeling and Assimilation Office(GMAO)](\nhttps://gmao.gsfc.nasa.gov/).\n\nGEOS-CF offers a new tool for atmospheric chemistry research, with the goal\nto supplement NASA's broad range of space-based and in-situ observations.\nGEOS-CF expands on the GEOS weather and aerosol modeling system by\nintroducing the [GEOS-Chem](http://wiki.seas.harvard.edu/geos-chem/)\nchemistry module to provide hindcasts and 5-days forecasts of atmospheric\nconstituents including ozone (O3), carbon monoxide (CO), nitrogen dioxide\n(NO2), sulfur dioxide (SO2), and fine particulate matter (PM2.5). The\nchemistry module integrated in GEOS-CF is identical to the offline GEOS-Chem\nmodel and readily benefits from the innovations provided by the GEOS-Chem\ncommunity.\n\nEvaluation of GEOS-CF against satellite, ozonesonde, and surface\nobservations for years 2018&ndash;2019 shows realistic simulated\nconcentrations of O3, NO2, and CO, with normalized mean biases of &minus;0.1\nto 0.3, normalized root mean square errors between 0.1&ndash;0.4, and\ncorrelations between 0.3&ndash;0.8. Comparisons against surface observations\nhighlight the successful representation of air pollutants in many regions of\nthe world and during all seasons, yet also highlight current limitations,\nsuch as a global high bias in SO2 and an overprediction of summertime O3\nover the Southeast United States.\n\nGEOS-CF v1.0 generally overestimates aerosols by 20%&ndash;50% due to known\nissues in GEOS-Chem v12.0.1 that have been addressed in later versions. The\n5-days forecasts have skill scores comparable to the 1-day hindcast. Model\nskills can be improved significantly by applying a bias-correction to the\nsurface model output using a machine-learning approach.\n",
+    "keywords": [
+        "composition",
+        "forecast",
+        "geos",
+        "gmao",
+        "nasa"
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2018-01-01T00:00:00Z",
+                    "2023-05-30T06:00:00"
+                ]
+            ]
+        }
+    },
+    "providers": [
+        {
+            "name": "NASA / GMAO",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://gmao.gsfc.nasa.gov/weather_prediction/GEOS-CF/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/NASA_GEOS-CF_v1_rpl_tavg1hr"
+        }
+    ],
+    "license": "proprietary",
+    "links": [
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections/NASA/GEOS-CF/v1/rpl/tavg1hr",
+            "rel": "self",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections",
+            "rel": "parent",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/",
+            "rel": "root",
+            "type": "application/json"
+        },
+        {
+            "code": "JavaScript",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NASA/NASA_GEOS-CF_v1_rpl_tavg1hr",
+            "rel": "related",
+            "title": "Run the example for NASA/GEOS-CF/v1/rpl/tavg1hr in the Earth Engine Code Editor",
+            "type": "text/html"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/images/NASA/NASA_GEOS-CF_v1_rpl_tavg1hr_sample.png",
+            "rel": "preview",
+            "type": "image/png"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/NASA_GEOS-CF_v1_rpl_tavg1hr#terms-of-use",
+            "rel": "license",
+            "type": "text/html"
+        }
+    ],
+    "cube:dimensions": {
+        "x": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                -180,
+                180
+            ]
+        },
+        "y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                -90,
+                90
+            ]
+        },
+        "t": {
+            "type": "temporal",
+            "extent": [
+                "2018-01-01T00:00:00Z",
+                "2023-05-30T06:00:00"
+            ]
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "ACET",
+                "ALD2",
+                "ALK4",
+                "AOD550_BC",
+                "AOD550_CLOUD",
+                "AOD550_DST1",
+                "AOD550_DST2",
+                "AOD550_DST3",
+                "AOD550_DST4",
+                "AOD550_DST5",
+                "AOD550_DST6",
+                "AOD550_DST7",
+                "AOD550_DUST",
+                "AOD550_OC",
+                "AOD550_SALA",
+                "AOD550_SALC",
+                "AOD550_SULFATE",
+                "BCPI",
+                "BCPO",
+                "BENZ",
+                "C2H6",
+                "C3H8",
+                "CH4",
+                "CLDTT",
+                "CO",
+                "DRYDEPFLX_BCPI",
+                "DRYDEPFLX_BCPO",
+                "DRYDEPFLX_DST1",
+                "DRYDEPFLX_DST2",
+                "DRYDEPFLX_DST3",
+                "DRYDEPFLX_DST4",
+                "DRYDEPFLX_HCHO",
+                "DRYDEPFLX_HNO3",
+                "DRYDEPFLX_NH3",
+                "DRYDEPFLX_NH4",
+                "DRYDEPFLX_NIT",
+                "DRYDEPFLX_NO2",
+                "DRYDEPFLX_O3",
+                "DRYDEPFLX_OCPI",
+                "DRYDEPFLX_OCPO",
+                "DRYDEPFLX_SALA",
+                "DRYDEPFLX_SALC",
+                "DST1",
+                "DST2",
+                "DST3",
+                "DST4",
+                "EOH",
+                "H2O2",
+                "HCHO",
+                "HNO3",
+                "HNO4",
+                "ISOP",
+                "MACR",
+                "MEK",
+                "MVK",
+                "N2O5",
+                "NH3",
+                "NH4",
+                "NIT",
+                "NO",
+                "NO2",
+                "NOy",
+                "O3",
+                "OCPI",
+                "OCPO",
+                "PAN",
+                "PHIS",
+                "PM25_RH35_GCC",
+                "PM25_RH35_GOCART",
+                "PM25bc_RH35_GCC",
+                "PM25du_RH35_GCC",
+                "PM25ni_RH35_GCC",
+                "PM25oc_RH35_GCC",
+                "PM25soa_RH35_GCC",
+                "PM25ss_RH35_GCC",
+                "PM25su_RH35_GCC",
+                "PRPE",
+                "PS",
+                "Q",
+                "Q10M",
+                "Q2M",
+                "RCHO",
+                "RH",
+                "SALA",
+                "SALC",
+                "SLP",
+                "SO2",
+                "SOAP",
+                "SOAS",
+                "T",
+                "T10M",
+                "T2M",
+                "TOLU",
+                "TOTCOL_BrO",
+                "TOTCOL_CO",
+                "TOTCOL_HCHO",
+                "TOTCOL_IO",
+                "TOTCOL_NO2",
+                "TOTCOL_O3",
+                "TOTCOL_SO2",
+                "TPREC",
+                "TROPCOL_BrO",
+                "TROPCOL_CO",
+                "TROPCOL_HCHO",
+                "TROPCOL_IO",
+                "TROPCOL_NO2",
+                "TROPCOL_O3",
+                "TROPCOL_SO2",
+                "TROPPB",
+                "TS",
+                "U",
+                "U10M",
+                "U2M",
+                "V",
+                "V10M",
+                "V2M",
+                "WETDEPFLX_BCPI",
+                "WETDEPFLX_BCPO",
+                "WETDEPFLX_DST1",
+                "WETDEPFLX_DST2",
+                "WETDEPFLX_DST3",
+                "WETDEPFLX_DST4",
+                "WETDEPFLX_HCHO",
+                "WETDEPFLX_HNO3",
+                "WETDEPFLX_NH3",
+                "WETDEPFLX_NH4",
+                "WETDEPFLX_NIT",
+                "WETDEPFLX_OCPI",
+                "WETDEPFLX_OCPO",
+                "WETDEPFLX_SALA",
+                "WETDEPFLX_SALC",
+                "WETDEPFLX_SO2",
+                "WETDEPFLX_SO4",
+                "XYLE",
+                "ZL",
+                "ZPBL"
+            ]
+        }
+    },
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Acetone (CH3C(O)CH3, MW = 58.08 g mol-1) volume mixing ratio dry air",
+                "gee:units": "1 (mol fraction)",
+                "name": "ACET"
+            },
+            {
+                "description": "Acetaldehyde (CH3CHO, MW = 44.05 g mol-1) volume mixing ratio dry air",
+                "gee:units": "1 (mol fraction)",
+                "name": "ALD2"
+            },
+            {
+                "description": "Lumped >= C4 Alkanes (MW = 58.12 g mol-1) volume mixing ratio dry air",
+                "gee:units": "1 (mol fraction)",
+                "name": "ALK4"
+            },
+            {
+                "description": "Black carbon optical depth at 550nm",
+                "name": "AOD550_BC"
+            },
+            {
+                "description": "Cloud optical depth",
+                "name": "AOD550_CLOUD"
+            },
+            {
+                "description": "Dust bin1 optical depth at 550nm",
+                "name": "AOD550_DST1"
+            },
+            {
+                "description": "Dust bin2 optical depth at 550nm",
+                "name": "AOD550_DST2"
+            },
+            {
+                "description": "Dust bin3 optical depth at 550nm",
+                "name": "AOD550_DST3"
+            },
+            {
+                "description": "Dust bin4 optical depth at 550nm",
+                "name": "AOD550_DST4"
+            },
+            {
+                "description": "Dust bin5 optical depth at 550nm",
+                "name": "AOD550_DST5"
+            },
+            {
+                "description": "Dust bin6 optical depth at 550nm",
+                "name": "AOD550_DST6"
+            },
+            {
+                "description": "Dust bin7 optical depth at 550nm",
+                "name": "AOD550_DST7"
+            },
+            {
+                "description": "Dust optical depth at 550nm",
+                "name": "AOD550_DUST"
+            },
+            {
+                "description": "Organic carbon optical depth at 550nm",
+                "name": "AOD550_OC"
+            },
+            {
+                "description": "Accumulation mode sea salt optical depth at 550nm",
+                "name": "AOD550_SALA"
+            },
+            {
+                "description": "Coarse mode sea salt optical depth at 550nm",
+                "name": "AOD550_SALC"
+            },
+            {
+                "description": "Sulfate optical depth at 550nm",
+                "name": "AOD550_SULFATE"
+            },
+            {
+                "description": "Hydrophilic black carbon aerosol (MW = 12.01 g mol-1) volume mixing ratio dry air",
+                "gee:units": "1 (mol fraction)",
+                "name": "BCPI"
+            },
+            {
+                "description": "Hydrophobic black carbon aerosol (MW = 12.01 g mol-1) volume mixing ratio dry air",
+                "gee:units": "1 (mol fraction)",
+                "name": "BCPO"
+            },
+            {
+                "description": "Benzene (C6H6, MW = 78.11 g mol-1) volume mixing ratio dry air",
+                "gee:units": "1 (mol fraction)",
+                "name": "BENZ"
+            },
+            {
+                "description": "Ethane (C2H6, MW = 30.07 g mol-1) volume mixing ratio dry air",
+                "gee:units": "1 (mol fraction)",
+                "name": "C2H6"
+            },
+            {
+                "description": "Propane (C3H8, MW = 44.10 g mol-1) volume mixing ratio dry air",
+                "gee:units": "1 (mol fraction)",
+                "name": "C3H8"
+            },
+            {
+                "description": "Methane (CH4, MW = 16.00 g mol-1) volume mixing ratio dry air",
+                "gee:units": "1 (mol fraction)",
+                "name": "CH4"
+            },
+            {
+                "description": "Total cloud area fraction",
+                "name": "CLDTT"
+            },
+            {
+                "description": "Carbon monoxide (CO, MW = 28.00 g mol-1) volume mixing ratio dry air",
+                "gee:units": "1 (mol fraction)",
+                "name": "CO"
+            },
+            {
+                "description": "Hydrophilic black carbon aerosol (MW = 12.01 g mol-1) dry deposition flux",
+                "gee:units": "molec cm-2 s-1",
+                "name": "DRYDEPFLX_BCPI"
+            },
+            {
+                "description": "Hydrophobic black carbon aerosol (MW = 12.01 g mol-1) dry deposition flux",
+                "gee:units": "molec cm-2 s-1",
+                "name": "DRYDEPFLX_BCPO"
+            },
+            {
+                "description": "Dust aerosol, Reff = 0.7 microns (MW = 29.00 g mol-1) dry deposition flux",
+                "gee:units": "molec cm-2 s-1",
+                "name": "DRYDEPFLX_DST1"
+            },
+            {
+                "description": "Dust aerosol, Reff = 1.4 microns (MW = 29.00 g mol-1) dry deposition flux",
+                "gee:units": "molec cm-2 s-1",
+                "name": "DRYDEPFLX_DST2"
+            },
+            {
+                "description": "Dust aerosol, Reff = 2.4 microns (MW = 29.00 g mol-1) dry deposition flux",
+                "gee:units": "molec cm-2 s-1",
+                "name": "DRYDEPFLX_DST3"
+            },
+            {
+                "description": "Dust aerosol, Reff = 4.5 microns (MW = 29.00 g mol-1) dry deposition flux",
+                "gee:units": "molec cm-2 s-1",
+                "name": "DRYDEPFLX_DST4"
+            },
+            {
+                "description": "Formaldehyde (CH2O, MW = 30.00 g mol-1) dry deposition flux",
+                "gee:units": "molec cm-2 s-1",
+                "name": "DRYDEPFLX_HCHO"
+            },
+            {
+                "description": "Nitric acid (HNO3, MW = 63.00 g mol-1) dry deposition flux",
+                "gee:units": "molec cm-2 s-1",
+                "name": "DRYDEPFLX_HNO3"
+            },
+            {
+                "description": "Ammonia (NH3, MW = 17.00 g mol-1) dry deposition flux",
+                "gee:units": "molec cm-2 s-1",
+                "name": "DRYDEPFLX_NH3"
+            },
+            {
+                "description": "Ammonium (NH4, MW = 18.00 g mol-1) dry deposition flux",
+                "gee:units": "molec cm-2 s-1",
+                "name": "DRYDEPFLX_NH4"
+            },
+            {
+                "description": "Inorganic nitrates (MW = 62.00 g mol-1) dry deposition flux",
+                "gee:units": "molec cm-2 s-1",
+                "name": "DRYDEPFLX_NIT"
+            },
+            {
+                "description": "Nitrogen dioxide (NO2, MW = 46.00 g mol-1) dry deposition flux",
+                "gee:units": "molec cm-2 s-1",
+                "name": "DRYDEPFLX_NO2"
+            },
+            {
+                "description": "Ozone (O3, MW = 48.00 g mol-1) dry deposition flux",
+                "gee:units": "molec cm-2 s-1",
+                "name": "DRYDEPFLX_O3"
+            },
+            {
+                "description": "Hydrophilic organic carbon aerosol (MW = 12.01 g mol-1) dry deposition flux",
+                "gee:units": "molec cm-2 s-1",
+                "name": "DRYDEPFLX_OCPI"
+            },
+            {
+                "description": "Hydrophobic organic carbon aerosol (MW = 12.01 g mol-1) dry deposition flux",
+                "gee:units": "molec cm-2 s-1",
+                "name": "DRYDEPFLX_OCPO"
+            },
+            {
+                "description": "Fine (0.01-0.05 microns) sea salt aerosol (MW = 31.40 g mol-1) dry deposition flux",
+                "gee:units": "molec cm-2 s-1",
+                "name": "DRYDEPFLX_SALA"
+            },
+            {
+                "description": "Coarse (0.5-8 microns) sea salt aerosol (MW = 31.40 g mol-1) dry deposition flux",
+                "gee:units": "molec cm-2 s-1",
+                "name": "DRYDEPFLX_SALC"
+            },
+            {
+                "description": "Dust aerosol, Reff = 0.7 microns (MW = 29.00 g mol-1) volume mixing ratio dry air",
+                "gee:units": "1 (mol fraction)",
+                "name": "DST1"
+            },
+            {
+                "description": "Dust aerosol, Reff = 1.4 microns (MW = 29.00 g mol-1) volume mixing ratio dry air",
+                "gee:units": "1 (mol fraction)",
+                "name": "DST2"
+            },
+            {
+                "description": "Dust aerosol, Reff = 2.4 microns (MW = 29.00 g mol-1) volume mixing ratio dry air",
+                "gee:units": "1 (mol fraction)",
+                "name": "DST3"
+            },
+            {
+                "description": "Dust aerosol, Reff = 4.5 microns (MW = 29.00 g mol-1) volume mixing ratio dry air",
+                "gee:units": "1 (mol fraction)",
+                "name": "DST4"
+            },
+            {
+                "description": "Ethanol (C2H5OH, MW = 46.07 g mol-1) volume mixing ratio dry air",
+                "gee:units": "1 (mol fraction)",
+                "name": "EOH"
+            },
+            {
+                "description": "Hydrogen peroxide (H2O2, MW = 34.00 g mol-1) volume mixing ratio dry air",
+                "gee:units": "1 (mol fraction)",
+                "name": "H2O2"
+            },
+            {
+                "description": "Formaldehyde (CH2O, MW = 30.00 g mol-1) volume mixing ratio dry air",
+                "gee:units": "1 (mol fraction)",
+                "name": "HCHO"
+            },
+            {
+                "description": "Nitric acid (HNO3, MW = 63.00 g mol-1) volume mixing ratio dry air",
+                "gee:units": "1 (mol fraction)",
+                "name": "HNO3"
+            },
+            {
+                "description": "Peroxynitric acid (HNO4, MW = 79.00 g mol-1) volume mixing ratio dry air",
+                "gee:units": "1 (mol fraction)",
+                "name": "HNO4"
+            },
+            {
+                "description": "Isoprene (CH2=C(CH3)CH=CH2, MW = 68.12 g mol-1) volume mixing ratio dry air",
+                "gee:units": "1 (mol fraction)",
+                "name": "ISOP"
+            },
+            {
+                "description": "Methacrolein (CH2=C(CH3)CHO, MW = 70.00 g mol-1) volume mixing ratio dry air",
+                "gee:units": "1 (mol fraction)",
+                "name": "MACR"
+            },
+            {
+                "description": "Methyl Ethyl Ketone (RC(O)R, MW = 72.11 g mol-1) volume mixing ratio dry air",
+                "gee:units": "1 (mol fraction)",
+                "name": "MEK"
+            },
+            {
+                "description": "Methyl vinyl ketone (CH2=CHC(=O)CH3, MW = 70.00 g mol-1) volume mixing ratio dry air",
+                "gee:units": "1 (mol fraction)",
+                "name": "MVK"
+            },
+            {
+                "description": "Dinitrogen pentoxide (N2O5, MW = 108.00 g mol-1) volume mixing ratio dry air",
+                "gee:units": "1 (mol fraction)",
+                "name": "N2O5"
+            },
+            {
+                "description": "Ammonia (NH3, MW = 17.00 g mol-1) volume mixing ratio dry air",
+                "gee:units": "1 (mol fraction)",
+                "name": "NH3"
+            },
+            {
+                "description": "Ammonium (NH4, MW = 18.00 g mol-1) volume mixing ratio dry air",
+                "gee:units": "1 (mol fraction)",
+                "name": "NH4"
+            },
+            {
+                "description": "Inorganic nitrates (MW = 62.00 g mol-1) volume mixing ratio dry air",
+                "gee:units": "1 (mol fraction)",
+                "name": "NIT"
+            },
+            {
+                "description": "Nitrogen oxide (NO, MW = 30.00 g mol-1) volume mixing ratio dry air",
+                "gee:units": "1 (mol fraction)",
+                "name": "NO"
+            },
+            {
+                "description": "Nitrogen dioxide (NO2, MW = 46.00 g mol-1) volume mixing ratio dry air",
+                "gee:units": "1 (mol fraction)",
+                "name": "NO2"
+            },
+            {
+                "description": "Reactive nitrogen = NO NO2 HNO3 HNO4 HONO 2xN2O5 PAN OrganicNitrates AerosolNitrates",
+                "gee:units": "1 (mol fraction)",
+                "name": "NOy"
+            },
+            {
+                "description": "Ozone (O3, MW = 48.00 g mol-1) volume mixing ratio dry air",
+                "gee:units": "1 (mol fraction)",
+                "name": "O3"
+            },
+            {
+                "description": "Hydrophilic organic carbon aerosol (MW = 12.01 g mol-1) volume mixing ratio dry air",
+                "gee:units": "1 (mol fraction)",
+                "name": "OCPI"
+            },
+            {
+                "description": "Hydrophobic organic carbon aerosol (MW = 12.01 g mol-1) volume mixing ratio dry air",
+                "gee:units": "1 (mol fraction)",
+                "name": "OCPO"
+            },
+            {
+                "description": "Peroxyacetyl nitrate (CH3C(O)OONO2, MW = 121.00 g mol-1) volume mixing ratio dry air",
+                "gee:units": "1 (mol fraction)",
+                "name": "PAN"
+            },
+            {
+                "description": "Surface geopotential height",
+                "gee:units": "m^2 s-2",
+                "name": "PHIS"
+            },
+            {
+                "description": "Particulate matter with diameter below 2.5 um RH 35",
+                "gee:units": "ug m-3",
+                "name": "PM25_RH35_GCC"
+            },
+            {
+                "description": "Total reconstructed PM2.5 RH 35",
+                "gee:units": "kg/m^3",
+                "name": "PM25_RH35_GOCART"
+            },
+            {
+                "description": "Black carbon particulate matter with diameter below 2.5 um RH 35",
+                "gee:units": "ug m-3",
+                "name": "PM25bc_RH35_GCC"
+            },
+            {
+                "description": "Dust particulate matter with diameter below 2.5 um RH 35",
+                "gee:units": "ug m-3",
+                "name": "PM25du_RH35_GCC"
+            },
+            {
+                "description": "Nitrate particulate matter with diameter below 2.5 um RH 35",
+                "gee:units": "ug m-3",
+                "name": "PM25ni_RH35_GCC"
+            },
+            {
+                "description": "Organic carbon particulate matter with diameter below 2.5 um RH 35",
+                "gee:units": "ug m-3",
+                "name": "PM25oc_RH35_GCC"
+            },
+            {
+                "description": "Secondary organic aerosol particulate matter with diameter below 2.5 um RH 35",
+                "gee:units": "ug m-3",
+                "name": "PM25soa_RH35_GCC"
+            },
+            {
+                "description": "Seasalt particulate matter with diameter below 2.5 um RH 35",
+                "gee:units": "ug m-3",
+                "name": "PM25ss_RH35_GCC"
+            },
+            {
+                "description": "Sulfate particulate matter with diameter below 2.5 um RH 35",
+                "gee:units": "ug m-3",
+                "name": "PM25su_RH35_GCC"
+            },
+            {
+                "description": "Lumped >= C3 alkenes (C3H6, MW = 42.08 g mol-1) volume mixing ratio dry air",
+                "gee:units": "1 (mol fraction)",
+                "name": "PRPE"
+            },
+            {
+                "description": "Surface pressure",
+                "gee:units": "Pa",
+                "name": "PS"
+            },
+            {
+                "description": "Specific humidity",
+                "gee:units": "1 (mass fraction)",
+                "name": "Q"
+            },
+            {
+                "description": "10-meter specific humidity",
+                "gee:units": "1 (mass fraction)",
+                "name": "Q10M"
+            },
+            {
+                "description": "2-meter specific humidity",
+                "gee:units": "1 (mass fraction)",
+                "name": "Q2M"
+            },
+            {
+                "description": "Lumped aldehyde >= C3 (CH3CH2CHO, MW = 58.00 g mol-1) volume mixing ratio dry air",
+                "gee:units": "1 (mol fraction)",
+                "name": "RCHO"
+            },
+            {
+                "description": "Relative humidity after moist",
+                "name": "RH"
+            },
+            {
+                "description": "Fine (0.01-0.05 microns) sea salt aerosol (MW = 31.40 g mol-1) volume mixing ratio dry air",
+                "gee:units": "1 (mol fraction)",
+                "name": "SALA"
+            },
+            {
+                "description": "Coarse (0.5-8 microns) sea salt aerosol (MW = 31.40 g mol-1) volume mixing ratio dry air",
+                "gee:units": "1 (mol fraction)",
+                "name": "SALC"
+            },
+            {
+                "description": "Sea level pressure",
+                "gee:units": "Pa",
+                "name": "SLP"
+            },
+            {
+                "description": "Sulfur dioxide (SO2, MW = 64.00 g mol-1) volume mixing ratio dry air",
+                "gee:units": "1 (mol fraction)",
+                "name": "SO2"
+            },
+            {
+                "description": "SOA Precursor - lumped species for simplified SOA parameterization (MW = 150.00 g mol-1) volume mixing ratio dry air",
+                "gee:units": "1 (mol fraction)",
+                "name": "SOAP"
+            },
+            {
+                "description": "SOA Simple - simplified non-volatile SOA parameterization (MW = 150.00 g mol-1) volume mixing ratio dry air",
+                "gee:units": "1 (mol fraction)",
+                "name": "SOAS"
+            },
+            {
+                "description": "Air temperature",
+                "gee:units": "K",
+                "name": "T"
+            },
+            {
+                "description": "10-meter air temperature",
+                "gee:units": "K",
+                "name": "T10M"
+            },
+            {
+                "description": "2-meter air temperature",
+                "gee:units": "K",
+                "name": "T2M"
+            },
+            {
+                "description": "Toluene (C7H8, MW = 92.14 g mol-1) volume mixing ratio dry air",
+                "gee:units": "1 (mol fraction)",
+                "name": "TOLU"
+            },
+            {
+                "description": "Bromine monoxide (BrO, MW = 96.00 g mol-1) total column density",
+                "gee:units": "1.0e15 molec cm-2",
+                "name": "TOTCOL_BrO"
+            },
+            {
+                "description": "Carbon monoxide (CO, MW = 28.00 g mol-1) total column density",
+                "gee:units": "1.0e15 molec cm-2",
+                "name": "TOTCOL_CO"
+            },
+            {
+                "description": "Formaldehyde (CH2O, MW = 30.00 g mol-1) total column density",
+                "gee:units": "1.0e15 molec cm-2",
+                "name": "TOTCOL_HCHO"
+            },
+            {
+                "description": "Iodine monoxide (IO, MW = 143.00 g mol-1) total column density",
+                "gee:units": "1.0e15 molec cm-2",
+                "name": "TOTCOL_IO"
+            },
+            {
+                "description": "Nitrogen dioxide (NO2, MW = 46.00 g mol-1) total column density",
+                "gee:units": "1.0e15 molec cm-2",
+                "name": "TOTCOL_NO2"
+            },
+            {
+                "description": "Ozone (O3, MW = 48.00 g mol-1) total column density",
+                "gee:units": "Dobson",
+                "name": "TOTCOL_O3"
+            },
+            {
+                "description": "Sulfur dioxide (SO2, MW = 64.00 g mol-1) total column density",
+                "gee:units": "1.0e15 molec cm-2",
+                "name": "TOTCOL_SO2"
+            },
+            {
+                "description": "Total precipitation",
+                "gee:units": "kg/m^2/s",
+                "name": "TPREC"
+            },
+            {
+                "description": "Bromine monoxide (BrO, MW = 96.00 g mol-1) tropospheric column density",
+                "gee:units": "1.0e15 molec cm-2",
+                "name": "TROPCOL_BrO"
+            },
+            {
+                "description": "Carbon monoxide (CO, MW = 28.00 g mol-1) tropospheric column density",
+                "gee:units": "1.0e15 molec cm-2",
+                "name": "TROPCOL_CO"
+            },
+            {
+                "description": "Formaldehyde (CH2O, MW = 30.00 g mol-1) tropospheric column density",
+                "gee:units": "1.0e15 molec cm-2",
+                "name": "TROPCOL_HCHO"
+            },
+            {
+                "description": "Iodine monoxide (IO, MW = 143.00 g mol-1) tropospheric column density",
+                "gee:units": "1.0e15 molec cm-2",
+                "name": "TROPCOL_IO"
+            },
+            {
+                "description": "Nitrogen dioxide (NO2, MW = 46.00 g mol-1) tropospheric column density",
+                "gee:units": "1.5e15 molec cm-2",
+                "name": "TROPCOL_NO2"
+            },
+            {
+                "description": "Ozone (O3, MW = 48.00 g mol-1) tropospheric column density",
+                "gee:units": "Dobson",
+                "name": "TROPCOL_O3"
+            },
+            {
+                "description": "Sulfur dioxide (SO2, MW = 64.00 g mol-1) tropospheric column density",
+                "gee:units": "1.0e15 molec cm-2",
+                "name": "TROPCOL_SO2"
+            },
+            {
+                "description": "Tropopause pressure based on blended estimate",
+                "gee:units": "Pa",
+                "name": "TROPPB"
+            },
+            {
+                "description": "Surface skin temperature",
+                "gee:units": "K",
+                "name": "TS"
+            },
+            {
+                "description": "Eastward wind",
+                "gee:units": "m/s",
+                "name": "U"
+            },
+            {
+                "description": "10-meter eastward wind",
+                "gee:units": "m/s",
+                "name": "U10M"
+            },
+            {
+                "description": "2-meter eastward wind",
+                "gee:units": "m/s",
+                "name": "U2M"
+            },
+            {
+                "description": "Northward wind",
+                "gee:units": "m/s",
+                "name": "V"
+            },
+            {
+                "description": "10-meter northward wind",
+                "gee:units": "m/s",
+                "name": "V10M"
+            },
+            {
+                "description": "2-meter northward wind",
+                "gee:units": "m/s",
+                "name": "V2M"
+            },
+            {
+                "description": "Hydrophilic black carbon aerosol (MW = 12.01 g mol-1) vertical integrated loss due to wet scavenging",
+                "gee:units": "kg/m^2/s",
+                "name": "WETDEPFLX_BCPI"
+            },
+            {
+                "description": "Hydrophobic black carbon aerosol (MW = 12.01 g mol-1) vertical integrated loss due to wet scavenging",
+                "gee:units": "kg/m^2/s",
+                "name": "WETDEPFLX_BCPO"
+            },
+            {
+                "description": "Dust aerosol, Reff = 0.7 microns (MW = 29.00 g mol-1) vertical integrated loss due to wet scavenging",
+                "gee:units": "kg/m^2/s",
+                "name": "WETDEPFLX_DST1"
+            },
+            {
+                "description": "Dust aerosol, Reff = 1.4 microns (MW = 29.00 g mol-1) vertical integrated loss due to wet scavenging",
+                "gee:units": "kg/m^2/s",
+                "name": "WETDEPFLX_DST2"
+            },
+            {
+                "description": "Dust aerosol, Reff = 2.4 microns (MW = 29.00 g mol-1) vertical integrated loss due to wet scavenging",
+                "gee:units": "kg/m^2/s",
+                "name": "WETDEPFLX_DST3"
+            },
+            {
+                "description": "Dust aerosol, Reff = 4.5 microns (MW = 29.00 g mol-1) vertical integrated loss due to wet scavenging",
+                "gee:units": "kg/m^2/s",
+                "name": "WETDEPFLX_DST4"
+            },
+            {
+                "description": "Formaldehyde (CH2O, MW = 30.00 g mol-1) vertical integrated loss due to wet scavenging",
+                "gee:units": "kg/m^2/s",
+                "name": "WETDEPFLX_HCHO"
+            },
+            {
+                "description": "Nitric acid (HNO3, MW = 63.00 g mol-1) vertical integrated loss due to wet scavenging",
+                "gee:units": "kg/m^2/s",
+                "name": "WETDEPFLX_HNO3"
+            },
+            {
+                "description": "Ammonia (NH3, MW = 17.00 g mol-1) vertical integrated loss due to wet scavenging",
+                "gee:units": "kg/m^2/s",
+                "name": "WETDEPFLX_NH3"
+            },
+            {
+                "description": "Ammonium (NH4, MW = 18.00 g mol-1) vertical integrated loss due to wet scavenging",
+                "gee:units": "kg/m^2/s",
+                "name": "WETDEPFLX_NH4"
+            },
+            {
+                "description": "Inorganic nitrates (MW = 62.00 g mol-1) vertical integrated loss due to wet scavenging",
+                "gee:units": "kg/m^2/s",
+                "name": "WETDEPFLX_NIT"
+            },
+            {
+                "description": "Hydrophilic organic carbon aerosol (MW = 12.01 g mol-1) vertical integrated loss due to wet scavenging",
+                "gee:units": "kg/m^2/s",
+                "name": "WETDEPFLX_OCPI"
+            },
+            {
+                "description": "Hydrophobic organic carbon aerosol (MW = 12.01 g mol-1) vertical integrated loss due to wet scavenging",
+                "gee:units": "kg/m^2/s",
+                "name": "WETDEPFLX_OCPO"
+            },
+            {
+                "description": "Fine (0.01-0.05 microns) sea salt aerosol (MW = 31.40 g mol-1) vertical integrated loss due to wet scavenging",
+                "gee:units": "kg/m^2/s",
+                "name": "WETDEPFLX_SALA"
+            },
+            {
+                "description": "Coarse (0.5-8 microns) sea salt aerosol (MW = 31.40 g mol-1) vertical integrated loss due to wet scavenging",
+                "gee:units": "kg/m^2/s",
+                "name": "WETDEPFLX_SALC"
+            },
+            {
+                "description": "Sulfur dioxide (SO2, MW = 64.00 g mol-1) vertical integrated loss due to wet scavenging",
+                "gee:units": "kg/m^2/s",
+                "name": "WETDEPFLX_SO2"
+            },
+            {
+                "description": "Sulfate (SO4, MW = 96.00 g mol-1) vertical integrated loss due to wet scavenging",
+                "gee:units": "kg/m^2/s",
+                "name": "WETDEPFLX_SO4"
+            },
+            {
+                "description": "Xylene (C8H10, MW = 106.16 g mol-1) volume mixing ratio dry air",
+                "gee:units": "1 (mol fraction)",
+                "name": "XYLE"
+            },
+            {
+                "description": "Mid layer heights",
+                "gee:units": "m",
+                "name": "ZL"
+            },
+            {
+                "description": "Planetary boundary layer height",
+                "gee:units": "m",
+                "name": "ZPBL"
+            }
+        ],
+        "gsd": [
+            27750
+        ]
+    },
+    "assets": {
+        "preview_4": {
+            "href": "https://developers.google.com/earth-engine/datasets/images/NASA/NASA_GEOS-CF_v1_rpl_tavg1hr_sample.png",
+            "type": "image/png",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    },
+    "sci:citation": "Keller, C. A., Knowland, K. E., Duncan, B. N., Liu, J., Anderson, D. C.,\nDas, S., ... & Pawson, S. (2021). Description of the NASA GEOS composition\nforecast modeling system GEOS-CF v1. 0. Journal of Advances in Modeling\nEarth Systems, 13(4), e2020MS002413.\n[doi:10.1029/2020MS002413](https://doi.org/10.1029/2020MS002413)\n",
+    "sci:doi": "10.1029/2020MS002413",
+    "gee:terms_of_use": "Unless otherwise noted, all NASA-produced data may be used for any purpose\nwithout prior permission. For more information and exceptions visit the\n[NASA Data & Information Policy page](https://earthdata.nasa.gov/collaborate/open-data-services-and-software/data-information-policy).\n",
+    "gee:type": "image_collection"
+}

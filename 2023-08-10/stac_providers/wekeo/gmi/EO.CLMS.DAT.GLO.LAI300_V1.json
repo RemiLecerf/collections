@@ -1,0 +1,66 @@
+{
+  "type": "Collection",
+  "id": "EO.CLMS.DAT.GLO.LAI300_V1",
+  "stac_version": "1.0.0",
+  "description": "LAI was defined by CEOS as half the developed area of the convex hull wrapping the green canopy elements per unit horizontal ground. This definition allows accounting for elements which are not flat such as needles or stems. LAI is strongly non linearly related to reflectance. Therefore, its estimation from remote sensing observations will be scale dependant over heterogeneous landscapes. When observing a canopy made of different layers of vegetation, it is therefore mandatory to consider all the green layers. This is particularly important for forest canopies where the understory may represent a very significant contribution to the total canopy LAI. The derived LAI corresponds therefore to the total green LAI, including the contribution of the green elements of the understory. The product at 333m resolution is provided in Near Real Time and consolidated in the next six periods.",
+  "links": [
+    {
+      "rel": "hosts",
+      "href": "http://land.copernicus.eu/global/products/lai",
+      "type": "HTTP",
+      "title": "Copernicus Global Land Service"
+    },
+    {
+      "rel": "hosts",
+      "href": "http://land.copernicus.eu/global/access",
+      "type": "HTTP",
+      "title": "Copernicus Global Land Service"
+    },
+    {
+      "rel": "hosts",
+      "href": "http://eoportal.eumetsat.int",
+      "title": "Copernicus Global Land Service"
+    }
+  ],
+  "title": "Global 10-daily Leaf Area Index 333m",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -60.0,
+          180.0,
+          80.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2014-01-10T00:00:00Z",
+          "2030-12-31T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Orthoimagery",
+    "geophysical environment",
+    "biogeophysical",
+    "leaf area",
+    "GLOBE",
+    "Dekad",
+    "10-daily composite"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "type": "Collection",
+  "id": "EO:ECMWF:DAT:SIS_TOURISM_FIRE_DANGER_INDICATORS",
+  "stac_version": "1.0.0",
+  "description": "The dataset presents projections of fire danger indicators for Europe based upon the Canadian Fire Weather Index System (FWI) under future climate conditions. The FWI is a meteorologically based index used worldwide to estimate the fire danger and is implemented in the Global ECMWF Fire Forecasting model (GEFF). In this dataset, daily FWI values, seasonal FWI values, and other FWI derived, threshold-specific, indicators were modelled using the GEFF model to estimate the fire danger in future climate scenarios. These indicators include the number of days with moderate, high, or very high fire danger conditions as classified by the European Forest Fire Information System (EFFIS) during the northern hemisphere's fire season (June-September):\n\nvery low: <5.2\nlow: 5.2 - 11.2\nmoderate: 11.2 - 21.3\nhigh: 21.3 - 38.0\nvery high: 38.0 - 50\nextreme: >=50.0 \n\nThis dataset may serve to assess future fire danger conditions for regions across Europe and support the development of a long-term tourism strategy to reduce the risk of forest fires on nature-based tourism infrastructure.\nThe FWI is a meteorologically based index that accounts for the effect of fuel moisture and weather conditions on fire behaviour. Daily noon values of air temperature, relative humidity, wind speed and 24-h accumulated precipitation are required for the calculation of the index. In order to attain the meteorological variables, projections from multiple global climate models downscaled to a regional climate model were used as input to the GEFF model. The climate models were developed within the EURO-CORDEX initiative, providing high-resolution and comparable model output centered on the European domain. In order to assess the impact of climate change, the GEFF model is run for four different climate scenarios: the present climate (labelled 'historical'), and three Representative Concentration Pathway (RCP) scenarios consistent with an optimistic emission scenario where emissions start declining beyond 2020 (RCP2.6), a scenario where emissions start declining beyond 2040 (RCP4.5) and a pessimistic scenario where emissions continue to rise throughout the century (RCP8.5). Historical simulations, for the period 1970-2005, are included to provide a reference for the FWI projections. An estimate of the statistical uncertainty associated with climate projections may be derived with the use of multiple climate model outcomes. This may be achieved by the user both implicitly or explicitly by selecting from a choice of mean, best case, or worst case multi-model outcomes. It should be noted, however, that the multi-model approach may improve the robustness of the outcomes but does not take into account all possible aspects of uncertainty associated with modelling a future climate.\nThis dataset was produced on behalf of the Copernicus Climate Change Service. \n\nVariables in the dataset/application are:\nDaily fire weather index, Number of days with high fire danger, Number of days with moderate fire danger, Number of days with very high fire danger, Seasonal fire weather index",
+  "links": [],
+  "title": "Fire danger indicators for Europe from 1970 to 2098 derived from climate projections",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -44.6,
+          22.0,
+          65.0,
+          72.6
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1970-01-01T00:00:00Z",
+          "2098-12-31T23:59:59Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Meteorological geographical features",
+    "Spatial coverage: Europe",
+    "Variable domain: Land (biosphere)",
+    "Temporal coverage: Past",
+    "Temporal coverage: Future",
+    "Product type: Climate projections"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

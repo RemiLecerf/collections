@@ -1,0 +1,79 @@
+{
+  "type": "Collection",
+  "id": "EO:ECMWF:DAT:SIS_FISHERIES_ABUNDANCE",
+  "stac_version": "1.0.0",
+  "description": "The dataset contains model projections of fish catch and abundance in European seas out to 2098 produced using the Size Spectra – Dynamic Bioclimate Envelope Model (SS-DBEM). The SS-DBEM is a mechanistic model, which means that it takes into account aspects of ecology (e.g. habitat preference, migration) and physiology (e.g. growth and reproduction) to determine biomass and distribution of fish species in response to changes in the environment (e.g. temperature, competition with other species, food availability). The SS-DBEM projects the impact of changes in the environment (e.g. warming, deoxygenation) and human activity (fishing pressure) on the abundance and biomass of modelled species. All this makes it a state of the art model in regard to projecting fish distribution and trends in both abundance and catch in response to climate change. Model outputs consist of fish abundance (number of fish per grid cell) and fish catch (number of fish caught per grid cell) considering three different fishing activity scenarios, termed the Maximum Sustainable Yield (MSY). Whilst the model units are expressed as “Number of individuals”, they are not to be used to predict actual future stocks but rather numbers relative to the initial starting values of the model. This is because the model was not intialised with actual fish numbers and subsequently the significance of this dataset is to show temporal and geographical trends, relative to other years and other grid points, in response to changes in the climate and the applied Maximum Sustainable Yield (MSY).\nIn order to assess the impact of climate change, simulations under two future climate scenarios based on different Representative Concentration Pathways (RCP) for future greenhouse gas concentrations are conducted: the intermediate scenario, RCP4.5, in which greenhouse gas concentrations peak around 2040 before declining mainly due to successful mitigation measures in place; and the more pessimistic scenario, RCP8.5, where greenhouse gas concentrations continue to rise throughout the century. Fishing activity was defined according to the MSY under these environmental conditions. The combination of MSY and RCP scenarios included in this dataset are:\n\n\nGlobal sustainability: RCP4.5 with a MSY of 0.6 (fish stock is managed globally toward sustainability)\n\n\nWorld Markets: RCP8.5 with a MSY of 0.8 (fish stock is managed globally to avoid overfishing)\n\n\nNational Enterprise: RCP8.5 with a MSY of 1.1 (fish stocks are managed at the national level resulting in overfishing)\n\n\nThe simulations were run using inputs from two marine hydrodynamic-biogeochemical models: the POLCOM-ERSEM and NEMO-ERSEM models. These models were driven by one Coupled Model Inter-comparison Project Phase 5 (CMIP5) global climate model (GCM) projections with downscaled atmospheric data from a regional climate model (RCM), the Swedish Meteorological and Hydrological Institute (SMHI) Rossby Centre Regional Atmospheric Model (RCA4). Using only one of the many possible combinations of GCM-RCM pairs leads to an incomplete estimate of the true uncertainty in the outcome in a changing climate by, most likely, indicating a smaller spread of outcomes than if the estimate were based on a larger ensemble of such GCM-RCM combinations. This does not necessarily mean a reduction in the true uncertainty, but simply an incomplete estimate of it.\nThe fish model outputs were created and post-processed by Plymouth Marine Laboratory. The fish model outputs created using POLCOMS-ERSEM input data used funding from the EU H2020 project CERES (grant agreement No 678193).\nThis dataset was produced on behalf of the Copernicus Climate Change Service.\n\nVariables in the dataset/application are:\nSpecies abundance, Species catch",
+  "links": [
+    {
+      "rel": "hosts",
+      "href": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.39c97304",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Climate Data Store catalogue"
+    },
+    {
+      "rel": "hosts",
+      "href": "https://confluence.ecmwf.int/x/_KHmE",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Product user guide for the fish abundance and catch dataset"
+    },
+    {
+      "rel": "hosts",
+      "href": "https://confluence.ecmwf.int/x/h6-mE",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "User guide for NEMO-ERSEM and POLCOMS-ERSEM products"
+    },
+    {
+      "rel": "hosts",
+      "href": "https://confluence.ecmwf.int/x/c_-mE",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Technical guide for POLCOMS-ERSEM"
+    },
+    {
+      "rel": "hosts",
+      "href": "https://confluence.ecmwf.int/x/he-mE",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Technical guide for NEMO-ERSEM"
+    }
+  ],
+  "title": "Fish abundance and catch data for the Northwest European Shelf and Mediterranean Sea from 2006 to 2098 derived from climate projections",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -20.0,
+          11.0,
+          37.0,
+          65.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1979-01-01T00:00:00Z",
+          "2098-12-31T23:59:59Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Oceanographic geographical features",
+    "Sector: Coastal regions",
+    "Product type: Climate projections",
+    "Spatial coverage: Europe",
+    "Variable domain: Ocean (biology)",
+    "Temporal coverage: Present",
+    "Temporal coverage: Future"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

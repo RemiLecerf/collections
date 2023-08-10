@@ -1,0 +1,313 @@
+{
+    "type": "Collection",
+    "stac_version": "1.0.0",
+    "stac_extensions": [
+        "collection-assets"
+    ],
+    "id": "SKYSAT/GEN-A/PUBLIC/ORTHO/MULTISPECTRAL",
+    "title": "Planet SkySat Public Ortho Imagery, Multispectral",
+    "description": "This data from Planet labs Inc. SkySat satellites was collected for\nthe experimental \\\"Skybox for Good Beta\\\" program in 2015, as well as for\nvarious crisis response events and a few other projects. The data is\navailable in both a 5-band Multispectral/Pan collection, and a Pansharpened\nRGB collection.\n\nEach image's asset ID contains the acquisition date and time, for\nexample, image s01_20150304T080608Z was acquired on March 4, 2015 at\n08:06 Zulu (UTC). For more information, please see the [Planet Imagery\nProduct Specifications]\n(https://www.planet.com/products/satellite-imagery/files/Planet_Combined_Imagery_Product_Specs_December2017.pdf)\nand visit the [Planet Imagery and Archive]\n(https://www.planet.com/products/planet-imagery/) site.\n\nThis Multispectral/Pan collection contains images with five 16-bit bands\nshifted up from the original 12-bit data. The B, G, R, and Near-IR bands\nhave a resolution of approximately 2m per pixel, while the Pan band is\napproximately 0.8m resolution (closer to 1m for off-nadir images).\n",
+    "keywords": [
+        "highres",
+        "multispectral",
+        "pansharpened",
+        "planet",
+        "skysat"
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -70,
+                    180,
+                    53
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2014-07-03T00:00:00Z",
+                    "2016-12-24T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "providers": [
+        {
+            "name": "Planet Labs Inc.",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.planet.com/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/SKYSAT_GEN-A_PUBLIC_ORTHO_MULTISPECTRAL"
+        }
+    ],
+    "license": "CC-BY-4.0",
+    "links": [
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections/SKYSAT/GEN-A/PUBLIC/ORTHO/MULTISPECTRAL",
+            "rel": "self",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections",
+            "rel": "parent",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/",
+            "rel": "root",
+            "type": "application/json"
+        },
+        {
+            "code": "JavaScript",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/SKYSAT/SKYSAT_GEN-A_PUBLIC_ORTHO_MULTISPECTRAL",
+            "rel": "related",
+            "title": "Run the example for SKYSAT/GEN-A/PUBLIC/ORTHO/MULTISPECTRAL in the Earth Engine Code Editor",
+            "type": "text/html"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/images/SKYSAT/SKYSAT_GEN-A_PUBLIC_ORTHO_MULTISPECTRAL_sample.png",
+            "rel": "preview",
+            "type": "image/png"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/SKYSAT_GEN-A_PUBLIC_ORTHO_MULTISPECTRAL#terms-of-use",
+            "rel": "license",
+            "type": "text/html"
+        }
+    ],
+    "cube:dimensions": {
+        "x": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                -180,
+                180
+            ]
+        },
+        "y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                -70,
+                53
+            ]
+        },
+        "t": {
+            "type": "temporal",
+            "extent": [
+                "2014-07-03T00:00:00Z",
+                "2016-12-24T00:00:00Z"
+            ]
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "B",
+                "G",
+                "R",
+                "N",
+                "P"
+            ]
+        }
+    },
+    "summaries": {
+        "B": {
+            "gee:estimated_range": true,
+            "maximum": 62089,
+            "minimum": 878
+        },
+        "G": {
+            "gee:estimated_range": true,
+            "maximum": 62007,
+            "minimum": 341
+        },
+        "N": {
+            "gee:estimated_range": true,
+            "maximum": 62874,
+            "minimum": 16
+        },
+        "P": {
+            "gee:estimated_range": true,
+            "maximum": 65520,
+            "minimum": 16
+        },
+        "R": {
+            "gee:estimated_range": true,
+            "maximum": 63393,
+            "minimum": 107
+        },
+        "eo:bands": [
+            {
+                "center_wavelength": 0.4825,
+                "description": "Blue",
+                "gee:wavelength": "450-515nm",
+                "gsd": 2,
+                "name": "B",
+                "common_name": "blue"
+            },
+            {
+                "center_wavelength": 0.555,
+                "description": "Green",
+                "gee:wavelength": "515-595nm",
+                "gsd": 2,
+                "name": "G",
+                "common_name": "green"
+            },
+            {
+                "center_wavelength": 0.65,
+                "description": "Red",
+                "gee:wavelength": "605-695nm",
+                "gsd": 2,
+                "name": "R",
+                "common_name": "red"
+            },
+            {
+                "center_wavelength": 0.82,
+                "description": "Near-IR",
+                "gee:wavelength": "740-900nm",
+                "gsd": 2,
+                "name": "N",
+                "common_name": "nir"
+            },
+            {
+                "center_wavelength": 0.675,
+                "description": "Panchromatic",
+                "gee:wavelength": "450-900nm",
+                "gsd": 0.8,
+                "name": "P",
+                "common_name": "red"
+            }
+        ],
+        "gee:schema": [
+            {
+                "description": "Unique catalog ID corresponding to a single collection event; same across all three detectors.",
+                "name": "catalogID",
+                "type": "STRING"
+            },
+            {
+                "description": "ISO 8601 collection end time (UTC).",
+                "name": "collectionEndTime",
+                "type": "STRING"
+            },
+            {
+                "description": "ISO 8601 collection start time (UTC).",
+                "name": "collectionStartTime",
+                "type": "STRING"
+            },
+            {
+                "description": "'Strip', 'Point', 'Area', or 'Path'.",
+                "name": "collectionType",
+                "type": "STRING"
+            },
+            {
+                "description": "Product type identifying the product level ('Orthorectified Imagery').",
+                "name": "productType",
+                "type": "STRING"
+            },
+            {
+                "description": "ID of this version of this product, generated by Singer/TileMill.",
+                "name": "productionID",
+                "type": "STRING"
+            },
+            {
+                "description": "N/A",
+                "name": "productionSystemVersion",
+                "type": "STRING"
+            },
+            {
+                "description": "The method used for interpolated pixel values.",
+                "name": "resamplingMethod",
+                "type": "STRING"
+            },
+            {
+                "description": "Maximum satellite azimuth angle over the collection (degrees).",
+                "name": "satelliteAzimuthAngleMax",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Mean satellite azimuth angle over the collection (degrees).",
+                "name": "satelliteAzimuthAngleMean",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Minimum satellite azimuth angle over the collection (degrees).",
+                "name": "satelliteAzimuthAngleMin",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Maximum satellite elevation angle over the collection (degrees).",
+                "name": "satelliteElevationAngleMax",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Mean satellite elevation angle over the collection (degrees).",
+                "name": "satelliteElevationAngleMean",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Minimum satellite elevation angle over the collection (degrees).",
+                "name": "satelliteElevationAngleMin",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Unique name identifying the spacecraft.",
+                "name": "satelliteName",
+                "type": "STRING"
+            },
+            {
+                "description": "N/A",
+                "name": "snaptoAlignmentConfidence",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "N/A",
+                "name": "snaptoReferenceAssets",
+                "type": "STRING"
+            },
+            {
+                "description": "Solar azimuth angle at the time of collection.",
+                "name": "solarAzimuthAngle",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "Solar elevation angle at the time of collection.",
+                "name": "solarElevationAngle",
+                "type": "DOUBLE"
+            },
+            {
+                "description": "N/A",
+                "name": "terrainBlendEpoch",
+                "type": "DOUBLE"
+            }
+        ],
+        "instruments": [
+            "CMOS Frame Camera with Panchromatic and Multispectral halves"
+        ],
+        "platform": [
+            "SkySat"
+        ]
+    },
+    "assets": {
+        "preview_4": {
+            "href": "https://developers.google.com/earth-engine/datasets/images/SKYSAT/SKYSAT_GEN-A_PUBLIC_ORTHO_MULTISPECTRAL_sample.png",
+            "type": "image/png",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    },
+    "sci:citation": "\u00a9 \\<year\\> Planet Labs Inc.",
+    "gee:terms_of_use": "This dataset is made available publicly under the Creative Commons by\nAttribution license(CC-BY-4.0).\n",
+    "gee:type": "image_collection"
+}

@@ -1,0 +1,74 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:dct="http://purl.org/dc/terms/" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/426e939a-5a2b-43ec-bf6c-1f5d37b6a9ba">
+        <foaf:primaryTopic rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/resource/1c5fe986-1cd7-4c56-aeff-7bba0b4ff554"/>
+        <dct:issued>2023-03-29</dct:issued>
+        <dct:modified>2023-03-29</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/srv/eng/xml.metadata.get?uuid=426e939a-5a2b-43ec-bf6c-1f5d37b6a9ba">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork?uuid=426e939a-5a2b-43ec-bf6c-1f5d37b6a9ba">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/resource/1c5fe986-1cd7-4c56-aeff-7bba0b4ff554">
+        <dct:identifier>1c5fe986-1cd7-4c56-aeff-7bba0b4ff554</dct:identifier>
+        <dct:title>Global Ocean Chlorophyll-a trend map from Observations Reprocessing</dct:title>
+        <dct:abstract>'''DEFINITION'''
+
+The trend map is derived from version 5 of the global climate-quality chlorophyll time series produced by the ESA Ocean Colour Climate Change Initiative (ESA OC-CCI, Sathyendranath et al. 2019; Jackson 2020) and distributed by CMEMS. The trend detection method is based on the Census-I algorithm as described by Vantrepotte et al. (2009), where the time series is decomposed as a fixed seasonal cycle plus a linear trend component plus a residual component. The linear trend is expressed in % year -1, and its level of significance (p) calculated using a t-test. Only significant trends (p &lt; 0.05) are included. 
+
+'''CONTEXT'''
+
+Phytoplankton are key actors in the carbon cycle and, as such, recognised as an Essential Climate Variable (ECV). Chlorophyll concentration is the most widely used measure of the concentration of phytoplankton present in the ocean. Drivers for chlorophyll variability range from small-scale seasonal cycles to long-term climate oscillations and, most importantly, anthropogenic climate change. Due to such diverse factors, the detection of climate signals requires a long-term time series of consistent, well-calibrated, climate-quality data record. Furthermore, chlorophyll analysis also demands the use of robust statistical temporal decomposition techniques, in order to separate the long-term signal from the seasonal component of the time series.
+
+'''CMEMS KEY FINDINGS'''
+
+The average global trend for the 1997-2021 period was 0.51% per year, with a maximum value of 25% per year and a minimum value of -6.1% per year. Positive trends are pronounced in the high latitudes of both northern and southern hemispheres. The significant increases in chlorophyll reported in 2016-2017 (Sathyendranath et al., 2018b) for the Atlantic and Pacific oceans at high latitudes appear to be plateauing after the 2021 extension.  The negative trends shown in equatorial waters in 2020 appear to be remain consistent in 2021.  
+
+'''DOI (product):''' 
+https://doi.org/10.48670/moi-00230</dct:abstract>
+        <dcat:theme rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/thesaurus/iso/topicCategory/oceans"/>
+        <foaf:thumbnail rdf:resource="https://catalogue.marine.copernicus.eu/documents/IMG/OMI_HEALTH_CHL_GLOBAL_OCEANCOLOUR_trend.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((-180.00 -90.00, -180.00 90.00, 180.00 90.00, 180.00 -90.00, -180.00 -90.00))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:issued>2018-02-12</dct:issued>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/OC-CNR-ROMA-IT"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/OC-PML-PLYMOUTH-UK"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/OC-CNR-ROMA-IT"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/OC-PML-PLYMOUTH-UK"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/MOI-OMI-SERVICE"/>
+        <dct:accrualPeriodicity>annually</dct:accrualPeriodicity>
+        <dct:license>otherRestrictions</dct:license>
+        <dct:license>license</dct:license>
+        <dct:license>No limitations on public access</dct:license>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/OMI_HEALTH_CHL_GLOBAL_OCEANCOLOUR_trend/omi_health_chl_global_oceancolour_trend"/>
+        <dcat:distribution rdf:resource="https://mdl1.marine.copernicus.eu/derived/OMI_HEALTH_CHL_GLOBAL_OCEANCOLOUR_trend/omi_health_chl_global_oceancolour_trend_202211/omi_health_chl_global_oceancolour_trend_19970801-20211231-P20220831.nc"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/02fa46bf-074c-4b6e-9bf9-2be4dfbe6eff"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/e3cdf056-34e2-4c11-88e3-766aa1574d81"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/35dbfc51-5694-4ba8-b228-3a5402345316"/>
+        <dcat:dataQuality>The myOcean products depends on other products for production or validation. The detailed list of dependencies is given in ISO19115's aggregationInfo (ISO19139 Xpath = "gmd:MD_Metadata/gmd:identificationInfo/gmd:aggregationInfo[./gmd:MD_AggregateInformation/gmd:initiativeType/gmd:DS_InitiativeTypeCode/@codeListValue='upstream-validation' or 'upstream-production']")</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+    

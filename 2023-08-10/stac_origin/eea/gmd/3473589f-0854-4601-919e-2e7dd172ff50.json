@@ -1,0 +1,73 @@
+{
+  "type": "Collection",
+  "id": "3473589f-0854-4601-919e-2e7dd172ff50",
+  "stac_version": "1.0.0",
+  "description": "The EU-DEM v1.1 is a resulting dataset of the EU-DEM v1.0 upgrade which enhances the correction of geo-positioning issues, reducing the number of artefacts, improving the vertical accuracy of EU-DEM using ICESat as reference and ensuring consistency with EU-Hydro public beta.\n\nEU-DEM v1.1 is available in GeoTIFF 32 bits format. It is a contiguous dataset divided into 100x100 km tiles, resulting in a total of 1992 tiles of 4000x4000 pixel at 25m resolution with vertical accuracy: +/- 7 meters RMSE. The tiles have been grouped in big regions:\n    - EUDEM2_ASIA (Türkiye)\n    - EUDEM2_ATLAN (Hondo and Fr_Islands)\n    - EUDEM2_BRITAIN (Thames, Shannon and Tweed)\n    - EUDEM2_EUROPE_1 (Duero, Ebro, Tajo, Guadalquivir and Jucar)\n    - EUDEM2_EUROPE_2 (Tirso, Mesima, Tevere and Po)\n    - EUDEM2_EUROPE_3 (Garonne, Rhone, Loire, Seine and western Rhine)\n    - EUDEM2_EUROPE_4 (Danube)\n    - EUDEM2_EUROPE_5 (Skjern, Nemunas, Vistula, Oder, Elbe and Eastern Rhine)\n    - EUDEM2_EUROPE_6 (Bulgaria and Pinios)\n    - EUDEM2_ICELAND (Iceland)\n    - EUDEM2_SCAND (Vorma, Gota, Angerman, Tana, Kemi and Neva)\n    - EUDEM2_SOUTH_AMERICA (Fr_Guiana)\nEU-DEM v1.1 upgrade was coordinated by the European Environment Agency (EEA) in the frame of the EU Copernicus programme.",
+  "links": [
+    {
+      "rel": "hosts",
+      "href": "https://land.copernicus.eu/pan-european/satellite-derived-products/eu-dem/eu-dem-v1.1/view",
+      "type": "WWW:LINK-1.0-http--link"
+    },
+    {
+      "rel": "hosts",
+      "href": "https://image.discomap.eea.europa.eu/arcgis/services/Elevation/EUElev_DEM_V11/MapServer/WMSServer?service=WMS&request=GetCapabilities&version=1.3.0",
+      "type": "OGC:WMS",
+      "title": "DEM_v11_Masked2"
+    },
+    {
+      "rel": "hosts",
+      "href": "https://image.discomap.eea.europa.eu/arcgis/rest/services/Elevation/EUElev_DEM_V11/MapServer",
+      "type": "ESRI:REST"
+    },
+    {
+      "rel": "hosts",
+      "href": "https://image.discomap.eea.europa.eu/arcgis/services/DownloadLayers/EUElev_DEM_V11_DL/MapServer/WMSServer?service=WMS&request=GetCapabilities&version=1.3.0",
+      "type": "OGC:WMS",
+      "title": "DEM_V11_Download"
+    }
+  ],
+  "title": "EU-DEM (raster) - version 1.1, Apr. 2016",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -31.2684,
+          27.6375,
+          -13.4198,
+          66.5662
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2011-01-01T00:00:00Z",
+          "2011-12-31T23:59:59Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Elevation",
+    "EEA39",
+    "land use",
+    "landscape alteration",
+    "land cover",
+    "digital land model",
+    "European",
+    "2017 3.6.1",
+    "Land use"
+  ],
+  "providers": [
+    {
+      "name": "European Environment Agency",
+      "description": "SDI - EEA geospatial data catalogue",
+      "roles": [
+        "host"
+      ],
+      "url": "https://sdi.eea.europa.eu/"
+    }
+  ]
+}

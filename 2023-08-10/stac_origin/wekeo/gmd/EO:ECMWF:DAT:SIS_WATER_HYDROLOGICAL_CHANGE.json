@@ -1,0 +1,63 @@
+{
+  "type": "Collection",
+  "id": "EO:ECMWF:DAT:SIS_WATER_HYDROLOGICAL_CHANGE",
+  "stac_version": "1.0.0",
+  "description": "The dataset provides a number of indicators of the potential change, relative to a reference period of the recent past, in hydrological conditions over the 21st Century based on an ensemble of climate and hydrological models. The indicators cover hydrological variables of river discharge, soil moisture, snow water equivalent and groundwater recharge. These indicators are produced by various hydrological models using input variables of historical and projected precipitation, temperature and potential evapotranspiration. \nThe indicators transform data from climate projections into usable information for the European water sector. They were defined in discussion with stakeholder groups working in different areas of the water sector (hydropower, irrigation, water supply) to provide clear information on climate projections for water resources as annual, seasonal and monthly change factors for a range of variables. \nA range of global climate models and standard projection scenarios (based on latest Copernicus Climate Change Service and Coupled Model Inter-comparison Project Phase 5 climate modelling experiments) were used along a multi-hydrological model approach to produce these indicators.\nThis ensemble approach to the climate and hydrological modelling captures the uncertainty and variability of the hydrological regime.  Precipitation and temperature data from five global climate models was downscaled to 5km x 5km resolution with the daily values disaggregated to 3-hourly values.  These data were used to force four hydrological models to produce the hydrological variables to derive the indicators. The indicators are given as relative changes for a given 30-year projection window with respect to the reference period estimates of 1971-2010 for Representative Concentration Pathways (RCP) 2.6 and 8.5, for each grid cell.\nThis dataset is produced on behalf of Copernicus Climate Change Service, by UK Centre for Ecology & Hydrology (UKCEH), Helmholtz Centre for Environmental Research (UFZ), Leipzig, Centro Tecnológico del Agua (Cetaqua), Climate Partnership LLC (CPL), Environment Agency (EA), Mediterranean Network of Basin Organisations (MENBO), Norwegian Water Resources & Energy Directorate (NVE).\n\nVariables in the dataset/application are:\nAir temperature, Groundwater recharge, Potential evapotranspiration, Precipitation, River discharge, Snow water equivalent, Volumetric soil moisture",
+  "links": [
+    {
+      "rel": "hosts",
+      "href": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.ccf781a2",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Climate Data Store catalogue"
+    },
+    {
+      "rel": "hosts",
+      "href": "https://datastore.copernicus-climate.eu/documents/sis-hydrology-derived/EDgE/C3S_435_Data-PUG-Documentation_v7.1.pdf",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Product user guide and specification (PDF)"
+    }
+  ],
+  "title": "Water sector indicators of hydrological change across Europe from 2011 to 2095 derived from climate simulations",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2011-01-01T00:00:00Z",
+          "2095-12-31T23:59:59Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Meteorological geographical features",
+    "Temporal coverage: Past",
+    "Temporal coverage: Present",
+    "Temporal coverage: Future",
+    "Spatial coverage: Europe",
+    "Product type: Climate projections",
+    "Variable domain: Land (hydrology)",
+    "Provider: Copernicus C3S",
+    "Sector: Water management"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

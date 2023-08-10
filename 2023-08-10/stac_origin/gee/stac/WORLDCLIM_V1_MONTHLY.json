@@ -1,0 +1,205 @@
+{
+    "type": "Collection",
+    "version": "1",
+    "stac_version": "1.0.0",
+    "stac_extensions": [
+        "collection-assets"
+    ],
+    "id": "WORLDCLIM/V1/MONTHLY",
+    "title": "WorldClim Climatology V1",
+    "description": "WorldClim version 1 has average monthly global climate data for minimum,\nmean, and maximum temperature and for precipitation.\n\nWorldClim version 1 was developed by Robert J. Hijmans, Susan Cameron,\nand Juan Parra, at the Museum of Vertebrate Zoology, University\nof California, Berkeley, in collaboration with Peter Jones and\nAndrew Jarvis (CIAT), and with Karen Richardson (Rainforest CRC).\n",
+    "keywords": [
+        "berkeley",
+        "climate",
+        "monthly",
+        "precipitation",
+        "temperature",
+        "weather",
+        "worldclim"
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1960-01-01T00:00:00Z",
+                    "1991-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "providers": [
+        {
+            "name": "University of California, Berkeley",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.worldclim.org/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/WORLDCLIM_V1_MONTHLY"
+        }
+    ],
+    "license": "CC-BY-SA-4.0",
+    "links": [
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections/WORLDCLIM/V1/MONTHLY",
+            "rel": "self",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections",
+            "rel": "parent",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/",
+            "rel": "root",
+            "type": "application/json"
+        },
+        {
+            "code": "JavaScript",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/WORLDCLIM/WORLDCLIM_V1_MONTHLY",
+            "rel": "related",
+            "title": "Run the example for WORLDCLIM/V1/MONTHLY in the Earth Engine Code Editor",
+            "type": "text/html"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/images/WORLDCLIM/WORLDCLIM_V1_MONTHLY_sample.png",
+            "rel": "preview",
+            "type": "image/png"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/WORLDCLIM_V1_MONTHLY#terms-of-use",
+            "rel": "license",
+            "type": "text/html"
+        },
+        {
+            "href": "https://spdx.org/licenses/CC-BY-SA-4.0.html",
+            "rel": "license",
+            "type": "text/html"
+        }
+    ],
+    "cube:dimensions": {
+        "x": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                -180,
+                180
+            ]
+        },
+        "y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                -90,
+                90
+            ]
+        },
+        "t": {
+            "type": "temporal",
+            "extent": [
+                "1960-01-01T00:00:00Z",
+                "1991-01-01T00:00:00Z"
+            ]
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "tavg",
+                "tmin",
+                "tmax",
+                "prec"
+            ]
+        }
+    },
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Mean temperature",
+                "gee:scale": 0.1,
+                "gee:units": "&deg;C",
+                "name": "tavg"
+            },
+            {
+                "description": "Minimum temperature",
+                "gee:scale": 0.1,
+                "gee:units": "&deg;C",
+                "name": "tmin"
+            },
+            {
+                "description": "Maximum temperature",
+                "gee:scale": 0.1,
+                "gee:units": "&deg;C",
+                "name": "tmax"
+            },
+            {
+                "description": "Precipitation",
+                "gee:units": "mm",
+                "name": "prec"
+            }
+        ],
+        "gee:schema": [
+            {
+                "description": "Month",
+                "name": "month",
+                "type": "DOUBLE"
+            }
+        ],
+        "gsd": [
+            927.67
+        ],
+        "prec": {
+            "gee:estimated_range": true,
+            "maximum": 2949
+        },
+        "tavg": {
+            "gee:estimated_range": true,
+            "maximum": 39.4,
+            "minimum": -53.6
+        },
+        "tmax": {
+            "gee:estimated_range": true,
+            "maximum": 49,
+            "minimum": -50
+        },
+        "tmin": {
+            "gee:estimated_range": true,
+            "maximum": 32.5,
+            "minimum": -57.3
+        }
+    },
+    "assets": {
+        "preview_4": {
+            "href": "https://developers.google.com/earth-engine/datasets/images/WORLDCLIM/WORLDCLIM_V1_MONTHLY_sample.png",
+            "type": "image/png",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    },
+    "sci:citation": "Hijmans, R.J., S.E. Cameron, J.L. Parra, P.G. Jones and A. Jarvis,\n2005. Very High Resolution Interpolated Climate Surfaces for Global Land\nAreas. International Journal of Climatology 25: 1965-1978.\n[doi:10.1002/joc.1276](https://doi.org/10.1002/joc.1276).\n",
+    "gee:interval": {
+        "interval": 1,
+        "type": "climatological_interval",
+        "unit": "month"
+    },
+    "gee:terms_of_use": "[CC-BY-SA-4.0](https://spdx.org/licenses/CC-BY-SA-4.0.html)",
+    "gee:type": "image_collection",
+    "gee:unusual_terms_of_use": true
+}

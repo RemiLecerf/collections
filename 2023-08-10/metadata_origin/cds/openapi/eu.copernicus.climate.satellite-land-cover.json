@@ -1,0 +1,57 @@
+{
+    "slug": "land-cover-classification-gridded-maps-from-1992-to-present-derived-from-satellite-observations",
+    "name": "satellite-land-cover",
+    "id": "eu.copernicus.climate.satellite-land-cover",
+    "type": "dataset",
+    "rich_abstract": "<div class='abstract-text'>\n         <p>This dataset provides global maps describing the land surface into 22 classes, which have been defined using the United Nations Food and Agriculture Organization\u2019s (UN FAO) Land Cover Classification System (LCCS). In addition to the land cover  (LC) maps, four quality flags are produced to document the reliability of the classification and change detection. </p>\n<p>In order to ensure continuity, these land cover maps are consistent with the series of global annual LC maps from the 1990s to 2015 produced by the European Space Agency (ESA) Climate Change Initiative (CCI), which are also available on the ESA CCI LC viewer.</p>\n<p>To produce this dataset, the entire  Medium Resolution Imaging Spectrometer (MERIS) Full and Reduced Resolution  archive from 2003 to 2012 was first classified into a unique 10-year baseline LC map. This is then back- and up-dated using change detected from (i) Advanced Very-High-Resolution Radiometer (AVHRR) time series from 1992 to 1999, (ii) SPOT-Vegetation (SPOT-VGT) time series from 1998 to 2012 and (iii) PROBA-Vegetation (PROBA-V) and Sentinel-3 OLCI (S3 OLCI) time series from 2013.</p>\n<p>Beyond the climate-modelling communities, this dataset\u2019s long-term consistency, yearly updates, and high thematic detail on a global scale have made it attractive for a multitude of applications such as land accounting, forest monitoring and desertification, in addition to scientific research.</p>\n         \n         \n            <p></p>\n            <table class=\"abstract-description abstract-table\">\n            <tr><th colspan=\"2\">DATA DESCRIPTION</th>\n            \n<tr><th>Data type</th><td>Gridded</td></tr>\n<tr><th>Projection</th><td>Plate Carr\u00e9e</td></tr>\n<tr><th>Horizontal coverage</th><td>Global</td></tr>\n<tr><th>Horizontal resolution</th><td>300 m</td></tr>\n<tr><th>Vertical coverage</th><td>Surface</td></tr>\n<tr><th>Vertical resolution</th><td>Single level</td></tr>\n<tr><th>Temporal coverage</th><td>1992 to present with one year delay</td></tr>\n<tr><th>Temporal resolution</th><td>Yearly</td></tr>\n<tr><th>File format</th><td>NetCDF4</td></tr>\n<tr><th>Conventions</th><td>Climate and Forecast (CF) Metadata Convention v1.6 and ESA CCI Data Standards [DSWG 2015]</td></tr>\n<tr><th>Versions</th><td>Version 2.0.7cds provides the LC maps for the years 1992 \u2013 2015;  version 2.1.1 for the years after 2016.  Both versions are produced with the same processing chain.</td></tr>\n<tr><th>Update frequency</th><td>Yearly</td></tr>\n</table>\n\n    <p></p>\n    <table class=\"abstract-variables abstract-table\">\n    <tr><th colspan=\"3\">MAIN VARIABLES</th>\n    \n\n    <tr><th class='variables-name'>Name</th><th class='variables-units'>Units</th><th class='variables-description'>Description</th></tr>\n    \n<tr><td class='variables-name'>Change count</td><td class='variables-units'>Dimensionless</td><td class='variables-description'>Number of years where land cover class changes have occurred, since 1992. 0 for stable, greater than 0 for changes.</td></tr>\n<tr><td class='variables-name'>Current pixel state</td><td class='variables-units'>Dimensionless</td><td class='variables-description'>Pixel identification from satellite surface reflectance observations, mainly distinguishing between land, water, and snow/ice. Six values are used: 1, 2, 3, 4, 5, 6; respectively meaning: clear land, clear water, clear snow ice, cloud, cloud shadow, filled.</td></tr>\n<tr><td class='variables-name'>Land cover class</td><td class='variables-units'>Dimensionless</td><td class='variables-description'>Land cover class per pixel, according to a legend of 22 classes, defined using the Land Cover Classification System developed by the United Nations Food and Agriculture Organization. Distinct values are encoded as unsigned byte (0..255). The complete legend is available in the NetCDF files metadata and in the Product User Guide documentation.</td></tr>\n<tr><td class='variables-name'>Observation count</td><td class='variables-units'>Dimensionless</td><td class='variables-description'>Number of valid satellite observations that have contributed to each pixel's classification</td></tr>\n<tr><td class='variables-name'>Processed flag</td><td class='variables-units'>Dimensionless.</td><td class='variables-description'>Flag to mark areas that could not be classified. Two values are used: 0, 1; respectively meaning: not_processed, processed.</td></tr>\n</table>\n    </div>",
+    "terms": [
+        "satellite-land-cover",
+        "licence-to-use-copernicus-products",
+        "vito-proba-v"
+    ],
+    "constraints": [
+        {
+            "version": [
+                "v2.0.7cds"
+            ],
+            "year": [
+                "1992",
+                "1993",
+                "1994",
+                "1995",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2000",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015"
+            ]
+        },
+        {
+            "version": [
+                "v2.1.1"
+            ],
+            "year": [
+                "2016",
+                "2017",
+                "2018",
+                "2019",
+                "2020"
+            ]
+        }
+    ]
+}

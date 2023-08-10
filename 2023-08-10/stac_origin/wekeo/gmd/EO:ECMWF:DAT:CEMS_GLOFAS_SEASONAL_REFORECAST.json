@@ -1,0 +1,72 @@
+{
+  "type": "Collection",
+  "id": "EO:ECMWF:DAT:CEMS_GLOFAS_SEASONAL_REFORECAST",
+  "stac_version": "1.0.0",
+  "description": "This dataset provides a gridded modelled time series of river discharge forced with seasonal range meteorological reforecasts. The data is a consistent representation of a key hydrological variable across the global domain, and is a product of the Global Flood Awareness System (GloFAS). It is accompanied by an ancillary file for interpretation that provides the upstream area (see the related variables table and associated link in the documentation).\nThis dataset was produced by forcing a hydrological modelling chain with input from the European Centre for Medium-range Weather Forecasts (ECMWF) ensemble seasonal forecasting system, SEAS5. For the period of 1981 to 2016 the number of ensemble members is 25, whilst reforecasts produced for 2017 onwards use a 51-member ensemble. Reforecasts are forecasts run over past dates, with those presented here used for producing the seasonal river discharge thresholds. In addition, they provide a suitably long time period against which the skill of the seasonal forecast can be assessed. The reforecasts are initialised monthly and run for 123 days, with a 24-hourly time step. For more specific information on the how the seasonal reforecast dataset is produced we refer to the documentation.\nCompanion datasets, also available through the Climate Data Store (CDS), include the seasonal forecasts, for which the dataset provided here can be useful for local skill assessment and post-processing. For users looking for shorter term forecasts there are also medium-range forecasts and reforecasts available, as well as historical simulations that can be used to derive the hydrological climatology. For users looking specifically for European hydrological data, we refer to the European Flood Awareness System (EFAS) forecasts and historical simulations. All these datasets are part of the operational flood forecasting within the Copernicus Emergency Management Service (CEMS).\n\nVariables in the dataset/application are:\nRiver discharge in the last 24 hours\n\nVariables in the dataset/application are:\nUpstream area",
+  "links": [
+    {
+      "rel": "hosts",
+      "href": "https://confluence.ecmwf.int/display/CEMS/Global+Flood+Awareness+System",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Information pages for GloFAS"
+    },
+    {
+      "rel": "hosts",
+      "href": "http://www.globalfloods.eu/",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "GloFAS web site"
+    },
+    {
+      "rel": "hosts",
+      "href": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.0aa9b9dd",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Climate Data Store catalogue"
+    },
+    {
+      "rel": "hosts",
+      "href": "https://confluence.ecmwf.int/display/CEMS/Auxiliary+Data",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Auxiliary data"
+    }
+  ],
+  "title": "Seasonal reforecasts of river discharge and related data from the Global Flood Awareness System",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1981-01-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Reforecast",
+    "Product type: Seasonal reforecasts",
+    "Spatial coverage: Global",
+    "Variable domain: Land (hydrology)",
+    "Temporal coverage: Past",
+    "Provider: Copernicus CEMS"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

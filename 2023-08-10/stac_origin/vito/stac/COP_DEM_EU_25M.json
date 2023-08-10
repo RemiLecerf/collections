@@ -1,0 +1,134 @@
+{
+    "stac_version": "0.9.0",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/datacube/v2.2.0/schema.json",
+        "https://stac-extensions.github.io/eo/v1.1.0/schema.json"
+    ],
+    "id": "COP_DEM_EU_25M",
+    "title": "Copernicus European Digital Elevation Model (EU-DEM), version 1.1 in 25m resolution",
+    "description": "The EU-DEM v1.1 is a resulting dataset of the EU-DEM v1.0 upgrade which enhances the correction of geo-positioning issues, reducing the number of artefacts, improving the vertical accuracy of EU-DEM using ICESat as reference and ensuring consistency with EU-Hydro public beta.EU-DEM v1.1 is available in Geotiff 32 bits format. It is a contiguous dataset divided into 1000 x 1000 km tiles, at 25m resolution with vertical accuracy: +/- 7 meters RMSE. The tiles have been grouped in big regions:EUDEM2_ASIA (Turkey); EUDEM2_ATLAN (Hondo and Fr_Islands);EUDEM2_BRITAIN (Thames, Shannon and Tweed); EUDEM2_EUROPE_1 (Duero, Ebro, Tajo, Guadalquivir and Jucar); EUDEM2_EUROPE_2 (Tirso, Mesima, Tevere and Po); EUDEM2_EUROPE_3 (Garonne, Rhone, Loire, Seine and western Rhine); EUDEM2_EUROPE_4 (Danube); EUDEM2_EUROPE_5 (Skjern, Nemunas, Vistula, Oder, Elbe and Eastern Rhine); EUDEM2_EUROPE_6 (Bulgaria and Pinios); EUDEM2_ICELAND (Iceland); EUDEM2_SCAND (Vorma, Gota, Angerman, Tana, Kemi and Neva); EUDEM2_SOUTH_AMERICA (Fr_Guiana). EU-DEM v1.1 upgrade was coordinated by the European Environment Agency (EEA) in the frame of the EU Copernicus programme.",
+    "keywords": [
+        "VITO",
+        "TERRASCOPE",
+        "COPERNICUS",
+        "ESA",
+        "Radar",
+        "Elevation",
+        "DEM",
+        "EUROPE"
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -54.925613,
+                    -21.567515,
+                    93.178583,
+                    71.89922
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2011-01-01T00:00:00Z",
+                    "2011-12-31T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary",
+    "links": [
+        {
+            "href": "https://services.terrascope.be/collectioncatalogue/srv/eng/catalog.search#/metadata/urn:eop:VITO:VITO:COP_DEM_EU_25M",
+            "rel": "alternate",
+            "title": "Collection Catalogue Entry"
+        },
+        {
+            "href": "https://land.copernicus.eu/user-corner/technical-library/eu-dem-v1-1-user-guide",
+            "rel": "alternate",
+            "title": "Online User Documentation"
+        },
+        {
+            "href": "https://land.copernicus.eu/imagery-in-situ/eu-dem/eu-dem-v1.1/view",
+            "rel": "alternate",
+            "title": "Online viewer and data access"
+        },
+        {
+            "href": "https://services.terrascope.be/catalogue/catalogue/description.geojson?collection=urn:eop:VITO:COP_DEM_EU_25M",
+            "rel": "alternate",
+            "title": "OpenSearch entry point"
+        }
+    ],
+    "cube:dimensions": {
+        "bands": {
+            "type": "bands",
+            "values": [
+                "DEM"
+            ]
+        },
+        "t": {
+            "extent": [
+                "2011-01-01T00:00:00Z",
+                "2011-12-31T00:00:00Z"
+            ],
+            "type": "temporal"
+        },
+        "x": {
+            "axis": "x",
+            "extent": [
+                -180.00446428571428,
+                179.9955357
+            ],
+            "reference_system": 4326,
+            "step": 8.3333333333e-05,
+            "type": "spatial"
+        },
+        "y": {
+            "axis": "y",
+            "extent": [
+                -59.9955357,
+                80.0044643
+            ],
+            "reference_system": 4326,
+            "step": 8.3333333333e-05,
+            "type": "spatial"
+        }
+    },
+    "summaries": {
+        "eo:bands": [
+            {
+                "bitPerValue": 32,
+                "name": "DEM",
+                "resolution": 25,
+                "scaleFactor": 1.0,
+                "title": "DEM"
+            }
+        ],
+        "instruments": [
+            "ASTER"
+        ],
+        "platform": [
+            "Terra"
+        ]
+    },
+    "assets": {
+        "metadata_iso_19139": {
+            "href": "https://services.terrascope.be/collectioncatalogue/srv/api/records/urn:eop:VITO:COP_DEM_EU_25M/formatters/xml?approved=true",
+            "roles": [
+                "metadata",
+                "iso-19139"
+            ],
+            "title": "ISO 19139 metadata",
+            "type": "application/vnd.iso.19139+xml"
+        },
+        "thumbnail": {
+            "href": "https://services.terrascope.be/collectioncatalogue/images/quicklooks/COP_DEM_EU_25M_QL.png",
+            "roles": [
+                "thumbnail"
+            ],
+            "title": "Thumbnail",
+            "type": "image/png"
+        }
+    }
+}

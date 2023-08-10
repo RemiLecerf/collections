@@ -1,0 +1,47 @@
+{
+  "type": "Collection",
+  "id": "EO:EUM:DAT:0405",
+  "stac_version": "1.0.0",
+  "description": "This is the second release of the reprocessed Meteosat First Generation (MFG) and Meteosat Second Generation (MSG)  Atmospheric Motion Vectors (AMV) Thematic Climate Data Record (TCDR). It contains AMV at all heights below the tropopause, derived from images in 2 channels (Water Vapour 6.2, Infrared 10.8) of the instrument MVIRI on board MFG and SEVIRI on board MSG. Vectors are retrieved by tracking the motion of clouds and other atmospheric constituents such as water vapour patterns. The height assignment of the AMVs is calculated using the Cross-Correlation Contribution (CCC) function to determine the height using the pixels that contribute the most to the vectors. The final vector is estimated averaging the speed and height over 4 consecutive images. A quality indicator is derived for each vector to assess the reliability of the retrieval. Products are stored in netCDF4 format and generated from Meteosat-2 to Meteosat-11 satellites, covering the period from September 1981 to August 2019. This is a Thematic Climate Data Record (TCDR).",
+  "links": [],
+  "title": "Atmospheric Motion Vectors Climate Data Record Release 2 - MFG and MSG - 0 degree",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -65.0,
+          -65.0,
+          65.0,
+          65.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1981-09-03T00:00:00Z",
+          "2019-08-31T23:59:59Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Wind",
+    "Climate",
+    "Atmosphere",
+    "Observation",
+    "Thematic Climate Data Record",
+    "Level 2 Data"
+  ],
+  "providers": [
+    {
+      "name": "European Organisation for the Exploitation of Meteorological Satellites (EUMETSAT)",
+      "description": "EUMETSAT Data store",
+      "roles": [
+        "host"
+      ],
+      "url": "https://data.eumetsat.int/"
+    }
+  ]
+}

@@ -1,0 +1,1024 @@
+{
+    "stac_version": "0.9.0",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/datacube/v2.2.0/schema.json",
+        "https://stac-extensions.github.io/eo/v1.1.0/schema.json"
+    ],
+    "id": "OPENEO_CROPTYPE_2021",
+    "title": "OPENEO_CROPTYPE_2021",
+    "description": "A croptype map for EU27 in 2021, produced on openEO platform. This collection is for demonstration purposes only. It is planned to be replaced by a crop maps from Copernicus High Resolution Land when these become available.",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180.0083333,
+                    -90.0083333,
+                    180.0083333,
+                    90.0083333
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2021-01-01T00:00:00Z",
+                    "2022-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "providers": [
+        {
+            "name": "VITO",
+            "processing:facility": "openEO Platform",
+            "processing:level": "L4",
+            "processing:software": {
+                "Geotrellis backend": "1.0"
+            },
+            "roles": [
+                "producer",
+                "licensor"
+            ]
+        }
+    ],
+    "license": "free",
+    "links": [
+        {
+            "href": "https://docs.openeo.cloud/usecases/large-scale-processing/",
+            "rel": "alternate",
+            "title": "Crop map openEO platform use case."
+        },
+        {
+            "href": "https://services.terrascope.be/wmts/v2",
+            "rel": "wmts",
+            "wmts:layer": "CroptypeMapCCN"
+        }
+    ],
+    "cube:dimensions": {
+        "bands": {
+            "type": "bands",
+            "values": [
+                "CROPTYPE"
+            ]
+        },
+        "t": {
+            "extent": [
+                "2021-01-01T00:00:00Z",
+                "2022-01-01T00:00:00Z"
+            ],
+            "type": "temporal"
+        },
+        "x": {
+            "axis": "x",
+            "extent": [
+                -180.0083333,
+                180.0083333
+            ],
+            "reference_system": 3035,
+            "step": 10.0,
+            "type": "spatial"
+        },
+        "y": {
+            "axis": "y",
+            "extent": [
+                -90.0083333,
+                90.0083333
+            ],
+            "reference_system": 3035,
+            "step": 10.0,
+            "type": "spatial"
+        }
+    },
+    "item_assets": {
+        "croptype": {
+            "eo:bands": [
+                {
+                    "description": "Crop type band",
+                    "name": "croptype"
+                },
+                {
+                    "description": "Probability band",
+                    "name": "probability"
+                }
+            ],
+            "raster:bands": [
+                {
+                    "classification:classes": [
+                        {
+                            "description": "permanent crops",
+                            "name": "permanent crops",
+                            "value": 1
+                        },
+                        {
+                            "description": "cereals",
+                            "name": "cereals",
+                            "value": 2
+                        },
+                        {
+                            "color_hint": "B8D0EC",
+                            "description": "maize",
+                            "name": "maize",
+                            "value": 3
+                        },
+                        {
+                            "color_hint": "9C9EA0",
+                            "description": "potatos",
+                            "name": "potatos",
+                            "value": 4
+                        },
+                        {
+                            "description": "sugar beet",
+                            "name": "sugar beet",
+                            "value": 5
+                        },
+                        {
+                            "description": "rapeseed",
+                            "name": "rapeseed",
+                            "value": 6
+                        },
+                        {
+                            "description": "other",
+                            "name": "other",
+                            "value": 7
+                        }
+                    ]
+                }
+            ],
+            "title": "Croptype tiff",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        }
+    },
+    "experimental": true,
+    "processing:expression": [
+        {
+            "expression": {
+                "aggregatetemporalperiod1": {
+                    "arguments": {
+                        "data": {
+                            "from_node": "filterbands1"
+                        },
+                        "period": "dekad",
+                        "reducer": {
+                            "process_graph": {
+                                "median1": {
+                                    "arguments": {
+                                        "data": {
+                                            "from_parameter": "data"
+                                        }
+                                    },
+                                    "process_id": "median",
+                                    "result": true
+                                }
+                            }
+                        }
+                    },
+                    "process_id": "aggregate_temporal_period"
+                },
+                "aggregatetemporalperiod2": {
+                    "arguments": {
+                        "data": {
+                            "from_node": "resamplespatial2"
+                        },
+                        "period": "dekad",
+                        "reducer": {
+                            "process_graph": {
+                                "mean1": {
+                                    "arguments": {
+                                        "data": {
+                                            "from_parameter": "data"
+                                        }
+                                    },
+                                    "process_id": "mean",
+                                    "result": true
+                                }
+                            }
+                        }
+                    },
+                    "process_id": "aggregate_temporal_period"
+                },
+                "apply1": {
+                    "arguments": {
+                        "data": {
+                            "from_node": "applydimension3"
+                        },
+                        "process": {
+                            "process_graph": {
+                                "linearscalerange1": {
+                                    "arguments": {
+                                        "inputMax": 65534,
+                                        "outputMax": 65534,
+                                        "x": {
+                                            "from_parameter": "x"
+                                        }
+                                    },
+                                    "process_id": "linear_scale_range",
+                                    "result": true
+                                }
+                            }
+                        }
+                    },
+                    "process_id": "apply"
+                },
+                "apply2": {
+                    "arguments": {
+                        "data": {
+                            "from_node": "mergecubes3"
+                        },
+                        "process": {
+                            "process_graph": {
+                                "linearscalerange2": {
+                                    "arguments": {
+                                        "inputMax": 65534,
+                                        "outputMax": 65534,
+                                        "x": {
+                                            "from_parameter": "x"
+                                        }
+                                    },
+                                    "process_id": "linear_scale_range",
+                                    "result": true
+                                }
+                            }
+                        }
+                    },
+                    "process_id": "apply"
+                },
+                "apply3": {
+                    "arguments": {
+                        "data": {
+                            "from_node": "applyneighborhood1"
+                        },
+                        "process": {
+                            "process_graph": {
+                                "linearscalerange3": {
+                                    "arguments": {
+                                        "inputMax": 10000,
+                                        "outputMax": 10000,
+                                        "x": {
+                                            "from_parameter": "x"
+                                        }
+                                    },
+                                    "process_id": "linear_scale_range",
+                                    "result": true
+                                }
+                            }
+                        }
+                    },
+                    "process_id": "apply"
+                },
+                "applydimension1": {
+                    "arguments": {
+                        "data": {
+                            "from_node": "aggregatetemporalperiod1"
+                        },
+                        "dimension": "t",
+                        "process": {
+                            "process_graph": {
+                                "arrayinterpolatelinear1": {
+                                    "arguments": {
+                                        "data": {
+                                            "from_parameter": "data"
+                                        }
+                                    },
+                                    "process_id": "array_interpolate_linear",
+                                    "result": true
+                                }
+                            }
+                        }
+                    },
+                    "process_id": "apply_dimension"
+                },
+                "applydimension2": {
+                    "arguments": {
+                        "data": {
+                            "from_node": "aggregatetemporalperiod2"
+                        },
+                        "dimension": "t",
+                        "process": {
+                            "process_graph": {
+                                "arrayinterpolatelinear2": {
+                                    "arguments": {
+                                        "data": {
+                                            "from_parameter": "data"
+                                        }
+                                    },
+                                    "process_id": "array_interpolate_linear",
+                                    "result": true
+                                }
+                            }
+                        }
+                    },
+                    "process_id": "apply_dimension"
+                },
+                "applydimension3": {
+                    "arguments": {
+                        "data": {
+                            "from_node": "applydimension2"
+                        },
+                        "dimension": "bands",
+                        "process": {
+                            "process_graph": {
+                                "add1": {
+                                    "arguments": {
+                                        "x": {
+                                            "from_node": "multiply1"
+                                        },
+                                        "y": 83.0
+                                    },
+                                    "process_id": "add"
+                                },
+                                "add2": {
+                                    "arguments": {
+                                        "x": {
+                                            "from_node": "multiply2"
+                                        },
+                                        "y": 83.0
+                                    },
+                                    "process_id": "add"
+                                },
+                                "arraycreate1": {
+                                    "arguments": {
+                                        "data": [
+                                            {
+                                                "from_node": "power1"
+                                            },
+                                            {
+                                                "from_node": "power2"
+                                            }
+                                        ]
+                                    },
+                                    "process_id": "array_create",
+                                    "result": true
+                                },
+                                "arrayelement1": {
+                                    "arguments": {
+                                        "data": {
+                                            "from_parameter": "data"
+                                        }
+                                    },
+                                    "process_id": "array_element"
+                                },
+                                "arrayelement2": {
+                                    "arguments": {
+                                        "data": {
+                                            "from_parameter": "data"
+                                        },
+                                        "index": 1
+                                    },
+                                    "process_id": "array_element"
+                                },
+                                "divide1": {
+                                    "arguments": {
+                                        "x": {
+                                            "from_node": "add1"
+                                        },
+                                        "y": 20.0
+                                    },
+                                    "process_id": "divide"
+                                },
+                                "divide2": {
+                                    "arguments": {
+                                        "x": {
+                                            "from_node": "add2"
+                                        },
+                                        "y": 20.0
+                                    },
+                                    "process_id": "divide"
+                                },
+                                "log1": {
+                                    "arguments": {
+                                        "base": 10,
+                                        "x": {
+                                            "from_node": "arrayelement1"
+                                        }
+                                    },
+                                    "process_id": "log"
+                                },
+                                "log2": {
+                                    "arguments": {
+                                        "base": 10,
+                                        "x": {
+                                            "from_node": "arrayelement2"
+                                        }
+                                    },
+                                    "process_id": "log"
+                                },
+                                "multiply1": {
+                                    "arguments": {
+                                        "x": 10.0,
+                                        "y": {
+                                            "from_node": "log1"
+                                        }
+                                    },
+                                    "process_id": "multiply"
+                                },
+                                "multiply2": {
+                                    "arguments": {
+                                        "x": 10.0,
+                                        "y": {
+                                            "from_node": "log2"
+                                        }
+                                    },
+                                    "process_id": "multiply"
+                                },
+                                "power1": {
+                                    "arguments": {
+                                        "base": 10,
+                                        "p": {
+                                            "from_node": "divide1"
+                                        }
+                                    },
+                                    "process_id": "power"
+                                },
+                                "power2": {
+                                    "arguments": {
+                                        "base": 10,
+                                        "p": {
+                                            "from_node": "divide2"
+                                        }
+                                    },
+                                    "process_id": "power"
+                                }
+                            }
+                        }
+                    },
+                    "process_id": "apply_dimension"
+                },
+                "applyneighborhood1": {
+                    "arguments": {
+                        "data": {
+                            "from_node": "apply2"
+                        },
+                        "process": {
+                            "process_graph": {
+                                "runudf1": {
+                                    "arguments": {
+                                        "context": {
+                                            "all_probabilities": true,
+                                            "apply_worldcovermask": true,
+                                            "end_month": 10,
+                                            "masking": "mask_scl_dilation",
+                                            "modeltag": "your_model",
+                                            "provider": "creodias",
+                                            "rescale_s1": true,
+                                            "s1_orbitdirection": "DESCENDING",
+                                            "start_month": 3,
+                                            "target_crs": 3035,
+                                            "worldcovermask": true,
+                                            "year": 2021
+                                        },
+                                        "data": {
+                                            "from_parameter": "data"
+                                        },
+                                        "runtime": "Python",
+                                        "udf": "a bit long to include, ask vito"
+                                    },
+                                    "process_id": "run_udf",
+                                    "result": true
+                                }
+                            }
+                        },
+                        "size": [
+                            {
+                                "dimension": "x",
+                                "unit": "px",
+                                "value": 256
+                            },
+                            {
+                                "dimension": "y",
+                                "unit": "px",
+                                "value": 256
+                            }
+                        ]
+                    },
+                    "process_id": "apply_neighborhood"
+                },
+                "dropdimension1": {
+                    "arguments": {
+                        "data": {
+                            "from_node": "apply3"
+                        },
+                        "name": "t"
+                    },
+                    "process_id": "drop_dimension"
+                },
+                "filterbands1": {
+                    "arguments": {
+                        "bands": [
+                            "B02",
+                            "B03",
+                            "B04",
+                            "B05",
+                            "B06",
+                            "B07",
+                            "B08",
+                            "B11",
+                            "B12"
+                        ],
+                        "data": {
+                            "from_node": "maskscldilation1"
+                        }
+                    },
+                    "process_id": "filter_bands"
+                },
+                "filtertemporal1": {
+                    "arguments": {
+                        "data": {
+                            "from_node": "mergecubes1"
+                        },
+                        "extent": [
+                            "2021-03-01",
+                            "2021-10-31"
+                        ]
+                    },
+                    "process_id": "filter_temporal"
+                },
+                "loadcollection1": {
+                    "arguments": {
+                        "bands": [
+                            "B02",
+                            "B03",
+                            "B04",
+                            "B05",
+                            "B06",
+                            "B07",
+                            "B08",
+                            "B11",
+                            "B12",
+                            "SCL"
+                        ],
+                        "featureflags": {
+                            "indexreduction": 2,
+                            "temporalresolution": "ByDay",
+                            "tilesize": 1024
+                        },
+                        "id": "SENTINEL2_L2A",
+                        "properties": {
+                            "eo:cloud_cover": {
+                                "process_graph": {
+                                    "lte1": {
+                                        "arguments": {
+                                            "x": {
+                                                "from_parameter": "value"
+                                            },
+                                            "y": 95
+                                        },
+                                        "process_id": "lte",
+                                        "result": true
+                                    }
+                                }
+                            }
+                        },
+                        "spatial_extent": {
+                            "crs": "EPSG:3035",
+                            "east": 4840000,
+                            "north": 3020000,
+                            "south": 3000000,
+                            "west": 4820000
+                        },
+                        "temporal_extent": [
+                            "2021-03-01",
+                            "2021-10-31"
+                        ]
+                    },
+                    "process_id": "load_collection"
+                },
+                "loadcollection2": {
+                    "arguments": {
+                        "bands": [
+                            "VH",
+                            "VV"
+                        ],
+                        "id": "SENTINEL1_GRD",
+                        "properties": {
+                            "sat:orbit_state": {
+                                "process_graph": {
+                                    "eq1": {
+                                        "arguments": {
+                                            "x": {
+                                                "from_parameter": "value"
+                                            },
+                                            "y": "DESCENDING"
+                                        },
+                                        "process_id": "eq",
+                                        "result": true
+                                    }
+                                }
+                            }
+                        },
+                        "spatial_extent": {
+                            "crs": "EPSG:3035",
+                            "east": 4840000,
+                            "north": 3020000,
+                            "south": 3000000,
+                            "west": 4820000
+                        },
+                        "temporal_extent": [
+                            "2021-03-01",
+                            "2021-10-31"
+                        ]
+                    },
+                    "process_id": "load_collection"
+                },
+                "loadcollection3": {
+                    "arguments": {
+                        "id": "COPERNICUS_30",
+                        "spatial_extent": {
+                            "crs": "EPSG:3035",
+                            "east": 4840000,
+                            "north": 3020000,
+                            "south": 3000000,
+                            "west": 4820000
+                        }
+                    },
+                    "process_id": "load_collection"
+                },
+                "loadcollection4": {
+                    "arguments": {
+                        "bands": [
+                            "MAP"
+                        ],
+                        "id": "ESA_WORLDCOVER_10M_2021_V2",
+                        "spatial_extent": {
+                            "crs": "EPSG:3035",
+                            "east": 4840000,
+                            "north": 3020000,
+                            "south": 3000000,
+                            "west": 4820000
+                        },
+                        "temporal_extent": [
+                            "2021-12-01",
+                            "2022-01-30"
+                        ]
+                    },
+                    "process_id": "load_collection"
+                },
+                "mask1": {
+                    "arguments": {
+                        "data": {
+                            "from_node": "mergecubes2"
+                        },
+                        "mask": {
+                            "from_node": "reducedimension3"
+                        }
+                    },
+                    "process_id": "mask"
+                },
+                "maskscldilation1": {
+                    "arguments": {
+                        "data": {
+                            "from_node": "resamplespatial1"
+                        },
+                        "erosion_kernel_size": 3,
+                        "kernel1_size": 17,
+                        "kernel2_size": 77,
+                        "mask1_values": [
+                            2,
+                            4,
+                            5,
+                            6,
+                            7
+                        ],
+                        "mask2_values": [
+                            3,
+                            8,
+                            9,
+                            10,
+                            11
+                        ],
+                        "scl_band_name": "SCL"
+                    },
+                    "process_id": "mask_scl_dilation"
+                },
+                "mergecubes1": {
+                    "arguments": {
+                        "cube1": {
+                            "from_node": "resamplecubespatial1"
+                        },
+                        "cube2": {
+                            "from_node": "apply1"
+                        }
+                    },
+                    "process_id": "merge_cubes"
+                },
+                "mergecubes2": {
+                    "arguments": {
+                        "cube1": {
+                            "from_node": "filtertemporal1"
+                        },
+                        "cube2": {
+                            "from_node": "reducedimension1"
+                        }
+                    },
+                    "process_id": "merge_cubes"
+                },
+                "mergecubes3": {
+                    "arguments": {
+                        "cube1": {
+                            "from_node": "mask1"
+                        },
+                        "cube2": {
+                            "from_node": "reducedimension2"
+                        }
+                    },
+                    "process_id": "merge_cubes"
+                },
+                "reducedimension1": {
+                    "arguments": {
+                        "data": {
+                            "from_node": "resamplespatial3"
+                        },
+                        "dimension": "t",
+                        "reducer": {
+                            "process_graph": {
+                                "max1": {
+                                    "arguments": {
+                                        "data": {
+                                            "from_parameter": "data"
+                                        }
+                                    },
+                                    "process_id": "max",
+                                    "result": true
+                                }
+                            }
+                        }
+                    },
+                    "process_id": "reduce_dimension"
+                },
+                "reducedimension2": {
+                    "arguments": {
+                        "data": {
+                            "from_node": "resamplecubespatial2"
+                        },
+                        "dimension": "t",
+                        "reducer": {
+                            "process_graph": {
+                                "max2": {
+                                    "arguments": {
+                                        "data": {
+                                            "from_parameter": "data"
+                                        }
+                                    },
+                                    "process_id": "max",
+                                    "result": true
+                                }
+                            }
+                        }
+                    },
+                    "process_id": "reduce_dimension"
+                },
+                "reducedimension3": {
+                    "arguments": {
+                        "data": {
+                            "from_node": "reducedimension2"
+                        },
+                        "dimension": "bands",
+                        "reducer": {
+                            "process_graph": {
+                                "arrayelement3": {
+                                    "arguments": {
+                                        "data": {
+                                            "from_parameter": "data"
+                                        }
+                                    },
+                                    "process_id": "array_element"
+                                },
+                                "neq1": {
+                                    "arguments": {
+                                        "x": {
+                                            "from_node": "arrayelement3"
+                                        },
+                                        "y": 40
+                                    },
+                                    "process_id": "neq",
+                                    "result": true
+                                }
+                            }
+                        }
+                    },
+                    "process_id": "reduce_dimension"
+                },
+                "renamelabels1": {
+                    "arguments": {
+                        "data": {
+                            "from_node": "dropdimension1"
+                        },
+                        "dimension": "bands",
+                        "target": [
+                            "croptype",
+                            "probability"
+                        ]
+                    },
+                    "process_id": "rename_labels"
+                },
+                "resamplecubespatial1": {
+                    "arguments": {
+                        "data": {
+                            "from_node": "applydimension1"
+                        },
+                        "method": "near",
+                        "target": {
+                            "from_node": "apply1"
+                        }
+                    },
+                    "process_id": "resample_cube_spatial"
+                },
+                "resamplecubespatial2": {
+                    "arguments": {
+                        "data": {
+                            "from_node": "loadcollection4"
+                        },
+                        "method": "near",
+                        "target": {
+                            "from_node": "mergecubes2"
+                        }
+                    },
+                    "process_id": "resample_cube_spatial"
+                },
+                "resamplespatial1": {
+                    "arguments": {
+                        "align": "upper-left",
+                        "data": {
+                            "from_node": "loadcollection1"
+                        },
+                        "method": "near",
+                        "projection": 3035,
+                        "resolution": 10.0
+                    },
+                    "process_id": "resample_spatial"
+                },
+                "resamplespatial2": {
+                    "arguments": {
+                        "align": "upper-left",
+                        "data": {
+                            "from_node": "sarbackscatter1"
+                        },
+                        "method": "near",
+                        "projection": 3035,
+                        "resolution": 10.0
+                    },
+                    "process_id": "resample_spatial"
+                },
+                "resamplespatial3": {
+                    "arguments": {
+                        "align": "upper-left",
+                        "data": {
+                            "from_node": "loadcollection3"
+                        },
+                        "method": "cubic",
+                        "projection": 3035,
+                        "resolution": 10.0
+                    },
+                    "process_id": "resample_spatial"
+                },
+                "sarbackscatter1": {
+                    "arguments": {
+                        "coefficient": "sigma0-ellipsoid",
+                        "data": {
+                            "from_node": "loadcollection2"
+                        },
+                        "elevation_model": "COPERNICUS_30",
+                        "noise_removal": true,
+                        "options": {
+                            "elev_geoid": "/opt/openeo-vito-aux-data/egm96.tif",
+                            "implementation_version": "2",
+                            "otb_memory": 768,
+                            "tile_size": 256
+                        }
+                    },
+                    "process_id": "sar_backscatter"
+                },
+                "saveresult1": {
+                    "arguments": {
+                        "data": {
+                            "from_node": "renamelabels1"
+                        },
+                        "format": "GTiff",
+                        "options": {
+                            "colormap": {
+                                "0": [
+                                    0.6823529411764706,
+                                    0.7803921568627451,
+                                    0.9098039215686274,
+                                    1.0
+                                ],
+                                "1": [
+                                    0.8392156862745098,
+                                    0.15294117647058825,
+                                    0.1568627450980392,
+                                    1.0
+                                ],
+                                "10": [
+                                    0.5803921568627451,
+                                    0.403921568627451,
+                                    0.7411764705882353,
+                                    1.0
+                                ],
+                                "11": [
+                                    0.8901960784313725,
+                                    0.4666666666666667,
+                                    0.7607843137254902,
+                                    1.0
+                                ],
+                                "12": [
+                                    1.0,
+                                    0.7333333333333333,
+                                    0.47058823529411764,
+                                    1.0
+                                ],
+                                "13": [
+                                    0.17254901960784313,
+                                    0.6274509803921569,
+                                    0.17254901960784313,
+                                    1.0
+                                ],
+                                "14": [
+                                    0.7686274509803922,
+                                    0.611764705882353,
+                                    0.5803921568627451,
+                                    1.0
+                                ],
+                                "15": [
+                                    0.7725490196078432,
+                                    0.6901960784313725,
+                                    0.8352941176470589,
+                                    1.0
+                                ],
+                                "16": [
+                                    0.5490196078431373,
+                                    0.33725490196078434,
+                                    0.29411764705882354,
+                                    1.0
+                                ],
+                                "17": [
+                                    1.0,
+                                    0.596078431372549,
+                                    0.5882352941176471,
+                                    1.0
+                                ],
+                                "18": [
+                                    0.12156862745098039,
+                                    0.4666666666666667,
+                                    0.7058823529411765,
+                                    1.0
+                                ],
+                                "2": [
+                                    0.9686274509803922,
+                                    0.7137254901960784,
+                                    0.8235294117647058,
+                                    1.0
+                                ],
+                                "3": [
+                                    0.8588235294117647,
+                                    0.8588235294117647,
+                                    0.5529411764705883,
+                                    1.0
+                                ],
+                                "4": [
+                                    0.7803921568627451,
+                                    0.7803921568627451,
+                                    0.7803921568627451,
+                                    1.0
+                                ],
+                                "5": [
+                                    0.4980392156862745,
+                                    0.4980392156862745,
+                                    0.4980392156862745,
+                                    1.0
+                                ],
+                                "6": [
+                                    1.0,
+                                    0.4980392156862745,
+                                    0.054901960784313725,
+                                    1.0
+                                ],
+                                "7": [
+                                    0.09019607843137255,
+                                    0.7450980392156863,
+                                    0.8117647058823529,
+                                    1.0
+                                ],
+                                "8": [
+                                    0.596078431372549,
+                                    0.8745098039215686,
+                                    0.5411764705882353,
+                                    1.0
+                                ],
+                                "9": [
+                                    0.7372549019607844,
+                                    0.7411764705882353,
+                                    0.13333333333333333,
+                                    1.0
+                                ]
+                            },
+                            "filename_prefix": "croptype_openEO_platform_E482N300",
+                            "overview_method": "mode"
+                        }
+                    },
+                    "process_id": "save_result",
+                    "result": true
+                }
+            },
+            "format": "openeo"
+        }
+    ]
+}

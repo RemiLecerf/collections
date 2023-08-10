@@ -1,0 +1,77 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dct="http://purl.org/dc/terms/" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/metadata/eu.copernicus.climate.insitu-observations-woudc-ozone-total-column-and-profiles">
+        <foaf:primaryTopic rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/resource/10.24381/cds.99842490"/>
+        <dct:issued>2018-03-28</dct:issued>
+        <dct:modified>2018-03-28</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/srv/eng/xml.metadata.get?uuid=eu.copernicus.climate.insitu-observations-woudc-ozone-total-column-and-profiles">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://cds.climate.copernicus.eu:443//geonetwork?uuid=eu.copernicus.climate.insitu-observations-woudc-ozone-total-column-and-profiles">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/resource/10.24381/cds.99842490">
+        <dct:identifier>10.24381/cds.99842490</dct:identifier>
+        <dct:title>In situ total column ozone and ozone soundings from 1924 to present from the World Ozone and Ultraviolet Radiation Data Centre</dct:title>
+        <dct:abstract>This dataset provides access to two types of ozone observations: total column ozone estimates and vertical profiles of ozone concentration.
+The total ozone estimates are based on solar UV radiation measurements made by ground-based spectrophotometers (Dobson or Brewer type spectrophotometers).
+The vertical profiles of ozone concentration are estimated primarily using ozonesonde observations.
+Data are available for 159 Dobson stations, 109 Brewer stations and 135 ozonesondes stations.
+The ozone data are included in the quadrennial Scientific Assessments of Ozone Depletion as part of the “Vienna convention for the protection of the ozone layer” and are used extensively for a range of studies and applications.
+The data provided here are collated by the World Ozone and Ultraviolet Radiation Data Centre (WOUDC) which is part of the Global Atmosphere Watch programme of the World Meteorological Organization. WOUDC was established in 1960 with the objective to collect, quality-control, archive and provide long-term access to high quality observation data and metadata from WMO Global Atmosphere Watch (GAW) network of stations measuring ozone column and ozone vertical profiles. Furthermore, the data record provides sustainable high-quality data under all application areas via coordinated activities between the WOUDC and regional and global calibration and data quality centers.
+The total column ozone and ozonesonde can be downloaded as comma-separated values (CSV) files organised in two different ways:
+
+CSV one row per level: for each observed height all variables are provided as individual columns in one row. 
+CSV one row per observation: (no aggregation) each row provides information about one variable at one level only. All main variable are grouped together in the following columns: one for the observed variable (indicates variable in question), one for observation value.
+
+This dataset is collated by WOUDC and guided by the WMO Ozone Scientific Advisory Group in Ozone and Solar UV Radiation. More details about the dataset are given in the Documentation section, and general information and background can be obtained from the WOUDC website.
+
+Variables in the dataset/application are:
+Air temperature, Column sulphur dioxide, Geopotential height, Ozone partial pressure, Relative humidity, Total ozone column, Total ozone column standard deviation, Wind from direction, Wind speed
+
+Variables in the dataset/application are:
+Air pressure, Daily timestamp, Harmonic mean relative slant path, Height of station above sea level, Latitude, Level code, Location latitude, Location longitude, Longitude, Monthly npts, Number of observations, Obs code, Observation height above station surface, Observation value, Observed variable, Other ids, Ozone reference time mean, Ozone reference total ozone, Pump motor current, Pump motor voltage, Reference model, Report timestamp, Sample temperature, Sensor id, Sensor model, Sonde current, Standard deviation, Station name, Time begin, Time end, Time mean, Time since launch, Type, Wl code</dct:abstract>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/GEMET%20-%20INSPIRE%20themes%2C%20version%201.0/Atmospheric conditions"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Product type: In-situ observations"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Variable domain: Atmosphere (composition)"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Variable domain: Atmosphere (surface)"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Variable domain: Atmosphere (upper air)"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Spatial coverage: Global"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Temporal coverage: Past"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/iso/topicCategory/climatologyMeteorologyAtmosphere"/>
+        <foaf:thumbnail rdf:resource="https://datastore.copernicus-climate.eu/c3s/published-forms-v2/c3sprod/insitu-observations-woudc-ozone-total-column-and-profiles/overview.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((0 -89, 0 89, 360 89, 360 -89, 0 -89))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:temporal>1924-01-01
+          /</dct:temporal>
+        <dct:publisher rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/organization/ECMWF"/>
+        <dct:accrualPeriodicity>asNeeded</dct:accrualPeriodicity>
+        <dct:language>eng</dct:language>
+        <dct:license>licence</dct:license>
+        <dct:license>https://cds.climate.copernicus.eu/api/v2/terms/static/20180314_Copernicus_License_V1.1.pdf</dct:license>
+        <dcat:distribution rdf:resource="https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.99842490"/>
+        <dcat:distribution rdf:resource="#"/>
+        <dcat:distribution rdf:resource="#"/>
+        <dcat:distribution rdf:resource="#"/>
+        <dcat:dataQuality>EC Copernicus program</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+    

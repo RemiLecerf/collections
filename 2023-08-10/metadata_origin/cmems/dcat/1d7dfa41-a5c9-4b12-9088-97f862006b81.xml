@@ -1,0 +1,102 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:dct="http://purl.org/dc/terms/" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/1d7dfa41-a5c9-4b12-9088-97f862006b81">
+        <foaf:primaryTopic rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/resource/a78600a4-a280-47b5-8ddd-0dc8b5e9c9d9"/>
+        <dct:issued>2023-03-29</dct:issued>
+        <dct:modified>2023-03-29</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/srv/eng/xml.metadata.get?uuid=1d7dfa41-a5c9-4b12-9088-97f862006b81">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork?uuid=1d7dfa41-a5c9-4b12-9088-97f862006b81">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/resource/a78600a4-a280-47b5-8ddd-0dc8b5e9c9d9">
+        <dct:identifier>a78600a4-a280-47b5-8ddd-0dc8b5e9c9d9</dct:identifier>
+        <dct:title>Iberia Biscay Ireland Strong Wave Incidence index from Reanalysis</dct:title>
+        <dct:abstract>'DEFINITION'''
+
+The Strong Wave Incidence index is proposed to quantify the variability of strong wave conditions in the Iberia-Biscay-Ireland regional seas. The anomaly of exceeding a threshold of Significant Wave Height is used to characterize the wave behavior. A sensitivity test of the threshold has been performed evaluating the differences using several ones (percentiles 75, 80, 85, 90, and 95). From this indicator, it has been chosen the 90th percentile as the most representative, coinciding with the state-of-the-art.
+Two CMEMS products are used to compute the Strong Wave Incidence index:
+•	IBI-WAV-MYP: IBI_REANALYSIS_WAV_005_006
+•	IBI-WAV-NRT: IBI_ANALYSIS_FORECAST_WAV_005_005
+The Strong Wave Incidence index (SWI) is defined as the difference between the climatic frequency of exceedance (Fclim) and the observational frequency of exceedance (Fobs) of the threshold defined by the 90th percentile (ThP90) of Significant Wave Height (SWH) computed on a monthly basis from hourly data of IBI-WAV-MYP product:
+SWI = Fobs(SWH &gt; ThP90) – Fclim(SWH &gt; ThP90)
+Since the Strong Wave Incidence index is defined as a difference of a climatic mean and an observed value, it can be considered an anomaly. Such index represents the percentage that the stormy conditions have occurred above/below the climatic average. Thus, positive/negative values indicate the percentage of hourly data that exceed the threshold above/below the climatic average, respectively.
+
+'''CONTEXT'''
+
+Ocean waves have a high relevance over the coastal ecosystems and human activities. Extreme wave events can entail severe impacts over human infrastructures and coastal dynamics. However, the incidence of severe (90th percentile) wave events also have valuable relevance affecting the development of human activities and coastal environments. The Strong Wave Incidence index based on the CMEMS regional analysis and reanalysis product provides information on the frequency of severe wave events.
+The IBI-MFC covers the Europe’s Atlantic coast in a region bounded by the 26ºN and 56ºN parallels, and the 19ºW and 5ºE meridians. The western European coast is located at the end of the long fetch of the subpolar North Atlantic (Mørk et al., 2010), one of the world’s greatest wave generating regions (Folley, 2017). Several studies have analyzed changes of the ocean wave variability in the North Atlantic Ocean (Bacon and Carter, 1991; Kursnir et al., 1997; WASA Group, 1998; Bauer, 2001; Wang and Swail, 2004; Dupuis et al., 2006; Wolf and Woolf, 2006; Dodet et al., 2010; Young et al., 2011; Young and Ribal, 2019). The observed variability is composed of fluctuations ranging from the weather scale to the seasonal scale, together with long-term fluctuations on interannual to decadal scales associated with large-scale climate oscillations. Since the ocean surface state is mainly driven by wind stresses, part of this variability in Iberia-Biscay-Ireland region is connected to the North Atlantic Oscillation (NAO) index (Bacon and Carter, 1991; Hurrell, 1995;  Bouws et al., 1996, Bauer, 2001; Woolf et al., 2002; Tsimplis et al., 2005; Gleeson et al., 2017). However, later studies have quantified the relationships between the wave climate and other atmospheric climate modes such as the East Atlantic pattern, the Arctic Oscillation pattern, the East Atlantic Western Russian pattern and the Scandinavian pattern (Izaguirre et al., 2011, Matínez-Asensio et al., 2016).
+The Strong Wave Incidence index provides information on incidence of stormy events in four monitoring regions in the IBI domain. The selected monitoring regions are aimed to provide a summarized view of the diverse climatic conditions in the IBI regional domain: Wav1 region monitors the influence of stormy conditions in the West coast of Iberian Peninsula, Wav2 region is devoted to monitor the variability of stormy conditions in the Bay of Biscay, Wav3 region is focused in the northern half of IBI domain, this region is strongly affected by the storms transported by the subpolar front, and Wav4 is focused in the influence of marine storms in the North-East African Coast, the Gulf of Cadiz and Canary Islands.
+More details and a full scientific evaluation can be found in the CMEMS Ocean State report (Pascual et al., 2020).
+
+'''CMEMS KEY FINDINGS'''
+
+The analysis of the index in the last decades do not show significant trends of the strong wave conditions over the period 1992-2020 with 99% confidence. The maximum wave event reported in region WAV1 (B) occurred in February 2014, producing an increment of 34% of strong wave conditions in the region. Two maximum wave events are found in WAV2 (C) with an increment of 28% of high wave conditions in November 2009 and February 2014. As in regions WAV1 and WAV2, in the region WAV3 (D), a strong wave event took place in February 2014, this event is the one of the maximum events reported in the region with an increment of strong wave conditions of 20%, two months before (December 2013) there was a storm of similar characteristics affecting this region. The region WAV4 (E) present its maximum wave event in January 1996, such event produced a 33% of increment of strong wave conditions in the region. Despite of each monitoring region is affected by independent wave events; the analysis shows several past higher-than-average wave events that were propagated though several monitoring regions: November-December 2010 (WAV3 and WAV2); February 2014 (WAV1, WAV2, and WAV3); and February-March 2018 (WAV1 and WAV4). The analysis of the NRT period (2021 onwards) depicts a significant stormy event affecting the WAV2 region in April 2020 (increment of 20% of high wave conditions). This event is also noticeable in WAV3 region but with lower intensity (increment of 12% of high wave conditions).
+
+'''DOI (product):''' 
+https://doi.org/10.48670/moi-00251</dct:abstract>
+        <dcat:theme rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/thesaurus/iso/topicCategory/oceans"/>
+        <foaf:thumbnail rdf:resource="https://catalogue.marine.copernicus.eu/documents/IMG/IBI_OMI_SEASTATE_swi.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((-19.00 26.00, -19.00 56.00, 5.00 56.00, 5.00 26.00, -19.00 26.00))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:issued>2020-06-18</dct:issued>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/IBI-PUERTOS-MADRID-ES"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/IBI-PUERTOS-MADRID-ES"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/IBI-PUERTOS-MADRID-ES"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/IBI-PUERTOS-MADRID-ES"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/MOI-OMI-SERVICE"/>
+        <dct:accrualPeriodicity>annually</dct:accrualPeriodicity>
+        <dct:license>otherRestrictions</dct:license>
+        <dct:license>license</dct:license>
+        <dct:license>No limitations on public access</dct:license>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/IBI_OMI_SEASTATE_swi/ibi_omi_seastate_swi_anomaly"/>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/IBI_OMI_SEASTATE_swi/ibi_omi_seastate_swi_mean_percentile"/>
+        <dcat:distribution rdf:resource="https://mdl1.marine.copernicus.eu/derived/IBI_OMI_SEASTATE_swi/ibi_omi_seastate_swi_anomaly_202211/IBI_OMI_SEASTATE_swi_anomaly.nc"/>
+        <dcat:distribution rdf:resource="https://mdl1.marine.copernicus.eu/derived/IBI_OMI_SEASTATE_swi/ibi_omi_seastate_swi_mean_percentile_202211/IBI_OMI_SEASTATE_swi_mean_percentile.nc"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/120b0ec7-e6bc-46dd-8f15-07b5eac7afc7"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/895d7e1c-909c-4786-963d-4b7e4f81d9a8"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/4ed43efe-8cde-46dc-8f62-315f688f3169"/>
+        <dcat:dataQuality>The myOcean products depends on other products for production or validation. The detailed list of dependencies is given in ISO19115's aggregationInfo (ISO19139 Xpath = "gmd:MD_Metadata/gmd:identificationInfo/gmd:aggregationInfo[./gmd:MD_AggregateInformation/gmd:initiativeType/gmd:DS_InitiativeTypeCode/@codeListValue='upstream-validation' or 'upstream-production']")</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+    

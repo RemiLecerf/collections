@@ -1,0 +1,67 @@
+{
+  "type": "Collection",
+  "id": "EO:ECMWF:DAT:SIS_ECV_CMIP5_BIAS_CORRECTED",
+  "stac_version": "1.0.0",
+  "description": "This dataset contains 4 Essential Climate Variables (ECV) for the 18 bias adjusted Global Climate Models (GCM) from CMIP5: daily precipitation rate, and daily mean, maximum and minimum temperatures. \nThe data are bias adjusted using the Distribution Based Scaling (DBS) method  versus the global reference dataset HydroGFD2.0, both bias adjustment method and global reference dataset developed by the Swedish Meteorological and Hydrological Institute (SMHI).\nThe DBS method is a parametric quantile-mapping variant. \nThis type of methods fit a statistical distribution to the cumulative distribution function and use those fitted distributions to conduct the quantile-mapping. \nHere, we used a double-gamma distribution (i.e. separate gamma distributions for the bulk and the high tail) for precipitation and the normal distribution for all temperature variables. \nTemperature corrections were done conditional on the wet/dry state of the corresponding precipitation time series.\nThe seasonal variations in the biases were represented by monthly parameter windows for precipitation and a smoothed seasonal cycle for the temperature distribution parameters. \nThe smoothing was done using twelve harmonic components.\nThere is some post-processing in place for the data set to be suitable for hydrological impact modeling. \nBias-adjustment of daily mean, maximum and minimum temperature using quantile mapping can in some cases lead to inconsistencies. \nFor instance, maximum (minimum) temperature could be lower (higher) than mean temperature. \nIf such inconsistencies occur, daily minimum and maximum temperatures are adjusted in such a way that the anomalies with respect to the daily mean temperature are in line with the climatological anomalies for the particular day in the seasonal cycle. \nThis means, for example, that an inconsistency occurring on June 25 will be adjusted using the climatological anomalies for June 25, estimated by a moving window. \nAlso, the adjustment is done conditional on the wet/dry state of the corresponding precipitation series. \nThe climatology of the anomalies was derived from the HydroGFD2.0 dataset.\nIn addition, DBS’s limitations lead to some data not being bias-adjusted or values beyond physically plausible ranges.\nIn those cases, DBS gives missing values as output. \nGrid cells where the DBS method resulted in such missing values have been interpolated in time or space. \nIf interpolation was not possible, full time series from nearest grid cell was copied to relating grid point.\n\nVariables in the dataset/application are:\nMaximum 2m temperature, Mean 2m temperature, Minimum 2m temperature, Precipitation flux",
+  "links": [
+    {
+      "rel": "hosts",
+      "href": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.201321f6",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Climate Data Store catalogue"
+    },
+    {
+      "rel": "hosts",
+      "href": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/eu.copernicus.climate.sis-ecv-cmip5-bias-corrected",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Climate Data Store catalogue"
+    },
+    {
+      "rel": "hosts",
+      "href": "https://doi.org/10.5194/hess-22-989-2018",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Peer reviewed article on the dataset used as reference."
+    }
+  ],
+  "title": "Essential climate variables for water sector applications derived from climate projections",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2000-10-12T00:00:00Z",
+          "2018-10-18T23:59:59Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Atmospheric conditions",
+    "Product type: Climate projections",
+    "Spatial coverage: Global",
+    "Variable domain: Atmosphere (surface)",
+    "Temporal coverage: Past",
+    "Temporal coverage: Future",
+    "Provider: Copernicus C3S"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "type": "Collection",
+  "id": "ARCTIC_ANALYSIS_FORECAST_PHYS_002_001_a",
+  "stac_version": "1.0.0",
+  "description": "'''Short description:'''\n\nThe operational TOPAZ4 Arctic Ocean system uses the HYCOM model and a 100-member EnKF assimilation scheme. It is run daily to provide 10 days of forecast (average of 10 members) of the 3D physical ocean, including sea ice; data assimilation is performed weekly to provide 7 days of analysis (ensemble average).\n\nOutput products are interpolated on a grid of 12.5 km resolution at the North Pole (equivalent to 1/8 deg in mid-latitudes) on a polar stereographic projection. The geographical projection follows these proj4 library parameters: \n\nproj4 = \"+units=m +proj=stere +a=6378273.0 +b=6378273.0 +lon_0=-45.0 +lat_0=90.0 +lat_ts=90.0 \"\n\n'''DOI (product) :'''\nhttps://doi.org/10.48670/moi-00001",
+  "links": [],
+  "title": "Arctic Ocean Physics Analysis and Forecast",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          62.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2019-05-04T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "target-application#seaiceforecastingapplication",
+    "Oceanographic geographical features",
+    "numerical-model",
+    "sea_ice_x_velocity",
+    "ocean_barotropic_streamfunction",
+    "age_of_sea_ice",
+    "sea_water_x_velocity",
+    "ocean_mixed_layer_thickness",
+    "sea_water_y_velocity",
+    "sea_ice_albedo",
+    "sea_ice_area_fraction",
+    "sea_water_potential_temperature_at_sea_floor",
+    "sea_floor_depth_below_sea_level",
+    "surface_snow_thickness",
+    "sea_ice_thickness",
+    "sea_water_salinity",
+    "sea_water_potential_temperature",
+    "sea_ice_y_velocity",
+    "sea_surface_elevation",
+    "forecast",
+    "near-real-time",
+    "coastal-marine-environment",
+    "marine-safety",
+    "marine-resources",
+    "weather-climate-and-seasonal-forecasting",
+    "arctic-ocean",
+    "Level 4",
+    "In-Situ TS Profiles",
+    "SST",
+    "Sea Ice Concentration and/or Thickness",
+    "Sea Level"
+  ],
+  "providers": [
+    {
+      "name": "Copernicus Marine Service",
+      "description": "Copernicus Marine Service - Mercator Ocean International",
+      "roles": [
+        "host"
+      ],
+      "url": "https://marine.copernicus.eu/"
+    }
+  ]
+}

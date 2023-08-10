@@ -1,0 +1,81 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dct="http://purl.org/dc/terms/" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/metadata/eu.copernicus.climate.sis-fisheries-ocean-fronts">
+        <foaf:primaryTopic rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/resource/10.24381/cds.cc930b6e"/>
+        <dct:issued>2018-03-28</dct:issued>
+        <dct:modified>2018-03-28</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/srv/eng/xml.metadata.get?uuid=eu.copernicus.climate.sis-fisheries-ocean-fronts">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://cds.climate.copernicus.eu:443//geonetwork?uuid=eu.copernicus.climate.sis-fisheries-ocean-fronts">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/resource/10.24381/cds.cc930b6e">
+        <dct:identifier>10.24381/cds.cc930b6e</dct:identifier>
+        <dct:title>Ocean fronts data for the Northwest European Shelf and Mediterranean Sea from 1991 up to 2100</dct:title>
+        <dct:abstract>This dataset provides monthly projections of changes in the spatial and temporal distribution of ocean fronts relative to a recent climatology. Ocean fronts are the interfaces between water masses of differing temperature, density or biological properties, which may be observed at the surface as a sharp change in temperature or colour. Fronts are recognised to enhance productivity and promote the aggregation of commercial pelagic fish species. Many front locations depend upon bathymetry, though future currents and weather have the potential to affect the strength and persistence of these features. Hence this dataset will contribute to studies of the potential for climate change to modify productive fishing zones and related marine conservation measures.
+Fronts are automatically detected on daily fields of sea-surface temperature (SST) and chlorophyll-a from ocean circulation models coupled to marine biogeochemical models and satellite observations within the ESA Climate Change Initiative (CCI) SST and Ocean Colour datasets. Daily fronts are combined into monthly metrics of front strength, persistence and distance. The variables are provided as monthly maps indicating changes in front strength, persistence and location, relative to a baseline of climatological monthly maps from observations or historical model runs.
+The primary data source for this dataset are:
+
+
+NEMO-ERSEM: NEMO ocean model run on the Atlantic Margin Model (7 km) domain for the NW European Shelf coupled with the marine biogeochemical ERSEM model.
+
+
+POLCOMS-ERSEM: POLCOMS ocean model output for the NW European Shelf and Mediterranean Sea coupled with the marine biogeochemical ERSEM model.
+
+
+ESA-CCI: ESA Climate Change Initiative satellite data.
+
+
+The hydrodynamic biogeochemical models were each driven by a global climate model generated for the Coupled Model Inter-comparison Project Phase 5 (CMIP5) at the open ocean boundaries, in combination with downscaled atmospheric data generated using the Swedish Meteorological and Hydrological Institute (SMHI) Rossby Centre Regional Atmospheric Model (RCA4).
+This dataset was produced on behalf of the Copernicus Climate Change Service.
+
+Variables in the dataset/application are:
+Change in distance to nearest major front, Change in frontal gradient magnitude, Change in frontal persistence, Distance to nearest major front, Frontal gradient magnitude, Frontal persistence</dct:abstract>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/GEMET%20-%20INSPIRE%20themes%2C%20version%201.0/Oceanographic geographical features"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Sector: Coastal regions"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Product type: Satellite observations"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Product type: Climate projections"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Spatial coverage: Europe"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Variable domain: Ocean (physics)"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Temporal coverage: Past"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Temporal coverage: Future"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/iso/topicCategory/biota"/>
+        <foaf:thumbnail rdf:resource="https://datastore.copernicus-climate.eu/c3s/published-forms-v2/c3sprod/sis-fisheries-ocean-fronts/overview.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((-20 11, -20 65, 37 65, 37 11, -20 11))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:temporal>1991-01-01
+          /
+          2099-12-31</dct:temporal>
+        <dct:publisher rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/organization/ECMWF"/>
+        <dct:accrualPeriodicity>asNeeded</dct:accrualPeriodicity>
+        <dct:language>eng</dct:language>
+        <dct:license>licence</dct:license>
+        <dct:license>https://cds.climate.copernicus.eu/api/v2/terms/static/20191121_Copernicus_License_V1.2.pdf</dct:license>
+        <dcat:distribution rdf:resource="https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.cc930b6e"/>
+        <dcat:distribution rdf:resource="https://confluence.ecmwf.int/x/JaLmE"/>
+        <dcat:distribution rdf:resource="https://confluence.ecmwf.int/x/h6-mE"/>
+        <dcat:distribution rdf:resource="https://confluence.ecmwf.int/x/c_-mE"/>
+        <dcat:distribution rdf:resource="https://confluence.ecmwf.int/x/he-mE"/>
+        <dcat:dataQuality>ESA CCI and  EC Copernicus program</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+  

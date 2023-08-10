@@ -1,0 +1,95 @@
+{
+  "type": "Collection",
+  "id": "1aeea29f-cea2-4494-af80-789a038a87b8",
+  "stac_version": "1.0.0",
+  "description": "The European Ground Motion Service (EGMS) is a component of the Copernicus Land Monitoring Service. EGMS provides consistent, regular, standardised, harmonised and reliable information regarding natural and anthropogenic ground motion phenomena over the Copernicus Participating States and across national borders, with millimetre accuracy. This set of metadata describes the first product level of EGMS: Basic. \n\nThe EGMS Basic - provides InSAR displacement data provided in the satellite Line-of-Sight (LOS), with annotated geo-localisation and quality measures per measurement point. This product is generated from the interferometric analysis of Sentinel-1 radar images at full resolution. It contains line of sight velocity maps in ascending and descending orbits with annotated geolocalisation and quality parameters per measurement point. The Basic product is referred to a local reference point; therefore, ground motion measurements are meaningful only within a small subset of the full product. It is not possible to compare deformation from adjacent areas belonging to different processing units of the same level. \n\nEGMS Basic is visualised as a vector map of measurement points colour-coded by average line-of-sight velocity and distributed to users in comma-separated values format. Each point is associated with a time series of displacement, i.e. a plot with values of displacement per acquisition of the satellite. The product is generated for both ascending and descending orbits.\nThe processing of the dataset has taken place in the period from August 2022 to January 2023.",
+  "links": [
+    {
+      "rel": "hosts",
+      "href": "https://egms.land.copernicus.eu/",
+      "type": "WWW:DOWNLOAD-1.0-http--download",
+      "title": "EGMS Explorer"
+    },
+    {
+      "rel": "hosts",
+      "href": "https://land.copernicus.eu/user-corner/technical-library/egms-product-user-manual",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Product User Manual"
+    },
+    {
+      "rel": "hosts",
+      "href": "https://land.copernicus.eu/user-corner/technical-library/egms-algorithm-theoretical-basis-document",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Algorithm Theoretical Basis Document"
+    },
+    {
+      "rel": "hosts",
+      "href": "https://land.copernicus.eu/user-corner/technical-library/egms-quality-assurance-control-report",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Quality Assurance & Control Report – Harmonisation Tests"
+    },
+    {
+      "rel": "hosts",
+      "href": "https://land.copernicus.eu/user-corner/technical-library/egms-quality-assurance-control-report",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Quality Assurance & Control Report for the first update"
+    },
+    {
+      "rel": "hosts",
+      "href": "https://land.copernicus.eu/pan-european/european-ground-motion-service",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Other useful documents"
+    }
+  ],
+  "title": "European Ground Motion Service: Basic product between 2015 and 2021, Feb. 2023",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -31.3,
+          27.6,
+          34.76,
+          71.21
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2015-02-01T00:00:00Z",
+          "2021-12-31T23:59:59Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Natural risk zones",
+    "Norway",
+    "EU27 (from 2020)",
+    "United Kingdom",
+    "Iceland",
+    "built environment",
+    "infrastructure",
+    "subsidence",
+    "risk reduction",
+    "earth observation",
+    "landslide",
+    "urban area",
+    "geological process",
+    "geo-referenced data",
+    "European",
+    "Weekly",
+    null
+  ],
+  "providers": [
+    {
+      "name": "European Environment Agency",
+      "description": "SDI - EEA geospatial data catalogue",
+      "roles": [
+        "host"
+      ],
+      "url": "https://sdi.eea.europa.eu/"
+    }
+  ]
+}

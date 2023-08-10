@@ -1,0 +1,101 @@
+{
+  "type": "Collection",
+  "id": "eu.copernicus.climate.reanalysis-carra-model-levels",
+  "stac_version": "1.0.0",
+  "description": "The C3S Arctic Regional Reanalysis (CARRA) dataset contains 3-hourly analyses and hourly short term forecasts of atmospheric and surface meteorological variables (temperature, humidity, wind, cloud, precipitation and turbulent kinetic energy) at 2.5 km resolution. Additionally, forecasts up to 30 hours initialised from the analyses at 00 and 12 UTC are available. \nThe dataset includes two domains. The West domain covers Greenland, the Labrador Sea, Davis Strait, Baffin Bay, Denmark Strait, Iceland, Jan Mayen, the Greenland Sea, and parts of Svalbard. The East domain covers Svalbard, Franz Josef Land, Novaya Zemlya, Barents Sea, and the Northern parts of the Norwegian Sea and Scandinavia.\nThe dataset has been produced with the use of the HARMONIE-AROME state-of-the-art non-hydrostatic regional numerical weather prediction model. High resolution reanalysis for the Arctic region is particularly important because the climate change is more pronounced in the Arctic region than elsewhere in the Earth. This fact calls for a better description of this region providing additional details with respect to the global reanalyses (ERA5 for instance). The additional information is provided by the higher horizontal resolution, more local observations (from the Nordic countries and Greenland), better description of surface characteristics (high resolution satellite and physiographic data), high resolution non-hydrostatic dynamics and improved physical parameterisation of clouds and precipitation in particular.\nThe inputs to CARRA reanalysis are the observations, the ERA5 global reanalysis as lateral boundary conditions and the physiographic datasets describing the surface characteristics of the model. The observation values and information about their quality are used together to constrain the reanalysis where observations are available and provide information for the data assimilation system in areas in where less observations are available.\nMore details about the reanalysis dataset and the extensive input data are given in the Documentation section.\n\nVariables in the dataset/application are:\nCloud cover, Graupel, Specific cloud ice water content, Specific cloud liquid water content, Specific cloud rain water content, Specific cloud snow water content, Specific humidity, Temperature, Turbulent kinetic energy, U-component of wind, V-component of wind",
+  "links": [
+    {
+      "rel": "hosts",
+      "href": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.d29ad2c6",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Climate Data Store catalogue"
+    },
+    {
+      "rel": "hosts",
+      "href": "https://confluence.ecmwf.int/x/K0s7E",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Product user guide"
+    },
+    {
+      "rel": "hosts",
+      "href": "https://datastore.copernicus-climate.eu/documents/reanalysis-carra/CARRAFullSystemDocumentationFinal.pdf",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Full system documentation (PDF)"
+    },
+    {
+      "rel": "hosts",
+      "href": "https://datastore.copernicus-climate.eu/documents/reanalysis-carra/CARRATestVerificationFinal.pdf",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Test and verification report (PDF)"
+    },
+    {
+      "rel": "hosts",
+      "href": "https://confluence.ecmwf.int/x/0NSBEQ",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Added value to the ERA5 global reanalysis"
+    },
+    {
+      "rel": "hosts",
+      "href": "https://confluence.ecmwf.int/x/w9SBEQ",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "List of references"
+    },
+    {
+      "rel": "hosts",
+      "href": "https://datastore.copernicus-climate.eu/documents/reanalysis-carra/CARRAUncertainty estimationFinal.pdf",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Uncertainty computation methodology (PDF)"
+    },
+    {
+      "rel": "hosts",
+      "href": "https://confluence.ecmwf.int/x/p3ltD#CopernicusArcticRegionalReanalysis(CARRA):knownissuesanduncertaintyinformation-Uncertaintyinformation",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Uncertainty statistics"
+    },
+    {
+      "rel": "hosts",
+      "href": "https://confluence.ecmwf.int/x/p3ltD#CopernicusArcticRegionalReanalysis(CARRA):knownissuesanduncertaintyinformation-Knownissues",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Known issues"
+    }
+  ],
+  "title": "Arctic regional reanalysis on model levels from 1991 to present",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          360.0,
+          65.0,
+          0.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1990-09-01T00:00:00Z",
+          "2023-05-31T23:59:59Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Atmospheric conditions",
+    "Product type: Reanalysis",
+    "Spatial coverage: Arctic",
+    "Variable domain: Atmosphere (upper air)",
+    "Temporal coverage: Past"
+  ],
+  "providers": [
+    {
+      "name": "Copernicus Climate Data Store",
+      "description": "Copernicus Climate Data Store - European Centre for Medium-Range Weather Forecasts (ECMWF)",
+      "roles": [
+        "host"
+      ],
+      "url": "https://cds.climate.copernicus.eu/"
+    }
+  ]
+}

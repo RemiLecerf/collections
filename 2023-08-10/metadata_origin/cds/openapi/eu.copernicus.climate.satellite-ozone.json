@@ -1,0 +1,5707 @@
+{
+    "slug": "ozone-monthly-gridded-data-from-1970-to-present-deprecated-2020-12-21-",
+    "name": "satellite-ozone",
+    "id": "eu.copernicus.climate.satellite-ozone",
+    "type": "dataset",
+    "rich_abstract": "<div class='abstract-text'>\n         <p>This dataset provides estimates of the montly mean values of the ozone <strong>concentration</strong>, <strong>mixing ration</strong> and <strong>mole content</strong> over the globe from a large set of satellite sensors.\nMost of the ozone data products in this dataset have been developed as part of the ESA Ozone Climate Change Initiative project. They represent the current state-of-the-art in Europe for satellite-based ozone climate data record production, in line with the \u201cSystematic observation requirements for satellite-based products for climate\u201d as defined by GCOS (Global Climate Observing System).</p>\n<p>The dataset is organised around the vertical aggregation of the ozone data in four main products: </p>\n<ul>\n<li>Ozone total column retrieval from UV-nadir sensors;</li>\n<li>Ozone total and tropospheric column retrieval from IASI sensors;</li>\n<li>Ozone profile retrieval from UV-nadir sensors;</li>\n<li>Ozone profile retrieval from limb and occultation sensors.</li>\n</ul>\n<p>When dealing with satellite data it is common to encounter references to processing levels which describes the amount of processing applied to the raw data, in this case, Level-3 and Level-4. Level-3 means that data are on a regular latitude/longitude expectedly with gaps in space and time.  Level-4 data was futher reprocessed in order to fill any eventual gaps in the dataset.</p>\n<p>Another common reference is to Climate Data Recors (CDR) and interim-CDR (ICDR).  For this dataset, both the ICDR and CDR parts of each product were generated using the same software and algorithms. The CDR is intended to have sufficient length, consistency, and continuity to detect climate variability and change. This is the case for instance with the ozone vertically integrated values computed from the passive remote-sensing UV spectrometry onboard of nadir sensors such as SBUV, TOMS, GOME, SCIAMACHY or OMI. The ICDR provides a short-delay access to current data where consistency with the CDR baseline is expected but was not extensively checked. The user is invited to read the documentation in order to determine for each product which are the time spans of the CDR and ICDR parts.</p>\n<p>In addition to the vertical aggregation of ozone data, this dataset also provides horizonal aggregations in the form of zonal averages  and sensor aggreagations in the from of merged products.\nFor some products, in addition to the main variable, auxiliary variables like air-temperature and air-pressure at different levels are provided as well.</p>\n         \n         \n            <p></p>\n            <table class=\"abstract-description abstract-table\">\n            <tr><th colspan=\"2\">DATA DESCRIPTION</th>\n            \n<tr><th>Data type</th><td>Gridded</td></tr>\n<tr><th>Horizontal coverage</th><td>Global</td></tr>\n<tr><th>Horizontal resolution</th><td>1\u00b0x1\u00b0 (10\u00b0 for zonal averages)</td></tr>\n<tr><th>Vertical resolution</th><td>Profiles and total column data depending on the product</td></tr>\n<tr><th>Temporal coverage</th><td>1995 to present, but shorter for some sensors</td></tr>\n<tr><th>Temporal resolution</th><td>Monthly</td></tr>\n<tr><th>File format</th><td>NetCDF-4 (respecting GHRSST 2.0 data specifications)</td></tr>\n<tr><th>Update frequency</th><td>Mostly annually with four months delay</td></tr>\n</table>\n\n    <p></p>\n    <table class=\"abstract-variables abstract-table\">\n    <tr><th colspan=\"3\">MAIN VARIABLES</th>\n    \n\n    <tr><th class='variables-name'>Name</th><th class='variables-units'>Units</th><th class='variables-description'>Description</th></tr>\n    \n<tr><td class='variables-name'>Ozone concentration</td><td class='variables-units'>mol m<sup>-3</sup></td><td class='variables-description'>Number of moles of ozone divided by the total volume of the air-ozone  mixture</td></tr>\n<tr><td class='variables-name'>Ozone concentration anomaly</td><td class='variables-units'>%</td><td class='variables-description'>Percent deviation with respect to the reference monthly concentration value. If C(t) is the monthly ozone concentration at month t, and M(t) is the reference ozone concentration for the same month (derived by averaging all measurements for month t), then the percent anomaly is given by  100*(C(t)-M(t))/M(t)</td></tr>\n<tr><td class='variables-name'>Ozone mixing ratio</td><td class='variables-units'>ppmv</td><td class='variables-description'>Fraction of the ozone volume to the total volume of the air-ozone mixture</td></tr>\n<tr><td class='variables-name'>Ozone mole content</td><td class='variables-units'>mol m<sup>-2</sup> (Dobson for some products)</td><td class='variables-description'>Vertical average of the ozone amount</td></tr>\n</table>\n    </div>",
+    "terms": [
+        "licence-to-use-copernicus-products"
+    ],
+    "constraints": [
+        {
+            "month": [
+                "01"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "gome"
+            ],
+            "variable": [
+                "all_ozone_variables_from_nadir_sensors"
+            ],
+            "version": [
+                "0004",
+                "0005"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_nadir_sensors"
+            ],
+            "year": [
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2000",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011"
+            ]
+        },
+        {
+            "month": [
+                "01"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "gome"
+            ],
+            "variable": [
+                "ozone_mole_content"
+            ],
+            "version": [
+                "0100"
+            ],
+            "vertical_aggregation": [
+                "total_column"
+            ],
+            "year": [
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2000",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011"
+            ]
+        },
+        {
+            "month": [
+                "01"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "combination_of_mipas_gomos_sciamachy_and_osiris_sensors"
+            ],
+            "variable": [
+                "ozone_mole_content"
+            ],
+            "version": [
+                "0100"
+            ],
+            "vertical_aggregation": [
+                "total_column"
+            ],
+            "year": [
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2000",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017"
+            ]
+        },
+        {
+            "month": [
+                "01"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "omi"
+            ],
+            "variable": [
+                "ozone_mole_content"
+            ],
+            "version": [
+                "0100"
+            ],
+            "vertical_aggregation": [
+                "total_column"
+            ],
+            "year": [
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018",
+                "2019"
+            ]
+        },
+        {
+            "month": [
+                "01"
+            ],
+            "processing_level": [
+                "level_4"
+            ],
+            "sensor": [
+                "combination_of_15_sensors_using_gap_filling_assimilation_methods"
+            ],
+            "variable": [
+                "ozone_mole_content"
+            ],
+            "version": [
+                "0020"
+            ],
+            "vertical_aggregation": [
+                "total_column"
+            ],
+            "year": [
+                "1971",
+                "1972",
+                "1973",
+                "1974",
+                "1975",
+                "1976",
+                "1977",
+                "1978",
+                "1979",
+                "1980",
+                "1981",
+                "1982",
+                "1983",
+                "1984",
+                "1985",
+                "1986",
+                "1987",
+                "1988",
+                "1989",
+                "1990",
+                "1991",
+                "1992",
+                "1993",
+                "1994",
+                "1995",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2000",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ]
+        },
+        {
+            "month": [
+                "01"
+            ],
+            "processing_level": [
+                "level_4"
+            ],
+            "sensor": [
+                "combination_of_15_sensors_using_gap_filling_assimilation_methods"
+            ],
+            "variable": [
+                "ozone_mole_content"
+            ],
+            "version": [
+                "0021"
+            ],
+            "vertical_aggregation": [
+                "total_column"
+            ],
+            "year": [
+                "1979",
+                "1980",
+                "1981",
+                "1982",
+                "1983",
+                "1984",
+                "1985",
+                "1986",
+                "1987",
+                "1988",
+                "1989",
+                "1990",
+                "1991",
+                "1992",
+                "1993",
+                "1994",
+                "1995",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2000",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ]
+        },
+        {
+            "month": [
+                "01",
+                "02"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "sciamachy"
+            ],
+            "variable": [
+                "all_ozone_variables_from_nadir_sensors"
+            ],
+            "version": [
+                "0004"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_nadir_sensors"
+            ],
+            "year": [
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011"
+            ]
+        },
+        {
+            "month": [
+                "01",
+                "02",
+                "03"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "gome2a"
+            ],
+            "variable": [
+                "all_ozone_variables_from_nadir_sensors"
+            ],
+            "version": [
+                "0004"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_nadir_sensors"
+            ],
+            "year": [
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013"
+            ]
+        },
+        {
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "gome2a"
+            ],
+            "variable": [
+                "ozone_mole_content"
+            ],
+            "version": [
+                "0100"
+            ],
+            "vertical_aggregation": [
+                "total_column"
+            ],
+            "year": [
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018",
+                "2019"
+            ]
+        },
+        {
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "gome2b"
+            ],
+            "variable": [
+                "all_ozone_variables_from_nadir_sensors"
+            ],
+            "version": [
+                "0005"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_nadir_sensors"
+            ],
+            "year": [
+                "2014",
+                "2015",
+                "2016",
+                "2017"
+            ]
+        },
+        {
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "iasi_b"
+            ],
+            "time": [
+                "day",
+                "night"
+            ],
+            "variable": [
+                "ozone_mole_content"
+            ],
+            "version": [
+                "0001"
+            ],
+            "vertical_aggregation": [
+                "tropospheric_column",
+                "total_column"
+            ],
+            "year": [
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018",
+                "2019"
+            ]
+        },
+        {
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "sciamachy"
+            ],
+            "variable": [
+                "all_ozone_variables_from_nadir_sensors"
+            ],
+            "version": [
+                "0005"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_nadir_sensors"
+            ],
+            "year": [
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012"
+            ]
+        },
+        {
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "sciamachy"
+            ],
+            "variable": [
+                "ozone_mole_content"
+            ],
+            "version": [
+                "0100"
+            ],
+            "vertical_aggregation": [
+                "total_column"
+            ],
+            "year": [
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012"
+            ]
+        },
+        {
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "combination_of_mipas_gomos_sciamachy_and_osiris_sensors"
+            ],
+            "variable": [
+                "ozone_mole_content"
+            ],
+            "version": [
+                "0200"
+            ],
+            "vertical_aggregation": [
+                "total_column"
+            ],
+            "year": [
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ]
+        },
+        {
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06",
+                "07"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "iasi_a"
+            ],
+            "time": [
+                "day",
+                "night"
+            ],
+            "variable": [
+                "ozone_mole_content"
+            ],
+            "version": [
+                "0001"
+            ],
+            "vertical_aggregation": [
+                "tropospheric_column",
+                "total_column"
+            ],
+            "year": [
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018",
+                "2019"
+            ]
+        },
+        {
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06",
+                "07",
+                "08",
+                "09"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "gome2a"
+            ],
+            "variable": [
+                "all_ozone_variables_from_nadir_sensors"
+            ],
+            "version": [
+                "0005"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_nadir_sensors"
+            ],
+            "year": [
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017"
+            ]
+        },
+        {
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06",
+                "07",
+                "08",
+                "09"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "combination_of_mipas_gomos_sciamachy_and_osiris_sensors"
+            ],
+            "variable": [
+                "ozone_concentration",
+                "ozone_concentration_anomaly"
+            ],
+            "version": [
+                "0001"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_limb_sensors"
+            ],
+            "year": [
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ]
+        },
+        {
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06",
+                "07",
+                "08",
+                "09",
+                "10"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "gome2b"
+            ],
+            "variable": [
+                "ozone_mole_content"
+            ],
+            "version": [
+                "0100"
+            ],
+            "vertical_aggregation": [
+                "total_column"
+            ],
+            "year": [
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ]
+        },
+        {
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06",
+                "07",
+                "08",
+                "09",
+                "10",
+                "11",
+                "12"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "omi"
+            ],
+            "variable": [
+                "all_ozone_variables_from_nadir_sensors"
+            ],
+            "version": [
+                "0005"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_nadir_sensors"
+            ],
+            "year": [
+                "2016",
+                "2017"
+            ]
+        },
+        {
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04",
+                "06",
+                "07",
+                "08",
+                "09"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "omi"
+            ],
+            "variable": [
+                "all_ozone_variables_from_nadir_sensors"
+            ],
+            "version": [
+                "0004"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_nadir_sensors"
+            ],
+            "year": [
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015"
+            ]
+        },
+        {
+            "month": [
+                "02"
+            ],
+            "processing_level": [
+                "level_4"
+            ],
+            "sensor": [
+                "combination_of_15_sensors_using_gap_filling_assimilation_methods"
+            ],
+            "variable": [
+                "ozone_mole_content"
+            ],
+            "version": [
+                "0020"
+            ],
+            "vertical_aggregation": [
+                "total_column"
+            ],
+            "year": [
+                "1971",
+                "1972",
+                "1973",
+                "1974",
+                "1975",
+                "1976",
+                "1977",
+                "1978",
+                "1979",
+                "1980",
+                "1981",
+                "1982",
+                "1983",
+                "1984",
+                "1985",
+                "1986",
+                "1987",
+                "1988",
+                "1989",
+                "1990",
+                "1991",
+                "1992",
+                "1993",
+                "1994",
+                "1995",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2000",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017"
+            ]
+        },
+        {
+            "month": [
+                "02",
+                "03",
+                "04",
+                "05",
+                "06",
+                "07",
+                "08",
+                "09"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "omi"
+            ],
+            "variable": [
+                "ozone_mole_content"
+            ],
+            "version": [
+                "0100"
+            ],
+            "vertical_aggregation": [
+                "total_column"
+            ],
+            "year": [
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ]
+        },
+        {
+            "month": [
+                "02",
+                "04",
+                "05"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "gome"
+            ],
+            "variable": [
+                "all_ozone_variables_from_nadir_sensors"
+            ],
+            "version": [
+                "0004",
+                "0005"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_nadir_sensors"
+            ],
+            "year": [
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2000",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011"
+            ]
+        },
+        {
+            "month": [
+                "02",
+                "04",
+                "05"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "gome"
+            ],
+            "variable": [
+                "ozone_mole_content"
+            ],
+            "version": [
+                "0100"
+            ],
+            "vertical_aggregation": [
+                "total_column"
+            ],
+            "year": [
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2000",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011"
+            ]
+        },
+        {
+            "month": [
+                "02",
+                "04",
+                "05"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "combination_of_mipas_gomos_sciamachy_and_osiris_sensors"
+            ],
+            "variable": [
+                "ozone_mole_content"
+            ],
+            "version": [
+                "0100"
+            ],
+            "vertical_aggregation": [
+                "total_column"
+            ],
+            "year": [
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2000",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017"
+            ]
+        },
+        {
+            "month": [
+                "02",
+                "04",
+                "05",
+                "07",
+                "08",
+                "09"
+            ],
+            "processing_level": [
+                "level_4"
+            ],
+            "sensor": [
+                "combination_of_15_sensors_using_gap_filling_assimilation_methods"
+            ],
+            "variable": [
+                "ozone_mole_content"
+            ],
+            "version": [
+                "0021"
+            ],
+            "vertical_aggregation": [
+                "total_column"
+            ],
+            "year": [
+                "1979",
+                "1980",
+                "1981",
+                "1982",
+                "1983",
+                "1984",
+                "1985",
+                "1986",
+                "1987",
+                "1988",
+                "1989",
+                "1990",
+                "1991",
+                "1992",
+                "1993",
+                "1994",
+                "1995",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2000",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ]
+        },
+        {
+            "month": [
+                "03"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "gome"
+            ],
+            "variable": [
+                "all_ozone_variables_from_nadir_sensors"
+            ],
+            "version": [
+                "0004",
+                "0005"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_nadir_sensors"
+            ],
+            "year": [
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011"
+            ]
+        },
+        {
+            "month": [
+                "03"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "gome"
+            ],
+            "variable": [
+                "ozone_mole_content"
+            ],
+            "version": [
+                "0100"
+            ],
+            "vertical_aggregation": [
+                "total_column"
+            ],
+            "year": [
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011"
+            ]
+        },
+        {
+            "month": [
+                "03"
+            ],
+            "processing_level": [
+                "level_4"
+            ],
+            "sensor": [
+                "combination_of_15_sensors_using_gap_filling_assimilation_methods"
+            ],
+            "variable": [
+                "ozone_mole_content"
+            ],
+            "version": [
+                "0020"
+            ],
+            "vertical_aggregation": [
+                "total_column"
+            ],
+            "year": [
+                "1971",
+                "1972",
+                "1973",
+                "1974",
+                "1975",
+                "1976",
+                "1977",
+                "1978",
+                "1979",
+                "1980",
+                "1981",
+                "1982",
+                "1983",
+                "1984",
+                "1985",
+                "1986",
+                "1987",
+                "1988",
+                "1989",
+                "1990",
+                "1991",
+                "1992",
+                "1993",
+                "1994",
+                "1995",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017"
+            ]
+        },
+        {
+            "month": [
+                "03",
+                "04",
+                "05",
+                "06",
+                "07"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "sciamachy"
+            ],
+            "variable": [
+                "all_ozone_variables_from_nadir_sensors"
+            ],
+            "version": [
+                "0004"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_nadir_sensors"
+            ],
+            "year": [
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010"
+            ]
+        },
+        {
+            "month": [
+                "03",
+                "06"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "combination_of_mipas_gomos_sciamachy_and_osiris_sensors"
+            ],
+            "variable": [
+                "ozone_mole_content"
+            ],
+            "version": [
+                "0100"
+            ],
+            "vertical_aggregation": [
+                "total_column"
+            ],
+            "year": [
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017"
+            ]
+        },
+        {
+            "month": [
+                "03",
+                "06"
+            ],
+            "processing_level": [
+                "level_4"
+            ],
+            "sensor": [
+                "combination_of_15_sensors_using_gap_filling_assimilation_methods"
+            ],
+            "variable": [
+                "ozone_mole_content"
+            ],
+            "version": [
+                "0021"
+            ],
+            "vertical_aggregation": [
+                "total_column"
+            ],
+            "year": [
+                "1979",
+                "1980",
+                "1981",
+                "1982",
+                "1983",
+                "1984",
+                "1985",
+                "1986",
+                "1987",
+                "1988",
+                "1989",
+                "1990",
+                "1991",
+                "1992",
+                "1993",
+                "1994",
+                "1995",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ]
+        },
+        {
+            "month": [
+                "04",
+                "05",
+                "06"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "gome2a"
+            ],
+            "variable": [
+                "all_ozone_variables_from_nadir_sensors"
+            ],
+            "version": [
+                "0004"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_nadir_sensors"
+            ],
+            "year": [
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013"
+            ]
+        },
+        {
+            "month": [
+                "04",
+                "05",
+                "07",
+                "08",
+                "09"
+            ],
+            "processing_level": [
+                "level_4"
+            ],
+            "sensor": [
+                "combination_of_15_sensors_using_gap_filling_assimilation_methods"
+            ],
+            "variable": [
+                "ozone_mole_content"
+            ],
+            "version": [
+                "0020"
+            ],
+            "vertical_aggregation": [
+                "total_column"
+            ],
+            "year": [
+                "1970",
+                "1971",
+                "1972",
+                "1973",
+                "1974",
+                "1975",
+                "1976",
+                "1977",
+                "1978",
+                "1979",
+                "1980",
+                "1981",
+                "1982",
+                "1983",
+                "1984",
+                "1985",
+                "1986",
+                "1987",
+                "1988",
+                "1989",
+                "1990",
+                "1991",
+                "1992",
+                "1993",
+                "1994",
+                "1995",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2000",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017"
+            ]
+        },
+        {
+            "month": [
+                "05"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "omi"
+            ],
+            "variable": [
+                "all_ozone_variables_from_nadir_sensors"
+            ],
+            "version": [
+                "0004"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_nadir_sensors"
+            ],
+            "year": [
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2013",
+                "2014",
+                "2015"
+            ]
+        },
+        {
+            "month": [
+                "05",
+                "06",
+                "07"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "iasi_b"
+            ],
+            "time": [
+                "day",
+                "night"
+            ],
+            "variable": [
+                "ozone_mole_content"
+            ],
+            "version": [
+                "0001"
+            ],
+            "vertical_aggregation": [
+                "tropospheric_column",
+                "total_column"
+            ],
+            "year": [
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018",
+                "2019"
+            ]
+        },
+        {
+            "month": [
+                "05",
+                "06",
+                "07"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "sciamachy"
+            ],
+            "variable": [
+                "all_ozone_variables_from_nadir_sensors"
+            ],
+            "version": [
+                "0005"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_nadir_sensors"
+            ],
+            "year": [
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011"
+            ]
+        },
+        {
+            "month": [
+                "05",
+                "06",
+                "07"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "sciamachy"
+            ],
+            "variable": [
+                "ozone_mole_content"
+            ],
+            "version": [
+                "0100"
+            ],
+            "vertical_aggregation": [
+                "total_column"
+            ],
+            "year": [
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011"
+            ]
+        },
+        {
+            "month": [
+                "05",
+                "06",
+                "07",
+                "08",
+                "09"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "gome2a"
+            ],
+            "variable": [
+                "ozone_mole_content"
+            ],
+            "version": [
+                "0100"
+            ],
+            "vertical_aggregation": [
+                "total_column"
+            ],
+            "year": [
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ]
+        },
+        {
+            "month": [
+                "05",
+                "06",
+                "07",
+                "08",
+                "09",
+                "10",
+                "11",
+                "12"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "gome2b"
+            ],
+            "variable": [
+                "all_ozone_variables_from_nadir_sensors"
+            ],
+            "version": [
+                "0005"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_nadir_sensors"
+            ],
+            "year": [
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017"
+            ]
+        },
+        {
+            "month": [
+                "06"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "gome"
+            ],
+            "variable": [
+                "all_ozone_variables_from_nadir_sensors"
+            ],
+            "version": [
+                "0004"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_nadir_sensors"
+            ],
+            "year": [
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010"
+            ]
+        },
+        {
+            "month": [
+                "06"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "gome"
+            ],
+            "variable": [
+                "all_ozone_variables_from_nadir_sensors"
+            ],
+            "version": [
+                "0005"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_nadir_sensors"
+            ],
+            "year": [
+                "1995",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011"
+            ]
+        },
+        {
+            "month": [
+                "06"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "gome"
+            ],
+            "variable": [
+                "ozone_mole_content"
+            ],
+            "version": [
+                "0100"
+            ],
+            "vertical_aggregation": [
+                "total_column"
+            ],
+            "year": [
+                "1995",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011"
+            ]
+        },
+        {
+            "month": [
+                "06"
+            ],
+            "processing_level": [
+                "level_4"
+            ],
+            "sensor": [
+                "combination_of_15_sensors_using_gap_filling_assimilation_methods"
+            ],
+            "variable": [
+                "ozone_mole_content"
+            ],
+            "version": [
+                "0020"
+            ],
+            "vertical_aggregation": [
+                "total_column"
+            ],
+            "year": [
+                "1970",
+                "1971",
+                "1972",
+                "1973",
+                "1974",
+                "1975",
+                "1976",
+                "1977",
+                "1978",
+                "1979",
+                "1980",
+                "1981",
+                "1982",
+                "1983",
+                "1984",
+                "1985",
+                "1986",
+                "1987",
+                "1988",
+                "1989",
+                "1990",
+                "1991",
+                "1992",
+                "1993",
+                "1994",
+                "1995",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017"
+            ]
+        },
+        {
+            "month": [
+                "07"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "gome"
+            ],
+            "variable": [
+                "ozone_mole_content"
+            ],
+            "version": [
+                "0100"
+            ],
+            "vertical_aggregation": [
+                "total_column"
+            ],
+            "year": [
+                "1995",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2000",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011"
+            ]
+        },
+        {
+            "month": [
+                "07",
+                "08",
+                "09"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "gome2a"
+            ],
+            "variable": [
+                "all_ozone_variables_from_nadir_sensors"
+            ],
+            "version": [
+                "0004"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_nadir_sensors"
+            ],
+            "year": [
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012"
+            ]
+        },
+        {
+            "month": [
+                "07",
+                "08",
+                "09"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "gome"
+            ],
+            "variable": [
+                "all_ozone_variables_from_nadir_sensors"
+            ],
+            "version": [
+                "0004",
+                "0005"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_nadir_sensors"
+            ],
+            "year": [
+                "1995",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2000",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010"
+            ]
+        },
+        {
+            "month": [
+                "07",
+                "08",
+                "09"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "combination_of_mipas_gomos_sciamachy_and_osiris_sensors"
+            ],
+            "variable": [
+                "ozone_mole_content"
+            ],
+            "version": [
+                "0100"
+            ],
+            "vertical_aggregation": [
+                "total_column"
+            ],
+            "year": [
+                "1995",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2000",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016"
+            ]
+        },
+        {
+            "month": [
+                "07",
+                "08",
+                "09"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "combination_of_mipas_gomos_sciamachy_and_osiris_sensors"
+            ],
+            "variable": [
+                "ozone_mole_content"
+            ],
+            "version": [
+                "0200"
+            ],
+            "vertical_aggregation": [
+                "total_column"
+            ],
+            "year": [
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017"
+            ]
+        },
+        {
+            "month": [
+                "08",
+                "09"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "gome"
+            ],
+            "variable": [
+                "ozone_mole_content"
+            ],
+            "version": [
+                "0100"
+            ],
+            "vertical_aggregation": [
+                "total_column"
+            ],
+            "year": [
+                "1995",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2000",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010"
+            ]
+        },
+        {
+            "month": [
+                "08",
+                "09"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "iasi_a"
+            ],
+            "time": [
+                "day",
+                "night"
+            ],
+            "variable": [
+                "ozone_mole_content"
+            ],
+            "version": [
+                "0001"
+            ],
+            "vertical_aggregation": [
+                "tropospheric_column",
+                "total_column"
+            ],
+            "year": [
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ]
+        },
+        {
+            "month": [
+                "08",
+                "09"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "sciamachy"
+            ],
+            "variable": [
+                "all_ozone_variables_from_nadir_sensors"
+            ],
+            "version": [
+                "0004"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_nadir_sensors"
+            ],
+            "year": [
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010"
+            ]
+        },
+        {
+            "month": [
+                "08",
+                "09"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "sciamachy"
+            ],
+            "variable": [
+                "all_ozone_variables_from_nadir_sensors"
+            ],
+            "version": [
+                "0005"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_nadir_sensors"
+            ],
+            "year": [
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011"
+            ]
+        },
+        {
+            "month": [
+                "08",
+                "09"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "sciamachy"
+            ],
+            "variable": [
+                "ozone_mole_content"
+            ],
+            "version": [
+                "0100"
+            ],
+            "vertical_aggregation": [
+                "total_column"
+            ],
+            "year": [
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011"
+            ]
+        },
+        {
+            "month": [
+                "08",
+                "09",
+                "10",
+                "11",
+                "12"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "iasi_b"
+            ],
+            "time": [
+                "day",
+                "night"
+            ],
+            "variable": [
+                "ozone_mole_content"
+            ],
+            "version": [
+                "0001"
+            ],
+            "vertical_aggregation": [
+                "tropospheric_column",
+                "total_column"
+            ],
+            "year": [
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ]
+        },
+        {
+            "month": [
+                "10"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "combination_of_mipas_gomos_sciamachy_and_osiris_sensors"
+            ],
+            "variable": [
+                "ozone_concentration",
+                "ozone_concentration_anomaly"
+            ],
+            "version": [
+                "0001"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_limb_sensors"
+            ],
+            "year": [
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ]
+        },
+        {
+            "month": [
+                "10",
+                "11",
+                "12"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "gome2a"
+            ],
+            "variable": [
+                "all_ozone_variables_from_nadir_sensors"
+            ],
+            "version": [
+                "0004"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_nadir_sensors"
+            ],
+            "year": [
+                "2007",
+                "2008",
+                "2009",
+                "2011",
+                "2012"
+            ]
+        },
+        {
+            "month": [
+                "10",
+                "11",
+                "12"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "gome2a"
+            ],
+            "variable": [
+                "all_ozone_variables_from_nadir_sensors"
+            ],
+            "version": [
+                "0005"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_nadir_sensors"
+            ],
+            "year": [
+                "2007",
+                "2008",
+                "2009",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017"
+            ]
+        },
+        {
+            "month": [
+                "10",
+                "11",
+                "12"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "gome2a"
+            ],
+            "variable": [
+                "ozone_mole_content"
+            ],
+            "version": [
+                "0100"
+            ],
+            "vertical_aggregation": [
+                "total_column"
+            ],
+            "year": [
+                "2007",
+                "2008",
+                "2009",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ]
+        },
+        {
+            "month": [
+                "10",
+                "11",
+                "12"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "gome"
+            ],
+            "variable": [
+                "all_ozone_variables_from_nadir_sensors"
+            ],
+            "version": [
+                "0004",
+                "0005"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_nadir_sensors"
+            ],
+            "year": [
+                "1995",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2000",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009"
+            ]
+        },
+        {
+            "month": [
+                "10",
+                "11",
+                "12"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "gome"
+            ],
+            "variable": [
+                "ozone_mole_content"
+            ],
+            "version": [
+                "0100"
+            ],
+            "vertical_aggregation": [
+                "total_column"
+            ],
+            "year": [
+                "1995",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2000",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009"
+            ]
+        },
+        {
+            "month": [
+                "10",
+                "11",
+                "12"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "iasi_a"
+            ],
+            "time": [
+                "day",
+                "night"
+            ],
+            "variable": [
+                "ozone_mole_content"
+            ],
+            "version": [
+                "0001"
+            ],
+            "vertical_aggregation": [
+                "tropospheric_column",
+                "total_column"
+            ],
+            "year": [
+                "2007",
+                "2008",
+                "2009",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ]
+        },
+        {
+            "month": [
+                "10",
+                "11",
+                "12"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "combination_of_mipas_gomos_sciamachy_and_osiris_sensors"
+            ],
+            "variable": [
+                "ozone_mole_content"
+            ],
+            "version": [
+                "0100"
+            ],
+            "vertical_aggregation": [
+                "total_column"
+            ],
+            "year": [
+                "1995",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2000",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016"
+            ]
+        },
+        {
+            "month": [
+                "10",
+                "11",
+                "12"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "combination_of_mipas_gomos_sciamachy_and_osiris_sensors"
+            ],
+            "variable": [
+                "ozone_mole_content"
+            ],
+            "version": [
+                "0200"
+            ],
+            "vertical_aggregation": [
+                "total_column"
+            ],
+            "year": [
+                "2007",
+                "2008",
+                "2009",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017"
+            ]
+        },
+        {
+            "month": [
+                "10",
+                "11",
+                "12"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "omi"
+            ],
+            "variable": [
+                "all_ozone_variables_from_nadir_sensors"
+            ],
+            "version": [
+                "0004"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_nadir_sensors"
+            ],
+            "year": [
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015"
+            ]
+        },
+        {
+            "month": [
+                "10",
+                "11",
+                "12"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "omi"
+            ],
+            "variable": [
+                "ozone_mole_content"
+            ],
+            "version": [
+                "0100"
+            ],
+            "vertical_aggregation": [
+                "total_column"
+            ],
+            "year": [
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ]
+        },
+        {
+            "month": [
+                "10",
+                "11",
+                "12"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "sciamachy"
+            ],
+            "variable": [
+                "all_ozone_variables_from_nadir_sensors"
+            ],
+            "version": [
+                "0004"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_nadir_sensors"
+            ],
+            "year": [
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009"
+            ]
+        },
+        {
+            "month": [
+                "10",
+                "11",
+                "12"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "sciamachy"
+            ],
+            "variable": [
+                "all_ozone_variables_from_nadir_sensors"
+            ],
+            "version": [
+                "0005"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_nadir_sensors"
+            ],
+            "year": [
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2011"
+            ]
+        },
+        {
+            "month": [
+                "10",
+                "11",
+                "12"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "sciamachy"
+            ],
+            "variable": [
+                "ozone_mole_content"
+            ],
+            "version": [
+                "0100"
+            ],
+            "vertical_aggregation": [
+                "total_column"
+            ],
+            "year": [
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2011"
+            ]
+        },
+        {
+            "month": [
+                "10",
+                "11",
+                "12"
+            ],
+            "processing_level": [
+                "level_4"
+            ],
+            "sensor": [
+                "combination_of_15_sensors_using_gap_filling_assimilation_methods"
+            ],
+            "variable": [
+                "ozone_mole_content"
+            ],
+            "version": [
+                "0020"
+            ],
+            "vertical_aggregation": [
+                "total_column"
+            ],
+            "year": [
+                "1970",
+                "1971",
+                "1972",
+                "1973",
+                "1974",
+                "1975",
+                "1976",
+                "1977",
+                "1978",
+                "1979",
+                "1980",
+                "1981",
+                "1982",
+                "1983",
+                "1984",
+                "1985",
+                "1986",
+                "1987",
+                "1988",
+                "1989",
+                "1990",
+                "1991",
+                "1992",
+                "1993",
+                "1994",
+                "1995",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2000",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017"
+            ]
+        },
+        {
+            "month": [
+                "10",
+                "11",
+                "12"
+            ],
+            "processing_level": [
+                "level_4"
+            ],
+            "sensor": [
+                "combination_of_15_sensors_using_gap_filling_assimilation_methods"
+            ],
+            "variable": [
+                "ozone_mole_content"
+            ],
+            "version": [
+                "0021"
+            ],
+            "vertical_aggregation": [
+                "total_column"
+            ],
+            "year": [
+                "1979",
+                "1980",
+                "1981",
+                "1982",
+                "1983",
+                "1984",
+                "1985",
+                "1986",
+                "1987",
+                "1988",
+                "1989",
+                "1990",
+                "1991",
+                "1992",
+                "1993",
+                "1994",
+                "1995",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2000",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ]
+        },
+        {
+            "month": [
+                "11",
+                "12"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "gome2b"
+            ],
+            "variable": [
+                "ozone_mole_content"
+            ],
+            "version": [
+                "0100"
+            ],
+            "vertical_aggregation": [
+                "total_column"
+            ],
+            "year": [
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017"
+            ]
+        },
+        {
+            "month": [
+                "11",
+                "12"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "combination_of_mipas_gomos_sciamachy_and_osiris_sensors"
+            ],
+            "variable": [
+                "ozone_concentration",
+                "ozone_concentration_anomaly"
+            ],
+            "version": [
+                "0001"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_limb_sensors"
+            ],
+            "year": [
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ]
+        },
+        {
+            "horizontal_aggregation": [
+                "zonal_average"
+            ],
+            "month": [
+                "01"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "ace"
+            ],
+            "variable": [
+                "ozone_concentration"
+            ],
+            "version": [
+                "0001"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_limb_sensors"
+            ],
+            "year": [
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ]
+        },
+        {
+            "horizontal_aggregation": [
+                "zonal_average"
+            ],
+            "month": [
+                "01"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "gomos"
+            ],
+            "variable": [
+                "ozone_concentration"
+            ],
+            "version": [
+                "0001"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_limb_sensors"
+            ],
+            "year": [
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011"
+            ]
+        },
+        {
+            "horizontal_aggregation": [
+                "zonal_average"
+            ],
+            "month": [
+                "01"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "haloe"
+            ],
+            "variable": [
+                "ozone_mixing_ratio"
+            ],
+            "version": [
+                "0001"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_limb_sensors"
+            ],
+            "year": [
+                "1992",
+                "1993",
+                "1994",
+                "1995",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2000",
+                "2002",
+                "2003",
+                "2004",
+                "2005"
+            ]
+        },
+        {
+            "horizontal_aggregation": [
+                "zonal_average"
+            ],
+            "month": [
+                "01"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "combination_of_mipas_gomos_sciamachy_and_osiris_sensors"
+            ],
+            "variable": [
+                "ozone_concentration",
+                "ozone_mixing_ratio"
+            ],
+            "version": [
+                "0001"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_limb_sensors"
+            ],
+            "year": [
+                "1985",
+                "1986",
+                "1987",
+                "1988",
+                "1989",
+                "1990",
+                "1991",
+                "1992",
+                "1993",
+                "1994",
+                "1995",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2000",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017"
+            ]
+        },
+        {
+            "horizontal_aggregation": [
+                "zonal_average"
+            ],
+            "month": [
+                "01"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "combination_of_mipas_gomos_sciamachy_and_osiris_sensors"
+            ],
+            "variable": [
+                "ozone_concentration",
+                "ozone_mixing_ratio"
+            ],
+            "version": [
+                "0002"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_limb_sensors"
+            ],
+            "year": [
+                "1985",
+                "1986",
+                "1987",
+                "1988",
+                "1989",
+                "1990",
+                "1991",
+                "1992",
+                "1993",
+                "1994",
+                "1995",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2000",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ]
+        },
+        {
+            "horizontal_aggregation": [
+                "zonal_average"
+            ],
+            "month": [
+                "01"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "omps"
+            ],
+            "variable": [
+                "ozone_concentration"
+            ],
+            "version": [
+                "0002"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_limb_sensors"
+            ],
+            "year": [
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ]
+        },
+        {
+            "horizontal_aggregation": [
+                "zonal_average"
+            ],
+            "month": [
+                "01"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "sage_ii"
+            ],
+            "variable": [
+                "ozone_concentration"
+            ],
+            "version": [
+                "0001"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_limb_sensors"
+            ],
+            "year": [
+                "1985",
+                "1986",
+                "1987",
+                "1988",
+                "1989",
+                "1990",
+                "1991",
+                "1992",
+                "1993",
+                "1994",
+                "1995",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2000",
+                "2002",
+                "2003",
+                "2004",
+                "2005"
+            ]
+        },
+        {
+            "horizontal_aggregation": [
+                "zonal_average"
+            ],
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "smr"
+            ],
+            "variable": [
+                "ozone_concentration"
+            ],
+            "version": [
+                "0001"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_limb_sensors"
+            ],
+            "year": [
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014"
+            ]
+        },
+        {
+            "horizontal_aggregation": [
+                "zonal_average"
+            ],
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06",
+                "07"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "mls"
+            ],
+            "variable": [
+                "ozone_mixing_ratio"
+            ],
+            "version": [
+                "0001"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_limb_sensors"
+            ],
+            "year": [
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ]
+        },
+        {
+            "horizontal_aggregation": [
+                "zonal_average"
+            ],
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06",
+                "07",
+                "08",
+                "09",
+                "10",
+                "11",
+                "12"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "combination_of_mipas_gomos_sciamachy_and_osiris_sensors"
+            ],
+            "variable": [
+                "ozone_concentration",
+                "ozone_mixing_ratio"
+            ],
+            "version": [
+                "0004"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_limb_sensors"
+            ],
+            "year": [
+                "2018"
+            ]
+        },
+        {
+            "horizontal_aggregation": [
+                "zonal_average"
+            ],
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "07",
+                "08",
+                "09"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "osiris"
+            ],
+            "variable": [
+                "ozone_concentration"
+            ],
+            "version": [
+                "0001"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_limb_sensors"
+            ],
+            "year": [
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ]
+        },
+        {
+            "horizontal_aggregation": [
+                "zonal_average"
+            ],
+            "month": [
+                "01",
+                "02",
+                "04",
+                "06",
+                "07",
+                "08"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "saber"
+            ],
+            "variable": [
+                "ozone_mixing_ratio"
+            ],
+            "version": [
+                "0001"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_limb_sensors"
+            ],
+            "year": [
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ]
+        },
+        {
+            "horizontal_aggregation": [
+                "zonal_average"
+            ],
+            "month": [
+                "01",
+                "03"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "mipas",
+                "sciamachy"
+            ],
+            "variable": [
+                "ozone_concentration"
+            ],
+            "version": [
+                "0001"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_limb_sensors"
+            ],
+            "year": [
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012"
+            ]
+        },
+        {
+            "horizontal_aggregation": [
+                "zonal_average"
+            ],
+            "month": [
+                "02"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "combination_of_mipas_gomos_sciamachy_and_osiris_sensors"
+            ],
+            "variable": [
+                "ozone_concentration",
+                "ozone_mixing_ratio"
+            ],
+            "version": [
+                "0001"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_limb_sensors"
+            ],
+            "year": [
+                "1985",
+                "1986",
+                "1987",
+                "1988",
+                "1989",
+                "1990",
+                "1991",
+                "1992",
+                "1993",
+                "1994",
+                "1995",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2000",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017"
+            ]
+        },
+        {
+            "horizontal_aggregation": [
+                "zonal_average"
+            ],
+            "month": [
+                "02"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "mipas"
+            ],
+            "variable": [
+                "ozone_concentration"
+            ],
+            "version": [
+                "0001"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_limb_sensors"
+            ],
+            "year": [
+                "2003",
+                "2004",
+                "2005",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012"
+            ]
+        },
+        {
+            "horizontal_aggregation": [
+                "zonal_average"
+            ],
+            "month": [
+                "02"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "sciamachy"
+            ],
+            "variable": [
+                "ozone_concentration"
+            ],
+            "version": [
+                "0001"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_limb_sensors"
+            ],
+            "year": [
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012"
+            ]
+        },
+        {
+            "horizontal_aggregation": [
+                "zonal_average"
+            ],
+            "month": [
+                "02",
+                "03",
+                "04",
+                "05",
+                "06"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "gomos"
+            ],
+            "variable": [
+                "ozone_concentration"
+            ],
+            "version": [
+                "0001"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_limb_sensors"
+            ],
+            "year": [
+                "2003",
+                "2004",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011"
+            ]
+        },
+        {
+            "horizontal_aggregation": [
+                "zonal_average"
+            ],
+            "month": [
+                "02",
+                "03",
+                "04",
+                "05",
+                "06",
+                "07",
+                "08",
+                "09",
+                "10",
+                "11"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "omps"
+            ],
+            "variable": [
+                "ozone_concentration"
+            ],
+            "version": [
+                "0002"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_limb_sensors"
+            ],
+            "year": [
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ]
+        },
+        {
+            "horizontal_aggregation": [
+                "zonal_average"
+            ],
+            "month": [
+                "02",
+                "04",
+                "05",
+                "07"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "sage_ii"
+            ],
+            "variable": [
+                "ozone_concentration"
+            ],
+            "version": [
+                "0001"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_limb_sensors"
+            ],
+            "year": [
+                "1985",
+                "1986",
+                "1987",
+                "1988",
+                "1989",
+                "1990",
+                "1991",
+                "1992",
+                "1993",
+                "1994",
+                "1995",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2000",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005"
+            ]
+        },
+        {
+            "horizontal_aggregation": [
+                "zonal_average"
+            ],
+            "month": [
+                "02",
+                "04",
+                "05",
+                "07",
+                "08",
+                "09"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "ace"
+            ],
+            "variable": [
+                "ozone_concentration"
+            ],
+            "version": [
+                "0001"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_limb_sensors"
+            ],
+            "year": [
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ]
+        },
+        {
+            "horizontal_aggregation": [
+                "zonal_average"
+            ],
+            "month": [
+                "02",
+                "04",
+                "05",
+                "07",
+                "08",
+                "09"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "haloe"
+            ],
+            "variable": [
+                "ozone_mixing_ratio"
+            ],
+            "version": [
+                "0001"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_limb_sensors"
+            ],
+            "year": [
+                "1992",
+                "1993",
+                "1994",
+                "1995",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2000",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005"
+            ]
+        },
+        {
+            "horizontal_aggregation": [
+                "zonal_average"
+            ],
+            "month": [
+                "02",
+                "04",
+                "05",
+                "07",
+                "08",
+                "09"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "combination_of_mipas_gomos_sciamachy_and_osiris_sensors"
+            ],
+            "variable": [
+                "ozone_concentration",
+                "ozone_mixing_ratio"
+            ],
+            "version": [
+                "0002"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_limb_sensors"
+            ],
+            "year": [
+                "1985",
+                "1986",
+                "1987",
+                "1988",
+                "1989",
+                "1990",
+                "1991",
+                "1992",
+                "1993",
+                "1994",
+                "1995",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2000",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017"
+            ]
+        },
+        {
+            "horizontal_aggregation": [
+                "zonal_average"
+            ],
+            "month": [
+                "03"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "ace"
+            ],
+            "variable": [
+                "ozone_concentration"
+            ],
+            "version": [
+                "0001"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_limb_sensors"
+            ],
+            "year": [
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ]
+        },
+        {
+            "horizontal_aggregation": [
+                "zonal_average"
+            ],
+            "month": [
+                "03"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "saber"
+            ],
+            "variable": [
+                "ozone_mixing_ratio"
+            ],
+            "version": [
+                "0001"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_limb_sensors"
+            ],
+            "year": [
+                "2002",
+                "2003",
+                "2004",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ]
+        },
+        {
+            "horizontal_aggregation": [
+                "zonal_average"
+            ],
+            "month": [
+                "03",
+                "06"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "haloe"
+            ],
+            "variable": [
+                "ozone_mixing_ratio"
+            ],
+            "version": [
+                "0001"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_limb_sensors"
+            ],
+            "year": [
+                "1992",
+                "1993",
+                "1994",
+                "1995",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005"
+            ]
+        },
+        {
+            "horizontal_aggregation": [
+                "zonal_average"
+            ],
+            "month": [
+                "03",
+                "06"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "combination_of_mipas_gomos_sciamachy_and_osiris_sensors"
+            ],
+            "variable": [
+                "ozone_concentration",
+                "ozone_mixing_ratio"
+            ],
+            "version": [
+                "0001"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_limb_sensors"
+            ],
+            "year": [
+                "1985",
+                "1986",
+                "1987",
+                "1988",
+                "1989",
+                "1990",
+                "1991",
+                "1992",
+                "1993",
+                "1994",
+                "1995",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016"
+            ]
+        },
+        {
+            "horizontal_aggregation": [
+                "zonal_average"
+            ],
+            "month": [
+                "03",
+                "06"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "combination_of_mipas_gomos_sciamachy_and_osiris_sensors"
+            ],
+            "variable": [
+                "ozone_concentration",
+                "ozone_mixing_ratio"
+            ],
+            "version": [
+                "0002"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_limb_sensors"
+            ],
+            "year": [
+                "1985",
+                "1986",
+                "1987",
+                "1988",
+                "1989",
+                "1990",
+                "1991",
+                "1992",
+                "1993",
+                "1994",
+                "1995",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017"
+            ]
+        },
+        {
+            "horizontal_aggregation": [
+                "zonal_average"
+            ],
+            "month": [
+                "03",
+                "06",
+                "08"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "sage_ii"
+            ],
+            "variable": [
+                "ozone_concentration"
+            ],
+            "version": [
+                "0001"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_limb_sensors"
+            ],
+            "year": [
+                "1985",
+                "1986",
+                "1987",
+                "1988",
+                "1989",
+                "1990",
+                "1991",
+                "1992",
+                "1993",
+                "1994",
+                "1995",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005"
+            ]
+        },
+        {
+            "horizontal_aggregation": [
+                "zonal_average"
+            ],
+            "month": [
+                "04"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "mipas"
+            ],
+            "variable": [
+                "ozone_concentration"
+            ],
+            "version": [
+                "0001"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_limb_sensors"
+            ],
+            "year": [
+                "2003",
+                "2005",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012"
+            ]
+        },
+        {
+            "horizontal_aggregation": [
+                "zonal_average"
+            ],
+            "month": [
+                "04",
+                "05",
+                "06"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "sciamachy"
+            ],
+            "variable": [
+                "ozone_concentration"
+            ],
+            "version": [
+                "0001"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_limb_sensors"
+            ],
+            "year": [
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011"
+            ]
+        },
+        {
+            "horizontal_aggregation": [
+                "zonal_average"
+            ],
+            "month": [
+                "04",
+                "05",
+                "07",
+                "08",
+                "09"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "combination_of_mipas_gomos_sciamachy_and_osiris_sensors"
+            ],
+            "variable": [
+                "ozone_concentration",
+                "ozone_mixing_ratio"
+            ],
+            "version": [
+                "0001"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_limb_sensors"
+            ],
+            "year": [
+                "1985",
+                "1986",
+                "1987",
+                "1988",
+                "1989",
+                "1990",
+                "1991",
+                "1992",
+                "1993",
+                "1994",
+                "1995",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2000",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016"
+            ]
+        },
+        {
+            "horizontal_aggregation": [
+                "zonal_average"
+            ],
+            "month": [
+                "05"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "saber"
+            ],
+            "variable": [
+                "ozone_mixing_ratio"
+            ],
+            "version": [
+                "0001"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_limb_sensors"
+            ],
+            "year": [
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ]
+        },
+        {
+            "horizontal_aggregation": [
+                "zonal_average"
+            ],
+            "month": [
+                "05",
+                "06"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "mipas"
+            ],
+            "variable": [
+                "ozone_concentration"
+            ],
+            "version": [
+                "0001"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_limb_sensors"
+            ],
+            "year": [
+                "2003",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011"
+            ]
+        },
+        {
+            "horizontal_aggregation": [
+                "zonal_average"
+            ],
+            "month": [
+                "06"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "ace"
+            ],
+            "variable": [
+                "ozone_concentration"
+            ],
+            "version": [
+                "0001"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_limb_sensors"
+            ],
+            "year": [
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ]
+        },
+        {
+            "horizontal_aggregation": [
+                "zonal_average"
+            ],
+            "month": [
+                "06"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "osiris"
+            ],
+            "variable": [
+                "ozone_concentration"
+            ],
+            "version": [
+                "0001"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_limb_sensors"
+            ],
+            "year": [
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017"
+            ]
+        },
+        {
+            "horizontal_aggregation": [
+                "zonal_average"
+            ],
+            "month": [
+                "07"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "gomos",
+                "sciamachy"
+            ],
+            "variable": [
+                "ozone_concentration"
+            ],
+            "version": [
+                "0001"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_limb_sensors"
+            ],
+            "year": [
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011"
+            ]
+        },
+        {
+            "horizontal_aggregation": [
+                "zonal_average"
+            ],
+            "month": [
+                "07",
+                "08"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "mipas"
+            ],
+            "variable": [
+                "ozone_concentration"
+            ],
+            "version": [
+                "0001"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_limb_sensors"
+            ],
+            "year": [
+                "2002",
+                "2003",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011"
+            ]
+        },
+        {
+            "horizontal_aggregation": [
+                "zonal_average"
+            ],
+            "month": [
+                "07",
+                "08"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "smr"
+            ],
+            "variable": [
+                "ozone_concentration"
+            ],
+            "version": [
+                "0001"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_limb_sensors"
+            ],
+            "year": [
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014"
+            ]
+        },
+        {
+            "horizontal_aggregation": [
+                "zonal_average"
+            ],
+            "month": [
+                "08",
+                "09"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "gomos",
+                "sciamachy"
+            ],
+            "variable": [
+                "ozone_concentration"
+            ],
+            "version": [
+                "0001"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_limb_sensors"
+            ],
+            "year": [
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011"
+            ]
+        },
+        {
+            "horizontal_aggregation": [
+                "zonal_average"
+            ],
+            "month": [
+                "08",
+                "09"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "mls"
+            ],
+            "variable": [
+                "ozone_mixing_ratio"
+            ],
+            "version": [
+                "0001"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_limb_sensors"
+            ],
+            "year": [
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ]
+        },
+        {
+            "horizontal_aggregation": [
+                "zonal_average"
+            ],
+            "month": [
+                "09"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "mipas"
+            ],
+            "variable": [
+                "ozone_concentration"
+            ],
+            "version": [
+                "0001"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_limb_sensors"
+            ],
+            "year": [
+                "2002",
+                "2003",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011"
+            ]
+        },
+        {
+            "horizontal_aggregation": [
+                "zonal_average"
+            ],
+            "month": [
+                "09"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "saber"
+            ],
+            "variable": [
+                "ozone_mixing_ratio"
+            ],
+            "version": [
+                "0001"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_limb_sensors"
+            ],
+            "year": [
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2008",
+                "2009",
+                "2010",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ]
+        },
+        {
+            "horizontal_aggregation": [
+                "zonal_average"
+            ],
+            "month": [
+                "09"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "sage_ii"
+            ],
+            "variable": [
+                "ozone_concentration"
+            ],
+            "version": [
+                "0001"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_limb_sensors"
+            ],
+            "year": [
+                "1985",
+                "1986",
+                "1987",
+                "1988",
+                "1989",
+                "1990",
+                "1991",
+                "1992",
+                "1993",
+                "1994",
+                "1995",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2001",
+                "2002",
+                "2003",
+                "2004"
+            ]
+        },
+        {
+            "horizontal_aggregation": [
+                "zonal_average"
+            ],
+            "month": [
+                "09"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "smr"
+            ],
+            "variable": [
+                "ozone_concentration"
+            ],
+            "version": [
+                "0001"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_limb_sensors"
+            ],
+            "year": [
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013"
+            ]
+        },
+        {
+            "horizontal_aggregation": [
+                "zonal_average"
+            ],
+            "month": [
+                "10"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "mls"
+            ],
+            "variable": [
+                "ozone_mixing_ratio"
+            ],
+            "version": [
+                "0001"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_limb_sensors"
+            ],
+            "year": [
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ]
+        },
+        {
+            "horizontal_aggregation": [
+                "zonal_average"
+            ],
+            "month": [
+                "10"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "osiris"
+            ],
+            "variable": [
+                "ozone_concentration"
+            ],
+            "version": [
+                "0001"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_limb_sensors"
+            ],
+            "year": [
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ]
+        },
+        {
+            "horizontal_aggregation": [
+                "zonal_average"
+            ],
+            "month": [
+                "10"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "saber"
+            ],
+            "variable": [
+                "ozone_mixing_ratio"
+            ],
+            "version": [
+                "0001"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_limb_sensors"
+            ],
+            "year": [
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ]
+        },
+        {
+            "horizontal_aggregation": [
+                "zonal_average"
+            ],
+            "month": [
+                "10"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "sage_ii"
+            ],
+            "variable": [
+                "ozone_concentration"
+            ],
+            "version": [
+                "0001"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_limb_sensors"
+            ],
+            "year": [
+                "1984",
+                "1985",
+                "1986",
+                "1987",
+                "1988",
+                "1989",
+                "1990",
+                "1991",
+                "1992",
+                "1993",
+                "1994",
+                "1995",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2001",
+                "2002",
+                "2003",
+                "2004"
+            ]
+        },
+        {
+            "horizontal_aggregation": [
+                "zonal_average"
+            ],
+            "month": [
+                "10",
+                "11"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "mipas"
+            ],
+            "variable": [
+                "ozone_concentration"
+            ],
+            "version": [
+                "0001"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_limb_sensors"
+            ],
+            "year": [
+                "2002",
+                "2003",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2011"
+            ]
+        },
+        {
+            "horizontal_aggregation": [
+                "zonal_average"
+            ],
+            "month": [
+                "10",
+                "11",
+                "12"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "ace"
+            ],
+            "variable": [
+                "ozone_concentration"
+            ],
+            "version": [
+                "0001"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_limb_sensors"
+            ],
+            "year": [
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ]
+        },
+        {
+            "horizontal_aggregation": [
+                "zonal_average"
+            ],
+            "month": [
+                "10",
+                "11",
+                "12"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "haloe"
+            ],
+            "variable": [
+                "ozone_mixing_ratio"
+            ],
+            "version": [
+                "0001"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_limb_sensors"
+            ],
+            "year": [
+                "1991",
+                "1992",
+                "1993",
+                "1994",
+                "1995",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2000",
+                "2001",
+                "2002",
+                "2003",
+                "2004"
+            ]
+        },
+        {
+            "horizontal_aggregation": [
+                "zonal_average"
+            ],
+            "month": [
+                "10",
+                "11",
+                "12"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "combination_of_mipas_gomos_sciamachy_and_osiris_sensors"
+            ],
+            "variable": [
+                "ozone_concentration",
+                "ozone_mixing_ratio"
+            ],
+            "version": [
+                "0001"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_limb_sensors"
+            ],
+            "year": [
+                "1984",
+                "1985",
+                "1986",
+                "1987",
+                "1988",
+                "1989",
+                "1990",
+                "1991",
+                "1992",
+                "1993",
+                "1994",
+                "1995",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2000",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016"
+            ]
+        },
+        {
+            "horizontal_aggregation": [
+                "zonal_average"
+            ],
+            "month": [
+                "10",
+                "11",
+                "12"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "combination_of_mipas_gomos_sciamachy_and_osiris_sensors"
+            ],
+            "variable": [
+                "ozone_concentration",
+                "ozone_mixing_ratio"
+            ],
+            "version": [
+                "0002"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_limb_sensors"
+            ],
+            "year": [
+                "1984",
+                "1985",
+                "1986",
+                "1987",
+                "1988",
+                "1989",
+                "1990",
+                "1991",
+                "1992",
+                "1993",
+                "1994",
+                "1995",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2000",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017"
+            ]
+        },
+        {
+            "horizontal_aggregation": [
+                "zonal_average"
+            ],
+            "month": [
+                "10",
+                "11",
+                "12"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "smr"
+            ],
+            "variable": [
+                "ozone_concentration"
+            ],
+            "version": [
+                "0001"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_limb_sensors"
+            ],
+            "year": [
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2011",
+                "2012",
+                "2013"
+            ]
+        },
+        {
+            "horizontal_aggregation": [
+                "zonal_average"
+            ],
+            "month": [
+                "10",
+                "12"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "gomos",
+                "sciamachy"
+            ],
+            "variable": [
+                "ozone_concentration"
+            ],
+            "version": [
+                "0001"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_limb_sensors"
+            ],
+            "year": [
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2011"
+            ]
+        },
+        {
+            "horizontal_aggregation": [
+                "zonal_average"
+            ],
+            "month": [
+                "11"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "gomos"
+            ],
+            "variable": [
+                "ozone_concentration"
+            ],
+            "version": [
+                "0001"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_limb_sensors"
+            ],
+            "year": [
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009"
+            ]
+        },
+        {
+            "horizontal_aggregation": [
+                "zonal_average"
+            ],
+            "month": [
+                "11"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "mls",
+                "saber"
+            ],
+            "variable": [
+                "ozone_mixing_ratio"
+            ],
+            "version": [
+                "0001"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_limb_sensors"
+            ],
+            "year": [
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ]
+        },
+        {
+            "horizontal_aggregation": [
+                "zonal_average"
+            ],
+            "month": [
+                "11"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "sciamachy"
+            ],
+            "variable": [
+                "ozone_concentration"
+            ],
+            "version": [
+                "0001"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_limb_sensors"
+            ],
+            "year": [
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2011"
+            ]
+        },
+        {
+            "horizontal_aggregation": [
+                "zonal_average"
+            ],
+            "month": [
+                "11",
+                "12"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "osiris"
+            ],
+            "variable": [
+                "ozone_concentration"
+            ],
+            "version": [
+                "0001"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_limb_sensors"
+            ],
+            "year": [
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ]
+        },
+        {
+            "horizontal_aggregation": [
+                "zonal_average"
+            ],
+            "month": [
+                "11",
+                "12"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "sage_ii"
+            ],
+            "variable": [
+                "ozone_concentration"
+            ],
+            "version": [
+                "0001"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_limb_sensors"
+            ],
+            "year": [
+                "1984",
+                "1985",
+                "1986",
+                "1987",
+                "1988",
+                "1989",
+                "1990",
+                "1991",
+                "1992",
+                "1993",
+                "1994",
+                "1995",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2000",
+                "2001",
+                "2002",
+                "2003",
+                "2004"
+            ]
+        },
+        {
+            "horizontal_aggregation": [
+                "zonal_average"
+            ],
+            "month": [
+                "12"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "mipas"
+            ],
+            "variable": [
+                "ozone_concentration"
+            ],
+            "version": [
+                "0001"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_limb_sensors"
+            ],
+            "year": [
+                "2002",
+                "2003",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2011"
+            ]
+        },
+        {
+            "horizontal_aggregation": [
+                "zonal_average"
+            ],
+            "month": [
+                "12"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "mls"
+            ],
+            "variable": [
+                "ozone_mixing_ratio"
+            ],
+            "version": [
+                "0001"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_limb_sensors"
+            ],
+            "year": [
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017"
+            ]
+        },
+        {
+            "horizontal_aggregation": [
+                "zonal_average"
+            ],
+            "month": [
+                "12"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "omps"
+            ],
+            "variable": [
+                "ozone_concentration"
+            ],
+            "version": [
+                "0002"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_limb_sensors"
+            ],
+            "year": [
+                "2012",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018"
+            ]
+        },
+        {
+            "horizontal_aggregation": [
+                "zonal_average"
+            ],
+            "month": [
+                "12"
+            ],
+            "processing_level": [
+                "level_3"
+            ],
+            "sensor": [
+                "saber"
+            ],
+            "variable": [
+                "ozone_mixing_ratio"
+            ],
+            "version": [
+                "0001"
+            ],
+            "vertical_aggregation": [
+                "vertical_profiles_from_limb_sensors"
+            ],
+            "year": [
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017"
+            ]
+        }
+    ]
+}

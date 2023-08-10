@@ -1,0 +1,36 @@
+<csw:Record xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">EO:ECMWF:DAT:EFAS_FORECAST</dc:identifier>
+      <dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">River discharge and related forecasted data by the European Flood Awareness System</dc:title>
+      <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/">dataset</dc:type>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Climatology</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Product type: Reanalysis</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Spatial coverage: Europe</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Variable domain: Land (hydrology)</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Temporal coverage: Past</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Provider: Copernicus CEMS</dc:subject>
+      <dc:format xmlns:dc="http://purl.org/dc/elements/1.1/">GRIB2</dc:format>
+      <dct:abstract xmlns:dct="http://purl.org/dc/terms/">This dataset provides gridded modelled hydrological time series forced with medium-range meteorological forecasts. The data is a consistent representation of the most important hydrological variables across the European Flood Awareness System (EFAS) domain. The temporal resolution is sub-daily high-resolution and ensemble forecasts of:
+
+River discharge
+Soil moisture for three soil layers
+Snow water equivalent
+
+It also provides static data on soil depth for the three soil layers. Soil moisture and river discharge data are accompanied by ancillary files for interpretation (see related variables and links in the documentation).
+This data set was produced by forcing the LISFLOOD hydrological model at a 5x5km resolution with meteorological forecasts. The forecasts are initialised twice daily at 00 and 12 UTC with time steps of 6 or 24 hours and lead times between 5 and 15 days depending on the forcing numerical weather prediction model. The forcing meteorological data are high-resolution and ensemble forecasts from the European Centre of Medium-range Weather Forecasts (ECMWF) with 51 ensemble members, high-resolution forecasts from the Deutsches Wetter Dienst (DWD) and the ensemble forecasts from the COSMO Local Ensemble Prediction System (COSMO-LEPS) with 20 ensemble members. The hydrological forecasts are available from 2018-10-10 up until present with a 30-day delay. The real-time data is only available to EFAS partners.
+Companion datasets, also available through the CDS, are historical simulations which can be used to derive the hydrological climatology and for verification; reforecasts for research, local skill assessment and post-processing; and seasonal forecasts and reforecasts for users looking for longer leadtime forecasts. For users looking for global hydrological data, we refer to the Global Flood Awareness System (GloFAS) forecasts and historical simulations. All these datasets are part of the operational flood forecasting within the Copernicus Emergency Management Service (CEMS).
+
+Variables in the dataset/application are:
+River discharge in the last 24 hours, River discharge in the last 6 hours, Snow depth water equivalent, Soil depth, Volumetric soil moisture
+
+Variables in the dataset/application are:
+Orography, Upstream area</dct:abstract>
+      <dct:spatial xmlns:dct="http://purl.org/dc/terms/">::EPSG:4326</dct:spatial>
+      <dc:rights xmlns:dc="http://purl.org/dc/elements/1.1/">https://cds.climate.copernicus.eu/api/v2/terms/static/licence-to-use-efas-products.pdf</dc:rights>
+      <dc:rights xmlns:dc="http://purl.org/dc/elements/1.1/">Content accessible through the CDS may only be used under the terms of the licenses attributed to each particular resource.</dc:rights>
+      <dct:accessRights xmlns:dct="http://purl.org/dc/terms/">licence</dct:accessRights>
+      <ows:BoundingBox xmlns:ows="http://www.opengis.net/ows">
+        <ows:LowerCorner>-180 -90</ows:LowerCorner>
+        <ows:UpperCorner>180 90</ows:UpperCorner>
+      </ows:BoundingBox>
+    </csw:Record>
+    

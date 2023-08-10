@@ -1,0 +1,52 @@
+{
+  "type": "Collection",
+  "id": "OMI_HEALTH_CHL_MEDSEA_OCEANCOLOUR_area_averaged_mean",
+  "stac_version": "1.0.0",
+  "description": "'''DEFINITION'''\n\nThe time series are derived from the regional chlorophyll reprocessed (MY) product as distributed by CMEMS. This dataset, derived from multi-sensor (SeaStar-SeaWiFS, AQUA-MODIS, NOAA20-VIIRS, NPP-VIIRS, Envisat-MERIS and Sentinel3A-OLCI) Rrs spectra produced by CNR using an in-house processing chain, is obtained by means of the Mediterranean Ocean Colour regional algorithms: an updated version of the MedOC4 (Case 1 (off-shore) waters, Volpe et al., 2019, with new coefficients) and AD4 (Case 2 (coastal) waters, Berthon and Zibordi, 2004). The processing chain and the techniques used for algorithms merging are detailed in Colella et al. (2021). Monthly regional mean values are calculated by performing the average of 2D monthly mean (weighted by pixel area) over the region of interest. The deseasonalized time series is obtained by applying the X-11 seasonal adjustment methodology on the original time series as described in Colella et al. (2016), and then the Mann-Kendall test (Mann, 1945; Kendall, 1975) and Sens’s method (Sen, 1968) are subsequently applied to obtain the magnitude of trend.\n\n'''CONTEXT'''\n\nPhytoplankton   and chlorophyll concentration as a proxy for phytoplankton   respond rapidly to changes in environmental conditions, such as light, temperature, nutrients and mixing (Colella et al. 2016). The character of the response depends on the nature of the change drivers, and ranges from seasonal cycles to decadal oscillations (Basterretxea et al. 2018). Therefore, it is of critical importance to monitor chlorophyll concentration at multiple temporal and spatial scales, in order to be able to separate potential long-term climate signals from natural variability in the short term. In particular, phytoplankton in the Mediterranean Sea is known to respond to climate variability associated with the North Atlantic Oscillation (NAO) and El Niño Southern Oscillation (ENSO) (Basterretxea et al. 2018, Colella et al. 2016).\n\n'''CMEMS KEY FINDINGS'''\n\nIn the Mediterranean Sea, the trend average for the 1997-2021 period is slightly negative (-0.62±0.56% per year). This result is in contrast with the analysis of Sathyendranath et al. (2018) that reveals an increasing trend in chlorophyll concentration in all the European Seas. The observations time series (in grey) shows minima values have been quite constant until 2015 and then there is a little decrease up to 2020, when an absolute minimum occurs with values lower than 0.04 mg m-3. Throughout the time series, maxima are variable year by year (with absolute maximum in 2015, >0.14 mg m-3), showing an evident reduction since 2016. In the last years of the series, the decrease of chlorophyll concentrations is also observed in the deseasonalized timeseries (in green) with a marked step in 2020-2021. This attenuation of chlorophyll values in the last years, results in an overall negative trend for the Mediterranean Sea.\n\n'''DOI (product):''' \nhttps://doi.org/10.48670/moi-00259",
+  "links": [],
+  "title": "Mediterranean Sea Chlorophyll-a time series and trend from Observations Reprocessing",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -6.0,
+          30.0,
+          36.5,
+          46.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1997-09-04T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Oceanographic geographical features",
+    "satellite-observation",
+    "mass_concentration_of_chlorophyll_in_seawater",
+    "multi-year",
+    "marine-safety",
+    "weather-climate-and-seasonal-forecasting",
+    "marine-resources",
+    "coastal-marine-environment",
+    "mediterranean-sea",
+    "Level 4",
+    "Not Applicable"
+  ],
+  "providers": [
+    {
+      "name": "Copernicus Marine Service",
+      "description": "Copernicus Marine Service - Mercator Ocean International",
+      "roles": [
+        "host"
+      ],
+      "url": "https://marine.copernicus.eu/"
+    }
+  ]
+}

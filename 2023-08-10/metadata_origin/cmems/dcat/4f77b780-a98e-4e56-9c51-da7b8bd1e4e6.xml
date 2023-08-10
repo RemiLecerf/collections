@@ -1,0 +1,82 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:dct="http://purl.org/dc/terms/" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/4f77b780-a98e-4e56-9c51-da7b8bd1e4e6">
+        <foaf:primaryTopic rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/resource/a78600a4-a280-47b5-8ddd-0dc8b5e9c9d9"/>
+        <dct:issued>2023-03-29</dct:issued>
+        <dct:modified>2023-03-29</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/srv/eng/xml.metadata.get?uuid=4f77b780-a98e-4e56-9c51-da7b8bd1e4e6">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork?uuid=4f77b780-a98e-4e56-9c51-da7b8bd1e4e6">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/resource/a78600a4-a280-47b5-8ddd-0dc8b5e9c9d9">
+        <dct:identifier>a78600a4-a280-47b5-8ddd-0dc8b5e9c9d9</dct:identifier>
+        <dct:title>Baltic Sea Chlorophyll-a trend map from Observations Reprocessing</dct:title>
+        <dct:abstract>'''DEFINITION'''
+
+This product includes the Baltic Sea satellite chlorophyll trend map based on regional chlorophyll reprocessed (MY) product as distributed by CMEMS OC-TAC which, in turn, results from the application of the regional chlorophyll algorithms over remote sensing reflectances (Rrs) provided by the Plymouth Marine Laboratory (PML) using an ad-hoc configuration for CMEMS of the ESA OC-CCI processor version 6 (OC-CCIv6) to merge at 1km resolution (rather than at 4km as for OC-CCI) MERIS, MODIS-AQUA, SeaWiFS, NPP-VIIRS and OLCI-A data. The chlorophyll product is derived from a Multi Layer Perceptron neural-net (MLP) developed on field measurements collected within the BiOMaP program of JRC/EC (Zibordi et al., 2011). The algorithm is an ensemble of different MLPs that use Rrs at different wavelengths as input. The processing chain and the techniques used to develop the algorithm are detailed in Brando et al. (2021a; 2021b).
+The trend map is obtained by applying Colella et al. (2016) methodology, where the Mann-Kendall test (Mann, 1945; Kendall, 1975) and Sens’s method (Sen, 1968) are applied on deseasonalized monthly time series, as obtained from the X-11 technique (see e. g. Pezzulli et al. 2005), to estimate, trend magnitude and its significance. The trend is expressed in % per year that represents the relative changes (i.e., percentage) corresponding to the dimensional trend [mg m-3 y-1] with respect to the reference climatology (1997-2014). Only significant trends (p &lt; 0.05) are included.
+
+'''CONTEXT'''
+
+Phytoplankton are key actors in the carbon cycle and, as such, recognised as an Essential Climate Variable (ECV). Chlorophyll concentration - as a proxy for phytoplankton - respond rapidly to changes in environmental conditions, such as light, temperature, nutrients and mixing (Colella et al. 2016). The character of the response in the Baltic Sea depends on the nature of the change drivers, and ranges from seasonal cycles to decadal oscillations (Kahru and Elmgren 2014) and anthropogenic climate change. Eutrophication is one of the most important issues for the Baltic Sea (HELCOM, 2018), therefore the use of long-term time series of consistent, well-calibrated, climate-quality data record is crucial for detecting eutrophication. Furthermore, chlorophyll analysis also demands the use of robust statistical temporal decomposition techniques, in order to separate the long-term signal from the seasonal component of the time series.
+
+'''CMEMS KEY FINDINGS'''
+
+The average Baltic Sea trend for the 1997-2021 period is 0.5% per year. The basin shows a general positive chlorophyll trend. This result is in accordance with those of Sathyendranath et al. (2018), that reveal an increasing trend in chlorophyll concentration in most of the European Seas. Weak negative trend is observable in the northern sector of the Bothnian Bay and partially in the Gulf of Finland. 
+
+'''DOI (product):'''
+https://doi.org/10.48670/moi-00198</dct:abstract>
+        <dcat:theme rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/thesaurus/iso/topicCategory/oceans"/>
+        <foaf:thumbnail rdf:resource="https://catalogue.marine.copernicus.eu/documents/IMG/OMI_HEALTH_CHL_BALTIC_OCEANCOLOUR_trend.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((9.25 53.25, 9.25 65.85, 30.25 65.85, 30.25 53.25, 9.25 53.25))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:issued>2018-02-12</dct:issued>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/OC-CNR-ROMA-IT"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/OC-CNR-ROMA-IT"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/OC-CNR-ROMA-IT"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/OC-CNR-ROMA-IT"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/MOI-OMI-SERVICE"/>
+        <dct:accrualPeriodicity>annually</dct:accrualPeriodicity>
+        <dct:license>otherRestrictions</dct:license>
+        <dct:license>license</dct:license>
+        <dct:license>No limitations on public access</dct:license>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/OMI_HEALTH_CHL_BALTIC_OCEANCOLOUR_trend/omi_health_chl_baltic_oceancolour_trend"/>
+        <dcat:distribution rdf:resource="https://mdl1.marine.copernicus.eu/derived/OMI_HEALTH_CHL_BALTIC_OCEANCOLOUR_trend/omi_health_chl_baltic_oceancolour_trend_202211/omi_health_chl_baltic_oceancolour_trend_19970901_P20220623.nc"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/182a3b3f-61ba-4e90-a85e-2ca2ad07ede9"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/e550d7a3-bf3b-4939-8931-96cdacf0bd2e"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/75c2f83c-7159-492a-b383-a1cc3f5f2ede"/>
+        <dcat:dataQuality>The myOcean products depends on other products for production or validation. The detailed list of dependencies is given in ISO19115's aggregationInfo (ISO19139 Xpath = "gmd:MD_Metadata/gmd:identificationInfo/gmd:aggregationInfo[./gmd:MD_AggregateInformation/gmd:initiativeType/gmd:DS_InitiativeTypeCode/@codeListValue='upstream-validation' or 'upstream-production']")</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+    

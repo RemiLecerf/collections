@@ -1,0 +1,56 @@
+{
+  "type": "Collection",
+  "id": "SL_2_LST___",
+  "stac_version": "1.0.0",
+  "description": "The SLSTR Level-2 products are generated in five different types: 1. SL_2_WCT, including the Sea Surface Temperature for single and dual view, for 2 or 3 channels (internal product only), 2. SL_2_WST, including the Level-2P Sea surface temperature (provided to the users), 3. SL_2_LST, including the Land Surface Temperature parameters (provided to the users), 4. SL_2_FRP, including the Fire Radiative Power parameters (provided to the users), 5.SL_2_AOD, including the Aerosol Optical Depth parameters (provided to the users). The Level-2 product are organized in packages composed of one manifest file and several measurement and annotation data files (between 2 and 21 files depending on the package). The manifest file is in XML format and gathers general information concerning product and processing. The measurement and annotation data files are in netCDF 4 format, and include dimensions, variables and associated attributes. Regarding the measurement files: one measurement file, providing the land surface temperature, associated uncertainties and other supporting fields, is included in the SL_2_LST packet. The annotation data files are generated from the annotation files included in the SL_1RBT package and their format is identical to the files in the Level-1 packet.The SL_2_LST packet contains 10 annotation files, providing the same parameters as in SL_2_WCT and, in addition, some vegetation parameters.",
+  "links": [
+    {
+      "rel": "hosts",
+      "href": "https://navigator.eumetsat.int/product/EO:ESA:DAT:SENTINEL-3:SL_2_LST___",
+      "type": "http",
+      "title": "EUMETSAT Product Navigator (Metadata)"
+    },
+    {
+      "rel": "hosts",
+      "href": "https://navigator.eumetsat.int/product/EO:ESA:DAT:SENTINEL-3:SL_2_LST___",
+      "type": "http",
+      "title": "EUMETSAT Product Navigator (Metadata)"
+    }
+  ],
+  "title": "Level 2 Land - Sea and Land Surface Temperature Radiometer (SLSTR) - Sentinel-3",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2017-07-05T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Land",
+    "Sea and Land Surface Temperature"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

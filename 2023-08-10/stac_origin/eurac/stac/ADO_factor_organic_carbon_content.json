@@ -1,0 +1,103 @@
+{
+    "type": "Collection",
+    "version": "v1",
+    "stac_version": "0.9.0",
+    "stac_extensions": [
+        "datacube"
+    ],
+    "id": "ADO_factor_organic_carbon_content",
+    "title": "Factor humus content",
+    "description": "Organic Carbon Content In Topsoils In Europe (OCTOP) - ESDAC makes available the Maps of Organic carbon content (%) in the surface horizon of soils in Europe. Resolution: 1 km - Year: 2004. The result is available as a map and an explaining booklet: The Map of Organic Carbon Content In Topsoils In Europe: Version 1.2 September - 2003 (S.P.I.04.72).",
+    "keywords": [
+        "soil Organic Carbon",
+        "Carbon content",
+        "ESDAC",
+        "topsoil",
+        "SOC",
+        "ADO project",
+        "ADO"
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    4.006884824697067,
+                    42.87567954348732,
+                    17.289277225805108,
+                    48.895248042474115
+                ]
+            ]
+        }
+    },
+    "providers": [
+        {
+            "name": "eurac research",
+            "url": "http://www.eurac.edu",
+            "roles": [
+                "Host"
+            ]
+        },
+        {
+            "name": "European Soil Data Centre (ESDAC)",
+            "url": "https://esdac.jrc.ec.europa.eu/",
+            "roles": [
+                "Producer"
+            ]
+        }
+    ],
+    "license": "CC BY 4.0",
+    "links": [
+        {
+            "rel": "licence",
+            "href": "https://ec.europa.eu/info/legal-notice_enhttp://creativecommons.org/licenses/by/4.0/",
+            "type": "text/html",
+            "title": "License Link"
+        }
+    ],
+    "cube:dimensions": {
+        "X": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                4.006884824697067,
+                17.289277225805108
+            ],
+            "reference_system": 3035
+        },
+        "Y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                42.87567954348732,
+                48.895248042474115
+            ],
+            "reference_system": 3035
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "organic_carbon_content"
+            ]
+        }
+    },
+    "summaries": {
+        "constellation": [
+            "N/A"
+        ],
+        "platform": [
+            "N/A"
+        ],
+        "rows": 6750,
+        "columns": 10242,
+        "instruments": [
+            "N/A"
+        ],
+        "eo:bands": [
+            {
+                "name": "organic_carbon_content"
+            }
+        ]
+    },
+    "sci:citation": "Jones, R.J.A, R. Hiederer, E. Rusco, P.J. Loveland and L. Montanarella (2005). Estimating organic carbon in the soils of Europe for policy support. European Journal of Soil Science, October 2005, 56, p.655-671. - European Soil Data Centre (ESDAC), esdac.jrc.ec.europa.eu, European Commission, Joint Research Centre",
+    "engine": "WCPS"
+}

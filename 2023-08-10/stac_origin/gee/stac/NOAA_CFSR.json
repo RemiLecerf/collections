@@ -1,0 +1,1144 @@
+{
+    "type": "Collection",
+    "version": "V1",
+    "stac_version": "1.0.0",
+    "stac_extensions": [
+        "collection-assets"
+    ],
+    "id": "NOAA/CFSR",
+    "title": "CFSR: Climate Forecast System Reanalysis",
+    "description": "The National Centers for Environmental Prediction (NCEP) Climate Forecast\nSystem Reanalysis (CFSR) was designed and executed as a global,\nhigh-resolution, coupled atmosphere-ocean-land surface-sea ice system to\nprovide the best estimate of the state of these coupled domains over the\n32-year period of record from January 1979 to March 2011. It has been\nextended as an operational real-time product. The data in Earth Engine are\nonly present starting from December 13, 2018.\n\nForecasts are initialized four times per day (0000, 0600, 1200, and 1800\nUTC). We ingest only a subset of bands from files matching\n`cdas1.t??z.pgrbh**03|00**.grib2`, i.e. files of only 0-hour and 3-hour\nforecasts as the others are omitted. The forecast length is indicated by the\n'forecast_hour' metadata field.\n\nSome images contain only a subset of bands. Using this dataset with both\n\"00\" and \"03\" forecast types will require you to cast the bands across\nthe collection.\n",
+    "keywords": [
+        "climate",
+        "daylight",
+        "flux",
+        "forecast",
+        "geophysical",
+        "ncep",
+        "noaa",
+        "nws",
+        "precipitation",
+        "radiation",
+        "snow",
+        "temperature",
+        "vapor",
+        "water",
+        "weather"
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2018-12-13T00:00:00Z",
+                    "2023-05-31T12:00:00"
+                ]
+            ]
+        }
+    },
+    "providers": [
+        {
+            "name": "NOAA NWS National Centers for Environmental Prediction (NCEP)",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://cfs.ncep.noaa.gov/cfsr/"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_CFSR"
+        }
+    ],
+    "license": "proprietary",
+    "links": [
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections/NOAA/CFSR",
+            "rel": "self",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections",
+            "rel": "parent",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/",
+            "rel": "root",
+            "type": "application/json"
+        },
+        {
+            "code": "JavaScript",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NOAA/NOAA_CFSR",
+            "rel": "related",
+            "title": "Run the example for NOAA/CFSR in the Earth Engine Code Editor",
+            "type": "text/html"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/images/NOAA/NOAA_CFSR_sample.png",
+            "rel": "preview",
+            "type": "image/png"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_CFSR#terms-of-use",
+            "rel": "license",
+            "type": "text/html"
+        },
+        {
+            "href": "https://doi.org/10.5065/D6513W89",
+            "rel": "cite-as"
+        }
+    ],
+    "cube:dimensions": {
+        "x": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                -180,
+                180
+            ]
+        },
+        "y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                -90,
+                90
+            ]
+        },
+        "t": {
+            "type": "temporal",
+            "extent": [
+                "2018-12-13T00:00:00Z",
+                "2023-05-31T12:00:00"
+            ]
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "u-component_of_wind_hybrid",
+                "v-component_of_wind_hybrid",
+                "Albedo_surface_3_Hour_Average",
+                "Canopy_water_evaporation_surface_3_Hour_Average",
+                "Categorical_Rain_surface",
+                "Categorical_Rain_surface_3_Hour_Average",
+                "Categorical_Freezing_Rain_surface_3_Hour_Average",
+                "Categorical_Ice_Pellets_surface_3_Hour_Average",
+                "Categorical_Snow_surface_3_Hour_Average",
+                "Clear_Sky_Downward_Long_Wave_Flux_surface_3_Hour_Average",
+                "Clear_Sky_Downward_Solar_Flux_surface_3_Hour_Average",
+                "Clear_Sky_Upward_Long_Wave_Flux_surface_3_Hour_Average",
+                "Clear_Sky_Upward_Solar_Flux_atmosphere_top_3_Hour_Average",
+                "Clear_sky_UV-B_Downward_Solar_Flux_surface_3_Hour_Average",
+                "Cloud_water_entire_atmosphere_single_layer",
+                "Cloud_Work_Function_entire_atmosphere_single_layer_3_Hour_Average",
+                "Convective_available_potential_energy_surface",
+                "Convective_available_potential_energy_pressure_difference_layer",
+                "Convective_Precipitation_Rate_surface_3_Hour_Average",
+                "Convective_precipitation_surface_3_Hour_Accumulation",
+                "Direct_Evaporation_from_Bare_Soil_surface_3_Hour_Average",
+                "Downward_Long-Wave_Radp_Flux_surface",
+                "Downward_Long-Wave_Radp_Flux_surface_3_Hour_Average",
+                "Downward_Short-Wave_Radiation_Flux_surface",
+                "Downward_Short-Wave_Radiation_Flux_surface_3_Hour_Average",
+                "Downward_Short-Wave_Radiation_Flux_atmosphere_top_3_Hour_Average",
+                "Exchange_Coefficient_surface",
+                "Frictional_Velocity_surface",
+                "Ground_Heat_Flux_surface",
+                "Ground_Heat_Flux_surface_3_Hour_Average",
+                "Ice_cover_surface",
+                "Ice_thickness_surface",
+                "Land_cover_0__sea_1__land_surface",
+                "Latent_heat_net_flux_surface",
+                "Latent_heat_net_flux_surface_3_Hour_Average",
+                "Liquid_Volumetric_Soil_Moisture_non_Frozen_depth_below_surface_layer_5_cm",
+                "Liquid_Volumetric_Soil_Moisture_non_Frozen_depth_below_surface_layer_25_cm",
+                "Liquid_Volumetric_Soil_Moisture_non_Frozen_depth_below_surface_layer_70_cm",
+                "Liquid_Volumetric_Soil_Moisture_non_Frozen_depth_below_surface_layer_150_cm",
+                "Maximum_temperature_height_above_ground_3_Hour_Interval",
+                "Minimum_temperature_height_above_ground_3_Hour_Interval",
+                "Maximum_specific_humidity_at_2m_height_above_ground_3_Hour_Interval",
+                "Minimum_specific_humidity_at_2m_height_above_ground_3_Hour_Interval",
+                "Momentum_flux_u-component_surface_3_Hour_Average",
+                "Momentum_flux_v-component_surface_3_Hour_Average",
+                "Plant_Canopy_Surface_Water_surface",
+                "Planetary_Boundary_Layer_Height_surface",
+                "Potential_Evaporation_Rate_surface",
+                "Potential_Evaporation_Rate_surface_3_Hour_Average",
+                "Precipitation_rate_surface_3_Hour_Average",
+                "Precipitable_water_entire_atmosphere_single_layer",
+                "Precipitable_water_pressure_difference_layer",
+                "Pressure_msl",
+                "Pressure_reduced_to_MSL_msl",
+                "Pressure_surface",
+                "Relative_humidity_entire_atmosphere_single_layer",
+                "Sensible_heat_net_flux_surface",
+                "Sensible_heat_net_flux_surface_3_Hour_Average",
+                "Snow_Cover_surface_3_Hour_Average",
+                "Snow_depth_surface",
+                "Snow_Phase_Change_Heat_Flux_surface_3_Hour_Average",
+                "Soil_moisture_content_depth_below_surface_layer",
+                "Soil_type_surface",
+                "Storm_Surface_Runoff_surface_3_Hour_Accumulation",
+                "Sublimation_evaporation_from_snow_surface_3_Hour_Average",
+                "Specific_humidity_height_above_ground",
+                "Surface_Lifted_Index_surface",
+                "Surface_roughness_surface",
+                "Surface_Slope_Type_surface",
+                "Temperature_depth_below_surface_layer_5_cm",
+                "Temperature_depth_below_surface_layer_25_cm",
+                "Temperature_depth_below_surface_layer_70_cm",
+                "Temperature_depth_below_surface_layer_150_cm",
+                "Temperature_height_above_ground",
+                "Temperature_surface",
+                "Total_cloud_cover_convective_cloud",
+                "Total_ozone_entire_atmosphere_single_layer",
+                "Total_precipitation_surface_3_Hour_Accumulation",
+                "Transpiration_surface_3_Hour_Average",
+                "Upward_Long-Wave_Radp_Flux_surface",
+                "Upward_Long-Wave_Radp_Flux_surface_3_Hour_Average",
+                "Upward_Long-Wave_Radp_Flux_atmosphere_top_3_Hour_Average",
+                "Upward_Short-Wave_Radiation_Flux_surface",
+                "Upward_Short-Wave_Radiation_Flux_surface_3_Hour_Average",
+                "Upward_Short-Wave_Radiation_Flux_atmosphere_top_3_Hour_Average",
+                "UV-B_Downward_Solar_Flux_surface_3_Hour_Average",
+                "Vegetation_surface",
+                "Vegetation_Type_surface",
+                "Volumetric_Soil_Moisture_Content_depth_below_surface_layer_5_cm",
+                "Volumetric_Soil_Moisture_Content_depth_below_surface_layer_25_cm",
+                "Volumetric_Soil_Moisture_Content_depth_below_surface_layer_70_cm",
+                "Volumetric_Soil_Moisture_Content_depth_below_surface_layer_150_cm",
+                "Water_equivalent_of_accumulated_snow_depth_surface",
+                "Water_runoff_surface_3_Hour_Accumulation"
+            ]
+        }
+    },
+    "summaries": {
+        "Albedo_surface_3_Hour_Average": {
+            "gee:estimated_range": true,
+            "maximum": 91.6
+        },
+        "Canopy_water_evaporation_surface_3_Hour_Average": {
+            "gee:estimated_range": true,
+            "maximum": 746
+        },
+        "Categorical_Freezing_Rain_surface_3_Hour_Average": {
+            "gee:estimated_range": true,
+            "maximum": 1
+        },
+        "Categorical_Ice_Pellets_surface_3_Hour_Average": {
+            "gee:estimated_range": true,
+            "maximum": 1
+        },
+        "Categorical_Rain_surface": {
+            "gee:estimated_range": true,
+            "maximum": 1
+        },
+        "Categorical_Rain_surface_3_Hour_Average": {
+            "gee:estimated_range": true,
+            "maximum": 1
+        },
+        "Categorical_Snow_surface_3_Hour_Average": {
+            "gee:estimated_range": true,
+            "maximum": 1
+        },
+        "Clear_Sky_Downward_Long_Wave_Flux_surface_3_Hour_Average": {
+            "gee:estimated_range": true,
+            "maximum": 483,
+            "minimum": 56
+        },
+        "Clear_Sky_Downward_Solar_Flux_surface_3_Hour_Average": {
+            "gee:estimated_range": true,
+            "maximum": 1142
+        },
+        "Clear_Sky_Upward_Long_Wave_Flux_surface_3_Hour_Average": {
+            "gee:estimated_range": true,
+            "maximum": 698,
+            "minimum": 78
+        },
+        "Clear_Sky_Upward_Solar_Flux_atmosphere_top_3_Hour_Average": {
+            "gee:estimated_range": true,
+            "maximum": 767
+        },
+        "Clear_sky_UV-B_Downward_Solar_Flux_surface_3_Hour_Average": {
+            "gee:estimated_range": true,
+            "maximum": 24.77
+        },
+        "Cloud_Work_Function_entire_atmosphere_single_layer_3_Hour_Average": {
+            "gee:estimated_range": true,
+            "maximum": 5791
+        },
+        "Cloud_water_entire_atmosphere_single_layer": {
+            "gee:estimated_range": true,
+            "maximum": 19
+        },
+        "Convective_Precipitation_Rate_surface_3_Hour_Average": {
+            "gee:estimated_range": true,
+            "maximum": 0.002
+        },
+        "Convective_available_potential_energy_pressure_difference_layer": {
+            "gee:estimated_range": true,
+            "maximum": 5559
+        },
+        "Convective_available_potential_energy_surface": {
+            "gee:estimated_range": true,
+            "maximum": 6069
+        },
+        "Convective_precipitation_surface_3_Hour_Accumulation": {
+            "gee:estimated_range": true,
+            "maximum": 19.2
+        },
+        "Direct_Evaporation_from_Bare_Soil_surface_3_Hour_Average": {
+            "gee:estimated_range": true,
+            "maximum": 767
+        },
+        "Downward_Long-Wave_Radp_Flux_surface": {
+            "gee:estimated_range": true,
+            "maximum": 530,
+            "minimum": 60
+        },
+        "Downward_Long-Wave_Radp_Flux_surface_3_Hour_Average": {
+            "gee:estimated_range": true,
+            "maximum": 508,
+            "minimum": 60
+        },
+        "Downward_Short-Wave_Radiation_Flux_atmosphere_top_3_Hour_Average": {
+            "gee:estimated_range": true,
+            "maximum": 1382
+        },
+        "Downward_Short-Wave_Radiation_Flux_surface": {
+            "gee:estimated_range": true,
+            "maximum": 1224
+        },
+        "Downward_Short-Wave_Radiation_Flux_surface_3_Hour_Average": {
+            "gee:estimated_range": true,
+            "maximum": 1142
+        },
+        "Exchange_Coefficient_surface": {
+            "gee:estimated_range": true,
+            "maximum": 0.69
+        },
+        "Frictional_Velocity_surface": {
+            "gee:estimated_range": true,
+            "maximum": 3.5,
+            "minimum": 0.002
+        },
+        "Ground_Heat_Flux_surface": {
+            "gee:estimated_range": true,
+            "maximum": 683,
+            "minimum": -459
+        },
+        "Ground_Heat_Flux_surface_3_Hour_Average": {
+            "gee:estimated_range": true,
+            "maximum": 538,
+            "minimum": -170
+        },
+        "Ice_cover_surface": {
+            "gee:estimated_range": true,
+            "maximum": 1
+        },
+        "Ice_thickness_surface": {
+            "gee:estimated_range": true,
+            "maximum": 4.76
+        },
+        "Land_cover_0__sea_1__land_surface": {
+            "gee:estimated_range": true,
+            "maximum": 1
+        },
+        "Latent_heat_net_flux_surface": {
+            "gee:estimated_range": true,
+            "maximum": 1675,
+            "minimum": -399
+        },
+        "Latent_heat_net_flux_surface_3_Hour_Average": {
+            "gee:estimated_range": true,
+            "maximum": 1250,
+            "minimum": -305
+        },
+        "Liquid_Volumetric_Soil_Moisture_non_Frozen_depth_below_surface_layer_150_cm": {
+            "gee:estimated_range": true,
+            "maximum": 1,
+            "minimum": 0.028
+        },
+        "Liquid_Volumetric_Soil_Moisture_non_Frozen_depth_below_surface_layer_25_cm": {
+            "gee:estimated_range": true,
+            "maximum": 1,
+            "minimum": 0.028
+        },
+        "Liquid_Volumetric_Soil_Moisture_non_Frozen_depth_below_surface_layer_5_cm": {
+            "gee:estimated_range": true,
+            "maximum": 1,
+            "minimum": 0.03
+        },
+        "Liquid_Volumetric_Soil_Moisture_non_Frozen_depth_below_surface_layer_70_cm": {
+            "gee:estimated_range": true,
+            "maximum": 1,
+            "minimum": 0.028
+        },
+        "Maximum_specific_humidity_at_2m_height_above_ground_3_Hour_Interval": {
+            "gee:estimated_range": true,
+            "maximum": 0.036
+        },
+        "Maximum_temperature_height_above_ground_3_Hour_Interval": {
+            "gee:estimated_range": true,
+            "maximum": 327.7,
+            "minimum": 201.39
+        },
+        "Minimum_specific_humidity_at_2m_height_above_ground_3_Hour_Interval": {
+            "gee:estimated_range": true,
+            "maximum": 0.024
+        },
+        "Minimum_temperature_height_above_ground_3_Hour_Interval": {
+            "gee:estimated_range": true,
+            "maximum": 321.89,
+            "minimum": 201
+        },
+        "Momentum_flux_u-component_surface_3_Hour_Average": {
+            "gee:estimated_range": true,
+            "maximum": 8.25,
+            "minimum": -6.56
+        },
+        "Momentum_flux_v-component_surface_3_Hour_Average": {
+            "gee:estimated_range": true,
+            "maximum": 7.22,
+            "minimum": -6.17
+        },
+        "Planetary_Boundary_Layer_Height_surface": {
+            "gee:estimated_range": true,
+            "maximum": 6590,
+            "minimum": 17
+        },
+        "Plant_Canopy_Surface_Water_surface": {
+            "gee:estimated_range": true,
+            "maximum": 0.5
+        },
+        "Potential_Evaporation_Rate_surface": {
+            "gee:estimated_range": true,
+            "maximum": 5617,
+            "minimum": -150
+        },
+        "Potential_Evaporation_Rate_surface_3_Hour_Average": {
+            "gee:estimated_range": true,
+            "maximum": 5263,
+            "minimum": -120
+        },
+        "Precipitable_water_entire_atmosphere_single_layer": {
+            "gee:estimated_range": true,
+            "maximum": 99.09,
+            "minimum": -0.6
+        },
+        "Precipitable_water_pressure_difference_layer": {
+            "gee:estimated_range": true,
+            "maximum": 7.94
+        },
+        "Precipitation_rate_surface_3_Hour_Average": {
+            "gee:estimated_range": true,
+            "maximum": 0.022
+        },
+        "Pressure_msl": {
+            "gee:estimated_range": true,
+            "maximum": 106907.89,
+            "minimum": 92406.39
+        },
+        "Pressure_reduced_to_MSL_msl": {
+            "gee:estimated_range": true,
+            "maximum": 106667.79,
+            "minimum": 92492.8
+        },
+        "Pressure_surface": {
+            "gee:estimated_range": true,
+            "maximum": 105600,
+            "minimum": 48110
+        },
+        "Relative_humidity_entire_atmosphere_single_layer": {
+            "gee:estimated_range": true,
+            "maximum": 96
+        },
+        "Sensible_heat_net_flux_surface": {
+            "gee:estimated_range": true,
+            "maximum": 2500,
+            "minimum": -1582
+        },
+        "Sensible_heat_net_flux_surface_3_Hour_Average": {
+            "gee:estimated_range": true,
+            "maximum": 1202,
+            "minimum": -977
+        },
+        "Snow_Cover_surface_3_Hour_Average": {
+            "gee:estimated_range": true,
+            "maximum": 100
+        },
+        "Snow_Phase_Change_Heat_Flux_surface_3_Hour_Average": {
+            "gee:estimated_range": true,
+            "maximum": 911,
+            "minimum": -405
+        },
+        "Snow_depth_surface": {
+            "gee:estimated_range": true,
+            "maximum": 4.55
+        },
+        "Soil_moisture_content_depth_below_surface_layer": {
+            "gee:estimated_range": true,
+            "maximum": 2000.05,
+            "minimum": 62.01
+        },
+        "Soil_type_surface": {
+            "gee:estimated_range": true,
+            "maximum": 9,
+            "minimum": 1
+        },
+        "Specific_humidity_height_above_ground": {
+            "gee:estimated_range": true,
+            "maximum": 0.036,
+            "minimum": 0.001
+        },
+        "Storm_Surface_Runoff_surface_3_Hour_Accumulation": {
+            "gee:estimated_range": true,
+            "maximum": 193.12
+        },
+        "Sublimation_evaporation_from_snow_surface_3_Hour_Average": {
+            "gee:estimated_range": true,
+            "maximum": 742
+        },
+        "Surface_Lifted_Index_surface": {
+            "gee:estimated_range": true,
+            "maximum": 57.2,
+            "minimum": -15.8
+        },
+        "Surface_Slope_Type_surface": {
+            "gee:estimated_range": true,
+            "maximum": 9,
+            "minimum": 1
+        },
+        "Surface_roughness_surface": {
+            "gee:estimated_range": true,
+            "maximum": 2.7
+        },
+        "Temperature_depth_below_surface_layer_150_cm": {
+            "gee:estimated_range": true,
+            "maximum": 307.662,
+            "minimum": 218.925
+        },
+        "Temperature_depth_below_surface_layer_25_cm": {
+            "gee:estimated_range": true,
+            "maximum": 313.299,
+            "minimum": 220.288
+        },
+        "Temperature_depth_below_surface_layer_5_cm": {
+            "gee:estimated_range": true,
+            "maximum": 323.104,
+            "minimum": 219.127
+        },
+        "Temperature_depth_below_surface_layer_70_cm": {
+            "gee:estimated_range": true,
+            "maximum": 310.007,
+            "minimum": 218.704
+        },
+        "Temperature_height_above_ground": {
+            "gee:estimated_range": true,
+            "maximum": 325.763,
+            "minimum": 201.17
+        },
+        "Temperature_surface": {
+            "gee:estimated_range": true,
+            "maximum": 339.173,
+            "minimum": 192.569
+        },
+        "Total_cloud_cover_convective_cloud": {
+            "gee:estimated_range": true,
+            "maximum": 100
+        },
+        "Total_ozone_entire_atmosphere_single_layer": {
+            "gee:estimated_range": true,
+            "maximum": 571.4,
+            "minimum": 177
+        },
+        "Total_precipitation_surface_3_Hour_Accumulation": {
+            "gee:estimated_range": true,
+            "maximum": 239
+        },
+        "Transpiration_surface_3_Hour_Average": {
+            "gee:estimated_range": true,
+            "maximum": 680
+        },
+        "UV-B_Downward_Solar_Flux_surface_3_Hour_Average": {
+            "gee:estimated_range": true,
+            "maximum": 24.7
+        },
+        "Upward_Long-Wave_Radp_Flux_atmosphere_top_3_Hour_Average": {
+            "gee:estimated_range": true,
+            "maximum": 384,
+            "minimum": 69
+        },
+        "Upward_Long-Wave_Radp_Flux_surface": {
+            "gee:estimated_range": true,
+            "maximum": 611,
+            "minimum": 135
+        },
+        "Upward_Long-Wave_Radp_Flux_surface_3_Hour_Average": {
+            "gee:estimated_range": true,
+            "maximum": 703,
+            "minimum": 78
+        },
+        "Upward_Short-Wave_Radiation_Flux_atmosphere_top_3_Hour_Average": {
+            "gee:estimated_range": true,
+            "maximum": 1049
+        },
+        "Upward_Short-Wave_Radiation_Flux_surface": {
+            "gee:estimated_range": true,
+            "maximum": 869
+        },
+        "Upward_Short-Wave_Radiation_Flux_surface_3_Hour_Average": {
+            "gee:estimated_range": true,
+            "maximum": 806
+        },
+        "Vegetation_Type_surface": {
+            "gee:estimated_range": true,
+            "maximum": 13,
+            "minimum": 1
+        },
+        "Vegetation_surface": {
+            "gee:estimated_range": true,
+            "maximum": 99
+        },
+        "Volumetric_Soil_Moisture_Content_depth_below_surface_layer_150_cm": {
+            "gee:estimated_range": true,
+            "maximum": 1,
+            "minimum": 0.028
+        },
+        "Volumetric_Soil_Moisture_Content_depth_below_surface_layer_25_cm": {
+            "gee:estimated_range": true,
+            "maximum": 1,
+            "minimum": 0.028
+        },
+        "Volumetric_Soil_Moisture_Content_depth_below_surface_layer_5_cm": {
+            "gee:estimated_range": true,
+            "maximum": 1,
+            "minimum": 0.03
+        },
+        "Volumetric_Soil_Moisture_Content_depth_below_surface_layer_70_cm": {
+            "gee:estimated_range": true,
+            "maximum": 1,
+            "minimum": 0.028
+        },
+        "Water_equivalent_of_accumulated_snow_depth_surface": {
+            "gee:estimated_range": true,
+            "maximum": 458.82
+        },
+        "Water_runoff_surface_3_Hour_Accumulation": {
+            "gee:estimated_range": true,
+            "maximum": 193.12
+        },
+        "eo:bands": [
+            {
+                "description": "u-component of wind at Hybrid level for 00 and 03 forecast",
+                "gee:units": "m/s",
+                "name": "u-component_of_wind_hybrid"
+            },
+            {
+                "description": "v-component of wind at Hybrid level for 00 and 03 forecast",
+                "gee:units": "m/s",
+                "name": "v-component_of_wind_hybrid"
+            },
+            {
+                "description": "Albedo 3 hour average at ground or water surface for 03 forecast",
+                "gee:units": "%",
+                "name": "Albedo_surface_3_Hour_Average"
+            },
+            {
+                "description": "Canopy water evaporation 3 hour average at ground or water surface for 03 forecast",
+                "gee:units": "W/m^2",
+                "name": "Canopy_water_evaporation_surface_3_Hour_Average"
+            },
+            {
+                "description": "Categorical Rain at ground or water surface for 00 and 03 forecast",
+                "name": "Categorical_Rain_surface"
+            },
+            {
+                "description": "Categorical Rain 3 hour average at ground or water surface for 03 forecast",
+                "name": "Categorical_Rain_surface_3_Hour_Average"
+            },
+            {
+                "description": "Categorical freezing rain 3 hour average at ground or water surface for 03 forecast",
+                "name": "Categorical_Freezing_Rain_surface_3_Hour_Average"
+            },
+            {
+                "description": "Categorical ice pellets 3 hour average at ground or water surface for 03 forecast",
+                "name": "Categorical_Ice_Pellets_surface_3_Hour_Average"
+            },
+            {
+                "description": "Categorical snow 3 hour average at ground or water surface for 03 forecast",
+                "name": "Categorical_Snow_surface_3_Hour_Average"
+            },
+            {
+                "description": "Clear Sky Downward Long Wave Flux 3 hour average at ground or water surface for 03 forecast",
+                "gee:units": "W/m^2",
+                "name": "Clear_Sky_Downward_Long_Wave_Flux_surface_3_Hour_Average"
+            },
+            {
+                "description": "Clear Sky Downward Solar Flux 3 hour average at ground or water surface for 03 forecast",
+                "gee:units": "W/m^2",
+                "name": "Clear_Sky_Downward_Solar_Flux_surface_3_Hour_Average"
+            },
+            {
+                "description": "Clear Sky Upward Long Wave Flux 3 hour average at ground or water surface for 03 forecast",
+                "gee:units": "W/m^2",
+                "name": "Clear_Sky_Upward_Long_Wave_Flux_surface_3_Hour_Average"
+            },
+            {
+                "description": "Clear Sky Upward Solar Flux 3 hour average at ground or water surface for 03 forecast",
+                "gee:units": "W/m^2",
+                "name": "Clear_Sky_Upward_Solar_Flux_atmosphere_top_3_Hour_Average"
+            },
+            {
+                "description": "Clear Sky UV-B Downward Solar Flux 3 hour average at ground or water surface for 03 forecast",
+                "gee:units": "W/m^2",
+                "name": "Clear_sky_UV-B_Downward_Solar_Flux_surface_3_Hour_Average"
+            },
+            {
+                "description": "Cloud water at entire atmosphere layer for 00 and 03 forecast",
+                "gee:units": "kg/m^2",
+                "name": "Cloud_water_entire_atmosphere_single_layer"
+            },
+            {
+                "description": "Cloud work function 3 hour average at entire atmosphere layer for 03 forecast",
+                "gee:units": "J/kg",
+                "name": "Cloud_Work_Function_entire_atmosphere_single_layer_3_Hour_Average"
+            },
+            {
+                "description": "Convective available potential energy at ground or water surface for 00 and 03 forecast",
+                "gee:units": "J/kg",
+                "name": "Convective_available_potential_energy_surface"
+            },
+            {
+                "description": "Convective available potential energy at specified pressure difference from ground to level layer for 03 forecast",
+                "gee:units": "J/kg",
+                "name": "Convective_available_potential_energy_pressure_difference_layer"
+            },
+            {
+                "description": "Convective precipitation rate 3 hour average at ground or water surface for 03 forecast",
+                "gee:units": "kg/m^2/s",
+                "name": "Convective_Precipitation_Rate_surface_3_Hour_Average"
+            },
+            {
+                "description": "Convective precipitation 3 hour average at ground or water surface for 03 forecast",
+                "gee:units": "kg/m^2",
+                "name": "Convective_precipitation_surface_3_Hour_Accumulation"
+            },
+            {
+                "description": "Direct evaporation from bare soil surface 3 hour average at ground or water surface for 03 forecast",
+                "gee:units": "W/m^2",
+                "name": "Direct_Evaporation_from_Bare_Soil_surface_3_Hour_Average"
+            },
+            {
+                "description": "Downward Long-Wave Rad. Flux at ground or water surface for 00 and 03 forecast",
+                "gee:units": "W/m^2",
+                "name": "Downward_Long-Wave_Radp_Flux_surface"
+            },
+            {
+                "description": "Downward Long-Wave Rad. Flux  3 hour average at ground or water surface for 03 forecast",
+                "gee:units": "W/m^2",
+                "name": "Downward_Long-Wave_Radp_Flux_surface_3_Hour_Average"
+            },
+            {
+                "description": "Downward Short-Wave Radiation Flux at ground or water surface for 00 and 03 forecast",
+                "gee:units": "W/m^2",
+                "name": "Downward_Short-Wave_Radiation_Flux_surface"
+            },
+            {
+                "description": "Downward Short-Wave Radiation Flux 3 hour average at ground or water surface for 03 forecast",
+                "gee:units": "W/m^2",
+                "name": "Downward_Short-Wave_Radiation_Flux_surface_3_Hour_Average"
+            },
+            {
+                "description": "Downward Short-Wave Radiation Flux atmosphere top 3 hour average at ground or water surface for 03 forecast",
+                "gee:units": "W/m^2",
+                "name": "Downward_Short-Wave_Radiation_Flux_atmosphere_top_3_Hour_Average"
+            },
+            {
+                "description": "Exchange Coefficient at ground or water surface for 00 and 03 forecast",
+                "gee:units": "(kg/m^3)/(m/s)",
+                "name": "Exchange_Coefficient_surface"
+            },
+            {
+                "description": "Frictional Velocity at ground or water surface for 00 and 03 forecast",
+                "gee:units": "m/s",
+                "name": "Frictional_Velocity_surface"
+            },
+            {
+                "description": "Ground Heat Flux at ground or water surface for 00 and 03 forecast",
+                "gee:units": "W/m^2",
+                "name": "Ground_Heat_Flux_surface"
+            },
+            {
+                "description": "Ground Heat Flux 4 hour average at ground or water surface for 03 forecast",
+                "gee:units": "W/m^2",
+                "name": "Ground_Heat_Flux_surface_3_Hour_Average"
+            },
+            {
+                "description": "Ice cover at ground or water surface for 00 and 03 forecast",
+                "gee:units": "1 (area fraction)",
+                "name": "Ice_cover_surface"
+            },
+            {
+                "description": "Ice thickness at ground or water surface for 00 and 03 forecast",
+                "gee:units": "m",
+                "name": "Ice_thickness_surface"
+            },
+            {
+                "description": "Land cover (0 = sea, 1 = land) at ground or water surface for 00 and 03 forecast",
+                "name": "Land_cover_0__sea_1__land_surface"
+            },
+            {
+                "description": "Latent heat net flux at ground or water surface for 00 and 03 forecast",
+                "gee:units": "W/m^2",
+                "name": "Latent_heat_net_flux_surface"
+            },
+            {
+                "description": "Latent heat net flux 3 hour average at ground or water surface for 03 forecast",
+                "gee:units": "W/m^2",
+                "name": "Latent_heat_net_flux_surface_3_Hour_Average"
+            },
+            {
+                "description": "Liquid Volumetric Soil Moisture (non Frozen) 5 cm depth below land surface layer",
+                "name": "Liquid_Volumetric_Soil_Moisture_non_Frozen_depth_below_surface_layer_5_cm"
+            },
+            {
+                "description": "Liquid Volumetric Soil Moisture (non Frozen) 25 cm depth below land surface layer",
+                "name": "Liquid_Volumetric_Soil_Moisture_non_Frozen_depth_below_surface_layer_25_cm"
+            },
+            {
+                "description": "Liquid Volumetric Soil Moisture (non Frozen) 50 cm depth below land surface layer",
+                "name": "Liquid_Volumetric_Soil_Moisture_non_Frozen_depth_below_surface_layer_70_cm"
+            },
+            {
+                "description": "Liquid Volumetric Soil Moisture (non Frozen) 150 cm depth below land surface layer",
+                "name": "Liquid_Volumetric_Soil_Moisture_non_Frozen_depth_below_surface_layer_150_cm"
+            },
+            {
+                "description": "Maximum temperature for 3 Hour Interval at specified height level above ground for 03 forecast",
+                "gee:units": "K",
+                "name": "Maximum_temperature_height_above_ground_3_Hour_Interval"
+            },
+            {
+                "description": "Minimum temperature for 3 Hour Interval at specified height level above ground for 03 forecast",
+                "gee:units": "K",
+                "name": "Minimum_temperature_height_above_ground_3_Hour_Interval"
+            },
+            {
+                "description": "Maximum specific humidity for 3 Hour Interval at 2m specified height level above ground for 03 forecast",
+                "gee:units": "1 (mass fraction)",
+                "name": "Maximum_specific_humidity_at_2m_height_above_ground_3_Hour_Interval"
+            },
+            {
+                "description": "Minimum specific humidity for 3 Hour Interval at 2m specified height level above ground for 03 forecast",
+                "gee:units": "1 (mass fraction)",
+                "name": "Minimum_specific_humidity_at_2m_height_above_ground_3_Hour_Interval"
+            },
+            {
+                "description": "Momentum flux, u-component 3 hour average at ground or water surface for 03 forecast",
+                "gee:units": "N/m^2",
+                "name": "Momentum_flux_u-component_surface_3_Hour_Average"
+            },
+            {
+                "description": "Momentum flux, u-component 3 hour average at ground or water surface for 03 forecast",
+                "gee:units": "N/m^2",
+                "name": "Momentum_flux_v-component_surface_3_Hour_Average"
+            },
+            {
+                "description": "Plant Canopy Surface Water at ground or water surface for 00 and 03 forecast",
+                "gee:units": "kg/m^2",
+                "name": "Plant_Canopy_Surface_Water_surface"
+            },
+            {
+                "description": "Planetary Boundary Layer Height at ground or water surface for 00 and 03 forecast",
+                "gee:units": "m",
+                "name": "Planetary_Boundary_Layer_Height_surface"
+            },
+            {
+                "description": "Potential Evaporation Rate at ground or water surface for 00 and 03 forecast",
+                "gee:units": "W/m^2",
+                "name": "Potential_Evaporation_Rate_surface"
+            },
+            {
+                "description": "Potential Evaporation Rate 3 hour average at ground or water surface for 03 forecast",
+                "gee:units": "W/m^2",
+                "name": "Potential_Evaporation_Rate_surface_3_Hour_Average"
+            },
+            {
+                "description": "Precipitable rate 3 hour average at ground or water surface for 03 forecast",
+                "gee:units": "kg/m^2/s",
+                "name": "Precipitation_rate_surface_3_Hour_Average"
+            },
+            {
+                "description": "Precipitable water at entire atmosphere layer for 00 and 03 forecast",
+                "gee:units": "kg/m^2",
+                "name": "Precipitable_water_entire_atmosphere_single_layer"
+            },
+            {
+                "description": "Precipitable water at specified pressure difference from ground to level layer for 00 forecast",
+                "gee:units": "kg/m^2",
+                "name": "Precipitable_water_pressure_difference_layer"
+            },
+            {
+                "description": "Pressure at Mean sea level for 03 forecast",
+                "gee:units": "Pa",
+                "name": "Pressure_msl"
+            },
+            {
+                "description": "Pressure reduced to MSL at Mean sea level for 00 and 03 forecast",
+                "gee:units": "Pa",
+                "name": "Pressure_reduced_to_MSL_msl"
+            },
+            {
+                "description": "Pressure at ground or water surface for 00 and 03 forecast",
+                "gee:units": "Pa",
+                "name": "Pressure_surface"
+            },
+            {
+                "description": "Relative humidity at entire atmosphere layer for 00 and 03 forecast",
+                "gee:units": "%",
+                "name": "Relative_humidity_entire_atmosphere_single_layer"
+            },
+            {
+                "description": "Sensible heat net flux at ground or water surface for 00 and 03 forecast",
+                "gee:units": "W/m^2",
+                "name": "Sensible_heat_net_flux_surface"
+            },
+            {
+                "description": "Sensible heat net flux 3 hour average at ground or water surface for 03 forecast",
+                "gee:units": "W/m^2",
+                "name": "Sensible_heat_net_flux_surface_3_Hour_Average"
+            },
+            {
+                "description": "Snow cover 3 hour average at ground or water surface for 03 forecast",
+                "gee:units": "%",
+                "name": "Snow_Cover_surface_3_Hour_Average"
+            },
+            {
+                "description": "Snow depth at ground or water surface for 00 and 03 forecast",
+                "gee:units": "m",
+                "name": "Snow_depth_surface"
+            },
+            {
+                "description": "Snow phase change hear flux 3 hour average at ground or water surface for 03 forecast",
+                "gee:units": "W/m^2",
+                "name": "Snow_Phase_Change_Heat_Flux_surface_3_Hour_Average"
+            },
+            {
+                "description": "Soil moisture content at Depth below land surface layer for 00 and 03 forecast",
+                "gee:units": "kg/m^2",
+                "name": "Soil_moisture_content_depth_below_surface_layer"
+            },
+            {
+                "description": "Soil type at ground or water surface for 00 and 03 forecast",
+                "name": "Soil_type_surface"
+            },
+            {
+                "description": "Storm surface runoff 3 hour accumulation at ground or water surface for 03 forecast",
+                "gee:units": "kg/m^2",
+                "name": "Storm_Surface_Runoff_surface_3_Hour_Accumulation"
+            },
+            {
+                "description": "Sublimation (evaporation from snow) 3 hour average at ground or water surface for 03 forecast",
+                "gee:units": "W/m^2",
+                "name": "Sublimation_evaporation_from_snow_surface_3_Hour_Average"
+            },
+            {
+                "description": "Specific humidity at Specified height level above ground for 00 forecast",
+                "gee:units": "1 (mass fraction)",
+                "name": "Specific_humidity_height_above_ground"
+            },
+            {
+                "description": "Surface Lifted Index at ground or water surface for 00 and 03 forecast",
+                "gee:units": "K",
+                "name": "Surface_Lifted_Index_surface"
+            },
+            {
+                "description": "Surface roughness at ground or water surface for 00 and 03 forecast",
+                "gee:units": "m",
+                "name": "Surface_roughness_surface"
+            },
+            {
+                "description": "Surface Slope Type at ground or water surface for 00 and 03 forecast",
+                "gee:units": "index",
+                "name": "Surface_Slope_Type_surface"
+            },
+            {
+                "description": "Temperature 5cm depth below land surface layer for 00 and 03 forecast",
+                "gee:units": "K",
+                "name": "Temperature_depth_below_surface_layer_5_cm"
+            },
+            {
+                "description": "Temperature 25cm epth below land surface layer for 00 and 03 forecast",
+                "gee:units": "K",
+                "name": "Temperature_depth_below_surface_layer_25_cm"
+            },
+            {
+                "description": "Temperature 70 cm depth below land surface layer for 00 and 03 forecast",
+                "gee:units": "K",
+                "name": "Temperature_depth_below_surface_layer_70_cm"
+            },
+            {
+                "description": "Temperature 150cm depth below land surface layer for 00 and 03 forecast",
+                "gee:units": "K",
+                "name": "Temperature_depth_below_surface_layer_150_cm"
+            },
+            {
+                "description": "Temperature at Specified height level above ground for 00 forecast",
+                "gee:units": "K",
+                "name": "Temperature_height_above_ground"
+            },
+            {
+                "description": "Temperature at ground or water surface for 00 and 03 forecast",
+                "gee:units": "K",
+                "name": "Temperature_surface"
+            },
+            {
+                "description": "Total cloud cover at Convective cloud layer for 00 forecast",
+                "gee:units": "%",
+                "name": "Total_cloud_cover_convective_cloud"
+            },
+            {
+                "description": "Total ozone at entire atmosphere layer for 00 and 03 forecast",
+                "gee:units": "Dobson",
+                "name": "Total_ozone_entire_atmosphere_single_layer"
+            },
+            {
+                "description": "Total precipitation 3 hour average at ground or water surface for 03 forecast",
+                "gee:units": "kg/m^2",
+                "name": "Total_precipitation_surface_3_Hour_Accumulation"
+            },
+            {
+                "description": "Transpiration surface 3 hour average at ground or water surface for 03 forecast",
+                "gee:units": "W/m^2",
+                "name": "Transpiration_surface_3_Hour_Average"
+            },
+            {
+                "description": "Upward Long-Wave Rad. Flux at ground or water surface for 00 and 03 forecast",
+                "gee:units": "W/m^2",
+                "name": "Upward_Long-Wave_Radp_Flux_surface"
+            },
+            {
+                "description": "Upward Long-Wave Radiation Flux 3 hour average at ground or water surface for 03 forecast",
+                "gee:units": "W/m^2",
+                "name": "Upward_Long-Wave_Radp_Flux_surface_3_Hour_Average"
+            },
+            {
+                "description": "Upward Long-Wave Radiation Flux 3 hour average at nominal top of the atmosphere for 03 forecast",
+                "gee:units": "W/m^2",
+                "name": "Upward_Long-Wave_Radp_Flux_atmosphere_top_3_Hour_Average"
+            },
+            {
+                "description": "Upward Short-Wave Radiation Flux at ground or water surface for 00 and 03 forecast",
+                "gee:units": "W/m^2",
+                "name": "Upward_Short-Wave_Radiation_Flux_surface"
+            },
+            {
+                "description": "Upward Short-Wave Radiation Flux 3 hour average at ground or water surface for 03 forecast",
+                "gee:units": "W/m^2",
+                "name": "Upward_Short-Wave_Radiation_Flux_surface_3_Hour_Average"
+            },
+            {
+                "description": "Upward Short-Wave Radiation Flux 3 hour average at nominal top of the atmosphere for 03 forecast",
+                "gee:units": "W/m^2",
+                "name": "Upward_Short-Wave_Radiation_Flux_atmosphere_top_3_Hour_Average"
+            },
+            {
+                "description": "UV-B Downward Solar Flux 3 hour average at ground or water surface for 03 forecast",
+                "gee:units": "W/m^2",
+                "name": "UV-B_Downward_Solar_Flux_surface_3_Hour_Average"
+            },
+            {
+                "description": "Vegetation at ground or water surface for 00 and 03 forecast",
+                "gee:units": "%",
+                "name": "Vegetation_surface"
+            },
+            {
+                "description": "Vegetation Type at ground or water surface for 00 and 03 forecast",
+                "name": "Vegetation_Type_surface"
+            },
+            {
+                "description": "Volumetric soil moisture content 5cm below surface layer for 00 and 03 forecast",
+                "gee:units": "1 (unspecified fraction)",
+                "name": "Volumetric_Soil_Moisture_Content_depth_below_surface_layer_5_cm"
+            },
+            {
+                "description": "Volumetric soil moisture content 25cm below surface layer for 00 and 03 forecast",
+                "gee:units": "1 (unspecified fraction)",
+                "name": "Volumetric_Soil_Moisture_Content_depth_below_surface_layer_25_cm"
+            },
+            {
+                "description": "Volumetric soil moisture content 70cm below surface layer for 00 and 03 forecast",
+                "gee:units": "1 (unspecified fraction)",
+                "name": "Volumetric_Soil_Moisture_Content_depth_below_surface_layer_70_cm"
+            },
+            {
+                "description": "Volumetric soil moisture content 150cm below surface layer for 00 and 03 forecast",
+                "gee:units": "1 (unspecified fraction)",
+                "name": "Volumetric_Soil_Moisture_Content_depth_below_surface_layer_150_cm"
+            },
+            {
+                "description": "Water equivalent of accumulated snow depth at ground or water surface for 00 and 03 forecast",
+                "gee:units": "kg/m^2",
+                "name": "Water_equivalent_of_accumulated_snow_depth_surface"
+            },
+            {
+                "description": "Water runoff 3 hour accumulation at ground or water surface for 03 forecast",
+                "gee:units": "kg/m^2",
+                "name": "Water_runoff_surface_3_Hour_Accumulation"
+            }
+        ],
+        "gee:schema": [
+            {
+                "description": "Duration of forecast in hours",
+                "name": "forecast_hour",
+                "type": "INT",
+                "units": "h"
+            }
+        ],
+        "gsd": [
+            55660
+        ],
+        "u-component_of_wind_hybrid": {
+            "gee:estimated_range": true,
+            "maximum": 44.33,
+            "minimum": -47.24
+        },
+        "v-component_of_wind_hybrid": {
+            "gee:estimated_range": true,
+            "maximum": 46.36,
+            "minimum": -45.45
+        }
+    },
+    "assets": {
+        "preview_4": {
+            "href": "https://developers.google.com/earth-engine/datasets/images/NOAA/NOAA_CFSR_sample.png",
+            "type": "image/png",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    },
+    "sci:citation": "Saha, S., S. Moorthi, H. Pan, X. Wu, J. Wang, and Coauthors, 2010: The NCEP\nClimate Forecast System Reanalysis. Bulletin of the American Meteorological\nSociety, 91, 1015-1057.\n[doi:10.1175/2010BAMS3001.1](https://doi.org/10.1175/2010BAMS3001.1)\n",
+    "sci:doi": "10.5065/D6513W89",
+    "gee:interval": {
+        "interval": 6,
+        "type": "cadence",
+        "unit": "hour"
+    },
+    "gee:terms_of_use": "NOAA data, information, and products, regardless of the method of delivery,\nare not subject to copyright and carry no restrictions on their subsequent\nuse by the public. Once obtained, they may be put to any lawful use. The\nforgoing data is in the public domain and is being provided without\nrestriction on use and distribution. For more information visit the\n[NWS disclaimer site](https://www.weather.gov/disclaimer/).\n",
+    "gee:type": "image_collection"
+}

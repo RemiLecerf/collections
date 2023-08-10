@@ -1,0 +1,52 @@
+{
+  "type": "Collection",
+  "id": "OMI_HEALTH_CHL_BALTIC_OCEANCOLOUR_area_averaged_mean",
+  "stac_version": "1.0.0",
+  "description": "'''DEFINITION'''\n\nThe time series are derived from the regional chlorophyll reprocessed (MY) product as distributed by CMEMS which, in turn, result from the application of the regional chlorophyll algorithm over remote sensing reflectances (Rrs) provided by the Plymouth Marine Laboratory using an ad-hoc configuration for CMEMS of the ESA OC-CCI processor version 6 (OC-CCIv6) to merge at 1km resolution (rather than at 4km as for OC-CCI) MERIS, MODIS-AQUA, SeaWiFS, NPP-VIIRS and OLCI-A data. The chlorophyll product is derived from a Multi-Layer Perceptron neural-net (MLP) developed on field measurements collected within the BiOMaP program of JRC/EC (Zibordi et al., 2011). The algorithm is an ensemble of different MLPs that use Rrs at different wavelengths as input. The processing chain and the techniques used to develop the algorithm are detailed in Brando et al. (2021a; 2021b). \nMonthly regional mean values are calculated by performing the average of 2D monthly mean (weighted by pixel area) over the region of interest. The deseasonalized time series is obtained by applying the X-11 seasonal adjustment methodology on the original time series as described in Colella et al. (2016), and then the Mann-Kendall test (Mann, 1945; Kendall, 1975) and Sens’s method (Sen, 1968) are subsequently applied to obtain the magnitude of trend. \n\n'''CONTEXT'''\n\nPhytoplankton   and chlorophyll concentration as a proxy for phytoplankton   respond rapidly to changes in environmental conditions, such as light, temperature, nutrients and mixing (Gregg and Rousseaux, 2014). The character of the response in the Baltic Sea depends on the nature of the change drivers, and ranges from seasonal cycles to decadal oscillations (Kahru and Elmgren 2014). Therefore, it is of critical importance to monitor chlorophyll concentration at multiple temporal and spatial scales, in order to be able to separate potential long-term climate signals from natural variability in the short term. In particular, in the Baltic Sea phytoplankton is known to respond to the variations of SST in the basin associated with climate variability (Kabel et al. 2012).\n\n'''CMEMS KEY FINDINGS'''\n\nBaltic Sea shows a positive trend in the time interval 1997-2021 with a slope of 0.67±0.46% per year. Due to the change in chlorophyll algorithm, this trend estimate cannot be compared directly to those previously reported. Maxima and minima values are quite similar year-by-year. Absolute maximum is clear in 2008 while absolute minimum is achieved during 2004. Since 2019 chlorophyll seems to increase weakly.\n\n'''DOI (product):'''\nhttps://doi.org/10.48670/moi-00197",
+  "links": [],
+  "title": "Baltic Sea Chlorophyll-a time series and trend from Observations Reprocessing",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          9.25,
+          53.25,
+          30.25,
+          65.85
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1997-09-14T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Oceanographic geographical features",
+    "satellite-observation",
+    "mass_concentration_of_chlorophyll_in_seawater",
+    "multi-year",
+    "coastal-marine-environment",
+    "marine-resources",
+    "weather-climate-and-seasonal-forecasting",
+    "marine-safety",
+    "baltic-sea",
+    "Level 4",
+    "Not Applicable"
+  ],
+  "providers": [
+    {
+      "name": "Copernicus Marine Service",
+      "description": "Copernicus Marine Service - Mercator Ocean International",
+      "roles": [
+        "host"
+      ],
+      "url": "https://marine.copernicus.eu/"
+    }
+  ]
+}

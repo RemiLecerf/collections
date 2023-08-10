@@ -1,0 +1,110 @@
+{
+    "type": "Collection",
+    "version": "v1",
+    "stac_version": "0.9.0",
+    "stac_extensions": [
+        "datacube"
+    ],
+    "id": "ADO_factor_soil_texture",
+    "title": "Factor soil texture",
+    "description": "USDA soil textural classes derived from clay, silt and sand maps. - Resolution: 500m - Geographical Coverage: Alpine space - Input data: LUCAS 2009 Topsoil- Model: Multivariate Additive Regression Splines (MARS) - Year: 2015- Soil texture is classified into 12 classes: 1: Clay, 2: Silty-Clay, 3: Silty Clay-Loam, 4: Sandy Clay, 5: Sandy Clay-Loam, 6: Clay-Loam, 7: Silt, 8: Silt-Loam, 9: Loam, 10: Sand, 11: Loam Sand, 12: Sandy Loam. For further information visit the website European soil data centre (ESDAC).",
+    "keywords": [
+        "soil texture",
+        "soil textural classes",
+        "ESDAC",
+        "LUCAS",
+        "topsoil",
+        "ADO project",
+        "ADO"
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    4.00892779336706,
+                    42.88575498619361,
+                    17.507984606136308,
+                    50.317601064649004
+                ]
+            ]
+        }
+    },
+    "providers": [
+        {
+            "name": "eurac research",
+            "url": "http://www.eurac.edu",
+            "roles": [
+                "Host"
+            ]
+        },
+        {
+            "name": "Joint Research Centre (JRC, Ispra)",
+            "url": "https://joint-research-centre.ec.europa.eu/jrc-sites-across-europe/jrc-ispra-italy_en",
+            "roles": [
+                "Processor"
+            ]
+        },
+        {
+            "name": "JRC (European Commission)",
+            "url": "https://joint-research-centre.ec.europa.eu/index_en",
+            "roles": [
+                "Producer"
+            ]
+        }
+    ],
+    "license": "CC BY 4.0",
+    "links": [
+        {
+            "rel": "licence",
+            "href": "https://ec.europa.eu/info/legal-notice_enhttp://creativecommons.org/licenses/by/4.0/",
+            "type": "text/html",
+            "title": "License Link"
+        }
+    ],
+    "cube:dimensions": {
+        "X": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                4.00892779336706,
+                17.507984606136308
+            ],
+            "reference_system": 3035
+        },
+        "Y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                42.88575498619361,
+                50.317601064649004
+            ],
+            "reference_system": 3035
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "soil_texture"
+            ]
+        }
+    },
+    "summaries": {
+        "constellation": [
+            "N/A"
+        ],
+        "platform": [
+            "N/A"
+        ],
+        "rows": 1666,
+        "columns": 2048,
+        "instruments": [
+            "N/A"
+        ],
+        "eo:bands": [
+            {
+                "name": "soil_texture"
+            }
+        ]
+    },
+    "sci:citation": "Ballabio C., Panagos P., Montanarella L. Mapping topsoil physical properties at European scale using the LUCAS database (2016) Geoderma, 261 , pp. 110-123.",
+    "engine": "WCPS"
+}

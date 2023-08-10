@@ -1,0 +1,62 @@
+{
+  "type": "Collection",
+  "id": "EO:ECMWF:DAT:SIS_OCEAN_WAVE_INDICATORS",
+  "stac_version": "1.0.0",
+  "description": "The dataset presents wave climate indicators based upon ocean surface wave parameters computed for a European-wide domain. This dataset provides an understanding of the European wave climate under the impact of climate change. It provides added value for various coastal sectors and studies such as port, shipping, and coastal management.\nThe ocean surface wave field are computed using the ECMWF's Wave Model (Stand Alone WAM, SAW) forced by surface wind and accounting for ice coverage in polar latitudes. The wave climate is defined by means of wave spectral parameters such as the significant wave height and the peak wave period. In order to assess the impact of climate change on the ocean's surface wave field, the SAW model is run for three different climate scenarios: the present climate (labelled 'historical'), and two Representative Concentration Pathway (RCP) scenarios that correspond to an optimistic emission scenario where emissions start declining beyond 2040 (RCP4.5) and a pessimistic scenario where emissions continue to rise throughout the century often called the business-as-usual scenario (RCP8.5). The wave climate in these scenarios are simulated using wind forcing from a member of the EURO-CORDEX climate model ensemble - the HIRHAM5 regional climate model downscaled from the global climate model EC-EARTH. In addition to the three climate scenarios, the indicators are also computed using ERA5 reanlysis wind forcing. This provides recent historical wave climate indicators that may be used, for example, to look at specific events in the past.\nThis dataset was produced on behalf of the Copernicus Climate Change Service.\n\nVariables in the dataset/application are:\nPeak wave period, Significant wave height",
+  "links": [
+    {
+      "rel": "hosts",
+      "href": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.1a072dd6",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Climate Data Store catalogue"
+    },
+    {
+      "rel": "hosts",
+      "href": "https://confluence.ecmwf.int/x/N5ovEQ",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Product user guide"
+    }
+  ],
+  "title": "Ocean surface wave indicators for the European coast from 1977 to 2100 derived from climate projections",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -30.0,
+          25.0,
+          45.0,
+          72.5
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1976-01-01T00:00:00Z",
+          "2100-12-31T23:59:59Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Hydrography",
+    "Sector: Coastal regions",
+    "Product type: Climate projections",
+    "Spatial coverage: Europe",
+    "Variable domain: Ocean (physics)",
+    "Temporal coverage: Past",
+    "Temporal coverage: Present",
+    "Temporal coverage: Future"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

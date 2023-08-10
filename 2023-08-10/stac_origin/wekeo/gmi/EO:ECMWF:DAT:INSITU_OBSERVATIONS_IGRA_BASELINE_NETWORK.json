@@ -1,0 +1,46 @@
+{
+  "type": "Collection",
+  "id": "EO:ECMWF:DAT:INSITU_OBSERVATIONS_IGRA_BASELINE_NETWORK",
+  "stac_version": "1.0.0",
+  "description": "This catalogue entry provides access to vertical profiles of standard meteorological variables. It includes two datasets. \nThe first is version 2 of the Integrated Global Radiosounding Archive (IGRA) from 1978 which incorporates global \nradiosounding profiles of temperature, humidity and wind from a large number of data sources,\nwhich is 30% larger than the previous version 1. IGRA v2 is the result of quality assurance procedures applied to the\nradiosoundings data which can be grouped into eight categories: fundamental “sanity” checks, checks on the plausibility\nand temporal consistency of surface elevation, internal consistency checks, checks for the repetition of values, \nchecks for gross position errors in ship tracks, climatology-based checks, checks on the vertical and temporal \nconsistency of temperature, and data completeness checks. No uncertainty estimation for the IGRA data is available.\nThe second is the Radiosounding HARMonization (RHARM) homogenized dataset which provides adjusted values of temperature,\nrelative humidity and wind, removing systematic effects (such as change in the measurement sensors,\nsolar radiation biases, sonde time-lag, calibration drifts, station relocation etc.) at 700 IGRA radiosounding stations\nand radiosoundings from ships.\nRHARM includes twice daily (0000 and 1200 UTC) radiosonde data at the mandatory levels (listed below).\nAt pressure levels lower than 10 hPa, temperature harmonized values are not provided because of the paucity of available \nobservations and the issues affecting the measurements at those levels.\nRelative humidity adjustments and data provision have been limited to 250 hPa owing to pervasive sensor \nperformance issues at greater altitudes. \nMoreover, an estimation of the measurement uncertainty is provided for each value of the time series. \nThe radiosounding significance levels are also adjusted per interpolation along with the corresponding uncertainties. \nThe RHARM dataset thus inherits the IGRA quality assurance procedures, and additional quality checks are then applied,\nperforming tests on physical plausibility, accuracy of the bias adjustment, presence of outliers, and coherency check\nfor the adjustments applied at the significant levels. \nThe IGRA dataset is provided by NOAA's National Centers for Environmental Information (NCEI) also through the IGRA data portal: \n\nIGRA data portal.\n\nThe RHARM dataset has been specifically developed for the Copernicus Climate Change Service (C3S).\nRadiosoundings can be downloaded as comma-separated values (CSV) files organised in two different ways:\n\nCSV one row per level: for each observed height all variables are provided as individual columns in one row. Each main variable has its dedicated columns for total uncertainty, where applies (referenced as csv-lev in the variable lists below).\nCSV one row per observation: (no aggregation) each row provides information about one variable at one level only. All main variable are grouped together in the following columns: one for the observed variable (indicates variable in question), one for observation value and one column for total uncertainty (referenced as csv-obs in the variable lists below).\n\n\nVariables in the dataset/application are:\nAir dewpoint depression, Air temperature, Air temperature total uncertainty, Ascent speed, Eastward wind component, Eastward wind component total uncertainty, Frost point temperature, Geopotential height, Northward wind component, Northward wind component total uncertainty, Relative humidity, Relative humidity total uncertainty, Solar zenith angle, Water vapor volume mixing ratio, Wind from direction, Wind from direction total uncertainty, Wind speed, Wind speed total uncertainty\n\nVariables in the dataset/application are:\nActual time, Air pressure, Height of station above sea level, Latitude, Longitude, Observation value, Observed variable, Radiosonde code, Report id, Report timestamp, Sensor model, Station name, Total uncertainty",
+  "links": [],
+  "title": "In situ observations of meteorological variables from the Integrated Global Radiosounding Archive and the Radiosounding Harmonization dataset from 1978 onward",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1978-01-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Land cover",
+    "Product type: In-situ observations",
+    "Spatial coverage: Global",
+    "Variable domain: Atmosphere (upper air)",
+    "Temporal coverage: Past"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

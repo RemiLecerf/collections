@@ -1,0 +1,258 @@
+{
+    "description": "MYD08_M3 V6.1 is an atmosphere global product that contains\nmonthly 1 x 1 degree grid average values of atmospheric parameters.\nThese parameters are related to atmospheric aerosol particle properties,\ntotal ozone burden, atmospheric water vapor, cloud optical and\nphysical properties, and atmospheric stability indices. The product\nalso provides means, standard deviations, QA weighted statistics,\nlog-normal distributions, uncertainty estimates, and statistics\nfor fractions of pixels that satisfy some condition. Below is a\nsubset of the bands, for a complete list see the\n[MOD08 Band List](https://developers.google.com/earth-engine/MOD08_bands.html).\n\nDocumentation:\n\n* [User's Guide](https://modis-atmos.gsfc.nasa.gov/sites/default/files/ModAtmo/L3_ATBD_C6_C61_2019_02_20.pdf)\n\n* [Science Data Product Software Documentation](https://modis-atmos.gsfc.nasa.gov/sites/default/files/ModAtmo/L3_C61_Changes_v2.pdf)\n\n* [MYD08_M3 product description](https://modis-atmos.gsfc.nasa.gov/products/monthly)\n\n* [File specification document](https://modis-atmos.gsfc.nasa.gov/sites/default/files/ModAtmo/MOD08_M3_fs_3045.txt)\n",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2002-07-01T00:00:00Z",
+                    "2023-04-01T00:00:00"
+                ]
+            ]
+        }
+    },
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "month"
+    },
+    "gee:provider_ids": [
+        "C1443775657-LAADS"
+    ],
+    "gee:terms_of_use": "This dataset is in the public domain and is available\nwithout restriction on use and distribution. See [NASA\\'s\nEarth Science Data & Information Policy](https://science.nasa.gov/earth-science/earth-science-data/data-information-policy)\nfor additional information.\n",
+    "gee:type": "image_collection",
+    "id": "MODIS/061/MYD08_M3",
+    "keywords": [
+        "aqua",
+        "atmosphere",
+        "geophysical",
+        "global",
+        "modis",
+        "monthly",
+        "myd08",
+        "myd08_m3",
+        "nasa",
+        "temperature",
+        "usgs"
+    ],
+    "license": "proprietary",
+    "links": [
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections/MODIS/061/MYD08_M3",
+            "rel": "self",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections",
+            "rel": "parent",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/",
+            "rel": "root",
+            "type": "application/json"
+        },
+        {
+            "code": "JavaScript",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/MODIS/MODIS_061_MYD08_M3",
+            "rel": "related",
+            "title": "Run the example for MODIS/061/MYD08_M3 in the Earth Engine Code Editor",
+            "type": "text/html"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/images/MODIS/MODIS_061_MYD08_M3_sample.png",
+            "rel": "preview",
+            "type": "image/png"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MYD08_M3#terms-of-use",
+            "rel": "license",
+            "type": "text/html"
+        },
+        {
+            "href": "https://doi.org/10.5067/MODIS/MYD08_M3.061",
+            "rel": "cite-as"
+        }
+    ],
+    "providers": [
+        {
+            "name": "NASA LAADS DAAC at NASA Goddard Space Flight Center",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://doi.org/10.5067/MODIS/MYD08_M3.061"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MYD08_M3"
+        }
+    ],
+    "sci:citation": "Platnick, S., M. King, P. Hubanks, 2015. MODIS Atmosphere L3 Monthly\nProduct. NASA MODIS Adaptive Processing System, Goddard Space Flight\nCenter, [doi:10.5067/MODIS/MYD08_M3.061](https://doi.org/10.5067/MODIS/MYD08_M3.061)\n",
+    "sci:doi": "10.5067/MODIS/MYD08_M3.061",
+    "stac_extensions": [
+        "collection-assets"
+    ],
+    "stac_version": "1.0.0",
+    "summaries": {
+        "Aerosol_Optical_Depth_Land_Ocean_Mean_Mean": {
+            "maximum": 5000,
+            "minimum": -100
+        },
+        "Aerosol_Optical_Depth_Land_Ocean_Std_Deviation_Mean": {
+            "maximum": 5000,
+            "minimum": -100
+        },
+        "Aerosol_Optical_Depth_Land_QA_Mean_Mean_470": {
+            "maximum": 5000,
+            "minimum": -100
+        },
+        "Aerosol_Optical_Depth_Land_QA_Std_Deviation_Mean_470": {
+            "maximum": 5000,
+            "minimum": -100
+        },
+        "Cirrus_Fraction_SWIR_FMean": {
+            "maximum": 10000
+        },
+        "Cirrus_Fraction_SWIR_FStd": {
+            "maximum": 10000
+        },
+        "Cloud_Optical_Thickness_Liquid_Log_Mean_Mean": {
+            "maximum": 4176
+        },
+        "Cloud_Optical_Thickness_Liquid_Log_Mean_Uncertainty": {
+            "maximum": 4477
+        },
+        "Cloud_Optical_Thickness_Liquid_Log_Std_Deviation_Mean": {
+            "maximum": 4176
+        },
+        "Cloud_Optical_Thickness_Liquid_Mean_Uncertainty": {
+            "maximum": 2000
+        },
+        "eo:bands": [
+            {
+                "description": "Aerosol optical thickness at 0.55 microns for both\nocean (best) and land (corrected): mean of daily mean\n",
+                "gee:scale": 0.001,
+                "name": "Aerosol_Optical_Depth_Land_Ocean_Mean_Mean"
+            },
+            {
+                "description": "Aerosol optical thickness at 0.55 microns for both\nocean (best) and land (corrected): mean of daily standard deviation\n",
+                "gee:scale": 0.001,
+                "name": "Aerosol_Optical_Depth_Land_Ocean_Std_Deviation_Mean"
+            },
+            {
+                "description": "Corrected aerosol optical depth (land) at 0.47 microns: mean of level-3 QA weighted mean",
+                "gee:scale": 0.001,
+                "name": "Aerosol_Optical_Depth_Land_QA_Mean_Mean_470"
+            },
+            {
+                "description": "Corrected aerosol optical depth (land) at 0.47 microns:\nmean of level-3 weighted QA standard deviation",
+                "gee:scale": 0.001,
+                "name": "Aerosol_Optical_Depth_Land_QA_Std_Deviation_Mean_470"
+            },
+            {
+                "description": "Cirrus area fraction: mean of daily fraction",
+                "gee:scale": 0.0001,
+                "name": "Cirrus_Fraction_SWIR_FMean"
+            },
+            {
+                "description": "Cirrus area fraction: standard deviation of daily fraction",
+                "gee:scale": 0.0001,
+                "name": "Cirrus_Fraction_SWIR_FStd"
+            },
+            {
+                "description": "Liquid water cloud optical thickness: mean of daily log mean",
+                "gee:scale": 0.001,
+                "name": "Cloud_Optical_Thickness_Liquid_Log_Mean_Mean"
+            },
+            {
+                "description": "Liquid water cloud optical thickness: mean of daily log standard deviation",
+                "gee:scale": 0.001,
+                "name": "Cloud_Optical_Thickness_Liquid_Log_Std_Deviation_Mean"
+            },
+            {
+                "description": "Liquid water cloud optical thickness: multi-day absolute\nuncertainty estimate derived from the daily absolute uncertainty\nestimate\n",
+                "gee:scale": 0.01,
+                "name": "Cloud_Optical_Thickness_Liquid_Mean_Uncertainty"
+            },
+            {
+                "description": "Liquid water cloud optical thickness: multi-day absolute\nlog uncertainty estimate derived from the daily absolute log\nuncertainty estimate\n",
+                "gee:scale": 0.001,
+                "name": "Cloud_Optical_Thickness_Liquid_Log_Mean_Uncertainty"
+            }
+        ],
+        "gsd": [
+            111320
+        ],
+        "instruments": [
+            "MODIS"
+        ],
+        "platform": [
+            "Aqua"
+        ]
+    },
+    "title": "MYD08_M3.061 Aqua Atmosphere Monthly Global Product",
+    "type": "Collection",
+    "version": "V061",
+    "cube:dimensions": {
+        "x": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                -180,
+                180
+            ]
+        },
+        "y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                -90,
+                90
+            ]
+        },
+        "t": {
+            "type": "temporal",
+            "extent": [
+                "2002-07-01T00:00:00Z",
+                "2023-04-01T00:00:00"
+            ]
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "Aerosol_Optical_Depth_Land_Ocean_Mean_Mean",
+                "Aerosol_Optical_Depth_Land_Ocean_Std_Deviation_Mean",
+                "Aerosol_Optical_Depth_Land_QA_Mean_Mean_470",
+                "Aerosol_Optical_Depth_Land_QA_Std_Deviation_Mean_470",
+                "Cirrus_Fraction_SWIR_FMean",
+                "Cirrus_Fraction_SWIR_FStd",
+                "Cloud_Optical_Thickness_Liquid_Log_Mean_Mean",
+                "Cloud_Optical_Thickness_Liquid_Log_Std_Deviation_Mean",
+                "Cloud_Optical_Thickness_Liquid_Mean_Uncertainty",
+                "Cloud_Optical_Thickness_Liquid_Log_Mean_Uncertainty"
+            ]
+        }
+    },
+    "assets": {
+        "preview_4": {
+            "href": "https://developers.google.com/earth-engine/datasets/images/MODIS/MODIS_061_MYD08_M3_sample.png",
+            "type": "image/png",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    }
+}

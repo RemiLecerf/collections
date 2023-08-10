@@ -1,0 +1,52 @@
+{
+  "type": "Collection",
+  "id": "EO:MO:DAT:SST_BS_PHY_SUBSKIN_L4_NRT_010_035",
+  "stac_version": "1.0.0",
+  "description": "'''Short description:'''\n\nFor the Black Sea - the CNR diurnal sub-skin Sea Surface Temperature product provides daily gap-free (L4) maps of hourly mean sub-skin SST at 1/16° (0.0625°) horizontal resolution over the CMEMS Black Sea (BS) domain, by combining infrared satellite and model data (Marullo et al., 2014). The implementation of this product takes advantage of the consolidated operational SST processing chains that provide daily mean SST fields over the same basin (Buongiorno Nardelli et al., 2013). The sub-skin temperature is the temperature at the base of the thermal skin layer and it is equivalent to the foundation SST at night, but during daytime it can be significantly different under favorable (clear sky and low wind) diurnal warming conditions. The sub-skin SST L4 product is created by combining geostationary satellite observations aquired from SEVIRI and model data (used as first-guess) aquired from the CMEMS BS Monitoring Forecasting Center (MFC). This approach takes advantage of geostationary satellite observations as the input signal source to produce hourly gap-free SST fields using model analyses as first-guess. The resulting SST anomaly field (satellite-model) is free, or nearly free, of any diurnal cycle, thus allowing to interpolate SST anomalies using satellite data acquired at different times of the day (Marullo et al., 2014).\n\n'''DOI (product) :'''   \nhttps://doi.org/10.48670/moi-00157",
+  "links": [],
+  "title": "Black Sea - High Resolution Diurnal Subskin Sea Surface Temperature Analysis",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2020-01-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Oceanographic geographical features",
+    "satellite-observation",
+    "sea_surface_subskin_temperature",
+    "near-real-time",
+    "weather-climate-and-seasonal-forecasting",
+    "marine-safety",
+    "marine-resources",
+    "coastal-marine-environment",
+    "black-sea",
+    "Level 4",
+    "Not Applicable"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

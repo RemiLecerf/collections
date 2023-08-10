@@ -1,0 +1,118 @@
+{
+    "type": "Collection",
+    "version": "v1",
+    "stac_version": "0.9.0",
+    "stac_extensions": [
+        "datacube"
+    ],
+    "id": "EURAC_SNOW_CLOUDREMOVAL_MODIS_ALPS_LAEA",
+    "title": "Eurac Snow Cloud Removal Modis",
+    "description": "Snow maps with clouds removed by spatial and temporal filters",
+    "keywords": [
+        "No Keywords Available"
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    4.216447063264611,
+                    42.817151599184875,
+                    18.990559099334654,
+                    48.60184813603919
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2009-12-31T12:00:00Z",
+                    "2019-12-31T12:00:00Z"
+                ]
+            ]
+        }
+    },
+    "providers": [
+        {
+            "name": "Eurac EO WCS",
+            "url": "http://www.eurac.edu",
+            "roles": [
+                "Host"
+            ]
+        },
+        {
+            "name": "Michael Matiu",
+            "url": "http://www.eurac.it/en/research/mountains/remsen/staff/Pages/staffdetails.aspx?persId=39146",
+            "roles": [
+                "Processor"
+            ]
+        }
+    ],
+    "license": "CC-BY-4.0",
+    "links": [
+        {
+            "rel": "licence",
+            "href": "https://creativecommons.org/licenses/by/4.0/",
+            "type": "text/html",
+            "title": "License Link"
+        }
+    ],
+    "cube:dimensions": {
+        "DATE": {
+            "type": "temporal",
+            "extent": [
+                "2009-12-31T12:00:00.000Z",
+                "2019-12-31T12:00:00.000Z"
+            ],
+            "step": "P1D"
+        },
+        "X": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                4.216447063264611,
+                18.990559099334654
+            ],
+            "reference_system": 3035
+        },
+        "Y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                42.817151599184875,
+                48.60184813603919
+            ],
+            "reference_system": 3035
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "SnowMap"
+            ]
+        }
+    },
+    "summaries": {
+        "constellation": [
+            "Aqua, Terra"
+        ],
+        "platform": [
+            "Aqua, Terra"
+        ],
+        "rows": 2867,
+        "columns": 4901,
+        "instruments": [
+            "MODIS"
+        ],
+        "gsd": [
+            231.6564
+        ],
+        "eo:bands": [
+            {
+                "name": "SnowMap",
+                "common_name": "SnowMap",
+                "gsd": 231.6564
+            }
+        ]
+    },
+    "sci:citation": "Matiu, M.; Jacob, A.; Notarnicola, C. Daily MODIS Snow Cover Maps for the European Alps from 2002 onwards at 250 m Horizontal Resolution Along with a Nearly Cloud-Free Version. Data 2020, 5, 1. https://doi.org/10.3390/data5010001",
+    "engine": "WCPS"
+}

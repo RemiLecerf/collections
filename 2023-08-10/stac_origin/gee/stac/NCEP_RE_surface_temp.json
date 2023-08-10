@@ -1,0 +1,157 @@
+{
+    "type": "Collection",
+    "version": "1",
+    "stac_version": "1.0.0",
+    "stac_extensions": [
+        "collection-assets"
+    ],
+    "id": "NCEP_RE/surface_temp",
+    "title": "NCEP/NCAR Reanalysis Data, Surface Temperature",
+    "description": "The NCEP/NCAR Reanalysis Project is a joint project between the National\nCenters for Environmental Prediction (NCEP, formerly \"NMC\") and the\nNational Center for Atmospheric Research (NCAR). The goal of this joint\neffort is to produce new atmospheric analyses using historical data as\nwell as to produce analyses of the current atmospheric state (Climate Data\nAssimilation System, CDAS). The NCEP/NCAR Reanalysis 1 project is using a\nstate-of-the-art analysis/forecast system to perform data assimilation using\npast data from 1948 to the present. The data have 6-hour temporal\nresolution (0000, 0600, 1200, and 1800 UTC) and 2.5 degree spatial\nresolution.\n",
+    "keywords": [
+        "atmosphere",
+        "climate",
+        "geophysical",
+        "ncep",
+        "noaa",
+        "reanalysis",
+        "temperature"
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1948-01-01T00:00:00Z",
+                    "2023-05-28T18:00:00"
+                ]
+            ]
+        }
+    },
+    "providers": [
+        {
+            "name": "NCEP",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://www.esrl.noaa.gov/psd/data/gridded/data.ncep.reanalysis.html"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/NCEP_RE_surface_temp"
+        }
+    ],
+    "license": "proprietary",
+    "links": [
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections/NCEP_RE/surface_temp",
+            "rel": "self",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections",
+            "rel": "parent",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/",
+            "rel": "root",
+            "type": "application/json"
+        },
+        {
+            "code": "JavaScript",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NCEP_RE/NCEP_RE_surface_temp",
+            "rel": "related",
+            "title": "Run the example for NCEP_RE/surface_temp in the Earth Engine Code Editor",
+            "type": "text/html"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/images/NCEP_RE/NCEP_RE_surface_temp_sample.png",
+            "rel": "preview",
+            "type": "image/png"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/NCEP_RE_surface_temp#terms-of-use",
+            "rel": "license",
+            "type": "text/html"
+        }
+    ],
+    "cube:dimensions": {
+        "x": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                -180,
+                180
+            ]
+        },
+        "y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                -90,
+                90
+            ]
+        },
+        "t": {
+            "type": "temporal",
+            "extent": [
+                "1948-01-01T00:00:00Z",
+                "2023-05-28T18:00:00"
+            ]
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "air"
+            ]
+        }
+    },
+    "summaries": {
+        "air": {
+            "gee:estimated_range": true,
+            "maximum": 323.5,
+            "minimum": 187.3
+        },
+        "eo:bands": [
+            {
+                "description": "Surface air temperature",
+                "gee:units": "K",
+                "name": "air"
+            }
+        ],
+        "gsd": [
+            278300
+        ]
+    },
+    "assets": {
+        "preview_4": {
+            "href": "https://developers.google.com/earth-engine/datasets/images/NCEP_RE/NCEP_RE_surface_temp_sample.png",
+            "type": "image/png",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    },
+    "sci:citation": "Kalnay et al., 1996, The NCEP/NCAR 40-Year Reanalysis Project. Bull. Amer.\nMeteor. Soc., 77, 437-471.\n[doi:10.1175/1520-0477(1996)077<0437:TNYRP\\\\>2.0.CO;2](https://doi.org/10.1175/1520-0477(1996)077<0437:TNYRP>2.0.CO;2).\n",
+    "gee:interval": {
+        "interval": 6,
+        "type": "cadence",
+        "unit": "hour"
+    },
+    "gee:terms_of_use": "There are no restrictions on the use of these datasets.",
+    "gee:type": "image_collection"
+}

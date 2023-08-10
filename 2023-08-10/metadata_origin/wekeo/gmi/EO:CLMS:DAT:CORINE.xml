@@ -1,0 +1,908 @@
+<gmd:MD_Metadata xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gmi="http://www.isotc211.org/2005/gmi" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:gmx="http://www.isotc211.org/2005/gmx" xmlns:gsr="http://www.isotc211.org/2005/gsr" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:srv="http://www.isotc211.org/2005/srv" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xsi:schemaLocation="http://www.isotc211.org/2005/gmd http://schemas.opengis.net/csw/2.0.2/profiles/apiso/1.0.0/apiso.xsd">
+      <gmd:fileIdentifier>
+        <gco:CharacterString>EO:CLMS:DAT:CORINE</gco:CharacterString>
+      </gmd:fileIdentifier>
+      <gmd:language xmlns:geonet="http://www.fao.org/geonetwork">
+        <gmd:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/" codeListValue="eng"/>
+      </gmd:language>
+      <gmd:characterSet xmlns:geonet="http://www.fao.org/geonetwork">
+        <gmd:MD_CharacterSetCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8"/>
+      </gmd:characterSet>
+      <gmd:hierarchyLevel xmlns:geonet="http://www.fao.org/geonetwork">
+        <gmd:MD_ScopeCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_ScopeCode" codeListValue="dataset"/>
+      </gmd:hierarchyLevel>
+      <gmd:contact xmlns:geonet="http://www.fao.org/geonetwork">
+        <gmd:CI_ResponsibleParty>
+          <gmd:organisationName>
+            <gco:CharacterString>European Environment Agency</gco:CharacterString>
+          </gmd:organisationName>
+          <gmd:contactInfo>
+            <gmd:CI_Contact>
+              <gmd:address>
+                <gmd:CI_Address>
+                  <gmd:deliveryPoint>
+                    <gco:CharacterString>Kongens Nytorv 6</gco:CharacterString>
+                  </gmd:deliveryPoint>
+                  <gmd:city>
+                    <gco:CharacterString>Copenhagen</gco:CharacterString>
+                  </gmd:city>
+                  <gmd:administrativeArea>
+                    <gco:CharacterString>K</gco:CharacterString>
+                  </gmd:administrativeArea>
+                  <gmd:postalCode>
+                    <gco:CharacterString>1050</gco:CharacterString>
+                  </gmd:postalCode>
+                  <gmd:country>
+                    <gco:CharacterString>Denmark</gco:CharacterString>
+                  </gmd:country>
+                  <gmd:electronicMailAddress>
+                    <gco:CharacterString>sdi@eea.europa.eu</gco:CharacterString>
+                  </gmd:electronicMailAddress>
+                </gmd:CI_Address>
+              </gmd:address>
+            </gmd:CI_Contact>
+          </gmd:contactInfo>
+          <gmd:role>
+            <gmd:CI_RoleCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_RoleCode" codeListValue="pointOfContact"/>
+          </gmd:role>
+        </gmd:CI_ResponsibleParty>
+      </gmd:contact>
+      <gmd:dateStamp xmlns:geonet="http://www.fao.org/geonetwork">
+        <gco:DateTime>2020-05-20T12:19:42</gco:DateTime>
+      </gmd:dateStamp>
+      <gmd:metadataStandardName xmlns:geonet="http://www.fao.org/geonetwork">
+        <gco:CharacterString>ISO 19115/19139</gco:CharacterString>
+      </gmd:metadataStandardName>
+      <gmd:metadataStandardVersion xmlns:geonet="http://www.fao.org/geonetwork">
+        <gco:CharacterString>1.0</gco:CharacterString>
+      </gmd:metadataStandardVersion>
+      <gmd:referenceSystemInfo xmlns:geonet="http://www.fao.org/geonetwork">
+        <gmd:MD_ReferenceSystem>
+          <gmd:referenceSystemIdentifier>
+            <gmd:RS_Identifier>
+              <gmd:code>
+                <gmx:Anchor xlink:href="http://www.opengis.net/def/crs/EPSG/0/3035">EPSG:3035</gmx:Anchor>
+              </gmd:code>
+            </gmd:RS_Identifier>
+          </gmd:referenceSystemIdentifier>
+        </gmd:MD_ReferenceSystem>
+      </gmd:referenceSystemInfo>
+      <gmd:identificationInfo xmlns:geonet="http://www.fao.org/geonetwork">
+        <gmd:MD_DataIdentification>
+          <gmd:citation>
+            <gmd:CI_Citation>
+              <gmd:title>
+                <gco:CharacterString>CORINE Land Cover</gco:CharacterString>
+              </gmd:title>
+              <gmd:date>
+                <gmd:CI_Date>
+                  <gmd:date>
+                    <gco:Date>2020-06-08</gco:Date>
+                  </gmd:date>
+                  <gmd:dateType>
+                    <gmd:CI_DateTypeCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_DateTypeCode" codeListValue="creation"/>
+                  </gmd:dateType>
+                </gmd:CI_Date>
+              </gmd:date>
+              <gmd:date>
+                <gmd:CI_Date>
+                  <gmd:date>
+                    <gco:Date>2020-06-08</gco:Date>
+                  </gmd:date>
+                  <gmd:dateType>
+                    <gmd:CI_DateTypeCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication"/>
+                  </gmd:dateType>
+                </gmd:CI_Date>
+              </gmd:date>
+              <gmd:date>
+                <gmd:CI_Date>
+                  <gmd:date>
+                    <gco:Date>2020-06-08</gco:Date>
+                  </gmd:date>
+                  <gmd:dateType>
+                    <gmd:CI_DateTypeCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_DateTypeCode" codeListValue="revision"/>
+                  </gmd:dateType>
+                </gmd:CI_Date>
+              </gmd:date>
+              <gmd:edition>
+                <gco:CharacterString>2020-06-08</gco:CharacterString>
+              </gmd:edition>
+              <gmd:identifier>
+                <gmd:MD_Identifier>
+                  <gmd:code>
+                    <gco:CharacterString>urn:cgls:paneuropean:corine</gco:CharacterString>
+                  </gmd:code>
+                </gmd:MD_Identifier>
+              </gmd:identifier>
+            </gmd:CI_Citation>
+          </gmd:citation>
+          <gmd:abstract>
+            <gco:CharacterString>The CORINE Land Cover (CLC) inventory was initiated in 1985 (reference year 1990). Updates have been produced in 2000, 2006, 2012, and 2018. It consists of an inventory of land cover in 44 classes. CLC uses a Minimum Mapping Unit (MMU) of 25 hectares (ha) for areal phenomena and a minimum width of 100 m for linear phenomena. The time series are complemented by change layers, which highlight changes in land cover with an MMU of 5 ha. Different MMUs mean that the change layer has higher resolution than the status layer. Due to differences in MMUs the difference between two status layers will not equal to the corresponding CLC-Changes layer. If you are interested in CLC-Changes between two neighbour surveys always use the CLC-Change layer.</gco:CharacterString>
+          </gmd:abstract>
+          <gmd:pointOfContact gco:nilReason="withheld">
+            <gmd:CI_ResponsibleParty>
+              <gmd:organisationName>
+                <gco:CharacterString>European Environment Agency</gco:CharacterString>
+              </gmd:organisationName>
+              <gmd:contactInfo>
+                <gmd:CI_Contact>
+                  <gmd:address>
+                    <gmd:CI_Address>
+                      <gmd:deliveryPoint>
+                        <gco:CharacterString>Kongens Nytorv 6</gco:CharacterString>
+                      </gmd:deliveryPoint>
+                      <gmd:city>
+                        <gco:CharacterString>Copenhagen</gco:CharacterString>
+                      </gmd:city>
+                      <gmd:administrativeArea>
+                        <gco:CharacterString>K</gco:CharacterString>
+                      </gmd:administrativeArea>
+                      <gmd:postalCode>
+                        <gco:CharacterString>1050</gco:CharacterString>
+                      </gmd:postalCode>
+                      <gmd:country>
+                        <gco:CharacterString>Denmark</gco:CharacterString>
+                      </gmd:country>
+                      <gmd:electronicMailAddress>
+                        <gco:CharacterString>copernicus@eea.europa.eu</gco:CharacterString>
+                      </gmd:electronicMailAddress>
+                    </gmd:CI_Address>
+                  </gmd:address>
+                  <gmd:onlineResource>
+                    <gmd:CI_OnlineResource>
+                      <gmd:linkage>
+                        <gmd:URL>https://land.copernicus.eu</gmd:URL>
+                      </gmd:linkage>
+                      <gmd:protocol>
+                        <gco:CharacterString>WWW:LINK-1.0-http--link</gco:CharacterString>
+                      </gmd:protocol>
+                      <gmd:name>
+                        <gco:CharacterString>Copernicus Land Portal</gco:CharacterString>
+                      </gmd:name>
+                      <gmd:function>
+                        <gmd:CI_OnLineFunctionCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="information"/>
+                      </gmd:function>
+                    </gmd:CI_OnlineResource>
+                  </gmd:onlineResource>
+                </gmd:CI_Contact>
+              </gmd:contactInfo>
+              <gmd:role>
+                <gmd:CI_RoleCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_RoleCode" codeListValue="distributor"/>
+              </gmd:role>
+            </gmd:CI_ResponsibleParty>
+          </gmd:pointOfContact>
+          <gmd:pointOfContact gco:nilReason="withheld">
+            <gmd:CI_ResponsibleParty>
+              <gmd:organisationName>
+                <gco:CharacterString>European Environment Agency</gco:CharacterString>
+              </gmd:organisationName>
+              <gmd:contactInfo>
+                <gmd:CI_Contact>
+                  <gmd:address>
+                    <gmd:CI_Address>
+                      <gmd:deliveryPoint>
+                        <gco:CharacterString>Kongens Nytorv 6</gco:CharacterString>
+                      </gmd:deliveryPoint>
+                      <gmd:city>
+                        <gco:CharacterString>Copenhagen</gco:CharacterString>
+                      </gmd:city>
+                      <gmd:administrativeArea>
+                        <gco:CharacterString>K</gco:CharacterString>
+                      </gmd:administrativeArea>
+                      <gmd:postalCode>
+                        <gco:CharacterString>1050</gco:CharacterString>
+                      </gmd:postalCode>
+                      <gmd:country>
+                        <gco:CharacterString>Denmark</gco:CharacterString>
+                      </gmd:country>
+                      <gmd:electronicMailAddress>
+                        <gco:CharacterString>copernicus@eea.europa.eu</gco:CharacterString>
+                      </gmd:electronicMailAddress>
+                    </gmd:CI_Address>
+                  </gmd:address>
+                  <gmd:onlineResource>
+                    <gmd:CI_OnlineResource>
+                      <gmd:linkage>
+                        <gmd:URL>https://land.copernicus.eu</gmd:URL>
+                      </gmd:linkage>
+                      <gmd:protocol>
+                        <gco:CharacterString>WWW:LINK-1.0-http--link</gco:CharacterString>
+                      </gmd:protocol>
+                      <gmd:name>
+                        <gco:CharacterString>Copernicus Land Portal</gco:CharacterString>
+                      </gmd:name>
+                      <gmd:function>
+                        <gmd:CI_OnLineFunctionCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="information"/>
+                      </gmd:function>
+                    </gmd:CI_OnlineResource>
+                  </gmd:onlineResource>
+                </gmd:CI_Contact>
+              </gmd:contactInfo>
+              <gmd:role>
+                <gmd:CI_RoleCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_RoleCode" codeListValue="custodian"/>
+              </gmd:role>
+            </gmd:CI_ResponsibleParty>
+          </gmd:pointOfContact>
+          <gmd:pointOfContact gco:nilReason="withheld">
+            <gmd:CI_ResponsibleParty>
+              <gmd:organisationName>
+                <gco:CharacterString>European Environment Agency</gco:CharacterString>
+              </gmd:organisationName>
+              <gmd:contactInfo>
+                <gmd:CI_Contact>
+                  <gmd:address>
+                    <gmd:CI_Address>
+                      <gmd:deliveryPoint>
+                        <gco:CharacterString>Kongens Nytorv 6</gco:CharacterString>
+                      </gmd:deliveryPoint>
+                      <gmd:city>
+                        <gco:CharacterString>Copenhagen</gco:CharacterString>
+                      </gmd:city>
+                      <gmd:administrativeArea>
+                        <gco:CharacterString>K</gco:CharacterString>
+                      </gmd:administrativeArea>
+                      <gmd:postalCode>
+                        <gco:CharacterString>1050</gco:CharacterString>
+                      </gmd:postalCode>
+                      <gmd:country>
+                        <gco:CharacterString>Denmark</gco:CharacterString>
+                      </gmd:country>
+                      <gmd:electronicMailAddress>
+                        <gco:CharacterString>copernicus@eea.europa.eu</gco:CharacterString>
+                      </gmd:electronicMailAddress>
+                    </gmd:CI_Address>
+                  </gmd:address>
+                  <gmd:onlineResource>
+                    <gmd:CI_OnlineResource>
+                      <gmd:linkage>
+                        <gmd:URL>https://land.copernicus.eu</gmd:URL>
+                      </gmd:linkage>
+                      <gmd:protocol>
+                        <gco:CharacterString>WWW:LINK-1.0-http--link</gco:CharacterString>
+                      </gmd:protocol>
+                      <gmd:name>
+                        <gco:CharacterString>Copernicus Land Portal</gco:CharacterString>
+                      </gmd:name>
+                      <gmd:function>
+                        <gmd:CI_OnLineFunctionCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="information"/>
+                      </gmd:function>
+                    </gmd:CI_OnlineResource>
+                  </gmd:onlineResource>
+                </gmd:CI_Contact>
+              </gmd:contactInfo>
+              <gmd:role>
+                <gmd:CI_RoleCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_RoleCode" codeListValue="pointOfContact"/>
+              </gmd:role>
+            </gmd:CI_ResponsibleParty>
+          </gmd:pointOfContact>
+          <gmd:pointOfContact gco:nilReason="withheld">
+            <gmd:CI_ResponsibleParty>
+              <gmd:organisationName>
+                <gco:CharacterString>European Union represented by the European Commission - Directorate-General for Defence Industry and Space</gco:CharacterString>
+              </gmd:organisationName>
+              <gmd:contactInfo>
+                <gmd:CI_Contact>
+                  <gmd:address>
+                    <gmd:CI_Address>
+                      <gmd:deliveryPoint>
+                        <gco:CharacterString>Oudergemse laan 45</gco:CharacterString>
+                      </gmd:deliveryPoint>
+                      <gmd:city>
+                        <gco:CharacterString>Brussels</gco:CharacterString>
+                      </gmd:city>
+                      <gmd:postalCode>
+                        <gco:CharacterString>1040</gco:CharacterString>
+                      </gmd:postalCode>
+                      <gmd:country>
+                        <gco:CharacterString>Belgium</gco:CharacterString>
+                      </gmd:country>
+                      <gmd:electronicMailAddress>
+                        <gco:CharacterString>DEFIS-C3@ec.europa.eu</gco:CharacterString>
+                      </gmd:electronicMailAddress>
+                    </gmd:CI_Address>
+                  </gmd:address>
+                  <gmd:onlineResource>
+                    <gmd:CI_OnlineResource>
+                      <gmd:linkage>
+                        <gmd:URL>http://copernicus.eu</gmd:URL>
+                      </gmd:linkage>
+                      <gmd:protocol>
+                        <gco:CharacterString>WWW:LINK-1.0-http--link</gco:CharacterString>
+                      </gmd:protocol>
+                      <gmd:name>
+                        <gco:CharacterString>Website of the Copernicus Programme</gco:CharacterString>
+                      </gmd:name>
+                      <gmd:function>
+                        <gmd:CI_OnLineFunctionCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="information"/>
+                      </gmd:function>
+                    </gmd:CI_OnlineResource>
+                  </gmd:onlineResource>
+                </gmd:CI_Contact>
+              </gmd:contactInfo>
+              <gmd:role>
+                <gmd:CI_RoleCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_RoleCode" codeListValue="owner"/>
+              </gmd:role>
+            </gmd:CI_ResponsibleParty>
+          </gmd:pointOfContact>
+          <gmd:resourceMaintenance>
+            <gmd:MD_MaintenanceInformation>
+              <gmd:maintenanceAndUpdateFrequency>
+                <gmd:MD_MaintenanceFrequencyCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_MaintenanceFrequencyCode" codeListValue="continual"/>
+              </gmd:maintenanceAndUpdateFrequency>
+            </gmd:MD_MaintenanceInformation>
+          </gmd:resourceMaintenance>
+          <gmd:graphicOverview>
+            <gmd:MD_BrowseGraphic>
+              <gmd:fileName>
+                <gco:CharacterString>urn_cgls_paneuropean_corine.tiff</gco:CharacterString>
+              </gmd:fileName>
+            </gmd:MD_BrowseGraphic>
+          </gmd:graphicOverview>
+          <gmd:descriptiveKeywords>
+            <gmd:MD_Keywords>
+              <gmd:keyword>
+                <gco:CharacterString>Land cover</gco:CharacterString>
+              </gmd:keyword>
+              <gmd:type>
+                <gmd:MD_KeywordTypeCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="theme"/>
+              </gmd:type>
+              <gmd:thesaurusName>
+                <gmd:CI_Citation>
+                  <gmd:title>
+                    <gco:CharacterString>GEMET - INSPIRE themes, version 1.0</gco:CharacterString>
+                  </gmd:title>
+                  <gmd:date>
+                    <gmd:CI_Date>
+                      <gmd:date>
+                        <gco:Date>2008-06-01</gco:Date>
+                      </gmd:date>
+                      <gmd:dateType>
+                        <gmd:CI_DateTypeCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication"/>
+                      </gmd:dateType>
+                    </gmd:CI_Date>
+                  </gmd:date>
+                  <gmd:identifier>
+                    <gmd:MD_Identifier>
+                      <gmd:code>
+                        <gmx:Anchor xlink:href="https://sdi.eea.europa.eu/catalogue/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeutheme-theme">geonetwork.thesaurus.external.theme.httpinspireeceuropaeutheme-theme</gmx:Anchor>
+                      </gmd:code>
+                    </gmd:MD_Identifier>
+                  </gmd:identifier>
+                </gmd:CI_Citation>
+              </gmd:thesaurusName>
+            </gmd:MD_Keywords>
+          </gmd:descriptiveKeywords>
+          <gmd:descriptiveKeywords gco:nilReason="withheld">
+            <gmd:MD_Keywords>
+              <gmd:keyword>
+                <gco:CharacterString>Copernicus</gco:CharacterString>
+              </gmd:keyword>
+              <gmd:keyword>
+                <gco:CharacterString>CHA20012-2018</gco:CharacterString>
+              </gmd:keyword>
+              <gmd:keyword>
+                <gco:CharacterString>CLC</gco:CharacterString>
+              </gmd:keyword>
+              <gmd:keyword>
+                <gco:CharacterString>Satellite Image Interpretation</gco:CharacterString>
+              </gmd:keyword>
+              <gmd:keyword>
+                <gco:CharacterString>Land Cover Change</gco:CharacterString>
+              </gmd:keyword>
+              <gmd:keyword>
+                <gco:CharacterString>Corine</gco:CharacterString>
+              </gmd:keyword>
+              <gmd:type>
+                <gmd:MD_KeywordTypeCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="theme"/>
+              </gmd:type>
+              <gmd:thesaurusName>
+                <gmd:CI_Citation>
+                  <gmd:title>
+                    <gco:CharacterString>EEA keyword list</gco:CharacterString>
+                  </gmd:title>
+                  <gmd:date>
+                    <gmd:CI_Date>
+                      <gmd:date>
+                        <gco:Date>2002-03-01</gco:Date>
+                      </gmd:date>
+                      <gmd:dateType>
+                        <gmd:CI_DateTypeCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication"/>
+                      </gmd:dateType>
+                    </gmd:CI_Date>
+                  </gmd:date>
+                </gmd:CI_Citation>
+              </gmd:thesaurusName>
+            </gmd:MD_Keywords>
+          </gmd:descriptiveKeywords>
+          <gmd:descriptiveKeywords>
+            <gmd:MD_Keywords>
+              <gmd:keyword>
+                <gco:CharacterString>EEA39</gco:CharacterString>
+              </gmd:keyword>
+              <gmd:type>
+                <gmd:MD_KeywordTypeCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="place"/>
+              </gmd:type>
+              <gmd:thesaurusName>
+                <gmd:CI_Citation>
+                  <gmd:title>
+                    <gco:CharacterString>Continents, countries, sea regions of the world.</gco:CharacterString>
+                  </gmd:title>
+                  <gmd:date>
+                    <gmd:CI_Date>
+                      <gmd:date>
+                        <gco:Date>2015-07-17</gco:Date>
+                      </gmd:date>
+                      <gmd:dateType>
+                        <gmd:CI_DateTypeCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication"/>
+                      </gmd:dateType>
+                    </gmd:CI_Date>
+                  </gmd:date>
+                  <gmd:identifier>
+                    <gmd:MD_Identifier>
+                      <gmd:code>
+                        <gmx:Anchor xlink:href="https://sdi.eea.europa.eu/catalogue/srv/eng/thesaurus.download?ref=external.place.regions">geonetwork.thesaurus.external.place.regions</gmx:Anchor>
+                      </gmd:code>
+                    </gmd:MD_Identifier>
+                  </gmd:identifier>
+                </gmd:CI_Citation>
+              </gmd:thesaurusName>
+            </gmd:MD_Keywords>
+          </gmd:descriptiveKeywords>
+          <gmd:descriptiveKeywords gco:nilReason="withheld">
+            <gmd:MD_Keywords>
+              <gmd:keyword>
+                <gco:CharacterString>geospatial data</gco:CharacterString>
+              </gmd:keyword>
+              <gmd:type>
+                <gmd:MD_KeywordTypeCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="theme"/>
+              </gmd:type>
+              <gmd:thesaurusName>
+                <gmd:CI_Citation>
+                  <gmd:title>
+                    <gco:CharacterString>EEA categories</gco:CharacterString>
+                  </gmd:title>
+                  <gmd:date>
+                    <gmd:CI_Date>
+                      <gmd:date>
+                        <gco:Date>2010-07-06</gco:Date>
+                      </gmd:date>
+                      <gmd:dateType>
+                        <gmd:CI_DateTypeCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication"/>
+                      </gmd:dateType>
+                    </gmd:CI_Date>
+                  </gmd:date>
+                  <gmd:identifier>
+                    <gmd:MD_Identifier>
+                      <gmd:code>
+                        <gmx:Anchor xlink:href="https://sdi.eea.europa.eu/catalogue/srv/eng/thesaurus.download?ref=local.theme.eea-categories">geonetwork.thesaurus.local.theme.eea-categories</gmx:Anchor>
+                      </gmd:code>
+                    </gmd:MD_Identifier>
+                  </gmd:identifier>
+                </gmd:CI_Citation>
+              </gmd:thesaurusName>
+            </gmd:MD_Keywords>
+          </gmd:descriptiveKeywords>
+          <gmd:descriptiveKeywords>
+            <gmd:MD_Keywords>
+              <gmd:keyword>
+                <gco:CharacterString>land use</gco:CharacterString>
+              </gmd:keyword>
+              <gmd:keyword>
+                <gco:CharacterString>landscape</gco:CharacterString>
+              </gmd:keyword>
+              <gmd:keyword>
+                <gco:CharacterString>landscape alteration</gco:CharacterString>
+              </gmd:keyword>
+              <gmd:keyword>
+                <gco:CharacterString>land cover</gco:CharacterString>
+              </gmd:keyword>
+              <gmd:type>
+                <gmd:MD_KeywordTypeCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="theme"/>
+              </gmd:type>
+              <gmd:thesaurusName>
+                <gmd:CI_Citation>
+                  <gmd:title>
+                    <gco:CharacterString>GEMET</gco:CharacterString>
+                  </gmd:title>
+                  <gmd:date>
+                    <gmd:CI_Date>
+                      <gmd:date>
+                        <gco:Date>2018-08-16</gco:Date>
+                      </gmd:date>
+                      <gmd:dateType>
+                        <gmd:CI_DateTypeCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication"/>
+                      </gmd:dateType>
+                    </gmd:CI_Date>
+                  </gmd:date>
+                  <gmd:identifier>
+                    <gmd:MD_Identifier>
+                      <gmd:code>
+                        <gmx:Anchor xlink:href="https://sdi.eea.europa.eu/catalogue/srv/eng/thesaurus.download?ref=external.theme.gemet">geonetwork.thesaurus.external.theme.gemet</gmx:Anchor>
+                      </gmd:code>
+                    </gmd:MD_Identifier>
+                  </gmd:identifier>
+                </gmd:CI_Citation>
+              </gmd:thesaurusName>
+            </gmd:MD_Keywords>
+          </gmd:descriptiveKeywords>
+          <gmd:descriptiveKeywords>
+            <gmd:MD_Keywords>
+              <gmd:keyword>
+                <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/european">European</gmx:Anchor>
+              </gmd:keyword>
+              <gmd:type>
+                <gmd:MD_KeywordTypeCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="theme"/>
+              </gmd:type>
+              <gmd:thesaurusName>
+                <gmd:CI_Citation>
+                  <gmd:title>
+                    <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/SpatialScope#">Spatial scope</gmx:Anchor>
+                  </gmd:title>
+                  <gmd:date>
+                    <gmd:CI_Date>
+                      <gmd:date>
+                        <gco:Date>2019-05-22</gco:Date>
+                      </gmd:date>
+                      <gmd:dateType>
+                        <gmd:CI_DateTypeCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication"/>
+                      </gmd:dateType>
+                    </gmd:CI_Date>
+                  </gmd:date>
+                  <gmd:identifier>
+                    <gmd:MD_Identifier>
+                      <gmd:code>
+                        <gmx:Anchor xlink:href="https://sdi.eea.europa.eu/catalogue/srv/eng/thesaurus.download?ref=external.theme.httpinspireeceuropaeumetadatacodelistSpatialScope-SpatialScope">geonetwork.thesaurus.external.theme.httpinspireeceuropaeumetadatacodelistSpatialScope-SpatialScope</gmx:Anchor>
+                      </gmd:code>
+                    </gmd:MD_Identifier>
+                  </gmd:identifier>
+                </gmd:CI_Citation>
+              </gmd:thesaurusName>
+            </gmd:MD_Keywords>
+          </gmd:descriptiveKeywords>
+          <gmd:resourceConstraints>
+            <gmd:MD_Constraints>
+              <gmd:useLimitation>
+                <gco:CharacterString>EEA standard re-use policy: unless otherwise indicated, re-use of content on the EEA website for commercial or non-commercial purposes is permitted free of charge, provided that the source is acknowledged (http://www.eea.europa.eu/legal/copyright). Copyright holder: European Environment Agency (EEA).</gco:CharacterString>
+              </gmd:useLimitation>
+            </gmd:MD_Constraints>
+          </gmd:resourceConstraints>
+          <gmd:resourceConstraints>
+            <gmd:MD_LegalConstraints>
+              <gmd:accessConstraints>
+                <gmd:MD_RestrictionCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_RestrictionCode" codeListValue="otherRestrictions"/>
+              </gmd:accessConstraints>
+              <gmd:otherConstraints>
+                <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/noLimitations">No limitations to public access</gmx:Anchor>
+              </gmd:otherConstraints>
+            </gmd:MD_LegalConstraints>
+          </gmd:resourceConstraints>
+          <gmd:spatialRepresentationType>
+            <gmd:MD_SpatialRepresentationTypeCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_SpatialRepresentationTypeCode" codeListValue="grid"/>
+          </gmd:spatialRepresentationType>
+          <gmd:spatialResolution>
+            <gmd:MD_Resolution>
+              <gmd:distance>
+                <gco:Distance uom="m">100</gco:Distance>
+              </gmd:distance>
+            </gmd:MD_Resolution>
+          </gmd:spatialResolution>
+          <gmd:language>
+            <gmd:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/" codeListValue="eng"/>
+          </gmd:language>
+          <gmd:characterSet>
+            <gmd:MD_CharacterSetCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8"/>
+          </gmd:characterSet>
+          <gmd:topicCategory>
+            <gmd:MD_TopicCategoryCode>environment</gmd:MD_TopicCategoryCode>
+          </gmd:topicCategory>
+          <gmd:topicCategory>
+            <gmd:MD_TopicCategoryCode>imageryBaseMapsEarthCover</gmd:MD_TopicCategoryCode>
+          </gmd:topicCategory>
+          <gmd:extent>
+            <gmd:EX_Extent>
+              <gmd:geographicElement>
+                <gmd:EX_GeographicBoundingBox>
+                  <gmd:westBoundLongitude>
+                    <gco:Decimal>-31.561261</gco:Decimal>
+                  </gmd:westBoundLongitude>
+                  <gmd:eastBoundLongitude>
+                    <gco:Decimal>44.820775</gco:Decimal>
+                  </gmd:eastBoundLongitude>
+                  <gmd:southBoundLatitude>
+                    <gco:Decimal>27.405827</gco:Decimal>
+                  </gmd:southBoundLatitude>
+                  <gmd:northBoundLatitude>
+                    <gco:Decimal>71.409109</gco:Decimal>
+                  </gmd:northBoundLatitude>
+                </gmd:EX_GeographicBoundingBox>
+              </gmd:geographicElement>
+              <gmd:temporalElement>
+                <gmd:EX_TemporalExtent>
+                  <gmd:extent>
+                    <gml:TimePeriod gml:id="d672654e827a1053982">
+                      <gml:beginPosition>1986-01-01</gml:beginPosition>
+                      <gml:endPosition indeterminatePosition="unknown"/>
+                    </gml:TimePeriod>
+                  </gmd:extent>
+                </gmd:EX_TemporalExtent>
+              </gmd:temporalElement>
+            </gmd:EX_Extent>
+          </gmd:extent>
+        </gmd:MD_DataIdentification>
+      </gmd:identificationInfo>
+      <gmd:distributionInfo xmlns:geonet="http://www.fao.org/geonetwork">
+        <gmd:MD_Distribution>
+          <gmd:distributionFormat>
+            <gmd:MD_Format>
+              <gmd:name>
+                <gco:CharacterString>GTiff</gco:CharacterString>
+              </gmd:name>
+              <gmd:version>
+                <gco:CharacterString>1.0</gco:CharacterString>
+              </gmd:version>
+            </gmd:MD_Format>
+          </gmd:distributionFormat>
+          <gmd:distributor>
+            <gmd:MD_Distributor>
+              <gmd:distributorContact/>
+              <gmd:distributorFormat/>
+              <gmd:distributorTransferOptions>
+                <gmd:MD_DigitalTransferOptions>
+                  <gmd:onLine>
+                    <gmd:CI_OnlineResource>
+                      <gmd:linkage>
+                        <gmd:URL>https://moi.wekeo.eu/data?view=dataset&amp;dataset=EO:CLMS:DAT:CORINE</gmd:URL>
+                      </gmd:linkage>
+                      <gmd:protocol>
+                        <gco:CharacterString>https</gco:CharacterString>
+                      </gmd:protocol>
+                      <gmd:name>
+                        <gco:CharacterString>Harmonized Data Access (WEkEO)</gco:CharacterString>
+                      </gmd:name>
+                      <gmd:description>
+                        <gco:CharacterString>Harmonized Data Access (WEkEO) API is a REST interface allowing users to subset and download WEkEO datasets.</gco:CharacterString>
+                      </gmd:description>
+                      <gmd:function>
+                        <gmd:CI_OnLineFunctionCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue=""/>
+                      </gmd:function>
+                    </gmd:CI_OnlineResource>
+                  </gmd:onLine>
+                </gmd:MD_DigitalTransferOptions>
+              </gmd:distributorTransferOptions>
+            </gmd:MD_Distributor>
+          </gmd:distributor>
+          <gmd:transferOptions>
+            <gmd:MD_DigitalTransferOptions>
+              <gmd:onLine>
+                <gmd:CI_OnlineResource>
+                  <gmd:linkage>
+                    <gmd:URL>https://land.copernicus.eu/pan-european/corine-land-cover/</gmd:URL>
+                  </gmd:linkage>
+                  <gmd:protocol>
+                    <gco:CharacterString>WWW:LINK-1.0-http--link</gco:CharacterString>
+                  </gmd:protocol>
+                  <gmd:function>
+                    <gmd:CI_OnLineFunctionCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="download"/>
+                  </gmd:function>
+                </gmd:CI_OnlineResource>
+              </gmd:onLine>
+              <gmd:onLine>
+                <gmd:CI_OnlineResource>
+                  <gmd:linkage>
+                    <gmd:URL>https://image.discomap.eea.europa.eu/arcgis/rest/services/Corine/CHA2012_2018_WM/MapServer</gmd:URL>
+                  </gmd:linkage>
+                  <gmd:protocol>
+                    <gco:CharacterString>ESRI:REST</gco:CharacterString>
+                  </gmd:protocol>
+                  <gmd:function>
+                    <gmd:CI_OnLineFunctionCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="information"/>
+                  </gmd:function>
+                </gmd:CI_OnlineResource>
+              </gmd:onLine>
+              <gmd:onLine>
+                <gmd:CI_OnlineResource>
+                  <gmd:linkage>
+                    <gmd:URL>https://image.discomap.eea.europa.eu/arcgis/services/Corine/CHA2012_2018_WM/MapServer/WMSServer?service=WMS&amp;request=GetCapabilities&amp;version=1.3.0</gmd:URL>
+                  </gmd:linkage>
+                  <gmd:protocol>
+                    <gco:CharacterString>OGC:WMS</gco:CharacterString>
+                  </gmd:protocol>
+                  <gmd:description>
+                    <gco:CharacterString>CHA2012_2018</gco:CharacterString>
+                  </gmd:description>
+                  <gmd:function>
+                    <gmd:CI_OnLineFunctionCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="information"/>
+                  </gmd:function>
+                </gmd:CI_OnlineResource>
+              </gmd:onLine>
+            </gmd:MD_DigitalTransferOptions>
+          </gmd:transferOptions>
+          <gmd:transferOptions>
+            <gmd:MD_DigitalTransferOptions/>
+          </gmd:transferOptions>
+        </gmd:MD_Distribution>
+      </gmd:distributionInfo>
+      <gmd:dataQualityInfo xmlns:geonet="http://www.fao.org/geonetwork">
+        <gmd:DQ_DataQuality>
+          <gmd:scope>
+            <gmd:DQ_Scope>
+              <gmd:level>
+                <gmd:MD_ScopeCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_ScopeCode" codeListValue="dataset"/>
+              </gmd:level>
+            </gmd:DQ_Scope>
+          </gmd:scope>
+          <gmd:report>
+            <gmd:DQ_DomainConsistency xsi:type="gmd:DQ_DomainConsistency_Type">
+              <gmd:result/>
+            </gmd:DQ_DomainConsistency>
+          </gmd:report>
+          <gmd:report>
+            <gmd:DQ_DomainConsistency>
+              <gmd:result>
+                <gmd:DQ_ConformanceResult>
+                  <gmd:specification>
+                    <gmd:CI_Citation>
+                      <gmd:title>
+                        <gco:CharacterString>Commission Regulation (EU) No 1089/2010 of 23 November 2010 implementing Directive 2007/2/EC of the European Parliament and of the Council as regards interoperability of spatial data sets and services</gco:CharacterString>
+                      </gmd:title>
+                      <gmd:date>
+                        <gmd:CI_Date>
+                          <gmd:date>
+                            <gco:Date>2010-12-08</gco:Date>
+                          </gmd:date>
+                          <gmd:dateType>
+                            <gmd:CI_DateTypeCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication"/>
+                          </gmd:dateType>
+                        </gmd:CI_Date>
+                      </gmd:date>
+                    </gmd:CI_Citation>
+                  </gmd:specification>
+                  <gmd:explanation>
+                    <gco:CharacterString>See the referenced specification</gco:CharacterString>
+                  </gmd:explanation>
+                  <gmd:pass gco:nilReason="unknown"/>
+                </gmd:DQ_ConformanceResult>
+              </gmd:result>
+            </gmd:DQ_DomainConsistency>
+          </gmd:report>
+          <gmd:lineage>
+            <gmd:LI_Lineage>
+              <gmd:statement>
+                <gco:CharacterString>Version 2020_20u1
+
+Release date: 24-02-2020
+File naming conventions simplified and better described. New file naming convention has been introduced based on user feedback on version 20. Filename is composed of combination of information about update campaign, data theme and reference year and version specification (including release year and release number).
+
+The French DOMs are provided in separate databases (files both for vector and raster version of data).
+
+All raster layers are back in 8 bit GeoTIFF. Modification is introduced based on the user feedback on version 20. In order to keep 8 bit resolution for raster change layers, they are divided into two files - representing consumption (from) and formation (to) part of change.
+
+Version 20
+Release date: 14-06-2019
+Vector CLC database was provided by National Teams within original CLC1990, I&amp;CLC2000 update, FTSP/CLC2006 update, CLC2012 update and CLC2018 update projects. All features in original vector database were classified and digitised based on satellite images with 100 m positional accuracy (according to CLC specifications) and 25 ha minimum mapping unit into the standardized CLC nomenclature (44 CLC classes).
+
+European Corine Land Cover seamless DBs represent the final product of European data integration. The process of data integration started when national deliveries have been accepted and the Database Acceptance Report (DBTA) delivered . Delivered national data were produced in local national systems of all participating countries. Each national Coordinate Reference System (CRS) definition had to be known precisely together with its geometric relationship to a standard system in order to accurately transfer all national data into a standard European coordinate reference - ETRS89/LAEA1052.
+Mostly, the process itself was carried out by global equation-based transformation to ETRS89 (e.g. seven-parameters Bursa-Wolf methods). The accuracy of a particular transformation ranges from centimetres to meters depending on the method and the quality and number of control points available to define the transformation parameters, but, in any case, the accuracy is far above the actual CLC data resolution (for more details see the DBTA reports for particular country). National data, when transformed into the common European reference, are introduced into tiled pan-European structure and as final step seamless dataset is produced.
+
+In order to achieve production of the real seamless European database, the integration step includes also harmonization of database along country borders. It consists from edge-matching of land cover polygons from the national databases across national borders done by a verification / re-interpretation of the satellite images in the border regions (2 km wide strip along borders). The satellite images from IMAGE2000. CLC1990, CHA9000 and CLC2000 database were harmonized this way, but the order to priority was as following: CLC2000, both geometric and thematic adaptations of all polygons in a 2 km strip along national boundary lines; CHA9000 database to ensure that
+changes in CLC2000 are consistent with the change database; corrected CLC90 (if provided by the MS); corrections were focused to geometric adaptations in semi-automatical way based on CLC00 and CHA00 databases. Border harmonization step has been skipped for CHA0006, CHA0612, CLC2012 and CLC2018 datasets. Simplified border harmonization step for CLC2006 dataset has been created for these countries: CH, NO, KO, TR, IE.
+A simplified border matching has been applied:
+- &lt;25 ha polygons are NOT systematically removed (see next bullet).
+- Sliver-like polygons (area &lt; cca. 5 ha - soft limit) are generalised to largest or thematically most similar neighbour.
+- CLC-code differences in polygons along two sides of the border are NOT changed
+Only polygons with area &lt;= 0,1ha were eliminated in CHA0006, CHA0612, CLC2012 and for CLC2018 datasets and CLC2006 dataset (besides the above-mentioned cases) and in parts newly added in campaigns 2006 and 2012 too
+
+Note: Some artificial lines (dividing polygons with the same code) can be still present in database due to technical constraints of current ArcGIS technology, but has no impact for dataset contents and can be dissolved for data extracts.
+
+Version 18 (V18)
+Release date: 19-09-2016 (see V18_5_1)
+Main purpose of the release: Publication of the final, corrected CLC 2012 data.
+The 4th CLC inventory for the reference year of 2012 was produced under the Copernicus Initial Operations (GIO). It has the shortest production time in history of CLC. Two high-resolution satellite image coverages (IRS Resourcesat-1/2, SPOT-4/5, RapidEye constellation) taken in 2011-2012 provided multi-temporal information to support the update. Computer Assisted Photointerpretation (CAPI) was the prevailing methodology applied in interpreting of satellite images. FI, DE, IC, IE, NO, ES and SE applied a semi-automatic methodology. UK has turned from semiautomatic processing to CAPI because no national hi-res dataset was available for 2012. Most of the QC was conducted in remote verifications. IT and ES were verified by regions. In producing the European products, a simplified border matching was applied (see Version 15). An independent validation of CLC and CLCC for CLC 2012 was carried out in 2016 and the results are available at https://land.copernicus.eu/user-corner/technical-library/clc-2012-validation-report-1.
+ Changes from previous main release (Version 17): 
+•	Inclusion of CLC 2012 layers for all the EEA39 countries.
+•	Production of CLC 2006 for Greece (in V18_3) and all CLCs for Channel Islands (V18_1).
+•	Revised CLC 2000 and CLC 2006 layers were made available (V18_5).
+•	Change in rasterization algorithm (V18_2).
+Known problems: 
+•	Some redundant lines between neighbouring polygons with the same code are still present, but only as result of persisting ‘adaptive tilling’ procedure (limitation of ESRI ArcGIS technology for large datasets).
+•	Polygons &lt;25 ha can be present along national borders and along 'adaptive tilling' tiles boundaries.
+
+See https://land.copernicus.eu/user-corner/technical-library/clc-country-coverage-v18.5 for full information about the coverage of this version.
+
+See https://land.copernicus.eu/user-corner/technical-library/clc-and-clcc-release-lineage for full information about all sub-versions of this version.
+
+Version 17 (V17)
+Release date: 02-12-2013
+Main purpose of the release: Maintenance / Increased European coverage of CLC time series data.
+Changes from previous release (V16): 
+•	Full CLC and CLCC data time series (from CLC 1990 to CLC 2006 including all CLCC datasets) has been included for the Autonomous Region of the Azores (PT). 
+
+Version 16 (V16)
+Release date: 15-04-2012   
+Main purpose: Maintenance / Increased and improved European coverage of CLC time series data.
+Changes from previous release (V15): 
+•	CLC 1990 coverage: TR has been delivered CLC 1990 and CLCC (1990, 2000) data. Still missing CLC 1990 data: AL, BA, CH, CY, FI, IS, MK, NO, SE, UK and the XK.
+•	CLC 2000_revised layer covering 27 countries was included (CLC 2000 data revised during production of CLC 2006).
+•	Shift in MT geographic position has been corrected. All CLC layers for MT have been re-projected.
+•	A few coding inconsistences were corrected.
+
+Version 15 (V5) 
+Release date: 20-07-2011 
+Main purpose: Publication of final CLC2 006 data.
+The 3rd CLC inventory for the reference year of 2006 was produced under GMES Fast Track Service on Land Monitoring. The CLCC database was considered as the primary product, and a uniform change mapping methodology was agreed. Dual date satellite imagery (SPOT-4/5 and IRS P6) taken in 2005-2007 provided enhanced change mapping capabilities. Some of the countries newly entering CLC have produced CLC 2000 datasets also during the project time frame. Scanned topographic maps and digital aerial ortho-imagery have become commonly available. CAPI was the prevailing method applied in interpreting of satellite images. Nevertheless, FI, IS, NO, SE and the UK applied a semiautomatic methodology. Most of the European QC was conducted by visiting national teams (see Version 2). In some cases, remote verification was applied (without mission to countries). ES and IT were verified by regions. 
+Changes from previous release (V14 (V4)): 
+•	CLC 2006 data covering Great Britain (part of UK) and TR were delivered. Thus, CLC 2006 European coverage includes 38 countries of the EEA39. Still missing CLC 2006 data for Greece.
+•	A simplified border matching was applied for countries new in CLC: XK, NO, CH and Turkey: 1) &lt;25 ha polygons along the borders are not removed systematically; 2) sliver-like polygons (area &lt; cca. 5 ha) are generalised to largest or thematically most similar neighbour. 
+•	For the rest of CLC 2006 countries a simple border-matching was applied. Code differences along two sides of borders are not changed. Only polygons with area ≤ 0,1 ha (sliver polygons) are eliminated. 
+•	Data dissemination: CLC data become freely accessible from the EEA to any person or legal entity.
+
+Version 14 (V4)
+Release date: 25-10-2010
+Main purpose: Maintenance / Increased European coverage of CLC 2006 and CLC 2000 data.
+Changes from previous release (V13 (V3)): 
+•	CLC 2006 European coverage includes 37 full countries of EEA39.  New data for Northern Ireland (part of the UK), Madeira Islands (part of PT), CH, IS and TR were added to CLC 2006 data. Still missing CLC 2006: GR and the UK (except Northern Ireland).
+•	New data for Madeira Islands (PT), CH and IS were added into the European CLC 2000 coverage, which includes already the EE39. However, CLCC (1990, 2000) is available for 28 countries only.
+•	New data for Madeira Islands (PT) were added into CLC 1990 and CLCC (1990, 2000). Still missing CLC 1990 data: AL, BA, CH, CY, FI, IS, MK, NO, SE, TR, UK and XK.
+
+The seamless European database has been further improved addressing feedback from the EEA on V13 (V3):
+•	No-data buffer (code 999) outside of valid data area was deleted.
+•	Small gaps identified in V13 were corrected by tolerance adaptation in ArcGIS v10 geodatabase.
+•	Remaining neighbour polygons with the same code were resolved by additional dissolve operation.
+
+Version 13 (V3)
+Release date: 02/2010 
+Main purpose: Publication of initial European coverage of CLC 2006 data. 
+Changes from previous release (V2): 
+•	Version numbering was changed to harmonise vector data (V3) and derived raster data (V13) releases. 
+•	First seamless release in ESRI Geodatabase format.
+•	Initial coverage of CLC 2006 including 35 countries and Northern Ireland (part of the UK). Missing countries in CLC 2006: GR, CH, TR and the UK (except Northern Ireland).
+•	Two updates added to CLC 2000: a new version for NO and the first CLC dataset for TR.
+•	Sea buffer around land has been introduced (15 km as proxy to 12 nautical miles’ sea zone).
+
+Version 2 (V2)
+Release date: 09/2009
+Main purpose: Publication of final CLC 2000 coverages.
+The 2nd CLC inventory for the reference year of 2000 (CLC 2000) was carried out in the frames of I&amp;CLC 2000 project. A single date Landsat-7 ETM satellite imagery taken in 1999-2001 was provided by JRC. The technology of drawing the interpretation on transparencies was discarded and replaced by CAPI (computer-assisted photo-interpretation). Prior to mapping changes CLC 1990 data had to be corrected: 1) bulk geometric mistakes removed and residual geometric errors &gt;100 m and coding mistakes were corrected; 2) polygons smaller than the 25 ha MMU were generalised. European QC was conducted by visiting national teams (usually at the start and towards the end of the project). Computer-assisted verification has provided written, geo-located explanations regarding the mistakes and supported harmonized production of the database all over Europe. 
+Changes from previous release (V1): 
+•	It was to deliver a single seamless layer, but was not feasible in ESRI environment. Therefore, seamless ESRI ArcInfo Librarian map tiles were produced again (but free of tiling artefacts reported in V1). 
+•	New country deliveries integrated into European CLC 2000 ME, RS (incl. XK), IS and NO. Simple harmonization along national borders of these countries was done (small artefacts cleaned only). 
+•	CLC 2000 data for MT have been updated to reflect changed geometry in CLC 2006 delivery.
+•	The dissemination and use of products was defined in an agreement between the EEA, the EC and the participating countries.
+
+Version 1 (V1)
+Release date: 08/2005                 
+Main purpose: Publication of initial European coverage of CLC 2000 and CLCC (1990, 2000) data.
+Changes from previous release (V0): 
+•	The first consolidated version of European CLC data have been produced as integrated and harmonised seamless layer in ESRI ArcInfo Workstation Librarian map tiles.
+•	The production of the first CLCC database has started, but no consolidated methodology was available.
+•	Initial CLC 2000 coverage included 32 countries: AL, AT, BE, BA, BG, CY, CZ, DE, DK, EE, ES, FI, FR, GR, HR, HU, IE, IT, LV, LI, LT, LU, MK, MT, NL, PL, PT, RO, SI, SK, SE and the UK. Missing countries in CLC 2000: CH, IS, ME, NO, RS (including XK) and TR.
+•	CLC 1990 for most of the countries has been replaced by revised CLC 1990. Some additional countries have produced CLC 1990. Still missing in CLC 1990 European coverage: CY, LI, MT, SE and UK. 
+•	Full harmonization (visual re-interpretation by keeping the 25 ha MMU) inside a 5-km wide strip along national borders was done including 32 countries for CLC 2000 and 24 countries for CLCC (1990, 2000). 
+•	Semi-automatic harmonisation of 2-km wide strip along national borders was done for CLC 1990. 
+•	Vector to raster conversion: “cell centre” method was applied.
+•	The 25 ha MMU is considered as hard limit. Polygons &lt;25 ha were generalised.
+•	Dual ownership of CLC and CLCC data (EEA and the country) was introduced. 
+
+Version 0 (V0)
+Release dates: up to 12/2000
+Main purpose: Distribution of country-level CLC 1990 data and creation of European raster products.
+The period of the first CLC inventory was rather long (1985-1996) and 1990 is considered as reference year. CLC 1990 data delivered by countries became part of GISCO database. Releases were provided bi-annually. Following political changes in Central and Eastern Europe 10 additional countries joined. The methodology was visual photointerpretation by drawing the CLC map on transparency, placed on top of satellite image hardcopy at scale 1:100.000.
+•	CLC 1990 vector and raster data were initially available for 12 countries: AT, BE, DE, DK, ES, FR, GR, IE, IT, LU, NL and PT. Raster only data were available for FI and UK.
+•	The EC Phare programme supported the implementation of CLC 1990 in 11 countries of Central and Eastern Europe between 1992 and 1998: BG, CZ and SK, EE, LV, LT, HU, PL, RO and SI.
+•	Integrated European vector dataset was available as ESRI ArcInfo Librarian and derived raster products as ESRI grids in 100m and 250m resolution.
+•	Data dissemination policy was unclear.</gco:CharacterString>
+              </gmd:statement>
+              <gmd:source uuidref="f30f1000-7cf8-43bb-872c-5eb093911b24"/>
+            </gmd:LI_Lineage>
+          </gmd:lineage>
+        </gmd:DQ_DataQuality>
+      </gmd:dataQualityInfo>
+      <gmd:metadataMaintenance xmlns:geonet="http://www.fao.org/geonetwork">
+        <gmd:MD_MaintenanceInformation>
+          <gmd:maintenanceAndUpdateFrequency>
+            <gmd:MD_MaintenanceFrequencyCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_MaintenanceFrequencyCode" codeListValue=""/>
+          </gmd:maintenanceAndUpdateFrequency>
+        </gmd:MD_MaintenanceInformation>
+      </gmd:metadataMaintenance>
+    </gmd:MD_Metadata>
+  

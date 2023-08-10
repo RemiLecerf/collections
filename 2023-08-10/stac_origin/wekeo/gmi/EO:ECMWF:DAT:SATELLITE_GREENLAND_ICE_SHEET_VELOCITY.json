@@ -1,0 +1,47 @@
+{
+  "type": "Collection",
+  "id": "EO:ECMWF:DAT:SATELLITE_GREENLAND_ICE_SHEET_VELOCITY",
+  "stac_version": "1.0.0",
+  "description": "This dataset contains annual ice velocity maps of the Greenland Ice Sheet derived from Sentinel-1 data. The data represent the current state-of-the-art in Europe for production of satellite-based ice velocity data records. It follows on from the ESA Greenland Ice Sheet Climate Change Initiative and is guided by the GCOS (Global Climate Observing System) targets for the Ice Sheets Essential Climate Variable.\nMapping glacier flow velocity and its temporal changes provides key information for investigating the dynamic response of glaciers and ice sheets to changing boundary environmental conditions. Remote sensing techniques that utilise satellite data are the only feasible manner to derive accurate surface velocities of the remote Greenland glaciers on a regular basis. \nThe surface velocity is derived by applying feature tracking techniques using Sentinel-1 synthetic aperture radar (SAR) data acquired in the Interferometric Wide (IW) swath mode. Ice velocity is provided at 250m and 500m grid spacing in North Polar Stereographic projection (depending on version). The horizontal velocity components are provided in true meters per day, towards easting and northing direction of the grid. The vertical displacement is derived from a digital elevation model. Provided is a NetCDF file with the velocity components: vx, vy, vz, along with maps showing the magnitude of the horizontal components, the valid pixel count and uncertainty (based on the standard deviation). The product combines all ice velocity maps, based on 6- and 12-day repeats, acquired over a full year in an annually averaged product running from October 1st to September 30th, mimicking a glaciological year. The dataset is extended on an annual basis.\nThis dataset is produced on behalf of the Copernicus Climate Change Service (C3S).\n\nVariables in the dataset/application are:\nLand ice surface easting velocity, Land ice surface northing velocity, Land ice surface velocity magnitude, Land ice surface vertical velocity\n\nVariables in the dataset/application are:\nLand ice surface measurement count, Land ice surface velocity standard deviation",
+  "links": [],
+  "title": "Greenland ice sheet annual gridded velocity data from 2017 to present derived from satellite observations",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -73.0,
+          60.0,
+          -10.0,
+          83.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2017-10-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Ocean",
+    "Spatial coverage: Antarctic and Greenland",
+    "Variable domain: Land (cryosphere)",
+    "Product type: Satellite observations",
+    "Temporal coverage: Past",
+    "Temporal coverage: Present"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

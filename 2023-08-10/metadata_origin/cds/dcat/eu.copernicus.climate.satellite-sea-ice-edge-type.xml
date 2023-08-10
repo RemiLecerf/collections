@@ -1,0 +1,74 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dct="http://purl.org/dc/terms/" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/metadata/eu.copernicus.climate.satellite-sea-ice-edge-type">
+        <foaf:primaryTopic rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/resource/10.24381/cds.29c46d83"/>
+        <dct:issued>2018-03-28</dct:issued>
+        <dct:modified>2018-03-28</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/srv/eng/xml.metadata.get?uuid=eu.copernicus.climate.satellite-sea-ice-edge-type">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://cds.climate.copernicus.eu:443//geonetwork?uuid=eu.copernicus.climate.satellite-sea-ice-edge-type">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/resource/10.24381/cds.29c46d83">
+        <dct:identifier>10.24381/cds.29c46d83</dct:identifier>
+        <dct:title>Sea ice edge and type daily gridded data from 1978 to present derived from satellite observations</dct:title>
+        <dct:abstract>This dataset provides daily gridded data of sea ice edge and sea ice type derived from brightness temperatures measured by satellite passive microwave radiometers. Sea ice is an important component of our climate system and a sensitive indicator of climate change. Its presence or its retreat has a strong impact on air-sea interactions, the Earth’s energy budget as well as marine ecosystems. It is recognized by the Global Climate Observing System as an Essential Climate Variable. Sea ice edge and type are some of the parameters used to characterise sea ice. Other parameters include sea ice concentration and sea ice thickness, also available in the Climate Data Store.
+Sea ice edge and type are defined as follows:
+
+Sea ice edge classifies the sea surface into open water, open ice, and closed ice depending on the amount of sea ice present in each grid cell. This variable is provided for both the Northern and Southern Hemispheres. Note that a sea ice concentration threshold of 30% is used to distinguish between open water and open ice, which differs from the 15% threshold commonly used for other sea ice products such as sea ice extent.
+Sea ice type classifies ice-covered areas into two categories based on the age of the sea ice: multiyear ice versus seasonal first-year ice. This variable is currently only available for the Northern Hemisphere and limited to the extended boreal winter months (mid-October through April). Sea ice type classification during summer is difficult due to the effect of melting at the ice surface which disturbs the passive microwave signature.
+
+Both sea ice products are based on measurements from the series of Scanning Multichannel Microwave Radiometer (SMMR), Special Sensor Microwave/Imager (SSM/I), and Special Sensor Microwave Imager/Sounder (SSMIS) sensors and share the same algorithm baseline. However, sea ice edge makes use of two lower frequencies near 19 GHz and 37 GHz and a higher frequency near 90 GHz whereas sea ice type only uses the two lower frequencies. This dataset combines Climate Data Records (CDRs), which are intended to have sufficient length, consistency, and continuity to assess climate variability and change, and Interim Climate Data Records (ICDRs), which provide regular temporal extensions to the CDRs and where consistency with the CDRs is expected but not extensively checked. For this dataset, both the CDR and ICDR parts of each product were generated using the same software and algorithms.
+The CDRs of sea ice edge and type currently extend from 25 October 1978 to 31 December 2020 whereas the corresponding ICDRs extend from January 2021 to present (with a 16-day latency behind real time). All data from the current release of the datasets (version 2.0) are Level-4 products, in which data gaps are filled by temporal and spatial interpolation. For product limitations and known issues, please consult the Product User Guide.
+This dataset is produced on behalf of Copernicus Climate Change Service (C3S), with heritage from the operational products generated by EUMETSAT Ocean and Sea Ice Satellite Application Facility (OSI SAF).
+
+Variables in the dataset/application are:
+Sea ice edge, Sea ice type
+
+Variables in the dataset/application are:
+Status flag, Uncertainty</dct:abstract>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/GEMET%20-%20INSPIRE%20themes%2C%20version%201.0/Oceanographic geographical features"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Product type: Satellite observations"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Variable domain: Ocean (physics)"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Temporal coverage: Past"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Spatial coverage: Global"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/iso/topicCategory/oceans"/>
+        <foaf:thumbnail rdf:resource="https://datastore.copernicus-climate.eu/c3s/published-forms-v2/c3sprod/satellite-sea-ice-edge-type/overview.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((0 -89, 0 89, 360 89, 360 -89, 0 -89))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:temporal>1979-01-01
+          /
+          2023-07-24</dct:temporal>
+        <dct:publisher rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/organization/ECMWF"/>
+        <dct:accrualPeriodicity>asNeeded</dct:accrualPeriodicity>
+        <dct:language>eng</dct:language>
+        <dct:license>licence</dct:license>
+        <dct:license>https://cds.climate.copernicus.eu/api/v2/terms/static/licence-to-use-copernicus-products.pdf</dct:license>
+        <dcat:distribution rdf:resource="https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.29c46d83"/>
+        <dcat:distribution rdf:resource="#"/>
+        <dcat:distribution rdf:resource="#"/>
+        <dcat:distribution rdf:resource="#"/>
+        <dcat:distribution rdf:resource="#"/>
+        <dcat:dataQuality>EC Copernicus program</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+    

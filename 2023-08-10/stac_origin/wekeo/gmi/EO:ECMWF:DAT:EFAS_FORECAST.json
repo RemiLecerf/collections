@@ -1,0 +1,47 @@
+{
+  "type": "Collection",
+  "id": "EO:ECMWF:DAT:EFAS_FORECAST",
+  "stac_version": "1.0.0",
+  "description": "This dataset provides gridded modelled hydrological time series forced with medium-range meteorological forecasts. The data is a consistent representation of the most important hydrological variables across the European Flood Awareness System (EFAS) domain. The temporal resolution is sub-daily high-resolution and ensemble forecasts of:\n\nRiver discharge\nSoil moisture for three soil layers\nSnow water equivalent\n\nIt also provides static data on soil depth for the three soil layers. Soil moisture and river discharge data are accompanied by ancillary files for interpretation (see related variables and links in the documentation).\nThis data set was produced by forcing the LISFLOOD hydrological model at a 5x5km resolution with meteorological forecasts. The forecasts are initialised twice daily at 00 and 12 UTC with time steps of 6 or 24 hours and lead times between 5 and 15 days depending on the forcing numerical weather prediction model. The forcing meteorological data are high-resolution and ensemble forecasts from the European Centre of Medium-range Weather Forecasts (ECMWF) with 51 ensemble members, high-resolution forecasts from the Deutsches Wetter Dienst (DWD) and the ensemble forecasts from the COSMO Local Ensemble Prediction System (COSMO-LEPS) with 20 ensemble members. The hydrological forecasts are available from 2018-10-10 up until present with a 30-day delay. The real-time data is only available to EFAS partners.\nCompanion datasets, also available through the CDS, are historical simulations which can be used to derive the hydrological climatology and for verification; reforecasts for research, local skill assessment and post-processing; and seasonal forecasts and reforecasts for users looking for longer leadtime forecasts. For users looking for global hydrological data, we refer to the Global Flood Awareness System (GloFAS) forecasts and historical simulations. All these datasets are part of the operational flood forecasting within the Copernicus Emergency Management Service (CEMS).\n\nVariables in the dataset/application are:\nRiver discharge in the last 24 hours, River discharge in the last 6 hours, Snow depth water equivalent, Soil depth, Volumetric soil moisture\n\nVariables in the dataset/application are:\nOrography, Upstream area",
+  "links": [],
+  "title": "River discharge and related forecasted data by the European Flood Awareness System",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1991-01-01T00:00:00Z",
+          "2023-04-17T23:59:59Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Climatology",
+    "Product type: Reanalysis",
+    "Spatial coverage: Europe",
+    "Variable domain: Land (hydrology)",
+    "Temporal coverage: Past",
+    "Provider: Copernicus CEMS"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

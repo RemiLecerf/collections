@@ -1,0 +1,573 @@
+<gmd:MD_Metadata xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gml="http://www.opengis.net/gml" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xsi:schemaLocation="http://www.isotc211.org/2005/gmd http://www.isotc211.org/2005/gmd/gmd.xsd http://www.isotc211.org/2005/gmx http://www.isotc211.org/2005/gmx/gmx.xsd http://www.isotc211.org/2005/srv http://schemas.opengis.net/iso/19139/20060504/srv/srv.xsd">
+      <gmd:fileIdentifier>
+        <gco:CharacterString>EO:ECMWF:DAT:CAMS_GLOBAL_EMISSION_INVENTORIES</gco:CharacterString>
+      </gmd:fileIdentifier>
+      <gmd:language>
+        <gmd:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/" codeListValue="eng"/>
+      </gmd:language>
+      <gmd:characterSet>
+        <gmd:MD_CharacterSetCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8"/>
+      </gmd:characterSet>
+      <gmd:hierarchyLevel xmlns:gmx="http://www.isotc211.org/2005/gmx" xmlns:srv="http://www.isotc211.org/2005/srv">
+        <gmd:MD_ScopeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_ScopeCode" codeListValue="dataset"/>
+      </gmd:hierarchyLevel>
+      <gmd:contact>
+        <gmd:CI_ResponsibleParty>
+          <gmd:individualName gco:nilReason="missing">
+            <gco:CharacterString/>
+          </gmd:individualName>
+          <gmd:organisationName>
+            <gco:CharacterString>ECMWF</gco:CharacterString>
+          </gmd:organisationName>
+          <gmd:positionName gco:nilReason="missing">
+            <gco:CharacterString/>
+          </gmd:positionName>
+          <gmd:contactInfo>
+            <gmd:CI_Contact>
+              <gmd:phone>
+                <gmd:CI_Telephone>
+                  <gmd:voice gco:nilReason="missing">
+                    <gco:CharacterString/>
+                  </gmd:voice>
+                  <gmd:facsimile gco:nilReason="missing">
+                    <gco:CharacterString/>
+                  </gmd:facsimile>
+                </gmd:CI_Telephone>
+              </gmd:phone>
+              <gmd:address>
+                <gmd:CI_Address>
+                  <gmd:deliveryPoint gco:nilReason="missing">
+                    <gco:CharacterString/>
+                  </gmd:deliveryPoint>
+                  <gmd:city gco:nilReason="missing">
+                    <gco:CharacterString/>
+                  </gmd:city>
+                  <gmd:administrativeArea gco:nilReason="missing">
+                    <gco:CharacterString/>
+                  </gmd:administrativeArea>
+                  <gmd:postalCode gco:nilReason="missing">
+                    <gco:CharacterString/>
+                  </gmd:postalCode>
+                  <gmd:country gco:nilReason="missing">
+                    <gco:CharacterString/>
+                  </gmd:country>
+                  <gmd:electronicMailAddress>
+                    <gco:CharacterString>copernicus-support@ecmwf.int</gco:CharacterString>
+                  </gmd:electronicMailAddress>
+                </gmd:CI_Address>
+              </gmd:address>
+            </gmd:CI_Contact>
+          </gmd:contactInfo>
+          <gmd:role>
+            <gmd:CI_RoleCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_RoleCode" codeListValue="pointOfContact"/>
+          </gmd:role>
+        </gmd:CI_ResponsibleParty>
+      </gmd:contact>
+      <gmd:dateStamp>
+        <gco:DateTime>2018-03-28T16:07:22</gco:DateTime>
+      </gmd:dateStamp>
+      <gmd:metadataStandardName>
+        <gco:CharacterString/>
+      </gmd:metadataStandardName>
+      <gmd:metadataStandardVersion>
+        <gco:CharacterString/>
+      </gmd:metadataStandardVersion>
+      <gmd:dataSetURI>
+        <gco:CharacterString>eu.copernicus.atmosphere.cams-global-emission-inventories</gco:CharacterString>
+      </gmd:dataSetURI>
+      <gmd:referenceSystemInfo>
+        <gmd:MD_ReferenceSystem>
+          <gmd:referenceSystemIdentifier>
+            <gmd:RS_Identifier>
+              <gmd:code>
+                <gco:CharacterString>EPSG:4326</gco:CharacterString>
+              </gmd:code>
+            </gmd:RS_Identifier>
+          </gmd:referenceSystemIdentifier>
+        </gmd:MD_ReferenceSystem>
+      </gmd:referenceSystemInfo>
+      <gmd:identificationInfo>
+        <gmd:MD_DataIdentification>
+          <gmd:citation>
+            <gmd:CI_Citation>
+              <gmd:title>
+                <gco:CharacterString>CAMS global emission inventories</gco:CharacterString>
+              </gmd:title>
+              <gmd:date>
+                <gmd:CI_Date>
+                  <gmd:date>
+                    <gco:Date>2020-09-09</gco:Date>
+                  </gmd:date>
+                  <gmd:dateType>
+                    <gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication"/>
+                  </gmd:dateType>
+                </gmd:CI_Date>
+              </gmd:date>
+            </gmd:CI_Citation>
+          </gmd:citation>
+          <gmd:abstract>
+            <gco:CharacterString>This data set contains gridded distributions of global anthropogenic and natural emissions.
+Natural and anthropogenic emissions of atmospheric pollutants and greenhouse gases are key drivers of the evolution of the composition of the atmosphere, so an accurate representation of them in forecast models of atmospheric composition is essential. CAMS compiles inventories of emission data that serve as input to its own forecast models, but which can also be used by other atmospheric chemical transport models. These inventories are based on a combination of existing data sets and new information, describing anthropogenic emissions from fossil fuel use on land, shipping, and aviation, and natural emissions from vegetation, soil, the ocean and termites. The anthropogenic emissions on land are further separated in specific activity sectors (e.g., power generation, road traffic, industry). The CAMS emission data sets provide good consistency between the emissions of greenhouse gases, reactive gases, and aerosol particles and their precursors. Because most inventory-based data sets are only available with a delay of several years, the CAMS emission inventories also extend these existing data sets forward in time by using the trends from the most recent available years, producing timely input data for real-time forecast models.
+Most of the data sets are updated once or twice per year adding the most recent year to the data record, while re-processing the original data record for consistency, when needed. This is reflected by the different version numbers.
+
+Variables in the dataset/application are:
+Anthropogenic emissions of CO2 (excluding short-cycle organic carbon) (from 12 different sectors), Anthropogenic emissions of acetylene (from 12 different sectors), Anthropogenic emissions of acids (from 12 different sectors), Anthropogenic emissions of alcohols (from 12 different sectors), Anthropogenic emissions of ammonia (from 12 different sectors), Anthropogenic emissions of benzene (from 12 different sectors), Anthropogenic emissions of black carbon (from 12 different sectors), Anthropogenic emissions of butanes (from 12 different sectors), Anthropogenic emissions of carbon dioxide (from 12 different sectors), Anthropogenic emissions of carbon monoxide (from 12 different sectors), Anthropogenic emissions of chlorinated hydrocarbons (from 12 different sectors), Anthropogenic emissions of esters (from 12 different sectors), Anthropogenic emissions of ethane (from 12 different sectors), Anthropogenic emissions of ethene (from 12 different sectors), Anthropogenic emissions of ethers (from 12 different sectors), Anthropogenic emissions of formaldehyde (from 12 different sectors), Anthropogenic emissions of hexanes (from 12 different sectors), Anthropogenic emissions of isoprene (from 12 different sectors), Anthropogenic emissions of ketones (from 12 different sectors), Anthropogenic emissions of methane (from 12 different sectors), Anthropogenic emissions of monoterpenes (from 12 different sectors), Anthropogenic emissions of nitrogen oxides (from 12 different sectors), Anthropogenic emissions of non-methane VOCs (volatile organic chemicals) (from 12 different sectors), Anthropogenic emissions of organic carbon (from 12 different sectors), Anthropogenic emissions of other VOCs (from 12 different sectors), Anthropogenic emissions of other aldehydes (from 12 different sectors), Anthropogenic emissions of other alkenes/alkynes (from 12 different sectors), Anthropogenic emissions of other aromatics (from 12 different sectors), Anthropogenic emissions of pentanes (from 12 different sectors), Anthropogenic emissions of propane (from 12 different sectors), Anthropogenic emissions of propene (from 12 different sectors), Anthropogenic emissions of sulphur dioxide (from 12 different sectors), Anthropogenic emissions of toluene (from 12 different sectors), Anthropogenic emissions of trimethylbenzenes (from 12 different sectors), Anthropogenic emissions of xylenes (from 12 different sectors), Aviation emissions of acetylene, Aviation emissions of alcohols, Aviation emissions of ammonia, Aviation emissions of benzene, Aviation emissions of black carbon, Aviation emissions of carbon dioxide, Aviation emissions of carbon monoxide, Aviation emissions of ethane, Aviation emissions of ethene, Aviation emissions of formaldehyde, Aviation emissions of hexanes, Aviation emissions of ketones, Aviation emissions of nitrogen oxides, Aviation emissions of non-methane VOCs, Aviation emissions of organic carbon, Aviation emissions of other VOCs, Aviation emissions of other aldehydes, Aviation emissions of other alkenes/alkynes, Aviation emissions of other aromatics, Aviation emissions of pentanes, Aviation emissions of propane, Aviation emissions of propene, Aviation emissions of sulphur dioxide, Aviation emissions of toluene, Aviation emissions of trimethylbenzenes, Aviation emissions of xylenes, Biogenic emissions of acetaldehyde, Biogenic emissions of acetic acid, Biogenic emissions of acetone, Biogenic emissions of butanes and higher alkanes, Biogenic emissions of butenes and higher alkenes, Biogenic emissions of carbon monoxide, Biogenic emissions of ethane, Biogenic emissions of ethanol, Biogenic emissions of ethene, Biogenic emissions of formaldehyde, Biogenic emissions of formic acid, Biogenic emissions of hydrogen cyanide, Biogenic emissions of isoprene, Biogenic emissions of methane, Biogenic emissions of methanol, Biogenic emissions of other aldehydes, Biogenic emissions of other ketones, Biogenic emissions of other monoterpenes, Biogenic emissions of pinene, Biogenic emissions of propane, Biogenic emissions of propene, Biogenic emissions of sesquiterpenes, Biogenic emissions of toluene, Oceanic emissions of bromoform, Oceanic emissions of dibromomethane, Oceanic emissions of dimethyl sulphide, Oceanic emissions of iodomethane, Shipping emissions of VOCs (all), Shipping emissions of ash, Shipping emissions of carbon dioxide, Shipping emissions of carbon monoxide, Shipping emissions of elemental carbon, Shipping emissions of nitrogen oxides, Shipping emissions of organic carbon, Shipping emissions of sulphate, Shipping emissions of sulphur oxides, Soil emissions of nitrogen oxides (NOx) from biome, Soil emissions of nitrogen oxides (NOx) from fertiliser, Soil emissions of nitrogen oxides (NOx) from nitrogen deposition, Termite emissions of methane</gco:CharacterString>
+          </gmd:abstract>
+          <gmd:purpose gco:nilReason="missing">
+            <gco:CharacterString/>
+          </gmd:purpose>
+          <gmd:status>
+            <gmd:MD_ProgressCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_ProgressCode" codeListValue="completed"/>
+          </gmd:status>
+          <gmd:pointOfContact>
+            <gmd:CI_ResponsibleParty>
+              <gmd:individualName gco:nilReason="missing">
+                <gco:CharacterString/>
+              </gmd:individualName>
+              <gmd:organisationName>
+                <gco:CharacterString>ECMWF</gco:CharacterString>
+              </gmd:organisationName>
+              <gmd:positionName gco:nilReason="missing">
+                <gco:CharacterString/>
+              </gmd:positionName>
+              <gmd:contactInfo>
+                <gmd:CI_Contact>
+                  <gmd:phone>
+                    <gmd:CI_Telephone>
+                      <gmd:voice gco:nilReason="missing">
+                        <gco:CharacterString/>
+                      </gmd:voice>
+                      <gmd:facsimile gco:nilReason="missing">
+                        <gco:CharacterString/>
+                      </gmd:facsimile>
+                    </gmd:CI_Telephone>
+                  </gmd:phone>
+                  <gmd:address>
+                    <gmd:CI_Address>
+                      <gmd:deliveryPoint gco:nilReason="missing">
+                        <gco:CharacterString/>
+                      </gmd:deliveryPoint>
+                      <gmd:city gco:nilReason="missing">
+                        <gco:CharacterString/>
+                      </gmd:city>
+                      <gmd:administrativeArea gco:nilReason="missing">
+                        <gco:CharacterString/>
+                      </gmd:administrativeArea>
+                      <gmd:postalCode gco:nilReason="missing">
+                        <gco:CharacterString/>
+                      </gmd:postalCode>
+                      <gmd:country gco:nilReason="missing">
+                        <gco:CharacterString/>
+                      </gmd:country>
+                      <gmd:electronicMailAddress>
+                        <gco:CharacterString>copernicus-support@ecmwf.int</gco:CharacterString>
+                      </gmd:electronicMailAddress>
+                    </gmd:CI_Address>
+                  </gmd:address>
+                </gmd:CI_Contact>
+              </gmd:contactInfo>
+              <gmd:role>
+                <gmd:CI_RoleCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_RoleCode" codeListValue="None"/>
+              </gmd:role>
+            </gmd:CI_ResponsibleParty>
+          </gmd:pointOfContact>
+          <gmd:resourceMaintenance>
+            <gmd:MD_MaintenanceInformation>
+              <gmd:maintenanceAndUpdateFrequency>
+                <gmd:MD_MaintenanceFrequencyCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_MaintenanceFrequencyCode" codeListValue="asNeeded"/>
+              </gmd:maintenanceAndUpdateFrequency>
+            </gmd:MD_MaintenanceInformation>
+          </gmd:resourceMaintenance>
+          <gmd:graphicOverview xmlns:srv="http://www.isotc211.org/2005/srv">
+            <gmd:MD_BrowseGraphic>
+              <gmd:fileName>
+                <gco:CharacterString>https://datastore.copernicus-climate.eu/cams/published-forms-v2/camsprod/cams-global-emission-inventories/overview.png</gco:CharacterString>
+              </gmd:fileName>
+              <gmd:fileDescription>
+                <gco:CharacterString>large_thumbnail</gco:CharacterString>
+              </gmd:fileDescription>
+              <gmd:fileType>
+                <gco:CharacterString>png</gco:CharacterString>
+              </gmd:fileType>
+            </gmd:MD_BrowseGraphic>
+          </gmd:graphicOverview>
+          <gmd:descriptiveKeywords>
+            <gmd:MD_Keywords>
+              <gmd:keyword xmlns:srv="http://www.isotc211.org/2005/srv">
+                <gco:CharacterString>airPollution</gco:CharacterString>
+              </gmd:keyword>
+              <gmd:type xmlns:srv="http://www.isotc211.org/2005/srv">
+                <gmd:MD_KeywordTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="theme"/>
+              </gmd:type>
+              <gmd:thesaurusName xmlns:srv="http://www.isotc211.org/2005/srv">
+                <gmd:CI_Citation>
+                  <gmd:title>
+                    <gco:CharacterString>WMO_CategoryCode</gco:CharacterString>
+                  </gmd:title>
+                  <gmd:date>
+                    <gmd:CI_Date>
+                      <gmd:date>
+                        <gco:Date>2015-08-20</gco:Date>
+                      </gmd:date>
+                      <gmd:dateType>
+                        <gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication"/>
+                      </gmd:dateType>
+                    </gmd:CI_Date>
+                  </gmd:date>
+                  <gmd:identifier>
+                    <gmd:MD_Identifier>
+                      <gmd:code>
+                        <gco:CharacterString>WMO_CategoryCode</gco:CharacterString>
+                      </gmd:code>
+                    </gmd:MD_Identifier>
+                  </gmd:identifier>
+                </gmd:CI_Citation>
+              </gmd:thesaurusName>
+            </gmd:MD_Keywords>
+          </gmd:descriptiveKeywords>
+          <gmd:descriptiveKeywords xmlns:srv="http://www.isotc211.org/2005/srv">
+            <gmd:MD_Keywords>
+              <gmd:keyword>
+                <gco:CharacterString>Atmospheric conditions</gco:CharacterString>
+              </gmd:keyword>
+              <gmd:type>
+                <gmd:MD_KeywordTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="theme"/>
+              </gmd:type>
+              <gmd:thesaurusName>
+                <gmd:CI_Citation>
+                  <gmd:title>
+                    <gco:CharacterString>GEMET - INSPIRE themes, version 1.0</gco:CharacterString>
+                  </gmd:title>
+                  <gmd:date>
+                    <gmd:CI_Date>
+                      <gmd:date>
+                        <gco:Date>2008-06-01</gco:Date>
+                      </gmd:date>
+                      <gmd:dateType>
+                        <gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication"/>
+                      </gmd:dateType>
+                    </gmd:CI_Date>
+                  </gmd:date>
+                </gmd:CI_Citation>
+              </gmd:thesaurusName>
+            </gmd:MD_Keywords>
+          </gmd:descriptiveKeywords>
+          <gmd:descriptiveKeywords>
+            <gmd:MD_Keywords>
+              <gmd:keyword xmlns:srv="http://www.isotc211.org/2005/srv">
+                <gco:CharacterString>Variable domain: Emissions and surface fluxes</gco:CharacterString>
+              </gmd:keyword>
+              <gmd:keyword>
+                <gco:CharacterString>Parameter family: Aerosol</gco:CharacterString>
+              </gmd:keyword>
+              <gmd:keyword>
+                <gco:CharacterString>Parameter family: Reactive gas</gco:CharacterString>
+              </gmd:keyword>
+              <gmd:keyword>
+                <gco:CharacterString>Spatial coverage: Global</gco:CharacterString>
+              </gmd:keyword>
+              <gmd:keyword>
+                <gco:CharacterString>Product type: Emission inventory</gco:CharacterString>
+              </gmd:keyword>
+              <gmd:keyword>
+                <gco:CharacterString>Temporal coverage: Past</gco:CharacterString>
+              </gmd:keyword>
+              <gmd:type>
+                <gmd:MD_KeywordTypeCode codeList="http://www.isotc211.org/2005/resources/codeList.xml#MD_KeywordTypeCode" codeListValue="theme"/>
+              </gmd:type>
+              <gmd:thesaurusName xmlns:srv="http://www.isotc211.org/2005/srv">
+                <gmd:CI_Citation>
+                  <gmd:title>
+                    <gco:CharacterString>Climate Data Store facets</gco:CharacterString>
+                  </gmd:title>
+                  <gmd:date>
+                    <gmd:CI_Date>
+                      <gmd:date>
+                        <gco:Date>2017-11-30</gco:Date>
+                      </gmd:date>
+                      <gmd:dateType>
+                        <gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication"/>
+                      </gmd:dateType>
+                    </gmd:CI_Date>
+                  </gmd:date>
+                </gmd:CI_Citation>
+              </gmd:thesaurusName>
+            </gmd:MD_Keywords>
+          </gmd:descriptiveKeywords>
+          <gmd:resourceConstraints xmlns:srv="http://www.isotc211.org/2005/srv">
+            <gmd:MD_LegalConstraints>
+              <gmd:accessConstraints>
+                <gmd:MD_RestrictionCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/ML_gmxCodelists.xml#MD_RestrictionCode" codeListValue="licence">licence</gmd:MD_RestrictionCode>
+              </gmd:accessConstraints>
+            </gmd:MD_LegalConstraints>
+          </gmd:resourceConstraints>
+          <gmd:resourceConstraints xmlns:srv="http://www.isotc211.org/2005/srv">
+            <gmd:MD_LegalConstraints>
+              <gmd:useLimitation>
+                <gco:CharacterString>Content accessible through the ADS may only be used under the terms of the licenses attributed to each particular resource.</gco:CharacterString>
+              </gmd:useLimitation>
+            </gmd:MD_LegalConstraints>
+          </gmd:resourceConstraints>
+          <gmd:resourceConstraints>
+            <gmd:MD_SecurityConstraints>
+              <gmd:classification>
+                <gmd:MD_ClassificationCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/ML_gmxCodelists.xml#MD_ClassificationCode" codeListValue="unclassified">unclassified</gmd:MD_ClassificationCode>
+              </gmd:classification>
+            </gmd:MD_SecurityConstraints>
+          </gmd:resourceConstraints>
+          <gmd:spatialRepresentationType xmlns:srv="http://www.isotc211.org/2005/srv">
+            <gmd:MD_SpatialRepresentationTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_SpatialRepresentationTypeCode" codeListValue=""/>
+          </gmd:spatialRepresentationType>
+          <gmd:spatialResolution>
+            <gmd:MD_Resolution>
+              <gmd:distance>
+                <gco:Distance uom="">None</gco:Distance>
+              </gmd:distance>
+            </gmd:MD_Resolution>
+          </gmd:spatialResolution>
+          <gmd:language>
+            <gmd:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/" codeListValue="eng"/>
+          </gmd:language>
+          <gmd:characterSet xmlns:srv="http://www.isotc211.org/2005/srv">
+            <gmd:MD_CharacterSetCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8"/>
+          </gmd:characterSet>
+          <gmd:topicCategory>
+            <gmd:MD_TopicCategoryCode>climatologyMeteorologyAtmosphere</gmd:MD_TopicCategoryCode>
+          </gmd:topicCategory>
+          <gmd:extent>
+            <gmd:EX_Extent>
+              <gmd:geographicElement>
+                <gmd:EX_GeographicBoundingBox>
+                  <gmd:westBoundLongitude>
+                    <gco:Decimal>-180</gco:Decimal>
+                  </gmd:westBoundLongitude>
+                  <gmd:eastBoundLongitude xmlns:srv="http://www.isotc211.org/2005/srv">
+                    <gco:Decimal>180</gco:Decimal>
+                  </gmd:eastBoundLongitude>
+                  <gmd:southBoundLatitude xmlns:srv="http://www.isotc211.org/2005/srv">
+                    <gco:Decimal>-90</gco:Decimal>
+                  </gmd:southBoundLatitude>
+                  <gmd:northBoundLatitude xmlns:srv="http://www.isotc211.org/2005/srv">
+                    <gco:Decimal>90</gco:Decimal>
+                  </gmd:northBoundLatitude>
+                </gmd:EX_GeographicBoundingBox>
+              </gmd:geographicElement>
+              <gmd:temporalElement>
+                <gmd:EX_TemporalExtent>
+                  <gmd:extent>
+                    <gml:TimePeriod gml:id="TempExt001">
+                      <gml:beginPosition>2000-01-01</gml:beginPosition>
+                      <gml:endPosition>2020-12-31</gml:endPosition>
+                    </gml:TimePeriod>
+                  </gmd:extent>
+                </gmd:EX_TemporalExtent>
+              </gmd:temporalElement>
+            </gmd:EX_Extent>
+          </gmd:extent>
+          <gmd:supplementalInformation>
+            <gco:CharacterString>Not constraints added to metadata</gco:CharacterString>
+          </gmd:supplementalInformation>
+        </gmd:MD_DataIdentification>
+      </gmd:identificationInfo>
+      <gmd:distributionInfo>
+        <gmd:MD_Distribution>
+          <gmd:distributionFormat xmlns:srv="http://www.isotc211.org/2005/srv">
+            <gmd:MD_Format>
+              <gmd:name>
+                <gco:CharacterString>None</gco:CharacterString>
+              </gmd:name>
+              <gmd:version>
+                <gco:CharacterString>1</gco:CharacterString>
+              </gmd:version>
+            </gmd:MD_Format>
+          </gmd:distributionFormat>
+          <gmd:transferOptions>
+            <gmd:MD_DigitalTransferOptions>
+              <gmd:onLine>
+                <gmd:CI_OnlineResource>
+                  <gmd:linkage>
+                    <gmd:URL>https://atmosphere.copernicus.eu/anthropogenic-and-natural-emissions</gmd:URL>
+                  </gmd:linkage>
+                  <gmd:protocol>
+                    <gco:CharacterString>WWW:LINK-1.0-http--link</gco:CharacterString>
+                  </gmd:protocol>
+                  <gmd:name>
+                    <gco:CharacterString>CAMS anthropogenic and natural emissions documentation</gco:CharacterString>
+                  </gmd:name>
+                  <gmd:description>
+                    <gco:CharacterString>Documentation of the anthropogenic and natural emissions. Note that this page also contains documentation on the regional (European) emissions, which are not included in this dataset.</gco:CharacterString>
+                  </gmd:description>
+                </gmd:CI_OnlineResource>
+              </gmd:onLine>
+              <gmd:onLine>
+                <gmd:CI_OnlineResource>
+                  <gmd:linkage>
+                    <gmd:URL>https://www.wekeo.eu/data?view=dataset&amp;dataset=EO:ECMWF:DAT:CAMS_GLOBAL_EMISSION_INVENTORIES</gmd:URL>
+                  </gmd:linkage>
+                  <gmd:name>
+                    <gco:CharacterString>Harmonized Data Access (WEkEO)</gco:CharacterString>
+                  </gmd:name>
+                  <gmd:description>
+                    <gco:CharacterString>Harmonized Data Access (WEkEO)</gco:CharacterString>
+                  </gmd:description>
+                  <gmd:function>
+                    <gmd:CI_OnLineFunctionCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="search"/>
+                  </gmd:function>
+                </gmd:CI_OnlineResource>
+              </gmd:onLine>
+              <gmd:onLine>
+                <gmd:CI_OnlineResource>
+                  <gmd:linkage>
+                    <gmd:URL>https://confluence.ecmwf.int/display/CKB/How+to+download+the+CAMS+Reanalysis+data+via+the+ECMWF+Web+API</gmd:URL>
+                  </gmd:linkage>
+                  <gmd:protocol>
+                    <gco:CharacterString>WWW:LINK-1.0-http--link</gco:CharacterString>
+                  </gmd:protocol>
+                  <gmd:name>
+                    <gco:CharacterString>Description of the CAMS Reanalysis data access methods</gco:CharacterString>
+                  </gmd:name>
+                  <gmd:description>
+                    <gco:CharacterString>Basic description of steps to access CAMS Reanalysis dataset.</gco:CharacterString>
+                  </gmd:description>
+                </gmd:CI_OnlineResource>
+              </gmd:onLine>
+              <gmd:onLine>
+                <gmd:CI_OnlineResource>
+                  <gmd:linkage>
+                    <gmd:URL>https://ads.atmosphere.copernicus.eu/cdsapp#!/dataset/eu.copernicus.atmosphere.cams-global-emission-inventories</gmd:URL>
+                  </gmd:linkage>
+                  <gmd:protocol>
+                    <gco:CharacterString>WWW:LINK-1.0-http--link</gco:CharacterString>
+                  </gmd:protocol>
+                  <gmd:name>
+                    <gco:CharacterString>Climate Data Store catalogue</gco:CharacterString>
+                  </gmd:name>
+                  <gmd:description>
+                    <gco:CharacterString>Catalogued record: CAMS global emission inventories</gco:CharacterString>
+                  </gmd:description>
+                </gmd:CI_OnlineResource>
+              </gmd:onLine>
+              <gmd:onLine>
+                <gmd:CI_OnlineResource>
+                  <gmd:linkage>
+                    <gmd:URL>https://software.ecmwf.int/wiki/display/COPSRV/Known+issues</gmd:URL>
+                  </gmd:linkage>
+                  <gmd:protocol>
+                    <gco:CharacterString>WWW:LINK-1.0-http--link</gco:CharacterString>
+                  </gmd:protocol>
+                  <gmd:name>
+                    <gco:CharacterString>Known issues</gco:CharacterString>
+                  </gmd:name>
+                  <gmd:description>
+                    <gco:CharacterString>Information about known issues found within the CDS seasonal forecasts' datasets.</gco:CharacterString>
+                  </gmd:description>
+                </gmd:CI_OnlineResource>
+              </gmd:onLine>
+              <gmd:onLine>
+                <gmd:CI_OnlineResource>
+                  <gmd:linkage>
+                    <gmd:URL>https://confluence.ecmwf.int/display/CKB/CAMS+Reanalysis+data+documentation</gmd:URL>
+                  </gmd:linkage>
+                  <gmd:protocol>
+                    <gco:CharacterString>WWW:LINK-1.0-http--link</gco:CharacterString>
+                  </gmd:protocol>
+                  <gmd:name>
+                    <gco:CharacterString>CAMS Reanalysis data documentation</gco:CharacterString>
+                  </gmd:name>
+                  <gmd:description>
+                    <gco:CharacterString>Overall description of CAMS Reanalysis dataset.</gco:CharacterString>
+                  </gmd:description>
+                </gmd:CI_OnlineResource>
+              </gmd:onLine>
+              <gmd:onLine>
+                <gmd:CI_OnlineResource>
+                  <gmd:linkage>
+                    <gmd:URL>https://atmosphere.copernicus.eu/anthropogenic-and-natural-emissions</gmd:URL>
+                  </gmd:linkage>
+                  <gmd:protocol>
+                    <gco:CharacterString>WWW:LINK-1.0-http--link</gco:CharacterString>
+                  </gmd:protocol>
+                  <gmd:name>
+                    <gco:CharacterString>CAMS anthropogenic and natural emissions documentation</gco:CharacterString>
+                  </gmd:name>
+                  <gmd:description>
+                    <gco:CharacterString>Documentation of the anthropogenic and natural emissions. Note that this page also contains documentation on the regional (European) emissions, which are not included in this dataset.</gco:CharacterString>
+                  </gmd:description>
+                </gmd:CI_OnlineResource>
+              </gmd:onLine>
+              <gmd:onLine>
+                <gmd:CI_OnlineResource>
+                  <gmd:linkage>
+                    <gmd:URL>https://ads-test.copernicus-atmosphere.eu/cdsapp#!/dataset/eu.copernicus.atmosphere.cams-global-reanalysis-eac4</gmd:URL>
+                  </gmd:linkage>
+                  <gmd:protocol>
+                    <gco:CharacterString>WWW:LINK-1.0-http--link</gco:CharacterString>
+                  </gmd:protocol>
+                  <gmd:name>
+                    <gco:CharacterString>Atmosphere Data Store catalogue</gco:CharacterString>
+                  </gmd:name>
+                  <gmd:description>
+                    <gco:CharacterString>Catalogued record: CAMS global EAC4 reanalysis</gco:CharacterString>
+                  </gmd:description>
+                </gmd:CI_OnlineResource>
+              </gmd:onLine>
+            </gmd:MD_DigitalTransferOptions>
+          </gmd:transferOptions>
+        </gmd:MD_Distribution>
+      </gmd:distributionInfo>
+      <gmd:dataQualityInfo>
+        <gmd:DQ_DataQuality>
+          <gmd:scope>
+            <gmd:DQ_Scope>
+              <gmd:level>
+                <gmd:MD_ScopeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_ScopeCode" codeListValue="dataset"/>
+              </gmd:level>
+            </gmd:DQ_Scope>
+          </gmd:scope>
+          <gmd:report>
+            <gmd:DQ_DomainConsistency xsi:type="gmd:DQ_DomainConsistency_Type">
+              <gmd:result>
+                <gmd:DQ_ConformanceResult>
+                  <gmd:specification>
+                    <gmd:CI_Citation>
+                      <gmd:title>
+                        <gco:CharacterString>Commission Regulation (EU) No 1089/2010 of 23 November 2010 implementing Directive 2007/2/EC of the European Parliament and of the Council as regards interoperability of spatial data sets and services</gco:CharacterString>
+                      </gmd:title>
+                      <gmd:date>
+                        <gmd:CI_Date>
+                          <gmd:date>
+                            <gco:Date>2010-12-08</gco:Date>
+                          </gmd:date>
+                          <gmd:dateType>
+                            <gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication"/>
+                          </gmd:dateType>
+                        </gmd:CI_Date>
+                      </gmd:date>
+                    </gmd:CI_Citation>
+                  </gmd:specification>
+                  <gmd:explanation>
+                    <gco:CharacterString>See the referenced specification</gco:CharacterString>
+                  </gmd:explanation>
+                  <gmd:pass>
+                    <gco:Boolean>true</gco:Boolean>
+                  </gmd:pass>
+                </gmd:DQ_ConformanceResult>
+              </gmd:result>
+            </gmd:DQ_DomainConsistency>
+          </gmd:report>
+          <gmd:report>
+            <gmd:DQ_DomainConsistency>
+              <gmd:result/>
+            </gmd:DQ_DomainConsistency>
+          </gmd:report>
+          <gmd:lineage>
+            <gmd:LI_Lineage>
+              <gmd:statement>
+                <gco:CharacterString>Copernicus Atmospheric Monitoring Service</gco:CharacterString>
+              </gmd:statement>
+            </gmd:LI_Lineage>
+          </gmd:lineage>
+        </gmd:DQ_DataQuality>
+      </gmd:dataQualityInfo>
+    </gmd:MD_Metadata>
+    

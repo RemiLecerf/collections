@@ -1,0 +1,102 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:dct="http://purl.org/dc/terms/" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/cf6d8d19-c77a-4ed4-b1e8-498eaf57061c">
+        <foaf:primaryTopic rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/resource/ef932fc0-04e7-4a25-b7b2-08a2d85d4039"/>
+        <dct:issued>2023-03-28</dct:issued>
+        <dct:modified>2023-03-28</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/srv/eng/xml.metadata.get?uuid=cf6d8d19-c77a-4ed4-b1e8-498eaf57061c">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork?uuid=cf6d8d19-c77a-4ed4-b1e8-498eaf57061c">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/resource/ef932fc0-04e7-4a25-b7b2-08a2d85d4039">
+        <dct:identifier>ef932fc0-04e7-4a25-b7b2-08a2d85d4039</dct:identifier>
+        <dct:title>Mediterrranean Outflow Water Index from Reanalysis &amp; Multi-Observations Reprocessing</dct:title>
+        <dct:abstract>'''DEFINITION'''
+
+Variations of the Mediterranean Outflow Water at 1000 m depth are monitored through area-averaged salinity anomalies in specifically defined boxes. The salinity data are extracted from several CMEMS products and averaged in the corresponding monitoring domain: 
+* IBI-MYP: IBI_MULTIYEAR_PHY_005_002
+* IBI-NRT: IBI_ANALYSISFORECAST_PHYS_005_001
+* GLO-MYP: GLOBAL_REANALYSIS_PHY_001_030
+* CORA: INSITU_GLO_TS_REP_OBSERVATIONS_013_002_b
+* ARMOR: MULTIOBS_GLO_PHY_TSUV_3D_MYNRT_015_012
+
+The anomalies of salinity have been computed relative to the monthly climatology obtained from IBI-MYP. Outcomes from diverse products are combined to deliver a unique multi-product result. Multi-year products (IBI-MYP, GLO,MYP, CORA, and ARMOR) are used to show an ensemble mean and the standard deviation of members in the covered period. The IBI-NRT short-range product is not included in the ensemble, but used to provide the deterministic analysis of salinity anomalies in the most recent year.
+
+'''CONTEXT'''
+
+The Mediterranean Outflow Water is a saline and warm water mass generated from the mixing processes of the North Atlantic Central Water and the Mediterranean waters overflowing the Gibraltar sill (Daniault et al., 1994). The resulting water mass is accumulated in an area west of the Iberian Peninsula (Daniault et al., 1994) and spreads into the North Atlantic following advective pathways (Holliday et al. 2003; Lozier and Stewart 2008, de Pascual-Collar et al., 2019).
+The importance of the heat and salt transport promoted by the Mediterranean Outflow Water flow has implications beyond the boundaries of the Iberia-Biscay-Ireland domain (Reid 1979, Paillet et al. 1998, van Aken 2000). For example, (i) it contributes substantially to the salinity of the Norwegian Current (Reid 1979), (ii) the mixing processes with the Labrador Sea Water promotes a salt transport into the inner North Atlantic (Talley and MacCartney, 1982; van Aken, 2000), and (iii) the deep anti-cyclonic Meddies developed in the African slope is a cause of the large-scale westward penetration of Mediterranean salt (Iorga and Lozier, 1999).
+Several studies have demonstrated that the core of Mediterranean Outflow Water is affected by inter-annual variability. This variability is mainly caused by a shift of the MOW dominant northward-westward pathways (Bozec et al. 2011), it is correlated with the North Atlantic Oscillation (Bozec et al. 2011) and leads to the displacement of the boundaries of the water core (de Pascual-Collar et al., 2019). The variability of the advective pathways of MOW is an oceanographic process that conditions the destination of the Mediterranean salt transport in the North Atlantic. Therefore, monitoring the Mediterranean Outflow Water variability becomes decisive to have a proper understanding of the climate system and its evolution (e.g. Bozec et al. 2011, Pascual-Collar et al. 2019).
+The CMEMS IBI-OMI_WMHE_mow product is aimed to monitor the inter-annual variability of the Mediterranean Outflow Water in the North Atlantic. The objective is the establishment of a long-term monitoring program to observe the variability and trends of the Mediterranean water mass in the IBI regional seas. To do that, the salinity anomaly is monitored in key areas selected to represent the main reservoir and the three main advective spreading pathways. More details and a full scientific evaluation can be found in the CMEMS Ocean State report Pascual et al., 2018 and de Pascual-Collar et al. 2019.
+
+'''CMEMS KEY FINDINGS'''
+
+The absence of long-term trends in the monitoring domain Reservoir (b) suggests the steadiness of water mass properties involved on the formation of Mediterranean Outflow Water.
+Results obtained in monitoring box North (c) present an alternance of periods with positive and negative anomalies. The last negative period started in 2016 reaching up to the present. Such negative events are linked to the decrease of the northward pathway of Mediterranean Outflow Water (Bozec et al., 2011), which appears to return to steady conditions in 2020 and 2021. 
+Results for box West (d) reveal a cycle of negative (2015-2017) and positive (2017 up to the present) anomalies. The positive anomalies of salinity in this region are correlated with an increase of the westward transport of salinity into the inner North Atlantic (de Pascual-Collar et al., 2019), which appear to be maintained for years 2020-2021.
+Results in monitoring boxes North and West are consistent with independent studies (Bozec et al., 2011; and de Pascual-Collar et al., 2019), suggesting a westward displacement of Mediterranean Outflow Water and the consequent contraction of the northern boundary.
+
+Note: The key findings will be updated annually in November, in line with OMI evolutions.
+
+'''DOI (product):''' 
+https://doi.org/10.48670/moi-00258</dct:abstract>
+        <dcat:theme rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/thesaurus/iso/topicCategory/oceans"/>
+        <foaf:thumbnail rdf:resource="https://catalogue.marine.copernicus.eu/documents/IMG/IBI_OMI_WMHE_mow.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon(( ,  ,  ,  ,  ))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:issued>2018-02-12</dct:issued>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/IBI-PUERTOS-MADRID-ES"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/IBI-PUERTOS-MADRID-ES"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/IBI-PUERTOS-MADRID-ES"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/IBI-PUERTOS-MADRID-ES"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/MOI-OMI-SERVICE"/>
+        <dct:accrualPeriodicity>annually</dct:accrualPeriodicity>
+        <dct:license>otherRestrictions</dct:license>
+        <dct:license>license</dct:license>
+        <dct:license>No limitations on public access</dct:license>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/IBI_OMI_WMHE_mow/ibi_omi_wmhe_mow_anomalies_reservoir"/>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/IBI_OMI_WMHE_mow/ibi_omi_wmhe_mow_anomalies_south"/>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/IBI_OMI_WMHE_mow/ibi_omi_wmhe_mow_anomalies_west"/>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/IBI_OMI_WMHE_mow/ibi_omi_wmhe_mow_anomalies_north"/>
+        <dcat:distribution rdf:resource="https://mdl1.marine.copernicus.eu/derived/IBI_OMI_WMHE_mow/ibi_omi_wmhe_mow_anomalies_north_202112/IBI_OMI_WMHE_mow_anomalies_north.nc"/>
+        <dcat:distribution rdf:resource="https://mdl1.marine.copernicus.eu/derived/IBI_OMI_WMHE_mow/ibi_omi_wmhe_mow_anomalies_reservoir_202112/IBI_OMI_WMHE_mow_anomalies_reservoir.nc"/>
+        <dcat:distribution rdf:resource="https://mdl1.marine.copernicus.eu/derived/IBI_OMI_WMHE_mow/ibi_omi_wmhe_mow_anomalies_south_202112/IBI_OMI_WMHE_mow_anomalies_south.nc"/>
+        <dcat:distribution rdf:resource="https://mdl1.marine.copernicus.eu/derived/IBI_OMI_WMHE_mow/ibi_omi_wmhe_mow_anomalies_west_202112/IBI_OMI_WMHE_mow_anomalies_west.nc"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/eed415e4-30f9-4fef-94ea-6cf54c605b89"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/9b854ce3-9cf2-43d5-8d89-3ea45928c682"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/40f6d905-8673-48c3-9bdd-01720de1af69"/>
+        <dcat:dataQuality>The myOcean products depends on other products for production or validation. The detailed list of dependencies is given in ISO19115's aggregationInfo (ISO19139 Xpath = "gmd:MD_Metadata/gmd:identificationInfo/gmd:aggregationInfo[./gmd:MD_AggregateInformation/gmd:initiativeType/gmd:DS_InitiativeTypeCode/@codeListValue='upstream-validation' or 'upstream-production']")</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+    

@@ -1,0 +1,69 @@
+{
+  "type": "Collection",
+  "id": "eu.copernicus.climate.sis-hydrology-variables-derived-seasonal-forecast",
+  "stac_version": "1.0.0",
+  "description": "This dataset provides hydrological seasonal forecasts of monthly mean river discharge across Europe. Two hydrological model ensembles are provided. The first is an E-HYPE multi-model system comprising eight model realisations using a catchment-based resolution. The second comprises the E-HYPEgrid, VIC-WUR and EFAS (LISFLOOD) hydrological models at a 5km gridded resolution.\nThe initialisation of the hydrological seasonal forecast uses the European Flood Awareness System (EFAS) daily gridded meteorological observations (EFAS-Meteo) up until the start of the forecast, and the subsequent integration of the meteorological seasonal forecasts using all 51 members of the ECMWF seasonal forecast system 5 (SEAS5) meteorological forecasts. A bias adjustment step using quantile mapping for temperature and precipitation was used for the E-HYPE and ViC-WUR models to minimize drift in the forecasts caused by biases in SEAS5 compared to EFAS-Meteo.\nThe final output is in the form of monthly mean river discharge for the coming seven months. The context of the forecasts is provided by upper and lower terciles of the historical EFAS-Meteo driven simulation for each month of the year.\nThis dataset is produced by the Swedish Meteorological and Hydrological Institute on behalf of the Copernicus Climate Change Service. The operational production is performed by C3S in collaboration with Copernicus Emergency Management Service (CEMS).\n\nVariables in the dataset/application are:\nBrier skill score above normal conditions, Brier skill score below normal conditions, Continuous ranked probability skill score, Fair ranked probability skill score, Reference river discharge lower tercile, Reference river discharge upper tercile, River discharge",
+  "links": [
+    {
+      "rel": "hosts",
+      "href": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.52f45864",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Climate Data Store catalogue"
+    },
+    {
+      "rel": "hosts",
+      "href": "https://datastore.copernicus-climate.eu/documents/sis-hydrology-derived/C3S_424.SMHI.2.3c_ProductUserGuideSpecification_and_Workflow_HydroSF_v1-2.pdf",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Product user guide and specification (PDF)"
+    },
+    {
+      "rel": "hosts",
+      "href": "https://datastore.copernicus-climate.eu/documents/sis-hydrology-derived/C3S_D424.SMHI.2.3c_HydrologicalModelsSpecification_v1-2.pdf",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Hydrological model specification (PDF)"
+    }
+  ],
+  "title": "Multi-model seasonal forecasts of river discharge for Europe from January 2021 to present",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -22.0,
+          27.0,
+          45.0,
+          72.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2021-01-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Meteorological geographical features",
+    "Temporal coverage: Past",
+    "Temporal coverage: Present",
+    "Temporal coverage: Future",
+    "Spatial coverage: Europe",
+    "Product type: Seasonal forecasts",
+    "Variable domain: Land (hydrology)",
+    "Provider: Copernicus C3S",
+    "Sector: Water management"
+  ],
+  "providers": [
+    {
+      "name": "Copernicus Climate Data Store",
+      "description": "Copernicus Climate Data Store - European Centre for Medium-Range Weather Forecasts (ECMWF)",
+      "roles": [
+        "host"
+      ],
+      "url": "https://cds.climate.copernicus.eu/"
+    }
+  ]
+}

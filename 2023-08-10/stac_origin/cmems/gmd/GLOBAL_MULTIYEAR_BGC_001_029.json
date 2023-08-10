@@ -1,0 +1,72 @@
+{
+  "type": "Collection",
+  "id": "GLOBAL_MULTIYEAR_BGC_001_029",
+  "stac_version": "1.0.0",
+  "description": "'''Short description'''\n\nThe biogeochemical hindcast for global ocean is produced at Mercator-Ocean (Toulouse. France). It provides 3D biogeochemical fields for the time period 1993-2019 at 1/4 degree and on 75 vertical levels. It uses PISCES biogeochemical model (available on the NEMO[https://www.nemo-ocean.eu/] modelling platform). No data assimilation in this product.\n\n* Latest NEMO version (v3.6_STABLE)\n* Forcings: GLORYS2V4-FREE [https://www.mercator-ocean.eu/solutions-expertises/acceder-aux-donnees-numeriques/produits-de-loffre/?offer=4217979b-2662-329a-907c-602fdc69c3a3] ocean physics produced at Mercator-Ocean and ERA-Interim[https://www.ecmwf.int/en/forecasts/datasets/archive-datasets/reanalysis-datasets/era-interim] atmosphere produced at ECMWF at a daily frequency\n* Outputs: Daily (chlorophyll. nitrate. phosphate. silicate. dissolved oxygen. primary production) and monthly (chlorophyll. nitrate. phosphate. silicate. dissolved oxygen. primary production. iron. phytoplankton in carbon) 3D mean fields interpolated on a standard regular grid in NetCDF format. The simulation is performed once and for all.\n* Initial conditions: World Ocean Atlas 2013 for nitrate. phosphate. silicate and dissolved oxygen. GLODAPv2 for DIC and Alkalinity. and climatological model outputs for Iron and DOC\n* Quality/Accuracy/Calibration information: See the related Quality Information Document\n\n'''DOI (product):'''\nhttps://doi.org/10.48670/moi-00019",
+  "links": [],
+  "title": "Global Ocean Biogeochemistry Hindcast",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1993-01-01T00:00:00Z",
+          "2020-12-31T23:59:59Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Oceanographic geographical features",
+    "numerical-model",
+    "mole_concentration_of_nitrate_in_sea_water",
+    "cell_thickness",
+    "mole_concentration_of_dissolved_iron_in_sea_water",
+    "mole_concentration_of_phytoplankton_expressed_as_carbon_in_sea_water",
+    "surface_partial_pressure_of_carbon_dioxide_in_sea_water",
+    "net_primary_production_of_biomass_expressed_as_carbon_per_unit_volume_in_sea_water",
+    "mole_concentration_of_phosphate_in_sea_water",
+    "model_level_number_at_sea_floor",
+    "sea_water_ph_reported_on_total_scale",
+    "sea_floor_depth_below_geoid",
+    "mole_concentration_of_dissolved_molecular_oxygen_in_sea_water",
+    "mole_concentration_of_silicate_in_sea_water",
+    "mass_concentration_of_chlorophyll_a_in_sea_water",
+    "invariant",
+    "multi-year",
+    "marine-resources",
+    "marine-safety",
+    "coastal-marine-environment",
+    "weather-climate-and-seasonal-forecasting",
+    "global-ocean",
+    "Level 4",
+    "None",
+    "Data",
+    "North Mid-Atlantic Ridge",
+    "Atlantic Ocean",
+    "WP5 Assessing state, drivers and tipping points",
+    "/Cross-discipline/Rate measurements",
+    "Modelling data",
+    "Brest"
+  ],
+  "providers": [
+    {
+      "name": "Copernicus Marine Service",
+      "description": "Copernicus Marine Service - Mercator Ocean International",
+      "roles": [
+        "host"
+      ],
+      "url": "https://marine.copernicus.eu/"
+    }
+  ]
+}

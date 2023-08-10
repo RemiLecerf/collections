@@ -1,0 +1,73 @@
+{
+    "type": "Collection",
+    "stac_version": "1.0.0",
+    "id": "urn:eop:VITO:TERRASCOPE_S2_TOC_V2",
+    "title": "Sentinel-2 Top of Canopy (TOC) Products (tiles) - V2",
+    "description": "L2A atmospheric corrected Top-Of-Canopy (TOC) products V2, generated using the Sen2COR processing tool.",
+    "keywords": [
+        "VITO",
+        "TERRASCOPE",
+        "COPERNICUS",
+        "ESA",
+        "Orthoimagery",
+        "Sentinel-2",
+        "MSI",
+        "Level-2A",
+        "Radiometry",
+        "Plant Resource",
+        "TOC"
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180.0,
+                    -84.0,
+                    180.0,
+                    84
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2015-06-23T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "Licence: https://terrascope.be/en/terms-use",
+    "links": [
+        {
+            "rel": "self",
+            "type": "application/json",
+            "href": "https://services.terrascope.be/stac/collections/urn:eop:VITO:TERRASCOPE_S2_TOC_V2"
+        },
+        {
+            "rel": "parent",
+            "type": "application/json",
+            "href": "https://services.terrascope.be/stac/"
+        },
+        {
+            "rel": "items",
+            "type": "application/geo+json",
+            "href": "https://services.terrascope.be/stac/collections/urn:eop:VITO:TERRASCOPE_S2_TOC_V2/items"
+        },
+        {
+            "rel": "root",
+            "type": "application/json",
+            "href": "https://services.terrascope.be/stac/"
+        }
+    ],
+    "summaries": {
+        "datetime": {
+            "min": "2015-06-23T00:00:00Z"
+        },
+        "constellation": [
+            "Sentinel-2"
+        ],
+        "instruments": [
+            "MSI"
+        ]
+    }
+}

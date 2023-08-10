@@ -1,0 +1,296 @@
+{
+    "type": "Collection",
+    "stac_version": "1.0.0",
+    "stac_extensions": [
+        "collection-assets"
+    ],
+    "id": "OpenLandMap/PNV/PNV_FAPAR_PROBA-V_D/v01",
+    "title": "OpenLandMap Potential FAPAR Monthly",
+    "description": "Potential Natural Vegetation FAPAR predicted monthly median (based on PROB-V FAPAR 2014-2017).\n[Description](https://gitlab.com/openlandmap/global-layers/#potential-natural-vegetation).\n\nTo access and visualize maps outside of Earth Engine, use [this page](https://opengeohub.org/about-openlandmap).\n\nIf you discover a bug, artifact or inconsistency in the LandGIS maps\nor if you have a question please use the following channels:\n\n *  [Technical issues and questions about the code](https://gitlab.com/openlandmap/global-layers/issues)\n *  [General questions and comments](https://disqus.com/home/forums/landgis/)\n",
+    "keywords": [
+        "envirometrix",
+        "fapar",
+        "monthly",
+        "opengeohub",
+        "openlandmap",
+        "potential"
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2001-01-01T00:00:00Z",
+                    "2002-01-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "providers": [
+        {
+            "name": "EnvirometriX Ltd",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://doi.org/10.7910/DVN/QQHCIK"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/OpenLandMap_PNV_PNV_FAPAR_PROBA-V_D_v01"
+        }
+    ],
+    "license": "CC-BY-SA-4.0",
+    "links": [
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections/OpenLandMap/PNV/PNV_FAPAR_PROBA-V_D/v01",
+            "rel": "self",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections",
+            "rel": "parent",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/",
+            "rel": "root",
+            "type": "application/json"
+        },
+        {
+            "code": "JavaScript",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/OpenLandMap/OpenLandMap_PNV_PNV_FAPAR_PROBA-V_D_v01",
+            "rel": "related",
+            "title": "Run the example for OpenLandMap/PNV/PNV_FAPAR_PROBA-V_D/v01 in the Earth Engine Code Editor",
+            "type": "text/html"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/images/OpenLandMap/OpenLandMap_PNV_PNV_FAPAR_PROBA-V_D_v01_sample.png",
+            "rel": "preview",
+            "type": "image/png"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/OpenLandMap_PNV_PNV_FAPAR_PROBA-V_D_v01#terms-of-use",
+            "rel": "license",
+            "type": "text/html"
+        },
+        {
+            "href": "https://spdx.org/licenses/CC-BY-SA-4.0.html",
+            "rel": "license",
+            "type": "text/html"
+        },
+        {
+            "href": "https://spdx.org/licenses/ODbL-1.0.html",
+            "rel": "license",
+            "type": "text/html"
+        },
+        {
+            "href": "https://doi.org/10.7910/DVN/QQHCIK",
+            "rel": "cite-as"
+        }
+    ],
+    "cube:dimensions": {
+        "x": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                -180,
+                180
+            ]
+        },
+        "y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                -90,
+                90
+            ]
+        },
+        "t": {
+            "type": "temporal",
+            "extent": [
+                "2001-01-01T00:00:00Z",
+                "2002-01-01T00:00:00Z"
+            ]
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "jan",
+                "feb",
+                "mar",
+                "apr",
+                "may",
+                "jun",
+                "jul",
+                "aug",
+                "sep",
+                "oct",
+                "nov",
+                "dec",
+                "annual",
+                "annualdiff"
+            ]
+        }
+    },
+    "summaries": {
+        "annual": {
+            "gee:estimated_range": true,
+            "maximum": 220
+        },
+        "annualdiff": {
+            "gee:estimated_range": true,
+            "maximum": 220
+        },
+        "apr": {
+            "gee:estimated_range": true,
+            "maximum": 220
+        },
+        "aug": {
+            "gee:estimated_range": true,
+            "maximum": 220
+        },
+        "dec": {
+            "gee:estimated_range": true,
+            "maximum": 220
+        },
+        "eo:bands": [
+            {
+                "description": "Jan Potential FAPAR monthly",
+                "gee:units": "1 (unspecified fraction)",
+                "name": "jan"
+            },
+            {
+                "description": "Feb Potential FAPAR monthly",
+                "gee:units": "1 (unspecified fraction)",
+                "name": "feb"
+            },
+            {
+                "description": "Mar Potential FAPAR monthly",
+                "gee:units": "1 (unspecified fraction)",
+                "name": "mar"
+            },
+            {
+                "description": "Apr Potential FAPAR monthly",
+                "gee:units": "1 (unspecified fraction)",
+                "name": "apr"
+            },
+            {
+                "description": "May Potential FAPAR monthly",
+                "gee:units": "1 (unspecified fraction)",
+                "name": "may"
+            },
+            {
+                "description": "Jun Potential FAPAR monthly",
+                "gee:units": "1 (unspecified fraction)",
+                "name": "jun"
+            },
+            {
+                "description": "Jul Potential FAPAR monthly",
+                "gee:units": "1 (unspecified fraction)",
+                "name": "jul"
+            },
+            {
+                "description": "Aug Potential FAPAR monthly",
+                "gee:units": "1 (unspecified fraction)",
+                "name": "aug"
+            },
+            {
+                "description": "Sep Potential FAPAR monthly",
+                "gee:units": "1 (unspecified fraction)",
+                "name": "sep"
+            },
+            {
+                "description": "Oct Potential FAPAR monthly",
+                "gee:units": "1 (unspecified fraction)",
+                "name": "oct"
+            },
+            {
+                "description": "Nov Potential FAPAR monthly",
+                "gee:units": "1 (unspecified fraction)",
+                "name": "nov"
+            },
+            {
+                "description": "Dec Potential FAPAR monthly",
+                "gee:units": "1 (unspecified fraction)",
+                "name": "dec"
+            },
+            {
+                "description": "Anuual Potential FAPAR monthly",
+                "gee:units": "1 (unspecified fraction)",
+                "name": "annual"
+            },
+            {
+                "description": "Annual Difference Potential FAPAR monthly",
+                "gee:units": "1 (unspecified fraction)",
+                "name": "annualdiff"
+            }
+        ],
+        "feb": {
+            "gee:estimated_range": true,
+            "maximum": 220
+        },
+        "gsd": [
+            1000
+        ],
+        "jan": {
+            "gee:estimated_range": true,
+            "maximum": 220
+        },
+        "jul": {
+            "gee:estimated_range": true,
+            "maximum": 220
+        },
+        "jun": {
+            "gee:estimated_range": true,
+            "maximum": 220
+        },
+        "mar": {
+            "gee:estimated_range": true,
+            "maximum": 220
+        },
+        "may": {
+            "gee:estimated_range": true,
+            "maximum": 220
+        },
+        "nov": {
+            "gee:estimated_range": true,
+            "maximum": 220
+        },
+        "oct": {
+            "gee:estimated_range": true,
+            "maximum": 220
+        },
+        "sep": {
+            "gee:estimated_range": true,
+            "maximum": 220
+        }
+    },
+    "assets": {
+        "preview_4": {
+            "href": "https://developers.google.com/earth-engine/datasets/images/OpenLandMap/OpenLandMap_PNV_PNV_FAPAR_PROBA-V_D_v01_sample.png",
+            "type": "image/png",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    },
+    "sci:citation": "Hengl T, Walsh MG, Sanderman J, Wheeler I, Harrison SP, Prentice IC. (2018) Global Mapping of Potential Natural Vegetation: An Assessment of Machine Learning Algorithms for Estimating Land Potential. PeerJ Preprints.\n[10.7287/peerj.preprints.26811v5](https://doi.org/10.7910/DVN/QQHCIK)\n",
+    "sci:doi": "10.7910/DVN/QQHCIK",
+    "gee:terms_of_use": "This is a human-readable summary of (and not a substitute for) the [license](https://creativecommons.org/licenses/by-sa/4.0/).\n\nYou are free to -\n  Share - copy and redistribute the material in any medium or format\n  Adapt - remix, transform, and build upon the material for any purpose, even commercially.\n\nThis license is acceptable for Free Cultural Works.\nThe licensor cannot revoke these freedoms as long as you follow the license terms.\n\nUnder the following terms -\n  Attribution - You must give appropriate credit, provide a link to the license, and indicate if\n  changes were made. You may do so in any reasonable manner, but not in any way that suggests the\n  licensor endorses you or your use.\n\n  ShareAlike - If you remix, transform, or build upon the material, you must distribute your\n  contributions under the same license as the original.\n\n  No additional restrictions - You may not apply legal terms or technological measures that\n  legally restrict others from doing anything the license permits.\n",
+    "gee:type": "image",
+    "gee:unusual_terms_of_use": true,
+    "gee:user_uploaded": true
+}

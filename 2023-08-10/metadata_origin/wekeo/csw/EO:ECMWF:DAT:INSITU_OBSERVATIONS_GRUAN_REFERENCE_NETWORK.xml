@@ -1,0 +1,45 @@
+<csw:Record xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">EO:ECMWF:DAT:INSITU_OBSERVATIONS_GRUAN_REFERENCE_NETWORK</dc:identifier>
+      <dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">In situ temperature, relative humidity and wind profiles from 2006 to March 2020 from the GRUAN reference network</dc:title>
+      <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/">dataset</dc:type>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Atmospheric conditions</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Product type: In-situ observations</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Spatial coverage: Global</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Variable domain: Atmosphere (upper air)</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Temporal coverage: Past</dc:subject>
+      <dc:format xmlns:dc="http://purl.org/dc/elements/1.1/">CSV</dc:format>
+      <dct:abstract xmlns:dct="http://purl.org/dc/terms/">The Global Climate Observing System (GCOS) Reference Upper-Air Network (GRUAN) is an international reference observing network, established in 2006, of sites measuring essential climate variables above Earth's surface, designed to fill an important gap in the current global observing system. GRUAN measurements are providing high-quality climate data records from the surface, through the troposphere, and into the stratosphere. These are being used to determine trends, constrain and calibrate data from more spatially comprehensive observing systems (including satellites and current radiosonde networks), and provide appropriate data for studying atmospheric processes. GRUAN is envisaged as a global network of eventually 30-40 sites that, to the extent possible, builds on existing observational networks and capabilities.
+GRUAN observation processing is designed to adjust systematic errors in radiosonde measurements of pressure, temperature, humidity, and wind, and to quantify how the uncertainties related to these error sources are derived. 
+This characterization ensures the traceability to SI units or accepted standards, providing extensive metadata and full documentation of measurements and algorithms.
+This allows the full reprocessing from the raw data.
+The Climate Data Store provides access to the GRUAN data version 2 (V2). Currently, only two GRUAN data products (GDP), for Vaisala RS92 and for Meisei RS-11G sondes, are available. In due time (expected early 2021) GRUAN data products for the new Vaisala RS41 sondes will be added. Specific GRUAN data products for other sonde types are also under development. 
+The current dataset provides radiosoundings from 17 stations.
+The GRUAN dataset provides the vertical aggregation of 12 quantities as listed below in the main-variables table. 
+Attributes are described in the related-variables tables.
+Radiosoundings can be downloaded as comma-separated values (CSV) files organised in two different ways:
+
+CSV one row per level: for each observed height all variables are provided as individual columns in one row. 
+Each main variable has its dedicated columns for related uncertainty and bias correction, where applies (referenced as csv-lev in the variable lists below). 
+CSV one row per observation: no aggregation; each row provides information about one variable at one level only. 
+All main variable are grouped together in the following columns: one for the observed variable (indicates variable in question), one for observation value,
+one column for each of the three flavours of uncertainty and one for bias correction (referenced as csv-obs in the variable lists below).
+
+More details about the the GRUAN dataset are given in the Documentation section, and
+general information and background can be obtained from the GRUAN website (www.gruan.org).
+
+Variables in the dataset/application are:
+Air temperature, Air temperature post processing radiation correction, Air temperature random uncertainty, Air temperature systematic uncertainty, Air temperature total uncertainty, Altitude, Altitude total uncertainty, Eastward wind component, Frost point temperature, Geopotential height, Northward wind component, Relative humidity, Relative humidity effective vertical resolution, Relative humidity post processing radiation correction, Relative humidity random uncertainty, Relative humidity systematic uncertainty, Relative humidity total uncertainty, Shortwave radiation, Shortwave radiation total uncertainty, Vertical speed of radiosonde, Water vapor volume mixing ratio, Wind from direction, Wind from direction total uncertainty, Wind speed, Wind speed total uncertainty
+
+Variables in the dataset/application are:
+Air pressure, Height of station above sea level, Latitude, Longitude, Observation value, Observed variable, Post processing radiation correction, Random uncertainty, Record number, Relative humidity effective vertical resolution, Report time stamp, Station name, Systematic uncertainty, Time since launch, Total uncertainty</dct:abstract>
+      <dct:spatial xmlns:dct="http://purl.org/dc/terms/">::EPSG:4326</dct:spatial>
+      <dc:rights xmlns:dc="http://purl.org/dc/elements/1.1/">https://cds.climate.copernicus.eu/api/v2/terms/static/20180314_Copernicus_License_V1.1.pdf</dc:rights>
+      <dc:rights xmlns:dc="http://purl.org/dc/elements/1.1/">https://cds.climate.copernicus.eu/api/v2/terms/static/gruan-data-policy-2015.pdf</dc:rights>
+      <dc:rights xmlns:dc="http://purl.org/dc/elements/1.1/">Content accessible through the CDS may only be used under the terms of the licenses attributed to each particular resource.</dc:rights>
+      <dct:accessRights xmlns:dct="http://purl.org/dc/terms/">licence</dct:accessRights>
+      <ows:BoundingBox xmlns:ows="http://www.opengis.net/ows">
+        <ows:LowerCorner>-180 -89</ows:LowerCorner>
+        <ows:UpperCorner>180 89</ows:UpperCorner>
+      </ows:BoundingBox>
+    </csw:Record>
+    

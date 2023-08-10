@@ -1,0 +1,53 @@
+<csw:Record xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">EO:EUM:DAT:0184</dc:identifier>
+      <dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">SLSTR Level 2 Sea Surface Temperature (SST) -
+              Sentinel-3B</dc:title>
+      <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/">series</dc:type>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Ocean</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Sea Surface Temperature</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Level 2 Data</dc:subject>
+      <dct:modified xmlns:dct="http://purl.org/dc/terms/">2020-02-26</dct:modified>
+      <dct:abstract xmlns:dct="http://purl.org/dc/terms/">Sea Surface Temperature (SST) is the kinetic temperature of a water
+          body at a defined depth. Although SLSTR measures an infrared radiometric temperature, it
+          is provided as a kinetic temperature by considering the emissivity of the water body as
+          part of the SST retrieval process. It is important to note that the SLSTR instruments
+          return SST measurements for the ocean 'skin'. Due to the limited penetration of thermal
+          infra-red radiation through the water column, this corresponds to the temperature in the
+          top few tens of micrometres. At night, the skin temperature is typically a few tenths of a
+          degree cooler than the temperature measured by in situ systems; in the day, the skin can
+          be considerably higher if strong diurnal warming is present. For more details please see
+          &#8220;What is SST?&#8221; on the GHRSST web pages. The SST measurement is obtained by means of a
+          highly accurate calibration of the three infra-red channels at 3.74, 10.85 and 12 &#181;m
+          (S7-S8-S9). Corrections for water vapour atmospheric absorption are performed using a
+          triple window at night, and a split window during the day as the 3.7 &#181;m channel is not
+          used due to solar contamination. Each on-ground pixel is viewed twice, via nadir and
+          oblique views with different atmospheric path lengths, allowing for correction for aerosol
+          effects. Consequently, there are four possible retrieved SSTs, referred to as N2
+          (nadir-only 11 &#181;m and 12 &#181;m), N3 (nadir-only 3.7 &#181;m, 11 &#181;m and 12 &#181;m), D2 (dual-view 11 &#181;m
+          and 12 &#181;m) and D3 (dual-view 3.7 &#181;m, 11 &#181;m and 12 &#181;m). A fifth retrieval algorithm, N3R is
+          similar to N3, but uses the property of &#8220;aerosol robustness&#8221;, which is applicable in areas
+          of high atmospheric aerosol content, e.g. near volcanoes. The product is derived from
+          SLSTR L2 NRT data following derivation was applied to select the SST pixels to be plotted
+          from WST file: - if the observation is in the nadir-only / single-view part of swath (i.e.
+          "sst_algorithm_types" is N2, N3, N3R) then SST = sea_surface_temperature - If the
+          observation is in the dual-view part of swath ((i.e. "sst_algorithm_types" is D2 or D3)
+          then SST = sea_surface_temperature - dual_nadir_sst_difference. Besides, the following
+          flags were used to select which pixels to represent and display: (quality_level &gt;=3) and
+          (l2p_flags.land == 0) and (l2p_flags.lake == 0) The SLSTR instrument and ground processing
+          system are required to produce SST retrievals routinely from the corresponding brightness
+          temperatures with an absolute accuracy of better than 0.3 K, globally, both for a single
+          sample and when averaged over areas of 0.5&#176; longitude by 0.5&#176; latitude, under certain
+          cloud-free conditions (i.e. &gt;20% cloud-free samples within each area). The SLSTR
+          instrument also has a temporal stability of 0.1 K/decade.</dct:abstract>
+      <dc:coverage xmlns:dc="http://purl.org/dc/elements/1.1/">Global</dc:coverage>
+      <dc:rights xmlns:dc="http://purl.org/dc/elements/1.1/">-</dc:rights>
+      <dc:rights xmlns:dc="http://purl.org/dc/elements/1.1/">otherRestrictions</dc:rights>
+      <dct:accessRights xmlns:dct="http://purl.org/dc/terms/">otherRestrictions</dct:accessRights>
+      <dct:alternative xmlns:dct="http://purl.org/dc/terms/">S3B_SL_2_SST</dct:alternative>
+      <dct:created xmlns:dct="http://purl.org/dc/terms/">2017-06-27</dct:created>
+      <ows:BoundingBox xmlns:ows="http://www.opengis.net/ows">
+        <ows:LowerCorner>-180.0 -90.0</ows:LowerCorner>
+        <ows:UpperCorner>180.0 90.0</ows:UpperCorner>
+      </ows:BoundingBox>
+    </csw:Record>
+    

@@ -1,0 +1,135 @@
+{
+    "type": "Collection",
+    "version": "v1",
+    "stac_version": "0.9.0",
+    "stac_extensions": [
+        "datacube"
+    ],
+    "id": "Backscatter_Sentinel1_Track066_Regular_Timeseries_Indexed",
+    "title": "Backscatter Sentinel-1 Track066",
+    "description": "Sentinel-1A backscatter timeseries. Sigma0 for VH and VV polarization calculated using SNAP.",
+    "keywords": [
+        "S-1",
+        "WLF",
+        "sigma",
+        "backscatter",
+        "intensity"
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    5.630625559500606,
+                    43.00582719260996,
+                    11.020909808358157,
+                    48.10939043610301
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2014-10-04T00:00:00Z",
+                    "2016-10-05T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "providers": [
+        {
+            "name": "Eurac EO WCS",
+            "url": "http://www.eurac.edu",
+            "roles": [
+                "Host"
+            ]
+        },
+        {
+            "name": "European Space Agency (ESA)",
+            "url": "https://www.esa.int/",
+            "roles": [
+                "Producer"
+            ]
+        },
+        {
+            "name": "Carlo Marin",
+            "url": "http://www.eurac.edu/en/research/mountains/remsen/staff/Pages/staffdetails.aspx?persId=36763",
+            "roles": [
+                "Processor"
+            ]
+        }
+    ],
+    "license": "CC-BY-4.0",
+    "links": [
+        {
+            "rel": "licence",
+            "href": "https://creativecommons.org/licenses/by/4.0/",
+            "type": "text/html",
+            "title": "License Link"
+        }
+    ],
+    "cube:dimensions": {
+        "DATE": {
+            "type": "temporal",
+            "extent": [
+                "2014-10-04T00:00:00.000Z",
+                "2016-10-05T00:00:00.000Z"
+            ],
+            "step": "P12D"
+        },
+        "X": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                5.630625559500606,
+                11.020909808358157
+            ],
+            "reference_system": 3035
+        },
+        "Y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                43.00582719260996,
+                48.10939043610301
+            ],
+            "reference_system": 3035
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "VH",
+                "VV"
+            ]
+        }
+    },
+    "summaries": {
+        "constellation": [
+            "Sentinel-1"
+        ],
+        "platform": [
+            "Sentinel-1A"
+        ],
+        "rows": 27825,
+        "columns": 21656,
+        "instruments": [
+            "SAR"
+        ],
+        "gsd": [
+            20.0
+        ],
+        "eo:bands": [
+            {
+                "name": "VH",
+                "common_name": "VH",
+                "gsd": 20.0
+            },
+            {
+                "name": "VV",
+                "common_name": "VV",
+                "gsd": 20.0
+            }
+        ]
+    },
+    "sci:citation": "Eurac Research 2020, contains modified Copernicus Sentinel data 2018, processed by ESA.",
+    "engine": "WCPS"
+}

@@ -1,0 +1,295 @@
+{
+    "slug": "precipitation-monthly-and-daily-gridded-data-from-2000-to-2017-derived-from-satellite-microwave-observations",
+    "name": "satellite-precipitation-microwave",
+    "id": "eu.copernicus.climate.satellite-precipitation-microwave",
+    "type": "dataset",
+    "rich_abstract": "<div class='abstract-text'>\n         <p>This dataset provides global estimates of daily accumulated and monthly means of precipitation. The precipitation estimates are based on a merge of passive microwave observations from two different radiometer classes operating on multiple Low Earth Orbit (LEO) satellites.</p>\n<p>Spaceborne passive microwave (MW) provides the most effective measurements for the remote sensing of precipitation because the MW upwelling radiation is directly responsive to the cloud microphysical structure and, in particular, to the emission and scattering properties of precipitation-size hydrometeors (solid and liquid). However, they are available at low spatial and temporal resolution, due to the limited number of passes per day (depending on latitude and number of platforms) at each location.\n On the other hand, infrared (IR) sensors, available also on geostationary platforms, provide measurements that mostly respond to upper-level cloud structure, but at much higher temporal and spatial resolution. Since precipitation is not directly sensed in the infrared, these observations are often merged with microwave-based precipitation estimates and rain gauges. A precipitation product merging IR and MW is also available on the Climate Data Store: <a href=\"https://cds.climate.copernicus.eu/cdsapp#!/dataset/satellite-precipitation?tab=overview\">GPCP precipitation dataset</a>.</p>\n<p>The two different radiometer classes used in the present  Copernicus micrOwave-based gloBal pRecipitAtion (COBRA) dataset are: </p>\n<p>i) Conically scanning MW imagers; observations obtained by applying methodologies of the Hamburg Ocean Atmosphere Parameters and Fluxes from Satellite (HOAPS) in the Satellite Application Facility on Climate Monitoring (CM SAF).</p>\n<p>ii) Cross-track scanning MW sounders; observations obtained through the dedicated Passive microwave Neural network Precipitation Retrieval for Climate Applications (PNPR-CLIM) algorithm.</p>\n<p>This datset is independent of IR imagery and rain-gauge observations. \nA pure passive MW-based precipitation dataset overcomes the challenges and limitations of precipitation estimates based on IR observations, and the issues related to the inadequacy of the rain gauge networks in some regions and their almost complete absence over the ocean. \nThe main limitations, however, are linked to the varying (in time and space) revisiting time of the LEO satellites and low temporal sampling compared to geostanionary IR observations.</p>\n<p>This dataset is produced by the Copernicus Climate Change Service (C3S).</p>\n         \n         \n            <p></p>\n            <table class=\"abstract-description abstract-table\">\n            <tr><th colspan=\"2\">DATA DESCRIPTION</th>\n            \n<tr><th>Data type</th><td>Gridded</td></tr>\n<tr><th>Horizontal coverage</th><td>Global</td></tr>\n<tr><th>Horizontal resolution</th><td>1.0\u00b0x1.0\u00b0</td></tr>\n<tr><th>Vertical coverage</th><td>Surface</td></tr>\n<tr><th>Vertical resolution</th><td>Single level</td></tr>\n<tr><th>Temporal coverage</th><td>January 2000 to December 2017</td></tr>\n<tr><th>Temporal resolution</th><td>Monthly and daily</td></tr>\n<tr><th>Temporal gaps</th><td>No gaps</td></tr>\n<tr><th>File format</th><td>NetCDF4</td></tr>\n<tr><th>Conventions</th><td>Climate and Forecast (CF) Metadata Convention v1.6, Attribute Convention for Dataset Discovery (ACDD) v1.3</td></tr>\n<tr><th>Versions</th><td>1.0</td></tr>\n<tr><th>Update frequency</th><td>No expected updates</td></tr>\n</table>\n\n    <p></p>\n    <table class=\"abstract-variables abstract-table\">\n    <tr><th colspan=\"3\">MAIN VARIABLES</th>\n    \n\n    <tr><th class='variables-name'>Name</th><th class='variables-units'>Units</th><th class='variables-description'>Description</th></tr>\n    \n<tr><td class='variables-name'>Precipitation</td><td class='variables-units'>mm day<sup>-1</sup></td><td class='variables-description'>This variable represents the water-equivalent volume rate per area and per day of atmospheric water in liquid or solid phase reaching the Earth's surface</td></tr>\n</table>\n<p></p><table class=\"abstract-description abstract-table\"><tr><th>RELATED VARIABLES</th></tr><tr><td>The daily and monthly precipitation rates of the COBRA dataset are accompanied by a set of respective ancillary data: standard deviation of precipitation rates, data quality flag based on PNPR-CLIM output, platforms and sensors, on which the data is based, number of observations per grid cell, number of hours within a day/month covered by measurements.</td></tr></table></br>\n    </div>",
+    "terms": [
+        "licence-to-use-copernicus-products"
+    ],
+    "constraints": [
+        {
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06",
+                "07",
+                "08",
+                "09",
+                "10",
+                "11",
+                "12"
+            ],
+            "time_aggregation": [
+                "monthly"
+            ],
+            "version": [
+                "v1.0"
+            ],
+            "year": [
+                "2000",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017"
+            ]
+        },
+        {
+            "day": [
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06",
+                "07",
+                "08",
+                "09",
+                "10",
+                "11",
+                "12",
+                "13",
+                "14",
+                "15",
+                "16",
+                "17",
+                "18",
+                "19",
+                "20",
+                "21",
+                "22",
+                "23",
+                "24",
+                "25",
+                "26",
+                "27",
+                "28"
+            ],
+            "month": [
+                "02"
+            ],
+            "time_aggregation": [
+                "daily"
+            ],
+            "version": [
+                "v1.0"
+            ],
+            "year": [
+                "2001",
+                "2002",
+                "2003",
+                "2005",
+                "2006",
+                "2007",
+                "2009",
+                "2010",
+                "2011",
+                "2013",
+                "2014",
+                "2015",
+                "2017"
+            ]
+        },
+        {
+            "day": [
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06",
+                "07",
+                "08",
+                "09",
+                "10",
+                "11",
+                "12",
+                "13",
+                "14",
+                "15",
+                "16",
+                "17",
+                "18",
+                "19",
+                "20",
+                "21",
+                "22",
+                "23",
+                "24",
+                "25",
+                "26",
+                "27",
+                "28",
+                "29"
+            ],
+            "month": [
+                "02"
+            ],
+            "time_aggregation": [
+                "daily"
+            ],
+            "version": [
+                "v1.0"
+            ],
+            "year": [
+                "2000",
+                "2004",
+                "2008",
+                "2012",
+                "2016"
+            ]
+        },
+        {
+            "day": [
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06",
+                "07",
+                "08",
+                "09",
+                "10",
+                "11",
+                "12",
+                "13",
+                "14",
+                "15",
+                "16",
+                "17",
+                "18",
+                "19",
+                "20",
+                "21",
+                "22",
+                "23",
+                "24",
+                "25",
+                "26",
+                "27",
+                "28",
+                "29",
+                "30"
+            ],
+            "month": [
+                "04",
+                "06",
+                "09",
+                "11"
+            ],
+            "time_aggregation": [
+                "daily"
+            ],
+            "version": [
+                "v1.0"
+            ],
+            "year": [
+                "2000",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017"
+            ]
+        },
+        {
+            "day": [
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06",
+                "07",
+                "08",
+                "09",
+                "10",
+                "11",
+                "12",
+                "13",
+                "14",
+                "15",
+                "16",
+                "17",
+                "18",
+                "19",
+                "20",
+                "21",
+                "22",
+                "23",
+                "24",
+                "25",
+                "26",
+                "27",
+                "28",
+                "29",
+                "30",
+                "31"
+            ],
+            "month": [
+                "01",
+                "03",
+                "05",
+                "07",
+                "08",
+                "10",
+                "12"
+            ],
+            "time_aggregation": [
+                "daily"
+            ],
+            "version": [
+                "v1.0"
+            ],
+            "year": [
+                "2000",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017"
+            ]
+        }
+    ]
+}

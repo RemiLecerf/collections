@@ -1,0 +1,84 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:dct="http://purl.org/dc/terms/" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/eacdcb04-41d5-4982-8a24-e8ea8f446429">
+        <foaf:primaryTopic rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/resource/eacdcb04-41d5-4982-8a24-e8ea8f446429"/>
+        <dct:issued>2023-03-24</dct:issued>
+        <dct:modified>2023-03-24</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/srv/eng/xml.metadata.get?uuid=eacdcb04-41d5-4982-8a24-e8ea8f446429">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork?uuid=eacdcb04-41d5-4982-8a24-e8ea8f446429">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/resource/eacdcb04-41d5-4982-8a24-e8ea8f446429">
+        <dct:identifier>eacdcb04-41d5-4982-8a24-e8ea8f446429</dct:identifier>
+        <dct:title>Mediterranean Sea Ocean Colour Plankton MY L4 daily gapfree observations and climatology and monthly observations</dct:title>
+        <dct:abstract>'''Short description:'''
+
+For the '''Mediterranean Sea''' Ocean '''Satellite Observations''', the Italian National Research Council (CNR – Rome, Italy), is providing multi-years '''Bio-Geo_Chemical (BGC)''' regional datasets:
+* '''''plankton''''' with the phytoplankton chlorophyll concentration (CHL) evaluated via region-specific algorithms (Case 1 waters: Volpe et al., 2019, with new coefficients; Case 2 waters, Berthon and Zibordi, 2004), and the interpolated '''gap-free''' Chl concentration (to provide a ""cloud free"" product) estimated by means of a modified version of the DINEOF algorithm (Volpe et al., 2018); moreover, daily climatology for chlorophyll concentration is provided.
+
+'''Upstreams''': SeaWiFS, MODIS, MERIS, VIIRS-SNPP &amp; JPSS1, OLCI-S3A for the '''""multi""''' products, and OLCI-S3A &amp; S3B for the '''""olci""''' products
+
+'''Temporal resolutions''': monthly and daily (for '''""gap-free""''' and climatology data)
+
+'''Spatial resolution''': 1 km for '''""multi""''' and 300 meters for '''""olci""'''
+
+To find this product in the catalogue, use the search keyword '''""OCEANCOLOUR_MED_BGC_L4_MY""'''.
+
+'''DOI (product) :'''   
+https://doi.org/10.48670/moi-00300</dct:abstract>
+        <dcat:theme rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/thesaurus/iso/topicCategory/oceans"/>
+        <foaf:thumbnail rdf:resource="https://catalogue.marine.copernicus.eu/documents/IMG/OCEANCOLOUR_MED_BGC_L4_MY_009_144.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((-6.00 30.00, -6.00 46.00, 36.50 46.00, 36.50 30.00, -6.00 30.00))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:issued>2013-03-13</dct:issued>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/OC-CNR-ROMA-IT"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/OC-CNR-ROMA-IT"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/OC-CNR-ROMA-IT"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/OC-CNR-ROMA-IT"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/OC-CNR-ROMA-IT"/>
+        <dct:accrualPeriodicity>irregular</dct:accrualPeriodicity>
+        <dct:license>otherRestrictions</dct:license>
+        <dct:license>license</dct:license>
+        <dct:license>No limitations on public access</dct:license>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=OCEANCOLOUR_MED_BGC_L4_MY_009_144-TDS&amp;product=cmems_obs-oc_med_bgc-plankton_my_l4-gapfree-multi-1km_P1D"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/dodsC/cmems_obs-oc_med_bgc-plankton_my_l4-gapfree-multi-1km_P1D"/>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/OCEANCOLOUR_MED_BGC_L4_MY_009_144/cmems_obs-oc_med_bgc-plankton_my_l4-gapfree-multi-1km_P1D"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/wms/cmems_obs-oc_med_bgc-plankton_my_l4-gapfree-multi-1km_P1D"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=OCEANCOLOUR_MED_BGC_L4_MY_009_144-TDS&amp;product=cmems_obs-oc_med_bgc-plankton_my_l4-multi-1km_P1M"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/dodsC/cmems_obs-oc_med_bgc-plankton_my_l4-multi-1km_P1M"/>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/OCEANCOLOUR_MED_BGC_L4_MY_009_144/cmems_obs-oc_med_bgc-plankton_my_l4-multi-1km_P1M"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/wms/cmems_obs-oc_med_bgc-plankton_my_l4-multi-1km_P1M"/>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/OCEANCOLOUR_MED_BGC_L4_MY_009_144/cmems_obs-oc_med_bgc-plankton_my_l4-multi-climatology-1km_P1D"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=OCEANCOLOUR_MED_BGC_L4_MY_009_144-TDS&amp;product=cmems_obs-oc_med_bgc-plankton_my_l4-olci-300m_P1M"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/dodsC/cmems_obs-oc_med_bgc-plankton_my_l4-olci-300m_P1M"/>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/OCEANCOLOUR_MED_BGC_L4_MY_009_144/cmems_obs-oc_med_bgc-plankton_my_l4-olci-300m_P1M"/>
+        <dcat:distribution rdf:resource="https://my.cmems-du.eu/thredds/wms/cmems_obs-oc_med_bgc-plankton_my_l4-olci-300m_P1M"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/50371139-21a6-42e9-b9d2-7d96fab6b923"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/bd068377-c767-4d94-bc43-8493e74a3011"/>
+        <dcat:dataQuality>The myOcean products depends on other products for production or validation. The detailed list of dependencies is given in ISO19115's aggregationInfo (ISO19139 Xpath = "gmd:MD_Metadata/gmd:identificationInfo/gmd:aggregationInfo[./gmd:MD_AggregateInformation/gmd:initiativeType/gmd:DS_InitiativeTypeCode/@codeListValue='upstream-validation' or 'upstream-production']")</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+    

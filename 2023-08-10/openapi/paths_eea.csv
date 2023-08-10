@@ -1,0 +1,311 @@
+operation,base_url,endpoint,summary,description,operationId
+get,eea,/customstyle,Get CssStyleSettings,This returns a map with all Less variables.,getCssStyle
+post,eea,/customstyle,Saves custom style variables.,Saves custom style variables.,saveCssStyle
+get,eea,/standards/{schema}/codelists/{codelist}/details,Get codelist details,,getSchemaCodelistsWithDetails
+get,eea,/groups/{groupIdentifier},Get group,Return the requested group details.,getGroup
+put,eea,/groups/{groupIdentifier},Update a group,,updateGroup
+delete,eea,/groups/{groupIdentifier},Remove a group,"Remove a group by first removing sharing settings, link to users and finally reindex all affected records.",deleteGroup
+get,eea,/records/{testId}/validate/inspire,Check the status of validation with the INSPIRE service.,User MUST be able to edit the record to validate it. An INSPIRE endpoint must be configured in Settings. If the process is complete an object with status is returned. ,checkValidation
+get,eea,/i18n/db,List translations for database description table,,getTranslations
+get,eea,/pages/{language}/{pageId},Return the page object details except the content,<a href='https://geonetwork-opensource.org/manuals/4.0.x/en/customizing-application/adding-static-pages.html'>More info</a>,getPage
+put,eea,/pages/{language}/{pageId},Update a page,<a href='https://geonetwork-opensource.org/manuals/4.0.x/en/customizing-application/adding-static-pages.html'>More info</a>,updatePage
+delete,eea,/pages/{language}/{pageId},Delete a page,<a href='https://geonetwork-opensource.org/manuals/4.0.x/en/customizing-application/adding-static-pages.html'>More info</a>,deletePage
+get,eea,/harvesters/properties/{property},Check if a harvester name or host already exist,,checkHarvesterPropertyExist
+put,eea,/user/actions/forgot-password,Send user password reminder by email,An email is sent to the requested user with a link to reset his password. User MUST have an email to get the link. LDAP users will not be able to retrieve their password using this service.,sendPasswordByEmail
+get,eea,/registries/actions/entries/synchronize,Preview updated matching entries in records,"Scan one or more records for element matching the XPath provided and then check if this element is available in the directory. If Found, the element from the directory update the element in the record and optionally text or attribute value properties are preserved using propertiesToCopy. Elements can be lost if not existing in the directory entry (eg. from an gex:Extent directory containing only description and bounding polygon, the update can remove temporal element).<br/><br/>The identifier XPath is used to find a match. An optional filtercan be added to restrict search to a subset of the directory. If no identifier XPaths is provided, the UUID is based on the content of the snippet (hash). It is recommended to use an identifier for better matching (eg. ISO19139 contact with different roles will not match on the automatic UUID mode).",previewUpdatedRecordEntries
+put,eea,/registries/actions/entries/synchronize,Update matching entries in records,"Scan one or more records for element matching the XPath provided and then check if this element is available in the directory. If Found, the element from the directory update the element in the record and optionally text or attribute value properties are preserved using propertiesToCopy. Elements can be lost if not existing in the directory entry (eg. from an gex:Extent directory containing only description and bounding polygon, the update can remove temporal element).<br/><br/>The identifier XPath is used to find a match. An optional filtercan be added to restrict search to a subset of the directory. If no identifier XPaths is provided, the UUID is based on the content of the snippet (hash). It is recommended to use an identifier for better matching (eg. ISO19139 contact with different roles will not match on the automatic UUID mode).",updateRecordEntries
+get,eea,/records,Get catalog content as RDF. This endpoint supports the same Lucene query parameters as for the GUI search.,.,getAsRdf
+put,eea,/records,Add a record,"Add one or more record from an XML fragment, URL or file in a folder on the catalog server. When loadingfrom the catalog server folder, it might be faster to use a local filesystem harvester.",insert
+post,eea,/records,Add a record from XML or MEF/ZIP file,Add record in the catalog by uploading files.,insertFile
+delete,eea,/records,Delete one or more records,User MUST be able to edit the record to delete it. ,deleteRecords
+get,eea,/records/{metadataUuid}/query,List saved queries for this metadata,,getSavedQueries
+get,eea,/pages/config/sections,,,getPageSections
+get,eea,/records/{metadataUuid}/processes,Get suggestions,Analyze the record an suggest processes to improve the quality of the record.<br/><a href='http://geonetwork-opensource.org/manuals/trunk/eng/users/user-guide/workflow/batchupdate-xsl.html'>More info</a>,getSuggestions
+put,eea,/site/info/staging/{profile},Update staging profile,TODO: Needs doc,updateStagingProfile
+get,eea,/users/{userIdentifier},Get user,,getUser
+put,eea,/users/{userIdentifier},Update a user,Updates a catalog user.,updateUser
+delete,eea,/users/{userIdentifier},Delete a user,Deletes a catalog user by identifier.,deleteUser
+put,eea,/site/logo,Set catalog logo,"Logos are stored in the data directory resources/images/harvesting as PNG or GIF images. When a logo is assigned to the catalog, a new image is created in images/logos/<catalogUuid>.png.",setLogo
+get,eea,/processes/reports,Get current process reports,"When processing, the report is stored in memory and allows to retrieve progress repport during processing. Usually, process reports are returned by the synchronous processing operation.",getProcessReport
+delete,eea,/processes/reports,Clear process reports list,,delete
+get,eea,/users/owners,Get owners,Return users who actually owns one or more records.,getRecordOwners
+put,eea,/users/owners,Transfer privileges,,saveOwners
+get,eea,/records/{metadataUuid}/processes/{process},Preview process result,Process a metadata with an XSL transformation declared in the metadata schema (See the process folder). Parameters sent to the service are forwarded to XSL process.,processRecordPreview
+post,eea,/records/{metadataUuid}/processes/{process},Apply a process,Process a metadata with an XSL transformation declared in the metadata schema (See the process folder). Parameters sent to the service are forwarded to XSL process.,processRecord
+get,eea,/groups,Get groups,"The catalog contains one or more groups. By default, there is 3 reserved groups (Internet, Intranet, Guest) and a sample group.<br/>This service returns all catalog groups when not authenticated or when current is user is an administrator. The list can contains or not reserved groups depending on the parameters.<br/>When authenticated, return user groups optionally filtered on a specific user profile.",getGroups
+put,eea,/groups,Add a group,Return the identifier of the group created.,addGroup
+get,eea,/i18n/db/translations,List database translations (used to overrides client application translations).,,getDbTranslations
+put,eea,/i18n/db/translations,Add or update all database translations.,,addTranslations
+delete,eea,/i18n/db/translations,Remove all database translations.,,removeAllTranslations
+put,eea,/records/validate,Validate one or more records,Update validation status for all records.,validateRecords
+delete,eea,/records/validate,Clear validation status of one or more records,,cleanValidationStatus
+get,eea,/related,Get record related resources for all requested metadatas,"Retrieve related services, datasets, onlines, thumbnails, sources, ... to all requested records.<br/><a href='http://geonetwork-opensource.org/manuals/trunk/eng/users/user-guide/associating-resources/index.html'>More info</a>",getAssociatedResourcesForRecords
+get,eea,/usersearches/{searchIdentifier},Get custom search,,getUserCustomSearch
+put,eea,/usersearches/{searchIdentifier},Update a user search,,updateCustomUserSearch
+delete,eea,/usersearches/{searchIdentifier},Delete a user search,Deletes a user search by identifier.,deleteUserCustomSerach
+put,eea,/records/duplicate,Create a new record,"Create a record from a template or by copying an existing record.Return the UUID of the newly created record. Existing links in the source record are preserved, this means that the new record may contains link to the source attachments. They need to be manually updated after creation.",create
+get,eea,/registries/vocabularies/{thesaurus},Download a thesaurus by name,Download the thesaurus in SKOS format.,getThesaurus
+put,eea,/registries/vocabularies/{thesaurus},Updates the information of a local thesaurus,Updates the information of a local thesaurus.,updateThesaurus
+delete,eea,/registries/vocabularies/{thesaurus},Delete a thesaurus by name,Delete a thesaurus.,deleteThesaurus
+get,eea,/mapservers/{mapserverId},Get a mapserver,,getMapserver
+put,eea,/mapservers/{mapserverId},Update a mapserver,,updateMapserver_1
+delete,eea,/mapservers/{mapserverId},Remove a mapserver,,deleteMapserver
+get,eea,/tools/mail/test,Test mail configuration,Send an email to the catalog feedback email.,testMailConfiguration
+delete,eea,/records/{metadataUuid}/editor/attributes,Delete attribute,,deleteAttribute
+get,eea,/userfeedback/{uuid},Finds a specific user feedback,,getUserComment
+delete,eea,/userfeedback/{uuid},Removes a user feedback,Removes a user feedback,deleteUserFeedback
+get,eea,/users,Get users,,getUsers
+put,eea,/users,Creates a user,Creates a catalog user.,createUser
+put,eea,/records/versions,(Experimental) Enable version control for one or more records,,enableVersionControlForRecords
+get,eea,/site/info/notificationLevels,Get notification levels,,getNotificationLevel
+get,eea,/tags,Get tags,,getTags
+put,eea,/tags,Create a tag,"If labels are not defined, a default label is created with the category name for all languages.",putTag
+get,eea,/reports/datauploads,Get uploaded files to metadata records during a period.,,getReportDataUploads
+get,eea,/site/settings,Get settings,"Return public settings for anonymous users, internals are allowed for authenticated.",getSettingsSet
+post,eea,/site/settings,Save settings,,saveSettings
+get,eea,/records/{metadataUuid}/attachments,List all metadata attachments,<a href='http://geonetwork-opensource.org/manuals/trunk/eng/users/user-guide/associating-resources/using-filestore.html'>More info</a>,getAllResources
+put,eea,/records/{metadataUuid}/attachments,Create a new resource from a URL for a given metadata,,putResourceFromURL
+post,eea,/records/{metadataUuid}/attachments,Create a new resource for a given metadata,,putResource
+delete,eea,/records/{metadataUuid}/attachments,Delete all uploaded metadata resources,,delResources
+get,eea,/userselections,Get list of user selection sets,,getSelectionList
+put,eea,/userselections,Add a user selection set,,createPersistentSelectionType
+put,eea,/records/approve,Set the records status to approved,,approve
+put,eea,/records/publish,Publish one or more records,See record sharing for more details.,publish
+get,eea,/users/{userIdentifier}/groups,Retrieve user groups,Retrieve the user groups.,retrieveUserGroups
+get,eea,/records/{metadataUuid}/userfeedbackrating,Provides an average rating for a metadata record,,getMetadataRating
+get,eea,/tools/ogc/sld,Get the list of SLD available,,getSLD
+post,eea,/tools/ogc/sld,Generate a SLD with a new filter,"Get the currend SLD for the requested layers, add new filters in, save the SLD and return the new SLD URL.",buildSLD
+delete,eea,/tools/ogc/sld,Remove all SLD files,Clean all SLD generated previously,deteleSLD
+get,eea,/robots.txt,robots.txt,,getRobotsText
+get,eea,/formatters/{schema}/{formatter}/files/{file},Get formatter file content,,getFormatterFileContent
+post,eea,/formatters/{schema}/{formatter}/files/{file},Update formatter file,,updateFormatterFile
+get,eea,/usersearches,Get user custom searches,,getUserCustomSearches
+put,eea,/usersearches,Creates a user search,Creates a user search.,createUserCustomSearch
+get,eea,/regions/types,Get list of region types,,getRegionTypes
+get,eea,/me,Get information about me,"If not authenticated, return status 204 (NO_CONTENT), else return basic user information. This operation is usually used to know if current user is authenticated or not.It returns also info about groups and profiles.",getMe
+get,eea,/ui/{uiIdentifier},Get a UI configuration,,getUiConfiguration
+put,eea,/ui/{uiIdentifier},Update a UI configuration,,updateUiConfiguration
+delete,eea,/ui/{uiIdentifier},Remove a UI Configuration,,deleteUiConfiguration
+post,eea,/records/{metadataUuid}/alert,Send an email to catalogue administrator or record's contact,,sendEmailToContact
+post,eea,/registries/vocabularies/import/csv,Uploads a CSV file and convert it to SKOS format,"CSV file MUST contains columns at least for concept id and label. For multilingual thesaurus, consider using columns like label, label_fre, label_ita with languages parameter set to [en, fr, it]. Default language value is used if translations are empty. The thesaurus filename will be the filename of the CSV file (with .rdf extension). It is recommended to set the thesaurus title and namespace URL even if default values will be used based on the filename. Thesaurus dates are set to the date of import.",importCsvAsThesaurus
+put,eea,/records/{metadataUuid}/validate/inspire,Submit a record to the INSPIRE service for validation.,"User MUST be able to edit the record to validate it. An INSPIRE endpoint must be configured in Settings. This activates an asyncronous process, this method does not return any report. This method returns an id to be used to get the report.",validateRecordForInspire
+put,eea,/records/{metadataUuid}/validate/internal,Validate a record,User MUST be able to edit the record to validate it. FIXME : id MUST be the id of the current metadata record in session ?,validateRecord
+get,eea,/registries/vocabularies/search,Search keywords,,searchKeywords
+get,eea,/mapservers/{mapserverId}/records/{metadataUuid},Check metadata mapserver resource is published ,,getMapserverResource
+put,eea,/mapservers/{mapserverId}/records/{metadataUuid},Publish a metadata resource in a mapserver,,publishMapserverResource
+delete,eea,/mapservers/{mapserverId}/records/{metadataUuid},Remove a metadata mapserver resource,,deleteMapserverResource
+get,eea,/usersearches/featured,Get featured user custom searches,,getFeaturedUserCustomSearches
+get,eea,/tools/ogc/sld/{id}.{extension},Download a SLD,,downloadSLD
+post,eea,/users/{userIdentifier}/actions/forget-password,Resets user password,Resets the user password.,resetUserPassword
+get,eea,/site/index/status,Index status,,indexStatus
+put,eea,/sources/{sourceIdentifier},Update a source,,updateSource
+delete,eea,/sources/{sourceIdentifier},Remove a source,,deleteSource
+get,eea,/records/{metadataUuid}/sharing,Get record sharing settings,Return current sharing options for a record.,getRecordSharingSettings
+put,eea,/records/{metadataUuid}/sharing,Set record sharing,"Privileges are assigned by group. User needs to be able to edit a record to set sharing settings. For reserved group (ie. Internet, Intranet & Guest), user MUST be reviewer of one group. For other group, if Only set privileges to user's groups is set in catalog configuration user MUST be a member of the group.<br/>Clear first allows to unset all operations first before setting the new ones.Clear option does not remove reserved groups operation if user is not an administrator, a reviewer or the owner of the record.<br/><a href='http://geonetwork-opensource.org/manuals/trunk/eng/users/user-guide/publishing/managing-privileges.html'>More info</a>",share
+post,eea,/registries/vocabularies/import/spatial,Create thesaurus from Shapefile,,importSpatial
+put,eea,/records/{metadataUuid}/doi,Submit a record to the Datacite metadata store in order to create a DOI.,,createDoi
+delete,eea,/records/{metadataUuid}/doi,"Remove a DOI (this is not recommended, DOI are supposed to be persistent once created. This is mainly here for testing).",,unregisterDoi
+post,eea,/records/links/analyzeurl,Analyze one or more links,,analyzeLinks
+get,eea,/records/{metadataUuid}/editor,Edit a record,Return HTML form for editing.,startEditing
+post,eea,/records/{metadataUuid}/editor,Save edits,Save the HTML form content.,saveEdits
+delete,eea,/records/{metadataUuid}/editor,Cancel edits,Cancel current editing session.,cancelEdits
+get,eea,/userfeedback/ratingcriteria,Get list of rating criteria,,getRatingCriteria
+get,eea,/operations,Get operations,"Return the list of operations. Operations are used to define authorization per group. Extending the list of default operations (ie. view, dynamic, download, editing, notify, featured) might be feasible but is experimental.<br/> Featured is not really used anymore (was used in past version for home page highlights).",getOperations
+get,eea,/records/{metadataUuid}/extents.json,Get list of record extents,A rendering of the geometry as a png. If no background is specified the image will be transparent. In getMap the envelope of the geometry is calculated then it is expanded by a factor.  That factor is the size of the map.  This allows the map to be slightly bigger than the geometry allowing some context to be shown. This parameter allows different factors to be chosen per scale level.	Proportion is the proportion of the world that the geometry covers (bounds of WGS84)/(bounds of geometry in WGS84)		Named backgrounds allow the background parameter to be a simple key and the complete URL will be looked up from this list of named backgrounds	,getAllRecordExtentAsJson
+get,eea,/formatters,Get formatters,,listFormatters
+post,eea,/formatters,Import a XSLT formatter (usually a zip named 'schema-formatter.zip'),,addFormatter
+get,eea,/site/info,Get site informations,,getInformation
+get,eea,/records/links/csv,,Get record links as CSV,getRecordLinksAsCsv
+put,eea,/userselections/{selectionIdentifier},Update a user selection set,,updateUserSelection
+delete,eea,/userselections/{selectionIdentifier},Remove a user selection set,,deleteUserSelection
+get,eea,/processes/{process},Preview process result applied to one or more records,"Preview result of a process applied to metadata records with an XSL transformation declared in the metadata schema (See the process folder). Parameters sent to the service are forwarded to XSL process. Append mode has 2 limitations. First, it only support a set of records in the same schema. Secondly, it does not propagate URL parameters. This mode is mainly used to create custom reports based on metadata records content.If process name ends with '.csv', the XSL process output a text document which is returned. When errors occur during processing, the processing report is returned in JSON format.",previewProcessRecords
+post,eea,/processes/{process},Apply a process to one or more records,Process a metadata with an XSL transformation declared in the metadata schema (See the process folder). Parameters sent to the service are forwarded to XSL process.,processRecords
+get,eea,/isolanguages,Get ISO languages,ISO languages provides a list of all languages (eg. used for autocompletion in metadata editor).,getIsoLanguages
+get,eea,/reports/metadatainternal,Get the metadata not published during a period.,,getReportInternalMetadata
+put,eea,/records/tags,Add or remove tags to one or more records,,tagRecords
+delete,eea,/records/tags,Delete tags to one or more records,,deleteTagForRecords
+put,eea,/records/{metadataUuid}/attachments/print-thumbnail,Create an overview using the map print module,<a href='http://geonetwork-opensource.org/manuals/trunk/eng/users/user-guide/associating-resources/linking-thumbnail.html#generating-a-thumbnail-using-wms-layers'>More info</a>,saveThumbnail
+post,eea,/records/links/analyze,Analyze records links,One of uuids or bucket parameter is required if not an Administrator. Only records that you can edit will be validated.,analyzeRecordLinks
+get,eea,/site/info/transforms,Get XSL tranformations available,XSL transformations may be applied while importing or harvesting records.,getXslTransformations
+get,eea,/atom/feeds,Get ATOM feeds,,feedsAsHtml_1
+get,eea,/eealayoutupdate/footer,Get EEA footer html,,getFooter
+put,eea,/records/{metadataUuid}/versions,(Experimental) Enable version control,,enableVersionControl
+patch,eea,/user/{username},Update user password,Get a valid changekey by email first and then update your password.,updatePassword
+put,eea,/registries/vocabularies,Uploads a new thesaurus from URL or Registry,Uploads a new thesaurus.,uploadThesaurusFromUrl
+post,eea,/registries/vocabularies,Uploads a new thesaurus from a file,Uploads a new thesaurus.,uploadThesaurus
+get,eea,/standards/{schema}/codelists,Get multiple codelist translations,All translations are combined in the same object. No distinction by codelist. This is useful if you need lots of codelists terms to be loaded.,getCodelistsTranslations
+get,eea,/usersearches/allpaginated,Get user custom searches for all users (paginated),,getAllUserCustomSearchesPage
+put,eea,/records/backups,Trigger MEF backup archive,The backup contains all metadata not harvested including templates.,trigger
+get,eea,/pages,List all pages according to the filters,<a href='https://geonetwork-opensource.org/manuals/4.0.x/en/customizing-application/adding-static-pages.html'>More info</a>,listPages
+put,eea,/pages,Add a page,<p>Is not possible to load a link and a file at the same time.</p> <a href='https://geonetwork-opensource.org/manuals/4.0.x/en/customizing-application/adding-static-pages.html'>More info</a>,addPageWithoutUploadingFile
+post,eea,/pages,Add a page by uploading a file,<p>Is not possible to load a link and a file at the same time.</p> <a href='https://geonetwork-opensource.org/manuals/4.0.x/en/customizing-application/adding-static-pages.html'>More info</a>,addPageUploadingFile
+put,eea,/records/ownership,Set group and owner for one or more records,,setGroupAndOwner
+get,eea,/registries/actions/entries/collect,Preview directory entries extracted from records,"Scan one or more records for element matching the XPath provided and save them as directory entries (ie. subtemplate).<br/><br/>Only records that the current user can edit are analyzed.<br/><br/>Examples:<br/>For ISO19115-3 records, use .//cit:CI_Responsibility and compute identifier based on email with .//cit:electronicMailAddress/*/text() to create a contact directory.",previewExtractedEntries
+put,eea,/registries/actions/entries/collect,Extracts directory entries from records,"Scan one or more records for element matching the XPath provided and save them as directory entries (ie. subtemplate).<br/><br/>Only records that the current user can edit are analyzed.<br/><br/>Examples:<br/>For ISO19115-3 records, use .//cit:CI_Responsibility and compute identifier based on email with .//cit:electronicMailAddress/*/text() to create a contact directory.",extractEntries
+get,eea,/usersearches/all,Get user custom searches for all users (no paginated),,getAllUserCustomSearches
+put,eea,/records/samples,Add samples,Add sample records for one or more schemas. Samples are defined for each standard in the samples folder as MEF files.,addSamples
+get,eea,/records/{metadataUuid}/validate/inspire/testsuites,Get test suites available.,"TG13, TG2, ...",getTestSuites
+put,eea,/records/{metadataUuid}/group,Set record group,A record is related to one group.,setRecordGroup
+get,eea,/formatters/{schema}/{formatter},Download a formatter as ZIP,,downloadFormatter
+delete,eea,/formatters/{schema}/{formatter},Delete a formatter,,deleteFormatter
+get,eea,/mapservers,Get mapservers,"Mapservers are used by the catalog to publish record attachments (eg. ZIP file with shape) or record associated resources (eg. database table, file on the local network) in a remote mapserver like GeoServer or MapServer. The catalog communicate with the mapserver using GeoServer REST API.",getMapservers
+put,eea,/mapservers,Add a mapserver,Return the id of the newly created mapserver.,addMapserver
+post,eea,/processes/search-and-replace,Search and replace values in one or more ISO19139 records,"Service to apply replacements to one or more records.	 To define a replacement, send the following parameters:	 * mdsection-139815551372=metadata	 * mdfield-1398155513728=id.contact.individualName	 * replaceValue-1398155513728=Juan	 * searchValue-1398155513728=Jose		<br/>Batch editing can also be used for similar works.",searchAndReplace
+put,eea,/i18n/db/translations/{key},Add or update database translations for a key.,Database translations can be used to customize labels in the UI for different languages.,addTranslationsFor
+delete,eea,/i18n/db/translations/{key},Delete database translations.,Delete custom translations stored in the database.,deleteTranslations
+get,eea,/records/links,Get record links,,getRecordLinks
+post,eea,/records/links,Get record links,,getRecordLinksPost
+delete,eea,/records/links,Remove all links and status history,,purgeAll
+get,eea,/records/{metadataUuid}/doi/checkDoiUrl,Check the DOI URL created based on current configuration and pattern.,,checkDoiUrl
+get,eea,/records/{metadataUuid}/extents/{geometryIndex}.png,Get one record extent as image,A rendering of the geometry as a png. If no background is specified the image will be transparent. In getMap the envelope of the geometry is calculated then it is expanded by a factor.  That factor is the size of the map.  This allows the map to be slightly bigger than the geometry allowing some context to be shown. This parameter allows different factors to be chosen per scale level.	Proportion is the proportion of the world that the geometry covers (bounds of WGS84)/(bounds of geometry in WGS84)		Named backgrounds allow the background parameter to be a simple key and the complete URL will be looked up from this list of named backgrounds	,getOneRecordExtentAsImage
+get,eea,/records/{metadataUuid}/formatters/{formatterId},Get a formatted metadata record,,getRecordFormattedBy
+get,eea,/records/status/search,Search status,,getWorkflowStatusByType
+delete,eea,/records/{metadataUuid}/status/{statusId}.{userId}.{changeDate},Delete a record status,,deleteRecordStatus
+delete,eea,/formatters/cache,Clear formatter cache,"Formatters are used to render records in various format (HTML, PDF, ...). When a record is rendered a cache is populated for better performance. By default the cache is an H2 database with files on the filesystems (See <dataDirectory>/resources/htmlcache/formatter-cache folder).",clearFormatterCache
+get,eea,/records/{metadataUuid}/featureCatalog,Returns a map to decode attributes in a dataset (from the associated feature catalog),,getFeatureCatalog
+get,eea,/users/{userIdentifier}.png,Get user identicon,,getUserIdenticon
+get,eea,/userfeedback/{uuid}/publish,Publishes a feedback,For reviewers,publishFeedback
+get,eea,/site/info/readonly,Is in read-only mode?,,isReadOnly
+get,eea,/groups/{groupIdentifier}/users,Get group users,,getGroupUsers
+get,eea,/site/logging/activity,Get last activity,,getLastActivity
+get,eea,/standards/batchconfiguration,Get batch editor configuration for standards,,getConfigurations
+get,eea,/userselections/{selectionIdentifier}/{userIdentifier},Get record in a user selection set,,getSelectionRecords
+put,eea,/userselections/{selectionIdentifier}/{userIdentifier},Add items to a user selection set,,addToUserSelection
+delete,eea,/userselections/{selectionIdentifier}/{userIdentifier},Remove items to a user selection set,,deleteFromUserSelection
+get,eea,/records/{metadataUuid}/popularity,Get record popularity,,getRecordPopularity
+post,eea,/records/{metadataUuid}/popularity,Increase record popularity,Used when a view is based on the search results content and does not really access the record. Record is then added to the indexing queue and popularity will be updated soon.,increaseRecordPopularity
+get,eea,/records/{metadataUuid}/related,Get record related resources,"Retrieve related services, datasets, onlines, thumbnails, sources, ... to this records.<br/><a href='http://geonetwork-opensource.org/manuals/trunk/eng/users/user-guide/associating-resources/index.html'>More info</a>",getAssociatedResources
+get,eea,/selections/{bucket},Get current selection,,get
+put,eea,/selections/{bucket},Select one or more items,,add
+delete,eea,/selections/{bucket},Clear selection or remove items,,clear
+get,eea,/site/info/build,Get build details,To know when and how this version of the application was built.,getSystemInfo
+put,eea,/user/actions/register,Create user account,User is created with a registered user profile. username field is ignored and the email is used as username. Password is sent by email. Catalog administrator is also notified.,registerUser
+get,eea,/identifiers,Get identifier templates,Identifier templates are used to create record UUIDs havind a particular structure. The template will be used when user creates a new record. The template identifier to use is defined in the administration > settings.,getIdentifiers
+put,eea,/identifiers,Add an identifier template,,addIdentifier
+get,eea,/logos/{file},Get a logo,,getLogo
+delete,eea,/logos/{file},Remove a logo,,deleteLogo
+get,eea,/records/{metadataUuid}/attachments/{resourceId},Get a metadata resource,,getResource
+delete,eea,/records/{metadataUuid}/attachments/{resourceId},Delete a metadata resource,,delResource
+patch,eea,/records/{metadataUuid}/attachments/{resourceId},Update the metadata resource visibility,,patchResource
+get,eea,/records/{metadataUuid}/doi/checkPreConditions,Check that a record can be submitted to DataCite for DOI creation. DataCite requires some fields to be populated.,,checkDoiStatus
+put,eea,/records/validate/inspire,Validate one or more records in INSPIRE validator,Update validation status for all records.,validateRecordsInspire
+get,eea,/records/{metadataUuid}/associated,Get record associated resources,"Retrieve related services, datasets, sources, ... to this records.<br/><a href='http://geonetwork-opensource.org/manuals/trunk/eng/users/user-guide/associating-resources/index.html'>More info</a>",getAssociatedResources_1
+get,eea,/records/{metadataUuid}/status/{statusId}.{userId}.{changeDate}/before,Get saved content from the status record before changes,,showStatusBefore
+get,eea,/records/{metadataUuid}/status/{statusId}.{userId}.{changeDate}/after,Get saved content from the status record after changes,,showStatusAfter
+get,eea,/users/properties/{property},Check if a user property already exist,,checkUserPropertyExist
+put,eea,/records/{metadataUuid}/status/{statusId}.{userId}.{changeDate}/close,Close a record task,,closeTask
+post,eea,/search/records/_msearch,Search endpoint,See https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl.html for search parameters details.,msearch
+get,eea,/site/index/synchronized,Index synchronized with database,,indexAndDbSynchronizationStatus
+post,eea,/records/batchediting/preview,Preview edits made by XPath expressions.,,previewBatchEdit
+get,eea,/standards/{schema}/editor/associatedpanel/config/{name}.json,Get editor associated resources panel configuration,,getEditorAssociatedPanelConfiguration
+put,eea,/identifiers/{identifier},Update an identifier template,,updateIdentifier
+delete,eea,/identifiers/{identifier},Remove an identifier template,,deleteIdentifier
+get,eea,/site/logging/activity/zip,Get last activity in a ZIP,,getLastActivityInAZip
+get,eea,/registries/crs/types,Get list of CRS type,,getCrsTypes
+get,eea,/site/logging,Get log files,,getLogFiles
+get,eea,/eealayoutupdate/script,Get EEA embedded scripts,,getScript
+get,eea,/pages/{language}/{pageId}/content,Return the static html content identified by pageId,<a href='https://geonetwork-opensource.org/manuals/4.0.x/en/customizing-application/adding-static-pages.html'>More info</a>,getPageContent
+get,eea,/records/backups/latest,Download MEF backup archive,The backup contains all metadata not harvested including templates.,downloadBackup
+get,eea,/regions,Get list of regions,,getRegions
+get,eea,/eealayoutupdate/header,Get EEA header html content,,getHeader
+get,eea,/site/info/isCasEnabled,Is CAS enabled?,,isCasEnabled
+get,eea,/i18n/packages/{pack},Get a translation package.,,getTranslationsPackage
+get,eea,/site/indexing,Is indexing?,,isIndexing
+put,eea,/languages/{langCode},Add a language,Add all default translations from all *Desc tables in the database. This operation will only add translations for a default catalog installation. Defaults can be customized in SQL scripts located in WEB-INF/classes/setup/sql/data/*.,addLanguages
+delete,eea,/languages/{langCode},Remove a language,Delete all translations from all *Desc tables in the database. Warning: This will also remove all translations you may have done to those objects (eg. custom groups).,deleteLanguage
+get,eea,/registries/crs/{id},Get CRS,,getCrs
+put,eea,/records/{metadataUuid}/unpublish,Unsets privileges for ALL group to publish the metadata for all users.,,unpublish
+get,eea,/userfeedback,Finds a list of user feedback records. , This list will include also the draft user feedback if the client is logged as reviewer.,getUserComments
+post,eea,/userfeedback,Creates a user feedback,Creates a user feedback in draft status if the user is not logged in.,newUserFeedback
+put,eea,/tools/migration/steps/{stepName},Call a migration step,,callStep
+get,eea,/sources,Get all sources,"Sources are the local catalogue, subportal, external catalogue (when importing MEF files) or harvesters.",getSubPortals_1
+put,eea,/sources,Add a source,,addSource
+get,eea,/registries/vocabularies/keyword,Get keyword by id,Retrieve XML representation of keyword(s) from same thesaurususing different transformations. 'to-iso19139-keyword' is the default and return an ISO19139 snippet.'to-iso19139-keyword-as-xlink' return an XLinked element. Custom transformation can be create on a per schema basis.,getKeywordById_1
+post,eea,/registries/vocabularies/keyword,Get keyword by id,Retrieve XML representation of keyword(s) from same thesaurususing different transformations. 'to-iso19139-keyword' is the default and return an ISO19139 snippet.'to-iso19139-keyword-as-xlink' return an XLinked element. Custom transformation can be create on a per schema basis.,getKeywordById
+put,eea,/records/{metadataUuid}/editor/elements/{direction},Reorder element,,addElement
+get,eea,/records/sharing,Get record sharing settings,,getSharingSettings
+put,eea,/records/sharing,Set sharing settings for one or more records,See record sharing for more details.,share_1
+get,eea,/status,Get status,,getStatusList
+delete,eea,/status,Delete all record history and status,,deleteAllHistoryAndStatus
+get,eea,/records/{metadataUuid}/status/{type},Get record status history by type,,getRecordStatusHistoryByType
+put,eea,/records/{metadataUuid}/editor/elements,Add element,,addElement_1
+delete,eea,/records/{metadataUuid}/editor/elements,Delete element,,deleteElement
+get,eea,/pages/config/status,,,getPageStatus
+get,eea,/records/zip,Get a set of metadata records as ZIP,Metadata Exchange Format (MEF) is returned. MEF is a ZIP file containing the metadata as XML and some others files depending on the version requested. See http://geonetwork-opensource.org/manuals/trunk/eng/users/annexes/mef-format.html.,exportAsMef
+get,eea,/site/settings/details,Get settings with details,Provides also setting properties.,getSettingsDetails
+put,eea,/records/{metadataUuid}/rate,Rate a record,"User rating of metadata. If the metadata was harvested using the 'GeoNetwork' protocol and the system setting localrating/enable is false (the default), the user's rating is shared between GN nodes in this harvesting network. If the metadata was not harvested or if localrating/enable is true then 'local rating' is applied, counting only rating from users of this node.<br/>When a remote rating is applied, the local rating is not updated. It will be updated on the next harvest run (FIXME ?).",rateRecord
+get,eea,/reports/users,"Get the list of users ""active"" during a time period.",,getActiveUsers
+get,eea,/pages/config/formats,,,getPageFormats
+get,eea,/records/{metadataUuid}/formatters/zip,Get a metadata record as ZIP,Metadata Exchange Format (MEF) is returned. MEF is a ZIP file containing the metadata as XML and some others files depending on the version requested. See http://geonetwork-opensource.org/manuals/trunk/eng/users/annexes/mef-format.html.,getRecordAsZip
+get,eea,/logos,Get all logos,"Logos are used for the catalog, the groups logos, and harvester icons. Logos are stored in the data directory in <dataDirectory>/resources/images/harvesting.<br/> Records are attached to a source. A source can be the local catalog or a harvester node. When a source is created, its logo is located in the images/logos folder with the source UUID as filename. For some sources the logo can be automatically retrieved (eg. when harvesting GeoNetwork catalogs). For others, the logo is usually manually defined when configuring the harvester.",getLogos
+post,eea,/logos,Add a logo,,addLogo
+put,eea,/records/submit,Set the records status to submitted,,submit
+put,eea,/records/templates,Add templates,Add template records for one or more schemas. Templates are defined for each standard in the template folder as XML files. Template may also contains subtemplates.,addTemplates
+get,eea,/records/{metadataUuid}/status/workflow/last,Get last workflow status for a record,,getStatus
+get,eea,/i18n/db/custom,List custom user translations,,getCustomTranslations
+post,eea,/records/importfrommap,Add a map metadata record from OGC OWS context,Add record in the catalog by uploading a map context.,insertOgcMapContextFile
+get,eea,/languages/application,Get languages available in the application,Languages available in this version of the application. Those that you can add using PUT operation and which have SQL script to initialize the language.,getApplicationLanguages
+get,eea,/records/{metadataUuid}/status,Get record status history,,getRecordStatusHistory
+put,eea,/records/{metadataUuid}/status,Set the record status,,setStatus
+delete,eea,/records/{metadataUuid}/status,Delete all record status,,deleteAllRecordStatus
+get,eea,/records/{metadataUuid}/tags,Get record tags,Tags are used to classify information.<br/><a href='http://geonetwork-opensource.org/manuals/trunk/eng/users/user-guide/tag-information/tagging-with-categories.html'>More info</a>,getRecordTags
+put,eea,/records/{metadataUuid}/tags,Add tags to a record,,tagRecord
+delete,eea,/records/{metadataUuid}/tags,Delete tags of a record,,deleteTags
+get,eea,/i18n/packages,Get list of translation packages.,,getTranslationsPackage_1
+get,eea,/records/{metadataUuid}/userfeedback,Finds a list of user feedback for a specific records. , This list will include also the draft user feedback if the client is logged as reviewer.,getUserCommentsOnARecord
+get,eea,/users/groups,Retrieve all user groups,,retrieveAllUserGroups
+get,eea,/status/{type},Get status by type,,getStatusByType
+get,eea,/records/pdf,Get a set of metadata records as PDF,"The PDF is a short summary of each records with links to the complete metadata record in different format (ie. landing page on the portal, XML)",exportAsPdf
+get,eea,/processes/db/search-and-replace,Preview of search and replace text.," When errors occur during processing, the processing report is returned in JSON format.",previewProcessSearchAndReplace
+post,eea,/processes/db/search-and-replace,Apply a database search and replace to one or more records,Process a metadata with an XSL transformation declared in the metadata schema (See the process folder). Parameters sent to the service are forwarded to XSL process.,processSearchAndReplace
+put,eea,/records/{metadataUuid}/ownership,Set record group and owner,,setRecordOwnership
+put,eea,/records/unpublish,Un-publish one or more records,See record sharing for more details.,unpublish_1
+get,eea,/sources/{type},Get all sources by type,"Sources are the local catalogue, subportal, external catalogue (when importing MEF files) or harvesters.",getSourcesByType
+get,eea,/reports/metadataupdated,Get the updated metadata during a period.,,getReportUpdatedMetadata
+get,eea,/eealayoutupdate/head,Get EEA <head> content,,getHead
+get,eea,/site/index/commit,Index commit,,indexCommit
+put,eea,/site/index/commit,Force to commit pending documents in index.,May be used when indexing task is hanging.,commitIndexChanges
+get,eea,/standards,Get standards,,getStandardConfigurations
+post,eea,/records/{metadataUuid}/status/{statusId}.{userId}.{changeDate}/restore,Restore saved content from a status record,,restoreAtStatusSave
+get,eea,/standards/{schema}/batchconfiguration,Get batch editor configuration for a standard,,getConfiguration
+get,eea,/standards/{schema}/descriptors/{element}/details,Get descriptor details,,getElementDetails
+get,eea,/reports/datadownloads,Get list of metadata file downloads,,getReportDataDownloads
+get,eea,/tags/{tagIdentifier},Get a tag,,getTag
+put,eea,/tags/{tagIdentifier},Update a tag,,updateTag
+delete,eea,/tags/{tagIdentifier},Remove a tag,,deleteTag
+get,eea,/records/index,Index a set of records,Index a set of records provided either by a bucket or a list of uuids,index
+post,eea,/mapservers/{mapserverId}/auth,Update a mapserver authentication,The remote mapserver REST API may require basic authentication. This operation set the username and password.,updateMapserver
+get,eea,/records/{metadataUuid},Get a metadata record,"Depending on the accept header the appropriate formatter is used. When requesting a ZIP, a MEF version 2 file is returned. When requesting HTML, the default formatter is used.",getRecord
+delete,eea,/records/{metadataUuid},Delete a record,"User MUST be able to edit the record to delete it. By default, a backup is made in ZIP format. After that, the record attachments are removed, the document removed from the index and then from the database.",deleteRecord
+get,eea,/registries/crs,Search coordinate reference system (CRS),"Based on GeoTools EPSG database. If phrase query, each words are searched separately.",searchCrs
+get,eea,/standards/reload,Reload standards,,reloadSchema
+get,eea,/records/{metadataUuid}/formatters/xml,Get a metadata record as XML or JSON,,getRecordAs
+get,eea,/records/{metadataUuid}/formatters/json,Get a metadata record as XML or JSON,,getRecordAs_1
+get,eea,/records/csv,Get a set of metadata records as CSV,The CSV is a short summary of each records.,exportAsCsv
+get,eea,/atom/describe/service/{metadataUuid},Describe service,,describe
+post,eea,/search/records/_search,Search endpoint,See https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl.html for search parameters details.,search
+put,eea,/records/batchediting,Edit a set of records by XPath expressions. This operations applies the update-fixed-info.xsl transformation for the metadata schema and updates the change date if the parameter updateDateStamp is set to true.,,batchEdit
+get,eea,/ui,Get UI configuration,,getUiConfigurations
+put,eea,/ui,Create a UI configuration,,putUiConfiguration
+get,eea,/eealayoutupdate/refreshtemplate,Refresh EEA Template from API,refreshtemplate,refreshTemplate
+get,eea,/atom/scan,Scan records for ATOM feeds,Check in the settings which protocol identify ATOM feeds in your catalogue.Only applies to ISO19139 records.,scan
+get,eea,/selections,Get current selections,,getSelectionsAndSize
+get,eea,/mapservices,Get mapservices,Return the list of mapservices. mapservices are used to identify secured map services.,getMapservices
+get,eea,/groups/{groupId}/logo,Get the group logo image.,If last-modified header is present it is used to check if the logo has been modified since the header date. If it hasn't been modified returns an empty 304 Not Modified response. If modified returns the image. If the group has no logo then returns a transparent 1x1 px PNG image.,getGroupLogo
+get,eea,/standards/{schema}/codelists/{codelist},Get codelist translations,,getSchemaTranslations
+delete,eea,/i18n/cache,Clean translation packages cache.,,cleanTranslationsPackagesCache
+put,eea,/site/index,Index,,index_1
+get,eea,/languages,Get languages,"Languages for the application having translations in the database. All tables with 'Desc' suffix contains translation for some domain objects like groups, tags, ...",getLanguages
+get,eea,/atom/describe/resource,Describe resource,,describeResource
+get,eea,/atom/download/resource,Get a data file related to dataset,"This service if a dataset has only 1 download format for a CRS returns the file, otherwise returns a feed with downloads for the dataset.",downloadResource
+post,eea,/records/{metadataUuid}/query/{savedQuery},Apply a saved query for this metadata,All parameters will be substituted to the XPath query. eg. {{protocol}} in the XPath expression will be replaced by the protocol parameter provided in the request body.,applyQuery
+get,eea,/records/{metadataUuid}/permalink,Get metadata record permalink,"Permalink is by default the landing page formatter but can be configured in the admin console > settings. If the record as a DOI and if enabled in the settings, then it takes priority.",getRecordPermalink
+get,eea,/records/{metadataUuid}/extents.png,Get record extents as image,A rendering of the geometry as a png. If no background is specified the image will be transparent. In getMap the envelope of the geometry is calculated then it is expanded by a factor.  That factor is the size of the map.  This allows the map to be slightly bigger than the geometry allowing some context to be shown. This parameter allows different factors to be chosen per scale level.	Proportion is the proportion of the world that the geometry covers (bounds of WGS84)/(bounds of geometry in WGS84)		Named backgrounds allow the background parameter to be a simple key and the complete URL will be looked up from this list of named backgrounds	,getAllRecordExtentAsImage
+get,eea,/sitemap,Get sitemap,,getSitemap
+get,eea,/regions/geom.png,Get geometry as image,A rendering of the geometry as a png.,getGeomAsImage
+get,eea,/site,Get site (or portal) description,,getSiteOrPortalDescription
+get,eea,/registries/entries/{uuid},Get a directory entry,Directory entry (AKA subtemplates) are XML fragments that can be inserted in metadata records using XLinks. XLinks can be remote or local.,getEntry
+put,eea,/records/{metadataUuid}/publish,Set privileges for ALL group to publish the metadata for all users.,,publish_1
+get,eea,/formatters/{schema}/{formatter}/files,Get formatter files,,getFormatterFiles
+post,eea,/harvesters/{harvesterUuid}/assign,Assign harvester records to a new source,,assignHarvestedRecordToSource
+post,eea,/registries/actions/entries/import/spatial,Import spatial directory entries,Directory entry (AKA subtemplates) are XML fragments that can be inserted in metadata records. Use this service to import geographic extent entries from an ESRI Shapefile format.,importSpatialEntries

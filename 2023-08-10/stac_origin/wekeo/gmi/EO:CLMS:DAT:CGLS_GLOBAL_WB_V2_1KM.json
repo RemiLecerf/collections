@@ -1,0 +1,65 @@
+{
+  "type": "Collection",
+  "id": "EO:CLMS:DAT:CGLS_GLOBAL_WB_V2_1KM",
+  "stac_version": "1.0.0",
+  "description": "The Water Bodies or WB product detects the areas covered by inland water across the globe, providing the maximum and the minimum extent of the water surface as well as the seasonal dynamics.\n\n                             The area of water bodies is identified as an Essential Climate Variable (ECV) by the Global Climate Observing System (GCOS).",
+  "links": [
+    {
+      "rel": "hosts",
+      "href": "https://land.copernicus.eu/global/products/wb",
+      "type": "HTTP",
+      "title": "Copernicus Global Land Service"
+    },
+    {
+      "rel": "hosts",
+      "href": "https://land.copernicus.eu/global/access",
+      "type": "HTTP",
+      "title": "Copernicus Global Land Service"
+    },
+    {
+      "rel": "hosts",
+      "href": "http://eoportal.eumetsat.int",
+      "title": "Copernicus Global Land Service"
+    }
+  ],
+  "title": "10-daily Water Bodies 1KM",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -60.0,
+          180.0,
+          80.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2014-01-01T00:00:00Z",
+          "2030-12-31T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Orthoimagery",
+    "water body",
+    "water",
+    "GLOBE",
+    "Dekad",
+    "10-day composite"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

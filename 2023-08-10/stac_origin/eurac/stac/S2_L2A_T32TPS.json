@@ -1,0 +1,113 @@
+{
+    "type": "Collection",
+    "stac_version": "0.9.0",
+    "stac_extensions": [
+        "datacube"
+    ],
+    "id": "S2_L2A_T32TPS",
+    "title": "S2_L2A_T32TPS",
+    "description": "Sentinel-2 Data",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    10.290484068721153,
+                    45.933496504418216,
+                    11.755584916051987,
+                    46.94616825350529
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2015-07-04T10:13:37.922Z",
+                    "2022-04-26T10:27:48.929592Z"
+                ]
+            ]
+        }
+    },
+    "providers": [
+        {
+            "name": "Eurac EO ODC",
+            "url": "http://www.eurac.edu/",
+            "roles": [
+                "producer",
+                "host"
+            ]
+        }
+    ],
+    "license": "CC-BY-4.0",
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://creativecommons.org/licenses/by/4.0/",
+            "type": "text/html",
+            "title": "License link"
+        }
+    ],
+    "cube:dimensions": {
+        "DATE": {
+            "type": "temporal",
+            "extent": [
+                "2015-07-04T10:13:37.922000+00:00",
+                "2022-04-26T10:27:48.929592+00:00"
+            ]
+        },
+        "X": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                10.290484068721153,
+                11.755584916051987
+            ],
+            "reference_system": 32632
+        },
+        "Y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                45.933496504418216,
+                46.94616825350529
+            ],
+            "reference_system": 32632
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "AOT_10m",
+                "AOT_20m",
+                "AOT_60m",
+                "B01_60m",
+                "B02_10m",
+                "B02_20m",
+                "B02_60m",
+                "B03_10m",
+                "B03_20m",
+                "B03_60m",
+                "B04_10m",
+                "B04_20m",
+                "B04_60m",
+                "B05_20m",
+                "B05_60m",
+                "B06_20m",
+                "B06_60m",
+                "B07_20m",
+                "B07_60m",
+                "B08_10m",
+                "B09_60m",
+                "B11_20m",
+                "B11_60m",
+                "B12_20m",
+                "B12_60m",
+                "B8A_20m",
+                "B8A_60m",
+                "SCL_20m",
+                "SCL_60m",
+                "WVP_10m",
+                "WVP_20m",
+                "WVP_60m"
+            ]
+        }
+    }
+}

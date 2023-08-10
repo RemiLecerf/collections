@@ -1,0 +1,39 @@
+<csw:Record xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dc:identifier xmlns:dc="http://purl.org/dc/elements/1.1/">EO:ECMWF:DAT:SIS_EUROPEAN_WIND_STORM_SYNTHETIC_EVENTS</dc:identifier>
+      <dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">Synthetic windstorm events for Europe from 1986 to 2011</dc:title>
+      <dc:type xmlns:dc="http://purl.org/dc/elements/1.1/">dataset</dc:type>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Meteorological geographical features</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Spatial coverage: Europe</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Variable domain: Atmosphere (surface)</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Temporal coverage: Past</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Product type: Projections</dc:subject>
+      <dc:subject xmlns:dc="http://purl.org/dc/elements/1.1/">Provider: Copernicus C3S</dc:subject>
+      <dc:format xmlns:dc="http://purl.org/dc/elements/1.1/">netcdf</dc:format>
+      <dct:abstract xmlns:dct="http://purl.org/dc/terms/">This dataset contains a set of synthetic windstorm events consisting of 22,980 individual storm footprints over Europe. These are a physically realistic set of plausible windstorm events based on the modelled climatic conditions. It is not designed to reproduce actual historical observations but as a comparator for the stochastic event sets generally used for windstorm risk analysis in the insurance industry. This is because there is no data assimilation process used to align the model output to historical observations. The dataset aims to capture the windstorms' risk profile over the winter months and consider the characteristics of windstorms in a warming climate. The dataset may be downloaded by selecting the required years and months from which daily files are produced. These are there as mere reference; the associated storms bare no resembelence to what was actually observed and recorded at the time.
+The windstorms are identified from the maximum 3 second wind gusts derived from the 10m wind speed from the Met Office HadGEM3 model using the Global Atmosphere 3 and Global Land 3 configurations. The dataset covers the northern hemisphere winter months between September and May only. It includes three individual iterations of the event sets, whose methodology and inputs are slightly different:
+
+
+Synthetic set 1.2: recalibrated using four historical windstorm events; Xynthia, Kyrill, Daria and 87J.
+
+
+Synthetic set 2: A storm severity index combining maximum wind gust speed above a threshold of 25 m s-1 and land area was used to select the strongest six events from the Met Office historical events database.
+
+
+Synthetic set 3: downscaling was based on station observations from the four named storms used in Synthetic event set v1.2; Xynthia, Kyrill, Daria and 87J.
+
+
+Five simulation ensembles initialized from one of five consecutive days and allowed to evolve independently were used to increase the number of events compared to the input data and to account for the uncertainty in forecasted climatic conditions. The three sets and all simulation ensembles may be combined and used together in further analysis. This synthetic event set is complementary to the catalogue of actual windstorms in Europe from 1979 to 2021 also available in the Climate Data Store.
+This dataset was produced on behalf of the Copernicus Climate Change Service.
+
+Variables in the dataset/application are:
+Wind speed of gusts</dct:abstract>
+      <dct:spatial xmlns:dct="http://purl.org/dc/terms/">::EPSG:4326</dct:spatial>
+      <dc:rights xmlns:dc="http://purl.org/dc/elements/1.1/">https://cds.climate.copernicus.eu/api/v2/terms/static/licence-to-use-copernicus-products.pdf</dc:rights>
+      <dc:rights xmlns:dc="http://purl.org/dc/elements/1.1/">Content accessible through the CDS may only be used under the terms of the licenses attributed to each particular resource.</dc:rights>
+      <dct:accessRights xmlns:dct="http://purl.org/dc/terms/">licence</dct:accessRights>
+      <ows:BoundingBox xmlns:ows="http://www.opengis.net/ows">
+        <ows:LowerCorner>-180 -90</ows:LowerCorner>
+        <ows:UpperCorner>180 90</ows:UpperCorner>
+      </ows:BoundingBox>
+    </csw:Record>
+    

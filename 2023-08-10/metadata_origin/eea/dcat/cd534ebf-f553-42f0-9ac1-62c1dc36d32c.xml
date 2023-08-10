@@ -1,0 +1,144 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:dct="http://purl.org/dc/terms/" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://sdi.eea.europa.eu/catalogue/records/cd534ebf-f553-42f0-9ac1-62c1dc36d32c">
+        <foaf:primaryTopic rdf:resource="http://localhost:8080/geonetwork//copernicus_r_3035_10_m_chaplus-backbone2017-2019_p_2018_v01_r00"/>
+        <dct:conformsTo rdf:resource="https://www.iso.org/standard/32557.html"/>
+        <dct:issued>2023-02-21</dct:issued>
+        <dct:modified>2023-02-21</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://sdi.eea.europa.eu/catalogue/srv/api/records/cd534ebf-f553-42f0-9ac1-62c1dc36d32c/formatters/xml">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://sdi.eea.europa.eu/catalogue/srv/api/records/cd534ebf-f553-42f0-9ac1-62c1dc36d32c">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="http://localhost:8080/geonetwork//datasets/copernicus_r_3035_10_m_chaplus-backbone2017-2019_p_2018_v01_r00">
+        <dct:identifier>copernicus_r_3035_10_m_chaplus-backbone2017-2019_p_2018_v01_r00</dct:identifier>
+        <dct:title>Corine Land Cover Change CLC+ Backbone raster product 2018, Feb. 2023</dct:title>
+        <dct:abstract>This metadata refer to the 'Corine Land Cover + Backbone' (CLC+ Backbone) which is a spatially detailed, large scale, Earth Observation-based land cover inventory. The CLC+ Backbone Raster Product is a 10m pixel-based land cover map based on Sentinel satelitte time series from July 2017 to June 2019. For each pixel it shows the dominant land cover among the 11 basic land cover classes.
+
+Thematic pixel values:
+1: Sealed
+2: Woody – needle leaved trees
+3: Woody – Broadleaved deciduous trees
+4: Woody – Broadleaved evergreen trees
+5: Low-growing woody plants (bushes, shrubs)
+6: Permanent herbaceous
+7: Periodically herbaceous
+8: Lichens and mosses
+9: Non- and sparsely-vegetated
+10: Water
+11: Snow and ice
+254: outside area
+255: No data
+
+The product has a three years update cycle and is available for the 2018 reference year.</dct:abstract>
+        <dcat:theme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET%20-%20INSPIRE%20themes%2C%20version%201.0/concepts/Land%20cover"/>
+        <dcat:theme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/Continents%2C%20countries%2C%20sea%20regions%20of%20the%20world./concepts/EEA38%20%28from%202020%29"/>
+        <dcat:theme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/Continents%2C%20countries%2C%20sea%20regions%20of%20the%20world./concepts/United%20Kingdom"/>
+        <dcat:theme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET/concepts/land%20cover"/>
+        <dcat:theme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET/concepts/land"/>
+        <dcat:theme rdf:resource="http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/european"/>
+        <dcat:theme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/EEA%20topics/concepts/Land%20use"/>
+        <dcat:theme rdf:resource="https://inspire.ec.europa.eu/metadata-codelist/TopicCategory/environment"/>
+        <dcat:theme rdf:resource="https://inspire.ec.europa.eu/metadata-codelist/TopicCategory/imageryBaseMapsEarthCover"/>
+        <foaf:thumbnail rdf:resource="https://sdi.eea.europa.eu/public/catalogue-graphic-overview/cd534ebf-f553-42f0-9ac1-62c1dc36d32c.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <geo:asWKT xmlns:geo="http://www.opengis.net/ont/geosparql#" rdf:datatype="http://www.opengis.net/rdf#wktLiteral">Polygon((-56.5052 24.2841, -56.5052 72.6338, 72.9061 72.6338, 72.9061 24.2841, -56.5052 24.2841))</geo:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:temporal>2017-07-01
+          /
+          2019-06-30</dct:temporal>
+        <dct:issued>2022-03-07</dct:issued>
+        <dct:accrualPeriodicity>asNeeded</dct:accrualPeriodicity>
+        <dct:language>eng</dct:language>
+        <dct:license>Access to data is based on a principle of full, open and free access as established by the Copernicus data and information policy Regulation (EU) No 1159/2013 of 12 July 2013. This regulation establishes registration and licensing conditions for GMES/Copernicus users.
+
+Free, full and open access to this data set is made on the conditions that:
+
+1. When distributing or communicating Copernicus dedicated data and Copernicus service information to the public, users shall inform the public of the source of that data and information.
+
+2. Users shall make sure not to convey the impression to the public that the user's activities are officially endorsed by the Union.
+
+3. Where that data or information has been adapted or modified, the user shall clearly state this.
+
+4. The data remain the sole property of the European Union. Any information and data produced in the framework of the action shall be the sole property of the European Union. Any communication and publication by the beneficiary shall acknowledge that the data were produced “with funding by the European Union”.</dct:license>
+        <dct:license rdf:resource="http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/noLimitations">No limitations to public access</dct:license>
+        <dcat:distribution rdf:resource="https://sdi.eea.europa.eu/catalogue/records/cd534ebf-f553-42f0-9ac1-62c1dc36d32c#WWW%3ALINK-CLC%2B%20Backbone%20%E2%80%94%20Copernicus%20Land%20Monitoring%20Service"/>
+        <dcat:distribution rdf:resource="https://sdi.eea.europa.eu/catalogue/records/cd534ebf-f553-42f0-9ac1-62c1dc36d32c#WWW%3ADOWNLOAD-1.0-http--download-Detailed%20specifications%20and%20user%20guidelines"/>
+        <dcat:dataQuality>The CLC+ Backbone Raster Product is primarily based on a supervised classification of satellite image time-series from Sentinel-2 L2A including all scenes with a cloud cover below 80% and acquired from July 2017 and June 2019. The time series is initially resampled in along the time axis to obtain an equidistant time-series at 10-day intervals. Clouds and cloud shadows are masked out before based on masks produced with FMask 4.1.
+
+Training and test data were compiled for the reference year 2018 from various sources, such as from adjusted and filtered LUCAS 2018 survey point data; stratified automated LC class annotations based on existing land use/land cover maps, as well as from additional visual sample point photointerpretation relying on VHR imagery, NDVI time series and auxiliary datasets.
+ 
+A temporal Convolutional Neural Network with four hierarchical layers was calibrated on the collected training data and input time-series / features. Given the heterogeneity of the addressed European landscapes, all classifier training, testing and, finally, LC classification, is performed along substrata based on biogeographical regions and existing LC layers. 
+
+Dedicated post-processing steps include bilateral filtering to reduce labelling noise, as well as adjustments of the class probabilities and threshold based on auxiliary data such as street networks, national and regional land cover and land use maps or existing Pan-European land cover maps.
+
+Quality assurance follows the ISO 9001:2015 standards for Quality Management and comprises of dedicated procedures of quality checks (QA breakpoints) during implementation of the production chain, in order to keep persistent control over the various stages of production, assure fitness-for-purpose of the end-products and that all quality requirements are fulfilled. Priority has been given to the target thematic accuracy to be achieved by each product, as well as to the issues of product consistency (spatial, thematic, temporal) and homogeneity. 
+Quality Assessment: The quality assessment has been performed according to INSPIRE Data Specifications. The data quality elements considered are: (i) Completeness, (ii) Logical Consistency, (iii) positional accuracy, (iv) Thematic Accuracy, (v) Temporal quality and (vi) Usability.
+
+Geometric accuracy (positioning scale): Equals Sentinel-2 positional accuracy in 2018 (~11m at 95.5% confidence).
+
+Thematic target accuracy: An independent internal accuracy assessment based on the interpretation of more than 42,000 samples (plausibility analysis) assessed the overall accuracy for the EU27 area at 92.8% (+-0.3%) and for the full EEA38+UK coverage at 91.9% (+-0.3%). The targeted producer's and user's accuracies are above the target of at least 85% for all classes except for Low-growing woody plants, Lichens and Mosses, and Non-and sparsely vegetated which are subject to regionally lower accuracies. Further details on the internal validation results are presented in the Product User Manual.</dcat:dataQuality>
+      </dcat:Dataset>
+      <skos:Concept rdf:about="http://localhost:8080/geonetwork//registries/vocabularies/GEMET%20-%20INSPIRE%20themes%2C%20version%201.0/concepts/Land%20cover">
+        <skos:inScheme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET%20-%20INSPIRE%20themes%2C%20version%201.0"/>
+        <skos:prefLabel>Land cover</skos:prefLabel>
+      </skos:Concept>
+      <skos:Concept rdf:about="http://localhost:8080/geonetwork//registries/vocabularies/Continents%2C%20countries%2C%20sea%20regions%20of%20the%20world./concepts/EEA38%20%28from%202020%29">
+        <skos:inScheme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/Continents%2C%20countries%2C%20sea%20regions%20of%20the%20world."/>
+        <skos:prefLabel>EEA38 (from 2020)</skos:prefLabel>
+      </skos:Concept>
+      <skos:Concept rdf:about="http://localhost:8080/geonetwork//registries/vocabularies/Continents%2C%20countries%2C%20sea%20regions%20of%20the%20world./concepts/United%20Kingdom">
+        <skos:inScheme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/Continents%2C%20countries%2C%20sea%20regions%20of%20the%20world."/>
+        <skos:prefLabel>United Kingdom</skos:prefLabel>
+      </skos:Concept>
+      <skos:Concept rdf:about="http://localhost:8080/geonetwork//registries/vocabularies/GEMET/concepts/land%20cover">
+        <skos:inScheme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET"/>
+        <skos:prefLabel>land cover</skos:prefLabel>
+      </skos:Concept>
+      <skos:Concept rdf:about="http://localhost:8080/geonetwork//registries/vocabularies/GEMET/concepts/land">
+        <skos:inScheme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/GEMET"/>
+        <skos:prefLabel>land</skos:prefLabel>
+      </skos:Concept>
+      <skos:Concept rdf:about="http://inspire.ec.europa.eu/metadata-codelist/SpatialScope/european">
+        <skos:inScheme rdf:resource="http://inspire.ec.europa.eu/metadata-codelist/SpatialScope"/>
+        <skos:prefLabel>European</skos:prefLabel>
+      </skos:Concept>
+      <skos:Concept rdf:about="http://localhost:8080/geonetwork//registries/vocabularies/EEA%20topics/concepts/Land%20use">
+        <skos:inScheme rdf:resource="http://localhost:8080/geonetwork//registries/vocabularies/EEA%20topics"/>
+        <skos:prefLabel>Land use</skos:prefLabel>
+      </skos:Concept>
+      <dcat:Distribution rdf:about="https://sdi.eea.europa.eu/catalogue/records/cd534ebf-f553-42f0-9ac1-62c1dc36d32c#WWW%3ALINK-CLC%2B%20Backbone%20%E2%80%94%20Copernicus%20Land%20Monitoring%20Service">
+        <dcat:accessURL>https://land.copernicus.eu/pan-european/clc-plus</dcat:accessURL>
+        <dct:title>CLC+ Backbone — Copernicus Land Monitoring Service</dct:title>
+        <dct:format>WWW:LINK</dct:format>
+      </dcat:Distribution>
+      <dcat:Distribution rdf:about="https://sdi.eea.europa.eu/catalogue/records/cd534ebf-f553-42f0-9ac1-62c1dc36d32c#WWW%3ADOWNLOAD-1.0-http--download-Detailed%20specifications%20and%20user%20guidelines">
+        <dcat:accessURL>https://land.copernicus.eu/pan-european/clc-plus/resolveuid/44ddae8b83f341f8b258d60266af4b76</dcat:accessURL>
+        <dct:title>Detailed specifications and user guidelines</dct:title>
+      </dcat:Distribution>
+      <foaf:Organization rdf:about="http://localhost:8080/geonetwork//organizations/European%20Environment%20Agency">
+        <foaf:name>European Environment Agency</foaf:name>
+        <foaf:member rdf:resource="http://localhost:8080/geonetwork//persons/sdi%40eea.europa.eu"/>
+      </foaf:Organization>
+      <foaf:Agent rdf:about="http://localhost:8080/geonetwork//persons/sdi%40eea.europa.eu">
+        <foaf:mbox rdf:resource="mailto:sdi@eea.europa.eu"/>
+      </foaf:Agent>
+    </rdf:RDF>
+    

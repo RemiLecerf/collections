@@ -1,0 +1,110 @@
+{
+    "type": "Collection",
+    "version": "v1",
+    "stac_version": "0.9.0",
+    "stac_extensions": [
+        "datacube"
+    ],
+    "id": "S2_Cloudless_32632_10m_L1C",
+    "title": "Sentinel-2 Cloudless Data S2_Cloudless_32632_10m_L1C",
+    "description": "The Copernicus Sentinel-2 Cloudless dataset.",
+    "keywords": [
+        "Cloudless",
+        "Sentinel-2"
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    6.5367723231469945,
+                    43.238262552870076,
+                    7.870237286766425,
+                    44.24783068350761
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2015-07-30T00:00:00Z",
+                    "2020-09-08T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "providers": [
+        {
+            "name": "Eurac EO WCS",
+            "url": "http://www.eurac.edu",
+            "roles": [
+                "Host"
+            ]
+        }
+    ],
+    "license": "CC-BY-4.0",
+    "links": [
+        {
+            "rel": "licence",
+            "href": "https://creativecommons.org/licenses/by/4.0/",
+            "title": "License Link"
+        }
+    ],
+    "cube:dimensions": {
+        "DATE": {
+            "type": "temporal",
+            "extent": [
+                "2015-07-30T00:00:00.000Z",
+                "2020-09-08T00:00:00.000Z"
+            ]
+        },
+        "E": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                6.5367723231469945,
+                7.870237286766425
+            ],
+            "reference_system": 32632
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "Band1"
+            ]
+        },
+        "N": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                43.238262552870076,
+                44.24783068350761
+            ],
+            "reference_system": 32632
+        }
+    },
+    "summaries": {
+        "constellation": [
+            "Sentinel-2"
+        ],
+        "platform": [
+            "Sentinel-2A, Sentinel-2B"
+        ],
+        "rows": 10980,
+        "columns": 10980,
+        "instruments": [
+            "MSI"
+        ],
+        "gsd": [
+            10.0
+        ],
+        "eo:bands": [
+            {
+                "name": "Band1",
+                "common_name": "Band1",
+                "gsd": 10.0
+            }
+        ]
+    },
+    "sci:citation": "Copernicus Sentinel data [2015-2021]",
+    "engine": "WCPS"
+}

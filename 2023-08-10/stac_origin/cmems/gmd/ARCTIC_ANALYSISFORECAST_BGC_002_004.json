@@ -1,0 +1,66 @@
+{
+  "type": "Collection",
+  "id": "ARCTIC_ANALYSISFORECAST_BGC_002_004",
+  "stac_version": "1.0.0",
+  "description": "'''Short description:'''\nThe operational TOPAZ5-ECOSMO Arctic Ocean system uses the ECOSMO biological model coupled online to the TOPAZ5 physical model planned for a future update of the ARCTIC_ANALYSIS_FORECAST_PHYS_002_001_a physical forecast. It is run daily to provide 10 days of forecast of 3D biogeochemical variables ocean. The coupling is done by the FABM framework.\n\nCoupling to a biological ocean model provides a description of the evolution of basic biogeochemical variables. The output consists of daily mean fields interpolated onto a standard grid and 40 fixed levels in NetCDF4 CF format. Variables include 3D fields of nutrients (nitrate, phosphate, silicate), phytoplankton and zooplankton biomass, oxygen, chlorophyll, primary productivity, carbon cycle variables (pH, dissolved inorganic carbon and surface partial CO2 pressure in seawater, carbon export) and light attenuation coefficient. Surface Chlorophyll-a from satellite ocean colour is assimilated every week and projected downwards using the Uitz et al. (2006) method. A new 10-day forecast is produced daily using the previous day's forecast and the most up-to-date prognostic forcing fields.\nOutput products have 6.25 km resolution at the North Pole (equivalent to 1/8 deg) on a stereographic projection. See the Product User Manual for the exact projection parameters.\n\n'''DOI (product) :'''   \nhttps://doi.org/10.48670/moi-00003",
+  "links": [],
+  "title": "Arctic Ocean Biogeochemistry Analysis and Forecast",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          53.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2019-05-04T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Oceanographic geographical features",
+    "numerical-model",
+    "mole_concentration_of_zooplankton_expressed_as_carbon_in_sea_water",
+    "mole_concentration_of_silicate_in_sea_water",
+    "mole_concentration_of_dissolved_inorganic_carbon_in_sea_water",
+    "sinking_mole_flux_of_particulate_organic_matter_expressed_as_carbon_in_sea_water",
+    "volume_attenuation_coefficient_of_downwelling_radiative_flux_in_sea_water",
+    "mole_concentration_of_phosphate_in_sea_water",
+    "sea_floor_depth_below_sea_level",
+    "mass_concentration_of_chlorophyll_a_in_sea_water",
+    "mole_concentration_of_nitrate_in_sea_water",
+    "net_primary_production_of_biomass_expressed_as_carbon_per_unit_volume_in_sea_water",
+    "sea_water_ph_reported_on_total_scale",
+    "surface_partial_pressure_of_carbon_dioxide_in_sea_water",
+    "mole_concentration_of_dissolved_molecular_oxygen_in_sea_water",
+    "mole_concentration_of_phytoplankton_expressed_as_carbon_in_sea_water",
+    "near-real-time",
+    "forecast",
+    "marine-safety",
+    "weather-climate-and-seasonal-forecasting",
+    "coastal-marine-environment",
+    "marine-resources",
+    "arctic-ocean",
+    "Level 4",
+    "Satellite Chlorophyll"
+  ],
+  "providers": [
+    {
+      "name": "Copernicus Marine Service",
+      "description": "Copernicus Marine Service - Mercator Ocean International",
+      "roles": [
+        "host"
+      ],
+      "url": "https://marine.copernicus.eu/"
+    }
+  ]
+}

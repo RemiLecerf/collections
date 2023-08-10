@@ -1,0 +1,380 @@
+{
+    "type": "Collection",
+    "stac_version": "1.0.0",
+    "stac_extensions": [
+        "https://stac-extensions.github.io/datacube/v1.0.0/schema.json",
+        "https://stac-extensions.github.io/raster/v1.0.0/schema.json"
+    ],
+    "id": "GHS_BUILT_S2",
+    "title": "Global Human Settlement Layer - GHS-BUILT-S2",
+    "description": "The Global Human Settlement (GHS) framework produces global maps of built-up, population density\nand settlements to monitor human presence on Earth over time.\nThe Global Human Settlement Layer GHS-BUILT-S2 is a global map of built-up areas (expressed as probabilities) at 10 m spatial resolution.\nIt was derived from a Sentinel-2 global image composite for the reference year 2018 using Convolutional Neural Networks.\n",
+    "keywords": [
+        "sentinel hub",
+        "raster",
+        "urban mapping",
+        "machine learning",
+        "derived data",
+        "open data"
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -56,
+                    180,
+                    72
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2018-01-01T00:00:00Z",
+                    "2018-01-01T00:00:01Z"
+                ]
+            ]
+        }
+    },
+    "crs": [
+        "http://www.opengis.net/def/crs/OGC/1.3/CRS84",
+        "http://www.opengis.net/def/crs/EPSG/0/2154",
+        "http://www.opengis.net/def/crs/EPSG/0/2180",
+        "http://www.opengis.net/def/crs/EPSG/0/2193",
+        "http://www.opengis.net/def/crs/EPSG/0/3003",
+        "http://www.opengis.net/def/crs/EPSG/0/3004",
+        "http://www.opengis.net/def/crs/EPSG/0/3031",
+        "http://www.opengis.net/def/crs/EPSG/0/3035",
+        "http://www.opengis.net/def/crs/EPSG/0/4326",
+        "http://www.opengis.net/def/crs/EPSG/0/4346",
+        "http://www.opengis.net/def/crs/EPSG/0/4416",
+        "http://www.opengis.net/def/crs/EPSG/0/4765",
+        "http://www.opengis.net/def/crs/EPSG/0/4794",
+        "http://www.opengis.net/def/crs/EPSG/0/4844",
+        "http://www.opengis.net/def/crs/EPSG/0/4857",
+        "http://www.opengis.net/def/crs/EPSG/0/3912",
+        "http://www.opengis.net/def/crs/EPSG/0/3995",
+        "http://www.opengis.net/def/crs/EPSG/0/4026",
+        "http://www.opengis.net/def/crs/EPSG/0/5514",
+        "http://www.opengis.net/def/crs/EPSG/0/28992",
+        "http://www.opengis.net/def/crs/EPSG/0/32601",
+        "http://www.opengis.net/def/crs/EPSG/0/32602",
+        "http://www.opengis.net/def/crs/EPSG/0/32603",
+        "http://www.opengis.net/def/crs/EPSG/0/32604",
+        "http://www.opengis.net/def/crs/EPSG/0/32605",
+        "http://www.opengis.net/def/crs/EPSG/0/32606",
+        "http://www.opengis.net/def/crs/EPSG/0/32607",
+        "http://www.opengis.net/def/crs/EPSG/0/32608",
+        "http://www.opengis.net/def/crs/EPSG/0/32609",
+        "http://www.opengis.net/def/crs/EPSG/0/32610",
+        "http://www.opengis.net/def/crs/EPSG/0/32611",
+        "http://www.opengis.net/def/crs/EPSG/0/32612",
+        "http://www.opengis.net/def/crs/EPSG/0/32613",
+        "http://www.opengis.net/def/crs/EPSG/0/32614",
+        "http://www.opengis.net/def/crs/EPSG/0/32615",
+        "http://www.opengis.net/def/crs/EPSG/0/32616",
+        "http://www.opengis.net/def/crs/EPSG/0/32617",
+        "http://www.opengis.net/def/crs/EPSG/0/32618",
+        "http://www.opengis.net/def/crs/EPSG/0/32619",
+        "http://www.opengis.net/def/crs/EPSG/0/32620",
+        "http://www.opengis.net/def/crs/EPSG/0/32621",
+        "http://www.opengis.net/def/crs/EPSG/0/32622",
+        "http://www.opengis.net/def/crs/EPSG/0/32623",
+        "http://www.opengis.net/def/crs/EPSG/0/32624",
+        "http://www.opengis.net/def/crs/EPSG/0/32625",
+        "http://www.opengis.net/def/crs/EPSG/0/32626",
+        "http://www.opengis.net/def/crs/EPSG/0/32627",
+        "http://www.opengis.net/def/crs/EPSG/0/32628",
+        "http://www.opengis.net/def/crs/EPSG/0/32629",
+        "http://www.opengis.net/def/crs/EPSG/0/32630",
+        "http://www.opengis.net/def/crs/EPSG/0/32631",
+        "http://www.opengis.net/def/crs/EPSG/0/32632",
+        "http://www.opengis.net/def/crs/EPSG/0/32633",
+        "http://www.opengis.net/def/crs/EPSG/0/32634",
+        "http://www.opengis.net/def/crs/EPSG/0/32635",
+        "http://www.opengis.net/def/crs/EPSG/0/32636",
+        "http://www.opengis.net/def/crs/EPSG/0/32637",
+        "http://www.opengis.net/def/crs/EPSG/0/32638",
+        "http://www.opengis.net/def/crs/EPSG/0/32639",
+        "http://www.opengis.net/def/crs/EPSG/0/32640",
+        "http://www.opengis.net/def/crs/EPSG/0/32641",
+        "http://www.opengis.net/def/crs/EPSG/0/32642",
+        "http://www.opengis.net/def/crs/EPSG/0/32643",
+        "http://www.opengis.net/def/crs/EPSG/0/32644",
+        "http://www.opengis.net/def/crs/EPSG/0/32645",
+        "http://www.opengis.net/def/crs/EPSG/0/32646",
+        "http://www.opengis.net/def/crs/EPSG/0/32647",
+        "http://www.opengis.net/def/crs/EPSG/0/32648",
+        "http://www.opengis.net/def/crs/EPSG/0/32649",
+        "http://www.opengis.net/def/crs/EPSG/0/32650",
+        "http://www.opengis.net/def/crs/EPSG/0/32651",
+        "http://www.opengis.net/def/crs/EPSG/0/32652",
+        "http://www.opengis.net/def/crs/EPSG/0/32653",
+        "http://www.opengis.net/def/crs/EPSG/0/32654",
+        "http://www.opengis.net/def/crs/EPSG/0/32655",
+        "http://www.opengis.net/def/crs/EPSG/0/32656",
+        "http://www.opengis.net/def/crs/EPSG/0/32657",
+        "http://www.opengis.net/def/crs/EPSG/0/32658",
+        "http://www.opengis.net/def/crs/EPSG/0/32659",
+        "http://www.opengis.net/def/crs/EPSG/0/32660",
+        "http://www.opengis.net/def/crs/EPSG/0/32701",
+        "http://www.opengis.net/def/crs/EPSG/0/32702",
+        "http://www.opengis.net/def/crs/EPSG/0/32703",
+        "http://www.opengis.net/def/crs/EPSG/0/32704",
+        "http://www.opengis.net/def/crs/EPSG/0/32705",
+        "http://www.opengis.net/def/crs/EPSG/0/32706",
+        "http://www.opengis.net/def/crs/EPSG/0/32707",
+        "http://www.opengis.net/def/crs/EPSG/0/32708",
+        "http://www.opengis.net/def/crs/EPSG/0/32709",
+        "http://www.opengis.net/def/crs/EPSG/0/32710",
+        "http://www.opengis.net/def/crs/EPSG/0/32711",
+        "http://www.opengis.net/def/crs/EPSG/0/32712",
+        "http://www.opengis.net/def/crs/EPSG/0/32713",
+        "http://www.opengis.net/def/crs/EPSG/0/32714",
+        "http://www.opengis.net/def/crs/EPSG/0/32715",
+        "http://www.opengis.net/def/crs/EPSG/0/32716",
+        "http://www.opengis.net/def/crs/EPSG/0/32717",
+        "http://www.opengis.net/def/crs/EPSG/0/32718",
+        "http://www.opengis.net/def/crs/EPSG/0/32719",
+        "http://www.opengis.net/def/crs/EPSG/0/32720",
+        "http://www.opengis.net/def/crs/EPSG/0/32721",
+        "http://www.opengis.net/def/crs/EPSG/0/32722",
+        "http://www.opengis.net/def/crs/EPSG/0/32723",
+        "http://www.opengis.net/def/crs/EPSG/0/32724",
+        "http://www.opengis.net/def/crs/EPSG/0/32725",
+        "http://www.opengis.net/def/crs/EPSG/0/32726",
+        "http://www.opengis.net/def/crs/EPSG/0/32727",
+        "http://www.opengis.net/def/crs/EPSG/0/32728",
+        "http://www.opengis.net/def/crs/EPSG/0/32729",
+        "http://www.opengis.net/def/crs/EPSG/0/32730",
+        "http://www.opengis.net/def/crs/EPSG/0/32731",
+        "http://www.opengis.net/def/crs/EPSG/0/32732",
+        "http://www.opengis.net/def/crs/EPSG/0/32733",
+        "http://www.opengis.net/def/crs/EPSG/0/32734",
+        "http://www.opengis.net/def/crs/EPSG/0/32735",
+        "http://www.opengis.net/def/crs/EPSG/0/32736",
+        "http://www.opengis.net/def/crs/EPSG/0/32737",
+        "http://www.opengis.net/def/crs/EPSG/0/32738",
+        "http://www.opengis.net/def/crs/EPSG/0/32739",
+        "http://www.opengis.net/def/crs/EPSG/0/32740",
+        "http://www.opengis.net/def/crs/EPSG/0/32741",
+        "http://www.opengis.net/def/crs/EPSG/0/32742",
+        "http://www.opengis.net/def/crs/EPSG/0/32743",
+        "http://www.opengis.net/def/crs/EPSG/0/32744",
+        "http://www.opengis.net/def/crs/EPSG/0/32745",
+        "http://www.opengis.net/def/crs/EPSG/0/32746",
+        "http://www.opengis.net/def/crs/EPSG/0/32746",
+        "http://www.opengis.net/def/crs/EPSG/0/32748",
+        "http://www.opengis.net/def/crs/EPSG/0/32749",
+        "http://www.opengis.net/def/crs/EPSG/0/32750",
+        "http://www.opengis.net/def/crs/EPSG/0/32751",
+        "http://www.opengis.net/def/crs/EPSG/0/32752",
+        "http://www.opengis.net/def/crs/EPSG/0/32753",
+        "http://www.opengis.net/def/crs/EPSG/0/32754",
+        "http://www.opengis.net/def/crs/EPSG/0/32755",
+        "http://www.opengis.net/def/crs/EPSG/0/32756",
+        "http://www.opengis.net/def/crs/EPSG/0/32757",
+        "http://www.opengis.net/def/crs/EPSG/0/32758",
+        "http://www.opengis.net/def/crs/EPSG/0/32759",
+        "http://www.opengis.net/def/crs/EPSG/0/32760",
+        "http://www.opengis.net/def/crs/SR-ORG/0/98739"
+    ],
+    "providers": [
+        {
+            "name": "Sentinel Hub",
+            "roles": [
+                "processor"
+            ],
+            "url": "https://creodias.sentinel-hub.com"
+        }
+    ],
+    "license": "proprietary",
+    "links": [
+        {
+            "href": "https://collections.eurodatacube.com/global-human-settlement-layer-ghs-built-s2",
+            "rel": "about",
+            "title": "Website describing the collection",
+            "type": "text/html"
+        },
+        {
+            "href": "https://creodias.sentinel-hub.com/ogc/wmts/3f58a020-3523-4c53-85ac-a562af9e09ba",
+            "rel": "wmts",
+            "wmts:dimensions": {
+                "warnings": true
+            },
+            "wmts:layer": "GHS-BUILT-S2"
+        },
+        {
+            "href": "https://docs.sentinel-hub.com/api/latest/api/process/",
+            "rel": "about",
+            "title": "Details about running Evalscripts",
+            "type": "text/html"
+        },
+        {
+            "href": "https://custom-scripts.sentinel-hub.com/other_collections/global-human-settlement-layer/global-human-settlement-layer-ghs-built-s2/script.js",
+            "rel": "processing-expression",
+            "sentinelhub:layer_name": "GHS-BUILT-S2",
+            "sentinelhub:mosaicking_order": "mostRecent",
+            "sentinelhub:upsampling": "BICUBIC",
+            "title": "Evalscript to generate GHS-BUILT-S2 imagery",
+            "type": "application/javascript"
+        },
+        {
+            "href": "https://creativecommons.org/licenses/by/4.0/",
+            "rel": "license",
+            "title": "License",
+            "type": "text/html"
+        },
+        {
+            "href": "https://openeocloud.vito.be/openeo/1.0.0/collections",
+            "rel": "root"
+        },
+        {
+            "href": "https://openeocloud.vito.be/openeo/1.0.0/collections",
+            "rel": "parent"
+        },
+        {
+            "href": "https://openeocloud.vito.be/openeo/1.0.0/collections/GHS_BUILT_S2",
+            "rel": "self"
+        }
+    ],
+    "cube:dimensions": {
+        "bands": {
+            "type": "bands",
+            "values": [
+                "PROB"
+            ]
+        },
+        "t": {
+            "extent": [
+                "2018-01-01T00:00:00Z",
+                "2018-01-01T00:00:01Z"
+            ],
+            "type": "temporal"
+        },
+        "x": {
+            "axis": "x",
+            "extent": [
+                -180,
+                180
+            ],
+            "reference_system": {
+                "$schema": "https://proj.org/schemas/v0.4/projjson.schema.json",
+                "area": "World",
+                "bbox": {
+                    "east_longitude": 180,
+                    "north_latitude": 90,
+                    "south_latitude": -90,
+                    "west_longitude": -180
+                },
+                "coordinate_system": {
+                    "axis": [
+                        {
+                            "abbreviation": "Lat",
+                            "direction": "north",
+                            "name": "Geodetic latitude",
+                            "unit": "degree"
+                        },
+                        {
+                            "abbreviation": "Lon",
+                            "direction": "east",
+                            "name": "Geodetic longitude",
+                            "unit": "degree"
+                        }
+                    ],
+                    "subtype": "ellipsoidal"
+                },
+                "datum": {
+                    "ellipsoid": {
+                        "inverse_flattening": 298.257223563,
+                        "name": "WGS 84",
+                        "semi_major_axis": 6378137
+                    },
+                    "name": "World Geodetic System 1984",
+                    "type": "GeodeticReferenceFrame"
+                },
+                "id": {
+                    "authority": "OGC",
+                    "code": "Auto42001",
+                    "version": "1.3"
+                },
+                "name": "AUTO 42001 (Universal Transverse Mercator)",
+                "type": "GeodeticCRS"
+            },
+            "step": 8.3333333333e-05,
+            "type": "spatial"
+        },
+        "y": {
+            "axis": "y",
+            "extent": [
+                -56,
+                72
+            ],
+            "reference_system": {
+                "$schema": "https://proj.org/schemas/v0.4/projjson.schema.json",
+                "area": "World",
+                "bbox": {
+                    "east_longitude": 180,
+                    "north_latitude": 90,
+                    "south_latitude": -90,
+                    "west_longitude": -180
+                },
+                "coordinate_system": {
+                    "axis": [
+                        {
+                            "abbreviation": "Lat",
+                            "direction": "north",
+                            "name": "Geodetic latitude",
+                            "unit": "degree"
+                        },
+                        {
+                            "abbreviation": "Lon",
+                            "direction": "east",
+                            "name": "Geodetic longitude",
+                            "unit": "degree"
+                        }
+                    ],
+                    "subtype": "ellipsoidal"
+                },
+                "datum": {
+                    "ellipsoid": {
+                        "inverse_flattening": 298.257223563,
+                        "name": "WGS 84",
+                        "semi_major_axis": 6378137
+                    },
+                    "name": "World Geodetic System 1984",
+                    "type": "GeodeticReferenceFrame"
+                },
+                "id": {
+                    "authority": "OGC",
+                    "code": "Auto42001",
+                    "version": "1.3"
+                },
+                "name": "AUTO 42001 (Universal Transverse Mercator)",
+                "type": "GeodeticCRS"
+            },
+            "step": 8.3333333333e-05,
+            "type": "spatial"
+        }
+    },
+    "summaries": {
+        "federation:backends": [
+            "vito",
+            "sentinelhub"
+        ],
+        "provider:backend": [
+            "vito",
+            "sentinelhub"
+        ]
+    },
+    "assets": {
+        "thumbnail": {
+            "href": "https://collections.eurodatacube.com/global-human-settlement-layer-ghs-built-s2/global-human-settlement-layer-ghs-built-s2.png",
+            "roles": [
+                "thumbnail"
+            ],
+            "title": "Thumbnail",
+            "type": "image/png"
+        }
+    }
+}

@@ -1,0 +1,50 @@
+{
+  "type": "Collection",
+  "id": "EO:EUM:DAT:MSG:CON",
+  "stac_version": "1.0.0",
+  "description": "The Convection RGB combines the brightness temperature difference (BTD)\n          between the WV6.2 and WV7.3 channels (on red), the BTD between the IR3.9 and IR10.8\n          channels (on green) and the reflectance difference between the NIR1.6 and the VIS0.6\n          channels (on blue). Severe convective storms appear bright yellow in this color scheme\n          because of the near zero BTD WV6.2-WV7.3 of overshooting Cb clouds (high red). The strong\n          updrafts in these clouds produce small ice particles at cloud tops due to homogeneous\n          freezing of cloud drops, resulting with large BTD IR3.9-IR10.8 (high green). Finally,\n          large negative values of NIR1.6-VIS0.6 because of the large absorption at NIR1.6 by ice\n          particles keeps the blue very low. Please note that small ice crystals of Cirrus clouds\n          should not be confused with vigorous convection. Inferred small ice crystals that are not\n          associated with anvils of Cb clouds must form by elevated strong updrafts, such as in high\n          altitude orographic wave clouds.",
+  "links": [
+    {
+      "rel": "hosts",
+      "href": "https://navigator.eumetsat.int/product/EO:EUM:DAT:MSG:CON",
+      "type": "http",
+      "title": "EUMETSAT Product Navigator (Metadata)"
+    }
+  ],
+  "title": "Convection RGB - MSG - 0 degree",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -79.0,
+          -81.0,
+          79.0,
+          81.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          null,
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Atmosphere",
+    "Level 1 Data"
+  ],
+  "providers": [
+    {
+      "name": "European Organisation for the Exploitation of Meteorological Satellites (EUMETSAT)",
+      "description": "EUMETSAT Data store",
+      "roles": [
+        "host"
+      ],
+      "url": "https://data.eumetsat.int/"
+    }
+  ]
+}

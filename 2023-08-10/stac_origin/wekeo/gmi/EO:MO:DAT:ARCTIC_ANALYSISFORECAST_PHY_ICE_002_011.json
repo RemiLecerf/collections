@@ -1,0 +1,60 @@
+{
+  "type": "Collection",
+  "id": "EO:MO:DAT:ARCTIC_ANALYSISFORECAST_PHY_ICE_002_011",
+  "stac_version": "1.0.0",
+  "description": "'''Short Description:'''\n\nThe Arctic Sea Ice Analysis and Forecast system uses the neXtSIM stand-alone sea ice model running the Brittle-Bingham-Maxwell sea ice rheology on an adaptive triangular mesh of 10 km average cell length. The model domain covers the whole Arctic domain, including the Canadian Archipelago, the Baffin and Hudson Bays. neXtSIM is forced with surface atmosphere forcings from the ECMWF (European Centre for Medium-Range Weather Forecasts) and ocean forcings from TOPAZ5, the ARC MFC PHY NRT system (002_001a). neXtSIM runs daily, assimilating OSI-SAF sea ice concentrations (both SSMI and AMSR2) from the SI TAC combined with manual ice charts and providing 7-day forecasts. The output variables are the ice concentrations, ice thickness, ice drift velocity, snow depths, sea ice type, ridge area fractoin and albedo, provided at hourly frequency. The adaptive Lagrangian mesh is interpolated for convenience on a 3 km resolution regular grid in a Polar Stereographic projection. The projection is identical to other ARC MFC products.\n\n'''DOI (product) :''' \n\nhttps://doi.org/10.48670/moi-00004",
+  "links": [],
+  "title": "Arctic Ocean Sea Ice Analysis and Forecast",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2019-11-01T00:00:00Z",
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "target-application#seaiceservices",
+    "Oceanographic geographical features",
+    "numerical-model",
+    "sea_ice_area_fraction",
+    "sea_ice_y_velocity",
+    "sea_ice_thickness",
+    "sea_ice_x_velocity",
+    "surface_snow_thickness",
+    "sea_ice_classification",
+    "sea_ice_albedo",
+    "forecast",
+    "near-real-time",
+    "marine-safety",
+    "weather-climate-and-seasonal-forecasting",
+    "marine-resources",
+    "coastal-marine-environment",
+    "arctic-ocean",
+    "Level 4",
+    "Sea Ice Concentration and/or Thickness"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+    "slug": "flood-risk-indicators-for-european-cities-from-1989-to-2018",
+    "name": "sis-european-risk-flood-indicators",
+    "id": "eu.copernicus.climate.sis-european-risk-flood-indicators",
+    "type": "dataset",
+    "rich_abstract": "<div class='abstract-text'>\n         <hr />\n<p>The dataset presents indicators to evaluate the spatial distribution of flood risk in terms of hazards and direct damages. It is provided as a high-resolution product focused on 20 European cities that were identified as vulnerable to urban pluvial flooding by experts and practitioners from government agencies and Civil Protection. The dataset combines a high-resolution, probabilistic, description of extreme precipitation, exposure datasets and damage/vulnerability models into a comprehensive pluvial flood risk assessment for cities across Europe for the current climate. It allows city stakeholders to exploit flood risk analysis over the city.</p>\n<p>The dataset is derived from data available on the Climate Data Store and the Copernicus Land Monitoring Service (CLMS). The former includes ERA5 reanalysis data, dynamically downscaled to 2km x 2km grid with the regional climate model COSMO-CLM and accounting for urban parameterization in order to reach the spatial and temporal resolution suitable for pluvial flood analysis at a city scale. This downscaled product is used for deriving hourly precipitation input at prescribed recurrence intervals that, in combination with supporting digital elevation models (DEM) from the CLMS, is used to feed hazard and damage models.</p>\n<p>This dataset was produced on behalf of the Copernicus Climate Change Service.</p>\n         \n         \n            <p></p>\n            <table class=\"abstract-description abstract-table\">\n            <tr><th colspan=\"2\">DATA DESCRIPTION</th>\n            \n<tr><th>Data type</th><td>Gridded</td></tr>\n<tr><th>Horizontal coverage</th><td>Europe</td></tr>\n<tr><th>Horizontal resolution</th><td><p>EU-DEM: 25m x 25m</p>\n<p>Lidar-derived: 1m x 1m &amp; 2m x 2m (depending on city)</p></td></tr>\n<tr><th>Vertical coverage</th><td>Surface</td></tr>\n<tr><th>Vertical resolution</th><td>Single level</td></tr>\n<tr><th>Temporal coverage</th><td>1989-2018</td></tr>\n<tr><th>Temporal resolution</th><td>30-years</td></tr>\n<tr><th>File format</th><td>NetCDF-4</td></tr>\n<tr><th>Conventions</th><td>Climate and Forecast (CF) Metadata Convention v1.6</td></tr>\n<tr><th>Versions</th><td>1.0</td></tr>\n<tr><th>Update frequency</th><td>No updates expected</td></tr>\n</table>\n\n    <p></p>\n    <table class=\"abstract-variables abstract-table\">\n    <tr><th colspan=\"3\">MAIN VARIABLES</th>\n    \n\n    <tr><th class='variables-name'>Name</th><th class='variables-units'>Units</th><th class='variables-description'>Description</th></tr>\n    \n<tr><td class='variables-name'>Expected damage</td><td class='variables-units'>\u20ac/m<sup>2</sup></td><td class='variables-description'>Direct damage on existing assets due to pluvial flooding induced by hourly precipitation events for fixed return periods computed over 30-years (1989-2018) for the 20 selected European cities. The computed return periods include: 5, 10, 25, 50, 100-years.</td></tr>\n<tr><td class='variables-name'>Urban depression</td><td class='variables-units'>Dimensionless</td><td class='variables-description'>Topographic depressions which are defined as areas without an outlet and often referred to as sinks or pits.</td></tr>\n<tr><td class='variables-name'>Water depth</td><td class='variables-units'>m</td><td class='variables-description'>Pluvial flood water depth induced by hourly precipitation events for fixed return periods computed over 30-years (1989-2018) for the 20 selected European cities. The computed return periods include: 5, 10, 25, 50, 100-years.</td></tr>\n<tr><td class='variables-name'>Water mask</td><td class='variables-units'>Dimensionless</td><td class='variables-description'>Mask of flooded areas. The values are between 0 (not affected) and 1 (affected) and are function of hourly precipitation events for fixed return periods computed over 30-years (1989-2018) for the 20 selected European cities. The computed return periods include: 5, 10, 25, 50, 100-years.</td></tr>\n</table>\n    </div>",
+    "terms": [
+        "licence-to-use-copernicus-products"
+    ],
+    "constraints": [
+        {
+            "city": [
+                "amadora",
+                "amersfoort",
+                "antwerp",
+                "athens",
+                "bilbao",
+                "birmingham",
+                "brussels",
+                "bucharest",
+                "budapest",
+                "frankfurt_am_main",
+                "koln",
+                "london",
+                "milan",
+                "pamplona",
+                "paris",
+                "prague",
+                "riga",
+                "rimini",
+                "stockholm",
+                "vienna"
+            ],
+            "dem": [
+                "eu_dem"
+            ],
+            "variable": [
+                "urban_depression"
+            ]
+        },
+        {
+            "city": [
+                "amadora",
+                "amersfoort",
+                "antwerp",
+                "athens",
+                "bilbao",
+                "birmingham",
+                "brussels",
+                "bucharest",
+                "budapest",
+                "frankfurt_am_main",
+                "koln",
+                "london",
+                "milan",
+                "pamplona",
+                "paris",
+                "prague",
+                "riga",
+                "rimini",
+                "stockholm",
+                "vienna"
+            ],
+            "dem": [
+                "eu_dem"
+            ],
+            "return_period": [
+                "10-yrs",
+                "100-yrs",
+                "25-yrs",
+                "5-yrs",
+                "50-yrs"
+            ],
+            "variable": [
+                "expected_damage",
+                "water_depth",
+                "water_mask"
+            ]
+        },
+        {
+            "city": [
+                "koln",
+                "milan",
+                "pamplona"
+            ],
+            "dem": [
+                "lidar_derived"
+            ],
+            "variable": [
+                "urban_depression"
+            ]
+        },
+        {
+            "city": [
+                "koln",
+                "milan",
+                "pamplona"
+            ],
+            "dem": [
+                "lidar_derived"
+            ],
+            "return_period": [
+                "10-yrs",
+                "100-yrs",
+                "25-yrs",
+                "5-yrs",
+                "50-yrs"
+            ],
+            "variable": [
+                "expected_damage",
+                "water_depth",
+                "water_mask"
+            ]
+        }
+    ]
+}

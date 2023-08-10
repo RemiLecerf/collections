@@ -1,0 +1,240 @@
+{
+    "type": "Collection",
+    "version": "V4",
+    "stac_version": "1.0.0",
+    "stac_extensions": [
+        "collection-assets"
+    ],
+    "id": "NASA/ORNL/DAYMET_V4",
+    "title": "Daymet V4: Daily Surface Weather and Climatological Summaries",
+    "description": "Daymet V4 provides gridded estimates of daily weather parameters for\nContinental North America, Hawaii, and Puerto Rico (Data for Puerto Rico is available starting\nin 1950). It is derived from selected meteorological station data and various supporting data\nsources.\n\nCompared to the previous version, Daymet V4 provides effective solutions to known issues and\nfurther considers improvements to what were believed to be input weather station biases.\nImprovements include:\n\n- Reductions in the timing bias of input reporting weather station measurements.\n\n- Improvement to the three-dimensional regression model techniques in the core algorithm.\n\n- A novel approach to handling high elevation temperature measurement biases.\n\nDocumentation:\n\n* [ORNL DAAC Dataset Documentation](https://daac.ornl.gov/DAYMET/guides/Daymet_Daily_V4.html)\n\n* [Dataset Documentation](https://daac.ornl.gov/daacdata/daymet/Daymet_Daily_V4/comp/Daymet_Daily_V4.pdf)\n\n* [The THREDDS location for this Collection](https://thredds.daac.ornl.gov/thredds/catalog/ornldaac/1840/catalog.html)\n",
+    "keywords": [
+        "climate",
+        "daily",
+        "daylight",
+        "daymet",
+        "flux",
+        "geophysical",
+        "nasa",
+        "ornl",
+        "precipitation",
+        "radiation",
+        "snow",
+        "temperature",
+        "vapor",
+        "water",
+        "weather"
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -150.8,
+                    1.6,
+                    -1.1,
+                    84
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1980-01-01T00:00:00Z",
+                    "2021-12-31T00:00:00"
+                ]
+            ]
+        }
+    },
+    "providers": [
+        {
+            "name": "NASA ORNL DAAC at Oak Ridge National Laboratory",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://doi.org/10.3334/ORNLDAAC/1840"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/NASA_ORNL_DAYMET_V4"
+        }
+    ],
+    "license": "proprietary",
+    "links": [
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections/NASA/ORNL/DAYMET_V4",
+            "rel": "self",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections",
+            "rel": "parent",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/",
+            "rel": "root",
+            "type": "application/json"
+        },
+        {
+            "code": "JavaScript",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NASA_ORNL_DAYMET_V4",
+            "rel": "related",
+            "title": "Run the example for NASA/ORNL/DAYMET_V4 in the Earth Engine Code Editor",
+            "type": "text/html"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/images/NASA/ORNL/NASA_ORNL_DAYMET_V4_sample.png",
+            "rel": "preview",
+            "type": "image/png"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/NASA_ORNL_DAYMET_V4#terms-of-use",
+            "rel": "license",
+            "type": "text/html"
+        },
+        {
+            "href": "https://doi.org/10.3334/ORNLDAAC/1840",
+            "rel": "cite-as"
+        }
+    ],
+    "cube:dimensions": {
+        "x": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                -150.8,
+                -1.1
+            ]
+        },
+        "y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                1.6,
+                84
+            ]
+        },
+        "t": {
+            "type": "temporal",
+            "extent": [
+                "1980-01-01T00:00:00Z",
+                "2021-12-31T00:00:00"
+            ]
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "dayl",
+                "prcp",
+                "srad",
+                "swe",
+                "tmax",
+                "tmin",
+                "vp"
+            ]
+        }
+    },
+    "summaries": {
+        "dayl": {
+            "gee:estimated_range": true,
+            "maximum": 86400
+        },
+        "eo:bands": [
+            {
+                "description": "Duration of the daylight period. Based on the period\nof the day during which the sun is above a hypothetical flat horizon.\n",
+                "gee:units": "seconds",
+                "name": "dayl"
+            },
+            {
+                "description": "Daily total precipitation, sum of all forms converted to\nwater-equivalent.",
+                "gee:units": "mm",
+                "name": "prcp"
+            },
+            {
+                "description": "Incident shortwave radiation flux density, taken as an average\nover the daylight period of the day.",
+                "gee:units": "W/m^2",
+                "name": "srad"
+            },
+            {
+                "description": "Snow water equivalent, the amount of water contained within\nthe snowpack.",
+                "gee:units": "kg/m^2",
+                "name": "swe"
+            },
+            {
+                "description": "Daily maximum 2-meter air temperature.",
+                "gee:units": "\u00b0C",
+                "name": "tmax"
+            },
+            {
+                "description": "Daily minimum 2-meter air temperature.",
+                "gee:units": "\u00b0C",
+                "name": "tmin"
+            },
+            {
+                "description": "Daily average partial pressure of water vapor.",
+                "gee:units": "Pa",
+                "name": "vp"
+            }
+        ],
+        "gsd": [
+            1000
+        ],
+        "prcp": {
+            "gee:estimated_range": true,
+            "maximum": 544
+        },
+        "srad": {
+            "gee:estimated_range": true,
+            "maximum": 1051
+        },
+        "swe": {
+            "gee:estimated_range": true,
+            "maximum": 13931
+        },
+        "tmax": {
+            "gee:estimated_range": true,
+            "maximum": 60,
+            "minimum": -60
+        },
+        "tmin": {
+            "gee:estimated_range": true,
+            "maximum": 42,
+            "minimum": -60
+        },
+        "vp": {
+            "gee:estimated_range": true,
+            "maximum": 8230
+        }
+    },
+    "assets": {
+        "preview_4": {
+            "href": "https://developers.google.com/earth-engine/datasets/images/NASA/ORNL/NASA_ORNL_DAYMET_V4_sample.png",
+            "type": "image/png",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    },
+    "sci:citation": "Thornton, M.M., R. Shrestha, Y. Wei, P.E. Thornton, S. Kao, and B.E. Wilson. {YEAR}.\nDaymet: Daily Surface Weather Data on a 1-km Grid for North America, Version 4. ORNL DAAC, Oak\nRidge, Tennessee, USA\n",
+    "sci:doi": "10.3334/ORNLDAAC/1840",
+    "sci:publications": [
+        {
+            "citation": "Other Citation Details - Thornton, M.M., R. Shrestha, Y. Wei, P.E. Thornton, S. Kao, and B.E. Wilson. 2020.\nDaymet: Daily Surface Weather Data on a 1-km Grid for North America, Version 4. ORNL DAAC, Oak Ridge, Tennessee, USA.\n[doi:10.3334/ORNLDAAC/1840](https://doi.org/10.3334/ORNLDAAC/1840)\n",
+            "doi": "10.3334/ORNLDAAC/1840"
+        }
+    ],
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "day"
+    },
+    "gee:provider_ids": [
+        "C2031536952-ORNL_CLOUD"
+    ],
+    "gee:terms_of_use": "This dataset is in the public domain and is available\nwithout restriction on use and distribution. See [NASA's\nEarth Science Data & Information Policy](https://science.nasa.gov/earth-science/earth-science-data/data-information-policy)\nfor additional information.\n",
+    "gee:type": "image_collection"
+}

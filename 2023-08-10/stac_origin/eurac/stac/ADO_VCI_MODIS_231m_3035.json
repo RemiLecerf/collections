@@ -1,0 +1,124 @@
+{
+    "type": "Collection",
+    "version": "v1",
+    "stac_version": "0.9.0",
+    "stac_extensions": [
+        "datacube"
+    ],
+    "id": "ADO_VCI_MODIS_231m_3035",
+    "title": "Vegetation Condition Index - 231 m 8 days",
+    "description": "The Vegetation Condition Index (VCI) is based on the Normalized Difference Vegetation Index (NDVI) derived from MODIS satellite data. The NDVI is based on 8 day maximum value composite MOD09Q1 (v006) reflectance products. The spatial resolution is 231 m. The NDVI is masked to the highest quality standards using the provided quality layers. Missing pixel values in the time series are linearly interpolated. Non-vegetated areas are masked using the most recent Corine Land Cover product version for the according year. The final product is regridded to the LAEA Projection (EPSG:3035). The VCI is calculated using the formula VCIi = (NDVIi - NDVImin,i)/(NDVImax,i - NDVImin,i) * 100. The VCI expresses anomalies of the NDVI. The data is provided as 8 day measures. The time series is starting from 2001. The VCI values range from 0-100, whereas high values correspond to healthy vegetation and low values indicate stressed vegetation.",
+    "keywords": [
+        "vegetation condition index",
+        "vci",
+        "modis",
+        "ADO project",
+        "ADO"
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    3.99537296130427,
+                    42.87349365119738,
+                    17.523924303829347,
+                    50.32636203215727
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2001-01-01T00:00:00Z",
+                    "2022-08-29T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "providers": [
+        {
+            "name": "Eurac EO WCS",
+            "url": "http://www.eurac.edu",
+            "roles": [
+                "Host"
+            ]
+        },
+        {
+            "name": "Eurac Research",
+            "url": "http://www.eurac.edu",
+            "roles": [
+                "Processor"
+            ]
+        },
+        {
+            "name": "NASA",
+            "url": "https://modis.gsfc.nasa.gov/",
+            "roles": [
+                "Producer"
+            ]
+        }
+    ],
+    "license": "CC BY 4.0",
+    "links": [
+        {
+            "rel": "licence",
+            "href": "https://creativecommons.org/licenses/by/4.0/",
+            "type": "text/html",
+            "title": "License Link"
+        }
+    ],
+    "cube:dimensions": {
+        "DATE": {
+            "type": "temporal",
+            "extent": [
+                "2001-01-01T00:00:00.000Z",
+                "2022-08-29T00:00:00.000Z"
+            ],
+            "step": "P8D"
+        },
+        "X": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                3.99537296130427,
+                17.523924303829347
+            ],
+            "reference_system": 3035
+        },
+        "Y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                42.87349365119738,
+                50.32636203215727
+            ],
+            "reference_system": 3035
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "8d_vci"
+            ]
+        }
+    },
+    "summaries": {
+        "constellation": [
+            "Terra"
+        ],
+        "platform": [
+            "Terra"
+        ],
+        "rows": 3606,
+        "columns": 4430,
+        "instruments": [
+            "MODIS"
+        ],
+        "eo:bands": [
+            {
+                "name": "8d_vci"
+            }
+        ]
+    },
+    "sci:citation": "Michele Meroni, Dominique Fasbender, Felix Rembold, Clement Atzberger, Anja Klisch: Near real-time vegetation anomaly detection with MODIS NDVI: Timeliness vs. accuracy and effect of anomaly computation options, Remote Sensing of Environment, Volume 221, 2019, Pages 508-521, ISSN 0034-4257, https://doi.org/10.1016/j.rse.2018.11.041, (https://www.sciencedirect.com/science/article/pii/S0034425718305509)",
+    "engine": "WCPS"
+}

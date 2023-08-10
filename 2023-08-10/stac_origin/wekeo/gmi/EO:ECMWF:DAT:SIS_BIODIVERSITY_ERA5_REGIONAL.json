@@ -1,0 +1,68 @@
+{
+  "type": "Collection",
+  "id": "EO:ECMWF:DAT:SIS_BIODIVERSITY_ERA5_REGIONAL",
+  "stac_version": "1.0.0",
+  "description": "This dataset provides a historical reconstruction of bioclimatic indicators at 1 x 1 km resolution for Europe, Northern Brazil and Central Africa. These bioclimate indicators describe how the climate affects ecosystems, the services they deliver, and nature’s biodiversity. They are specifically relevant for applications within the biodiversity and ecosystem services community.\n\nThe 76 indicators cover bioclimatic variables for the land environment, characterising surface energy, drought, soil moisture and the (near-) surface climate including wind as well as Essential Climate Variables (ECV) relevant to the biodiversity community and are based on hourly or monthly ERA5 (ERA5-Land) reanalysis data. The indicators have been downscaled to 1 x 1 km resolution using a statistical downscaling methodology that takes into account the relationship between orography and a climate state variable.\n\nThe bioclimatic indicators are widely used within the biodiversity community and have been chosen based on user requirements and consultation with stakeholders, in order to facilitate the direct use of climate information in screening analyses or in diverse downstream applications. The temporal resolution differs depending on the indicator, varying between; monthly, annual, and multi-annual averages.\n\nThis dataset was produced on behalf of the Copernicus Climate Change Service.",
+  "links": [
+    {
+      "rel": "hosts",
+      "href": "https://datastore.copernicus-climate.eu/documents/sis-biodiversity/C3S_D427.3.1.1_Product_user_guide-Bioclimatic_indicators_ERA5-1km_v2.3.pdf",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Product user guide (PDF)"
+    },
+    {
+      "rel": "hosts",
+      "href": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.fe90a594",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Climate Data Store catalogue"
+    },
+    {
+      "rel": "hosts",
+      "href": "https://datastore.copernicus-climate.eu/documents/sis-biodiversity/C3S_D427.3.1.1_Product_user_guide-Bioclimatic_indicators_ERA5-1km_v2.3.pdf",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Product user guide (PDF)"
+    }
+  ],
+  "title": "Downscaled bioclimatic indicators for selected regions from 1979 to 2018 derived from reanalysis",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1979-01-01T00:00:00Z",
+          "2018-12-31T23:59:59Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Habitats and biotopes",
+    "Sector: Biodiversity",
+    "Product type: Reanalysis",
+    "Product type: Climate indicies",
+    "Spatial coverage: Global",
+    "Variable domain: Land (biosphere)",
+    "Temporal coverage: Past",
+    "Provider: Copernicus C3S"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

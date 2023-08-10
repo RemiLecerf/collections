@@ -1,0 +1,130 @@
+{
+    "type": "Collection",
+    "version": "v1",
+    "stac_version": "0.9.0",
+    "stac_extensions": [
+        "datacube"
+    ],
+    "id": "wms_test_true_full",
+    "title": "WMS title",
+    "description": "SNOW map derived from daily MODIS observations (Aqua and Terra) for the entire Alps arc. The input data are the atmospherically-corrected reflectances of MODIS MOD09GQ, MOD09GA for tile h19v04 and h18v04. The map has two bands: - SNOW MAP: Snow cover classification map with four classes [0 = NO DATA - missing or corrupt data of one or more input bands; 1 = SNOW - pixel covered by snow; 2 = NO_SNOW - pixel not covered by snow; 3 = CLOUD - pixel covered by clouds], QUALITY FLAG: Snow cover quality map [NO DATA - missing or corrupt data of one or more input bands; QUALITY_INDEX - higher values indicate higher likeliness of correct classification].",
+    "keywords": [
+        "SNOW",
+        "MODIS"
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    4.216446958373531,
+                    42.817152675995985,
+                    18.99055634355496,
+                    48.601848359993454
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2020-12-31T12:00:00Z",
+                    "2021-02-27T12:00:00Z"
+                ]
+            ]
+        }
+    },
+    "providers": [
+        {
+            "name": "Eurac EO WCS",
+            "url": "http://www.eurac.edu",
+            "roles": [
+                "Host"
+            ]
+        },
+        {
+            "name": "National Aeronautics and Space Administration (NASA)",
+            "url": "https://www.nasa.gov/",
+            "roles": [
+                "Producer"
+            ]
+        },
+        {
+            "name": "Alexander Jacob",
+            "url": "http://www.eurac.edu/it/research/mountains/remsen/staff/Pages/staffdetails.aspx?persId=37007",
+            "roles": [
+                "Processor"
+            ]
+        },
+        {
+            "name": "Bartolomeo Ventura",
+            "url": "http://www.eurac.edu/it/aboutus/people/pages/staffdetails.aspx?persId=15903",
+            "roles": [
+                "Processor"
+            ]
+        }
+    ],
+    "license": "CC-BY-4.0",
+    "links": [
+        {
+            "rel": "licence",
+            "href": "https://creativecommons.org/licenses/by/4.0/",
+            "type": "text/html",
+            "title": "License Link"
+        }
+    ],
+    "cube:dimensions": {
+        "DATE": {
+            "type": "temporal",
+            "extent": [
+                "2020-12-31T12:00:00.000Z",
+                "2021-02-27T12:00:00.000Z"
+            ]
+        },
+        "X": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                4.216446958373531,
+                18.99055634355496
+            ],
+            "reference_system": 3035
+        },
+        "Y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                42.817152675995985,
+                48.601848359993454
+            ],
+            "reference_system": 3035
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "Snow cover classification map",
+                "Snow cover quality map"
+            ]
+        }
+    },
+    "summaries": {
+        "constellation": [
+            "Aqua, Terra"
+        ],
+        "platform": [
+            "Aqua, Terra"
+        ],
+        "rows": 2867,
+        "columns": 4901,
+        "instruments": [
+            "MODIS"
+        ],
+        "eo:bands": [
+            {
+                "name": "Snow cover classification map"
+            },
+            {
+                "name": "Snow cover quality map"
+            }
+        ]
+    },
+    "engine": "WCPS"
+}

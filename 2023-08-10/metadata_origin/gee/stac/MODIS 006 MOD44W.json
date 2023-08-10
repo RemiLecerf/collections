@@ -1,0 +1,234 @@
+{
+    "description": "The MOD44W V6 land/water mask 250m product is derived using a\ndecision tree classifier trained with MODIS data and validated with the\nMOD44W V5 product. A series of masks are applied to address known issues\ncaused by terrain shadow, burn scars, cloudiness, or ice cover in oceans.\n",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2000-01-01T00:00:00Z",
+                    "2015-01-01T00:00:00"
+                ]
+            ]
+        }
+    },
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "year"
+    },
+    "gee:terms_of_use": "MODIS data and products acquired through the LP DAAC\nhave no restrictions on subsequent use, sale, or redistribution.\n",
+    "gee:type": "image_collection",
+    "id": "MODIS/006/MOD44W",
+    "keywords": [
+        "geophysical",
+        "mod44w",
+        "modis",
+        "nasa",
+        "srtm",
+        "usgs",
+        "water_mask"
+    ],
+    "license": "proprietary",
+    "links": [
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections/MODIS/006/MOD44W",
+            "rel": "self",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections",
+            "rel": "parent",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/",
+            "rel": "root",
+            "type": "application/json"
+        },
+        {
+            "code": "JavaScript",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/MODIS/MODIS_006_MOD44W",
+            "rel": "related",
+            "title": "Run the example for MODIS/006/MOD44W in the Earth Engine Code Editor",
+            "type": "text/html"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/images/MODIS/MODIS_006_MOD44W_sample.png",
+            "rel": "preview",
+            "type": "image/png"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_006_MOD44W#terms-of-use",
+            "rel": "license",
+            "type": "text/html"
+        },
+        {
+            "href": "https://doi.org/10.5067/MODIS/MOD44W.006",
+            "rel": "cite-as"
+        }
+    ],
+    "providers": [
+        {
+            "name": "NASA LP DAAC at the USGS EROS Center",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://doi.org/10.5067/MODIS/MOD44W.006"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/MODIS_006_MOD44W"
+        }
+    ],
+    "sci:citation": "Please visit [LP DAAC 'Citing Our Data' page](https://lpdaac.usgs.gov/citing_our_data)\nfor information on citing LP DAAC datasets.\n",
+    "sci:doi": "10.5067/MODIS/MOD44W.006",
+    "stac_extensions": [
+        "collection-assets"
+    ],
+    "stac_version": "1.0.0",
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Land-water mask",
+                "gee:bitmask": {
+                    "bitmask_parts": [
+                        {
+                            "bit_count": 1,
+                            "description": "Land-water mask",
+                            "values": [
+                                {
+                                    "description": "Land"
+                                },
+                                {
+                                    "description": "Water",
+                                    "value": 1
+                                }
+                            ]
+                        }
+                    ],
+                    "total_bit_count": 1
+                },
+                "name": "water_mask"
+            },
+            {
+                "description": "Quality assurance (QA)",
+                "gee:bitmask": {
+                    "bitmask_parts": [
+                        {
+                            "bit_count": 4,
+                            "description": "Quality assurance (QA)",
+                            "values": [
+                                {
+                                    "description": "High confidence observation",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "Lower confidence water, but MOD44W V5 is water",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "Lower confidence land",
+                                    "value": 3
+                                },
+                                {
+                                    "description": "Ocean mask",
+                                    "value": 4
+                                },
+                                {
+                                    "description": "Ocean mask, but no water detected",
+                                    "value": 5
+                                },
+                                {
+                                    "description": "Burned area (MCD64A1)",
+                                    "value": 6
+                                },
+                                {
+                                    "description": "Urban or impervious surface",
+                                    "value": 7
+                                },
+                                {
+                                    "description": "No water detected, Version 5 MOD44W shows inland water",
+                                    "value": 8
+                                },
+                                {
+                                    "description": "No data (outside of projected area)",
+                                    "value": 10
+                                }
+                            ]
+                        }
+                    ],
+                    "total_bit_count": 4
+                },
+                "name": "water_mask_QA"
+            }
+        ],
+        "gsd": [
+            250
+        ],
+        "instruments": [
+            "MODIS",
+            "Shuttle Imaging Radar-C (SIR-C)"
+        ],
+        "platform": [
+            "Space Shuttle Endeavour",
+            "Terra"
+        ]
+    },
+    "title": "MOD44W.006 Terra Land Water Mask Derived From MODIS and SRTM Yearly Global 250m",
+    "type": "Collection",
+    "version": "V006",
+    "cube:dimensions": {
+        "x": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                -180,
+                180
+            ]
+        },
+        "y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                -90,
+                90
+            ]
+        },
+        "t": {
+            "type": "temporal",
+            "extent": [
+                "2000-01-01T00:00:00Z",
+                "2015-01-01T00:00:00"
+            ]
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "water_mask",
+                "water_mask_QA"
+            ]
+        }
+    },
+    "assets": {
+        "preview_4": {
+            "href": "https://developers.google.com/earth-engine/datasets/images/MODIS/MODIS_006_MOD44W_sample.png",
+            "type": "image/png",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    }
+}

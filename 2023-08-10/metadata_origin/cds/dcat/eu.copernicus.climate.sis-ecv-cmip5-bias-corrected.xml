@@ -1,0 +1,81 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dct="http://purl.org/dc/terms/" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/metadata/eu.copernicus.climate.sis-ecv-cmip5-bias-corrected">
+        <foaf:primaryTopic rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/resource/10.24381/cds.201321f6"/>
+        <dct:issued>2018-03-28</dct:issued>
+        <dct:modified>2018-03-28</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/srv/eng/xml.metadata.get?uuid=eu.copernicus.climate.sis-ecv-cmip5-bias-corrected">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://cds.climate.copernicus.eu:443//geonetwork?uuid=eu.copernicus.climate.sis-ecv-cmip5-bias-corrected">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://cds.climate.copernicus.eu:443//geonetwork/resource/10.24381/cds.201321f6">
+        <dct:identifier>10.24381/cds.201321f6</dct:identifier>
+        <dct:title>Essential climate variables for water sector applications derived from climate projections</dct:title>
+        <dct:abstract>This dataset contains 4 Essential Climate Variables (ECV) for the 18 bias adjusted Global Climate Models (GCM) from CMIP5: daily precipitation rate, and daily mean, maximum and minimum temperatures. 
+The data are bias adjusted using the Distribution Based Scaling (DBS) method  versus the global reference dataset HydroGFD2.0, both bias adjustment method and global reference dataset developed by the Swedish Meteorological and Hydrological Institute (SMHI).
+The DBS method is a parametric quantile-mapping variant. 
+This type of methods fit a statistical distribution to the cumulative distribution function and use those fitted distributions to conduct the quantile-mapping. 
+Here, we used a double-gamma distribution (i.e. separate gamma distributions for the bulk and the high tail) for precipitation and the normal distribution for all temperature variables. 
+Temperature corrections were done conditional on the wet/dry state of the corresponding precipitation time series.
+The seasonal variations in the biases were represented by monthly parameter windows for precipitation and a smoothed seasonal cycle for the temperature distribution parameters. 
+The smoothing was done using twelve harmonic components.
+There is some post-processing in place for the data set to be suitable for hydrological impact modeling. 
+Bias-adjustment of daily mean, maximum and minimum temperature using quantile mapping can in some cases lead to inconsistencies. 
+For instance, maximum (minimum) temperature could be lower (higher) than mean temperature. 
+If such inconsistencies occur, daily minimum and maximum temperatures are adjusted in such a way that the anomalies with respect to the daily mean temperature are in line with the climatological anomalies for the particular day in the seasonal cycle. 
+This means, for example, that an inconsistency occurring on June 25 will be adjusted using the climatological anomalies for June 25, estimated by a moving window. 
+Also, the adjustment is done conditional on the wet/dry state of the corresponding precipitation series. 
+The climatology of the anomalies was derived from the HydroGFD2.0 dataset.
+In addition, DBS’s limitations lead to some data not being bias-adjusted or values beyond physically plausible ranges.
+In those cases, DBS gives missing values as output. 
+Grid cells where the DBS method resulted in such missing values have been interpolated in time or space. 
+If interpolation was not possible, full time series from nearest grid cell was copied to relating grid point.
+
+Variables in the dataset/application are:
+Maximum 2m temperature, Mean 2m temperature, Minimum 2m temperature, Precipitation flux</dct:abstract>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/GEMET%20-%20INSPIRE%20themes%2C%20version%201.0/Atmospheric conditions"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Product type: Climate projections"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Spatial coverage: Global"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Variable domain: Atmosphere (surface)"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Temporal coverage: Past"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Temporal coverage: Future"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/Climate%20Data%20Store%20facets/Provider: Copernicus C3S"/>
+        <dcat:theme rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/thesaurus/iso/topicCategory/climatologyMeteorologyAtmosphere"/>
+        <foaf:thumbnail rdf:resource="https://datastore.copernicus-climate.eu/c3s/published-forms-v2/c3sprod/sis-ecv-cmip5-bias-corrected/overview.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((0 -89, 0 89, 360 89, 360 -89, 0 -89))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:temporal>2000-10-12
+          /
+          2018-10-18</dct:temporal>
+        <dct:publisher rdf:resource="https://cds.climate.copernicus.eu:443//geonetwork/organization/ECMWF"/>
+        <dct:accrualPeriodicity>asNeeded</dct:accrualPeriodicity>
+        <dct:language>eng</dct:language>
+        <dct:license>licence</dct:license>
+        <dct:license>https://cds.climate.copernicus.eu/api/v2/terms/static/20180314_Copernicus_License_V1.1.pdf</dct:license>
+        <dcat:distribution rdf:resource="https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.201321f6"/>
+        <dcat:distribution rdf:resource="https://doi.org/10.2166/nh.2010.004"/>
+        <dcat:distribution rdf:resource="https://doi.org/10.5194/hess-22-989-2018"/>
+        <dcat:dataQuality>EC Copernicus program</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+    

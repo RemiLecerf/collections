@@ -1,0 +1,78 @@
+{
+    "engine": "WCPS",
+    "stac_version": "0.9.0",
+    "stac_extensions": [
+        "datacube"
+    ],
+    "type": "Collection",
+    "id": "openEO_WUR_Usecase",
+    "title": "WUR Reference data",
+    "description": "openEO useCase Dataset for WUR",
+    "keywords": [
+        "No Keywords Available"
+    ],
+    "version": "v1",
+    "license": "No License Information Available",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -54.88857130684853,
+                    -3.5993700110221516,
+                    -54.70923936340399,
+                    -3.4175074981138347
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2017-01-01T00:00:00Z",
+                    "2019-12-29T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "cube:dimensions": {
+        "DATE": {
+            "type": "temporal",
+            "extent": [
+                "2017-01-01T00:00:00.000Z",
+                "2019-12-29T00:00:00.000Z"
+            ]
+        },
+        "E": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                -54.88857130684853,
+                -54.70923936340399
+            ],
+            "reference_system": 32721
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "VH"
+            ]
+        },
+        "N": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                -3.5993700110221516,
+                -3.4175074981138347
+            ],
+            "reference_system": 32721
+        }
+    },
+    "summaries": {
+        "rows": 2007,
+        "columns": 1998,
+        "eo:bands": [
+            {
+                "name": "VH"
+            }
+        ]
+    }
+}

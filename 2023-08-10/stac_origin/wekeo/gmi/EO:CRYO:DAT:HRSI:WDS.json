@@ -1,0 +1,58 @@
+{
+  "type": "Collection",
+  "id": "EO:CRYO:DAT:HRSI:WDS",
+  "stac_version": "1.0.0",
+  "description": "The Wet/Dry Snow (WDS) product is generated in near real-time for the entire EEA39 domain based on C-band SAR satellite data from the Sentinel-1 constellation (revisit time: 6 days with Sentinel-1A and Sentinel-1B) within the fractional snow cover on top of canopy (FSCTOC) derived from overlapping optical satellite data from the Sentinel-2 constellation (revisit time: 5 days with Sentinel-2A and Sentinel-2B). The product provides the snow state condition (wet / dry) for surfaces covered by snow (FSCTOC >= 90%) for non-forested land areas with a spatial resolution of 60 m x 60 m. Urban areas, forest and water bodies as well as clouds and cloud shadows from the S2 based FSCTOC product of the same date are masked.",
+  "links": [
+    {
+      "rel": "hosts",
+      "href": "https://land.copernicus.eu/pan-european/biophysical-parameters/high-resolution-snow-and-ice-monitoring/",
+      "type": "HTTPS",
+      "title": "Copernicus Land Monitoring Service"
+    }
+  ],
+  "title": "Copernicus High Resolution Snow and Ice Monitoring: Wet / Dry Snow 60m",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -26.0,
+          34.0,
+          44.0,
+          66.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          null,
+          null
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Land cover",
+    "snow",
+    "climate",
+    "seasonal variation",
+    "hydrology",
+    "environmental data",
+    "environmental monitoring",
+    "monitoring",
+    "remote sensing",
+    "HR-S&I"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}

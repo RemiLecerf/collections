@@ -1,0 +1,47 @@
+{
+  "type": "Collection",
+  "id": "eu.copernicus.climate.satellite-soil-moisture",
+  "stac_version": "1.0.0",
+  "description": "This dataset provides estimates of soil moisture over the globe from a large set of satellite sensors.\n It is based on the ESA Climate Change Initiative soil moisture version 03.3 and  represents the current state-of-the-art for satellite-based soil moisture climate data record production, in line with the “Systematic observation requirements for satellite-based products for climate” as defined by GCOS (Global Climate Observing System).\nData are on a regular latitude/longitude grid expectedly with gaps in space and time.\nWhen dealing with satellite data it is common to encounter references to Climate Data Records (CDR) and interim-CDR (ICDR). For this dataset, both the ICDR and CDR parts of each product were generated using the same software and algorithms. The CDR is intended to have sufficient length, consistency, and continuity to detect climate variability and change. The ICDR provides a short-delay access to current data where consistency with the CDR baseline is expected but was not extensively checked. The dataset contains the following products: \"active\", \"passive\" and \"combined\". The \"active\" and \"passive\" products were  created by using  scatterometer and radiometer soil moisture products, respectively. The \"combined\" product  results from a blend based on the two previous products.\nThis dataset is produced on behalf of the Copernicus Climate Change Service (C3S).\n\nVariables in the dataset/application are:\nSurface soil moisture, Volumetric soil moisture",
+  "links": [],
+  "title": "Soil moisture gridded data from 1978 to present",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          0.0,
+          -89.0,
+          360.0,
+          89.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "1978-01-01T00:00:00Z",
+          "2023-07-20T23:59:59Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Land cover",
+    "Product type: Satellite observations",
+    "Spatial coverage: Global",
+    "Variable domain: Land (hydrology)",
+    "Temporal coverage: Past",
+    "Provider: Copernicus C3S"
+  ],
+  "providers": [
+    {
+      "name": "Copernicus Climate Data Store",
+      "description": "Copernicus Climate Data Store - European Centre for Medium-Range Weather Forecasts (ECMWF)",
+      "roles": [
+        "host"
+      ],
+      "url": "https://cds.climate.copernicus.eu/"
+    }
+  ]
+}

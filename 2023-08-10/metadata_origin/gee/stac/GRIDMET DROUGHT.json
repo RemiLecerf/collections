@@ -1,0 +1,421 @@
+{
+    "description": "This dataset contains drought indices derived from the 4-km daily Gridded\nSurface Meteorological (GRIDMET) dataset. The drought indices provided include\nthe standardized precipitation index (SPI), the evaporative drought demand\nindex (EDDI), the standardized precipitation evapotranspiration index (SPEI),\nthe Palmer Drought Severity Index (PDSI) and Palmer Z Index (Z).\n\nSPI, EDDI, and SPEI are supplied on different time scales corresponding to the\ntime aggregation of precipitation, reference evapotranspiration, and\nprecipitation minus reference evapotranspiration, respectively. The time scales\ninclude 14 day, 30 day, 90 day, 180 day, 270 day, 1 year, 2 years and 5 years.\nThe standardization is done by using a non-parametric standardized probability\nbased method where plotting positions are used to obtain probabilities which\nare transformed to indices assuming an inverse-normal distribution. All data\nare standardized over a common time period of 1981-2016.\n\nPDSI and Z are calculated using a modified version of the Palmer formula which\nuses reference evapotranspiration and precipitation from GRIDMET, and a static\nsoil water holding capacity layer (top 1500mm) from STATSGO. Modifications to\nthe coefficients of the original Palmer formula are applied to calculate PDSI.\nThe baseline period for PDSI and Z calculations is 1979-2018.\n\nInterpretation of the drought indices in this dataset is different for PDSI and\nZ than for SPI, SPEI and EDDI. Utilizing the interpretation from the US Drought\nmonitor, values of these drought indices have the following meaning:\n\nPDSI and z:\n\n  * 5.0 or more (extremely wet)\n  * 4.0 to 4.99 (very wet)\n  * 3.0 to 3.99 (moderately wet),\n  * 2.0 to 2.99 (slightly wet)\n  * 1.0 to 1.99 (incipient wet spell)\n  * -0.99 to 0.99(near normal)\n  * -1.99 to -1.00 (incipient dry spell)\n  * -2.99 to -2.00 (mild drought)\n  * -3.99 to -3.00 (moderate drought)\n  * -4.99 to -4.00 (severe drought)\n  * -5.0 or less (extreme drought)\n\nSPI/SPEI/EDDI:\n\n  * 2.0 or more (extremely wet)\n  * 1.6 to 1.99 (very wet)\n  * 1.3 to 1.59 (moderately wet),\n  * 0.8 to 1.29 (slightly wet)\n  * 0.5 to 0.79 (incipient wet spell)\n  * -0.49 to 0.49(near normal),\n  * -0.79 to -0.5 (incipient dry spell)\n  * -1.29 to -0.8 (mild drought)\n  * -1.59 to -1.3 (moderate drought)\n  * -1.99 to -1.6 (severe drought)\n  * -2.0 or less (extreme drought).\n\nThis dataset contains provisional products that are replaced with\nupdated versions when the complete source data become available.\nProducts can be distinguished by the value of the 'status' property.\nAt first, assets are ingested with status='early'. After several\ndays, they are replaced by assets with status='provisional'.\nAfter about 2 months, they are replaced by the final assets with\nstatus='permanent'.\n",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -124.9,
+                    24.9,
+                    -66.8,
+                    49.6
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "1980-01-05T00:00:00Z",
+                    "2023-05-25T06:00:00"
+                ]
+            ]
+        }
+    },
+    "gee:interval": {
+        "interval": 5,
+        "type": "cadence",
+        "unit": "day"
+    },
+    "gee:terms_of_use": "This work (METDATA, by John Abatzoglou) is in the public\ndomain and is free of known copyright restrictions. Users should\nproperly cite the source used in the creation of any reports and\npublications resulting from the use of this dataset and note the\ndate when the data was acquired.\n",
+    "gee:type": "image_collection",
+    "id": "GRIDMET/DROUGHT",
+    "keywords": [
+        "climate",
+        "climatic_water_balance",
+        "conus",
+        "crop",
+        "drought",
+        "eddi",
+        "evapotranspiration",
+        "geophysical",
+        "gridmet",
+        "merced",
+        "metdata",
+        "palmer",
+        "pdsi",
+        "precipitation",
+        "spei",
+        "spi"
+    ],
+    "license": "proprietary",
+    "links": [
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections/GRIDMET/DROUGHT",
+            "rel": "self",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections",
+            "rel": "parent",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/",
+            "rel": "root",
+            "type": "application/json"
+        },
+        {
+            "code": "JavaScript",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/GRIDMET/GRIDMET_DROUGHT",
+            "rel": "related",
+            "title": "Run the example for GRIDMET/DROUGHT in the Earth Engine Code Editor",
+            "type": "text/html"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/images/GRIDMET/GRIDMET_DROUGHT_sample.png",
+            "rel": "preview",
+            "type": "image/png"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/GRIDMET_DROUGHT#terms-of-use",
+            "rel": "license",
+            "type": "text/html"
+        }
+    ],
+    "providers": [
+        {
+            "name": "University of California Merced",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "http://www.climatologylab.org/gridmet.html"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/GRIDMET_DROUGHT"
+        }
+    ],
+    "sci:citation": "Abatzoglou J. T., Development of gridded surface meteorological data for\necological applications and modelling, International Journal of\nClimatology. (2012)\n[doi:10.1002/joc.3413](https://doi.org/10.1002/joc.3413)\n",
+    "stac_extensions": [
+        "collection-assets"
+    ],
+    "stac_version": "1.0.0",
+    "summaries": {
+        "eddi14d": {
+            "gee:estimated_range": true,
+            "maximum": 6,
+            "minimum": -6
+        },
+        "eddi180d": {
+            "gee:estimated_range": true,
+            "maximum": 6,
+            "minimum": -6
+        },
+        "eddi1y": {
+            "gee:estimated_range": true,
+            "maximum": 6,
+            "minimum": -6
+        },
+        "eddi270d": {
+            "gee:estimated_range": true,
+            "maximum": 6,
+            "minimum": -6
+        },
+        "eddi2y": {
+            "gee:estimated_range": true,
+            "maximum": 6,
+            "minimum": -6
+        },
+        "eddi30d": {
+            "gee:estimated_range": true,
+            "maximum": 6,
+            "minimum": -6
+        },
+        "eddi5y": {
+            "gee:estimated_range": true,
+            "maximum": 6,
+            "minimum": -6
+        },
+        "eddi90d": {
+            "gee:estimated_range": true,
+            "maximum": 6,
+            "minimum": -6
+        },
+        "eo:bands": [
+            {
+                "description": "Standardized Precipitation Index (SPI) where precipitation was aggregated\nfor the last 14 days",
+                "name": "spi14d"
+            },
+            {
+                "description": "Standardized Precipitation Index (SPI) where precipitation was aggregated\nfor the last 30 days",
+                "name": "spi30d"
+            },
+            {
+                "description": "Standardized Precipitation Index (SPI) where precipitation was aggregated\nfor the last 90 days",
+                "name": "spi90d"
+            },
+            {
+                "description": "Standardized Precipitation Index (SPI) where precipitation was aggregated\nfor the last 180 days",
+                "name": "spi180d"
+            },
+            {
+                "description": "Standardized Precipitation Index (SPI) where precipitation was aggregated\nfor the last 270 days",
+                "name": "spi270d"
+            },
+            {
+                "description": "Standardized Precipitation Index (SPI) where precipitation was aggregated\nfor the last 1 year",
+                "name": "spi1y"
+            },
+            {
+                "description": "Standardized Precipitation Index (SPI) where precipitation was aggregated\nfor the last 2 years",
+                "name": "spi2y"
+            },
+            {
+                "description": "Standardized Precipitation Index (SPI) where precipitation was aggregated\nfor the last 5 years",
+                "name": "spi5y"
+            },
+            {
+                "description": "Evaporative Drought Demand Index (EDDI) where potential evapotranspiration\nwas aggregated for the last 14 days\n",
+                "name": "eddi14d"
+            },
+            {
+                "description": "Evaporative Drought Demand Index (EDDI) where potential evapotranspiration\nwas aggregated for the last 30 days\n",
+                "name": "eddi30d"
+            },
+            {
+                "description": "Evaporative Drought Demand Index (EDDI) where potential evapotranspiration\nwas aggregated for the last 90 days\n",
+                "name": "eddi90d"
+            },
+            {
+                "description": "Evaporative Drought Demand Index (EDDI) where potential evapotranspiration\nwas aggregated for the last 180 days\n",
+                "name": "eddi180d"
+            },
+            {
+                "description": "Evaporative Drought Demand Index (EDDI) where potential evapotranspiration\nwas aggregated for the last 270 days\n",
+                "name": "eddi270d"
+            },
+            {
+                "description": "Evaporative Drought Demand Index (EDDI) where potential evapotranspiration\nwas aggregated for the last 1 year\n",
+                "name": "eddi1y"
+            },
+            {
+                "description": "Evaporative Drought Demand Index (EDDI) where potential evapotranspiration\nwas aggregated for the last 2 years\n",
+                "name": "eddi2y"
+            },
+            {
+                "description": "Evaporative Drought Demand Index (EDDI) where potential evapotranspiration\nwas aggregated for the last 5 years\n",
+                "name": "eddi5y"
+            },
+            {
+                "description": "Standardized Precipitation Evapotranspiration Index (SPEI) where\nclimatic water balance was aggregated for the last 14 days\n",
+                "name": "spei14d"
+            },
+            {
+                "description": "Standardized Precipitation Evapotranspiration Index (SPEI) where\nclimatic water balance was aggregated for the last 30 days\n",
+                "name": "spei30d"
+            },
+            {
+                "description": "Standardized Precipitation Evapotranspiration Index (SPEI) where\nclimatic water balance was aggregated for the last 90 days\n",
+                "name": "spei90d"
+            },
+            {
+                "description": "Standardized Precipitation Evapotranspiration Index (SPEI) where\nclimatic water balance was aggregated for the last 180 days\n",
+                "name": "spei180d"
+            },
+            {
+                "description": "Standardized Precipitation Evapotranspiration Index (SPEI) where\nclimatic water balance was aggregated for the last 270 days\n",
+                "name": "spei270d"
+            },
+            {
+                "description": "Standardized Precipitation Evapotranspiration Index (SPEI) where\nclimatic water balance was aggregated for the last 1 year\n",
+                "name": "spei1y"
+            },
+            {
+                "description": "Standardized Precipitation Evapotranspiration Index (SPEI) where\nclimatic water balance was aggregated for the last 2 years\n",
+                "name": "spei2y"
+            },
+            {
+                "description": "Standardized Precipitation Evapotranspiration Index (SPEI) where\nclimatic water balance was aggregated for the last 5 years\n",
+                "name": "spei5y"
+            },
+            {
+                "description": "Palmer Drought Severity Index",
+                "name": "pdsi"
+            },
+            {
+                "description": "Palmer Z Index",
+                "name": "z"
+            }
+        ],
+        "gee:schema": [
+            {
+                "description": "'early', 'provisional', or 'permanent'",
+                "name": "status",
+                "type": "STRING"
+            }
+        ],
+        "gsd": [
+            4638.3
+        ],
+        "pdsi": {
+            "gee:estimated_range": true,
+            "maximum": 15,
+            "minimum": -15
+        },
+        "spei14d": {
+            "gee:estimated_range": true,
+            "maximum": 6,
+            "minimum": -6
+        },
+        "spei180d": {
+            "gee:estimated_range": true,
+            "maximum": 6,
+            "minimum": -6
+        },
+        "spei1y": {
+            "gee:estimated_range": true,
+            "maximum": 6,
+            "minimum": -6
+        },
+        "spei270d": {
+            "gee:estimated_range": true,
+            "maximum": 6,
+            "minimum": -6
+        },
+        "spei2y": {
+            "gee:estimated_range": true,
+            "maximum": 6,
+            "minimum": -6
+        },
+        "spei30d": {
+            "gee:estimated_range": true,
+            "maximum": 6,
+            "minimum": -6
+        },
+        "spei5y": {
+            "gee:estimated_range": true,
+            "maximum": 6,
+            "minimum": -6
+        },
+        "spei90d": {
+            "gee:estimated_range": true,
+            "maximum": 6,
+            "minimum": -6
+        },
+        "spi14d": {
+            "gee:estimated_range": true,
+            "maximum": 6,
+            "minimum": -6
+        },
+        "spi180d": {
+            "gee:estimated_range": true,
+            "maximum": 6,
+            "minimum": -6
+        },
+        "spi1y": {
+            "gee:estimated_range": true,
+            "maximum": 6,
+            "minimum": -6
+        },
+        "spi270d": {
+            "gee:estimated_range": true,
+            "maximum": 6,
+            "minimum": -6
+        },
+        "spi2y": {
+            "gee:estimated_range": true,
+            "maximum": 6,
+            "minimum": -6
+        },
+        "spi30d": {
+            "gee:estimated_range": true,
+            "maximum": 6,
+            "minimum": -6
+        },
+        "spi5y": {
+            "gee:estimated_range": true,
+            "maximum": 6,
+            "minimum": -6
+        },
+        "spi90d": {
+            "gee:estimated_range": true,
+            "maximum": 6,
+            "minimum": -6
+        },
+        "z": {
+            "gee:estimated_range": true,
+            "maximum": 15,
+            "minimum": -15
+        }
+    },
+    "title": "GRIDMET DROUGHT: CONUS Drought Indices",
+    "type": "Collection",
+    "cube:dimensions": {
+        "x": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                -124.9,
+                -66.8
+            ]
+        },
+        "y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                24.9,
+                49.6
+            ]
+        },
+        "t": {
+            "type": "temporal",
+            "extent": [
+                "1980-01-05T00:00:00Z",
+                "2023-05-25T06:00:00"
+            ]
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "spi14d",
+                "spi30d",
+                "spi90d",
+                "spi180d",
+                "spi270d",
+                "spi1y",
+                "spi2y",
+                "spi5y",
+                "eddi14d",
+                "eddi30d",
+                "eddi90d",
+                "eddi180d",
+                "eddi270d",
+                "eddi1y",
+                "eddi2y",
+                "eddi5y",
+                "spei14d",
+                "spei30d",
+                "spei90d",
+                "spei180d",
+                "spei270d",
+                "spei1y",
+                "spei2y",
+                "spei5y",
+                "pdsi",
+                "z"
+            ]
+        }
+    },
+    "assets": {
+        "preview_4": {
+            "href": "https://developers.google.com/earth-engine/datasets/images/GRIDMET/GRIDMET_DROUGHT_sample.png",
+            "type": "image/png",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    }
+}

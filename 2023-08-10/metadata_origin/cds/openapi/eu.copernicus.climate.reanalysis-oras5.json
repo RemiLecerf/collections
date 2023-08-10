@@ -1,0 +1,439 @@
+{
+    "slug": "oras5-global-ocean-reanalysis-monthly-data-from-1958-to-present",
+    "name": "reanalysis-oras5",
+    "id": "eu.copernicus.climate.reanalysis-oras5",
+    "type": "dataset",
+    "rich_abstract": "<div class='abstract-text'>\n         <p>This dataset provides global ocean and sea-ice reanalysis (ORAS5: Ocean Reanalysis System 5) monthly mean data prepared by the  European Centre for Medium-Range Weather Forecasts (ECMWF) OCEAN5 ocean analysis-reanalysis system. This system comprises 5 ensemble members from which one member is published in this catalogue entry.</p>\n<p>Reanalysis combines model data with observations from across the world into a globally complete and consistent dataset taking into account the laws of physics. The reanalysis provides information without temporal and spatial gaps, i.e. the data are continuous in time, and the assimilation system provides information on every model grid point independently of whether observations are available nearby or not.</p>\n<p>The OCEAN5 reanalysis system uses the Nucleus for European Modelling of the Ocean (NEMO) ocean model and the NEMOVAR ocean assimilation system. NEMOVAR uses the so-called 3D-Var FGAT (First Guess at Appropriate Time) assimilation technique, which assimilates sub-surface temperature, salinity, sea-ice concentration and sea-level anomalies.</p>\n<p>The ORAS5 data is forced by either global atmospheric reanalysis (for the consolidated product) or the ECMWF/IFS operational analysis (for the operational product) and is also constrained by observational data of sea surface temperature, sea surface salinity, sea-ice concentration, global-mean-sea-level trends and climatological variations of the ocean mass.</p>\n<p>The consolidated product (referred to as \"Consolidated\" in the download form) uses reanalysis atmospheric forcing (ERA-40 until 1978 and ERA-Interim from 1979 to 2014) and re-processed observations. The near real-time (referred to as \"Operational\" in the download form) ORAS5 product is available from 2015 onwards and is updated on a monthly basis 15 days behind real time. It uses ECMWF operational atmospheric forcing and near real time observations. The consolidated data benefits from atmospheric forcing consistency. The operational data benefits from near real-time latency.</p>\n<p>ORAS5 data are also available at the Copernicus Marine Environment Monitoring Service (CMEMS) and at the Integrated Climate Data Centre (ICDC), Hamburg University.  The present dataset, at the time of publication, provides more variables than the others and has regular updates with near real-time data. For the period from 2015 to the present, the operational ORAS5 data provided in the CDS is different from the dataset provided by CMEMS, because different atmospheric forcings and ocean observation data were used in the generation of the two products.</p>\n<p>The ORAS5 dataset is produced by ECMWF and funded by the Copernicus Climate Change Service (C3S).</p>\n         \n         \n            <p></p>\n            <table class=\"abstract-description abstract-table\">\n            <tr><th colspan=\"2\">DATA DESCRIPTION</th>\n            \n<tr><th>Data type</th><td>Gridded</td></tr>\n<tr><th>Projection</th><td>Tripolar model grid</td></tr>\n<tr><th>Horizontal coverage</th><td>Global</td></tr>\n<tr><th>Horizontal resolution</th><td>Approximately 0.25\u00b0 x 0.25\u00b0 (around 25 km in the tropics and 9 km in the Arctic)</td></tr>\n<tr><th>Vertical coverage</th><td><p>Depends on the variable:</p>\n<p>Single level: two-dimensional variables (2D)</p>\n<p>All levels: three-dimensional variables (3D) from 0m (sea level) to approximately 5500m depth</p></td></tr>\n<tr><th>Vertical resolution</th><td><p>Depends on the variable:</p>\n<p>Single level: 2D variables</p>\n<p>All levels: 75 ocean model levels for 3D variables</p></td></tr>\n<tr><th>Temporal coverage</th><td><p>From January 1958 to present without gaps</p>\n<p>Consolidated product: 1958 to 2014</p>\n<p>Operational product: 2015 to present</p></td></tr>\n<tr><th>Temporal resolution</th><td>Monthly</td></tr>\n<tr><th>File format</th><td>NetCDF4</td></tr>\n<tr><th>Versions</th><td>v0.1</td></tr>\n<tr><th>Update frequency</th><td><p>Depends on the product:</p>\n<p>Consolidated product: Possible future extension in time</p>\n<p>Operational product: New near real-time data added monthly on the 15<sup>th</sup> of the month</p></td></tr>\n</table>\n\n    <p></p>\n    <table class=\"abstract-variables abstract-table\">\n    <tr><th colspan=\"3\">MAIN VARIABLES</th>\n    \n\n    <tr><th class='variables-name'>Name</th><th class='variables-units'>Units</th><th class='variables-description'>Description</th></tr>\n    \n<tr><td class='variables-name'>Depth of 14\u00b0C isotherm</td><td class='variables-units'>m</td><td class='variables-description'>The depth below sea level of those locations in the sea where the temperature values are 14\u00b0C. This variable is a 2D field.</td></tr>\n<tr><td class='variables-name'>Depth of 17\u00b0C isotherm</td><td class='variables-units'>m</td><td class='variables-description'>The depth below sea level of those locations in the sea where the temperature values are 17\u00b0C. This variable is a 2D field.</td></tr>\n<tr><td class='variables-name'>Depth of 20\u00b0C isotherm</td><td class='variables-units'>m</td><td class='variables-description'>The depth below sea level of those locations in the sea where the temperature values are 20\u00b0C. This variable is a 2D field.</td></tr>\n<tr><td class='variables-name'>Depth of 26\u00b0C isotherm</td><td class='variables-units'>m</td><td class='variables-description'>The depth below sea level of those locations in the sea where the temperature values are 26\u00b0C. This variable is a 2D field.</td></tr>\n<tr><td class='variables-name'>Depth of 28\u00b0C isotherm</td><td class='variables-units'>m</td><td class='variables-description'>The depth below sea level of those locations in the sea where the temperature values are 28\u00b0C. This variable is a 2D field.</td></tr>\n<tr><td class='variables-name'>Meridional velocity</td><td class='variables-units'>m s<sup>-1</sup></td><td class='variables-description'>Horizontal velocity of a water parcel in the direction of y axis of the ocean model. The horizontal velocity is a vector quantity, which can be decomposed into zonal (along the model x axis) and meridional (along the model y axis) components. This variable is a 3D field.</td></tr>\n<tr><td class='variables-name'>Meridional wind stress</td><td class='variables-units'>N m<sup>-2</sup></td><td class='variables-description'>Horizontal shear stress exerted by the sea surface wind in the direction of the y axis of the ocean model. This variable is a 2D field.</td></tr>\n<tr><td class='variables-name'>Mixed layer depth 0.01</td><td class='variables-units'>m</td><td class='variables-description'>The depth of the ocean where the average sea water density exceeds the near surface density plus 0.01 kg/m3. This variable is a 2D field.</td></tr>\n<tr><td class='variables-name'>Mixed layer depth 0.03</td><td class='variables-units'>m</td><td class='variables-description'>The depth of the ocean where the average sea water density exceeds the near surface density plus 0.03 kg/m3. This variable is a 2D field.</td></tr>\n<tr><td class='variables-name'>Net downward heat flux</td><td class='variables-units'>W m<sup>-2</sup></td><td class='variables-description'>Surface downward energy flux into the ocean. It includes both solar and non-solar heat fluxes, and is positive (negative) if it points downwards (upwards) in the ocean. This variable is a 2D field.</td></tr>\n<tr><td class='variables-name'>Net upward water flux</td><td class='variables-units'>Kg m<sup>-2</sup> s<sup>-1</sup></td><td class='variables-description'>Surface upward ocean water flux. It includes net precipitation and ice melt water, river input and surface damping fluxes. It is positive (negative) if it points upwards (downwards) to (from) the surface. This variable is a 2D field.</td></tr>\n<tr><td class='variables-name'>Ocean heat content for the total water column</td><td class='variables-units'>J m<sup>-2</sup></td><td class='variables-description'>Energy absorbed by the ocean as computed by the integral product of temperature, sea water density and specific heat capacity from the surface down to bottom of the ocean. This variable is a 2D field.</td></tr>\n<tr><td class='variables-name'>Ocean heat content for the upper 300m</td><td class='variables-units'>J m<sup>-2</sup></td><td class='variables-description'>Energy absorbed by the ocean as computed by the integral product of temperature, sea water density and specific heat capacity from the surface down to 300m depth. This variable is a 2D field.</td></tr>\n<tr><td class='variables-name'>Ocean heat content for the upper 700m</td><td class='variables-units'>J m<sup>-2</sup></td><td class='variables-description'>Energy absorbed by the ocean as computed by the integral product of temperature, sea water density and specific heat capacity from the surface down to 700m depth. This variable is a 2D field.</td></tr>\n<tr><td class='variables-name'>Potential temperature</td><td class='variables-units'>\u00b0C</td><td class='variables-description'>The temperature of a parcel of sea water would have if moved adiabatically to sea level pressure. This variable is a 3D field.</td></tr>\n<tr><td class='variables-name'>Rotated meridional velocity</td><td class='variables-units'>m s<sup>-1</sup></td><td class='variables-description'>Northward horizontal surface velocity of a water parcel, as rotated from the model grid to latitude, longitude grid. The horizontal velocity is a vector quantity, which can be decomposed into Northward (meridional) and Eastward (zonal) components. This variable is a 3D field.</td></tr>\n<tr><td class='variables-name'>Rotated zonal velocity</td><td class='variables-units'>m s<sup>-1</sup></td><td class='variables-description'>Eastward horizontal surface velocity of a water parcel, as rotated from the native model grid to latitude, longitude grid. The horizontal velocity is a vector quantity, which can be decomposed into Northward (meridional) and Eastward (zonal) components. This variable is a 3D field.</td></tr>\n<tr><td class='variables-name'>Salinity</td><td class='variables-units'>PSU</td><td class='variables-description'>The salt content of sea water as measured on the practical salinity units (PSU) scale. This variable is a 3D field.</td></tr>\n<tr><td class='variables-name'>Sea ice concentration</td><td class='variables-units'>Dimensionless</td><td class='variables-description'>Fraction of the area of the grid cell containing sea ice. This variable is a 2D field.</td></tr>\n<tr><td class='variables-name'>Sea ice meridional velocity</td><td class='variables-units'>m s<sup>-1</sup></td><td class='variables-description'>Horizontal velocity of the sea ice in the direction of the y axis of the ocean model. The horizontal velocity is a vector quantity, which can be decomposed into zonal (along the model x axis) and meridional (along the model y axis) components. This variable is a 2D field.</td></tr>\n<tr><td class='variables-name'>Sea ice thickness</td><td class='variables-units'>m</td><td class='variables-description'>Mean thickness of the sea ice layer in the area of the grid cell covered by ice. This variable is a 2D field.</td></tr>\n<tr><td class='variables-name'>Sea ice zonal velocity</td><td class='variables-units'>m s<sup>-1</sup></td><td class='variables-description'>Horizontal velocity of the sea ice in the direction of the x axis of the ocean model. The horizontal velocity is a vector quantity, which can be decomposed into zonal (along the model x axis) and meridional (along the model y axis) components. This variable is a 2D field.</td></tr>\n<tr><td class='variables-name'>Sea surface height</td><td class='variables-units'>m</td><td class='variables-description'>Vertical distance between the actual sea surface and a reference surface of constant geopotential with which mean sea level would coincide if the ocean were at rest. This variable is a 2D field.</td></tr>\n<tr><td class='variables-name'>Sea surface salinity</td><td class='variables-units'>PSU</td><td class='variables-description'>Salt concentration close to the ocean surface. This variable is a 2D field.</td></tr>\n<tr><td class='variables-name'>Sea surface temperature</td><td class='variables-units'>\u00b0C</td><td class='variables-description'>Water temperature close to the ocean surface. This variable is a 2D field.</td></tr>\n<tr><td class='variables-name'>Zonal velocity</td><td class='variables-units'>m s<sup>-1</sup></td><td class='variables-description'>Horizontal velocity of a water parcel in the direction of x axis of the ocean model. The horizontal velocity is a vector quantity, which can be decomposed into zonal (along the model x axis) and meridional (along the model y axis) components. This variable is a 3D field.</td></tr>\n<tr><td class='variables-name'>Zonal wind stress</td><td class='variables-units'>N m<sup>-2</sup></td><td class='variables-description'>Horizontal shear stress exerted by the sea surface wind in the direction of the x axis of the ocean model. This variable is a 2D field.</td></tr>\n</table>\n    </div>",
+    "terms": [
+        "licence-to-use-copernicus-products"
+    ],
+    "constraints": [
+        {
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06"
+            ],
+            "product_type": [
+                "operational"
+            ],
+            "variable": [
+                "sea_ice_thickness",
+                "sea_ice_zonal_velocity",
+                "sea_ice_meridional_velocity",
+                "sea_ice_concentration",
+                "depth_of_14_c_isotherm",
+                "depth_of_17_c_isotherm",
+                "depth_of_20_c_isotherm",
+                "depth_of_26_c_isotherm",
+                "depth_of_28_c_isotherm",
+                "net_downward_heat_flux",
+                "ocean_heat_content_for_the_upper_300m",
+                "ocean_heat_content_for_the_upper_700m",
+                "ocean_heat_content_for_the_total_water_column",
+                "meridional_wind_stress",
+                "mixed_layer_depth_0_01",
+                "mixed_layer_depth_0_03",
+                "sea_surface_salinity",
+                "sea_surface_height",
+                "sea_surface_temperature",
+                "net_upward_water_flux",
+                "zonal_wind_stress"
+            ],
+            "vertical_resolution": [
+                "single_level"
+            ],
+            "year": [
+                "2015",
+                "2016",
+                "2017",
+                "2018",
+                "2019",
+                "2020",
+                "2021",
+                "2022",
+                "2023"
+            ]
+        },
+        {
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06"
+            ],
+            "product_type": [
+                "operational"
+            ],
+            "variable": [
+                "rotated_meridional_velocity",
+                "meridional_velocity",
+                "salinity",
+                "potential_temperature",
+                "rotated_zonal_velocity",
+                "zonal_velocity"
+            ],
+            "vertical_resolution": [
+                "all_levels"
+            ],
+            "year": [
+                "2015",
+                "2016",
+                "2017",
+                "2018",
+                "2019",
+                "2020",
+                "2021",
+                "2022",
+                "2023"
+            ]
+        },
+        {
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06",
+                "07",
+                "08",
+                "09",
+                "10",
+                "11",
+                "12"
+            ],
+            "product_type": [
+                "consolidated"
+            ],
+            "variable": [
+                "sea_ice_thickness",
+                "sea_ice_zonal_velocity",
+                "sea_ice_meridional_velocity",
+                "sea_ice_concentration",
+                "depth_of_14_c_isotherm",
+                "depth_of_17_c_isotherm",
+                "depth_of_20_c_isotherm",
+                "depth_of_26_c_isotherm",
+                "depth_of_28_c_isotherm",
+                "net_downward_heat_flux",
+                "ocean_heat_content_for_the_upper_300m",
+                "ocean_heat_content_for_the_upper_700m",
+                "ocean_heat_content_for_the_total_water_column",
+                "meridional_wind_stress",
+                "mixed_layer_depth_0_01",
+                "mixed_layer_depth_0_03",
+                "sea_surface_salinity",
+                "sea_surface_height",
+                "sea_surface_temperature",
+                "net_upward_water_flux",
+                "zonal_wind_stress"
+            ],
+            "vertical_resolution": [
+                "single_level"
+            ],
+            "year": [
+                "1958",
+                "1959",
+                "1960",
+                "1961",
+                "1962",
+                "1963",
+                "1964",
+                "1965",
+                "1966",
+                "1967",
+                "1968",
+                "1969",
+                "1970",
+                "1971",
+                "1972",
+                "1973",
+                "1974",
+                "1975",
+                "1976",
+                "1977",
+                "1978",
+                "1979",
+                "1980",
+                "1981",
+                "1982",
+                "1983",
+                "1984",
+                "1985",
+                "1986",
+                "1987",
+                "1988",
+                "1989",
+                "1990",
+                "1991",
+                "1992",
+                "1993",
+                "1994",
+                "1995",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2000",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014"
+            ]
+        },
+        {
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06",
+                "07",
+                "08",
+                "09",
+                "10",
+                "11",
+                "12"
+            ],
+            "product_type": [
+                "consolidated"
+            ],
+            "variable": [
+                "rotated_meridional_velocity",
+                "rotated_zonal_velocity"
+            ],
+            "vertical_resolution": [
+                "all_levels"
+            ],
+            "year": [
+                "1975",
+                "1976",
+                "1977",
+                "1978",
+                "1979",
+                "1980",
+                "1981",
+                "1982",
+                "1983",
+                "1984",
+                "1985",
+                "1986",
+                "1987",
+                "1988",
+                "1989",
+                "1990",
+                "1991",
+                "1992",
+                "1993",
+                "1994",
+                "1995",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2000",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014"
+            ]
+        },
+        {
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06",
+                "07",
+                "08",
+                "09",
+                "10",
+                "11",
+                "12"
+            ],
+            "product_type": [
+                "consolidated"
+            ],
+            "variable": [
+                "meridional_velocity",
+                "salinity",
+                "potential_temperature",
+                "zonal_velocity"
+            ],
+            "vertical_resolution": [
+                "all_levels"
+            ],
+            "year": [
+                "1958",
+                "1959",
+                "1960",
+                "1961",
+                "1962",
+                "1963",
+                "1964",
+                "1965",
+                "1966",
+                "1967",
+                "1968",
+                "1969",
+                "1970",
+                "1971",
+                "1972",
+                "1973",
+                "1974",
+                "1975",
+                "1976",
+                "1977",
+                "1978",
+                "1979",
+                "1980",
+                "1981",
+                "1982",
+                "1983",
+                "1984",
+                "1985",
+                "1986",
+                "1987",
+                "1988",
+                "1989",
+                "1990",
+                "1991",
+                "1992",
+                "1993",
+                "1994",
+                "1995",
+                "1996",
+                "1997",
+                "1998",
+                "1999",
+                "2000",
+                "2001",
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014"
+            ]
+        },
+        {
+            "month": [
+                "07",
+                "08",
+                "09",
+                "10",
+                "11",
+                "12"
+            ],
+            "product_type": [
+                "operational"
+            ],
+            "variable": [
+                "sea_ice_thickness",
+                "sea_ice_zonal_velocity",
+                "sea_ice_meridional_velocity",
+                "sea_ice_concentration",
+                "depth_of_14_c_isotherm",
+                "depth_of_17_c_isotherm",
+                "depth_of_20_c_isotherm",
+                "depth_of_26_c_isotherm",
+                "depth_of_28_c_isotherm",
+                "net_downward_heat_flux",
+                "ocean_heat_content_for_the_upper_300m",
+                "ocean_heat_content_for_the_upper_700m",
+                "ocean_heat_content_for_the_total_water_column",
+                "meridional_wind_stress",
+                "mixed_layer_depth_0_01",
+                "mixed_layer_depth_0_03",
+                "sea_surface_salinity",
+                "sea_surface_height",
+                "sea_surface_temperature",
+                "net_upward_water_flux",
+                "zonal_wind_stress"
+            ],
+            "vertical_resolution": [
+                "single_level"
+            ],
+            "year": [
+                "2015",
+                "2016",
+                "2017",
+                "2018",
+                "2019",
+                "2020",
+                "2021",
+                "2022"
+            ]
+        },
+        {
+            "month": [
+                "07",
+                "08",
+                "09",
+                "10",
+                "11",
+                "12"
+            ],
+            "product_type": [
+                "operational"
+            ],
+            "variable": [
+                "rotated_meridional_velocity",
+                "meridional_velocity",
+                "salinity",
+                "potential_temperature",
+                "rotated_zonal_velocity",
+                "zonal_velocity"
+            ],
+            "vertical_resolution": [
+                "all_levels"
+            ],
+            "year": [
+                "2015",
+                "2016",
+                "2017",
+                "2018",
+                "2019",
+                "2020",
+                "2021",
+                "2022"
+            ]
+        }
+    ]
+}

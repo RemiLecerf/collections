@@ -1,0 +1,4180 @@
+{
+    "slug": "seasonal-forecast-anomalies-on-pressure-levels",
+    "name": "seasonal-postprocessed-pressure-levels",
+    "id": "eu.copernicus.climate.seasonal-postprocessed-pressure-levels",
+    "type": "dataset",
+    "rich_abstract": "<div class='abstract-text'>\n         <p>This entry covers <strong>pressure-level data</strong> post-processed for bias adjustment on a <strong>monthly time resolution</strong>. </p>\n<p><strong>Seasonal forecasts</strong> provide a long-range outlook of changes in the Earth system over periods of a few weeks or months, as a result of predictable changes in some of the slow-varying components of the system. For example, ocean temperatures typically vary slowly, on timescales of weeks or months; as the ocean has an impact on the overlaying atmosphere, the variability of its properties (e.g. temperature) can modify both local and remote atmospheric conditions. Such modifications of the 'usual' atmospheric conditions are the essence of all long-range (e.g. seasonal) forecasts. This is different from a weather forecast, which gives a lot more precise detail - both in time and space - of the evolution of the state of the atmosphere over a few days into the future. Beyond a few days, the chaotic nature of the atmosphere limits the possibility to predict precise changes at local scales. This is one of the reasons long-range forecasts of atmospheric conditions have large uncertainties. To quantify such uncertainties, long-range forecasts use ensembles, and meaningful forecast products reflect a distributions of outcomes.</p>\n<p>Given the complex, non-linear interactions between the individual components of the Earth system, the best tools for long-range forecasting are climate models which include as many of the key components of the system and possible; typically, such models include representations of the atmosphere, ocean and land surface. These models are initialised with data describing the state of the system at the starting point of the forecast, and used to predict the evolution of this state in time.\nWhile uncertainties coming from imperfect knowledge of the initial conditions of the components of the Earth system can be described with the use of ensembles, uncertainty arising from approximations made in the models are very much dependent on the choice of model. A convenient way to quantify the effect of these approximations is to combine outputs from several models, independently developed, initialised and operated.</p>\n<p>To this effect, the C3S provides a <strong>multi-system seasonal forecast service</strong>, where data produced by state-of-the-art seasonal forecast systems developed, implemented and operated at forecast centres in several European countries is collected, processed and combined to enable user-relevant applications. The composition of the C3S seasonal multi-system and the full content of the database underpinning the service are described in the documentation. The data is grouped in several catalogue entries (CDS datasets), currently defined by the type of variable (single-level or multi-level, on pressure surfaces) and the level of post-processing applied (data at original time resolution, processing on temporal aggregation and post-processing related to bias adjustment).</p>\n<p>The variables available in this data set are listed in the table below. The data includes forecasts created in real-time since 2017.</p>\n         <p><i>More details about the products are given in the Documentation section.</i></p>\n         \n            <p></p>\n            <table class=\"abstract-description abstract-table\">\n            <tr><th colspan=\"2\">DATA DESCRIPTION</th>\n            \n<tr><th>Data type</th><td>Gridded</td></tr>\n<tr><th>Projection</th><td>Regular latitude-longitude grid</td></tr>\n<tr><th>Horizontal coverage</th><td>Global</td></tr>\n<tr><th>Horizontal resolution</th><td>1\u00b0 x 1\u00b0</td></tr>\n<tr><th>Vertical coverage</th><td>From 1000 hPa to 10 hPa</td></tr>\n<tr><th>Temporal coverage</th><td>2017 to present</td></tr>\n<tr><th>Temporal resolution</th><td>Monthly</td></tr>\n<tr><th>File format</th><td>GRIB</td></tr>\n<tr><th>Update frequency</th><td>Real-time forecasts are released once per month on the 6th at 12UTC for ECMWF and on the 10th at 12 UTC for the other originating centres.</td></tr>\n</table>\n\n    <p></p>\n    <table class=\"abstract-variables abstract-table\">\n    <tr><th colspan=\"2\">MAIN VARIABLES</th>\n    \n\n    <tr><th class='variables-name'>Name</th><th class='variables-units'>Units</th></tr>\n    \n<tr><td class='variables-name'>Geopotential anomaly</td><td class='variables-units'>m<sup>2</sup> s<sup>-2</sup></td></tr>\n<tr><td class='variables-name'>Specific humidity anomaly</td><td class='variables-units'>kg kg<sup>-1</sup></td></tr>\n<tr><td class='variables-name'>Temperature anomaly</td><td class='variables-units'>K</td></tr>\n<tr><td class='variables-name'>U-component of wind anomaly</td><td class='variables-units'>m s<sup>-1</sup></td></tr>\n<tr><td class='variables-name'>V-component of wind anomaly</td><td class='variables-units'>m s<sup>-1</sup></td></tr>\n</table>\n    </div>",
+    "terms": [
+        "licence-to-use-copernicus-products",
+        "Additional-licence-to-use-non-European-contributions"
+    ],
+    "constraints": [
+        {
+            "leadtime_month": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "month": [
+                "01"
+            ],
+            "originating_centre": [
+                "jma"
+            ],
+            "pressure_level": [
+                "10",
+                "100",
+                "200",
+                "30",
+                "300",
+                "50",
+                "500",
+                "700",
+                "850"
+            ],
+            "product_type": [
+                "ensemble_mean",
+                "monthly_mean"
+            ],
+            "system": [
+                "2"
+            ],
+            "variable": [
+                "geopotential_anomaly",
+                "temperature_anomaly",
+                "u_component_of_wind_anomaly",
+                "v_component_of_wind_anomaly",
+                "specific_humidity_anomaly"
+            ],
+            "year": [
+                "2022"
+            ]
+        },
+        {
+            "leadtime_month": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "month": [
+                "01",
+                "02"
+            ],
+            "originating_centre": [
+                "ukmo"
+            ],
+            "pressure_level": [
+                "10",
+                "100",
+                "1000",
+                "200",
+                "30",
+                "300",
+                "400",
+                "50",
+                "500",
+                "700",
+                "850",
+                "925"
+            ],
+            "product_type": [
+                "ensemble_mean",
+                "monthly_mean"
+            ],
+            "system": [
+                "601"
+            ],
+            "variable": [
+                "geopotential_anomaly",
+                "temperature_anomaly",
+                "u_component_of_wind_anomaly",
+                "v_component_of_wind_anomaly",
+                "specific_humidity_anomaly"
+            ],
+            "year": [
+                "2023"
+            ]
+        },
+        {
+            "leadtime_month": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "month": [
+                "01",
+                "02"
+            ],
+            "originating_centre": [
+                "ukmo"
+            ],
+            "pressure_level": [
+                "10",
+                "100",
+                "200",
+                "30",
+                "300",
+                "400",
+                "50",
+                "500",
+                "700",
+                "850",
+                "925"
+            ],
+            "product_type": [
+                "ensemble_mean",
+                "monthly_mean"
+            ],
+            "system": [
+                "15"
+            ],
+            "variable": [
+                "geopotential_anomaly",
+                "temperature_anomaly",
+                "u_component_of_wind_anomaly",
+                "v_component_of_wind_anomaly",
+                "specific_humidity_anomaly"
+            ],
+            "year": [
+                "2021"
+            ]
+        },
+        {
+            "leadtime_month": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "month": [
+                "01",
+                "02"
+            ],
+            "originating_centre": [
+                "ukmo"
+            ],
+            "pressure_level": [
+                "10",
+                "100",
+                "200",
+                "30",
+                "300",
+                "400",
+                "50",
+                "500",
+                "700",
+                "850",
+                "925"
+            ],
+            "product_type": [
+                "ensemble_mean",
+                "monthly_mean"
+            ],
+            "system": [
+                "600"
+            ],
+            "variable": [
+                "geopotential_anomaly",
+                "temperature_anomaly",
+                "u_component_of_wind_anomaly",
+                "v_component_of_wind_anomaly",
+                "specific_humidity_anomaly"
+            ],
+            "year": [
+                "2022"
+            ]
+        },
+        {
+            "leadtime_month": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04"
+            ],
+            "originating_centre": [
+                "ukmo"
+            ],
+            "pressure_level": [
+                "10",
+                "100",
+                "200",
+                "30",
+                "300",
+                "400",
+                "50",
+                "500",
+                "700",
+                "850",
+                "925"
+            ],
+            "product_type": [
+                "ensemble_mean"
+            ],
+            "system": [
+                "13"
+            ],
+            "variable": [
+                "geopotential_anomaly",
+                "temperature_anomaly",
+                "u_component_of_wind_anomaly",
+                "v_component_of_wind_anomaly",
+                "specific_humidity_anomaly"
+            ],
+            "year": [
+                "2019"
+            ]
+        },
+        {
+            "leadtime_month": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04"
+            ],
+            "originating_centre": [
+                "ukmo"
+            ],
+            "pressure_level": [
+                "10",
+                "100",
+                "200",
+                "30",
+                "300",
+                "400",
+                "50",
+                "500",
+                "700",
+                "850",
+                "925"
+            ],
+            "product_type": [
+                "ensemble_mean"
+            ],
+            "system": [
+                "14"
+            ],
+            "variable": [
+                "geopotential_anomaly",
+                "temperature_anomaly",
+                "u_component_of_wind_anomaly",
+                "v_component_of_wind_anomaly",
+                "specific_humidity_anomaly"
+            ],
+            "year": [
+                "2020"
+            ]
+        },
+        {
+            "leadtime_month": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04"
+            ],
+            "originating_centre": [
+                "ukmo"
+            ],
+            "pressure_level": [
+                "10",
+                "100",
+                "200",
+                "30",
+                "300",
+                "400",
+                "50",
+                "500",
+                "700",
+                "850",
+                "925"
+            ],
+            "product_type": [
+                "ensemble_mean",
+                "monthly_mean"
+            ],
+            "system": [
+                "12"
+            ],
+            "variable": [
+                "geopotential_anomaly",
+                "temperature_anomaly",
+                "u_component_of_wind_anomaly",
+                "v_component_of_wind_anomaly",
+                "specific_humidity_anomaly"
+            ],
+            "year": [
+                "2018"
+            ]
+        },
+        {
+            "leadtime_month": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04"
+            ],
+            "originating_centre": [
+                "ukmo"
+            ],
+            "pressure_level": [
+                "10",
+                "100",
+                "200",
+                "30",
+                "300",
+                "400",
+                "50",
+                "500",
+                "700",
+                "850",
+                "925"
+            ],
+            "product_type": [
+                "monthly_mean"
+            ],
+            "system": [
+                "13"
+            ],
+            "variable": [
+                "geopotential_anomaly",
+                "temperature_anomaly",
+                "u_component_of_wind_anomaly",
+                "v_component_of_wind_anomaly",
+                "specific_humidity_anomaly"
+            ],
+            "year": [
+                "2019"
+            ]
+        },
+        {
+            "leadtime_month": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04"
+            ],
+            "originating_centre": [
+                "ukmo"
+            ],
+            "pressure_level": [
+                "10",
+                "100",
+                "200",
+                "30",
+                "300",
+                "400",
+                "50",
+                "500",
+                "700",
+                "850",
+                "925"
+            ],
+            "product_type": [
+                "monthly_mean"
+            ],
+            "system": [
+                "14"
+            ],
+            "variable": [
+                "geopotential_anomaly",
+                "temperature_anomaly",
+                "u_component_of_wind_anomaly",
+                "v_component_of_wind_anomaly",
+                "specific_humidity_anomaly"
+            ],
+            "year": [
+                "2020"
+            ]
+        },
+        {
+            "leadtime_month": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "05",
+                "06",
+                "07",
+                "08"
+            ],
+            "originating_centre": [
+                "ecmwf"
+            ],
+            "pressure_level": [
+                "10",
+                "100",
+                "1000",
+                "30",
+                "300",
+                "400",
+                "50",
+                "925"
+            ],
+            "product_type": [
+                "ensemble_mean",
+                "monthly_mean"
+            ],
+            "system": [
+                "51"
+            ],
+            "variable": [
+                "geopotential_anomaly",
+                "temperature_anomaly",
+                "u_component_of_wind_anomaly",
+                "v_component_of_wind_anomaly",
+                "specific_humidity_anomaly"
+            ],
+            "year": [
+                "2020",
+                "2021"
+            ]
+        },
+        {
+            "leadtime_month": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "05",
+                "06",
+                "07",
+                "08",
+                "09"
+            ],
+            "originating_centre": [
+                "ecmwf"
+            ],
+            "pressure_level": [
+                "200",
+                "500",
+                "700",
+                "850"
+            ],
+            "product_type": [
+                "ensemble_mean",
+                "monthly_mean"
+            ],
+            "system": [
+                "51"
+            ],
+            "variable": [
+                "geopotential_anomaly",
+                "temperature_anomaly",
+                "u_component_of_wind_anomaly",
+                "v_component_of_wind_anomaly",
+                "specific_humidity_anomaly"
+            ],
+            "year": [
+                "2020",
+                "2021"
+            ]
+        },
+        {
+            "leadtime_month": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "05",
+                "06",
+                "07",
+                "08",
+                "09",
+                "11",
+                "12"
+            ],
+            "originating_centre": [
+                "ecmwf"
+            ],
+            "pressure_level": [
+                "200",
+                "500",
+                "700",
+                "850"
+            ],
+            "product_type": [
+                "ensemble_mean",
+                "monthly_mean"
+            ],
+            "system": [
+                "51"
+            ],
+            "variable": [
+                "geopotential_anomaly",
+                "temperature_anomaly",
+                "u_component_of_wind_anomaly",
+                "v_component_of_wind_anomaly",
+                "specific_humidity_anomaly"
+            ],
+            "year": [
+                "2022"
+            ]
+        },
+        {
+            "leadtime_month": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "05",
+                "06",
+                "07",
+                "08",
+                "11",
+                "12"
+            ],
+            "originating_centre": [
+                "ecmwf"
+            ],
+            "pressure_level": [
+                "10",
+                "100",
+                "1000",
+                "30",
+                "300",
+                "400",
+                "50",
+                "925"
+            ],
+            "product_type": [
+                "ensemble_mean",
+                "monthly_mean"
+            ],
+            "system": [
+                "51"
+            ],
+            "variable": [
+                "geopotential_anomaly",
+                "temperature_anomaly",
+                "u_component_of_wind_anomaly",
+                "v_component_of_wind_anomaly",
+                "specific_humidity_anomaly"
+            ],
+            "year": [
+                "2022"
+            ]
+        },
+        {
+            "leadtime_month": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06"
+            ],
+            "originating_centre": [
+                "cmcc"
+            ],
+            "pressure_level": [
+                "10",
+                "100",
+                "1000",
+                "30",
+                "300",
+                "400",
+                "50",
+                "925"
+            ],
+            "product_type": [
+                "ensemble_mean",
+                "monthly_mean"
+            ],
+            "system": [
+                "35"
+            ],
+            "variable": [
+                "geopotential_anomaly",
+                "temperature_anomaly",
+                "u_component_of_wind_anomaly",
+                "v_component_of_wind_anomaly",
+                "specific_humidity_anomaly"
+            ],
+            "year": [
+                "2023"
+            ]
+        },
+        {
+            "leadtime_month": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06"
+            ],
+            "originating_centre": [
+                "jma"
+            ],
+            "pressure_level": [
+                "10",
+                "100",
+                "30",
+                "300",
+                "400",
+                "50",
+                "925"
+            ],
+            "product_type": [
+                "ensemble_mean"
+            ],
+            "system": [
+                "3"
+            ],
+            "variable": [
+                "geopotential_anomaly",
+                "temperature_anomaly",
+                "u_component_of_wind_anomaly",
+                "v_component_of_wind_anomaly",
+                "specific_humidity_anomaly"
+            ],
+            "year": [
+                "2023"
+            ]
+        },
+        {
+            "leadtime_month": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06"
+            ],
+            "originating_centre": [
+                "jma"
+            ],
+            "pressure_level": [
+                "10",
+                "100",
+                "30",
+                "300",
+                "400",
+                "50",
+                "925"
+            ],
+            "product_type": [
+                "monthly_mean"
+            ],
+            "system": [
+                "3"
+            ],
+            "variable": [
+                "geopotential_anomaly",
+                "temperature_anomaly",
+                "u_component_of_wind_anomaly",
+                "v_component_of_wind_anomaly",
+                "specific_humidity_anomaly"
+            ],
+            "year": [
+                "2023"
+            ]
+        },
+        {
+            "leadtime_month": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06"
+            ],
+            "originating_centre": [
+                "meteo_france"
+            ],
+            "pressure_level": [
+                "10",
+                "100",
+                "200",
+                "30",
+                "300",
+                "400",
+                "50",
+                "500",
+                "700",
+                "850",
+                "925"
+            ],
+            "product_type": [
+                "ensemble_mean",
+                "monthly_mean"
+            ],
+            "system": [
+                "7"
+            ],
+            "variable": [
+                "geopotential_anomaly",
+                "temperature_anomaly",
+                "u_component_of_wind_anomaly",
+                "v_component_of_wind_anomaly",
+                "specific_humidity_anomaly"
+            ],
+            "year": [
+                "2021"
+            ]
+        },
+        {
+            "leadtime_month": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06",
+                "07"
+            ],
+            "originating_centre": [
+                "cmcc"
+            ],
+            "pressure_level": [
+                "200",
+                "500",
+                "700",
+                "850"
+            ],
+            "product_type": [
+                "ensemble_mean",
+                "monthly_mean"
+            ],
+            "system": [
+                "35"
+            ],
+            "variable": [
+                "geopotential_anomaly",
+                "temperature_anomaly",
+                "u_component_of_wind_anomaly",
+                "v_component_of_wind_anomaly",
+                "specific_humidity_anomaly"
+            ],
+            "year": [
+                "2023"
+            ]
+        },
+        {
+            "leadtime_month": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06",
+                "07"
+            ],
+            "originating_centre": [
+                "dwd"
+            ],
+            "pressure_level": [
+                "10",
+                "100",
+                "1000",
+                "200",
+                "30",
+                "300",
+                "400",
+                "50",
+                "500",
+                "700",
+                "850",
+                "925"
+            ],
+            "product_type": [
+                "ensemble_mean",
+                "monthly_mean"
+            ],
+            "system": [
+                "21"
+            ],
+            "variable": [
+                "geopotential_anomaly",
+                "temperature_anomaly",
+                "u_component_of_wind_anomaly",
+                "v_component_of_wind_anomaly",
+                "specific_humidity_anomaly"
+            ],
+            "year": [
+                "2023"
+            ]
+        },
+        {
+            "leadtime_month": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06",
+                "07"
+            ],
+            "originating_centre": [
+                "eccc"
+            ],
+            "pressure_level": [
+                "10",
+                "100",
+                "1000",
+                "200",
+                "30",
+                "300",
+                "400",
+                "50",
+                "500",
+                "700",
+                "850",
+                "925"
+            ],
+            "product_type": [
+                "ensemble_mean",
+                "monthly_mean"
+            ],
+            "system": [
+                "2",
+                "3"
+            ],
+            "variable": [
+                "geopotential_anomaly",
+                "temperature_anomaly",
+                "u_component_of_wind_anomaly",
+                "v_component_of_wind_anomaly",
+                "specific_humidity_anomaly"
+            ],
+            "year": [
+                "2023"
+            ]
+        },
+        {
+            "leadtime_month": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06",
+                "07"
+            ],
+            "originating_centre": [
+                "ecmwf"
+            ],
+            "pressure_level": [
+                "10",
+                "100",
+                "1000",
+                "30",
+                "300",
+                "400",
+                "50",
+                "925"
+            ],
+            "product_type": [
+                "ensemble_mean",
+                "monthly_mean"
+            ],
+            "system": [
+                "51"
+            ],
+            "variable": [
+                "geopotential_anomaly",
+                "temperature_anomaly",
+                "u_component_of_wind_anomaly",
+                "v_component_of_wind_anomaly",
+                "specific_humidity_anomaly"
+            ],
+            "year": [
+                "2023"
+            ]
+        },
+        {
+            "leadtime_month": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06",
+                "07"
+            ],
+            "originating_centre": [
+                "jma"
+            ],
+            "pressure_level": [
+                "200",
+                "500",
+                "700",
+                "850"
+            ],
+            "product_type": [
+                "ensemble_mean"
+            ],
+            "system": [
+                "3"
+            ],
+            "variable": [
+                "geopotential_anomaly",
+                "temperature_anomaly",
+                "u_component_of_wind_anomaly",
+                "v_component_of_wind_anomaly",
+                "specific_humidity_anomaly"
+            ],
+            "year": [
+                "2023"
+            ]
+        },
+        {
+            "leadtime_month": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06",
+                "07"
+            ],
+            "originating_centre": [
+                "jma"
+            ],
+            "pressure_level": [
+                "200",
+                "500",
+                "700",
+                "850"
+            ],
+            "product_type": [
+                "monthly_mean"
+            ],
+            "system": [
+                "3"
+            ],
+            "variable": [
+                "geopotential_anomaly",
+                "temperature_anomaly",
+                "u_component_of_wind_anomaly",
+                "v_component_of_wind_anomaly",
+                "specific_humidity_anomaly"
+            ],
+            "year": [
+                "2023"
+            ]
+        },
+        {
+            "leadtime_month": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06",
+                "07"
+            ],
+            "originating_centre": [
+                "meteo_france"
+            ],
+            "pressure_level": [
+                "10",
+                "100",
+                "1000",
+                "200",
+                "30",
+                "300",
+                "400",
+                "50",
+                "500",
+                "700",
+                "850",
+                "925"
+            ],
+            "product_type": [
+                "ensemble_mean",
+                "monthly_mean"
+            ],
+            "system": [
+                "8"
+            ],
+            "variable": [
+                "geopotential_anomaly",
+                "temperature_anomaly",
+                "u_component_of_wind_anomaly",
+                "v_component_of_wind_anomaly",
+                "specific_humidity_anomaly"
+            ],
+            "year": [
+                "2023"
+            ]
+        },
+        {
+            "leadtime_month": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06",
+                "07"
+            ],
+            "originating_centre": [
+                "ncep"
+            ],
+            "pressure_level": [
+                "200",
+                "500",
+                "700",
+                "850"
+            ],
+            "product_type": [
+                "ensemble_mean"
+            ],
+            "system": [
+                "2"
+            ],
+            "variable": [
+                "geopotential_anomaly",
+                "temperature_anomaly",
+                "u_component_of_wind_anomaly",
+                "v_component_of_wind_anomaly"
+            ],
+            "year": [
+                "2023"
+            ]
+        },
+        {
+            "leadtime_month": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06",
+                "07"
+            ],
+            "originating_centre": [
+                "ncep"
+            ],
+            "pressure_level": [
+                "200",
+                "500",
+                "700",
+                "850"
+            ],
+            "product_type": [
+                "monthly_mean"
+            ],
+            "system": [
+                "2"
+            ],
+            "variable": [
+                "geopotential_anomaly",
+                "temperature_anomaly",
+                "u_component_of_wind_anomaly",
+                "v_component_of_wind_anomaly"
+            ],
+            "year": [
+                "2023"
+            ]
+        },
+        {
+            "leadtime_month": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06",
+                "07",
+                "08"
+            ],
+            "originating_centre": [
+                "ecmwf"
+            ],
+            "pressure_level": [
+                "10",
+                "100",
+                "1000",
+                "30",
+                "300",
+                "400",
+                "50",
+                "925"
+            ],
+            "product_type": [
+                "ensemble_mean",
+                "monthly_mean"
+            ],
+            "system": [
+                "51"
+            ],
+            "variable": [
+                "geopotential_anomaly",
+                "temperature_anomaly",
+                "u_component_of_wind_anomaly",
+                "v_component_of_wind_anomaly",
+                "specific_humidity_anomaly"
+            ],
+            "year": [
+                "2017",
+                "2018",
+                "2019"
+            ]
+        },
+        {
+            "leadtime_month": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06",
+                "07",
+                "08"
+            ],
+            "originating_centre": [
+                "ecmwf"
+            ],
+            "pressure_level": [
+                "200",
+                "500",
+                "700",
+                "850"
+            ],
+            "product_type": [
+                "ensemble_mean",
+                "monthly_mean"
+            ],
+            "system": [
+                "51"
+            ],
+            "variable": [
+                "geopotential_anomaly",
+                "temperature_anomaly",
+                "u_component_of_wind_anomaly",
+                "v_component_of_wind_anomaly",
+                "specific_humidity_anomaly"
+            ],
+            "year": [
+                "2023"
+            ]
+        },
+        {
+            "leadtime_month": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06",
+                "07",
+                "08",
+                "09"
+            ],
+            "originating_centre": [
+                "cmcc"
+            ],
+            "pressure_level": [
+                "10",
+                "100",
+                "200",
+                "30",
+                "300",
+                "400",
+                "50",
+                "500",
+                "700",
+                "850",
+                "925"
+            ],
+            "product_type": [
+                "ensemble_mean",
+                "monthly_mean"
+            ],
+            "system": [
+                "3"
+            ],
+            "variable": [
+                "geopotential_anomaly",
+                "temperature_anomaly",
+                "u_component_of_wind_anomaly",
+                "v_component_of_wind_anomaly",
+                "specific_humidity_anomaly"
+            ],
+            "year": [
+                "2020"
+            ]
+        },
+        {
+            "leadtime_month": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06",
+                "07",
+                "08",
+                "09"
+            ],
+            "originating_centre": [
+                "ecmwf"
+            ],
+            "pressure_level": [
+                "200",
+                "500",
+                "700",
+                "850"
+            ],
+            "product_type": [
+                "ensemble_mean",
+                "monthly_mean"
+            ],
+            "system": [
+                "51"
+            ],
+            "variable": [
+                "geopotential_anomaly",
+                "temperature_anomaly",
+                "u_component_of_wind_anomaly",
+                "v_component_of_wind_anomaly",
+                "specific_humidity_anomaly"
+            ],
+            "year": [
+                "2017",
+                "2018",
+                "2019"
+            ]
+        },
+        {
+            "leadtime_month": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06",
+                "07",
+                "08",
+                "09"
+            ],
+            "originating_centre": [
+                "meteo_france"
+            ],
+            "pressure_level": [
+                "10",
+                "100",
+                "200",
+                "30",
+                "300",
+                "400",
+                "50",
+                "500",
+                "700",
+                "850",
+                "925"
+            ],
+            "product_type": [
+                "ensemble_mean",
+                "monthly_mean"
+            ],
+            "system": [
+                "6"
+            ],
+            "variable": [
+                "geopotential_anomaly",
+                "temperature_anomaly",
+                "u_component_of_wind_anomaly",
+                "v_component_of_wind_anomaly",
+                "specific_humidity_anomaly"
+            ],
+            "year": [
+                "2019"
+            ]
+        },
+        {
+            "leadtime_month": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06",
+                "07",
+                "08",
+                "09",
+                "10"
+            ],
+            "originating_centre": [
+                "dwd"
+            ],
+            "pressure_level": [
+                "10",
+                "100",
+                "200",
+                "30",
+                "300",
+                "400",
+                "50",
+                "500",
+                "700",
+                "850",
+                "925"
+            ],
+            "product_type": [
+                "ensemble_mean",
+                "monthly_mean"
+            ],
+            "system": [
+                "2"
+            ],
+            "variable": [
+                "geopotential_anomaly",
+                "temperature_anomaly",
+                "u_component_of_wind_anomaly",
+                "v_component_of_wind_anomaly",
+                "specific_humidity_anomaly"
+            ],
+            "year": [
+                "2020"
+            ]
+        },
+        {
+            "leadtime_month": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06",
+                "07",
+                "08",
+                "09",
+                "10"
+            ],
+            "originating_centre": [
+                "ecmwf"
+            ],
+            "pressure_level": [
+                "10",
+                "100",
+                "200",
+                "30",
+                "300",
+                "400",
+                "50",
+                "500",
+                "700",
+                "850",
+                "925"
+            ],
+            "product_type": [
+                "ensemble_mean",
+                "monthly_mean"
+            ],
+            "system": [
+                "5"
+            ],
+            "variable": [
+                "geopotential_anomaly",
+                "temperature_anomaly",
+                "u_component_of_wind_anomaly",
+                "v_component_of_wind_anomaly",
+                "specific_humidity_anomaly"
+            ],
+            "year": [
+                "2022"
+            ]
+        },
+        {
+            "leadtime_month": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06",
+                "07",
+                "08",
+                "09",
+                "10"
+            ],
+            "originating_centre": [
+                "meteo_france"
+            ],
+            "pressure_level": [
+                "10",
+                "200",
+                "30",
+                "300",
+                "400",
+                "50",
+                "500",
+                "700",
+                "850",
+                "925"
+            ],
+            "product_type": [
+                "ensemble_mean",
+                "monthly_mean"
+            ],
+            "system": [
+                "5"
+            ],
+            "variable": [
+                "geopotential_anomaly",
+                "temperature_anomaly",
+                "u_component_of_wind_anomaly",
+                "v_component_of_wind_anomaly",
+                "specific_humidity_anomaly"
+            ],
+            "year": [
+                "2018"
+            ]
+        },
+        {
+            "leadtime_month": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06",
+                "07",
+                "08",
+                "09",
+                "10",
+                "11",
+                "12"
+            ],
+            "originating_centre": [
+                "cmcc"
+            ],
+            "pressure_level": [
+                "10",
+                "100",
+                "1000",
+                "200",
+                "30",
+                "300",
+                "400",
+                "50",
+                "500",
+                "700",
+                "850",
+                "925"
+            ],
+            "product_type": [
+                "ensemble_mean",
+                "monthly_mean"
+            ],
+            "system": [
+                "35"
+            ],
+            "variable": [
+                "geopotential_anomaly",
+                "temperature_anomaly",
+                "u_component_of_wind_anomaly",
+                "v_component_of_wind_anomaly",
+                "specific_humidity_anomaly"
+            ],
+            "year": [
+                "2021",
+                "2022"
+            ]
+        },
+        {
+            "leadtime_month": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06",
+                "07",
+                "08",
+                "09",
+                "10",
+                "11",
+                "12"
+            ],
+            "originating_centre": [
+                "cmcc"
+            ],
+            "pressure_level": [
+                "10",
+                "100",
+                "200",
+                "30",
+                "300",
+                "400",
+                "50",
+                "500",
+                "700",
+                "850",
+                "925"
+            ],
+            "product_type": [
+                "ensemble_mean",
+                "monthly_mean"
+            ],
+            "system": [
+                "3"
+            ],
+            "variable": [
+                "geopotential_anomaly",
+                "temperature_anomaly",
+                "u_component_of_wind_anomaly",
+                "v_component_of_wind_anomaly",
+                "specific_humidity_anomaly"
+            ],
+            "year": [
+                "2019"
+            ]
+        },
+        {
+            "leadtime_month": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06",
+                "07",
+                "08",
+                "09",
+                "10",
+                "11",
+                "12"
+            ],
+            "originating_centre": [
+                "dwd"
+            ],
+            "pressure_level": [
+                "10",
+                "100",
+                "1000",
+                "200",
+                "30",
+                "300",
+                "400",
+                "50",
+                "500",
+                "700",
+                "850",
+                "925"
+            ],
+            "product_type": [
+                "ensemble_mean",
+                "monthly_mean"
+            ],
+            "system": [
+                "21"
+            ],
+            "variable": [
+                "geopotential_anomaly",
+                "temperature_anomaly",
+                "u_component_of_wind_anomaly",
+                "v_component_of_wind_anomaly",
+                "specific_humidity_anomaly"
+            ],
+            "year": [
+                "2021",
+                "2022"
+            ]
+        },
+        {
+            "leadtime_month": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06",
+                "07",
+                "08",
+                "09",
+                "10",
+                "11",
+                "12"
+            ],
+            "originating_centre": [
+                "dwd"
+            ],
+            "pressure_level": [
+                "10",
+                "100",
+                "200",
+                "30",
+                "300",
+                "400",
+                "50",
+                "500",
+                "700",
+                "850",
+                "925"
+            ],
+            "product_type": [
+                "ensemble_mean",
+                "monthly_mean"
+            ],
+            "system": [
+                "2"
+            ],
+            "variable": [
+                "geopotential_anomaly",
+                "temperature_anomaly",
+                "u_component_of_wind_anomaly",
+                "v_component_of_wind_anomaly",
+                "specific_humidity_anomaly"
+            ],
+            "year": [
+                "2018",
+                "2019"
+            ]
+        },
+        {
+            "leadtime_month": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06",
+                "07",
+                "08",
+                "09",
+                "10",
+                "11",
+                "12"
+            ],
+            "originating_centre": [
+                "eccc"
+            ],
+            "pressure_level": [
+                "10",
+                "100",
+                "1000",
+                "200",
+                "30",
+                "300",
+                "400",
+                "50",
+                "500",
+                "700",
+                "850",
+                "925"
+            ],
+            "product_type": [
+                "ensemble_mean",
+                "monthly_mean"
+            ],
+            "system": [
+                "2",
+                "3"
+            ],
+            "variable": [
+                "geopotential_anomaly",
+                "temperature_anomaly",
+                "u_component_of_wind_anomaly",
+                "v_component_of_wind_anomaly",
+                "specific_humidity_anomaly"
+            ],
+            "year": [
+                "2022"
+            ]
+        },
+        {
+            "leadtime_month": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06",
+                "07",
+                "08",
+                "09",
+                "10",
+                "11",
+                "12"
+            ],
+            "originating_centre": [
+                "ecmwf"
+            ],
+            "pressure_level": [
+                "10",
+                "100",
+                "200",
+                "30",
+                "300",
+                "400",
+                "50",
+                "500",
+                "700",
+                "850",
+                "925"
+            ],
+            "product_type": [
+                "ensemble_mean",
+                "monthly_mean"
+            ],
+            "system": [
+                "5"
+            ],
+            "variable": [
+                "geopotential_anomaly",
+                "temperature_anomaly",
+                "u_component_of_wind_anomaly",
+                "v_component_of_wind_anomaly",
+                "specific_humidity_anomaly"
+            ],
+            "year": [
+                "2017",
+                "2018",
+                "2019",
+                "2020",
+                "2021"
+            ]
+        },
+        {
+            "leadtime_month": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06",
+                "07",
+                "08",
+                "09",
+                "10",
+                "11",
+                "12"
+            ],
+            "originating_centre": [
+                "jma"
+            ],
+            "pressure_level": [
+                "10",
+                "100",
+                "200",
+                "30",
+                "300",
+                "50",
+                "500",
+                "700",
+                "850"
+            ],
+            "product_type": [
+                "ensemble_mean"
+            ],
+            "system": [
+                "2"
+            ],
+            "variable": [
+                "specific_humidity_anomaly"
+            ],
+            "year": [
+                "2021"
+            ]
+        },
+        {
+            "leadtime_month": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06",
+                "07",
+                "08",
+                "09",
+                "10",
+                "11",
+                "12"
+            ],
+            "originating_centre": [
+                "jma"
+            ],
+            "pressure_level": [
+                "10",
+                "100",
+                "200",
+                "30",
+                "300",
+                "50",
+                "500",
+                "700",
+                "850"
+            ],
+            "product_type": [
+                "monthly_mean"
+            ],
+            "system": [
+                "2"
+            ],
+            "variable": [
+                "geopotential_anomaly",
+                "temperature_anomaly",
+                "u_component_of_wind_anomaly",
+                "v_component_of_wind_anomaly",
+                "specific_humidity_anomaly"
+            ],
+            "year": [
+                "2021"
+            ]
+        },
+        {
+            "leadtime_month": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06",
+                "07",
+                "08",
+                "09",
+                "10",
+                "11",
+                "12"
+            ],
+            "originating_centre": [
+                "jma"
+            ],
+            "pressure_level": [
+                "10",
+                "100",
+                "30",
+                "300",
+                "50"
+            ],
+            "product_type": [
+                "ensemble_mean"
+            ],
+            "system": [
+                "2"
+            ],
+            "variable": [
+                "geopotential_anomaly",
+                "temperature_anomaly",
+                "u_component_of_wind_anomaly",
+                "v_component_of_wind_anomaly"
+            ],
+            "year": [
+                "2021"
+            ]
+        },
+        {
+            "leadtime_month": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06",
+                "07",
+                "08",
+                "09",
+                "10",
+                "11",
+                "12"
+            ],
+            "originating_centre": [
+                "jma",
+                "ncep"
+            ],
+            "pressure_level": [
+                "200",
+                "500",
+                "700",
+                "850"
+            ],
+            "product_type": [
+                "ensemble_mean"
+            ],
+            "system": [
+                "2"
+            ],
+            "variable": [
+                "geopotential_anomaly",
+                "temperature_anomaly",
+                "u_component_of_wind_anomaly",
+                "v_component_of_wind_anomaly"
+            ],
+            "year": [
+                "2021"
+            ]
+        },
+        {
+            "leadtime_month": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06",
+                "07",
+                "08",
+                "09",
+                "10",
+                "11",
+                "12"
+            ],
+            "originating_centre": [
+                "meteo_france"
+            ],
+            "pressure_level": [
+                "10",
+                "100",
+                "1000",
+                "200",
+                "30",
+                "300",
+                "400",
+                "50",
+                "500",
+                "700",
+                "850",
+                "925"
+            ],
+            "product_type": [
+                "ensemble_mean",
+                "monthly_mean"
+            ],
+            "system": [
+                "8"
+            ],
+            "variable": [
+                "geopotential_anomaly",
+                "temperature_anomaly",
+                "u_component_of_wind_anomaly",
+                "v_component_of_wind_anomaly",
+                "specific_humidity_anomaly"
+            ],
+            "year": [
+                "2022"
+            ]
+        },
+        {
+            "leadtime_month": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06",
+                "07",
+                "08",
+                "09",
+                "10",
+                "11",
+                "12"
+            ],
+            "originating_centre": [
+                "meteo_france"
+            ],
+            "pressure_level": [
+                "10",
+                "100",
+                "200",
+                "30",
+                "300",
+                "400",
+                "50",
+                "500",
+                "700",
+                "850",
+                "925"
+            ],
+            "product_type": [
+                "ensemble_mean",
+                "monthly_mean"
+            ],
+            "system": [
+                "6"
+            ],
+            "variable": [
+                "geopotential_anomaly",
+                "temperature_anomaly",
+                "u_component_of_wind_anomaly",
+                "v_component_of_wind_anomaly",
+                "specific_humidity_anomaly"
+            ],
+            "year": [
+                "2017",
+                "2018"
+            ]
+        },
+        {
+            "leadtime_month": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06",
+                "07",
+                "08",
+                "09",
+                "10",
+                "11",
+                "12"
+            ],
+            "originating_centre": [
+                "meteo_france"
+            ],
+            "pressure_level": [
+                "10",
+                "100",
+                "200",
+                "30",
+                "300",
+                "400",
+                "50",
+                "500",
+                "700",
+                "850",
+                "925"
+            ],
+            "product_type": [
+                "ensemble_mean",
+                "monthly_mean"
+            ],
+            "system": [
+                "7"
+            ],
+            "variable": [
+                "geopotential_anomaly",
+                "temperature_anomaly",
+                "u_component_of_wind_anomaly",
+                "v_component_of_wind_anomaly",
+                "specific_humidity_anomaly"
+            ],
+            "year": [
+                "2020"
+            ]
+        },
+        {
+            "leadtime_month": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06",
+                "07",
+                "08",
+                "09",
+                "10",
+                "11",
+                "12"
+            ],
+            "originating_centre": [
+                "ncep"
+            ],
+            "pressure_level": [
+                "200",
+                "500",
+                "700",
+                "850"
+            ],
+            "product_type": [
+                "ensemble_mean"
+            ],
+            "system": [
+                "2"
+            ],
+            "variable": [
+                "geopotential_anomaly",
+                "temperature_anomaly",
+                "u_component_of_wind_anomaly",
+                "v_component_of_wind_anomaly"
+            ],
+            "year": [
+                "2020",
+                "2022"
+            ]
+        },
+        {
+            "leadtime_month": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06",
+                "07",
+                "08",
+                "09",
+                "10",
+                "11",
+                "12"
+            ],
+            "originating_centre": [
+                "ncep"
+            ],
+            "pressure_level": [
+                "200",
+                "500",
+                "700",
+                "850"
+            ],
+            "product_type": [
+                "monthly_mean"
+            ],
+            "system": [
+                "2"
+            ],
+            "variable": [
+                "geopotential_anomaly",
+                "temperature_anomaly",
+                "u_component_of_wind_anomaly",
+                "v_component_of_wind_anomaly"
+            ],
+            "year": [
+                "2020",
+                "2021"
+            ]
+        },
+        {
+            "leadtime_month": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06",
+                "07",
+                "08",
+                "09",
+                "10",
+                "11",
+                "12"
+            ],
+            "originating_centre": [
+                "ncep"
+            ],
+            "pressure_level": [
+                "200",
+                "500",
+                "700",
+                "850"
+            ],
+            "product_type": [
+                "monthly_mean"
+            ],
+            "system": [
+                "2"
+            ],
+            "variable": [
+                "geopotential_anomaly",
+                "temperature_anomaly",
+                "u_component_of_wind_anomaly",
+                "v_component_of_wind_anomaly"
+            ],
+            "year": [
+                "2022"
+            ]
+        },
+        {
+            "leadtime_month": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "month": [
+                "02",
+                "03",
+                "04",
+                "05",
+                "06",
+                "07",
+                "08",
+                "09",
+                "10",
+                "11",
+                "12"
+            ],
+            "originating_centre": [
+                "jma"
+            ],
+            "pressure_level": [
+                "10",
+                "100",
+                "200",
+                "30",
+                "300",
+                "400",
+                "50",
+                "500",
+                "700",
+                "850",
+                "925"
+            ],
+            "product_type": [
+                "ensemble_mean"
+            ],
+            "system": [
+                "3"
+            ],
+            "variable": [
+                "geopotential_anomaly",
+                "temperature_anomaly",
+                "u_component_of_wind_anomaly",
+                "v_component_of_wind_anomaly",
+                "specific_humidity_anomaly"
+            ],
+            "year": [
+                "2022"
+            ]
+        },
+        {
+            "leadtime_month": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "month": [
+                "02",
+                "03",
+                "04",
+                "05",
+                "06",
+                "07",
+                "08",
+                "09",
+                "10",
+                "11",
+                "12"
+            ],
+            "originating_centre": [
+                "jma"
+            ],
+            "pressure_level": [
+                "10",
+                "100",
+                "200",
+                "30",
+                "300",
+                "400",
+                "50",
+                "500",
+                "700",
+                "850",
+                "925"
+            ],
+            "product_type": [
+                "monthly_mean"
+            ],
+            "system": [
+                "3"
+            ],
+            "variable": [
+                "geopotential_anomaly",
+                "temperature_anomaly",
+                "u_component_of_wind_anomaly",
+                "v_component_of_wind_anomaly",
+                "specific_humidity_anomaly"
+            ],
+            "year": [
+                "2022"
+            ]
+        },
+        {
+            "leadtime_month": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "month": [
+                "03",
+                "04",
+                "05",
+                "06",
+                "07"
+            ],
+            "originating_centre": [
+                "ukmo"
+            ],
+            "pressure_level": [
+                "10",
+                "100",
+                "1000",
+                "200",
+                "30",
+                "300",
+                "400",
+                "50",
+                "500",
+                "700",
+                "850",
+                "925"
+            ],
+            "product_type": [
+                "ensemble_mean"
+            ],
+            "system": [
+                "602"
+            ],
+            "variable": [
+                "geopotential_anomaly",
+                "temperature_anomaly",
+                "u_component_of_wind_anomaly",
+                "v_component_of_wind_anomaly",
+                "specific_humidity_anomaly"
+            ],
+            "year": [
+                "2023"
+            ]
+        },
+        {
+            "leadtime_month": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "month": [
+                "03",
+                "04",
+                "05",
+                "06",
+                "07"
+            ],
+            "originating_centre": [
+                "ukmo"
+            ],
+            "pressure_level": [
+                "10",
+                "100",
+                "1000",
+                "200",
+                "30",
+                "300",
+                "400",
+                "50",
+                "500",
+                "700",
+                "850",
+                "925"
+            ],
+            "product_type": [
+                "monthly_mean"
+            ],
+            "system": [
+                "602"
+            ],
+            "variable": [
+                "geopotential_anomaly",
+                "temperature_anomaly",
+                "u_component_of_wind_anomaly",
+                "v_component_of_wind_anomaly",
+                "specific_humidity_anomaly"
+            ],
+            "year": [
+                "2023"
+            ]
+        },
+        {
+            "leadtime_month": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "month": [
+                "03",
+                "04",
+                "05",
+                "06",
+                "07",
+                "08",
+                "09",
+                "10",
+                "11",
+                "12"
+            ],
+            "originating_centre": [
+                "ukmo"
+            ],
+            "pressure_level": [
+                "10",
+                "100",
+                "200",
+                "30",
+                "300",
+                "400",
+                "50",
+                "500",
+                "700",
+                "850",
+                "925"
+            ],
+            "product_type": [
+                "ensemble_mean"
+            ],
+            "system": [
+                "600"
+            ],
+            "variable": [
+                "geopotential_anomaly",
+                "temperature_anomaly",
+                "u_component_of_wind_anomaly",
+                "v_component_of_wind_anomaly",
+                "specific_humidity_anomaly"
+            ],
+            "year": [
+                "2021"
+            ]
+        },
+        {
+            "leadtime_month": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "month": [
+                "03",
+                "04",
+                "05",
+                "06",
+                "07",
+                "08",
+                "09",
+                "10",
+                "11",
+                "12"
+            ],
+            "originating_centre": [
+                "ukmo"
+            ],
+            "pressure_level": [
+                "10",
+                "100",
+                "200",
+                "30",
+                "300",
+                "400",
+                "50",
+                "500",
+                "700",
+                "850",
+                "925"
+            ],
+            "product_type": [
+                "ensemble_mean"
+            ],
+            "system": [
+                "601"
+            ],
+            "variable": [
+                "geopotential_anomaly",
+                "temperature_anomaly",
+                "u_component_of_wind_anomaly",
+                "v_component_of_wind_anomaly",
+                "specific_humidity_anomaly"
+            ],
+            "year": [
+                "2022"
+            ]
+        },
+        {
+            "leadtime_month": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "month": [
+                "03",
+                "04",
+                "05",
+                "06",
+                "07",
+                "08",
+                "09",
+                "10",
+                "11",
+                "12"
+            ],
+            "originating_centre": [
+                "ukmo"
+            ],
+            "pressure_level": [
+                "10",
+                "100",
+                "200",
+                "30",
+                "300",
+                "400",
+                "50",
+                "500",
+                "700",
+                "850",
+                "925"
+            ],
+            "product_type": [
+                "monthly_mean"
+            ],
+            "system": [
+                "600"
+            ],
+            "variable": [
+                "geopotential_anomaly",
+                "temperature_anomaly",
+                "u_component_of_wind_anomaly",
+                "v_component_of_wind_anomaly",
+                "specific_humidity_anomaly"
+            ],
+            "year": [
+                "2021"
+            ]
+        },
+        {
+            "leadtime_month": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "month": [
+                "03",
+                "04",
+                "05",
+                "06",
+                "07",
+                "08",
+                "09",
+                "10",
+                "11",
+                "12"
+            ],
+            "originating_centre": [
+                "ukmo"
+            ],
+            "pressure_level": [
+                "10",
+                "100",
+                "200",
+                "30",
+                "300",
+                "400",
+                "50",
+                "500",
+                "700",
+                "850",
+                "925"
+            ],
+            "product_type": [
+                "monthly_mean"
+            ],
+            "system": [
+                "601"
+            ],
+            "variable": [
+                "geopotential_anomaly",
+                "temperature_anomaly",
+                "u_component_of_wind_anomaly",
+                "v_component_of_wind_anomaly",
+                "specific_humidity_anomaly"
+            ],
+            "year": [
+                "2022"
+            ]
+        },
+        {
+            "leadtime_month": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "month": [
+                "05",
+                "06",
+                "07",
+                "08",
+                "09",
+                "10",
+                "11"
+            ],
+            "originating_centre": [
+                "eccc"
+            ],
+            "pressure_level": [
+                "10",
+                "100",
+                "1000",
+                "200",
+                "300",
+                "400",
+                "50",
+                "500",
+                "700",
+                "850",
+                "925"
+            ],
+            "product_type": [
+                "ensemble_mean",
+                "monthly_mean"
+            ],
+            "system": [
+                "1"
+            ],
+            "variable": [
+                "geopotential_anomaly",
+                "temperature_anomaly",
+                "u_component_of_wind_anomaly",
+                "v_component_of_wind_anomaly",
+                "specific_humidity_anomaly"
+            ],
+            "year": [
+                "2021"
+            ]
+        },
+        {
+            "leadtime_month": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "month": [
+                "05",
+                "06",
+                "07",
+                "08",
+                "09",
+                "10",
+                "11",
+                "12"
+            ],
+            "originating_centre": [
+                "eccc"
+            ],
+            "pressure_level": [
+                "10",
+                "100",
+                "1000",
+                "200",
+                "30",
+                "300",
+                "400",
+                "50",
+                "500",
+                "700",
+                "850",
+                "925"
+            ],
+            "product_type": [
+                "ensemble_mean",
+                "monthly_mean"
+            ],
+            "system": [
+                "2"
+            ],
+            "variable": [
+                "geopotential_anomaly",
+                "temperature_anomaly",
+                "u_component_of_wind_anomaly",
+                "v_component_of_wind_anomaly",
+                "specific_humidity_anomaly"
+            ],
+            "year": [
+                "2021"
+            ]
+        },
+        {
+            "leadtime_month": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "month": [
+                "05",
+                "06",
+                "07",
+                "08",
+                "09",
+                "10",
+                "11",
+                "12"
+            ],
+            "originating_centre": [
+                "ukmo"
+            ],
+            "pressure_level": [
+                "10",
+                "100",
+                "200",
+                "30",
+                "300",
+                "400",
+                "50",
+                "500",
+                "700",
+                "850",
+                "925"
+            ],
+            "product_type": [
+                "ensemble_mean"
+            ],
+            "system": [
+                "13"
+            ],
+            "variable": [
+                "geopotential_anomaly",
+                "temperature_anomaly",
+                "u_component_of_wind_anomaly",
+                "v_component_of_wind_anomaly",
+                "specific_humidity_anomaly"
+            ],
+            "year": [
+                "2018"
+            ]
+        },
+        {
+            "leadtime_month": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "month": [
+                "05",
+                "06",
+                "07",
+                "08",
+                "09",
+                "10",
+                "11",
+                "12"
+            ],
+            "originating_centre": [
+                "ukmo"
+            ],
+            "pressure_level": [
+                "10",
+                "100",
+                "200",
+                "30",
+                "300",
+                "400",
+                "50",
+                "500",
+                "700",
+                "850",
+                "925"
+            ],
+            "product_type": [
+                "ensemble_mean"
+            ],
+            "system": [
+                "14"
+            ],
+            "variable": [
+                "geopotential_anomaly",
+                "temperature_anomaly",
+                "u_component_of_wind_anomaly",
+                "v_component_of_wind_anomaly",
+                "specific_humidity_anomaly"
+            ],
+            "year": [
+                "2019"
+            ]
+        },
+        {
+            "leadtime_month": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "month": [
+                "05",
+                "06",
+                "07",
+                "08",
+                "09",
+                "10",
+                "11",
+                "12"
+            ],
+            "originating_centre": [
+                "ukmo"
+            ],
+            "pressure_level": [
+                "10",
+                "100",
+                "200",
+                "30",
+                "300",
+                "400",
+                "50",
+                "500",
+                "700",
+                "850",
+                "925"
+            ],
+            "product_type": [
+                "ensemble_mean"
+            ],
+            "system": [
+                "15"
+            ],
+            "variable": [
+                "geopotential_anomaly",
+                "temperature_anomaly",
+                "u_component_of_wind_anomaly",
+                "v_component_of_wind_anomaly",
+                "specific_humidity_anomaly"
+            ],
+            "year": [
+                "2020"
+            ]
+        },
+        {
+            "leadtime_month": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "month": [
+                "05",
+                "06",
+                "07",
+                "08",
+                "09",
+                "10",
+                "11",
+                "12"
+            ],
+            "originating_centre": [
+                "ukmo"
+            ],
+            "pressure_level": [
+                "10",
+                "100",
+                "200",
+                "30",
+                "300",
+                "400",
+                "50",
+                "500",
+                "700",
+                "850",
+                "925"
+            ],
+            "product_type": [
+                "monthly_mean"
+            ],
+            "system": [
+                "13"
+            ],
+            "variable": [
+                "geopotential_anomaly",
+                "temperature_anomaly",
+                "u_component_of_wind_anomaly",
+                "v_component_of_wind_anomaly",
+                "specific_humidity_anomaly"
+            ],
+            "year": [
+                "2018"
+            ]
+        },
+        {
+            "leadtime_month": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "month": [
+                "05",
+                "06",
+                "07",
+                "08",
+                "09",
+                "10",
+                "11",
+                "12"
+            ],
+            "originating_centre": [
+                "ukmo"
+            ],
+            "pressure_level": [
+                "10",
+                "100",
+                "200",
+                "30",
+                "300",
+                "400",
+                "50",
+                "500",
+                "700",
+                "850",
+                "925"
+            ],
+            "product_type": [
+                "monthly_mean"
+            ],
+            "system": [
+                "14"
+            ],
+            "variable": [
+                "geopotential_anomaly",
+                "temperature_anomaly",
+                "u_component_of_wind_anomaly",
+                "v_component_of_wind_anomaly",
+                "specific_humidity_anomaly"
+            ],
+            "year": [
+                "2019"
+            ]
+        },
+        {
+            "leadtime_month": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "month": [
+                "05",
+                "06",
+                "07",
+                "08",
+                "09",
+                "10",
+                "11",
+                "12"
+            ],
+            "originating_centre": [
+                "ukmo"
+            ],
+            "pressure_level": [
+                "10",
+                "100",
+                "200",
+                "30",
+                "300",
+                "400",
+                "50",
+                "500",
+                "700",
+                "850",
+                "925"
+            ],
+            "product_type": [
+                "monthly_mean"
+            ],
+            "system": [
+                "15"
+            ],
+            "variable": [
+                "geopotential_anomaly",
+                "temperature_anomaly",
+                "u_component_of_wind_anomaly",
+                "v_component_of_wind_anomaly",
+                "specific_humidity_anomaly"
+            ],
+            "year": [
+                "2020"
+            ]
+        },
+        {
+            "leadtime_month": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "month": [
+                "07"
+            ],
+            "originating_centre": [
+                "cmcc"
+            ],
+            "pressure_level": [
+                "10",
+                "100",
+                "1000",
+                "30",
+                "300",
+                "400",
+                "50",
+                "925"
+            ],
+            "product_type": [
+                "ensemble_mean",
+                "monthly_mean"
+            ],
+            "system": [
+                "35"
+            ],
+            "variable": [
+                "geopotential_anomaly",
+                "temperature_anomaly",
+                "u_component_of_wind_anomaly",
+                "v_component_of_wind_anomaly",
+                "specific_humidity_anomaly"
+            ],
+            "year": [
+                "2023"
+            ]
+        },
+        {
+            "leadtime_month": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "month": [
+                "07"
+            ],
+            "originating_centre": [
+                "jma"
+            ],
+            "pressure_level": [
+                "10",
+                "100",
+                "30",
+                "300",
+                "400",
+                "50",
+                "925"
+            ],
+            "product_type": [
+                "ensemble_mean",
+                "monthly_mean"
+            ],
+            "system": [
+                "3"
+            ],
+            "variable": [
+                "geopotential_anomaly",
+                "temperature_anomaly",
+                "u_component_of_wind_anomaly",
+                "v_component_of_wind_anomaly",
+                "specific_humidity_anomaly"
+            ],
+            "year": [
+                "2023"
+            ]
+        },
+        {
+            "leadtime_month": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "month": [
+                "07",
+                "08",
+                "09",
+                "10",
+                "11",
+                "12"
+            ],
+            "originating_centre": [
+                "meteo_france"
+            ],
+            "pressure_level": [
+                "10",
+                "100",
+                "1000",
+                "200",
+                "30",
+                "300",
+                "400",
+                "50",
+                "500",
+                "700",
+                "850",
+                "925"
+            ],
+            "product_type": [
+                "ensemble_mean",
+                "monthly_mean"
+            ],
+            "system": [
+                "8"
+            ],
+            "variable": [
+                "geopotential_anomaly",
+                "temperature_anomaly",
+                "u_component_of_wind_anomaly",
+                "v_component_of_wind_anomaly",
+                "specific_humidity_anomaly"
+            ],
+            "year": [
+                "2021"
+            ]
+        },
+        {
+            "leadtime_month": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "month": [
+                "08"
+            ],
+            "originating_centre": [
+                "ecmwf"
+            ],
+            "pressure_level": [
+                "10",
+                "100",
+                "1000",
+                "30",
+                "300",
+                "400",
+                "50",
+                "925"
+            ],
+            "product_type": [
+                "ensemble_mean",
+                "monthly_mean"
+            ],
+            "system": [
+                "51"
+            ],
+            "variable": [
+                "geopotential_anomaly",
+                "temperature_anomaly",
+                "u_component_of_wind_anomaly",
+                "v_component_of_wind_anomaly",
+                "specific_humidity_anomaly"
+            ],
+            "year": [
+                "2023"
+            ]
+        },
+        {
+            "leadtime_month": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "month": [
+                "09"
+            ],
+            "originating_centre": [
+                "ecmwf"
+            ],
+            "pressure_level": [
+                "10",
+                "100",
+                "1000",
+                "30",
+                "300",
+                "400",
+                "50",
+                "925"
+            ],
+            "product_type": [
+                "ensemble_mean",
+                "monthly_mean"
+            ],
+            "system": [
+                "51"
+            ],
+            "variable": [
+                "geopotential_anomaly",
+                "temperature_anomaly",
+                "u_component_of_wind_anomaly",
+                "v_component_of_wind_anomaly",
+                "specific_humidity_anomaly"
+            ],
+            "year": [
+                "2017",
+                "2018",
+                "2019",
+                "2020",
+                "2021",
+                "2022"
+            ]
+        },
+        {
+            "leadtime_month": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "month": [
+                "09",
+                "10"
+            ],
+            "originating_centre": [
+                "ecmwf"
+            ],
+            "pressure_level": [
+                "10",
+                "100",
+                "200",
+                "30",
+                "300",
+                "400",
+                "50",
+                "500",
+                "700",
+                "850",
+                "925"
+            ],
+            "product_type": [
+                "ensemble_mean"
+            ],
+            "system": [
+                "4"
+            ],
+            "variable": [
+                "geopotential_anomaly",
+                "temperature_anomaly",
+                "u_component_of_wind_anomaly",
+                "v_component_of_wind_anomaly",
+                "specific_humidity_anomaly"
+            ],
+            "year": [
+                "2017"
+            ]
+        },
+        {
+            "leadtime_month": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "month": [
+                "09",
+                "10"
+            ],
+            "originating_centre": [
+                "ecmwf"
+            ],
+            "pressure_level": [
+                "10",
+                "100",
+                "200",
+                "30",
+                "300",
+                "400",
+                "50",
+                "500",
+                "700",
+                "850",
+                "925"
+            ],
+            "product_type": [
+                "monthly_mean"
+            ],
+            "system": [
+                "4"
+            ],
+            "variable": [
+                "geopotential_anomaly",
+                "temperature_anomaly",
+                "u_component_of_wind_anomaly",
+                "v_component_of_wind_anomaly",
+                "specific_humidity_anomaly"
+            ],
+            "year": [
+                "2017"
+            ]
+        },
+        {
+            "leadtime_month": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "month": [
+                "09",
+                "10",
+                "11",
+                "12"
+            ],
+            "originating_centre": [
+                "meteo_france"
+            ],
+            "pressure_level": [
+                "10",
+                "200",
+                "30",
+                "300",
+                "400",
+                "50",
+                "500",
+                "700",
+                "850",
+                "925"
+            ],
+            "product_type": [
+                "ensemble_mean",
+                "monthly_mean"
+            ],
+            "system": [
+                "5"
+            ],
+            "variable": [
+                "geopotential_anomaly",
+                "temperature_anomaly",
+                "u_component_of_wind_anomaly",
+                "v_component_of_wind_anomaly",
+                "specific_humidity_anomaly"
+            ],
+            "year": [
+                "2017"
+            ]
+        },
+        {
+            "leadtime_month": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "month": [
+                "09",
+                "10",
+                "11",
+                "12"
+            ],
+            "originating_centre": [
+                "ukmo"
+            ],
+            "pressure_level": [
+                "10",
+                "100",
+                "200",
+                "30",
+                "300",
+                "400",
+                "50",
+                "500",
+                "700",
+                "850",
+                "925"
+            ],
+            "product_type": [
+                "ensemble_mean",
+                "monthly_mean"
+            ],
+            "system": [
+                "12"
+            ],
+            "variable": [
+                "geopotential_anomaly",
+                "temperature_anomaly",
+                "u_component_of_wind_anomaly",
+                "v_component_of_wind_anomaly",
+                "specific_humidity_anomaly"
+            ],
+            "year": [
+                "2017"
+            ]
+        },
+        {
+            "leadtime_month": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "month": [
+                "10",
+                "11",
+                "12"
+            ],
+            "originating_centre": [
+                "cmcc"
+            ],
+            "pressure_level": [
+                "10",
+                "100",
+                "1000",
+                "200",
+                "30",
+                "300",
+                "400",
+                "50",
+                "500",
+                "700",
+                "850",
+                "925"
+            ],
+            "product_type": [
+                "ensemble_mean",
+                "monthly_mean"
+            ],
+            "system": [
+                "35"
+            ],
+            "variable": [
+                "geopotential_anomaly",
+                "temperature_anomaly",
+                "u_component_of_wind_anomaly",
+                "v_component_of_wind_anomaly",
+                "specific_humidity_anomaly"
+            ],
+            "year": [
+                "2020"
+            ]
+        },
+        {
+            "leadtime_month": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "month": [
+                "10",
+                "11",
+                "12"
+            ],
+            "originating_centre": [
+                "jma"
+            ],
+            "pressure_level": [
+                "10",
+                "100",
+                "200",
+                "30",
+                "300",
+                "50",
+                "500",
+                "700",
+                "850"
+            ],
+            "product_type": [
+                "ensemble_mean",
+                "monthly_mean"
+            ],
+            "system": [
+                "2"
+            ],
+            "variable": [
+                "geopotential_anomaly",
+                "temperature_anomaly",
+                "u_component_of_wind_anomaly",
+                "v_component_of_wind_anomaly",
+                "specific_humidity_anomaly"
+            ],
+            "year": [
+                "2020"
+            ]
+        },
+        {
+            "leadtime_month": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "month": [
+                "10",
+                "11",
+                "12"
+            ],
+            "originating_centre": [
+                "meteo_france"
+            ],
+            "pressure_level": [
+                "10",
+                "100",
+                "200",
+                "30",
+                "300",
+                "400",
+                "50",
+                "500",
+                "700",
+                "850",
+                "925"
+            ],
+            "product_type": [
+                "ensemble_mean",
+                "monthly_mean"
+            ],
+            "system": [
+                "7"
+            ],
+            "variable": [
+                "geopotential_anomaly",
+                "temperature_anomaly",
+                "u_component_of_wind_anomaly",
+                "v_component_of_wind_anomaly",
+                "specific_humidity_anomaly"
+            ],
+            "year": [
+                "2019"
+            ]
+        },
+        {
+            "leadtime_month": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "month": [
+                "10",
+                "11",
+                "12"
+            ],
+            "originating_centre": [
+                "ncep"
+            ],
+            "pressure_level": [
+                "200",
+                "500",
+                "700",
+                "850"
+            ],
+            "product_type": [
+                "ensemble_mean"
+            ],
+            "system": [
+                "2"
+            ],
+            "variable": [
+                "geopotential_anomaly",
+                "temperature_anomaly",
+                "u_component_of_wind_anomaly",
+                "v_component_of_wind_anomaly"
+            ],
+            "year": [
+                "2019"
+            ]
+        },
+        {
+            "leadtime_month": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "month": [
+                "10",
+                "11",
+                "12"
+            ],
+            "originating_centre": [
+                "ncep"
+            ],
+            "pressure_level": [
+                "200",
+                "500",
+                "700",
+                "850"
+            ],
+            "product_type": [
+                "monthly_mean"
+            ],
+            "system": [
+                "2"
+            ],
+            "variable": [
+                "geopotential_anomaly",
+                "temperature_anomaly",
+                "u_component_of_wind_anomaly",
+                "v_component_of_wind_anomaly"
+            ],
+            "year": [
+                "2019"
+            ]
+        },
+        {
+            "leadtime_month": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "month": [
+                "11",
+                "12"
+            ],
+            "originating_centre": [
+                "cmcc"
+            ],
+            "pressure_level": [
+                "10",
+                "100",
+                "200",
+                "30",
+                "300",
+                "400",
+                "50",
+                "500",
+                "700",
+                "850",
+                "925"
+            ],
+            "product_type": [
+                "ensemble_mean",
+                "monthly_mean"
+            ],
+            "system": [
+                "3"
+            ],
+            "variable": [
+                "geopotential_anomaly",
+                "temperature_anomaly",
+                "u_component_of_wind_anomaly",
+                "v_component_of_wind_anomaly",
+                "specific_humidity_anomaly"
+            ],
+            "year": [
+                "2018"
+            ]
+        },
+        {
+            "leadtime_month": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "month": [
+                "11",
+                "12"
+            ],
+            "originating_centre": [
+                "dwd"
+            ],
+            "pressure_level": [
+                "10",
+                "100",
+                "1000",
+                "200",
+                "30",
+                "300",
+                "400",
+                "50",
+                "500",
+                "700",
+                "850",
+                "925"
+            ],
+            "product_type": [
+                "ensemble_mean",
+                "monthly_mean"
+            ],
+            "system": [
+                "21"
+            ],
+            "variable": [
+                "geopotential_anomaly",
+                "temperature_anomaly",
+                "u_component_of_wind_anomaly",
+                "v_component_of_wind_anomaly",
+                "specific_humidity_anomaly"
+            ],
+            "year": [
+                "2020"
+            ]
+        },
+        {
+            "leadtime_month": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "month": [
+                "12"
+            ],
+            "originating_centre": [
+                "eccc"
+            ],
+            "pressure_level": [
+                "10",
+                "100",
+                "1000",
+                "200",
+                "30",
+                "300",
+                "400",
+                "50",
+                "500",
+                "700",
+                "850",
+                "925"
+            ],
+            "product_type": [
+                "ensemble_mean",
+                "monthly_mean"
+            ],
+            "system": [
+                "3"
+            ],
+            "variable": [
+                "geopotential_anomaly",
+                "temperature_anomaly",
+                "u_component_of_wind_anomaly",
+                "v_component_of_wind_anomaly",
+                "specific_humidity_anomaly"
+            ],
+            "year": [
+                "2021"
+            ]
+        }
+    ]
+}

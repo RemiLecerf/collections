@@ -1,0 +1,66 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:dct="http://purl.org/dc/terms/" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/184f6b14-542d-448c-9c1f-44ed6ee8c7c4">
+        <foaf:primaryTopic rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/resource/87cf1db7-83a0-4998-b242-7dedcc9ef46f"/>
+        <dct:issued>2022-07-04</dct:issued>
+        <dct:modified>2022-07-04</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/srv/eng/xml.metadata.get?uuid=184f6b14-542d-448c-9c1f-44ed6ee8c7c4">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork?uuid=184f6b14-542d-448c-9c1f-44ed6ee8c7c4">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/resource/87cf1db7-83a0-4998-b242-7dedcc9ef46f">
+        <dct:identifier>87cf1db7-83a0-4998-b242-7dedcc9ef46f</dct:identifier>
+        <dct:title>NORTH ATLANTIC AND EUROPEAN SEAS ALONG-TRACK HIGH RESOLUTION L3 SEA LEVEL ANOMALIES</dct:title>
+        <dct:abstract>'''Short description:'''
+
+Experimental altimeter satellite along-track sea surface heights anomalies (SLA) computed with respect to a twenty-year [1993, 2012] mean with a 5Hz (~1.3km) sampling. All the missions are homogenized with respect to a reference mission (see QUID document or http://duacs.cls.fr [http://duacs.cls.fr] pages for processing details). The product gives additional variables (e.g. Mean Dynamic Topography, Dynamic Atmosphic Correction, Ocean Tides, Long Wavelength Errors, Internal tide, …) that can be used to change the physical content for specific needs
+This product was generated as experimental products in a CNES R&amp;D context. It was processed by the DUACS multimission altimeter data processing system.
+
+'''DOI (product) :'''   
+https://doi.org/10.48670/moi-00137</dct:abstract>
+        <dcat:theme rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/thesaurus/iso/topicCategory/oceans"/>
+        <foaf:thumbnail rdf:resource="https://catalogue.marine.copernicus.eu/documents/IMG/SEALEVEL_ATL_PHY_HR_L3_MY_008_064.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((-98.00 10.00, -98.00 88.00, 42.00 88.00, 42.00 10.00, -98.00 10.00))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:issued>2012-08-26</dct:issued>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/SL-CLS-TOULOUSE-FR"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/SL-CLS-TOULOUSE-FR"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/SL-CLS-TOULOUSE-FR"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/SL-CLS-TOULOUSE-FR"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/SL-CLS-TOULOUSE-FR"/>
+        <dct:accrualPeriodicity>annually</dct:accrualPeriodicity>
+        <dct:license>otherRestrictions</dct:license>
+        <dct:license>license</dct:license>
+        <dct:license>No limitations on public access</dct:license>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/SEALEVEL_ATL_PHY_HR_L3_MY_008_064/cmems_obs-sl_atl_phy-ssh_my_alg-l3-duacs_PT0.2S"/>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/SEALEVEL_ATL_PHY_HR_L3_MY_008_064/cmems_obs-sl_atl_phy-ssh_my_c2-l3-duacs_PT0.2S"/>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/SEALEVEL_ATL_PHY_HR_L3_MY_008_064/cmems_obs-sl_atl_phy-ssh_my_j2g-l3-duacs_PT0.2S"/>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/SEALEVEL_ATL_PHY_HR_L3_MY_008_064/cmems_obs-sl_atl_phy-ssh_my_j2n-l3-duacs_PT0.2S"/>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/SEALEVEL_ATL_PHY_HR_L3_MY_008_064/cmems_obs-sl_atl_phy-ssh_my_j3-l3-duacs_PT0.2S"/>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/SEALEVEL_ATL_PHY_HR_L3_MY_008_064/cmems_obs-sl_atl_phy-ssh_my_s3a-l3-duacs_PT0.2S"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/a3daa8c8-90bd-469b-ab79-a3ca3cef7e93"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/d41bd822-6dc7-4e19-bfb6-0a42a769bb65"/>
+        <dcat:dataQuality>The myOcean products depends on other products for production or validation. The detailed list of dependencies is given in ISO19115's aggregationInfo (ISO19139 Xpath = "gmd:MD_Metadata/gmd:identificationInfo/gmd:aggregationInfo[./gmd:MD_AggregateInformation/gmd:initiativeType/gmd:DS_InitiativeTypeCode/@codeListValue='upstream-validation' or 'upstream-production']")</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+    

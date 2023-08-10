@@ -1,0 +1,351 @@
+{
+    "slug": "sea-ice-thickness-monthly-gridded-data-for-the-arctic-from-2002-to-present-derived-from-satellite-observations",
+    "name": "satellite-sea-ice-thickness",
+    "id": "eu.copernicus.climate.satellite-sea-ice-thickness",
+    "type": "dataset",
+    "rich_abstract": "<div class='abstract-text'>\n         <p>This dataset provides monthly gridded data of sea ice thickness for the Arctic region based on satellite radar altimetry observations. Sea ice is an important component of our climate system and a sensitive indicator of climate change. Its presence or its retreat has a strong impact on air-sea interactions, the Earth\u2019s energy budget as well as marine ecosystems. It is recognized by the Global Climate Observing System as an Essential Climate Variable. Sea ice thickness is one of the parameters commonly used to characterise sea ice, alongside sea ice concentration, sea ice edge, and sea ice type, also available in the Climate Data Store.</p>\n<p>Satellite radar altimeters provide measurements of the sea ice freeboard, which is the difference between the height of the surface of sea ice and the surface of water in open leads (areas of open water within the sea ice). Because of the buoyancy of ice in water, typically about 90% of the ice thickness remains under water and thus the total ice thickness is about 10 times the freeboard. However, snow on top of sea ice changes this ratio and complicates the estimation of the ice thickness, requiring the use of auxiliary information about snow depth and density. The retrieval of ice thickness uses the narrow radar swath at the nadir of the satellite at full resolution of approximately 1-10 km and a point spacing of 300 meters. This Level-2 sea-ice thickness products (not provided here) is then gridded for a period of a month to obtain full coverage of a north polar grid at a resolution of 25 km. The algorithm used was developed as part of the European Space Agency Climate Change Initiative (ESA CCI) on Sea Ice.</p>\n<p>The data provided here are Level-3 Collated (L3C) products: they contain monthly gridded values from orbit data from a single platform (Envisat or CryoSat-2) without interpolation or any other form of gap filling. The files also contain estimates of the algorithm uncertainty as well as a quality status flag indicating potential issues with the retrieval not captured in the algorithm uncertainty. Sources of uncertainty in the algorithm are related to the auxiliary data and to the use of different radar altimeter concepts in Envisat (pulse-limited) and CryoSat-2 (synthetic aperture radar).</p>\n<p>This dataset combines a Climate Data Record (CDR), which has sufficient length, consistency, and continuity to be used to assess climate variability and change, and an Interim Climate Data Record (ICDR), which provides regular temporal extensions to the CDR and where consistency with the CDR is expected but not extensively checked. Here, the CDR is based on measurements from the RA-2 altimeter on Envisat (October 2002  to October 2010) and the SIRAL altimeter on CryoSat-2 (November 2010 to April 2020). The ICDR is based on observations from CryoSat-2 only (from April 2015 onward) and is updated monthly with a one-month delay behind real time. Users should note that the quality and accuracy of the data record are higher during the CryoSat-2 period than during the Envisat period. As a result, care should be taken when combining the two missions to assess long-term changes and trends. More information can be found in the Product User Guide and Product Quality Assessment Report.</p>\n<p>This dataset is currently limited spatially to the Arctic region and temporally to the winter months of October through April due to unresolved bias originating from melting snow or open melt ponds in the remaining five months. For a similar reason, no sea-ice thickness data with sufficient quality exist for the Southern Hemisphere. The extension of the CDR/ICDR to other periods, regions, and radar altimeter missions is under development in the extension of the ESA CCI Sea Ice project (ESA CCI+).</p>\n<p>This dataset is produced on behalf of the Copernicus Climate Change Service (C3S).</p>\n         \n         \n            <p></p>\n            <table class=\"abstract-description abstract-table\">\n            <tr><th colspan=\"2\">DATA DESCRIPTION</th>\n            \n<tr><th>Data type</th><td>Gridded</td></tr>\n<tr><th>Projection</th><td>Lambert Azimuthal Equal Area (EASE-Grid version 2.0) centred over the North Pole</td></tr>\n<tr><th>Horizontal coverage</th><td>Northern Hemisphere</td></tr>\n<tr><th>Horizontal resolution</th><td>25 km grid resolution (true spatial resolution: 1-10 km)</td></tr>\n<tr><th>Vertical coverage</th><td>Surface</td></tr>\n<tr><th>Vertical resolution</th><td>Single level</td></tr>\n<tr><th>Temporal coverage</th><td>October 2002 to present, only for Northern Hemisphere winter months (October through April)</td></tr>\n<tr><th>Temporal resolution</th><td>Monthly</td></tr>\n<tr><th>Temporal gaps</th><td>From May through September</td></tr>\n<tr><th>File format</th><td>NetCDF 4</td></tr>\n<tr><th>Conventions</th><td>Climate and Forecast (CF) Metadata Convention v1.7, Attribute Convention for Dataset Discovery (ACDD) v1.3</td></tr>\n<tr><th>Versions</th><td>v2.0: Based on ESA CCI CDR v3.0; improved computation of snow load and uncertainty estimation.<br>\nv1.0: Initial version based on ESA CCI CDR v2.0; not updated beyond April 2021.</td></tr>\n<tr><th>Update frequency</th><td>Monthly (with a 1-month latency)</td></tr>\n</table>\n\n    <p></p>\n    <table class=\"abstract-variables abstract-table\">\n    <tr><th colspan=\"3\">MAIN VARIABLES</th>\n    \n\n    <tr><th class='variables-name'>Name</th><th class='variables-units'>Units</th><th class='variables-description'>Description</th></tr>\n    \n<tr><td class='variables-name'>Sea ice thickness</td><td class='variables-units'>m</td><td class='variables-description'>Mean thickness of the sea ice layer in the area of the grid cell covered by ice.</td></tr>\n</table>\n\n    <p></p>\n    <table class=\"abstract-variables abstract-table\">\n    <tr><th colspan=\"3\">RELATED VARIABLES</th>\n    \n\n    <tr><th class='variables-name'>Name</th><th class='variables-units'>Units</th><th class='variables-description'>Description</th></tr>\n    \n<tr><td class='variables-name'>Quality flag</td><td class='variables-units'>Dimensionless</td><td class='variables-description'>Quality flag for the sea ice thickness retrievals. It provides an expert guess on data quality (nominal, intermediate, low) based on a list of criterions. See Product User Guide for details. </td></tr>\n<tr><td class='variables-name'>Status flag</td><td class='variables-units'>Dimensionless</td><td class='variables-description'>Status flag detailing what filters, masks, or processing steps were applied to each pixel in the sea ice thickness retrievals. See Product User Guide for details.</td></tr>\n<tr><td class='variables-name'>Uncertainty</td><td class='variables-units'>m</td><td class='variables-description'>Statistical uncertainty of the sea ice thickness retrieval algorithm. It corresponds to the mean uncertainty of along-track values at full sensor resolution.</td></tr>\n</table>\n    </div>",
+    "terms": [
+        "licence-to-use-copernicus-products"
+    ],
+    "constraints": [
+        {
+            "cdr_type": [
+                "cdr"
+            ],
+            "month": [
+                "01",
+                "02",
+                "03"
+            ],
+            "satellite": [
+                "cryosat_2"
+            ],
+            "version": [
+                "1_0"
+            ],
+            "year": [
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015"
+            ]
+        },
+        {
+            "cdr_type": [
+                "cdr"
+            ],
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04"
+            ],
+            "satellite": [
+                "cryosat_2"
+            ],
+            "version": [
+                "2_0"
+            ],
+            "year": [
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018",
+                "2019",
+                "2020"
+            ]
+        },
+        {
+            "cdr_type": [
+                "cdr"
+            ],
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04"
+            ],
+            "satellite": [
+                "envisat"
+            ],
+            "version": [
+                "1_0",
+                "2_0"
+            ],
+            "year": [
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010"
+            ]
+        },
+        {
+            "cdr_type": [
+                "cdr"
+            ],
+            "month": [
+                "04",
+                "10"
+            ],
+            "satellite": [
+                "cryosat_2"
+            ],
+            "version": [
+                "1_0"
+            ],
+            "year": [
+                "2011",
+                "2012",
+                "2013",
+                "2014"
+            ]
+        },
+        {
+            "cdr_type": [
+                "cdr"
+            ],
+            "month": [
+                "10"
+            ],
+            "satellite": [
+                "cryosat_2"
+            ],
+            "version": [
+                "2_0"
+            ],
+            "year": [
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018",
+                "2019"
+            ]
+        },
+        {
+            "cdr_type": [
+                "cdr"
+            ],
+            "month": [
+                "10"
+            ],
+            "satellite": [
+                "envisat"
+            ],
+            "version": [
+                "1_0",
+                "2_0"
+            ],
+            "year": [
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009",
+                "2010"
+            ]
+        },
+        {
+            "cdr_type": [
+                "cdr"
+            ],
+            "month": [
+                "11",
+                "12"
+            ],
+            "satellite": [
+                "cryosat_2"
+            ],
+            "version": [
+                "1_0"
+            ],
+            "year": [
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014"
+            ]
+        },
+        {
+            "cdr_type": [
+                "cdr"
+            ],
+            "month": [
+                "11",
+                "12"
+            ],
+            "satellite": [
+                "cryosat_2"
+            ],
+            "version": [
+                "2_0"
+            ],
+            "year": [
+                "2010",
+                "2011",
+                "2012",
+                "2013",
+                "2014",
+                "2015",
+                "2016",
+                "2017",
+                "2018",
+                "2019"
+            ]
+        },
+        {
+            "cdr_type": [
+                "cdr"
+            ],
+            "month": [
+                "11",
+                "12"
+            ],
+            "satellite": [
+                "envisat"
+            ],
+            "version": [
+                "1_0",
+                "2_0"
+            ],
+            "year": [
+                "2002",
+                "2003",
+                "2004",
+                "2005",
+                "2006",
+                "2007",
+                "2008",
+                "2009"
+            ]
+        },
+        {
+            "cdr_type": [
+                "icdr"
+            ],
+            "month": [
+                "01",
+                "02",
+                "03"
+            ],
+            "satellite": [
+                "cryosat_2"
+            ],
+            "version": [
+                "1_0"
+            ],
+            "year": [
+                "2016",
+                "2017",
+                "2018",
+                "2019",
+                "2020",
+                "2021"
+            ]
+        },
+        {
+            "cdr_type": [
+                "icdr"
+            ],
+            "month": [
+                "01",
+                "02",
+                "03",
+                "04"
+            ],
+            "satellite": [
+                "cryosat_2"
+            ],
+            "version": [
+                "2_0"
+            ],
+            "year": [
+                "2021",
+                "2022"
+            ]
+        },
+        {
+            "cdr_type": [
+                "icdr"
+            ],
+            "month": [
+                "04"
+            ],
+            "satellite": [
+                "cryosat_2"
+            ],
+            "version": [
+                "1_0"
+            ],
+            "year": [
+                "2015",
+                "2016",
+                "2017",
+                "2018",
+                "2019",
+                "2020",
+                "2021"
+            ]
+        },
+        {
+            "cdr_type": [
+                "icdr"
+            ],
+            "month": [
+                "10",
+                "11",
+                "12"
+            ],
+            "satellite": [
+                "cryosat_2"
+            ],
+            "version": [
+                "1_0"
+            ],
+            "year": [
+                "2015",
+                "2016",
+                "2017",
+                "2018",
+                "2019",
+                "2020"
+            ]
+        },
+        {
+            "cdr_type": [
+                "icdr"
+            ],
+            "month": [
+                "10",
+                "11",
+                "12"
+            ],
+            "satellite": [
+                "cryosat_2"
+            ],
+            "version": [
+                "2_0"
+            ],
+            "year": [
+                "2020",
+                "2021"
+            ]
+        }
+    ]
+}

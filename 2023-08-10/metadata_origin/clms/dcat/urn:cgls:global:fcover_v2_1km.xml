@@ -1,0 +1,70 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dct="http://purl.org/dc/terms/" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://land.copernicus.vgt.vito.be:8443//geonetwork/metadata/urn:cgls:global:fcover_v2_1km">
+        <foaf:primaryTopic rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/resource/urn:cgls:global:fcover_v2_1km"/>
+        <dct:issued>2022-03-17</dct:issued>
+        <dct:modified>2022-03-17</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://land.copernicus.vgt.vito.be:8443//geonetwork/srv/eng/xml.metadata.get?uuid=urn:cgls:global:fcover_v2_1km">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://land.copernicus.vgt.vito.be:8443//geonetwork?uuid=urn:cgls:global:fcover_v2_1km">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://land.copernicus.vgt.vito.be:8443//geonetwork/resource/urn:cgls:global:fcover_v2_1km">
+        <dct:identifier>urn:cgls:global:fcover_v2_1km</dct:identifier>
+        <dct:title>Fraction of Vegetation Cover: global 10-daily (raster 1km) - version 2, Apr 2017</dct:title>
+        <dct:abstract>FCOVER was defined by CEOS as half the developed area of the convex hull wrapping the green canopy elements per unit horizontal ground. This definition allows accounting for elements which are not flat such as needles or stems. FCOVER is strongly non linearly related to reflectance. Therefore, its estimation from remote sensing observations will be scale dependant over heterogeneous landscapes. When observing a canopy made of different layers of vegetation, it is therefore mandatory to consider all the green layers. This is particularly important for forest canopies where the understory may represent a very significant contribution to the total canopy FCOVER. The derived FCOVER corresponds therefore to the total green FCOVER, including the contribution of the green elements of the understory. The resulting GEOV1 FCOVER products are relatively consistent with the actual FCOVER for low FCOVER values and ‘non-forest’ surfaces; while for forests, particularly for needle leaf types, significant departures with the true FCOVER are expected.</dct:abstract>
+        <dcat:keyword>biogeophysical</dcat:keyword>
+        <dcat:keyword>leaf area</dcat:keyword>
+        <dcat:keyword>GLOBE</dcat:keyword>
+        <dcat:keyword>Dekad</dcat:keyword>
+        <dcat:keyword>10-daily</dcat:keyword>
+        <dcat:theme rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/thesaurus/GEMET%20-%20INSPIRE%20themes%2C%20version%201.0/Orthoimagery"/>
+        <dcat:theme rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/thesaurus/GEMET%20-%20Concepts%2C%20version%202.1/geophysical environment"/>
+        <dcat:theme rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/thesaurus/iso/topicCategory/imageryBaseMapsEarthCover"/>
+        <dcat:theme rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/thesaurus/iso/topicCategory/biota"/>
+        <dcat:theme rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/thesaurus/iso/topicCategory/farming"/>
+        <dcat:theme rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/thesaurus/iso/topicCategory/environment"/>
+        <foaf:thumbnail rdf:resource="http://globallandseries.vgt.vito.be/geonetwork/images/quicklooks/VegetationDynamics.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((-180 -60, -180 80, 180 80, 180 -60, -180 -60))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:temporal>1998-04-01T00:00:00
+          /
+          2020-06-30T23:59:59</dct:temporal>
+        <dct:issued>2017-01-01</dct:issued>
+        <dct:publisher rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/organization/Institut%20National%20de%20la%20Recherche%20Agronomique%20%28INRA%29%20%E2%80%93%20France"/>
+        <dct:publisher rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/organization/VITO%20NV"/>
+        <dct:publisher rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/organization/European%20Commission%20Directorate-General%20for%20Internal%20Market%2C%20Industry%2C%20Entrepreneurship%20and%20SMEs"/>
+        <dct:publisher rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/organization/European%20Commission%20Directorate-General%20Joint%20Research%20Centre"/>
+        <dct:accrualPeriodicity>asNeeded</dct:accrualPeriodicity>
+        <dct:license>copyright</dct:license>
+        <dct:license>otherRestrictions</dct:license>
+        <dct:license>(d) the confidentiality of commercial or industrial information, where such confidentiality is provided for by national or Community law to protect a legitimate economic interest, including the public interest in maintaining statistical confidentiality and tax secrecy.</dct:license>
+        <dcat:distribution rdf:resource="http://land.copernicus.eu/global/products/LORUM_IPSUM"/>
+        <dcat:distribution rdf:resource="http://land.copernicus.eu/global/access"/>
+        <dcat:distribution rdf:resource="http://eoportal.eumetsat.int"/>
+        <dct:relation rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://land.copernicus.vgt.vito.be:8443//geonetwork/metadata/"/>
+        <dcat:dataQuality>The input data are the daily Top of the Atmosphere reflectances measured by the sensor at 1/3 km. The calibrated reflectances are used to calculate instantaneous estimates of the products using a neural network trained with MODIS and CYCLOPES products, removing outliers as clouds and their shadows and atmospherically corrected (SMAC). In a second stage these instantaneous first guess of products are composited using an asymmetric period. The compositing is performing a temporal smooth and gap fill operation based on the land cover type (Evergreen Broadleaf Forest or not).</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+    

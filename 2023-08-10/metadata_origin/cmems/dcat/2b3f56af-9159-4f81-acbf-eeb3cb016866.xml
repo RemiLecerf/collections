@@ -1,0 +1,80 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:dct="http://purl.org/dc/terms/" xmlns:dcat="http://www.w3.org/ns/dcat#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xslUtils="java:org.fao.geonet.util.XslUtil" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://www.w3.org/TR/void/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dcat:CatalogRecord rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/2b3f56af-9159-4f81-acbf-eeb3cb016866">
+        <foaf:primaryTopic rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/resource/a78600a4-a280-47b5-8ddd-0dc8b5e9c9d9"/>
+        <dct:issued>2023-03-29</dct:issued>
+        <dct:modified>2023-03-29</dct:modified>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/srv/eng/xml.metadata.get?uuid=2b3f56af-9159-4f81-acbf-eeb3cb016866">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>application/xml</rdf:value>
+                <rdfs:label>XML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+        <dct:references>
+          <rdf:Description rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork?uuid=2b3f56af-9159-4f81-acbf-eeb3cb016866">
+            <dct:format>
+              <dct:IMT>
+                <rdf:value>text/html</rdf:value>
+                <rdfs:label>HTML</rdfs:label>
+              </dct:IMT>
+            </dct:format>
+          </rdf:Description>
+        </dct:references>
+      </dcat:CatalogRecord>
+      <dcat:Dataset rdf:about="https://cmems-catalog-ro.cls.fr/geonetwork/resource/a78600a4-a280-47b5-8ddd-0dc8b5e9c9d9">
+        <dct:identifier>a78600a4-a280-47b5-8ddd-0dc8b5e9c9d9</dct:identifier>
+        <dct:title>Mediterranean Sea Surface Temperature time series and trend from Observations Reprocessing</dct:title>
+        <dct:abstract>'''DEFINITION'''
+
+The blksea_omi_tempsal_sst_trend product includes the cumulative/net Sea Surface Temperature (SST) trend for the Black Sea over the period 1993-2021, i.e. the rate of change (°C/year) multiplied by the number years in the timeseries (29). This OMI is derived from the CMEMS Reprocessed Black Sea L4 SST satellite product (SST_BS_SST_L4_REP_OBSERVATIONS_010_022, see e.g. the OMI QUID, http://marine.copernicus.eu/documents/QUID/CMEMS-OMI-QUID-BLKSEA-SST.pdf), which provided the SSTs used to compute the SST trend over the Black Sea. This reprocessed product consists of daily (nighttime) optimally interpolated 0.05° grid resolution SST maps over the Black Sea built from the ESA Climate Change Initiative (CCI) (Merchant et al., 2019) and Copernicus Climate Change Service (C3S) initiatives, including also an adjusted version of the AVHRR Pathfinder dataset version 5.3 (Saha et al., 2018) to increase the input observation coverage. Trend analysis has been performed by using the X-11 seasonal adjustment procedure (see e.g. Pezzulli et al., 2005), which has the effect of filtering the input SST time series acting as a low bandpass filter for interannual variations. Mann-Kendall test and Sens’s method (Sen 1968) were applied to assess whether there was a monotonic upward or downward trend and to estimate the slope of the trend and its 95% confidence interval. The reference for this OMI can be found in the first and second issue of the Copernicus Marine Service Ocean State Report (OSR), Section 1.1 (Roquet et al., 2016; Mulet et al., 2018).
+
+'''CONTEXT'''
+
+Sea surface temperature (SST) is a key climate variable since it deeply contributes in regulating climate and its variability (Deser et al., 2010). SST is then essential to monitor and characterise the state of the global climate system (GCOS 2010). Long-term SST variability, from interannual to (multi-)decadal timescales, provides insight into the slow variations/changes in SST, i.e. the temperature trend (e.g., Pezzulli et al., 2005). In addition, on shorter timescales, SST anomalies become an essential indicator for extreme events, as e.g. marine heatwaves (Hobday et al., 2018). In the last decades, since the availability of satellite data (beginning of 1980s), the Black Sea has experienced a warming trend in SST (see e.g. Buongiorno Nardelli et al., 2010; Mulet et al., 2018). 
+
+'''CMEMS KEY FINDINGS'''
+
+The spatial pattern of the Black Sea SST trend reveals a general warming tendency, ranging from 0.053 °C/year to 0.080 °C/year. The spatial pattern of SST trend is rather homogeneous over the whole basin. Highest values characterize the eastern basin, where the trend reaches the extreme value, while lower values are found close to the western coasts, in correspondence of main rivers inflow. The Black Sea SST trend continues to show the highest intensity among all the other European Seas.
+
+'''DOI (product):''' 
+https://doi.org/10.48670/moi-00268</dct:abstract>
+        <dcat:theme rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/thesaurus/iso/topicCategory/oceans"/>
+        <foaf:thumbnail rdf:resource="https://catalogue.marine.copernicus.eu/documents/IMG/MEDSEA_OMI_TEMPSAL_sst_area_averaged_anomalies.png"/>
+        <dct:spatial>
+          <ogc:Polygon xmlns:ogc="http://www.opengis.net/rdf#">
+            <ogc:asWKT rdf:datatype="http://www.opengis.net/rdf#WKTLiteral">&lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt;
+            Polygon((5.56 30.13, 5.56 46.03, 36.33 46.03, 36.33 30.13, 5.56 30.13))</ogc:asWKT>
+          </ogc:Polygon>
+        </dct:spatial>
+        <dct:issued>2019-11-28</dct:issued>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/SST-CNR-ROMA-IT"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/SST-CNR-ROMA-IT"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/OSI-METNO-OSLO-NO"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/SST-CNR-ROMA-IT"/>
+        <dct:publisher rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/organization/MOI-OMI-SERVICE"/>
+        <dct:accrualPeriodicity>annually</dct:accrualPeriodicity>
+        <dct:license>otherRestrictions</dct:license>
+        <dct:license>license</dct:license>
+        <dct:license>No limitations on public access</dct:license>
+        <dcat:distribution rdf:resource="ftp://my.cmems-du.eu/Core/MEDSEA_OMI_TEMPSAL_sst_area_averaged_anomalies/medsea_omi_tempsal_sst_area_averaged_anomalies"/>
+        <dcat:distribution rdf:resource="https://mdl1.marine.copernicus.eu/derived/MEDSEA_OMI_TEMPSAL_sst_area_averaged_anomalies/medsea_omi_tempsal_sst_area_averaged_anomalies_202211/medsea_omi_tempsal_sst_area_averaged_anomalies_19930101-20211231_R19932014_P20220606.nc"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/44f025aa-ea29-45d3-b10d-575b774f02ce"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/5a6a4d6a-72ba-4a94-b486-7d8afd53842f"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/49619510-626d-4083-b44c-7c77cb0da567"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dct:relation rdf:resource="https://cmems-catalog-ro.cls.fr/geonetwork/metadata/"/>
+        <dcat:dataQuality>The myOcean products depends on other products for production or validation. The detailed list of dependencies is given in ISO19115's aggregationInfo (ISO19139 Xpath = "gmd:MD_Metadata/gmd:identificationInfo/gmd:aggregationInfo[./gmd:MD_AggregateInformation/gmd:initiativeType/gmd:DS_InitiativeTypeCode/@codeListValue='upstream-validation' or 'upstream-production']")</dcat:dataQuality>
+      </dcat:Dataset>
+    </rdf:RDF>
+  

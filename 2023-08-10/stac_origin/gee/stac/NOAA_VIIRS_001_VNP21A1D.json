@@ -1,0 +1,388 @@
+{
+    "type": "Collection",
+    "version": "1",
+    "stac_version": "1.0.0",
+    "stac_extensions": [
+        "collection-assets"
+    ],
+    "id": "NOAA/VIIRS/001/VNP21A1D",
+    "title": "VNP21A1D: Day Land Surface Temperature and Emissivity Daily 1km",
+    "description": "The NASA Suomi National Polar-Orbiting Partnership (Suomi NPP) Visible\nInfrared Imaging Radiometer Suite (VIIRS) Land Surface Temperature and\nEmissivity (LST&E) Day Version 1 product (VNP21A1D) is compiled daily\nfrom daytime Level 2 Gridded (L2G) intermediate products.\n\nThe L2G process maps the daily VNP21 swath granules onto a sinusoidal MODIS\ngrid and stores all observations overlapping a gridded cell for a given\nday. The VNP21A1 algorithm sorts through all these observations for each\ncell and estimates the final LST value as an average from all cloud-free\nobservations that have good LST accuracies. Only observations having\nobservation coverage more than a certain threshold (15%) are considered for\nthis averaging.\n\nDocumentation:\n\n* [User's Guide](https://lpdaac.usgs.gov/documents/429/VNP21_User_Guide_V1.pdf)\n\n* [Algorithm Theoretical Basis Document (ATBD)](https://lpdaac.usgs.gov/documents/1332/VNP21_ATBD_V1.pdf)\n\n* [General Documentation](https://lpdaac.usgs.gov/products/vnp21a1dv001/)\n\n* [Land Product Quality Assessment website](https://landweb.modaps.eosdis.nasa.gov/NPP_QA/)\n",
+    "keywords": [
+        "daily",
+        "day",
+        "land",
+        "nasa",
+        "noaa",
+        "surface",
+        "temperature",
+        "viirs"
+    ],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2012-01-19T00:00:00Z",
+                    "2023-02-01T00:00:00"
+                ]
+            ]
+        }
+    },
+    "providers": [
+        {
+            "name": "NASA LP DAAC at the USGS EROS Center",
+            "roles": [
+                "licensor",
+                "producer"
+            ],
+            "url": "https://doi.org/10.5067/VIIRS/VNP21A1D.001"
+        },
+        {
+            "name": "Google Earth Engine",
+            "roles": [
+                "host"
+            ],
+            "url": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_VIIRS_001_VNP21A1D"
+        }
+    ],
+    "license": "proprietary",
+    "links": [
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections/NOAA/VIIRS/001/VNP21A1D",
+            "rel": "self",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/collections",
+            "rel": "parent",
+            "type": "application/json"
+        },
+        {
+            "href": "https://earthengine.openeo.org/v1.0/",
+            "rel": "root",
+            "type": "application/json"
+        },
+        {
+            "code": "JavaScript",
+            "href": "https://code.earthengine.google.com/?scriptPath=Examples:Datasets/NOAA_VIIRS_001_VNP21A1D",
+            "rel": "related",
+            "title": "Run the example for NOAA/VIIRS/001/VNP21A1D in the Earth Engine Code Editor",
+            "type": "text/html"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/images/NOAA/VIIRS/NOAA_VIIRS_001_VNP21A1D_sample.png",
+            "rel": "preview",
+            "type": "image/png"
+        },
+        {
+            "href": "https://developers.google.com/earth-engine/datasets/catalog/NOAA_VIIRS_001_VNP21A1D#terms-of-use",
+            "rel": "license",
+            "type": "text/html"
+        },
+        {
+            "href": "https://doi.org/10.5067/VIIRS/VNP21A1D.001",
+            "rel": "cite-as"
+        }
+    ],
+    "cube:dimensions": {
+        "x": {
+            "type": "spatial",
+            "axis": "x",
+            "extent": [
+                -180,
+                180
+            ]
+        },
+        "y": {
+            "type": "spatial",
+            "axis": "y",
+            "extent": [
+                -90,
+                90
+            ]
+        },
+        "t": {
+            "type": "temporal",
+            "extent": [
+                "2012-01-19T00:00:00Z",
+                "2023-02-01T00:00:00"
+            ]
+        },
+        "bands": {
+            "type": "bands",
+            "values": [
+                "LST_1KM",
+                "QC",
+                "Emis_14",
+                "Emis_15",
+                "Emis_16",
+                "View_Angle",
+                "View_Time"
+            ]
+        }
+    },
+    "summaries": {
+        "eo:bands": [
+            {
+                "description": "Daily 1 km Land Surface Temperature.\n",
+                "gee:scale": 0.02,
+                "gee:units": "K",
+                "name": "LST_1KM"
+            },
+            {
+                "description": "Daily Quality control for LST and emissivity",
+                "gee:bitmask": {
+                    "bitmask_parts": [
+                        {
+                            "bit_count": 2,
+                            "description": "Mandatory QA flags",
+                            "values": [
+                                {
+                                    "description": "Pixel produced, good quality, no further QA info necessary\n"
+                                },
+                                {
+                                    "description": "Pixel produced but unreliable quality",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "Pixel not produced due to cloud",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "Pixel not produced due to reasons other than cloud\n",
+                                    "value": 3
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 2,
+                            "description": "Data quality flag",
+                            "first_bit": 2,
+                            "values": [
+                                {
+                                    "description": "Good data quality of L1B bands 14, 15, 16"
+                                },
+                                {
+                                    "description": "Missing pixel",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "Fairly calibrated",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "Poorly calibrated, TES processing skipped",
+                                    "value": 3
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 2,
+                            "description": "Cloud Flag",
+                            "first_bit": 4,
+                            "values": [
+                                {
+                                    "description": "Cloud-free"
+                                },
+                                {
+                                    "description": "Thin cirrus",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "Pixel within 2 pixels of nearest cloud",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "Cloudy pixels",
+                                    "value": 3
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 2,
+                            "description": "Iterations",
+                            "first_bit": 6,
+                            "values": [
+                                {
+                                    "description": " Slow convergence"
+                                },
+                                {
+                                    "description": "Nominal",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "Nominal",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "Fast",
+                                    "value": 3
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 2,
+                            "description": "Atmospheric Opacity",
+                            "first_bit": 8,
+                            "values": [
+                                {
+                                    "description": "&ge;3 (Warm, humid air; or cold land)"
+                                },
+                                {
+                                    "description": "0.2 - 0.3 (Nominal value)",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "0.1 - 0.2 (Nominal value)",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "<0.1 (Dry, or high altitude pixel)",
+                                    "value": 3
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 2,
+                            "description": "MMD",
+                            "first_bit": 10,
+                            "values": [
+                                {
+                                    "description": "&gt;0.15 (Most silicate rocks)"
+                                },
+                                {
+                                    "description": "0.1 - 0.15 (Rocks, sand, some soils)",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "0.03 - 0.1 (Mostly soils, mixed pixel)",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "<0.03 (Vegetation, snow, water, ice, some soils)\n",
+                                    "value": 3
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 2,
+                            "description": "Emissivity accuracy",
+                            "first_bit": 12,
+                            "values": [
+                                {
+                                    "description": "&gt;0.02 (Poor performance)"
+                                },
+                                {
+                                    "description": "0.015 - 0.02 (Marginal performance)",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "0.01 - 0.015 (Good performance)",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "<0.01 (Excellent performance)",
+                                    "value": 3
+                                }
+                            ]
+                        },
+                        {
+                            "bit_count": 2,
+                            "description": "LST accuracy",
+                            "first_bit": 14,
+                            "values": [
+                                {
+                                    "description": "&gt;2K (Poor performance)"
+                                },
+                                {
+                                    "description": "1.5 - 2K (Marginal performance)",
+                                    "value": 1
+                                },
+                                {
+                                    "description": "1 - 1.5K (Good performance)",
+                                    "value": 2
+                                },
+                                {
+                                    "description": "<1K (Excellent performance)",
+                                    "value": 3
+                                }
+                            ]
+                        }
+                    ],
+                    "total_bit_count": 16
+                },
+                "name": "QC"
+            },
+            {
+                "description": "Daily M14 emissivity",
+                "gee:offset": 0.49,
+                "gee:scale": 0.002,
+                "name": "Emis_14"
+            },
+            {
+                "description": "Daily M15 emissivity",
+                "gee:offset": 0.49,
+                "gee:scale": 0.002,
+                "name": "Emis_15"
+            },
+            {
+                "description": "Daily M16 emissivity",
+                "gee:offset": 0.49,
+                "gee:scale": 0.002,
+                "name": "Emis_16"
+            },
+            {
+                "description": "View zenith angle of LST",
+                "gee:offset": -65,
+                "gee:units": "Degree",
+                "name": "View_Angle"
+            },
+            {
+                "description": "Time of LST observation",
+                "gee:scale": 0.1,
+                "gee:units": "Hours",
+                "name": "View_Time"
+            }
+        ],
+        "gsd": [
+            1000
+        ],
+        "instruments": [
+            "VIIRS"
+        ],
+        "platform": [
+            "Suomi NPP"
+        ]
+    },
+    "assets": {
+        "preview_4": {
+            "href": "https://developers.google.com/earth-engine/datasets/images/NOAA/VIIRS/NOAA_VIIRS_001_VNP21A1D_sample.png",
+            "type": "image/png",
+            "roles": [
+                "thumbnail"
+            ]
+        }
+    },
+    "sci:citation": "Please visit [LP DAAC 'Citing Our Data' page](https://lpdaac.usgs.gov/citing_our_data)\nfor information on citing LP DAAC datasets.\n",
+    "sci:doi": "10.5067/VIIRS/VNP21A1D.001",
+    "gee:interval": {
+        "interval": 1,
+        "type": "cadence",
+        "unit": "day"
+    },
+    "gee:provider_ids": [
+        "C1442270800-LPDAAC_ECS"
+    ],
+    "gee:terms_of_use": "LP DAAC NASA data are freely accessible; however, when an author\npublishes these data or works based on the data, it is requested that the\nauthor cite the datasets within the text of the publication and include a\nreference to them in the reference list.\n",
+    "gee:type": "image_collection"
+}

@@ -1,0 +1,66 @@
+{
+  "type": "Collection",
+  "id": "eu.copernicus.climate.efas-seasonal",
+  "stac_version": "1.0.0",
+  "description": "This dataset provides gridded modelled daily hydrological time series forced with seasonal meteorological forecasts. The dataset is a consistent representation of the most important hydrological variables across the European Flood Awareness (EFAS) domain. The temporal resolution is daily forecasts initialised once a month consisting of:\n\nRiver discharge\nSoil moisture for three soil layers\nSnow water equivalent\n\nAlso provided are auxiliary (time invariant) data to aid interpretation of river discharge and soil moisture data. These auxiliary data are the upstream area, elevation, soil depth, wilting capacity and field capacity. The latter three are provided at three soil levels, one for each of the three soil layers represented in LISFLOOD.\nThis dataset was produced by forcing the LISFLOOD hydrological model at a 5x5km resolution with seasonal meteorological ensemble forecasts. The forecasts are initialised on the first of each month with a lead time of 215 days at 24-hour time steps. The meteorological data are seasonal forecasts (SEAS5) from the European Centre of Medium-range Weather Forecasts (ECMWF) with 51 ensemble members. The forecasts are available from November 2020.\nCompanion datasets, also available through the Climate Data Store (CDS), are seasonal reforecasts for research, local skill assessment and post-processing of the seasonal forecasts. There are also medium-range forecasts for users who want to look at shorter time ranges. These are accompanied by historical simulations which can be used to derive the hydrological climatology, and medium-range reforecasts. For users looking for global hydrological data, we refer to the Global Flood Awareness System (GloFAS) forecasts and historical simulations. All these datasets are part of the operational flood forecasting within the Copernicus Emergency Management Service (CEMS).\n\nVariables in the dataset/application are:\nRiver discharge in the last 24 hours, Snow depth water equivalent, Volumetric soil moisture\n\nVariables in the dataset/application are:\nElevation, Field capacity, Soil depth, Upstream area, Wilting point",
+  "links": [
+    {
+      "rel": "hosts",
+      "href": "https://cds.climate.copernicus.eu/cdsapp#!/dataset/10.24381/cds.eb224b0e",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Climate Data Store catalogue"
+    },
+    {
+      "rel": "hosts",
+      "href": "https://confluence.ecmwf.int/display/CEMS/European+Flood+Awareness+System",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "EFAS wiki pages"
+    },
+    {
+      "rel": "hosts",
+      "href": "https://www.efas.eu",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "EFAS web pages (.eu)"
+    }
+  ],
+  "title": "Seasonal forecasts of river discharge and related data by the European Flood Awareness System",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          0.0,
+          -70.0,
+          360.0,
+          70.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2020-11-01T00:00:00Z",
+          "2023-07-01T23:59:59Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "Forecast",
+    "Product type: Seasonal forecasts",
+    "Spatial coverage: Europe",
+    "Variable domain: Land (hydrology)",
+    "Temporal coverage: Present",
+    "Provider: Copernicus CEMS"
+  ],
+  "providers": [
+    {
+      "name": "Copernicus Climate Data Store",
+      "description": "Copernicus Climate Data Store - European Centre for Medium-Range Weather Forecasts (ECMWF)",
+      "roles": [
+        "host"
+      ],
+      "url": "https://cds.climate.copernicus.eu/"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+<csw:Record xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/" xmlns:ows="http://www.opengis.net/ows" xmlns:geonet="http://www.fao.org/geonetwork" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <dc:identifier>f60933b2-c2bf-4026-b540-a278c71b1cbc</dc:identifier>
+      <dc:date>2022-11-22T15:48:56.148Z</dc:date>
+      <dc:title>Arctic Ocean Biogeochemistry Analysis and Forecast</dc:title>
+      <dc:type>series</dc:type>
+      <dc:subject>Oceanographic geographical features</dc:subject>
+      <dc:subject>numerical-model</dc:subject>
+      <dc:subject>mole_concentration_of_zooplankton_expressed_as_carbon_in_sea_water</dc:subject>
+      <dc:subject>mole_concentration_of_silicate_in_sea_water</dc:subject>
+      <dc:subject>mole_concentration_of_dissolved_inorganic_carbon_in_sea_water</dc:subject>
+      <dc:subject>sinking_mole_flux_of_particulate_organic_matter_expressed_as_carbon_in_sea_water</dc:subject>
+      <dc:subject>volume_attenuation_coefficient_of_downwelling_radiative_flux_in_sea_water</dc:subject>
+      <dc:subject>mole_concentration_of_phosphate_in_sea_water</dc:subject>
+      <dc:subject>sea_floor_depth_below_sea_level</dc:subject>
+      <dc:subject>mass_concentration_of_chlorophyll_a_in_sea_water</dc:subject>
+      <dc:subject>mole_concentration_of_nitrate_in_sea_water</dc:subject>
+      <dc:subject>net_primary_production_of_biomass_expressed_as_carbon_per_unit_volume_in_sea_water</dc:subject>
+      <dc:subject>sea_water_ph_reported_on_total_scale</dc:subject>
+      <dc:subject>surface_partial_pressure_of_carbon_dioxide_in_sea_water</dc:subject>
+      <dc:subject>mole_concentration_of_dissolved_molecular_oxygen_in_sea_water</dc:subject>
+      <dc:subject>mole_concentration_of_phytoplankton_expressed_as_carbon_in_sea_water</dc:subject>
+      <dc:subject>near-real-time</dc:subject>
+      <dc:subject>forecast</dc:subject>
+      <dc:subject>marine-safety</dc:subject>
+      <dc:subject>weather-climate-and-seasonal-forecasting</dc:subject>
+      <dc:subject>coastal-marine-environment</dc:subject>
+      <dc:subject>marine-resources</dc:subject>
+      <dc:subject>arctic-ocean</dc:subject>
+      <dc:subject>Level 4</dc:subject>
+      <dc:subject>Satellite Chlorophyll</dc:subject>
+      <dc:subject>oceans</dc:subject>
+      <dc:format>NetCDF-4</dc:format>
+      <dct:abstract>'''Short description:'''
+The operational TOPAZ5-ECOSMO Arctic Ocean system uses the ECOSMO biological model coupled online to the TOPAZ5 physical model planned for a future update of the ARCTIC_ANALYSIS_FORECAST_PHYS_002_001_a physical forecast. It is run daily to provide 10 days of forecast of 3D biogeochemical variables ocean. The coupling is done by the FABM framework.
+
+Coupling to a biological ocean model provides a description of the evolution of basic biogeochemical variables. The output consists of daily mean fields interpolated onto a standard grid and 40 fixed levels in NetCDF4 CF format. Variables include 3D fields of nutrients (nitrate, phosphate, silicate), phytoplankton and zooplankton biomass, oxygen, chlorophyll, primary productivity, carbon cycle variables (pH, dissolved inorganic carbon and surface partial CO2 pressure in seawater, carbon export) and light attenuation coefficient. Surface Chlorophyll-a from satellite ocean colour is assimilated every week and projected downwards using the Uitz et al. (2006) method. A new 10-day forecast is produced daily using the previous day's forecast and the most up-to-date prognostic forcing fields.
+Output products have 6.25 km resolution at the North Pole (equivalent to 1/8 deg) on a stereographic projection. See the Product User Manual for the exact projection parameters.
+
+'''DOI (product) :'''   
+https://doi.org/10.48670/moi-00003</dct:abstract>
+      <dc:description>'''Short description:'''
+The operational TOPAZ5-ECOSMO Arctic Ocean system uses the ECOSMO biological model coupled online to the TOPAZ5 physical model planned for a future update of the ARCTIC_ANALYSIS_FORECAST_PHYS_002_001_a physical forecast. It is run daily to provide 10 days of forecast of 3D biogeochemical variables ocean. The coupling is done by the FABM framework.
+
+Coupling to a biological ocean model provides a description of the evolution of basic biogeochemical variables. The output consists of daily mean fields interpolated onto a standard grid and 40 fixed levels in NetCDF4 CF format. Variables include 3D fields of nutrients (nitrate, phosphate, silicate), phytoplankton and zooplankton biomass, oxygen, chlorophyll, primary productivity, carbon cycle variables (pH, dissolved inorganic carbon and surface partial CO2 pressure in seawater, carbon export) and light attenuation coefficient. Surface Chlorophyll-a from satellite ocean colour is assimilated every week and projected downwards using the Uitz et al. (2006) method. A new 10-day forecast is produced daily using the previous day's forecast and the most up-to-date prognostic forcing fields.
+Output products have 6.25 km resolution at the North Pole (equivalent to 1/8 deg) on a stereographic projection. See the Product User Manual for the exact projection parameters.
+
+'''DOI (product) :'''   
+https://doi.org/10.48670/moi-00003</dc:description>
+      <dc:rights>otherRestrictions</dc:rights>
+      <dc:rights>license</dc:rights>
+      <dc:language>eng</dc:language>
+      <dc:source>The myOcean products depends on other products for production or validation. The detailed list of dependencies is given in ISO19115's aggregationInfo (ISO19139 Xpath = "gmd:MD_Metadata/gmd:identificationInfo/gmd:aggregationInfo[./gmd:MD_AggregateInformation/gmd:initiativeType/gmd:DS_InitiativeTypeCode/@codeListValue='upstream-validation' or 'upstream-production']")</dc:source>
+      <dc:format>NetCDF-4</dc:format>
+      <ows:BoundingBox crs="urn:ogc:def:crs:EPSG:6.6:4326">
+        <ows:LowerCorner>53.00 -180.00</ows:LowerCorner>
+        <ows:UpperCorner>90.00 180.00</ows:UpperCorner>
+      </ows:BoundingBox>
+      <dc:URI protocol="MYO:MOTU-SUB" name="cmems_mod_arc_bgc_anfc_ecosmo_P1D-m">https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=ARCTIC_ANALYSISFORECAST_BGC_002_004-TDS&amp;product=cmems_mod_arc_bgc_anfc_ecosmo_P1D-m</dc:URI>
+      <dc:URI protocol="WWW:OPENDAP" name="cmems_mod_arc_bgc_anfc_ecosmo_P1D-m">https://nrt.cmems-du.eu/thredds/dodsC/cmems_mod_arc_bgc_anfc_ecosmo_P1D-m</dc:URI>
+      <dc:URI protocol="WWW:FTP" name="cmems_mod_arc_bgc_anfc_ecosmo_P1D-m">ftp://nrt.cmems-du.eu/Core/ARCTIC_ANALYSISFORECAST_BGC_002_004/cmems_mod_arc_bgc_anfc_ecosmo_P1D-m</dc:URI>
+      <dc:URI protocol="OGC:WMS:getCapabilities" name="cmems_mod_arc_bgc_anfc_ecosmo_P1D-m">https://nrt.cmems-du.eu/thredds/wms/cmems_mod_arc_bgc_anfc_ecosmo_P1D-m</dc:URI>
+      <dc:URI protocol="MYO:MOTU-SUB" name="cmems_mod_arc_bgc_anfc_ecosmo_P1M-m">https://nrt.cmems-du.eu/motu-web/Motu?action=describeproduct&amp;service=ARCTIC_ANALYSISFORECAST_BGC_002_004-TDS&amp;product=cmems_mod_arc_bgc_anfc_ecosmo_P1M-m</dc:URI>
+      <dc:URI protocol="WWW:OPENDAP" name="cmems_mod_arc_bgc_anfc_ecosmo_P1M-m">https://nrt.cmems-du.eu/thredds/dodsC/cmems_mod_arc_bgc_anfc_ecosmo_P1M-m</dc:URI>
+      <dc:URI protocol="WWW:FTP" name="cmems_mod_arc_bgc_anfc_ecosmo_P1M-m">ftp://nrt.cmems-du.eu/Core/ARCTIC_ANALYSISFORECAST_BGC_002_004/cmems_mod_arc_bgc_anfc_ecosmo_P1M-m</dc:URI>
+      <dc:URI protocol="OGC:WMS:getCapabilities" name="cmems_mod_arc_bgc_anfc_ecosmo_P1M-m">https://nrt.cmems-du.eu/thredds/wms/cmems_mod_arc_bgc_anfc_ecosmo_P1M-m</dc:URI>
+      <dc:URI protocol="image/png">https://catalogue.marine.copernicus.eu/documents/IMG/ARCTIC_ANALYSISFORECAST_BGC_002_004.png</dc:URI>
+    </csw:Record>
+    

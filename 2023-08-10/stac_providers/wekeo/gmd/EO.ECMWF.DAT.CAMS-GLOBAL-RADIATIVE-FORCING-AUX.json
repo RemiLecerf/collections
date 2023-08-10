@@ -1,0 +1,68 @@
+{
+  "type": "Collection",
+  "id": "EO.ECMWF.DAT.CAMS-GLOBAL-RADIATIVE-FORCING-AUX",
+  "stac_version": "1.0.0",
+  "description": "This dataset provides aerosol optical depths and aerosol-radiation radiative effects for four different aerosol origins: anthropogenic, mineral dust, marine, and land-based fine-mode natural aerosol. The latter mostly consists of biogenic aerosols.\n\nThe data are a necessary complement to the \"CAMS global radiative forcings\" dataset (see \"Related Data\"). The calculation of aerosol radiative forcing requires a discrimination between aerosol of anthropogenic and natural origin. However, the CAMS reanalysis, which is used to provide the aerosol concentrations, does not make this distinction. The anthropogenic fraction was therefore derived by a method which uses aerosol size as a proxy for aerosol origin.",
+  "links": [
+    {
+      "rel": "hosts",
+      "href": "https://essd.copernicus.org/articles/12/1649/2020/",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Radiative forcing of climate change from the Copernicus reanalysis of atmospheric composition"
+    },
+    {
+      "rel": "hosts",
+      "href": "https://ads.atmosphere.copernicus.eu/cdsapp#!/dataset/eu.copernicus.atmosphere.cams-global-radiative-forcing-auxilliary-variables",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Climate Data Store catalogue"
+    },
+    {
+      "rel": "hosts",
+      "href": "https://atmosphere.copernicus.eu/sites/default/files/2020-07/CAMS74_2019SC4_D2.2.1_202002_Documentation_v1.pdf",
+      "type": "WWW:LINK-1.0-http--link",
+      "title": "Documentation of the version 1.5 CAMS Climate Forcing products (PDF)"
+    }
+  ],
+  "title": "CAMS global radiative forcing - auxilliary variables",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180.0,
+          -90.0,
+          180.0,
+          90.0
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2003-01-01T00:00:00Z",
+          "2017-12-31T23:59:59Z"
+        ]
+      ]
+    }
+  },
+  "license": "proprietary",
+  "keywords": [
+    "airPollution",
+    "Atmospheric conditions",
+    "Variable domain: Solar radiation",
+    "Parameter family: Radiation",
+    "Spatial coverage: Global",
+    "Spatial coverage: Satellite image area",
+    "Product type: Analysis",
+    "Temporal coverage: Past"
+  ],
+  "providers": [
+    {
+      "name": "WEkEO",
+      "description": "WEkEO DIAS",
+      "roles": [
+        "host"
+      ],
+      "url": "https://www.wekeo.eu/"
+    }
+  ]
+}
